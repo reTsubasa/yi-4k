@@ -10,7 +10,8 @@
     "device_readiness": "Linux/API readiness probe 02 completed with idle-before/after and unchanged settings; no RTOS shell or target write",
     "eis_algorithm_readiness": "8 static hash-checked gates passed; custom replacement remains false because ORC transfer, DSP latch/identity and old-slot reuse are unproven.",
     "prerecord_storage": "5-case bounded POSIX ring simulation and 12 process-exit custody tests passed; physical SD/RTOS encoder and trigger binding remain unexecuted.",
-    "device_readiness_latest": "Read-only readiness probe 03 confirms idle-before/after, unchanged firmware/settings, SD inserted and EIS on; no target write."
+    "device_readiness_latest": "Read-only readiness probe 03 confirms idle-before/after, unchanged firmware/settings, SD inserted and EIS on; no target write.",
+    "android_clock_contract": "Host contract rerun passes; sync remains explicit and default-off, with no physical RTC write."
   },
   "evidence": [
     {
@@ -68,6 +69,13 @@
       "status": "pass_readonly_linux_api_readiness_03",
       "scope": "12 Linux/node inspections and API before/after state; no RTOS shell, upload, reboot, capture or settings write",
       "device_access": true
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-android-clock-probe-contract-rerun",
+      "sha256": "0397f07c74615dd6d3f432f4ebf89284eb442633af6b4a04a9e5fd8a164541ad",
+      "status": "pass_host_contract_only",
+      "scope": "Host source contract: clock sync default off and explicit evidence fields; no phone/camera write",
+      "device_access": false
     }
   ],
   "limits": [
