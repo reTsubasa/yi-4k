@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T00:00:00+08:00",
+  "goal_status": "active",
+  "summary": {
+    "eis_native": "Real camera read-only baseline is stable with iq_eis_enable=on; native custom entry/cache/SMP/recovery remains unexecuted",
+    "eis_algorithm": "Candidate quality and archive eligibility rerun; no real gyro/video optical quality or stock ABI deployment",
+    "prerecord": "Bounded host ring and voice semantic seam rerun; no realtime encoder/FIFO, physical SD or camera trigger binding",
+    "android": "0.5.0 host build remains green; physical phone acceptance remains pending"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/verification/2026-11-12-readonly-probe-05.json",
+      "sha256": "b448b390db85d17d111dda7fec3c26c595cd6bec4b934152ac2edd0fea2710fd",
+      "status": "pass_readonly_real_camera_baseline",
+      "scope": "Real camera firmware/SD/EIS status and media listing before/after; no writes or capture",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-quality-run02",
+      "sha256": "35de27ac6750009dc9e7cbdf2fadb84a2aca498df7de341f7d844611560ad77a",
+      "status": "pass_offline_eis_candidate_quality",
+      "scope": "6604-frame synthetic causal gyro residual and cadence checks; optical quality false",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-archive-run02",
+      "sha256": "08ea2dc09cb293cacd8294867d559c67e39e396990d570deb79cada9b13f9516",
+      "status": "pass_offline_eis_archive_eligibility",
+      "scope": "Nine stock ABI/archive checks; real candidate replay remains ineligible",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-ring-sd-run14/validation.json",
+      "sha256": "bc003646e9ca209dc71bde26e0614e1b051a7f3eb6c08cbc67171b4919c8c0be",
+      "status": "pass_host_bounded_ring_sd_simulation",
+      "scope": "Five host cases/15 assertions for rollover, leases, held AAC and tamper freeze",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-voice-prerecord-binding-run02",
+      "sha256": "366e388a769498b355ef407e0c7c69be621f7a7d6284fc713e87c1d7c3c9aabe",
+      "status": "pass_offline_voice_to_prerecord_binding_audit",
+      "scope": "Eight static typed voice semantic checks; recognition/event hook unproved",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "The real-camera probe was strictly read-only: no firmware/RAM/partition/RTC/recording/photo/settings write.",
+    "EIS candidate checks are host/synthetic and explicitly do not prove encoded-image quality, real gyro calibration, DSP latch or deployment.",
+    "Prerecord checks are host POSIX/typed-event simulations and do not prove microphone recognition, GPIO, realtime encoder/FIFO, physical SD durability or camera mux binding.",
+    "Android app was not installed on a physical phone in this continuation."
+  ],
+  "remaining": [
+    "Authorized plan for target EIS entry with cache/SMP completion and independent rollback/recovery",
+    "Real gyro/lens/axis/frame calibration and encoded-video comparison",
+    "Realtime encoder/FIFO callback and physical one-minute SD ring with power-loss/full-card recovery",
+    "Original spoken phrase and physical shutter bound to camera prerecord backend",
+    "Physical Android phone acceptance and authorized RTC write/readback"
+  ]
+}
