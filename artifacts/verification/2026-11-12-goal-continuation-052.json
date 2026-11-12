@@ -3,7 +3,7 @@
   "created_utc": "2026-11-12T00:00:00+08:00",
   "goal_status": "active",
   "summary": {
-    "eis_native": "Real camera read-only baseline is stable with iq_eis_enable=on; native custom entry/cache/SMP/recovery remains unexecuted",
+    "eis_native": "Real camera read-only and RTSP baseline are stable with iq_eis_enable=on; native custom entry/cache/SMP/recovery remains unexecuted",
     "eis_algorithm": "Candidate quality and archive eligibility rerun; no real gyro/video optical quality or stock ABI deployment",
     "prerecord": "Bounded host ring and voice semantic seam rerun; no realtime encoder/FIFO, physical SD or camera trigger binding",
     "android": "0.5.0 host build remains green; physical phone acceptance remains pending"
@@ -43,6 +43,13 @@
       "status": "pass_offline_voice_to_prerecord_binding_audit",
       "scope": "Eight static typed voice semantic checks; recognition/event hook unproved",
       "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-rtsp-readonly-run03/session.json",
+      "sha256": "a47fc2f3e7576ba9a79f8388e84e97edc771eebb23a369cd7c9f32b11b6480c2",
+      "status": "pass_readonly_real_rtsp_baseline",
+      "scope": "Real H264 RTSP frame/packet decode with paired VF start/stop and restored settings",
+      "device_access": true
     }
   ],
   "limits": [
