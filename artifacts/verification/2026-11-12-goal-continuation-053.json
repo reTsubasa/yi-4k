@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T00:00:00+08:00",
+  "goal_status": "active",
+  "summary": {
+    "eis_native": "Offline v2 shadow wrapper and same-invocation trace rerun passed; real entry/cache/SMP/recovery remains unexecuted",
+    "eis_algorithm": "No deployment or encoded-image quality claim; native replacement gate remains closed",
+    "prerecord": "Host typed voice/shutter ring publication and recovery rerun passed; realtime camera backend remains unbound",
+    "android": "0.5.0 host delivery and real-camera read-only/RTSP baselines remain green"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/verification/2026-11-12-eis-shadow-v2-run02",
+      "sha256": "f3148e93611d90b9b9dc7d83b78d0c227dc27628a3c0be6b005638be944ec493",
+      "status": "pass_offline_eis_shadow_v2",
+      "scope": "512 wrapper cases, 88-byte publication ABI, zero mismatches; no device contact",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-stage-trace-run04/validation.json",
+      "sha256": "6f4ee4ce806d95da0132bd224db7507befc453a02b2fda6e5ef6ac01ad376f32",
+      "status": "pass_offline_eis_stage_trace",
+      "scope": "33 same-invocation C/ARM trace cases; no device access",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run04/validation.json",
+      "sha256": "d3ca22931c06584a2282a8541fb763cbfa2808e3737e0e52a706727d3707f54b",
+      "status": "pass_host_prerecord_media_ring",
+      "scope": "Voice interruption/recovery, tamper rejection and shutter incremental playback; 3 cases; no camera/SD",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "All three new runs are offline/host-only and do not prove firmware execution, algorithm replacement, microphone recognition, physical shutter, realtime encoder/FIFO or SD durability.",
+    "No firmware, RAM, partition, RTC, recording, photo or settings write was performed in this continuation."
+  ],
+  "remaining": [
+    "Real native EIS entry with cache/SMP completion and rollback",
+    "Real gyro/video calibration and encoded quality comparison",
+    "Realtime one-minute SD ring with original voice and shutter event binding",
+    "Physical Android phone acceptance and authorized RTC write/readback"
+  ]
+}
