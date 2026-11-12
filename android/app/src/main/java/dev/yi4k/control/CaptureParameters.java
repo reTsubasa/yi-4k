@@ -36,6 +36,10 @@ public final class CaptureParameters {
 
     /** Preserve the saved preference while explaining current mode capability. */
     public static String settingValue(JSONObject settings, String key) {
+        if (key != null && key.startsWith("voice_")
+                && (settings == null || settings.isNull(key) || !settings.has(key))) {
+            return "相机未公开";
+        }
         String saved = CameraSettings.displayValue(key, settings == null ? null : settings.opt(key));
         if ("iq_eis_enable".equals(key) && "off".equals(raw(settings, "eis_support_status")))
             return "已保存：" + saved + "；当前规格不支持";

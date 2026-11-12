@@ -1,0 +1,299 @@
+{
+  "schema": "eis-native-evidence-consistency/v1",
+  "status": "passed",
+  "scope": "offline provenance checks over fixed 1.10.7 image, receipts and Markdown",
+  "device_access": false,
+  "target_write": false,
+  "payload_or_writer_emitted": false,
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "evidence": [
+    {
+      "id": "first_entry",
+      "script": "scripts/audit_native_first_entry_contract.py",
+      "receipt": "artifacts/device/2026-11-10-native-first-entry-contract/audit.json",
+      "script_sha256": "70bbbacc00bff855669f2d6b53cd3865ce3ef7bfaf5aa90781128df1aca8efff",
+      "receipt_sha256": "47b069abade14fd300b61e198a18258ea67b96e287da1f0f0206236981140194",
+      "device_access": false
+    },
+    {
+      "id": "task_stop",
+      "script": "scripts/audit_native_task_stop_proof.py",
+      "receipt": "artifacts/verification/2026-11-11-native-task-stop-proof-run03/audit.json",
+      "script_sha256": "434a2b8b9c6ff2601ee17cbf3412f3efe6eb41e16f55f041cae567cbf57484be",
+      "receipt_sha256": "1bd819bd1f9879d9e78e88439b3bf07a2cc08ff669ea9a4f753008012bfca2d7",
+      "device_access": false
+    },
+    {
+      "id": "completed_task_reuse",
+      "script": "scripts/audit_native_completed_task_reuse.py",
+      "receipt": "artifacts/verification/2026-11-11-native-completed-task-reuse-run05/audit.json",
+      "script_sha256": "77c753c48c8976e64e1b273b63e93909904a70c615d37275d7eba4e5bd9109a7",
+      "receipt_sha256": "24a220cf1fe6bb4f1a76814a614b00fe91ac25eaa9fe8e9015078b871220c9fd",
+      "device_access": false
+    },
+    {
+      "id": "entry_scan",
+      "script": "scripts/audit_native_execution_entry_scan.py",
+      "receipt": "artifacts/device/2026-11-11-native-execution-entry-scan/scan.json",
+      "script_sha256": "515eaba5afa9c59ef053db553b32543db79f18c6a732162981e29b1e3bcfd892",
+      "receipt_sha256": "75a1c0193a6b8d14523c23b34e0ed40feafdaf92bcfa26d9296659414c7fbcba",
+      "device_access": false
+    }
+  ],
+  "check_count": 49,
+  "checks": [
+    {
+      "name": "fixed_image_sha256",
+      "passed": true,
+      "detail": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c == eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "first_entry_files_exist",
+      "passed": true,
+      "detail": "scripts/audit_native_first_entry_contract.py, artifacts/device/2026-11-10-native-first-entry-contract/audit.json, docs/device-1107-first-entry-implementation-contract.md"
+    },
+    {
+      "name": "first_entry_script_sha256",
+      "passed": true,
+      "detail": "receipt=70bbbacc00bff855669f2d6b53cd3865ce3ef7bfaf5aa90781128df1aca8efff source=70bbbacc00bff855669f2d6b53cd3865ce3ef7bfaf5aa90781128df1aca8efff"
+    },
+    {
+      "name": "first_entry_image_sha256",
+      "passed": true,
+      "detail": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c == eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "first_entry_offline_flags",
+      "passed": true,
+      "detail": "device_access=False"
+    },
+    {
+      "name": "first_entry_schema",
+      "passed": true,
+      "detail": "schema='native-first-entry-contract/v2'"
+    },
+    {
+      "name": "first_entry_no_writer",
+      "passed": true,
+      "detail": "target_write=False, payload_or_writer_emitted=False"
+    },
+    {
+      "name": "first_entry_doc_refs_eee44c6c5301",
+      "passed": true,
+      "detail": "docs/device-1107-first-entry-implementation-contract.md contains eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "first_entry_doc_refs_scripts/audi",
+      "passed": true,
+      "detail": "docs/device-1107-first-entry-implementation-contract.md contains scripts/audit_native_first_entry_contract.py"
+    },
+    {
+      "name": "first_entry_doc_refs_artifacts/de",
+      "passed": true,
+      "detail": "docs/device-1107-first-entry-implementation-contract.md contains artifacts/device/2026-11-10-native-first-entry-contract/audit.json"
+    },
+    {
+      "name": "first_entry_doc_keeps_boundary",
+      "passed": true,
+      "detail": "documentation retains an incomplete/non-deployment boundary"
+    },
+    {
+      "name": "task_stop_files_exist",
+      "passed": true,
+      "detail": "scripts/audit_native_task_stop_proof.py, artifacts/verification/2026-11-11-native-task-stop-proof-run03/audit.json, docs/device-1107-native-task-stop-proof.md"
+    },
+    {
+      "name": "task_stop_script_sha256",
+      "passed": true,
+      "detail": "receipt=434a2b8b9c6ff2601ee17cbf3412f3efe6eb41e16f55f041cae567cbf57484be source=434a2b8b9c6ff2601ee17cbf3412f3efe6eb41e16f55f041cae567cbf57484be"
+    },
+    {
+      "name": "task_stop_image_sha256",
+      "passed": true,
+      "detail": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c == eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "task_stop_offline_flags",
+      "passed": true,
+      "detail": "device_access=False"
+    },
+    {
+      "name": "task_stop_receipt_sha256",
+      "passed": true,
+      "detail": "1bd819bd1f9879d9e78e88439b3bf07a2cc08ff669ea9a4f753008012bfca2d7 == 1bd819bd1f9879d9e78e88439b3bf07a2cc08ff669ea9a4f753008012bfca2d7"
+    },
+    {
+      "name": "task_stop_doc_refs_eee44c6c5301",
+      "passed": true,
+      "detail": "docs/device-1107-native-task-stop-proof.md contains eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "task_stop_doc_refs_scripts/audi",
+      "passed": true,
+      "detail": "docs/device-1107-native-task-stop-proof.md contains scripts/audit_native_task_stop_proof.py"
+    },
+    {
+      "name": "task_stop_doc_refs_artifacts/ve",
+      "passed": true,
+      "detail": "docs/device-1107-native-task-stop-proof.md contains artifacts/verification/2026-11-11-native-task-stop-proof-run03/audit.json"
+    },
+    {
+      "name": "task_stop_doc_keeps_boundary",
+      "passed": true,
+      "detail": "documentation retains an incomplete/non-deployment boundary"
+    },
+    {
+      "name": "completed_task_reuse_files_exist",
+      "passed": true,
+      "detail": "scripts/audit_native_completed_task_reuse.py, artifacts/verification/2026-11-11-native-completed-task-reuse-run05/audit.json, docs/device-1107-completed-task-reuse-boundary.md"
+    },
+    {
+      "name": "completed_task_reuse_script_sha256",
+      "passed": true,
+      "detail": "receipt=77c753c48c8976e64e1b273b63e93909904a70c615d37275d7eba4e5bd9109a7 source=77c753c48c8976e64e1b273b63e93909904a70c615d37275d7eba4e5bd9109a7"
+    },
+    {
+      "name": "completed_task_reuse_image_sha256",
+      "passed": true,
+      "detail": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c == eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "completed_task_reuse_offline_flags",
+      "passed": true,
+      "detail": "device_access=False"
+    },
+    {
+      "name": "completed_task_reuse_receipt_sha256",
+      "passed": true,
+      "detail": "24a220cf1fe6bb4f1a76814a614b00fe91ac25eaa9fe8e9015078b871220c9fd == 24a220cf1fe6bb4f1a76814a614b00fe91ac25eaa9fe8e9015078b871220c9fd"
+    },
+    {
+      "name": "completed_task_reuse_doc_refs_eee44c6c5301",
+      "passed": true,
+      "detail": "docs/device-1107-completed-task-reuse-boundary.md contains eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "completed_task_reuse_doc_refs_scripts/audi",
+      "passed": true,
+      "detail": "docs/device-1107-completed-task-reuse-boundary.md contains scripts/audit_native_completed_task_reuse.py"
+    },
+    {
+      "name": "completed_task_reuse_doc_refs_artifacts/ve",
+      "passed": true,
+      "detail": "docs/device-1107-completed-task-reuse-boundary.md contains artifacts/verification/2026-11-11-native-completed-task-reuse-run05/audit.json"
+    },
+    {
+      "name": "completed_task_reuse_doc_keeps_boundary",
+      "passed": true,
+      "detail": "documentation retains an incomplete/non-deployment boundary"
+    },
+    {
+      "name": "entry_scan_files_exist",
+      "passed": true,
+      "detail": "scripts/audit_native_execution_entry_scan.py, artifacts/device/2026-11-11-native-execution-entry-scan/scan.json, docs/device-1107-native-execution-entry-scan.md"
+    },
+    {
+      "name": "entry_scan_script_sha256",
+      "passed": true,
+      "detail": "receipt=515eaba5afa9c59ef053db553b32543db79f18c6a732162981e29b1e3bcfd892 source=515eaba5afa9c59ef053db553b32543db79f18c6a732162981e29b1e3bcfd892"
+    },
+    {
+      "name": "entry_scan_image_sha256",
+      "passed": true,
+      "detail": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c == eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "entry_scan_offline_flags",
+      "passed": true,
+      "detail": "device_access=False"
+    },
+    {
+      "name": "entry_scan_receipt_sha256",
+      "passed": true,
+      "detail": "75a1c0193a6b8d14523c23b34e0ed40feafdaf92bcfa26d9296659414c7fbcba == 75a1c0193a6b8d14523c23b34e0ed40feafdaf92bcfa26d9296659414c7fbcba"
+    },
+    {
+      "name": "entry_scan_no_writer",
+      "passed": true,
+      "detail": "target_write=False, payload_or_writer_emitted=False"
+    },
+    {
+      "name": "entry_scan_doc_refs_eee44c6c5301",
+      "passed": true,
+      "detail": "docs/device-1107-native-execution-entry-scan.md contains eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "name": "entry_scan_doc_refs_scripts/audi",
+      "passed": true,
+      "detail": "docs/device-1107-native-execution-entry-scan.md contains scripts/audit_native_execution_entry_scan.py"
+    },
+    {
+      "name": "entry_scan_doc_refs_artifacts/de",
+      "passed": true,
+      "detail": "docs/device-1107-native-execution-entry-scan.md contains artifacts/device/2026-11-11-native-execution-entry-scan/scan.json"
+    },
+    {
+      "name": "entry_scan_doc_keeps_boundary",
+      "passed": true,
+      "detail": "documentation retains an incomplete/non-deployment boundary"
+    },
+    {
+      "name": "roadmap_boundary_files",
+      "passed": true,
+      "detail": "roadmap, goal matrix and native prereq matrix exist"
+    },
+    {
+      "name": "roadmap_keeps_native_incomplete",
+      "passed": true,
+      "detail": "eis-execution-plan.md contains 不能把 2b 升级为真机完成"
+    },
+    {
+      "name": "roadmap_keeps_icache_boundary",
+      "passed": true,
+      "detail": "eis-execution-plan.md contains I-cache 发布"
+    },
+    {
+      "name": "roadmap_keeps_rollback_boundary",
+      "passed": true,
+      "detail": "eis-execution-plan.md contains 回滚证据"
+    },
+    {
+      "name": "goal_matrix_eis_row",
+      "passed": true,
+      "detail": "goal-evidence-matrix.md contains | EIS 最小原生执行闭环 |"
+    },
+    {
+      "name": "goal_matrix_eis_unfinished",
+      "passed": true,
+      "detail": "goal-evidence-matrix.md contains | 未完成 |"
+    },
+    {
+      "name": "goal_matrix_icache_gap",
+      "passed": true,
+      "detail": "goal-evidence-matrix.md contains I-cache 可见性"
+    },
+    {
+      "name": "prereq_p1_missing",
+      "passed": true,
+      "detail": "native-execution-prereq-matrix.md contains | P1 | 存在外部可达、参数受控的首次入口 | 缺失"
+    },
+    {
+      "name": "prereq_p5_missing",
+      "passed": true,
+      "detail": "native-execution-prereq-matrix.md contains | P5 | 指令缓存/分支状态同步 | 缺失"
+    },
+    {
+      "name": "prereq_p11_missing",
+      "passed": true,
+      "detail": "native-execution-prereq-matrix.md contains | P11 | 冷启动和失败恢复 | 缺失"
+    }
+  ],
+  "limitations": [
+    "Hash and wording consistency do not prove a device entry, cache publication, SMP completion, or rollback.",
+    "The receipts remain bounded Unicorn/Capstone or static evidence and do not upgrade the native execution goal."
+  ],
+  "script_sha256": "474faf3226cc732ded5e0ac22e368ad745d747c8dd187d335bf05d5ce7d5d38d"
+}
