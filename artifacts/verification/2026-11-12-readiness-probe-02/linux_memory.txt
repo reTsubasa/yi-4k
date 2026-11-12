@@ -1,0 +1,36 @@
+~ # cat /proc/meminfo
+MemTotal:          49096 kB
+MemFree:            1268 kB
+Buffers:            1836 kB
+Cached:            27464 kB
+SwapCached:            0 kB
+Active:            30060 kB
+Inactive:           6188 kB
+Active(anon):       6960 kB
+Inactive(anon):       40 kB
+Active(file):      23100 kB
+Inactive(file):     6148 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          6972 kB
+Mapped:             4072 kB
+Shmem:                52 kB
+Slab:               4076 kB
+SReclaimable:        788 kB
+SUnreclaim:         3288 kB
+KernelStack:         648 kB
+PageTables:         3984 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       24548 kB
+Committed_AS:     150340 kB
+VmallocTotal:    1515520 kB
+VmallocUsed:         748 kB
+VmallocChunk:    1514620 kB
+~ # echo __YI_CAPTURE_ba1a16ef65114c83affd5a6ec47688b0__
+__YI_CAPTURE_ba1a16ef65114c83affd5a6ec47688b0__

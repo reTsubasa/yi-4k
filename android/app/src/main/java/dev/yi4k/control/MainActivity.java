@@ -697,8 +697,12 @@ public class MainActivity extends Activity {
         previewRec = overlayPill("--", Gravity.BOTTOM | Gravity.RIGHT);
         previewMonitor = overlayPill("全屏", Gravity.TOP | Gravity.RIGHT);
         previewParameters = overlayPill("EIS --", Gravity.BOTTOM | Gravity.LEFT);
-        previewParameters.setContentDescription("电子防抖，点击调整");
-        previewParameters.setOnClickListener(v -> { if (camera.isConnected() && settings.has("iq_eis_enable")) options("iq_eis_enable"); });
+        // The OSD is a read-only status surface.  Parameter changes belong in
+        // the settings flow; making this pill clickable makes the viewfinder
+        // feel like a grid of buttons and competes with the shutter.
+        previewParameters.setContentDescription("电子防抖参数显示");
+        previewParameters.setClickable(false);
+        previewParameters.setFocusable(false);
         previewScale = overlayPill(previewFill ? "铺满" : "完整", Gravity.BOTTOM | Gravity.RIGHT);
         previewScale.setContentDescription("切换完整画面与铺满取景");
         previewScale.setOnClickListener(v -> {

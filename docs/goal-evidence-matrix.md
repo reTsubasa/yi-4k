@@ -2,7 +2,7 @@
 
 更新时间：2026-11-12。矩阵只把已有证据映射到目标要求；“部分”表示证据范围不足，不能升级为完成。
 
-最新续推归档见[本轮 EIS 影子/阶段 trace 与预录 ring 复跑索引](../artifacts/verification/2026-11-12-goal-continuation-053.json)；此前[真机只读基线、EIS 候选和预录接缝索引](../artifacts/verification/2026-11-12-goal-continuation-052.json)及更早归档仍保留。三个底层目标继续保持未完成状态。
+本轮问题与并行工作清单见[tasklist-2026-11-12.md](tasklist-2026-11-12.md)。最新续推归档见[本轮 EIS 影子/阶段 trace、预录 ring 与 readiness 复跑索引](../artifacts/verification/2026-11-12-goal-continuation-053.json)；此前[真机只读基线、EIS 候选和预录接缝索引](../artifacts/verification/2026-11-12-goal-continuation-052.json)及更早归档仍保留。三个底层目标继续保持未完成状态。
 
 | 目标要求 | 当前证据 | 状态 | 仍缺的证据 |
 | --- | --- | --- | --- |

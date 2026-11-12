@@ -9,7 +9,8 @@
     "translucent glass overlays and presentation-only parameter labels",
     "saved camera SSID/BSSID/security metadata with one-shot WifiNetworkSpecifier reconnect and scan fallback",
     "silent local shutter feedback",
-    "PixelCopy realtime viewfinder frame flight to album with screenshot fallback and background real-photo replacement"
+    "PixelCopy realtime viewfinder frame flight to album with screenshot fallback and background real-photo replacement",
+    "read-only EIS OSD overlay; parameter status is not clickable"
   ],
   "command": "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
   "unit_tests": 212,
@@ -18,7 +19,7 @@
   "lint_warnings": 74,
   "apk": {
     "path": "artifacts/android/yi4k-control-0.5.0-debug.apk",
-    "sha256": "e40329fbf520ba4d7eb2d6ff44ff2d59c64e074b8bf3bf485bd3921fc5d4b7ea",
+    "sha256": "fe7218f3777e2da0d3b8bef4674fb7d640193f177f2b463122679dbc61347445",
     "bytes": 11666797
   },
   "device_access": false,

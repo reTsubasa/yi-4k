@@ -6,7 +6,10 @@
     "eis_native": "Offline v2 shadow wrapper and same-invocation trace rerun passed; real entry/cache/SMP/recovery remains unexecuted",
     "eis_algorithm": "No deployment or encoded-image quality claim; native replacement gate remains closed",
     "prerecord": "Host typed voice/shutter ring publication and recovery rerun passed; realtime camera backend remains unbound",
-    "android": "0.5.0 host delivery and real-camera read-only/RTSP baselines remain green"
+    "android": "0.5.0 host delivery and real-camera read-only/RTSP baselines remain green",
+    "device_readiness": "Linux/API readiness probe 02 completed with idle-before/after and unchanged settings; no RTOS shell or target write",
+    "eis_algorithm_readiness": "8 static hash-checked gates passed; custom replacement remains false because ORC transfer, DSP latch/identity and old-slot reuse are unproven.",
+    "prerecord_storage": "5-case bounded POSIX ring simulation and 12 process-exit custody tests passed; physical SD/RTOS encoder and trigger binding remain unexecuted."
   },
   "evidence": [
     {
@@ -28,6 +31,34 @@
       "sha256": "d3ca22931c06584a2282a8541fb763cbfa2808e3737e0e52a706727d3707f54b",
       "status": "pass_host_prerecord_media_ring",
       "scope": "Voice interruption/recovery, tamper rejection and shutter incremental playback; 3 cases; no camera/SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-readiness-probe-02/session.json",
+      "sha256": "62d17700aa0b52d9d9cec2ba98b1ba554ce29461f94ae2d66b89b0d1a914096f",
+      "status": "pass_readonly_linux_api_readiness",
+      "scope": "12 Linux/device-node inspections and API before/after state; no RTOS shell, upload, reboot or settings write",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-replacement-readiness-run03",
+      "sha256": "6fc0fdb7e65ed7acaa4a25ff1c3a22e0b6d7fc83e281b2aa25672418f8a5ee19",
+      "status": "pass_offline_eis_replacement_readiness",
+      "scope": "8 hash-checked static gates; custom EIS replacement remains false; no device/RTOS/RAM/firmware writes",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-ring-sd-run15/validation.json",
+      "sha256": "bc003646e9ca209dc71bde26e0614e1b051a7f3eb6c08cbc67171b4919c8c0be",
+      "status": "pass_host_bounded_ring_sd_simulation",
+      "scope": "5 cases/15 assertions; POSIX simulation only; no physical SD or camera backend",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-media-store-recovery-run02/validation.json",
+      "sha256": "e4df731dec8afaa1b65101b91ef55fc0fdc71bd06fe1189587c2a3aa3dca633c",
+      "status": "pass_host_custody_process_exit_recovery",
+      "scope": "12 tests, 0 failures; process-exit custody only; no physical SD power-loss claim",
       "device_access": false
     }
   ],
