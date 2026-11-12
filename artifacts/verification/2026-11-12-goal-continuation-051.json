@@ -43,6 +43,13 @@
       "status": "pass_host_prerecord_ring_recovery",
       "scope": "Host H264/AAC trigger/recovery and playable output; no realtime camera/SD",
       "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-readonly-probe-05.json",
+      "sha256": "b448b390db85d17d111dda7fec3c26c595cd6bec4b934152ac2edd0fea2710fd",
+      "status": "pass_readonly_real_camera_baseline",
+      "scope": "Firmware/SD/EIS status, power, media listing and before/after settings; no writes, recording or capture",
+      "device_access": true
     }
   ],
   "limits": [
