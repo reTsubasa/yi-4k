@@ -1,6 +1,6 @@
 # 三条主线验收证据矩阵
 
-更新时间：2026-11-12。矩阵只把已有证据映射到目标要求；“部分”表示证据范围不足，不能升级为完成。
+更新时间：2026-11-12。矩阵只把已有证据映射到目标要求；“部分”表示证据范围不足，不能升级为完成。最新用户反馈已在[本轮任务清单](tasklist-2026-11-12.md)中按 A1–A10 归并，避免为同一功能建立重复任务。
 
 本轮问题与并行工作清单见[tasklist-2026-11-12.md](tasklist-2026-11-12.md)，真机顺序与回滚见[验收关卡手册](real-device-acceptance-gates-2026-11-12.md)。最新续推归档见[本轮 EIS 影子/阶段 trace、预录 ring 与 readiness 复跑索引](../artifacts/verification/2026-11-12-goal-continuation-053.json)；本轮新增[只读 readiness 04](device-readiness-probe-04.md)、[RTSP 04](device-rtsp-readonly-run-04.md)和[语音设置 02](device-voice-readonly-probe-02.md)。此前[真机只读基线、EIS 候选和预录接缝索引](../artifacts/verification/2026-11-12-goal-continuation-052.json)及更早归档仍保留。三个底层目标继续保持未完成状态。
 
