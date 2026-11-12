@@ -30,6 +30,10 @@ cd /Users/hyc/Documents/yi4k
   --output artifacts/verification/2026-11-12-ring-sd-run15
 .venv-reverse/bin/python scripts/validate_prerecord_media_store_recovery.py \
   --output artifacts/verification/2026-11-12-media-store-recovery-run02
+.venv-reverse/bin/python scripts/audit_eis_native_evidence_consistency.py \
+  --output artifacts/verification/2026-11-12-eis-native-consistency-run03
+.venv-reverse/bin/python scripts/audit_eis_candidate_quality.py \
+  --output artifacts/verification/2026-11-12-eis-candidate-quality-run03.json
 ```
 
-这些检查均声明 `device_access=false`。真机阶段需要先形成具体的停止、清理和回滚方案，再取得对应授权；在此之前不能把目标状态升级为完成。
+这些检查均声明 `device_access=false`；本轮新增的 EIS 一致性检查为 49 项，候选行为检查覆盖 6604 个合成网格帧。真机阶段需要先形成具体的停止、清理和回滚方案，再取得对应授权；在此之前不能把目标状态升级为完成。

@@ -1,0 +1,44 @@
+{
+  "schema": "yi4k.eis-candidate-behavior/v1",
+  "algorithm": "causal_gyro_residual_affine/v2",
+  "status": "passed_host_angle_and_sampling_support_checks",
+  "sustained_pan": {
+    "seconds": 20,
+    "rate_dps": 10,
+    "integrated_degrees": 199.9999999999912,
+    "steady_residual_rad": 0.00606686832140646,
+    "expected_rate_times_tau_rad": 0.006066868321406675
+  },
+  "cadence_invariance": {
+    "step_us": [
+      10000,
+      5000
+    ],
+    "max_angle_error_rad": 3.1530333899354446e-14,
+    "quantized_mesh_equal": true
+  },
+  "stop_settling": {
+    "residual_before_rad": 0.006066868321404739,
+    "residual_after_rad": 1.942890293094024e-15
+  },
+  "five_hz_virtual_path": {
+    "input_rms_rad": 0.012310603361239424,
+    "smoothed_rms_rad": 0.008319345640703248,
+    "rms_ratio": 0.6757869940718861
+  },
+  "mesh_frames_checked_inside_sensor": 6604,
+  "real_gyro_used": false,
+  "encoded_image_quality_tested": false,
+  "stock_abi_compatible": false,
+  "replacement_deployment_ready": false,
+  "device_access": false,
+  "limitations": [
+    "Analytic trajectory behavior only; no optical/rolling-shutter/camera video improvement is inferred.",
+    "Host axis/projection convention is hypothetical; real gyro calibration and exposure alignment remain missing.",
+    "Small-angle pitch/yaw with affine roll is not a calibrated full-3D lens model."
+  ],
+  "sources": {
+    "audit_eis_candidate_quality.py": "6cb2043176d68c3af087b9dd1a0a60cda2b3baf41b0b58446ae73165eecdb2ec",
+    "eis_candidate_mesh.py": "60120c5f60ba01d0a7774844b1ebbe7b5caacbc8c982076f86f4eb403c9514a9"
+  }
+}

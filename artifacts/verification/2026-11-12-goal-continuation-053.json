@@ -12,7 +12,9 @@
     "prerecord_storage": "5-case bounded POSIX ring simulation and 12 process-exit custody tests passed; physical SD/RTOS encoder and trigger binding remain unexecuted.",
     "device_readiness_latest": "Read-only readiness probe 03 confirms idle-before/after, unchanged firmware/settings, SD inserted and EIS on; no target write.",
     "android_clock_contract": "Host contract rerun passes; sync remains explicit and default-off, with no physical RTC write.",
-    "voice_readonly": "Voice/keyword settings are not exposed in msg_id=3; buzzer_ring is off and sound_effect reads wind; exact phrase and event delivery remain unverified."
+    "voice_readonly": "Voice/keyword settings are not exposed in msg_id=3; buzzer_ring is off and sound_effect reads wind; exact phrase and event delivery remain unverified.",
+    "eis_native_consistency": "49 offline provenance checks pass; fixed image/receipt/document boundaries remain intact and native device execution is still false.",
+    "eis_candidate_quality": "6604 synthetic angle/mesh frames pass host behavior checks; real gyro/video quality and deployment remain false."
   },
   "evidence": [
     {
@@ -84,6 +86,20 @@
       "status": "pass_readonly_voice_record_settings",
       "scope": "Normal API app_status/msg_id=3 readback; no voice command, recording, setting, RTC or RTOS write",
       "device_access": true
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-native-consistency-run03/validation.json",
+      "sha256": "429ce7b14bd29229f50874c19c99f41e83520ea3f44d8cf79b633dde87c9f0c8",
+      "status": "pass_offline_eis_native_provenance_consistency",
+      "scope": "49 offline provenance checks over fixed image/receipts/docs; no device access",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-quality-run03.json",
+      "sha256": "35de27ac6750009dc9e7cbdf2fadb84a2aca498df7de341f7d844611560ad77a",
+      "status": "pass_offline_eis_candidate_quality",
+      "scope": "6604 synthetic angle/mesh frames; no real gyro, encoded image quality or device access",
+      "device_access": false
     }
   ],
   "limits": [
