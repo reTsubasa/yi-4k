@@ -30,7 +30,7 @@
 
 ## 验证与发布
 
-- [x] 主机 UI/连接单测、Lint、Debug APK 构建通过（212 项，0 failures/errors；Lint 0 errors/74 warnings）。
+- [x] 主机 UI/连接单测、Lint、Debug APK 构建通过（214 项，0 failures/errors；Lint 0 errors/74 warnings）。
 - [ ] AVD/实体 Android 设备验收记录刘海、横竖屏、参数可读性、快门/飞入动画和自动连接。
 - [x] 更新 Android 交付说明、构建回执、APK SHA-256 和目标证据矩阵。
 
