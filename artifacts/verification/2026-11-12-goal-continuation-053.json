@@ -11,7 +11,8 @@
     "eis_algorithm_readiness": "8 static hash-checked gates passed; custom replacement remains false because ORC transfer, DSP latch/identity and old-slot reuse are unproven.",
     "prerecord_storage": "5-case bounded POSIX ring simulation and 12 process-exit custody tests passed; physical SD/RTOS encoder and trigger binding remain unexecuted.",
     "device_readiness_latest": "Read-only readiness probe 03 confirms idle-before/after, unchanged firmware/settings, SD inserted and EIS on; no target write.",
-    "android_clock_contract": "Host contract rerun passes; sync remains explicit and default-off, with no physical RTC write."
+    "android_clock_contract": "Host contract rerun passes; sync remains explicit and default-off, with no physical RTC write.",
+    "voice_readonly": "Voice/keyword settings are not exposed in msg_id=3; buzzer_ring is off and sound_effect reads wind; exact phrase and event delivery remain unverified."
   },
   "evidence": [
     {
@@ -76,6 +77,13 @@
       "status": "pass_host_contract_only",
       "scope": "Host source contract: clock sync default off and explicit evidence fields; no phone/camera write",
       "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-voice-readonly-probe-01.json",
+      "sha256": "156c080569bdbc670c2f6d9f7268549ee79288efc42ca87273616f930c29b538",
+      "status": "pass_readonly_voice_record_settings",
+      "scope": "Normal API app_status/msg_id=3 readback; no voice command, recording, setting, RTC or RTOS write",
+      "device_access": true
     }
   ],
   "limits": [
