@@ -4,7 +4,7 @@
 
 ## 已经可以直接复核的部分
 
-- Android 0.5.0：213 项单测、Lint 0 errors、APK 构建通过；液态玻璃、横屏全屏、只读参数 OSD、无 App 咔擦声、PixelCopy 飞入和保存连接逻辑已落盘。真实 RTSP 只读复核 04 已证明取景流可解码，但实体手机的横屏、刘海、触感、飞入动画和冷启动连接现场验收仍缺。
+- Android 0.5.0：214 项单测、Lint 0 errors、APK 构建通过；液态玻璃、横屏全屏、只读参数 OSD、无 App 咔擦声、PixelCopy 飞入和保存连接逻辑已落盘。真实 RTSP 只读复核 04 已证明取景流可解码，但实体手机的横屏、刘海、触感、飞入动画和冷启动连接现场验收仍缺。
 - EIS 算法离线门禁：固定固件输入 hash、stock layout、候选 v2 行为和发布所有权均可复跑；`custom_eis_replacement_ready=false`，因为没有运行期 DSP latch/ack、旧槽复用、真实 gyro/帧锚或编码画质 A/B。
 - 预录离线门禁：ring/SD POSIX 模拟 5 场景/15 断言通过；媒体 custody 进程退出 12 项通过；原厂 mux 生成可播放归档成片。它们没有接入实时 encoder/FIFO、实体 SD、相机语音或物理快门。
 - 相机只读基线：readiness probe 03/04 前后均为 `idle`，固件 `Z16V13L_1.10.7`、EIS `on`、SD `insert` 和设置快照一致；RTSP 04 收到 73 个 H.264 包并解码首帧后恢复 `idle`；语音设置只读探针 01/02 均确认普通设置列表没有 `voice_*`/`keyword_*` 字段，`buzzer_ring=off`。这些回执没有执行拍摄、设置写入、RTC 写入、RTOS shell 或启动脚本。

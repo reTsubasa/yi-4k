@@ -21,6 +21,15 @@ public class CaptureParametersTest {
         settings.remove("iq_eis_enable"); settings.put("eis_support_status", "off");
         assertEquals("--", CaptureParameters.value(settings, "iq_eis_enable"));
     }
+
+    @Test public void unavailableVoiceFieldsRemainTruthfulAndPublishedValuesStillTranslate() throws Exception {
+        JSONObject settings = new JSONObject().put("sw_version", "Z16V13L_1.10.7")
+                .put("voice_control", JSONObject.NULL);
+        assertEquals("相机未公开", CaptureParameters.settingValue(settings, "voice_control"));
+        assertEquals("相机未公开", CaptureParameters.settingValue(settings, "voice_language"));
+        settings.put("voice_control", "off");
+        assertEquals("关闭", CaptureParameters.settingValue(settings, "voice_control"));
+    }
     private JSONObject resolution(String value) throws Exception {
         return new JSONObject().put("video_resolution", value);
     }
