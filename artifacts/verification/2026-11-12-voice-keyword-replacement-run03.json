@@ -1,0 +1,167 @@
+{
+  "schema": "yi4k.voice-keyword-replacement-preflight/v1",
+  "status": "passed_offline_resource_envelope_and_shared_action_checks",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "models": [
+    {
+      "language": "en",
+      "kind": "stage1_graph",
+      "address": "0xa0790c60",
+      "size_address": "0xa0791ec4",
+      "bytes": 4706,
+      "decoded_sha256": "12ed450af3717df8dee9379b5818e4e63cc7f7e98705777fd5e9deae36d27bb2",
+      "encoded_round_trip_equal": true
+    },
+    {
+      "language": "en",
+      "kind": "stage1_weights",
+      "address": "0xa0791ec8",
+      "size_address": "0xa079dde8",
+      "bytes": 48928,
+      "decoded_sha256": "037b5c13c53f983f0938a8b1fed879c3e5c782a8306fff2a891439ef95614ca1",
+      "encoded_round_trip_equal": true,
+      "version": "J11_vad_model_en",
+      "tensor_count": 51,
+      "float32_count": 11840
+    },
+    {
+      "language": "en",
+      "kind": "stage2_graph",
+      "address": "0xa079ddf0",
+      "size_address": "0xa079ddec",
+      "bytes": 5053,
+      "decoded_sha256": "0781939d2e5464e8e1b7a2c7b47c033d9795fc1d0a60afc535c570127dbe58f0",
+      "encoded_round_trip_equal": true
+    },
+    {
+      "language": "en",
+      "kind": "stage2_weights",
+      "address": "0xa079f1b4",
+      "size_address": "0xa079f1b0",
+      "bytes": 111239,
+      "decoded_sha256": "11ab856efb21be820ec57f5a722066df25c8474dadda8066504e897b5bf71382",
+      "encoded_round_trip_equal": true,
+      "version": "H2_classification_model_en",
+      "tensor_count": 67,
+      "float32_count": 27290
+    },
+    {
+      "language": "zh",
+      "kind": "stage1_graph",
+      "address": "0xa07ba43c",
+      "size_address": "0xa07bb6a0",
+      "bytes": 4706,
+      "decoded_sha256": "12ed450af3717df8dee9379b5818e4e63cc7f7e98705777fd5e9deae36d27bb2",
+      "encoded_round_trip_equal": true
+    },
+    {
+      "language": "zh",
+      "kind": "stage1_weights",
+      "address": "0xa07bb6a8",
+      "size_address": "0xa07bb6a4",
+      "bytes": 48924,
+      "decoded_sha256": "33ec6cc3d245c69997576cb0afa27885682ce0f7ef885fe4614da485b6a15912",
+      "encoded_round_trip_equal": true,
+      "version": "ze_oov_vad_3",
+      "tensor_count": 51,
+      "float32_count": 11840
+    },
+    {
+      "language": "zh",
+      "kind": "stage2_graph",
+      "address": "0xa07c75c8",
+      "size_address": "0xa07c75c4",
+      "bytes": 5053,
+      "decoded_sha256": "0781939d2e5464e8e1b7a2c7b47c033d9795fc1d0a60afc535c570127dbe58f0",
+      "encoded_round_trip_equal": true
+    },
+    {
+      "language": "zh",
+      "kind": "stage2_weights",
+      "address": "0xa07c8988",
+      "size_address": "0xa07e3c10",
+      "bytes": 111237,
+      "decoded_sha256": "90722f980963e781799af9ee6cc1b085801ba65099e31e14c6418d49b091681b",
+      "encoded_round_trip_equal": true,
+      "version": "J11_classification_model",
+      "tensor_count": 67,
+      "float32_count": 27290
+    }
+  ],
+  "shared_class_table_address": "0xa07e3c14",
+  "shared_class_to_public_code": [
+    1002,
+    1001,
+    1004,
+    1003,
+    1005
+  ],
+  "languages_share_graph_and_tensor_shapes": true,
+  "start": {
+    "raw_class": 3,
+    "engine_result": 1003,
+    "message": "0xf0010338",
+    "typed_action": "START"
+  },
+  "stop": {
+    "raw_class": 2,
+    "engine_result": 1004,
+    "message": "0xf0010339",
+    "typed_action": "STOP"
+  },
+  "reuse_original_recognized_start_requires_keyword_change": false,
+  "referenced_validation": {
+    "semantic_function_fingerprints_checked": 16,
+    "retained_host_arm_router_checks": 13068,
+    "current_router_sources_match_validated_sources": true,
+    "new_arm_or_host_router_execution": false
+  },
+  "format_preserving_mutation": {
+    "host_parse_passed": true,
+    "inverse_transform_passed": true,
+    "vendor_parser_executed": false,
+    "acoustic_validity_proven": false,
+    "modified_model_written": false
+  },
+  "negative_host_checks": [
+    {
+      "case": "truncation",
+      "rejected": "truncated container"
+    },
+    {
+      "case": "trailing_byte",
+      "rejected": "trailing container bytes"
+    },
+    {
+      "case": "zero_tensor_count",
+      "rejected": "invalid tensor count"
+    },
+    {
+      "case": "nan_weight",
+      "rejected": "nonfinite tensor value"
+    }
+  ],
+  "gate": {
+    "exact_spoken_phrases_verified": false,
+    "original_parser_executed": false,
+    "runtime_model_load_verified": false,
+    "runtime_integrity_or_signature_gate_known": false,
+    "new_model_training_export_available": false,
+    "custom_phrase_replacement_ready": false,
+    "device_access": false,
+    "target_write": false
+  },
+  "scope": [
+    "GUI/PCM/log strings name UI and public actions; they are not an editable recognition lexicon.",
+    "The resource XOR recurrence can be reversed; this does not rule out outer firmware or resource integrity checks.",
+    "Existing stock ARM audits establish language argument selection and class-to-event mapping; this audit only reparses retained envelopes and the class table.",
+    "No waveform, neural inference, custom keyword recognition, RTOS installation or prerecord hardware operation was exercised."
+  ],
+  "source_hashes": {
+    "scripts/audit_voice_keyword_replacement.py": "69351fd3f577d735414983968c67afb237726fef6867aeb9aa50543f1dc5f22e",
+    "artifacts/device/2026-11-10-voice-gui-resources/audit.json": "3fbac583f1d7039f1f866a0469be524c852f719e33f80eedb44c2e00e12c62af",
+    "artifacts/device/2026-11-10-voice-semantics/audit.json": "f18fdff807225a43a1f394ad901ed2f8b17f68be0c2a39d582447c0d29109d2d",
+    "artifacts/offline/2026-11-10-capture-trigger/audit.json": "37c2013d0f07026f9f65d504acd19ee27be5e547e0692794ace1aa3ce0f10bfa",
+    "sdk/yi4k_capture_trigger.c": "c24ff9823dac9cb97ab5998dc7f769b47814facb2a55534fc1cadadde03a58d5"
+  }
+}

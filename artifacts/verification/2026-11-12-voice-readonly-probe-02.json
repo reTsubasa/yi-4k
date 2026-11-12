@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "started_utc": "2026-11-12T11:25:24.878902+00:00",
+  "host": "192.168.42.1",
+  "device_access": true,
+  "writes": false,
+  "recording_requested": false,
+  "voice_command_requested": false,
+  "rtc_write_requested": false,
+  "api_events": [
+    {
+      "host_monotonic": 1317421.365897333,
+      "utc": "2026-11-12T11:25:24.898603+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1317422.310557291,
+      "utc": "2026-11-12T11:25:25.843334+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1317422.310882541,
+      "utc": "2026-11-12T11:25:25.843611+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1317422.316775916,
+      "utc": "2026-11-12T11:25:25.849508+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1317422.316848666,
+      "utc": "2026-11-12T11:25:25.849576+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1317422.330326416,
+      "utc": "2026-11-12T11:25:25.863058+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 24P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1317422.330726791,
+      "utc": "2026-11-12T11:25:25.863453+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1317422.336102708,
+      "utc": "2026-11-12T11:25:25.868830+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1317422.336126291,
+      "utc": "2026-11-12T11:25:25.868853+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1317422.34464725,
+      "utc": "2026-11-12T11:25:25.877375+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "status_before": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "voice_keys": {},
+  "sound_keys": {
+    "buzzer_volume": "low",
+    "buzzer_ring": "off",
+    "mic_level": "low",
+    "sound_effect": "wind",
+    "sound_effect_support": "on"
+  },
+  "record_keys": {
+    "precise_cont_time": "0.5 sec",
+    "precise_cont_poweroff": "off",
+    "precise_cont_poweroff_settable": "off",
+    "precise_cont_capturing": "off",
+    "precise_selftime": "5s",
+    "precise_self_running": "off",
+    "precise_self_remain_time": "0",
+    "rec_mode": "record",
+    "record_photo_time": "5",
+    "loop_rec_duration": "5 minutes",
+    "rec_audio_support": "on"
+  },
+  "clock_keys": {
+    "camera_clock": "2026-11-12 19:25:24"
+  },
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "hardware": "YDXJ2_V13LW",
+  "settings_count": 96,
+  "status_after": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "status_unchanged": true,
+  "finished_utc": "2026-11-12T11:25:25.868844+00:00"
+}
