@@ -1,0 +1,16 @@
+{
+  "scope": "independent host reconstruction of exact local HTTP fixture bytes; no sparse-file shortcuts or camera access",
+  "expected_bytes": 4296015995,
+  "expected_sha256": "b2091c7cf29c5012e039cec4e3978fe8b1eb2039740f4b42d0ef84eae76d990f",
+  "android_source_output_hashes_equal": true,
+  "source_mp4_sha256": "05783f22c8ddfe3d8dde662dae05447683f945e120cc16ef5d24610e9b3a772b",
+  "source_mp4_bytes": 99034,
+  "free_header_hex": "000000016672656500000001000e7da1",
+  "zero_padding_bytes": 4295916945,
+  "product_apk_sha256": "1503d3bd73d39cd9985c69c2aea04e81b1d863c31e2486cad943a2aa77f6ebe6",
+  "test_apk_sha256": "779a78d6ea81d992cf97f085e30c346f97722cf4529ec53882ebbad77ca921e8",
+  "source_sha256": {
+    "android/app/src/androidTest/java/dev/yi4k/control/LargeOriginalExportDeviceTest.java": "4629b14c16caee1f91680854ed5a33b495183032e376a444b8d24858cae79d69",
+    "scripts/android_emulator_acceptance.py": "4de0cefc29dbf7688b84cf715da619162becdc4237d96e60d0860fb3b576d0b0"
+  }
+}

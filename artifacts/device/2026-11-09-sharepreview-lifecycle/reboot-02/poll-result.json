@@ -1,0 +1,9 @@
+{
+  "host": "192.168.42.1",
+  "ports": [23, 7878],
+  "poll_seconds": 180,
+  "observed": "both ports remained unavailable for the full poll",
+  "recovery_confirmed": false,
+  "interpretation": "The staged autoexec likely blocked the RTOS/Linux boot path; no marker or RPC result was collected.",
+  "next_recovery": "Power off, remove SD card, delete root autoexec.ash, then boot again."
+}

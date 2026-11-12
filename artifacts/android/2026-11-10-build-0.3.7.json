@@ -1,0 +1,52 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint and Android prototype rendering checks for the album grid redesign; no camera access in this build turn",
+  "packaged_at_utc": "2026-11-10T15:22:54Z",
+  "apk": "artifacts/android/yi4k-control-0.3.7-debug.apk",
+  "sha256": "884523504278ba9cd6f1e8ba64ff08c61530ba8dd3b2ba4fe95bac2a9f03ceed",
+  "size_bytes": 11532841,
+  "version_name": "0.3.7",
+  "version_code": 10,
+  "application_id": "dev.yi4k.control",
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "changes_from_0_3_6": [
+    "Album media cards use dynamic 16:9 two-column thumbnails with a small-screen floor and large-screen cap.",
+    "Video/photo type and favorite state are shown as overlays on the thumbnail while real-thumbnail loading, selection, export and open-original actions remain available.",
+    "Host FFmpeg replay defaults to the repository bundled binary when present, while environment overrides remain supported."
+  ],
+  "checks": {
+    "gradle_test_debug": true,
+    "gradle_test_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "prototype_render_test": true,
+    "physical_phone_execution": false,
+    "camera_access_this_turn": false,
+    "inherited_0_3_6_camera_evidence_reused_without_rerun": true
+  },
+  "tests": {
+    "debug": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "inherited_runtime_evidence": "artifacts/android/2026-11-10-build-0.3.6.json",
+  "limits": [
+    "0.3.7 camera connection, preview, capture and 4K export workflows were not rerun in this UI-only build turn; see inherited 0.3.6 evidence with its version scope.",
+    "No physical Android phone, font scaling or rotation acceptance.",
+    "EIS replacement, native execution/recovery and camera standalone 60-second prerecord remain unimplemented."
+  ],
+  "candidate_status": "passed host/UI build scope; available for manual phone testing"
+}

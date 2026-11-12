@@ -1,0 +1,65 @@
+{
+  "scope": "Host read-only inspection of previously saved original camera MP4; no camera access or new recording",
+  "input": "artifacts/device/2026-11-10-feature-api/YDXJ0142.MP4",
+  "input_sha256": "d0c4008619699fed40255e31b6f832e1592b3f014c751bcaa1eb4c503e524a51",
+  "size_bytes": 22629758,
+  "probe_version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers",
+  "probe_argv": [
+    "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe",
+    "-v",
+    "error",
+    "-show_streams",
+    "-show_packets",
+    "-show_format",
+    "-of",
+    "json",
+    "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-10-feature-api/YDXJ0142.MP4"
+  ],
+  "probe_json_sha256": "9e250ced20d2c71deb5fe8573e2ca19c35529d12a42fe2b25a3ad90b6be4cdbc",
+  "tracks": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_type": "video",
+      "time_base": "1/30000",
+      "start_pts": 0,
+      "duration_ts": 80080,
+      "nb_frames": "80",
+      "packet_count": 80,
+      "packet_duration_counts": {
+        "1001": 80
+      },
+      "first_pts": 0,
+      "last_pts": 79079,
+      "dts_strictly_increasing": true,
+      "first_pts_seconds": "0",
+      "end_pts_seconds": "1001/375"
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "duration_ts": 128000,
+      "nb_frames": "125",
+      "packet_count": 125,
+      "packet_duration_counts": {
+        "1024": 125
+      },
+      "first_pts": 0,
+      "last_pts": 126976,
+      "dts_strictly_increasing": true,
+      "first_pts_seconds": "0",
+      "end_pts_seconds": "8/3"
+    }
+  ],
+  "limits": [
+    "Container timestamps, not raw capture hardware timestamps",
+    "No independent current camera-side digest collected in this run",
+    "Both tracks starting at zero do not prove physical A/V capture alignment",
+    "No remux, edit, synthetic extension to 60 seconds or camera prerecord implementation"
+  ]
+}

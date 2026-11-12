@@ -1,0 +1,28 @@
+~ # cat /proc/ambarella/clock; cat /sys/power/state; cat /sys/power/disk; cat /p
+roc/loadavg
+
+Clock Information:
+        gclk_pwm:       3000000 Hz
+        gclk_ssi2:      13875000 Hz
+        gclk_ssi:       55500000 Hz
+        gclk_adc:       6000000 Hz
+        gclk_ir:        3000000 Hz
+        gclk_sd:        120000000 Hz
+        gclk_sdio:      24000000 Hz
+        pll_out_sd:     480000000 Hz
+        gclk_audio:     12288000 Hz
+        gclk_uart:      24000000 Hz
+        gclk_idsp:      276000000 Hz
+        gclk_axi:       264000000 Hz
+        gclk_cortex:    792000000 Hz
+        gclk_apb:       111000000 Hz
+        gclk_ahb:       222000000 Hz
+        gclk_core:      444000000 Hz
+        pll_out_ddr:    1200000000 Hz
+        pll_out_idsp:   276000000 Hz
+        pll_out_core:   888000000 Hz
+freeze standby mem disk
+[platform] shutdown reboot suspend 
+0.01 0.04 0.03 1/82 545
+~ # echo __YI_CAPTURE_209a31f9c1ec48e696fb3b31b449e173__
+__YI_CAPTURE_209a31f9c1ec48e696fb3b31b449e173__

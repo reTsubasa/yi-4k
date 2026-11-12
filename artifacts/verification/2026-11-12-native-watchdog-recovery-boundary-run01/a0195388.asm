@@ -1,0 +1,7 @@
+a0195388 08360be3 movw r3, #0xb608
+a019538c 78304ae3 movt r3, #0xa078
+a0195390 003093e5 ldr r3, [r3]
+a0195394 0800d3e5 ldrb r0, [r3, #8]
+a0195398 000090e2 adds r0, r0, #0
+a019539c 0100a013 movne r0, #1
+a01953a0 1eff2fe1 bx lr

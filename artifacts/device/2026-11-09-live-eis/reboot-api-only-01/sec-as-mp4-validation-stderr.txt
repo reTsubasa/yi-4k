@@ -1,0 +1,39 @@
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:7:25: warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+ 5 | let url = URL(fileURLWithPath: CommandLine.arguments[1])
+ 6 | let asset = AVURLAsset(url: url)
+ 7 | guard let track = asset.tracks(withMediaType: .video).first else {
+   |                         `- warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+ 8 |     fatalError("No video track")
+ 9 | }
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:35:20: warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+33 |     "validator": "macOS AVFoundation / AVAssetReader, decoded pixel buffers",
+34 |     "file": url.lastPathComponent,
+35 |     "width": track.naturalSize.width,
+   |                    `- warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+36 |     "height": track.naturalSize.height,
+37 |     "nominal_fps": track.nominalFrameRate,
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:36:21: warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+34 |     "file": url.lastPathComponent,
+35 |     "width": track.naturalSize.width,
+36 |     "height": track.naturalSize.height,
+   |                     `- warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+37 |     "nominal_fps": track.nominalFrameRate,
+38 |     "duration_seconds": CMTimeGetSeconds(asset.duration),
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:37:26: warning: 'nominalFrameRate' was deprecated in macOS 13.0: Use load(.nominalFrameRate) instead
+35 |     "width": track.naturalSize.width,
+36 |     "height": track.naturalSize.height,
+37 |     "nominal_fps": track.nominalFrameRate,
+   |                          `- warning: 'nominalFrameRate' was deprecated in macOS 13.0: Use load(.nominalFrameRate) instead
+38 |     "duration_seconds": CMTimeGetSeconds(asset.duration),
+39 |     "decoded_video_frames": count,
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:38:48: warning: 'duration' was deprecated in macOS 13.0: Use load(.duration) instead
+36 |     "height": track.naturalSize.height,
+37 |     "nominal_fps": track.nominalFrameRate,
+38 |     "duration_seconds": CMTimeGetSeconds(asset.duration),
+   |                                                `- warning: 'duration' was deprecated in macOS 13.0: Use load(.duration) instead
+39 |     "decoded_video_frames": count,
+40 |     "first_video_pts_seconds": first ?? -1,

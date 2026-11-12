@@ -1,0 +1,1429 @@
+{
+  "evidence_type": "New C relocation/lifetime adapter on host and compiled ARM, connected to pinned original ARM consumers with explicit stream/index/OS models",
+  "host_cases": 27,
+  "compiled_arm_cases": 27,
+  "original_arm_integration_cases": 10,
+  "results": [
+    {
+      "name": "video_callback_copy_relocate_source_reuse",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        0,
+        1,
+        0,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "audio_callback_copy_relocate_source_reuse",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        0,
+        1,
+        0,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "wrapping_source_is_contiguous_owned",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        0,
+        1,
+        0,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "last_slot_exact_arena_end_and_queue_wrap",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "held_packet_retains_backpressure_and_bytes",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        0,
+        2,
+        0,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        2,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "success_releases_once_and_advances",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        1,
+        1,
+        2,
+        0,
+        536870976,
+        16,
+        536870912,
+        536871104,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "writer_error_holds_and_poisons",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        3,
+        0,
+        1,
+        1,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        4294967295,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "success_without_payload_completion_holds_and_poisons",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        3,
+        0,
+        1,
+        1,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "invalid_completion_receipt_holds_and_poisons",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        3,
+        0,
+        1,
+        1,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "empty_finish_does_not_poison",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "video_raw_eos_normalized_without_payload",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "audio_owned_eos_without_payload",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "wrong_stream_kind_fails_closed",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "corrupt_owned_length_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "copied_length_mismatch_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "wrong_track_type_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "invalid_flags_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "false_terminal_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "arena_one_byte_short_rejected_atomic_init",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "cpu_end_overflow_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "source_cpu_alias_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "overlapping_slot_allocations_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "external_release_violation_stops_finish",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        3,
+        1,
+        2,
+        1,
+        536870912,
+        16,
+        536870912,
+        536871104,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "null_control_arguments",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "corrupt_video_eos_type_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "corrupt_video_eos_flags_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "corrupt_video_eos_copy_spans_rejected",
+      "host_status": 0,
+      "compiled_arm_status": 0,
+      "report": [
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "host_and_arm_match": true,
+      "callee_saved_and_sp_preserved": true
+    }
+  ],
+  "original_arm_integrations": [
+    {
+      "name": "video_none",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": 0,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 7,
+      "early_queue_head_after": 1,
+      "poisoned": false,
+      "output_bytes": 468192,
+      "output_sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+      "writer_owned_memory_reads": 164,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 468188,
+      "original_writer_trace": [
+        "0xa03ef858",
+        "0xa042ce28",
+        "0xa03efe74",
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000001802e0310"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0282d0310"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ]
+    },
+    {
+      "name": "video_source_wrap",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x202ffff9",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": 0,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 7,
+      "early_queue_head_after": 1,
+      "poisoned": false,
+      "output_bytes": 468192,
+      "output_sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+      "writer_owned_memory_reads": 164,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 468188,
+      "original_writer_trace": [
+        "0xa03ef858",
+        "0xa042ce28",
+        "0xa03efe74",
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000001802e0310"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0282d0310"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ]
+    },
+    {
+      "name": "video_short_write",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 0,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 468191,
+      "output_sha256": "87d8b416fa432222d63188c567c094896c962984152c77df4f1b13d4dfc11f3f",
+      "writer_owned_memory_reads": 164,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 468187,
+      "original_writer_trace": [
+        "0xa03ef858",
+        "0xa042ce28",
+        "0xa03efe74",
+        "0xa03e627c"
+      ],
+      "index_models": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000001802e0310"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "video_post_payload_index",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 0,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 468192,
+      "output_sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+      "writer_owned_memory_reads": 164,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 468188,
+      "original_writer_trace": [
+        "0xa03ef858",
+        "0xa042ce28",
+        "0xa03efe74",
+        "0xa03e627c"
+      ],
+      "index_models": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000001802e0310"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0282d0310"
+        }
+      ]
+    },
+    {
+      "name": "video_commit",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 468192,
+      "output_sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+      "writer_owned_memory_reads": 164,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 468188,
+      "original_writer_trace": [
+        "0xa03ef858",
+        "0xa042ce28",
+        "0xa03efe74",
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000001802e0310"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0282d0310"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ]
+    },
+    {
+      "name": "audio_none",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": 0,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 7,
+      "early_queue_head_after": 1,
+      "poisoned": false,
+      "output_bytes": 341,
+      "output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "writer_owned_memory_reads": 0,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 341,
+      "original_writer_trace": [
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        },
+        {
+          "track": 1,
+          "kind": 10,
+          "data_hex": "0000000000000400"
+        },
+        {
+          "commit": true,
+          "track": 1
+        }
+      ]
+    },
+    {
+      "name": "audio_source_wrap",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x202ffff9",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": 0,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 7,
+      "early_queue_head_after": 1,
+      "poisoned": false,
+      "output_bytes": 341,
+      "output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "writer_owned_memory_reads": 0,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 341,
+      "original_writer_trace": [
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "00000000f9ff0f00"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        },
+        {
+          "track": 1,
+          "kind": 10,
+          "data_hex": "0000000000000400"
+        },
+        {
+          "commit": true,
+          "track": 1
+        }
+      ]
+    },
+    {
+      "name": "audio_short_write",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 0,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 340,
+      "output_sha256": "554d409d61359c188127824da10ec5d780ca2de1f271796bfdf9f5093ecb422a",
+      "writer_owned_memory_reads": 0,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 340,
+      "original_writer_trace": [
+        "0xa03e627c"
+      ],
+      "index_models": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        }
+      ]
+    },
+    {
+      "name": "audio_post_payload_index",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 0,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 341,
+      "output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "writer_owned_memory_reads": 0,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 341,
+      "original_writer_trace": [
+        "0xa03e627c"
+      ],
+      "index_models": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        }
+      ]
+    },
+    {
+      "name": "audio_commit",
+      "compiled_c_prepare_status": 1,
+      "source_ring_overwritten_before_writer": true,
+      "source_descriptor_address": "0x20200020",
+      "relocated_address": "0x20000080",
+      "track_bounds": [
+        "0x20000000",
+        "0x20100000"
+      ],
+      "original_writer_status": -1,
+      "stock_virtual_read_cursor_after": 1,
+      "compiled_c_finish_status": 3,
+      "early_queue_head_after": 0,
+      "poisoned": true,
+      "output_bytes": 341,
+      "output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "writer_owned_memory_reads": 0,
+      "writer_original_source_memory_reads": 0,
+      "modeled_stream_bytes_copied_from_owned_address": 341,
+      "original_writer_trace": [
+        "0xa03e627c",
+        "0xa0440948",
+        "0xa0451c94"
+      ],
+      "index_models": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        },
+        {
+          "track": 1,
+          "kind": 10,
+          "data_hex": "0000000000000400"
+        },
+        {
+          "commit": true,
+          "track": 1
+        }
+      ]
+    }
+  ],
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "sample_source": {
+    "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+    "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+    "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+    "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+    "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+    "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+    "nal_types": [
+      7,
+      8,
+      5
+    ],
+    "nal_sizes": [
+      54,
+      4,
+      468188
+    ],
+    "audio_packet_position": 468240,
+    "audio_packet_bytes": 341,
+    "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+    "audio_codec": "aac",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+    "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "build": {
+    "commands": [
+      [
+        "/usr/bin/clang",
+        "-shared",
+        "-fPIC",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_mux.c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_early_copy.c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_audio_early_copy.c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_owned_mux_test.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/mux.dylib"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_mux.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_owned_mux.c.o"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_early_copy.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_early_copy.c.o"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_audio_early_copy.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_audio_early_copy.c.o"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_payload_copy.c.o"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_owned_mux_test.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_owned_mux_test.c.o"
+      ],
+      [
+        "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+        "-T",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/mux.ld",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_owned_mux.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_early_copy.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_audio_early_copy.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_1107_payload_copy.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/yi4k_owned_mux_test.c.o",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-owned-mux-ees2butu/mux.elf"
+      ]
+    ],
+    "clang_version": "Apple clang version 17.0.0 (clang-1700.0.13.3)",
+    "linker_version": "LLD 21.0.0 (/Volumes/Android/buildbot/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349) (compatible with GNU linkers)",
+    "arm_elf_sha256": "355fd208d71445fb89cd241445282cb6f4424236f8aa9dbc949a1544f74eee2d",
+    "undefined_symbols": 0,
+    "linked_relocations": 0,
+    "functions": {
+      "clear": {
+        "address": 268632900,
+        "bytes": 232
+      },
+      "original_video": {
+        "address": 268643408,
+        "bytes": 60
+      },
+      "original_audio": {
+        "address": 268643468,
+        "bytes": 60
+      },
+      "offer": {
+        "address": 268642300,
+        "bytes": 136
+      },
+      "yi4k_1107_owned_mux_init": {
+        "address": 268632064,
+        "bytes": 836
+      },
+      "yi4k_1107_owned_mux_prepare": {
+        "address": 268633132,
+        "bytes": 1620
+      },
+      "yi4k_1107_early_peek": {
+        "address": 268637136,
+        "bytes": 44
+      },
+      "yi4k_1107_owned_mux_finish": {
+        "address": 268634752,
+        "bytes": 180
+      },
+      "yi4k_1107_early_release": {
+        "address": 268637180,
+        "bytes": 60
+      },
+      "yi4k_1107_early_init": {
+        "address": 268634932,
+        "bytes": 556
+      },
+      "yi4k_1107_early_offer_frame": {
+        "address": 268635488,
+        "bytes": 1208
+      },
+      "yi4k_1107_copy_payload": {
+        "address": 268637756,
+        "bytes": 496
+      },
+      "yi4k_1107_early_on_event": {
+        "address": 268636696,
+        "bytes": 440
+      },
+      "yi4k_1107_audio_on_event": {
+        "address": 268637240,
+        "bytes": 516
+      },
+      "yi4k_owned_mux_test": {
+        "address": 268638252,
+        "bytes": 4048
+      },
+      "yi4k_owned_mux_bridge_seed": {
+        "address": 268642436,
+        "bytes": 888
+      },
+      "yi4k_owned_mux_bridge_complete": {
+        "address": 268643324,
+        "bytes": 84
+      }
+    },
+    "source_sha256": {
+      "sdk/yi4k_1107_owned_mux.c": "3289d288afa4505d9727eb15a7bd5b7af0fbece14bba1e0fd3d5d42cfcf125d4",
+      "sdk/yi4k_1107_early_copy.c": "52675f1808e90e0fac297376176c93b03d28ffc6c334bd095d7e7e9bf6d3131c",
+      "sdk/yi4k_1107_audio_early_copy.c": "e45897ffef1803f64275146b0f6b6b44064e9563bd13dddfac823c47f2d89c7c",
+      "sdk/yi4k_1107_payload_copy.c": "d4e47a2c3409970b99d912b3f1ab639d3bbfa98d411a0192b921e3b477a79df0",
+      "sdk/offline/yi4k_owned_mux_test.c": "d389bab0e339c681fa2904c5408ae1f04b5f50b572cc8164bbafbab80f4b8a98"
+    },
+    "header_sha256": {
+      "sdk/yi4k_1107_owned_mux.h": "9abd7ab04be037c1af155816f3b22f671a81a6f31c49bb8fdcfad05e235d4110",
+      "sdk/yi4k_1107_early_copy.h": "9a344099b61728a274240560db4ea5ea3d0fa69471abffb3714908806c0b3c26",
+      "sdk/yi4k_1107_audio_early_copy.h": "ad2bf7380927251f462774713280bfa5e592aa5d4c56642c00dee3b1df3b7756",
+      "sdk/yi4k_1107_audio_event.h": "68e2829a7325639b96fc9b2d298518b7bf69f664c8b61371d0dec9ae8f1f5024",
+      "sdk/yi4k_1107_payload_copy.h": "91aaa546cedc9845d2c4c7b6398f66cff55c49ecdc6c2b8cdfd04b0f9f3d3da2",
+      "sdk/yi4k_1107_video_descriptor.h": "d2dcde7b77b48dce86f37b0e48cb90a4347dfea8ba9269a89ced65b1923ea002"
+    }
+  },
+  "original_arm_harness_sha256": "ba606abc1440844c44dff5424744fd7769e22d226d1f2c0c9cbe652d75acb83b",
+  "validation_script_sha256": "de422e09f75f4c0db5fadc2d6c9d9935f2c84c4bd2812e998b73819b810c7b2b",
+  "limitations": [
+    "No device access, firmware installation, hook registration or RTOS scheduling.",
+    "Only metadata/owned mapping and fail-stop handoff; codec configuration, epoch, sync selection and PTS rebasing remain external.",
+    "Original stock virtual FIFO is synthetic RAM; stream/index/OS services remain explicit models.",
+    "Archived finalized MP4 samples are not raw encoder FIFO or SPS/PPS repetition evidence.",
+    "No complete MP4 file/index open/close, recovery, SD/DMA ownership proof, audio/video epoch or one-minute spool.",
+    "Use-complete receipts are caller attestations; C cannot prove a real writer stopped retaining the pointer."
+  ],
+  "device_access": false,
+  "camera_prerecord_implemented": false
+}

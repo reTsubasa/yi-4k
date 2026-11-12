@@ -1,0 +1,41 @@
+test_checkpoint_reserves_temporary_manifest_bytes_before_write (scripts.tests.test_prerecord_native_spool_ring.NativeSpoolRingTests.test_checkpoint_reserves_temporary_manifest_bytes_before_write) ... FAIL
+test_missing_retained_file_rejection_still_writes_audit (scripts.tests.test_prerecord_native_spool_ring.NativeSpoolRingTests.test_missing_retained_file_rejection_still_writes_audit) ... ok
+test_real_repeated_trigger_keeps_first_time_and_source (scripts.tests.test_prerecord_native_spool_ring.NativeSpoolRingTests.test_real_repeated_trigger_keeps_first_time_and_source) ... FAIL
+
+======================================================================
+FAIL: test_checkpoint_reserves_temporary_manifest_bytes_before_write (scripts.tests.test_prerecord_native_spool_ring.NativeSpoolRingTests.test_checkpoint_reserves_temporary_manifest_bytes_before_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hyc/Documents/yi4k/scripts/tests/test_prerecord_native_spool_ring.py", line 42, in test_checkpoint_reserves_temporary_manifest_bytes_before_write
+    with self.assertRaises((OSError,RuntimeError)):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (<class 'OSError'>, <class 'RuntimeError'>) not raised
+
+======================================================================
+FAIL: test_real_repeated_trigger_keeps_first_time_and_source (scripts.tests.test_prerecord_native_spool_ring.NativeSpoolRingTests.test_real_repeated_trigger_keeps_first_time_and_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hyc/Documents/yi4k/scripts/tests/test_prerecord_native_spool_ring.py", line 35, in test_real_repeated_trigger_keeps_first_time_and_source
+    self.assertEqual(self.owner.manifest['trigger'],original)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'source': 'shutter', 'at': {'numerator': 64, 'denomi[157 chars]PIO'} != {'source': 'voice', 'at': {'numerator': 63, 'denomina[155 chars]PIO'}
+- {'at': {'denominator': 1, 'numerator': 64, 'seconds': 64.0},
+?                                         ^              ^
+
++ {'at': {'denominator': 1, 'numerator': 63, 'seconds': 63.0},
+?                                         ^              ^
+
+   'binding': 'host typed event, not spoken recognition or physical GPIO',
+   'decision': 'accepted',
+   'other_source_decision': 'duplicate',
+-  'source': 'shutter'}
+?             ^^^^^ -
+
++  'source': 'voice'}
+?             ^^^^
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.039s
+
+FAILED (failures=2)

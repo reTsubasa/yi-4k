@@ -1,0 +1,16 @@
+{
+  "diagnostic_phase_complete": true,
+  "firmware_fingerprint": true,
+  "pool_text_binary_match": true,
+  "videoanal_text_binary_match": true,
+  "cleanup_hash_verified": true,
+  "api_final_idle": true,
+  "settings_subset_equal": true,
+  "python_compile": true,
+  "report_links": true,
+  "source_sha256": {
+    "scripts/device_rtos_readiness_probe.py": "c77016ac04e15476f1a50495ccace3579447288044640e0164c0054c9f3cf68f",
+    "scripts/analyze_rtos_readiness_probe.py": "d31b49a79eac4fbfedc71d5be2ce389b51f70487e0592a362c65d8ebf9fba7ab",
+    "scripts/analyze_rtos_console_routes.py": "e5850c6c3045f7751b90c1210af40f223107a1e77098651c688167c8d664cef8"
+  }
+}

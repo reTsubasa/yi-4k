@@ -1,0 +1,302 @@
+[
+  {
+    "offset": "0x4c9",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x4d8",
+    "text": "_init"
+  },
+  {
+    "offset": "0x4de",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x4e4",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x500",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x51a",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0x529",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x53d",
+    "text": "AmbaEventNotify_Init"
+  },
+  {
+    "offset": "0x552",
+    "text": "socket"
+  },
+  {
+    "offset": "0x559",
+    "text": "fputs"
+  },
+  {
+    "offset": "0x55f",
+    "text": "inet_addr"
+  },
+  {
+    "offset": "0x569",
+    "text": "connect"
+  },
+  {
+    "offset": "0x571",
+    "text": "perror"
+  },
+  {
+    "offset": "0x578",
+    "text": "close"
+  },
+  {
+    "offset": "0x57e",
+    "text": "getsockname"
+  },
+  {
+    "offset": "0x58a",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x592",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x599",
+    "text": "AmbaEventNotify_Release"
+  },
+  {
+    "offset": "0x5b1",
+    "text": "shutdown"
+  },
+  {
+    "offset": "0x5ba",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0x5cf",
+    "text": "AmbaEventNotify_Send"
+  },
+  {
+    "offset": "0x5e4",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0x5f8",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x5ff",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x611",
+    "text": "AmbaEventNotifier_Reg_cbEvent"
+  },
+  {
+    "offset": "0x62f",
+    "text": "AmbaEventNotifier_ExecEventProcess"
+  },
+  {
+    "offset": "0x652",
+    "text": "malloc"
+  },
+  {
+    "offset": "0x663",
+    "text": "memmove"
+  },
+  {
+    "offset": "0x66b",
+    "text": "AmbaEventNotifier_StopEventProcess"
+  },
+  {
+    "offset": "0x68e",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0x69c",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x6a6",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x6ad",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x6b9",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x6c7",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x6d3",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x6e0",
+    "text": "libambaeventnotifier.so"
+  },
+  {
+    "offset": "0x6f8",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0xa51",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0xa81",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0xf44",
+    "text": "AmbaEventNotify_Init"
+  },
+  {
+    "offset": "0xf59",
+    "text": "AmbaEventNotify_Send"
+  },
+  {
+    "offset": "0xf6e",
+    "text": "AmbaEventNotifier_Reg_cbEvent"
+  },
+  {
+    "offset": "0xf8c",
+    "text": "AmbaEventNotifier_ExecEventProcess"
+  },
+  {
+    "offset": "0xfaf",
+    "text": "Could not create socket"
+  },
+  {
+    "offset": "0xfc8",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0xfd2",
+    "text": "connect failed. Error"
+  },
+  {
+    "offset": "0xfe8",
+    "text": "%s: sock_init fail!"
+  },
+  {
+    "offset": "0xffd",
+    "text": "%s: param outof limmit (%u,%u)"
+  },
+  {
+    "offset": "0x101d",
+    "text": "%s: Fail to create client."
+  },
+  {
+    "offset": "0x1039",
+    "text": "%s: fail to do ambaipc_clnt_call(). %d"
+  },
+  {
+    "offset": "0x1061",
+    "text": "%s: never inited"
+  },
+  {
+    "offset": "0x1073",
+    "text": "%s: Cannot malloc data_in"
+  },
+  {
+    "offset": "0x108e",
+    "text": "%s: Fail to do recv()!"
+  },
+  {
+    "offset": "0x10a6",
+    "text": "AmbaEventNotifier_ExecEventProcess"
+  },
+  {
+    "offset": "0x1259",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x128a",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x1294",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x12a7",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x12ad",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x12b5",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x12bd",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x12ca",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x12d9",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x12e2",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x12eb",
+    "text": ".init"
+  },
+  {
+    "offset": "0x12f1",
+    "text": ".text"
+  },
+  {
+    "offset": "0x12f7",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x12fd",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x1305",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x130f",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x131b",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x132c",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x133a",
+    "text": ".data"
+  },
+  {
+    "offset": "0x1345",
+    "text": ".ARM.attributes"
+  }
+]

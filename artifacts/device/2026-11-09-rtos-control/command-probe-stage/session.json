@@ -1,0 +1,111 @@
+{
+  "action": "stage",
+  "host": "192.168.42.1",
+  "probe": {
+    "identifier": "0df64432c397",
+    "begin": "/tmp/yi4k_probe_0df64432c397_begin",
+    "done": "/tmp/yi4k_probe_0df64432c397_done",
+    "output": "/tmp/SD0/yi4k_probe_0df64432c397.bin",
+    "script": "t ipc rpc clnt exec1 'touch /tmp/yi4k_probe_0df64432c397_begin'\nsavebin c:\\yi4k_probe_0df64432c397.bin 0xA0394BA0 l 8\nt ipc rpc clnt exec1 'touch /tmp/yi4k_probe_0df64432c397_done'\n\n",
+    "script_sha256": "13d3a42a695bc9a71e0e0ce8da3f3788006f54ceffd195c57a8a01d5f134c53a"
+  },
+  "api_events": [
+    {
+      "host_monotonic": 1025662.22853475,
+      "utc": "2026-11-09T02:22:45.313611+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1025663.091574875,
+      "utc": "2026-11-09T02:22:46.176664+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1025663.091675958,
+      "utc": "2026-11-09T02:22:46.176752+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1025663.098035083,
+      "utc": "2026-11-09T02:22:46.183117+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1025663.098104625,
+      "utc": "2026-11-09T02:22:46.183181+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1025663.111234208,
+      "utc": "2026-11-09T02:22:46.196316+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1025663.111302875,
+      "utc": "2026-11-09T02:22:46.196379+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1025663.13389,
+      "utc": "2026-11-09T02:22:46.218972+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "started_utc": "2026-11-09T02:22:45.292076+00:00",
+  "memory_mapping_run": false,
+  "firmware_patched": false,
+  "reboot_requested": false,
+  "status_before": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "result": {
+    "script_sha256": "13d3a42a695bc9a71e0e0ce8da3f3788006f54ceffd195c57a8a01d5f134c53a",
+    "created_exclusively": true
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "started_utc": "2026-11-09T01:25:28.045212+00:00",
+  "host": "192.168.42.1",
+  "image_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+  "record_seconds": 8.0,
+  "interval": 0.05,
+  "api_events": [
+    {
+      "host_monotonic": 1022225.11004675,
+      "utc": "2026-11-09T01:25:28.062708+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1022225.930972458,
+      "utc": "2026-11-09T01:25:28.883627+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1022225.931040833,
+      "utc": "2026-11-09T01:25:28.883688+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1022225.938827625,
+      "utc": "2026-11-09T01:25:28.891482+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1022225.938942375,
+      "utc": "2026-11-09T01:25:28.891594+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1022225.950091458,
+      "utc": "2026-11-09T01:25:28.902747+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1022225.950252375,
+      "utc": "2026-11-09T01:25:28.902899+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 13
+      }
+    },
+    {
+      "host_monotonic": 1022225.961533541,
+      "utc": "2026-11-09T01:25:28.914189+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 13,
+        "type": "battery",
+        "param": 99
+      }
+    },
+    {
+      "host_monotonic": 1022228.532685458,
+      "utc": "2026-11-09T01:25:31.485309+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 513
+      }
+    },
+    {
+      "host_monotonic": 1022236.548393458,
+      "utc": "2026-11-09T01:25:39.500923+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 514
+      }
+    },
+    {
+      "host_monotonic": 1022241.5591265,
+      "utc": "2026-11-09T01:25:44.511593+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    }
+  ],
+  "memory_read_only": true,
+  "settings_changed": false,
+  "limitations": [
+    "DRAM reads are not atomic or cache synchronized.",
+    "Host/API timestamps and target sample timestamps are separate clocks.",
+    "Normal recording creates a video on SD; no existing file is removed."
+  ],
+  "settings_before": {
+    "video_standard": "NTSC",
+    "video_resolution": "1920x1080 30P 16:9",
+    "video_quality": "S.Fine",
+    "sd_card_status": "insert",
+    "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "hw_version": "YDXJ2_V13LW",
+    "system_mode": "record",
+    "iq_eis_enable": "on"
+  },
+  "battery": {
+    "rval": 0,
+    "msg_id": 13,
+    "type": "battery",
+    "param": 99
+  },
+  "sampler_ready_host_monotonic": 1022226.527820291,
+  "error": "TimeoutError('Camera API response timeout')",
+  "cleanup_stop_error": "TimeoutError('Camera API response timeout')",
+  "api_close_error": "TimeoutError('Camera API response timeout')",
+  "finished_utc": "2026-11-09T01:25:47.518636+00:00"
+}

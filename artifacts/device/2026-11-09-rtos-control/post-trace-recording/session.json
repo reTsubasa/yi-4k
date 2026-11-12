@@ -1,0 +1,275 @@
+{
+  "started_utc": "2026-11-09T02:50:42.585710+00:00",
+  "host": "192.168.42.1",
+  "api_events": [
+    {
+      "host_monotonic": 1027339.509979458,
+      "utc": "2026-11-09T02:50:42.604419+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1027340.388565208,
+      "utc": "2026-11-09T02:50:43.483013+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1027340.388649083,
+      "utc": "2026-11-09T02:50:43.483089+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1027340.395788958,
+      "utc": "2026-11-09T02:50:43.490240+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1027340.395865708,
+      "utc": "2026-11-09T02:50:43.490306+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1027340.408086708,
+      "utc": "2026-11-09T02:50:43.502531+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1027340.408193791,
+      "utc": "2026-11-09T02:50:43.502633+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 13
+      }
+    },
+    {
+      "host_monotonic": 1027340.431399708,
+      "utc": "2026-11-09T02:50:43.525847+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 13,
+        "type": "battery",
+        "param": 100
+      }
+    },
+    {
+      "host_monotonic": 1027340.431475916,
+      "utc": "2026-11-09T02:50:43.525916+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 513
+      }
+    },
+    {
+      "host_monotonic": 1027341.20729275,
+      "utc": "2026-11-09T02:50:44.301745+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 513
+      }
+    },
+    {
+      "host_monotonic": 1027343.212595375,
+      "utc": "2026-11-09T02:50:46.307066+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 514
+      }
+    },
+    {
+      "host_monotonic": 1027343.212971125,
+      "utc": "2026-11-09T02:50:46.307429+00:00",
+      "direction": "receive",
+      "message": {
+        "msg_id": 7,
+        "type": "start_video_record"
+      }
+    },
+    {
+      "host_monotonic": 1027343.212993375,
+      "utc": "2026-11-09T02:50:46.307449+00:00",
+      "direction": "receive",
+      "message": {
+        "msg_id": 7,
+        "type": "battery",
+        "param": "100"
+      }
+    },
+    {
+      "host_monotonic": 1027343.460106708,
+      "utc": "2026-11-09T02:50:46.554568+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 514
+      }
+    },
+    {
+      "host_monotonic": 1027343.460159333,
+      "utc": "2026-11-09T02:50:46.554616+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1027343.466335875,
+      "utc": "2026-11-09T02:50:46.560793+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "Unknown"
+      }
+    },
+    {
+      "host_monotonic": 1027344.471406458,
+      "utc": "2026-11-09T02:50:47.565874+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1027344.471614333,
+      "utc": "2026-11-09T02:50:47.566077+00:00",
+      "direction": "receive",
+      "message": {
+        "msg_id": 7,
+        "type": "video_record_complete",
+        "param": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0138.MP4",
+        "msize": 16661328,
+        "mdate": "2014-01-01 02:24:32",
+        "sub": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0138.SEC",
+        "ssize": 275600,
+        "sdate": "2014-01-01 02:24:32"
+      }
+    },
+    {
+      "host_monotonic": 1027344.471629,
+      "utc": "2026-11-09T02:50:47.566091+00:00",
+      "direction": "receive",
+      "message": {
+        "msg_id": 7,
+        "type": "vf_start"
+      }
+    },
+    {
+      "host_monotonic": 1027344.48443275,
+      "utc": "2026-11-09T02:50:47.578901+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "vf"
+      }
+    },
+    {
+      "host_monotonic": 1027344.484527833,
+      "utc": "2026-11-09T02:50:47.578991+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1027344.494705833,
+      "utc": "2026-11-09T02:50:47.589174+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "memory_probe_run": false,
+  "settings_changed": false,
+  "requested_record_seconds": 2.0,
+  "status_before": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "settings_before": {
+    "video_standard": "NTSC",
+    "video_resolution": "1920x1080 30P 16:9",
+    "video_quality": "S.Fine",
+    "sd_card_status": "insert",
+    "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "hw_version": "YDXJ2_V13LW",
+    "system_mode": "record",
+    "iq_eis_enable": "on"
+  },
+  "power": {
+    "rval": 0,
+    "msg_id": 13,
+    "type": "battery",
+    "param": 100
+  },
+  "record_start_reply": {
+    "rval": 0,
+    "msg_id": 513
+  },
+  "record_start_ack_host_monotonic": 1027341.207347,
+  "record_stop_reply": {
+    "rval": 0,
+    "msg_id": 514
+  },
+  "record_stop_ack_host_monotonic": 1027343.4601505,
+  "status_after": [
+    {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "Unknown"
+    },
+    {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "vf"
+    }
+  ],
+  "finished_utc": "2026-11-09T02:50:47.589359+00:00"
+}

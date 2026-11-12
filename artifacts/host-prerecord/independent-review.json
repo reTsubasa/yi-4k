@@ -1,0 +1,111 @@
+{
+  "scope": "independent host media review; no device access or firmware execution",
+  "generated_at_utc": "2026-11-10T03:21:41.659873+00:00",
+  "reviewer": "/root/prerecord_static",
+  "generation_arguments": [
+    "-v",
+    "error",
+    "-nostdin",
+    "-n",
+    "-f",
+    "lavfi",
+    "-i",
+    "testsrc2=size=96x64:rate=30000/1001",
+    "-f",
+    "lavfi",
+    "-i",
+    "sine=frequency=997:sample_rate=48000",
+    "-t",
+    "74",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-g",
+    "60",
+    "-keyint_min",
+    "60",
+    "-sc_threshold",
+    "0",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "64k"
+  ],
+  "replay_parameters": {
+    "trigger_us": 65000000,
+    "stop_us": 71000000,
+    "window_us": 60000000,
+    "segment_seconds": "2"
+  },
+  "files_retained": false,
+  "retention_note": "Fixture and replay directory created in TemporaryDirectory and removed; hashes, parameters, tool identities and measurements retained here.",
+  "tools": {
+    "ffmpeg": {
+      "path": "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffmpeg",
+      "sha256": "ca8945e5eef946a246d29c943b21f10db345a2ef050dd7ea1c77f877277dc2fa",
+      "version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "path": "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe",
+      "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f",
+      "version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers"
+    }
+  },
+  "code_sha256": {
+    "prerecord_buffer.py": "aed49b8ee95881e1a759f6246fa8f262bff479ebea142dd770c10a05f225c2df",
+    "prerecord_replay.py": "3368c8674d185eec5e2cb6e35368eff3cfd77f4c0fc61242e1546c5a2d5f9407"
+  },
+  "source_sha256": "648d910500d8dbd99a9fe22a6f3aa6efdbd8e03d8d680364c786ed5fcfca39b3",
+  "source_sha256_after": "648d910500d8dbd99a9fe22a6f3aa6efdbd8e03d8d680364c786ed5fcfca39b3",
+  "source_unchanged": true,
+  "clip_sha256": "299838822fad26b49cffa4f777d1735516c58567c365cc0b95ea58da6965df19",
+  "summary": {
+    "state": "complete",
+    "full_window_available": true,
+    "available_pretrigger_us": 60929267,
+    "stop_overshoot_us": 1138733
+  },
+  "full_decode_passed": true,
+  "clip_duration": "68.125000",
+  "packet_checks": {
+    "v:0": {
+      "source_packet_count": 2218,
+      "clip_packet_count": 2040,
+      "first_source_packet_index": 120,
+      "encoded_packets_contiguous_and_unchanged": true,
+      "pts_time": {
+        "offset_min_seconds": -3.94700000000001,
+        "offset_max_seconds": -3.9469999999999885,
+        "offset_spread_seconds": 2.1316282072803006e-14
+      },
+      "dts_time": {
+        "offset_min_seconds": -3.94700000000001,
+        "offset_max_seconds": -3.9469999999999885,
+        "offset_spread_seconds": 2.1316282072803006e-14
+      },
+      "strictly_increasing_dts": true,
+      "dts_step_min_seconds": 0.03336599999999379,
+      "dts_step_max_seconds": 0.03336700000001258
+    },
+    "a:0": {
+      "source_packet_count": 3470,
+      "clip_packet_count": 3191,
+      "first_source_packet_index": 186,
+      "encoded_packets_contiguous_and_unchanged": true,
+      "pts_time": {
+        "offset_min_seconds": -3.946667000000005,
+        "offset_max_seconds": -3.9466659999999933,
+        "offset_spread_seconds": 1.0000000116860974e-06
+      },
+      "dts_time": {
+        "offset_min_seconds": -3.946667000000005,
+        "offset_max_seconds": -3.9466659999999933,
+        "offset_spread_seconds": 1.0000000116860974e-06
+      },
+      "strictly_increasing_dts": true,
+      "dts_step_min_seconds": 0.021332999999998492,
+      "dts_step_max_seconds": 0.021334000000010178
+    }
+  }
+}

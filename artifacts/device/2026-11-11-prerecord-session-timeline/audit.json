@@ -1,0 +1,860 @@
+{
+  "scope": "original complete RestoreDTS/count reset/ResetMovie and real Peek/ConvertPTS; synthetic RAM",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "harness": {
+    "path": "scripts/prerecord-fifo-lifecycle.py",
+    "sha256": "18d617e70051f649267ab37f2d1ceafc7e5d2446ac60529d07315d0e86001906"
+  },
+  "sources": [
+    {
+      "entry": "0xa01f3124",
+      "body_ranges_inclusive": [
+        "a01f3124-a01f3273"
+      ],
+      "raw_sha256": "f49523cade9d3cc8cac68cd0ffd701c162911385a6c65e27444b29a45244469a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f3124.c",
+      "pseudocode_sha256": "a4f8270d856793b91472789f72e3033eb8ca4af36517752412382ca0c21e183a"
+    },
+    {
+      "entry": "0xa01f705c",
+      "body_ranges_inclusive": [
+        "a01f705c-a01f721b"
+      ],
+      "raw_sha256": "f825d72102b764f4769ac2b50f6d196fecb103e62a5b0536a8f37c9c874706d6",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f705c.c",
+      "pseudocode_sha256": "9710e562f7ff8ddf97ae43ec3fe773f8995bf599cd3d61e79358d302f686df80"
+    },
+    {
+      "entry": "0xa0451960",
+      "body_ranges_inclusive": [
+        "a0451960-a0451afb"
+      ],
+      "raw_sha256": "1319750e3ed5aa154c162cde27c03503089b393ce5af4ffad472cf58f06d3c07",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0451960.c",
+      "pseudocode_sha256": "b7aeb7c10aefad137cf102a35553f1a8c00f961dcf9a25152be954d97ef45d32"
+    },
+    {
+      "entry": "0xa01f6be8",
+      "body_ranges_inclusive": [
+        "a01f6be8-a01f705b"
+      ],
+      "raw_sha256": "64c9f7af6452fabeb41a993da35999eeccb3b73c5e6e71bc7f50ff0160d55a78",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6be8.c",
+      "pseudocode_sha256": "0d2a9f00248262ffbe70a421443c3c60d71056992777d0548d65ce605adb6be4"
+    },
+    {
+      "entry": "0xa01f69b0",
+      "body_ranges_inclusive": [
+        "a01f69b0-a01f6b43"
+      ],
+      "raw_sha256": "c2e20414e9507343627fd534237b1b0a9b2682225d966037f7d8446978c12134",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f69b0.c",
+      "pseudocode_sha256": "8f0c0581bbf5069043c1e54866a7c511d2d8c8232921a9cfd2da848220c2933b"
+    },
+    {
+      "entry": "0xa01f721c",
+      "body_ranges_inclusive": [
+        "a01f6b44-a01f6be7",
+        "a01f721c-a01f728b"
+      ],
+      "raw_sha256": "bdfea7215a11a623533528f8eb0146ff5f2ee0e324efe5bf250de4438358ebd4",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f721c.c",
+      "pseudocode_sha256": "35e8600075452d73d0c40448fcc46f3015d720cfc2125e314516f374d9de17b1"
+    },
+    {
+      "entry": "0xa04404d8",
+      "body_ranges_inclusive": [
+        "a0440394-a044042b",
+        "a04404d8-a044055b"
+      ],
+      "raw_sha256": "d4a23b0c6ef20b0d5dcd578ad58a2b1b8ba4f91e0b50c7287fc9f8ee52a285a6",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04404d8.c",
+      "pseudocode_sha256": "4c07978b25e326668fda5c7a71c6e285cb8f25f69a10a1422be3bf56b44b20fd"
+    },
+    {
+      "entry": "0xa01f68b8",
+      "body_ranges_inclusive": [
+        "a01f68b8-a01f69af"
+      ],
+      "raw_sha256": "8aafcc720707b40b136e784122bcf2f1273429976357dee54f27d76ece38e759",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f68b8.c",
+      "pseudocode_sha256": "0ce6d075932a1e8d7011a66d58a44c6e355c8f99f56a53dec8f97ffd9712ae38"
+    },
+    {
+      "entry": "0xa03e5b5c",
+      "body_ranges_inclusive": [
+        "a03e5b5c-a03e600f"
+      ],
+      "raw_sha256": "77e990690eeb5ed4dffa6e122cc171ef4b3b7648178244912c92245ba11a2446",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e5b5c.c",
+      "pseudocode_sha256": "f8df91011d3f695ac066b3d89e2f0aed881daba9e8a9891be4c2e3f6d46bbed3"
+    },
+    {
+      "entry": "0xa029c680",
+      "body_ranges_inclusive": [
+        "a029c680-a029c6db"
+      ],
+      "raw_sha256": "037cf35a29ba9bc6e0a6efd15a2cff1b70e4663475b61e651b0289af0f5db0b8",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029c680.c",
+      "pseudocode_sha256": "a3024445be10834e9911943ee702708c407bcfedde05eb5080e016be566c1615"
+    }
+  ],
+  "instruction_pins": 11,
+  "cases": [
+    {
+      "name": "audio_trails_by_one_synthetic_audio_period",
+      "input_dts": [
+        900000,
+        901920
+      ],
+      "preset_global": 0,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 900000,
+      "output_dts": [
+        0,
+        1920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 900000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "audio_leads_video",
+      "input_dts": [
+        903000,
+        900000
+      ],
+      "preset_global": 0,
+      "source_video_pts": 4887621345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 900000,
+      "output_dts": [
+        3000,
+        0
+      ],
+      "delta_before": -3000,
+      "delta_after": -3000,
+      "global_after": 900000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "equal_track_boundaries",
+      "input_dts": [
+        900000,
+        900000
+      ],
+      "preset_global": 0,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 900000,
+      "output_dts": [
+        0,
+        0
+      ],
+      "delta_before": 0,
+      "delta_after": 0,
+      "global_after": 900000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "u64_dts_with_low_word_carry",
+      "input_dts": [
+        4294968000,
+        4294969920
+      ],
+      "preset_global": 0,
+      "source_video_pts": 9181686345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 4294968000,
+      "output_dts": [
+        0,
+        1920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 4294968000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x1"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "existing_global_smaller_than_shortest",
+      "input_dts": [
+        900000,
+        901920
+      ],
+      "preset_global": 600000,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 600000,
+      "output_dts": [
+        300000,
+        301920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 600000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "existing_global_larger_than_shortest",
+      "input_dts": [
+        900000,
+        901920
+      ],
+      "preset_global": 1200000,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 900000,
+      "output_dts": [
+        0,
+        1920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 1200000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "audio_raw_pts_noise_irrelevant_to_this_reset",
+      "input_dts": [
+        900000,
+        901920
+      ],
+      "preset_global": 0,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 18446744073709551615,
+      "empty_video_fifo": false,
+      "reset_status": 0,
+      "selected_common_subtrahend": 900000,
+      "output_dts": [
+        0,
+        1920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 900000,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": 0,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        },
+        {
+          "entry": "0xa01f6be8",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        },
+        {
+          "entry": "0xa01f69b0",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f721c",
+          "r0": "0x10000078",
+          "r1": "0x10000000"
+        },
+        {
+          "entry": "0xa03e5b5c",
+          "r0": "0x10000078",
+          "r1": "0x100080a0"
+        }
+      ],
+      "diagnostics": [],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "empty_video_fifo_is_error_not_zero_origin",
+      "input_dts": [
+        900000,
+        901920
+      ],
+      "preset_global": 0,
+      "source_video_pts": 4887618345,
+      "audio_descriptor_noise": 1234605616436508552,
+      "empty_video_fifo": true,
+      "reset_status": -1,
+      "selected_common_subtrahend": null,
+      "output_dts": [
+        900000,
+        901920
+      ],
+      "delta_before": 1920,
+      "delta_after": 1920,
+      "global_after": 0,
+      "retained_descriptor": "0x100080a0",
+      "real_fifo_peeks": [
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "fifo_cursor_and_queue_preserved": true,
+      "audio_fifo_reads": [],
+      "audio_descriptor_reads": [],
+      "first_video_converted_pts": null,
+      "real_function_calls": [
+        {
+          "entry": "0xa04404d8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f68b8",
+          "r0": "0x10000000",
+          "r1": "0x0"
+        },
+        {
+          "entry": "0xa01f3124",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa01f705c",
+          "r0": "0x10000000",
+          "r1": "0x2"
+        },
+        {
+          "entry": "0xa0451960",
+          "r0": "0x10004000",
+          "r1": "0x1001ef0c"
+        }
+      ],
+      "diagnostics": [
+        {
+          "format_pointer": "0xa05843e0"
+        },
+        {
+          "format_pointer": "0xa05882d0"
+        }
+      ],
+      "external_models": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "stub_scope": "Inherited FIFO harness RTOS mutex, allocator, queue, diagnostics, callback models; only mutex and error diagnostics reached here. Original memcpy, division, FIFO Peek and PTS helpers are not stubbed.",
+  "reached_model_kinds": [
+    "lock_model",
+    "unlock_model"
+  ],
+  "proven": [
+    "Successful unadjusted synthetic video boundary uses one common DTS subtrahend for both tracks",
+    "Post-AdjustDTS A/V mux-state difference retained by ResetMovie",
+    "Video FIFO cursor/descriptor retained through the complete reset",
+    "First retained video descriptor becomes new origin and converts to zero",
+    "This reset does not read an audio raw descriptor PTS"
+  ],
+  "not_proven": [
+    "Common ADC/sensor hardware epoch",
+    "Arbitrary AdjustDTS correction paths, reordering or invalid configuration",
+    "Real scheduler/cache/DMA/payload lifetime or cross-file playable continuity",
+    "Actual file/index Open/Close and producer continuity",
+    "Camera-side one-minute prerecord"
+  ],
+  "target_access": false,
+  "target_written": false
+}

@@ -1,0 +1,159 @@
+{
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "input_sha256": {
+    "artifacts/device/2026-11-09-linux/sys_sw_partition.bin": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "artifacts/device/2026-11-09-rtos-logging/kernel-head.bin": "d729a6faf6f274378be6ab60d6ee51d604b24e87a0b2ddcff55a13e5219be83b",
+    "artifacts/device/2026-11-09-rtos-logging/kernel-mem-drivers.bin": "b1598f4d511f7d6323d702988fd2b1bf8917f6cf90b32a2523fd2785abd3e7ad"
+  },
+  "focused_export_count": 40,
+  "native_logging_runtime_verified": true,
+  "logged_short_recording_decoded": true,
+  "video": {
+    "file": "artifacts/device/2026-11-09-rtos-logging/logged-recording/YDXJ0136.MP4",
+    "bytes": 31400038,
+    "sha256": "c4c3040fa00d536637632c1d8e2d8403a87e78473a3f6382a0704de91fff91cf",
+    "validation": {
+      "completed": true,
+      "decoded_video_frames": 109,
+      "duration_seconds": 3.6369666666666665,
+      "error": "",
+      "file": "YDXJ0136.MP4",
+      "first_video_pts_seconds": 0,
+      "height": 1080,
+      "last_video_pts_seconds": 3.6036,
+      "nominal_fps": 29.970029830932617,
+      "reader_status": 2,
+      "validator": "macOS AVFoundation / AVAssetReader, decoded pixel buffers",
+      "width": 1920
+    }
+  },
+  "modes": [
+    {
+      "index": 0,
+      "start_tick": 964,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "GyroParam.OffsetX": 8388608,
+        "GyroParam.OffsetY": 8388608,
+        "GyroCalibInfo.SenseX": 33536,
+        "GyroCalibInfo.SenseY": 33536,
+        "GyroInfo.VolDivDen": 1,
+        "GyroCalibInfo.SenseZ": 33536,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      }
+    },
+    {
+      "index": 1,
+      "start_tick": 233143,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      }
+    },
+    {
+      "index": 2,
+      "start_tick": 234043,
+      "sensor_geometry": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532",
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 2182,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 18,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 2160,
+        "CapStartY": 0,
+        "DlyMs": 16
+      }
+    },
+    {
+      "index": 3,
+      "start_tick": 238743,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      }
+    }
+  ],
+  "pending_preference_fields": [
+    "0xa170404e",
+    "0xa170404f"
+  ],
+  "active_enable_fields": [
+    "0xa1704044",
+    "0xa1704045",
+    "0xa1704046"
+  ],
+  "gyro_log_init": {
+    "address": "0xa0394ba0",
+    "instructions": [
+      "mov r0,r3",
+      "bx lr"
+    ],
+    "scope": "This initialization hook is a stub; other gyro export paths not excluded."
+  },
+  "bounded_error_counts": {
+    "Eis-Warp calculation not in-time": 0,
+    "Warp content not ready last frame": 0
+  },
+  "memory_probe_run_this_experiment": false,
+  "rsc_patched": false,
+  "final_status": {
+    "uptime": "555.40 534.12",
+    "log_marker_exists": false,
+    "temporary_log_dirs": [],
+    "autoexec_exists": false,
+    "temporary_log_mounts": []
+  },
+  "final_api_status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "limitations": [
+    "Only selected printed events are extracted.",
+    "Native log buffering can lose, truncate or reorder messages.",
+    "Mode initialization and enable requests do not prove every-frame execution.",
+    "EnablePref/RscEnablePref are pending requests, not active enable flags.",
+    "No individual gyro samples or exposure-aligned frame timestamps recovered.",
+    "Internal sensor geometry is not encoded video resolution.",
+    "No measured stabilization or jelly improvement.",
+    "Native logger can remain active in this boot after marker removal.",
+    "Previous hang cause remains unconfirmed.",
+    "No arbitrary RTOS code execution established."
+  ]
+}

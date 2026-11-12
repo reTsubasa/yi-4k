@@ -1,0 +1,29 @@
+CVPR 2026 Open Access Repository
+CVPR 2026 open access
+These CVPR 2026 papers are the Open Access versions, provided by the
+Computer Vision Foundation.
+Except for the watermark, they are identical to the accepted versions;
+the final published version of the proceedings is available on IEEE Xplore.
+This material is presented to ensure timely dissemination of scholarly and technical work.
+Copyright and all rights therein are retained by authors or by other copyright holders.
+All persons copying this information are expected to adhere to the terms and constraints invoked
+by each author's copyright.
+Powered by:
+Sponsored by:
+No Labels, No Look-Ahead: Unsupervised Online Video Stabilization with Classical Priors
+Tao Liu, Kan Ren, Gang Wan, Shibo Wen; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026, pp. 6868-6877
+Abstract
+We propose a novel unsupervised framework for online video stabilization. Unlike deep learning-based stabilizers that require paired stable/unstable datasets, our method models the classical three-stage stabilization pipeline and integrates a multithreaded buffering mechanism, effectively addressing three key challenges of end-to-end learning: limited data, poor controllability, and inefficiency on resource-constrained hardware. Existing benchmarks mainly focus on handheld, forward-view, visible-light videos, restricting the application of stabilization in domains such as UAV nighttime remote sensing. To fill this gap, we introduce a new multimodal UAV aerial video dataset (UAV-Test). Experiments show that our approach consistently outperforms state-of-the-art online stabilizers in both quantitative metrics and visual quality, while achieving performance comparable to that of offline methods.
+Related Material
+[pdf]
+[supp]
+[arXiv]
+[bibtex]
+@InProceedings{Liu_2026_CVPR,
+author    = {Liu, Tao and Ren, Kan and Wan, Gang and Wen, Shibo},
+title     = {No Labels, No Look-Ahead: Unsupervised Online Video Stabilization with Classical Priors},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month     = {June},
+year      = {2026},
+pages     = {6868-6877}
+}

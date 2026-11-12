@@ -1,0 +1,285 @@
+{
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "device_contacted": false,
+  "trampoline": "0xA01E5BD4",
+  "descriptor_setter": "0xA01E5CE8",
+  "selector_region": [
+    "0xA0187BC8",
+    "0xA0187BDC"
+  ],
+  "selector_callsite": "0xA0187BDC",
+  "manager_object": "0xA13A21C0",
+  "descriptor_field_offset": "0x1AC",
+  "descriptor_pointer_slot": "0xA13A236C",
+  "mutex": "0xA13A22F0",
+  "task": {
+    "object": "0xA13A20EC",
+    "priority": 110,
+    "arg": 0,
+    "stack": "0xA13901C0",
+    "stack_bytes": 65536,
+    "auto_start": 1,
+    "later_core_exclusion_mask": 1
+  },
+  "descriptors": [
+    {
+      "address": "0xa06cd13c",
+      "entry": "0xa019d1e0",
+      "detach_request": "0xa019c3a8",
+      "descriptor_prefix_hex": "e0d119a0a8c319a0"
+    },
+    {
+      "address": "0xa06d1810",
+      "entry": "0xa01bd5a4",
+      "detach_request": "0xa01bd570",
+      "descriptor_prefix_hex": "a4d51ba070d51ba0"
+    }
+  ],
+  "detach_message": "0xF0010001",
+  "observations": [
+    "Boot attaches a fixed descriptor before creating the host-control-manager task.",
+    "Entry dispatch is a tail branch without acquiring the attach/detach mutex.",
+    "Detach holds the mutex while invoking descriptor+4; it does not clear the pointer.",
+    "Both descriptor+4 callbacks enqueue exit message F0010001 with an infinite wait.",
+    "TaskCreate auto_start=1 precedes core exclusion; no additional TaskResume is present.",
+    "A01E6258 clears 0x12220 bytes starting at A13901C0 before attach/init."
+  ],
+  "limitations": [
+    "Static bytes and ABI reconstruction only; no task was redirected or restarted.",
+    "No safe hot replacement or custom native first execution is established.",
+    "Descriptor size beyond the first two pointer words is not established.",
+    "Ghidra PARAM xref A06DD13C disagrees with bytes; actual selected pointer is A06CD13C."
+  ],
+  "function_evidence": {
+    "app_main_boot": {
+      "entry": "0xa018756c",
+      "old_export_body_identical": true,
+      "sha256": "aaa8ce45e697f4d020423ad57b799a22ac8a7aa040c69105b5d89d56f1d15105",
+      "ranges": [
+        [
+          "0xa018756c",
+          "0xa0187de8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/app_main_boot.asm"
+    },
+    "hcmgr_attach": {
+      "entry": "0xa01e5ce8",
+      "old_export_body_identical": true,
+      "sha256": "cf75c9fe93d9bc12acb98e84e2aec0c7252b7354881b9c52d37fb0194fe99842",
+      "ranges": [
+        [
+          "0xa01e5ce8",
+          "0xa01e5d40"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_attach.asm"
+    },
+    "hcmgr_detach_request": {
+      "entry": "0xa01e5d44",
+      "old_export_body_identical": true,
+      "sha256": "0346e462d769b6f784aceff2b50fb12adc3c29304db63d2fc5d7c38b9aa952cd",
+      "ranges": [
+        [
+          "0xa01e5d44",
+          "0xa01e5da0"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_detach_request.asm"
+    },
+    "hcmgr_enqueue": {
+      "entry": "0xa01e5da4",
+      "old_export_body_identical": true,
+      "sha256": "96a9bb83e4b124891f7e06a1ba17080272271f9347a85a487ac1edb2cc001813",
+      "ranges": [
+        [
+          "0xa01e5da4",
+          "0xa01e5e1c"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_enqueue.asm"
+    },
+    "hcmgr_clear_state": {
+      "entry": "0xa01e6258",
+      "old_export_body_identical": true,
+      "sha256": "a4100ed70aaf5c2a644ff243808fbc48132b0b49c5455b0f45dc2902a4780dc4",
+      "ranges": [
+        [
+          "0xa01e6258",
+          "0xa01e627c"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_clear_state.asm"
+    },
+    "hcmgr_init": {
+      "entry": "0xa01e627c",
+      "old_export_body_identical": true,
+      "sha256": "8a8f15e1a95c85b95cbbaac2bc0180493a1e7115b9b0bf6052c95ef3382989c5",
+      "ranges": [
+        [
+          "0xa01e627c",
+          "0xa01e64d8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_init.asm"
+    },
+    "hcmgr_send_wait": {
+      "entry": "0xa01e653c",
+      "old_export_body_identical": true,
+      "sha256": "4f3eee69e009a8ad1fa255915bc435c8f373a592135c08c190c0a42793bbd54f",
+      "ranges": [
+        [
+          "0xa01e653c",
+          "0xa01e656c"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_send_wait.asm"
+    },
+    "boss_restore_context": {
+      "entry": "0xa03d0548",
+      "old_export_body_identical": true,
+      "sha256": "17befc943214345f8a7c7ba47c615e54917240e307a7f8f2e55176e2883be784",
+      "ranges": [
+        [
+          "0xa03d0548",
+          "0xa03d06c8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_restore_context.asm"
+    },
+    "boss_resume": {
+      "entry": "0xa03d06c8",
+      "old_export_body_identical": true,
+      "sha256": "bd6925fd13c7e088b05b7ee851dcbe4d3ae47bb2998e119ce80bc92d5fa70306",
+      "ranges": [
+        [
+          "0xa03d06c8",
+          "0xa03d0750"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_resume.asm"
+    },
+    "boss_restore": {
+      "entry": "0xa03d0780",
+      "old_export_body_identical": true,
+      "sha256": "d18050f9346223da81e66c0f6d6fccccb4f458ca17301ac67fd0c94d9cae5835",
+      "ranges": [
+        [
+          "0xa03d0780",
+          "0xa03d0948"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_restore.asm"
+    },
+    "low_power_icache_lockdown_candidate": {
+      "entry": "0xa04a283c",
+      "old_export_body_identical": true,
+      "sha256": "b5bd52810166320f50d4908e3a73f19b7b15017c2e37682d70bee5378e645841",
+      "ranges": [
+        [
+          "0xa04a283c",
+          "0xa04a28d0"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/low_power_icache_lockdown_candidate.asm"
+    },
+    "mmu_initialization_primary": {
+      "entry": "0xa04a41e8",
+      "old_export_body_identical": true,
+      "sha256": "69626b85758dee43cac34909de1d6eedab916e92c54e0e16f0bf7942ce5527ec",
+      "ranges": [
+        [
+          "0xa04a41e8",
+          "0xa04a43f8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/mmu_initialization_primary.asm"
+    },
+    "mmu_initialization_secondary": {
+      "entry": "0xa04a43fc",
+      "old_export_body_identical": true,
+      "sha256": "13ff542d836e796920a416abf4001d3d5d2dff86df0c7ad63136159e84d1a1bb",
+      "ranges": [
+        [
+          "0xa04a43fc",
+          "0xa04a44b4"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/mmu_initialization_secondary.asm"
+    },
+    "hcmgr_trampoline": {
+      "manually_delimited": true,
+      "sha256": "fda39753e2b98b99a19126b1c06037ea233cb325343f13e82da1e0fab5a580be",
+      "ranges": [
+        [
+          "0xa01e5bd4",
+          "0xa01e5c04"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_trampoline.asm"
+    },
+    "app_detach_notify": {
+      "manually_delimited": true,
+      "sha256": "c857236a645fcf6cdd1ead875bcd956685067359926e71520fa7ef9d8225f888",
+      "ranges": [
+        [
+          "0xa019c3a8",
+          "0xa019c3bc"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/app_detach_notify.asm"
+    },
+    "updater_detach_notify": {
+      "manually_delimited": true,
+      "sha256": "3938ae8f293c2cb3bcd4b6401843ba0c5439ac159ebaa5d953a1e28732e1c724",
+      "ranges": [
+        [
+          "0xa01bd570",
+          "0xa01bd584"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/updater_detach_notify.asm"
+    },
+    "hcmgr_send_alias": {
+      "manually_delimited": true,
+      "sha256": "27470477c019e37be1d545b588db6b287569dc513a6c7cfe391cd07a192407b2",
+      "ranges": [
+        [
+          "0xa01e6598",
+          "0xa01e65a0"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/hcmgr_send_alias.asm"
+    },
+    "boss_legacy_restore_excerpt": {
+      "manually_delimited": true,
+      "sha256": "6da4d81ddc69fe78eb142e5b24bce681c5b05d03c59767fab9b0df42c856275c",
+      "ranges": [
+        [
+          "0xa03d2040",
+          "0xa03d2150"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_legacy_restore_excerpt.asm"
+    }
+  }
+}

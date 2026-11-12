@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "pass_independent_minute_recovery_review",
+  "device_access": false,
+  "positive_reviewed": true,
+  "negative_reviewed": false,
+  "verifier_sha256": "5c964d41bb0c0d0523c7aef5abefd43cded47d2540d7972ba1ae164b33331182",
+  "recovery_script_sha256": "6947ef0583296958d2397717555e70d4895df53a96d09bf0e49b761833f1328b",
+  "iso_rebuilder_sha256": "26907e786322711c9fe271985eaf4f85fcef38c00f4ba633463e9decb901bf5f",
+  "native_input_audit_sha256": "b44dbcf72160dac6a31114ec1598a99044bad1d25fe3544dbf6cc1a6be1da6f3",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "cases": [
+    {
+      "audit": "artifacts/verification/2026-11-11-prerecord-minute-session-recovery-run01/audit.json",
+      "audit_sha256": "b30e8c5c6ece29c7ecf2b7819faaf82ed94cccaf1d9ca8a64e7a8733d243384d",
+      "output_file": "session.mp4",
+      "output_sha256": "25e6c7a429d7cda35e329aa1c77376dc99dd9ff4f89884b5366f52e9bb2f3c28",
+      "counts": {
+        "0": 1920,
+        "1": 3003
+      },
+      "expected_publication": true,
+      "checks": {
+        "strict_packet_time_gate": "pass",
+        "video_frames": 1920,
+        "video_frame_md5_sha256": "d18773b26a4db1ed03747bc1c509aea90492d4e32eb49d0727926a799f0e4c9c",
+        "pcm_bytes": 12300288,
+        "pcm_sha256": "fd7def7d1214705f61861e6120fccc28df28fbb490d1b636575438ae9dc54523",
+        "ffmpeg_xerror_decode": "pass"
+      }
+    }
+  ],
+  "scope": "Actual native->output packet provenance, 4923 exact source packets/times, complete frame/PCM decode, and AAC2815 omission refuses release",
+  "limitations": [
+    "Pinned archived zero-origin CFR I/P and AAC fixture only; source epochs are archived caller mappings, not authenticated MP4 capture epochs.",
+    "Host container reconstruction only; no live minute ring, physical SD durability, callback installation or deployable prerecord proven."
+  ]
+}

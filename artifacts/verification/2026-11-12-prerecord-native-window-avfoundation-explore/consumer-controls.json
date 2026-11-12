@@ -1,0 +1,196 @@
+{
+  "status": "completed_consumer_compatibility_controls",
+  "reader_binary_sha256": "4a89af8792cadca1e54c5ee0f62812afcb9439f898e8eac1abd6e9cd71e8f9b0",
+  "reader_source_sha256": "02a199539c58c669ee7a6a40f6851f68b674615656ea5192a7ac36d2027ca9e0",
+  "zero_geometry_control": {
+    "path": "artifacts/verification/2026-11-12-prerecord-native-window-stock-control-run01/session.pending.mp4",
+    "sha256": "cdd9d940b9830f226041bf33d219fdfd53dbdcb8d517bc8c12c6f2c5ef437238",
+    "exit_code": 2,
+    "stdout": "MISSING AVMediaType(_rawValue: vide) status=2 error=nil tracks=[\"soun\"] playable=true\n",
+    "stderr": ""
+  },
+  "original_source": {
+    "path": "artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+    "compressed_video": 1951,
+    "compressed_aac": 3051,
+    "whole_aac_frames": 3124224,
+    "decoded_audio_frames": 3122112,
+    "inferred_trim_frames": 2112,
+    "avfoundation_segments": [
+      {
+        "empty": false,
+        "sourceDuration": {
+          "flags": 1,
+          "numeric": true,
+          "timescale": 240000,
+          "valid": true,
+          "value": 15610560
+        },
+        "sourceStart": {
+          "flags": 1,
+          "numeric": true,
+          "timescale": 48000,
+          "valid": true,
+          "value": 2112
+        },
+        "targetDuration": {
+          "flags": 1,
+          "numeric": true,
+          "timescale": 240000,
+          "valid": true,
+          "value": 15610560
+        },
+        "targetStart": {
+          "flags": 1,
+          "numeric": true,
+          "timescale": 30000,
+          "valid": true,
+          "value": 0
+        }
+      }
+    ],
+    "container_media_edit_media_time": 0,
+    "iTunSMPB_present": false,
+    "sgpd_or_sbgp_present": false,
+    "scope": "No explicit priming tag or sample-group box found in retained container scan; consumer behavior is recorded without assuming camera encoder priming is zero."
+  },
+  "geometry_fixed_compact": {
+    "compressed_video": 1831,
+    "compressed_aac": 2863,
+    "first_video_media_pts": {
+      "flags": 1,
+      "numeric": true,
+      "timescale": 30000,
+      "valid": true,
+      "value": 0
+    },
+    "first_video_output_pts": {
+      "flags": 1,
+      "numeric": true,
+      "timescale": 30000,
+      "valid": true,
+      "value": 408
+    },
+    "first_aac_output_duration": {
+      "flags": 1,
+      "numeric": true,
+      "timescale": 48000,
+      "valid": true,
+      "value": 0
+    },
+    "whole_aac_frames": 2931712,
+    "decoded_audio_frames": 2929600,
+    "decoded_video_image_buffers": 1832,
+    "avfoundation_segments": [
+      [
+        {
+          "empty": true,
+          "sourceDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 408
+          },
+          "sourceStart": {
+            "flags": 0,
+            "numeric": false,
+            "timescale": 0,
+            "valid": false,
+            "value": 0
+          },
+          "targetDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 408
+          },
+          "targetStart": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 0
+          }
+        },
+        {
+          "empty": false,
+          "sourceDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 1832831
+          },
+          "sourceStart": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 0
+          },
+          "targetDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 1832831
+          },
+          "targetStart": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 408
+          }
+        }
+      ],
+      [
+        {
+          "empty": false,
+          "sourceDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 240000,
+            "valid": true,
+            "value": 14648000
+          },
+          "sourceStart": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 48000,
+            "valid": true,
+            "value": 2112
+          },
+          "targetDuration": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 240000,
+            "valid": true,
+            "value": 14648000
+          },
+          "targetStart": {
+            "flags": 1,
+            "numeric": true,
+            "timescale": 30000,
+            "valid": true,
+            "value": 0
+          }
+        }
+      ]
+    ]
+  },
+  "artifacts": {
+    "original-current-packets.json": "20e768a76aae66c986a8379b79b573e7c80271231183606ddc546019667e7030",
+    "original-decode.json": "a7112a1528f3b18a07c15713824a2187f6ace0fb36390e2f57bf847ed76fd639",
+    "geometry-fixed.json": "bcc0a63be176233669067f686f82c90ea3d15eaf647bf0c3ade9c17aa721ecf3",
+    "compact-decode.json": "c57de2ac0b7d68c2cd6e9eb309d53ca5d77f17348530e6e8edd0baae818b167a",
+    "ffmpeg-n8.0-mov.c": "d3af210b765416a9c1a6aceadbabe51a233a18a26fa8c3071b8b1c8307a3935a"
+  },
+  "limitations": [
+    "AVFoundation compatibility control fails complete-AAC contract for both original and compact files.",
+    "CMSampleBuffer media and output timestamps differ; output timestamps are consumer presentation times.",
+    "The fixed ffprobe6.1 strict rejection is independently retained; FFmpeg8 is a separately identified consumer."
+  ]
+}

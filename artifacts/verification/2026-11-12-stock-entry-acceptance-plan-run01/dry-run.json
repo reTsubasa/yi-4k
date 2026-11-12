@@ -1,0 +1,62 @@
+{
+  "schema": "stock-entry-plan-dry-run/v1",
+  "status": "pass_host_only",
+  "script_sha256": "ecc127f17cf1fd9d188112857da4e332eb3e3f20f9e9b2345cbd8a9827638dd4",
+  "script_bytes": 105,
+  "line_count": 2,
+  "max_line_bytes": 58,
+  "ascii_lf_only": true,
+  "has_tabs": false,
+  "arm_reader": {
+    "name": "proposed_two_line_stock_entry_plan",
+    "source_hex": "70732074736b203e20633a5c7969346b5f656e7472795f3533343561356563376335325f7461736b732e7478740a7361766562696e20633a5c7969346b5f656e7472795f3533343561356563376335325f636f64652e62696e2030784130333934424130206c20380a",
+    "exists": true,
+    "opened": [
+      {
+        "path": "c:\\autoexec.ash",
+        "mode": "r"
+      }
+    ],
+    "command_strings": [
+      "ps tsk > c:\\yi4k_entry_5345a5ec7c52_tasks.txt",
+      "savebin c:\\yi4k_entry_5345a5ec7c52_code.bin 0xA0394BA0 l 8"
+    ],
+    "closed": [
+      1
+    ],
+    "result": 0
+  },
+  "host_lifecycle_cases": [
+    "unbound_stage_rejected_before_writes",
+    "stage_exclusive_claim_then_script",
+    "second_stage_existing_paths_rejected",
+    "partial_collect_preserves_missing_and_existing_files",
+    "armed_cleanup_rejected",
+    "changed_script_disarm_rejected",
+    "disarm_removes_only_owned_script",
+    "changed_output_cleanup_rejected_before_any_delete",
+    "cleanup_exact_snapshot_only_unowned_sibling_retained"
+  ],
+  "device_access": false,
+  "target_write": false,
+  "stage_executed": false,
+  "reboot_executed": false,
+  "synthetic_host_outputs_are_device_evidence": false,
+  "limitations": [
+    "Host temporary files validate ownership and lifecycle logic only.",
+    "Original ARM reader uses mocked filesystem/parser, no command handler execution.",
+    "Python 2.7 compatibility is a common-syntax design; no local camera Python 2 runtime was executed.",
+    "Stage claim is not a runtime once gate; another storage event may overwrite outputs.",
+    "Disarm does not stop an already-open reader; require stable collection before cleanup."
+  ],
+  "builder_sha256": "1f215b8de066a1d4b44427f83b06925d8f5e21aa41fa9040cdb5bb4dffa25fff",
+  "bundle_file_sha256": {
+    "autoexec.ash": "ecc127f17cf1fd9d188112857da4e332eb3e3f20f9e9b2345cbd8a9827638dd4",
+    "plan.json": "ac6556f1d69aa7364c8c2f51ad2d6a3f576a3fafdf1e6d13a3400c59fd0fa83a",
+    "review-cleanup.py": "48b0960ca936c132985479d5658a41f2efbbaedf89730ecbf87469743d4977ab",
+    "review-collect.py": "ae79e103ea57f75b2c3bc72745ef7ff074ace517890f8e3ee9d2f298d9b0a632",
+    "review-disarm.py": "4ca44374143c037ca1d28ac386af9043701006351f641817a5c6716fb05417f6",
+    "review-stage.py": "cd9d783c3aa209ad623d90e5e1eb8f37cb45d3fbdd021b86c23d154f6a6cae43",
+    "stage-claim.json": "5b6e8167ec9830e7421def5a649c397f12ff087f2e4cbf7b9a62ff5c741619c4"
+  }
+}

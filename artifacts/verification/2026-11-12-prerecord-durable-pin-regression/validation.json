@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": 48,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 85.62912445911206,
+  "source_sha256": {
+    "scripts/prerecord_media_store.py": "99c466bd21d296dd9b0ef51c1d5b69654622c1e3d798a94ee096e64b3d6ca53f",
+    "scripts/validate_prerecord_media_ring.py": "111a2f8396acdc9f96f02152a4bf76456af199fb49076b10230a3c290b16e9e2",
+    "scripts/tests/test_prerecord_buffer.py": "51ee24529e3a21f54842fd81c04ff9f6eb34c11a5608ca13c5655ddc9727e9bf",
+    "scripts/tests/test_prerecord_frame_desc.py": "7912475fde421dc6d0a2cd729894517defc3bee790fc4b2bb736d915ebebcd5d",
+    "scripts/tests/test_prerecord_media_store.py": "8cb0c0cbd1cc102c1075506e96dad8749189f62939468e9e384a9d53125bead3",
+    "scripts/tests/test_prerecord_real_window.py": "19ac55aa3509406652e4200dd808752da3e3dbecd2bc7df58e51a46a1f2ee886",
+    "scripts/tests/test_prerecord_trigger.py": "a1b7bb9444976a91844ed221b081154cbb2dce3d7b3856a3b0547b3f30e14291"
+  },
+  "device_access": false
+}

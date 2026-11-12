@@ -1,0 +1,11 @@
+--- old
++++ device
+@@ -22,7 +22,7 @@
+ a029e1f8 0620a0e1 mov      r2, r6
+ a029e1fc f041bde8 pop      {r4, r5, r6, r7, r8, lr}
+ a029e200 13ff2fe1 bx       r3
+-a029e204 cc090ee3 movw     r0, #0xe9cc
++a029e204 c4090ee3 movw     r0, #0xe9c4
+ a029e208 0510a0e1 mov      r1, r5
+ a029e20c 5a004ae3 movt     r0, #0xa05a
+ a029e210 36ff2fe1 blx      r6

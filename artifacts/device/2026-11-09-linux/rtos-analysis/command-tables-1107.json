@@ -1,0 +1,1192 @@
+{
+  "image": "/Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "base": "0xa0100000",
+  "method": "known table locations plus raw name/handler pointers; no runtime execution",
+  "tables": [
+    {
+      "name": "antscmd",
+      "file_offset": "0x46b404",
+      "count": 69,
+      "stride": 8,
+      "records": [
+        {
+          "index": 0,
+          "entry_file_offset": "0x46b404",
+          "name_address": "0xa0633cd0",
+          "name": "lcd",
+          "handler": "0xa01ab5dc"
+        },
+        {
+          "index": 1,
+          "entry_file_offset": "0x46b40c",
+          "name_address": "0xa056b040",
+          "name": "led_on",
+          "handler": "0xa01ac514"
+        },
+        {
+          "index": 2,
+          "entry_file_offset": "0x46b414",
+          "name_address": "0xa056b048",
+          "name": "led_off",
+          "handler": "0xa01ac4a8"
+        },
+        {
+          "index": 3,
+          "entry_file_offset": "0x46b41c",
+          "name_address": "0xa056b050",
+          "name": "led_blink",
+          "handler": "0xa01ab514"
+        },
+        {
+          "index": 4,
+          "entry_file_offset": "0x46b424",
+          "name_address": "0xa056b05c",
+          "name": "led_double_blink",
+          "handler": "0xa01ac43c"
+        },
+        {
+          "index": 5,
+          "entry_file_offset": "0x46b42c",
+          "name_address": "0xa056b070",
+          "name": "led_triple_blink",
+          "handler": "0xa01ac3d0"
+        },
+        {
+          "index": 6,
+          "entry_file_offset": "0x46b434",
+          "name_address": "0xa056b084",
+          "name": "lcd_backlight",
+          "handler": "0xa01abbb8"
+        },
+        {
+          "index": 7,
+          "entry_file_offset": "0x46b43c",
+          "name_address": "0xa056b094",
+          "name": "boss_status",
+          "handler": "0xa01ab6d4"
+        },
+        {
+          "index": 8,
+          "entry_file_offset": "0x46b444",
+          "name_address": "0xa056b0a0",
+          "name": "switch_work_mode",
+          "handler": "0xa01ab3f4"
+        },
+        {
+          "index": 9,
+          "entry_file_offset": "0x46b44c",
+          "name_address": "0xa060c5b4",
+          "name": "shutter",
+          "handler": "0xa01a7cac"
+        },
+        {
+          "index": 10,
+          "entry_file_offset": "0x46b454",
+          "name_address": "0xa056b0b4",
+          "name": "power_status",
+          "handler": "0xa01ab3e4"
+        },
+        {
+          "index": 11,
+          "entry_file_offset": "0x46b45c",
+          "name_address": "0xa0564bf4",
+          "name": "beep",
+          "handler": "0xa01ab9fc"
+        },
+        {
+          "index": 12,
+          "entry_file_offset": "0x46b464",
+          "name_address": "0xa056b0c4",
+          "name": "ntc",
+          "handler": "0xa01ac34c"
+        },
+        {
+          "index": 13,
+          "entry_file_offset": "0x46b46c",
+          "name_address": "0xa056b0c8",
+          "name": "bq24250",
+          "handler": "0xa01aba7c"
+        },
+        {
+          "index": 14,
+          "entry_file_offset": "0x46b474",
+          "name_address": "0xa056b0d0",
+          "name": "msg_dump",
+          "handler": "0xa01a7990"
+        },
+        {
+          "index": 15,
+          "entry_file_offset": "0x46b47c",
+          "name_address": "0xa056b0dc",
+          "name": "cfg_restore",
+          "handler": "0xa01ab2c0"
+        },
+        {
+          "index": 16,
+          "entry_file_offset": "0x46b484",
+          "name_address": "0xa056b0e8",
+          "name": "gyro",
+          "handler": "0xa01ab96c"
+        },
+        {
+          "index": 17,
+          "entry_file_offset": "0x46b48c",
+          "name_address": "0xa056b0f0",
+          "name": "audio",
+          "handler": "0xa01aad50"
+        },
+        {
+          "index": 18,
+          "entry_file_offset": "0x46b494",
+          "name_address": "0xa056b0f8",
+          "name": "vf_switch",
+          "handler": "0xa01abb44"
+        },
+        {
+          "index": 19,
+          "entry_file_offset": "0x46b49c",
+          "name_address": "0xa056b104",
+          "name": "set_video_res",
+          "handler": "0xa01aad28"
+        },
+        {
+          "index": 20,
+          "entry_file_offset": "0x46b4a4",
+          "name_address": "0xa056b114",
+          "name": "set_standard",
+          "handler": "0xa01aad00"
+        },
+        {
+          "index": 21,
+          "entry_file_offset": "0x46b4ac",
+          "name_address": "0xa056b124",
+          "name": "set_photo_size",
+          "handler": "0xa01aacd8"
+        },
+        {
+          "index": 22,
+          "entry_file_offset": "0x46b4b4",
+          "name_address": "0xa056b134",
+          "name": "chg_gui",
+          "handler": "0xa01aac5c"
+        },
+        {
+          "index": 23,
+          "entry_file_offset": "0x46b4bc",
+          "name_address": "0xa056b13c",
+          "name": "tp_event",
+          "handler": "0xa01a77c0"
+        },
+        {
+          "index": 24,
+          "entry_file_offset": "0x46b4c4",
+          "name_address": "0xa056b148",
+          "name": "tp_click",
+          "handler": "0xa01a7c28"
+        },
+        {
+          "index": 25,
+          "entry_file_offset": "0x46b4cc",
+          "name_address": "0xa056b154",
+          "name": "tp_slide",
+          "handler": "0xa01a7aa0"
+        },
+        {
+          "index": 26,
+          "entry_file_offset": "0x46b4d4",
+          "name_address": "0xa056b160",
+          "name": "rtmp_start",
+          "handler": "0xa01aac4c"
+        },
+        {
+          "index": 27,
+          "entry_file_offset": "0x46b4dc",
+          "name_address": "0xa056b16c",
+          "name": "rtmp_stop",
+          "handler": "0xa01aac38"
+        },
+        {
+          "index": 28,
+          "entry_file_offset": "0x46b4e4",
+          "name_address": "0xa056b178",
+          "name": "tp_move",
+          "handler": "0xa01a79a0"
+        },
+        {
+          "index": 29,
+          "entry_file_offset": "0x46b4ec",
+          "name_address": "0xa056b180",
+          "name": "board",
+          "handler": "0xa01aa78c"
+        },
+        {
+          "index": 30,
+          "entry_file_offset": "0x46b4f4",
+          "name_address": "0xa056b188",
+          "name": "factory_result",
+          "handler": "0xa01aa77c"
+        },
+        {
+          "index": 31,
+          "entry_file_offset": "0x46b4fc",
+          "name_address": "0xa056b198",
+          "name": "thruput_result",
+          "handler": "0xa01ac2b4"
+        },
+        {
+          "index": 32,
+          "entry_file_offset": "0x46b504",
+          "name_address": "0xa056b1a8",
+          "name": "ota_result",
+          "handler": "0xa01ac21c"
+        },
+        {
+          "index": 33,
+          "entry_file_offset": "0x46b50c",
+          "name_address": "0xa056b1b4",
+          "name": "dump_board",
+          "handler": "0xa01aa768"
+        },
+        {
+          "index": 34,
+          "entry_file_offset": "0x46b514",
+          "name_address": "0xa056b1c0",
+          "name": "tp_fwupdate",
+          "handler": "0xa01aa568"
+        },
+        {
+          "index": 35,
+          "entry_file_offset": "0x46b51c",
+          "name_address": "0xa056b1cc",
+          "name": "get_tp_ver",
+          "handler": "0xa01aa4dc"
+        },
+        {
+          "index": 36,
+          "entry_file_offset": "0x46b524",
+          "name_address": "0xa05687b8",
+          "name": "fioprf_thruput",
+          "handler": "0xa01a7258"
+        },
+        {
+          "index": 37,
+          "entry_file_offset": "0x46b52c",
+          "name_address": "0xa056b1d8",
+          "name": "power_saving",
+          "handler": "0xa01aa3a0"
+        },
+        {
+          "index": 38,
+          "entry_file_offset": "0x46b534",
+          "name_address": "0xa056b1e8",
+          "name": "linux_serial",
+          "handler": "0xa01a8f94"
+        },
+        {
+          "index": 39,
+          "entry_file_offset": "0x46b53c",
+          "name_address": "0xa056b1f8",
+          "name": "ps_debug",
+          "handler": "0xa01ac18c"
+        },
+        {
+          "index": 40,
+          "entry_file_offset": "0x46b544",
+          "name_address": "0xa0565554",
+          "name": "slow_motion",
+          "handler": "0xa01a7500"
+        },
+        {
+          "index": 41,
+          "entry_file_offset": "0x46b54c",
+          "name_address": "0xa056b204",
+          "name": "set_gps",
+          "handler": "0xa01aa204"
+        },
+        {
+          "index": 42,
+          "entry_file_offset": "0x46b554",
+          "name_address": "0xa0550920",
+          "name": "wifi_country",
+          "handler": "0xa01ac0ec"
+        },
+        {
+          "index": 43,
+          "entry_file_offset": "0x46b55c",
+          "name_address": "0xa056b20c",
+          "name": "mic_in_check",
+          "handler": "0xa01ac580"
+        },
+        {
+          "index": 44,
+          "entry_file_offset": "0x46b564",
+          "name_address": "0xa056b21c",
+          "name": "mic_input",
+          "handler": "0xa01aa11c"
+        },
+        {
+          "index": 45,
+          "entry_file_offset": "0x46b56c",
+          "name_address": "0xa056b228",
+          "name": "cobs",
+          "handler": "0xa01a9e7c"
+        },
+        {
+          "index": 46,
+          "entry_file_offset": "0x46b574",
+          "name_address": "0xa056b230",
+          "name": "car_msg",
+          "handler": "0xa01a9c1c"
+        },
+        {
+          "index": 47,
+          "entry_file_offset": "0x46b57c",
+          "name_address": "0xa0550a54",
+          "name": "usb_mode",
+          "handler": "0xa01a8e88"
+        },
+        {
+          "index": 48,
+          "entry_file_offset": "0x46b584",
+          "name_address": "0xa055077c",
+          "name": "save_log",
+          "handler": "0xa01abe20"
+        },
+        {
+          "index": 49,
+          "entry_file_offset": "0x46b58c",
+          "name_address": "0xa056b238",
+          "name": "get_blk_mark",
+          "handler": "0xa01a9c18"
+        },
+        {
+          "index": 50,
+          "entry_file_offset": "0x46b594",
+          "name_address": "0xa056b248",
+          "name": "show_str",
+          "handler": "0xa01ac08c"
+        },
+        {
+          "index": 51,
+          "entry_file_offset": "0x46b59c",
+          "name_address": "0xa056b254",
+          "name": "get_video_info",
+          "handler": "0xa01a94fc"
+        },
+        {
+          "index": 52,
+          "entry_file_offset": "0x46b5a4",
+          "name_address": "0xa056b264",
+          "name": "erase",
+          "handler": "0xa01a9ae4"
+        },
+        {
+          "index": 53,
+          "entry_file_offset": "0x46b5ac",
+          "name_address": "0xa056b26c",
+          "name": "set_video_vbr",
+          "handler": "0xa01a9990"
+        },
+        {
+          "index": 54,
+          "entry_file_offset": "0x46b5b4",
+          "name_address": "0xa056b27c",
+          "name": "photo_priv_info",
+          "handler": "0xa01a93cc"
+        },
+        {
+          "index": 55,
+          "entry_file_offset": "0x46b5bc",
+          "name_address": "0xa056b28c",
+          "name": "bitmaps",
+          "handler": "0xa01acd10"
+        },
+        {
+          "index": 56,
+          "entry_file_offset": "0x46b5c4",
+          "name_address": "0xa056b294",
+          "name": "set_video_split_size",
+          "handler": "0xa01a7508"
+        },
+        {
+          "index": 57,
+          "entry_file_offset": "0x46b5cc",
+          "name_address": "0xa056b2ac",
+          "name": "vc_test",
+          "handler": "0xa01abd80"
+        },
+        {
+          "index": 58,
+          "entry_file_offset": "0x46b5d4",
+          "name_address": "0xa056b2b4",
+          "name": "vc_test2",
+          "handler": "0xa01a90e8"
+        },
+        {
+          "index": 59,
+          "entry_file_offset": "0x46b5dc",
+          "name_address": "0xa056b2c0",
+          "name": "vc_save",
+          "handler": "0xa01abf50"
+        },
+        {
+          "index": 60,
+          "entry_file_offset": "0x46b5e4",
+          "name_address": "0xa056b2c8",
+          "name": "vc_switch_lan",
+          "handler": "0xa01abec0"
+        },
+        {
+          "index": 61,
+          "entry_file_offset": "0x46b5ec",
+          "name_address": "0xa056b2d8",
+          "name": "vc_send_msg",
+          "handler": "0xa01a903c"
+        },
+        {
+          "index": 62,
+          "entry_file_offset": "0x46b5f4",
+          "name_address": "0xa056b2e4",
+          "name": "tlp_power_off",
+          "handler": "0xa01a8e10"
+        },
+        {
+          "index": 63,
+          "entry_file_offset": "0x46b5fc",
+          "name_address": "0xa056b2f4",
+          "name": "debug_sd",
+          "handler": "0xa01a8d60"
+        },
+        {
+          "index": 64,
+          "entry_file_offset": "0x46b604",
+          "name_address": "0xa056b300",
+          "name": "bq27421",
+          "handler": "0xa01abd24"
+        },
+        {
+          "index": 65,
+          "entry_file_offset": "0x46b60c",
+          "name_address": "0xa056a820",
+          "name": "rom",
+          "handler": "0xa01abc88"
+        },
+        {
+          "index": 66,
+          "entry_file_offset": "0x46b614",
+          "name_address": "0xa056b308",
+          "name": "usb_con",
+          "handler": "0xa01abc20"
+        },
+        {
+          "index": 67,
+          "entry_file_offset": "0x46b61c",
+          "name_address": "0xa056b310",
+          "name": "sd_delay",
+          "handler": "0xa01a8838"
+        },
+        {
+          "index": 68,
+          "entry_file_offset": "0x46b624",
+          "name_address": "0xa05529dc",
+          "name": "thumb",
+          "handler": "0xa01a8998"
+        }
+      ]
+    },
+    {
+      "name": "imgcmd",
+      "file_offset": "0x4978e0",
+      "count": 17,
+      "stride": 12,
+      "records": [
+        {
+          "index": 0,
+          "entry_file_offset": "0x4978e0",
+          "name_address": "0xa0599dd8",
+          "name": "help",
+          "handler": "0xa0226578",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 1,
+          "entry_file_offset": "0x4978ec",
+          "name_address": "0xa059d4f4",
+          "name": "-ituner",
+          "handler": "0xa022c8bc",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 2,
+          "entry_file_offset": "0x4978f8",
+          "name_address": "0xa059d4fc",
+          "name": "-rawenc",
+          "handler": "0xa0226b34",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 3,
+          "entry_file_offset": "0x497904",
+          "name_address": "0xa059d504",
+          "name": "-highiso",
+          "handler": "0xa02268e8",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 4,
+          "entry_file_offset": "0x497910",
+          "name_address": "0xa059d510",
+          "name": "-lowiso",
+          "handler": "0xa02266e8",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 5,
+          "entry_file_offset": "0x49791c",
+          "name_address": "0xa059d518",
+          "name": "-idsp",
+          "handler": "0xa022b96c",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 6,
+          "entry_file_offset": "0x497928",
+          "name_address": "0xa059d520",
+          "name": "-test",
+          "handler": "0xa0226570",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 7,
+          "entry_file_offset": "0x497934",
+          "name_address": "0xa059d528",
+          "name": "-stat",
+          "handler": "0xa0228458",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 8,
+          "entry_file_offset": "0x497940",
+          "name_address": "0xa059d530",
+          "name": "-amp",
+          "handler": "0xa0228300",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 9,
+          "entry_file_offset": "0x49794c",
+          "name_address": "0xa059d538",
+          "name": "-mctf",
+          "handler": "0xa0227dfc",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 10,
+          "entry_file_offset": "0x497958",
+          "name_address": "0xa059d540",
+          "name": "-gmv",
+          "handler": "0xa0227cb8",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 11,
+          "entry_file_offset": "0x497964",
+          "name_address": "0xa059d548",
+          "name": "-warp",
+          "handler": "0xa022d820",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 12,
+          "entry_file_offset": "0x497970",
+          "name_address": "0xa059d550",
+          "name": "-vnc",
+          "handler": "0xa02275d4",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 13,
+          "entry_file_offset": "0x49797c",
+          "name_address": "0xa059d558",
+          "name": "-ca",
+          "handler": "0xa0226ecc",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 14,
+          "entry_file_offset": "0x497988",
+          "name_address": "0xa059d55c",
+          "name": "-fpn",
+          "handler": "0xa022d0b4",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 15,
+          "entry_file_offset": "0x497994",
+          "name_address": "0xa059d564",
+          "name": "-dpc",
+          "handler": "0xa0226da8",
+          "third_word": "0xa05a6c90"
+        },
+        {
+          "index": 16,
+          "entry_file_offset": "0x4979a0",
+          "name_address": "0xa059d56c",
+          "name": "-blc",
+          "handler": "0xa0226c34",
+          "third_word": "0xa05a6c90"
+        }
+      ]
+    },
+    {
+      "name": "ipccmd",
+      "file_offset": "0x4a6c18",
+      "count": 6,
+      "stride": 8,
+      "records": [
+        {
+          "index": 0,
+          "entry_file_offset": "0x4a6c18",
+          "name_address": "0xa05a75c8",
+          "name": "slock",
+          "handler": "0xa0245974"
+        },
+        {
+          "index": 1,
+          "entry_file_offset": "0x4a6c20",
+          "name_address": "0xa05c67dc",
+          "name": "mutex",
+          "handler": "0xa0245c10"
+        },
+        {
+          "index": 2,
+          "entry_file_offset": "0x4a6c28",
+          "name_address": "0xa05a75d0",
+          "name": "rpmsg",
+          "handler": "0xa02457e8"
+        },
+        {
+          "index": 3,
+          "entry_file_offset": "0x4a6c30",
+          "name_address": "0xa05a7540",
+          "name": "rpc",
+          "handler": "0xa0245cf4"
+        },
+        {
+          "index": 4,
+          "entry_file_offset": "0x4a6c38",
+          "name_address": "0xa05a75d8",
+          "name": "rfs",
+          "handler": "0xa0246ce8"
+        },
+        {
+          "index": 5,
+          "entry_file_offset": "0x4a6c40",
+          "name_address": "0xa05a75dc",
+          "name": "usb_owner",
+          "handler": "0xa0245ba8"
+        }
+      ]
+    },
+    {
+      "name": "drvcmd",
+      "file_offset": "0x537334",
+      "count": 21,
+      "stride": 12,
+      "records": [
+        {
+          "index": 0,
+          "entry_file_offset": "0x537334",
+          "name_address": "0xa06372d4",
+          "name": "adc",
+          "handler": "0xa04a6878",
+          "third_word": "0x0"
+        },
+        {
+          "index": 1,
+          "entry_file_offset": "0x537340",
+          "name_address": "0xa06372e0",
+          "name": "cache",
+          "handler": "0xa04a6b68",
+          "third_word": "0x0"
+        },
+        {
+          "index": 2,
+          "entry_file_offset": "0x53734c",
+          "name_address": "0xa06372e8",
+          "name": "crypto",
+          "handler": "0xa04a720c",
+          "third_word": "0x0"
+        },
+        {
+          "index": 3,
+          "entry_file_offset": "0x537358",
+          "name_address": "0xa06372f0",
+          "name": "cvbs",
+          "handler": "0xa04a75dc",
+          "third_word": "0x0"
+        },
+        {
+          "index": 4,
+          "entry_file_offset": "0x537364",
+          "name_address": "0xa06372f8",
+          "name": "ddr",
+          "handler": "0xa04a77b0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 5,
+          "entry_file_offset": "0x537370",
+          "name_address": "0xa06372fc",
+          "name": "dma",
+          "handler": "0xa04a8384",
+          "third_word": "0x0"
+        },
+        {
+          "index": 6,
+          "entry_file_offset": "0x53737c",
+          "name_address": "0xa0637300",
+          "name": "gdma",
+          "handler": "0xa04a97e0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 7,
+          "entry_file_offset": "0x537388",
+          "name_address": "0xa0637308",
+          "name": "gpio",
+          "handler": "0xa04a9c94",
+          "third_word": "0x0"
+        },
+        {
+          "index": 8,
+          "entry_file_offset": "0x537394",
+          "name_address": "0xa05670cc",
+          "name": "hdmi",
+          "handler": "0xa04aa1d4",
+          "third_word": "0x0"
+        },
+        {
+          "index": 9,
+          "entry_file_offset": "0x5373a0",
+          "name_address": "0xa0637310",
+          "name": "i2c",
+          "handler": "0xa04aa5e0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 10,
+          "entry_file_offset": "0x5373ac",
+          "name_address": "0xa05e6f3c",
+          "name": "int",
+          "handler": "0xa04aa908",
+          "third_word": "0x0"
+        },
+        {
+          "index": 11,
+          "entry_file_offset": "0x5373b8",
+          "name_address": "0xa0637314",
+          "name": "nftl",
+          "handler": "0xa04ae89c",
+          "third_word": "0x0"
+        },
+        {
+          "index": 12,
+          "entry_file_offset": "0x5373c4",
+          "name_address": "0xa063731c",
+          "name": "pll",
+          "handler": "0xa04aac88",
+          "third_word": "0x0"
+        },
+        {
+          "index": 13,
+          "entry_file_offset": "0x5373d0",
+          "name_address": "0xa0637320",
+          "name": "poc",
+          "handler": "0xa04ab514",
+          "third_word": "0x0"
+        },
+        {
+          "index": 14,
+          "entry_file_offset": "0x5373dc",
+          "name_address": "0xa0637324",
+          "name": "pwc",
+          "handler": "0xa04ab8a0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 15,
+          "entry_file_offset": "0x5373e8",
+          "name_address": "0xa0637328",
+          "name": "pwm",
+          "handler": "0xa04abc14",
+          "third_word": "0x0"
+        },
+        {
+          "index": 16,
+          "entry_file_offset": "0x5373f4",
+          "name_address": "0xa056c050",
+          "name": "sd",
+          "handler": "0xa04acf70",
+          "third_word": "0x0"
+        },
+        {
+          "index": 17,
+          "entry_file_offset": "0x537400",
+          "name_address": "0xa063732c",
+          "name": "spi",
+          "handler": "0xa04adecc",
+          "third_word": "0x0"
+        },
+        {
+          "index": 18,
+          "entry_file_offset": "0x53740c",
+          "name_address": "0xa0566c0c",
+          "name": "timer",
+          "handler": "0xa04ae5a0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 19,
+          "entry_file_offset": "0x537418",
+          "name_address": "0xa0569534",
+          "name": "uart",
+          "handler": "0xa04af404",
+          "third_word": "0x0"
+        },
+        {
+          "index": 20,
+          "entry_file_offset": "0x537424",
+          "name_address": "0xa0637330",
+          "name": "wdt",
+          "handler": "0xa04af634",
+          "third_word": "0x0"
+        }
+      ]
+    },
+    {
+      "name": "shell",
+      "file_offset": "0x5f2ea0",
+      "count": 38,
+      "stride": 12,
+      "records": [
+        {
+          "index": 0,
+          "entry_file_offset": "0x5f2ea0",
+          "name_address": "0xa05ae694",
+          "name": "cat",
+          "handler": "0xa029e260",
+          "third_word": "0x0"
+        },
+        {
+          "index": 1,
+          "entry_file_offset": "0x5f2eac",
+          "name_address": "0xa05ae698",
+          "name": "cd",
+          "handler": "0xa029e4e0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 2,
+          "entry_file_offset": "0x5f2eb8",
+          "name_address": "0xa05ae69c",
+          "name": "chklowspd",
+          "handler": "0xa02a0050",
+          "third_word": "0x0"
+        },
+        {
+          "index": 3,
+          "entry_file_offset": "0x5f2ec4",
+          "name_address": "0xa05ae6a8",
+          "name": "chmod",
+          "handler": "0xa029f024",
+          "third_word": "0x0"
+        },
+        {
+          "index": 4,
+          "entry_file_offset": "0x5f2ed0",
+          "name_address": "0xa05ae6b0",
+          "name": "cleandir",
+          "handler": "0xa02a0180",
+          "third_word": "0x0"
+        },
+        {
+          "index": 5,
+          "entry_file_offset": "0x5f2edc",
+          "name_address": "0xa05ae6bc",
+          "name": "cp",
+          "handler": "0xa02a05a4",
+          "third_word": "0x0"
+        },
+        {
+          "index": 6,
+          "entry_file_offset": "0x5f2ee8",
+          "name_address": "0xa055ed08",
+          "name": "date",
+          "handler": "0xa02a05e4",
+          "third_word": "0x0"
+        },
+        {
+          "index": 7,
+          "entry_file_offset": "0x5f2ef4",
+          "name_address": "0xa05ae6c0",
+          "name": "dmesg",
+          "handler": "0xa02a0864",
+          "third_word": "0x0"
+        },
+        {
+          "index": 8,
+          "entry_file_offset": "0x5f2f00",
+          "name_address": "0xa05ae6c8",
+          "name": "echo",
+          "handler": "0xa02a0a4c",
+          "third_word": "0x0"
+        },
+        {
+          "index": 9,
+          "entry_file_offset": "0x5f2f0c",
+          "name_address": "0xa0534a8c",
+          "name": "false",
+          "handler": "0xa02a0aa8",
+          "third_word": "0x0"
+        },
+        {
+          "index": 10,
+          "entry_file_offset": "0x5f2f18",
+          "name_address": "0xa055069c",
+          "name": "format",
+          "handler": "0xa02a0ab0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 11,
+          "entry_file_offset": "0x5f2f24",
+          "name_address": "0xa0599dd8",
+          "name": "help",
+          "handler": "0xa02a44e0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 12,
+          "entry_file_offset": "0x5f2f30",
+          "name_address": "0xa05ae6d0",
+          "name": "loadbin",
+          "handler": "0xa02a2584",
+          "third_word": "0x0"
+        },
+        {
+          "index": 13,
+          "entry_file_offset": "0x5f2f3c",
+          "name_address": "0xa062f8d0",
+          "name": "ls",
+          "handler": "0xa02a2b24",
+          "third_word": "0x0"
+        },
+        {
+          "index": 14,
+          "entry_file_offset": "0x5f2f48",
+          "name_address": "0xa05ae6d8",
+          "name": "memtest",
+          "handler": "0xa02a30d4",
+          "third_word": "0x0"
+        },
+        {
+          "index": 15,
+          "entry_file_offset": "0x5f2f54",
+          "name_address": "0xa05ae6e0",
+          "name": "mkdir",
+          "handler": "0xa02a3288",
+          "third_word": "0x0"
+        },
+        {
+          "index": 16,
+          "entry_file_offset": "0x5f2f60",
+          "name_address": "0xa05ae6e8",
+          "name": "mv",
+          "handler": "0xa02a3730",
+          "third_word": "0x0"
+        },
+        {
+          "index": 17,
+          "entry_file_offset": "0x5f2f6c",
+          "name_address": "0xa0601cd4",
+          "name": "ps",
+          "handler": "0xa02a3864",
+          "third_word": "0x0"
+        },
+        {
+          "index": 18,
+          "entry_file_offset": "0x5f2f78",
+          "name_address": "0xa05a4484",
+          "name": "pwd",
+          "handler": "0xa02a3b14",
+          "third_word": "0x0"
+        },
+        {
+          "index": 19,
+          "entry_file_offset": "0x5f2f84",
+          "name_address": "0xa05a7488",
+          "name": "randvrfy",
+          "handler": "0xa02a2288",
+          "third_word": "0x0"
+        },
+        {
+          "index": 20,
+          "entry_file_offset": "0x5f2f90",
+          "name_address": "0xa05ae6ec",
+          "name": "readb",
+          "handler": "0xa02a2e58",
+          "third_word": "0x0"
+        },
+        {
+          "index": 21,
+          "entry_file_offset": "0x5f2f9c",
+          "name_address": "0xa05ae6f4",
+          "name": "readl",
+          "handler": "0xa02a3000",
+          "third_word": "0x0"
+        },
+        {
+          "index": 22,
+          "entry_file_offset": "0x5f2fa8",
+          "name_address": "0xa05ae6fc",
+          "name": "readw",
+          "handler": "0xa02a2f2c",
+          "third_word": "0x0"
+        },
+        {
+          "index": 23,
+          "entry_file_offset": "0x5f2fb4",
+          "name_address": "0xa0550508",
+          "name": "reboot",
+          "handler": "0xa02a3fe0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 24,
+          "entry_file_offset": "0x5f2fc0",
+          "name_address": "0xa0640214",
+          "name": "rm",
+          "handler": "0xa02a3b78",
+          "third_word": "0x0"
+        },
+        {
+          "index": 25,
+          "entry_file_offset": "0x5f2fcc",
+          "name_address": "0xa05ae704",
+          "name": "rmdir",
+          "handler": "0xa02a3b38",
+          "third_word": "0x0"
+        },
+        {
+          "index": 26,
+          "entry_file_offset": "0x5f2fd8",
+          "name_address": "0xa05ae70c",
+          "name": "savebin",
+          "handler": "0xa02a3db0",
+          "third_word": "0x0"
+        },
+        {
+          "index": 27,
+          "entry_file_offset": "0x5f2fe4",
+          "name_address": "0xa05ae714",
+          "name": "sleep",
+          "handler": "0xa02a3824",
+          "third_word": "0x0"
+        },
+        {
+          "index": 28,
+          "entry_file_offset": "0x5f2ff0",
+          "name_address": "0xa05a7e44",
+          "name": "suspend",
+          "handler": "0xa02a3f08",
+          "third_word": "0x0"
+        },
+        {
+          "index": 29,
+          "entry_file_offset": "0x5f2ffc",
+          "name_address": "0xa05a4e1c",
+          "name": "t",
+          "handler": "0xa029e1a4",
+          "third_word": "0x0"
+        },
+        {
+          "index": 30,
+          "entry_file_offset": "0x5f3008",
+          "name_address": "0xa05a7464",
+          "name": "thruput",
+          "handler": "0xa02a1b98",
+          "third_word": "0x0"
+        },
+        {
+          "index": 31,
+          "entry_file_offset": "0x5f3014",
+          "name_address": "0xa0534a84",
+          "name": "true",
+          "handler": "0xa02a403c",
+          "third_word": "0x0"
+        },
+        {
+          "index": 32,
+          "entry_file_offset": "0x5f3020",
+          "name_address": "0xa0535db8",
+          "name": "ver",
+          "handler": "0xa02a40f8",
+          "third_word": "0x0"
+        },
+        {
+          "index": 33,
+          "entry_file_offset": "0x5f302c",
+          "name_address": "0xa0564d08",
+          "name": "vol",
+          "handler": "0xa02a42ac",
+          "third_word": "0x0"
+        },
+        {
+          "index": 34,
+          "entry_file_offset": "0x5f3038",
+          "name_address": "0xa05ae71c",
+          "name": "writeb",
+          "handler": "0xa02a2d68",
+          "third_word": "0x0"
+        },
+        {
+          "index": 35,
+          "entry_file_offset": "0x5f3044",
+          "name_address": "0xa05ae724",
+          "name": "writel",
+          "handler": "0xa02a2e08",
+          "third_word": "0x0"
+        },
+        {
+          "index": 36,
+          "entry_file_offset": "0x5f3050",
+          "name_address": "0xa05ae72c",
+          "name": "writew",
+          "handler": "0xa02a2db8",
+          "third_word": "0x0"
+        },
+        {
+          "index": 37,
+          "entry_file_offset": "0x5f305c",
+          "name_address": "0xa055f148",
+          "name": "fwupdate",
+          "handler": "0xa02a23ac",
+          "third_word": "0x0"
+        }
+      ]
+    }
+  ],
+  "fixed_handler_checks": {
+    "loadbin": "0xA02A2584",
+    "savebin": "0xA02A3DB0",
+    "t_dispatch": "0xA029E1A4",
+    "t_register": "0xA029E098"
+  },
+  "limitations": [
+    "The table locations were inherited from the matching static image and checked bytewise here.",
+    "A handler pointer is not proof that a command is safe or currently registered at runtime.",
+    "No device memory was written and no command was invoked by this script."
+  ]
+}

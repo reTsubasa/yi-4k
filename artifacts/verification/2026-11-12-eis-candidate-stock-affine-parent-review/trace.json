@@ -1,0 +1,77 @@
+{
+  "schema": "yi4k.eis-candidate-trace/v1",
+  "units": {
+    "gyro": "degrees_per_second",
+    "tick": "microseconds"
+  },
+  "config": {
+    "width": 1920,
+    "height": 1080,
+    "crop_margin": 0.12
+  },
+  "samples": [
+    {
+      "sequence": 0,
+      "tick_us": 1000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 1,
+      "tick_us": 11000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 2,
+      "tick_us": 21000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 3,
+      "tick_us": 31000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 4,
+      "tick_us": 41000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 5,
+      "tick_us": 51000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    },
+    {
+      "sequence": 6,
+      "tick_us": 61000,
+      "gyro_dps": [
+        2.0,
+        -3.0,
+        1.0
+      ]
+    }
+  ]
+}

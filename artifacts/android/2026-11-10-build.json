@@ -1,0 +1,165 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint, V2 signature, actual Android UI fixed-control visibility, real-camera 455.8MB 4K batch original export/decode/hash, and two-round MainActivity RTSP first-frame/player-release workflow; no physical phone",
+  "packaged_at_utc": "2026-11-10T14:03:18.054852+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.6-debug.apk",
+  "sha256": "a5f9b62f750d181ff576a89a6b5b211916b3b9e76d314f5b8c08d6d7efabb06e",
+  "size_bytes": 11770849,
+  "version_name": "0.3.6",
+  "version_code": 9,
+  "application_id": "dev.yi4k.control",
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.6-build06.log",
+  "reports": "artifacts/android/0.3.6-reports",
+  "changes_from_0_3_5": [
+    "Pin shutter and capture modes above navigation/status area, adapt preview to remaining viewport, preserve scrolling fallback on small screens",
+    "Keep fixed capture actions disabled while busy/exporting; no camera protocol changes"
+  ],
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "physical_phone_execution": false,
+    "android_emulator_execution": true,
+    "signature_verified": true,
+    "signature_scheme": "v2"
+  },
+  "tests": {
+    "debug": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "limits": [
+    "No physical phone hotspot, large-font or actual rotation acceptance",
+    "0.3.5 60-second 4K capture, 0.3.4 disconnect and 0.3.2 editor results not rerun on 0.3.6",
+    "Perceptual audio-video sync and timelapse/slowmotion recording unverified",
+    "EIS replacement, native execution/recovery and camera standalone 60s prerecord remain unimplemented"
+  ],
+  "signature_report": "artifacts/android/0.3.6-signature06.txt",
+  "candidate_status": "passed stated host and Android runtime scope; available for manual phone testing",
+  "camera_main_4k_workflow": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.6-device-reports/camera-main-4k60-run01/acceptance.json",
+    "details": "artifacts/android/0.3.6-device-reports/camera-main-4k60-run01/workflow-screens/camera-main.json",
+    "scope": "Actual visible MainActivity guide/Wi-Fi selection, fixed shutter/modes fully visible, Chinese settings, scroll to real media checkboxes and batch export button, MediaStore SHA/decode, disconnect; no camera writes, AVD via host",
+    "exports": [
+      {
+        "name": "YDXJ0158.MP4",
+        "bytes": 455840625,
+        "type": "video",
+        "sha256": "577e0f8bf89fb00b8fb922137db5bc979deef0f02483e06fb9065c687e1c0d2e",
+        "decoded_width": 3840,
+        "decoded_height": 2160,
+        "duration_ms": 60127,
+        "has_audio": "yes"
+      },
+      {
+        "name": "YDXJ0159.JPG",
+        "bytes": 4309658,
+        "type": "photo",
+        "sha256": "cb8f262895b70b0136312372244d1d42b03ff7eb15e203d0e292df3458521347"
+      }
+    ],
+    "export_elapsed_ms": 123649,
+    "capture_controls_fully_visible": true,
+    "before_after_status_stable_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  },
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "verification_updated_at_utc": "2026-11-10T14:28:33.189420+00:00",
+  "development_verification_failures": [
+    {
+      "log": "artifacts/android/0.3.6-build01.log",
+      "reason": "Host landscape test measured a 700px content viewport inside a 412px display, clipping mode visibility; preserved failure."
+    },
+    {
+      "log": "artifacts/android/0.3.6-build02.log",
+      "reason": "Host outer display bounds still clipped the wider decor; corrected test display bounds while retaining all three viewport checks."
+    },
+    {
+      "log": "artifacts/android/0.3.6-build05.log",
+      "reason": "New fixed-action regression test exercised exporting independently of busy; updateOperation now treats either flag as occupied. Existing product export normally sets both."
+    }
+  ],
+  "camera_main_preview_workflow": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.6-device-reports/camera-main-preview-run01/acceptance.json",
+    "details": "artifacts/android/0.3.6-device-reports/camera-main-preview-run01/workflow-screens/camera-main-preview/camera-main-preview.json",
+    "scope": "Actual MainActivity guide/product Wi-Fi selection/preview placeholder -> two real RTSP first frames with decoder counters -> actual public ExoPlayer release and Surface detach on settings navigation -> UI disconnect; AVD via host, not physical phone",
+    "first_frames": [
+      {
+        "event": "real_first_frame",
+        "round": 1,
+        "run_id": "617f9586-c021-4d72-86e3-e7615945e04c",
+        "elapsed_ms": 23383,
+        "ui_status": "实时画面已连接",
+        "video_width": 848,
+        "video_height": 480,
+        "rendered_output_buffers": 1,
+        "surface_class": "android.view.SurfaceView",
+        "player_identity": 159551773,
+        "screenshot": "preview-first-frame-1.png"
+      },
+      {
+        "event": "real_first_frame",
+        "round": 2,
+        "run_id": "617f9586-c021-4d72-86e3-e7615945e04c",
+        "elapsed_ms": 24834,
+        "ui_status": "实时画面已连接",
+        "video_width": 848,
+        "video_height": 480,
+        "rendered_output_buffers": 1,
+        "surface_class": "android.view.SurfaceView",
+        "player_identity": 27206287,
+        "screenshot": "preview-first-frame-2.png"
+      }
+    ],
+    "navigation_releases": [
+      {
+        "event": "public_player_release_verified",
+        "phase": "settings_after_round_1",
+        "elapsed_ms": 23807,
+        "round": 1,
+        "player_identity": 159551773,
+        "player_is_released": true,
+        "player_view_player_null": true,
+        "player_view_parent_null": true,
+        "surface_detached_from_window": true
+      },
+      {
+        "event": "public_player_release_verified",
+        "phase": "settings_before_ui_disconnect",
+        "elapsed_ms": 25220,
+        "round": 2,
+        "player_identity": 27206287,
+        "player_is_released": true,
+        "player_view_player_null": true,
+        "player_view_parent_null": true,
+        "surface_detached_from_window": true
+      }
+    ],
+    "before_after_status_stable_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true,
+    "test_apk": "artifacts/android/yi4k-control-0.3.6-preview-tests.apk",
+    "test_apk_sha256": "3dce8cf2894c7e4df2917dc30a39bb56cbee104f35b33729b3c01ab689a22271",
+    "test_build_log": "artifacts/android/0.3.6-preview-test-build01.log",
+    "vf_cleanup": "Already idle after UI disconnect; conditional test/host fallback did not send 260",
+    "limits": "No long run, recording concurrency, background or preview network-loss release acceptance"
+  }
+}

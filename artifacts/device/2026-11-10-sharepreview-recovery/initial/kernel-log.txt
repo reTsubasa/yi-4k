@@ -1,0 +1,83 @@
+~ # dmesg | tail -80
+[   19.145056] dhd_inetaddr_notifier_call: bus not ready, exit
+[   19.152267] dhd_open: Enter 41e9d000
+[   19.156414] 
+[   19.156414] Dongle Host Driver, version 1.363.59.144.7 (r)
+[   19.164558] wl_android_wifi_on in 1
+[   19.170010] wl_android_wifi_on in 2: g_wifi_on=0
+[   19.175732] wifi_platform_set_power = 1
+[   19.180149] ======== PULL WL_REG_ON(-1) HIGH! ========
+[   19.186239] ======== mmc_power_restore_host! ========
+[   19.316235] mmc0: queuing unknown CIS tuple 0x80 (2 bytes)
+[   19.325985] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   19.334418] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   19.344348] mmc0: queuing unknown CIS tuple 0x80 (7 bytes)
+[   19.797487] sdioh_start: set sd_f2_blocksize 256
+[   19.803829] 
+[   19.803829] 
+[   19.803829] dhd_bus_devreset: == WLAN ON ==
+[   19.812409] F1 signature read @0x18000000=0x1602a94c
+[   19.826616] F1 signature OK, socitype:0x1 chip:0xa94c rev:0x2 pkg:0x0
+[   19.835476] DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+[   19.845031] dhd_os_open_image: /usr/local/bcmdhd/config.txt (378 bytes) open success
+[   19.854890] dhd_conf_read_country_list: 39 country in list
+[   19.864915] dhd_conf_set_fw_name_by_chip: firmware_path=/usr/local/bcmdhd/fw_apsta43340.bin
+[   19.874778] dhd_conf_set_bus_params: set polling mode 1
+[   19.881053] dhd_conf_set_bus_params: set use_rxchain 0
+[   19.887045] dhd_conf_set_bus_params: set txglomsize 16
+[   19.893054] Final fw_path=/usr/local/bcmdhd/fw_apsta43340.bin
+[   19.899725] Final nv_path=/usr/local/bcmdhd/nvram43340.txt
+[   19.907642] Final conf_path=/usr/local/bcmdhd/config.txt
+[   19.915338] dhd_os_open_image: /usr/local/bcmdhd/fw_apsta43340.bin (382354 bytes) open success
+[   20.112823] dhd_os_open_image: /usr/local/bcmdhd/nvram43340.txt (2583 bytes) open success
+[   16.693965] aipc_router xprt error: host=116, port=1730161714
+[   20.122483] NVRAM version: AP6234_NVRAM_V1.3_20160204
+[   20.130066] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[   20.326405] dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+[   20.336769] Disable tdls_auto_op failed. -1
+[   20.341792] dhd_conf_set_intiovar: set WLC_SET_BAND 142 0
+[   20.348553] dhd_preinit_ioctls: Set tcpack_sup_mode 0
+[   20.354487] wifi_platform_get_mac_addr
+[   20.358822] ======== dhd_wlan_get_mac_addr ========
+[   20.365992] mac: 58:70:C6:02:2F:4F
+[   20.372925] Firmware up: op_mode=0x0002, MAC=58:70:c6:02:2f:4f
+[   20.379784] dhd_conf_set_country: set country CN, revision 0
+[   20.483323] Country code: CN (CN/0)
+[   20.488201] dhd_conf_set_intiovar: set roam_off 1
+[   20.500135] dhd_preinit_ioctls event_msgs_ext not support or version mismatch -23
+[   20.512579] Firmware version = wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7
+[   20.525577]   Driver: 1.363.59.144.7 (r)
+[   20.525577]   Firmware: wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7 
+[   20.541710] dhd_txglom_enable: enable 0
+[   20.546141] dhd_conf_set_txglom_params: swtxglom=0, txglom_ext=0, txglom_bucket_size=0
+[   20.555422] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0, bus_txglom=-1
+[   20.566182] dhd_conf_set_txglom_params: tx_in_rx=1, txinrx_thres=-1, dhd_txminmax=1
+[   20.575281] dhd_conf_set_txglom_params: tx_max_offset=1, txctl_tmo_fix=1
+[   20.583084] sdioh_set_mode: set txglom_mode to copy
+[   20.588829] dhd_conf_get_disable_proptx: fw_proptx=1, disable_proptx=0
+[   20.605977] dhd_preinit_ioctls wl ampdu_hostreorder failed -23
+[   20.613627] dhd_wlfc_init(): successfully enabled bdcv2 tlv signaling, 79
+[   20.622116] dhd_conf_set_intiovar: set ampdu_hostreorder 1
+[   20.629377] CONFIG-ERROR) dhd_conf_set_intiovar: ampdu_hostreorder setting failed -23
+[   20.640901] dhd_wl_ioctl_get_intiovar: get int iovar wlfc_mode failed, ERR -23
+[   20.649332] dhd_wlfc_init(): wlfc_mode=0x0, ret=-23
+[   20.656068] wl_android_wifi_on: Success
+[   20.661144] wl_create_event_handler(): thread:wl_event_handler:1c1 started
+[   20.669190] tsk Enter, tsk = 0x42041378
+[   20.771237] CFG80211-ERROR) wl_update_wiphybands : error reading vhtmode (-23)
+[   20.806516] dhd_open: Exit ret=0
+[   21.501993] CFG80211-ERROR) wl_cfg80211_del_station : Disconnect STA : ff:ff:ff:ff:ff:ff scb_val.val 3
+[   21.576878] dhd_wl_ioctl_set_intiovar: set int iovar ndoe failed, ERR -23
+[   21.584874] dhd_ndo_enable: failed to enabe ndo to 0, retcode = -23
+[   21.592467] CFG80211-ERROR) wl_cfg80211_start_ap : wl_cfg80211_start_ap: Disabling NDO Failed -23
+[   21.606324] netdev_ifidx(3), chan_type(1) target channel(157) 
+[   21.834707] _dhd_wlfc_mac_entry_update():1853, entry(32)
+[   21.847091] wl_iw_event: Link UP with BSSID=58:70:00:00:2f:4f
+[   21.853928] CFG80211-ERROR) wl_notify_connect_status_ap : ** AP/GO Link up event **
+[   31.363127] wl_notify_connect_status_ap: connected device 9a:a9:12:8e:af:5d
+[   30.162429] Switching to clocksource jiffies
+[   30.162429] Switching to clocksource ambarella-cs-timer
+[   33.130392] Switching to clocksource jiffies
+[   33.130392] Switching to clocksource ambarella-cs-timer
+~ # echo __YI_CAPTURE_f8d7cbdc4f96474dbfb372102c6a87cb__
+__YI_CAPTURE_f8d7cbdc4f96474dbfb372102c6a87cb__

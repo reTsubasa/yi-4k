@@ -1,0 +1,436 @@
+{
+  "evidence_type": "fixed stored ORC bytes and stock diagnostic references; offline only",
+  "dsp_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "orccode_sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6",
+  "reference_sha256": "4383b2c2ddceafec258d3907dee382d76389ca3604c0cad867fc58d15a30039c",
+  "instruction_checks": [
+    {
+      "offset": "0x17f1ec",
+      "word_le": "0x1a400000",
+      "instruction": "l.movhi r18,0x0"
+    },
+    {
+      "offset": "0x17f1f0",
+      "word_le": "0xaa520000",
+      "instruction": "l.ori r18,r18,0x0"
+    },
+    {
+      "offset": "0x17f27c",
+      "word_le": "0x84d20078",
+      "instruction": "l.lwz r6,120(r18)"
+    },
+    {
+      "offset": "0x17f288",
+      "word_le": "0xa4a60003",
+      "instruction": "l.andi r5,r6,0x3"
+    },
+    {
+      "offset": "0x17f290",
+      "word_le": "0x10000008",
+      "instruction": "l.bf 0x17f2b0"
+    },
+    {
+      "offset": "0x17f294",
+      "word_le": "0x40082ec",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "offset": "0x18cb5c",
+      "word_le": "0x1a000000",
+      "instruction": "l.movhi r16,0x0"
+    },
+    {
+      "offset": "0x18cb60",
+      "word_le": "0xaa100000",
+      "instruction": "l.ori r16,r16,0x0"
+    },
+    {
+      "offset": "0x18cb68",
+      "word_le": "0x84b00078",
+      "instruction": "l.lwz r5,120(r16)"
+    },
+    {
+      "offset": "0x18cb70",
+      "word_le": "0xa4850001",
+      "instruction": "l.andi r4,r5,0x1"
+    },
+    {
+      "offset": "0x18cb78",
+      "word_le": "0xc00002d",
+      "instruction": "l.bnf 0x18cc2c"
+    },
+    {
+      "offset": "0x18cc40",
+      "word_le": "0x4004c81",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "offset": "0x18cc44",
+      "word_le": "0x3ffffce",
+      "instruction": "l.j 0x18cb7c"
+    },
+    {
+      "offset": "0x1a0b14",
+      "word_le": "0xa9430000",
+      "instruction": "l.ori r10,r3,0x0"
+    },
+    {
+      "offset": "0x1a0b18",
+      "word_le": "0xa9840000",
+      "instruction": "l.ori r12,r4,0x0"
+    },
+    {
+      "offset": "0x1a0b28",
+      "word_le": "0xbdaa0007",
+      "instruction": "l.sflesi r10,7"
+    },
+    {
+      "offset": "0x1a0b48",
+      "word_le": "0x7fffcbf",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "offset": "0x1a0b4c",
+      "word_le": "0xb8ca0002",
+      "instruction": "l.slli r6,r10,2"
+    },
+    {
+      "offset": "0x1a0b50",
+      "word_le": "0x18600000",
+      "instruction": "l.movhi r3,0x0"
+    },
+    {
+      "offset": "0x1a0b54",
+      "word_le": "0xa8630064",
+      "instruction": "l.ori r3,r3,0x64"
+    },
+    {
+      "offset": "0x1a0b58",
+      "word_le": "0xe0a61800",
+      "instruction": "l.add r5,r6,r3"
+    },
+    {
+      "offset": "0x1a0b5c",
+      "word_le": "0xd4056000",
+      "instruction": "l.sw 0(r5),r12"
+    },
+    {
+      "offset": "0x1a0b90",
+      "word_le": "0xa9430000",
+      "instruction": "l.ori r10,r3,0x0"
+    },
+    {
+      "offset": "0x1a0b94",
+      "word_le": "0xa9840000",
+      "instruction": "l.ori r12,r4,0x0"
+    },
+    {
+      "offset": "0x1a0bb4",
+      "word_le": "0xb90a0002",
+      "instruction": "l.slli r8,r10,2"
+    },
+    {
+      "offset": "0x1a0bc0",
+      "word_le": "0x19400000",
+      "instruction": "l.movhi r10,0x0"
+    },
+    {
+      "offset": "0x1a0bc4",
+      "word_le": "0xa94a0064",
+      "instruction": "l.ori r10,r10,0x64"
+    },
+    {
+      "offset": "0x1a0bd0",
+      "word_le": "0xe1285000",
+      "instruction": "l.add r9,r8,r10"
+    },
+    {
+      "offset": "0x1a0bd4",
+      "word_le": "0x84e90000",
+      "instruction": "l.lwz r7,0(r9)"
+    },
+    {
+      "offset": "0x1a0bd8",
+      "word_le": "0xe0c76004",
+      "instruction": "l.or r6,r7,r12"
+    },
+    {
+      "offset": "0x1a0bdc",
+      "word_le": "0xd4093000",
+      "instruction": "l.sw 0(r9),r6"
+    },
+    {
+      "offset": "0x1a856c",
+      "word_le": "0x8c6a0004",
+      "instruction": "l.lbz r3,4(r10)"
+    },
+    {
+      "offset": "0x1a857c",
+      "word_le": "0x8dea0005",
+      "instruction": "l.lbz r15,5(r10)"
+    },
+    {
+      "offset": "0x1a85cc",
+      "word_le": "0x848a0008",
+      "instruction": "l.lwz r4,8(r10)"
+    },
+    {
+      "offset": "0x1a85d4",
+      "word_le": "0x7ffe169",
+      "instruction": "l.jal 0x1a0b78"
+    },
+    {
+      "offset": "0x1a85f4",
+      "word_le": "0x848a0008",
+      "instruction": "l.lwz r4,8(r10)"
+    },
+    {
+      "offset": "0x1a85fc",
+      "word_le": "0x7ffe140",
+      "instruction": "l.jal 0x1a0afc"
+    },
+    {
+      "offset": "0x1a860c",
+      "word_le": "0x8e2a0005",
+      "instruction": "l.lbz r17,5(r10)"
+    },
+    {
+      "offset": "0x1a8618",
+      "word_le": "0x848a0008",
+      "instruction": "l.lwz r4,8(r10)"
+    },
+    {
+      "offset": "0x1a8620",
+      "word_le": "0x7ffe156",
+      "instruction": "l.jal 0x1a0b78"
+    },
+    {
+      "offset": "0x1a8628",
+      "word_le": "0x848a0008",
+      "instruction": "l.lwz r4,8(r10)"
+    },
+    {
+      "offset": "0x1a8630",
+      "word_le": "0x7ffe133",
+      "instruction": "l.jal 0x1a0afc"
+    },
+    {
+      "offset": "0xd360",
+      "word_le": "0x18a00000",
+      "instruction": "l.movhi r5,0x0"
+    },
+    {
+      "offset": "0xd364",
+      "word_le": "0xa8a50000",
+      "instruction": "l.ori r5,r5,0x0"
+    },
+    {
+      "offset": "0xd368",
+      "word_le": "0x9c600000",
+      "instruction": "l.addi r3,r0,0"
+    },
+    {
+      "offset": "0xd36c",
+      "word_le": "0xd4051878",
+      "instruction": "l.sw 120(r5),r3"
+    },
+    {
+      "offset": "0x98e08",
+      "word_le": "0x9c600000",
+      "instruction": "l.addi r3,r0,0"
+    },
+    {
+      "offset": "0x98e24",
+      "word_le": "0xd4041878",
+      "instruction": "l.sw 120(r4),r3"
+    },
+    {
+      "offset": "0x98e60",
+      "word_le": "0x18800000",
+      "instruction": "l.movhi r4,0x0"
+    },
+    {
+      "offset": "0x98e64",
+      "word_le": "0xa8840000",
+      "instruction": "l.ori r4,r4,0x0"
+    },
+    {
+      "offset": "0x98e90",
+      "word_le": "0x9ce00007",
+      "instruction": "l.addi r7,r0,7"
+    },
+    {
+      "offset": "0x98eac",
+      "word_le": "0xd4043878",
+      "instruction": "l.sw 120(r4),r7"
+    },
+    {
+      "offset": "0x1a0384",
+      "word_le": "0x19800000",
+      "instruction": "l.movhi r12,0x0"
+    },
+    {
+      "offset": "0x1a0388",
+      "word_le": "0xa98c0000",
+      "instruction": "l.ori r12,r12,0x0"
+    },
+    {
+      "offset": "0x1a0390",
+      "word_le": "0x9ca00007",
+      "instruction": "l.addi r5,r0,7"
+    },
+    {
+      "offset": "0x1a03b0",
+      "word_le": "0xd40c2878",
+      "instruction": "l.sw 120(r12),r5"
+    },
+    {
+      "offset": "0x1fc1f0",
+      "word_le": "0x1a000000",
+      "instruction": "l.movhi r16,0x0"
+    },
+    {
+      "offset": "0x1fc1f4",
+      "word_le": "0xaa100000",
+      "instruction": "l.ori r16,r16,0x0"
+    },
+    {
+      "offset": "0x1fc1f8",
+      "word_le": "0x9dc00007",
+      "instruction": "l.addi r14,r0,7"
+    },
+    {
+      "offset": "0x1fc208",
+      "word_le": "0xd4107078",
+      "instruction": "l.sw 120(r16),r14"
+    }
+  ],
+  "instruction_check_count": 60,
+  "diagnostics": [
+    {
+      "offset": "0x2c027e",
+      "references": [
+        "0x1a0b38",
+        "0x1a0b3c"
+      ],
+      "text": "DSP:: setDebugLevel module=%d, dbg_lvl=%d\n"
+    },
+    {
+      "offset": "0x2c02a9",
+      "references": [
+        "0x1a0bc8",
+        "0x1a0bcc"
+      ],
+      "text": "DSP:: addDebugLevel module=%d, dbg_lvl=%d, after=%d\n"
+    },
+    {
+      "offset": "0x2c354b",
+      "references": [
+        "0x1a85b0",
+        "0x1a85b4"
+      ],
+      "text": "DSP:: CMD::CMD_DSP_SET_DEBUG_LEVEL::module=%d add=%d mask=0x%08x\n"
+    }
+  ],
+  "windows": [
+    {
+      "name": "debug-set",
+      "range": [
+        "0x1a0afc",
+        "0x1a0b78"
+      ],
+      "sha256": "8e96d939ba008b10d07b4941abbc8996da39f6e0933eaf2d490e638182936bf1"
+    },
+    {
+      "name": "debug-or",
+      "range": [
+        "0x1a0b78",
+        "0x1a0bfc"
+      ],
+      "sha256": "5d95693f1b109d4215713fc1ae2f985729e6e23430df0ea1cdf29bf8a22f1421"
+    },
+    {
+      "name": "command-dispatch",
+      "range": [
+        "0x1a855c",
+        "0x1a8638"
+      ],
+      "sha256": "716e1fd40e7620e0fef19ea9322536d0852b12b1b59093edb50ebac645facfde"
+    },
+    {
+      "name": "vertical-reader",
+      "range": [
+        "0x17f1b8",
+        "0x17f2d4"
+      ],
+      "sha256": "55e46e6876c7e33abe21fb6d714384e3aabe39ff427dd12623f89f2554ce4f57"
+    },
+    {
+      "name": "copy-reader",
+      "range": [
+        "0x18cb2c",
+        "0x18cc6c"
+      ],
+      "sha256": "85d26f1a0b85017843758253b8ba5ba3caaa0975b2ac36c328f8139c4be82871"
+    },
+    {
+      "name": "explicit-zero-writer",
+      "range": [
+        "0xd354",
+        "0xd37c"
+      ],
+      "sha256": "a230c8dbf676bd092b0bfb949f26f29f1dffb15b93b9dca0ddbbc3435ba0f596"
+    },
+    {
+      "name": "mode-writers",
+      "range": [
+        "0x98ddc",
+        "0x98ec8"
+      ],
+      "sha256": "d197b9c4cecdf8abc39a7e1d636f159552d03b43bea7ff4a280f913c684e0542"
+    },
+    {
+      "name": "init-seven-writer",
+      "range": [
+        "0x1a0384",
+        "0x1a03d4"
+      ],
+      "sha256": "2f9eb626eb3d18acec5fc434f7150840777fadd0d41a1f49a052ba6b329708f1"
+    },
+    {
+      "name": "other-seven-writer",
+      "range": [
+        "0x1fc1d0",
+        "0x1fc21c"
+      ],
+      "sha256": "a433acd59f535e3501858b0074f5b35ebf625676ec145cf42bab77390bac962f"
+    }
+  ],
+  "debug_array": {
+    "base_expression": "zero-base-relative +0x64, not an asserted physical address",
+    "element_bytes": 4,
+    "module5_offset": "0x78",
+    "set_helper": "0x1a0afc: array[module] = level",
+    "add_helper": "0x1a0b78: array[module] |= level",
+    "command_fields": "module=byte(command+4), add=byte(command+5), mask=word(command+8)",
+    "command_reachability": "static dispatcher only; no API exposure/runtime reachability or command execution asserted"
+  },
+  "bounded_findings": [
+    "The +0x78 field matches index 5 of the +0x64 u32 debug-level array; setDebugLevel and addDebugLevel are anchored by two matched stock diagnostic references and actual indexed stores.",
+    "The debug command dispatch loads module/add/mask from +4/+5/+8 and calls set or OR helpers, providing an explicit software writer to the same array element.",
+    "Several independent fixed windows write 0 or 7 to zero-base-relative +0x78; no DMA-done value is required to explain the observed low bits.",
+    "The vertical-warp logger checks module5 bits 0..1, while idspdrv_dram2dram checks module5 bit0 before printing its src/dst/size diagnostic; these reader/writer facts identify a diagnostic mask, not a transfer completion field."
+  ],
+  "not_proven": [
+    "DSP physical DMEM/SMEM base, actual runtime mapping and register state",
+    "Exhaustive writer inventory, unknown indirect aliases or proprietary effects",
+    "Runtime debug level or externally reachable debug command path",
+    "Dedicated hardware completion/cache/latch semantics of proprietary transfers",
+    "Transfer-source final-reader time or safe table/slot reuse"
+  ],
+  "next_gap": "Completion must be recovered from the proprietary transfer/consumer hardware contract; +0x78 is a diagnostic configuration element and cannot provide that contract.",
+  "device_access": false,
+  "orc_executed": false,
+  "rtos_executed": false,
+  "writes_to_device": false
+}

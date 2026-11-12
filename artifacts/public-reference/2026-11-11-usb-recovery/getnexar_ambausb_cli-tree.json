@@ -1,0 +1,3445 @@
+{
+  "sha": "82414537ff857f3abe4a1bfd19665b6fe4c12f19",
+  "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/82414537ff857f3abe4a1bfd19665b6fe4c12f19",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6943d70eb9224656a94840dabd6f8938268b324",
+      "size": 14,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c6943d70eb9224656a94840dabd6f8938268b324"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a553916f0ff78b058a8a4cade70199ec7cbc10a5",
+      "size": 1882,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a553916f0ff78b058a8a4cade70199ec7cbc10a5"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0992c80e7f60835bd74204f2aa079c44e5139c89",
+      "size": 6320,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0992c80e7f60835bd74204f2aa079c44e5139c89"
+    },
+    {
+      "path": "bootstrap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f89a6cc7ddb0b1e0bf6f4c5cf55149b905268069",
+      "size": 3041,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f89a6cc7ddb0b1e0bf6f4c5cf55149b905268069"
+    },
+    {
+      "path": "platform",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "789b7726f43bf7b6e4c36da4d0bbfefd4fda8efd",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/789b7726f43bf7b6e4c36da4d0bbfefd4fda8efd"
+    },
+    {
+      "path": "platform/a5s",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "584a0e2f01f374b3fe9d72432e5326752a7fe015",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/584a0e2f01f374b3fe9d72432e5326752a7fe015"
+    },
+    {
+      "path": "platform/a5s/a5s.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27f2df0a3fc7da772ca3a3f373ae204f1aed8e1f",
+      "size": 763,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/27f2df0a3fc7da772ca3a3f373ae204f1aed8e1f"
+    },
+    {
+      "path": "platform/a5s/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d7b3922777c7df52e695ebd320fb637b0284d32",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9d7b3922777c7df52e695ebd320fb637b0284d32"
+    },
+    {
+      "path": "platform/a5s/ads/a5s_ddr2.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ada2c4ed04c7daf274cd3b4ae7f0bb97c341b83a",
+      "size": 1638,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ada2c4ed04c7daf274cd3b4ae7f0bb97c341b83a"
+    },
+    {
+      "path": "platform/a5s/ads/a5s_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47e2eca2c10be4ed5b2154551c6f7a14de86d764",
+      "size": 1255,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/47e2eca2c10be4ed5b2154551c6f7a14de86d764"
+    },
+    {
+      "path": "platform/a5s/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b19faf4dec0211af7aa448d115cb826db7b8568",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/0b19faf4dec0211af7aa448d115cb826db7b8568"
+    },
+    {
+      "path": "platform/a5s/bld/ambhal.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39e699af700b8ba85ddea9333cb17d4a7b2dc4cc",
+      "size": 59144,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/39e699af700b8ba85ddea9333cb17d4a7b2dc4cc"
+    },
+    {
+      "path": "platform/a5s/bld/bld.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e8c8defeb70de3fedee57dd1a169c56b0adbb4e",
+      "size": 163020,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9e8c8defeb70de3fedee57dd1a169c56b0adbb4e"
+    },
+    {
+      "path": "platform/a5s/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2092489c44fa1d9ec10cd8b7550b96c245b6415",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/b2092489c44fa1d9ec10cd8b7550b96c245b6415"
+    },
+    {
+      "path": "platform/a5s/boards/A5s_DDR2_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d520ed2c8e111d3bc1c6e74b75fc21068664a5a",
+      "size": 84,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1d520ed2c8e111d3bc1c6e74b75fc21068664a5a"
+    },
+    {
+      "path": "platform/a5s/boards/A5s_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf293ee66ff46ec0e9404b64daf9e3d624083f0e",
+      "size": 84,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bf293ee66ff46ec0e9404b64daf9e3d624083f0e"
+    },
+    {
+      "path": "platform/a5s/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccfad992bfc6cdc0e4c909052da9285500a83629",
+      "size": 215,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ccfad992bfc6cdc0e4c909052da9285500a83629"
+    },
+    {
+      "path": "platform/a7l",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56e50d5fa951531efdf1b16d80416b107dba3172",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/56e50d5fa951531efdf1b16d80416b107dba3172"
+    },
+    {
+      "path": "platform/a7l/a7l.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b66fb086c9dc58689c087f51ea111182c27f78b",
+      "size": 625,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2b66fb086c9dc58689c087f51ea111182c27f78b"
+    },
+    {
+      "path": "platform/a7l/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e680ae056eed4a2ce6b52e12e0fd9c999a6c30e1",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/e680ae056eed4a2ce6b52e12e0fd9c999a6c30e1"
+    },
+    {
+      "path": "platform/a7l/ads/a7l_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b32e1ea8121dd5e48184bba9f9b98be38251c0",
+      "size": 1288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d8b32e1ea8121dd5e48184bba9f9b98be38251c0"
+    },
+    {
+      "path": "platform/a7l/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd4beaa90e1b0c5f4ed3330a83e910175f128398",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/fd4beaa90e1b0c5f4ed3330a83e910175f128398"
+    },
+    {
+      "path": "platform/a7l/bld/ambhal.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea2d51506950bc87f65588031b713861d3d2b19f",
+      "size": 59424,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ea2d51506950bc87f65588031b713861d3d2b19f"
+    },
+    {
+      "path": "platform/a7l/bld/bld.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aff25cda849e42f276a89a3e48f29d697f2926c",
+      "size": 143096,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0aff25cda849e42f276a89a3e48f29d697f2926c"
+    },
+    {
+      "path": "platform/a7l/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55c845165347f360fe918bdcf2b9600a30916c62",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/55c845165347f360fe918bdcf2b9600a30916c62"
+    },
+    {
+      "path": "platform/a7l/boards/A7L_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a897cbcb23e52656cf4a32ce690910ae4b1f69b0",
+      "size": 84,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a897cbcb23e52656cf4a32ce690910ae4b1f69b0"
+    },
+    {
+      "path": "platform/a7l/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b8dea4ba355eae2ac3c755aa2a71c86b8506619",
+      "size": 215,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6b8dea4ba355eae2ac3c755aa2a71c86b8506619"
+    },
+    {
+      "path": "platform/a9aq",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f49f7e8f4bd8a339713220a4722a1f7b985f893d",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/f49f7e8f4bd8a339713220a4722a1f7b985f893d"
+    },
+    {
+      "path": "platform/a9aq/a9aq.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8beb615e325224a00050c19cbf399d15e6926aa8",
+      "size": 737,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8beb615e325224a00050c19cbf399d15e6926aa8"
+    },
+    {
+      "path": "platform/a9aq/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d041618ee23f6d443ba510190b6f41e90479620",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/1d041618ee23f6d443ba510190b6f41e90479620"
+    },
+    {
+      "path": "platform/a9aq/ads/a9aq_ddr3_216MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6746ab70f3cb4df677fc5961ba4065e2af94e5a7",
+      "size": 1652,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6746ab70f3cb4df677fc5961ba4065e2af94e5a7"
+    },
+    {
+      "path": "platform/a9aq/ads/a9aq_ddr3_600MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9c9b330dac0db21ed5cdcc3aff27769ca72d4da",
+      "size": 1733,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d9c9b330dac0db21ed5cdcc3aff27769ca72d4da"
+    },
+    {
+      "path": "platform/a9aq/ads/a9aqb_ddr3_216MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be37c19cfbbf3a784462dc186a3c2f553682be7b",
+      "size": 1653,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/be37c19cfbbf3a784462dc186a3c2f553682be7b"
+    },
+    {
+      "path": "platform/a9aq/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "523582bde00369f2549a2dd0f042044465c631bd",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/523582bde00369f2549a2dd0f042044465c631bd"
+    },
+    {
+      "path": "platform/a9aq/bld/a9aq_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b2415ba156c47f0bb5e7c82f9290496bf45dc6b",
+      "size": 102164,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5b2415ba156c47f0bb5e7c82f9290496bf45dc6b"
+    },
+    {
+      "path": "platform/a9aq/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf290773e480cfa9d5d01ef21550375bdbc3608c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/bf290773e480cfa9d5d01ef21550375bdbc3608c"
+    },
+    {
+      "path": "platform/a9aq/boards/A9AQB_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dfd93bf28aa824de1acaa12ed7e3e9a235b2348",
+      "size": 106,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8dfd93bf28aa824de1acaa12ed7e3e9a235b2348"
+    },
+    {
+      "path": "platform/a9aq/boards/A9AQ_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e42e1b12364fb1914e1c2c2dbd444b6eedb3db69",
+      "size": 104,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e42e1b12364fb1914e1c2c2dbd444b6eedb3db69"
+    },
+    {
+      "path": "platform/a9aq/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7920c0d34eaf8173ab455e0bd8bb6a767052ffae",
+      "size": 217,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7920c0d34eaf8173ab455e0bd8bb6a767052ffae"
+    },
+    {
+      "path": "platform/cv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f0c760ce3992b2ce106c32fe7d8db16d62de4ea",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/1f0c760ce3992b2ce106c32fe7d8db16d62de4ea"
+    },
+    {
+      "path": "platform/cv1/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45e2edb205346e29b521d96220d52c786de5c05b",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/45e2edb205346e29b521d96220d52c786de5c05b"
+    },
+    {
+      "path": "platform/cv1/ads/cv1_lpddr4_1200MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fd692ae25cfda06b0bbd393a73a9c7934af4fbf",
+      "size": 5574,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8fd692ae25cfda06b0bbd393a73a9c7934af4fbf"
+    },
+    {
+      "path": "platform/cv1/ads/cv1_lpddr4_1416MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf856fe241f5a1abf617f7daba341fc3e497d58c",
+      "size": 5574,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bf856fe241f5a1abf617f7daba341fc3e497d58c"
+    },
+    {
+      "path": "platform/cv1/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9801bf3bb3eb45ffc7078ee69c854a7dbcb07c35",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9801bf3bb3eb45ffc7078ee69c854a7dbcb07c35"
+    },
+    {
+      "path": "platform/cv1/bld/cv1_bld_linux_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d9fa0592214371b26832ea3f6960c81efd1059",
+      "size": 209384,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a2d9fa0592214371b26832ea3f6960c81efd1059"
+    },
+    {
+      "path": "platform/cv1/bld/cv1_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2857d2c103f385c588a6bf38e7286add6bcf8411",
+      "size": 200592,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2857d2c103f385c588a6bf38e7286add6bcf8411"
+    },
+    {
+      "path": "platform/cv1/bld/cv1_bld_rtos.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "531baa92726e29dc0a513c73e30cc32023fe218a",
+      "size": 126368,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/531baa92726e29dc0a513c73e30cc32023fe218a"
+    },
+    {
+      "path": "platform/cv1/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8215740a8bd4db99505083bfcba5e02a6e006dab",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/8215740a8bd4db99505083bfcba5e02a6e006dab"
+    },
+    {
+      "path": "platform/cv1/boards/LINUX_CV1_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e229568092370fcbb8ec4f3a375a24a2b2b57bd",
+      "size": 117,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3e229568092370fcbb8ec4f3a375a24a2b2b57bd"
+    },
+    {
+      "path": "platform/cv1/boards/LINUX_CV1_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "554f0cb36b76d339cda756ab8b02ececcd81a0d5",
+      "size": 117,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/554f0cb36b76d339cda756ab8b02ececcd81a0d5"
+    },
+    {
+      "path": "platform/cv1/boards/RTOS_CV1_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ead4267c23b9a0fc0e265943ea24cce397b4aed5",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ead4267c23b9a0fc0e265943ea24cce397b4aed5"
+    },
+    {
+      "path": "platform/cv1/boards/RTOS_CV1_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a38b32f2c7581be68c1f76794005051c35570c",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c3a38b32f2c7581be68c1f76794005051c35570c"
+    },
+    {
+      "path": "platform/cv1/boards/RTOS_CV1_LPDDR4_NAND_SC3.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fde8ce5e4d82fa25cbe7b78cf8842faaddbec62",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2fde8ce5e4d82fa25cbe7b78cf8842faaddbec62"
+    },
+    {
+      "path": "platform/cv1/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34f221cef141614acaeb9220e4bdd749878a28aa",
+      "size": 216,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/34f221cef141614acaeb9220e4bdd749878a28aa"
+    },
+    {
+      "path": "platform/cv1/cv1.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c4955f9c06e08eec058bb653b6c411d446b291",
+      "size": 1076,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/78c4955f9c06e08eec058bb653b6c411d446b291"
+    },
+    {
+      "path": "platform/cv2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5e3a43e3e5800cffea08cf33129fe6d9387e8ea",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/d5e3a43e3e5800cffea08cf33129fe6d9387e8ea"
+    },
+    {
+      "path": "platform/cv2/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2cce7060809bb10925fe722c17c3d2106608d27",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/c2cce7060809bb10925fe722c17c3d2106608d27"
+    },
+    {
+      "path": "platform/cv2/ads/cv2_dk_lpddr4_408MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb27429f3f45e18b3f5e1bb4900ea5efea75157",
+      "size": 3032,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cfb27429f3f45e18b3f5e1bb4900ea5efea75157"
+    },
+    {
+      "path": "platform/cv2/ads/cv2_lpddr4_396MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23558e292b50b155013321175f32426d8a0fd864",
+      "size": 5196,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/23558e292b50b155013321175f32426d8a0fd864"
+    },
+    {
+      "path": "platform/cv2/ads/cv2_lpddr4_408MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fded17271bb1fb82cb91a7e682159a80b38913c",
+      "size": 3061,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8fded17271bb1fb82cb91a7e682159a80b38913c"
+    },
+    {
+      "path": "platform/cv2/ads/cv2_lpddr4_420MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "282793de2188d5874014ce5188c374c5c07996c3",
+      "size": 5468,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/282793de2188d5874014ce5188c374c5c07996c3"
+    },
+    {
+      "path": "platform/cv2/ads/cv2_lpddr4_420MHz_rtos.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c8f05457de5c646ecf794b6704deece3be0be1a",
+      "size": 5468,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6c8f05457de5c646ecf794b6704deece3be0be1a"
+    },
+    {
+      "path": "platform/cv2/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a891344772df33f1139f246e9bfd34959d79446",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/7a891344772df33f1139f246e9bfd34959d79446"
+    },
+    {
+      "path": "platform/cv2/bld/cv2_bld_linux_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfee1e2ba3c86698411908d1ad740cb8ffd8ed5e",
+      "size": 211400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cfee1e2ba3c86698411908d1ad740cb8ffd8ed5e"
+    },
+    {
+      "path": "platform/cv2/bld/cv2_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11707f14ec954005ee9bfb383b4d904a19bd37e2",
+      "size": 202296,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/11707f14ec954005ee9bfb383b4d904a19bd37e2"
+    },
+    {
+      "path": "platform/cv2/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce5bf87045274f2f091424a61ae51284dc585140",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/ce5bf87045274f2f091424a61ae51284dc585140"
+    },
+    {
+      "path": "platform/cv2/boards/LINUX_CV2_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8e5e39c42b57f123d20257f7e41e35a3fff80ae",
+      "size": 123,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b8e5e39c42b57f123d20257f7e41e35a3fff80ae"
+    },
+    {
+      "path": "platform/cv2/boards/LINUX_CV2_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a8498b3554c076bed1c7868b9b9c83d24d145e0",
+      "size": 123,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9a8498b3554c076bed1c7868b9b9c83d24d145e0"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ca7fa875e070cdbbc9835d7d8daac213dd83394",
+      "size": 127,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2ca7fa875e070cdbbc9835d7d8daac213dd83394"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_EMMC_408MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3afc7817198111a79bbb912834b014e7dd371b3",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b3afc7817198111a79bbb912834b014e7dd371b3"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d62f8207cf9d14ed39917adb1282cc6d3961cc1",
+      "size": 127,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5d62f8207cf9d14ed39917adb1282cc6d3961cc1"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_NAND_408MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8132898a95993beb2ab694847f74e89fee1e866b",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8132898a95993beb2ab694847f74e89fee1e866b"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_NAND_DK.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01c05a232bd5365585b44037c9e2f0024b844317",
+      "size": 128,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/01c05a232bd5365585b44037c9e2f0024b844317"
+    },
+    {
+      "path": "platform/cv2/boards/RTOS_CV2_LPDDR4_NAND_SC5.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "293727505cb91e6f09d2e80a3bd17421c1a97bec",
+      "size": 126,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/293727505cb91e6f09d2e80a3bd17421c1a97bec"
+    },
+    {
+      "path": "platform/cv2/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a644b599fa91af7f375a608af6e521542340bc4",
+      "size": 216,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8a644b599fa91af7f375a608af6e521542340bc4"
+    },
+    {
+      "path": "platform/cv2/cv2.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2192e80b7dfc5ea6cc64b97576ac3d670883026c",
+      "size": 1407,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2192e80b7dfc5ea6cc64b97576ac3d670883026c"
+    },
+    {
+      "path": "platform/cv22",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c7b92977fc26b07fbfd3503e38644fcb8d4795f",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9c7b92977fc26b07fbfd3503e38644fcb8d4795f"
+    },
+    {
+      "path": "platform/cv22/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba7aaa5c93b9e51bff6cad5ef94f40b05ed347ba",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/ba7aaa5c93b9e51bff6cad5ef94f40b05ed347ba"
+    },
+    {
+      "path": "platform/cv22/ads/cv22_lpddr4_408MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f14666e303094d2ad7374cfd98f1eea1876cb4c",
+      "size": 2707,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3f14666e303094d2ad7374cfd98f1eea1876cb4c"
+    },
+    {
+      "path": "platform/cv22/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dfa56478b0fea9e75480425121d95b9d933c4c1c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/dfa56478b0fea9e75480425121d95b9d933c4c1c"
+    },
+    {
+      "path": "platform/cv22/bld/cv22_bld_linux_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec7c06ea0fd016158ba6bdb8c68a6214fb24f970",
+      "size": 209304,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ec7c06ea0fd016158ba6bdb8c68a6214fb24f970"
+    },
+    {
+      "path": "platform/cv22/bld/cv22_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e95baf7e0c9b54c1bd25104b06bd34cb1a5b60",
+      "size": 202368,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/88e95baf7e0c9b54c1bd25104b06bd34cb1a5b60"
+    },
+    {
+      "path": "platform/cv22/bld/cv22_bld_linux_stack.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "753d2bda873287d05fdba0f68da46d7cee981cc8",
+      "size": 277664,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/753d2bda873287d05fdba0f68da46d7cee981cc8"
+    },
+    {
+      "path": "platform/cv22/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2006d1a77295b2dbcce48997357d33c6bfbe9429",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/2006d1a77295b2dbcce48997357d33c6bfbe9429"
+    },
+    {
+      "path": "platform/cv22/boards/LINUX_CV22_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aa50509a96eda43764a5c96d2aa615c4df0337b",
+      "size": 119,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6aa50509a96eda43764a5c96d2aa615c4df0337b"
+    },
+    {
+      "path": "platform/cv22/boards/LINUX_CV22_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70a43303cc8a88a904974f200a0e3bb896e6272f",
+      "size": 119,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/70a43303cc8a88a904974f200a0e3bb896e6272f"
+    },
+    {
+      "path": "platform/cv22/boards/LINUX_CV22_LPDDR4_STACK.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f06c2f7d54a08576f71511eed965bca02e053e5e",
+      "size": 123,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f06c2f7d54a08576f71511eed965bca02e053e5e"
+    },
+    {
+      "path": "platform/cv22/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33f123bbf897257a4a53bb31b363ec3d9b79f4a1",
+      "size": 218,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/33f123bbf897257a4a53bb31b363ec3d9b79f4a1"
+    },
+    {
+      "path": "platform/cv22/cv22.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204658760ec059f53471844569261dfe76a1964e",
+      "size": 929,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/204658760ec059f53471844569261dfe76a1964e"
+    },
+    {
+      "path": "platform/cv25",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d3760a706aea1fdb11bafec4782dd11c1bd8b4c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/8d3760a706aea1fdb11bafec4782dd11c1bd8b4c"
+    },
+    {
+      "path": "platform/cv25/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b8043134cc7081af87f3999e450ac4cf3251956",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/2b8043134cc7081af87f3999e450ac4cf3251956"
+    },
+    {
+      "path": "platform/cv25/ads/cv25_ddr4_792MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5468f7d2da6030cd62e9a0d04ad03830ad42536",
+      "size": 4826,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a5468f7d2da6030cd62e9a0d04ad03830ad42536"
+    },
+    {
+      "path": "platform/cv25/ads/cv25_lpddr4_540MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71e80b7e9e4ce1f1375eec1607eb0ef5df45ba71",
+      "size": 5565,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/71e80b7e9e4ce1f1375eec1607eb0ef5df45ba71"
+    },
+    {
+      "path": "platform/cv25/ads/cv25bub_lpddr4_840MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd045b0ba2def9962c0d46861017cc2a00430a6",
+      "size": 2764,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1fd045b0ba2def9962c0d46861017cc2a00430a6"
+    },
+    {
+      "path": "platform/cv25/ads/cv25m_ddr4_792MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71d1933de1d6442fcf743e58269d2ed3fa506ddf",
+      "size": 4826,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/71d1933de1d6442fcf743e58269d2ed3fa506ddf"
+    },
+    {
+      "path": "platform/cv25/ads/cv25m_lpddr4_540MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa436a7ae5eeb1b4ecaf65a2b3ba9bcc4a3d0ac",
+      "size": 5565,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aaa436a7ae5eeb1b4ecaf65a2b3ba9bcc4a3d0ac"
+    },
+    {
+      "path": "platform/cv25/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ca49f4f252d121db01fd55df99d018cb14e05b6",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/5ca49f4f252d121db01fd55df99d018cb14e05b6"
+    },
+    {
+      "path": "platform/cv25/bld/cv25_bld_linux_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89677c86c7538944c909d288e8f3a80c4c3c3184",
+      "size": 133832,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/89677c86c7538944c909d288e8f3a80c4c3c3184"
+    },
+    {
+      "path": "platform/cv25/bld/cv25_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89677c86c7538944c909d288e8f3a80c4c3c3184",
+      "size": 133832,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/89677c86c7538944c909d288e8f3a80c4c3c3184"
+    },
+    {
+      "path": "platform/cv25/bld/cv25_bld_linux_stack.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60ebe4f8bbbcc4c6c24cb7444ff7dce6920ed971",
+      "size": 242296,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/60ebe4f8bbbcc4c6c24cb7444ff7dce6920ed971"
+    },
+    {
+      "path": "platform/cv25/bld/cv25_bld_rtos_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ae4054f7c7a8cff30101d37c24c7ae1a16c4f5b",
+      "size": 183720,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2ae4054f7c7a8cff30101d37c24c7ae1a16c4f5b"
+    },
+    {
+      "path": "platform/cv25/bld/cv25_bld_rtos_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ba91cee89e53601b3255d3d59bf8784668dfe27",
+      "size": 183224,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4ba91cee89e53601b3255d3d59bf8784668dfe27"
+    },
+    {
+      "path": "platform/cv25/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac09208e630991b6b5d2fbe24adcf699579647c2",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/ac09208e630991b6b5d2fbe24adcf699579647c2"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25M_DDR4_EMMC_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79c18d840049584c1735b3c3502ab5c210ddb9d0",
+      "size": 124,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/79c18d840049584c1735b3c3502ab5c210ddb9d0"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25M_DDR4_NAND_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e12568050ffbd1e4f66a69cbb264c5f708fabe86",
+      "size": 124,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e12568050ffbd1e4f66a69cbb264c5f708fabe86"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25M_LPDDR4_EMMC_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d0d521e6553651570e2b2203d44e8190856eca3",
+      "size": 128,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8d0d521e6553651570e2b2203d44e8190856eca3"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25M_LPDDR4_NAND_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8443626e8b96b5a8ac0f1434be4c47044eabf9",
+      "size": 128,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/fc8443626e8b96b5a8ac0f1434be4c47044eabf9"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25_DDR4_EMMC_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f554eb0725437019a44fd99ba28031c2f871b3b",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6f554eb0725437019a44fd99ba28031c2f871b3b"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25_DDR4_NAND_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295a6d9e57f3ace6dd677b166e13f00192319ef2",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/295a6d9e57f3ace6dd677b166e13f00192319ef2"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25_LPDDR4_EMMC_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e6c956968e224161eec121c004e617229ced3d9",
+      "size": 126,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9e6c956968e224161eec121c004e617229ced3d9"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25_LPDDR4_NAND_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cca46943f8eaeea599263c72bb61f6c17a832d2f",
+      "size": 126,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cca46943f8eaeea599263c72bb61f6c17a832d2f"
+    },
+    {
+      "path": "platform/cv25/boards/LINUX_CV25_LPDDR4_STACK_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c908b009c634bfae8cf467d79171d8071692870",
+      "size": 130,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2c908b009c634bfae8cf467d79171d8071692870"
+    },
+    {
+      "path": "platform/cv25/boards/RTOS_CV25_LPDDR4_EMMC_840MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74ff3e5ed7a09637d3a60772965a256330a6683d",
+      "size": 127,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/74ff3e5ed7a09637d3a60772965a256330a6683d"
+    },
+    {
+      "path": "platform/cv25/boards/RTOS_CV25_LPDDR4_NAND_840MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66227c141cdc503be73146be7ac597a0cd7908e1",
+      "size": 127,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/66227c141cdc503be73146be7ac597a0cd7908e1"
+    },
+    {
+      "path": "platform/cv25/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "300a931e39ea14408555fc10cf70e06c00d6cce9",
+      "size": 218,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/300a931e39ea14408555fc10cf70e06c00d6cce9"
+    },
+    {
+      "path": "platform/cv25/cv25.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd5a76ea2b529896aeb4d8fe862ee8975424dbe4",
+      "size": 1871,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/dd5a76ea2b529896aeb4d8fe862ee8975424dbe4"
+    },
+    {
+      "path": "platform/cv28",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2853d7b2a798a9be0cfdf1fb90e80a02524b05f1",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/2853d7b2a798a9be0cfdf1fb90e80a02524b05f1"
+    },
+    {
+      "path": "platform/cv28/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf63702c8ad87f5e777f425244adcd7c95dc63de",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/bf63702c8ad87f5e777f425244adcd7c95dc63de"
+    },
+    {
+      "path": "platform/cv28/ads/cv28_ddr4_540MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0b0adbe497a90dc1d69d80a13428bc7901fef77",
+      "size": 4948,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e0b0adbe497a90dc1d69d80a13428bc7901fef77"
+    },
+    {
+      "path": "platform/cv28/ads/cv28_ddr4_540MHz_16Gb.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8a76aa3c159cbc334165dd610c403a0922a67aa",
+      "size": 4948,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d8a76aa3c159cbc334165dd610c403a0922a67aa"
+    },
+    {
+      "path": "platform/cv28/ads/cv28_lpddr4_540MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7262e5e9ba2e074e276078bdaec8b9ec8efc98d",
+      "size": 3371,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b7262e5e9ba2e074e276078bdaec8b9ec8efc98d"
+    },
+    {
+      "path": "platform/cv28/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcaaf4002b05e930bab2f0e957c3d0da297cca0a",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/bcaaf4002b05e930bab2f0e957c3d0da297cca0a"
+    },
+    {
+      "path": "platform/cv28/bld/cv28_bld_linux_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a1604ee4a9e45bc4804f500934dab8d42e84601",
+      "size": 131256,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4a1604ee4a9e45bc4804f500934dab8d42e84601"
+    },
+    {
+      "path": "platform/cv28/bld/cv28_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a1604ee4a9e45bc4804f500934dab8d42e84601",
+      "size": 131256,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4a1604ee4a9e45bc4804f500934dab8d42e84601"
+    },
+    {
+      "path": "platform/cv28/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8603099cd7f936c1daaa3d3aa0ea28245b36898e",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/8603099cd7f936c1daaa3d3aa0ea28245b36898e"
+    },
+    {
+      "path": "platform/cv28/boards/LINUX_CV28_DDR4_EMMC_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a21303287cdd9261faea58a2d7ad835d5bbc5a",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e0a21303287cdd9261faea58a2d7ad835d5bbc5a"
+    },
+    {
+      "path": "platform/cv28/boards/LINUX_CV28_DDR4_EMMC_540MHz_16Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cbf0f7a9bdd13a412e7b62a8eb60ba68a818fd1",
+      "size": 127,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5cbf0f7a9bdd13a412e7b62a8eb60ba68a818fd1"
+    },
+    {
+      "path": "platform/cv28/boards/LINUX_CV28_DDR4_NAND_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d170167368bbbe96bac26ddc077f368bd46fa7ca",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d170167368bbbe96bac26ddc077f368bd46fa7ca"
+    },
+    {
+      "path": "platform/cv28/boards/LINUX_CV28_LPDDR4_EMMC_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a52632446a9c21d18d77517e9e5321c24050304",
+      "size": 126,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3a52632446a9c21d18d77517e9e5321c24050304"
+    },
+    {
+      "path": "platform/cv28/boards/LINUX_CV28_LPDDR4_NAND_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70ab5b306aaa5cfb1978b64fab92c63d778788f5",
+      "size": 126,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/70ab5b306aaa5cfb1978b64fab92c63d778788f5"
+    },
+    {
+      "path": "platform/cv28/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d376ebb31f4d370f419a9dd34dc0cd91a032d778",
+      "size": 224,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d376ebb31f4d370f419a9dd34dc0cd91a032d778"
+    },
+    {
+      "path": "platform/cv28/cv28.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a71d049a40291a142ad20e195f562ec107d14d53",
+      "size": 1150,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a71d049a40291a142ad20e195f562ec107d14d53"
+    },
+    {
+      "path": "platform/cv2fs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4361c0f8aac19c22bdc36a826bfe15939f8b3346",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/4361c0f8aac19c22bdc36a826bfe15939f8b3346"
+    },
+    {
+      "path": "platform/cv2fs/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4aef66e695e7b6840281618c0013d77bc8c93e0",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/f4aef66e695e7b6840281618c0013d77bc8c93e0"
+    },
+    {
+      "path": "platform/cv2fs/ads/cv2fs_boot.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6388988ea1b6dd26581d40f3e85c2b369624fa8e",
+      "size": 409,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6388988ea1b6dd26581d40f3e85c2b369624fa8e"
+    },
+    {
+      "path": "platform/cv2fs/ads/cv2fs_lpddr4_816MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5231cf4e95769a1d0c378f4523c42b44534ab43",
+      "size": 6981,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e5231cf4e95769a1d0c378f4523c42b44534ab43"
+    },
+    {
+      "path": "platform/cv2fs/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d6df51b5100a18178f16a085542345732b9c29d",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/0d6df51b5100a18178f16a085542345732b9c29d"
+    },
+    {
+      "path": "platform/cv2fs/bld/cv2fs_bld_linux_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa4ceb73d6951167c6939e6a462cebe2c83abcdf",
+      "size": 199152,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aa4ceb73d6951167c6939e6a462cebe2c83abcdf"
+    },
+    {
+      "path": "platform/cv2fs/bld/cv2fs_bld_rtos_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa4ceb73d6951167c6939e6a462cebe2c83abcdf",
+      "size": 199152,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aa4ceb73d6951167c6939e6a462cebe2c83abcdf"
+    },
+    {
+      "path": "platform/cv2fs/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "860cb748b64549fcf848d51ace2265da9f0ba250",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/860cb748b64549fcf848d51ace2265da9f0ba250"
+    },
+    {
+      "path": "platform/cv2fs/boards/LINUX_CV2FS_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b3b7b7dd71b022f72fef8213ae0c288d48348ac",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3b3b7b7dd71b022f72fef8213ae0c288d48348ac"
+    },
+    {
+      "path": "platform/cv2fs/boards/LINUX_CV2XFS_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e3baf70d05176743d5e9239ba6182ccf5477947",
+      "size": 123,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0e3baf70d05176743d5e9239ba6182ccf5477947"
+    },
+    {
+      "path": "platform/cv2fs/boards/RTOS_CV2FS_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a580d8ad66f3ba492d41e750f7c6784b8810aa",
+      "size": 120,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/64a580d8ad66f3ba492d41e750f7c6784b8810aa"
+    },
+    {
+      "path": "platform/cv2fs/boards/RTOS_CV2XFS_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83397bbdf8b04d02448497538d33dff62336f176",
+      "size": 121,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/83397bbdf8b04d02448497538d33dff62336f176"
+    },
+    {
+      "path": "platform/cv2fs/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3008f55390b360506aa2dad49b64e313feb14706",
+      "size": 268,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3008f55390b360506aa2dad49b64e313feb14706"
+    },
+    {
+      "path": "platform/cv2fs/cv2fs.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f1e919face0bfb023785fd8efaddd2bfd2b924e",
+      "size": 998,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6f1e919face0bfb023785fd8efaddd2bfd2b924e"
+    },
+    {
+      "path": "platform/cv3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e630b40cae69e555bfaa226b9505d3fb564d235",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/0e630b40cae69e555bfaa226b9505d3fb564d235"
+    },
+    {
+      "path": "platform/cv3/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "deae8ce9d7c483a32e00d5798a7337dfe5728781",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/deae8ce9d7c483a32e00d5798a7337dfe5728781"
+    },
+    {
+      "path": "platform/cv3/bld/cv3_bld_linux.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2720dafc95cc44a836c4d5a0b45be56779283fd",
+      "size": 133896,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f2720dafc95cc44a836c4d5a0b45be56779283fd"
+    },
+    {
+      "path": "platform/cv3/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c365dd2f0ad9b801f25e9b2469de258be063345",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/3c365dd2f0ad9b801f25e9b2469de258be063345"
+    },
+    {
+      "path": "platform/cv3/boards/LINUX_CV3_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73cc14d94a6b0c80df9b44d087e53d8e01f1e2a0",
+      "size": 101,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/73cc14d94a6b0c80df9b44d087e53d8e01f1e2a0"
+    },
+    {
+      "path": "platform/cv3/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f79e7aaf0b42721628d2addcbcae1600832bd8",
+      "size": 291,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/49f79e7aaf0b42721628d2addcbcae1600832bd8"
+    },
+    {
+      "path": "platform/cv3/cv3.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92790435ed2a6df9dbe4e0467f33f924c91ee1c4",
+      "size": 653,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/92790435ed2a6df9dbe4e0467f33f924c91ee1c4"
+    },
+    {
+      "path": "platform/cv3/ust",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7628eda2810531fbbf5c6f0baca9e90d2da87a45",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/7628eda2810531fbbf5c6f0baca9e90d2da87a45"
+    },
+    {
+      "path": "platform/cv3/ust/cv3_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e105d61917f2fac2f22a89d4b6eb853fa7db4e43",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e105d61917f2fac2f22a89d4b6eb853fa7db4e43"
+    },
+    {
+      "path": "platform/cv5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77755d3da19793c3024cb0583975e6e4eba0e99e",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/77755d3da19793c3024cb0583975e6e4eba0e99e"
+    },
+    {
+      "path": "platform/cv5/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3affe4721e4e4821657187cbd59179817b2c850",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/b3affe4721e4e4821657187cbd59179817b2c850"
+    },
+    {
+      "path": "platform/cv5/bld/cv5_bld_linux.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77273c3f9be23d39108c91e8b800cda715722f84",
+      "size": 140584,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/77273c3f9be23d39108c91e8b800cda715722f84"
+    },
+    {
+      "path": "platform/cv5/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d20977b27423b4bf9e1c631cf58550c4305b21b0",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/d20977b27423b4bf9e1c631cf58550c4305b21b0"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV52_DDRC0_LPDDR4_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f13de3c6682fbd773bc2943d3ec9a176b5234f63",
+      "size": 115,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f13de3c6682fbd773bc2943d3ec9a176b5234f63"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV52_DDRC0_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94489de75d39d95ff5fce04d0fc600a30ad9a29d",
+      "size": 115,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/94489de75d39d95ff5fce04d0fc600a30ad9a29d"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV52_DDRC1_LPDDR4_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15f671f0f6ac32218df51dba3bd1397e9f35bd97",
+      "size": 115,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/15f671f0f6ac32218df51dba3bd1397e9f35bd97"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV52_DDRC1_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac199365b172754be69137353a662022e4ea8b14",
+      "size": 115,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ac199365b172754be69137353a662022e4ea8b14"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV5_LPDDR4_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76d7ea1e44c0baa43734b0b739923b11b9e140d2",
+      "size": 100,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/76d7ea1e44c0baa43734b0b739923b11b9e140d2"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV5_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53f292771b9fc52fac2544fa59ba914c5a45d995",
+      "size": 101,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/53f292771b9fc52fac2544fa59ba914c5a45d995"
+    },
+    {
+      "path": "platform/cv5/boards/LINUX_CV5_SINGLE_RANK_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e2f6cb4a4bb0a30d6211779e5664fe5e95f448d",
+      "size": 125,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2e2f6cb4a4bb0a30d6211779e5664fe5e95f448d"
+    },
+    {
+      "path": "platform/cv5/boards/RTOS_CV5DK_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2bf491f275973776aff780bf99a8af39eeb904f",
+      "size": 102,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e2bf491f275973776aff780bf99a8af39eeb904f"
+    },
+    {
+      "path": "platform/cv5/boards/RTOS_CV5_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcc7506abcc03d48a047d37e8abc14830d8ae1d",
+      "size": 100,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3dcc7506abcc03d48a047d37e8abc14830d8ae1d"
+    },
+    {
+      "path": "platform/cv5/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b954388ecbd32d490d46c5d293e23a3e53bb9f8e",
+      "size": 291,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b954388ecbd32d490d46c5d293e23a3e53bb9f8e"
+    },
+    {
+      "path": "platform/cv5/cv5.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c34dea19424009640f9ec614be03a02db6c79f9",
+      "size": 1591,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7c34dea19424009640f9ec614be03a02db6c79f9"
+    },
+    {
+      "path": "platform/cv5/ust",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54246d25de9bf4b06403630531b54bd529be3310",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/54246d25de9bf4b06403630531b54bd529be3310"
+    },
+    {
+      "path": "platform/cv5/ust/cv52_ddrc0_lpddr4_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09341b7db3b711df6af25629feb5d210ee09e1e2",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/09341b7db3b711df6af25629feb5d210ee09e1e2"
+    },
+    {
+      "path": "platform/cv5/ust/cv52_ddrc0_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07583260fba3720e0e01386998c518c55f7f3ed3",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/07583260fba3720e0e01386998c518c55f7f3ed3"
+    },
+    {
+      "path": "platform/cv5/ust/cv52_ddrc1_lpddr4_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81932fd47bd0fea4ee86271831d6579428db37d6",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/81932fd47bd0fea4ee86271831d6579428db37d6"
+    },
+    {
+      "path": "platform/cv5/ust/cv52_ddrc1_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a192e2e596ebbad64ee5f06f956dd91c371ff1c5",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a192e2e596ebbad64ee5f06f956dd91c371ff1c5"
+    },
+    {
+      "path": "platform/cv5/ust/cv5_lpddr4_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65e776e10754cc2a0bafc53d854f4ef4b912a349",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/65e776e10754cc2a0bafc53d854f4ef4b912a349"
+    },
+    {
+      "path": "platform/cv5/ust/cv5_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "864747549feeb17cb3b92fb03c384de03a5bbc1c",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/864747549feeb17cb3b92fb03c384de03a5bbc1c"
+    },
+    {
+      "path": "platform/cv5/ust/cv5_single_rank_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ea4d12e5a5343a158bb69df6c637436995ef876",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8ea4d12e5a5343a158bb69df6c637436995ef876"
+    },
+    {
+      "path": "platform/cv72",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5311d7da84c08398ab833cda68b800bdc222e663",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/5311d7da84c08398ab833cda68b800bdc222e663"
+    },
+    {
+      "path": "platform/cv72/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8b2a304f5cd00805b76e09fe13d6c4e73869989",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/e8b2a304f5cd00805b76e09fe13d6c4e73869989"
+    },
+    {
+      "path": "platform/cv72/bld/cv72_bld_linux.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1d6801c5eaf306b3604017712620c68bd0caefd",
+      "size": 133912,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a1d6801c5eaf306b3604017712620c68bd0caefd"
+    },
+    {
+      "path": "platform/cv72/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7eba36d95a4b8dbb91f0a0b62a24ffe89147359c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/7eba36d95a4b8dbb91f0a0b62a24ffe89147359c"
+    },
+    {
+      "path": "platform/cv72/boards/LINUX_CV72_LPDDR4_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d957cc5e8e2ccf52a7d150cd43c252a761db4c4",
+      "size": 102,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6d957cc5e8e2ccf52a7d150cd43c252a761db4c4"
+    },
+    {
+      "path": "platform/cv72/boards/LINUX_CV72_LPDDR4_540MHz_SINGLE_RANK.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63998571242ca442d0806825cf5755c27e62d3d0",
+      "size": 128,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/63998571242ca442d0806825cf5755c27e62d3d0"
+    },
+    {
+      "path": "platform/cv72/boards/LINUX_CV72_LPDDR5_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e54623acafb9899360d6d0294498a91a80f57dcc",
+      "size": 104,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e54623acafb9899360d6d0294498a91a80f57dcc"
+    },
+    {
+      "path": "platform/cv72/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d5f9cb47ee8795b4db2064587f4369b8bc25b5",
+      "size": 293,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/15d5f9cb47ee8795b4db2064587f4369b8bc25b5"
+    },
+    {
+      "path": "platform/cv72/cv72.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0b6054308bcf7df4dd311debb20980ed8751ba",
+      "size": 950,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ff0b6054308bcf7df4dd311debb20980ed8751ba"
+    },
+    {
+      "path": "platform/cv72/ust",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48c749592430f4652e72e10f39046003b0ea9c9a",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/48c749592430f4652e72e10f39046003b0ea9c9a"
+    },
+    {
+      "path": "platform/cv72/ust/cv72_lpddr4_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ab2d2000c1e4d3536cff935cfeaecd154ba3466",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5ab2d2000c1e4d3536cff935cfeaecd154ba3466"
+    },
+    {
+      "path": "platform/cv72/ust/cv72_lpddr4_540MHz_single_rank.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c401a559832b2762d8695380a64e96ddca50906e",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c401a559832b2762d8695380a64e96ddca50906e"
+    },
+    {
+      "path": "platform/cv72/ust/cv72_lpddr5_540MHz.ust",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73ff3e26a648825cba0a6ef7a56f651e3ef4b574",
+      "size": 12288,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/73ff3e26a648825cba0a6ef7a56f651e3ef4b574"
+    },
+    {
+      "path": "platform/platform.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aab3b066470cf90fbec098be4ace8f3162dcfe81",
+      "size": 590,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aab3b066470cf90fbec098be4ace8f3162dcfe81"
+    },
+    {
+      "path": "platform/s2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffb5490d6484f71ef84fc4e0d2e8b39d01c2cf69",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/ffb5490d6484f71ef84fc4e0d2e8b39d01c2cf69"
+    },
+    {
+      "path": "platform/s2/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f888db7bcff88d6747ffd81557690585c87eebd6",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/f888db7bcff88d6747ffd81557690585c87eebd6"
+    },
+    {
+      "path": "platform/s2/ads/s2_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc1f9dfe77e04c96dd97aa6d41124b9cb9bdd39",
+      "size": 1494,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6dc1f9dfe77e04c96dd97aa6d41124b9cb9bdd39"
+    },
+    {
+      "path": "platform/s2/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c11110e8ba4b880d02a7d414b8794495fb123cf",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/2c11110e8ba4b880d02a7d414b8794495fb123cf"
+    },
+    {
+      "path": "platform/s2/bld/ambhal.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "404e5e29b732ce966c1f99bc6a03dd1fda9769bb",
+      "size": 57100,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/404e5e29b732ce966c1f99bc6a03dd1fda9769bb"
+    },
+    {
+      "path": "platform/s2/bld/bld_emmc.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "332f34398935031ab9b29c08dd203ce6c05030f4",
+      "size": 171116,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/332f34398935031ab9b29c08dd203ce6c05030f4"
+    },
+    {
+      "path": "platform/s2/bld/bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de5eeb37152a89a8609f5b9e7af8a1aec2bf847",
+      "size": 163676,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5de5eeb37152a89a8609f5b9e7af8a1aec2bf847"
+    },
+    {
+      "path": "platform/s2/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e856661805ca7ff3af840abff7ba265febbb784e",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/e856661805ca7ff3af840abff7ba265febbb784e"
+    },
+    {
+      "path": "platform/s2/boards/S2_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ba44a053bf13de3a0b63dac47bd81a8a41c11c8",
+      "size": 87,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9ba44a053bf13de3a0b63dac47bd81a8a41c11c8"
+    },
+    {
+      "path": "platform/s2/boards/S2_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "622c1dfb03ee2b35c4d0f6e81754297fe3295eba",
+      "size": 87,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/622c1dfb03ee2b35c4d0f6e81754297fe3295eba"
+    },
+    {
+      "path": "platform/s2/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f5c853d0fc8c702846876ea2573db7e5a56cd61",
+      "size": 217,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9f5c853d0fc8c702846876ea2573db7e5a56cd61"
+    },
+    {
+      "path": "platform/s2/s2.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc0492ea164ebdf83b0f84a8c8901a21f9ea2672",
+      "size": 695,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cc0492ea164ebdf83b0f84a8c8901a21f9ea2672"
+    },
+    {
+      "path": "platform/s2e",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36e330e47c143118a44ebe43884d1be147a754b7",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/36e330e47c143118a44ebe43884d1be147a754b7"
+    },
+    {
+      "path": "platform/s2e/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35a2c65aade04aecbae47aa6d716b45d7e1b3471",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/35a2c65aade04aecbae47aa6d716b45d7e1b3471"
+    },
+    {
+      "path": "platform/s2e/ads/s2e_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18b1ce813f82a086a4dd0ec5fad03e5694b054e2",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/18b1ce813f82a086a4dd0ec5fad03e5694b054e2"
+    },
+    {
+      "path": "platform/s2e/ads/s2e_lpddr3_hynix_H9CCNNN8GTMLAR.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47fbc8b331cf077b454bbeb90779a9fc8e3e3d16",
+      "size": 1794,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/47fbc8b331cf077b454bbeb90779a9fc8e3e3d16"
+    },
+    {
+      "path": "platform/s2e/ads/s2e_lpddr3_micron_EDF8132A3MAJDFD.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae8c060cbca12206c55b63a61b529d9b86e69ef",
+      "size": 1794,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6ae8c060cbca12206c55b63a61b529d9b86e69ef"
+    },
+    {
+      "path": "platform/s2e/ads/s2e_lpddr3_micron_MT29UZ4B8DZZHGPB.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db08e65a5312a3d2a48c1d416e1971f4a2c11e0f",
+      "size": 1794,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/db08e65a5312a3d2a48c1d416e1971f4a2c11e0f"
+    },
+    {
+      "path": "platform/s2e/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b54003a9ee9b2e5674128ca977f0432ad8ad8e03",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/b54003a9ee9b2e5674128ca977f0432ad8ad8e03"
+    },
+    {
+      "path": "platform/s2e/bld/a9s_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "941a49af26c264d6f193b3b780fd66c2f8de17a0",
+      "size": 102148,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/941a49af26c264d6f193b3b780fd66c2f8de17a0"
+    },
+    {
+      "path": "platform/s2e/bld/s2e_bld_emmc.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9d3adfefbb23a32e945df3c24e60634685b9ecd",
+      "size": 100925,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e9d3adfefbb23a32e945df3c24e60634685b9ecd"
+    },
+    {
+      "path": "platform/s2e/bld/s2e_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79476449ca5d0cebf1346ea7ff1a0dc5191c86d5",
+      "size": 111136,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/79476449ca5d0cebf1346ea7ff1a0dc5191c86d5"
+    },
+    {
+      "path": "platform/s2e/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4917f7e7749313f11787abd39eec71390aee9d33",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/4917f7e7749313f11787abd39eec71390aee9d33"
+    },
+    {
+      "path": "platform/s2e/boards/A9s_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "494b1fc693d115f287272a794117855af736714c",
+      "size": 94,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/494b1fc693d115f287272a794117855af736714c"
+    },
+    {
+      "path": "platform/s2e/boards/A9s_LPDDR3-Hynix-H9CCNNN8GTMLAR_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1c022e1c7d2d7b6aa61001d4ee93bf5eb9f7326",
+      "size": 139,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f1c022e1c7d2d7b6aa61001d4ee93bf5eb9f7326"
+    },
+    {
+      "path": "platform/s2e/boards/A9s_LPDDR3-Micron-EDF8132A3MAJDFD_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8933a569e344d71afb7cf0a4e3af489770764746",
+      "size": 143,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8933a569e344d71afb7cf0a4e3af489770764746"
+    },
+    {
+      "path": "platform/s2e/boards/A9s_LPDDR3-Micron-MT29UZ4B8DZZHGPB_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d75d74239875bd504c2ad434afbec66c80ccc29c",
+      "size": 145,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d75d74239875bd504c2ad434afbec66c80ccc29c"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59a9010ebc75386641a16a56cb7183c76dcccde6",
+      "size": 94,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/59a9010ebc75386641a16a56cb7183c76dcccde6"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f66f96127c8da4f0a07a703c129783e9ac42014",
+      "size": 94,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4f66f96127c8da4f0a07a703c129783e9ac42014"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Hynix-H9CCNNN8GTMLAR_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd79d851befb417d1d3c2f0a4c75d1ab266b166d",
+      "size": 139,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bd79d851befb417d1d3c2f0a4c75d1ab266b166d"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Hynix-H9CCNNN8GTMLAR_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6a8cf91447951477f38b0815b4a24374e04800b",
+      "size": 139,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f6a8cf91447951477f38b0815b4a24374e04800b"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Micron-EDF8132A3MAJDFD_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5482c37e9f62b6902c02aaaa960d707af9345fc",
+      "size": 143,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c5482c37e9f62b6902c02aaaa960d707af9345fc"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Micron-EDF8132A3MAJDFD_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96f97d558e44d5e0541eb6a8f932c4ba721ced0a",
+      "size": 143,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/96f97d558e44d5e0541eb6a8f932c4ba721ced0a"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Micron-MT29UZ4B8DZZHGPB_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c86e8aeaf40a122a3462129efdec79dd158dec2",
+      "size": 145,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7c86e8aeaf40a122a3462129efdec79dd158dec2"
+    },
+    {
+      "path": "platform/s2e/boards/S2E_LPDDR3-Micron-MT29UZ4B8DZZHGPB_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e113668a20decb390dfdba1f10b8ce1e26d06c26",
+      "size": 145,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e113668a20decb390dfdba1f10b8ce1e26d06c26"
+    },
+    {
+      "path": "platform/s2e/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc16861ec39afa07a352ff5134767e56bc4bdb55",
+      "size": 220,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bc16861ec39afa07a352ff5134767e56bc4bdb55"
+    },
+    {
+      "path": "platform/s2e/s2e.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31e2cec0795df4d629b99862b0088d5d0df97826",
+      "size": 1721,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/31e2cec0795df4d629b99862b0088d5d0df97826"
+    },
+    {
+      "path": "platform/s2l",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42635c7e7288403fb92c66e9f16d30ce3d697bbe",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/42635c7e7288403fb92c66e9f16d30ce3d697bbe"
+    },
+    {
+      "path": "platform/s2l/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "277e9d9c07eaae2b70301e51017653e9173fd697",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/277e9d9c07eaae2b70301e51017653e9173fd697"
+    },
+    {
+      "path": "platform/s2l/ads/a12_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5620e8aa4c336520097dc4d457db6de8649279cd",
+      "size": 1741,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5620e8aa4c336520097dc4d457db6de8649279cd"
+    },
+    {
+      "path": "platform/s2l/ads/a12_lpddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88857ccffc8dac74f659d1d300da005f60b2ae93",
+      "size": 1617,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/88857ccffc8dac74f659d1d300da005f60b2ae93"
+    },
+    {
+      "path": "platform/s2l/ads/s2l_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e9ffbe9f4287a5c1ce029d868a40a04d184cee",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/15e9ffbe9f4287a5c1ce029d868a40a04d184cee"
+    },
+    {
+      "path": "platform/s2l/ads/s2lm_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96fdaba9aaa5a49da6f242e8c5abe925aa0605d1",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/96fdaba9aaa5a49da6f242e8c5abe925aa0605d1"
+    },
+    {
+      "path": "platform/s2l/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ba93261342aee14a145fc1f279c9fd92ce02851",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/4ba93261342aee14a145fc1f279c9fd92ce02851"
+    },
+    {
+      "path": "platform/s2l/bld/a12_bld_emmc.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c854298aea0e3e593b886d2abf2a7f1c9311d646",
+      "size": 102916,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c854298aea0e3e593b886d2abf2a7f1c9311d646"
+    },
+    {
+      "path": "platform/s2l/bld/s2l_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65614fa8a3f8af315461837c73a100193b684f93",
+      "size": 174192,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/65614fa8a3f8af315461837c73a100193b684f93"
+    },
+    {
+      "path": "platform/s2l/bld/s2l_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c40252555306aea07f09419917d3f1014ca6675",
+      "size": 168156,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2c40252555306aea07f09419917d3f1014ca6675"
+    },
+    {
+      "path": "platform/s2l/bld/s2l_bld_spinor.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2935e2a3f76eaa4e739d4b753ac74acea703bc1d",
+      "size": 158036,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2935e2a3f76eaa4e739d4b753ac74acea703bc1d"
+    },
+    {
+      "path": "platform/s2l/bld/s2l_bld_spinor_spansion.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4259221b55c8c383e9eeb86e901d91eb37ac2560",
+      "size": 158036,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4259221b55c8c383e9eeb86e901d91eb37ac2560"
+    },
+    {
+      "path": "platform/s2l/bld/s2lm_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbdb3dce1c76e89ecc0467c0f6f2454a032de313",
+      "size": 174000,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/dbdb3dce1c76e89ecc0467c0f6f2454a032de313"
+    },
+    {
+      "path": "platform/s2l/bld/s2lm_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b735e512a63b96b7fa47cc2b4a317d72a262065c",
+      "size": 168204,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b735e512a63b96b7fa47cc2b4a317d72a262065c"
+    },
+    {
+      "path": "platform/s2l/bld/s2lm_bld_spinor.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45a207db0d535cad54c9bccf6743905254a76fa4",
+      "size": 158084,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/45a207db0d535cad54c9bccf6743905254a76fa4"
+    },
+    {
+      "path": "platform/s2l/bld/s2lm_bld_spinor_spansion.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "229d0f0a7f56fe4aa8f1a48a85f03f069506814e",
+      "size": 158084,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/229d0f0a7f56fe4aa8f1a48a85f03f069506814e"
+    },
+    {
+      "path": "platform/s2l/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e602327a32f5b3a7dea2539b399a52f178b6182",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/2e602327a32f5b3a7dea2539b399a52f178b6182"
+    },
+    {
+      "path": "platform/s2l/boards/A12_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bb9f59ebf43d6a961b823e7bc2fbd4a739aee45",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1bb9f59ebf43d6a961b823e7bc2fbd4a739aee45"
+    },
+    {
+      "path": "platform/s2l/boards/A12_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aae0ea0edf76d69d35d8242e779db9104cb230e8",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aae0ea0edf76d69d35d8242e779db9104cb230e8"
+    },
+    {
+      "path": "platform/s2l/boards/S2L_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fea2555f8239dc63694d8419c50c462b221a0c8",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7fea2555f8239dc63694d8419c50c462b221a0c8"
+    },
+    {
+      "path": "platform/s2l/boards/S2L_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e8b92f27bebb2206f229e1e0ebb7ab9df3eae1",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f3e8b92f27bebb2206f229e1e0ebb7ab9df3eae1"
+    },
+    {
+      "path": "platform/s2l/boards/S2L_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59036b031c900233e21f74586243865119f96e97",
+      "size": 99,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/59036b031c900233e21f74586243865119f96e97"
+    },
+    {
+      "path": "platform/s2l/boards/S2L_DDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc9b1f668f99e87fbb7c400cbb0342a42ff400f0",
+      "size": 117,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cc9b1f668f99e87fbb7c400cbb0342a42ff400f0"
+    },
+    {
+      "path": "platform/s2l/boards/S2Lm_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8967fca880bd7efc290e156d9e7684eac179a2c1",
+      "size": 96,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8967fca880bd7efc290e156d9e7684eac179a2c1"
+    },
+    {
+      "path": "platform/s2l/boards/S2Lm_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72ede0e0741bb44b9e29d7650e2044d3a659eaaf",
+      "size": 96,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/72ede0e0741bb44b9e29d7650e2044d3a659eaaf"
+    },
+    {
+      "path": "platform/s2l/boards/S2Lm_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "188beda417a0ad0b0aaca1c8916617c26ffc9af1",
+      "size": 102,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/188beda417a0ad0b0aaca1c8916617c26ffc9af1"
+    },
+    {
+      "path": "platform/s2l/boards/S2Lm_DDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9868ada47851842f4d16a0caa9e11b0fda076ebd",
+      "size": 120,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9868ada47851842f4d16a0caa9e11b0fda076ebd"
+    },
+    {
+      "path": "platform/s2l/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5bcd5cdf7d8e3c38c8ee38207325375be4fc2d9",
+      "size": 225,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d5bcd5cdf7d8e3c38c8ee38207325375be4fc2d9"
+    },
+    {
+      "path": "platform/s2l/s2l.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dae274df7a0304949ee189065872fc9b5ec9159",
+      "size": 1648,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0dae274df7a0304949ee189065872fc9b5ec9159"
+    },
+    {
+      "path": "platform/s3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "820a4a34809e423d925e725510167622808babea",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/820a4a34809e423d925e725510167622808babea"
+    },
+    {
+      "path": "platform/s3/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fbebd4261c2a950bcd56991d7849323e61dd99c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9fbebd4261c2a950bcd56991d7849323e61dd99c"
+    },
+    {
+      "path": "platform/s3/ads/s3_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bbcaf12f44db3fa0122f27ab9de43b5727a4845",
+      "size": 2602,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5bbcaf12f44db3fa0122f27ab9de43b5727a4845"
+    },
+    {
+      "path": "platform/s3/ads/s3_lpddr3_hynix_H9CCNNN8GTMLAR.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64ffd0f194cbb1b4857bb736a79b7ead965e289",
+      "size": 3145,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c64ffd0f194cbb1b4857bb736a79b7ead965e289"
+    },
+    {
+      "path": "platform/s3/ads/s3_lpddr3_micron_EDF8132A3MAJDFD.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "996c1475ffa542ed7f223d7b10a3543b200848de",
+      "size": 1997,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/996c1475ffa542ed7f223d7b10a3543b200848de"
+    },
+    {
+      "path": "platform/s3/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1909e3b732f984ae8e7206b49ddf202a21ec579",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/e1909e3b732f984ae8e7206b49ddf202a21ec579"
+    },
+    {
+      "path": "platform/s3/bld/h1_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "373c3168d8c315ae936f1a2ad2d9a671a6c7a85c",
+      "size": 87616,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/373c3168d8c315ae936f1a2ad2d9a671a6c7a85c"
+    },
+    {
+      "path": "platform/s3/bld/s3_bld_emmc.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "095c1534f3aa4b32c3010e9aece1c76c2920b388",
+      "size": 72972,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/095c1534f3aa4b32c3010e9aece1c76c2920b388"
+    },
+    {
+      "path": "platform/s3/bld/s3_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c8041e1b10dc1ec9e6397e0d22b1583d248c449",
+      "size": 98648,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8c8041e1b10dc1ec9e6397e0d22b1583d248c449"
+    },
+    {
+      "path": "platform/s3/bld/s3_bld_spinor.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "357b5c922074d03734df2a876b30879b549afacb",
+      "size": 73468,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/357b5c922074d03734df2a876b30879b549afacb"
+    },
+    {
+      "path": "platform/s3/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22d4b2fa9a8950cc52daf063ab60cf732124ff3c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/22d4b2fa9a8950cc52daf063ab60cf732124ff3c"
+    },
+    {
+      "path": "platform/s3/boards/H1_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f50cbc17f679ba04329915976931bcc4f33b67d9",
+      "size": 91,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f50cbc17f679ba04329915976931bcc4f33b67d9"
+    },
+    {
+      "path": "platform/s3/boards/H1_LPDDR3-Hynix-H9CCNNN8GTMLAR_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a617e8602fd893d2112f26b5d38082f155777bb",
+      "size": 137,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6a617e8602fd893d2112f26b5d38082f155777bb"
+    },
+    {
+      "path": "platform/s3/boards/H1_LPDDR3-Micron-EDF8132A3MAJDFD_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ced761a414e785a7cef48501198611cd9a8d0b86",
+      "size": 141,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ced761a414e785a7cef48501198611cd9a8d0b86"
+    },
+    {
+      "path": "platform/s3/boards/S3_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96edceba4a91ddfd325e9dfec7a63f1811303cb5",
+      "size": 90,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/96edceba4a91ddfd325e9dfec7a63f1811303cb5"
+    },
+    {
+      "path": "platform/s3/boards/S3_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa9adb38971f23c98811df28c45f8df9dcc0e39e",
+      "size": 90,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/aa9adb38971f23c98811df28c45f8df9dcc0e39e"
+    },
+    {
+      "path": "platform/s3/boards/S3_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94b95a8b11fc032dbb35260b48315d4f8ce5aaf3",
+      "size": 96,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/94b95a8b11fc032dbb35260b48315d4f8ce5aaf3"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Hynix-H9CCNNN8GTMLAR_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0206405cee0e741e82937b786ccd9f14d35028d",
+      "size": 137,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b0206405cee0e741e82937b786ccd9f14d35028d"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Hynix-H9CCNNN8GTMLAR_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "512a3fea5e6a77e17820e0170663213b7559cca2",
+      "size": 137,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/512a3fea5e6a77e17820e0170663213b7559cca2"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Hynix-H9CCNNN8GTMLAR_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cae8185113447a6eee033236d65a9ef1edc733c",
+      "size": 143,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6cae8185113447a6eee033236d65a9ef1edc733c"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Micron-EDF8132A3MAJDFD_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d9fd71a2dfc4604c600526cbd51885ee323727",
+      "size": 141,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/03d9fd71a2dfc4604c600526cbd51885ee323727"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Micron-EDF8132A3MAJDFD_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e66e49b38151fe7825c1a147f558f78fc807f5be",
+      "size": 141,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e66e49b38151fe7825c1a147f558f78fc807f5be"
+    },
+    {
+      "path": "platform/s3/boards/S3_LPDDR3-Micron-EDF8132A3MAJDFD_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "900c720c281e58f4477ebd2d94de2afb2765cff0",
+      "size": 147,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/900c720c281e58f4477ebd2d94de2afb2765cff0"
+    },
+    {
+      "path": "platform/s3/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e207ffce2f01f2a4cba46d078a1634d648a2d9e9",
+      "size": 218,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e207ffce2f01f2a4cba46d078a1634d648a2d9e9"
+    },
+    {
+      "path": "platform/s3/s3.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dd806d37737b5043cc422fa15b73e13d9eb636c",
+      "size": 1618,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9dd806d37737b5043cc422fa15b73e13d9eb636c"
+    },
+    {
+      "path": "platform/s3l",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32f621c1d0b67942792c5d501cc65f936509d34c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/32f621c1d0b67942792c5d501cc65f936509d34c"
+    },
+    {
+      "path": "platform/s3l/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2d110b0022ca596064855fb30d77e2a16dc31e0",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/d2d110b0022ca596064855fb30d77e2a16dc31e0"
+    },
+    {
+      "path": "platform/s3l/ads/h12_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f9cf5d2e71a4c7d4f9a2a0eb677d2c3ae1030f",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f9f9cf5d2e71a4c7d4f9a2a0eb677d2c3ae1030f"
+    },
+    {
+      "path": "platform/s3l/ads/s3l_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99a7ce7ef92bc7428857035ab26726dfe5f256cd",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/99a7ce7ef92bc7428857035ab26726dfe5f256cd"
+    },
+    {
+      "path": "platform/s3l/ads/s3l_lpddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441df1b6ba22c332e34f5b58f8de886c80183aab",
+      "size": 1875,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/441df1b6ba22c332e34f5b58f8de886c80183aab"
+    },
+    {
+      "path": "platform/s3l/ads/s3lm_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89f97ae14dd69fde55a66d5e0e594354b67b802c",
+      "size": 1400,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/89f97ae14dd69fde55a66d5e0e594354b67b802c"
+    },
+    {
+      "path": "platform/s3l/ads/s3lm_lpddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef521484d3eb6904b2c72755409ad9639a8dce52",
+      "size": 1815,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ef521484d3eb6904b2c72755409ad9639a8dce52"
+    },
+    {
+      "path": "platform/s3l/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5cac46e64c1fedc00a502c021cc1a0cfccb6ce25",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/5cac46e64c1fedc00a502c021cc1a0cfccb6ce25"
+    },
+    {
+      "path": "platform/s3l/bld/h12_bld_nand.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f9d5744545c174834c792c69fc507611b4a9e44",
+      "size": 100520,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6f9d5744545c174834c792c69fc507611b4a9e44"
+    },
+    {
+      "path": "platform/s3l/bld/s3l_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e2a6e3a0e579e0b4044cec2784f449711ffc461",
+      "size": 173416,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9e2a6e3a0e579e0b4044cec2784f449711ffc461"
+    },
+    {
+      "path": "platform/s3l/bld/s3l_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d830959dbded080641f20bddd6326e4cc837197",
+      "size": 167404,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0d830959dbded080641f20bddd6326e4cc837197"
+    },
+    {
+      "path": "platform/s3l/bld/s3l_bld_spinor.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64019df3bc9c6b62e3df5d8c45656e9492551cce",
+      "size": 157564,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/64019df3bc9c6b62e3df5d8c45656e9492551cce"
+    },
+    {
+      "path": "platform/s3l/bld/s3l_bld_spinor_spansion.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f838ef487ad83e0c793f373f2f4dace3278548e5",
+      "size": 157564,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f838ef487ad83e0c793f373f2f4dace3278548e5"
+    },
+    {
+      "path": "platform/s3l/bld/s3lm_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c782b67a8b892d62749611b3f81a16034abc168",
+      "size": 173632,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4c782b67a8b892d62749611b3f81a16034abc168"
+    },
+    {
+      "path": "platform/s3l/bld/s3lm_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e993dbfec0a75c6f489d3e23b8b25af25404acd3",
+      "size": 167580,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e993dbfec0a75c6f489d3e23b8b25af25404acd3"
+    },
+    {
+      "path": "platform/s3l/bld/s3lm_bld_spinor.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f839fe5bb2798d03b1a23cad167233216db6c7c2",
+      "size": 157748,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f839fe5bb2798d03b1a23cad167233216db6c7c2"
+    },
+    {
+      "path": "platform/s3l/bld/s3lm_bld_spinor_spansion.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bed27ddd14d3d64126e11ba373c6006ba6bf7c00",
+      "size": 157748,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bed27ddd14d3d64126e11ba373c6006ba6bf7c00"
+    },
+    {
+      "path": "platform/s3l/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d9c7e3204d4c27c62aa507fb5ffbad6d6f2443c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9d9c7e3204d4c27c62aa507fb5ffbad6d6f2443c"
+    },
+    {
+      "path": "platform/s3l/boards/H12_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bc1f7d3fc9d4bae9234f2488309d061956b5736",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4bc1f7d3fc9d4bae9234f2488309d061956b5736"
+    },
+    {
+      "path": "platform/s3l/boards/H12_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d4ee2a85ee971c7dd724d9a1af61b6f54b2fd0",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a2d4ee2a85ee971c7dd724d9a1af61b6f54b2fd0"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf337f65240e9f0d9bc8f58808694c891029cb20",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bf337f65240e9f0d9bc8f58808694c891029cb20"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64f7773d69dd688d281e35a21b089c7c305a1b49",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/64f7773d69dd688d281e35a21b089c7c305a1b49"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e43a5df30d35087e5adeb10496d78a70f026cedc",
+      "size": 99,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e43a5df30d35087e5adeb10496d78a70f026cedc"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_DDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd7745bcc9810f7d6dda7dd1473069cc37d17e25",
+      "size": 117,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/dd7745bcc9810f7d6dda7dd1473069cc37d17e25"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c95978281b224f7fd52b87b291a86348fd6ec3",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e5c95978281b224f7fd52b87b291a86348fd6ec3"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "857fedbbe81dcc1badc1dfc16cd273cac48159b7",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/857fedbbe81dcc1badc1dfc16cd273cac48159b7"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_LPDDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eef6fe542efd07ca488a5da40a499c15d5fb378",
+      "size": 103,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0eef6fe542efd07ca488a5da40a499c15d5fb378"
+    },
+    {
+      "path": "platform/s3l/boards/S3L_LPDDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "181bddad71b19838b08da2107d683f6a5de3c125",
+      "size": 121,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/181bddad71b19838b08da2107d683f6a5de3c125"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "007f3963a1df4eed1a0bfedba4184b48302e51c1",
+      "size": 96,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/007f3963a1df4eed1a0bfedba4184b48302e51c1"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5914cfe9d09bee70faa1e212780ba0d5037ecf9c",
+      "size": 96,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/5914cfe9d09bee70faa1e212780ba0d5037ecf9c"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be8ac3392e1109ee37838dbc9a9f5c30de9a7577",
+      "size": 102,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/be8ac3392e1109ee37838dbc9a9f5c30de9a7577"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_DDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ae1c731cf05c5983ba3817bb41b8052175678f1",
+      "size": 120,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1ae1c731cf05c5983ba3817bb41b8052175678f1"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be793033f4de1c3daa256d3c427164fa34484b53",
+      "size": 100,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/be793033f4de1c3daa256d3c427164fa34484b53"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9267417b6fd0f26c8e6ecace8d93bbe0240e75f4",
+      "size": 100,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9267417b6fd0f26c8e6ecace8d93bbe0240e75f4"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_LPDDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e2ba173d8bcd50caa66986948f862eaa7a7ba36",
+      "size": 106,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6e2ba173d8bcd50caa66986948f862eaa7a7ba36"
+    },
+    {
+      "path": "platform/s3l/boards/S3Lm_LPDDR3_SPINOR_SPANSION.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ec6435dd0f1bea560dcd58dc53265b41662cad",
+      "size": 124,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/61ec6435dd0f1bea560dcd58dc53265b41662cad"
+    },
+    {
+      "path": "platform/s3l/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f246afe08074c90f85002b7c69eaf4ad2710f0",
+      "size": 221,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e8f246afe08074c90f85002b7c69eaf4ad2710f0"
+    },
+    {
+      "path": "platform/s3l/s3l.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bc7c7c1e885e0bfb6a6d7ec691d34d2a135f0ba",
+      "size": 2123,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8bc7c7c1e885e0bfb6a6d7ec691d34d2a135f0ba"
+    },
+    {
+      "path": "platform/s5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b0d989b91ee5cda9742e015c60498c6d2ad3648",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/7b0d989b91ee5cda9742e015c60498c6d2ad3648"
+    },
+    {
+      "path": "platform/s5/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f8ad317b94cb05841b68317ae4c074e2dd6a13c",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/9f8ad317b94cb05841b68317ae4c074e2dd6a13c"
+    },
+    {
+      "path": "platform/s5/ads/s5_16Gb_ddr3_336MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91edc461b0397f0316f8c9f01c49c58fb80329b0",
+      "size": 3229,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/91edc461b0397f0316f8c9f01c49c58fb80329b0"
+    },
+    {
+      "path": "platform/s5/ads/s5_16Gb_lpddr3_336MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d9a9db16420116e13c299b8946bbde8f2a15d40",
+      "size": 3738,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7d9a9db16420116e13c299b8946bbde8f2a15d40"
+    },
+    {
+      "path": "platform/s5/ads/s5_8Gb_ddr3_336MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b595be95f9fbd0f772bb7ef30fc04f309ced9f",
+      "size": 3229,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a8b595be95f9fbd0f772bb7ef30fc04f309ced9f"
+    },
+    {
+      "path": "platform/s5/ads/s5_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2567b4185eadfca6d0083290017f805ff6bb3f48",
+      "size": 3018,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2567b4185eadfca6d0083290017f805ff6bb3f48"
+    },
+    {
+      "path": "platform/s5/ads/s5_lpddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab37b7996bc8f93328d5797e9ea10b71002ff1c6",
+      "size": 3519,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ab37b7996bc8f93328d5797e9ea10b71002ff1c6"
+    },
+    {
+      "path": "platform/s5/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01394bc15399069a974ca7e23abc1d72a5c874fe",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/01394bc15399069a974ca7e23abc1d72a5c874fe"
+    },
+    {
+      "path": "platform/s5/bld/s5_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8040c45d41aaa58d3e99b2141a397a221e5d94bb",
+      "size": 202480,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8040c45d41aaa58d3e99b2141a397a221e5d94bb"
+    },
+    {
+      "path": "platform/s5/bld/s5_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0352ad69c5b5ce6a5fb5312670fc52be4e3863c0",
+      "size": 193176,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0352ad69c5b5ce6a5fb5312670fc52be4e3863c0"
+    },
+    {
+      "path": "platform/s5/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5551b2f8712ec25c8e5a21dbd76c21141314eb6",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/e5551b2f8712ec25c8e5a21dbd76c21141314eb6"
+    },
+    {
+      "path": "platform/s5/boards/H2_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30076210a3f93010860424f5efa35b8010603433",
+      "size": 90,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/30076210a3f93010860424f5efa35b8010603433"
+    },
+    {
+      "path": "platform/s5/boards/H2_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc7605210d2fd5403643a259e012cf31e17facd",
+      "size": 90,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7bc7605210d2fd5403643a259e012cf31e17facd"
+    },
+    {
+      "path": "platform/s5/boards/H2_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d72a141fb70cb0060326f438bafca8815756d045",
+      "size": 94,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d72a141fb70cb0060326f438bafca8815756d045"
+    },
+    {
+      "path": "platform/s5/boards/H2_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a44e52e7d91882fad6f5a460f967292861510b4",
+      "size": 94,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0a44e52e7d91882fad6f5a460f967292861510b4"
+    },
+    {
+      "path": "platform/s5/boards/S5_DDR3_EMMC_16Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1161a64706fb95502d1bf9aa4c7f02593967689",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e1161a64706fb95502d1bf9aa4c7f02593967689"
+    },
+    {
+      "path": "platform/s5/boards/S5_DDR3_EMMC_8Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86600cb22688db7d631c42f02a7a77800fbd1b06",
+      "size": 105,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/86600cb22688db7d631c42f02a7a77800fbd1b06"
+    },
+    {
+      "path": "platform/s5/boards/S5_DDR3_NAND_16Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec908a5a0410f394464cc6048542108d7d4b08e8",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/ec908a5a0410f394464cc6048542108d7d4b08e8"
+    },
+    {
+      "path": "platform/s5/boards/S5_DDR3_NAND_8Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e5299e46b19478faed9b93af71bae3b95c7cda3",
+      "size": 105,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0e5299e46b19478faed9b93af71bae3b95c7cda3"
+    },
+    {
+      "path": "platform/s5/boards/S5_LPDDR3_EMMC_16Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6f5d94162d83c75a3665806f516c971ca9a9bb9",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e6f5d94162d83c75a3665806f516c971ca9a9bb9"
+    },
+    {
+      "path": "platform/s5/boards/S5_LPDDR3_NAND_16Gb.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa87f7abcd18d46077c0ea1bbf6d6b287b6b6d77",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/fa87f7abcd18d46077c0ea1bbf6d6b287b6b6d77"
+    },
+    {
+      "path": "platform/s5/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fc2bb495a4fdb4ea28e783d39b8f26e81321a2e",
+      "size": 218,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4fc2bb495a4fdb4ea28e783d39b8f26e81321a2e"
+    },
+    {
+      "path": "platform/s5/s5.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "681f897477b063bd6b93b9a76d5c61cc2bcdd63a",
+      "size": 1349,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/681f897477b063bd6b93b9a76d5c61cc2bcdd63a"
+    },
+    {
+      "path": "platform/s5l",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7acabc4470dd6ee4cf6a16b59d81edf3aebf2561",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/7acabc4470dd6ee4cf6a16b59d81edf3aebf2561"
+    },
+    {
+      "path": "platform/s5l/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d6fcacce1b372cf912369d5e17f8ebae7201fcf",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/6d6fcacce1b372cf912369d5e17f8ebae7201fcf"
+    },
+    {
+      "path": "platform/s5l/ads/h22_ddr3_456MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2257cd10064ab9217b5c1c2c59fec7d7131de61e",
+      "size": 2040,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2257cd10064ab9217b5c1c2c59fec7d7131de61e"
+    },
+    {
+      "path": "platform/s5l/ads/h22_lpddr3_456MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00ce044e8bfd8e57638672c6485a13f48fb084e0",
+      "size": 1980,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/00ce044e8bfd8e57638672c6485a13f48fb084e0"
+    },
+    {
+      "path": "platform/s5l/ads/h22_lpddr4_300MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1144761d962c34758d6e12ff3dfd13f9706d725a",
+      "size": 2467,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1144761d962c34758d6e12ff3dfd13f9706d725a"
+    },
+    {
+      "path": "platform/s5l/ads/h22_lpddr4_420MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f0811af5b2976c2c760a8f6b3a73f2b40f54b4",
+      "size": 2467,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/91f0811af5b2976c2c760a8f6b3a73f2b40f54b4"
+    },
+    {
+      "path": "platform/s5l/ads/h22_lpddr4_600MHz_32b.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "711d0843712244a669b6ca5443ad43f99aa1c8d3",
+      "size": 2836,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/711d0843712244a669b6ca5443ad43f99aa1c8d3"
+    },
+    {
+      "path": "platform/s5l/ads/h22_lpddr4_612MHz_16b.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ecedc043e7de1c68f2a4181352306adc756f8f9",
+      "size": 2836,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8ecedc043e7de1c68f2a4181352306adc756f8f9"
+    },
+    {
+      "path": "platform/s5l/ads/s5l_4Gb_lpddr3_456MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93b479086001080b4289be85bcee34e57ca6a9f",
+      "size": 2067,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c93b479086001080b4289be85bcee34e57ca6a9f"
+    },
+    {
+      "path": "platform/s5l/ads/s5l_ddr3.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8388adce39dfdb65de62905aac91e56128c9ea5b",
+      "size": 1767,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8388adce39dfdb65de62905aac91e56128c9ea5b"
+    },
+    {
+      "path": "platform/s5l/ads/s5l_lpddr4.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1144761d962c34758d6e12ff3dfd13f9706d725a",
+      "size": 2467,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1144761d962c34758d6e12ff3dfd13f9706d725a"
+    },
+    {
+      "path": "platform/s5l/ads/s5lm_ddr3_456MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5426a1473dc3e196d9d9556ae3939adbbe4716b",
+      "size": 1767,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a5426a1473dc3e196d9d9556ae3939adbbe4716b"
+    },
+    {
+      "path": "platform/s5l/ads/s5lm_lpddr3_456MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d042557125db5704f4c72dbee0e556791f4dc2",
+      "size": 1917,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/89d042557125db5704f4c72dbee0e556791f4dc2"
+    },
+    {
+      "path": "platform/s5l/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc6e56041f3616922c1e5111f831a002ad8fc23f",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/fc6e56041f3616922c1e5111f831a002ad8fc23f"
+    },
+    {
+      "path": "platform/s5l/bld/s5l_4Gb_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99936c24e65ab50859b3369d4c3732518d890813",
+      "size": 251416,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/99936c24e65ab50859b3369d4c3732518d890813"
+    },
+    {
+      "path": "platform/s5l/bld/s5l_4Gb_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d57119f03cbc9b853494d48d860a41795f776c5",
+      "size": 241448,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8d57119f03cbc9b853494d48d860a41795f776c5"
+    },
+    {
+      "path": "platform/s5l/bld/s5l_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e9a09a54929dceef13c275c8847ea50b4e22d59",
+      "size": 251456,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4e9a09a54929dceef13c275c8847ea50b4e22d59"
+    },
+    {
+      "path": "platform/s5l/bld/s5l_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87f6d811f7bfbc3f4879b6a061a2cc0f75bb2ef5",
+      "size": 241488,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/87f6d811f7bfbc3f4879b6a061a2cc0f75bb2ef5"
+    },
+    {
+      "path": "platform/s5l/bld/s5lm_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42ce6e93349b9f845a31011e42029d819f6059d2",
+      "size": 251456,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/42ce6e93349b9f845a31011e42029d819f6059d2"
+    },
+    {
+      "path": "platform/s5l/bld/s5lm_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba4e24fe238d1d9a1f2c6a7ebc25096f94e7bd3",
+      "size": 241488,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7ba4e24fe238d1d9a1f2c6a7ebc25096f94e7bd3"
+    },
+    {
+      "path": "platform/s5l/bld/s5lm_bld_spinor.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5c72acc20ce41a9cd09d9637ff9001d63c41977",
+      "size": 216296,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b5c72acc20ce41a9cd09d9637ff9001d63c41977"
+    },
+    {
+      "path": "platform/s5l/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b289ef3fc4487e1792c48aa67bca558cd6a7794",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/1b289ef3fc4487e1792c48aa67bca558cd6a7794"
+    },
+    {
+      "path": "platform/s5l/boards/H22_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a551e032cfdcf7ad8d21b3ba8ce767a1186f7d43",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a551e032cfdcf7ad8d21b3ba8ce767a1186f7d43"
+    },
+    {
+      "path": "platform/s5l/boards/H22_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a6717d9e17d03d8d1053fc5a0c03cab03138855",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2a6717d9e17d03d8d1053fc5a0c03cab03138855"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e1722365d1233a3da5075315b300a6a89fd36d9",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8e1722365d1233a3da5075315b300a6a89fd36d9"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "338f797171f27c93230c2b4ab46523d1c1754c36",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/338f797171f27c93230c2b4ab46523d1c1754c36"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_EMMC_300MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43ebeb1b9566f69dead9a1e09341367d32468953",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/43ebeb1b9566f69dead9a1e09341367d32468953"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_EMMC_420MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a5d2060816fed93a4f9c8b683d26d5000d1ab79",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9a5d2060816fed93a4f9c8b683d26d5000d1ab79"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_EMMC_600MHz_32b.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8401bc05377e4fe2b754d7428993c0657d7ba023",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8401bc05377e4fe2b754d7428993c0657d7ba023"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_EMMC_612MHz_16b.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ddfda071ca4742d919071616f7d8dcc1b1784e6",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0ddfda071ca4742d919071616f7d8dcc1b1784e6"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_NAND_300MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fac163e1f10ce8b213c59bbff402ecf80b2115b",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6fac163e1f10ce8b213c59bbff402ecf80b2115b"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_NAND_420MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0864d2495d6c1a15c81e9da2fa8a7286f9a2af8d",
+      "size": 111,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0864d2495d6c1a15c81e9da2fa8a7286f9a2af8d"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_NAND_600MHZ_32b.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8472faa92214fbc68738236d2994fccfe0d1f45",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/f8472faa92214fbc68738236d2994fccfe0d1f45"
+    },
+    {
+      "path": "platform/s5l/boards/H22_LPDDR4_NAND_612MHZ_16b.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "610af8dcbe2af3a848ef380b707a7dc59006d96c",
+      "size": 122,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/610af8dcbe2af3a848ef380b707a7dc59006d96c"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd431f3d66ee30c9f0836ac579085e42c33db3d4",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/dd431f3d66ee30c9f0836ac579085e42c33db3d4"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "824b3a685958031a8dec1bc6dc1b833d9d994396",
+      "size": 93,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/824b3a685958031a8dec1bc6dc1b833d9d994396"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bbf794c47f2e80335ad7a2b2e8fa76991598024",
+      "size": 112,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6bbf794c47f2e80335ad7a2b2e8fa76991598024"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c58e221122afa6bcb85687c6d4fee076cef66ecd",
+      "size": 112,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c58e221122afa6bcb85687c6d4fee076cef66ecd"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_LPDDR4_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bda41ab893c57bbe95d31670845343476471bf7",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1bda41ab893c57bbe95d31670845343476471bf7"
+    },
+    {
+      "path": "platform/s5l/boards/S5L_LPDDR4_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03094d94e3398e260f0120ceda6a106e982921cb",
+      "size": 97,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/03094d94e3398e260f0120ceda6a106e982921cb"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_DDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b84d61de69f6cfc83c74295fd7eef063523a391",
+      "size": 103,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7b84d61de69f6cfc83c74295fd7eef063523a391"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_DDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "825a365a2173b953707553d10c1582abd346c5dc",
+      "size": 103,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/825a365a2173b953707553d10c1582abd346c5dc"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_DDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8023bbf63482cd427217911445d9fae0c7632ddd",
+      "size": 109,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8023bbf63482cd427217911445d9fae0c7632ddd"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_LPDDR3_EMMC.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5dd41229c7d71a3d54b6dd412b3ec63dc1bb269",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b5dd41229c7d71a3d54b6dd412b3ec63dc1bb269"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_LPDDR3_NAND.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c959d2e7c9f95446623b9e1859e9d4a4a918660",
+      "size": 107,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0c959d2e7c9f95446623b9e1859e9d4a4a918660"
+    },
+    {
+      "path": "platform/s5l/boards/S5Lm_LPDDR3_SPINOR.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a64d4cb0f69398b63ad6e7ed14406d5ea0e336",
+      "size": 113,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b1a64d4cb0f69398b63ad6e7ed14406d5ea0e336"
+    },
+    {
+      "path": "platform/s5l/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47ef887d1ea61a4c47cc4adb416dcba973fb0c16",
+      "size": 225,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/47ef887d1ea61a4c47cc4adb416dcba973fb0c16"
+    },
+    {
+      "path": "platform/s5l/s5l.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514eb186cbd5327eb02aaea82cd111646be38f2b",
+      "size": 2823,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/514eb186cbd5327eb02aaea82cd111646be38f2b"
+    },
+    {
+      "path": "platform/s6lm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "133c9ec06578c80f9f282c4e69b88747e2bbdf95",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/133c9ec06578c80f9f282c4e69b88747e2bbdf95"
+    },
+    {
+      "path": "platform/s6lm/ads",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5401a0b32218a47d1e859d0b2eb42c1ae0ad8475",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/5401a0b32218a47d1e859d0b2eb42c1ae0ad8475"
+    },
+    {
+      "path": "platform/s6lm/ads/h32_lpddr4_396MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5f98d4cfea98ac34c5aff85193855bad1ae8725",
+      "size": 2765,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/c5f98d4cfea98ac34c5aff85193855bad1ae8725"
+    },
+    {
+      "path": "platform/s6lm/ads/s6lm_ddr4_588MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94dcf679df37a129907eac3e105a808f78172e09",
+      "size": 4842,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/94dcf679df37a129907eac3e105a808f78172e09"
+    },
+    {
+      "path": "platform/s6lm/ads/s6lm_ddr4_792MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d05efd9e1c897ceecd9ccbf26d72f67c8e77e927",
+      "size": 4826,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d05efd9e1c897ceecd9ccbf26d72f67c8e77e927"
+    },
+    {
+      "path": "platform/s6lm/ads/s6lm_lpddr4_540MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c949363a69fe758cdfc99ea3ff28fffa052ed34",
+      "size": 5565,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/9c949363a69fe758cdfc99ea3ff28fffa052ed34"
+    },
+    {
+      "path": "platform/s6lm/ads/s6lm_lpddr4_792MHz.ads",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d118ba7855441236fe7b40742cb8999ccf813aea",
+      "size": 5564,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d118ba7855441236fe7b40742cb8999ccf813aea"
+    },
+    {
+      "path": "platform/s6lm/bld",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8cb475d68343675c92fc6a5ab39fa401bc727f60",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/8cb475d68343675c92fc6a5ab39fa401bc727f60"
+    },
+    {
+      "path": "platform/s6lm/bld/h32_bld.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da946b6f7e0c523a0148f45170b5a52c2c3c8b19",
+      "size": 201016,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/da946b6f7e0c523a0148f45170b5a52c2c3c8b19"
+    },
+    {
+      "path": "platform/s6lm/bld/s6lm_bld_emmc.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c896aabb134808d5c54e39c6a00ff78687cf8ed",
+      "size": 215208,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7c896aabb134808d5c54e39c6a00ff78687cf8ed"
+    },
+    {
+      "path": "platform/s6lm/bld/s6lm_bld_nand.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ea63dcacc290ce7944abc6bf08f103c58ea2edb",
+      "size": 205808,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0ea63dcacc290ce7944abc6bf08f103c58ea2edb"
+    },
+    {
+      "path": "platform/s6lm/bld/s6lm_bld_stack.elf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53418c9dc5f50301593ee2102fefcd3df2a30887",
+      "size": 283448,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/53418c9dc5f50301593ee2102fefcd3df2a30887"
+    },
+    {
+      "path": "platform/s6lm/boards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "196ca5087f1ab9892504f913c1c93639d209195e",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/196ca5087f1ab9892504f913c1c93639d209195e"
+    },
+    {
+      "path": "platform/s6lm/boards/RTOS_H32_LPDDR4_396MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c8eb7028e5f79f7a2c8f01eaffb72d45467c87e",
+      "size": 101,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6c8eb7028e5f79f7a2c8f01eaffb72d45467c87e"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_EMMC_588MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e2304c90d7d19848d71d581b765e87873613a95",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/7e2304c90d7d19848d71d581b765e87873613a95"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_EMMC_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0844de0664f15a6283c93d2ab0dfefe7abf11181",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0844de0664f15a6283c93d2ab0dfefe7abf11181"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_NAND_588MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3381dfb0a2f7e67be37576da350fa322d6a3a32c",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3381dfb0a2f7e67be37576da350fa322d6a3a32c"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_NAND_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2433c75bb28668f8eb45e0c2692179125da22507",
+      "size": 110,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/2433c75bb28668f8eb45e0c2692179125da22507"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_STACK_588MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75ac360957e01eb7efb461ad0ee99729bd8b8d86",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/75ac360957e01eb7efb461ad0ee99729bd8b8d86"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_DDR4_STACK_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "969fdacd1d84fb136358ae2b83af3101d08add1e",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/969fdacd1d84fb136358ae2b83af3101d08add1e"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_LPDDR4_EMMC_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4a9c2c40142cd522fe1f8814ef1462519ce34ac",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/b4a9c2c40142cd522fe1f8814ef1462519ce34ac"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_LPDDR4_EMMC_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "812486f40d700d39106e631b332c1081be9410fd",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/812486f40d700d39106e631b332c1081be9410fd"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_LPDDR4_NAND_540MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d33abbe4b4b2d55ff55625554def9ffefdd64347",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d33abbe4b4b2d55ff55625554def9ffefdd64347"
+    },
+    {
+      "path": "platform/s6lm/boards/S6Lm_LPDDR4_NAND_792MHz.board",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d1bb58a3eb4c9ff6b0b97487871839cda385ea1",
+      "size": 114,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/8d1bb58a3eb4c9ff6b0b97487871839cda385ea1"
+    },
+    {
+      "path": "platform/s6lm/chip.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "715d91ce11511b33c39c4dd539d8d67924c29288",
+      "size": 227,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/715d91ce11511b33c39c4dd539d8d67924c29288"
+    },
+    {
+      "path": "platform/s6lm/s6lm.pri",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e016cdbb403504ac44e11b85d8e5092185f2f9b8",
+      "size": 1653,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e016cdbb403504ac44e11b85d8e5092185f2f9b8"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fe723222e28509f88b7a91d3a2d8ce17414545a",
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/trees/8fe723222e28509f88b7a91d3a2d8ce17414545a"
+    },
+    {
+      "path": "src/ads.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ae4388948a7468a7307b34b20f3067c35cac4f2",
+      "size": 8780,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/0ae4388948a7468a7307b34b20f3067c35cac4f2"
+    },
+    {
+      "path": "src/ads.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5fc296aca4e0cade21f5479929ce7a0cfd57bae",
+      "size": 2689,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/a5fc296aca4e0cade21f5479929ce7a0cfd57bae"
+    },
+    {
+      "path": "src/ambausb_proto.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03077dddfe31555c4866507e275d926bec1bcac2",
+      "size": 11918,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/03077dddfe31555c4866507e275d926bec1bcac2"
+    },
+    {
+      "path": "src/camera.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94050ea8cd3d5576d718b22816b7320fbf51d953",
+      "size": 1409,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/94050ea8cd3d5576d718b22816b7320fbf51d953"
+    },
+    {
+      "path": "src/camera.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee51b9ae2538d6452375e4a51244e3c49a84f95",
+      "size": 2173,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/fee51b9ae2538d6452375e4a51244e3c49a84f95"
+    },
+    {
+      "path": "src/elf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae32c8aa257b92a150eb5fd2bf6c7876d1bf890",
+      "size": 17640,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6ae32c8aa257b92a150eb5fd2bf6c7876d1bf890"
+    },
+    {
+      "path": "src/elf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27ce22ba0b4887508102fb4716a4aecadb638647",
+      "size": 2443,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/27ce22ba0b4887508102fb4716a4aecadb638647"
+    },
+    {
+      "path": "src/embedded.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb322199b4a7f342ad760765aa9a01f1fcb51e5",
+      "size": 972,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/cfb322199b4a7f342ad760765aa9a01f1fcb51e5"
+    },
+    {
+      "path": "src/ini.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe92bd49d8a2864dcc1e3f2d9042767c16ec56c",
+      "size": 1749,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/6fe92bd49d8a2864dcc1e3f2d9042767c16ec56c"
+    },
+    {
+      "path": "src/ini.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d495f7371205731e98c42019e067a750ae70b0",
+      "size": 1186,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/41d495f7371205731e98c42019e067a750ae70b0"
+    },
+    {
+      "path": "src/log.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61c199c4cf61cd687ab2f4f9e8d07cc72df064d4",
+      "size": 2200,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/61c199c4cf61cd687ab2f4f9e8d07cc72df064d4"
+    },
+    {
+      "path": "src/log.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91ab00c23d354646be4d2857085f03d375570a8",
+      "size": 1767,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/d91ab00c23d354646be4d2857085f03d375570a8"
+    },
+    {
+      "path": "src/main.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e999785d2a1320eb9bb6810c27b986f575b256c4",
+      "size": 21223,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e999785d2a1320eb9bb6810c27b986f575b256c4"
+    },
+    {
+      "path": "src/platform.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3361cff25e1c19505d83785dad654ddcd82ebf16",
+      "size": 12727,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/3361cff25e1c19505d83785dad654ddcd82ebf16"
+    },
+    {
+      "path": "src/platform.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39f007a10a7194fcb81aa479acad46e0f9468732",
+      "size": 4360,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/39f007a10a7194fcb81aa479acad46e0f9468732"
+    },
+    {
+      "path": "src/resource.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1068a0d9edfea930ce15f2f7957820425500a978",
+      "size": 7696,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/1068a0d9edfea930ce15f2f7957820425500a978"
+    },
+    {
+      "path": "src/resource.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c1cfb94730593f4880723ca7876f46ad30ed23d",
+      "size": 745,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/4c1cfb94730593f4880723ca7876f46ad30ed23d"
+    },
+    {
+      "path": "src/session.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "786fd59ae9318fce2ca9171b78a4424a377bd181",
+      "size": 48810,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/786fd59ae9318fce2ca9171b78a4424a377bd181"
+    },
+    {
+      "path": "src/session.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb95f93a62b14400d094ca4feb191f263adab02b",
+      "size": 3113,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bb95f93a62b14400d094ca4feb191f263adab02b"
+    },
+    {
+      "path": "src/usb.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1161d709317c8ffc2240ffcebfc77dd0da57d08",
+      "size": 16359,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/e1161d709317c8ffc2240ffcebfc77dd0da57d08"
+    },
+    {
+      "path": "src/usb.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb017e97ff49cd71d85deffa35474531bcf3e0ef",
+      "size": 4997,
+      "url": "https://api.github.com/repos/getnexar/ambausb_cli/git/blobs/bb017e97ff49cd71d85deffa35474531bcf3e0ef"
+    }
+  ],
+  "truncated": false
+}

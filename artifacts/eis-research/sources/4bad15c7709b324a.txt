@@ -1,0 +1,242 @@
+Fused Video Stabilization on the Pixel 2 and Pixel 2 XL
+Skip to main content
+Explore our many areas of focus
+Explore all research areas
+Applied AI & sciences
+Earth AI
+Health AI
+Science AI
+Sustainability & crisis resilience
+Foundational ML & algorithms
+Algorithms & theory
+Information retrieval
+Machine intelligence
+Machine perception
+Natural language processing
+People, systems & quantum AI
+Human-computer interaction and visualization
+Networking
+Quantum AI
+Responsible AI
+Anti abuse
+Software engineering
+Software systems
+Learn More
+Publications
+Projects
+Building a collaborative ecosystem
+Datasets
+Access high-quality datasets to accelerate your research.
+Tools & services
+Explore our latest AI models and products.
+Open source
+Discover open-source code and collaborate with the community.
+Try Deep Review
+Get detailed AI feedback on complex documents
+Shaping the future together
+See all programs
+Faculty programs
+Participating in the academic research community through meaningful engagement with university faculty.
+Student programs
+Supporting the next generation of researchers through a wide range of programming.
+R&D programs
+Collaborating with industry and academic experts to support foundational science and innovation.
+Locations
+Find your place in our global offices and research labs.
+Translating discovery into real-world impact
+People
+Our researchers drive advancements in computer science through both fundamental and applied research.
+Teams
+Collaborative groups tackling the world's most challenging AI problems.
+Research
+Explore our many areas of focus
+Explore all research areas
+Applied AI & sciences
+Earth AI
+Health AI
+Science AI
+Sustainability & crisis resilience
+Foundational ML & algorithms
+Algorithms & theory
+Information retrieval
+Machine intelligence
+Machine perception
+Natural language processing
+People, systems & quantum AI
+Human-computer interaction and visualization
+Networking
+Quantum AI
+Responsible AI
+Anti abuse
+Software engineering
+Software systems
+Learn More
+Publications
+Projects
+Resources
+Building a collaborative ecosystem
+Datasets
+Access high-quality datasets to accelerate your research.
+Tools & services
+Explore our latest AI models and products.
+Open source
+Discover open-source code and collaborate with the community.
+Try Deep Review
+Get detailed AI feedback on complex documents
+Conferences & events
+Careers
+Shaping the future together
+See all programs
+Faculty programs
+Participating in the academic research community through meaningful engagement with university faculty.
+Student programs
+Supporting the next generation of researchers through a wide range of programming.
+R&D programs
+Collaborating with industry and academic experts to support foundational science and innovation.
+Locations
+Find your place in our global offices and research labs.
+Blog
+About
+Translating discovery into real-world impact
+People
+Our researchers drive advancements in computer science through both fundamental and applied research.
+Teams
+Collaborative groups tackling the world's most challenging AI problems.
+Google
+Research
+Google AI
+Learn about all our AI
+Google DeepMind
+Explore the frontier of AI
+Google Labs
+Try our AI experiments
+Research
+Resources
+Conferences & events
+Careers
+Blog
+About
+Search
+Home
+Blog
+Fused Video Stabilization on the Pixel 2 and Pixel 2 XL
+November 10, 2017
+Posted by Chia-Kai Liang, Senior Staff Software Engineer and Fuhao Shi, Android Camera Team
+Quick links
+Share
+Copy link
+×
+One of the most important aspects of current smartphones is easily capturing and sharing videos. With the Pixel 2 and Pixel 2 XL smartphones, the videos you capture are smoother and clearer than ever before, thanks to our Fused Video Stabilization technique based on both optical image stabilization (OIS) and electronic image stabilization (EIS). Fused Video Stabilization delivers highly stable footage with minimal artifacts, and the Pixel 2 is currently rated as the leader in DxO's video ranking (also earning the highest overall rating for a smartphone camera). But how does it work?
+A key principle in videography is keeping the camera motion smooth and steady. A stable video is free of the distraction, so the viewer can focus on the subject of interest. But, videos taken with smartphones are subject to many conditions that make taking a high-quality video a significant challenge:
+Camera Shake
+Most people hold their mobile phones in their hands to record videos - you pull the phone from your pocket, record the video, and the video is ready to share right after recording. However, that means your videos shake as much as your hands do -- and they shake a lot! Moreover, if you are walking or running while recording, the camera motion can make videos almost unwatchable:
+Motion Blur
+If the camera or the subject moves during exposure, the resulting photo or video will appear blurry. Even if we stabilize the motion in between consecutive frames, the motion blur in each individual frame cannot be easily restored in practice, especially on a mobile device. One typical video artifact due to motion blur is sharpness inconsistency: the video may rapidly alternate between blurry and sharp, which is very distracting even after the video is stabilized:
+Rolling Shutter
+The CMOS image sensor collects one row of pixels, or “scanline”, at a time, and it takes tens of milliseconds to go from the top scanline to the bottom. Therefore, anything moving during this period can appear distorted. This is called the rolling shutter distortion. Even if you have a steady hand, the rolling shutter distortion will appear when you move quickly:
+A simulated rendering of a video with global (left) and rolling (right) shutter.
+Focus Breathing
+When there are objects of varying distance in a video, the angle of view can change significantly due to objects “jumping” in and out of the foreground. As result, everything shrinks or expands like the video below, which professionals call “breathing”:
+A good stabilization system should address all of these issues: the video should look sharp, the motion should be smooth, and the rolling shutter and focus breathing should be corrected.
+Many professionals mount the camera on a mechanical stabilizer to entirely isolate hand motion. These devices actively sense and compensate for the camera’s movement to remove all unwanted motions. However, they are usually expensive and cumbersome; you wouldn’t want to carry one every day. There are also handheld gimbal mounts available for mobile phones. However, they are usually larger than the phone itself, and you have to put the phone on it before start recording. You’d need to do it fast before the interesting moment vanishes.
+Optical Image Stabilization (OIS) is the most well-known method for suppression of handshake artifacts. Typically, in mobile camera modules with OIS, the lens is suspended in the middle of the module by a number of springs and electromagnets are used to move the lens within its enclosure. The lens module actively senses and compensates for handshake motion at very high speeds. Because OIS responds to motion rapidly, it can greatly suppress the handshake blur. However, the range of correctable motion is fairly limited (usually around 1-2 degrees), which is not enough to correct the unwanted motions between consecutive video frames, or to correct excessive motion blur during walking. Moveover, OIS cannot correct some kinds of motions, such as in-plane rotation. Sometimes it can even introduce a “jello” artifact:
+The video is taken by Pixel 2 with only OIS enabled. You can see the frame center is stabilized, but the boundaries have some jello-like artifacts.
+Electronic Image Stabilization (EIS) analyzes the camera motion, filters out the unwanted parts, and synthesizes a new video by transforming each frame. The final stabilization quality depends on the algorithm design and implementation optimization of these stages. In general, software-based EIS is more flexible than OIS so it can correct larger and more kinds of motions. However, EIS has some common limitations. First, to prevent undefined regions in the synthesized frame, it needs to reduce the field of view or resolution. Second, compared to OIS or an external stabilizer, EIS requires more computation, which is a limited resource on mobile phones.
+Making a Better Video: Fused Video Stabilization
+With Fused Video Stabilization, both OIS and EIS are enabled simultaneously during video recording to address all the issues mentioned above. Our solution has three processing stages as shown in the system diagram below. The first processing stage, motion analysis, extracts the gyroscope signal, the OIS motion, and other properties to estimate the camera motion precisely. Then, the motion filtering stage combines machine learning and signal processing to predict a person’s intention in moving the camera. Finally, in the frame synthesis stage, we model and remove the rolling shutter and focus breathing distortion. With Fused Video Stabilization, the videos from Pixel 2 have less motion blur and look more natural. The solution is efficient enough to run in all video modes, such as 60fps or 4K recording.
+Motion Analysis
+In the motion analysis stage, we use the phone’s high-speed gyroscope to estimate the rotational component of the hand motion (roll, pitch, and yaw). By sensing the motion at 200 Hz, we have dense motion vectors for each scanline, enough to model the rolling shutter distortion. We also measure lens motions that are not sensed by the gyroscope, including both the focus adjustment (z) and the OIS movement (x and y) at high speed. Because we need high temporal precision to model the rolling shutter effect, we carefully optimize the system to ensure perfect timestamp alignment between the CMOS image sensor, the gyroscope, and the lens motion readouts. A misalignment of merely a few milliseconds can introduce noticeable jittering artifact:
+Left: The stabilized video of a “running” motion with a 3ms timing error. Note the occasional jittering. Right: The stabilized video with correct timestamps. The bottom right corner shows the original shaky video.
+Motion Filtering
+The motion filtering stage takes the real camera motion from motion analysis and creates the stabilized virtual camera motion. Note that we push the incoming frames into a queue to defer the processing. This enables us to lookahead at future camera motions, using machine learning to accurately predict the user’s intention. Lookahead filtering is not feasible for OIS or any mechanical stabilizers, which can only react to previous or present motions. We will discuss more about this below.
+Frame Synthesis
+At the final stage, we derive how the frame is transformed based on the real and virtual camera motions. To handle the rolling shutter distortion, we use multiple transformations for each frame. We split the the input frame into a mesh and warp each part separately:
+Left: The input video with mesh overlay. Right: The warped frame, and the red rectangle is the final stabilized output. Note how the non-rigid warping corrects the rolling shutter distortion.
+Lookahead Motion Filtering
+One key feature in the Fused Video Stabilization is our new lookahead filtering algorithm. It analyzes future motions to recognize the user-intended motion patterns, and creates a smooth virtual camera motion. The lookahead filtering has multiple stages to incrementally improve the virtual camera motion for each frame. In the first step, a Gaussian filtering is applied on the real camera motions of both past and future to obtain a smoothed camera motion:
+Left: The input unstabilized video. Right: The smoothed result after Gaussian filtering.
+You’ll notice that it’s still not very stable. To further improve the quality, we trained a model to extract intentional motions from the noisy real camera motions. We then apply additional filters given the predicted motion. For example, if we predict the camera is panning horizontally, we would reject more vertical motions. The result is shown below.
+Left: The Gaussian filtered result. Right: Our lookahead result. We predict that the user is panning to the right, and suppress more vertical motions.
+In practice, the process above does not guarantee there is no undefined “bad” regions, which can appear when the virtual camera is too stabilized and the warped frame falls outside the original field of view. We predict the likelihood of this issue in the next couple frames and adjust the virtual camera motion to get the final result.
+Left: Our lookahead result. The undefined area at the bottom-left are shown in cyan. Right: The final result with the bad region removed.
+As we mentioned earlier, even with OIS enabled, sometimes the motions are too large and cause motion blur in a single frame. When EIS is further applied to further smooth the camera motion, the motion blur leads to distracting sharpness variations:
+Left: Pixel 2 with OIS only. Right: Pixel 2 with the basic Fused Video Stabilization. Note that sharpness variation around the “Exit” label.
+This is a very common problem in EIS solutions. To address this issue, we exploit the “masking” property in the human visual system. Motion blur usually blurs the frame along a specific direction, and if the overall frame motion follows that direction, the human eye will not notice it. Instead, our brain treats the blur as a natural part of the motion, and masks it away from our perception.
+With the high-frequency gyroscope and OIS signals, we can accurately estimate the motion blur for each frame. We compute where the camera pointed to at both the beginning and end of exposure, and the movement in-between is the motion blur. After that, we apply a machine learning algorithm (trained on a set of videos with and without motion blur) to map the motion blurs in past and future frames to the amount of real camera motion we want to keep, and blend the weighted real camera motion with the virtual one. As you can see below, with the motion blur masking, the distracting sharpness variation is greatly reduced and the camera motion is still stabilized.
+Left: Pixel 2 with the basic Fused Video Stabilization. Right: The full Fused Video Stabilization solution with motion blur masking.
+Results
+We have seen many amazing videos from Pixel 2 with Fused Video Stabilization. Here are some for you to check out:
+Videos taken by two Pixel 2 phones mounted on a single hand grip. Fused Video Stabilization is disabled in the left one.
+Videos taken by two Pixel 2 phones mounting on a single hand grip. Fused Video Stabilization is disabled in the left one. Note that the videographer jumped together with the subject.
+Fused Video Stabilization combines the best of OIS and EIS, shows great results in camera motion smoothing and motion blur reduction, and corrects both rolling shutter and focus breathing. With Fused Video Stabilization on the Pixel 2 and Pixel 2 XL, you no longer have to carefully place the phone before recording, hold it firmly over the entire recording session, or carry a gimbal mount everywhere. The recorded video will always be stable, sharp, and ready to share.
+Acknowledgements
+Fused Video Stabilization is a large-scale effort across multiple teams in Google, including the camera algorithm team, sensor algorithm team, camera hardware team, and sensor hardware team.
+Labels:
+Machine Intelligence
+Machine Perception
+Photography
+Quick links
+Share
+Copy link
+×
+Other posts of interest
+November 4, 2026
+Agile Deliberation: How AI helps humans define the gray areas
+Data Mining & Modeling
+·
+Generative AI
+·
+Human-Computer Interaction and Visualization
+·
+Machine Intelligence
+October 27, 2026
+The sleep framework: A new way for LLMs to retain knowledge in continual learning
+Education Innovation
+·
+General Science
+·
+Machine Intelligence
+·
+Natural Language Processing
+October 21, 2026
+Empowering frontline maternal care with AI-assisted ultrasound
+Health & Bioscience
+·
+Machine Perception
+×
+❮
+❯
+Follow us
+Explore our other initiatives
+Google AI
+Discover how Google AI is committed to enriching knowledge and solving complex challenges
+Products
+Build
+Research
+Responsibility
+Societal Impact
+About
+Google Cloud
+High-performance infrastructure for cloud computing, data analytics & machine learning
+Overview
+Solutions
+Products
+Pricing
+Resources
+Google DeepMind
+Our mission is to build AI responsibly to benefit humanity
+Models
+Research
+Science
+About
+Google Labs
+Explore the future of AI responsibly with Google Labs
+About
+Experiments
+Stay connected
+About Google
+Google Products
+Privacy
+Terms
+Cookies management controls
+×

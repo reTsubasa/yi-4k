@@ -1,0 +1,65 @@
+{
+  "version": "0.3.15",
+  "version_code": 18,
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.3.15-debug.apk",
+    "bytes": 11894745,
+    "sha256": "b1198734256a3617f35f7db96d5bf14e21def5e147c9a103b92b1a4964634d12"
+  },
+  "unit_tests": {
+    "tests": 157,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 64
+  },
+  "debug_and_release_assembled": true,
+  "instrumentation_apk_assembled": true,
+  "local_android": {
+    "test_count": 9,
+    "passed": true,
+    "product_sha256": "b1198734256a3617f35f7db96d5bf14e21def5e147c9a103b92b1a4964634d12",
+    "report": "artifacts/android/0.3.15-device-reports/local-suite-run01/acceptance.json",
+    "emulator_stopped": true,
+    "avd_runtime_removed": true,
+    "allocated_bytes_reclaimed": 505286656
+  },
+  "source_sha256": {
+    "android/app/build.gradle": "07571e70356606f60ddc61f05811cdd9d4ae3f2b7d535ee305ad75a0bf5ef091",
+    "android/app/src/main/AndroidManifest.xml": "af985da6587bcf023eebdf6d77192cbff80a584fa6262357f7cbb6c4e9e5c581",
+    "android/app/src/main/java/dev/yi4k/control/CameraClient.java": "9e1870f776a68b562df9689bebf996c72b93d0654d61933bcd2f3f19614593e6",
+    "android/app/src/main/java/dev/yi4k/control/CameraConfiguration.java": "273ec1324f11a66150c42436be8eeb8bf9e3fea23d8dbd220500959fd65df1cb",
+    "android/app/src/main/java/dev/yi4k/control/CameraLivePreview.java": "d0e1200496bf265f622280b8bde30f8a17b3aab9066eaac0d6d2451632319012",
+    "android/app/src/main/java/dev/yi4k/control/CameraMediaCache.java": "de3c34f65fbeaeb390a02da8721227b9a03d5086e17a36f32a36648c227c3f29",
+    "android/app/src/main/java/dev/yi4k/control/CameraMediaViewer.java": "cb4e519734d0058853280615529cb2db48ade9971781546f44f5c873ec65510d",
+    "android/app/src/main/java/dev/yi4k/control/CameraOptionPresentation.java": "1157d7ddf39a8e40bfc3a88666986752c230f3b6314f7fcf2a0b98a8cd87449c",
+    "android/app/src/main/java/dev/yi4k/control/CameraPreviewAddress.java": "08bf1265d0a80fb7e752d5d9817e7d813d598b6bf077ae8d66ddba701b5fdb5e",
+    "android/app/src/main/java/dev/yi4k/control/CameraSettings.java": "e7e7a9a154fbbae4cdeadb7edbcfaf271e6a377d99229a3a496d6e516c72c8ef",
+    "android/app/src/main/java/dev/yi4k/control/CameraState.java": "2249e6f5aacb9e6f046fd5cd5cffb5ed1e913b57bd13aba2a11b15192d30b8d2",
+    "android/app/src/main/java/dev/yi4k/control/CameraThumbnailStore.java": "06c6530d4f70976468f59ff8fd6d8e78714cd091673e0d5c1ed9a0faec789bbf",
+    "android/app/src/main/java/dev/yi4k/control/CameraVisuals.java": "60635ad437f36f749309ac443dfe6df4dbd2dd8b62274b426d4c2277473a08a3",
+    "android/app/src/main/java/dev/yi4k/control/CameraVoiceEvent.java": "f78c0ef0d9956766464de4aa27e28d1291ff068b31147ad148f85ad228409b9a",
+    "android/app/src/main/java/dev/yi4k/control/CameraWifiConnector.java": "e2ed40a7c32c678e75196e5893785199f195f38129fbf00a966ee4201e09fd64",
+    "android/app/src/main/java/dev/yi4k/control/CaptureParameters.java": "d93365fb16bda75deeb8825fcbbb99b21b57c9bc4874ff672f4f475013275ddb",
+    "android/app/src/main/java/dev/yi4k/control/CaptureTriggerAdapter.java": "25a699c8a6f413a0a71860bc982035be040243ac0a3b426a404e56195ea0deb8",
+    "android/app/src/main/java/dev/yi4k/control/CaptureTriggerRouter.java": "66940c8687ee1f9b0a4ac21284851643df7139ba5452e7af5e6f42773c70181a",
+    "android/app/src/main/java/dev/yi4k/control/JsonObjectStream.java": "f3e96bc58c0863dacdc95dcc1aa5b37b88da23d71f95061c7796f7366888b66a",
+    "android/app/src/main/java/dev/yi4k/control/LocalVideoFiles.java": "a072659f2f088bb728c96a4b1f51d99ada008f4590171c7435f0b707d54bd04d",
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "fec01ad791b3afff482c09f27241b004ac9ac6c5cf38c3cd14b4d4e3c4f526bc",
+    "android/app/src/main/java/dev/yi4k/control/MediaEntry.java": "8360678996f5dbf4d6248c1823823ea0e33f5aa996ff046c9141731063352bbf",
+    "android/app/src/main/java/dev/yi4k/control/MediaExporter.java": "17833927652ac191912186683650800bdb35784bf7f65fff3e81d6873a3515a5",
+    "android/app/src/main/java/dev/yi4k/control/MediaTransfer.java": "3cfd71f3c44bf5725d4dc26f8414b77d2ee6624365d6376fc31f0a49dfad52d3",
+    "android/app/src/main/java/dev/yi4k/control/PendingOriginalExports.java": "b3492d5236e03d1a816cfcd7899596883e40152d9b27a2132c74d14d903ace9e",
+    "android/app/src/main/java/dev/yi4k/control/SettingsHierarchy.java": "2236245c370267002b93d14dc96f687c27bafe17c07d43392bef55043a11941d",
+    "android/app/src/main/java/dev/yi4k/control/VideoEditMedia.java": "55353ff6a7c8cdecb478bb8b891b327b901175f3ff94f017ea52f3336a8c8235",
+    "android/app/src/main/java/dev/yi4k/control/VideoEditPlan.java": "05b9c132864a4905cc5ebad4340b3f89d6e799ff79d9a5012898a521252ef869",
+    "android/app/src/main/java/dev/yi4k/control/VideoEditSession.java": "21c2d76b1cc82381911bb5a61de14f7d79d52a1555c7c97c2fe7a86429d4b219",
+    "android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java": "2edf495b7a3ad1bc63136afd3584be282f701a0b67024c59917a4491f0d107ae",
+    "android/app/src/main/java/dev/yi4k/control/Yi4kApplication.java": "2e61f627e5781ba4a336abcf7347f4d68bfb37a2abe573b24c2a4bfd81ea979c"
+  },
+  "scope": "Host simulated-camera tests and native graphics; AOSP34 ARM64 local-only emulator checks. No physical phone, radio hotspot selection, real-camera stream/configuration/capture, firmware or device memory access in this release. Final packaging also removes cosmetic resolution-list dividers after the host suite.",
+  "reports": "artifacts/android/0.3.15-reports"
+}

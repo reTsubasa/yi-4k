@@ -1,0 +1,235 @@
+{
+  "action": "preflight",
+  "host": "192.168.42.1",
+  "started_utc": "2026-11-12T05:11:46.212853+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1295003.511057958,
+      "utc": "2026-11-12T05:11:46.231819+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1295004.41780275,
+      "utc": "2026-11-12T05:11:47.138552+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1295004.417891666,
+      "utc": "2026-11-12T05:11:47.138633+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1295004.424122833,
+      "utc": "2026-11-12T05:11:47.144871+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1295004.42420275,
+      "utc": "2026-11-12T05:11:47.144944+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1295004.435662541,
+      "utc": "2026-11-12T05:11:47.156410+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 24P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "capture",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1295004.435860375,
+      "utc": "2026-11-12T05:11:47.156601+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1295004.440797708,
+      "utc": "2026-11-12T05:11:47.161545+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1295005.596776583,
+      "utc": "2026-11-12T05:11:48.317503+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1295005.602443041,
+      "utc": "2026-11-12T05:11:48.323170+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1295005.602531875,
+      "utc": "2026-11-12T05:11:48.323252+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1295005.610751083,
+      "utc": "2026-11-12T05:11:48.331478+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1295005.610823208,
+      "utc": "2026-11-12T05:11:48.331543+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1295005.624008958,
+      "utc": "2026-11-12T05:11:48.344736+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 24P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "capture",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1295005.624176291,
+      "utc": "2026-11-12T05:11:48.344896+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1295005.628832833,
+      "utc": "2026-11-12T05:11:48.349558+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "plan_sha256": "ac6556f1d69aa7364c8c2f51ad2d6a3f576a3fafdf1e6d13a3400c59fd0fa83a",
+  "reboot_requested": false,
+  "firmware_or_RAM_write": false,
+  "extra_target_script_file_uploaded": false,
+  "script_sha256": "5b45f4da486ecbe2c36be878b9b981ceb7242fade7c019fefba818c3dd128f7b",
+  "before": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 24P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "capture",
+      "iq_eis_enable": "on"
+    }
+  },
+  "result": {
+    "paths": {
+      "claim": {
+        "present": false
+      },
+      "script": {
+        "present": false
+      },
+      "tasks": {
+        "present": false
+      },
+      "fingerprint": {
+        "present": false
+      }
+    },
+    "uptime": "94669.55 92154.59",
+    "mount": "c: /tmp/SD0 ambafs rw,relatime 0 0",
+    "boot_id": "b90163f5-7881-4229-85fe-6348f1eec930"
+  },
+  "after": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 24P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "capture",
+      "iq_eis_enable": "on"
+    }
+  },
+  "confirmed": true,
+  "finished_utc": "2026-11-12T05:11:48.349839+00:00"
+}

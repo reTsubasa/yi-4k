@@ -1,0 +1,791 @@
+{
+  "evidence_kind": "offline pinned CPU command-buffer and event-wait contract",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "instruction_check_count": 16,
+  "checks": [
+    {
+      "address": "0xA02BE574",
+      "bytes": "4233a0e3",
+      "instruction": "mov r3, #0x8000001"
+    },
+    {
+      "address": "0xA02BE57C",
+      "bytes": "003081e5",
+      "instruction": "str r3, [r1]"
+    },
+    {
+      "address": "0xA02BE584",
+      "bytes": "580091e5",
+      "instruction": "ldr r0, [r1, #0x58]"
+    },
+    {
+      "address": "0xA02BE588",
+      "bytes": "659507eb",
+      "instruction": "bl #0xa04a3b24"
+    },
+    {
+      "address": "0xA02BE5C4",
+      "bytes": "8020a0e3",
+      "instruction": "mov r2, #0x80"
+    },
+    {
+      "address": "0xA02BE5CC",
+      "bytes": "bdffffeb",
+      "instruction": "bl #0xa02be4c8"
+    },
+    {
+      "address": "0xA02BE5FC",
+      "bytes": "3880bde8",
+      "instruction": "pop {r3, r4, r5, pc}"
+    },
+    {
+      "address": "0xA02B45E4",
+      "bytes": "0106a0e3",
+      "instruction": "mov r0, #0x100000"
+    },
+    {
+      "address": "0xA02B45F0",
+      "bytes": "1e4900eb",
+      "instruction": "bl #0xa02c6a70"
+    },
+    {
+      "address": "0xA02B4604",
+      "bytes": "0207a0e3",
+      "instruction": "mov r0, #0x80000"
+    },
+    {
+      "address": "0xA02B4610",
+      "bytes": "164900eb",
+      "instruction": "bl #0xa02c6a70"
+    },
+    {
+      "address": "0xA02B4884",
+      "bytes": "4affffeb",
+      "instruction": "bl #0xa02b45b4"
+    },
+    {
+      "address": "0xA02B48A4",
+      "bytes": "8020a0e3",
+      "instruction": "mov r2, #0x80"
+    },
+    {
+      "address": "0xA02B48AC",
+      "bytes": "4e1109fa",
+      "instruction": "blx #0xa04f8dec"
+    },
+    {
+      "address": "0xA02B48B4",
+      "bytes": "084086e5",
+      "instruction": "str r4, [r6, #8]"
+    },
+    {
+      "address": "0xA02B48C0",
+      "bytes": "171109fa",
+      "instruction": "blx #0xa04f8d24"
+    }
+  ],
+  "mode_1_dispatch": {
+    "table_address": "0xA06F30F8",
+    "entry_index": 1,
+    "entry_address": "0xA06F30FC",
+    "entry": "0xa02b4858",
+    "dispatch_function": "0xA02BE4C8",
+    "dispatch_kind": "indirect table jump after mode gate"
+  },
+  "queue_contract": {
+    "vcap_setup": {
+      "command_code": "0x08000001",
+      "command_bytes": 128,
+      "enqueue_call": "0xA02BE5CC -> 0xA02BE4C8",
+      "return_is": "queue dispatch result; not DSP completion"
+    },
+    "ready_wait": {
+      "function": "0xA02B45B4",
+      "type_0x0e_event_mask": "0x00100000",
+      "type_0x0d_event_mask": "0x00080000",
+      "timeout_ticks": 1000,
+      "wait_helper": "0xA02C6A70",
+      "meaning": "command-buffer readiness gate before slot mutation"
+    },
+    "slot_write_order": [
+      "read queue base +0x54 and cursor +0x08",
+      "select next slot at cursor * 0x80",
+      "clear selected 0x80 bytes with 0x00",
+      "store new cursor at queue base +0x08",
+      "copy caller command into selected slot with 0x80 bytes",
+      "return zero when capacity check passed; FFFFFFFF on full/invalid path"
+    ],
+    "clear_helper": "0xA04F8DEC",
+    "copy_helper": "0xA04F8D24"
+  },
+  "bounded_visibility_scan": {
+    "windows": {
+      "dispatch": [
+        "0xa02be4c8",
+        "0xa02be54c"
+      ],
+      "vcap_setup": [
+        "0xa02be570",
+        "0xa02be61c"
+      ],
+      "ready_wait": [
+        "0xa02b45b4",
+        "0xa02b4648"
+      ],
+      "queue_entry": [
+        "0xa02b4858",
+        "0xa02b48c8"
+      ]
+    },
+    "barrier_sites_in_windows": [],
+    "cache_helper_calls_in_windows": [],
+    "result": "no direct dmb/dsb/isb or known D-cache helper in the four audited queue windows",
+    "scope": "bounded ARM windows only; event/lock helper bodies and indirect DSP code are separate"
+  },
+  "call_graph_rows": [
+    [
+      "0xa02b4858",
+      "0xa02b487c",
+      "0xa02b48cc",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b4884",
+      "0xa02b45b4",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b4898",
+      "0xa02b48dc",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b48ac",
+      "0xa04f8dec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b48c0",
+      "0xa04f8d24",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b48cc",
+      "0xa02b4404",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02b4858",
+      "0xa02b48d8",
+      "0xa02b4880",
+      "UNCONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be4c8",
+      "0xa02be4d8",
+      "0xa02cb728",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be4c8",
+      "0xa02be4e0",
+      "0xa02be52c",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be4c8",
+      "0xa02be4e4",
+      "0xa02cb728",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be4c8",
+      "0xa02be4ec",
+      "0xa02be514",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be4c8",
+      "0xa02be524",
+      "0xa02be4f0",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be588",
+      "0xa04a3b24",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be594",
+      "0xa04a3b24",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be5a8",
+      "0xa02be600",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be5bc",
+      "0xa02be600",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be5cc",
+      "0xa02be4c8",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be5f4",
+      "0xa02be61c",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be60c",
+      "0xa02be5c0",
+      "CONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be610",
+      "0xa01ed720",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be618",
+      "0xa02be5c0",
+      "UNCONDITIONAL_JUMP"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be624",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be634",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be644",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be654",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be664",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be674",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be684",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be694",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6a4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6b4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6c4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6d4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6e4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be6f4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be704",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be714",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be724",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be734",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be744",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be754",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be764",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be778",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be78c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be7a0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be7b4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be7c8",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be7dc",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be7f0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be804",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be814",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be824",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be838",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be84c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be860",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be870",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be880",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be890",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be8a0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be8b4",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be8c8",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be8dc",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be8f0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be904",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be918",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be92c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be940",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be954",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be968",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be97c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be990",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9a0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9b0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9c0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9d0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9e0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02be9f0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea00",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea10",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea20",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea34",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea48",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea5c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea70",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea80",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bea90",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beaa0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beab0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beac0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bead0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beae0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beaf0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb00",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb10",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb20",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb30",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb40",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb50",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb60",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb74",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb88",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02beb9c",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bebb0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bebc0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ],
+    [
+      "0xa02be570",
+      "0xa02bebd0",
+      "0xa02a70ec",
+      "UNCONDITIONAL_CALL"
+    ]
+  ],
+  "not_proven": [
+    "Indirect dispatch target selected at runtime for every mode",
+    "queue copy visibility to DSP or hardware command fetch",
+    "DSP latch, completion/ack, encoded-frame association or PTS identity",
+    "safe reclamation or overwrite condition for prior queue/table slots",
+    "cache/barrier behavior inside called event, lock, driver or DSP helpers"
+  ],
+  "device_access": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

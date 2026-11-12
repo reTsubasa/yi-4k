@@ -1,0 +1,570 @@
+[
+  {
+    "offset": "0x7e9",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x7f8",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x7fe",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x81a",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x834",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0x843",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x857",
+    "text": "md5_init"
+  },
+  {
+    "offset": "0x860",
+    "text": "memset"
+  },
+  {
+    "offset": "0x867",
+    "text": "md5_loop"
+  },
+  {
+    "offset": "0x870",
+    "text": "bcopy"
+  },
+  {
+    "offset": "0x876",
+    "text": "md5_pad"
+  },
+  {
+    "offset": "0x87e",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x885",
+    "text": "md5_result"
+  },
+  {
+    "offset": "0x890",
+    "text": "md5_wrapper"
+  },
+  {
+    "offset": "0x89c",
+    "text": "strlen"
+  },
+  {
+    "offset": "0x8a3",
+    "text": "debugchap"
+  },
+  {
+    "offset": "0x8ad",
+    "text": "LU_NetCtrl_Reply_Svc"
+  },
+  {
+    "offset": "0x8c2",
+    "text": "AmbaMem_convert"
+  },
+  {
+    "offset": "0x8d2",
+    "text": "cmd_server_send_data"
+  },
+  {
+    "offset": "0x8e7",
+    "text": "RT_NetCtrl_Notify_Status_Clnt"
+  },
+  {
+    "offset": "0x905",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x917",
+    "text": "netctrl_notify_status"
+  },
+  {
+    "offset": "0x92d",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0x941",
+    "text": "RT_NetCtrl_Send_Clnt"
+  },
+  {
+    "offset": "0x956",
+    "text": "netctrl_send_command"
+  },
+  {
+    "offset": "0x96b",
+    "text": "strcpy"
+  },
+  {
+    "offset": "0x972",
+    "text": "do_mmap"
+  },
+  {
+    "offset": "0x97a",
+    "text": "AmbaMem_init"
+  },
+  {
+    "offset": "0x987",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0x994",
+    "text": "do_munmap"
+  },
+  {
+    "offset": "0x99e",
+    "text": "AmbaMem_munmap"
+  },
+  {
+    "offset": "0x9ad",
+    "text": "AmbaMem_release"
+  },
+  {
+    "offset": "0x9bd",
+    "text": "netctrl_unregister_svc"
+  },
+  {
+    "offset": "0x9d4",
+    "text": "ambaipc_svc_unregister"
+  },
+  {
+    "offset": "0x9eb",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0xa00",
+    "text": "netctrl_register_svc"
+  },
+  {
+    "offset": "0xa15",
+    "text": "malloc"
+  },
+  {
+    "offset": "0xa1c",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0xa36",
+    "text": "cmd_server_set_client_info"
+  },
+  {
+    "offset": "0xa51",
+    "text": "cmdbt_server_set_client_info"
+  },
+  {
+    "offset": "0xa6e",
+    "text": "cmd_server_get_client_sockid"
+  },
+  {
+    "offset": "0xa8b",
+    "text": "cmdbt_server_get_client_sockid"
+  },
+  {
+    "offset": "0xaaa",
+    "text": "strcmp"
+  },
+  {
+    "offset": "0xab1",
+    "text": "cmd_server_reset_client_info"
+  },
+  {
+    "offset": "0xad3",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0xae4",
+    "text": "cmd_server_init"
+  },
+  {
+    "offset": "0xaf4",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0xafc",
+    "text": "fputc"
+  },
+  {
+    "offset": "0xb02",
+    "text": "stderr"
+  },
+  {
+    "offset": "0xb09",
+    "text": "cmd_server_create_hndlr"
+  },
+  {
+    "offset": "0xb21",
+    "text": "fputs"
+  },
+  {
+    "offset": "0xb27",
+    "text": "cmd_server_start"
+  },
+  {
+    "offset": "0xb38",
+    "text": "sprintf"
+  },
+  {
+    "offset": "0xb40",
+    "text": "system"
+  },
+  {
+    "offset": "0xb47",
+    "text": "select"
+  },
+  {
+    "offset": "0xb4e",
+    "text": "inet_ntoa"
+  },
+  {
+    "offset": "0xb58",
+    "text": "inet_aton"
+  },
+  {
+    "offset": "0xb62",
+    "text": "close"
+  },
+  {
+    "offset": "0xb6d",
+    "text": "cmd_server_stop"
+  },
+  {
+    "offset": "0xb7d",
+    "text": "cmd_server_release"
+  },
+  {
+    "offset": "0xb90",
+    "text": "libpthread.so.0"
+  },
+  {
+    "offset": "0xba0",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0xbab",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0xbb8",
+    "text": "libnsl.so.1"
+  },
+  {
+    "offset": "0xbc4",
+    "text": "libcrc.so"
+  },
+  {
+    "offset": "0xbce",
+    "text": "libambamem.so"
+  },
+  {
+    "offset": "0xbdc",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0xbea",
+    "text": "libcrypto.so.1.0.0"
+  },
+  {
+    "offset": "0xbfd",
+    "text": "libpkgencap.so"
+  },
+  {
+    "offset": "0xc0c",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0xc16",
+    "text": "_edata"
+  },
+  {
+    "offset": "0xc1d",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0xc29",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0xc37",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0xc43",
+    "text": "__end__"
+  },
+  {
+    "offset": "0xc50",
+    "text": "libremoteapicmddaemon.so"
+  },
+  {
+    "offset": "0xc69",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x13a9",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0x13d9",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0x3128",
+    "text": "netctrl_notify_status"
+  },
+  {
+    "offset": "0x313e",
+    "text": "netctrl_register_svc"
+  },
+  {
+    "offset": "0x3153",
+    "text": "%u: %s"
+  },
+  {
+    "offset": "0x315b",
+    "text": "cmd server send fail, rval = %d"
+  },
+  {
+    "offset": "0x317c",
+    "text": "%s,%d, Fail to create the client for commands "
+  },
+  {
+    "offset": "0x31ac",
+    "text": "ambaipc_clnt_create fail, NetCtrl_Clnt = %d"
+  },
+  {
+    "offset": "0x31d9",
+    "text": "AmbaMem_init() fail!"
+  },
+  {
+    "offset": "0x31f0",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x3218",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x3242",
+    "text": "AmbaMem_release() fail!"
+  },
+  {
+    "offset": "0x325c",
+    "text": "ambaipc_clnt_destroy fail, rval =%d"
+  },
+  {
+    "offset": "0x3281",
+    "text": "NetCtrl_Clnt is zero, %d "
+  },
+  {
+    "offset": "0x329c",
+    "text": "netctrl_svc"
+  },
+  {
+    "offset": "0x32a8",
+    "text": "%s:%d, ambaipc_clnt_create fail."
+  },
+  {
+    "offset": "0x32ca",
+    "text": "cmd_server_send_data"
+  },
+  {
+    "offset": "0x32df",
+    "text": "cmd_server_init"
+  },
+  {
+    "offset": "0x32ef",
+    "text": "cmd_server_create_hndlr"
+  },
+  {
+    "offset": "0x3307",
+    "text": "cmd_server_start"
+  },
+  {
+    "offset": "0x3318",
+    "text": "%s,%d : The connection is different! socket id: %u, The current port: %u, The excepted port: %u "
+  },
+  {
+    "offset": "0x337a",
+    "text": "rval = %d, errno = %d"
+  },
+  {
+    "offset": "0x3390",
+    "text": "%s,%d : The connection is not existed! socket id: %u "
+  },
+  {
+    "offset": "0x33c7",
+    "text": "%s(%d): "
+  },
+  {
+    "offset": "0x33d0",
+    "text": "cmd server has already initialized, ret = %d"
+  },
+  {
+    "offset": "0x33fd",
+    "text": "cmd server is fail to initialize, ret = %d"
+  },
+  {
+    "offset": "0x3428",
+    "text": "listen_func is NULL"
+  },
+  {
+    "offset": "0x343c",
+    "text": "accept_func is NULL"
+  },
+  {
+    "offset": "0x3450",
+    "text": "Not support type!"
+  },
+  {
+    "offset": "0x3462",
+    "text": "cmd server via WiFi is disable, cmd_sd = %d"
+  },
+  {
+    "offset": "0x348e",
+    "text": "cmd server via WiFi is not inited"
+  },
+  {
+    "offset": "0x34b0",
+    "text": "sdptool add --channel=%d SP"
+  },
+  {
+    "offset": "0x34cc",
+    "text": "cmd server via BT is disable, bt cmd_sd:%d"
+  },
+  {
+    "offset": "0x34f7",
+    "text": "cmd server via BT is not inited"
+  },
+  {
+    "offset": "0x3517",
+    "text": "cmd client%d online (%s:%d)"
+  },
+  {
+    "offset": "0x3533",
+    "text": "up to max client limit, max = %d"
+  },
+  {
+    "offset": "0x3554",
+    "text": "drop client%d"
+  },
+  {
+    "offset": "0x3562",
+    "text": "cmdbt client%d online (%s %d)"
+  },
+  {
+    "offset": "0x3580",
+    "text": "up to max client limit, max = %d (bt)"
+  },
+  {
+    "offset": "0x35a6",
+    "text": "drop client %d (bt)"
+  },
+  {
+    "offset": "0x35ba",
+    "text": "reset client info fail, fd_i = %d"
+  },
+  {
+    "offset": "0x35dc",
+    "text": "client %d offline"
+  },
+  {
+    "offset": "0x35ef",
+    "text": "%d: %s"
+  },
+  {
+    "offset": "0x35f6",
+    "text": "send cmd fail, fd_i = %d"
+  },
+  {
+    "offset": "0x360f",
+    "text": "The port of fd_i is not existed, fd_i = %d"
+  },
+  {
+    "offset": "0x3871",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x38a2",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x38ac",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x38bf",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x38c5",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x38cd",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x38d5",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x38e2",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x38f1",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x38fa",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x3903",
+    "text": ".init"
+  },
+  {
+    "offset": "0x3909",
+    "text": ".text"
+  },
+  {
+    "offset": "0x390f",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x3915",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x391d",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x3927",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x3933",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x3944",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x3952",
+    "text": ".data"
+  },
+  {
+    "offset": "0x395d",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,231 @@
+{
+  "audit": "prerecord_cross_file_epoch",
+  "scope": "offline cross-file decompiler graph and bounded missing-edge audit",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "source_root": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+  "graph": [
+    [
+      "audio_start",
+      "audio_gate_writer",
+      "source gate -> PCM payload copy"
+    ],
+    [
+      "audio_start",
+      "audio_pts",
+      "setup clock/frame counter -> synthetic audio PTS"
+    ],
+    [
+      "audio_pts",
+      "audio_fifo_callback",
+      "audio event fields -> FrameDesc/FIFO"
+    ],
+    [
+      "video_pipeline_open",
+      "video_event_callback",
+      "pipeline event 0x13"
+    ],
+    [
+      "video_event_callback",
+      "audio_pipeline_match",
+      "pipeline identity -> audio source gate"
+    ],
+    [
+      "video_dsp_to_event",
+      "video_pts_repair",
+      "DSP raw PTS -> repaired video PTS"
+    ]
+  ],
+  "files": {
+    "audio_start": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045da98.c",
+      "sha256": "5b3752f2243c376619470768adf8b6272e4ecbb885aa4a6d7a0446006e8ee84d",
+      "size_bytes": 2524,
+      "line_hits": {
+        "matched_FUN_a045d7b8": [
+          65
+        ]
+      }
+    },
+    "audio_gate_writer": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02941f4.c",
+      "sha256": "a2ea0f09051f95907e387d5c8c644994c270376bc71ede928158a85b7f9d6262",
+      "size_bytes": 2916,
+      "line_hits": {
+        "matched_FUN_a029c680": [
+          40,
+          56
+        ]
+      }
+    },
+    "audio_pts": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029016c.c",
+      "sha256": "4af11b1c0293b7135b4dc040eb4b1f4cd5883cf3c7ef2131d4345536d4b182bd",
+      "size_bytes": 1358,
+      "line_hits": {
+        "matched_FUN_a0295800": [
+          31
+        ]
+      }
+    },
+    "audio_fifo_callback": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045e7dc.c",
+      "sha256": "1311b8de899bd874ab650c7bb3dae4626de2cab9ab45ff536c6faa4315f04d75",
+      "size_bytes": 5932,
+      "line_hits": {}
+    },
+    "video_pipeline_open": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a046f4a8.c",
+      "sha256": "24120e5b6de5bf40a10e65c38675a3b5494c34b068d4f6ed555b00e83efc2be3",
+      "size_bytes": 491,
+      "line_hits": {
+        "matched_FUN_a02c11b0(0x13": [
+          15
+        ]
+      }
+    },
+    "video_event_callback": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a046e6fc.c",
+      "sha256": "d2fbe83f19dedc6c09857d2ff2532f39585663a9d5a05d600e1d68084a8d5820",
+      "size_bytes": 779,
+      "line_hits": {
+        "matched_FUN_a045fd38": [
+          26
+        ]
+      }
+    },
+    "audio_pipeline_match": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045fd38.c",
+      "sha256": "9d4c5dfed52bc7264cef4d3c4fe50fd16f22007bb4d2dfa88df0a9bfb67bcaf5",
+      "size_bytes": 912,
+      "line_hits": {
+        "matched_FUN_a045d7b8": [
+          23
+        ],
+        "matched_FUN_a045fd38": [
+          2,
+          6
+        ]
+      }
+    },
+    "video_dsp_to_event": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02ca5a0.c",
+      "sha256": "e263c80df93cb0bd0d6652c6cfa0be9563cc8f641a4c5a64a1f79611dece97db",
+      "size_bytes": 9362,
+      "line_hits": {
+        "FUN_a02c1358(4": [
+          144
+        ]
+      }
+    },
+    "video_pts_repair": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c7660.c",
+      "sha256": "f4a9807c51a421a56f2769ced9799df06bd105044b6e68c2bc1cb1c29515a0e6",
+      "size_bytes": 2166,
+      "line_hits": {}
+    }
+  },
+  "checks": [
+    {
+      "name": "audio start builds fixed PTS clock and opens source gate",
+      "needles": [
+        "local_24 = 90000;",
+        "matched_FUN_a0290b60(iVar1,&local_34)",
+        "matched_FUN_a045d7b8(iVar2 + 10,iVar2 + 0xc)"
+      ]
+    },
+    {
+      "name": "audio source writer is gated by IoNode flag",
+      "needles": [
+        "cVar1 = *(char *)(iVar3 + 4);",
+        "if (cVar1 == '\\x01')",
+        "matched_FUN_a029c680(iVar5,param_2,param_3)"
+      ]
+    },
+    {
+      "name": "audio PTS is synthesized from frame counter and setup fields",
+      "needles": [
+        "uVar4 = *(uint *)(iVar3 + 0x20);",
+        "*(uint *)(iVar3 + 0x20) = uVar4 + 1;",
+        "matched_FUN_a0295800(param_1,0,local_40)"
+      ]
+    },
+    {
+      "name": "audio callback copies event fields into FIFO descriptor",
+      "needles": [
+        "iVar11 = param_1[1];",
+        "iVar12 = param_1[2];",
+        "iVar2 = param_1[3];",
+        "matched_FUN_a0452254(iVar10,&local_48)"
+      ]
+    },
+    {
+      "name": "video stores pipeline identity and registers event 0x13",
+      "needles": [
+        "*(undefined4 *)(iVar1 + 0xc) = param_2;",
+        "matched_FUN_a02c11b0(0x13,matched_FUN_a046e6fc,0,iVar1,param_4)"
+      ]
+    },
+    {
+      "name": "event 0x13 matches pipeline and invokes audio instance search",
+      "needles": [
+        "if (*(uint *)(param_1 + 4) == (uint)bVar1 && bVar1 == 0)",
+        "matched_FUN_a045fd38(uVar5)"
+      ]
+    },
+    {
+      "name": "audio instance search matches pipeline and opens source gate",
+      "needles": [
+        "param_1 != *(int *)(puVar3 + 10)",
+        "matched_FUN_a045d7b8(puVar3,puVar3 + 2)"
+      ]
+    },
+    {
+      "name": "video DSP path repairs PTS before event 4",
+      "needles": [
+        "uVar14 = FUN_a02c7660(piVar10,&DAT_a06890e0 + iVar1)",
+        "FUN_a02c1358(4,&local_58)"
+      ]
+    },
+    {
+      "name": "video PTS repair keeps per-stream previous PTS/base state",
+      "needles": [
+        "uVar4 = *(uint *)(param_2 + 8);",
+        "uVar5 = *(uint *)(param_2 + 0xc);",
+        "*(uint *)(param_1 + 0x18) = uVar4;"
+      ]
+    },
+    {
+      "name": "event callback has no audited PTS/DMA field use",
+      "absent_needles": [
+        "param_1 + 8",
+        "param_1 + 0xc",
+        "DAT_a1458568"
+      ]
+    },
+    {
+      "name": "pipeline match has no audited PTS/DMA field use",
+      "absent_needles": [
+        "param_1 + 8",
+        "param_1 + 0xc",
+        "A06890E0"
+      ]
+    }
+  ],
+  "conclusions": {
+    "audio_gate_and_video_event_share_pipeline_identity": true,
+    "audio_pts_is_frame_counter_derived": true,
+    "video_pts_is_dsp_descriptor_derived_and_repaired": true,
+    "audited_event_gate_edge_carries_no_pts_or_dma_block": true,
+    "common_audio_video_capture_epoch_proven": false,
+    "first_accepted_dma_block_to_first_video_pts_correlated": false,
+    "runtime_producer_restart_and_fifo_ownership_proven": false,
+    "camera_side_prerecord_implemented": false
+  },
+  "safety": {
+    "camera_connected": false,
+    "firmware_written": false,
+    "ram_or_partition_written": false,
+    "hidden_setter_invoked": false,
+    "rtos_executed": false
+  }
+}

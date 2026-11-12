@@ -1,0 +1,8 @@
+cat /proc/ambarella/uart1_rcvr; cat /proc/ambarella/board_info; cat /proc/cm
+dline
+UART1, Rx Trigger: 1, FIFO 1/4 full.
+wifi_mac: 
+wifi1_mac: 
+root=/dev/mtdblock5 rootfstype=squashfs console=ttyS2 nr_cpus=1 maxcpus=0 boss=0xdc950000
+~ # echo __YI_CAPTURE_8f1d0fedfd0c466bb34f964c2e158faa__
+__YI_CAPTURE_8f1d0fedfd0c466bb34f964c2e158faa__

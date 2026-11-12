@@ -1,0 +1,6525 @@
+{
+  "scope": "offline original fixed ARM bytes; synthetic RAM and fault mapping only; no services substituted",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "instruction_checks": [
+    {
+      "address": "0xa0483c3c",
+      "bytes": "2ce09ee5",
+      "mnemonic": "ldr",
+      "operands": "lr, [lr, #0x2c]"
+    },
+    {
+      "address": "0xa0483c48",
+      "bytes": "020050e3",
+      "mnemonic": "cmp",
+      "operands": "r0, #2"
+    },
+    {
+      "address": "0xa0483c58",
+      "bytes": "0100a0e1",
+      "mnemonic": "mov",
+      "operands": "r0, r1"
+    },
+    {
+      "address": "0xa0483c5c",
+      "bytes": "0210a0e1",
+      "mnemonic": "mov",
+      "operands": "r1, r2"
+    },
+    {
+      "address": "0xa0483c60",
+      "bytes": "0320a0e1",
+      "mnemonic": "mov",
+      "operands": "r2, r3"
+    },
+    {
+      "address": "0xa0483c6c",
+      "bytes": "13ff2fe1",
+      "mnemonic": "bx",
+      "operands": "r3"
+    },
+    {
+      "address": "0xa0484f80",
+      "bytes": "a43700ea",
+      "mnemonic": "b",
+      "operands": "#0xa0492e18"
+    },
+    {
+      "address": "0xa0492e20",
+      "bytes": "0c0051e3",
+      "mnemonic": "cmp",
+      "operands": "r1, #0xc"
+    },
+    {
+      "address": "0xa0492e30",
+      "bytes": "020051e3",
+      "mnemonic": "cmp",
+      "operands": "r1, #2"
+    },
+    {
+      "address": "0xa0492e48",
+      "bytes": "0c1081e2",
+      "mnemonic": "add",
+      "operands": "r1, r1, #0xc"
+    },
+    {
+      "address": "0xa0492e4c",
+      "bytes": "000052e3",
+      "mnemonic": "cmp",
+      "operands": "r2, #0"
+    },
+    {
+      "address": "0xa0492e58",
+      "bytes": "403081e2",
+      "mnemonic": "add",
+      "operands": "r3, r1, #0x40"
+    },
+    {
+      "address": "0xa0492e7c",
+      "bytes": "104002e5",
+      "mnemonic": "str",
+      "operands": "r4, [r2, #-0x10]"
+    },
+    {
+      "address": "0xa0492eac",
+      "bytes": "011083e0",
+      "mnemonic": "add",
+      "operands": "r1, r3, r1"
+    },
+    {
+      "address": "0xa0488900",
+      "bytes": "d42900ea",
+      "mnemonic": "b",
+      "operands": "#0xa0493058"
+    },
+    {
+      "address": "0xa0493098",
+      "bytes": "403081e2",
+      "mnemonic": "add",
+      "operands": "r3, r1, #0x40"
+    }
+  ],
+  "pointer_words": {
+    "0xa078b600": "0xa0001400",
+    "0xa078b604": "0xa0001800",
+    "0xa078b60c": "0xa0001800",
+    "0xa078b610": "0xa0001400"
+  },
+  "backend_slots": [
+    {
+      "index": 0,
+      "slot": "0xa062ad54",
+      "target": "0xa0484f80"
+    },
+    {
+      "index": 1,
+      "slot": "0xa062adac",
+      "target": "0xa0488900"
+    },
+    {
+      "index": 2,
+      "slot": "0xa062ae04",
+      "target": "0x0"
+    }
+  ],
+  "successful_copy_cases": 33,
+  "explicit_rejection_cases": 15,
+  "hazard_cases": 6,
+  "copies": [
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000140c",
+          4
+        ],
+        [
+          "0xa0001410",
+          4
+        ],
+        [
+          "0xa0001414",
+          4
+        ],
+        [
+          "0xa0001418",
+          4
+        ],
+        [
+          "0xa000141c",
+          4
+        ],
+        [
+          "0xa0001420",
+          4
+        ],
+        [
+          "0xa0001424",
+          4
+        ],
+        [
+          "0xa0001428",
+          4
+        ],
+        [
+          "0xa000142c",
+          4
+        ],
+        [
+          "0xa0001430",
+          4
+        ],
+        [
+          "0xa0001434",
+          4
+        ],
+        [
+          "0xa0001438",
+          4
+        ],
+        [
+          "0xa000143c",
+          4
+        ],
+        [
+          "0xa0001440",
+          4
+        ],
+        [
+          "0xa0001444",
+          4
+        ],
+        [
+          "0xa0001448",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e7398bde2",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 1,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000144c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000144c",
+          4
+        ],
+        [
+          "0xa0001450",
+          4
+        ],
+        [
+          "0xa0001454",
+          4
+        ],
+        [
+          "0xa0001458",
+          4
+        ],
+        [
+          "0xa000145c",
+          4
+        ],
+        [
+          "0xa0001460",
+          4
+        ],
+        [
+          "0xa0001464",
+          4
+        ],
+        [
+          "0xa0001468",
+          4
+        ],
+        [
+          "0xa000146c",
+          4
+        ],
+        [
+          "0xa0001470",
+          4
+        ],
+        [
+          "0xa0001474",
+          4
+        ],
+        [
+          "0xa0001478",
+          4
+        ],
+        [
+          "0xa000147c",
+          4
+        ],
+        [
+          "0xa0001480",
+          4
+        ],
+        [
+          "0xa0001484",
+          4
+        ],
+        [
+          "0xa0001488",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698eb3d8fd22",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 2,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000148c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000148c",
+          4
+        ],
+        [
+          "0xa0001490",
+          4
+        ],
+        [
+          "0xa0001494",
+          4
+        ],
+        [
+          "0xa0001498",
+          4
+        ],
+        [
+          "0xa000149c",
+          4
+        ],
+        [
+          "0xa00014a0",
+          4
+        ],
+        [
+          "0xa00014a4",
+          4
+        ],
+        [
+          "0xa00014a8",
+          4
+        ],
+        [
+          "0xa00014ac",
+          4
+        ],
+        [
+          "0xa00014b0",
+          4
+        ],
+        [
+          "0xa00014b4",
+          4
+        ],
+        [
+          "0xa00014b8",
+          4
+        ],
+        [
+          "0xa00014bc",
+          4
+        ],
+        [
+          "0xa00014c0",
+          4
+        ],
+        [
+          "0xa00014c4",
+          4
+        ],
+        [
+          "0xa00014c8",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9cef3183d62",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001808",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001808",
+          4
+        ],
+        [
+          "0xa000180c",
+          4
+        ],
+        [
+          "0xa0001810",
+          4
+        ],
+        [
+          "0xa0001814",
+          4
+        ],
+        [
+          "0xa0001818",
+          4
+        ],
+        [
+          "0xa000181c",
+          4
+        ],
+        [
+          "0xa0001820",
+          4
+        ],
+        [
+          "0xa0001824",
+          4
+        ],
+        [
+          "0xa0001828",
+          4
+        ],
+        [
+          "0xa000182c",
+          4
+        ],
+        [
+          "0xa0001830",
+          4
+        ],
+        [
+          "0xa0001834",
+          4
+        ],
+        [
+          "0xa0001838",
+          4
+        ],
+        [
+          "0xa000183c",
+          4
+        ],
+        [
+          "0xa0001840",
+          4
+        ],
+        [
+          "0xa0001844",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 1,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001848",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001848",
+          4
+        ],
+        [
+          "0xa000184c",
+          4
+        ],
+        [
+          "0xa0001850",
+          4
+        ],
+        [
+          "0xa0001854",
+          4
+        ],
+        [
+          "0xa0001858",
+          4
+        ],
+        [
+          "0xa000185c",
+          4
+        ],
+        [
+          "0xa0001860",
+          4
+        ],
+        [
+          "0xa0001864",
+          4
+        ],
+        [
+          "0xa0001868",
+          4
+        ],
+        [
+          "0xa000186c",
+          4
+        ],
+        [
+          "0xa0001870",
+          4
+        ],
+        [
+          "0xa0001874",
+          4
+        ],
+        [
+          "0xa0001878",
+          4
+        ],
+        [
+          "0xa000187c",
+          4
+        ],
+        [
+          "0xa0001880",
+          4
+        ],
+        [
+          "0xa0001884",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 2,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001888",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001888",
+          4
+        ],
+        [
+          "0xa000188c",
+          4
+        ],
+        [
+          "0xa0001890",
+          4
+        ],
+        [
+          "0xa0001894",
+          4
+        ],
+        [
+          "0xa0001898",
+          4
+        ],
+        [
+          "0xa000189c",
+          4
+        ],
+        [
+          "0xa00018a0",
+          4
+        ],
+        [
+          "0xa00018a4",
+          4
+        ],
+        [
+          "0xa00018a8",
+          4
+        ],
+        [
+          "0xa00018ac",
+          4
+        ],
+        [
+          "0xa00018b0",
+          4
+        ],
+        [
+          "0xa00018b4",
+          4
+        ],
+        [
+          "0xa00018b8",
+          4
+        ],
+        [
+          "0xa00018bc",
+          4
+        ],
+        [
+          "0xa00018c0",
+          4
+        ],
+        [
+          "0xa00018c4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 3,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00018c8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa00018c8",
+          4
+        ],
+        [
+          "0xa00018cc",
+          4
+        ],
+        [
+          "0xa00018d0",
+          4
+        ],
+        [
+          "0xa00018d4",
+          4
+        ],
+        [
+          "0xa00018d8",
+          4
+        ],
+        [
+          "0xa00018dc",
+          4
+        ],
+        [
+          "0xa00018e0",
+          4
+        ],
+        [
+          "0xa00018e4",
+          4
+        ],
+        [
+          "0xa00018e8",
+          4
+        ],
+        [
+          "0xa00018ec",
+          4
+        ],
+        [
+          "0xa00018f0",
+          4
+        ],
+        [
+          "0xa00018f4",
+          4
+        ],
+        [
+          "0xa00018f8",
+          4
+        ],
+        [
+          "0xa00018fc",
+          4
+        ],
+        [
+          "0xa0001900",
+          4
+        ],
+        [
+          "0xa0001904",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 4,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001908",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001908",
+          4
+        ],
+        [
+          "0xa000190c",
+          4
+        ],
+        [
+          "0xa0001910",
+          4
+        ],
+        [
+          "0xa0001914",
+          4
+        ],
+        [
+          "0xa0001918",
+          4
+        ],
+        [
+          "0xa000191c",
+          4
+        ],
+        [
+          "0xa0001920",
+          4
+        ],
+        [
+          "0xa0001924",
+          4
+        ],
+        [
+          "0xa0001928",
+          4
+        ],
+        [
+          "0xa000192c",
+          4
+        ],
+        [
+          "0xa0001930",
+          4
+        ],
+        [
+          "0xa0001934",
+          4
+        ],
+        [
+          "0xa0001938",
+          4
+        ],
+        [
+          "0xa000193c",
+          4
+        ],
+        [
+          "0xa0001940",
+          4
+        ],
+        [
+          "0xa0001944",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 5,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001948",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001948",
+          4
+        ],
+        [
+          "0xa000194c",
+          4
+        ],
+        [
+          "0xa0001950",
+          4
+        ],
+        [
+          "0xa0001954",
+          4
+        ],
+        [
+          "0xa0001958",
+          4
+        ],
+        [
+          "0xa000195c",
+          4
+        ],
+        [
+          "0xa0001960",
+          4
+        ],
+        [
+          "0xa0001964",
+          4
+        ],
+        [
+          "0xa0001968",
+          4
+        ],
+        [
+          "0xa000196c",
+          4
+        ],
+        [
+          "0xa0001970",
+          4
+        ],
+        [
+          "0xa0001974",
+          4
+        ],
+        [
+          "0xa0001978",
+          4
+        ],
+        [
+          "0xa000197c",
+          4
+        ],
+        [
+          "0xa0001980",
+          4
+        ],
+        [
+          "0xa0001984",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 6,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001988",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001988",
+          4
+        ],
+        [
+          "0xa000198c",
+          4
+        ],
+        [
+          "0xa0001990",
+          4
+        ],
+        [
+          "0xa0001994",
+          4
+        ],
+        [
+          "0xa0001998",
+          4
+        ],
+        [
+          "0xa000199c",
+          4
+        ],
+        [
+          "0xa00019a0",
+          4
+        ],
+        [
+          "0xa00019a4",
+          4
+        ],
+        [
+          "0xa00019a8",
+          4
+        ],
+        [
+          "0xa00019ac",
+          4
+        ],
+        [
+          "0xa00019b0",
+          4
+        ],
+        [
+          "0xa00019b4",
+          4
+        ],
+        [
+          "0xa00019b8",
+          4
+        ],
+        [
+          "0xa00019bc",
+          4
+        ],
+        [
+          "0xa00019c0",
+          4
+        ],
+        [
+          "0xa00019c4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 7,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00019c8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa00019c8",
+          4
+        ],
+        [
+          "0xa00019cc",
+          4
+        ],
+        [
+          "0xa00019d0",
+          4
+        ],
+        [
+          "0xa00019d4",
+          4
+        ],
+        [
+          "0xa00019d8",
+          4
+        ],
+        [
+          "0xa00019dc",
+          4
+        ],
+        [
+          "0xa00019e0",
+          4
+        ],
+        [
+          "0xa00019e4",
+          4
+        ],
+        [
+          "0xa00019e8",
+          4
+        ],
+        [
+          "0xa00019ec",
+          4
+        ],
+        [
+          "0xa00019f0",
+          4
+        ],
+        [
+          "0xa00019f4",
+          4
+        ],
+        [
+          "0xa00019f8",
+          4
+        ],
+        [
+          "0xa00019fc",
+          4
+        ],
+        [
+          "0xa0001a00",
+          4
+        ],
+        [
+          "0xa0001a04",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 8,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a08",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a08",
+          4
+        ],
+        [
+          "0xa0001a0c",
+          4
+        ],
+        [
+          "0xa0001a10",
+          4
+        ],
+        [
+          "0xa0001a14",
+          4
+        ],
+        [
+          "0xa0001a18",
+          4
+        ],
+        [
+          "0xa0001a1c",
+          4
+        ],
+        [
+          "0xa0001a20",
+          4
+        ],
+        [
+          "0xa0001a24",
+          4
+        ],
+        [
+          "0xa0001a28",
+          4
+        ],
+        [
+          "0xa0001a2c",
+          4
+        ],
+        [
+          "0xa0001a30",
+          4
+        ],
+        [
+          "0xa0001a34",
+          4
+        ],
+        [
+          "0xa0001a38",
+          4
+        ],
+        [
+          "0xa0001a3c",
+          4
+        ],
+        [
+          "0xa0001a40",
+          4
+        ],
+        [
+          "0xa0001a44",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 9,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a48",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a48",
+          4
+        ],
+        [
+          "0xa0001a4c",
+          4
+        ],
+        [
+          "0xa0001a50",
+          4
+        ],
+        [
+          "0xa0001a54",
+          4
+        ],
+        [
+          "0xa0001a58",
+          4
+        ],
+        [
+          "0xa0001a5c",
+          4
+        ],
+        [
+          "0xa0001a60",
+          4
+        ],
+        [
+          "0xa0001a64",
+          4
+        ],
+        [
+          "0xa0001a68",
+          4
+        ],
+        [
+          "0xa0001a6c",
+          4
+        ],
+        [
+          "0xa0001a70",
+          4
+        ],
+        [
+          "0xa0001a74",
+          4
+        ],
+        [
+          "0xa0001a78",
+          4
+        ],
+        [
+          "0xa0001a7c",
+          4
+        ],
+        [
+          "0xa0001a80",
+          4
+        ],
+        [
+          "0xa0001a84",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 10,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a88",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a88",
+          4
+        ],
+        [
+          "0xa0001a8c",
+          4
+        ],
+        [
+          "0xa0001a90",
+          4
+        ],
+        [
+          "0xa0001a94",
+          4
+        ],
+        [
+          "0xa0001a98",
+          4
+        ],
+        [
+          "0xa0001a9c",
+          4
+        ],
+        [
+          "0xa0001aa0",
+          4
+        ],
+        [
+          "0xa0001aa4",
+          4
+        ],
+        [
+          "0xa0001aa8",
+          4
+        ],
+        [
+          "0xa0001aac",
+          4
+        ],
+        [
+          "0xa0001ab0",
+          4
+        ],
+        [
+          "0xa0001ab4",
+          4
+        ],
+        [
+          "0xa0001ab8",
+          4
+        ],
+        [
+          "0xa0001abc",
+          4
+        ],
+        [
+          "0xa0001ac0",
+          4
+        ],
+        [
+          "0xa0001ac4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 11,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001ac8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001ac8",
+          4
+        ],
+        [
+          "0xa0001acc",
+          4
+        ],
+        [
+          "0xa0001ad0",
+          4
+        ],
+        [
+          "0xa0001ad4",
+          4
+        ],
+        [
+          "0xa0001ad8",
+          4
+        ],
+        [
+          "0xa0001adc",
+          4
+        ],
+        [
+          "0xa0001ae0",
+          4
+        ],
+        [
+          "0xa0001ae4",
+          4
+        ],
+        [
+          "0xa0001ae8",
+          4
+        ],
+        [
+          "0xa0001aec",
+          4
+        ],
+        [
+          "0xa0001af0",
+          4
+        ],
+        [
+          "0xa0001af4",
+          4
+        ],
+        [
+          "0xa0001af8",
+          4
+        ],
+        [
+          "0xa0001afc",
+          4
+        ],
+        [
+          "0xa0001b00",
+          4
+        ],
+        [
+          "0xa0001b04",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 12,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001b08",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001b08",
+          4
+        ],
+        [
+          "0xa0001b0c",
+          4
+        ],
+        [
+          "0xa0001b10",
+          4
+        ],
+        [
+          "0xa0001b14",
+          4
+        ],
+        [
+          "0xa0001b18",
+          4
+        ],
+        [
+          "0xa0001b1c",
+          4
+        ],
+        [
+          "0xa0001b20",
+          4
+        ],
+        [
+          "0xa0001b24",
+          4
+        ],
+        [
+          "0xa0001b28",
+          4
+        ],
+        [
+          "0xa0001b2c",
+          4
+        ],
+        [
+          "0xa0001b30",
+          4
+        ],
+        [
+          "0xa0001b34",
+          4
+        ],
+        [
+          "0xa0001b38",
+          4
+        ],
+        [
+          "0xa0001b3c",
+          4
+        ],
+        [
+          "0xa0001b40",
+          4
+        ],
+        [
+          "0xa0001b44",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000140c",
+          4
+        ],
+        [
+          "0xa0001410",
+          4
+        ],
+        [
+          "0xa0001414",
+          4
+        ],
+        [
+          "0xa0001418",
+          4
+        ],
+        [
+          "0xa000141c",
+          4
+        ],
+        [
+          "0xa0001420",
+          4
+        ],
+        [
+          "0xa0001424",
+          4
+        ],
+        [
+          "0xa0001428",
+          4
+        ],
+        [
+          "0xa000142c",
+          4
+        ],
+        [
+          "0xa0001430",
+          4
+        ],
+        [
+          "0xa0001434",
+          4
+        ],
+        [
+          "0xa0001438",
+          4
+        ],
+        [
+          "0xa000143c",
+          4
+        ],
+        [
+          "0xa0001440",
+          4
+        ],
+        [
+          "0xa0001444",
+          4
+        ],
+        [
+          "0xa0001448",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e7398bde2",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 1,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000144c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000144c",
+          4
+        ],
+        [
+          "0xa0001450",
+          4
+        ],
+        [
+          "0xa0001454",
+          4
+        ],
+        [
+          "0xa0001458",
+          4
+        ],
+        [
+          "0xa000145c",
+          4
+        ],
+        [
+          "0xa0001460",
+          4
+        ],
+        [
+          "0xa0001464",
+          4
+        ],
+        [
+          "0xa0001468",
+          4
+        ],
+        [
+          "0xa000146c",
+          4
+        ],
+        [
+          "0xa0001470",
+          4
+        ],
+        [
+          "0xa0001474",
+          4
+        ],
+        [
+          "0xa0001478",
+          4
+        ],
+        [
+          "0xa000147c",
+          4
+        ],
+        [
+          "0xa0001480",
+          4
+        ],
+        [
+          "0xa0001484",
+          4
+        ],
+        [
+          "0xa0001488",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698eb3d8fd22",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 2,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000148c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000148c",
+          4
+        ],
+        [
+          "0xa0001490",
+          4
+        ],
+        [
+          "0xa0001494",
+          4
+        ],
+        [
+          "0xa0001498",
+          4
+        ],
+        [
+          "0xa000149c",
+          4
+        ],
+        [
+          "0xa00014a0",
+          4
+        ],
+        [
+          "0xa00014a4",
+          4
+        ],
+        [
+          "0xa00014a8",
+          4
+        ],
+        [
+          "0xa00014ac",
+          4
+        ],
+        [
+          "0xa00014b0",
+          4
+        ],
+        [
+          "0xa00014b4",
+          4
+        ],
+        [
+          "0xa00014b8",
+          4
+        ],
+        [
+          "0xa00014bc",
+          4
+        ],
+        [
+          "0xa00014c0",
+          4
+        ],
+        [
+          "0xa00014c4",
+          4
+        ],
+        [
+          "0xa00014c8",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9cef3183d62",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001808",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001808",
+          4
+        ],
+        [
+          "0xa000180c",
+          4
+        ],
+        [
+          "0xa0001810",
+          4
+        ],
+        [
+          "0xa0001814",
+          4
+        ],
+        [
+          "0xa0001818",
+          4
+        ],
+        [
+          "0xa000181c",
+          4
+        ],
+        [
+          "0xa0001820",
+          4
+        ],
+        [
+          "0xa0001824",
+          4
+        ],
+        [
+          "0xa0001828",
+          4
+        ],
+        [
+          "0xa000182c",
+          4
+        ],
+        [
+          "0xa0001830",
+          4
+        ],
+        [
+          "0xa0001834",
+          4
+        ],
+        [
+          "0xa0001838",
+          4
+        ],
+        [
+          "0xa000183c",
+          4
+        ],
+        [
+          "0xa0001840",
+          4
+        ],
+        [
+          "0xa0001844",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 1,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001848",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001848",
+          4
+        ],
+        [
+          "0xa000184c",
+          4
+        ],
+        [
+          "0xa0001850",
+          4
+        ],
+        [
+          "0xa0001854",
+          4
+        ],
+        [
+          "0xa0001858",
+          4
+        ],
+        [
+          "0xa000185c",
+          4
+        ],
+        [
+          "0xa0001860",
+          4
+        ],
+        [
+          "0xa0001864",
+          4
+        ],
+        [
+          "0xa0001868",
+          4
+        ],
+        [
+          "0xa000186c",
+          4
+        ],
+        [
+          "0xa0001870",
+          4
+        ],
+        [
+          "0xa0001874",
+          4
+        ],
+        [
+          "0xa0001878",
+          4
+        ],
+        [
+          "0xa000187c",
+          4
+        ],
+        [
+          "0xa0001880",
+          4
+        ],
+        [
+          "0xa0001884",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 2,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001888",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001888",
+          4
+        ],
+        [
+          "0xa000188c",
+          4
+        ],
+        [
+          "0xa0001890",
+          4
+        ],
+        [
+          "0xa0001894",
+          4
+        ],
+        [
+          "0xa0001898",
+          4
+        ],
+        [
+          "0xa000189c",
+          4
+        ],
+        [
+          "0xa00018a0",
+          4
+        ],
+        [
+          "0xa00018a4",
+          4
+        ],
+        [
+          "0xa00018a8",
+          4
+        ],
+        [
+          "0xa00018ac",
+          4
+        ],
+        [
+          "0xa00018b0",
+          4
+        ],
+        [
+          "0xa00018b4",
+          4
+        ],
+        [
+          "0xa00018b8",
+          4
+        ],
+        [
+          "0xa00018bc",
+          4
+        ],
+        [
+          "0xa00018c0",
+          4
+        ],
+        [
+          "0xa00018c4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 3,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00018c8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa00018c8",
+          4
+        ],
+        [
+          "0xa00018cc",
+          4
+        ],
+        [
+          "0xa00018d0",
+          4
+        ],
+        [
+          "0xa00018d4",
+          4
+        ],
+        [
+          "0xa00018d8",
+          4
+        ],
+        [
+          "0xa00018dc",
+          4
+        ],
+        [
+          "0xa00018e0",
+          4
+        ],
+        [
+          "0xa00018e4",
+          4
+        ],
+        [
+          "0xa00018e8",
+          4
+        ],
+        [
+          "0xa00018ec",
+          4
+        ],
+        [
+          "0xa00018f0",
+          4
+        ],
+        [
+          "0xa00018f4",
+          4
+        ],
+        [
+          "0xa00018f8",
+          4
+        ],
+        [
+          "0xa00018fc",
+          4
+        ],
+        [
+          "0xa0001900",
+          4
+        ],
+        [
+          "0xa0001904",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 4,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001908",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001908",
+          4
+        ],
+        [
+          "0xa000190c",
+          4
+        ],
+        [
+          "0xa0001910",
+          4
+        ],
+        [
+          "0xa0001914",
+          4
+        ],
+        [
+          "0xa0001918",
+          4
+        ],
+        [
+          "0xa000191c",
+          4
+        ],
+        [
+          "0xa0001920",
+          4
+        ],
+        [
+          "0xa0001924",
+          4
+        ],
+        [
+          "0xa0001928",
+          4
+        ],
+        [
+          "0xa000192c",
+          4
+        ],
+        [
+          "0xa0001930",
+          4
+        ],
+        [
+          "0xa0001934",
+          4
+        ],
+        [
+          "0xa0001938",
+          4
+        ],
+        [
+          "0xa000193c",
+          4
+        ],
+        [
+          "0xa0001940",
+          4
+        ],
+        [
+          "0xa0001944",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 5,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001948",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001948",
+          4
+        ],
+        [
+          "0xa000194c",
+          4
+        ],
+        [
+          "0xa0001950",
+          4
+        ],
+        [
+          "0xa0001954",
+          4
+        ],
+        [
+          "0xa0001958",
+          4
+        ],
+        [
+          "0xa000195c",
+          4
+        ],
+        [
+          "0xa0001960",
+          4
+        ],
+        [
+          "0xa0001964",
+          4
+        ],
+        [
+          "0xa0001968",
+          4
+        ],
+        [
+          "0xa000196c",
+          4
+        ],
+        [
+          "0xa0001970",
+          4
+        ],
+        [
+          "0xa0001974",
+          4
+        ],
+        [
+          "0xa0001978",
+          4
+        ],
+        [
+          "0xa000197c",
+          4
+        ],
+        [
+          "0xa0001980",
+          4
+        ],
+        [
+          "0xa0001984",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 6,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001988",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001988",
+          4
+        ],
+        [
+          "0xa000198c",
+          4
+        ],
+        [
+          "0xa0001990",
+          4
+        ],
+        [
+          "0xa0001994",
+          4
+        ],
+        [
+          "0xa0001998",
+          4
+        ],
+        [
+          "0xa000199c",
+          4
+        ],
+        [
+          "0xa00019a0",
+          4
+        ],
+        [
+          "0xa00019a4",
+          4
+        ],
+        [
+          "0xa00019a8",
+          4
+        ],
+        [
+          "0xa00019ac",
+          4
+        ],
+        [
+          "0xa00019b0",
+          4
+        ],
+        [
+          "0xa00019b4",
+          4
+        ],
+        [
+          "0xa00019b8",
+          4
+        ],
+        [
+          "0xa00019bc",
+          4
+        ],
+        [
+          "0xa00019c0",
+          4
+        ],
+        [
+          "0xa00019c4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 7,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00019c8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa00019c8",
+          4
+        ],
+        [
+          "0xa00019cc",
+          4
+        ],
+        [
+          "0xa00019d0",
+          4
+        ],
+        [
+          "0xa00019d4",
+          4
+        ],
+        [
+          "0xa00019d8",
+          4
+        ],
+        [
+          "0xa00019dc",
+          4
+        ],
+        [
+          "0xa00019e0",
+          4
+        ],
+        [
+          "0xa00019e4",
+          4
+        ],
+        [
+          "0xa00019e8",
+          4
+        ],
+        [
+          "0xa00019ec",
+          4
+        ],
+        [
+          "0xa00019f0",
+          4
+        ],
+        [
+          "0xa00019f4",
+          4
+        ],
+        [
+          "0xa00019f8",
+          4
+        ],
+        [
+          "0xa00019fc",
+          4
+        ],
+        [
+          "0xa0001a00",
+          4
+        ],
+        [
+          "0xa0001a04",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 8,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a08",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a08",
+          4
+        ],
+        [
+          "0xa0001a0c",
+          4
+        ],
+        [
+          "0xa0001a10",
+          4
+        ],
+        [
+          "0xa0001a14",
+          4
+        ],
+        [
+          "0xa0001a18",
+          4
+        ],
+        [
+          "0xa0001a1c",
+          4
+        ],
+        [
+          "0xa0001a20",
+          4
+        ],
+        [
+          "0xa0001a24",
+          4
+        ],
+        [
+          "0xa0001a28",
+          4
+        ],
+        [
+          "0xa0001a2c",
+          4
+        ],
+        [
+          "0xa0001a30",
+          4
+        ],
+        [
+          "0xa0001a34",
+          4
+        ],
+        [
+          "0xa0001a38",
+          4
+        ],
+        [
+          "0xa0001a3c",
+          4
+        ],
+        [
+          "0xa0001a40",
+          4
+        ],
+        [
+          "0xa0001a44",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 9,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a48",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a48",
+          4
+        ],
+        [
+          "0xa0001a4c",
+          4
+        ],
+        [
+          "0xa0001a50",
+          4
+        ],
+        [
+          "0xa0001a54",
+          4
+        ],
+        [
+          "0xa0001a58",
+          4
+        ],
+        [
+          "0xa0001a5c",
+          4
+        ],
+        [
+          "0xa0001a60",
+          4
+        ],
+        [
+          "0xa0001a64",
+          4
+        ],
+        [
+          "0xa0001a68",
+          4
+        ],
+        [
+          "0xa0001a6c",
+          4
+        ],
+        [
+          "0xa0001a70",
+          4
+        ],
+        [
+          "0xa0001a74",
+          4
+        ],
+        [
+          "0xa0001a78",
+          4
+        ],
+        [
+          "0xa0001a7c",
+          4
+        ],
+        [
+          "0xa0001a80",
+          4
+        ],
+        [
+          "0xa0001a84",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "7398bde2072c51769bc0e50a2f54799ec3e80d32577ca1c6eb10355a7fa4c9ee13385d82a7ccf1163b6085aacff4193e6388add2f71c41668bb0d5fa1f44698e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 10,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001a88",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001a88",
+          4
+        ],
+        [
+          "0xa0001a8c",
+          4
+        ],
+        [
+          "0xa0001a90",
+          4
+        ],
+        [
+          "0xa0001a94",
+          4
+        ],
+        [
+          "0xa0001a98",
+          4
+        ],
+        [
+          "0xa0001a9c",
+          4
+        ],
+        [
+          "0xa0001aa0",
+          4
+        ],
+        [
+          "0xa0001aa4",
+          4
+        ],
+        [
+          "0xa0001aa8",
+          4
+        ],
+        [
+          "0xa0001aac",
+          4
+        ],
+        [
+          "0xa0001ab0",
+          4
+        ],
+        [
+          "0xa0001ab4",
+          4
+        ],
+        [
+          "0xa0001ab8",
+          4
+        ],
+        [
+          "0xa0001abc",
+          4
+        ],
+        [
+          "0xa0001ac0",
+          4
+        ],
+        [
+          "0xa0001ac4",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "b3d8fd22476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9ce",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 11,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001ac8",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001ac8",
+          4
+        ],
+        [
+          "0xa0001acc",
+          4
+        ],
+        [
+          "0xa0001ad0",
+          4
+        ],
+        [
+          "0xa0001ad4",
+          4
+        ],
+        [
+          "0xa0001ad8",
+          4
+        ],
+        [
+          "0xa0001adc",
+          4
+        ],
+        [
+          "0xa0001ae0",
+          4
+        ],
+        [
+          "0xa0001ae4",
+          4
+        ],
+        [
+          "0xa0001ae8",
+          4
+        ],
+        [
+          "0xa0001aec",
+          4
+        ],
+        [
+          "0xa0001af0",
+          4
+        ],
+        [
+          "0xa0001af4",
+          4
+        ],
+        [
+          "0xa0001af8",
+          4
+        ],
+        [
+          "0xa0001afc",
+          4
+        ],
+        [
+          "0xa0001b00",
+          4
+        ],
+        [
+          "0xa0001b04",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "f3183d6287acd1f61b40658aafd4f91e43688db2d7fc21466b90b5daff24496e93b8dd02274c7196bbe0052a4f7499bee3082d52779cc1e60b30557a9fc4e90e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 12,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001b08",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa0001b08",
+          4
+        ],
+        [
+          "0xa0001b0c",
+          4
+        ],
+        [
+          "0xa0001b10",
+          4
+        ],
+        [
+          "0xa0001b14",
+          4
+        ],
+        [
+          "0xa0001b18",
+          4
+        ],
+        [
+          "0xa0001b1c",
+          4
+        ],
+        [
+          "0xa0001b20",
+          4
+        ],
+        [
+          "0xa0001b24",
+          4
+        ],
+        [
+          "0xa0001b28",
+          4
+        ],
+        [
+          "0xa0001b2c",
+          4
+        ],
+        [
+          "0xa0001b30",
+          4
+        ],
+        [
+          "0xa0001b34",
+          4
+        ],
+        [
+          "0xa0001b38",
+          4
+        ],
+        [
+          "0xa0001b3c",
+          4
+        ],
+        [
+          "0xa0001b40",
+          4
+        ],
+        [
+          "0xa0001b44",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "33587da2c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 87,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 2,
+      "entry": "0xa0484f80",
+      "destination": "0x70001000",
+      "computed_source": "0xa000148c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000148c",
+          4
+        ],
+        [
+          "0xa0001490",
+          4
+        ],
+        [
+          "0xa0001494",
+          4
+        ],
+        [
+          "0xa0001498",
+          4
+        ],
+        [
+          "0xa000149c",
+          4
+        ],
+        [
+          "0xa00014a0",
+          4
+        ],
+        [
+          "0xa00014a4",
+          4
+        ],
+        [
+          "0xa00014a8",
+          4
+        ],
+        [
+          "0xa00014ac",
+          4
+        ],
+        [
+          "0xa00014b0",
+          4
+        ],
+        [
+          "0xa00014b4",
+          4
+        ],
+        [
+          "0xa00014b8",
+          4
+        ],
+        [
+          "0xa00014bc",
+          4
+        ],
+        [
+          "0xa00014c0",
+          4
+        ],
+        [
+          "0xa00014c4",
+          4
+        ],
+        [
+          "0xa00014c8",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "476c91b6db00254a6f94b9de03284d7297bce1062b50759abfe4092e53789dc2e70c31567ba0c5ea0f34597ea3c8ed12375c81a6cbf0153a5f84a9cef3183d62",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 65,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    }
+  ],
+  "rejections": [
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 3,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00014cc",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 4294967295,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00013cc",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x0",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 35,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 13,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001b48",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 4294967295,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00017c8",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 0,
+      "table": "USER",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x0",
+      "computed_source": "0xa0001808",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 37,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 3,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00014cc",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 4294967295,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00013cc",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x0",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 35,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 13,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa0001b48",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 4294967295,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa00017c8",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 27,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 1,
+      "table": "USER",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x0",
+      "computed_source": "0xa0001808",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0488900",
+        "0xa0493058"
+      ],
+      "instructions": 37,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 2,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20"
+      ],
+      "instructions": 16,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 3,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20"
+      ],
+      "instructions": 16,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    },
+    {
+      "backend": 4294967295,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20"
+      ],
+      "instructions": 16,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true
+    }
+  ],
+  "hazards": [
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000140c",
+          4
+        ],
+        [
+          "0xa0001410",
+          4
+        ],
+        [
+          "0xa0001414",
+          4
+        ],
+        [
+          "0xa0001418",
+          4
+        ],
+        [
+          "0xa000141c",
+          4
+        ],
+        [
+          "0xa0001420",
+          4
+        ],
+        [
+          "0xa0001424",
+          4
+        ],
+        [
+          "0xa0001428",
+          4
+        ],
+        [
+          "0xa000142c",
+          4
+        ],
+        [
+          "0xa0001430",
+          4
+        ],
+        [
+          "0xa0001434",
+          4
+        ],
+        [
+          "0xa0001438",
+          4
+        ],
+        [
+          "0xa000143c",
+          4
+        ],
+        [
+          "0xa0001440",
+          4
+        ],
+        [
+          "0xa0001444",
+          4
+        ],
+        [
+          "0xa0001448",
+          4
+        ]
+      ],
+      "low_page_writes": [],
+      "output_writes": [
+        [
+          "0x70001000",
+          4
+        ],
+        [
+          "0x70001004",
+          4
+        ],
+        [
+          "0x70001008",
+          4
+        ],
+        [
+          "0x7000100c",
+          4
+        ],
+        [
+          "0x70001010",
+          4
+        ],
+        [
+          "0x70001014",
+          4
+        ],
+        [
+          "0x70001018",
+          4
+        ],
+        [
+          "0x7000101c",
+          4
+        ],
+        [
+          "0x70001020",
+          4
+        ],
+        [
+          "0x70001024",
+          4
+        ],
+        [
+          "0x70001028",
+          4
+        ],
+        [
+          "0x7000102c",
+          4
+        ],
+        [
+          "0x70001030",
+          4
+        ],
+        [
+          "0x70001034",
+          4
+        ],
+        [
+          "0x70001038",
+          4
+        ],
+        [
+          "0x7000103c",
+          4
+        ]
+      ],
+      "output_hex": "c7ec11365b80a5caef14395e83a8cdf2173c6186abd0f51a3f6489aed3f81d42deadbeeffb20456a8fb4d9fe23486d92b7dc01264b7095badf04294e7398bde2",
+      "guard_unchanged": true,
+      "output_unchanged": false,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true,
+      "meaning": "No magic/name/CRC/record-size semantic validation; corrupted record returned success"
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0xa000140c",
+      "computed_source": "0xa000140c",
+      "returned": true,
+      "status": 0,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [
+        [
+          "0xa000140c",
+          4
+        ],
+        [
+          "0xa0001410",
+          4
+        ],
+        [
+          "0xa0001414",
+          4
+        ],
+        [
+          "0xa0001418",
+          4
+        ],
+        [
+          "0xa000141c",
+          4
+        ],
+        [
+          "0xa0001420",
+          4
+        ],
+        [
+          "0xa0001424",
+          4
+        ],
+        [
+          "0xa0001428",
+          4
+        ],
+        [
+          "0xa000142c",
+          4
+        ],
+        [
+          "0xa0001430",
+          4
+        ],
+        [
+          "0xa0001434",
+          4
+        ],
+        [
+          "0xa0001438",
+          4
+        ],
+        [
+          "0xa000143c",
+          4
+        ],
+        [
+          "0xa0001440",
+          4
+        ],
+        [
+          "0xa0001444",
+          4
+        ],
+        [
+          "0xa0001448",
+          4
+        ]
+      ],
+      "low_page_writes": [
+        [
+          "0xa000140c",
+          4
+        ],
+        [
+          "0xa0001410",
+          4
+        ],
+        [
+          "0xa0001414",
+          4
+        ],
+        [
+          "0xa0001418",
+          4
+        ],
+        [
+          "0xa000141c",
+          4
+        ],
+        [
+          "0xa0001420",
+          4
+        ],
+        [
+          "0xa0001424",
+          4
+        ],
+        [
+          "0xa0001428",
+          4
+        ],
+        [
+          "0xa000142c",
+          4
+        ],
+        [
+          "0xa0001430",
+          4
+        ],
+        [
+          "0xa0001434",
+          4
+        ],
+        [
+          "0xa0001438",
+          4
+        ],
+        [
+          "0xa000143c",
+          4
+        ],
+        [
+          "0xa0001440",
+          4
+        ],
+        [
+          "0xa0001444",
+          4
+        ],
+        [
+          "0xa0001448",
+          4
+        ]
+      ],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 85,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true,
+      "meaning": "Caller destination alias writes 64 bytes into source PTB range; no readonly API guarantee"
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xc",
+      "returned": false,
+      "status": null,
+      "synthetic_fault": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+      "pc": "0xa0492e60",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 36,
+      "abi_preserved_if_returned": false,
+      "no_substituted_services": true,
+      "meaning": "Missing/unmapped table pointer leads to native load fault, not -1"
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000300c",
+      "returned": false,
+      "status": null,
+      "synthetic_fault": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+      "pc": "0xa0492e60",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 36,
+      "abi_preserved_if_returned": false,
+      "no_substituted_services": true,
+      "meaning": "Missing/unmapped table pointer leads to native load fault, not -1"
+    },
+    {
+      "backend": 16777216,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0xa000140c",
+      "returned": false,
+      "status": null,
+      "synthetic_fault": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+      "pc": "0xa0483c3c",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20"
+      ],
+      "instructions": 8,
+      "abi_preserved_if_returned": false,
+      "no_substituted_services": true,
+      "meaning": "Backend lookup load precedes bounds check; grossly invalid backend faults before rejecting"
+    },
+    {
+      "backend": 0,
+      "table": "SYS",
+      "index": 0,
+      "entry": "0xa0483c20",
+      "destination": "0x70001000",
+      "computed_source": "0x0",
+      "returned": true,
+      "status": -1,
+      "synthetic_fault": null,
+      "pc": "0x7001ff00",
+      "exact_low_reads": [],
+      "low_page_writes": [],
+      "output_writes": [],
+      "output_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "guard_unchanged": true,
+      "output_unchanged": true,
+      "low_page_unchanged": true,
+      "executed_entries": [
+        "0xa0483c20",
+        "0xa0484f80",
+        "0xa0492e18"
+      ],
+      "instructions": 35,
+      "abi_preserved_if_returned": true,
+      "no_substituted_services": true,
+      "meaning": "Only computed record pointer zero is rejected; not a base-pointer validity check"
+    }
+  ],
+  "code_windows": [
+    {
+      "entry": "0xa0483c20",
+      "bytes": 88,
+      "sha256": "ad4c77ce4fdae2f6a3345b08acc23457a583889d1dfe4c138f1b0f4c1075765a",
+      "declared_body_ranges": [
+        "a0483c20-a0483c77"
+      ]
+    },
+    {
+      "entry": "0xa0484f80",
+      "bytes": 4,
+      "sha256": "80c8c65da1c075c9bface17c0750235f394fddee67af1b863d0dd3038c3a1198",
+      "declared_body_ranges": [
+        "a0484f80-a0484f83"
+      ]
+    },
+    {
+      "entry": "0xa0492e18",
+      "bytes": 156,
+      "sha256": "d468da01a1a19a38f7f5031fa9bea18aff17b5cea66bb904c8559ef36a243aa7",
+      "declared_body_ranges": [
+        "a0492e18-a0492eb3"
+      ]
+    },
+    {
+      "entry": "0xa0488900",
+      "bytes": 4,
+      "sha256": "b4b34b652b82f17000c06fcc755bac267924757d2ea3391bd23ebd40be63c881",
+      "declared_body_ranges": [
+        "a0488900-a0488903"
+      ]
+    },
+    {
+      "entry": "0xa0493058",
+      "bytes": 156,
+      "sha256": "9cc2f5dbecc759aec1f10e04ae1b1e77afbda0b3c7d64018a4e65050644ea351",
+      "declared_body_ranges": [
+        "a0493058-a04930f3"
+      ]
+    }
+  ],
+  "direct_call_inventory": [
+    {
+      "caller": "0xa02989f8",
+      "site": "0xa0298aec",
+      "target": "0xa0483c20",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa0298b30",
+      "site": "0xa0298b78",
+      "target": "0xa0483c20",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c57d4",
+      "site": "0xa03c58a4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c57d4",
+      "site": "0xa03c58b4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c57d4",
+      "site": "0xa03c58e4",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c57d4",
+      "site": "0xa03c58f4",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c5d00",
+      "site": "0xa03c5d2c",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c5d00",
+      "site": "0xa03c5d60",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c67ec",
+      "site": "0xa03c6998",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c67ec",
+      "site": "0xa03c69b0",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c67ec",
+      "site": "0xa03c6a88",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03c67ec",
+      "site": "0xa03c6aa0",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03cd548",
+      "site": "0xa03cd5f4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03cd548",
+      "site": "0xa03cd74c",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03cdd90",
+      "site": "0xa03cde00",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03cec94",
+      "site": "0xa03ceca8",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa0484f80",
+      "site": "0xa0484f80",
+      "target": "0xa0492e18",
+      "type": "UNCONDITIONAL_JUMP"
+    },
+    {
+      "caller": "0xa0488900",
+      "site": "0xa0488900",
+      "target": "0xa0493058",
+      "type": "UNCONDITIONAL_JUMP"
+    }
+  ],
+  "incoming_reference_inventory": [
+    {
+      "site": "0xa0298aec",
+      "target": "0xa0483c20",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa0298b78",
+      "target": "0xa0483c20",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c58a4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c58b4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c58e4",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c58f4",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c5d2c",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c5d60",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c6998",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c69b0",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c6a88",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03c6aa0",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03cd5f4",
+      "target": "0xa0488900",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03cd74c",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03cde00",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa03ceca8",
+      "target": "0xa0484f80",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0xa0484f80",
+      "target": "0xa0492e18",
+      "type": "UNCONDITIONAL_JUMP"
+    },
+    {
+      "site": "0xa0488900",
+      "target": "0xa0493058",
+      "type": "UNCONDITIONAL_JUMP"
+    }
+  ],
+  "drv_commands": [
+    {
+      "index": 0,
+      "name": "adc",
+      "handler": "0xa04a6878"
+    },
+    {
+      "index": 1,
+      "name": "cache",
+      "handler": "0xa04a6b68"
+    },
+    {
+      "index": 2,
+      "name": "crypto",
+      "handler": "0xa04a720c"
+    },
+    {
+      "index": 3,
+      "name": "cvbs",
+      "handler": "0xa04a75dc"
+    },
+    {
+      "index": 4,
+      "name": "ddr",
+      "handler": "0xa04a77b0"
+    },
+    {
+      "index": 5,
+      "name": "dma",
+      "handler": "0xa04a8384"
+    },
+    {
+      "index": 6,
+      "name": "gdma",
+      "handler": "0xa04a97e0"
+    },
+    {
+      "index": 7,
+      "name": "gpio",
+      "handler": "0xa04a9c94"
+    },
+    {
+      "index": 8,
+      "name": "hdmi",
+      "handler": "0xa04aa1d4"
+    },
+    {
+      "index": 9,
+      "name": "i2c",
+      "handler": "0xa04aa5e0"
+    },
+    {
+      "index": 10,
+      "name": "int",
+      "handler": "0xa04aa908"
+    },
+    {
+      "index": 11,
+      "name": "nftl",
+      "handler": "0xa04ae89c"
+    },
+    {
+      "index": 12,
+      "name": "pll",
+      "handler": "0xa04aac88"
+    },
+    {
+      "index": 13,
+      "name": "poc",
+      "handler": "0xa04ab514"
+    },
+    {
+      "index": 14,
+      "name": "pwc",
+      "handler": "0xa04ab8a0"
+    },
+    {
+      "index": 15,
+      "name": "pwm",
+      "handler": "0xa04abc14"
+    },
+    {
+      "index": 16,
+      "name": "sd",
+      "handler": "0xa04acf70"
+    },
+    {
+      "index": 17,
+      "name": "spi",
+      "handler": "0xa04adecc"
+    },
+    {
+      "index": 18,
+      "name": "timer",
+      "handler": "0xa04ae5a0"
+    },
+    {
+      "index": 19,
+      "name": "uart",
+      "handler": "0xa04af404"
+    },
+    {
+      "index": 20,
+      "name": "wdt",
+      "handler": "0xa04af634"
+    }
+  ],
+  "index_provenance": {
+    "functions.json": "661cf8c05ffa1e970aac2ce8c62b03bfc1acf86cc0ead9f6d07d4537b6392ac4",
+    "references.tsv": "3ea435a9e5030191198e70615f5ecb7bdfb165d2903e661667a94eb29880fa70",
+    "calls.tsv": "2e75c7ed3d04d6c21ea6357fee3117e99aa5430b61110aedbb0ec002c509f039"
+  },
+  "source_pseudocode_sha256": {
+    "0xa0483c20": "92935b1564b4abff79bcb2c96a0a193c149e077b5b1f0ed8e5557fe0b3ece802",
+    "0xa0484f80": "980c162eded1bd9b056e23005d0716ffa4b81ce491822cbc64a8506fc56a01b2",
+    "0xa0492e18": "64b22e487d3c93780cf8f10a851d3015fa12bc91756c218e73c2c31a9c602b6c",
+    "0xa0488900": "1eb4f53ea76a01780403b1fc321e1da0b693298186027f3a3e765f55d75b97eb",
+    "0xa0493058": "9696ea2759256bff3f47f235f6ae8f099a5c0db0ae8965abc430949226de5f1d"
+  },
+  "script_sha256": "c8916d6c30f6bc5852d3569a73ecb070cd7be464f9ebd87bfb64790391f6695a",
+  "conclusions": [
+    "backend0 selects original NAND PTB copy; backend1 selects alternate copy sharing initial SYS/USER pointers; backend2 has NULL getter",
+    "SYS accepts index0..2 at table+0xC+64*index; USER accepts index0..12 at table+8+64*index; nonzero table selector means USER",
+    "Normal separated output copies exactly64bytes, no target PTB stores, no NAND/CRC/init/updater/callback calls",
+    "NULL destination, out-of-range record index and ordinary unsupported backend return-1 without output writes",
+    "No source ownership/mapping/CRC validation, output size parameter, alias check, lock, cache maintenance or read-fault recovery",
+    "This internal C API is not a discovered externally invokable read command or safe first-entry mechanism"
+  ],
+  "limits": [
+    "Current camera table pointers/content, active MMU, cache coherency, concurrent mutation and first-call safety remain unknown.",
+    "Invalid-memory outcomes are synthetic Unicorn mappings; actual hardware fault/watchdog/recovery behavior is untested.",
+    "Declared direct-reference index and21-row drv table coverage do not prove absence of indirect or other protocol callers.",
+    "No SYS table capture, boot partition bytes, native entry, code publication or independent recovery obtained."
+  ],
+  "rea_evidence_id": null,
+  "device_access": false,
+  "nand_access": false,
+  "deployable_reader_generated": false
+}

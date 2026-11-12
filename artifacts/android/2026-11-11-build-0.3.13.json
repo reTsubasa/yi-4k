@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-11-10T19:59:21.003893+00:00",
+  "evidence_type": "Android 0.3.13 network loss serialization and abandoned original-export recovery",
+  "apk": "artifacts/android/yi4k-control-0.3.13-debug.apk",
+  "sha256": "a8ca9f71ea049ce7d0dabc0cefd672737e128637b4c0efc47555713e8e2e6e42",
+  "size_bytes": 11542029,
+  "version_name": "0.3.13",
+  "version_code": 16,
+  "checks": {
+    "testDebugUnitTest": true,
+    "testReleaseUnitTest": true,
+    "lintDebug": true,
+    "assembleDebug": true,
+    "assembleRelease": true,
+    "assembleDebugAndroidTest": true
+  },
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 127,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 127,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 64
+  },
+  "runtime": {
+    "camera-disconnect-run01": {
+      "path": "artifacts/android/0.3.13-device-reports/camera-disconnect-run01/acceptance.json",
+      "sha256": "bb031a386ba35a6cf7bd8c7f18352808e7d0822273565c2c74652fa1dda43833",
+      "passed": true,
+      "emulator_stopped": true
+    },
+    "camera-export-disconnect-run01": {
+      "path": "artifacts/android/0.3.13-device-reports/camera-export-disconnect-run01/acceptance.json",
+      "sha256": "2999d5964915c951675fc84ceb9dad51699a2e017d1615a997d2b48d08b5c188",
+      "passed": true,
+      "emulator_stopped": true
+    },
+    "camera-main-preview-landscape-run01": {
+      "path": "artifacts/android/0.3.13-device-reports/camera-main-preview-landscape-run01/acceptance.json",
+      "sha256": "2e60169307081c44b40617eb7a4921d6090dfccae857ab270fc99e43289ac9f6",
+      "passed": true,
+      "emulator_stopped": true
+    },
+    "camera-capture-run01": {
+      "path": "artifacts/android/0.3.13-device-reports/camera-capture-run01/acceptance.json",
+      "sha256": "351a3ae127c2c31c3a2d373d85a5d6deb34547213890f40b0167009ab7505553",
+      "passed": true,
+      "emulator_stopped": true
+    }
+  },
+  "source_hashes": {
+    "android/app/build.gradle": "f4464ddeda936cf3195dff290edf69823ff5522f4076086a81cd1272aec5d31c",
+    "android/app/src/main/AndroidManifest.xml": "b295c68641b6780a660087c57e05ba6819414febc8a14af72300bfd11474444e",
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "f0fef1ac4ca5409117fbf4fb6b5fd3dc296496069a8b8a7d870fd7e5a3365e5a",
+    "android/app/src/main/java/dev/yi4k/control/PendingOriginalExports.java": "b3492d5236e03d1a816cfcd7899596883e40152d9b27a2132c74d14d903ace9e",
+    "android/app/src/main/java/dev/yi4k/control/Yi4kApplication.java": "2e61f627e5781ba4a336abcf7347f4d68bfb37a2abe573b24c2a4bfd81ea979c",
+    "android/app/src/main/java/dev/yi4k/control/MediaExporter.java": "17833927652ac191912186683650800bdb35784bf7f65fff3e81d6873a3515a5",
+    "android/app/src/test/java/dev/yi4k/control/NetworkLossUiTest.java": "b8bacbf39647c33c16e1b0256808d499723c324af788c7eb1ad8719da5221903",
+    "android/app/src/test/java/dev/yi4k/control/PendingOriginalExportsTest.java": "126fdb99a531fb9d353eae58db9470bf0d5802a661eddddf22aff18df28acedd"
+  },
+  "limits": [
+    "No physical Android phone execution.",
+    "Actual camera tests use owned AOSP34 ARM64 emulator through host route.",
+    "Pending process-death acceptance and separate local runtime suite are recorded in supplemental runtime evidence when available.",
+    "Large 456 MB / 65-second tests belong to version 0.3.12.",
+    "No custom RTOS/ORC code, firmware/RAM/partition writes, camera prerecord or EIS replacement."
+  ]
+}

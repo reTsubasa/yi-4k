@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "review_type": "Read-only artifact/source/contract consistency; no execution reruns",
+  "device_access": false,
+  "evidence": {
+    "task_stop": {
+      "path": "artifacts/verification/2026-11-11-native-task-stop-proof-parent-review/audit.json",
+      "sha256": "1bd819bd1f9879d9e78e88439b3bf07a2cc08ff669ea9a4f753008012bfca2d7",
+      "case_count": 32,
+      "matched_source_sha256": {
+        "scripts/audit_native_task_stop_proof.py": "434a2b8b9c6ff2601ee17cbf3412f3efe6eb41e16f55f041cae567cbf57484be"
+      }
+    },
+    "rpc_teardown": {
+      "path": "artifacts/verification/2026-11-11-native-rpc-teardown-independent-run02/audit.json",
+      "sha256": "97c6f5e35dcaf408e1e4afad10b2f4af0a880e4d0e89d7694bdc5af841fea636",
+      "case_count": 8,
+      "matched_source_sha256": {
+        "scripts/audit_native_rpc_teardown.py": "666821f0cab8aac3988da1e7a585a08b0cf299944873ab12524e0703f81334e8"
+      }
+    },
+    "registration": {
+      "path": "artifacts/verification/2026-11-11-native-registration-recovery-independent-run02/audit.json",
+      "sha256": "b3385ee34669f09e37b058742591a9f7f10b6bfe98c3b5c8f7e44e9e290b45fb",
+      "case_count": 5,
+      "matched_source_sha256": {
+        "scripts/audit_native_registration_recovery.py": "c37c6cd0f8f7b72bc29b53f7754e5c9595eb03197198c683ccae738294872d6a"
+      }
+    },
+    "owned_retirement": {
+      "path": "artifacts/verification/2026-11-11-owned-retirement-parent-review/validation.json",
+      "sha256": "7c5c6ad7e5713f5958205b0a3ec835eddcc5c43262e0de1a4b5e4b9a15fab1ef",
+      "case_count": 10,
+      "matched_source_sha256": {
+        "sdk/yi4k_1107_owned_retirement.c": "c6e15c2581728843dccb88e07328297ee8ba6c21ee9d3b72d9b25d49092bb7f3",
+        "sdk/offline/yi4k_owned_retirement_test.c": "32cefc8ec3ce4eaa845bc0a01ea22c556dc60daafe49db4ef51d1b0c20327115",
+        "sdk/offline/yi4k_owned_retirement_threads.c": "9eab50e683c0d098852e8c86f6836aed82253bf2bde9eb7fa690b564dbaa7fc0",
+        "sdk/yi4k_1107_owned_retirement.h": "b1ba2df06cfbe3a9fc272dc9a95534ef22f1ccef36a3d615fba6b42876c53416",
+        "scripts/validate_owned_retirement.py": "8c54628d972c87de94f6898172aaa9609ed53db0f2283d9d8336184e562dbe1e"
+      }
+    }
+  },
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "matched_original_function_body_sha256": {
+    "0xa03bc324": "3c4c72dee23a4b6eebdbd2cf5dc4aab8a9a7f3234b3dbb77aab61c03001fc09c",
+    "0xa03c4500": "20dd1ba247c80ca296fa8ace32103acc5c94973d09ab5714a0cf1146d78955d6",
+    "0xa03c448c": "4f2848c584679ff71a63cfafe6dc4d578e56f11e99a8d5de7ab01a22c58d3be8",
+    "0xa03c4694": "7a3fc7430afaccfb7f18099b06ef0bf1d49c69fc906287b3649ac73e40e7c475",
+    "0xa03c0a74": "dd1e84538217b8a0f4fd994d185f5c9eabfcdf3887bf6f701e320f27e2975902",
+    "0xa03c13b0": "318c92e44fb8f84548efe7ca9dccc6497c026d0ec334a50b626fa93f1b551bb5",
+    "0xa03c1428": "f83f19a7adda0dd10246f14730644801d3199d7ce4af75aba193751d24c7c035",
+    "0xa03c0d08": "2705a2ac84b22a085e29b8513f1a7a995ef84d50893b7814e8178588b818ad6c",
+    "0xa03c0d4c": "2705a2ac84b22a085e29b8513f1a7a995ef84d50893b7814e8178588b818ad6c",
+    "0xa03c09f8": "3b3cad07242bae60b553b87a46263a6622e4c417122a1725b609b9227082e4f4",
+    "0xa03c2f00": "7cba0932f7ae9b07239e9549a0a3ca90519e79b247bfcfc804a02b9bfed5878d",
+    "0xa03c1d5c": "081d3ffca03c28b50f42db13ded8b72653bb8a9d3a1c8f5a4ea833a4222d59c7",
+    "0xa03c1c8c": "25a2ca39fce31090a4cfc9a9a923dfac7b19e0289857913f9bc84618216209e8",
+    "0xa03bdc48": "dfe3fcd4d4d6ac01a188610ed13caea0a7c545bdbb8abc4cd977b10a1bbfcf02"
+  },
+  "document_sha256": {
+    "docs/device-1107-native-task-stop-proof.md": "1610c3ed6c23324c5194f7c44c8ddca2977656240c9af9c24465fcd8fd4a2635",
+    "docs/device-1107-native-execution-prereq-matrix.md": "391c9471efd460fd470174ff57a7c8579c4e25066c42913cd579bbe852aad026",
+    "docs/goal-evidence-matrix.md": "9a8068c54d73033e86fe847526a2b773e4f344231a820cba934847f992a51cc5",
+    "sdk/offline/owned-retirement-contract.md": "7a430937748f03d0f8f7b430147374bbf899a9fc79d2fa6e8d879658b1f1bf50"
+  },
+  "local_links_checked": {
+    "docs/device-1107-native-task-stop-proof.md": 3,
+    "docs/device-1107-native-execution-prereq-matrix.md": 3,
+    "docs/goal-evidence-matrix.md": 96,
+    "sdk/offline/owned-retirement-contract.md": 4
+  },
+  "findings": [
+    "32 task cases/3 interleavings, 8 RPC teardown cases, 5 registry cases, and 10 host/ARM retirement cases/2 ARM interleavings/20 thread runs match their source hashes.",
+    "TaskQuery failures return nonzero and still copy stack poison; outputs must only be interpreted after success.",
+    "Natural completion state1 and ready terminate state2 retain the actual SMP lock at the exit-notifier boundary; logical observer query blocks, not delete success.",
+    "Suspended terminate state2/flag0 unlocks before notifier return; controlled observer query/delete succeeds while original terminator still resumes.",
+    "One completed-task scheduler path clears current task before lock release; it is a candidate bound evidence, not general full scheduler/SMP ownership proof.",
+    "RPC teardown can free despite stop/delete failure and return0; registry lock is not dispatcher quiescence.",
+    "P10 remains missing, TaskQuery candidate remains partially available/unbound, gateway/context lifetime restrictions and P10/P11 limits are consistent."
+  ],
+  "changes": "Only this review artifact added; no shared documentation, SDK implementation or validator was modified.",
+  "limits": [
+    "Checks preexisting evidence, hashes, selected receipt assertions and current documentation; does not rerun emulation or claim new camera evidence.",
+    "Original logical CPU1 MPIDR substitution and hardware-clock stub remain explicit; no real scheduler/SMP/durability/deployment proof."
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "status": "pass_independent_compact_native_window_consumer_review",
+  "offline_only": true,
+  "device_access": false,
+  "verifier_sha256": "99cf030003543fa778481b6597576b21683517bcb85918728d746f67f05a6353",
+  "reports": {
+    "positive": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/audit.json",
+      "sha256": "8b3f3ea120cf92e6e90335f89feea055aca5b1eced2e250bfa838173cb2859db"
+    },
+    "firstsecond": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-firstsecond-run01/audit.json",
+      "sha256": "9c991f6df70393c98ac81933551c7b4300c546d424ba165ce532a7e915d4e0e2"
+    },
+    "close_failure": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-close-failure-run01/audit.json",
+      "sha256": "bfcf49d58a6a2834d49fcc007ef8bcca9fd1c4dc8688610115261aa91920de6c"
+    },
+    "recovery": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-recovery-run01/audit.json",
+      "sha256": "22d1f9e00772c1496fd0febc8850c83f8cee7b52842004077339e8ac801c61c6"
+    },
+    "missing": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-missing-aac-run01/audit.json",
+      "sha256": "87e1e73592b161749ac4672efd54fc58b0975ed0b89066c92e9974d8cbc2cb5c"
+    },
+    "invalid_sps": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-invalid-sps-run01/audit.json",
+      "sha256": "a404e3e57b5c0ed64a25a1c12225596183d282b08261f032d438833366cf8a8b"
+    }
+  },
+  "consumers": {
+    "ffprobe8_sha256": "de5429ab98b7e8042ea56795d6d0bfa3c17b5958633a889dedcee340c5e60377",
+    "ffprobe61_sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f"
+  },
+  "results": {
+    "positive": {
+      "output": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/compact.ffmpeg8-reviewed.mp4",
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a",
+      "bytes": 343127606,
+      "common_source_offset": {
+        "numerator": 1096,
+        "denominator": 375,
+        "seconds": 2.9226666666666667
+      },
+      "counts": {
+        "1": 2863,
+        "0": 1831
+      },
+      "geometry": {
+        "tkhd_duration": 1833239,
+        "tkhd_width": 1920,
+        "tkhd_height": 1080,
+        "avc1_width": 1920,
+        "avc1_height": 1080,
+        "sample_tables_except_stsd": {
+          "stts": "c7f758f7c79e0a55af1915162f3a343728fb3cd722bfafb3d18486454b11f07a",
+          "stsc": "633c10313c18e03b1d625240713dcab296f19e818bc33ae4eefa50190d793f03",
+          "stsz": "f29290c82ae331d82a2a9a83b73814b4466b344b23dfe1c138fb91255cd4abd9",
+          "stco": "ba0d077039190999e9a84bf469d19ab7f9312d0fb3c7b7d930129e4a79f8e6d5",
+          "stss": "efc57f642d8ed6326f3a0bf2456e46788d67b3c5c2a1478c132e7bc3ee6e52b2"
+        }
+      },
+      "movie_duration": {
+        "numerator": 1833239,
+        "denominator": 30000,
+        "seconds": 61.10796666666667
+      },
+      "native_input_gate": "pass",
+      "original_source_gate": "pass",
+      "ffprobe61_gate": "reject",
+      "avfoundation_gate": "reject"
+    },
+    "firstsecond": {
+      "output": "artifacts/verification/2026-11-12-prerecord-native-window-compact-firstsecond-run01/compact.ffmpeg8-reviewed.mp4",
+      "sha256": "28caa8e2237566e600f18280d968c6bdb0e423415e007f680f767a68d65a22af",
+      "bytes": 338426006,
+      "common_source_offset": {
+        "numerator": 32,
+        "denominator": 125,
+        "seconds": 0.256
+      },
+      "counts": {
+        "1": 2824,
+        "0": 1806
+      },
+      "geometry": {
+        "tkhd_duration": 1808134,
+        "tkhd_width": 1920,
+        "tkhd_height": 1080,
+        "avc1_width": 1920,
+        "avc1_height": 1080,
+        "sample_tables_except_stsd": {
+          "stts": "59aa68557291b60565ed8726acc418060c259d732e832e047e778ee988a19e91",
+          "stsc": "633c10313c18e03b1d625240713dcab296f19e818bc33ae4eefa50190d793f03",
+          "stsz": "7b0a14a3b63abc0bdac2f69cae29490cd5ff8f8e061ab7da7dfcd75899475d71",
+          "stco": "f350de053f4d368d4cfffd366c3f7f62c2fe76a29ff61668b5a7d92bc10d6d07",
+          "stss": "5ca8a85736fff5cc05f7d3ad2298e344685a2dd4faf40c643a4f9eecf65c20fe"
+        }
+      },
+      "movie_duration": {
+        "numerator": 904067,
+        "denominator": 15000,
+        "seconds": 60.27113333333333
+      },
+      "native_input_gate": "pass",
+      "original_source_gate": "pass",
+      "ffprobe61_gate": "reject",
+      "avfoundation_gate": "reject"
+    },
+    "recovery": {
+      "output": "artifacts/verification/2026-11-12-prerecord-native-window-compact-recovery-run01/compact.ffmpeg8-reviewed.mp4",
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a",
+      "bytes": 343127606,
+      "common_source_offset": {
+        "numerator": 1096,
+        "denominator": 375,
+        "seconds": 2.9226666666666667
+      },
+      "counts": {
+        "1": 2863,
+        "0": 1831
+      },
+      "geometry": {
+        "tkhd_duration": 1833239,
+        "tkhd_width": 1920,
+        "tkhd_height": 1080,
+        "avc1_width": 1920,
+        "avc1_height": 1080,
+        "sample_tables_except_stsd": {
+          "stts": "c7f758f7c79e0a55af1915162f3a343728fb3cd722bfafb3d18486454b11f07a",
+          "stsc": "633c10313c18e03b1d625240713dcab296f19e818bc33ae4eefa50190d793f03",
+          "stsz": "f29290c82ae331d82a2a9a83b73814b4466b344b23dfe1c138fb91255cd4abd9",
+          "stco": "ba0d077039190999e9a84bf469d19ab7f9312d0fb3c7b7d930129e4a79f8e6d5",
+          "stss": "efc57f642d8ed6326f3a0bf2456e46788d67b3c5c2a1478c132e7bc3ee6e52b2"
+        }
+      },
+      "movie_duration": {
+        "numerator": 1833239,
+        "denominator": 30000,
+        "seconds": 61.10796666666667
+      },
+      "native_input_gate": "pass",
+      "original_source_gate": "pass",
+      "ffprobe61_gate": "reject",
+      "avfoundation_gate": "reject"
+    }
+  },
+  "old_zero_geometry_control": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-12-prerecord-native-window-stock-control-run01/session.pending.mp4",
+  "old_zero_geometry": {
+    "tkhd_duration": 1833239,
+    "tkhd_width": 0,
+    "tkhd_height": 0,
+    "avc1_width": 0,
+    "avc1_height": 0,
+    "sample_tables_except_stsd": {
+      "stts": "c7f758f7c79e0a55af1915162f3a343728fb3cd722bfafb3d18486454b11f07a",
+      "stsc": "633c10313c18e03b1d625240713dcab296f19e818bc33ae4eefa50190d793f03",
+      "stsz": "f29290c82ae331d82a2a9a83b73814b4466b344b23dfe1c138fb91255cd4abd9",
+      "stco": "ba0d077039190999e9a84bf469d19ab7f9312d0fb3c7b7d930129e4a79f8e6d5",
+      "stss": "efc57f642d8ed6326f3a0bf2456e46788d67b3c5c2a1478c132e7bc3ee6e52b2"
+    }
+  },
+  "geometry_only_byte_changes": [
+    {
+      "offset": 343088161,
+      "before": 0,
+      "after": 7
+    },
+    {
+      "offset": 343088162,
+      "before": 0,
+      "after": 128
+    },
+    {
+      "offset": 343088165,
+      "before": 0,
+      "after": 4
+    },
+    {
+      "offset": 343088166,
+      "before": 0,
+      "after": 56
+    },
+    {
+      "offset": 343088423,
+      "before": 0,
+      "after": 7
+    },
+    {
+      "offset": 343088424,
+      "before": 0,
+      "after": 128
+    },
+    {
+      "offset": 343088425,
+      "before": 0,
+      "after": 4
+    },
+    {
+      "offset": 343088426,
+      "before": 0,
+      "after": 56
+    }
+  ],
+  "whole_media_area_unchanged": true,
+  "index_and_timing_tables_unchanged": true,
+  "independent_full_decode_two_windows": true,
+  "missing_and_invalid_SPS_reject_before_Open": true,
+  "close_failure_pending_retained": true,
+  "clean_retry_byte_identical": true,
+  "scope": "Two selected nonzero archive windows; original ARM mux plus SPS geometry caller configuration. FFmpeg8 consumer acceptance;6.1 and AVFoundation rejection retained. No universal player, encoder or live-device acceptance."
+}

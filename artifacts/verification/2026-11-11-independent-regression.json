@@ -1,0 +1,72 @@
+{
+  "verification": "2026-11-11 independent offline/readonly regression",
+  "device_write": false,
+  "firmware_execution": false,
+  "items": [
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-staging-helper-scope/audit.json",
+      "sha256": "beeb4d3478013d7f6288c61a513dda57be8a901dd1481d19befe84e21181a83c",
+      "bytes": 7172
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-cross-file-epoch/audit.json",
+      "sha256": "5d0910711a93a19daf1c05ac71d1483fd4e386606449f5877324f44c3ee7b5fd",
+      "bytes": 6985
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-loop-recovery/audit.json",
+      "sha256": "1c54acfb8fa4898143c490694783aae3b1efc9d6a98388aad432b8a92fb619cf",
+      "bytes": 5846
+    },
+    {
+      "path": "artifacts/host-prerecord/2026-11-11-python-test-run.json",
+      "sha256": "7b2cd26ccf299632eedafee3d3c2256418cceaf6d8402e1ca169ce0a8574f8dd",
+      "bytes": 373
+    },
+    {
+      "path": "artifacts/device/2026-11-11-readonly-probe-03/session.json",
+      "sha256": "94475f07dead1305f841d190d71c79d95abb7e1a596285729d83eb53fa2ef4c5",
+      "bytes": 9452
+    }
+  ],
+  "results": {
+    "eis_staging_helper_script": "passed with .venv-reverse Python",
+    "prerecord_cross_file_epoch": "11 assertions passed",
+    "prerecord_loop_recovery": "9 assertions passed",
+    "host_prerecord_unittest": "31 passed, 0 failures, 0 errors",
+    "camera_readonly_probe": "before/after idle, settings unchanged, 44 media entries both sides",
+    "eis_orc_table_lifetime": "96 instruction checks passed",
+    "eis_orc_vertical_consumer": "95 instruction checks, 19 opaque-word checks passed",
+    "eis_shadow_v2": "512 wrapper cases, 0 mismatches, 88-byte records",
+    "capture_trigger": "13068 host/ARM semantic checks passed",
+    "fifo_consumer": "20 host + 20 ARM executions passed",
+    "segment_runtime": "all segments hashes/SPS-PPS/IDR/AAC continuity and published clip decode passed"
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/device/2026-11-11-eis-shadow-v2-rerun/validation.json",
+      "sha256": "9ebffcee5fa932be87869b482a849b48abfbd170f1dda34fad9768d2dc280b8e",
+      "bytes": 4931
+    },
+    {
+      "path": "artifacts/host-prerecord/replay-run03/segment-runtime-contract-rerun.json",
+      "sha256": "c36979b9d737f78cfddc6be650c1a2e498f7671b19281c6fe9c9f47c2b070b93",
+      "bytes": 26514
+    },
+    {
+      "path": "artifacts/device/2026-11-10-eis-orc-table-lifetime/audit.json",
+      "sha256": "42c773a57a03ab85366b3c29057045821ce8d931b9c37cbd26a604e26fdf8ca4",
+      "bytes": 15659
+    },
+    {
+      "path": "artifacts/device/2026-11-10-eis-orc-vertical-consumer/audit.json",
+      "sha256": "131c881f022cc9df0012195df805e36fca4d6dc76bd33bd5b61adc002d906e92",
+      "bytes": 20635
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-consumer-validation.json",
+      "sha256": "9c142a9dc60ee82038c5d93fba7bd6b2385ef5149b0d92e69b3a01db9a5f243a",
+      "bytes": 14911
+    }
+  ]
+}

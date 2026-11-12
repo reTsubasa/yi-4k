@@ -1,0 +1,657 @@
+~ # for p in 102 104 108 110 156 266 271 275 288 959; do echo ====PID=$p; cat /p
+roc/$p/maps; done
+====PID=102
+00010000-00012000 r-xp 00000000 1f:05 811        /usr/bin/ipcbind
+00021000-00022000 rw-p 00001000 1f:05 811        /usr/bin/ipcbind
+01d34000-01d55000 rw-p 00000000 00:00 0          [heap]
+36e1d000-36e2d000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e2d000-36e3c000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e3c000-36e3d000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e3d000-36e3e000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e3e000-36e40000 rw-p 00000000 00:00 0 
+36e40000-36f1a000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f1a000-36f2a000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f2a000-36f2c000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f2c000-36f2d000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f2d000-36f30000 rw-p 00000000 00:00 0 
+36f30000-36f31000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36f31000-36f40000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36f40000-36f41000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36f41000-36f42000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36f42000-36f51000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36f51000-36f52000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36f52000-36f53000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36f53000-36f62000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36f62000-36f63000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36f63000-36f70000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f70000-36f7f000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f7f000-36f80000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f80000-36f81000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f81000-36f83000 rw-p 00000000 00:00 0 
+36f83000-36f9b000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36fa3000-36fa5000 rw-p 00000000 00:00 0 
+36fa7000-36fa9000 rw-p 00000000 00:00 0 
+36fa9000-36faa000 r-xp 00000000 00:00 0          [sigpage]
+36faa000-36fab000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36fab000-36fac000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ed12000-3ed33000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=104
+00010000-00011000 r-xp 00000000 1f:05 933        /usr/bin/util_svc
+00021000-00022000 rw-p 00001000 1f:05 933        /usr/bin/util_svc
+013c3000-013e4000 rw-p 00000000 00:00 0          [heap]
+36b00000-36b21000 rw-p 00000000 00:00 0 
+36b21000-36c00000 ---p 00000000 00:00 0 
+36ca1000-36ca2000 ---p 00000000 00:00 0 
+36ca2000-36da1000 rw-p 00000000 00:00 0          [stack:107]
+36da1000-36da2000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36da2000-36db1000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36db1000-36db2000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36db2000-36db3000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36db3000-36dc2000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36dc2000-36dc3000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36dc3000-36e9d000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36e9d000-36ead000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ead000-36eaf000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36eaf000-36eb0000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36eb0000-36eb3000 rw-p 00000000 00:00 0 
+36eb3000-36eb4000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36eb4000-36ec3000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36ec3000-36ec4000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36ec4000-36ec8000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36ec8000-36ed7000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36ed7000-36ed8000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36ed8000-36ee8000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ee8000-36ef7000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ef7000-36ef8000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ef8000-36ef9000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ef9000-36efb000 rw-p 00000000 00:00 0 
+36efb000-36f08000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f08000-36f17000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f17000-36f18000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f18000-36f19000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f19000-36f1b000 rw-p 00000000 00:00 0 
+36f1b000-36f33000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f3b000-36f3d000 rw-p 00000000 00:00 0 
+36f3e000-36f3f000 rw-p 00000000 00:00 0 
+36f3f000-36f41000 rw-p 00000000 00:00 0 
+36f41000-36f42000 r-xp 00000000 00:00 0          [sigpage]
+36f42000-36f43000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f43000-36f44000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ebc5000-3ebe6000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=108
+00010000-00013000 r-xp 00000000 1f:05 721        /usr/bin/AmbaNetFifoDaemon
+00022000-00023000 rw-p 00002000 1f:05 721        /usr/bin/AmbaNetFifoDaemon
+01ac0000-01ae1000 rw-p 00000000 00:00 0          [heap]
+36100000-36121000 rw-p 00000000 00:00 0 
+36121000-36200000 ---p 00000000 00:00 0 
+36300000-36321000 rw-p 00000000 00:00 0 
+36321000-36400000 ---p 00000000 00:00 0 
+36439000-3643a000 ---p 00000000 00:00 0 
+3643a000-36459000 rw-p 00000000 00:00 0          [stack:564]
+36459000-3645a000 ---p 00000000 00:00 0 
+3645a000-36c59000 rw-p 00000000 00:00 0          [stack:113]
+36c59000-36c5a000 ---p 00000000 00:00 0 
+36c5a000-36d8a000 rw-p 00000000 00:00 0          [stack:112]
+36d8a000-36d8c000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36d8c000-36d9b000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36d9b000-36d9c000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36d9c000-36d9d000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36d9d000-36da2000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36da2000-36db1000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36db1000-36db2000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36db2000-36db3000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36db3000-36db4000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36db4000-36dc3000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36dc3000-36dc4000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36dc4000-36dc5000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36dc5000-36dd4000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36dd4000-36dd5000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36dd5000-36dd6000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36dd6000-36de5000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36de5000-36de6000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36de6000-36ec0000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ec0000-36ed0000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ed0000-36ed2000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ed2000-36ed3000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ed3000-36ed6000 rw-p 00000000 00:00 0 
+36ed6000-36eee000 r-xp 00000000 1f:05 527        /lib/libgcc_s.so.1
+36eee000-36efe000 ---p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36efe000-36eff000 rw-p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36eff000-36f01000 r-xp 00000000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36f01000-36f10000 ---p 00002000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36f10000-36f11000 rw-p 00001000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36f11000-36f12000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36f12000-36f21000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36f21000-36f22000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36f22000-36f26000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36f26000-36f35000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36f35000-36f36000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36f36000-36f4e000 r-xp 00000000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36f4e000-36f5e000 ---p 00018000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36f5e000-36f5f000 rw-p 00018000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36f5f000-36f6c000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f6c000-36f7b000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f7b000-36f7c000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f7c000-36f7d000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f7d000-36f7f000 rw-p 00000000 00:00 0 
+36f7f000-36f8f000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f8f000-36f9e000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f9e000-36f9f000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f9f000-36fa0000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36fa0000-36fa2000 rw-p 00000000 00:00 0 
+36fa2000-36fba000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36fc0000-36fc4000 rw-p 00000000 00:00 0 
+36fc5000-36fc6000 rw-p 00000000 00:00 0 
+36fc6000-36fc8000 rw-p 00000000 00:00 0 
+36fc8000-36fc9000 r-xp 00000000 00:00 0          [sigpage]
+36fc9000-36fca000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36fca000-36fcb000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3eb7f000-3eba0000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=110
+00010000-00012000 r-xp 00000000 1f:05 720        /usr/bin/AmbaEventNotifyDaemon
+00021000-00022000 rw-p 00001000 1f:05 720        /usr/bin/AmbaEventNotifyDaemon
+000b7000-000d8000 rw-p 00000000 00:00 0          [heap]
+36b00000-36b21000 rw-p 00000000 00:00 0 
+36b21000-36c00000 ---p 00000000 00:00 0 
+36c46000-36c47000 ---p 00000000 00:00 0 
+36c47000-36d46000 rw-p 00000000 00:00 0          [stack:115]
+36d46000-36d47000 ---p 00000000 00:00 0 
+36d47000-36d66000 rw-p 00000000 00:00 0          [stack:114]
+36d66000-36d76000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36d76000-36d85000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36d85000-36d86000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36d86000-36d87000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36d87000-36d89000 rw-p 00000000 00:00 0 
+36d89000-36d96000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36d96000-36da5000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da5000-36da6000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da6000-36da7000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da7000-36da9000 rw-p 00000000 00:00 0 
+36da9000-36dab000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36dab000-36dba000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36dba000-36dbb000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36dbb000-36dbc000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36dbc000-36dc1000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dc1000-36dd0000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dd0000-36dd1000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dd1000-36dd2000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dd2000-36dd3000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36dd3000-36de2000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36de2000-36de3000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36de3000-36de4000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36de4000-36df3000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36df3000-36df4000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36df4000-36df5000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36df5000-36e04000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36e04000-36e05000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36e05000-36edf000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36edf000-36eef000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36eef000-36ef1000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ef1000-36ef2000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ef2000-36ef5000 rw-p 00000000 00:00 0 
+36ef5000-36ef7000 r-xp 00000000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36ef7000-36f06000 ---p 00002000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36f06000-36f07000 rw-p 00001000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36f07000-36f0b000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36f0b000-36f1a000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36f1a000-36f1b000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36f1b000-36f33000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f3a000-36f3d000 rw-p 00000000 00:00 0 
+36f3e000-36f3f000 rw-p 00000000 00:00 0 
+36f3f000-36f41000 rw-p 00000000 00:00 0 
+36f41000-36f42000 r-xp 00000000 00:00 0          [sigpage]
+36f42000-36f43000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f43000-36f44000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3e9ce000-3e9ef000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=156
+00010000-00012000 r-xp 00000000 1f:05 871        /usr/bin/remoteapi_disc_daemon
+00021000-00022000 rw-p 00001000 1f:05 871        /usr/bin/remoteapi_disc_daemon
+36c22000-36c24000 r-xp 00000000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c24000-36c33000 ---p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c33000-36c34000 r--p 00001000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c34000-36c35000 rw-p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c35000-36c36000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c36000-36c45000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c45000-36c46000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c46000-36c47000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c47000-36c56000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c56000-36c57000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c57000-36d31000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d31000-36d41000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d41000-36d43000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d43000-36d44000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d44000-36d47000 rw-p 00000000 00:00 0 
+36d47000-36d48000 r-xp 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d48000-36d57000 ---p 00001000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d57000-36d58000 rw-p 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d58000-36e90000 r-xp 00000000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e90000-36e9f000 ---p 00138000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e9f000-36eb4000 rw-p 00137000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36eb4000-36eb7000 rw-p 00000000 00:00 0 
+36eb7000-36ebb000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36ebb000-36eca000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36eca000-36ecb000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36ecb000-36ecc000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36ecc000-36edb000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36edb000-36edc000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36edc000-36edd000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36edd000-36eec000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36eec000-36eed000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36eed000-36efa000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36efa000-36f09000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f09000-36f0a000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f0a000-36f0b000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36f0b000-36f0d000 rw-p 00000000 00:00 0 
+36f0d000-36f0f000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f0f000-36f1e000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f1e000-36f1f000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f1f000-36f20000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f20000-36f25000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f25000-36f34000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f34000-36f35000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f35000-36f36000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f36000-36f46000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f46000-36f55000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f55000-36f56000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f56000-36f57000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f57000-36f59000 rw-p 00000000 00:00 0 
+36f59000-36f71000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f77000-36f7b000 rw-p 00000000 00:00 0 
+36f7d000-36f7f000 rw-p 00000000 00:00 0 
+36f7f000-36f80000 r-xp 00000000 00:00 0          [sigpage]
+36f80000-36f81000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f81000-36f82000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3e9a0000-3e9c1000 rwxp 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=266
+00010000-00012000 r-xp 00000000 1f:05 869        /usr/bin/remoteapi_cmd_daemon
+00021000-00022000 rw-p 00001000 1f:05 869        /usr/bin/remoteapi_cmd_daemon
+006d2000-006f3000 rw-p 00000000 00:00 0          [heap]
+1b9ff000-36900000 rw-s 21100000 00:05 158        /dev/amba_heapmem
+36900000-36921000 rw-p 00000000 00:00 0 
+36921000-36a00000 ---p 00000000 00:00 0 
+36a70000-36a71000 ---p 00000000 00:00 0 
+36a71000-36a90000 rwxp 00000000 00:00 0          [stack:282]
+36a90000-36a91000 ---p 00000000 00:00 0 
+36a91000-36b90000 rwxp 00000000 00:00 0          [stack:280]
+36b90000-36b98000 r-xp 00000000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36b98000-36ba7000 ---p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36ba7000-36ba8000 r--p 00007000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36ba8000-36ba9000 rw-p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36ba9000-36bab000 r-xp 00000000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bab000-36bba000 ---p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bba000-36bbb000 r--p 00001000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bbb000-36bbc000 rw-p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bbc000-36bbd000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bbd000-36bcc000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bcc000-36bcd000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bcd000-36bce000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36bce000-36bdd000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36bdd000-36bde000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36bde000-36bdf000 r-xp 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36bdf000-36bee000 ---p 00001000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36bee000-36bef000 rw-p 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36bef000-36d27000 r-xp 00000000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d27000-36d36000 ---p 00138000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d36000-36d4b000 rw-p 00137000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d4b000-36d4e000 rw-p 00000000 00:00 0 
+36d4e000-36d52000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36d52000-36d61000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36d61000-36d62000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36d62000-36d63000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36d63000-36d72000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36d72000-36d73000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36d73000-36d74000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36d74000-36d83000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36d83000-36d84000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36d84000-36d91000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36d91000-36da0000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da0000-36da1000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da1000-36da2000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36da2000-36da4000 rw-p 00000000 00:00 0 
+36da4000-36da6000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36da6000-36db5000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36db5000-36db6000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36db6000-36db7000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36db7000-36dbc000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dbc000-36dcb000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dcb000-36dcc000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dcc000-36dcd000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dcd000-36ddd000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ddd000-36dec000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36dec000-36ded000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ded000-36dee000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36dee000-36df0000 rw-p 00000000 00:00 0 
+36df0000-36eca000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36eca000-36eda000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36eda000-36edc000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36edc000-36edd000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36edd000-36ee0000 rw-p 00000000 00:00 0 
+36ee0000-36ee8000 r-xp 00000000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36ee8000-36ef7000 ---p 00008000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36ef7000-36ef8000 rw-p 00007000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36ef8000-36ef9000 rw-p 00000000 00:00 0 
+36ef9000-36efd000 r-xp 00000000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36efd000-36f0c000 ---p 00004000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36f0c000-36f0d000 rw-p 00003000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36f0d000-36f25000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f2b000-36f2f000 rw-p 00000000 00:00 0 
+36f30000-36f31000 rw-p 00000000 00:00 0 
+36f31000-36f33000 rw-p 00000000 00:00 0 
+36f33000-36f34000 r-xp 00000000 00:00 0          [sigpage]
+36f34000-36f35000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f35000-36f36000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ecfb000-3ed1c000 rwxp 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=271
+00010000-00012000 r-xp 00000000 1f:05 870        /usr/bin/remoteapi_data_daemon
+00021000-00022000 rw-p 00001000 1f:05 870        /usr/bin/remoteapi_data_daemon
+01eae000-01ecf000 rw-p 00000000 00:00 0          [heap]
+1bb00000-1bb21000 rw-p 00000000 00:00 0 
+1bb21000-1bc00000 ---p 00000000 00:00 0 
+1bc2b000-1bc2c000 ---p 00000000 00:00 0 
+1bc2c000-1bc4b000 rwxp 00000000 00:00 0          [stack:279]
+1bc4b000-36b4c000 rw-s 21100000 00:05 158        /dev/amba_heapmem
+36b4c000-36b4d000 ---p 00000000 00:00 0 
+36b4d000-36c4c000 rwxp 00000000 00:00 0          [stack:274]
+36c4c000-36c54000 r-xp 00000000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36c54000-36c63000 ---p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36c63000-36c64000 r--p 00007000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36c64000-36c65000 rw-p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36c65000-36c67000 r-xp 00000000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c67000-36c76000 ---p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c76000-36c77000 r--p 00001000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c77000-36c78000 rw-p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36c78000-36c79000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c79000-36c88000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c88000-36c89000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c89000-36c8a000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c8a000-36c99000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c99000-36c9a000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c9a000-36c9b000 r-xp 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36c9b000-36caa000 ---p 00001000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36caa000-36cab000 rw-p 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36cab000-36de3000 r-xp 00000000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36de3000-36df2000 ---p 00138000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36df2000-36e07000 rw-p 00137000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e07000-36e0a000 rw-p 00000000 00:00 0 
+36e0a000-36e0e000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36e0e000-36e1d000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36e1d000-36e1e000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36e1e000-36e1f000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36e1f000-36e2e000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36e2e000-36e2f000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36e2f000-36e30000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36e30000-36e3f000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36e3f000-36e40000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36e40000-36e4d000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36e4d000-36e5c000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36e5c000-36e5d000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36e5d000-36e5e000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36e5e000-36e60000 rw-p 00000000 00:00 0 
+36e60000-36e62000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36e62000-36e71000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36e71000-36e72000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36e72000-36e73000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36e73000-36e78000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36e78000-36e87000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36e87000-36e88000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36e88000-36e89000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36e89000-36e99000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e99000-36ea8000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ea8000-36ea9000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36ea9000-36eaa000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36eaa000-36eac000 rw-p 00000000 00:00 0 
+36eac000-36f86000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f86000-36f96000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f96000-36f98000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f98000-36f99000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f99000-36f9c000 rw-p 00000000 00:00 0 
+36f9c000-36fa4000 r-xp 00000000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36fa4000-36fb3000 ---p 00008000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36fb3000-36fb4000 rw-p 00007000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36fb4000-36fb5000 rw-p 00000000 00:00 0 
+36fb5000-36fb9000 r-xp 00000000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36fb9000-36fc8000 ---p 00004000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36fc8000-36fc9000 rw-p 00003000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36fc9000-36fe1000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36fe7000-36feb000 rw-p 00000000 00:00 0 
+36fec000-36fed000 rw-p 00000000 00:00 0 
+36fed000-36fef000 rw-p 00000000 00:00 0 
+36fef000-36ff0000 r-xp 00000000 00:00 0          [sigpage]
+36ff0000-36ff1000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36ff1000-36ff2000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3eb6f000-3eb90000 rwxp 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=275
+00010000-00014000 r-xp 00000000 1f:05 872        /usr/bin/remoteapi_syssvc_daemon
+00023000-00024000 rw-p 00003000 1f:05 872        /usr/bin/remoteapi_syssvc_daemon
+01d56000-01d77000 rw-p 00000000 00:00 0          [heap]
+1b9ff000-36900000 rw-s 21100000 00:05 158        /dev/amba_heapmem
+36900000-36921000 rw-p 00000000 00:00 0 
+36921000-36a00000 ---p 00000000 00:00 0 
+36abc000-36abd000 ---p 00000000 00:00 0 
+36abd000-36adc000 rwxp 00000000 00:00 0          [stack:281]
+36adc000-36add000 ---p 00000000 00:00 0 
+36add000-36bdc000 rwxp 00000000 00:00 0          [stack:277]
+36bdc000-36bde000 r-xp 00000000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bde000-36bed000 ---p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bed000-36bee000 r--p 00001000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bee000-36bef000 rw-p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bef000-36bf0000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bf0000-36bff000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bff000-36c00000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c00000-36c01000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c01000-36c10000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c10000-36c11000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c11000-36ceb000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36ceb000-36cfb000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36cfb000-36cfd000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36cfd000-36cfe000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36cfe000-36d01000 rw-p 00000000 00:00 0 
+36d01000-36d02000 r-xp 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d02000-36d11000 ---p 00001000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d11000-36d12000 rw-p 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36d12000-36e4a000 r-xp 00000000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e4a000-36e59000 ---p 00138000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e59000-36e6e000 rw-p 00137000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36e6e000-36e71000 rw-p 00000000 00:00 0 
+36e71000-36e75000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36e75000-36e84000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36e84000-36e85000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36e85000-36e86000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36e86000-36e95000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36e95000-36e96000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36e96000-36e97000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36e97000-36ea6000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36ea6000-36ea7000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36ea7000-36eb4000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36eb4000-36ec3000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ec3000-36ec4000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ec4000-36ec5000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ec5000-36ec7000 rw-p 00000000 00:00 0 
+36ec7000-36ec9000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36ec9000-36ed8000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36ed8000-36ed9000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36ed9000-36eda000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36eda000-36edf000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36edf000-36eee000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36eee000-36eef000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36eef000-36ef0000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36ef0000-36f00000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f00000-36f0f000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f0f000-36f10000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f10000-36f11000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f11000-36f13000 rw-p 00000000 00:00 0 
+36f13000-36f2b000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f31000-36f35000 rw-p 00000000 00:00 0 
+36f36000-36f37000 rw-p 00000000 00:00 0 
+36f37000-36f39000 rw-p 00000000 00:00 0 
+36f39000-36f3a000 r-xp 00000000 00:00 0          [sigpage]
+36f3a000-36f3b000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f3b000-36f3c000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ea56000-3ea77000 rwxp 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=288
+00010000-00033000 r-xp 00000000 1f:05 1718       /usr/local/share/script/XCServer
+00042000-00043000 rw-p 00022000 1f:05 1718       /usr/local/share/script/XCServer
+00043000-00053000 rw-p 00000000 00:00 0 
+00a4f000-00a70000 rw-p 00000000 00:00 0          [heap]
+36300000-36321000 rw-p 00000000 00:00 0 
+36321000-36400000 ---p 00000000 00:00 0 
+36432000-36433000 ---p 00000000 00:00 0 
+36433000-36452000 rw-p 00000000 00:00 0          [stack:292]
+36452000-36453000 ---p 00000000 00:00 0 
+36453000-36c52000 rw-p 00000000 00:00 0          [stack:291]
+36c52000-36c5f000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36c5f000-36c6e000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36c6e000-36c6f000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36c6f000-36c70000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36c70000-36c72000 rw-p 00000000 00:00 0 
+36c72000-36d4c000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d4c000-36d5c000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d5c000-36d5e000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d5e000-36d5f000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d5f000-36d62000 rw-p 00000000 00:00 0 
+36d62000-36d7a000 r-xp 00000000 1f:05 527        /lib/libgcc_s.so.1
+36d7a000-36d8a000 ---p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36d8a000-36d8b000 rw-p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36d8b000-36dee000 r-xp 00000000 1f:05 530        /lib/libm-2.19-2014.08.so
+36dee000-36dfd000 ---p 00063000 1f:05 530        /lib/libm-2.19-2014.08.so
+36dfd000-36dfe000 r--p 00062000 1f:05 530        /lib/libm-2.19-2014.08.so
+36dfe000-36dff000 rw-p 00063000 1f:05 530        /lib/libm-2.19-2014.08.so
+36dff000-36e9a000 r-xp 00000000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36e9a000-36ea9000 ---p 0009b000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36ea9000-36ead000 r--p 0009a000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36ead000-36eaf000 rw-p 0009e000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36eaf000-36eb5000 rw-p 00000000 00:00 0 
+36eb5000-36eb7000 r-xp 00000000 1f:05 995        /usr/lib/libambaeventnotifier.so.1
+36eb7000-36ec6000 ---p 00002000 1f:05 995        /usr/lib/libambaeventnotifier.so.1
+36ec6000-36ec7000 rw-p 00001000 1f:05 995        /usr/lib/libambaeventnotifier.so.1
+36ec7000-36ecb000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36ecb000-36eda000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36eda000-36edb000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36edb000-36edc000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36edc000-36eeb000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36eeb000-36eec000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36eec000-36eed000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36eed000-36efc000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36efc000-36efd000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36efd000-36efe000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36efe000-36f0d000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36f0d000-36f0e000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36f0e000-36f10000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f10000-36f1f000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f1f000-36f20000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f20000-36f21000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36f21000-36f26000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f26000-36f35000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f35000-36f36000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f36000-36f37000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36f37000-36f47000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f47000-36f56000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f56000-36f57000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f57000-36f58000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f58000-36f5a000 rw-p 00000000 00:00 0 
+36f5a000-36f72000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f77000-36f7c000 rw-p 00000000 00:00 0 
+36f7d000-36f80000 rw-p 00000000 00:00 0 
+36f80000-36f81000 r-xp 00000000 00:00 0          [sigpage]
+36f81000-36f82000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f82000-36f83000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3eb84000-3eba5000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+====PID=959
+00010000-00021000 r-xp 00000000 1f:05 722        /usr/bin/AmbaRTSPServer
+00030000-00031000 rw-p 00010000 1f:05 722        /usr/bin/AmbaRTSPServer
+00031000-00032000 rw-p 00000000 00:00 0 
+00aa2000-00ac3000 rw-p 00000000 00:00 0          [heap]
+1b300000-1b321000 rw-p 00000000 00:00 0 
+1b321000-1b400000 ---p 00000000 00:00 0 
+1b411000-1b492000 rw-p 00000000 00:00 0 
+1b492000-1b493000 ---p 00000000 00:00 0 
+1b493000-1bc92000 rw-p 00000000 00:00 0          [stack:961]
+1bc92000-1bc9a000 r-xp 00000000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+1bc9a000-1bca9000 ---p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+1bca9000-1bcaa000 r--p 00007000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+1bcaa000-1bcab000 rw-p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+1bcab000-1bcac000 ---p 00000000 00:00 0 
+1bcac000-1bccb000 rw-p 00000000 00:00 0          [stack:960]
+1bccb000-36bcc000 rw-s 21100000 00:05 158        /dev/amba_heapmem
+36bcc000-36bce000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36bce000-36bdd000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36bdd000-36bde000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36bde000-36bdf000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36bdf000-36be4000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36be4000-36bf3000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36bf3000-36bf4000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36bf4000-36bf5000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36bf5000-36bf6000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bf6000-36c05000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c05000-36c06000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36c06000-36c07000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c07000-36c16000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c16000-36c17000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c17000-36c18000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36c18000-36c27000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36c27000-36c28000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36c28000-36c2a000 r-xp 00000000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36c2a000-36c39000 ---p 00002000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36c39000-36c3a000 rw-p 00001000 1f:05 1003       /usr/lib/libambasocksvc.so.1
+36c3a000-36c3b000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36c3b000-36c4a000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36c4a000-36c4b000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36c4b000-36c4f000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36c4f000-36c5e000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36c5e000-36c5f000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36c5f000-36c77000 r-xp 00000000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36c77000-36c87000 ---p 00018000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36c87000-36c88000 rw-p 00018000 1f:05 1124       /usr/lib/libtirpc.so.1.0.10
+36c88000-36c95000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36c95000-36ca4000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ca4000-36ca5000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ca5000-36ca6000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36ca6000-36ca8000 rw-p 00000000 00:00 0 
+36ca8000-36d82000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d82000-36d92000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d92000-36d94000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d94000-36d95000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36d95000-36d98000 rw-p 00000000 00:00 0 
+36d98000-36db0000 r-xp 00000000 1f:05 527        /lib/libgcc_s.so.1
+36db0000-36dc0000 ---p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36dc0000-36dc1000 rw-p 00018000 1f:05 527        /lib/libgcc_s.so.1
+36dc1000-36e24000 r-xp 00000000 1f:05 530        /lib/libm-2.19-2014.08.so
+36e24000-36e33000 ---p 00063000 1f:05 530        /lib/libm-2.19-2014.08.so
+36e33000-36e34000 r--p 00062000 1f:05 530        /lib/libm-2.19-2014.08.so
+36e34000-36e35000 rw-p 00063000 1f:05 530        /lib/libm-2.19-2014.08.so
+36e35000-36ed0000 r-xp 00000000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36ed0000-36edf000 ---p 0009b000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36edf000-36ee3000 r--p 0009a000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36ee3000-36ee5000 rw-p 0009e000 1f:05 1114       /usr/lib/libstdc++.so.6.0.20
+36ee5000-36eeb000 rw-p 00000000 00:00 0 
+36eeb000-36ef4000 r-xp 00000000 1f:05 1032       /usr/lib/libev.so.4.0.0
+36ef4000-36f03000 ---p 00009000 1f:05 1032       /usr/lib/libev.so.4.0.0
+36f03000-36f04000 rw-p 00008000 1f:05 1032       /usr/lib/libev.so.4.0.0
+36f04000-36f14000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f14000-36f23000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f23000-36f24000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f24000-36f25000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36f25000-36f27000 rw-p 00000000 00:00 0 
+36f27000-36f2c000 r-xp 00000000 1f:05 1001       /usr/lib/libambanetfifo.so.1
+36f2c000-36f3b000 ---p 00005000 1f:05 1001       /usr/lib/libambanetfifo.so.1
+36f3b000-36f3c000 rw-p 00004000 1f:05 1001       /usr/lib/libambanetfifo.so.1
+36f3c000-36f54000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f58000-36f5e000 rw-p 00000000 00:00 0 
+36f5f000-36f60000 rw-p 00000000 00:00 0 
+36f60000-36f62000 rw-p 00000000 00:00 0 
+36f62000-36f63000 r-xp 00000000 00:00 0          [sigpage]
+36f63000-36f64000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f64000-36f65000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ecd2000-3ecf3000 rw-p 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+~ # echo __YI_CAPTURE_e039b1a395534907bc5b4e7ee1d1123c__
+__YI_CAPTURE_e039b1a395534907bc5b4e7ee1d1123c__

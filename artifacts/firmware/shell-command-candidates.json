@@ -1,0 +1,274 @@
+{
+  "rtos_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "inferred_virtual_base": "0xa0100000",
+  "record_stride": 12,
+  "interpretation": "candidate name pointer / handler pointer / third word; static structural inference, not runtime validated",
+  "records": [
+    {
+      "entry_file_offset": "0x5f2ea0",
+      "name": "cat",
+      "name_address": "0xa05ae69c",
+      "handler_candidate_address": "0xa029e260",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2eac",
+      "name": "cd",
+      "name_address": "0xa05ae6a0",
+      "handler_candidate_address": "0xa029e4e0",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2eb8",
+      "name": "chklowspd",
+      "name_address": "0xa05ae6a4",
+      "handler_candidate_address": "0xa02a0050",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ec4",
+      "name": "chmod",
+      "name_address": "0xa05ae6b0",
+      "handler_candidate_address": "0xa029f024",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ed0",
+      "name": "cleandir",
+      "name_address": "0xa05ae6b8",
+      "handler_candidate_address": "0xa02a0180",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2edc",
+      "name": "cp",
+      "name_address": "0xa05ae6c4",
+      "handler_candidate_address": "0xa02a05a4",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ee8",
+      "name": "date",
+      "name_address": "0xa055ed08",
+      "handler_candidate_address": "0xa02a05e4",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ef4",
+      "name": "dmesg",
+      "name_address": "0xa05ae6c8",
+      "handler_candidate_address": "0xa02a0864",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f00",
+      "name": "echo",
+      "name_address": "0xa05ae6d0",
+      "handler_candidate_address": "0xa02a0a4c",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f0c",
+      "name": "false",
+      "name_address": "0xa0534a8c",
+      "handler_candidate_address": "0xa02a0aa8",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f18",
+      "name": "format",
+      "name_address": "0xa055069c",
+      "handler_candidate_address": "0xa02a0ab0",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f24",
+      "name": "help",
+      "name_address": "0xa0599dd8",
+      "handler_candidate_address": "0xa02a44e0",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f30",
+      "name": "loadbin",
+      "name_address": "0xa05ae6d8",
+      "handler_candidate_address": "0xa02a2584",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f3c",
+      "name": "ls",
+      "name_address": "0xa062f8d0",
+      "handler_candidate_address": "0xa02a2b24",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f48",
+      "name": "memtest",
+      "name_address": "0xa05ae6e0",
+      "handler_candidate_address": "0xa02a30d4",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f54",
+      "name": "mkdir",
+      "name_address": "0xa05ae6e8",
+      "handler_candidate_address": "0xa02a3288",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f60",
+      "name": "mv",
+      "name_address": "0xa05ae6f0",
+      "handler_candidate_address": "0xa02a3730",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f6c",
+      "name": "ps",
+      "name_address": "0xa0601cd4",
+      "handler_candidate_address": "0xa02a3864",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f78",
+      "name": "pwd",
+      "name_address": "0xa05a4484",
+      "handler_candidate_address": "0xa02a3b14",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f84",
+      "name": "randvrfy",
+      "name_address": "0xa05a7488",
+      "handler_candidate_address": "0xa02a2288",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f90",
+      "name": "readb",
+      "name_address": "0xa05ae6f4",
+      "handler_candidate_address": "0xa02a2e58",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2f9c",
+      "name": "readl",
+      "name_address": "0xa05ae6fc",
+      "handler_candidate_address": "0xa02a3000",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fa8",
+      "name": "readw",
+      "name_address": "0xa05ae704",
+      "handler_candidate_address": "0xa02a2f2c",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fb4",
+      "name": "reboot",
+      "name_address": "0xa0550508",
+      "handler_candidate_address": "0xa02a3fe0",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fc0",
+      "name": "rm",
+      "name_address": "0xa0640214",
+      "handler_candidate_address": "0xa02a3b78",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fcc",
+      "name": "rmdir",
+      "name_address": "0xa05ae70c",
+      "handler_candidate_address": "0xa02a3b38",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fd8",
+      "name": "savebin",
+      "name_address": "0xa05ae714",
+      "handler_candidate_address": "0xa02a3db0",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2fe4",
+      "name": "sleep",
+      "name_address": "0xa05ae71c",
+      "handler_candidate_address": "0xa02a3824",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ff0",
+      "name": "suspend",
+      "name_address": "0xa05a7e44",
+      "handler_candidate_address": "0xa02a3f08",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f2ffc",
+      "name": "t",
+      "name_address": "0xa05a4e1c",
+      "handler_candidate_address": "0xa029e1a4",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3008",
+      "name": "thruput",
+      "name_address": "0xa05a7464",
+      "handler_candidate_address": "0xa02a1b98",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3014",
+      "name": "true",
+      "name_address": "0xa0534a84",
+      "handler_candidate_address": "0xa02a403c",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3020",
+      "name": "ver",
+      "name_address": "0xa0535db8",
+      "handler_candidate_address": "0xa02a40f8",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f302c",
+      "name": "vol",
+      "name_address": "0xa0564d08",
+      "handler_candidate_address": "0xa02a42ac",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3038",
+      "name": "writeb",
+      "name_address": "0xa05ae724",
+      "handler_candidate_address": "0xa02a2d68",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3044",
+      "name": "writel",
+      "name_address": "0xa05ae72c",
+      "handler_candidate_address": "0xa02a2e08",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f3050",
+      "name": "writew",
+      "name_address": "0xa05ae734",
+      "handler_candidate_address": "0xa02a2db8",
+      "third_word": "0x0"
+    },
+    {
+      "entry_file_offset": "0x5f305c",
+      "name": "fwupdate",
+      "name_address": "0xa055f148",
+      "handler_candidate_address": "0xa02a23ac",
+      "third_word": "0x0"
+    }
+  ]
+}

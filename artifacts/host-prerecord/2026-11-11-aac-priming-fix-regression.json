@@ -1,0 +1,178 @@
+{
+  "scope": "host-only local MP4 replay, no camera contact",
+  "code_frozen": true,
+  "code_sha256": {
+    "prerecord_replay.py": "1788a3947431f64363858bd3c900951b2378ce0f49ad020281d328d3128ef231",
+    "validate_prerecord_packet_fidelity.py": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460",
+    "audit_prerecord_publication_gate.py": "9825aef06eab3e05b9cfe7de36fcb9c8ebac6d5d180f2052a32dcc141f28e683",
+    "tests/test_prerecord_buffer.py": "51ee24529e3a21f54842fd81c04ff9f6eb34c11a5608ca13c5655ddc9727e9bf"
+  },
+  "test_command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_buffer.py -v",
+  "tests": 12,
+  "tests_passed": true,
+  "test_duration_seconds": 17.658,
+  "runs": {
+    "aac-priming-same-source-fixed-run01": {
+      "checks": {
+        "prepublish_passed": true,
+        "published_passed": true,
+        "complete": true,
+        "snapshot_hash_matches": true,
+        "gate_hash_matches": true,
+        "final_hash_matches": true
+      },
+      "source_sha256": "983c857b0ec2a2f2440d4178c14417aa46cbb867c48262ad82412b4ed6441410",
+      "clip_sha256": "40224381d4f146482258f3fbc5a16db7a04e1c9eca41fe5cacb146e9de9b8f23",
+      "selected_start_us": 0,
+      "available_pretrigger_us": 5000000,
+      "tracks": {
+        "video": {
+          "packets": 200,
+          "candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        },
+        "audio": {
+          "packets": 376,
+          "candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        }
+      }
+    },
+    "real-camera-65s-aac-priming-fix-run01": {
+      "checks": {
+        "prepublish_passed": true,
+        "published_passed": true,
+        "complete": true,
+        "snapshot_hash_matches": true,
+        "gate_hash_matches": true,
+        "final_hash_matches": true
+      },
+      "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+      "clip_sha256": "b3f85f8b28cf83a4c8bf95f2b8b6c8cb7d1b06703dee04a41137fd709a13b48e",
+      "selected_start_us": 0,
+      "available_pretrigger_us": 62000000,
+      "tracks": {
+        "video": {
+          "packets": 1920,
+          "candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        },
+        "audio": {
+          "packets": 3003,
+          "candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        }
+      }
+    },
+    "synthetic-aac-priming-fix-run01": {
+      "checks": {
+        "prepublish_passed": true,
+        "published_passed": true,
+        "complete": true,
+        "snapshot_hash_matches": true,
+        "gate_hash_matches": true,
+        "final_hash_matches": true
+      },
+      "source_sha256": "66a9fc0746d01042e81942d5364cee627493fe4b714c53451e0df192b00e1f84",
+      "clip_sha256": "a763b917bb4775a0e67311cb1e870e2aea61703ed9392ad583c2843a1cd6bdf0",
+      "selected_start_us": 4004000,
+      "available_pretrigger_us": 60996000,
+      "tracks": {
+        "video": {
+          "packets": 2040,
+          "candidates": [
+            {
+              "source_first_packet": 120,
+              "offset_min_seconds": "-1001/250",
+              "offset_max_seconds": "-1001/250",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        },
+        "audio": {
+          "packets": 3191,
+          "candidates": [
+            {
+              "source_first_packet": 186,
+              "offset_min_seconds": "-1001/250",
+              "offset_max_seconds": "-1001/250",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "negative_control": {
+    "audit": "publication-gate-aac-priming-audit-run01/audit.json",
+    "checks": {
+      "positive_published_and_passed": true,
+      "exactly_one_real_remux_injected": true,
+      "negative_full_decode_passed": true,
+      "negative_gate_rejected": true,
+      "negative_failed_manifest": true,
+      "negative_never_published": true,
+      "negative_pending_retained": true,
+      "negative_segments_retained": true,
+      "negative_snapshot_hash_matches": true,
+      "negative_only_av_offset_failed": true,
+      "source_unchanged": true
+    },
+    "negative_clip_sha256": "a0f731f9b3d338b4038ffb6a734e27f16ab1070f6ab42773583ab8f8d76d3c5f"
+  },
+  "known_tool_limitation": {
+    "directory": "aac-priming-nonzero-investigation-run01",
+    "actual_stts_checks": {
+      "output_stts_equals_selected_stts": true,
+      "output_stts_equals_contiguous_source_stts": true,
+      "output_last_aac_stts_duration_1024": true
+    },
+    "ffprobe_6_1_misreports_final_aac_duration": true,
+    "unchanged_gate_rejects": true,
+    "pending_and_segments_retained": true,
+    "clip_mp4_absent": true,
+    "note": "Actual audio STTS durations/source payload timeline match; no extra timestamp shifts, tolerance changes, dependency or validator modifications."
+  }
+}

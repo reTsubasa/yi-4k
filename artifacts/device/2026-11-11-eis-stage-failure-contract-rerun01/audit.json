@@ -1,0 +1,1563 @@
+{
+  "evidence_kind": "pinned original coordinator tails and Set/GetWarp instructions in synthetic RAM",
+  "cpu_image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "script_sha256": "28aafff3ee709a75284f8c8e834c1c7853b14b9af9913f9d314200c6bfa0fa97",
+  "instruction_checks": [
+    {
+      "address": "0xa0394740",
+      "instruction": "bl #0xa02da164"
+    },
+    {
+      "address": "0xa0394748",
+      "instruction": "cmp r3, #0"
+    },
+    {
+      "address": "0xa039474c",
+      "instruction": "bne #0xa0394b98"
+    },
+    {
+      "address": "0xa0394760",
+      "instruction": "bl #0xa02da514"
+    },
+    {
+      "address": "0xa0394764",
+      "instruction": "movw r3, #0x7af8"
+    },
+    {
+      "address": "0xa0394790",
+      "instruction": "bl #0xa0312f74"
+    },
+    {
+      "address": "0xa0394794",
+      "instruction": "movw r3, #0x45ec"
+    },
+    {
+      "address": "0xa0394960",
+      "instruction": "bl #0xa02da164"
+    },
+    {
+      "address": "0xa0394968",
+      "instruction": "cmp r3, #0"
+    },
+    {
+      "address": "0xa039496c",
+      "instruction": "bne #0xa0394b98"
+    },
+    {
+      "address": "0xa0394980",
+      "instruction": "bl #0xa02da514"
+    },
+    {
+      "address": "0xa0394984",
+      "instruction": "mov r3, #0"
+    },
+    {
+      "address": "0xa039499c",
+      "instruction": "bl #0xa0312f74"
+    },
+    {
+      "address": "0xa03949a0",
+      "instruction": "movw r3, #0x45ec"
+    },
+    {
+      "address": "0xa03949b4",
+      "instruction": "str r2, [r3, #0x24]"
+    },
+    {
+      "address": "0xa0394a9c",
+      "instruction": "cmp r3, #0"
+    },
+    {
+      "address": "0xa0394aac",
+      "instruction": "mov r2, #1"
+    },
+    {
+      "address": "0xa02da514",
+      "instruction": "b #0xa0312460"
+    },
+    {
+      "address": "0xa03124a8",
+      "instruction": "bl #0xa0308880"
+    },
+    {
+      "address": "0xa03124ac",
+      "instruction": "subs r5, r0, #0"
+    },
+    {
+      "address": "0xa03124b0",
+      "instruction": "blt #0xa03127d8"
+    },
+    {
+      "address": "0xa03127e4",
+      "instruction": "mov r0, r5"
+    }
+  ],
+  "instruction_windows": [
+    {
+      "name": "coordinator-branch-nonzero",
+      "start": "0xa0394734",
+      "end_exclusive": "0xa039479c",
+      "sha256": "68aff6caaf2a2979a9a067323dcdddcca26af3b0561652d91dc200c23a106908"
+    },
+    {
+      "name": "coordinator-branch-zero",
+      "start": "0xa0394958",
+      "end_exclusive": "0xa0394ab4",
+      "sha256": "c7494776ac593a4237b72107da3084b0347e93274f0d35acec6f2622c5561ec8"
+    },
+    {
+      "name": "setwarp-lookup",
+      "start": "0xa0312490",
+      "end_exclusive": "0xa03124c0",
+      "sha256": "155728c8504b795057c7f35acf030c0a95e4ce480898f36a00531359bf5abd13"
+    },
+    {
+      "name": "setwarp-lookup-failure",
+      "start": "0xa03127d8",
+      "end_exclusive": "0xa03127f0",
+      "sha256": "da2c11417f9bdb394d5600cc9ecf59c17d92c2df0e114b1cfc348e9630621864"
+    },
+    {
+      "name": "getwarp",
+      "start": "0xa0312f74",
+      "end_exclusive": "0xa03131ec",
+      "sha256": "ea397c71418b43f736b7113d038cb336364cbf35ba37121f46f4e58149a26347"
+    }
+  ],
+  "scenario_count": 36,
+  "scenarios": [
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x0",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0x1",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "nonzero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "get"
+        },
+        {
+          "dependency": "unlock",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x3010d060"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x3010e860"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 0,
+      "staged_x": "0x3010d060",
+      "staged_y": "0x3010e860",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "get"
+        },
+        {
+          "dependency": "unlock",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x3010d060"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x3010e860"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 1,
+      "staged_x": "0x3010d060",
+      "staged_y": "0x3010e860",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "get"
+        },
+        {
+          "dependency": "unlock",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30180000"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30182000"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 0,
+      "staged_x": "0x30180000",
+      "staged_y": "0x30182000",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0xffffffff"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "get"
+        },
+        {
+          "dependency": "unlock",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0x0"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30180000"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30182000"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 1,
+      "staged_x": "0x30180000",
+      "staged_y": "0x30182000",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30180000"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30182000"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 0,
+      "staged_x": "0x30180000",
+      "staged_y": "0x30182000",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x0",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x0"
+        },
+        {
+          "stage": "set",
+          "selector": 15
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "set",
+          "return": "0x0"
+        },
+        {
+          "dependency": "lock",
+          "stage": "set"
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "copy",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010d060",
+          "bytes": 6144
+        },
+        {
+          "dependency": "clean",
+          "address": "0x3010e860",
+          "bytes": 6144
+        },
+        {
+          "dependency": "unlock",
+          "stage": "set"
+        },
+        {
+          "stage_return": "set",
+          "return": "0x0"
+        },
+        {
+          "stage": "get",
+          "selector": 0
+        },
+        {
+          "dependency": "mutex_lookup",
+          "stage": "get",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "log",
+          "stage": "get"
+        },
+        {
+          "stage_return": "get",
+          "return": "0xffffffff"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30180000"
+        },
+        {
+          "dependency": "address_conversion",
+          "address": "0x30182000"
+        }
+      ],
+      "staged_state_changed": true,
+      "ready_byte_after": 1,
+      "staged_x": "0x30180000",
+      "staged_y": "0x30182000",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0x1",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0x1"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "none",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "none",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "set-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 0,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    },
+    {
+      "branch_a17045da": "zero",
+      "generator_return": "0xffffffff",
+      "fault_injected": "get-lookup",
+      "descriptor_enabled": 1,
+      "events": [
+        {
+          "stage": "generate",
+          "return": "0xffffffff"
+        }
+      ],
+      "staged_state_changed": false,
+      "ready_byte_after": 0,
+      "staged_x": "0xcccccccc",
+      "staged_y": "0xcccccccc",
+      "old_descriptor_addresses": [
+        "0x30180000",
+        "0x30182000"
+      ],
+      "new_bank_addresses": [
+        "0x3010d060",
+        "0x3010e860"
+      ]
+    }
+  ],
+  "findings": [
+    "Both coordinator branches gate SetWarp on generator return exactly zero.",
+    "Both branches ignore the SetWarp return; the zero branch also ignores GetWarp return.",
+    "With synthetic SetWarp lookup failure the zero branch stages the prior descriptor and may set A170AFB8=1.",
+    "With synthetic GetWarp lookup failure the zero branch stages the prior global result and may set A170AFB8=1.",
+    "Generation success or the ready byte alone cannot validate this invocation's table preparation."
+  ],
+  "declared_substitutes": [
+    "A02DA164 generator returns a selected status; no generator math executed here",
+    "mutex/context lookup return synthetic owned addresses or declared lookup error",
+    "lock/unlock log only; no concurrency or real synchronization model",
+    "memcpy performs synthetic logical copy; cache-clean only logged",
+    "A0308B8C returns zero; no alternate descriptor clean path",
+    "address conversion is identity; logs suppressed"
+  ],
+  "limits": [
+    "Starts at two explicit tails after upstream mode/geometry computation; not full EIS task execution.",
+    "Original SetWarp and GetWarp execute; no DSP, MMIO, real cache, SD, firmware mutation or device connection.",
+    "Injected lookup failures demonstrate control-flow reachability, not observed live faults or fault rates.",
+    "No complete state publication or encoded-frame association is executed or proved."
+  ],
+  "device_access": false,
+  "custom_eis_replacement_ready": false
+}

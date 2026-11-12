@@ -1,0 +1,257 @@
+{
+  "created_utc": "2026-11-10T20:31:21.875792+00:00",
+  "verification": "Independent regression rerun 07: Android 0.3.13 process death/local delivery, AAC priming and strict publication gate, owned mux adapter, hidden PTB RAM candidate",
+  "this_continuation_scope": {
+    "physical_android_phone": false,
+    "owned_android_emulator": true,
+    "new_camera_contact": false,
+    "new_camera_media_or_configuration_writes": false,
+    "firmware_ram_partition_boot_writes": false,
+    "custom_rtos_or_orc_execution": false
+  },
+  "referenced_camera_evidence_scope": {
+    "earlier_same_0_3_13_ordinary_api_capture_and_configuration_writes": true,
+    "earlier_0_3_12_65s_source_recording": true,
+    "original_manifests_preserved": true
+  },
+  "results": {
+    "pending-process-death-run09": {
+      "passed": true,
+      "tests": 2
+    },
+    "local-suite-run01": {
+      "passed": true,
+      "tests": 8
+    },
+    "publication-gate-independent-run01": {
+      "passed": true,
+      "checks": 11
+    },
+    "publication-gate-independent-aac-priming-run01": {
+      "passed": true,
+      "checks": 11
+    },
+    "real_camera_archived_source_replay": {
+      "passed": true,
+      "checks": 6,
+      "video_packets": 1920,
+      "audio_packets": 3003,
+      "new_camera_contact": false
+    }
+  },
+  "prerecord_python_tests": 35,
+  "owned_mux_adapter": {
+    "host_cases": 27,
+    "compiled_arm_cases": 27,
+    "original_arm_consumer_integrations": 10,
+    "stream_index_os_services": "explicit models; not real SD/MP4 lifecycle"
+  },
+  "hidden_ptb_candidate": {
+    "original_selector_cases": 15,
+    "original_crc_cases": 2,
+    "corruption_negative_cases": 10,
+    "old_user_table_parser_control": true,
+    "new_system_table_capture": false,
+    "independent_recovery_proven": false
+  },
+  "failure_history": "Android pending run01..08 and replay timestamp/AAC investigations preserved; no published file for expected-negative controls",
+  "items": [
+    {
+      "path": "README.md",
+      "bytes": 14836,
+      "sha256": "4dcddad6a01de39fa66f855abf37f60b7aeb883535bbdeec2f6d648ba1035eac"
+    },
+    {
+      "path": "android/README.md",
+      "bytes": 12088,
+      "sha256": "14960572e8d9a674e1287003e9617c198378947fd73cdea9dd7ea0a470a11d17"
+    },
+    {
+      "path": "docs/project-roadmap.md",
+      "bytes": 62005,
+      "sha256": "dccc5366a78d7f7142a3f369b414ddbe7aa2f31964f382a6f7fe21c6c415cd0f"
+    },
+    {
+      "path": "docs/goal-evidence-matrix.md",
+      "bytes": 6219,
+      "sha256": "768091f0ffc7656837d0a516a842e548ce8082324a4cf57820b62bfba4ebae15"
+    },
+    {
+      "path": "docs/android-delivery-audit-0.3.13.md",
+      "bytes": 3692,
+      "sha256": "9613506a5720d167a41fb7f5b8ddd1a524c691e6b8f29da2d59d596776db0e2f"
+    },
+    {
+      "path": "docs/android-runtime-supplement-0.3.13.md",
+      "bytes": 2908,
+      "sha256": "20dcfd64e95abb03df99c3270dd38da194cd43e4808f1ced69443874347d34c5"
+    },
+    {
+      "path": "artifacts/android/yi4k-control-0.3.13-debug.apk",
+      "bytes": 11542029,
+      "sha256": "a8ca9f71ea049ce7d0dabc0cefd672737e128637b4c0efc47555713e8e2e6e42"
+    },
+    {
+      "path": "artifacts/android/yi4k-control-debug.apk",
+      "bytes": 11542029,
+      "sha256": "a8ca9f71ea049ce7d0dabc0cefd672737e128637b4c0efc47555713e8e2e6e42"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-build-0.3.13.json",
+      "bytes": 3549,
+      "sha256": "1613ab3aeb02ce71a3777fef7a1814e097cfe388dee3ba208299ec3ac245daea"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-runtime-supplement-0.3.13.json",
+      "bytes": 3528,
+      "sha256": "a38f13e3c76977aaaf6070e9d33000b5ef1e731916714676275ec6e432bc701c"
+    },
+    {
+      "path": "artifacts/android/0.3.13-device-reports/pending-process-death-run09/acceptance.json",
+      "bytes": 6760,
+      "sha256": "2d4c6331e95fb7a6b4358bf1f7e7746535b906e643e0e538f2a1edb6fb509334"
+    },
+    {
+      "path": "artifacts/android/0.3.13-device-reports/pending-process-death-run09/workflow-screens/pending-export-death/verify.json",
+      "bytes": 1161,
+      "sha256": "d10a78ffcf5111a41968e694b56f6d2da9144e8acbf943605f135f8441c3ea60"
+    },
+    {
+      "path": "artifacts/android/0.3.13-device-reports/local-suite-run01/acceptance.json",
+      "bytes": 4743,
+      "sha256": "e5bd763b31a7fa78679750c5230ca4bb1afe1d8ec0779190390f841de79b7e7f"
+    },
+    {
+      "path": "scripts/android_emulator_acceptance.py",
+      "bytes": 39726,
+      "sha256": "fc94605408b0dda88afa3139e90c2c59bf1f1401c280bb231e9e0ec2635c38c9"
+    },
+    {
+      "path": "android/app/src/androidTest/java/dev/yi4k/control/PendingOriginalExportsDeviceTest.java",
+      "bytes": 19833,
+      "sha256": "8ef260f05ec85be6d451ed406c2b2161e71798bf9ca4b6408adb95af7afc0394"
+    },
+    {
+      "path": "android/app/src/androidTest/java/dev/yi4k/control/PendingExportFixtureProvider.java",
+      "bytes": 7852,
+      "sha256": "00fbab8bcc6b201d6833c11061e3b88b33d256cc316f09eed4fbc3ca5f60a4b3"
+    },
+    {
+      "path": "scripts/prerecord_replay.py",
+      "bytes": 13604,
+      "sha256": "1788a3947431f64363858bd3c900951b2378ce0f49ad020281d328d3128ef231"
+    },
+    {
+      "path": "scripts/validate_prerecord_packet_fidelity.py",
+      "bytes": 10071,
+      "sha256": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460"
+    },
+    {
+      "path": "scripts/audit_prerecord_publication_gate.py",
+      "bytes": 4860,
+      "sha256": "9825aef06eab3e05b9cfe7de36fcb9c8ebac6d5d180f2052a32dcc141f28e683"
+    },
+    {
+      "path": "artifacts/host-prerecord/2026-11-11-independent-python-tests-aac-priming-fix.log",
+      "bytes": 135,
+      "sha256": "41fd1062f4bb16cfe26ae044c78fd2f02821edae48f1a8ecd0fbe4c99d78b7b7"
+    },
+    {
+      "path": "artifacts/host-prerecord/publication-gate-independent-run01/audit.json",
+      "bytes": 1964,
+      "sha256": "ea0a76064ee950c339758553aa2e77ef08b477561b38c564f2c8d15fcd7d606d"
+    },
+    {
+      "path": "artifacts/host-prerecord/publication-gate-independent-aac-priming-run01/audit.json",
+      "bytes": 2078,
+      "sha256": "2c120493da63537352eace7b2e25e960a583ee23b09d3fdf4b8a257cc6af8185"
+    },
+    {
+      "path": "artifacts/host-prerecord/real-camera-65s-independent-aac-priming-fix-run01/manifest.json",
+      "bytes": 19847,
+      "sha256": "a3fd1fb4122f705f80810c745efc141a9c2d5716a918fdce069071d1eed72f05"
+    },
+    {
+      "path": "artifacts/host-prerecord/real-camera-65s-independent-aac-priming-fix-run01/published-packet-fidelity.json",
+      "bytes": 3572,
+      "sha256": "3dcf42d84d7cd36b9c213f8193df8854ce5af84b3d6a49c1d64e3fd7b587d86a"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-aac-priming-stts-independent.json",
+      "bytes": 5043,
+      "sha256": "372effee7a51d340822285ba4ca29c2efe862ef2e388fb2f5f1ae9380eca3b15"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-aac-priming-ffprobe-independent.json",
+      "bytes": 377,
+      "sha256": "feab6282a21da6c4eeed4ed57ac13cb21cdb2f9e72ce94efceda216fdd3c19b2"
+    },
+    {
+      "path": "docs/prerecord-publication-gate.md",
+      "bytes": 7450,
+      "sha256": "676a0aa3b04ad85e6919f2b2ebc594acd85b60123a4e58997b0f01d45a00f319"
+    },
+    {
+      "path": "docs/prerecord-owned-mux-adapter.md",
+      "bytes": 8036,
+      "sha256": "031a395c1c9fe02f6ef7cb7b1213c8361ff621e0001d71c4d6fd172c44aff250"
+    },
+    {
+      "path": "sdk/yi4k_1107_owned_mux.c",
+      "bytes": 6717,
+      "sha256": "3289d288afa4505d9727eb15a7bd5b7af0fbece14bba1e0fd3d5d42cfcf125d4"
+    },
+    {
+      "path": "sdk/yi4k_1107_owned_mux.h",
+      "bytes": 3931,
+      "sha256": "9abd7ab04be037c1af155816f3b22f671a81a6f31c49bb8fdcfad05e235d4110"
+    },
+    {
+      "path": "sdk/offline/yi4k_owned_mux_test.c",
+      "bytes": 15308,
+      "sha256": "d389bab0e339c681fa2904c5408ae1f04b5f50b572cc8164bbafbab80f4b8a98"
+    },
+    {
+      "path": "scripts/validate_prerecord_owned_mux.py",
+      "bytes": 15207,
+      "sha256": "de422e09f75f4c0db5fadc2d6c9d9935f2c84c4bd2812e998b73819b810c7b2b"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-owned-mux-adapter-independent.json",
+      "bytes": 34255,
+      "sha256": "b98dbef4595781a82f7904684c8bd0c89ef9f621a88988bb319b3cdcfb59f4c8"
+    },
+    {
+      "path": "docs/device-1107-hidden-ptb-ram-candidate.md",
+      "bytes": 7916,
+      "sha256": "2c6134740b105be6ff58eb8dad3f9d567bcc7dfdb87e0d6c5d4605eea2889c7a"
+    },
+    {
+      "path": "scripts/audit_hidden_ptb_ram_candidate.py",
+      "bytes": 11630,
+      "sha256": "4824ceb2d0eb82c98e92c8084704925c2ed66ddc4aaab4c4f203f7b35af14d98"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-hidden-ptb-ram-independent.json",
+      "bytes": 17040,
+      "sha256": "a0b05c474e242e90b4247dd91482011651a2b2eba402a67b8d89c46cd279cbda"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-board-recovery-sources-independent.json",
+      "bytes": 301,
+      "sha256": "b888f2899bd8fbab72ddca431737ef66d2aecf1e9b009c2ecc81dbc55ec9e38c"
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-usb-recovery-independent.json",
+      "bytes": 583,
+      "sha256": "01c2f2fcc7198848d7b019be9bbcf76c9ed297953618e0e73b00fd770fafe796"
+    }
+  ],
+  "limits": [
+    "No physical phone acceptance.",
+    "EIS replacement and camera-side fixed 60-second prerecord/voice/shutter binding remain incomplete.",
+    "Owned adapter completion receipt requires real stream/SD/DMA contract; caller attestation is not hardware proof.",
+    "No-B-frame nonzero-start sample remains rejected by strict gate despite matching direct STTS; ffprobe 6.1 inference issue preserved.",
+    "SYS/USER RAM pointer values are static candidates, not runtime mapping or hidden boot bytes."
+  ]
+}

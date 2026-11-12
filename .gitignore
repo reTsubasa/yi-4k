@@ -1,0 +1,107 @@
+/references/
+/.tools/
+/.venv-reverse/
+/artifacts/rtos-reverse/ghidra-project/
+/artifacts/rtos-reverse/full/
+/artifacts/rtos-reverse/*.o
+/artifacts/rtos-reverse/*.tar.gz
+/scripts/__pycache__/
+/artifacts/linux-analysis/rootfs/
+/artifacts/device/**/*.bin
+/artifacts/device/**/*.squashfs
+/artifacts/device/**/rootfs/
+/artifacts/device/**/ghidra-project/
+/artifacts/device/**/rtos-analysis/full/
+/artifacts/firmware/*
+!/artifacts/firmware/*.json
+!/artifacts/firmware/*.log
+
+# Local runtimes, SDK configuration and generated build output.
+**/.DS_Store
+**/__pycache__/
+**/*.py[cod]
+/android/app/build/
+/android/.gradle/
+/android/local.properties
+/.tools/
+/.venv-reverse/
+
+# Device captures and generated media are retained locally and referenced by
+# the small JSON/Markdown evidence records. GitHub receives source and the
+# reproducible evidence summaries, not multi-gigabyte raw captures.
+/artifacts/device/**/*.MP4
+/artifacts/device/**/*.mp4
+/artifacts/device/**/*.JPG
+/artifacts/device/**/*.jpg
+/artifacts/device/**/*.raw
+/artifacts/device/**/*.pcm
+/artifacts/device/**/*.bin
+/artifacts/device/**/*.squashfs
+/artifacts/device/2026-11-10-normal-recording-05/audit/ffprobe.json
+/artifacts/verification/**/*.MP4
+/artifacts/verification/**/*.mp4
+/artifacts/verification/**/*.aac
+/artifacts/verification/**/*.spool
+/artifacts/verification/**/*.seal
+/artifacts/verification/**/*.elf
+/artifacts/verification/**/*.dylib
+/artifacts/verification/**/*.o
+/artifacts/verification/**/*.bin
+/artifacts/verification/**/*.raw
+/artifacts/verification/**/*.pcm
+/artifacts/verification/**/*.yuv
+/artifacts/verification/**/*.png
+/artifacts/verification/**/audit.json
+/artifacts/verification/**/avfoundation-packets.json
+/artifacts/verification/**/original-current-packets.json
+/artifacts/verification/**/geometry-fixed.json
+/artifacts/verification/**/ffprobe8-exploration.json
+/artifacts/verification/**/sdk-pipeline-native-probe.json
+
+# Historical Android screenshots, test reports and old packages; the current
+# 0.5.0 APK and its evidence remain explicitly included below.
+/artifacts/android/**/*.png
+/artifacts/android/**/*.html
+/artifacts/android/**/*.xml
+/artifacts/android/**/*.apk
+/artifacts/android/**/*-reports/
+/artifacts/android/**/*-device-reports/
+!/artifacts/android/yi4k-control-0.4.9-debug.apk
+!/artifacts/android/2026-11-12-build-0.4.9.json
+!/artifacts/android/2026-11-12-fast-shutter-regression.json
+!/artifacts/android/yi4k-control-0.5.0-debug.apk
+!/artifacts/android/2026-11-12-build-0.5.0.json
+
+# Small, named continuation audits are reviewable evidence; bulk audit.json
+# files remain excluded with the raw verification fixtures above.
+!/artifacts/verification/2026-11-12-voice-prerecord-binding/
+!/artifacts/verification/2026-11-12-voice-prerecord-binding/audit.json
+
+# Large reverse-engineering databases and packaged toolchains.
+/artifacts/rtos-reverse/**/*.gbf
+/artifacts/rtos-reverse/**/*.tar.gz
+/artifacts/rtos-reverse/**/*.bin
+/artifacts/rtos-reverse/**/*.squashfs
+/artifacts/rtos-reverse/**/*.o
+/artifacts/rtos-reverse/**/ghidra-project/
+/artifacts/firmware/**/*.bin
+/artifacts/firmware/**/*.a9s
+/artifacts/firmware/**/*.a9h
+
+# Generated binary/media evidence anywhere under artifacts. Human-readable
+# JSON/Markdown/log summaries remain eligible for publication.
+/artifacts/**/*.bin
+/artifacts/**/*.elf
+/artifacts/**/*.dylib
+/artifacts/**/*.raw
+/artifacts/**/*.pcm
+/artifacts/**/*.yuv
+/artifacts/**/*.a9s
+/artifacts/**/*.a9h
+/artifacts/**/*.squashfs
+/artifacts/**/*.tar.gz
+/artifacts/**/*.mp4
+/artifacts/**/*.MP4
+/artifacts/**/*.aac
+/artifacts/**/*.spool
+/artifacts/**/*.seal

@@ -1,0 +1,65 @@
+ ID  PRI  PREEMPT  SCHED            STAT  NEXT_ID  STKSIZE  STKPEAK  STKUSED  STKBASE     STKEND      STKPTR      SMP_CORE  NAME
+--------------------------------------------------------------------------------------------------------------------------
+  0    0        0  16976       SUSPENDED        0     1020      720      336  0xa1796824  0xa1796c1f  0xa1796ad0       0x3  System Timer Thread
+  1  254      254     54      EVENT_FLAG        9     4092      424      340  0xa0a8d0a0  0xa0a8e09b  0xa0a8df48       0x3  RootTask
+  2   32       32    123      EVENT_FLAG        2     4092     1544      364  0xa0b09a60  0xa0b0aa5b  0xa0b0a8f0       0x2  AmbaSD_CardMonitorTask
+  3   70       70    578       COMPLETED        3    65532     5692      252  0xa0fd7148  0xa0fe7143  0xa0fe7048       0x2  App_boot_Manager
+  4  202      202   9568      EVENT_FLAG        4    40956      812      356  0xa0a630a0  0xa0a6d09b  0xa0a6cf38       0x2  AmbaPrintTask
+  5  150      150      5      EVENT_FLAG        5     4092      736      392  0xa1a3563c  0xa1a36637  0xa1a364b0       0x3  BQ27421_Manager
+  6   25       25      1      QUEUE_SUSP        6    32764      332      444  0xc1bedb00  0xc1bf5afb  0xc1bf5940       0x2  Mw_FifoTask
+  7   73       73      5      EVENT_FLAG        7    16380      424      340  0xc26b8540  0xc26bc53b  0xc26bc3e8       0x2  MW_CFS_Scheduler
+  8  160      160      3      EVENT_FLAG        8    16380      424      340  0xc2d5c9e0  0xc2d609db  0xc2d60888       0x2  MW_DCF
+  9  119      119      3      EVENT_FLAG        1    32764      440      356  0xa0829800  0xa08317fb  0xa0831698       0x2  Monitor_SdTask
+ 10  175      175     54           SLEEP       10     4092      440      356  0xa08329f8  0xa08339f3  0xa0833890       0x2  AppLib Monitor Storage
+ 11  178      178     27           SLEEP       11     4092      408      324  0xa08318d8  0xa08328d3  0xa0832790       0x2  AppLib Monitor HDMI
+ 12  110      110   1989  SEMAPHORE_SUSP       12    65532     7820     1084  0xa13901c0  0xa13a01bb  0xa139fd80       0x2  AppLib_Host_Control_Manager
+ 13  250      250     10  SEMAPHORE_SUSP       13    20476      680      444  0xa085c0a0  0xa086109b  0xa0860ee0       0x1  AmbaShell_CliTask
+ 14  249      249    122           READY       14    32764     7292     2900  0xc2d688a0  0xc2d7089b  0xc2d6fd48       0x1  AmbaShell_ExecTask
+ 15  166      166    487           SLEEP       15    65532      772      292  0xc2d708e0  0xc2d808db  0xc2d807b8       0x3  RCServer
+ 16   20       20    818      EVENT_FLAG       16     8184     1400      360  0xc2d80a40  0xc2d82a37  0xc2d828d0       0x2  AmbaImgAeCtrlTask#0
+ 17   30       30    902      EVENT_FLAG       17     2040     1648      360  0xc2d85c50  0xc2d86447  0xc2d862e0       0x2  AmbaImgAwbCtrlTask#0
+ 18   50       50    826      EVENT_FLAG       18     8184     3420      356  0xc2d869c4  0xc2d889bb  0xc2d88858       0x2  AmbaImgAdjCtrlTask#0
+ 19   59       59    966       SUSPENDED       19     8188      872      380  0xc2fb5a80  0xc2fb7a7b  0xc2fb7900       0x3  Audio Output Task
+ 20   60       60    548       SUSPENDED       20     8188      764      412  0xc2fc06c0  0xc2fc26bb  0xc2fc2520       0x1  Audio Decoder Task
+ 21  131      131     64  SEMAPHORE_SUSP       21    16380     1248      412  0xc3024ee0  0xc3028edb  0xc3028d40       0x3  _AppLibAudio_BeepTask
+ 22  255      255    256           SLEEP       22    16380      736      332  0xa1a45508  0xa1a49503  0xa1a493b8       0x1  AmbaUSBDeviceVbusCheckTask
+ 23  170      170      1      EVENT_FLAG       23    32764      168      340  0xa1259ff0  0xa1261feb  0xa1261e98       0x1  VoiceCmd_Task
+ 24   20       20    781      EVENT_FLAG       36     4092     1032      364  0xc32809e0  0xc32819db  0xc3281870       0x2  Mw_VinHandler_0
+ 25   54       54    213      QUEUE_SUSP       25     8188     7524      380  0xc3284820  0xc328681b  0xc32866a0       0x2  Mw_VideoEncodeTask
+ 26  172      172      0       SUSPENDED       26     8188       80       80  0xc32870e0  0xc32890db  0xc328908c       0x2  Image_EncMonitorTimerTask
+ 27   31       31      0       SUSPENDED       27     4092       80       80  0xc32890e0  0xc328a0db  0xc328a08c       0x2  Image_EncMonitorVdspTask
+ 28   62       62      0       SUSPENDED       28     8188       80       80  0xcbc05f40  0xcbc07f3b  0xcbc07eec       0x2  Mw_StillEncodeTask
+ 29   60       60      0       SUSPENDED       29     8188       80       80  0xcbc4cd40  0xcbc4ed3b  0xcbc4ecec       0x2  Mw_StillRawCaptureTask
+ 30   64       64      0       SUSPENDED       30    16380       80       80  0xcbc4fb40  0xcbc53b3b  0xcbc53aec       0x2  Mw_StillRawEncodeTask
+ 31   31       31      0       SUSPENDED       31     8188       80       80  0xcbde46a0  0xcbde669b  0xcbde664c       0x2  Mw_ExternalEncodeTask
+ 32    7        7  53240      EVENT_FLAG       33     8188     2164      692  0xa0ac9200  0xa0acb1fb  0xa0acaf48       0x3  AmbaImageMainEisTask
+ 33   12       12   1248      EVENT_FLAG       32     8188     1932      324  0xa0acb200  0xa0acd1fb  0xa0acd0b8       0x3  AmbaImageMainEisAlgo2Task
+ 34   35       35      0       SUSPENDED       34     8188       80       80  0xcbc8de20  0xcbc8fe1b  0xcbc8fdcc       0x1  Audio Input Task
+ 35   50       50      0       SUSPENDED       35     8188       84       84  0xcbcb45c4  0xcbcb65bf  0xcbcb656c       0x1  Audio Encoder Task
+ 36   23       23   1684      EVENT_FLAG       24     8188     2000      788  0xc30c5c20  0xc30c7c1b  0xc30c7908       0x3  Image_SchdlrTask_0
+ 37   24       24   2039      QUEUE_SUSP       37    10236     5080      364  0xc30ac880  0xc30af07b  0xc30aef10       0x2  Image_SchdlrMsgTask
+ 38   56       56      0       SUSPENDED       38     8188       80       80  0xcce3bee8  0xcce3dee3  0xcce3de94       0x1  Audio Input Task
+ 39    9        9   4640      EVENT_FLAG       39     4092      612      428  0xa0a8e4a0  0xa0a8f49b  0xa0a8f2f0       0x2  AmbaDSP_ArmCommTask
+ 40   11       11   2953      QUEUE_SUSP       40     4092      868      444  0xa0a934a0  0xa0a9449b  0xa0a942e0       0x2  AmbaDSP_MsgDispatchTask
+ 41    4        4   1567      EVENT_FLAG       41    16380      408      324  0xa0a8f4a0  0xa0a9349b  0xa0a93358       0x2  AmbaDSP_IntTask
+ 42  136      136      1      QUEUE_SUSP       42    32764      188      360  0xa1430a14  0xa1438a0f  0xa14388a8       0x3  VA frame hdlr
+ 43  120      120      2      QUEUE_SUSP       43    14332      568      396  0xa0fd3110  0xa0fd690b  0xa0fd6780       0x3  App_TouchScreen_Operation_Manager
+ 44  122      122     43  SEMAPHORE_SUSP       44    16380     1016      364  0xa1a31198  0xa1a35193  0xa1a35028       0x2  TouchScreen_Task
+ 45  163      163     44      QUEUE_SUSP       45    14332     7436      460  0xa138c7e8  0xa138ffe3  0xa138fe18       0x2  AppLib_Async_Operation_Manager
+ 46  100      100  19006      EVENT_FLAG       46    32764      780      396  0xccfdd7a0  0xccfe579b  0xccfe5610       0x1  LINK_BOSS
+ 47   50       50    187      EVENT_FLAG       47     4092      840      332  0xc32ada80  0xc32aea7b  0xc32ae930       0x1  LINK_RPMSG_RVQ
+ 48   50       50    163      EVENT_FLAG       48     4092      424      340  0xc32aeaa0  0xc32afa9b  0xc32af948       0x1  LINK_RPMSG_SVQ
+ 49   65       65      1      EVENT_FLAG       50     4092      168      340  0xc32b01e0  0xc32b11db  0xc32b1088       0x1  LINK_RPC_SVC_THREAD 0
+ 50   66       66      1      EVENT_FLAG       49     4092      168      340  0xc32b1260  0xc32b225b  0xc32b2108       0x1  LINK_RPC_SVC_THREAD 1
+ 51   60       60    182      QUEUE_SUSP       51     8188     7548      324  0xc32b2280  0xc32b427b  0xc32b4138       0x1  LINK_VFS_OPS
+ 52   70       70     11      QUEUE_SUSP       52     4092      464      324  0xce15c920  0xce15d91b  0xce15d7d8       0x1  LINK_VFS_SG
+ 53   80       80      1      QUEUE_SUSP       53     4092      144      316  0xce15d940  0xce15e93b  0xce15e800       0x1  HiberSuspendHandler
+ 54   94       94     10      EVENT_FLAG       54     4092      968      380  0xccfd5780  0xccfd677b  0xccfd6600       0x3  LINK_RPC_SVC_EVENTNOTIFIER
+ 55   88       88      2      EVENT_FLAG       55    12284      648      380  0xc302a940  0xc302d93b  0xc302d7c0       0x3  LINK_RPC_SVC_NETCTRL
+ 56   91       91      2      EVENT_FLAG       56     4092      820      380  0xc302fe40  0xc3030e3b  0xc3030cc0       0x3  LINK_RPC_SVC_DATANOTIFY
+ 57  166      166     25      QUEUE_SUSP       57    14332      556      404  0xa143bb50  0xa143f34b  0xa143f1b8       0x2  AppLib_Net_Control_Manager
+ 58   89       89      4      EVENT_FLAG       58     4092     1760      380  0xc3032aa0  0xc3033a9b  0xc3033920       0x3  LINK_RPC_SVC_LNXCMDHNDLR
+ 59   85       85      2      EVENT_FLAG       59    10236      464      380  0xc3035a80  0xc303827b  0xc3038100       0x3  LINK_RPC_SVC_NETFIFO
+ 60  166      166    233      QUEUE_SUSP       60    65532      840      500  0xc303a280  0xc304a27b  0xc304a088       0x3  CCServer
+ 61  120      120     21       COMPLETED       61    16380    11032      252  0xa0fb8068  0xa0fbc063  0xa0fbbf68       0x3  wifi
+

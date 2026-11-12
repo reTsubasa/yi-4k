@@ -1,0 +1,24 @@
+for p in 102 104 108 110 156 266 271 275 288 959; do echo PID=$p; tr '\0' ' 
+' < /proc/$p/cmdline; echo; done
+PID=102
+/usr/bin/ipcbind -b 
+PID=104
+/usr/bin/util_svc -b 
+PID=108
+/usr/bin/AmbaNetFifoDaemon 
+PID=110
+/usr/bin/AmbaEventNotifyDaemon 
+PID=156
+/usr/bin/remoteapi_disc_daemon 
+PID=266
+/usr/bin/remoteapi_cmd_daemon 
+PID=271
+/usr/bin/remoteapi_data_daemon 
+PID=275
+/usr/bin/remoteapi_syssvc_daemon 
+PID=288
+/usr/local/share/script/XCServer 
+PID=959
+/usr/bin/AmbaRTSPServer 
+~ # echo __YI_CAPTURE_c2b76dffd539430f8b972b1f7a592ae7__
+__YI_CAPTURE_c2b76dffd539430f8b972b1f7a592ae7__

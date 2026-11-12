@@ -1,0 +1,552 @@
+{
+  "schema": "yi4k.eis-candidate-archive-audit/v1",
+  "status": "passed_archive_layout_and_real_input_eligibility_checks",
+  "stock_layout": {
+    "report": {
+      "path": "artifacts/device/2026-11-10-eis-generator-scope/audit.json",
+      "bytes": 47637,
+      "sha256": "c41fcfd21e83115e9bd463eeda08070182c08f70ec36edf2d3b07cb825a4c87a"
+    },
+    "cases": [
+      {
+        "name": "disabled-640",
+        "input_geometry": [
+          640,
+          480
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 21,
+            "rows": 31,
+            "pitch_elements": 32,
+            "active_values": 651,
+            "active_value_sha256": "657a7317d9f941f1aca295ef93e23f14f7ec6ca996b4f87536791106e9a7131a",
+            "min_signed16": 0,
+            "max_signed16": 0,
+            "inactive_bytes": 4842,
+            "inactive_sha256": "54f811bbef6c6562321a6af9a012e1e224965e69108d99ae5f99c5b303d917bf"
+          },
+          {
+            "columns": 21,
+            "rows": 32,
+            "pitch_elements": 32,
+            "active_values": 672,
+            "active_value_sha256": "d457efc0edd106bb2ab6c7b0630f50618de6e1d29c67937e15368e6d5c9df205",
+            "min_signed16": 0,
+            "max_signed16": 0,
+            "inactive_bytes": 4800,
+            "inactive_sha256": "24ddaa4710480313757f965c38d60208a334556cb244f830d5006a893edd8da7"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/disabled-640.planes.bin",
+            "bytes": 12288,
+            "sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/disabled-640.descriptor.bin",
+            "bytes": 80,
+            "sha256": "788d6ebc606c16137480aef20dbc55624af7aabfe064bbb071a32c229574dccd"
+          }
+        ]
+      },
+      {
+        "name": "disabled-1080",
+        "input_geometry": [
+          1920,
+          1080
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 31,
+            "rows": 35,
+            "pitch_elements": 32,
+            "active_values": 1085,
+            "active_value_sha256": "f4ca22d0902b7b26282b14016aaa03b2b78713b9578b5c047bcb54da4482f7ec",
+            "min_signed16": 0,
+            "max_signed16": 0,
+            "inactive_bytes": 3974,
+            "inactive_sha256": "2190c6c1c93a1ea46bdfa8a2de8c8f5c58e2e734d5a153dade3bab0d9d70c9ea"
+          },
+          {
+            "columns": 31,
+            "rows": 36,
+            "pitch_elements": 32,
+            "active_values": 1116,
+            "active_value_sha256": "34b4d54904f0c46c318c50b1278c31ee1df47cfaa6137cf3bfbf9a548748c28a",
+            "min_signed16": 0,
+            "max_signed16": 0,
+            "inactive_bytes": 3912,
+            "inactive_sha256": "5e92ddcdeb209f0aa328c0a774a2aba1315dbcddb069e87c51b7354602e84291"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/disabled-1080.planes.bin",
+            "bytes": 12288,
+            "sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/disabled-1080.descriptor.bin",
+            "bytes": 80,
+            "sha256": "29581a0a7433f6916be5b39c9ffec7b5c03bc7e62a42329a0ee3a7e6ac5e1549"
+          }
+        ]
+      },
+      {
+        "name": "constant-640x480",
+        "input_geometry": [
+          640,
+          480
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 21,
+            "rows": 31,
+            "pitch_elements": 32,
+            "active_values": 651,
+            "active_value_sha256": "074843d35a5d2ead3b1cab6cfde697ef33518e047284444df07e4ddc8130fb90",
+            "min_signed16": 16,
+            "max_signed16": 16,
+            "inactive_bytes": 4842,
+            "inactive_sha256": "7d88f9ea357ff17bcf96d4c0e332b72d44a7999a49177642af3c8c2c72da2b33"
+          },
+          {
+            "columns": 21,
+            "rows": 32,
+            "pitch_elements": 32,
+            "active_values": 672,
+            "active_value_sha256": "181b9727dd9b17bbadcf8bb5a07c649a140b433bf1b8490b085462b3d60778af",
+            "min_signed16": -32,
+            "max_signed16": -32,
+            "inactive_bytes": 4800,
+            "inactive_sha256": "6354bb16f14cb7e74b561b0711028154d3a2b5cb5206f9ef3f90e9ab5171e714"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-640x480.planes.bin",
+            "bytes": 12288,
+            "sha256": "5d1b4bc721dedd984fddbc57421ea1b1ce1cb8d877c47d287992956cd3a963cb"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-640x480.descriptor.bin",
+            "bytes": 80,
+            "sha256": "d4ee4abda1e2ab46b64ff2b5e7d1b6fcfa851d6eac77a67da8e871f0d1c921a7"
+          }
+        ]
+      },
+      {
+        "name": "constant-1280x720",
+        "input_geometry": [
+          1280,
+          720
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 21,
+            "rows": 46,
+            "pitch_elements": 32,
+            "active_values": 966,
+            "active_value_sha256": "836365159194395e23524635a68dfee9ced4105fa50c45f83466d262acbbeb42",
+            "min_signed16": 16,
+            "max_signed16": 16,
+            "inactive_bytes": 4212,
+            "inactive_sha256": "a237a490ae2de174d21922af469b53b5aa358040036883868f89b8d5316ef9de"
+          },
+          {
+            "columns": 21,
+            "rows": 48,
+            "pitch_elements": 32,
+            "active_values": 1008,
+            "active_value_sha256": "800520ba5e3167a8199d8d5725f51839036c17af94db65043b84b49696dccdd1",
+            "min_signed16": -32,
+            "max_signed16": -32,
+            "inactive_bytes": 4128,
+            "inactive_sha256": "5ed5f503f92dca6a7550e9dc4d070410ca10450c89d1b256dafe9e4a43564305"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-1280x720.planes.bin",
+            "bytes": 12288,
+            "sha256": "70b303f11f91eec4832b9918d7aca8008470b28893a2255629bad4783ec18b13"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-1280x720.descriptor.bin",
+            "bytes": 80,
+            "sha256": "2f2061a899dbb3782960f083f5b55bf4cbe592f2ed198d675d7a5ef30a32e772"
+          }
+        ]
+      },
+      {
+        "name": "constant-1920x1080",
+        "input_geometry": [
+          1920,
+          1080
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 31,
+            "rows": 35,
+            "pitch_elements": 32,
+            "active_values": 1085,
+            "active_value_sha256": "48b53c51c9065b04173c5f5c27fff22766750d7affb132565d45ac0a4ac763da",
+            "min_signed16": 16,
+            "max_signed16": 16,
+            "inactive_bytes": 3974,
+            "inactive_sha256": "3940e2257c2124a46c696e52f8962f44593855b69b0e3f473165b52f5e7dfd44"
+          },
+          {
+            "columns": 31,
+            "rows": 36,
+            "pitch_elements": 32,
+            "active_values": 1116,
+            "active_value_sha256": "33e25893592743279a47474d0c90d5812805b167183009720ee1381b98423ed1",
+            "min_signed16": -32,
+            "max_signed16": -32,
+            "inactive_bytes": 3912,
+            "inactive_sha256": "9031ecb8a1213ef97eb8097766f552a226220f050cc41d007516ede3ef0e71cf"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-1920x1080.planes.bin",
+            "bytes": 12288,
+            "sha256": "94da14908f34bfc0ce8b292ca5f8c32bc5d07fa27b95793761b70ca543a7c64b"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-1920x1080.descriptor.bin",
+            "bytes": 80,
+            "sha256": "2e8854e1ff7b7293cd89cc809d1053e48cfc6939f5982c5822448434401a2f69"
+          }
+        ]
+      },
+      {
+        "name": "constant-3840x2160",
+        "input_geometry": [
+          3840,
+          2160
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 31,
+            "rows": 35,
+            "pitch_elements": 31,
+            "active_values": 1085,
+            "active_value_sha256": "48b53c51c9065b04173c5f5c27fff22766750d7affb132565d45ac0a4ac763da",
+            "min_signed16": 16,
+            "max_signed16": 16,
+            "inactive_bytes": 3974,
+            "inactive_sha256": "3940e2257c2124a46c696e52f8962f44593855b69b0e3f473165b52f5e7dfd44"
+          },
+          {
+            "columns": 31,
+            "rows": 36,
+            "pitch_elements": 31,
+            "active_values": 1116,
+            "active_value_sha256": "33e25893592743279a47474d0c90d5812805b167183009720ee1381b98423ed1",
+            "min_signed16": -32,
+            "max_signed16": -32,
+            "inactive_bytes": 3912,
+            "inactive_sha256": "9031ecb8a1213ef97eb8097766f552a226220f050cc41d007516ede3ef0e71cf"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-3840x2160.planes.bin",
+            "bytes": 12288,
+            "sha256": "a13af23da8d1676dfd387a4fe84b325a28c140cda36a2d4f70ab236d7036e2cf"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-3840x2160.descriptor.bin",
+            "bytes": 80,
+            "sha256": "d8640e93fc2483985326418f8d7b8f09e97ffe2ac8a2c98c869ce9a20e6078b3"
+          }
+        ]
+      },
+      {
+        "name": "constant-4096x2160",
+        "input_geometry": [
+          4096,
+          2160
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 33,
+            "rows": 35,
+            "pitch_elements": 33,
+            "active_values": 1155,
+            "active_value_sha256": "b96f8de6cca75238b062f7e56598a0d9603cb9b403dcae29fbc63d871a0f911d",
+            "min_signed16": 16,
+            "max_signed16": 16,
+            "inactive_bytes": 3834,
+            "inactive_sha256": "a82c51c151131175ee5c8e2f969cd1b8f3903fc96745743f49d3961cb8e18bc2"
+          },
+          {
+            "columns": 33,
+            "rows": 36,
+            "pitch_elements": 33,
+            "active_values": 1188,
+            "active_value_sha256": "2cea96cb2070c6e32cdbf9bb37f717b1b8de6490712f227e1e08ae1b4cf50e21",
+            "min_signed16": -32,
+            "max_signed16": -32,
+            "inactive_bytes": 3768,
+            "inactive_sha256": "a3a72173bb59f5f99d2250466e656c12ce1d6486261307c0664fb6081808e378"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-4096x2160.planes.bin",
+            "bytes": 12288,
+            "sha256": "eb754c9219f8500362a27f287fe461ab8e43836e45eee70732e11e4bae7c8fb5"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/constant-4096x2160.descriptor.bin",
+            "bytes": 80,
+            "sha256": "4fda0c95eaa8e6b968e03021cbdec90a47d97f82278fb69054e5354e3ab9f7d9"
+          }
+        ]
+      },
+      {
+        "name": "affine-1080",
+        "input_geometry": [
+          1920,
+          1080
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 31,
+            "rows": 35,
+            "pitch_elements": 32,
+            "active_values": 1085,
+            "active_value_sha256": "25bca0ecfdebb7a2a7da8d7420bb49343051b24f0723320982cc4333d47a07a2",
+            "min_signed16": 16,
+            "max_signed16": 21,
+            "inactive_bytes": 3974,
+            "inactive_sha256": "3940e2257c2124a46c696e52f8962f44593855b69b0e3f473165b52f5e7dfd44"
+          },
+          {
+            "columns": 31,
+            "rows": 36,
+            "pitch_elements": 32,
+            "active_values": 1116,
+            "active_value_sha256": "76162ce0b1271e934f4b1058ff1d5153d2f736d5b08e9025f5657c87ea8524dd",
+            "min_signed16": -40,
+            "max_signed16": -30,
+            "inactive_bytes": 3912,
+            "inactive_sha256": "9031ecb8a1213ef97eb8097766f552a226220f050cc41d007516ede3ef0e71cf"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/affine-1080.planes.bin",
+            "bytes": 12288,
+            "sha256": "0cd2fe560dfebce40e788ecd4124b12a131be963a297ea08bed3f30489d11ac5"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/affine-1080.descriptor.bin",
+            "bytes": 80,
+            "sha256": "2e8854e1ff7b7293cd89cc809d1053e48cfc6939f5982c5822448434401a2f69"
+          }
+        ]
+      },
+      {
+        "name": "control8-raw-y",
+        "input_geometry": [
+          1920,
+          1080
+        ],
+        "source_kind": "original_arm_output_with_synthetic_input",
+        "round_trip_identical_including_padding": true,
+        "planes": [
+          {
+            "columns": 31,
+            "rows": 35,
+            "pitch_elements": 32,
+            "active_values": 1085,
+            "active_value_sha256": "f4ca22d0902b7b26282b14016aaa03b2b78713b9578b5c047bcb54da4482f7ec",
+            "min_signed16": 0,
+            "max_signed16": 0,
+            "inactive_bytes": 3974,
+            "inactive_sha256": "2190c6c1c93a1ea46bdfa8a2de8c8f5c58e2e734d5a153dade3bab0d9d70c9ea"
+          },
+          {
+            "columns": 31,
+            "rows": 36,
+            "pitch_elements": 32,
+            "active_values": 1116,
+            "active_value_sha256": "eb31e4c06a4b57ef89ddaab680debe967e1e1bde535c10959e1ddfed67849767",
+            "min_signed16": 128,
+            "max_signed16": 128,
+            "inactive_bytes": 3912,
+            "inactive_sha256": "9031ecb8a1213ef97eb8097766f552a226220f050cc41d007516ede3ef0e71cf"
+          }
+        ],
+        "source_files": [
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/control8-raw-y.planes.bin",
+            "bytes": 12288,
+            "sha256": "8470dea14120bf811d9a97160c3a1839553e29bf9af80ec98880dd0af9e96cc8"
+          },
+          {
+            "path": "artifacts/device/2026-11-10-eis-generator-scope/control8-raw-y.descriptor.bin",
+            "bytes": 80,
+            "sha256": "7a9c21f075592fd0e7b0b9ca8e2c9dde4cd94ebf664994901a3a0768cf757a1e"
+          }
+        ]
+      }
+    ],
+    "case_count": 9,
+    "plane_count": 18,
+    "stock_physical_units_known": false,
+    "normalized_candidate_convertible": false
+  },
+  "real_input": {
+    "kind": "retained_real_camera_recording_and_logs",
+    "new_camera_access": false,
+    "sources": [
+      {
+        "path": "artifacts/device/2026-11-09-eis-recording/native-log-02/RtosActive.log",
+        "bytes": 234033,
+        "sha256": "5529f3828fa987a5e3fefc0955b55a23a92fa3c1d2a7ed333fc386744136083c"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-eis-recording/video/YDXJ0139.MP4",
+        "bytes": 16254590,
+        "sha256": "1dc7d72892e54dcacaf4c6b032e3ec017237a44dad66d24edb4ba305f98970ee"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-eis-recording/native-log-02/gyro-events.json",
+        "bytes": 48081,
+        "sha256": "06c0079eba785a91dc7d003404637854fca0d1df01fdd103bc460ead2b5b8b0a"
+      }
+    ],
+    "recording_phase_counts": {
+      "gyro": 48,
+      "exposure": 67,
+      "frame_update": 66
+    },
+    "gyro_tick_delta_histogram": {
+      "50": 47
+    },
+    "log_tick_design_unit": "milliseconds; not hardware sample timestamps",
+    "gyro_axis_raw_ranges": [
+      [
+        32733,
+        32811
+      ],
+      [
+        32761,
+        32841
+      ],
+      [
+        32797,
+        32856
+      ]
+    ],
+    "exposure_printed_values": [
+      16
+    ],
+    "feedback_tags": [
+      "0x105",
+      "0x106"
+    ],
+    "video_probe": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30000/1001",
+          "time_base": "1/30000",
+          "nb_read_frames": "48"
+        }
+      ]
+    },
+    "video_decode_passed_now": true,
+    "probe_command": [
+      "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-count_frames",
+      "-show_entries",
+      "stream=width,height,nb_read_frames,r_frame_rate,time_base",
+      "-of",
+      "json",
+      "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-09-eis-recording/video/YDXJ0139.MP4"
+    ],
+    "decode_command": [
+      "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-09-eis-recording/video/YDXJ0139.MP4",
+      "-map",
+      "0:v:0",
+      "-f",
+      "null",
+      "-"
+    ],
+    "ffprobe": {
+      "path": ".tools/ffmpeg-host/ffprobe",
+      "bytes": 80046528,
+      "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f"
+    },
+    "ffmpeg": {
+      "path": ".tools/ffmpeg-host/ffmpeg",
+      "bytes": 80128296,
+      "sha256": "ca8945e5eef946a246d29c943b21f10db345a2ef050dd7ea1c77f877277dc2fa"
+    },
+    "candidate_replay_eligible": false,
+    "optical_quality_comparison_eligible": false,
+    "candidate_trajectory_generated_from_real_log": false,
+    "blockers": [
+      "Gyro values are level-shifted raw counts; calibrated axis mapping, bias and dps scale are unavailable at the captured sample boundary.",
+      "50-ms modulo-decimated log ticks are not per-IMU-sample acquisition timestamps or a lossless sample stream.",
+      "ExposureTime is a truncated printed raw integer; precise exposure start/center and readout association are unavailable.",
+      "Feedback tags 0x105/0x106 repeat; no joint gyro/warp-generation/encoded-PTS identity was captured.",
+      "Warp outputs in the separate ABI fixtures were generated offline from synthetic inputs; they are not tables captured from this recording."
+    ]
+  },
+  "device_access": false,
+  "target_write": false,
+  "replacement_deployment_ready": false,
+  "source_files": [
+    {
+      "path": "scripts/audit_eis_candidate_archive.py",
+      "bytes": 10072,
+      "sha256": "21a09ea1ea1d5da2652648376627f17e1a3aa9ade811d98dbb72b6c50c1f1576"
+    },
+    {
+      "path": "scripts/eis_stock_mesh_layout.py",
+      "bytes": 3190,
+      "sha256": "3ecdc63f103ee09f50a8146fcfba3a765adff6c2c8edf3d1cc956503b1480e97"
+    }
+  ],
+  "limitations": [
+    "Original-generator outputs establish a bounded storage layout, not physical Q or optical displacement direction.",
+    "Archived camera video is re-decoded; no candidate warp is applied or compared for image quality.",
+    "No RTOS first entry, timing, cache, DSP latch or rollback evidence is added."
+  ]
+}

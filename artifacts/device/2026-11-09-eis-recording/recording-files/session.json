@@ -1,0 +1,120 @@
+{
+  "api_events": [
+    {
+      "host_monotonic": 1029330.616367958,
+      "utc": "2026-11-09T03:23:53.722134+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1029330.6219075,
+      "utc": "2026-11-09T03:23:53.727662+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1029330.621935666,
+      "utc": "2026-11-09T03:23:53.727687+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1029330.628989708,
+      "utc": "2026-11-09T03:23:53.734742+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1029330.629012458,
+      "utc": "2026-11-09T03:23:53.734764+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1029330.642128791,
+      "utc": "2026-11-09T03:23:53.747891+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1029330.642183458,
+      "utc": "2026-11-09T03:23:53.747935+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1029330.663426791,
+      "utc": "2026-11-09T03:23:53.769183+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "clips": [
+    {
+      "bytes": 31575424,
+      "name": "YDXJ0135.MP4",
+      "mtime": 1388539110.0
+    },
+    {
+      "bytes": 31400038,
+      "name": "YDXJ0136.MP4",
+      "mtime": 1388540242.0
+    },
+    {
+      "bytes": 23817714,
+      "name": "YDXJ0137.MP4",
+      "mtime": 1388541978.0
+    },
+    {
+      "bytes": 16661328,
+      "name": "YDXJ0138.MP4",
+      "mtime": 1388543074.0
+    },
+    {
+      "bytes": 16254590,
+      "name": "YDXJ0139.MP4",
+      "mtime": 1388544974.0
+    }
+  ]
+}

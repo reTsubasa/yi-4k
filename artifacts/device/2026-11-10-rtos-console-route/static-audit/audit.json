@@ -1,0 +1,240 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "capstone_version": "5.0.7",
+  "producer_sha256": "e5850c6c3045f7751b90c1210af40f223107a1e77098651c688167c8d664cef8",
+  "functions": [
+    {
+      "entry": "0xa0192474",
+      "role_inferred": "USB connected/disconnected mode dispatch",
+      "body_ranges_inclusive": [
+        "a0192474-a019271b"
+      ],
+      "body_sha256": "c1a9a789ad67bb64b643543769de8f3ba265395e79751649d59787368bc63ccd"
+    },
+    {
+      "entry": "0xa0231fc8",
+      "role_inferred": "USB UART initialization",
+      "body_ranges_inclusive": [
+        "a0231fc8-a0232163"
+      ],
+      "body_sha256": "e6fc59fcae1ccdfc664c274dab79b6b6a3a282ae4f85ca2696904ad53480e84f"
+    },
+    {
+      "entry": "0xa023166c",
+      "role_inferred": "CDC task startup",
+      "body_ranges_inclusive": [
+        "a023166c-a0231a1b"
+      ],
+      "body_sha256": "1a980ec335b562e0a5770ea3dc1ffdba680fc8f24ff072b352a44148e04bfc55"
+    },
+    {
+      "entry": "0xa0231408",
+      "role_inferred": "CDC bulk receive",
+      "body_ranges_inclusive": [
+        "a0231408-a0231537"
+      ],
+      "body_sha256": "50fd1f7b9079458f2fed1bcfadcc51d2002c65644107694be8667d8d466016d6"
+    },
+    {
+      "entry": "0xa0231538",
+      "role_inferred": "CDC bulk send",
+      "body_ranges_inclusive": [
+        "a0231538-a023166b"
+      ],
+      "body_sha256": "a8d5a459ba0c0ce128a758a29cdcb61a0b963273225bbb7d8f78889d20bb7dfd"
+    },
+    {
+      "entry": "0xa01b8c20",
+      "role_inferred": "NetCar CLI/Exec tasks creation",
+      "body_ranges_inclusive": [
+        "a01b8c20-a01b8e07"
+      ],
+      "body_sha256": "50bfb67c19fdff875946e03cc7342531d96f4c5ad1e9464c0420c826e41dfed8"
+    },
+    {
+      "entry": "0xa01b7994",
+      "role_inferred": "NetCar byte-stream command accumulation",
+      "body_ranges_inclusive": [
+        "a01b7994-a01b7ab7"
+      ],
+      "body_sha256": "24af5095e5a878bbfd0dc89bd375a8d8d648eeccddf80e0f493e22aebce9dac0"
+    },
+    {
+      "entry": "0xa01b8710",
+      "role_inferred": "NetCar packet validation",
+      "body_ranges_inclusive": [
+        "a01b8710-a01b8a97"
+      ],
+      "body_sha256": "327740d80c924f7221f4a39c6d210409f4351e8d03db50a1df0678ec8d219475"
+    },
+    {
+      "entry": "0xa01b83fc",
+      "role_inferred": "NetCar supported service dispatch",
+      "body_ranges_inclusive": [
+        "a01b83fc-a01b8637"
+      ],
+      "body_sha256": "aaa1f98325158ada43250f6ef818bfdbe34d3c8bbdb72356dadf4377a989cf3e"
+    },
+    {
+      "entry": "0xa01b8134",
+      "role_inferred": "VehicleID/WifiInfo JSON parsing",
+      "body_ranges_inclusive": [
+        "a01b8134-a01b83fb"
+      ],
+      "body_sha256": "f2ad824c506cff372a5a570e3a70604c21fa5a44640ba75cbfb2ac5bd868a67a"
+    },
+    {
+      "entry": "0xa0233608",
+      "role_inferred": "UVC video resources; shell string is not a command parser",
+      "body_ranges_inclusive": [
+        "a0233608-a0233937"
+      ],
+      "body_sha256": "43f29408fe193af8668a279ec1782252dbd05c170f2b4cf2ac73ce3d28e18a8d"
+    },
+    {
+      "entry": "0xa0233340",
+      "role_inferred": "UVC host encoding callback",
+      "body_ranges_inclusive": [
+        "a0233340-a02333d3"
+      ],
+      "body_sha256": "c1e7a5562c2d7e30711f2b490314b777d52222bd7b9cc32a14c925032d4cee02"
+    },
+    {
+      "entry": "0xa0197424",
+      "role_inferred": "console marker enables UART0 shell callbacks",
+      "body_ranges_inclusive": [
+        "a0197424-a019753b"
+      ],
+      "body_sha256": "cc1994f4579caeb21c620e652ba886126345cf51c1a50fda66abd3f5d64bec94"
+    },
+    {
+      "entry": "0xa029de40",
+      "role_inferred": "install general shell IO callbacks",
+      "body_ranges_inclusive": [
+        "a029de40-a029de87"
+      ],
+      "body_sha256": "4c314b290b8ef2e443a60dda7e1b0b56f514ac0444c47a474f5ddd99d2c0a3d3"
+    },
+    {
+      "entry": "0xa029cb84",
+      "role_inferred": "command file redirection",
+      "body_ranges_inclusive": [
+        "a029cb84-a029ccb7"
+      ],
+      "body_sha256": "859cca90f4147a1b79bcb0559e35ad1fd78da6d5776740ba116312017e08139c"
+    },
+    {
+      "entry": "0xa029c974",
+      "role_inferred": "command table dispatch",
+      "body_ranges_inclusive": [
+        "a029c974-a029cb83"
+      ],
+      "body_sha256": "c12fea69278fa59fcd8f416ae45a95a653e80be99dd74145bbff25f4f30c92d7"
+    },
+    {
+      "entry": "0xa029d4d8",
+      "role_inferred": "Shell execution task and autoexec event",
+      "body_ranges_inclusive": [
+        "a029d4d8-a029d5ab"
+      ],
+      "body_sha256": "91eb7a89acec9549a0787d5766e6b94522bab8cc7bcdc902613bae757f2b391f"
+    },
+    {
+      "entry": "0xa0238170",
+      "role_inferred": "VideoAnal initialized flag and task creation",
+      "body_ranges_inclusive": [
+        "a0238170-a02382f7"
+      ],
+      "body_sha256": "990edae263e71ba74897f4e33502a9e6be64cb53d8cbd0846e27b46b088fbc8e"
+    },
+    {
+      "entry": "0xa023809c",
+      "role_inferred": "VideoAnal task receive-and-dispatch loop",
+      "body_ranges_inclusive": [
+        "a023809c-a0238153"
+      ],
+      "body_sha256": "a93d83a7e09334baaa84cd43711d53b53a69b50f800fd013d02466cd127e7795"
+    },
+    {
+      "entry": "0xa03c4500",
+      "role_inferred": "checked task information wrapper",
+      "body_ranges_inclusive": [
+        "a03c0190-a03c022b",
+        "a03c4500-a03c4543"
+      ],
+      "body_sha256": "20dd1ba247c80ca296fa8ace32103acc5c94973d09ab5714a0cf1146d78955d6"
+    }
+  ],
+  "instruction_checks": {
+    "0xa0231894": [
+      "bl",
+      "#0xa01b8c20"
+    ],
+    "0xa01926e4": [
+      "bl",
+      "#0xa0231fc8"
+    ],
+    "0xa029cbe8": [
+      "bl",
+      "#0xa032e0c8"
+    ],
+    "0xa029c730": [
+      "bl",
+      "#0xa032e0d8"
+    ],
+    "0xa0238244": [
+      "add",
+      "r0, r4, #4"
+    ],
+    "0xa023824c": [
+      "bl",
+      "#0xa03bc2bc"
+    ],
+    "0xa0238278": [
+      "strb",
+      "r7, [r4]"
+    ]
+  },
+  "strings": {
+    "0xa05a0104": "[I][USB_UART][%06d][%s]:switch to CDC_ACM mode.",
+    "0xa05a0134": "[I][USB_UART][%06d][%s]:Broken Shell starts.",
+    "0xa05a01e4": "[I][USB_UART][%06d][%s]:switch back to UART mode.",
+    "0xa05a0e98": "uvc shell initialized.",
+    "0xa05618a4": "c:\\console_enable.script",
+    "0xa05a115c": "VA frame hdlr",
+    "0xa0643444": ">",
+    "0xa05fc918": " ",
+    "0xa0576b5c": "w"
+  },
+  "task_state_names": {
+    "0": "READY",
+    "1": "COMPLETED",
+    "2": "TERMINATED",
+    "3": "SUSPENDED",
+    "4": "SLEEP",
+    "5": "QUEUE_SUSP",
+    "6": "SEMAPHORE_SUSP",
+    "7": "EVENT_FLAG",
+    "8": "BLOCK_MEMORY",
+    "9": "BYTE_MEMORY",
+    "10": "IO_DRIVER",
+    "11": "FILE",
+    "12": "TCP_IP"
+  },
+  "file_print_excerpt_end_exclusive": [
+    "0xa029c6dc",
+    "0xa029c74c"
+  ],
+  "findings": {
+    "usb_uart": "USB mode 2 starts CDC transport and NetCar packet tasks; no general Shell parser call identified on this path.",
+    "uvc": "USB mode 3 creates video buffers/queue/send task and encoding callbacks.",
+    "console_marker": "Enables existing UART0 Shell callbacks; does not establish USB or Wi-Fi Shell.",
+    "redirection": "Split on >, parse pathname, fopen in w mode, replace caller print callback with file writer, fclose and restore callback.",
+    "videoanal": "Initialized byte A14307B8; task TCB A14307BC, literal name VA frame hdlr, priority 136, stack A1430A14 length 0x8000."
+  },
+  "limitations": [
+    "Filesystem Ghidra/Capstone evidence; no REA session or Evidence IDs.",
+    "Static reachability findings are scoped to recovered paths; absence of a general bridge is not an exhaustive proof.",
+    "No USB mode switches, raw endpoint writes, NAND changes or memory mappings performed by this audit."
+  ]
+}

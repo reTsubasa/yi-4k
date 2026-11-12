@@ -1,0 +1,7 @@
+date=2026-11-12
+status=pass
+cases=48
+sanitizer=undefined
+compiler=Apple clang version 17.0.0 (clang-1700.0.13.3)
+command=clang -std=c11 -O1 -g -Wall -Wextra -Werror -fno-builtin -fsanitize=undefined -fno-omit-frame-pointer -Isdk sdk/yi4k_packet_spool.c sdk/yi4k_spool_seal.c sdk/offline/yi4k_spool_seal_test.c <harness> -o <binary> && UBSAN_OPTIONS=halt_on_error=1 <binary>
+sanitizer host 48 cases: ok

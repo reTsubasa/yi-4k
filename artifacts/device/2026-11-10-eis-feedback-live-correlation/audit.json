@@ -1,0 +1,496 @@
+{
+  "evidence_kind": "retained real-device text logs correlated with pinned static CPU semantics",
+  "device_contacted": false,
+  "synthetic_feedback_used": false,
+  "rows": 83,
+  "phases": [
+    {
+      "mode_index": 0,
+      "geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "event_counts": {
+        "exposure": 17,
+        "frame_update": 17,
+        "gyro": 11
+      },
+      "feedback_tick_range": [
+        25000,
+        25534
+      ],
+      "feedback_tag_counts": {
+        "0x105": 15,
+        "0x106": 2
+      },
+      "feedback_tick_delta_histogram": {
+        "33": 10,
+        "34": 6
+      },
+      "previous_counts": {
+        "0xffffffff": 17
+      },
+      "feedback_tag_diff_counts": {
+        "0x105/23": 13,
+        "0x105/24": 2,
+        "0x106/24": 2
+      },
+      "nearby_exposure_tick_delta_histogram": {
+        "5": 1,
+        "6": 12,
+        "7": 4
+      },
+      "nearby_gyro_tick_delta_histogram": {
+        "": 1,
+        "0": 4,
+        "16": 4,
+        "17": 1,
+        "33": 6,
+        "49": 1
+      }
+    },
+    {
+      "mode_index": 1,
+      "geometry": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532",
+      "event_counts": {
+        "exposure": 67,
+        "frame_update": 66,
+        "gyro": 48
+      },
+      "feedback_tick_range": [
+        26038,
+        28206
+      ],
+      "feedback_tag_counts": {
+        "0x105": 25,
+        "0x106": 41
+      },
+      "feedback_tick_delta_histogram": {
+        "33": 42,
+        "34": 23
+      },
+      "previous_counts": {
+        "0xffffffff": 66
+      },
+      "feedback_tag_diff_counts": {
+        "0x105/16": 13,
+        "0x105/17": 12,
+        "0x106/17": 41
+      },
+      "nearby_exposure_tick_delta_histogram": {
+        "6": 13,
+        "7": 53
+      },
+      "nearby_gyro_tick_delta_histogram": {
+        "20": 6,
+        "21": 10,
+        "22": 6,
+        "3": 2,
+        "37": 10,
+        "38": 10,
+        "39": 2,
+        "4": 10,
+        "5": 10
+      }
+    },
+    {
+      "mode_index": 2,
+      "geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "event_counts": {},
+      "feedback_tick_range": [],
+      "feedback_tag_counts": {},
+      "feedback_tick_delta_histogram": {},
+      "previous_counts": {},
+      "feedback_tag_diff_counts": {},
+      "nearby_exposure_tick_delta_histogram": {},
+      "nearby_gyro_tick_delta_histogram": {}
+    }
+  ],
+  "checks": [
+    {
+      "address": "0xa01f4a64",
+      "bytes": "a0c902eb",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa01f4a70",
+      "bytes": "8c0094e5",
+      "instruction": "ldr r0, [r4, #0x8c]"
+    },
+    {
+      "address": "0xa01f4a78",
+      "bytes": "00b06be0",
+      "instruction": "rsb fp, fp, r0"
+    },
+    {
+      "address": "0xa01f4a7c",
+      "bytes": "8cb084e5",
+      "instruction": "str fp, [r4, #0x8c]"
+    },
+    {
+      "address": "0xa01f4b58",
+      "bytes": "63c902eb",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa01f4b64",
+      "bytes": "8c0097e5",
+      "instruction": "ldr r0, [r7, #0x8c]"
+    },
+    {
+      "address": "0xa01f4b6c",
+      "bytes": "008068e0",
+      "instruction": "rsb r8, r8, r0"
+    },
+    {
+      "address": "0xa01f4b74",
+      "bytes": "8c8087e5",
+      "instruction": "str r8, [r7, #0x8c]"
+    },
+    {
+      "address": "0xa0387968",
+      "bytes": "be31d3e1",
+      "instruction": "ldrh r3, [r3, #0x1e]"
+    },
+    {
+      "address": "0xa038796c",
+      "bytes": "013003e2",
+      "instruction": "and r3, r3, #1"
+    },
+    {
+      "address": "0xa038799c",
+      "bytes": "780000e3",
+      "instruction": "movw r0, #0x78"
+    },
+    {
+      "address": "0xa03879a0",
+      "bytes": "60004ae3",
+      "instruction": "movt r0, #0xa060"
+    },
+    {
+      "address": "0xa03879a4",
+      "bytes": "d07dfceb",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa0387ab4",
+      "bytes": "023003e2",
+      "instruction": "and r3, r3, #2"
+    },
+    {
+      "address": "0xa0387abc",
+      "bytes": "2e00000a",
+      "instruction": "beq #0xa0387b7c"
+    },
+    {
+      "address": "0xa0387ad4",
+      "bytes": "0230d3e7",
+      "instruction": "ldrb r3, [r3, r2]"
+    },
+    {
+      "address": "0xa0387b24",
+      "bytes": "930203e0",
+      "instruction": "mul r3, r3, r2"
+    },
+    {
+      "address": "0xa0387b28",
+      "bytes": "031081e0",
+      "instruction": "add r1, r1, r3"
+    },
+    {
+      "address": "0xa0387b78",
+      "bytes": "5b7dfceb",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa0388370",
+      "bytes": "023003e2",
+      "instruction": "and r3, r3, #2"
+    },
+    {
+      "address": "0xa0388378",
+      "bytes": "0a00000a",
+      "instruction": "beq #0xa03883a8"
+    },
+    {
+      "address": "0xa03883b0",
+      "bytes": "202093e5",
+      "instruction": "ldr r2, [r3, #0x20]"
+    },
+    {
+      "address": "0xa03883b4",
+      "bytes": "94330be3",
+      "instruction": "movw r3, #0xb394"
+    },
+    {
+      "address": "0xa03883b8",
+      "bytes": "70314ae3",
+      "instruction": "movt r3, #0xa170"
+    },
+    {
+      "address": "0xa03883bc",
+      "bytes": "002083e5",
+      "instruction": "str r2, [r3]"
+    }
+  ],
+  "instruction_check_count": 25,
+  "active_debug_fields": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 1,
+    "15": 1,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 1,
+    "21": 0,
+    "22": 50,
+    "23": 0,
+    "24": 0,
+    "25": 0,
+    "26": 0,
+    "27": 0,
+    "28": 0,
+    "29": 0,
+    "30": 0,
+    "31": 0,
+    "32": 0,
+    "33": 0,
+    "34": 0,
+    "35": 1,
+    "36": 0
+  },
+  "diagnostic_prefix_counts": {
+    "Spf[ArmSysTim]": 0,
+    "ucodeSampleTime=": 0,
+    "WarpReady=": 0,
+    "update_eis_status_do =": 0,
+    "Warp cmd in shared memory:": 0,
+    "Do EisPerFrame:": 0,
+    "current UpdateInfo.ArmSysTime:": 0,
+    "Warp content not ready last frame": 0,
+    "Eis-Warp calculation not in-time": 0
+  },
+  "mode_timing_setting_lines": [
+    {
+      "source_line": 860,
+      "text": "[00000966][CA9_0] ADV time: 6 3"
+    },
+    {
+      "source_line": 861,
+      "text": "[00000966][CA9_0] EisUpdateEndTime1=17"
+    },
+    {
+      "source_line": 862,
+      "text": "[00000966][CA9_0] EisUpdateEndTime2=23"
+    },
+    {
+      "source_line": 863,
+      "text": "[00000966][CA9_0] EisWarpUpdateEndTime1=20"
+    },
+    {
+      "source_line": 2013,
+      "text": "[00025714][CA9_1] ADV time: 6 3"
+    },
+    {
+      "source_line": 2014,
+      "text": "[00025714][CA9_1] EisUpdateEndTime1=10"
+    },
+    {
+      "source_line": 2015,
+      "text": "[00025714][CA9_1] EisUpdateEndTime2=16"
+    },
+    {
+      "source_line": 2016,
+      "text": "[00025714][CA9_1] EisWarpUpdateEndTime1=13"
+    },
+    {
+      "source_line": 2872,
+      "text": "[00028413][CA9_1] ADV time: 6 3"
+    },
+    {
+      "source_line": 2873,
+      "text": "[00028413][CA9_1] EisUpdateEndTime1=17"
+    },
+    {
+      "source_line": 2874,
+      "text": "[00028413][CA9_1] EisUpdateEndTime2=23"
+    },
+    {
+      "source_line": 2875,
+      "text": "[00028413][CA9_1] EisWarpUpdateEndTime1=20"
+    }
+  ],
+  "video": {
+    "sha256": "1dc7d72892e54dcacaf4c6b032e3ec017237a44dad66d24edb4ba305f98970ee",
+    "retained_decoder_result": {
+      "completed": true,
+      "decoded_video_frames": 48,
+      "duration_seconds": 1.6016,
+      "error": "",
+      "file": "YDXJ0139.MP4",
+      "first_video_pts_seconds": 0,
+      "height": 1080,
+      "last_video_pts_seconds": 1.5682333333333334,
+      "nominal_fps": 29.970029830932617,
+      "reader_status": 2,
+      "validator": "macOS AVFoundation / AVAssetReader, decoded pixel buffers",
+      "width": 1920
+    },
+    "new_decode_performed": false,
+    "filename_log_mentions": [
+      {
+        "source_line": 2232,
+        "log_tick": 26031,
+        "file": "YDXJ0139.MP4"
+      },
+      {
+        "source_line": 2235,
+        "log_tick": 26033,
+        "file": "YDXJ0139.MP4"
+      },
+      {
+        "source_line": 2596,
+        "log_tick": 28211,
+        "file": "YDXJ0139.MP4"
+      }
+    ],
+    "mux_trim_summaries": [
+      {
+        "source_line": 2507,
+        "log_tick": 28114,
+        "stream_label": "pri",
+        "fps_numerator": 240000,
+        "fps_denominator": 8008,
+        "frame_count_before_trim": 61,
+        "trim_frame_count": 13,
+        "minimum_frame_count": 16,
+        "arithmetic_count_after_trim": 48
+      },
+      {
+        "source_line": 2509,
+        "log_tick": 28114,
+        "stream_label": "sec",
+        "fps_numerator": 240000,
+        "fps_denominator": 8008,
+        "frame_count_before_trim": 61,
+        "trim_frame_count": 13,
+        "minimum_frame_count": 16,
+        "arithmetic_count_after_trim": 48
+      }
+    ],
+    "end_of_stream_markers": [
+      {
+        "source_line": 2499,
+        "log_tick": 28081,
+        "stream_index": 1,
+        "pts_hex": "ffffffffffffffff",
+        "sentinel_not_timestamp": true
+      },
+      {
+        "source_line": 2500,
+        "log_tick": 28098,
+        "stream_index": 0,
+        "pts_hex": "ffffffffffffffff",
+        "sentinel_not_timestamp": true
+      }
+    ],
+    "feedback_after_stream_0_eos": 4,
+    "feedback_within_filename_open_close_tick_span": 66
+  },
+  "excluded_historical_logs": [
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/native-log-02/RtosOlder.log",
+      "sha256": "6ddb3a9d3d3546f400fd2fb1930a71c5fc104d1d04ddca38fd1bb9982ad10452"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/native-log-02/RtosOldest.log",
+      "sha256": "19981f0cc00fa3e1c42efc19e98313eeb65f620465d63c9868257a074564101f"
+    }
+  ],
+  "sources": [
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/native-log-02/RtosActive.log",
+      "sha256": "5529f3828fa987a5e3fefc0955b55a23a92fa3c1d2a7ed333fc386744136083c"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/collect-02/active.dat",
+      "sha256": "2e07d75dab5f58b5fe8af273179b4783e84c9f21cd5fedd5b751aaa414359c4e"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/collect-02/before.dat",
+      "sha256": "aa2bcf7aa5faf010db040a26151face499dac7247035f09fd40063bb854c1968"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/collect-02/after.dat",
+      "sha256": "aa2bcf7aa5faf010db040a26151face499dac7247035f09fd40063bb854c1968"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/video/YDXJ0139.MP4",
+      "sha256": "1dc7d72892e54dcacaf4c6b032e3ec017237a44dad66d24edb4ba305f98970ee"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-eis-recording/video/video-validation.json",
+      "sha256": "aad58247d5ae850387bb820ef2785d8ce30f976fc59d8ef251581b38b183d710"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0385780.c",
+      "sha256": "46871f9f978e0da765bf26a05047456a44cdc06b038a8e134e2154787d3a6fc1"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0385780.asm",
+      "sha256": "b16a2dce0bd34a7b25eeb09322d967311db586d0b64bde460e7cb95766e8225b"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a037dc08.c",
+      "sha256": "47ae4fb7cdd22e97e57627b9430b334a84265c7ac5c762bebae6e30c357b196d"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a037c5a4.c",
+      "sha256": "ff0ed269261296a04164d8ce253892e19f27fd0129908d7c86200a99d5a00398"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0392cb0.c",
+      "sha256": "fab9cc0419e333e41efadcc698a61c63d4f7a6dcdde1d7228bf649d0f21555c0"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f4994.c",
+      "sha256": "7ea64c3ba81c01814d254d8528749f36a53c4232658d89b41c98cad269b60c2b"
+    },
+    {
+      "path": "scripts/analyze_native_eis_trace.py",
+      "sha256": "c1332d7d550f69b74c2077377a72ca50d1faf93f758b5990078e3e73a4a3d00e"
+    },
+    {
+      "path": "scripts/analyze_eis_recording_window.py",
+      "sha256": "40b142f232b08cf270cfab67cf4259947fa97c048253337facbf7f090ea928a1"
+    }
+  ],
+  "boundaries": {
+    "real_valid_feedback_prints_observed": true,
+    "all_observed_warp_ready_bits_set": true,
+    "spf_values_observed": false,
+    "gyro_history_values_observed": false,
+    "specific_publication_matched": false,
+    "dsp_writer_identified": false,
+    "video_frame_mapping": false,
+    "slot_release_proven": false
+  },
+  "limitations": [
+    "Static history addresses are calculated from code, not captured memory contents.",
+    "Nearby exposure/gyro records are file-order vicinity only, not same-frame or same-sample associations.",
+    "No raw logs, prior JSON outputs, debug settings or video artifacts were modified.",
+    "Existing AVFoundation decoder result is hash-associated evidence; no new video decode was run.",
+    "No PTS origin is linked to the log clock and no missing/lost-frame inference is made."
+  ]
+}

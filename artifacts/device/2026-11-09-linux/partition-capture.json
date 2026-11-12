@@ -1,0 +1,24 @@
+{
+  "date_utc": "2026-11-09T00:49:06.444777+00:00",
+  "host": "192.168.42.1",
+  "scope": "Logical MTD read to host; no NAND OOB; no target writes",
+  "images": [
+    {
+      "file": "sys_sw_partition.bin",
+      "source": "/dev/mtdblock1",
+      "bytes": 33554432,
+      "sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+      "remote_hash_matches": true,
+      "device_hash_command": "dd if=/dev/mtdblock1 bs=4096 count=8192 2>/dev/null | sha256sum"
+    },
+    {
+      "file": "linux_rfs_window.squashfs",
+      "source": "/dev/mtdblock5",
+      "bytes": 28717056,
+      "sha256": "427c50b40a3d60fb2cdbcfb26b90c087056372761c0b4e4d11a4cdb49276780d",
+      "remote_hash_matches": true,
+      "device_hash_command": "dd if=/dev/mtdblock5 bs=4096 count=7011 2>/dev/null | sha256sum",
+      "squashfs_bytes_used": 28714448
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "evidence_type": "Host Gradle tests and actual Android 34 AOSP arm64 emulator execution; no physical phone acceptance",
+  "packaged_at_utc": "2026-11-10T10:49:34.037915+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.1-debug.apk",
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "sha256": "7997940dd5828ba348d16bfe91ae1e5d351bccea2a4fc49cca0ac0a0e0a15626",
+  "size_bytes": 11682584,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.1",
+  "version_code": 4,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug assembleDebugAndroidTest",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "android_emulator_execution": true,
+    "physical_phone_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 54
+  },
+  "changes_from_0_3_0": [
+    "Dark system navigation buttons on white main/editor navigation bars",
+    "Fix instrumentation APK packaging by using compile-only Android system test libraries",
+    "Add actual grayscale pixel and retained-AAC sample/timestamp checks"
+  ],
+  "android_runtime": {
+    "system": "AOSP API 34 arm64-v8a",
+    "tests": 4,
+    "failures": 0,
+    "actual_media3_export": true,
+    "synthetic_source": "3s H264 320x180 at 15fps + AAC48k; not camera footage",
+    "reports": "artifacts/android/0.3.1-device-reports/aosp-api34-run01",
+    "emulator_stopped": true,
+    "mediastore": {
+      "tests": 2,
+      "passed": true,
+      "reports": "artifacts/android/0.3.1-device-reports/mediastore-run01",
+      "scope": "actual publish/cancel helper on Android MediaProvider; no physical phone"
+    },
+    "editor_workflow": {
+      "tests": 1,
+      "passed": true,
+      "reports": "artifacts/android/0.3.1-device-reports/editor-workflow-run02",
+      "scope": "actual system picker, editor controls, codec and MediaStore; synthetic 3s video; no physical phone"
+    }
+  },
+  "camera_preview": {
+    "evidence": "artifacts/device/2026-11-10-rtsp-first-frame/session.json",
+    "scope": "Actual camera decoded by host FFmpeg; not Android ExoPlayer",
+    "video": "H264 848x480 30000/1001fps",
+    "audio_track_observed": false,
+    "status_restored": true,
+    "android_component": {
+      "passed": true,
+      "first_frame": "actual onRenderedFirstFrame",
+      "reports": "artifacts/android/0.3.1-device-reports/camera-preview-run01",
+      "scope": "actual CameraLivePreview/Network socket on AVD via host route; CELLULAR network; not phone Wi-Fi selection or full MainActivity workflow",
+      "status_restored": true,
+      "settings_equal": true
+    }
+  },
+  "limits": [
+    "Physical phone Wi-Fi routing, full MainActivity workflow and phone RTSP compatibility await acceptance",
+    "Synthetic emulator export does not prove 4K, large files or real A/V sync",
+    "Actual system picker/editor/MediaStore workflow passed on AVD with synthetic fixture; physical phone, large files and real camera material await acceptance",
+    "No BGM/text/transitions/speed/multiclip editing",
+    "Camera EIS replacement and standalone 60s prerecord remain unimplemented"
+  ],
+  "reports": "artifacts/android/0.3.1-reports"
+}

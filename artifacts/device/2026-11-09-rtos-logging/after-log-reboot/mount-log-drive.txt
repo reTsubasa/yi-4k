@@ -1,0 +1,20 @@
+python -B -u <<'YI_LOG_MOUNT_PY'
+> import os, subprocess, tempfile, json
+> path = tempfile.mkdtemp(prefix='yi4k-rtos-logs-', dir='/tmp')
+> print('YI_LOG_MOUNT_PATH ' + path)
+> result = subprocess.call(['mount','-t','ambafs','-o','ro','b:',path])
+> print('YI_LOG_MOUNT_RC ' + str(result))
+> if result == 0:
+>     print('YI_LOG_FILES ' + json.dumps([{'name':n,'bytes':os.stat(path+'/'+n).
+st_size} for n in os.listdir(path)]))
+>     print('YI_LOG_MOUNT_CONFIRMED')
+> else:
+>     os.rmdir(path)
+> 
+> YI_LOG_MOUNT_PY
+YI_LOG_MOUNT_PATH /tmp/yi4k-rtos-logs-2SpohS
+YI_LOG_MOUNT_RC 0
+YI_LOG_FILES [{"bytes": 515, "name": "time_init_error_info_0000.log"}, {"bytes": 110510, "name": "RtosActive.log"}]
+YI_LOG_MOUNT_CONFIRMED
+~ # echo __YI_CAPTURE_a60bf705a1014dd2aec80d5a22306ab3__
+__YI_CAPTURE_a60bf705a1014dd2aec80d5a22306ab3__

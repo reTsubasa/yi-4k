@@ -1,0 +1,17 @@
+{
+  "scope": "host only; no camera contact",
+  "test_command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_buffer.py -v",
+  "tests": 11,
+  "passed": true,
+  "duration_seconds": 15.239,
+  "code_sha256": {
+    "prerecord_replay.py": "110be45e27d3ea5cee275a83292af81b632e8063765bab0bd93969eef26cdc11",
+    "validate_prerecord_packet_fidelity.py": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460",
+    "audit_prerecord_publication_gate.py": "50abb9c5769a3fdcc911412ffc336f5f5c81a15b1c96aba85e7e8750289d48eb",
+    "tests/test_prerecord_buffer.py": "3cd8c70dfc2ddbefa1f902534f3c5a1c87031f52800870d2dddf7ad7164b6dfc"
+  },
+  "real_run": "real-camera-65s-publication-gate-run01",
+  "synthetic_run": "synthetic-publication-gate-run01",
+  "negative_control": "publication-gate-audit-run01/audit.json",
+  "additional_known_limitation": "zero-origin no-B-frame H264/AAC may lose priming packet in concat/remux; gate rejects; see publication-gate-negative-investigation-run01"
+}

@@ -1,0 +1,145 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint, APK signature verification and actual Android Wi-Fi loss/reconnect with real camera; no physical phone",
+  "packaged_at_utc": "2026-11-10T13:01:04.111849+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.4-debug.apk",
+  "sha256": "aad165530f6ef17dc99059a693b4719cf61f9a5a2d280505288fac8226d579d2",
+  "size_bytes": 11766437,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.4",
+  "version_code": 7,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.4-build03.log",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "android_emulator_execution": true,
+    "physical_phone_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 108,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 108,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "changes_from_0_3_3": [
+    "Clear and redraw settings/media immediately on network loss, explicit disconnect and failed session; clear old selections/folder/battery",
+    "Reject queued settings/media snapshots from an older connection generation or a closed session",
+    "Bounded retry of local unconnected Android Network socket creation on specific netd EPERM; never retry TCP/API or uncertain mutation",
+    "Closing a session cancels pending socket recovery and closes sockets returned after cancellation"
+  ],
+  "camera_disconnect_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-disconnect-run03/acceptance.json",
+    "details": "artifacts/android/0.3.4-device-reports/camera-disconnect-run03/workflow-screens/camera-disconnect/camera-disconnect.json",
+    "scope": "Real MainActivity, real camera API and two emulator Wi-Fi Network losses; clear settings/media/selection/directory and reconnect using fresh Networks 102 and 103. No physical phone or camera writes.",
+    "initial_network": "101",
+    "restored_network": "102",
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true,
+    "second_restored_network": "103"
+  },
+  "failed_previous_version_evidence": "artifacts/android/0.3.3-device-reports/camera-disconnect-run01/acceptance.json",
+  "limits": [
+    "Not physical phone hotspot acceptance",
+    "Prior preview/editor runtime is 0.3.2, not rerun on 0.3.4",
+    "4K/long clips, perceptual audio-video sync unverified",
+    "Same-parent timelapse/slowmotion preferences may read back before GUI apply; actual recording in these modes unverified",
+    "EIS replacement, native execution/recovery and camera standalone 60s prerecord remain unimplemented"
+  ],
+  "camera_main_workflow": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-main-workflow-run02/acceptance.json",
+    "scope": "Actual MainActivity guide/Wi-Fi/API, Chinese settings, real camera media selection/batch original export, independent camera SHA equality, MediaStore/decode and disconnect; emulator via host, no physical phone",
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  },
+  "reports": "artifacts/android/0.3.4-reports",
+  "signature_report": "artifacts/android/0.3.4-signature03.txt",
+  "candidate_status": "passed stated host and three separate Android camera workflow scopes; available for manual phone testing",
+  "failed_candidates": [
+    {
+      "manifest": "artifacts/android/0.3.4-candidates/build02/2026-11-10-build-0.3.4.json",
+      "evidence": "artifacts/android/0.3.4-device-reports/camera-disconnect-run02/acceptance.json",
+      "reason": "New Android Wi-Fi Network listed before local socket bind permission became ready: EPERM"
+    }
+  ],
+  "camera_capture_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-capture-workflow-run01/acceptance.json",
+    "details": "artifacts/android/0.3.4-device-reports/camera-capture-workflow-run01/workflow-screens/camera-capture/camera-capture.json",
+    "scope": "real MainActivity guide/Wi-Fi/API, advertised scalar quality write/readback, UI three-second record/stop and photograph, UI restore/disconnect, fresh-session list/download/hash/Android decode",
+    "new_media": [
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0152.MP4",
+        "name": "YDXJ0152.MP4",
+        "bytes": 20095024,
+        "sha256": "698e7f54a89a308f3a30a0c070edaca2bccac56b16c963a6c20331bf861d394a",
+        "type": "video",
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "duration_ms": 2970,
+        "has_audio": "yes"
+      },
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0153.JPG",
+        "name": "YDXJ0153.JPG",
+        "bytes": 4302765,
+        "sha256": "3198bbaf1483a34735bb91fc842599e9d82c0290aed8a0b6c4a236eb0da308bb",
+        "type": "photo",
+        "decoded_width": 1000,
+        "decoded_height": 750,
+        "source_width": 1000,
+        "source_height": 750
+      }
+    ],
+    "quality_changed_readback": "Fine",
+    "quality_after_readback": "S.Fine",
+    "new_camera_side_hashes_equal_android": true,
+    "existing_entries_preserved": true,
+    "status_equal": true,
+    "settings_equal": true,
+    "existing_anchor_files_equal": true,
+    "boot_id_equal": true,
+    "emulator_stopped": true,
+    "physical_phone": false,
+    "new_camera_files_retained": true,
+    "android_new_rows_cleaned": true
+  },
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "verification_updated_at_utc": "2026-11-10T13:09:53.385788+00:00",
+  "camera_export_disconnect_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-export-disconnect-run01/acceptance.json",
+    "details": "artifacts/android/0.3.4-device-reports/camera-export-disconnect-run01/workflow-screens/camera-export-disconnect/camera-export-disconnect.json",
+    "scope": "Real MainActivity batch photo then video, actual HTTP progress before emulator Wi-Fi loss, no incomplete video row, completed photo hash retained, fresh-Network explicit retry and original video hash/decode. No socket injection, physical phone or camera writes.",
+    "observed_video_kib_before_network_loss": 8,
+    "completed_photo_retained_hash_equal": true,
+    "no_partial_pending_or_visible_video": true,
+    "explicit_retry_video_hash_equal_and_decodes": true,
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true,
+    "test_build_log": "artifacts/android/0.3.4-export-disconnect-test-build01.log",
+    "test_apk_sha256": "b0615cf935a9b238ce45d2bbe8baaa2c856a83c205c125dbd3b0cfdb575fc81e"
+  }
+}

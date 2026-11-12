@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T00:00:00Z",
+  "status": "pass_android_0_5_0_glass_saved_connection_realtime_shutter",
+  "version_name": "0.5.0",
+  "version_code": 33,
+  "changes": [
+    "landscape fullscreen with display-cutout safe insets",
+    "translucent glass overlays and presentation-only parameter labels",
+    "saved camera SSID/BSSID/security metadata with one-shot WifiNetworkSpecifier reconnect and scan fallback",
+    "silent local shutter feedback",
+    "PixelCopy realtime viewfinder frame flight to album with screenshot fallback and background real-photo replacement"
+  ],
+  "command": "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
+  "unit_tests": 212,
+  "unit_test_failures_or_errors": 0,
+  "lint_errors": 0,
+  "lint_warnings": 74,
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.5.0-debug.apk",
+    "sha256": "e40329fbf520ba4d7eb2d6ff44ff2d59c64e074b8bf3bf485bd3921fc5d4b7ea",
+    "bytes": 11666797
+  },
+  "device_access": false,
+  "physical_phone_acceptance": false
+}

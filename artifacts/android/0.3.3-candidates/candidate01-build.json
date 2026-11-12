@@ -1,0 +1,58 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint and V2 APK verification; current runtime capture acceptance pending",
+  "packaged_at_utc": "2026-11-10T12:18:57.169816+00:00",
+  "apk": "artifacts/android/0.3.3-candidates/candidate01-debug.apk",
+  "sha256": "9014eae43df37cfbb9523de5bbdf0086de0e82a402c108c1e923df3a58e149c3",
+  "size_bytes": 11762057,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.3",
+  "version_code": 6,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.3-build02.log",
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug assembleDebugAndroidTest",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "physical_phone_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 99,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 99,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "changes_from_0_3_2": [
+    "Apply camera capture_mode/rec_mode to switch real stock system mode; do not trust the no-op system_mode setter",
+    "Reapply unchanged child mode when its system category is inactive; verify parent, child and readiness with read-only polling, never retry an uncertain write",
+    "Route power telemetry to battery status and preserve operation messages; initial refresh queries actual power"
+  ],
+  "protocol_evidence": "docs/android-camera-mode-apply.md",
+  "camera_capture_runtime": {
+    "status": "failed",
+    "reports": "artifacts/android/0.3.3-device-reports/camera-capture-workflow-run01",
+    "reason": "Stop ack was mistaken for ready state; following mode precheck rejected, settings restored"
+  },
+  "limits": [
+    "No physical phone acceptance",
+    "Same-parent timelapse/slowmotion readback can reflect preferences before GUI native transition; actual submode recording remains unverified",
+    "Prior preview/media/editor runtime acceptance applies to APK 0.3.2; not rerun yet on 0.3.3",
+    "EIS replacement and camera standalone 60s prerecord remain unimplemented"
+  ]
+}

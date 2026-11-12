@@ -1,0 +1,177 @@
+{
+  "identifier": "e30da2b76aa5",
+  "firmware_fingerprint_verified": true,
+  "persistent_done_verified": true,
+  "linux_boot_id_at_claim": "aebf2642-5878-4a05-b139-bca05590f528",
+  "linux_uptime_at_claim": "23.90 14.48",
+  "linux_uptime_at_done": "27.26 17.46",
+  "pools": [
+    {
+      "source": "pool1",
+      "address": "0xa0fd7114",
+      "magic": "0x42595445",
+      "available_bytes": 234597172,
+      "fragment_count": 522,
+      "region_start": "0xc1100000",
+      "region_size_bytes": 451936256,
+      "minimum_image_and_reader_request_bytes": 2310336,
+      "headroom_over_minimum_bytes": 232286836,
+      "guarantees_contiguous_allocation": false
+    },
+    {
+      "source": "pool2",
+      "address": "0xa0fd7114",
+      "magic": "0x42595445",
+      "available_bytes": 234597172,
+      "fragment_count": 523,
+      "region_start": "0xc1100000",
+      "region_size_bytes": 451936256,
+      "minimum_image_and_reader_request_bytes": 2310336,
+      "headroom_over_minimum_bytes": 232286836,
+      "guarantees_contiguous_allocation": false
+    }
+  ],
+  "videoanal_snapshots": [
+    {
+      "source": "va1",
+      "initialized_byte": 1,
+      "task_control_block": "0xa14307bc",
+      "magic": "0x54485244",
+      "scheduling_count": 1,
+      "state_raw": 5,
+      "priority_raw": 136,
+      "preemption_threshold_raw": 136,
+      "wait_object_raw": "0xa14308c8",
+      "stack_saved_sp_raw": "0xa14388a8",
+      "stack_start_raw": "0xa1430a14",
+      "stack_end_raw": "0xa1438a0f"
+    },
+    {
+      "source": "va2",
+      "initialized_byte": 1,
+      "task_control_block": "0xa14307bc",
+      "magic": "0x54485244",
+      "scheduling_count": 1,
+      "state_raw": 5,
+      "priority_raw": 136,
+      "preemption_threshold_raw": 136,
+      "wait_object_raw": "0xa14308c8",
+      "stack_saved_sp_raw": "0xa14388a8",
+      "stack_start_raw": "0xa1430a14",
+      "stack_end_raw": "0xa1438a0f"
+    }
+  ],
+  "videoanal_ps_rows": {
+    "tsk1": [
+      "42  136      136      1      QUEUE_SUSP       42    32764      188      360  0xa1430a14  0xa1438a0f  0xa14388a8       0x3  VA frame hdlr"
+    ],
+    "tsk2": [
+      "42  136      136      1      QUEUE_SUSP       42    32764      188      360  0xa1430a14  0xa1438a0f  0xa14388a8       0x3  VA frame hdlr"
+    ]
+  },
+  "byte_pool_ps_rows": [
+    {
+      "id": 0,
+      "available_bytes": 234597172,
+      "fragment_count": 522,
+      "name": ""
+    },
+    {
+      "id": 1,
+      "available_bytes": 16643568,
+      "fragment_count": 9,
+      "name": ""
+    },
+    {
+      "id": 2,
+      "available_bytes": 15592,
+      "fragment_count": 46,
+      "name": ""
+    },
+    {
+      "id": 3,
+      "available_bytes": 4547464,
+      "fragment_count": 4,
+      "name": ""
+    },
+    {
+      "id": 4,
+      "available_bytes": 26760,
+      "fragment_count": 3,
+      "name": ""
+    },
+    {
+      "id": 5,
+      "available_bytes": 2097144,
+      "fragment_count": 2,
+      "name": ""
+    },
+    {
+      "id": 6,
+      "available_bytes": 278520,
+      "fragment_count": 2,
+      "name": ""
+    },
+    {
+      "id": 7,
+      "available_bytes": 1039128,
+      "fragment_count": 2,
+      "name": ""
+    }
+  ],
+  "selected_task_progress": {
+    "VA frame hdlr": {
+      "first": {
+        "id": 42,
+        "priority": 136,
+        "sched": 1,
+        "state": "QUEUE_SUSP"
+      },
+      "second": {
+        "id": 42,
+        "priority": 136,
+        "sched": 1,
+        "state": "QUEUE_SUSP"
+      },
+      "scheduling_delta_mod32": 0
+    },
+    "AmbaImageMainEisTask": {
+      "first": {
+        "id": 32,
+        "priority": 7,
+        "sched": 46933,
+        "state": "EVENT_FLAG"
+      },
+      "second": {
+        "id": 32,
+        "priority": 7,
+        "sched": 53240,
+        "state": "EVENT_FLAG"
+      },
+      "scheduling_delta_mod32": 6307
+    },
+    "AmbaImageMainEisAlgo2Task": {
+      "first": {
+        "id": 33,
+        "priority": 12,
+        "sched": 1116,
+        "state": "EVENT_FLAG"
+      },
+      "second": {
+        "id": 33,
+        "priority": 12,
+        "sched": 1248,
+        "state": "EVENT_FLAG"
+      },
+      "scheduling_delta_mod32": 132
+    }
+  },
+  "scheduling_count_delta_mod32": 0,
+  "limitations": [
+    "Snapshots are sequential and not atomic across tasks.",
+    "Available bytes do not establish maximum contiguous allocation.",
+    "Task existence/state/scheduling are not proof that frame callbacks deliver images.",
+    "ps output is emitted through a file callback; t app mem uses the separate global logger.",
+    "No SharePreview initialization or EIS algorithm change was performed."
+  ]
+}

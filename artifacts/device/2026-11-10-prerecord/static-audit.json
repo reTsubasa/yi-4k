@@ -1,0 +1,347 @@
+{
+  "evidence_type": "local Capstone and existing Ghidra export; static, not execution",
+  "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "assembly": {
+    "schema_prerecord": [
+      "0xa018cc8c  movw ip, #0xd774",
+      "0xa018cc90  cmp r4, r7",
+      "0xa018cc94  movt ip, #0xa055",
+      "0xa018cc98  add lr, r5, #0x330",
+      "0xa018cc9c  ldm ip!, {r0, r1, r2, r3}",
+      "0xa018cca0  mov r7, #9",
+      "0xa018cca4  moveq r4, #7",
+      "0xa018cca8  str r0, [r5, #0x330]",
+      "0xa018ccac  ldr r0, [ip]",
+      "0xa018ccb0  str r1, [lr, #4]",
+      "0xa018ccb4  str r2, [lr, #8]",
+      "0xa018ccb8  str r0, [lr, #0x10]",
+      "0xa018ccbc  str r3, [lr, #0xc]",
+      "0xa018ccc0  str r6, [r5, #0x3b4]",
+      "0xa018ccc4  str r7, [r5, #0x3b0]",
+      "0xa018ccc8  beq #0xa018cb88"
+    ],
+    "runtime_setter": [
+      "0xa021f768  movw r3, #0x82b4",
+      "0xa021f76c  movt r3, #0xa13c",
+      "0xa021f770  ldrb r2, [r3, #6]",
+      "0xa021f774  bfi r2, r0, #0, #4",
+      "0xa021f778  mov r0, #0",
+      "0xa021f77c  strb r2, [r3, #6]",
+      "0xa021f780  bx lr"
+    ],
+    "recorder_dispatch": [
+      "0xa01282e0  push {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+      "0xa01282e4  mov r5, r1",
+      "0xa01282e8  sub sp, sp, #0x54",
+      "0xa01282ec  mov r6, r2",
+      "0xa01282f0  cmp r0, #0x96",
+      "0xa01282f4  ldrls pc, [pc, r0, lsl #2]",
+      "0xa01282f8  b #0xa012a094"
+    ],
+    "recorder_default": [
+      "0xa012a094  mov r4, #0",
+      "0xa012a098  b #0xa0128560"
+    ],
+    "eventrecord_start_callback": [
+      "0xa01f8e68  movw r3, #0x35cc",
+      "0xa01f8e6c  movt r3, #0xa13c",
+      "0xa01f8e70  ldr r0, [r3]",
+      "0xa01f8e74  cmp r0, #0",
+      "0xa01f8e78  bxeq lr",
+      "0xa01f8e7c  b #0xa01f845c"
+    ],
+    "eventrecord_unregister_descriptor": [
+      "0xa01f8ebc  str lr, [sp, #-4]!",
+      "0xa01f8ec0  movw r2, #0x8e68",
+      "0xa01f8ec4  sub sp, sp, #0x1c",
+      "0xa01f8ec8  movw r3, #0x8f08",
+      "0xa01f8ecc  mov r1, #0",
+      "0xa01f8ed0  movt r2, #0xa01f",
+      "0xa01f8ed4  movt r3, #0xa01f",
+      "0xa01f8ed8  mov lr, #1",
+      "0xa01f8edc  mov ip, #3",
+      "0xa01f8ee0  add r0, sp, #4",
+      "0xa01f8ee4  str r1, [sp, #0x10]",
+      "0xa01f8ee8  str r2, [sp, #8]",
+      "0xa01f8eec  str r3, [sp, #0xc]",
+      "0xa01f8ef0  str r1, [sp, #4]",
+      "0xa01f8ef4  strh lr, [sp, #0x10]",
+      "0xa01f8ef8  str ip, [sp, #0x14]",
+      "0xa01f8efc  bl #0xa01f0f2c",
+      "0xa01f8f00  add sp, sp, #0x1c",
+      "0xa01f8f04  pop {pc}"
+    ],
+    "mux_unregister": [
+      "0xa01f0f2c  movw r3, #0xbc1c",
+      "0xa01f0f30  push {r4, lr}",
+      "0xa01f0f34  movt r3, #0xa13a",
+      "0xa01f0f38  ldr r2, [r0, #0x10]",
+      "0xa01f0f3c  ldr ip, [r3]",
+      "0xa01f0f40  cmp ip, #0",
+      "0xa01f0f44  movgt r4, #0",
+      "0xa01f0f48  ldrgt r3, [pc, #0x84]",
+      "0xa01f0f4c  bgt #0xa01f0f64",
+      "0xa01f0f50  b #0xa01f0fb4",
+      "0xa01f0f54  add r4, r4, #1",
+      "0xa01f0f58  add r3, r3, #0x14",
+      "0xa01f0f5c  cmp r4, ip",
+      "0xa01f0f60  beq #0xa01f0fb4",
+      "0xa01f0f64  ldr r1, [r3]",
+      "0xa01f0f68  cmp r2, r1",
+      "0xa01f0f6c  bne #0xa01f0f54",
+      "0xa01f0f70  ldrb r1, [r3, #-2]",
+      "0xa01f0f74  cmp r1, #1",
+      "0xa01f0f78  bne #0xa01f0f54",
+      "0xa01f0f7c  movw r3, #0x307c",
+      "0xa01f0f80  movw r0, #0x1e3c",
+      "0xa01f0f84  movt r3, #0xa06f",
+      "0xa01f0f88  movt r0, #0xa058",
+      "0xa01f0f8c  ldr r1, [r3, #4]",
+      "0xa01f0f90  bl #0xa02a70ec",
+      "0xa01f0f94  lsl r3, r4, #4",
+      "0xa01f0f98  ldr r1, [pc, #0x38]",
+      "0xa01f0f9c  mov r2, #0",
+      "0xa01f0fa0  add r4, r3, r4, lsl #2",
+      "0xa01f0fa4  mvn r0, #0",
+      "0xa01f0fa8  add r3, r4, r1",
+      "0xa01f0fac  strb r2, [r3, #0xa]",
+      "0xa01f0fb0  pop {r4, pc}",
+      "0xa01f0fb4  movw r3, #0x307c",
+      "0xa01f0fb8  movw r0, #0x1e74",
+      "0xa01f0fbc  movt r3, #0xa06f",
+      "0xa01f0fc0  movt r0, #0xa058",
+      "0xa01f0fc4  ldr r1, [r3, #4]",
+      "0xa01f0fc8  bl #0xa02a70ec",
+      "0xa01f0fcc  mvn r0, #0",
+      "0xa01f0fd0  pop {r4, pc}"
+    ],
+    "sps_pps_prefixes": [
+      "0xa03e6af4  push {r4, r5, r6, r7, r8, lr}",
+      "0xa03e6af8  sub sp, sp, #0x10",
+      "0xa03e6afc  ldr r4, [sp, #0x30]",
+      "0xa03e6b00  mov ip, #0",
+      "0xa03e6b04  mov lr, #1",
+      "0xa03e6b08  mov r6, r0",
+      "0xa03e6b0c  mov r8, r1",
+      "0xa03e6b10  mov r5, r2",
+      "0xa03e6b14  mov r7, r3",
+      "0xa03e6b18  ldr r2, [sp, #0x28]",
+      "0xa03e6b1c  add r0, sp, #0xc",
+      "0xa03e6b20  ldr r3, [sp, #0x2c]",
+      "0xa03e6b24  str r4, [sp]",
+      "0xa03e6b28  mov r1, #4",
+      "0xa03e6b2c  strb ip, [sp, #0xc]",
+      "0xa03e6b30  strb ip, [sp, #0xd]",
+      "0xa03e6b34  strb ip, [sp, #0xe]",
+      "0xa03e6b38  strb lr, [sp, #0xf]",
+      "0xa03e6b3c  bl #0xa03e6938",
+      "0xa03e6b40  subs r2, r0, #0",
+      "0xa03e6b44  bne #0xa03e6b50",
+      "0xa03e6b48  mov r0, #0",
+      "0xa03e6b4c  b #0xa03e6b9c",
+      "0xa03e6b50  str r4, [sp]",
+      "0xa03e6b54  mov r0, r6",
+      "0xa03e6b58  mov r1, r5",
+      "0xa03e6b5c  ldr r3, [sp, #0x2c]",
+      "0xa03e6b60  bl #0xa03e6938",
+      "0xa03e6b64  subs r2, r0, #0",
+      "0xa03e6b68  beq #0xa03e6b48",
+      "0xa03e6b6c  str r4, [sp]",
+      "0xa03e6b70  add r0, sp, #0xc",
+      "0xa03e6b74  mov r1, #4",
+      "0xa03e6b78  ldr r3, [sp, #0x2c]",
+      "0xa03e6b7c  bl #0xa03e6938",
+      "0xa03e6b80  subs r2, r0, #0",
+      "0xa03e6b84  beq #0xa03e6b48",
+      "0xa03e6b88  str r4, [sp]",
+      "0xa03e6b8c  mov r0, r8",
+      "0xa03e6b90  mov r1, r7",
+      "0xa03e6b94  ldr r3, [sp, #0x2c]",
+      "0xa03e6b98  bl #0xa03e6938",
+      "0xa03e6b9c  add sp, sp, #0x10",
+      "0xa03e6ba0  pop {r4, r5, r6, r7, r8, pc}"
+    ]
+  },
+  "checks": {
+    "schema_string": true,
+    "op_2c_is_default": true,
+    "eventrecord_start_op_1d_is_default": true,
+    "time_lapse_op_2d_has_handler": true,
+    "eventrecord_descriptor_calls_unregister": true,
+    "unregister_clears_enable_byte": true,
+    "sps_pps_four_writes": true
+  },
+  "dispatch_table_base": "0xa01282fc",
+  "selected_dispatch_entries": {
+    "0x1d": "0xa012a094",
+    "0x1e": "0xa012a094",
+    "0x1f": "0xa0129634",
+    "0x2b": "0xa012a09c",
+    "0x2c": "0xa012a094",
+    "0x2d": "0xa0129ff8"
+  },
+  "runtime_prerecord_byte_references_in_existing_export": [
+    {
+      "from": "0xa021f770",
+      "to": "0xa13c82ba",
+      "type": "READ"
+    },
+    {
+      "from": "0xa021f77c",
+      "to": "0xa13c82ba",
+      "type": "WRITE"
+    }
+  ],
+  "stream_contract": {
+    "h264_setup": {
+      "address": "0xA02B7454",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02b7454.c",
+      "markers": {
+        "bits_fifo_base": true,
+        "info_fifo_base": true,
+        "stat_fifo_base": true,
+        "idr_interval": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Static encoder setup fields; output FIFO subscription ABI not recovered."
+    },
+    "feed_idr_frame": {
+      "address": "0xA03E8834",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e8834.c",
+      "markers": {
+        "AmpH264_PutGOPHeader": true,
+        "AmpFormat_PutSPSPPS": true,
+        "AmpFormat_WriteFrame": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Static IDR input/feed path reading a stream into FIFO; not a verified encoder output segmenter."
+    },
+    "fifo_param": {
+      "address": "0xA03F1944",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03f1944.c",
+      "markers": {
+        "AmpFifoPool_GetFifoParam": true,
+        "Wrong_FIFO_handler": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Generic FIFO parameter query; known direct caller is demux data-request path."
+    },
+    "fifo_data_event": {
+      "address": "0xA03F0C7C",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03f0c7c.c",
+      "markers": {
+        "AmpFifoPool_OnDataEventImpl": true,
+        "Give_event_flag_fail": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Generic FIFO event notification, not a proven encoder subscriber interface."
+    },
+    "eventrecord_open": {
+      "address": "0xA01F845C",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f845c.c",
+      "markers": {
+        "AppLibFormatMuxMp4_Open_EventRec": true,
+        "FUN_a043f724": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Static event mux resource construction; initial handler registration and standby use remain unknown."
+    },
+    "eventrecord_gate": {
+      "address": "0xA012C98C",
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a012c98c.c",
+      "markers": {
+        "Block_ev": true,
+        "0x1d": true
+      },
+      "source_present": true,
+      "evidence_type": "existing Ghidra export, static; substring inventory is not runtime validation",
+      "interpretation": "Static gate requires current recording state before sending operation 0x1d."
+    }
+  },
+  "selected_direct_call_sites_in_existing_export": {
+    "0xa01f0e00": [
+      {
+        "from": "0xa01f2430",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xa01f6038",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xa01f7f94",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xa02114a4",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "0xa01f0f2c": [
+      {
+        "from": "0xa01f607c",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xa01f8efc",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xa02114ec",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "0xa02b7454": [
+      {
+        "from": "0xa02d21e0",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "0xa03e8834": [
+      {
+        "from": "0xa03ed594",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "0xa03f1944": [
+      {
+        "from": "0xa0439b90",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  "negative_search_limit": "Only resolved references in existing Ghidra export; indirect/aliased data accesses and unrecognized code are not excluded.",
+  "memory_scenarios": [
+    {
+      "video_mbps_decimal": 20,
+      "seconds": 60,
+      "video_bytes": 150000000,
+      "fraction_of_previously_observed_idle_available": 0.639393896871016
+    },
+    {
+      "video_mbps_decimal": 30,
+      "seconds": 60,
+      "video_bytes": 225000000,
+      "fraction_of_previously_observed_idle_available": 0.959090845306524
+    },
+    {
+      "video_mbps_decimal": 60,
+      "seconds": 60,
+      "video_bytes": 450000000,
+      "fraction_of_previously_observed_idle_available": 1.918181690613048
+    },
+    {
+      "video_mbps_decimal": 100,
+      "seconds": 60,
+      "video_bytes": 750000000,
+      "fraction_of_previously_observed_idle_available": 3.1969694843550798
+    }
+  ],
+  "memory_limit": "Previously observed idle available total is not a contiguous allocation or recording-time headroom guarantee; audio, mux metadata, alignment and working memory excluded."
+}

@@ -1,0 +1,521 @@
+{
+  "audit": "prerecord_cursor_registry",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "evidence_type": "Original ARM functions executed with constructed RAM and existing explicit OS/allocator/callback test doubles; bounded static field verification",
+  "dependency_script": {
+    "path": "scripts/prerecord-fifo-lifecycle.py",
+    "sha256": "18d617e70051f649267ab37f2d1ceafc7e5d2446ac60529d07315d0e86001906"
+  },
+  "cases": [
+    {
+      "name": "get_info_base_no_virtual",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 9,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        }
+      ],
+      "result": [
+        8,
+        4,
+        4
+      ],
+      "constructed_inconsistent_state": false
+    },
+    {
+      "name": "get_info_base_lagged_virtual",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 12,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "result": [
+        8,
+        4,
+        1
+      ],
+      "constructed_inconsistent_state": false
+    },
+    {
+      "name": "get_info_virtual_capped_by_base",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 9,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "result": [
+        8,
+        4,
+        1
+      ],
+      "constructed_inconsistent_state": false
+    },
+    {
+      "name": "get_info_base_stale_inactive_virtual",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 12,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 0,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "result": [
+        8,
+        4,
+        1
+      ],
+      "constructed_inconsistent_state": true
+    },
+    {
+      "name": "sync_written_pause_gate_skips_descriptor_and_callback",
+      "status": null,
+      "virtual_read": 5,
+      "virtual_write": 9,
+      "virtual_pause_gate": 1,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "void_api": true,
+      "descriptor_queue_preserved": true
+    },
+    {
+      "name": "resume_default_reanchors_to_current_base_write",
+      "status": 0,
+      "virtual_read": 9,
+      "virtual_write": 9,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004048",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004048"
+        }
+      ],
+      "selector": 0,
+      "zero_pending_descriptors": true,
+      "no_lease_acquired": true
+    },
+    {
+      "name": "erase_base_resets_matched_virtual_cursor_without_unregister",
+      "status": 0,
+      "virtual_read": 0,
+      "virtual_write": 0,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x10004000",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10003048",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10003014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003014"
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10003048"
+        }
+      ],
+      "base_and_virtual_descriptor_queues_zero": true
+    },
+    {
+      "name": "peek_does_not_require_registry_identity",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 9,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 1,
+      "registry0": "0x0",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        }
+      ],
+      "descriptor_pointer": "0x100080a0",
+      "constructed_inconsistent_state": true
+    },
+    {
+      "name": "delete_checks_registry_nonzero_not_pointer_identity",
+      "status": 0,
+      "virtual_read": 5,
+      "virtual_write": 9,
+      "virtual_pause_gate": 0,
+      "virtual_in_use": 0,
+      "registry0": "0x0",
+      "callbacks": [],
+      "external_events": [
+        {
+          "kind": "lock_model",
+          "address": "0x10004048",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "lock_model",
+          "address": "0x10004014",
+          "timeout": "0xffffffff",
+          "result": 0
+        },
+        {
+          "kind": "pool_free_model",
+          "resource": "0x7788",
+          "result": 0
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004014"
+        },
+        {
+          "kind": "unlock_model",
+          "address": "0x10004048"
+        }
+      ],
+      "registry_before": "0x10005000",
+      "constructed_inconsistent_state": true,
+      "limitation": "An adversarial synthetic registry state, not evidence of observed device corruption"
+    }
+  ],
+  "original_arm_cases": 9,
+  "sources": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a044e734.c",
+      "sha256": "79fbff69cc3e4a086b825c3bbcd4cb66855e21e61d79f1e343a325bf6802a95f",
+      "verified_needles": [
+        "*(char *)(param_4 + 0xf4) == '\\x01'",
+        "DAT_a19c6340 = DAT_a19c6340 + 1"
+      ],
+      "line_hits": {
+        "*(char *)(param_4 + 0xf4) == '\\x01'": [
+          31
+        ],
+        "DAT_a19c6340 = DAT_a19c6340 + 1": [
+          34
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0452e9c.c",
+      "sha256": "1450bc1c8aad273c2690d15bf5dcc1ee7882ce0a9dbd65c0535627fab58bec31",
+      "verified_needles": [
+        "*(int *)(iVar9 + 0xc4) == 0",
+        "*(undefined4 *)(iVar9 + 0xc4) = 0"
+      ],
+      "line_hits": {
+        "*(int *)(iVar9 + 0xc4) == 0": [
+          62
+        ],
+        "*(undefined4 *)(iVar9 + 0xc4) = 0": [
+          133
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04534ac.c",
+      "sha256": "fc67dfd974d7aa15c3006b5f497b60fbe0aca16280646369f243076893de2f2f",
+      "verified_needles": [
+        "param_2[2] = uVar6",
+        "matched_FUN_a04534ac(*(int *)(iVar5 + 0x10),&local_2c)"
+      ],
+      "line_hits": {
+        "param_2[2] = uVar6": [
+          71
+        ],
+        "matched_FUN_a04534ac(*(int *)(iVar5 + 0x10),&local_2c)": [
+          66
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0452b68.c",
+      "sha256": "d08b8a55b562583392b76ccca854877737fa5df4cab3bbc43dc85583943f3bed",
+      "verified_needles": [
+        "*(undefined4 *)(iVar5 + 0x90) = 0",
+        "*(undefined4 *)(iVar5 + 0x98) = 0"
+      ],
+      "line_hits": {
+        "*(undefined4 *)(iVar5 + 0x90) = 0": [
+          69
+        ],
+        "*(undefined4 *)(iVar5 + 0x98) = 0": [
+          72
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0451960.c",
+      "sha256": "b7aeb7c10aefad137cf102a35553f1a8c00f961dcf9a25152be954d97ef45d32",
+      "verified_needles": [
+        "*param_2 = iVar5",
+        "matched_thunk_FUN_a03c3c5c(iVar3 + 0x14)"
+      ],
+      "line_hits": {
+        "*param_2 = iVar5": [
+          50,
+          53
+        ],
+        "matched_thunk_FUN_a03c3c5c(iVar3 + 0x14)": [
+          67
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04514e4.c",
+      "sha256": "77b31ee80b937f0a738022a6ed20d496c7c7ef234d177e24699d4d3426a24f2b",
+      "verified_needles": [
+        "if ((&DAT_a196608c)[*param_1] == 0)",
+        "(&DAT_a196608c)[*param_1] = 0"
+      ],
+      "line_hits": {
+        "if ((&DAT_a196608c)[*param_1] == 0)": [
+          44
+        ],
+        "(&DAT_a196608c)[*param_1] = 0": [
+          65
+        ]
+      }
+    }
+  ],
+  "byte_windows": [
+    {
+      "start": "0xa044e734",
+      "end_exclusive": "0xa044e8d4",
+      "sha256": "aa1f4546b54e97cd387353239b2fcab164fe7005de49ff2929db4282fdfd5e3e"
+    },
+    {
+      "start": "0xa0452b68",
+      "end_exclusive": "0xa0452e9c",
+      "sha256": "d82116110681e7e3f434607deff8413c1374856459801df7a7a1e6f44fd2ad30"
+    },
+    {
+      "start": "0xa0452e9c",
+      "end_exclusive": "0xa04534ac",
+      "sha256": "065f84781c052f2d2e45460318ed4b1724dff5edb0d409dbb163c959eb90efd4"
+    },
+    {
+      "start": "0xa04534ac",
+      "end_exclusive": "0xa045366c",
+      "sha256": "9f98485c79865cd409a1b6824c872bf79a60f8acc390963a6349101abeb75458"
+    }
+  ],
+  "rollover_dependency": {
+    "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-rollover-ownership-audit.json",
+    "sha256": "120efd16bad5b014f8ef93018f0c95620eae530d83859a68ad717039d12e873b",
+    "callback_range": [
+      "0xa01f569c",
+      "0xa01f5ff0"
+    ],
+    "forbidden_direct_targets_absent": [
+      "0xa01f6088",
+      "0xa01f6340",
+      "0xa04509dc",
+      "0xa04514e4",
+      "0xa0451c94",
+      "0xa0452b68"
+    ],
+    "full_close_delete_sites": 6,
+    "limitation": "Uses prior bounded direct-call audit; does not prove runtime cursor/payload identity or a complete indirect-call closure"
+  },
+  "conclusions": {
+    "c4_is_pause_resume_gate_not_callback_counter": true,
+    "f4_is_trace_enable_not_payload_lease": true,
+    "get_info_free_credit_takes_minimum_across_base_and_virtual": true,
+    "cursor_reset_is_independent_from_registry_unregister": true,
+    "registry_nonzero_is_not_identity_or_generation_validation": true,
+    "real_callback_inflight_counter_found": false,
+    "real_payload_lease_found": false,
+    "device_pre_record_or_runtime_backpressure_proven": false
+  },
+  "limitations": [
+    "Synthetic invalid registry/inactive-stream cases prove API precondition boundaries, not that those states occur normally on a camera.",
+    "OS locks are bookkeeping, callbacks and allocation are test doubles; no DMA, cache, scheduler or actual storage is executed.",
+    "Resume selector 0 alone is executed; history selectors 1/2/3 are static evidence only.",
+    "Erasing descriptors and resetting cursors is not a safe lease/callback barrier and is not proposed for device use.",
+    "No direct access to the camera; no firmware, RAM or partition writes."
+  ],
+  "safety": {
+    "camera_connected": false,
+    "device_written": false,
+    "rtos_executed_on_device": false
+  }
+}

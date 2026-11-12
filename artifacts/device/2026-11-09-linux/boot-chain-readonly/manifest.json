@@ -1,0 +1,55 @@
+{
+  "date_utc": "2026-11-09T07:45:16.932513+00:00",
+  "host": "192.168.42.1",
+  "scope": "bounded read-only Linux inventory; no writes, no /dev/mem, no raw NAND/OOB",
+  "commands": [
+    {
+      "name": "identity",
+      "elapsed_seconds": 0.054,
+      "output": "identity.txt",
+      "command": "uname -a; cat /proc/cmdline; cat /proc/version"
+    },
+    {
+      "name": "mtd_and_devices",
+      "elapsed_seconds": 0.363,
+      "output": "mtd_and_devices.txt",
+      "command": "cat /proc/mtd; ls -l /dev/mtd* /dev/mtdblock*; for x in /sys/class/mtd/mtd*/name /sys/class/mtd/mtd*/size /sys/class/mtd/mtd*/ro; do echo ===$x; cat $x 2>/dev/null; done"
+    },
+    {
+      "name": "boot_files",
+      "elapsed_seconds": 0.359,
+      "output": "boot_files.txt",
+      "command": "find / -xdev -type f \\( -iname \"*boot*\" -o -iname \"*ptb*\" -o -iname \"*firmware*\" -o -iname \"*recovery*\" -o -iname \"*upgrade*\" \\) -print 2>/dev/null | head -300"
+    },
+    {
+      "name": "proc_sys",
+      "elapsed_seconds": 0.464,
+      "output": "proc_sys.txt",
+      "command": "find /proc -maxdepth 2 -type f -print 2>/dev/null | sort; find /sys -maxdepth 4 -type f -print 2>/dev/null | grep -Ei \"boot|nand|mtd|firm|recovery|remoteproc|rpmsg|ambarella\" | head -300"
+    },
+    {
+      "name": "ambarella",
+      "elapsed_seconds": 0.165,
+      "output": "ambarella.txt",
+      "command": "ls -la /proc/ambarella 2>/dev/null; for f in /proc/ambarella/*; do echo ===$f; cat \"$f\" 2>/dev/null; done"
+    },
+    {
+      "name": "logs",
+      "elapsed_seconds": 0.074,
+      "output": "logs.txt",
+      "command": "dmesg | grep -Ei \"boot|nand|mtd|firm|recovery|upgrade|rpmsg|remoteproc|hiber|amba\" | tail -300"
+    },
+    {
+      "name": "startup_services",
+      "elapsed_seconds": 0.219,
+      "output": "startup_services.txt",
+      "command": "cat /etc/inittab 2>/dev/null; for f in /etc/init.d/* /etc/rcS.d/* /etc/rc*.d/*; do [ -f \"$f\" ] && echo ===$f && sed -n \"1,220p\" \"$f\"; done 2>/dev/null | grep -Ei -C 4 \"firm|upgrade|boot|recovery|mtd|nand|rtos|rpmsg\" | head -500"
+    },
+    {
+      "name": "usb_serial",
+      "elapsed_seconds": 0.071,
+      "output": "usb_serial.txt",
+      "command": "lsusb 2>/dev/null; ls -l /dev/tty* /dev/usb* /sys/bus/usb/devices/* 2>/dev/null | head -300"
+    }
+  ]
+}

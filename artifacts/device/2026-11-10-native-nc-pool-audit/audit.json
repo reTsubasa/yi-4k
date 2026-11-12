@@ -1,0 +1,1196 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "scope": "real stock pool routines in wholly synthetic memory and declared no-contention core-0 RTOS state",
+  "events": [
+    {
+      "label": "create fresh synthetic NC-address pool",
+      "entry": "0xa03bc6b0",
+      "arguments": [
+        "0x70003000",
+        "0xa2100000",
+        "0x4000"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "null pool",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x0",
+        "0x70004000",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x2",
+      "available": 16376
+    },
+    {
+      "label": "bad magic",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70005000",
+        "0x70004000",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x2",
+      "available": 16376
+    },
+    {
+      "label": "null output",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x0",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x3",
+      "available": 16376
+    },
+    {
+      "label": "zero size",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x0",
+        "0x0"
+      ],
+      "rc": "0x5",
+      "available": 16376
+    },
+    {
+      "label": "above pool size",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x4001",
+        "0x0"
+      ],
+      "rc": "0x5",
+      "available": 16376
+    },
+    {
+      "label": "no-wait odd-size allocate",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x25",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 16328
+    },
+    {
+      "label": "release original pointer",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "reject double release",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x3",
+      "available": 16376
+    },
+    {
+      "label": "reject null release",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0x0"
+      ],
+      "rc": "0x3",
+      "available": 16376
+    },
+    {
+      "label": "allocate simultaneous owner A",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x40",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 16304
+    },
+    {
+      "label": "allocate simultaneous owner B",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004020",
+        "0x60",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 16200
+    },
+    {
+      "label": "release A while B remains allocated",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16272
+    },
+    {
+      "label": "allocate owner C while B remains allocated",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 16232
+    },
+    {
+      "label": "release B",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100050"
+      ],
+      "rc": "0x0",
+      "available": 16336
+    },
+    {
+      "label": "release C",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "nearly exhaust synthetic pool",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x3fe8",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 0
+    },
+    {
+      "label": "no memory returns without suspend",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004020",
+        "0x40",
+        "0x0"
+      ],
+      "rc": "0x10",
+      "available": 0
+    },
+    {
+      "label": "release nearly full block",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper preserves outputs on rejected pool",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x0",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x40"
+      ],
+      "rc": "0x2",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 0",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x0"
+      ],
+      "rc": "0x0",
+      "available": 16208
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 1",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x1"
+      ],
+      "rc": "0x0",
+      "available": 16208
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 4",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x4"
+      ],
+      "rc": "0x0",
+      "available": 16208
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 16",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x10"
+      ],
+      "rc": "0x0",
+      "available": 16208
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 32",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x20"
+      ],
+      "rc": "0x0",
+      "available": 16208
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 64",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x40"
+      ],
+      "rc": "0x0",
+      "available": 16144
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "aligned wrapper alignment 128",
+      "entry": "0xa029a7d8",
+      "arguments": [
+        "0x70003000",
+        "0x70004010",
+        "0x70004020",
+        "0x60",
+        "0x80"
+      ],
+      "rc": "0x0",
+      "available": 16016
+    },
+    {
+      "label": "release original after aligned allocation",
+      "entry": "0xa03bc714",
+      "arguments": [
+        "0xa2100008"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "no-wait paired alignment wrapper",
+      "entry": "0xa03bc77c",
+      "arguments": [
+        "0x70003000",
+        "0x70004030",
+        "0x61",
+        "0x40"
+      ],
+      "rc": "0x0",
+      "available": 16204
+    },
+    {
+      "label": "paired release reads original pointer",
+      "entry": "0xa03bc7d0",
+      "arguments": [
+        "0x70004030"
+      ],
+      "rc": "0x0",
+      "available": 16376
+    },
+    {
+      "label": "waiting rejected in nonzero system state",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x20",
+        "0x1"
+      ],
+      "rc": "0x4",
+      "available": 16376
+    },
+    {
+      "label": "non-wait rejected in disallowed caller state",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x13",
+      "available": 16376
+    },
+    {
+      "label": "timer-thread context rejected",
+      "entry": "0xa03bc6dc",
+      "arguments": [
+        "0x70003000",
+        "0x70004000",
+        "0x20",
+        "0x0"
+      ],
+      "rc": "0x13",
+      "available": 16376
+    }
+  ],
+  "stock_call_counts": {
+    "0xa03c3524": 1,
+    "0xa03c13b0": 78,
+    "0xa03c1428": 78,
+    "0xa03c0d4c": 64,
+    "0xa03c0d08": 39,
+    "0xa04f8dec": 1,
+    "0xa03c3448": 23,
+    "0xa03bd130": 14,
+    "0xa03c3700": 15,
+    "0xa0506674": 1
+  },
+  "aligned_cases": [
+    {
+      "requested": 0,
+      "effective": 32,
+      "original": "0xa2100008",
+      "aligned": "0xa2100020"
+    },
+    {
+      "requested": 1,
+      "effective": 32,
+      "original": "0xa2100008",
+      "aligned": "0xa2100020"
+    },
+    {
+      "requested": 4,
+      "effective": 32,
+      "original": "0xa2100008",
+      "aligned": "0xa2100020"
+    },
+    {
+      "requested": 16,
+      "effective": 32,
+      "original": "0xa2100008",
+      "aligned": "0xa2100020"
+    },
+    {
+      "requested": 32,
+      "effective": 32,
+      "original": "0xa2100008",
+      "aligned": "0xa2100020"
+    },
+    {
+      "requested": 64,
+      "effective": 64,
+      "original": "0xa2100008",
+      "aligned": "0xa2100040"
+    },
+    {
+      "requested": 128,
+      "effective": 128,
+      "original": "0xa2100008",
+      "aligned": "0xa2100080"
+    }
+  ],
+  "original_pool_magic": "0x42595445",
+  "final_available": 16376,
+  "initial_available": 16376,
+  "original_allocation_pointer": "0xa2100008",
+  "paired_original": "0xa2100008",
+  "paired_aligned": "0xa2100040",
+  "simultaneous_allocations_nonoverlap": true,
+  "live_block_preserved_when_other_freed": true,
+  "secondary_pool_reference_inventory": {
+    "0xa0fe7220": [
+      {
+        "reference": [
+          "0xa0186f84",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa0186f3c"
+        ]
+      },
+      {
+        "reference": [
+          "0xa01875d8",
+          "0xa0fe7220",
+          "WRITE"
+        ],
+        "owners": [
+          "0xa018756c"
+        ]
+      },
+      {
+        "reference": [
+          "0xa0187668",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa018756c"
+        ]
+      },
+      {
+        "reference": [
+          "0xa0187690",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa018756c"
+        ]
+      },
+      {
+        "reference": [
+          "0xa018a878",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa0189a28"
+        ]
+      },
+      {
+        "reference": [
+          "0xa018a8b8",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa0189a28"
+        ]
+      },
+      {
+        "reference": [
+          "0xa01a53a8",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": []
+      },
+      {
+        "reference": [
+          "0xa01e0b6c",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa01e0ab8"
+        ]
+      },
+      {
+        "reference": [
+          "0xa01e0dc8",
+          "0xa0fe7220",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa01e0c10"
+        ]
+      }
+    ],
+    "0xa13a23f0": [
+      {
+        "reference": [
+          "0xa01cbc70",
+          "0xa13a23f0",
+          "READ"
+        ],
+        "owners": [
+          "0xa01cbbbc"
+        ]
+      },
+      {
+        "reference": [
+          "0xa01e670c",
+          "0xa13a23f0",
+          "WRITE"
+        ],
+        "owners": [
+          "0xa01e66f4"
+        ]
+      },
+      {
+        "reference": [
+          "0xa020d12c",
+          "0xa13a23f0",
+          "READ"
+        ],
+        "owners": [
+          "0xa020cf14"
+        ]
+      },
+      {
+        "reference": [
+          "0xa0210d30",
+          "0xa13a23f0",
+          "READ"
+        ],
+        "owners": [
+          "0xa0210894"
+        ]
+      },
+      {
+        "reference": [
+          "0xa022f0c0",
+          "0xa13a23f0",
+          "PARAM"
+        ],
+        "owners": [
+          "0xa022f07c"
+        ]
+      },
+      {
+        "reference": [
+          "0xa022f0c4",
+          "0xa13a23f0",
+          "READ"
+        ],
+        "owners": [
+          "0xa022f07c"
+        ]
+      }
+    ]
+  },
+  "thumb_command": {
+    "index": 68,
+    "name": "thumb",
+    "name_pointer": "0xa05529dc",
+    "handler": "0xa01a8998"
+  },
+  "evidence": [
+    {
+      "entry": "0xa018756c",
+      "ranges": [
+        "a018756c-a0187de7"
+      ],
+      "sha256": "aaa8ce45e697f4d020423ad57b799a22ac8a7aa040c69105b5d89d56f1d15105",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a018756c.asm"
+    },
+    {
+      "entry": "0xa01e66f4",
+      "ranges": [
+        "a01e66f4-a01e6713"
+      ],
+      "sha256": "4375d2469531474a51798618ea8d33c160bdd9046b1522678ff12770248351f3",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a01e66f4.asm"
+    },
+    {
+      "entry": "0xa029a7d8",
+      "ranges": [
+        "a029a7d8-a029a823"
+      ],
+      "sha256": "ad5f0f46869876226d794abed528794046ffbebcda2112af21fa5133a62c0796",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a029a7d8.asm"
+    },
+    {
+      "entry": "0xa03bc6b0",
+      "ranges": [
+        "a03bc6b0-a03bc6d7"
+      ],
+      "sha256": "a05924ab6df5d3dfd3a47bb146f9ad7839212d65080e8e51cf4858385add3028",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bc6b0.asm"
+    },
+    {
+      "entry": "0xa03bc6dc",
+      "ranges": [
+        "a03bc6dc-a03bc713",
+        "a03bcd20-a03bce33"
+      ],
+      "sha256": "91c66e7c3c1fa3e2a39520039abdb456d3aff8efa97be89bed4a3f08b91ddeef",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bc6dc.asm"
+    },
+    {
+      "entry": "0xa03bc714",
+      "ranges": [
+        "a03bc714-a03bc717"
+      ],
+      "sha256": "2a60f7d7e15acaf6e8594ebd1cc58d6d7e1715d91e5a2e42537362d251930288",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bc714.asm"
+    },
+    {
+      "entry": "0xa03bc77c",
+      "ranges": [
+        "a03bc77c-a03bc7cf"
+      ],
+      "sha256": "6251f426d2d2d6c8c0b358bf4a64aa2d94c2c06b30ceae5e472a240b7a1d0121",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bc77c.asm"
+    },
+    {
+      "entry": "0xa03bc7d0",
+      "ranges": [
+        "a03bc7d0-a03bc7d7"
+      ],
+      "sha256": "b91d76c1cfe61b00a960d268ddd86bdf021cfc582b63d9b11a033c2a62773dd6",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bc7d0.asm"
+    },
+    {
+      "entry": "0xa03c3448",
+      "ranges": [
+        "a03c3448-a03c3523"
+      ],
+      "sha256": "1338d615a56e586ea1a90bf45cf0c64313ff4d127808a7ce354d96193d92a065",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03c3448.asm"
+    },
+    {
+      "entry": "0xa03c3524",
+      "ranges": [
+        "a03bceec-a03bcfc7",
+        "a03c3524-a03c3663"
+      ],
+      "sha256": "af2977f6b7e3442dcd57ff748d8e5b55bf73a9215a09569102c400fda7d09342",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03c3524.asm"
+    },
+    {
+      "entry": "0xa03c3700",
+      "ranges": [
+        "a03bd34c-a03bd4d3",
+        "a03c3700-a03c375f"
+      ],
+      "sha256": "90ea3cefdc576ae8f4cd93720d6a5e50e5601958c717b34276884814277cbd6b",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03c3700.asm"
+    },
+    {
+      "entry": "0xa03bd130",
+      "ranges": [
+        "a03bd130-a03bd34b"
+      ],
+      "sha256": "270b26ec391003b1aa69fef77fbe5d1455b6d18dc8233f1e937b4de7f55600cc",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03bd130.asm"
+    },
+    {
+      "entry": "0xa03c13b0",
+      "ranges": [
+        "a03c13b0-a03c1423"
+      ],
+      "sha256": "318c92e44fb8f84548efe7ca9dccc6497c026d0ec334a50b626fa93f1b551bb5",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03c13b0.asm"
+    },
+    {
+      "entry": "0xa03c1428",
+      "ranges": [
+        "a03c1428-a03c149b"
+      ],
+      "sha256": "f83f19a7adda0dd10246f14730644801d3199d7ce4af75aba193751d24c7c035",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a03c1428.asm"
+    },
+    {
+      "entry": "0xa01a8998",
+      "ranges": [
+        "a01a8998-a01a8d57"
+      ],
+      "sha256": "130b9efdd603fd4b9db62903598f4cf62668afa382f0752e4e262a0576cbf9c3",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a01a8998.asm"
+    },
+    {
+      "entry": "0xa01cbbbc",
+      "ranges": [
+        "a01cbbbc-a01cbcaf"
+      ],
+      "sha256": "56de24e2dfa5357248e9abf22e01e2ced28a4c9f78fa38d40c016a41990184ed",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a01cbbbc.asm"
+    },
+    {
+      "entry": "0xa020cf14",
+      "ranges": [
+        "a020cf14-a020d1ab"
+      ],
+      "sha256": "2442288f34e380db4ecdf4cbe3732e024a368515af54f24cd723e11ecf3fd23a",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a020cf14.asm"
+    },
+    {
+      "entry": "0xa0210894",
+      "ranges": [
+        "a0210894-a0210fd3"
+      ],
+      "sha256": "d34d9c9fd006746d463fa448cd638b593c58fc7cc319ab0fe770f6c0442c19d9",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a0210894.asm"
+    },
+    {
+      "entry": "0xa021064c",
+      "ranges": [
+        "a021064c-a0210893"
+      ],
+      "sha256": "a40f9405ecbdd6e7bf1bf6d2f0c6c978f5212d0cbcb6319736bb7ad47d031041",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a021064c.asm"
+    },
+    {
+      "entry": "0xa022f07c",
+      "ranges": [
+        "a022f07c-a022f127"
+      ],
+      "sha256": "33344a9ce35bad3dc6b4c56c44575a2b449a43ea873e92f6c8bb2869d7ac18da",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a022f07c.asm"
+    },
+    {
+      "entry": "0xa04b2ee0",
+      "ranges": [
+        "a04b2ee0-a04b2f07"
+      ],
+      "sha256": "4b133af779307d1f893d031ace007797e69f52fa74a4b503a65d9dc0ba76a20a",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a04b2ee0.asm"
+    },
+    {
+      "entry": "0xa04b2f08",
+      "ranges": [
+        "a04b2f08-a04b30d3"
+      ],
+      "sha256": "a56ead5711487a8c6af859c07730ca63c3726275508e1ccc5390c99e2f3c6941",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a04b2f08.asm"
+    },
+    {
+      "entry": "0xa04b1c64",
+      "ranges": [
+        "a04b1c64-a04b1c77"
+      ],
+      "sha256": "c828616617008f7076bf64204492f2776fd683783ca9437efcec7fac2838bce7",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a04b1c64.asm"
+    },
+    {
+      "entry": "0xa04b1d18",
+      "ranges": [
+        "a04b1d18-a04b1deb"
+      ],
+      "sha256": "e243a59e55ebf4d4960b5e45a356c56ec838c098e5991cb4bbae461dbf8c692f",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a04b1d18.asm"
+    },
+    {
+      "entry": "0xa02a80f4",
+      "ranges": [
+        "a02a80f4-a02a8103"
+      ],
+      "sha256": "41e8eb6acec639a201037376f4eee919f85cb51fa8791859e36581aaee1c334d",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a02a80f4.asm"
+    },
+    {
+      "entry": "0xa02a8104",
+      "ranges": [
+        "a02a8104-a02a814f"
+      ],
+      "sha256": "cf8e3cf08b053de30ad6dc8db411961cbc4501c9923b0163a5abd96ccce68296",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a02a8104.asm"
+    },
+    {
+      "entry": "0xa0186f3c",
+      "ranges": [
+        "a0186f3c-a01872f3"
+      ],
+      "sha256": "e74ba1a362db9cedb87c871bbd65b44d329be2eb093ffd9dd15e57292450a57d",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a0186f3c.asm"
+    },
+    {
+      "entry": "0xa0189a28",
+      "ranges": [
+        "a0189a28-a018aca7"
+      ],
+      "sha256": "bdc688cf71d2c782ba385f3d5d9d2d9c4cdfc2a601575dc2e96255c347b2a099",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a0189a28.asm"
+    },
+    {
+      "entry": "0xa018ae80",
+      "ranges": [
+        "a018ae80-a018b213"
+      ],
+      "sha256": "bad9157961e582f6cff6a08e463875f83507df11ca3acb36742ef3df89ed8d79",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a018ae80.asm"
+    },
+    {
+      "entry": "0xa01e0ab8",
+      "ranges": [
+        "a01e0ab8-a01e0c0f"
+      ],
+      "sha256": "edf831cc5553acdc9f42925d1de095afc7c852ec4be264a3176f5304902cf751",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a01e0ab8.asm"
+    },
+    {
+      "entry": "0xa01e0c10",
+      "ranges": [
+        "a01e0c10-a01e138b"
+      ],
+      "sha256": "2b43c8deac08c258628c4a8d65fee40576a03a252e9f55a1b907d05127372c6b",
+      "path": "artifacts/device/2026-11-10-native-nc-pool-audit/a01e0c10.asm"
+    }
+  ],
+  "provenance": [
+    {
+      "entry": "0xa018756c",
+      "same_old_body": true,
+      "sha256": "aaa8ce45e697f4d020423ad57b799a22ac8a7aa040c69105b5d89d56f1d15105"
+    },
+    {
+      "entry": "0xa01e66f4",
+      "same_old_body": true,
+      "sha256": "4375d2469531474a51798618ea8d33c160bdd9046b1522678ff12770248351f3"
+    },
+    {
+      "entry": "0xa029a7d8",
+      "same_old_body": true,
+      "sha256": "ad5f0f46869876226d794abed528794046ffbebcda2112af21fa5133a62c0796"
+    },
+    {
+      "entry": "0xa03bc6b0",
+      "same_old_body": true,
+      "sha256": "a05924ab6df5d3dfd3a47bb146f9ad7839212d65080e8e51cf4858385add3028"
+    },
+    {
+      "entry": "0xa03bc6dc",
+      "same_old_body": true,
+      "sha256": "91c66e7c3c1fa3e2a39520039abdb456d3aff8efa97be89bed4a3f08b91ddeef"
+    },
+    {
+      "entry": "0xa03bc714",
+      "same_old_body": true,
+      "sha256": "2a60f7d7e15acaf6e8594ebd1cc58d6d7e1715d91e5a2e42537362d251930288"
+    },
+    {
+      "entry": "0xa03bc77c",
+      "same_old_body": true,
+      "sha256": "6251f426d2d2d6c8c0b358bf4a64aa2d94c2c06b30ceae5e472a240b7a1d0121"
+    },
+    {
+      "entry": "0xa03bc7d0",
+      "same_old_body": true,
+      "sha256": "b91d76c1cfe61b00a960d268ddd86bdf021cfc582b63d9b11a033c2a62773dd6"
+    },
+    {
+      "entry": "0xa03c3448",
+      "same_old_body": true,
+      "sha256": "1338d615a56e586ea1a90bf45cf0c64313ff4d127808a7ce354d96193d92a065"
+    },
+    {
+      "entry": "0xa03c3524",
+      "same_old_body": true,
+      "sha256": "af2977f6b7e3442dcd57ff748d8e5b55bf73a9215a09569102c400fda7d09342"
+    },
+    {
+      "entry": "0xa03c3700",
+      "same_old_body": true,
+      "sha256": "90ea3cefdc576ae8f4cd93720d6a5e50e5601958c717b34276884814277cbd6b"
+    },
+    {
+      "entry": "0xa03bd130",
+      "same_old_body": true,
+      "sha256": "270b26ec391003b1aa69fef77fbe5d1455b6d18dc8233f1e937b4de7f55600cc"
+    },
+    {
+      "entry": "0xa03c13b0",
+      "same_old_body": true,
+      "sha256": "318c92e44fb8f84548efe7ca9dccc6497c026d0ec334a50b626fa93f1b551bb5"
+    },
+    {
+      "entry": "0xa03c1428",
+      "same_old_body": true,
+      "sha256": "f83f19a7adda0dd10246f14730644801d3199d7ce4af75aba193751d24c7c035"
+    },
+    {
+      "entry": "0xa01a8998",
+      "same_old_body": true,
+      "sha256": "130b9efdd603fd4b9db62903598f4cf62668afa382f0752e4e262a0576cbf9c3"
+    },
+    {
+      "entry": "0xa01cbbbc",
+      "same_old_body": true,
+      "sha256": "56de24e2dfa5357248e9abf22e01e2ced28a4c9f78fa38d40c016a41990184ed"
+    },
+    {
+      "entry": "0xa020cf14",
+      "same_old_body": true,
+      "sha256": "2442288f34e380db4ecdf4cbe3732e024a368515af54f24cd723e11ecf3fd23a"
+    },
+    {
+      "entry": "0xa0210894",
+      "same_old_body": true,
+      "sha256": "d34d9c9fd006746d463fa448cd638b593c58fc7cc319ab0fe770f6c0442c19d9"
+    },
+    {
+      "entry": "0xa021064c",
+      "same_old_body": true,
+      "sha256": "a40f9405ecbdd6e7bf1bf6d2f0c6c978f5212d0cbcb6319736bb7ad47d031041"
+    },
+    {
+      "entry": "0xa022f07c",
+      "same_old_body": true,
+      "sha256": "33344a9ce35bad3dc6b4c56c44575a2b449a43ea873e92f6c8bb2869d7ac18da"
+    },
+    {
+      "entry": "0xa04b2ee0",
+      "same_old_body": true,
+      "sha256": "4b133af779307d1f893d031ace007797e69f52fa74a4b503a65d9dc0ba76a20a"
+    },
+    {
+      "entry": "0xa04b2f08",
+      "same_old_body": true,
+      "sha256": "a56ead5711487a8c6af859c07730ca63c3726275508e1ccc5390c99e2f3c6941"
+    },
+    {
+      "entry": "0xa04b1c64",
+      "same_old_body": true,
+      "sha256": "c828616617008f7076bf64204492f2776fd683783ca9437efcec7fac2838bce7"
+    },
+    {
+      "entry": "0xa04b1d18",
+      "same_old_body": true,
+      "sha256": "e243a59e55ebf4d4960b5e45a356c56ec838c098e5991cb4bbae461dbf8c692f"
+    },
+    {
+      "entry": "0xa02a80f4",
+      "same_old_body": true,
+      "sha256": "41e8eb6acec639a201037376f4eee919f85cb51fa8791859e36581aaee1c334d"
+    },
+    {
+      "entry": "0xa02a8104",
+      "same_old_body": true,
+      "sha256": "cf8e3cf08b053de30ad6dc8db411961cbc4501c9923b0163a5abd96ccce68296"
+    },
+    {
+      "entry": "0xa0186f3c",
+      "same_old_body": true,
+      "sha256": "e74ba1a362db9cedb87c871bbd65b44d329be2eb093ffd9dd15e57292450a57d"
+    },
+    {
+      "entry": "0xa0189a28",
+      "same_old_body": true,
+      "sha256": "bdc688cf71d2c782ba385f3d5d9d2d9c4cdfc2a601575dc2e96255c347b2a099"
+    },
+    {
+      "entry": "0xa018ae80",
+      "same_old_body": true,
+      "sha256": "bad9157961e582f6cff6a08e463875f83507df11ca3acb36742ef3df89ed8d79"
+    },
+    {
+      "entry": "0xa01e0ab8",
+      "same_old_body": true,
+      "sha256": "edf831cc5553acdc9f42925d1de095afc7c852ec4be264a3176f5304902cf751"
+    },
+    {
+      "entry": "0xa01e0c10",
+      "same_old_body": true,
+      "sha256": "2b43c8deac08c258628c4a8d65fee40576a03a252e9f55a1b907d05127372c6b"
+    }
+  ],
+  "bounded_ants_nc_user_paths": {
+    "max_direct_call_depth": 6,
+    "paths": [
+      {
+        "command": "rtmp_stop",
+        "handler": "0xa01aac38",
+        "target": "0xa0210894",
+        "path": [
+          {
+            "caller": "0xa01aac38",
+            "site": "0xa01aac40",
+            "target": "0xa012fd20"
+          },
+          {
+            "caller": "0xa012fd20",
+            "site": "0xa012fdac",
+            "target": "0xa021387c"
+          },
+          {
+            "caller": "0xa021387c",
+            "site": "0xa02138c4",
+            "target": "0xa02111a0"
+          },
+          {
+            "caller": "0xa02111a0",
+            "site": "0xa021124c",
+            "target": "0xa0210894"
+          }
+        ]
+      }
+    ],
+    "indirect_edges_included": false
+  },
+  "executed_synchronization": [
+    {
+      "address": "0xa03c0cec",
+      "instruction": "mrc p15, #0, r0, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c0d14",
+      "instruction": "mrc p15, #0, r2, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c0d58",
+      "instruction": "mrc p15, #0, r2, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c13bc",
+      "instruction": "mrc p15, #0, r2, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c1400",
+      "instruction": "dmb sy"
+    },
+    {
+      "address": "0xa03c1404",
+      "instruction": "mrc p15, #0, r2, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c1438",
+      "instruction": "mrc p15, #0, r3, c0, c0, #5"
+    },
+    {
+      "address": "0xa03c1480",
+      "instruction": "dmb sy"
+    },
+    {
+      "address": "0xa03c148c",
+      "instruction": "dsb sy"
+    }
+  ],
+  "pool_bytes_executed": false,
+  "api": {
+    "raw_allocate": {
+      "entry": "0xa03bc6dc",
+      "args": [
+        "pool",
+        "output",
+        "bytes",
+        "timeout"
+      ],
+      "no_wait": 0
+    },
+    "free": {
+      "entry": "0xa03bc714",
+      "args": [
+        "original_ptr"
+      ]
+    },
+    "paired_aligned_no_wait": {
+      "entry": "0xa03bc77c",
+      "args": [
+        "pool",
+        "pair_out",
+        "bytes",
+        "alignment"
+      ],
+      "release": "0xa03bc7d0(pair_out)"
+    },
+    "fixed_wait_aligned": {
+      "entry": "0xa029a7d8",
+      "args": [
+        "pool",
+        "aligned_out",
+        "original_out",
+        "bytes",
+        "alignment"
+      ],
+      "wait": 500,
+      "minimum_alignment": 32,
+      "rounding": "(original & ~(effective_alignment-1)) + effective_alignment",
+      "requires_power_of_two_alignment": true,
+      "power_of_two_checked_by_stock": false
+    }
+  },
+  "decision": "A known NC pool and complete allocate/free contracts exist; no observed public command grants an owned NC allocation and publishes/enters it. The first transfer and cache/ISB/multicore contract remain open.",
+  "limitations": [
+    "No real secondary-pool capacity, fragmentation, allocation or hardware mapping observation.",
+    "Synthetic current-thread and core-0 state; no contention, suspended threads, device DMA or caches simulated.",
+    "Shell candidate is thumb malloc: random-sized cached application pool stress test with fatal assertion path, not a controlled NC allocator.",
+    "Alignment wrappers have no overflow/power-of-two validation; callers must check size and alignment bounds.",
+    "Release verifies a header near its input; arbitrary or interior pointers can fault or corrupt and must not be tested on hardware."
+  ],
+  "target_access": false,
+  "target_memory_write": false,
+  "payload_emitted": false
+}

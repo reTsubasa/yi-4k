@@ -1,0 +1,3395 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-10",
+  "method": "Pinned existing Ghidra exports, direct instruction checks and host Unicorn. No fresh REA/Ghidra session, camera connection, camera execution, device writes or patch.",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "script": {
+    "path": "scripts/audit_prerecord_track_writers.py",
+    "sha256": "15c6241fe3b20844275d58f4ec8310db4bc5485011b87f753b739ef80c0f67a1"
+  },
+  "tools": {
+    "unicorn": "2.1.4",
+    "capstone": "5.0.7"
+  },
+  "pinned_functions": [
+    {
+      "entry": "0xa018623c",
+      "body_ranges_inclusive": [
+        "a018623c-a01864ff"
+      ],
+      "body_ranges_concatenated_sha256": "453c9a9de13464c89cba8bcff49fce6cea57f3b939f21d2b70010303ba135091",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a018623c.c",
+      "pseudocode_sha256": "d56cf6617cc76e1f03908de253fbd2b16fdf2bdcff1c003a31f272e2df2035ef"
+    },
+    {
+      "entry": "0xa02257ec",
+      "body_ranges_inclusive": [
+        "a02257ec-a0225843"
+      ],
+      "body_ranges_concatenated_sha256": "ada2139007037ef1399a9b130e8f2f7881ef56ea699cac6dd277edb8332dc17c",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02257ec.c",
+      "pseudocode_sha256": "95717a6afab1ffadf3c2c589835eb100f6e8e2dd0ea5d069a2ccf4ad2a0c56b4"
+    },
+    {
+      "entry": "0xa0225b38",
+      "body_ranges_inclusive": [
+        "a0225b38-a0225b47"
+      ],
+      "body_ranges_concatenated_sha256": "05b801af65a2697d1348bb7a1c3e35c283a67e26e99a6c91e8eb5c7cfc240cff",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0225b38.c",
+      "pseudocode_sha256": "871125e4b296a82390f6fa0154d986c6d0a336b0158493fc8d277d3c40dcdf1b"
+    },
+    {
+      "entry": "0xa0225bb8",
+      "body_ranges_inclusive": [
+        "a0225bb8-a0225bc7"
+      ],
+      "body_ranges_concatenated_sha256": "553f4d6538e919a3481e6fb198dcd820569a5a296b3fa79d8a8b8eef94fbcb16",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0225bb8.c",
+      "pseudocode_sha256": "835827eee51df3e375691e83f7dd1006b9fc6427c6276f75f4e55e220f8c1103"
+    },
+    {
+      "entry": "0xa0225e8c",
+      "body_ranges_inclusive": [
+        "a0225e8c-a0225e9b"
+      ],
+      "body_ranges_concatenated_sha256": "ecf7d56e41e8ecaf2f3edacf4afafacafcbc8633bc41ed830166156c8fde682e",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0225e8c.c",
+      "pseudocode_sha256": "9d80fe37dc799e119a594e99d4af57edce030340bbe9bfb36d0c84a368515ae3"
+    },
+    {
+      "entry": "0xa021f854",
+      "body_ranges_inclusive": [
+        "a021f854-a021f863"
+      ],
+      "body_ranges_concatenated_sha256": "764b14d915781c0fd3ca006705b7ad3bab333e7f5687381995f11c70c22364e4",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a021f854.c",
+      "pseudocode_sha256": "ea80f3a6065111d54beb7014b65336f51a7efe567eb0dcb5917a4462b405fa8b"
+    },
+    {
+      "entry": "0xa020fe74",
+      "body_ranges_inclusive": [
+        "a020fe74-a020fe9b"
+      ],
+      "body_ranges_concatenated_sha256": "c793b90cf8906ce498a4b3b3da97169a504e4be2b647edac889e95be26e05dc3",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a020fe74.c",
+      "pseudocode_sha256": "5312621bd4711d87c358a7ecab723171b941483f2878fadadb23dc119f98b8ba"
+    },
+    {
+      "entry": "0xa01f3338",
+      "body_ranges_inclusive": [
+        "a01f3338-a01f41df"
+      ],
+      "body_ranges_concatenated_sha256": "bb8160f30d4db68d3bb731284bbe2207c4f9e63c14127d4299dc3489f717e1a8",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f3338.c",
+      "pseudocode_sha256": "c84187544c6f0735124053390d01b41e3af889e934fe97eeabe747191e4baaaf"
+    },
+    {
+      "entry": "0xa01f845c",
+      "body_ranges_inclusive": [
+        "a01f845c-a01f8e67"
+      ],
+      "body_ranges_concatenated_sha256": "282b9ca36c35bcff6e0e622a32cf02e7bb2f7d78079b8d9bec6ae18a94597fe8",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f845c.c",
+      "pseudocode_sha256": "60fb070dd2a95b8d970dfc34cb41e2f05e61aec7fc53e0c9770cc9a090a8edac"
+    },
+    {
+      "entry": "0xa0440c90",
+      "body_ranges_inclusive": [
+        "a0440c90-a0440cd3"
+      ],
+      "body_ranges_concatenated_sha256": "2bc04fa914b866b1fc626fa2e01999b9b59f26c9b5d7482a38ae2b689d34bb49",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0440c90.c",
+      "pseudocode_sha256": "76c9955920c54112930e85b450bcd4a84ac41e2299f0c7e7f149e1a5cd7eee88"
+    },
+    {
+      "entry": "0xa0440cd4",
+      "body_ranges_inclusive": [
+        "a0440cd4-a04412cf"
+      ],
+      "body_ranges_concatenated_sha256": "8718724cf8bdb267fa121b6d5ff91f8756eefcf6896546323ca875cb7435b13a",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0440cd4.c",
+      "pseudocode_sha256": "9c46a4929d8a39da6fbc0d9c1e42f62b0ed217635f7835ead8c47cef770da66f"
+    },
+    {
+      "entry": "0xa044042c",
+      "body_ranges_inclusive": [
+        "a044042c-a04404d7"
+      ],
+      "body_ranges_concatenated_sha256": "9d740e1fa546ba416ee57e40e369e8bc517c8e65d817c0549ab962c4d8548b03",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a044042c.c",
+      "pseudocode_sha256": "680283e00599240706edf12deae4c09e694d66851965872e86e5b3723c5c1c72"
+    },
+    {
+      "entry": "0xa03e58f0",
+      "body_ranges_inclusive": [
+        "a03e58f0-a03e5ab7"
+      ],
+      "body_ranges_concatenated_sha256": "551d9bea001b0557c7d9f5b29120feb5331c034662e8fb0269b77b3858ff6abc",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e58f0.c",
+      "pseudocode_sha256": "79fccd08a4d7da31324f3faf14ddf43b8b7d0f66f2f662ac288e9149bf3becb7"
+    },
+    {
+      "entry": "0xa03e5ab8",
+      "body_ranges_inclusive": [
+        "a03e5ab8-a03e5b5b"
+      ],
+      "body_ranges_concatenated_sha256": "98316ad03e20f06e197e368948b8a710baed76d2381a07f59845d2a0a97b9675",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e5ab8.c",
+      "pseudocode_sha256": "73d91233bcfd85b33ac1a6972b1877c9bc9403d5cf748f4e58007e4d4fa2720b"
+    },
+    {
+      "entry": "0xa042d0f8",
+      "body_ranges_inclusive": [
+        "a042d0f8-a042d6c3"
+      ],
+      "body_ranges_concatenated_sha256": "dc63f45f4d4fbb9cb4ac685044c0d494fbd8239f7cc9ea76c6bb12d224fc94e0",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a042d0f8.c",
+      "pseudocode_sha256": "bf2ac59c3f8dd4f4c87941c2e1e04ad1edb82c8ac86850af91b057816de5faef"
+    },
+    {
+      "entry": "0xa043173c",
+      "body_ranges_inclusive": [
+        "a043173c-a0431af7"
+      ],
+      "body_ranges_concatenated_sha256": "5ed94771658e840f72dfac7253168391544aed3311982317bcfcb4dedbc79c1a",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a043173c.c",
+      "pseudocode_sha256": "a8a0dc0e2178db8b8848f8845908f4fd5f5865dcc0e767cf26528da487fa538f"
+    },
+    {
+      "entry": "0xa0440948",
+      "body_ranges_inclusive": [
+        "a0440948-a0440997"
+      ],
+      "body_ranges_concatenated_sha256": "a9bf4fe10e298716cf1f70bb2336f1cc23e45c03f5a3ed5aecf370870f426c27",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0440948.c",
+      "pseudocode_sha256": "285205f87ac8f435758b909f21204aecd00129fd1b388455fd671f957e14c4a6"
+    },
+    {
+      "entry": "0xa044180c",
+      "body_ranges_inclusive": [
+        "a044180c-a044195b"
+      ],
+      "body_ranges_concatenated_sha256": "c031125c8c207df22b8f118720e64ac0b8ddcd5959011693f20caab2c3c2cc6f",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a044180c.c",
+      "pseudocode_sha256": "ec27bffb757713414b1829a442ccc1573b26cb57d482d00f94b3ebe4253e7ad3"
+    }
+  ],
+  "unindexed_code_labels": [
+    {
+      "start": "0xa018488c",
+      "stop_exclusive": "0xa018489c",
+      "sha256": "4a2dc99b9cfff7f7e5b75fa720e91d3f2d17e22f168f1b42f7f8137b94f87c30",
+      "indexed_as_function": false
+    },
+    {
+      "start": "0xa0184f10",
+      "stop_exclusive": "0xa01857d4",
+      "sha256": "534738ce2547c5c0c498eace13f7368f438d62add4c8d1bffd5bf8fc710623e6",
+      "indexed_as_function": false
+    }
+  ],
+  "instruction_checks": [
+    {
+      "address": "0xa0225b40",
+      "bytes": "cc3093e5",
+      "mnemonic": "ldr",
+      "operands": "r3, [r3, #0xcc]"
+    },
+    {
+      "address": "0xa0225bc0",
+      "bytes": "d43093e5",
+      "mnemonic": "ldr",
+      "operands": "r3, [r3, #0xd4]"
+    },
+    {
+      "address": "0xa018488c",
+      "bytes": "383b04e3",
+      "mnemonic": "movw",
+      "operands": "r3, #0x4b38"
+    },
+    {
+      "address": "0xa0184890",
+      "bytes": "6e304ae3",
+      "mnemonic": "movt",
+      "operands": "r3, #0xa06e"
+    },
+    {
+      "address": "0xa0184894",
+      "bytes": "000283e0",
+      "mnemonic": "add",
+      "operands": "r0, r3, r0, lsl #4"
+    },
+    {
+      "address": "0xa01f38e0",
+      "bytes": "10209be5",
+      "mnemonic": "ldr",
+      "operands": "r2, [fp, #0x10]"
+    },
+    {
+      "address": "0xa01f38ec",
+      "bytes": "2c208de5",
+      "mnemonic": "str",
+      "operands": "r2, [sp, #0x2c]"
+    },
+    {
+      "address": "0xa01f38f8",
+      "bytes": "0c209be5",
+      "mnemonic": "ldr",
+      "operands": "r2, [fp, #0xc]"
+    },
+    {
+      "address": "0xa01f38fc",
+      "bytes": "30208de5",
+      "mnemonic": "str",
+      "operands": "r2, [sp, #0x30]"
+    },
+    {
+      "address": "0xa01f3900",
+      "bytes": "10209be5",
+      "mnemonic": "ldr",
+      "operands": "r2, [fp, #0x10]"
+    },
+    {
+      "address": "0xa01f3904",
+      "bytes": "48208de5",
+      "mnemonic": "str",
+      "operands": "r2, [sp, #0x48]"
+    },
+    {
+      "address": "0xa01f3918",
+      "bytes": "042093e5",
+      "mnemonic": "ldr",
+      "operands": "r2, [r3, #4]"
+    },
+    {
+      "address": "0xa01f391c",
+      "bytes": "b025cde1",
+      "mnemonic": "strh",
+      "operands": "r2, [sp, #0x50]"
+    },
+    {
+      "address": "0xa01f3924",
+      "bytes": "54a0cde5",
+      "mnemonic": "strb",
+      "operands": "sl, [sp, #0x54]"
+    },
+    {
+      "address": "0xa01f3928",
+      "bytes": "5570cde5",
+      "mnemonic": "strb",
+      "operands": "r7, [sp, #0x55]"
+    },
+    {
+      "address": "0xa04410b4",
+      "bytes": "402084e5",
+      "mnemonic": "str",
+      "operands": "r2, [r4, #0x40]"
+    },
+    {
+      "address": "0xa04410c4",
+      "bytes": "7d30c4e5",
+      "mnemonic": "strb",
+      "operands": "r3, [r4, #0x7d]"
+    },
+    {
+      "address": "0xa04410fc",
+      "bytes": "7ec0c4e5",
+      "mnemonic": "strb",
+      "operands": "ip, [r4, #0x7e]"
+    },
+    {
+      "address": "0xa044110c",
+      "bytes": "b8c7c4e1",
+      "mnemonic": "strh",
+      "operands": "ip, [r4, #0x78]"
+    },
+    {
+      "address": "0xa0441180",
+      "bytes": "4c92feeb",
+      "mnemonic": "bl",
+      "operands": "#0xa03e5ab8"
+    },
+    {
+      "address": "0xa042d378",
+      "bytes": "d825c5e1",
+      "mnemonic": "ldrd",
+      "operands": "r2, r3, [r5, #0x58]"
+    },
+    {
+      "address": "0xa042d388",
+      "bytes": "483095e5",
+      "mnemonic": "ldr",
+      "operands": "r3, [r5, #0x48]"
+    },
+    {
+      "address": "0xa042d390",
+      "bytes": "d820c101",
+      "mnemonic": "ldrdeq",
+      "operands": "r2, r3, [r1, #8]"
+    },
+    {
+      "address": "0xa042d394",
+      "bytes": "f825c501",
+      "mnemonic": "strdeq",
+      "operands": "r2, r3, [r5, #0x58]"
+    },
+    {
+      "address": "0xa0440960",
+      "bytes": "9421a3e0",
+      "mnemonic": "umlal",
+      "operands": "r2, r3, r4, r1"
+    },
+    {
+      "address": "0xa0440988",
+      "bytes": "f042c0e1",
+      "mnemonic": "strd",
+      "operands": "r4, r5, [r0, #0x20]"
+    },
+    {
+      "address": "0xa04418f8",
+      "bytes": "f02ecce1",
+      "mnemonic": "strd",
+      "operands": "r2, r3, [ip, #0xe0]"
+    },
+    {
+      "address": "0xa0441908",
+      "bytes": "f04dcce1",
+      "mnemonic": "strd",
+      "operands": "r4, r5, [ip, #0xd0]"
+    },
+    {
+      "address": "0xa044190c",
+      "bytes": "f84dcce1",
+      "mnemonic": "strd",
+      "operands": "r4, r5, [ip, #0xd8]"
+    }
+  ],
+  "sensor_video_tables": [
+    {
+      "selector_test_value": 0,
+      "address": "0xa06dcf78",
+      "stride_bytes": 24,
+      "count": 88,
+      "sha256": "93f50606432c0376b808e922a28cb0a3c86f0efd85f9504e9f2a0a3ad7f2f8b4",
+      "rows": [
+        {
+          "internal_mode_index": 0,
+          "entry_address": "0xa06dcf78",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 1,
+          "entry_address": "0xa06dcf90",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 2,
+          "entry_address": "0xa06dcfa8",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 3,
+          "entry_address": "0xa06dcfc0",
+          "dimension_halfwords": [
+            2976,
+            2976,
+            2976,
+            2976
+          ],
+          "opaque_u32_at_08": 257,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 4,
+          "entry_address": "0xa06dcfd8",
+          "dimension_halfwords": [
+            2688,
+            2688,
+            2688,
+            2688
+          ],
+          "opaque_u32_at_08": 257,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 5,
+          "entry_address": "0xa06dcff0",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 6,
+          "entry_address": "0xa06dd008",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 7,
+          "entry_address": "0xa06dd020",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 8,
+          "entry_address": "0xa06dd038",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 9,
+          "entry_address": "0xa06dd050",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 10,
+          "entry_address": "0xa06dd068",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            2704,
+            2032
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 11,
+          "entry_address": "0xa06dd080",
+          "dimension_halfwords": [
+            2560,
+            1920,
+            2560,
+            1920
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 12,
+          "entry_address": "0xa06dd098",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 13,
+          "entry_address": "0xa06dd0b0",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 14,
+          "entry_address": "0xa06dd0c8",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 15,
+          "entry_address": "0xa06dd0e0",
+          "dimension_halfwords": [
+            2304,
+            1296,
+            2304,
+            1296
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 16,
+          "entry_address": "0xa06dd0f8",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 17,
+          "entry_address": "0xa06dd110",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 18,
+          "entry_address": "0xa06dd128",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 19,
+          "entry_address": "0xa06dd140",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 20,
+          "entry_address": "0xa06dd158",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 21,
+          "entry_address": "0xa06dd170",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 22,
+          "entry_address": "0xa06dd188",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 45000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 23,
+          "entry_address": "0xa06dd1a0",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 40000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 24,
+          "entry_address": "0xa06dd1b8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 25,
+          "entry_address": "0xa06dd1d0",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 26,
+          "entry_address": "0xa06dd1e8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 27,
+          "entry_address": "0xa06dd200",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 2
+        },
+        {
+          "internal_mode_index": 28,
+          "entry_address": "0xa06dd218",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 29,
+          "entry_address": "0xa06dd230",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 30,
+          "entry_address": "0xa06dd248",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 2
+        },
+        {
+          "internal_mode_index": 31,
+          "entry_address": "0xa06dd260",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 32,
+          "entry_address": "0xa06dd278",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 33,
+          "entry_address": "0xa06dd290",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 34,
+          "entry_address": "0xa06dd2a8",
+          "dimension_halfwords": [
+            1600,
+            900,
+            1600,
+            900
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 35,
+          "entry_address": "0xa06dd2c0",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 36,
+          "entry_address": "0xa06dd2d8",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 37,
+          "entry_address": "0xa06dd2f0",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 38,
+          "entry_address": "0xa06dd308",
+          "dimension_halfwords": [
+            848,
+            480,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 39,
+          "entry_address": "0xa06dd320",
+          "dimension_halfwords": [
+            2048,
+            1080,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 40,
+          "entry_address": "0xa06dd338",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 41,
+          "entry_address": "0xa06dd350",
+          "dimension_halfwords": [
+            1984,
+            1488,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 42,
+          "entry_address": "0xa06dd368",
+          "dimension_halfwords": [
+            720,
+            480,
+            720,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 43,
+          "entry_address": "0xa06dd380",
+          "dimension_halfwords": [
+            720,
+            480,
+            720,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 44,
+          "entry_address": "0xa06dd398",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 45,
+          "entry_address": "0xa06dd3b0",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 46,
+          "entry_address": "0xa06dd3c8",
+          "dimension_halfwords": [
+            960,
+            540,
+            960,
+            540
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 47,
+          "entry_address": "0xa06dd3e0",
+          "dimension_halfwords": [
+            640,
+            360,
+            640,
+            360
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 48,
+          "entry_address": "0xa06dd3f8",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 49,
+          "entry_address": "0xa06dd410",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 50,
+          "entry_address": "0xa06dd428",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 60000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 51,
+          "entry_address": "0xa06dd440",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 52,
+          "entry_address": "0xa06dd458",
+          "dimension_halfwords": [
+            320,
+            240,
+            320,
+            240
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 53,
+          "entry_address": "0xa06dd470",
+          "dimension_halfwords": [
+            352,
+            240,
+            352,
+            240
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 54,
+          "entry_address": "0xa06dd488",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 55,
+          "entry_address": "0xa06dd4a0",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 56,
+          "entry_address": "0xa06dd4b8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 57,
+          "entry_address": "0xa06dd4d0",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 15000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 58,
+          "entry_address": "0xa06dd4e8",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 59,
+          "entry_address": "0xa06dd500",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 60,
+          "entry_address": "0xa06dd518",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 61,
+          "entry_address": "0xa06dd530",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 62,
+          "entry_address": "0xa06dd548",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 63,
+          "entry_address": "0xa06dd560",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 64,
+          "entry_address": "0xa06dd578",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 65,
+          "entry_address": "0xa06dd590",
+          "dimension_halfwords": [
+            2048,
+            1080,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 66,
+          "entry_address": "0xa06dd5a8",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 67,
+          "entry_address": "0xa06dd5c0",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 68,
+          "entry_address": "0xa06dd5d8",
+          "dimension_halfwords": [
+            352,
+            240,
+            352,
+            240
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 30000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 69,
+          "entry_address": "0xa06dd5f0",
+          "dimension_halfwords": [
+            2048,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 70,
+          "entry_address": "0xa06dd608",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 71,
+          "entry_address": "0xa06dd620",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 72,
+          "entry_address": "0xa06dd638",
+          "dimension_halfwords": [
+            1364,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 240000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 73,
+          "entry_address": "0xa06dd650",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 74,
+          "entry_address": "0xa06dd668",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 75,
+          "entry_address": "0xa06dd680",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 76,
+          "entry_address": "0xa06dd698",
+          "dimension_halfwords": [
+            1364,
+            720,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 240000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 77,
+          "entry_address": "0xa06dd6b0",
+          "dimension_halfwords": [
+            848,
+            480,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 78,
+          "entry_address": "0xa06dd6c8",
+          "dimension_halfwords": [
+            1984,
+            1488,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 90000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 79,
+          "entry_address": "0xa06dd6e0",
+          "dimension_halfwords": [
+            1312,
+            992,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 80,
+          "entry_address": "0xa06dd6f8",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 240000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 81,
+          "entry_address": "0xa06dd710",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 82,
+          "entry_address": "0xa06dd728",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 240000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 83,
+          "entry_address": "0xa06dd740",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 84,
+          "entry_address": "0xa06dd758",
+          "dimension_halfwords": [
+            320,
+            240,
+            320,
+            240
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 85,
+          "entry_address": "0xa06dd770",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 120000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 86,
+          "entry_address": "0xa06dd788",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 90000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 87,
+          "entry_address": "0xa06dd7a0",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            640,
+            360
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 15000,
+          "opaque_u32_at_14": 1
+        }
+      ]
+    },
+    {
+      "selector_test_value": 1,
+      "address": "0xa06e51b8",
+      "stride_bytes": 24,
+      "count": 88,
+      "sha256": "0cc60ef57830420c2636a8714d69f04de5332f6295e5800bebc9d781baa2a556",
+      "rows": [
+        {
+          "internal_mode_index": 0,
+          "entry_address": "0xa06e51b8",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 1,
+          "entry_address": "0xa06e51d0",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 2,
+          "entry_address": "0xa06e51e8",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            3840,
+            2160
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 3,
+          "entry_address": "0xa06e5200",
+          "dimension_halfwords": [
+            2976,
+            2976,
+            2976,
+            2976
+          ],
+          "opaque_u32_at_08": 257,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 4,
+          "entry_address": "0xa06e5218",
+          "dimension_halfwords": [
+            2688,
+            2688,
+            2688,
+            2688
+          ],
+          "opaque_u32_at_08": 257,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 5,
+          "entry_address": "0xa06e5230",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 6,
+          "entry_address": "0xa06e5248",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 7,
+          "entry_address": "0xa06e5260",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 8,
+          "entry_address": "0xa06e5278",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 9,
+          "entry_address": "0xa06e5290",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            2704,
+            1520
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 10,
+          "entry_address": "0xa06e52a8",
+          "dimension_halfwords": [
+            4000,
+            3000,
+            2704,
+            2032
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 11,
+          "entry_address": "0xa06e52c0",
+          "dimension_halfwords": [
+            2560,
+            1920,
+            2560,
+            1920
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 12,
+          "entry_address": "0xa06e52d8",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 13,
+          "entry_address": "0xa06e52f0",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 14,
+          "entry_address": "0xa06e5308",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 15,
+          "entry_address": "0xa06e5320",
+          "dimension_halfwords": [
+            2304,
+            1296,
+            2304,
+            1296
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 16,
+          "entry_address": "0xa06e5338",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 17,
+          "entry_address": "0xa06e5350",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 18,
+          "entry_address": "0xa06e5368",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 19,
+          "entry_address": "0xa06e5380",
+          "dimension_halfwords": [
+            1920,
+            1440,
+            1920,
+            1440
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 20,
+          "entry_address": "0xa06e5398",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 21,
+          "entry_address": "0xa06e53b0",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 22,
+          "entry_address": "0xa06e53c8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 45000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 23,
+          "entry_address": "0xa06e53e0",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 40000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 24,
+          "entry_address": "0xa06e53f8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 25,
+          "entry_address": "0xa06e5410",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 26,
+          "entry_address": "0xa06e5428",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 27,
+          "entry_address": "0xa06e5440",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 2
+        },
+        {
+          "internal_mode_index": 28,
+          "entry_address": "0xa06e5458",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 29,
+          "entry_address": "0xa06e5470",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 30,
+          "entry_address": "0xa06e5488",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 2
+        },
+        {
+          "internal_mode_index": 31,
+          "entry_address": "0xa06e54a0",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 32,
+          "entry_address": "0xa06e54b8",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 33,
+          "entry_address": "0xa06e54d0",
+          "dimension_halfwords": [
+            1440,
+            1080,
+            1440,
+            1080
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 34,
+          "entry_address": "0xa06e54e8",
+          "dimension_halfwords": [
+            1600,
+            900,
+            1600,
+            900
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 35,
+          "entry_address": "0xa06e5500",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 36,
+          "entry_address": "0xa06e5518",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 37,
+          "entry_address": "0xa06e5530",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 38,
+          "entry_address": "0xa06e5548",
+          "dimension_halfwords": [
+            848,
+            480,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 39,
+          "entry_address": "0xa06e5560",
+          "dimension_halfwords": [
+            2048,
+            1080,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 40,
+          "entry_address": "0xa06e5578",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 41,
+          "entry_address": "0xa06e5590",
+          "dimension_halfwords": [
+            1984,
+            1488,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 42,
+          "entry_address": "0xa06e55a8",
+          "dimension_halfwords": [
+            720,
+            576,
+            720,
+            576
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 43,
+          "entry_address": "0xa06e55c0",
+          "dimension_halfwords": [
+            720,
+            576,
+            720,
+            576
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 44,
+          "entry_address": "0xa06e55d8",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 45,
+          "entry_address": "0xa06e55f0",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 46,
+          "entry_address": "0xa06e5608",
+          "dimension_halfwords": [
+            960,
+            540,
+            960,
+            540
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 47,
+          "entry_address": "0xa06e5620",
+          "dimension_halfwords": [
+            640,
+            360,
+            640,
+            360
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 48,
+          "entry_address": "0xa06e5638",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 49,
+          "entry_address": "0xa06e5650",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 50,
+          "entry_address": "0xa06e5668",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 51,
+          "entry_address": "0xa06e5680",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 52,
+          "entry_address": "0xa06e5698",
+          "dimension_halfwords": [
+            320,
+            240,
+            320,
+            240
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 53,
+          "entry_address": "0xa06e56b0",
+          "dimension_halfwords": [
+            352,
+            288,
+            352,
+            288
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 54,
+          "entry_address": "0xa06e56c8",
+          "dimension_halfwords": [
+            2560,
+            1440,
+            2560,
+            1440
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 50000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 55,
+          "entry_address": "0xa06e56e0",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 56,
+          "entry_address": "0xa06e56f8",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 57,
+          "entry_address": "0xa06e5710",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 15000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 58,
+          "entry_address": "0xa06e5728",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 59,
+          "entry_address": "0xa06e5740",
+          "dimension_halfwords": [
+            1600,
+            1200,
+            1600,
+            1200
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 60,
+          "entry_address": "0xa06e5758",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 61,
+          "entry_address": "0xa06e5770",
+          "dimension_halfwords": [
+            1280,
+            960,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 62,
+          "entry_address": "0xa06e5788",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 63,
+          "entry_address": "0xa06e57a0",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 64,
+          "entry_address": "0xa06e57b8",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 65,
+          "entry_address": "0xa06e57d0",
+          "dimension_halfwords": [
+            848,
+            480,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 66,
+          "entry_address": "0xa06e57e8",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 48000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 67,
+          "entry_address": "0xa06e5800",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1001,
+          "scale_at_10": 24000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 68,
+          "entry_address": "0xa06e5818",
+          "dimension_halfwords": [
+            352,
+            288,
+            352,
+            288
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 25000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 69,
+          "entry_address": "0xa06e5830",
+          "dimension_halfwords": [
+            2048,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 70,
+          "entry_address": "0xa06e5848",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 71,
+          "entry_address": "0xa06e5860",
+          "dimension_halfwords": [
+            1920,
+            1080,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 72,
+          "entry_address": "0xa06e5878",
+          "dimension_halfwords": [
+            1364,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 73,
+          "entry_address": "0xa06e5890",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 74,
+          "entry_address": "0xa06e58a8",
+          "dimension_halfwords": [
+            1280,
+            720,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 75,
+          "entry_address": "0xa06e58c0",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1280,
+            720
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 76,
+          "entry_address": "0xa06e58d8",
+          "dimension_halfwords": [
+            1364,
+            720,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 77,
+          "entry_address": "0xa06e58f0",
+          "dimension_halfwords": [
+            848,
+            480,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 78,
+          "entry_address": "0xa06e5908",
+          "dimension_halfwords": [
+            1984,
+            1488,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 90000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 79,
+          "entry_address": "0xa06e5920",
+          "dimension_halfwords": [
+            1312,
+            992,
+            848,
+            480
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 80,
+          "entry_address": "0xa06e5938",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 81,
+          "entry_address": "0xa06e5950",
+          "dimension_halfwords": [
+            640,
+            480,
+            640,
+            480
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 82,
+          "entry_address": "0xa06e5968",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 200000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 83,
+          "entry_address": "0xa06e5980",
+          "dimension_halfwords": [
+            432,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 84,
+          "entry_address": "0xa06e5998",
+          "dimension_halfwords": [
+            320,
+            240,
+            432,
+            240
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 85,
+          "entry_address": "0xa06e59b0",
+          "dimension_halfwords": [
+            1332,
+            1000,
+            1280,
+            960
+          ],
+          "opaque_u32_at_08": 1027,
+          "period_at_0c": 1000,
+          "scale_at_10": 100000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 86,
+          "entry_address": "0xa06e59c8",
+          "dimension_halfwords": [
+            2000,
+            1500,
+            1920,
+            1080
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 90000,
+          "opaque_u32_at_14": 1
+        },
+        {
+          "internal_mode_index": 87,
+          "entry_address": "0xa06e59e0",
+          "dimension_halfwords": [
+            3840,
+            2160,
+            640,
+            360
+          ],
+          "opaque_u32_at_08": 4105,
+          "period_at_0c": 1001,
+          "scale_at_10": 15000,
+          "opaque_u32_at_14": 1
+        }
+      ]
+    }
+  ],
+  "sensor_metadata_table": {
+    "address": "0xa06e4b38",
+    "stride": 16,
+    "count": 88,
+    "all_rows_u32": [
+      0,
+      1,
+      8,
+      8
+    ],
+    "sha256": "ddb06534b65e3b28b4a887803458cf8f71c3ca831e411f53b367d00dc9404022"
+  },
+  "audio_sample_rate_entries": [
+    {
+      "index": 0,
+      "address": "0xa06d450c",
+      "sample_rate": 48000
+    },
+    {
+      "index": 1,
+      "address": "0xa06d4528",
+      "sample_rate": 48000
+    },
+    {
+      "index": 2,
+      "address": "0xa06d4544",
+      "sample_rate": 48000
+    }
+  ],
+  "host_emulation": {
+    "helper_stubs": false,
+    "instruction_limit_per_case": 1000000,
+    "cases": [
+      {
+        "name": "sensor_registration_prefix",
+        "stop_before": "0xa01864f0",
+        "callback_at_cc": "0xa0184f10",
+        "callback_at_d4": "0xa018488c",
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 0,
+        "mode": 0,
+        "returned_pointer": "0xa06dcf78",
+        "period": 1001,
+        "scale": 30000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 0,
+        "mode": 1,
+        "returned_pointer": "0xa06dcf90",
+        "period": 1001,
+        "scale": 24000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 0,
+        "mode": 5,
+        "returned_pointer": "0xa06dcff0",
+        "period": 1001,
+        "scale": 60000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 0,
+        "mode": 86,
+        "returned_pointer": "0xa06dd788",
+        "period": 1001,
+        "scale": 90000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 0,
+        "mode": 87,
+        "returned_pointer": "0xa06dd7a0",
+        "period": 1001,
+        "scale": 15000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 1,
+        "mode": 0,
+        "returned_pointer": "0xa06e51b8",
+        "period": 1000,
+        "scale": 25000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 1,
+        "mode": 1,
+        "returned_pointer": "0xa06e51d0",
+        "period": 1001,
+        "scale": 24000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 1,
+        "mode": 5,
+        "returned_pointer": "0xa06e5230",
+        "period": 1000,
+        "scale": 50000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 1,
+        "mode": 86,
+        "returned_pointer": "0xa06e59c8",
+        "period": 1001,
+        "scale": 90000,
+        "passed": true
+      },
+      {
+        "name": "sensor_video_getter",
+        "selector": 1,
+        "mode": 87,
+        "returned_pointer": "0xa06e59e0",
+        "period": 1001,
+        "scale": 15000,
+        "passed": true
+      },
+      {
+        "name": "main_30000_1001",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 30000,
+        "video_input_period": 1001,
+        "audio_input_scale": 48000,
+        "audio_input_period": 1024,
+        "video_track_fields": {
+          "0x4": 240000,
+          "0x8": 30000,
+          "0xc": 8008,
+          "0x40": 30000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 240000,
+          "0x8": 48000,
+          "0xc": 5120,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "configured_video_time_sequence",
+        "initialization": "main_30000_1001",
+        "initial_descriptor_pts": 4886718345,
+        "full_convert_and_update_functions": true,
+        "frames": [
+          {
+            "index": 0,
+            "descriptor_pts": 4886718345,
+            "accepted_pts": 0,
+            "next_dts": 8008
+          },
+          {
+            "index": 1,
+            "descriptor_pts": 4886719346,
+            "accepted_pts": 8008,
+            "next_dts": 16016
+          },
+          {
+            "index": 2,
+            "descriptor_pts": 4886720347,
+            "accepted_pts": 16016,
+            "next_dts": 24024
+          }
+        ],
+        "does_not_include": "Encoder, mux file output, FIFO operations or real camera timing",
+        "passed": true
+      },
+      {
+        "name": "main_25000_1000",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 25000,
+        "video_input_period": 1000,
+        "audio_input_scale": 48000,
+        "audio_input_period": 1024,
+        "video_track_fields": {
+          "0x4": 1200000,
+          "0x8": 25000,
+          "0xc": 48000,
+          "0x40": 25000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 1200000,
+          "0x8": 48000,
+          "0xc": 25600,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "main_90000_1001",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 90000,
+        "video_input_period": 1001,
+        "audio_input_scale": 48000,
+        "audio_input_period": 1024,
+        "video_track_fields": {
+          "0x4": 720000,
+          "0x8": 90000,
+          "0xc": 8008,
+          "0x40": 90000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 720000,
+          "0x8": 48000,
+          "0xc": 15360,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "event_30000_1001",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 30000,
+        "video_input_period": 1001,
+        "audio_input_scale": 30000,
+        "audio_input_period": 640,
+        "video_track_fields": {
+          "0x4": 30000,
+          "0x8": 30000,
+          "0xc": 1001,
+          "0x40": 30000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 30000,
+          "0x8": 30000,
+          "0xc": 640,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "event_25000_1000",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 25000,
+        "video_input_period": 1000,
+        "audio_input_scale": 25000,
+        "audio_input_period": 533,
+        "video_track_fields": {
+          "0x4": 25000,
+          "0x8": 25000,
+          "0xc": 1000,
+          "0x40": 25000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 25000,
+          "0x8": 25000,
+          "0xc": 533,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "synthetic_count_3",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 30000,
+        "video_input_period": 1001,
+        "audio_input_scale": 48000,
+        "audio_input_period": 1024,
+        "video_track_fields": {
+          "0x4": 240000,
+          "0x8": 30000,
+          "0xc": 8008,
+          "0x40": 30000,
+          "0x58": 0,
+          "0x68": 18446744073709535600,
+          "0x78": 3,
+          "0x7d": 0,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 240000,
+          "0x8": 48000,
+          "0xc": 5120,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "synthetic_mode_1",
+        "entry": "0xa0440cd4",
+        "synthetic_configuration": true,
+        "video_input_scale": 30000,
+        "video_input_period": 1001,
+        "audio_input_scale": 48000,
+        "audio_input_period": 1024,
+        "video_track_fields": {
+          "0x4": 240000,
+          "0x8": 30000,
+          "0xc": 16016,
+          "0x40": 30000,
+          "0x58": 0,
+          "0x68": 0,
+          "0x78": 1,
+          "0x7d": 1,
+          "0x7e": 0,
+          "0x7f": 1
+        },
+        "audio_track_fields": {
+          "0x4": 240000,
+          "0x8": 48000,
+          "0xc": 5120,
+          "0x40": 48000
+        },
+        "passed": true
+      },
+      {
+        "name": "first_descriptor_origin_prefix",
+        "initial_origin": 0,
+        "initial_frame_count": 0,
+        "descriptor_pts": 4886718345,
+        "actual_origin": 4886718345,
+        "passed": true
+      },
+      {
+        "name": "first_descriptor_origin_prefix",
+        "initial_origin": 0,
+        "initial_frame_count": 1,
+        "descriptor_pts": 4886718345,
+        "actual_origin": 0,
+        "passed": true
+      },
+      {
+        "name": "first_descriptor_origin_prefix",
+        "initial_origin": 700,
+        "initial_frame_count": 0,
+        "descriptor_pts": 4886718345,
+        "actual_origin": 700,
+        "passed": true
+      },
+      {
+        "name": "dts_progression",
+        "track_type": 1,
+        "period": 8008,
+        "entries": 3,
+        "initial_dts": 4294967587,
+        "actual_dts": 4294991611,
+        "passed": true
+      },
+      {
+        "name": "dts_progression",
+        "track_type": 2,
+        "period": 5120,
+        "entries": 3,
+        "initial_dts": 4294967587,
+        "actual_dts": 4294982947,
+        "passed": true
+      },
+      {
+        "name": "resume_prefix",
+        "stop_before": "0xa0441888",
+        "video_track_fields": {
+          "0x68": 18446744073709471536,
+          "0x48": 0,
+          "0x58": 0,
+          "0x60": 0,
+          "0x7e": 0
+        },
+        "saved_dts": 80080,
+        "passed": true
+      }
+    ],
+    "passed": 25,
+    "limitation": "Constructed inputs; real movie init/helpers execute, while getter and origin/resume prefixes stop at explicit boundaries. No real encoder, mux file or pause/resume lifecycle is run."
+  },
+  "audio_consumer_calls": [
+    {
+      "address": "0xa0431778",
+      "call": "#0xa0451960"
+    },
+    {
+      "address": "0xa04317e0",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa0431810",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa0431814",
+      "call": "#0xa02a7524"
+    },
+    {
+      "address": "0xa0431840",
+      "call": "#0xa0451c94"
+    },
+    {
+      "address": "0xa0431850",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa0431878",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa04318b0",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa04318b4",
+      "call": "#0xa02a7524"
+    },
+    {
+      "address": "0xa04318e0",
+      "call": "#0xa03e835c"
+    },
+    {
+      "address": "0xa043191c",
+      "call": "r3"
+    },
+    {
+      "address": "0xa0431978",
+      "call": "#0xa02a70ec"
+    },
+    {
+      "address": "0xa0431994",
+      "call": "#0xa03e28cc"
+    },
+    {
+      "address": "0xa04319ac",
+      "call": "#0xa0411e88"
+    },
+    {
+      "address": "0xa04319c0",
+      "call": "#0xa03e28b0"
+    },
+    {
+      "address": "0xa04319d8",
+      "call": "#0xa0411e88"
+    },
+    {
+      "address": "0xa0431a00",
+      "call": "#0xa03e627c"
+    },
+    {
+      "address": "0xa0431a1c",
+      "call": "#0xa03e28b0"
+    },
+    {
+      "address": "0xa0431a34",
+      "call": "#0xa0411e88"
+    },
+    {
+      "address": "0xa0431a4c",
+      "call": "#0xa03e28b0"
+    },
+    {
+      "address": "0xa0431a5c",
+      "call": "#0xa0506418"
+    },
+    {
+      "address": "0xa0431a68",
+      "call": "#0xa0506418"
+    },
+    {
+      "address": "0xa0431a6c",
+      "call": "#0xa03e28b0"
+    },
+    {
+      "address": "0xa0431a84",
+      "call": "#0xa0411e88"
+    },
+    {
+      "address": "0xa0431ac0",
+      "call": "#0xa0440948"
+    },
+    {
+      "address": "0xa0431acc",
+      "call": "#0xa0451c94"
+    },
+    {
+      "address": "0xa0431ad8",
+      "call": "#0xa04111ac"
+    }
+  ],
+  "field_writers": {
+    "video_track_40": "InitMovieInfo copies cfg+20; primary open cfg+20 and cfg+04 both come from selected sensor row+10.",
+    "video_track_58": "InitPTS clears; ProcessVideo stores first descriptor PTS when origin==0 and frame_count_48==0; ResumePipe clears again.",
+    "video_track_68": "InitPTS uses -low32(period*(count78-1)) if control7e==0; ResumePipe adds saved_DTS-current_DTS modulo 2^64.",
+    "video_track_78": "InitMovieInfo copies cfg+28; primary open gets count from sensor metadata row+04, all 88 pinned rows hold 1.",
+    "video_track_7d": "InitMovieInfo copies cfg+2d; primary/event open explicitly set 0 in inspected path.",
+    "video_track_7e": "InitMovieInfo copies cfg+2e, zeroed by GetDefaultMovieInfoCfg in inspected open path; ResumePipe resets zero."
+  },
+  "unresolved": [
+    "Runtime active selector/mode, secondary-stream overrides and encoding producer clock epoch.",
+    "Whether all callback table entries are exposed or usable camera recording modes.",
+    "Hardware encoder PTS-to-sensor-scale behavior across mode switches and discontinuities.",
+    "A/V sample boundary and real FIFO start skew; audio ordinary mux does not reuse video ConvertPTS.",
+    "Whether native EventRecord period truncation is corrected elsewhere.",
+    "Second mux writer/60-second ring lifecycle, memory and output validity on a camera."
+  ]
+}

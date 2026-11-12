@@ -1,0 +1,262 @@
+[
+  {
+    "offset": "0x3d9",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x3e8",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x3ee",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x40a",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x424",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0x433",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x447",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0x454",
+    "text": "open64"
+  },
+  {
+    "offset": "0x45b",
+    "text": "ioctl"
+  },
+  {
+    "offset": "0x461",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x469",
+    "text": "mmap64"
+  },
+  {
+    "offset": "0x470",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0x481",
+    "text": "strerror"
+  },
+  {
+    "offset": "0x48a",
+    "text": "close"
+  },
+  {
+    "offset": "0x490",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x497",
+    "text": "AmbaMem_munmap"
+  },
+  {
+    "offset": "0x4a6",
+    "text": "memset"
+  },
+  {
+    "offset": "0x4ad",
+    "text": "AmbaMem_convert"
+  },
+  {
+    "offset": "0x4bd",
+    "text": "AmbaMem_init"
+  },
+  {
+    "offset": "0x4ca",
+    "text": "AmbaMem_release"
+  },
+  {
+    "offset": "0x4da",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0x4e5",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0x4f2",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x4fc",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x503",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x50f",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x51d",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x529",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x536",
+    "text": "libambamem.so"
+  },
+  {
+    "offset": "0x544",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x7fd",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0x82d",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0xc5c",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0xc69",
+    "text": "AmbaMem_munmap"
+  },
+  {
+    "offset": "0xc78",
+    "text": "AmbaMem_convert"
+  },
+  {
+    "offset": "0xc88",
+    "text": "/dev/amba_heapmem"
+  },
+  {
+    "offset": "0xc9a",
+    "text": "cannot open '%s'"
+  },
+  {
+    "offset": "0xcad",
+    "text": "cannot retrieve HEAP info!(%d)"
+  },
+  {
+    "offset": "0xcce",
+    "text": "/dev/amba_dspmem"
+  },
+  {
+    "offset": "0xcdf",
+    "text": "cannot retrieve DSP info!(%d)"
+  },
+  {
+    "offset": "0xcff",
+    "text": "%s: unsupported type %d"
+  },
+  {
+    "offset": "0xd18",
+    "text": "%s: cannot mmap (%d:%s), type=%d."
+  },
+  {
+    "offset": "0xd3c",
+    "text": "%s: type %d, mmap %p(%p) to %p with size=%x successfully!!"
+  },
+  {
+    "offset": "0xd79",
+    "text": "%s: type %d never mmapped."
+  },
+  {
+    "offset": "0xd95",
+    "text": "cannot munmap (%d:%s)"
+  },
+  {
+    "offset": "0xf1d",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0xf4e",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0xf58",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0xf6b",
+    "text": ".hash"
+  },
+  {
+    "offset": "0xf71",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0xf79",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0xf81",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0xf8e",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0xf9d",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0xfa6",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0xfaf",
+    "text": ".init"
+  },
+  {
+    "offset": "0xfb5",
+    "text": ".text"
+  },
+  {
+    "offset": "0xfbb",
+    "text": ".fini"
+  },
+  {
+    "offset": "0xfc1",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0xfc9",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0xfd3",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0xfdf",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0xff0",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0xffe",
+    "text": ".data"
+  },
+  {
+    "offset": "0x1009",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source": "artifacts/device/2026-11-09-linux/sys_sw_partition.bin",
+  "partition_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+  "build_strings": [
+    {
+      "partition_offset": "0x4361d0",
+      "text": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746"
+    }
+  ],
+  "note": "Offsets are logical partition file offsets; image extent and map must be verified before fixed-address use"
+}

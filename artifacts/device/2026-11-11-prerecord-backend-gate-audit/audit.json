@@ -1,0 +1,158 @@
+{
+  "schema": "yi4k.prerecord-backend-gate-audit/v1",
+  "contract": "artifacts/device/2026-11-11-prerecord-backend-contract/contract.json",
+  "status": "passed",
+  "device_access": false,
+  "firmware_written": false,
+  "ram_or_partition_written": false,
+  "rtos_executed": false,
+  "checks": [
+    {
+      "name": "contract scope remains offline",
+      "status": "passed",
+      "detail": "candidate is still explicitly marked as an offline contract"
+    },
+    {
+      "name": "safety flags are all false",
+      "status": "passed",
+      "detail": "camera, firmware, RAM/partition, hidden setter, and RTOS execution flags are false"
+    },
+    {
+      "name": "all required runtime gates are represented",
+      "status": "passed",
+      "detail": "represented 8/8 required camera gates"
+    },
+    {
+      "name": "no camera gate is falsely closed",
+      "status": "passed",
+      "detail": "all runtime gates remain missing or explicitly unproven"
+    },
+    {
+      "name": "contract evidence hashes still match",
+      "status": "passed",
+      "detail": "verified 9/9 evidence files"
+    },
+    {
+      "name": "offline evidence is not promoted to runtime proof",
+      "status": "passed",
+      "detail": "contract evidence entries contain no device_access=true assertion"
+    }
+  ],
+  "evidence": [
+    {
+      "name": "fifo_consumer",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-consumer-validation.json",
+      "exists": true,
+      "expected_sha256": "9c142a9dc60ee82038c5d93fba7bd6b2385ef5149b0d92e69b3a01db9a5f243a",
+      "actual_sha256": "9c142a9dc60ee82038c5d93fba7bd6b2385ef5149b0d92e69b3a01db9a5f243a",
+      "matches": true
+    },
+    {
+      "name": "fifo_rollover",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-rollover-ownership-audit.json",
+      "exists": true,
+      "expected_sha256": "120efd16bad5b014f8ef93018f0c95620eae530d83859a68ad717039d12e873b",
+      "actual_sha256": "120efd16bad5b014f8ef93018f0c95620eae530d83859a68ad717039d12e873b",
+      "matches": true
+    },
+    {
+      "name": "session_rollover",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-session-rollover-audit.json",
+      "exists": true,
+      "expected_sha256": "75b6a5ee0c85a192a58fcfccdc014adec521188a68584fa9cb412afd99fb01f1",
+      "actual_sha256": "75b6a5ee0c85a192a58fcfccdc014adec521188a68584fa9cb412afd99fb01f1",
+      "matches": true
+    },
+    {
+      "name": "capture_epoch",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-capture-epoch-audit.json",
+      "exists": true,
+      "expected_sha256": "69f9e632de6bcd77baf00f7af6ded7f72ce133f0253ba0c855e45afc3927fddc",
+      "actual_sha256": "69f9e632de6bcd77baf00f7af6ded7f72ce133f0253ba0c855e45afc3927fddc",
+      "matches": true
+    },
+    {
+      "name": "start_anchor",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-start-anchor-audit.json",
+      "exists": true,
+      "expected_sha256": "330220bf049daabc8f7ec09a449fb69d8565ab87317dffd9e096fcc901f4cde1",
+      "actual_sha256": "330220bf049daabc8f7ec09a449fb69d8565ab87317dffd9e096fcc901f4cde1",
+      "matches": true
+    },
+    {
+      "name": "frame_desc",
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-dsp-framedesc-contract-audit.json",
+      "exists": true,
+      "expected_sha256": "f490f2e9ea3c1416b4cd121821d960fc85b632818db12f1935cb778a5b4f6f58",
+      "actual_sha256": "f490f2e9ea3c1416b4cd121821d960fc85b632818db12f1935cb778a5b4f6f58",
+      "matches": true
+    },
+    {
+      "name": "loop_recovery",
+      "path": "artifacts/device/2026-11-11-prerecord-loop-recovery/audit.json",
+      "exists": true,
+      "expected_sha256": "1c54acfb8fa4898143c490694783aae3b1efc9d6a98388aad432b8a92fb619cf",
+      "actual_sha256": "1c54acfb8fa4898143c490694783aae3b1efc9d6a98388aad432b8a92fb619cf",
+      "matches": true
+    },
+    {
+      "name": "cross_file_epoch",
+      "path": "artifacts/device/2026-11-11-prerecord-cross-file-epoch/audit.json",
+      "exists": true,
+      "expected_sha256": "5d0910711a93a19daf1c05ac71d1483fd4e386606449f5877324f44c3ee7b5fd",
+      "actual_sha256": "5d0910711a93a19daf1c05ac71d1483fd4e386606449f5877324f44c3ee7b5fd",
+      "matches": true
+    },
+    {
+      "name": "payload_reclaim",
+      "path": "artifacts/device/2026-11-11-prerecord-payload-reclaim/audit.json",
+      "exists": true,
+      "expected_sha256": "40d79f22fcff6b99e3202dc55df14c577c3f6076120f3ef68447d28927bdd3a8",
+      "actual_sha256": "40d79f22fcff6b99e3202dc55df14c577c3f6076120f3ef68447d28927bdd3a8",
+      "matches": true
+    }
+  ],
+  "open_gates": [
+    {
+      "gate": "virtual FIFO create/base validity",
+      "status": "missing",
+      "required": "real stream ID, registry, handle and failure cleanup on camera"
+    },
+    {
+      "gate": "descriptor/payload stable lease",
+      "status": "stock_virtual_cursor_rejected_hardware_copy_window_missing",
+      "required": "immediate copy to owned storage before retirement, with measured DMA/cache stability for the whole copy; begin/end software guards alone do not protect stock payload"
+    },
+    {
+      "gate": "callback quiescence before Delete",
+      "status": "missing",
+      "required": "in-flight callback count and no stale callback after Delete"
+    },
+    {
+      "gate": "segment first access unit",
+      "status": "missing",
+      "required": "new file receives NAL7/NAL8 then IDR/NAL5 in real order"
+    },
+    {
+      "gate": "A/V capture epoch",
+      "status": "missing",
+      "required": "gate 0→1, first accepted DMA block, first video PTS and audio frame counter correlation"
+    },
+    {
+      "gate": "continuous producer across rollover",
+      "status": "missing",
+      "required": "no hidden encoder restart; PTS/AAC config continuity"
+    },
+    {
+      "gate": "storage/power recovery",
+      "status": "missing",
+      "required": "full card, unplug, reboot and partial MP4 handling"
+    },
+    {
+      "gate": "camera voice/shutter delivery",
+      "status": "missing",
+      "required": "typed START event and physical shutter debounce bound to commit"
+    }
+  ],
+  "next_safe_action": "Run only the bounded real-camera read-only gates after explicit device-test authorization; do not install a callback or submit a custom EIS/prerecord payload from this audit."
+}

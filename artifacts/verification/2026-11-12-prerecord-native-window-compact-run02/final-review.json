@@ -1,0 +1,77 @@
+{
+  "status": "pass_final_compact_native_window_source_document_pins",
+  "offline_only": true,
+  "device_access": false,
+  "files": [
+    {
+      "path": "scripts/export_prerecord_native_window_compact.py",
+      "sha256": "689534b524c58dcd18d06f7dcae6cdc32e196affe255f6ed8add5de456e7bd17",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/export_prerecord_native_window_compact.py"
+    },
+    {
+      "path": "scripts/verify_prerecord_native_window_compact.py",
+      "sha256": "99cf030003543fa778481b6597576b21683517bcb85918728d746f67f05a6353",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/verify_prerecord_native_window_compact.py"
+    },
+    {
+      "path": "scripts/prerecord_native_window_sps.py",
+      "sha256": "c3cb00719ef2a15f0064567ed0e388605b4c485887ea5b945eec52be58707bff",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/prerecord_native_window_sps.py"
+    },
+    {
+      "path": "scripts/audit_prerecord_native_window_avfoundation.swift",
+      "sha256": "02a199539c58c669ee7a6a40f6851f68b674615656ea5192a7ac36d2027ca9e0",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/audit_prerecord_native_window_avfoundation.swift"
+    },
+    {
+      "path": "scripts/export_prerecord_native_window.py",
+      "sha256": "c2cb4a7cfbf3655f28e2b7f8395236b053bdfaa1fb6a94a7ce17e2d843429c51",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/export_prerecord_native_window.py"
+    },
+    {
+      "path": "scripts/export_prerecord_native_session.py",
+      "sha256": "086f1f376e0ab6250e35a3e24198c3c269f763209ab14f9768ff2f2f9990b439",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/export_prerecord_native_session.py"
+    },
+    {
+      "path": "docs/prerecord-native-window-compact.md",
+      "sha256": "19693547073d94a79cf5b8f5386d07ac55c7e7efe834bd3209b17336e5731276",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/prerecord-native-window-compact.md"
+    },
+    {
+      "path": "docs/prerecord-native-window-export.md",
+      "sha256": "c1df922f55096e4e7de3dfbd37e6fd1a52f3ed6feaa31e1c572b28a86de69854",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/prerecord-native-window-export.md"
+    },
+    {
+      "path": "docs/prerecord-native-session-export.md",
+      "sha256": "57b8aa33561258a04f84a9e0d597a734a2a03030ee13ab96aab67cc1cf092d4d",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/prerecord-native-session-export.md"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-review.json",
+      "sha256": "76892dc60f259aaa0d9b7505d77c71420d4cd02b72e4cc14ffd3adef17978db8",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/2026-11-12-prerecord-native-window-compact-review.json"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-avfoundation-explore/consumer-controls.json",
+      "sha256": "998732e09d36e16fd4263348a3a36bd92786f33583c194414fb23d60a28eb59d",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/consumer-controls.json"
+    },
+    {
+      "path": ".tools/ffmpeg8-host/acquisition.json",
+      "sha256": "e67526d5adb1473a7abc791b2038e6b7713515aff3dbf832023f2a08657533b5",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/final-snapshot/acquisition.json"
+    }
+  ],
+  "positive": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/audit.json",
+  "independent_review": "artifacts/verification/2026-11-12-prerecord-native-window-compact-review.json",
+  "consumer_controls": "artifacts/verification/2026-11-12-prerecord-native-window-avfoundation-explore/consumer-controls.json",
+  "output": {
+    "path": "artifacts/verification/2026-11-12-prerecord-native-window-compact-run02/compact.ffmpeg8-reviewed.mp4",
+    "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a",
+    "bytes": 343127606
+  },
+  "accepted_scope": "Two compact nonzero archive trigger windows, original ARM mux with SPS-derived geometry. Strict ordinary FFmpeg8 gates and independent full decode pass. Legacy6.1 and AVFoundation reject controls retained. Android evidence is an independently pinned parent-task artifact; no live-camera/encoder/firmware-install acceptance.",
+  "historical_pins": "Earlier native-session/native-window JSON and source/doc snapshots retained unchanged. Current document appendices supersede broad consumer compatibility interpretations only."
+}

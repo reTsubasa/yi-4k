@@ -1,0 +1,42 @@
+~ # ifconfig; route -n; netstat -lntup
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:35 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:35 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1968 (1.9 KiB)  TX bytes:1968 (1.9 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 58:70:C6:02:2F:4F  
+          inet addr:192.168.42.1  Bcast:192.168.42.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:179 errors:0 dropped:14 overruns:0 frame:0
+          TX packets:127 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:15487 (15.1 KiB)  TX bytes:19066 (18.6 KiB)
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.42.0    0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:9888            0.0.0.0:*               LISTEN      110/AmbaEventNotify
+tcp        0      0 0.0.0.0:7878            0.0.0.0:*               LISTEN      176/remoteapi_cmd_d
+tcp        0      0 0.0.0.0:554             0.0.0.0:*               LISTEN      204/AmbaRTSPServer
+tcp        0      0 0.0.0.0:9898            0.0.0.0:*               LISTEN      108/AmbaNetFifoDaem
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      69/rpcbind
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      154/cherokee-worker
+tcp        0      0 0.0.0.0:8787            0.0.0.0:*               LISTEN      189/remoteapi_data_
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN      461/dnsmasq
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      216/telnetd
+netstat: /proc/net/tcp6: No such file or directory
+udp        0      0 0.0.0.0:805             0.0.0.0:*                           204/AmbaRTSPServer
+udp        0      0 0.0.0.0:53              0.0.0.0:*                           461/dnsmasq
+udp        0      0 0.0.0.0:67              0.0.0.0:*                           461/dnsmasq
+udp        0      0 0.0.0.0:111             0.0.0.0:*                           69/rpcbind
+udp        0      0 0.0.0.0:664             0.0.0.0:*                           69/rpcbind
+udp        0      0 0.0.0.0:708             0.0.0.0:*                           108/AmbaNetFifoDaem
+udp        0      0 0.0.0.0:7877            0.0.0.0:*                           152/remoteapi_disc_
+netstat: /proc/net/udp6: No such file or directory
+~ # echo __YI_CAPTURE_6f0a645205b84da99e7acc3dc7629a68__
+__YI_CAPTURE_6f0a645205b84da99e7acc3dc7629a68__

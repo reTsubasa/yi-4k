@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T04:01:23.671327+00:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.4.7: 206 host tests, lint 0 errors/74 warnings; final identical APK passed 3 local Android AVD geometry/touch/rotation workflows; physical phone absent",
+    "eis_native": "StorageIdle -> Shell event -> fixed autoexec reader mechanism recovered and bounded ARM cases verified; arbitrary ARM/cache/SMP/recovery remain unresolved",
+    "eis_algorithm": "v2 sustained-pan residual/crop fixes, 6604 virtual grid checks, 9 stock descriptor pairs round-trip; gyro calibration/common-frame anchor and deployment ABI remain absent",
+    "prerecord": "Real archived video incremental closed-MP4 ring with eviction/trigger pin/publication/retained recovery; 60.864533s before +1.064s after; no live camera/physical SD",
+    "voice": "Stock en/zh START1003/F0010338 can be reused before ready/toggle merge; custom phrase training/inference/loading unavailable"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-12-build-0.4.7.json",
+      "bytes": 3913,
+      "sha256": "a2dcbb7adb06d36132615d033854fbe07215e9dc2dddaef126cd0f7e637212f9",
+      "status": "pass_host_build_unit_tests_and_local_avd",
+      "scope": "Android prototype UI, immersive overlay, localized curated settings; no physical phone or camera operations",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/0.4.7-device-reports/ui-review-run04/ui-review.json",
+      "bytes": 5455,
+      "sha256": "c0cd8d19fb82599d6773016b7299bc77e918d9d412736b5dbf84081de59b305f",
+      "status": "pass_final_apk_actual_android_ui_review",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/0.4.7-device-reports/ui-review-run04/acceptance.json",
+      "bytes": 4650,
+      "sha256": "c619f63c718a1cbf7e861990290c10871f18eaef2816030d74553820029c8397",
+      "status": "documented",
+      "scope": "headless Android AVD only; no physical phone or camera access",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/0.4.7-host-reports/setting-label-inventory.json",
+      "bytes": 12412,
+      "sha256": "e6caa60f8135aa1036abf5174cdc72fa47e8c4b77098633f6ebbb0cb5fdb53e7",
+      "status": "pass_all_96_pinned_registration_labels_localized",
+      "scope": "Pinned offline setting table and Java source inventory, not a camera runtime permission check",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-goal047-python-regression.json",
+      "bytes": 346,
+      "sha256": "cf5faa644854fd5685dcdfa75f88f4fc582464f59210161a0846e08256f9b480",
+      "status": "passed",
+      "scope": "Combined Python host regression; archived source replay and offline EIS tests, no camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/android-ui-0.4.7.md",
+      "bytes": 4028,
+      "sha256": "f415361eea9697938672d70bb00deb13af12568e5d0c5576c8ddaa1da02a764c",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/device-1107-stock-entry-acceptance-plan.md",
+      "bytes": 9200,
+      "sha256": "8c8809d2b1af39b12209c1f704949301ffa4898e101934ef7eb5f740a4a24e87",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-autoexec-storage-gate-run01/audit.json",
+      "bytes": 11651,
+      "sha256": "5c71cf0a3f5470c31b824938c7b76e6d8f82c64c0fd919cdc34a3ed3522cfa61",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/device-1107-autoexec-storage-gate.md",
+      "bytes": 8485,
+      "sha256": "e1cfcbdcfd59bbb360531145c5bf1895e62d1f0182968eaf45e75d81fce6a36b",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-boot-extension-consistency-run01/audit.json",
+      "bytes": 6555,
+      "sha256": "6e7dab50df62815e7b6145f90edb0a318a7e20ef790c51ab1dae90277cd445c7",
+      "status": "pass_offline_consistency_only",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-mesh-v2/validation.json",
+      "bytes": 1309,
+      "sha256": "3cb6e7df8b41f36c607581a2d4776a014b0e251792cf02ee877814dca4125a88",
+      "status": "passed_host_candidate_and_rejection_checks",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-archive/audit.json",
+      "bytes": 19898,
+      "sha256": "08ea2dc09cb293cacd8294867d559c67e39e396990d570deb79cada9b13f9516",
+      "status": "passed_archive_layout_and_real_input_eligibility_checks",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-quality/audit.json",
+      "bytes": 1585,
+      "sha256": "35de27ac6750009dc9e7cbdf2fadb84a2aca498df7de341f7d844611560ad77a",
+      "status": "passed_host_angle_and_sampling_support_checks",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/eis-candidate-mesh-replacement.md",
+      "bytes": 3868,
+      "sha256": "d1a773223dadcafb58841a68821bc40ffb1590fd4b56709b6e5357164e68c583",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/eis-candidate-archive-abi.md",
+      "bytes": 4426,
+      "sha256": "b3696480033a33843a7c71616c81a49471a929aaece78808fc8b15b4b8bec9b1",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-voice-keyword-replacement/audit.json",
+      "bytes": 5775,
+      "sha256": "dde66bde4c84d56f9e2d94a0dc4516fb1570c64c5c1c92919f169d0935192c3a",
+      "status": "passed_offline_resource_envelope_and_shared_action_checks",
+      "scope": [
+        "GUI/PCM/log strings name UI and public actions; they are not an editable recognition lexicon.",
+        "The resource XOR recurrence can be reversed; this does not rule out outer firmware or resource integrity checks.",
+        "Existing stock ARM audits establish language argument selection and class-to-event mapping; this audit only reparses retained envelopes and the class table.",
+        "No waveform, neural inference, custom keyword recognition, RTOS installation or prerecord hardware operation was exercised."
+      ],
+      "device_access": false
+    },
+    {
+      "path": "docs/voice-keyword-replacement-path.md",
+      "bytes": 8935,
+      "sha256": "b19437445918071906ea5aa249d7ca959a6d57a1da0c0e6e1486764894393e78",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run02/validation.json",
+      "bytes": 35303,
+      "sha256": "5c7b5b497b6d526c461ae465de20d17c99cee95b3778776c43522f4c1cb753a5",
+      "status": "pass_archived_media_incremental_ring_publication_and_recovery",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run02/regression.json",
+      "bytes": 1061,
+      "sha256": "716bd8b308d181fdeb3925cbb59800ac93ffb3791c68047d916e145858b46e72",
+      "status": "pass",
+      "scope": "host regression; no camera operations",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run02/final-review.json",
+      "bytes": 579,
+      "sha256": "fd47f726dba13eca926d372e2631b67cfa9b3efb8711324f62c6906f53df8e23",
+      "status": "pass_final_review",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-media-ring-end-to-end.md",
+      "bytes": 6452,
+      "sha256": "d878a85a93ffaf802e6c37cab58cadfee15e6f9a46256aae05b6b6ee7e946a37",
+      "status": "documented",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-stock-entry-acceptance-plan-final/dry-run.json",
+      "bytes": 2991,
+      "sha256": "3263f7802a44cc5a907d1af1ee54412a550f67a1dfb595eac5b2051069f2650c",
+      "status": "pass_host_only",
+      "scope": "host/offline; no camera or physical SD",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "No camera API/setter/capture/RAM/firmware/partition or boot operation performed in this continuation",
+    "Host typed voice/shutter injection is not microphone/GPIO acceptance",
+    "Host FFmpeg streamcopy is not stock native event3 runtime",
+    "Stock entry proposal is dry-run only, not authorized or executed deployment"
+  ],
+  "remaining": [
+    "Physical phone UI/hotspot/live RTSP framing and real camera clock acceptance",
+    "P1 custom entry, P5 instruction/SMP publication, P11 independent recovery",
+    "Calibrated gyro/exposure/frame anchors and real EIS encoded-video comparison",
+    "Live encoder/FIFO callbacks, shared hardware epoch, real minute SD ring and storage-failure recovery",
+    "Original spoken command/physical shutter bound to actual camera prerecord backend"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "scope": "direct MP4 STTS/MDHD parsing; no device contact or media mutation",
+  "source_start_packet_from_sha256": 189,
+  "checks": {
+    "output_stts_equals_selected_stts": true,
+    "output_stts_equals_contiguous_source_stts": true,
+    "output_last_aac_stts_duration_1024": true
+  },
+  "passed": true,
+  "files": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/source.mp4",
+      "sha256": "7e1155fb2e410f7ebccdc8d32eb668cd1d035da337ee5bef8a08131e7ab22256",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 179200,
+          "sample_count": 350,
+          "stts_entries": [
+            [
+              350,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 673024,
+          "sample_count": 658,
+          "stts_entries": [
+            [
+              657,
+              1024
+            ],
+            [
+              1,
+              256
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/nonzero/segments/part-000002.mp4",
+      "sha256": "13819f107ef3330bb04456461cbeb4f94f6a2ddff35dac8b0f1c22e3b0756ff2",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 25600,
+          "sample_count": 50,
+          "stts_entries": [
+            [
+              50,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 96256,
+          "sample_count": 94,
+          "stts_entries": [
+            [
+              94,
+              1024
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/nonzero/segments/part-000003.mp4",
+      "sha256": "32451103771fba6df4b49b8e4225625f925b2f5691da54cc9e482818c206f522",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 25600,
+          "sample_count": 50,
+          "stts_entries": [
+            [
+              50,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 95232,
+          "sample_count": 93,
+          "stts_entries": [
+            [
+              93,
+              1024
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/nonzero/segments/part-000004.mp4",
+      "sha256": "9224d972a7fce3a85ff7e697e76a3be1ab84a769850fee295fb7bcb4824007ab",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 25600,
+          "sample_count": 50,
+          "stts_entries": [
+            [
+              50,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 96256,
+          "sample_count": 94,
+          "stts_entries": [
+            [
+              94,
+              1024
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/nonzero/segments/part-000005.mp4",
+      "sha256": "713ff9130ff8b5b1719bcc222066d613c506dd19a1f79df3156e7e7e46b4863c",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 25600,
+          "sample_count": 50,
+          "stts_entries": [
+            [
+              50,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 96256,
+          "sample_count": 94,
+          "stts_entries": [
+            [
+              94,
+              1024
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-nonzero-investigation-run01/nonzero/clip.pending.mp4",
+      "sha256": "dce7fd463260c0ca52f9614edecfb240e963a105ec232b46dd049184da733a16",
+      "tracks": {
+        "vide": {
+          "timescale": 12800,
+          "mdhd_duration": 102400,
+          "sample_count": 200,
+          "stts_entries": [
+            [
+              200,
+              512
+            ]
+          ]
+        },
+        "soun": {
+          "timescale": 48000,
+          "mdhd_duration": 384000,
+          "sample_count": 375,
+          "stts_entries": [
+            [
+              375,
+              1024
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "ffprobe_observation": {
+    "source_last_selected_duration": 1024,
+    "output_last_duration": 512,
+    "source_and_output_audio_time_base": "1/48000"
+  },
+  "interpretation": "Actual source/selected/output STTS durations match. FFmpeg 6.1 MOV packet duration inference misreports final duration for this positive-start case; unchanged strict gate rejects."
+}

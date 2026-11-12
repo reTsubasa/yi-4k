@@ -1,0 +1,77 @@
+{
+  "phases": [
+    {
+      "mode_index": 0,
+      "geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "exposure_prints": [
+        {
+          "sample_offset": 18,
+          "before_exposure_adjustment": 26,
+          "exposure_raw": 16,
+          "count": 17
+        }
+      ],
+      "update_diff_raw_counts": {
+        "23": 13,
+        "24": 4
+      },
+      "counts": {
+        "exposure": 17,
+        "frame_update": 17,
+        "gyro": 11
+      }
+    },
+    {
+      "mode_index": 1,
+      "geometry": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532",
+      "exposure_prints": [
+        {
+          "sample_offset": 12,
+          "before_exposure_adjustment": 20,
+          "exposure_raw": 16,
+          "count": 67
+        }
+      ],
+      "update_diff_raw_counts": {
+        "16": 13,
+        "17": 53
+      },
+      "counts": {
+        "gyro": 48,
+        "exposure": 67,
+        "frame_update": 66
+      }
+    },
+    {
+      "mode_index": 2,
+      "geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "exposure_prints": [],
+      "update_diff_raw_counts": {},
+      "counts": {}
+    }
+  ],
+  "file_mentions": [
+    {
+      "source_line": 2232,
+      "log_tick": 26031,
+      "file": "YDXJ0139.MP4"
+    },
+    {
+      "source_line": 2235,
+      "log_tick": 26033,
+      "file": "YDXJ0139.MP4"
+    },
+    {
+      "source_line": 2596,
+      "log_tick": 28211,
+      "file": "YDXJ0139.MP4"
+    }
+  ],
+  "nominal_tick_ms": 1,
+  "tick_basis": "Recovered timer7 configuration: timer clocks per microsecond, 1000-unit period, ISR increments common log/gyro counter; no independent oscillator calibration.",
+  "limitations": [
+    "No exposure-to-gyro or video PTS synchronization established.",
+    "48 decimated gyro prints and 48 decoded video frames are different sequences.",
+    "Mode interval includes capture transitions and is longer than the encoded clip."
+  ]
+}

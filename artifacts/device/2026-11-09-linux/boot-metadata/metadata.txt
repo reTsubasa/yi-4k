@@ -1,0 +1,125 @@
+cat /proc/mtd; for x in /sys/class/mtd/mtd*/name /sys/class/mtd/mtd*/size /s
+ys/class/mtd/mtd*/offset /sys/class/mtd/mtd*/ro; do echo ===$x; cat $x 2>/dev/nu
+ll; done; ls -l /dev/mtd* /dev/mtdblock*
+dev:    size   erasesize  name
+mtd0: 00020000 00020000 "VENDOR_DATA"
+mtd1: 02000000 00020000 "SYS_SW"
+mtd2: 00500000 00020000 "DSP_uCode"
+mtd3: 01400000 00020000 "SYS_DATA"
+mtd4: 00a00000 00020000 "LINUX_Kernel"
+mtd5: 03c00000 00020000 "LINUX_RFS"
+mtd6: 01e00000 00020000 "LINUX_HIBER_IMG"
+mtd7: 01980000 00020000 "VIDEO_REC_IDX"
+mtd8: 00280000 00020000 "CALIB"
+mtd9: 001c0000 00020000 "USER_SETTING"
+mtd10: 00680000 00020000 "DRIVE_A"
+mtd11: 00680000 00020000 "DRIVE_B"
+mtd12: 03580000 00020000 "RESERVED"
+===/sys/class/mtd/mtd0/name
+VENDOR_DATA
+===/sys/class/mtd/mtd1/name
+SYS_SW
+===/sys/class/mtd/mtd10/name
+DRIVE_A
+===/sys/class/mtd/mtd11/name
+DRIVE_B
+===/sys/class/mtd/mtd12/name
+RESERVED
+===/sys/class/mtd/mtd2/name
+DSP_uCode
+===/sys/class/mtd/mtd3/name
+SYS_DATA
+===/sys/class/mtd/mtd4/name
+LINUX_Kernel
+===/sys/class/mtd/mtd5/name
+LINUX_RFS
+===/sys/class/mtd/mtd6/name
+LINUX_HIBER_IMG
+===/sys/class/mtd/mtd7/name
+VIDEO_REC_IDX
+===/sys/class/mtd/mtd8/name
+CALIB
+===/sys/class/mtd/mtd9/name
+USER_SETTING
+===/sys/class/mtd/mtd0/size
+131072
+===/sys/class/mtd/mtd1/size
+33554432
+===/sys/class/mtd/mtd10/size
+6815744
+===/sys/class/mtd/mtd11/size
+6815744
+===/sys/class/mtd/mtd12/size
+56098816
+===/sys/class/mtd/mtd2/size
+5242880
+===/sys/class/mtd/mtd3/size
+20971520
+===/sys/class/mtd/mtd4/size
+10485760
+===/sys/class/mtd/mtd5/size
+62914560
+===/sys/class/mtd/mtd6/size
+31457280
+===/sys/class/mtd/mtd7/size
+26738688
+===/sys/class/mtd/mtd8/size
+2621440
+===/sys/class/mtd/mtd9/size
+1835008
+===/sys/class/mtd/mtd*/offset
+===/sys/class/mtd/mtd*/ro
+crw-rw----    1 root     root       90,   0 Jan  1  1970 [1;35m/dev/mtd0[0m
+crw-rw----    1 root     root       90,   1 Jan  1  1970 [1;35m/dev/mtd0ro[0m
+crw-rw----    1 root     root       90,   2 Jan  1  1970 [1;35m/dev/mtd1[0m
+crw-rw----    1 root     root       90,  20 Jan  1  1970 [1;35m/dev/mtd10[0m
+crw-rw----    1 root     root       90,  21 Jan  1  1970 [1;35m/dev/mtd10ro[0m
+crw-rw----    1 root     root       90,  22 Jan  1  1970 [1;35m/dev/mtd11[0m
+crw-rw----    1 root     root       90,  23 Jan  1  1970 [1;35m/dev/mtd11ro[0m
+crw-rw----    1 root     root       90,  24 Jan  1  1970 [1;35m/dev/mtd12[0m
+crw-rw----    1 root     root       90,  25 Jan  1  1970 [1;35m/dev/mtd12ro[0m
+crw-rw----    1 root     root       90,   3 Jan  1  1970 [1;35m/dev/mtd1ro[0m
+crw-rw----    1 root     root       90,   4 Jan  1  1970 [1;35m/dev/mtd2[0m
+crw-rw----    1 root     root       90,   5 Jan  1  1970 [1;35m/dev/mtd2ro[0m
+crw-rw----    1 root     root       90,   6 Jan  1  1970 [1;35m/dev/mtd3[0m
+crw-rw----    1 root     root       90,   7 Jan  1  1970 [1;35m/dev/mtd3ro[0m
+crw-rw----    1 root     root       90,   8 Jan  1  1970 [1;35m/dev/mtd4[0m
+crw-rw----    1 root     root       90,   9 Jan  1  1970 [1;35m/dev/mtd4ro[0m
+crw-rw----    1 root     root       90,  10 Jan  1  1970 [1;35m/dev/mtd5[0m
+crw-rw----    1 root     root       90,  11 Jan  1  1970 [1;35m/dev/mtd5ro[0m
+crw-rw----    1 root     root       90,  12 Jan  1  1970 [1;35m/dev/mtd6[0m
+crw-rw----    1 root     root       90,  13 Jan  1  1970 [1;35m/dev/mtd6ro[0m
+crw-rw----    1 root     root       90,  14 Jan  1  1970 [1;35m/dev/mtd7[0m
+crw-rw----    1 root     root       90,  15 Jan  1  1970 [1;35m/dev/mtd7ro[0m
+crw-rw----    1 root     root       90,  16 Jan  1  1970 [1;35m/dev/mtd8[0m
+crw-rw----    1 root     root       90,  17 Jan  1  1970 [1;35m/dev/mtd8ro[0m
+crw-rw----    1 root     root       90,  18 Jan  1  1970 [1;35m/dev/mtd9[0m
+crw-rw----    1 root     root       90,  19 Jan  1  1970 [1;35m/dev/mtd9ro[0m
+brw-rw----    1 root     root       31,   0 Jan  1  1970 [1;35m/dev/mtdblock0[0m
+brw-rw----    1 root     root       31,   0 Jan  1  1970 [1;35m/dev/mtdblock0[0m
+brw-rw----    1 root     root       31,   1 Jan  1  1970 [1;35m/dev/mtdblock1[0m
+brw-rw----    1 root     root       31,   1 Jan  1  1970 [1;35m/dev/mtdblock1[0m
+brw-rw----    1 root     root       31,  10 Jan  1  1970 [1;35m/dev/mtdblock10[0m
+brw-rw----    1 root     root       31,  10 Jan  1  1970 [1;35m/dev/mtdblock10[0m
+brw-rw----    1 root     root       31,  11 Jan  1  1970 [1;35m/dev/mtdblock11[0m
+brw-rw----    1 root     root       31,  11 Jan  1  1970 [1;35m/dev/mtdblock11[0m
+brw-rw----    1 root     root       31,  12 Jan  1  1970 [1;35m/dev/mtdblock12[0m
+brw-rw----    1 root     root       31,  12 Jan  1  1970 [1;35m/dev/mtdblock12[0m
+brw-rw----    1 root     root       31,   2 Jan  1  1970 [1;35m/dev/mtdblock2[0m
+brw-rw----    1 root     root       31,   2 Jan  1  1970 [1;35m/dev/mtdblock2[0m
+brw-rw----    1 root     root       31,   3 Jan  1  1970 [1;35m/dev/mtdblock3[0m
+brw-rw----    1 root     root       31,   3 Jan  1  1970 [1;35m/dev/mtdblock3[0m
+brw-rw----    1 root     root       31,   4 Jan  1  1970 [1;35m/dev/mtdblock4[0m
+brw-rw----    1 root     root       31,   4 Jan  1  1970 [1;35m/dev/mtdblock4[0m
+brw-rw----    1 root     root       31,   5 Jan  1  1970 [1;35m/dev/mtdblock5[0m
+brw-rw----    1 root     root       31,   5 Jan  1  1970 [1;35m/dev/mtdblock5[0m
+brw-rw----    1 root     root       31,   6 Jan  1  1970 [1;35m/dev/mtdblock6[0m
+brw-rw----    1 root     root       31,   6 Jan  1  1970 [1;35m/dev/mtdblock6[0m
+brw-rw----    1 root     root       31,   7 Jan  1  1970 [1;35m/dev/mtdblock7[0m
+brw-rw----    1 root     root       31,   7 Jan  1  1970 [1;35m/dev/mtdblock7[0m
+brw-rw----    1 root     root       31,   8 Jan  1  1970 [1;35m/dev/mtdblock8[0m
+brw-rw----    1 root     root       31,   8 Jan  1  1970 [1;35m/dev/mtdblock8[0m
+brw-rw----    1 root     root       31,   9 Jan  1  1970 [1;35m/dev/mtdblock9[0m
+brw-rw----    1 root     root       31,   9 Jan  1  1970 [1;35m/dev/mtdblock9[0m
+~ # echo __YI_CAPTURE_0151d5bddfd9410185b2bd027d504b1c__
+__YI_CAPTURE_0151d5bddfd9410185b2bd027d504b1c__

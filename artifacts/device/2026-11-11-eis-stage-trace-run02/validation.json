@@ -1,0 +1,1229 @@
+{
+  "evidence_kind": "Host compiled C and ARM compiled C in Unicorn, plus original zero-branch ARM stage-failure scenarios",
+  "case_count": 33,
+  "cases": [
+    {
+      "name": "original-0-none-enable0",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "state_sha256": "a22d638bb65b9f01871fd59906debc17976a7050d8acb6870430f1a1e8941b2f",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "none",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "set"
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          },
+          {
+            "dependency": "unlock",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0x0"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "get"
+          },
+          {
+            "dependency": "unlock",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x3010d060"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x3010e860"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 0,
+        "staged_x": "0x3010d060",
+        "staged_y": "0x3010e860",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-0-none-enable1",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "state_sha256": "a22d638bb65b9f01871fd59906debc17976a7050d8acb6870430f1a1e8941b2f",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "none",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "set"
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          },
+          {
+            "dependency": "unlock",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0x0"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "get"
+          },
+          {
+            "dependency": "unlock",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x3010d060"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x3010e860"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 1,
+        "staged_x": "0x3010d060",
+        "staged_y": "0x3010e860",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-0-set-lookup-enable0",
+      "returns": [
+        1,
+        0,
+        3,
+        3,
+        3,
+        3
+      ],
+      "state_sha256": "9e3322584aab486fe29b6e44a509f95ad9e876e9b95a0693eaf2c6d5c4a136e1",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "log",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0xffffffff"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "get"
+          },
+          {
+            "dependency": "unlock",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30180000"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30182000"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 0,
+        "staged_x": "0x30180000",
+        "staged_y": "0x30182000",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-0-set-lookup-enable1",
+      "returns": [
+        1,
+        0,
+        3,
+        3,
+        3,
+        3
+      ],
+      "state_sha256": "9e3322584aab486fe29b6e44a509f95ad9e876e9b95a0693eaf2c6d5c4a136e1",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "log",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0xffffffff"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "get"
+          },
+          {
+            "dependency": "unlock",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0x0"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30180000"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30182000"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 1,
+        "staged_x": "0x30180000",
+        "staged_y": "0x30182000",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-0-get-lookup-enable0",
+      "returns": [
+        1,
+        0,
+        0,
+        4,
+        4,
+        4
+      ],
+      "state_sha256": "22497ef5ba6c8a5fd55a768069ffc875d7e3e9f5fcc374b4e65e90945b604a59",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "set"
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          },
+          {
+            "dependency": "unlock",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0x0"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "log",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30180000"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30182000"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 0,
+        "staged_x": "0x30180000",
+        "staged_y": "0x30182000",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-0-get-lookup-enable1",
+      "returns": [
+        1,
+        0,
+        0,
+        4,
+        4,
+        4
+      ],
+      "state_sha256": "22497ef5ba6c8a5fd55a768069ffc875d7e3e9f5fcc374b4e65e90945b604a59",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x0",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x0"
+          },
+          {
+            "stage": "set",
+            "selector": 15
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "set",
+            "return": "0x0"
+          },
+          {
+            "dependency": "lock",
+            "stage": "set"
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "copy",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "dependency": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          },
+          {
+            "dependency": "unlock",
+            "stage": "set"
+          },
+          {
+            "stage_return": "set",
+            "return": "0x0"
+          },
+          {
+            "stage": "get",
+            "selector": 0
+          },
+          {
+            "dependency": "mutex_lookup",
+            "stage": "get",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "log",
+            "stage": "get"
+          },
+          {
+            "stage_return": "get",
+            "return": "0xffffffff"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30180000"
+          },
+          {
+            "dependency": "address_conversion",
+            "address": "0x30182000"
+          }
+        ],
+        "staged_state_changed": true,
+        "ready_byte_after": 1,
+        "staged_x": "0x30180000",
+        "staged_y": "0x30182000",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-none-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "none",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-none-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "none",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-set-lookup-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-set-lookup-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-get-lookup-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-1-get-lookup-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0x1",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0x1"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-none-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "none",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-none-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "none",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-set-lookup-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-set-lookup-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "set-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-get-lookup-enable0",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 0,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "original-ffffffff-get-lookup-enable1",
+      "returns": [
+        1,
+        2,
+        2
+      ],
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b",
+      "stock_scenario": {
+        "branch_a17045da": "zero",
+        "generator_return": "0xffffffff",
+        "fault_injected": "get-lookup",
+        "descriptor_enabled": 1,
+        "events": [
+          {
+            "stage": "generate",
+            "return": "0xffffffff"
+          }
+        ],
+        "staged_state_changed": false,
+        "ready_byte_after": 0,
+        "staged_x": "0xcccccccc",
+        "staged_y": "0xcccccccc",
+        "old_descriptor_addresses": [
+          "0x30180000",
+          "0x30182000"
+        ],
+        "new_bank_addresses": [
+          "0x3010d060",
+          "0x3010e860"
+        ]
+      }
+    },
+    {
+      "name": "missing-get-ready-is-not-enough",
+      "returns": [
+        1,
+        0,
+        0,
+        6,
+        6
+      ],
+      "state_sha256": "cf12810f5561c6d9768090ad0330e1ea2924134a1d7dea22dde55c7f6cfc5909",
+      "stock_scenario": null
+    },
+    {
+      "name": "missing-tail-is-incomplete",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "state_sha256": "ddcf0390ffa387e8117a4f27675af096c590eb9f8dcc7fe663ed1041cdf4382d",
+      "stock_scenario": null
+    },
+    {
+      "name": "duplicate-calc",
+      "returns": [
+        1,
+        0,
+        6,
+        6
+      ],
+      "state_sha256": "2a187d98b988a0309cced453f076533ad0187fcc963d367c1127700aa766b5ca",
+      "stock_scenario": null
+    },
+    {
+      "name": "duplicate-after-prepared",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        6,
+        6
+      ],
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984",
+      "stock_scenario": null
+    },
+    {
+      "name": "candidate-nonzero-status",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        6,
+        6
+      ],
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984",
+      "stock_scenario": null
+    },
+    {
+      "name": "candidate-nonzero-status-old-table-token",
+      "returns": [
+        1,
+        0,
+        0,
+        0,
+        6,
+        6
+      ],
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984",
+      "stock_scenario": null
+    },
+    {
+      "name": "old-token-after-slot-reuse",
+      "returns": [
+        1,
+        0,
+        2,
+        7,
+        0
+      ],
+      "state_sha256": "69f6ff8f4abffc4b889c8d22ad63f292817eee879503285d80ff7558b3dffd8d",
+      "stock_scenario": null
+    },
+    {
+      "name": "wrong-context",
+      "returns": [
+        1,
+        6,
+        6
+      ],
+      "state_sha256": "0af1caf634e721b67695917081752bc53740f57eb635ac0d7d8bd11654299259",
+      "stock_scenario": null
+    },
+    {
+      "name": "same-bank-cross-invocation-getter",
+      "returns": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        5,
+        5,
+        5
+      ],
+      "state_sha256": "c12ac8ba0fc0ff1a8b88b7b198933bcc90a5f6132669c65fc7704bc32ac83738",
+      "stock_scenario": null
+    },
+    {
+      "name": "missing-clean-receipt",
+      "returns": [
+        1,
+        0,
+        5,
+        5
+      ],
+      "state_sha256": "8b83a7c06696ee471f93946f33c029350d5f3e93cfc11caa9bfd3cc783ffbb1f",
+      "stock_scenario": null
+    },
+    {
+      "name": "same-address-stale-content",
+      "returns": [
+        1,
+        0,
+        0,
+        5,
+        5
+      ],
+      "state_sha256": "112ec37eb3b1982d95d46196d84b222b998630690cdac191476696f012a6c8f5",
+      "stock_scenario": null
+    },
+    {
+      "name": "wrong-bank-address",
+      "returns": [
+        1,
+        0,
+        0,
+        5,
+        5
+      ],
+      "state_sha256": "112ec37eb3b1982d95d46196d84b222b998630690cdac191476696f012a6c8f5",
+      "stock_scenario": null
+    },
+    {
+      "name": "bounded-full",
+      "returns": [
+        1,
+        2,
+        3,
+        4,
+        0,
+        0,
+        5
+      ],
+      "state_sha256": "1ac7c565ab0d096401f07072998c5f714d38701bc9715b93713237076467a02f",
+      "stock_scenario": null
+    },
+    {
+      "name": "two-interleaved-invocations",
+      "returns": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "state_sha256": "8a78f2b3c54bf9455779c91435af19fd66b35c9bf922c9a578c7590d1b7fec91",
+      "stock_scenario": null
+    },
+    {
+      "name": "token-exhaustion-no-reuse",
+      "returns": [
+        null,
+        4294967295,
+        0,
+        0
+      ],
+      "state_sha256": "f508f476d2657678c5a51df3774d820dd628edbb49671fa78531adc3a8a10889",
+      "stock_scenario": null
+    }
+  ],
+  "commands": [
+    [
+      "clang",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-dynamiclib",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_eis_stage_trace.c",
+      "-o",
+      "artifacts/device/2026-11-11-eis-stage-trace-run02/stage-trace.dylib"
+    ],
+    [
+      "clang",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-ffreestanding",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_eis_stage_trace.c",
+      "-o",
+      "artifacts/device/2026-11-11-eis-stage-trace-run02/stage-trace.o"
+    ],
+    [
+      "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+      "-T",
+      "artifacts/device/2026-11-11-eis-stage-trace-run02/emulation.ld",
+      "artifacts/device/2026-11-11-eis-stage-trace-run02/stage-trace.o",
+      "-o",
+      "artifacts/device/2026-11-11-eis-stage-trace-run02/stage-trace.elf"
+    ]
+  ],
+  "cpu_image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "source_hashes": {
+    "sdk/yi4k_1107_eis_stage_trace.c": "60b568b9de3b1898370ef874e88c7ffbec2390fb8e9247ce3301552e4bf295d5",
+    "sdk/yi4k_1107_eis_stage_trace.h": "901487450339aa1e492a4439027d712513bbb7ae57d36e5713de7bf519898e78",
+    "scripts/validate_eis_stage_trace.py": "4f895a19bc9622ee8c563944b3938dc7671cc3bc9bffd4af34e46ec670d824f0",
+    "scripts/eis_stage_failure_contract.py": "28aafff3ee709a75284f8c8e834c1c7853b14b9af9913f9d314200c6bfa0fa97"
+  },
+  "abi": {
+    "trace_bytes": 244,
+    "receipt_bytes": 44,
+    "arm_callee_saved_and_sp_checked": true
+  },
+  "device_access": false,
+  "replacement_ready": false,
+  "limits": [
+    "Not an installed recorder; token/context receipts are caller-provided, not authenticated hardware observations.",
+    "Original harness models generation status, context/mutex lookup, logical copy, cache-clean call logging and address conversion.",
+    "CRC32 fixture identifies synthetic plane contents; collisions or dishonest receipts are not detected.",
+    "Only mandatory-Get zero branch is supported; debug-gated nonzero branch cannot be relabeled PREPARED.",
+    "No runtime allocation/entry/unregister, SMP synchronization, cache completion, DSP latch or encoded-frame association is proved."
+  ]
+}

@@ -1,0 +1,2229 @@
+{
+  "cpu_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "fixed_instruction_checks": [
+    {
+      "address": "0xa039c144",
+      "instruction": "movw r1, #0x20d0"
+    },
+    {
+      "address": "0xa039c154",
+      "instruction": "movt r1, #0xa060"
+    },
+    {
+      "address": "0xa039c160",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa039c4b8",
+      "instruction": "bl #0xa03119a8"
+    },
+    {
+      "address": "0xa039cc70",
+      "instruction": "bl #0xa03119a8"
+    },
+    {
+      "address": "0xa0394718",
+      "instruction": "vmov.f64 d0, d16"
+    },
+    {
+      "address": "0xa0394730",
+      "instruction": "beq #0xa03948b8"
+    },
+    {
+      "address": "0xa02da314",
+      "instruction": "add r3, ip, #0x110"
+    },
+    {
+      "address": "0xa02da318",
+      "instruction": "ldrd r2, r3, [r3]"
+    },
+    {
+      "address": "0xa02da324",
+      "instruction": "strd r2, r3, [sp, #0xc8]"
+    },
+    {
+      "address": "0xa03855d4",
+      "instruction": "ldr r3, [r3]"
+    },
+    {
+      "address": "0xa03855e8",
+      "instruction": "cmp r2, r3"
+    },
+    {
+      "address": "0xa0394740",
+      "instruction": "bl #0xa02da164"
+    },
+    {
+      "address": "0xa0394960",
+      "instruction": "bl #0xa02da164"
+    },
+    {
+      "address": "0xa0385570",
+      "instruction": "bl #0xa0392cb0"
+    },
+    {
+      "address": "0xa0385574",
+      "instruction": "bl #0xa048e3f8"
+    },
+    {
+      "address": "0xa03855c4",
+      "instruction": "bl #0xa048e3f8"
+    },
+    {
+      "address": "0xa0385614",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa02d9ba4",
+      "instruction": "vmov.f64 d8, d0"
+    },
+    {
+      "address": "0xa02d9bc0",
+      "instruction": "bl #0xa03bc46c"
+    },
+    {
+      "address": "0xa02d9bd0",
+      "instruction": "vstr d8, [r3, #0x110]"
+    },
+    {
+      "address": "0xa02d9bd4",
+      "instruction": "add r2, r2, #1"
+    },
+    {
+      "address": "0xa02d9bd8",
+      "instruction": "str r2, [r3, #0x34]"
+    },
+    {
+      "address": "0xa02d9bdc",
+      "instruction": "bl #0xa03bc498"
+    },
+    {
+      "address": "0xa032d2d8",
+      "instruction": "bl #0xa032b520"
+    },
+    {
+      "address": "0xa032d0e4",
+      "instruction": "str r3, [r5]"
+    }
+  ],
+  "diagnostic_strings": [
+    {
+      "address": "0xa06020d0",
+      "text": "AmbaItuner_Execute"
+    },
+    {
+      "address": "0xa06021c4",
+      "text": "[ITUNER][DEBUG]%s() %d, Execute"
+    },
+    {
+      "address": "0xa05ffda4",
+      "text": "Eis-Warp calculation not in-time for ucode: %d %d"
+    },
+    {
+      "address": "0xa0601434",
+      "text": "RotateFreq = %f, EisAngleLimit = %d"
+    }
+  ],
+  "original_generator_cases": [
+    {
+      "input": {
+        "name": "disabled-640",
+        "geometry": [
+          640,
+          480
+        ]
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 9492,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "thumb_memset": 2,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "000000000000000000000000000000000000000000000000000080020000e00100000100000001000000000000000000141e010000141f010000000000000000000000008002e0018002e00100000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            20,
+            30,
+            1,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 31,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 6144,
+          "write_intervals": [
+            [
+              0,
+              6144
+            ]
+          ],
+          "active_value_min": 0,
+          "active_value_max": 0,
+          "active_value_sha256": "657a7317d9f941f1aca295ef93e23f14f7ec6ca996b4f87536791106e9a7131a"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            20,
+            31,
+            1,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 32,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 6144,
+          "write_intervals": [
+            [
+              0,
+              6144
+            ]
+          ],
+          "active_value_min": 0,
+          "active_value_max": 0,
+          "active_value_sha256": "d457efc0edd106bb2ab6c7b0630f50618de6e1d29c67937e15368e6d5c9df205"
+        }
+      ],
+      "scratch_plane_sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "disabled-1080",
+        "geometry": [
+          1920,
+          1080
+        ]
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 9573,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "thumb_memset": 2,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "0000000000000000000000000000000000000000000000000000800700003804000001000000010000000000000000001e220201001e2302010000000000000000000000800738048007380400000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            30,
+            34,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 35,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 6144,
+          "write_intervals": [
+            [
+              0,
+              6144
+            ]
+          ],
+          "active_value_min": 0,
+          "active_value_max": 0,
+          "active_value_sha256": "f4ca22d0902b7b26282b14016aaa03b2b78713b9578b5c047bcb54da4482f7ec"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            30,
+            35,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 36,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 6144,
+          "write_intervals": [
+            [
+              0,
+              6144
+            ]
+          ],
+          "active_value_min": 0,
+          "active_value_max": 0,
+          "active_value_sha256": "34b4d54904f0c46c318c50b1278c31ee1df47cfaa6137cf3bfbf9a548748c28a"
+        }
+      ],
+      "scratch_plane_sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "constant-640x480",
+        "geometry": [
+          640,
+          480
+        ],
+        "calibration": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 129286,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 1323,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "000000000100000000000000000000000000000000000000000080020000e00100000100000001000000000000000000141e010001141f010000000000000000000000008002e0018002e00100000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            20,
+            30,
+            1,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 31,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 1302,
+          "write_intervals": [
+            [
+              0,
+              42
+            ],
+            [
+              64,
+              106
+            ],
+            [
+              128,
+              170
+            ],
+            [
+              192,
+              234
+            ],
+            [
+              256,
+              298
+            ],
+            [
+              320,
+              362
+            ],
+            [
+              384,
+              426
+            ],
+            [
+              448,
+              490
+            ],
+            [
+              512,
+              554
+            ],
+            [
+              576,
+              618
+            ],
+            [
+              640,
+              682
+            ],
+            [
+              704,
+              746
+            ],
+            [
+              768,
+              810
+            ],
+            [
+              832,
+              874
+            ],
+            [
+              896,
+              938
+            ],
+            [
+              960,
+              1002
+            ],
+            [
+              1024,
+              1066
+            ],
+            [
+              1088,
+              1130
+            ],
+            [
+              1152,
+              1194
+            ],
+            [
+              1216,
+              1258
+            ],
+            [
+              1280,
+              1322
+            ],
+            [
+              1344,
+              1386
+            ],
+            [
+              1408,
+              1450
+            ],
+            [
+              1472,
+              1514
+            ],
+            [
+              1536,
+              1578
+            ],
+            [
+              1600,
+              1642
+            ],
+            [
+              1664,
+              1706
+            ],
+            [
+              1728,
+              1770
+            ],
+            [
+              1792,
+              1834
+            ],
+            [
+              1856,
+              1898
+            ],
+            [
+              1920,
+              1962
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 16,
+          "active_value_sha256": "074843d35a5d2ead3b1cab6cfde697ef33518e047284444df07e4ddc8130fb90"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            20,
+            31,
+            1,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 32,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 1344,
+          "write_intervals": [
+            [
+              0,
+              42
+            ],
+            [
+              64,
+              106
+            ],
+            [
+              128,
+              170
+            ],
+            [
+              192,
+              234
+            ],
+            [
+              256,
+              298
+            ],
+            [
+              320,
+              362
+            ],
+            [
+              384,
+              426
+            ],
+            [
+              448,
+              490
+            ],
+            [
+              512,
+              554
+            ],
+            [
+              576,
+              618
+            ],
+            [
+              640,
+              682
+            ],
+            [
+              704,
+              746
+            ],
+            [
+              768,
+              810
+            ],
+            [
+              832,
+              874
+            ],
+            [
+              896,
+              938
+            ],
+            [
+              960,
+              1002
+            ],
+            [
+              1024,
+              1066
+            ],
+            [
+              1088,
+              1130
+            ],
+            [
+              1152,
+              1194
+            ],
+            [
+              1216,
+              1258
+            ],
+            [
+              1280,
+              1322
+            ],
+            [
+              1344,
+              1386
+            ],
+            [
+              1408,
+              1450
+            ],
+            [
+              1472,
+              1514
+            ],
+            [
+              1536,
+              1578
+            ],
+            [
+              1600,
+              1642
+            ],
+            [
+              1664,
+              1706
+            ],
+            [
+              1728,
+              1770
+            ],
+            [
+              1792,
+              1834
+            ],
+            [
+              1856,
+              1898
+            ],
+            [
+              1920,
+              1962
+            ],
+            [
+              1984,
+              2026
+            ]
+          ],
+          "active_value_min": -32,
+          "active_value_max": -32,
+          "active_value_sha256": "181b9727dd9b17bbadcf8bb5a07c649a140b433bf1b8490b085462b3d60778af"
+        }
+      ],
+      "scratch_plane_sha256": "5d1b4bc721dedd984fddbc57421ea1b1ce1cb8d877c47d287992956cd3a963cb",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "constant-1280x720",
+        "geometry": [
+          1280,
+          720
+        ],
+        "calibration": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 190605,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 1974,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "000000000100000000000000000000000000000000000000000000050000d00200000100000001000000000000000000142d020001142f020000000000000000000000000005d0020005d00200000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            20,
+            45,
+            2,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 46,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 1932,
+          "write_intervals": [
+            [
+              0,
+              42
+            ],
+            [
+              64,
+              106
+            ],
+            [
+              128,
+              170
+            ],
+            [
+              192,
+              234
+            ],
+            [
+              256,
+              298
+            ],
+            [
+              320,
+              362
+            ],
+            [
+              384,
+              426
+            ],
+            [
+              448,
+              490
+            ],
+            [
+              512,
+              554
+            ],
+            [
+              576,
+              618
+            ],
+            [
+              640,
+              682
+            ],
+            [
+              704,
+              746
+            ],
+            [
+              768,
+              810
+            ],
+            [
+              832,
+              874
+            ],
+            [
+              896,
+              938
+            ],
+            [
+              960,
+              1002
+            ],
+            [
+              1024,
+              1066
+            ],
+            [
+              1088,
+              1130
+            ],
+            [
+              1152,
+              1194
+            ],
+            [
+              1216,
+              1258
+            ],
+            [
+              1280,
+              1322
+            ],
+            [
+              1344,
+              1386
+            ],
+            [
+              1408,
+              1450
+            ],
+            [
+              1472,
+              1514
+            ],
+            [
+              1536,
+              1578
+            ],
+            [
+              1600,
+              1642
+            ],
+            [
+              1664,
+              1706
+            ],
+            [
+              1728,
+              1770
+            ],
+            [
+              1792,
+              1834
+            ],
+            [
+              1856,
+              1898
+            ],
+            [
+              1920,
+              1962
+            ],
+            [
+              1984,
+              2026
+            ],
+            [
+              2048,
+              2090
+            ],
+            [
+              2112,
+              2154
+            ],
+            [
+              2176,
+              2218
+            ],
+            [
+              2240,
+              2282
+            ],
+            [
+              2304,
+              2346
+            ],
+            [
+              2368,
+              2410
+            ],
+            [
+              2432,
+              2474
+            ],
+            [
+              2496,
+              2538
+            ],
+            [
+              2560,
+              2602
+            ],
+            [
+              2624,
+              2666
+            ],
+            [
+              2688,
+              2730
+            ],
+            [
+              2752,
+              2794
+            ],
+            [
+              2816,
+              2858
+            ],
+            [
+              2880,
+              2922
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 16,
+          "active_value_sha256": "836365159194395e23524635a68dfee9ced4105fa50c45f83466d262acbbeb42"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            20,
+            47,
+            2,
+            0
+          ],
+          "observed_columns": 21,
+          "observed_rows": 48,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2016,
+          "write_intervals": [
+            [
+              0,
+              42
+            ],
+            [
+              64,
+              106
+            ],
+            [
+              128,
+              170
+            ],
+            [
+              192,
+              234
+            ],
+            [
+              256,
+              298
+            ],
+            [
+              320,
+              362
+            ],
+            [
+              384,
+              426
+            ],
+            [
+              448,
+              490
+            ],
+            [
+              512,
+              554
+            ],
+            [
+              576,
+              618
+            ],
+            [
+              640,
+              682
+            ],
+            [
+              704,
+              746
+            ],
+            [
+              768,
+              810
+            ],
+            [
+              832,
+              874
+            ],
+            [
+              896,
+              938
+            ],
+            [
+              960,
+              1002
+            ],
+            [
+              1024,
+              1066
+            ],
+            [
+              1088,
+              1130
+            ],
+            [
+              1152,
+              1194
+            ],
+            [
+              1216,
+              1258
+            ],
+            [
+              1280,
+              1322
+            ],
+            [
+              1344,
+              1386
+            ],
+            [
+              1408,
+              1450
+            ],
+            [
+              1472,
+              1514
+            ],
+            [
+              1536,
+              1578
+            ],
+            [
+              1600,
+              1642
+            ],
+            [
+              1664,
+              1706
+            ],
+            [
+              1728,
+              1770
+            ],
+            [
+              1792,
+              1834
+            ],
+            [
+              1856,
+              1898
+            ],
+            [
+              1920,
+              1962
+            ],
+            [
+              1984,
+              2026
+            ],
+            [
+              2048,
+              2090
+            ],
+            [
+              2112,
+              2154
+            ],
+            [
+              2176,
+              2218
+            ],
+            [
+              2240,
+              2282
+            ],
+            [
+              2304,
+              2346
+            ],
+            [
+              2368,
+              2410
+            ],
+            [
+              2432,
+              2474
+            ],
+            [
+              2496,
+              2538
+            ],
+            [
+              2560,
+              2602
+            ],
+            [
+              2624,
+              2666
+            ],
+            [
+              2688,
+              2730
+            ],
+            [
+              2752,
+              2794
+            ],
+            [
+              2816,
+              2858
+            ],
+            [
+              2880,
+              2922
+            ],
+            [
+              2944,
+              2986
+            ],
+            [
+              3008,
+              3050
+            ]
+          ],
+          "active_value_min": -32,
+          "active_value_max": -32,
+          "active_value_sha256": "800520ba5e3167a8199d8d5725f51839036c17af94db65043b84b49696dccdd1"
+        }
+      ],
+      "scratch_plane_sha256": "70b303f11f91eec4832b9918d7aca8008470b28893a2255629bad4783ec18b13",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "constant-1920x1080",
+        "geometry": [
+          1920,
+          1080
+        ],
+        "calibration": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 211219,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 2201,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "0000000001000000000000000000000000000000000000000000800700003804000001000000010000000000000000001e220201011e2302010000000000000000000000800738048007380400000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            30,
+            34,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 35,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2170,
+          "write_intervals": [
+            [
+              0,
+              62
+            ],
+            [
+              64,
+              126
+            ],
+            [
+              128,
+              190
+            ],
+            [
+              192,
+              254
+            ],
+            [
+              256,
+              318
+            ],
+            [
+              320,
+              382
+            ],
+            [
+              384,
+              446
+            ],
+            [
+              448,
+              510
+            ],
+            [
+              512,
+              574
+            ],
+            [
+              576,
+              638
+            ],
+            [
+              640,
+              702
+            ],
+            [
+              704,
+              766
+            ],
+            [
+              768,
+              830
+            ],
+            [
+              832,
+              894
+            ],
+            [
+              896,
+              958
+            ],
+            [
+              960,
+              1022
+            ],
+            [
+              1024,
+              1086
+            ],
+            [
+              1088,
+              1150
+            ],
+            [
+              1152,
+              1214
+            ],
+            [
+              1216,
+              1278
+            ],
+            [
+              1280,
+              1342
+            ],
+            [
+              1344,
+              1406
+            ],
+            [
+              1408,
+              1470
+            ],
+            [
+              1472,
+              1534
+            ],
+            [
+              1536,
+              1598
+            ],
+            [
+              1600,
+              1662
+            ],
+            [
+              1664,
+              1726
+            ],
+            [
+              1728,
+              1790
+            ],
+            [
+              1792,
+              1854
+            ],
+            [
+              1856,
+              1918
+            ],
+            [
+              1920,
+              1982
+            ],
+            [
+              1984,
+              2046
+            ],
+            [
+              2048,
+              2110
+            ],
+            [
+              2112,
+              2174
+            ],
+            [
+              2176,
+              2238
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 16,
+          "active_value_sha256": "48b53c51c9065b04173c5f5c27fff22766750d7affb132565d45ac0a4ac763da"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            30,
+            35,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 36,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2232,
+          "write_intervals": [
+            [
+              0,
+              62
+            ],
+            [
+              64,
+              126
+            ],
+            [
+              128,
+              190
+            ],
+            [
+              192,
+              254
+            ],
+            [
+              256,
+              318
+            ],
+            [
+              320,
+              382
+            ],
+            [
+              384,
+              446
+            ],
+            [
+              448,
+              510
+            ],
+            [
+              512,
+              574
+            ],
+            [
+              576,
+              638
+            ],
+            [
+              640,
+              702
+            ],
+            [
+              704,
+              766
+            ],
+            [
+              768,
+              830
+            ],
+            [
+              832,
+              894
+            ],
+            [
+              896,
+              958
+            ],
+            [
+              960,
+              1022
+            ],
+            [
+              1024,
+              1086
+            ],
+            [
+              1088,
+              1150
+            ],
+            [
+              1152,
+              1214
+            ],
+            [
+              1216,
+              1278
+            ],
+            [
+              1280,
+              1342
+            ],
+            [
+              1344,
+              1406
+            ],
+            [
+              1408,
+              1470
+            ],
+            [
+              1472,
+              1534
+            ],
+            [
+              1536,
+              1598
+            ],
+            [
+              1600,
+              1662
+            ],
+            [
+              1664,
+              1726
+            ],
+            [
+              1728,
+              1790
+            ],
+            [
+              1792,
+              1854
+            ],
+            [
+              1856,
+              1918
+            ],
+            [
+              1920,
+              1982
+            ],
+            [
+              1984,
+              2046
+            ],
+            [
+              2048,
+              2110
+            ],
+            [
+              2112,
+              2174
+            ],
+            [
+              2176,
+              2238
+            ],
+            [
+              2240,
+              2302
+            ]
+          ],
+          "active_value_min": -32,
+          "active_value_max": -32,
+          "active_value_sha256": "33e25893592743279a47474d0c90d5812805b167183009720ee1381b98423ed1"
+        }
+      ],
+      "scratch_plane_sha256": "94da14908f34bfc0ce8b292ca5f8c32bc5d07fa27b95793761b70ca543a7c64b",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "constant-3840x2160",
+        "geometry": [
+          3840,
+          2160
+        ],
+        "calibration": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 211245,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 2201,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "0000000001000000000000000000000000000000000000000000000f00007008000001000000010000000000000000001e220302011e2303020000000000000000000000000f7008000f700800000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            30,
+            34,
+            3,
+            2
+          ],
+          "observed_columns": 31,
+          "observed_rows": 35,
+          "profile_pitch_elements": 31,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2170,
+          "write_intervals": [
+            [
+              0,
+              2170
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 16,
+          "active_value_sha256": "48b53c51c9065b04173c5f5c27fff22766750d7affb132565d45ac0a4ac763da"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            30,
+            35,
+            3,
+            2
+          ],
+          "observed_columns": 31,
+          "observed_rows": 36,
+          "profile_pitch_elements": 31,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2232,
+          "write_intervals": [
+            [
+              0,
+              2232
+            ]
+          ],
+          "active_value_min": -32,
+          "active_value_max": -32,
+          "active_value_sha256": "33e25893592743279a47474d0c90d5812805b167183009720ee1381b98423ed1"
+        }
+      ],
+      "scratch_plane_sha256": "a13af23da8d1676dfd387a4fe84b325a28c140cda36a2d4f70ab236d7036e2cf",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "constant-4096x2160",
+        "geometry": [
+          4096,
+          2160
+        ],
+        "calibration": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 224268,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 2343,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "0000000001000000000000000000000000000000000000000000001000007008000001000000010000000000000000002022030201202303020000000000000000000000001070080010700800000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            32,
+            34,
+            3,
+            2
+          ],
+          "observed_columns": 33,
+          "observed_rows": 35,
+          "profile_pitch_elements": 33,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2310,
+          "write_intervals": [
+            [
+              0,
+              2310
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 16,
+          "active_value_sha256": "b96f8de6cca75238b062f7e56598a0d9603cb9b403dcae29fbc63d871a0f911d"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            32,
+            35,
+            3,
+            2
+          ],
+          "observed_columns": 33,
+          "observed_rows": 36,
+          "profile_pitch_elements": 33,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2376,
+          "write_intervals": [
+            [
+              0,
+              2376
+            ]
+          ],
+          "active_value_min": -32,
+          "active_value_max": -32,
+          "active_value_sha256": "2cea96cb2070c6e32cdbf9bb37f717b1b8de6490712f227e1e08ae1b4cf50e21"
+        }
+      ],
+      "scratch_plane_sha256": "eb754c9219f8500362a27f287fe461ab8e43836e45eee70732e11e4bae7c8fb5",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "affine-1080",
+        "geometry": [
+          1920,
+          1080
+        ],
+        "calibration": true,
+        "affine_grid": true
+      },
+      "entry": "0xa032cf38",
+      "return": 0,
+      "original_instruction_count": 211219,
+      "original_entry_counts": {
+        "core": 1,
+        "video_generator": 1,
+        "divide64": 15,
+        "calibration_interpolate": 2201,
+        "phase_select": 2,
+        "phase_update": 1
+      },
+      "status_words": [
+        1,
+        805502976,
+        1,
+        805503232
+      ],
+      "descriptor_hex": "0000000001000000000000000000000000000000000000000000800700003804000001000000010000000000000000001e220201011e2302010000000000000000000000800738048007380400000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            30,
+            34,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 35,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2170,
+          "write_intervals": [
+            [
+              0,
+              62
+            ],
+            [
+              64,
+              126
+            ],
+            [
+              128,
+              190
+            ],
+            [
+              192,
+              254
+            ],
+            [
+              256,
+              318
+            ],
+            [
+              320,
+              382
+            ],
+            [
+              384,
+              446
+            ],
+            [
+              448,
+              510
+            ],
+            [
+              512,
+              574
+            ],
+            [
+              576,
+              638
+            ],
+            [
+              640,
+              702
+            ],
+            [
+              704,
+              766
+            ],
+            [
+              768,
+              830
+            ],
+            [
+              832,
+              894
+            ],
+            [
+              896,
+              958
+            ],
+            [
+              960,
+              1022
+            ],
+            [
+              1024,
+              1086
+            ],
+            [
+              1088,
+              1150
+            ],
+            [
+              1152,
+              1214
+            ],
+            [
+              1216,
+              1278
+            ],
+            [
+              1280,
+              1342
+            ],
+            [
+              1344,
+              1406
+            ],
+            [
+              1408,
+              1470
+            ],
+            [
+              1472,
+              1534
+            ],
+            [
+              1536,
+              1598
+            ],
+            [
+              1600,
+              1662
+            ],
+            [
+              1664,
+              1726
+            ],
+            [
+              1728,
+              1790
+            ],
+            [
+              1792,
+              1854
+            ],
+            [
+              1856,
+              1918
+            ],
+            [
+              1920,
+              1982
+            ],
+            [
+              1984,
+              2046
+            ],
+            [
+              2048,
+              2110
+            ],
+            [
+              2112,
+              2174
+            ],
+            [
+              2176,
+              2238
+            ]
+          ],
+          "active_value_min": 16,
+          "active_value_max": 21,
+          "active_value_sha256": "25bca0ecfdebb7a2a7da8d7420bb49343051b24f0723320982cc4333d47a07a2"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            30,
+            35,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 36,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": true,
+          "bytes_written": 2232,
+          "write_intervals": [
+            [
+              0,
+              62
+            ],
+            [
+              64,
+              126
+            ],
+            [
+              128,
+              190
+            ],
+            [
+              192,
+              254
+            ],
+            [
+              256,
+              318
+            ],
+            [
+              320,
+              382
+            ],
+            [
+              384,
+              446
+            ],
+            [
+              448,
+              510
+            ],
+            [
+              512,
+              574
+            ],
+            [
+              576,
+              638
+            ],
+            [
+              640,
+              702
+            ],
+            [
+              704,
+              766
+            ],
+            [
+              768,
+              830
+            ],
+            [
+              832,
+              894
+            ],
+            [
+              896,
+              958
+            ],
+            [
+              960,
+              1022
+            ],
+            [
+              1024,
+              1086
+            ],
+            [
+              1088,
+              1150
+            ],
+            [
+              1152,
+              1214
+            ],
+            [
+              1216,
+              1278
+            ],
+            [
+              1280,
+              1342
+            ],
+            [
+              1344,
+              1406
+            ],
+            [
+              1408,
+              1470
+            ],
+            [
+              1472,
+              1534
+            ],
+            [
+              1536,
+              1598
+            ],
+            [
+              1600,
+              1662
+            ],
+            [
+              1664,
+              1726
+            ],
+            [
+              1728,
+              1790
+            ],
+            [
+              1792,
+              1854
+            ],
+            [
+              1856,
+              1918
+            ],
+            [
+              1920,
+              1982
+            ],
+            [
+              1984,
+              2046
+            ],
+            [
+              2048,
+              2110
+            ],
+            [
+              2112,
+              2174
+            ],
+            [
+              2176,
+              2238
+            ],
+            [
+              2240,
+              2302
+            ]
+          ],
+          "active_value_min": -40,
+          "active_value_max": -30,
+          "active_value_sha256": "76162ce0b1271e934f4b1058ff1d5153d2f736d5b08e9025f5657c87ea8524dd"
+        }
+      ],
+      "scratch_plane_sha256": "0cd2fe560dfebce40e788ecd4124b12a131be963a297ea08bed3f30489d11ac5",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    },
+    {
+      "input": {
+        "name": "control8-raw-y",
+        "geometry": [
+          1920,
+          1080
+        ],
+        "control": 8,
+        "raw_vertical_enable": true,
+        "lower_helper_only": true
+      },
+      "entry": "0xa032b520",
+      "return": 0,
+      "original_instruction_count": 8488,
+      "original_entry_counts": {
+        "video_generator": 1,
+        "divide64": 11,
+        "thumb_memset": 1
+      },
+      "status_words": [
+        0,
+        805502976,
+        0,
+        805503232
+      ],
+      "descriptor_hex": "000000000100000000000000000000000000000000000000000080070000380400000100e901010000000000000000001e220201011e2302010000000000000000000000800738048007380404000000",
+      "planes": [
+        {
+          "offset": "0x0",
+          "descriptor_bytes": [
+            30,
+            34,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 35,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 6144,
+          "write_intervals": [
+            [
+              0,
+              6144
+            ]
+          ],
+          "active_value_min": 0,
+          "active_value_max": 0,
+          "active_value_sha256": "f4ca22d0902b7b26282b14016aaa03b2b78713b9578b5c047bcb54da4482f7ec"
+        },
+        {
+          "offset": "0x1800",
+          "descriptor_bytes": [
+            30,
+            35,
+            2,
+            1
+          ],
+          "observed_columns": 31,
+          "observed_rows": 36,
+          "profile_pitch_elements": 32,
+          "active_rectangle_write_mask_verified": false,
+          "bytes_written": 2232,
+          "write_intervals": [
+            [
+              0,
+              62
+            ],
+            [
+              64,
+              126
+            ],
+            [
+              128,
+              190
+            ],
+            [
+              192,
+              254
+            ],
+            [
+              256,
+              318
+            ],
+            [
+              320,
+              382
+            ],
+            [
+              384,
+              446
+            ],
+            [
+              448,
+              510
+            ],
+            [
+              512,
+              574
+            ],
+            [
+              576,
+              638
+            ],
+            [
+              640,
+              702
+            ],
+            [
+              704,
+              766
+            ],
+            [
+              768,
+              830
+            ],
+            [
+              832,
+              894
+            ],
+            [
+              896,
+              958
+            ],
+            [
+              960,
+              1022
+            ],
+            [
+              1024,
+              1086
+            ],
+            [
+              1088,
+              1150
+            ],
+            [
+              1152,
+              1214
+            ],
+            [
+              1216,
+              1278
+            ],
+            [
+              1280,
+              1342
+            ],
+            [
+              1344,
+              1406
+            ],
+            [
+              1408,
+              1470
+            ],
+            [
+              1472,
+              1534
+            ],
+            [
+              1536,
+              1598
+            ],
+            [
+              1600,
+              1662
+            ],
+            [
+              1664,
+              1726
+            ],
+            [
+              1728,
+              1790
+            ],
+            [
+              1792,
+              1854
+            ],
+            [
+              1856,
+              1918
+            ],
+            [
+              1920,
+              1982
+            ],
+            [
+              1984,
+              2046
+            ],
+            [
+              2048,
+              2110
+            ],
+            [
+              2112,
+              2174
+            ],
+            [
+              2176,
+              2238
+            ],
+            [
+              2240,
+              2302
+            ]
+          ],
+          "active_value_min": 128,
+          "active_value_max": 128,
+          "active_value_sha256": "eb31e4c06a4b57ef89ddaab680debe967e1e1bde535c10959e1ddfed67849767"
+        }
+      ],
+      "scratch_plane_sha256": "8470dea14120bf811d9a97160c3a1839553e29bf9af80ec98880dd0af9e96cc8",
+      "scratch_outside_planes_unchanged": true,
+      "calc_info_unchanged": true,
+      "grid_unchanged": true,
+      "substituted_calls": [],
+      "runtime_configuration": "synthetic function table: copy=A029C680, memset=A04F8DED; diagnostics trap unused"
+    }
+  ],
+  "theta_update_cases": [
+    {
+      "theta": 0.0,
+      "initial_parameter_counter": 0,
+      "final_parameter_counter": 1,
+      "double_bits_preserved": true,
+      "events": [
+        "lookup_stub",
+        "lock_stub",
+        "unlock_stub"
+      ]
+    },
+    {
+      "theta": 0.01,
+      "initial_parameter_counter": 7,
+      "final_parameter_counter": 8,
+      "double_bits_preserved": true,
+      "events": [
+        "lookup_stub",
+        "lock_stub",
+        "unlock_stub"
+      ]
+    },
+    {
+      "theta": -0.125,
+      "initial_parameter_counter": 4294967295,
+      "final_parameter_counter": 0,
+      "double_bits_preserved": true,
+      "events": [
+        "lookup_stub",
+        "lock_stub",
+        "unlock_stub"
+      ]
+    },
+    {
+      "theta": 1.25,
+      "initial_parameter_counter": 20,
+      "final_parameter_counter": 21,
+      "double_bits_preserved": true,
+      "events": [
+        "lookup_stub",
+        "lock_stub",
+        "unlock_stub"
+      ]
+    }
+  ],
+  "function_fingerprints": {
+    "A032CF38_032D8C0": "7d0dc76204ac9fa283a504d68aae841413433f1970557885d3af478213c571b3",
+    "A032B520_032C940": "5be9a901234fb34edf246c6d983cd95db0f7e060bd887c4ba4af735f93f6b81e"
+  },
+  "proof_scope": "synthetic valid video inputs, original A032CF38 and reachable core/helper/library bytes; no generator or memset stub",
+  "not_proven": [
+    "exhaustive profiles or calibration variants",
+    "theta-generated fake-grid branch with enabled rotation",
+    "physical warp units/Q interpretation",
+    "encoded frame identity",
+    "native CPU cycle cost or deadline margin",
+    "device loader, runtime cache or DSP behavior"
+  ],
+  "device_access": false
+}

@@ -1,0 +1,10 @@
+Launched own AVD pid=76535 serial=emulator-5582
+Android boot complete
+{"instrumentation_passed": false, "reports": "/Users/hyc/Documents/yi4k/artifacts/android/0.3.4-device-reports/camera-4k60-workflow-run01"}
+Traceback (most recent call last):
+  File "/Users/hyc/Documents/yi4k/scripts/android_emulator_acceptance.py", line 403, in <module>
+    main()
+    ~~~~^^
+  File "/Users/hyc/Documents/yi4k/scripts/android_emulator_acceptance.py", line 299, in main
+    raise RuntimeError('Actual Android instrumentation failed; inspect instrumentation.log and logcat.txt')
+RuntimeError: Actual Android instrumentation failed; inspect instrumentation.log and logcat.txt

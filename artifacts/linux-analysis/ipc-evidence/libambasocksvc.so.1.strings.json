@@ -1,0 +1,318 @@
+[
+  {
+    "offset": "0xf2",
+    "text": "[qT<-"
+  },
+  {
+    "offset": "0x519",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x528",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x52e",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x54a",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x564",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0x573",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x587",
+    "text": "SocketSvc_init"
+  },
+  {
+    "offset": "0x596",
+    "text": "printf"
+  },
+  {
+    "offset": "0x59d",
+    "text": "malloc"
+  },
+  {
+    "offset": "0x5a4",
+    "text": "memset"
+  },
+  {
+    "offset": "0x5ab",
+    "text": "socket"
+  },
+  {
+    "offset": "0x5b2",
+    "text": "perror"
+  },
+  {
+    "offset": "0x5b9",
+    "text": "setsockopt"
+  },
+  {
+    "offset": "0x5ce",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0x5df",
+    "text": "strerror"
+  },
+  {
+    "offset": "0x5e8",
+    "text": "sleep"
+  },
+  {
+    "offset": "0x5ee",
+    "text": "close"
+  },
+  {
+    "offset": "0x5f4",
+    "text": "listen"
+  },
+  {
+    "offset": "0x5fb",
+    "text": "SocketSvc_waitRequest"
+  },
+  {
+    "offset": "0x611",
+    "text": "select"
+  },
+  {
+    "offset": "0x618",
+    "text": "accept"
+  },
+  {
+    "offset": "0x624",
+    "text": "getpeername"
+  },
+  {
+    "offset": "0x635",
+    "text": "SocketSvc_Recv"
+  },
+  {
+    "offset": "0x644",
+    "text": "SocketSvc_Send"
+  },
+  {
+    "offset": "0x658",
+    "text": "SocketSvc_release"
+  },
+  {
+    "offset": "0x66f",
+    "text": "SocketSvc_QuerySD"
+  },
+  {
+    "offset": "0x681",
+    "text": "SocketSvc_getClntSD"
+  },
+  {
+    "offset": "0x695",
+    "text": "SocketSvc_getMaxAmount"
+  },
+  {
+    "offset": "0x6ac",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0x6b7",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0x6c4",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x6ce",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x6d5",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x6e1",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x6ef",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x6fb",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x708",
+    "text": "libambasocksvc.so"
+  },
+  {
+    "offset": "0x71a",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0xaf1",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0xb21",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0x1328",
+    "text": "SocketSvc_init"
+  },
+  {
+    "offset": "0x1337",
+    "text": "SocketSvc_waitRequest"
+  },
+  {
+    "offset": "0x134d",
+    "text": "SocketSvc_Recv"
+  },
+  {
+    "offset": "0x135c",
+    "text": "SocketSvc_Send"
+  },
+  {
+    "offset": "0x136b",
+    "text": "%s: aleady inited!"
+  },
+  {
+    "offset": "0x137f",
+    "text": "create ClientInfo"
+  },
+  {
+    "offset": "0x1391",
+    "text": "socket failed"
+  },
+  {
+    "offset": "0x139f",
+    "text": "setsockopt"
+  },
+  {
+    "offset": "0x13aa",
+    "text": "listen"
+  },
+  {
+    "offset": "0x13b1",
+    "text": "%s: SocketSvc is NOT inited!"
+  },
+  {
+    "offset": "0x13cf",
+    "text": "%s: Fail to do select(), err:%d"
+  },
+  {
+    "offset": "0x13f0",
+    "text": "selec got EINTR"
+  },
+  {
+    "offset": "0x1400",
+    "text": "select error"
+  },
+  {
+    "offset": "0x140d",
+    "text": "accept"
+  },
+  {
+    "offset": "0x1414",
+    "text": "%s[%d]: Cannot find valid client_sd"
+  },
+  {
+    "offset": "0x1439",
+    "text": "Reach max client amount!!"
+  },
+  {
+    "offset": "0x1453",
+    "text": "%s: invalid sd(%d)!"
+  },
+  {
+    "offset": "0x1468",
+    "text": "SocketSvc_Send"
+  },
+  {
+    "offset": "0x160d",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x163e",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x1648",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x165b",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x1661",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x1669",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x1671",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x167e",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x168d",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x1696",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x169f",
+    "text": ".init"
+  },
+  {
+    "offset": "0x16a5",
+    "text": ".text"
+  },
+  {
+    "offset": "0x16ab",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x16b1",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x16b9",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x16c3",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x16cf",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x16e0",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x16ee",
+    "text": ".data"
+  },
+  {
+    "offset": "0x16f9",
+    "text": ".ARM.attributes"
+  }
+]

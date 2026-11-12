@@ -1,0 +1,2194 @@
+{
+  "scope": "Actual unchanged C SDK modules chained by generated test fixture; host and compiled ARM; original stock ProcessVideo/ProcessAudio",
+  "case_count": 18,
+  "cases": [
+    {
+      "name": "video_slice_injection",
+      "kind": 1,
+      "mode": "ok",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        468258,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_source_wrap",
+      "kind": 1,
+      "mode": "wrap",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        468258,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_inband_same",
+      "kind": 1,
+      "mode": "inband",
+      "input_bytes": 468258,
+      "input_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        468258,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783"
+    },
+    {
+      "name": "video_identity_change",
+      "kind": 1,
+      "mode": "identity",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": -3,
+      "writer_status": null,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_parameter_change",
+      "kind": 1,
+      "mode": "params",
+      "input_bytes": 468258,
+      "input_sha256": "1faa04c4a10f82e66029dc72c8045722dd2d64b0767f1240dfd3b79207933045",
+      "capture_status": 0,
+      "codec_status": -3,
+      "writer_status": null,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": "1faa04c4a10f82e66029dc72c8045722dd2d64b0767f1240dfd3b79207933045"
+    },
+    {
+      "name": "video_output_capacity",
+      "kind": 1,
+      "mode": "capacity",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": -5,
+      "writer_status": null,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967291,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967291,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_staging_capacity",
+      "kind": 1,
+      "mode": "stagecap",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 4,
+      "codec_status": null,
+      "writer_status": null,
+      "report": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        541065216,
+        542113792,
+        0,
+        0,
+        1,
+        4294967277
+      ],
+      "prepared_report": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        541065216,
+        542113792,
+        0,
+        0,
+        1,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": null
+    },
+    {
+      "name": "video_queue_full_held",
+      "kind": 1,
+      "mode": "full",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        3,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        468258,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        1,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        3,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        1,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e000000000"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_rebind_changed_config",
+      "kind": 1,
+      "mode": "rebind",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        468258,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_writer_short",
+      "kind": 1,
+      "mode": "short",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": -1,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468187,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468187,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_writer_index_after_payload",
+      "kind": 1,
+      "mode": "index",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": -1,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "video_writer_no_complete",
+      "kind": 1,
+      "mode": "receipt",
+      "input_bytes": 468192,
+      "input_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        468258,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "7b00000000000000896745230100000001010000000040202225070000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 468188,
+      "expected_output_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "stream_writes": [
+        {
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20",
+          "preview_hex": "000724dc"
+        },
+        {
+          "source_address": "0x20400046",
+          "requested_bytes": 468188,
+          "returned_bytes": 468188,
+          "sha256": "ee55978a7e8929e854984ebf211865886900dab5cc7d2d55ff0afbe425fb9a6d",
+          "preview_hex": "25b801000047e6e3398a8b18ebcddd93441845c62a24eb4288ebf598e7fff734"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "0000000101000000"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 6,
+          "data_hex": "0000000000000000"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0c0ef0110"
+        },
+        {
+          "commit": true,
+          "track": 0
+        }
+      ],
+      "staging_payload_sha256": "965578d1a747e428c9d4c82d6c16160a5612d06db0f40f7916d6000e99c043be"
+    },
+    {
+      "name": "audio_copy",
+      "kind": 2,
+      "mode": "ok",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        341,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "0000000000000000896745230100000008010000000040205501000000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 341,
+      "expected_output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "stream_writes": [
+        {
+          "source_address": "0x20400000",
+          "requested_bytes": 341,
+          "returned_bytes": 341,
+          "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+          "preview_hex": "211a08057d40000415b0421b74be389754e3faae55949de2200022cc1983e235"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        },
+        {
+          "track": 1,
+          "kind": 10,
+          "data_hex": "0000000000000400"
+        },
+        {
+          "commit": true,
+          "track": 1
+        }
+      ],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    },
+    {
+      "name": "audio_source_wrap",
+      "kind": 2,
+      "mode": "wrap",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": 0,
+      "report": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        341,
+        0,
+        0,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "0000000000000000896745230100000008010000000040205501000000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 341,
+      "expected_output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "stream_writes": [
+        {
+          "source_address": "0x20400000",
+          "requested_bytes": 341,
+          "returned_bytes": 341,
+          "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+          "preview_hex": "211a08057d40000415b0421b74be389754e3faae55949de2200022cc1983e235"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        },
+        {
+          "track": 1,
+          "kind": 10,
+          "data_hex": "0000000000000400"
+        },
+        {
+          "commit": true,
+          "track": 1
+        }
+      ],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    },
+    {
+      "name": "audio_identity_change",
+      "kind": 2,
+      "mode": "identity",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": -3,
+      "writer_status": null,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967293,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    },
+    {
+      "name": "audio_output_capacity",
+      "kind": 2,
+      "mode": "capacity",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": -5,
+      "writer_status": null,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967291,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        4294967291,
+        0,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": null,
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 0,
+      "expected_output_sha256": null,
+      "stream_writes": [],
+      "index_events": [],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    },
+    {
+      "name": "audio_writer_short",
+      "kind": 2,
+      "mode": "short",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": -1,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "0000000000000000896745230100000008010000000040205501000000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 340,
+      "expected_output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "stream_writes": [
+        {
+          "source_address": "0x20400000",
+          "requested_bytes": 341,
+          "returned_bytes": 340,
+          "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+          "preview_hex": "211a08057d40000415b0421b74be389754e3faae55949de2200022cc1983e235"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        }
+      ],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    },
+    {
+      "name": "audio_writer_index_after_payload",
+      "kind": 2,
+      "mode": "index",
+      "input_bytes": 341,
+      "input_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "capture_status": 0,
+      "codec_status": 0,
+      "writer_status": -1,
+      "report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "prepared_report": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        341,
+        536870912,
+        537919488,
+        541065216,
+        542113792,
+        1,
+        0,
+        0,
+        4294967277
+      ],
+      "writer_descriptor_hex": "0000000000000000896745230100000008010000000040205501000000000000",
+      "host_compiled_arm_reports_equal": true,
+      "compiled_c_abi_preserved": true,
+      "original_callback_overwrote_source_before_prepare": true,
+      "writer_source_ring_cpu_reads": 0,
+      "writer_output_arena_bytes": 341,
+      "expected_output_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "stream_writes": [
+        {
+          "source_address": "0x20400000",
+          "requested_bytes": 341,
+          "returned_bytes": 341,
+          "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+          "preview_hex": "211a08057d40000415b0421b74be389754e3faae55949de2200022cc1983e235"
+        }
+      ],
+      "index_events": [
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "0000000020000000"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "0000015500000000"
+        }
+      ],
+      "staging_payload_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293"
+    }
+  ],
+  "configuration_provenance": {
+    "source": {
+      "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+      "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+      "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+      "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+      "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+      "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "nal_types": [
+        7,
+        8,
+        5
+      ],
+      "nal_sizes": [
+        54,
+        4,
+        468188
+      ],
+      "audio_packet_position": 468240,
+      "audio_packet_bytes": 341,
+      "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+      "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+    },
+    "identity": "e77de324bf167d63ab864296d466841d93b0e742b860ff93a06b891a03d53bda",
+    "config_digest": "17c723071e6f30002b1ce8e28f4568f4f371c66eeba60dd80e91210cdc01c594",
+    "avcc": "014d4033efe10036274d40339a6403c0113f2c8c04040500000303e90000ea60e86000393840000e4e1cbbcb8d0c000727080001c9c397797078442252c001000428ee3880",
+    "asc": "1190000000",
+    "live_encoder_binding_proven": false
+  },
+  "complete_native_mp4": {
+    "file": "sdk-pipeline-native.mp4",
+    "bytes": 469881,
+    "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+    "steps": [
+      {
+        "kind": 1,
+        "compiled_sdk_report": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          468258,
+          0,
+          0,
+          541065216,
+          542113792,
+          1,
+          0,
+          0,
+          4294967277
+        ],
+        "adapted_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+        "original_writer_status": 0,
+        "source_overwritten": true,
+        "slot_released_after_writer": true
+      },
+      {
+        "kind": 2,
+        "compiled_sdk_report": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          341,
+          0,
+          0,
+          541065216,
+          542113792,
+          1,
+          0,
+          0,
+          4294967277
+        ],
+        "adapted_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+        "original_writer_status": 0,
+        "source_overwritten": true,
+        "slot_released_after_writer": true
+      }
+    ],
+    "complete_original_index_open_close": true,
+    "mocked_index_add_commit_calls": 0,
+    "native_calls": [
+      {
+        "entry": "0xa0435a18",
+        "args": [
+          268443648,
+          285212672,
+          268460032,
+          128
+        ]
+      },
+      {
+        "entry": "0xa04032fc",
+        "args": [
+          285212672,
+          268435472,
+          15503872,
+          2688561916
+        ]
+      },
+      {
+        "entry": "0xa040f710",
+        "args": [
+          0,
+          268435456,
+          0,
+          285212672
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          0,
+          4,
+          268561752
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          512,
+          1800,
+          268435456
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          0,
+          5,
+          268562220
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          0,
+          3,
+          268561976
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          0,
+          6,
+          268561968
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          0,
+          2,
+          268562228
+        ]
+      },
+      {
+        "entry": "0xa04111ac",
+        "args": [
+          268460032,
+          0,
+          2187,
+          268451840
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          1,
+          9,
+          268562232
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          1,
+          8,
+          268562228
+        ]
+      },
+      {
+        "entry": "0xa0411e88",
+        "args": [
+          268460032,
+          1,
+          10,
+          268562232
+        ]
+      },
+      {
+        "entry": "0xa04111ac",
+        "args": [
+          268460032,
+          1,
+          2187,
+          268451840
+        ]
+      },
+      {
+        "entry": "0xa0436004",
+        "args": [
+          268443648,
+          285212672,
+          268460032,
+          128
+        ]
+      },
+      {
+        "entry": "0xa0411048",
+        "args": [
+          268460032,
+          0,
+          8008,
+          1
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          2560,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          1171968,
+          4,
+          318771712
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          4680192,
+          4,
+          318773248
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          5849600,
+          8,
+          318773760
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          512,
+          1800,
+          268435456
+        ]
+      },
+      {
+        "entry": "0xa0411048",
+        "args": [
+          268460032,
+          1,
+          4294967288,
+          2688558592
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          8188416,
+          4,
+          318774784
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          10017280,
+          4,
+          318775296
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          11846144,
+          8,
+          318775808
+        ]
+      },
+      {
+        "entry": "0xa0402750",
+        "args": [
+          285212672,
+          512,
+          1800,
+          268435456
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          4680192,
+          4,
+          318773248
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          2560,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          1171968,
+          4,
+          318771712
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          8188416,
+          4,
+          318774784
+        ]
+      },
+      {
+        "entry": "0xa0401ae4",
+        "args": [
+          318767104,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          10017280,
+          4,
+          318775296
+        ]
+      },
+      {
+        "entry": "0xa0433af0",
+        "args": [
+          268435456,
+          268484608,
+          268460032,
+          285278208
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          2560,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          1171968,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          4680192,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          8188416,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa0402884",
+        "args": [
+          285212672,
+          10017280,
+          4,
+          318771200
+        ]
+      },
+      {
+        "entry": "0xa040fc04",
+        "args": [
+          268460032,
+          4,
+          268561780,
+          268505600
+        ]
+      },
+      {
+        "entry": "0xa0402ed8",
+        "args": [
+          285212672,
+          1,
+          8,
+          2688560856
+        ]
+      }
+    ],
+    "index_backend_reads": 10,
+    "index_backend_writes": 11,
+    "full_av_decode_passed": true,
+    "source_first_video_pixels_equal": true,
+    "decoded_video_sha256": "354babd94f134fb641ff5d6a6abe4ee664449f234ee62e93693576b740113c00",
+    "source_first_aac_pcm_equal": true,
+    "decoded_audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "decoded_audio_pcm_bytes": 4096,
+    "codec_config_in_mp4_matches_binding": true,
+    "boundary": "File operations/OS allocation are RAM models; one archived video and one AAC sample only"
+  },
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "frozen_source_sha256": {
+    "sdk/yi4k_1107_early_copy.c": "52675f1808e90e0fac297376176c93b03d28ffc6c334bd095d7e7e9bf6d3131c",
+    "sdk/yi4k_1107_audio_early_copy.c": "e45897ffef1803f64275146b0f6b6b44064e9563bd13dddfac823c47f2d89c7c",
+    "sdk/yi4k_1107_payload_copy.c": "d4e47a2c3409970b99d912b3f1ab639d3bbfa98d411a0192b921e3b477a79df0",
+    "sdk/yi4k_1107_owned_mux.c": "3289d288afa4505d9727eb15a7bd5b7af0fbece14bba1e0fd3d5d42cfcf125d4",
+    "sdk/yi4k_1107_codec_epoch.c": "3b95cc2a50936feeb1083bdbe10d46e16b4e9f923dbbb7fef782401cbc211d7d",
+    "sdk/yi4k_1107_audio_early_copy.h": "ad2bf7380927251f462774713280bfa5e592aa5d4c56642c00dee3b1df3b7756",
+    "sdk/yi4k_1107_audio_event.h": "68e2829a7325639b96fc9b2d298518b7bf69f664c8b61371d0dec9ae8f1f5024",
+    "sdk/yi4k_1107_codec_epoch.h": "b03ed142b36aac874c7e154df1a00b5a707958bc902898fe1b86e316fe08c9e0",
+    "sdk/yi4k_1107_early_copy.h": "9a344099b61728a274240560db4ea5ea3d0fa69471abffb3714908806c0b3c26",
+    "sdk/yi4k_1107_eis_shadow.h": "6270d2548d0266bb409805293f2eaed501b48d54c58097e7601c9c0860649052",
+    "sdk/yi4k_1107_eis_shadow_v2.h": "5698ef76bc24f4fa3826afe54ef6781adf202a044d280a9912f8975da5634dd0",
+    "sdk/yi4k_1107_fifo_consumer.h": "0157139306c71f5335755378356630d8f533534c7326cd717a8e64b34895ba78",
+    "sdk/yi4k_1107_internal.h": "af6430efe337ec3c41de643d1a60561c4d482ef3a1752360607ce0e74346731f",
+    "sdk/yi4k_1107_owned_mux.h": "9abd7ab04be037c1af155816f3b22f671a81a6f31c49bb8fdcfad05e235d4110",
+    "sdk/yi4k_1107_payload_copy.h": "91aaa546cedc9845d2c4c7b6398f66cff55c49ecdc6c2b8cdfd04b0f9f3d3da2",
+    "sdk/yi4k_1107_rpc.h": "ee520c5d62def51a092d261c85a7054eca8f3db159da3efd8404616501a9fc1d",
+    "sdk/yi4k_1107_video_descriptor.h": "d2dcde7b77b48dce86f37b0e48cb90a4347dfea8ba9269a89ced65b1923ea002",
+    "scripts/audit_prerecord_owned_mux_writer.py": "ba606abc1440844c44dff5424744fd7769e22d226d1f2c0c9cbe652d75acb83b",
+    "scripts/prerecord-fifo-lifecycle.py": "18d617e70051f649267ab37f2d1ceafc7e5d2446ac60529d07315d0e86001906",
+    "scripts/audit_prerecord_video_pts.py": "5c1ebbf37041f065d6d4e56405eb534ed6f683db0c6893329fcb14654092e26b",
+    "scripts/validate_prerecord_codec_epoch.py": "d97e77b17312b812b80b971aff14ada806b4c274803284fb662266405800161c",
+    "scripts/audit_prerecord_native_mp4.py": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99"
+  },
+  "frozen_inputs_unchanged": true,
+  "bridge_c_sha256": "ef312a0674fc8399a9ac8ae13169bba43abbca0bd716c5ce947a2aa2eb790c3b",
+  "arm_elf_sha256": "6930e365bf45c4cd329b2a5c16887754c41fe8935185088eba926b9caaedbe0c",
+  "no_undefined_symbols": true,
+  "no_linked_relocations": true,
+  "validation_script_sha256": "f735d14d9c15914bf0259a8299b8bec6200432b243648e8ebf0a5141a7988612",
+  "build_commands": [
+    [
+      "/usr/bin/clang",
+      "-arch",
+      "x86_64",
+      "-shared",
+      "-fPIC",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_early_copy.c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_audio_early_copy.c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_mux.c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_codec_epoch.c",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/bridge.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/pipeline.dylib"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_early_copy.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_early_copy.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_audio_early_copy.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_audio_early_copy.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_payload_copy.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_mux.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_owned_mux.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_codec_epoch.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_codec_epoch.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/bridge.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/bridge.c.o"
+    ],
+    [
+      "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+      "-T",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/pipeline.ld",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_early_copy.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_audio_early_copy.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_payload_copy.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_owned_mux.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/yi4k_1107_codec_epoch.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/bridge.c.o",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-sdk-pipeline-vxyw172k/pipeline.elf"
+    ]
+  ],
+  "compiler_version": "Apple clang version 17.0.0 (clang-1700.0.13.3)",
+  "linker_version": "LLD 21.0.0 (/Volumes/Android/buildbot/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349) (compatible with GNU linkers)",
+  "compiled_sdk_has_no_instruction_or_helper_stubs": true,
+  "report_fields": [
+    "capture_status",
+    "original_calls",
+    "queue_head",
+    "queue_tail",
+    "held",
+    "poisoned",
+    "codec_status_u32",
+    "adapted_bytes",
+    "staging_ring_base",
+    "staging_ring_end",
+    "writer_ring_base",
+    "writer_ring_end",
+    "accepted",
+    "dropped",
+    "failed",
+    "original_status_u32"
+  ],
+  "models": [
+    "Generated original callback immediately overwrites source ring; this is synthetic reuse",
+    "Stock WriterMachine stream Write/Tell/Length, index Add/Commit, OS/allocator/FIFO harness external services",
+    "Separate NativeMachine success path executes original index and MP4 Open/Close; file Read/Write/Seek and OS allocation remain RAM models",
+    "Caller supplies codec identity from archived exact configuration, not a real producer config event",
+    "Caller use-complete receipt; SDK cannot prove absence of real DMA/file retained dependencies"
+  ],
+  "limitations": [
+    "No device/RTOS/callback installation or source stability/cache proof",
+    "Sample framing from archived finalized MP4, not live raw encoder FIFO",
+    "18 failure/boundary scenarios use sample writers with index Add/Commit models; separate single success path uses original complete index/Open/Close",
+    "One stream per independently initialized queue; cases serialize audio/video, not concurrent dual producer test",
+    "No common A/V epoch, one-minute spool, SD or camera voice/shutter integration"
+  ],
+  "target_access": false
+}

@@ -1,0 +1,268 @@
+{
+  "scope": "offline fixed bytes and synthetic RAM only",
+  "inputs": [
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+      "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+    },
+    {
+      "file": "artifacts/device/2026-11-09-rtos-logging/kernel-head.bin",
+      "sha256": "d729a6faf6f274378be6ab60d6ee51d604b24e87a0b2ddcff55a13e5219be83b"
+    },
+    {
+      "file": "artifacts/device/2026-11-09-rtos-logging/kernel-mem-drivers.bin",
+      "sha256": "b1598f4d511f7d6323d702988fd2b1bf8917f6cf90b32a2523fd2785abd3e7ad"
+    }
+  ],
+  "instruction_pins": 13,
+  "kernel_read_rejection_tests": [
+    {
+      "pa": "0x1400",
+      "bytes": 464,
+      "allowed": false
+    },
+    {
+      "pa": "0x1800",
+      "bytes": 852,
+      "allowed": false
+    },
+    {
+      "pa": "0x0",
+      "bytes": 4,
+      "allowed": false
+    },
+    {
+      "pa": "0x3c9fffff",
+      "bytes": 1,
+      "allowed": false
+    }
+  ],
+  "original_handler_synthetic_tests": [
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001400",
+      "count": 0,
+      "width": 1,
+      "exact_target_reads": 0,
+      "target_writes": 0,
+      "stack_writes": 11,
+      "printing_callback_calls": 0
+    },
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001400",
+      "count": 1,
+      "width": 1,
+      "exact_target_reads": 1,
+      "target_writes": 0,
+      "stack_writes": 12,
+      "printing_callback_calls": 2
+    },
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001400",
+      "count": 464,
+      "width": 1,
+      "exact_target_reads": 464,
+      "target_writes": 0,
+      "stack_writes": 475,
+      "printing_callback_calls": 493
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001400",
+      "count": 0,
+      "width": 4,
+      "exact_target_reads": 0,
+      "target_writes": 0,
+      "stack_writes": 11,
+      "printing_callback_calls": 0
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001400",
+      "count": 1,
+      "width": 4,
+      "exact_target_reads": 1,
+      "target_writes": 0,
+      "stack_writes": 12,
+      "printing_callback_calls": 2
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001400",
+      "count": 116,
+      "width": 4,
+      "exact_target_reads": 116,
+      "target_writes": 0,
+      "stack_writes": 127,
+      "printing_callback_calls": 145
+    },
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001800",
+      "count": 0,
+      "width": 1,
+      "exact_target_reads": 0,
+      "target_writes": 0,
+      "stack_writes": 11,
+      "printing_callback_calls": 0
+    },
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001800",
+      "count": 1,
+      "width": 1,
+      "exact_target_reads": 1,
+      "target_writes": 0,
+      "stack_writes": 12,
+      "printing_callback_calls": 2
+    },
+    {
+      "entry": "0xa02a2e58",
+      "va": "0xa0001800",
+      "count": 852,
+      "width": 1,
+      "exact_target_reads": 852,
+      "target_writes": 0,
+      "stack_writes": 863,
+      "printing_callback_calls": 906
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001800",
+      "count": 0,
+      "width": 4,
+      "exact_target_reads": 0,
+      "target_writes": 0,
+      "stack_writes": 11,
+      "printing_callback_calls": 0
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001800",
+      "count": 1,
+      "width": 4,
+      "exact_target_reads": 1,
+      "target_writes": 0,
+      "stack_writes": 12,
+      "printing_callback_calls": 2
+    },
+    {
+      "entry": "0xa02a3000",
+      "va": "0xa0001800",
+      "count": 213,
+      "width": 4,
+      "exact_target_reads": 213,
+      "target_writes": 0,
+      "stack_writes": 224,
+      "printing_callback_calls": 267
+    }
+  ],
+  "stubs": [
+    "numeric conversion for fixed valid args",
+    "printing callback"
+  ],
+  "existing_snapshot_inventory": [
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa0757a40",
+      "bytes": 272,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa1702c40",
+      "bytes": 192,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa1704050",
+      "bytes": 640,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa17045a0",
+      "bytes": 96,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa1443d18",
+      "bytes": 64,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot/telnet-output.txt",
+      "va": "0xa1a355a4",
+      "bytes": 4,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa0757a40",
+      "bytes": 272,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa1702c30",
+      "bytes": 208,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa1702d00",
+      "bytes": 3288,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa170ab10",
+      "bytes": 256,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa1704050",
+      "bytes": 800,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa17045a0",
+      "bytes": 96,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa1443d18",
+      "bytes": 64,
+      "overlaps_low_ptb_page": false
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/telnet-output.txt",
+      "va": "0xa1a355a4",
+      "bytes": 4,
+      "overlaps_low_ptb_page": false
+    }
+  ],
+  "sys_tail": {
+    "bbt_primary_offset": "0x1c4",
+    "bbt_primary_word": "0x32746242",
+    "bbt_mirror_offset": "0x1c8",
+    "bbt_mirror_word": "0x42627433",
+    "remaining_unclassified_interval": "[0xcc,0x1c4)"
+  },
+  "not_proven": [
+    "current target MMU mapping",
+    "cross-core cache coherency",
+    "target console availability at read time",
+    "bootloader reservation origin",
+    "hidden NAND image bytes",
+    "independent recovery"
+  ],
+  "target_access": false
+}

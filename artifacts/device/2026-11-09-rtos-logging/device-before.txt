@@ -1,0 +1,30 @@
+cat /proc/uptime; ls -la /tmp/SD0; ls -l /tmp/SD0/Rtos*.log /tmp/FL0/Rtos*.l
+og /tmp/SD0/save_log_enable.script /tmp/SD0/autoexec.ash; cat /proc/mounts
+751.74 734.11
+total 0
+drwxr--r--    1 root     root        131072 Nov  8  2026 [1;34m.Trashes[0m
+-rwxr--r--    1 root     root          4096 Nov  8  2026 [1;32m._console_enable.script[0m
+drwxr--r--    1 root     root        131072 Nov  8  2026 [1;34m.fseventsd[0m
+drwxr--r--    1 root     root        131072 Jan  1 00:16 [1;34mDCIM[0m
+-rwxr--r--    1 root     root             0 Nov  5  2026 [1;32mconsole_enable.script[0m
+ls: /tmp/SD0/Rtos*.log: No such file or directory
+ls: /tmp/FL0/Rtos*.log: No such file or directory
+ls: /tmp/SD0/save_log_enable.script: No such file or directory
+ls: /tmp/SD0/autoexec.ash: No such file or directory
+rootfs / rootfs rw 0 0
+/dev/root / squashfs ro,relatime 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=24476k,nr_inodes=6119,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,gid=5,mode=620 0 0
+tmpfs /dev/shm tmpfs rw,relatime,mode=777 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+a: /tmp/FL0 ambafs rw,relatime 0 0
+c: /tmp/SD0 ambafs rw,relatime 0 0
+c:/dcim /tmp/DCIM ambafs rw,relatime 0 0
+c: /tmp/fuse_d ambafs rw,relatime 0 0
+c:/dcim /var/www/DCIM ambafs rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+a: /pref ambafs rw,relatime 0 0
+~ # echo __YI_CAPTURE_65fa07d5c8b04f878b1c52b316e1aab4__
+__YI_CAPTURE_65fa07d5c8b04f878b1c52b316e1aab4__

@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "status": "pass_expected_rejections_preserved",
+  "offline_only": true,
+  "source": {
+    "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+    "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d"
+  },
+  "source_scope": "one real archived 8-video/13-AAC window through original ProcessVideo/Audio and index model",
+  "close_wrapper": "A03FE300 -> A0436004 IsoMux_Close; mode is passed unchanged",
+  "cases": [
+    {
+      "mode": 0,
+      "status": 0,
+      "file": "close-00.mp4",
+      "bytes": 1440624,
+      "sha256": "b58cb12999c95569504f1a9005378710e6332c0fb3b55fe24fe351352471c6a0",
+      "prefix_hex": "000000206674797061766331000000006176633169736f6d0000000000000000",
+      "submitted_packets": {
+        "0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "before": {
+        "output_bytes": 1439508,
+        "movie_sha256": "3f7789cd938879b33684b9570ae91011a2c77ca3d0cfc3651850923be5f473b6",
+        "index_sha256": "4cde73299593371abb025d65df2584a732121b3d510b62d7f841f1da04b984b3",
+        "sample_counts": [
+          8,
+          13
+        ]
+      },
+      "after_index_zeroed": true,
+      "after_movie_sha256": "ef9991883fb1f5674382681c2b0c2398948c9f43b58e2a47fc37e69625f0c711",
+      "trim_calls": [
+        {
+          "phase": "close_0x0",
+          "entry": "0xa0435f64"
+        }
+      ],
+      "index_events": 0,
+      "native_calls": {
+        "0xa0435a18": 1,
+        "0xa04032fc": 1,
+        "0xa040f710": 1,
+        "0xa0402750": 39,
+        "0xa0411e88": 45,
+        "0xa04111ac": 21,
+        "0xa0436004": 1,
+        "0xa0411048": 2,
+        "0xa0401ae4": 12,
+        "0xa0402884": 10,
+        "0xa0433af0": 1,
+        "0xa040fc04": 1,
+        "0xa0402ed8": 1
+      },
+      "output_packet_counts": [
+        8,
+        12
+      ],
+      "ffprobe_error": null,
+      "moov_finalized": true,
+      "reopen_status": 0,
+      "reopen_movie_sha256": "53ce4185ff84d7a4e64e9a1d3f04fa47a2a68cce86b7e3f7abd82e8ab6decf6e"
+    },
+    {
+      "mode": 64,
+      "status": 0,
+      "file": "close-40.mp4",
+      "bytes": 1439508,
+      "sha256": "e37d87646cfc45b8603761173dfb171e832c3e0df76016f476e1e8a4ca12935f",
+      "prefix_hex": "000000206674797061766331000000006176633169736f6d0000000000000000",
+      "submitted_packets": {
+        "0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "before": {
+        "output_bytes": 1439508,
+        "movie_sha256": "3f7789cd938879b33684b9570ae91011a2c77ca3d0cfc3651850923be5f473b6",
+        "index_sha256": "4cde73299593371abb025d65df2584a732121b3d510b62d7f841f1da04b984b3",
+        "sample_counts": [
+          8,
+          13
+        ]
+      },
+      "after_index_zeroed": true,
+      "after_movie_sha256": "3f7789cd938879b33684b9570ae91011a2c77ca3d0cfc3651850923be5f473b6",
+      "trim_calls": [],
+      "index_events": 0,
+      "native_calls": {
+        "0xa0435a18": 1,
+        "0xa04032fc": 1,
+        "0xa040f710": 1,
+        "0xa0402750": 39,
+        "0xa0411e88": 45,
+        "0xa04111ac": 21,
+        "0xa0436004": 1,
+        "0xa0411048": 2,
+        "0xa040fc04": 1,
+        "0xa0402ed8": 1
+      },
+      "output_packet_counts": null,
+      "ffprobe_error": "(['/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe', '-v', 'error', '-show_streams', '-show_data', '-of', 'json', '/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-rollover-close/close-40.mp4'], '[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7faaa5004300] moov atom not found\\n/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-rollover-close/close-40.mp4: Invalid data found when processing input\\n')",
+      "moov_finalized": false,
+      "reopen_status": 0,
+      "reopen_movie_sha256": "b1cb9870b817fa45a96bae1253d4720b0a018ec44b910699a38e55921a4220b6"
+    },
+    {
+      "mode": 128,
+      "status": 0,
+      "file": "close-80.mp4",
+      "bytes": 1439508,
+      "sha256": "e37d87646cfc45b8603761173dfb171e832c3e0df76016f476e1e8a4ca12935f",
+      "prefix_hex": "000000206674797061766331000000006176633169736f6d0000000000000000",
+      "submitted_packets": {
+        "0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "before": {
+        "output_bytes": 1439508,
+        "movie_sha256": "3f7789cd938879b33684b9570ae91011a2c77ca3d0cfc3651850923be5f473b6",
+        "index_sha256": "4cde73299593371abb025d65df2584a732121b3d510b62d7f841f1da04b984b3",
+        "sample_counts": [
+          8,
+          13
+        ]
+      },
+      "after_index_zeroed": true,
+      "after_movie_sha256": "3f7789cd938879b33684b9570ae91011a2c77ca3d0cfc3651850923be5f473b6",
+      "trim_calls": [],
+      "index_events": 0,
+      "native_calls": {
+        "0xa0435a18": 1,
+        "0xa04032fc": 1,
+        "0xa040f710": 1,
+        "0xa0402750": 35,
+        "0xa0411e88": 45,
+        "0xa04111ac": 21,
+        "0xa0436004": 1,
+        "0xa040fc04": 1,
+        "0xa0402ed8": 1
+      },
+      "output_packet_counts": null,
+      "ffprobe_error": "(['/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe', '-v', 'error', '-show_streams', '-show_data', '-of', 'json', '/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-rollover-close/close-80.mp4'], '[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7f967f005bc0] moov atom not found\\n/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-rollover-close/close-80.mp4: Invalid data found when processing input\\n')",
+      "moov_finalized": false,
+      "reopen_status": 0,
+      "reopen_movie_sha256": "b1cb9870b817fa45a96bae1253d4720b0a018ec44b910699a38e55921a4220b6"
+    }
+  ],
+  "conclusions": [
+    "mode 0 executes IsoMux_Trim and finalizes a playable MOOV; tail AAC coverage remains governed by Trim",
+    "mode 0x40 skips Trim but also skips MOOV/stream finalization, so the produced bytes are not a playable segment",
+    "mode 0x80 follows the non-Trim close cleanup and likewise leaves no finalized MOOV; it is startup-error cleanup, not rollover",
+    "the tested 0x40/0x80 values do not constitute a legal AAC-preserving rollover API"
+  ],
+  "caller_evidence": {
+    "0x40": [
+      "A044195C OnPipePaused",
+      "A0442674 OnPipeLimit error cleanup",
+      "A0442BAC OnPipeError"
+    ],
+    "0x80": [
+      "A0441550 AmpMuxer_StartPipe startup error cleanup"
+    ]
+  },
+  "limits": [
+    "offline synthetic RAM and archived packets; no encoder/DMA/CFS/scheduler or camera access",
+    "one window only; no claim of continuous producer ownership, payload lifetime, or cross-file timing",
+    "A0436004 direct mode experiments are diagnostic evidence, not deployment guidance"
+  ]
+}

@@ -1,0 +1,16 @@
+~ # awk '$3 == "stext" || $3 == "_text" || $3 == "_stext" || $3 == "phys_mem_acc
+ess_prot" || $3 == "phys_mem_access_prot_allowed" || $3 == "pfn_valid" || $3 == 
+"mmap_mem" || $3 == "read_mem" || $3 == "mem_types" || $3 == "valid_mmap_phys_ad
+dr_range" || $3 == "devmem_is_allowed" || $3 == "amba_heapmem_mmap" || $3 == "am
+ba_dspmem_mmap" || $3 == "high_memory" || $3 == "__pv_phys_offset"' /proc/kallsy
+ms
+400081c0 T _stext
+40016494 T pfn_valid
+40017d14 T valid_mmap_phys_addr_range
+40017d28 T devmem_is_allowed
+40265578 t read_mem
+40265940 W phys_mem_access_prot_allowed
+40265948 t mmap_mem
+4027f694 t amba_dspmem_mmap
+~ # echo __YI_CAPTURE_fb4aa8ea591b4cc19422c2728adeafed__
+__YI_CAPTURE_fb4aa8ea591b4cc19422c2728adeafed__

@@ -1,0 +1,21 @@
+{
+  "verification": "2026-11-11 independent Android build rerun",
+  "source": "android/app",
+  "apk": {
+    "path": "android/app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 11533673,
+    "sha256": "a7db05b4b23b84c987c9f8c3cb990b7299f2929046100a779176d9ee9c87cbf1"
+  },
+  "commands": [
+    "./gradlew testDebugUnitTest lintDebug assembleDebug",
+    "build-tools/36.1.0/apksigner verify --verbose app-debug.apk"
+  ],
+  "results": {
+    "testDebugUnitTest": "passed (cached task result)",
+    "lintDebug": "passed (0 errors)",
+    "assembleDebug": "passed",
+    "apk_signature": "v2 verified, one signer"
+  },
+  "device_access": false,
+  "firmware_execution": false
+}

@@ -1,0 +1,14 @@
+python -B -u <<'YI_LOG_MARKER_PY'
+> import os, stat, json
+> path = '/tmp/SD0/save_log_enable.script'
+> fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0600)
+> os.close(fd)
+> st = os.lstat(path)
+> assert stat.S_ISREG(st.st_mode) and st.st_size == 0
+> print('YI_LOG_MARKER_CREATED ' + json.dumps({'size': st.st_size, 'inode': st.s
+t_ino, 'mtime': st.st_mtime}))
+> 
+> YI_LOG_MARKER_PY
+YI_LOG_MARKER_CREATED {"mtime": 1388539916.0, "inode": 275, "size": 0}
+~ # echo __YI_CAPTURE_7e1bc7b9f076473ea7b9c35b01089141__
+__YI_CAPTURE_7e1bc7b9f076473ea7b9c35b01089141__

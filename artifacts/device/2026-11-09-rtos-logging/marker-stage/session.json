@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-11-09T01:58:06.797562+00:00",
+  "host": "192.168.42.1",
+  "action": "stage",
+  "marker": "/tmp/SD0/save_log_enable.script",
+  "api_events": [
+    {
+      "host_monotonic": 1024183.740962708,
+      "utc": "2026-11-09T01:58:06.817696+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1024184.65134975,
+      "utc": "2026-11-09T01:58:07.728097+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1024184.651458458,
+      "utc": "2026-11-09T01:58:07.728193+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1024184.658963583,
+      "utc": "2026-11-09T01:58:07.735703+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1024184.659018208,
+      "utc": "2026-11-09T01:58:07.735752+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1024184.6710975,
+      "utc": "2026-11-09T01:58:07.747835+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1024184.671154916,
+      "utc": "2026-11-09T01:58:07.747889+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1024184.676571,
+      "utc": "2026-11-09T01:58:07.753306+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "memory_probe_run": false,
+  "preferences_changed": false,
+  "operation_confirmed": true,
+  "created_exclusively": true,
+  "marker_stat": {
+    "mtime": 1388539916.0,
+    "inode": 275,
+    "size": 0
+  },
+  "activation_verified": false
+}

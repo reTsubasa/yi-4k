@@ -1,0 +1,2793 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "mapping_table": "0xa07e3c14",
+  "class_to_public_code": [
+    1002,
+    1001,
+    1004,
+    1003,
+    1005
+  ],
+  "command_names": [
+    "Yi_action_take_photo",
+    "Yi_action_shoot_burst",
+    "Yi_action_begin_recording",
+    "Yi_action_stop_recording",
+    "Yi_action_turn_off"
+  ],
+  "language_suffixes": [
+    "_en",
+    "_zh"
+  ],
+  "synthetic_classification": [
+    {
+      "language": "en",
+      "winner": 0,
+      "threshold": 0.949999988079071,
+      "result": 2,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 1,
+      "threshold": 0.949999988079071,
+      "result": 1,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 2,
+      "threshold": 0.949999988079071,
+      "result": 4,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 3,
+      "threshold": 0.949999988079071,
+      "result": 3,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 4,
+      "threshold": 0.949999988079071,
+      "result": 5,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 5,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 6,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 7,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 8,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 9,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 3,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.9498999880790711,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 3,
+      "threshold": 0.949999988079071,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.949999988079071,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "en",
+      "winner": 3,
+      "threshold": 0.949999988079071,
+      "result": 3,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.950099988079071,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 0,
+      "threshold": 0.9950000047683716,
+      "result": 2,
+      "scores": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 1,
+      "threshold": 0.9950000047683716,
+      "result": 1,
+      "scores": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 2,
+      "threshold": 0.9950000047683716,
+      "result": 4,
+      "scores": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 3,
+      "threshold": 0.9950000047683716,
+      "result": 3,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 4,
+      "threshold": 0.9950000047683716,
+      "result": 5,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 5,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 6,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 7,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 8,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 9,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 3,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.9949000047683716,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 3,
+      "threshold": 0.9950000047683716,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.9950000047683716,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "language": "zh",
+      "winner": 3,
+      "threshold": 0.9950000047683716,
+      "result": 3,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.9951000047683716,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    }
+  ],
+  "tie_case": {
+    "result": 2,
+    "scores": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reset_requests": [],
+    "classification_requests": [],
+    "start_stop_flags": [],
+    "queued_descriptors": [],
+    "logs": [],
+    "idle_signals": 0,
+    "waits": 0,
+    "engine_calls": 0,
+    "events": []
+  },
+  "dominant_reject_case": {
+    "result": 0,
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.96,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "reset_requests": [],
+    "classification_requests": [],
+    "start_stop_flags": [],
+    "queued_descriptors": [],
+    "logs": [],
+    "idle_signals": 0,
+    "waits": 0,
+    "engine_calls": 0,
+    "events": []
+  },
+  "stage1_reject_short_circuit": {
+    "result": 0,
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.96,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "reset_requests": [],
+    "classification_requests": [],
+    "start_stop_flags": [],
+    "queued_descriptors": [],
+    "logs": [],
+    "idle_signals": 0,
+    "waits": 0,
+    "engine_calls": 0,
+    "events": [],
+    "gate": 0
+  },
+  "synthetic_stage1_gate": [
+    {
+      "language": "en",
+      "label": "1110",
+      "threshold": 0.6000000238418579,
+      "result": 1,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "all_high",
+      "threshold": 0.6000000238418579,
+      "result": 0,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "all_low",
+      "threshold": 0.6000000238418579,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "short_run",
+      "threshold": 0.6000000238418579,
+      "result": 0,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "last_tested",
+      "threshold": 0.6000000238418579,
+      "result": 1,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "last_untested",
+      "threshold": 0.6000000238418579,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "en",
+      "label": "equal_threshold",
+      "threshold": 0.6000000238418579,
+      "result": 0,
+      "scores": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "1110",
+      "threshold": 0.5,
+      "result": 1,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "all_high",
+      "threshold": 0.5,
+      "result": 0,
+      "scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "all_low",
+      "threshold": 0.5,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "short_run",
+      "threshold": 0.5,
+      "result": 0,
+      "scores": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "last_tested",
+      "threshold": 0.5,
+      "result": 1,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "last_untested",
+      "threshold": 0.5,
+      "result": 0,
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    },
+    {
+      "language": "zh",
+      "label": "equal_threshold",
+      "threshold": 0.5,
+      "result": 0,
+      "scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_gate": true
+    }
+  ],
+  "synthetic_engine_framing": [
+    {
+      "frames": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 3
+    },
+    {
+      "frames": 120,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 3
+    },
+    {
+      "frames": 121,
+      "result": 1000,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          121
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 0
+    },
+    {
+      "frames": 121,
+      "result": 1003,
+      "scores": [],
+      "reset_requests": [
+        2711943436
+      ],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          121
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 3
+    },
+    {
+      "frames": 121,
+      "result": 1004,
+      "scores": [],
+      "reset_requests": [
+        2711943436
+      ],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          121
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 4
+    },
+    {
+      "frames": 350,
+      "result": 1003,
+      "scores": [],
+      "reset_requests": [
+        2711943436
+      ],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          350
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 3
+    },
+    {
+      "frames": 351,
+      "result": 1003,
+      "scores": [],
+      "reset_requests": [
+        2711943436
+      ],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          350
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": 3
+    },
+    {
+      "frames": 121,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [
+        2711943436
+      ],
+      "classification_requests": [
+        [
+          1881145344,
+          0,
+          121
+        ]
+      ],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "Internal Error!!! %d"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "stub_classifier": true,
+      "classified": -1
+    }
+  ],
+  "synthetic_task_events": [
+    {
+      "recognition": 1000,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [],
+      "stub_engine": true,
+      "engine_result": 1000,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1001,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action take photo\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598198,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1001,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1002,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action shoot burst\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598199,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1002,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1003,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action begin recording\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598200,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1003,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1004,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action stop recording\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598201,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1004,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1005,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action turn off\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598202,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1005,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1006,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [],
+      "stub_engine": true,
+      "engine_result": 1006,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1003,
+      "skip": 4,
+      "rtmp": 0,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 0,
+      "events": [],
+      "stub_engine": true,
+      "engine_result": 1003,
+      "event_flags": 4
+    },
+    {
+      "recognition": 1003,
+      "skip": 0,
+      "rtmp": 1,
+      "app": "0x1",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action begin recording\r\n",
+        "[D][VOICE_CMD][%06d][%s]:RTMP live in now, and ignore command ...\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [],
+      "stub_engine": true,
+      "engine_result": 1003,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1003,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x0",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action begin recording\r\n",
+        "[D][VOICE_CMD][%06d][%s]:fActiveAPP->Id: %d now, and ignore command ...\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [],
+      "stub_engine": true,
+      "engine_result": 1003,
+      "event_flags": 0
+    },
+    {
+      "recognition": 1003,
+      "skip": 0,
+      "rtmp": 0,
+      "app": "0x2",
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[W][VOICE_CMD][%06d][%s]:Yi action begin recording\r\n",
+        "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d\n",
+        "%s[E][VOICE_CMD][%06d][%s]:Should not go to here\n"
+      ],
+      "idle_signals": 2,
+      "waits": 3,
+      "engine_calls": 1,
+      "events": [
+        [
+          4026598200,
+          0,
+          0
+        ]
+      ],
+      "stub_engine": true,
+      "engine_result": 1003,
+      "event_flags": 0
+    }
+  ],
+  "synthetic_real_reset": {
+    "result": 0,
+    "scores": [],
+    "reset_requests": [],
+    "classification_requests": [],
+    "start_stop_flags": [],
+    "queued_descriptors": [],
+    "logs": [],
+    "idle_signals": 0,
+    "waits": 0,
+    "engine_calls": 0,
+    "events": [],
+    "real_reset": true,
+    "feature_words_after": [
+      0,
+      0,
+      1879602528,
+      1879498528,
+      1879550528,
+      4294967295,
+      0
+    ],
+    "timer_bits_after": 1088421888
+  },
+  "synthetic_real_readiness": [
+    {
+      "status": 0,
+      "blocked": 0,
+      "result": 1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[I][REC_CONNECTED_CAM][%06d][%s]:RecCapState %d"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 0
+    },
+    {
+      "status": 1,
+      "blocked": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 0
+    },
+    {
+      "status": 5,
+      "blocked": 0,
+      "result": 1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "[I][REC_CONNECTED_CAM][%06d][%s]:RecCapState %d"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 0
+    },
+    {
+      "status": 0,
+      "blocked": 4,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 0
+    },
+    {
+      "status": 0,
+      "blocked": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 1
+    },
+    {
+      "status": 5,
+      "blocked": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "real_ready": true,
+      "busy_helper": 1
+    }
+  ],
+  "synthetic_action_gates": [
+    {
+      "command": "START",
+      "app": "0x1",
+      "capable": 4,
+      "mode": 4,
+      "recording": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [
+        1
+      ],
+      "queued_descriptors": [
+        [
+          4026598203,
+          0,
+          0,
+          4026598200,
+          2686129804,
+          2686130064,
+          512,
+          512,
+          15000,
+          15000,
+          0
+        ]
+      ],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 1
+    },
+    {
+      "command": "START",
+      "app": "0x1",
+      "capable": 4,
+      "mode": 4,
+      "recording": 1,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:system busy now, can not do the operation: Record Start\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 0
+    },
+    {
+      "command": "START",
+      "app": "0x1",
+      "capable": 0,
+      "mode": 4,
+      "recording": 0,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:current app:%d is not ready, can not do the operation: Record Start\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 1
+    },
+    {
+      "command": "START",
+      "app": "0x1",
+      "capable": 4,
+      "mode": 0,
+      "recording": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [
+        1
+      ],
+      "queued_descriptors": [
+        [
+          4043243827,
+          4,
+          0,
+          4026598200,
+          2686129424,
+          0,
+          512,
+          0,
+          15000,
+          0,
+          0
+        ],
+        [
+          4026598203,
+          0,
+          0,
+          4026598200,
+          2686129804,
+          2686130064,
+          512,
+          512,
+          15000,
+          15000,
+          0
+        ]
+      ],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 1
+    },
+    {
+      "command": "START",
+      "app": "0x2",
+      "capable": 4,
+      "mode": 0,
+      "recording": 0,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [
+        1
+      ],
+      "queued_descriptors": [
+        [
+          3758161950,
+          0,
+          0,
+          4026598200,
+          2686128564,
+          0,
+          512,
+          0,
+          15000,
+          0,
+          0
+        ],
+        [
+          4043243827,
+          4,
+          0,
+          4026598200,
+          2686129424,
+          0,
+          512,
+          0,
+          15000,
+          0,
+          0
+        ],
+        [
+          4026598203,
+          0,
+          0,
+          4026598200,
+          2686129804,
+          2686130064,
+          512,
+          512,
+          15000,
+          15000,
+          0
+        ]
+      ],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 1
+    },
+    {
+      "command": "START",
+      "app": "0x0",
+      "capable": 4,
+      "mode": 4,
+      "recording": 0,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:current app:%d, can not do the operation: Record Start\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": [],
+      "ready": 1
+    },
+    {
+      "command": "STOP",
+      "app": "0x1",
+      "mode": 4,
+      "recording": 1,
+      "result": 0,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [
+        0
+      ],
+      "queued_descriptors": [
+        [
+          4026598203,
+          0,
+          0,
+          4026598201,
+          2686128632,
+          0,
+          512,
+          0,
+          15000,
+          0,
+          0
+        ]
+      ],
+      "logs": [],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "command": "STOP",
+      "app": "0x1",
+      "mode": 4,
+      "recording": 0,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:cam is not recording now, can not do the operation: Record Stop\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "command": "STOP",
+      "app": "0x1",
+      "mode": 0,
+      "recording": 1,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:cam is not recording now, can not do the operation: Record Stop\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    },
+    {
+      "command": "STOP",
+      "app": "0x2",
+      "mode": 4,
+      "recording": 1,
+      "result": -1,
+      "scores": [],
+      "reset_requests": [],
+      "classification_requests": [],
+      "start_stop_flags": [],
+      "queued_descriptors": [],
+      "logs": [
+        "%s[E][VOICE_CMD][%06d][%s]:cam is not recording now, can not do the operation: Record Stop\n"
+      ],
+      "idle_signals": 0,
+      "waits": 0,
+      "engine_calls": 0,
+      "events": []
+    }
+  ],
+  "function_fingerprints": [
+    {
+      "entry": "0xa04ca540",
+      "ranges": [
+        "a04c9e24-a04c9f17",
+        "a04ca540-a04ca59b"
+      ],
+      "sha256": "08d5506babe388b5071a7f8977fd2dbc47a85f1e0928758dc37642ee3c0ca901"
+    },
+    {
+      "entry": "0xa04c9f28",
+      "ranges": [
+        "a04c9f28-a04ca0f3",
+        "a04ca108-a04ca10f"
+      ],
+      "sha256": "f2b361eddf049ec52598381ac283e4c56f4e8faca03b251ebb1f482084ab3d2e"
+    },
+    {
+      "entry": "0xa04caf98",
+      "ranges": [
+        "a04caf98-a04cb0ef",
+        "a04cb118-a04cb173"
+      ],
+      "sha256": "8a93221f77b4a410ef193dc034a9b3076f15c79a6016b53e0edfd85c2012c279"
+    },
+    {
+      "entry": "0xa04cb568",
+      "ranges": [
+        "a04cb568-a04cb57b"
+      ],
+      "sha256": "5db692e99c79f2f352480916f6abf0d28e27c714c399d9797627dfb4d963354c"
+    },
+    {
+      "entry": "0xa04cb57c",
+      "ranges": [
+        "a04cb57c-a04cb88b",
+        "a04cb8b4-a04cba5b",
+        "a04cba98-a04cbaeb"
+      ],
+      "sha256": "6b9a3ad4833914e53f0df1e25e3ef7ef573deb589735b57f42086c86c88b49c9"
+    },
+    {
+      "entry": "0xa04cd2b8",
+      "ranges": [
+        "a04cd2b8-a04cd51b"
+      ],
+      "sha256": "15f796f28fd97f7b2d6ab1fd358cbf53c97820c349084bd11ebceaa653e3c49c"
+    },
+    {
+      "entry": "0xa01b18e0",
+      "ranges": [
+        "a01b18e0-a01b1a43",
+        "a01b1a58-a01b1c57"
+      ],
+      "sha256": "5ebae0395898a188ed09a5b37c4eeaa5f48ffb4bdbb5c206ab74ef6e9ea5d8dd"
+    },
+    {
+      "entry": "0xa01b22e0",
+      "ranges": [
+        "a01b22e0-a01b25e3"
+      ],
+      "sha256": "0ace652ed1b1adf204b528f7a84fec3b381f5c4a1072d92961a803187eea6c18"
+    },
+    {
+      "entry": "0xa01b25e4",
+      "ranges": [
+        "a01b25e4-a01b2727"
+      ],
+      "sha256": "1647ccf8f1d92c7dffb27c8c8ed4a009edd43afcf442e0a6735378d33f95e690"
+    },
+    {
+      "entry": "0xa01b168c",
+      "ranges": [
+        "a01b168c-a01b170b"
+      ],
+      "sha256": "b906af522a6699519994638a2438a436774da1e10f697dce9b775ac6172d7e4e"
+    },
+    {
+      "entry": "0xa01b1790",
+      "ranges": [
+        "a01b1790-a01b1823"
+      ],
+      "sha256": "20ca134c7db47785938b994c620ee3d7b052a972f0ecd8060e32de9c21dba7d3"
+    },
+    {
+      "entry": "0xa01b11f8",
+      "ranges": [
+        "a01b11f8-a01b1293"
+      ],
+      "sha256": "dbbcede09929afc5c01cf84f97090b950c94f86f683763882e5646c663d213cb"
+    },
+    {
+      "entry": "0xa01b2c30",
+      "ranges": [
+        "a01b2c30-a01b2e37"
+      ],
+      "sha256": "9f75b532af34a39d8402f779355496e8c774899dbd8d960f9cdae9cd4035808c"
+    },
+    {
+      "entry": "0xa01c7748",
+      "ranges": [
+        "a01c7748-a01c7843"
+      ],
+      "sha256": "64b528f0107c8b0bfdaa407b2e20e1b90ae1b888f4d769458e5e76b76e64121a"
+    },
+    {
+      "entry": "0xa01b2ff8",
+      "ranges": [
+        "a01b2ff8-a01b3247"
+      ],
+      "sha256": "e6f815317e5874500906dda1fbaa16bfb5529cb904ae449c6b4eaea542554b0e"
+    },
+    {
+      "entry": "0xa011f260",
+      "ranges": [
+        "a011f260-a011f307"
+      ],
+      "sha256": "9b009f3ed642c7dea62ef45f951c5076654da9ac078deaef33cceaae085d091a"
+    }
+  ],
+  "instructions": {
+    "argmax_map": [
+      {
+        "address": "0xa04c9e74",
+        "bytes": "0c009de5",
+        "op": "ldr r0, [sp, #0xc]"
+      },
+      {
+        "address": "0xa04c9e78",
+        "bytes": "10c09de5",
+        "op": "ldr ip, [sp, #0x10]"
+      },
+      {
+        "address": "0xa04c9e7c",
+        "bytes": "00005ce1",
+        "op": "cmp ip, r0"
+      },
+      {
+        "address": "0xa04c9e80",
+        "bytes": "1700000a",
+        "op": "beq #0xa04c9ee4"
+      },
+      {
+        "address": "0xa04c9e84",
+        "bytes": "043080e2",
+        "op": "add r3, r0, #4"
+      },
+      {
+        "address": "0xa04c9e88",
+        "bytes": "0020a0e1",
+        "op": "mov r2, r0"
+      },
+      {
+        "address": "0xa04c9e8c",
+        "bytes": "050000ea",
+        "op": "b #0xa04c9ea8"
+      },
+      {
+        "address": "0xa04c9e90",
+        "bytes": "007a92ed",
+        "op": "vldr s14, [r2]"
+      },
+      {
+        "address": "0xa04c9e94",
+        "bytes": "043083e2",
+        "op": "add r3, r3, #4"
+      },
+      {
+        "address": "0xa04c9e98",
+        "bytes": "007ad1ed",
+        "op": "vldr s15, [r1]"
+      },
+      {
+        "address": "0xa04c9e9c",
+        "bytes": "677ab4ee",
+        "op": "vcmp.f32 s14, s15"
+      },
+      {
+        "address": "0xa04c9ea0",
+        "bytes": "10faf1ee",
+        "op": "vmrs apsr_nzcv, fpscr"
+      },
+      {
+        "address": "0xa04c9ea4",
+        "bytes": "0120a041",
+        "op": "movmi r2, r1"
+      },
+      {
+        "address": "0xa04c9ea8",
+        "bytes": "03005ce1",
+        "op": "cmp ip, r3"
+      },
+      {
+        "address": "0xa04c9eac",
+        "bytes": "0310a0e1",
+        "op": "mov r1, r3"
+      },
+      {
+        "address": "0xa04c9eb0",
+        "bytes": "f6ffff1a",
+        "op": "bne #0xa04c9e90"
+      },
+      {
+        "address": "0xa04c9eb4",
+        "bytes": "023060e0",
+        "op": "rsb r3, r0, r2"
+      },
+      {
+        "address": "0xa04c9eb8",
+        "bytes": "130053e3",
+        "op": "cmp r3, #0x13"
+      },
+      {
+        "address": "0xa04c9ebc",
+        "bytes": "0a0000da",
+        "op": "ble #0xa04c9eec"
+      },
+      {
+        "address": "0xa04c9ec0",
+        "bytes": "0040a0e3",
+        "op": "mov r4, #0"
+      },
+      {
+        "address": "0xa04c9ec4",
+        "bytes": "000050e3",
+        "op": "cmp r0, #0"
+      },
+      {
+        "address": "0xa04c9ec8",
+        "bytes": "0000000a",
+        "op": "beq #0xa04c9ed0"
+      },
+      {
+        "address": "0xa04c9ecc",
+        "bytes": "b278f7eb",
+        "op": "bl #0xa02a819c"
+      },
+      {
+        "address": "0xa04c9ed0",
+        "bytes": "0500a0e1",
+        "op": "mov r0, r5"
+      },
+      {
+        "address": "0xa04c9ed4",
+        "bytes": "4fa000eb",
+        "op": "bl #0xa04f2018"
+      },
+      {
+        "address": "0xa04c9ed8",
+        "bytes": "0400a0e1",
+        "op": "mov r0, r4"
+      },
+      {
+        "address": "0xa04c9edc",
+        "bytes": "18d08de2",
+        "op": "add sp, sp, #0x18"
+      },
+      {
+        "address": "0xa04c9ee0",
+        "bytes": "7080bde8",
+        "op": "pop {r4, r5, r6, pc}"
+      },
+      {
+        "address": "0xa04c9ee4",
+        "bytes": "0020a0e1",
+        "op": "mov r2, r0"
+      },
+      {
+        "address": "0xa04c9ee8",
+        "bytes": "0030a0e3",
+        "op": "mov r3, #0"
+      },
+      {
+        "address": "0xa04c9eec",
+        "bytes": "db4d84e2",
+        "op": "add r4, r4, #0x36c0"
+      },
+      {
+        "address": "0xa04c9ef0",
+        "bytes": "007a92ed",
+        "op": "vldr s14, [r2]"
+      },
+      {
+        "address": "0xa04c9ef4",
+        "bytes": "077ad4ed",
+        "op": "vldr s15, [r4, #0x1c]"
+      },
+      {
+        "address": "0xa04c9ef8",
+        "bytes": "e77ab4ee",
+        "op": "vcmpe.f32 s14, s15"
+      },
+      {
+        "address": "0xa04c9efc",
+        "bytes": "10faf1ee",
+        "op": "vmrs apsr_nzcv, fpscr"
+      },
+      {
+        "address": "0xa04c9f00",
+        "bytes": "eeffffda",
+        "op": "ble #0xa04c9ec0"
+      },
+      {
+        "address": "0xa04c9f04",
+        "bytes": "18209fe5",
+        "op": "ldr r2, [pc, #0x18]"
+      },
+      {
+        "address": "0xa04c9f08",
+        "bytes": "02208fe0",
+        "op": "add r2, pc, r2"
+      },
+      {
+        "address": "0xa04c9f0c",
+        "bytes": "034092e7",
+        "op": "ldr r4, [r2, r3]"
+      },
+      {
+        "address": "0xa04c9f10",
+        "bytes": "fa4f44e2",
+        "op": "sub r4, r4, #0x3e8"
+      },
+      {
+        "address": "0xa04c9f14",
+        "bytes": "eaffffea",
+        "op": "b #0xa04c9ec4"
+      }
+    ],
+    "engine_reset": [
+      {
+        "address": "0xa04cb710",
+        "bytes": "68339fe5",
+        "op": "ldr r3, [pc, #0x368]"
+      },
+      {
+        "address": "0xa04cb714",
+        "bytes": "101094e5",
+        "op": "ldr r1, [r4, #0x10]"
+      },
+      {
+        "address": "0xa04cb718",
+        "bytes": "002094e5",
+        "op": "ldr r2, [r4]"
+      },
+      {
+        "address": "0xa04cb71c",
+        "bytes": "033096e7",
+        "op": "ldr r3, [r6, r3]"
+      },
+      {
+        "address": "0xa04cb720",
+        "bytes": "000093e5",
+        "op": "ldr r0, [r3]"
+      },
+      {
+        "address": "0xa04cb724",
+        "bytes": "85fbffeb",
+        "op": "bl #0xa04ca540"
+      },
+      {
+        "address": "0xa04cb728",
+        "bytes": "005050e2",
+        "op": "subs r5, r0, #0"
+      },
+      {
+        "address": "0xa04cb72c",
+        "bytes": "600000ba",
+        "op": "blt #0xa04cb8b4"
+      },
+      {
+        "address": "0xa04cb730",
+        "bytes": "4c339fe5",
+        "op": "ldr r3, [pc, #0x34c]"
+      },
+      {
+        "address": "0xa04cb734",
+        "bytes": "0510a0e1",
+        "op": "mov r1, r5"
+      },
+      {
+        "address": "0xa04cb738",
+        "bytes": "fa5f85e2",
+        "op": "add r5, r5, #0x3e8"
+      },
+      {
+        "address": "0xa04cb73c",
+        "bytes": "030096e7",
+        "op": "ldr r0, [r6, r3]"
+      },
+      {
+        "address": "0xa04cb740",
+        "bytes": "88ffffeb",
+        "op": "bl #0xa04cb568"
+      },
+      {
+        "address": "0xa04cb744",
+        "bytes": "0500a0e1",
+        "op": "mov r0, r5"
+      },
+      {
+        "address": "0xa04cb748",
+        "bytes": "0cd08de2",
+        "op": "add sp, sp, #0xc"
+      },
+      {
+        "address": "0xa04cb74c",
+        "bytes": "f08fbde8",
+        "op": "pop {r4, r5, r6, r7, r8, sb, sl, fp, pc}"
+      }
+    ],
+    "start_event": [
+      {
+        "address": "0xa01b1bd8",
+        "bytes": "d8030de3",
+        "op": "movw r0, #0xd3d8"
+      },
+      {
+        "address": "0xa01b1bdc",
+        "bytes": "182f0ce3",
+        "op": "movw r2, #0xcf18"
+      },
+      {
+        "address": "0xa01b1be0",
+        "bytes": "56004ae3",
+        "op": "movt r0, #0xa056"
+      },
+      {
+        "address": "0xa01b1be4",
+        "bytes": "56204ae3",
+        "op": "movt r2, #0xa056"
+      },
+      {
+        "address": "0xa01b1be8",
+        "bytes": "711fa0e3",
+        "op": "mov r1, #0x1c4"
+      },
+      {
+        "address": "0xa01b1bec",
+        "bytes": "3ed503eb",
+        "op": "bl #0xa02a70ec"
+      },
+      {
+        "address": "0xa01b1bf0",
+        "bytes": "ce0fa0e3",
+        "op": "mov r0, #0x338"
+      },
+      {
+        "address": "0xa01b1bf4",
+        "bytes": "01004fe3",
+        "op": "movt r0, #0xf001"
+      },
+      {
+        "address": "0xa01b1bf8",
+        "bytes": "cfffffea",
+        "op": "b #0xa01b1b3c"
+      }
+    ],
+    "button_gate": [
+      {
+        "address": "0xa019f66c",
+        "bytes": "380004e3",
+        "op": "movw r0, #0x4038"
+      },
+      {
+        "address": "0xa019f670",
+        "bytes": "582304e3",
+        "op": "movw r2, #0x4358"
+      },
+      {
+        "address": "0xa019f674",
+        "bytes": "56204ae3",
+        "op": "movt r2, #0xa056"
+      },
+      {
+        "address": "0xa019f678",
+        "bytes": "56004ae3",
+        "op": "movt r0, #0xa056"
+      },
+      {
+        "address": "0xa019f67c",
+        "bytes": "bf1a00e3",
+        "op": "movw r1, #0xabf"
+      },
+      {
+        "address": "0xa019f680",
+        "bytes": "991e04eb",
+        "op": "bl #0xa02a70ec"
+      },
+      {
+        "address": "0xa019f684",
+        "bytes": "54209de5",
+        "op": "ldr r2, [sp, #0x54]"
+      },
+      {
+        "address": "0xa019f688",
+        "bytes": "24309de5",
+        "op": "ldr r3, [sp, #0x24]"
+      },
+      {
+        "address": "0xa019f68c",
+        "bytes": "002092e5",
+        "op": "ldr r2, [r2]"
+      },
+      {
+        "address": "0xa019f690",
+        "bytes": "003093e5",
+        "op": "ldr r3, [r3]"
+      },
+      {
+        "address": "0xa019f694",
+        "bytes": "030052e1",
+        "op": "cmp r2, r3"
+      },
+      {
+        "address": "0xa019f698",
+        "bytes": "0200001a",
+        "op": "bne #0xa019f6a8"
+      },
+      {
+        "address": "0xa019f69c",
+        "bytes": "2230d4e5",
+        "op": "ldrb r3, [r4, #0x22]"
+      },
+      {
+        "address": "0xa019f6a0",
+        "bytes": "030053e3",
+        "op": "cmp r3, #3"
+      },
+      {
+        "address": "0xa019f6a4",
+        "bytes": "ab04008a",
+        "op": "bhi #0xa01a0958"
+      },
+      {
+        "address": "0xa019f6a8",
+        "bytes": "b80004e3",
+        "op": "movw r0, #0x40b8"
+      },
+      {
+        "address": "0xa019f6ac",
+        "bytes": "582304e3",
+        "op": "movw r2, #0x4358"
+      },
+      {
+        "address": "0xa019f6b0",
+        "bytes": "56204ae3",
+        "op": "movt r2, #0xa056"
+      },
+      {
+        "address": "0xa019f6b4",
+        "bytes": "c41a00e3",
+        "op": "movw r1, #0xac4"
+      },
+      {
+        "address": "0xa019f6b8",
+        "bytes": "56004ae3",
+        "op": "movt r0, #0xa056"
+      },
+      {
+        "address": "0xa019f6bc",
+        "bytes": "8a1e04eb",
+        "op": "bl #0xa02a70ec"
+      },
+      {
+        "address": "0xa019f6c0",
+        "bytes": "1bf9ffea",
+        "op": "b #0xa019db34"
+      }
+    ],
+    "button_to_app": [
+      {
+        "address": "0xa01a0958",
+        "bytes": "6c0004e3",
+        "op": "movw r0, #0x406c"
+      },
+      {
+        "address": "0xa01a095c",
+        "bytes": "582304e3",
+        "op": "movw r2, #0x4358"
+      },
+      {
+        "address": "0xa01a0960",
+        "bytes": "56204ae3",
+        "op": "movt r2, #0xa056"
+      },
+      {
+        "address": "0xa01a0964",
+        "bytes": "c11a00e3",
+        "op": "movw r1, #0xac1"
+      },
+      {
+        "address": "0xa01a0968",
+        "bytes": "56004ae3",
+        "op": "movt r0, #0xa056"
+      },
+      {
+        "address": "0xa01a096c",
+        "bytes": "de1904eb",
+        "op": "bl #0xa02a70ec"
+      },
+      {
+        "address": "0xa01a0970",
+        "bytes": "54309de5",
+        "op": "ldr r3, [sp, #0x54]"
+      },
+      {
+        "address": "0xa01a0974",
+        "bytes": "0c00a0e3",
+        "op": "mov r0, #0xc"
+      },
+      {
+        "address": "0xa01a0978",
+        "bytes": "0510a0e1",
+        "op": "mov r1, r5"
+      },
+      {
+        "address": "0xa01a097c",
+        "bytes": "0820a0e1",
+        "op": "mov r2, r8"
+      },
+      {
+        "address": "0xa01a0980",
+        "bytes": "01004ee3",
+        "op": "movt r0, #0xe001"
+      },
+      {
+        "address": "0xa01a0984",
+        "bytes": "283093e5",
+        "op": "ldr r3, [r3, #0x28]"
+      },
+      {
+        "address": "0xa01a0988",
+        "bytes": "33ff2fe1",
+        "op": "blx r3"
+      }
+    ]
+  },
+  "limitations": [
+    "Injected score/status fixtures; no real audio or classifier inference.",
+    "Runtime app-ID globals replace 0xffffffff image placeholders with distinct synthetic 1/2 IDs.",
+    "Engine reset edges captured separately; real reset verified with synthetic allocation and DSP initializer stubbed.",
+    "Task processes exactly one synthetic buffer then exits through its ordinary event-wait error return.",
+    "Sampling names and English logs label command semantics, not a complete acoustic phrase dictionary.",
+    "No device access, preference write, RTOS queue send, real record or runtime patch."
+  ],
+  "device_access": false,
+  "device_write": false,
+  "exact_acoustic_phrases_verified": false
+}

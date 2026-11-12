@@ -1,0 +1,449 @@
+{
+  "status": "pass",
+  "device_access": false,
+  "cases": [
+    {
+      "name": "normal_order_and_once_only_release",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "revoke_failure_retains",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "request_failure_retains",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "stop_proof_failure_retains",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "task_delete_failure_retains",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "inflight_delays_proof_and_release",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "limit_and_two_inflight_drain",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "reentrant_controller_rejected",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "drain_alone_does_not_prove_stop",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    },
+    {
+      "name": "invalid_services_rejected",
+      "host_status": 0,
+      "arm_status": 0,
+      "report": [
+        31,
+        2147483648,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matching_reports": true,
+      "callee_saved_and_sp_preserved": true
+    }
+  ],
+  "host_and_arm_cases": 10,
+  "arm_instruction_interleavings": [
+    {
+      "name": "close_before_admission_cas",
+      "stop_at": "0x100300e0",
+      "finish_result": 8,
+      "enter_result": 2,
+      "passed": true
+    },
+    {
+      "name": "close_after_admission_cas",
+      "stop_at": "0x100300f0",
+      "finish_result": 4,
+      "enter_result": 0,
+      "passed": true
+    }
+  ],
+  "host_concurrency": {
+    "runs": 20,
+    "admitted_per_run": 6,
+    "rejected_after_close_per_run": 12000,
+    "final_report": [
+      6,
+      12000,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "controlled_controller_overlap": true,
+    "external_stop_proof": "pthread_join completion"
+  },
+  "build": {
+    "commands": [
+      [
+        "/usr/bin/clang",
+        "-shared",
+        "-fPIC",
+        "-pthread",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_retirement.c",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_owned_retirement_test.c",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_owned_retirement_threads.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/retirement.dylib"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_owned_retirement.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/yi4k_1107_owned_retirement.c.o"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_owned_retirement_test.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/yi4k_owned_retirement_test.c.o"
+      ],
+      [
+        "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+        "-T",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/retirement.ld",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/yi4k_1107_owned_retirement.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/yi4k_owned_retirement_test.c.o",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-retirement-t4jik_wc/retirement.elf"
+      ]
+    ],
+    "arm_elf_sha256": "805ac9a9548c4dc30291fd4f87a105d6252ca2e1bda6bd8bfcbe3122b9942dd9",
+    "host_library_sha256": "27646ea03a96b5c2b60f4ae6dd44f2c494d7f0e895cf3dc4bb5e3a90ca4965ff",
+    "undefined_symbols": 0,
+    "linked_relocations": 0,
+    "functions": {
+      "revoke": {
+        "address": 268633044,
+        "bytes": 176
+      },
+      "stop": {
+        "address": 268633220,
+        "bytes": 192
+      },
+      "stopped": {
+        "address": 268633412,
+        "bytes": 8
+      },
+      "service": {
+        "address": 268635260,
+        "bytes": 300
+      },
+      "delete_task": {
+        "address": 268633420,
+        "bytes": 8
+      },
+      "release": {
+        "address": 268633428,
+        "bytes": 44
+      },
+      "yi4k_1107_retirement_init": {
+        "address": 268632064,
+        "bytes": 156
+      },
+      "yi4k_1107_retirement_enter": {
+        "address": 268632220,
+        "bytes": 140
+      },
+      "yi4k_1107_retirement_leave": {
+        "address": 268632360,
+        "bytes": 64
+      },
+      "yi4k_1107_retirement_close": {
+        "address": 268632424,
+        "bytes": 40
+      },
+      "yi4k_1107_retirement_finish": {
+        "address": 268632464,
+        "bytes": 460
+      },
+      "yi4k_retirement_race_setup": {
+        "address": 268632924,
+        "bytes": 120
+      },
+      "yi4k_retirement_race_enter": {
+        "address": 268633472,
+        "bytes": 20
+      },
+      "yi4k_retirement_race_close_finish": {
+        "address": 268633492,
+        "bytes": 36
+      },
+      "yi4k_retirement_race_leave_finish": {
+        "address": 268633528,
+        "bytes": 116
+      },
+      "yi4k_owned_retirement_test": {
+        "address": 268633644,
+        "bytes": 1616
+      }
+    }
+  },
+  "source_sha256": {
+    "sdk/yi4k_1107_owned_retirement.c": "c6e15c2581728843dccb88e07328297ee8ba6c21ee9d3b72d9b25d49092bb7f3",
+    "sdk/offline/yi4k_owned_retirement_test.c": "32cefc8ec3ce4eaa845bc0a01ea22c556dc60daafe49db4ef51d1b0c20327115",
+    "sdk/offline/yi4k_owned_retirement_threads.c": "3d1ddb83e098a95c9c070e361c316e0ed06cbbdb46b9eb5efcfeacc95fec79d6",
+    "sdk/yi4k_1107_owned_retirement.h": "61b47707dc7d57bd1c6fd62e6999664cc584c45775a3492322e3841bafe00069",
+    "scripts/validate_owned_retirement.py": "8c54628d972c87de94f6898172aaa9609ed53db0f2283d9d8336184e562dbe1e"
+  },
+  "limitations": [
+    "External revoke/stop/verify/delete/release services are fixtures, not camera bindings.",
+    "Caller must keep guard/code/context alive across every late entrant; no guard self-reclamation.",
+    "No firmware destructor, scheduler, code publication, hardware cache, or camera operation.",
+    "No device deployment is authorized; actual ingress revocation and scheduler stopped proof remain unimplemented."
+  ]
+}

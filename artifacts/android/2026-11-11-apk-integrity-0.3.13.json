@@ -1,0 +1,25 @@
+{
+  "apk": "artifacts/android/yi4k-control-0.3.13-debug.apk",
+  "size_bytes": 11542029,
+  "sha256": "a8ca9f71ea049ce7d0dabc0cefd672737e128637b4c0efc47555713e8e2e6e42",
+  "package": "dev.yi4k.control",
+  "version_name": "0.3.13",
+  "version_code": 16,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "signature": {
+    "v2": true,
+    "v1": false,
+    "v3": false,
+    "signers": 1,
+    "certificate": "Android Debug",
+    "certificate_sha256": "2f3578febd2c24c835e00b3e44aa7b2fabe6c217eb72f03ea7b10f23494d0a15"
+  },
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE"
+  ],
+  "physical_phone_execution": false,
+  "verification_camera_access": false,
+  "raw_verification": "artifacts/android/0.3.13-reports/apksigner.txt"
+}

@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "kind": "offline_eis_same_invocation_observation_index",
+  "artifact": "artifacts/verification/2026-11-11-eis-stage-trace-independent-run02/validation.json",
+  "artifact_sha256": "0e40712dd23e60fea9f5264bfe84966c7c2812409452ea4cd119f6c61c81892d",
+  "case_count": 33,
+  "case_names": [
+    "original-0-none-enable0",
+    "original-0-none-enable1",
+    "original-0-set-lookup-enable0",
+    "original-0-set-lookup-enable1",
+    "original-0-get-lookup-enable0",
+    "original-0-get-lookup-enable1",
+    "original-1-none-enable0",
+    "original-1-none-enable1",
+    "original-1-set-lookup-enable0",
+    "original-1-set-lookup-enable1",
+    "original-1-get-lookup-enable0",
+    "original-1-get-lookup-enable1",
+    "original-ffffffff-none-enable0",
+    "original-ffffffff-none-enable1",
+    "original-ffffffff-set-lookup-enable0",
+    "original-ffffffff-set-lookup-enable1",
+    "original-ffffffff-get-lookup-enable0",
+    "original-ffffffff-get-lookup-enable1",
+    "missing-get-ready-is-not-enough",
+    "missing-tail-is-incomplete",
+    "duplicate-calc",
+    "duplicate-after-prepared",
+    "candidate-nonzero-status",
+    "candidate-nonzero-status-old-table-token",
+    "old-token-after-slot-reuse",
+    "wrong-context",
+    "same-bank-cross-invocation-getter",
+    "missing-clean-receipt",
+    "same-address-stale-content",
+    "wrong-bank-address",
+    "bounded-full",
+    "two-interleaved-invocations",
+    "token-exhaustion-no-reuse"
+  ],
+  "source_hashes": {
+    "sdk/yi4k_1107_eis_stage_trace.c": "60b568b9de3b1898370ef874e88c7ffbec2390fb8e9247ce3301552e4bf295d5",
+    "sdk/yi4k_1107_eis_stage_trace.h": "901487450339aa1e492a4439027d712513bbb7ae57d36e5713de7bf519898e78",
+    "scripts/validate_eis_stage_trace.py": "461caeca0716bfdc7ad50c75b0d37212cac039bf58b56112dcb09add0870be65",
+    "scripts/eis_stage_failure_contract.py": "28aafff3ee709a75284f8c8e834c1c7853b14b9af9913f9d314200c6bfa0fa97"
+  },
+  "cpu_image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "abi": {
+    "trace_bytes": 244,
+    "receipt_bytes": 44,
+    "arm_callee_saved_and_sp_checked": true
+  },
+  "device_access": false,
+  "replacement_ready": false,
+  "same_invocation_contract": {
+    "token_context_pairing": true,
+    "required_order": [
+      "CALC",
+      "SET",
+      "GET",
+      "CANDIDATE"
+    ],
+    "set_observation_mask": 15,
+    "table_identity_fields": [
+      "bank",
+      "x",
+      "y",
+      "digest_x",
+      "digest_y"
+    ],
+    "candidate_requires_zero_status": true,
+    "candidate_does_not_use_ready_as_success": true
+  },
+  "cases": [
+    {
+      "name": "original-0-none-enable0",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 1,
+      "state_sha256": "a22d638bb65b9f01871fd59906debc17976a7050d8acb6870430f1a1e8941b2f"
+    },
+    {
+      "name": "original-0-none-enable1",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 1,
+      "state_sha256": "a22d638bb65b9f01871fd59906debc17976a7050d8acb6870430f1a1e8941b2f"
+    },
+    {
+      "name": "original-0-set-lookup-enable0",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 3,
+      "state_sha256": "9e3322584aab486fe29b6e44a509f95ad9e876e9b95a0693eaf2c6d5c4a136e1"
+    },
+    {
+      "name": "original-0-set-lookup-enable1",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 3,
+      "state_sha256": "9e3322584aab486fe29b6e44a509f95ad9e876e9b95a0693eaf2c6d5c4a136e1"
+    },
+    {
+      "name": "original-0-get-lookup-enable0",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 4,
+      "state_sha256": "22497ef5ba6c8a5fd55a768069ffc875d7e3e9f5fcc374b4e65e90945b604a59"
+    },
+    {
+      "name": "original-0-get-lookup-enable1",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 4,
+      "state_sha256": "22497ef5ba6c8a5fd55a768069ffc875d7e3e9f5fcc374b4e65e90945b604a59"
+    },
+    {
+      "name": "original-1-none-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-1-none-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-1-set-lookup-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-1-set-lookup-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-1-get-lookup-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-1-get-lookup-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-none-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-none-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-set-lookup-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-set-lookup-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-get-lookup-enable0",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "original-ffffffff-get-lookup-enable1",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 2,
+      "state_sha256": "ca9e270b16202723b6872b2f688a6a2f049a040840012e704b7669f605376f5b"
+    },
+    {
+      "name": "missing-get-ready-is-not-enough",
+      "stage_order": [
+        1,
+        2,
+        4
+      ],
+      "final_verdict": 6,
+      "state_sha256": "cf12810f5561c6d9768090ad0330e1ea2924134a1d7dea22dde55c7f6cfc5909"
+    },
+    {
+      "name": "missing-tail-is-incomplete",
+      "stage_order": [
+        1,
+        2,
+        3
+      ],
+      "final_verdict": 0,
+      "state_sha256": "ddcf0390ffa387e8117a4f27675af096c590eb9f8dcc7fe663ed1041cdf4382d"
+    },
+    {
+      "name": "duplicate-calc",
+      "stage_order": [
+        1,
+        1
+      ],
+      "final_verdict": 6,
+      "state_sha256": "2a187d98b988a0309cced453f076533ad0187fcc963d367c1127700aa766b5ca"
+    },
+    {
+      "name": "duplicate-after-prepared",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "final_verdict": 6,
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984"
+    },
+    {
+      "name": "candidate-nonzero-status",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 6,
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984"
+    },
+    {
+      "name": "candidate-nonzero-status-old-table-token",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 6,
+      "state_sha256": "bee27ca02587a4e7afe13622223f03e355f51de7fa5e015c2cd3347e66cbe984"
+    },
+    {
+      "name": "old-token-after-slot-reuse",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 0,
+      "state_sha256": "69f6ff8f4abffc4b889c8d22ad63f292817eee879503285d80ff7558b3dffd8d"
+    },
+    {
+      "name": "wrong-context",
+      "stage_order": [
+        1
+      ],
+      "final_verdict": 6,
+      "state_sha256": "0af1caf634e721b67695917081752bc53740f57eb635ac0d7d8bd11654299259"
+    },
+    {
+      "name": "same-bank-cross-invocation-getter",
+      "stage_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_verdict": 5,
+      "state_sha256": "c12ac8ba0fc0ff1a8b88b7b198933bcc90a5f6132669c65fc7704bc32ac83738"
+    },
+    {
+      "name": "missing-clean-receipt",
+      "stage_order": [
+        1,
+        2
+      ],
+      "final_verdict": 5,
+      "state_sha256": "8b83a7c06696ee471f93946f33c029350d5f3e93cfc11caa9bfd3cc783ffbb1f"
+    },
+    {
+      "name": "same-address-stale-content",
+      "stage_order": [
+        1,
+        2,
+        3
+      ],
+      "final_verdict": 5,
+      "state_sha256": "112ec37eb3b1982d95d46196d84b222b998630690cdac191476696f012a6c8f5"
+    },
+    {
+      "name": "wrong-bank-address",
+      "stage_order": [
+        1,
+        2,
+        3
+      ],
+      "final_verdict": 5,
+      "state_sha256": "112ec37eb3b1982d95d46196d84b222b998630690cdac191476696f012a6c8f5"
+    },
+    {
+      "name": "bounded-full",
+      "stage_order": [],
+      "final_verdict": 5,
+      "state_sha256": "1ac7c565ab0d096401f07072998c5f714d38701bc9715b93713237076467a02f"
+    },
+    {
+      "name": "two-interleaved-invocations",
+      "stage_order": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ],
+      "final_verdict": 1,
+      "state_sha256": "8a78f2b3c54bf9455779c91435af19fd66b35c9bf922c9a578c7590d1b7fec91"
+    },
+    {
+      "name": "token-exhaustion-no-reuse",
+      "stage_order": [],
+      "final_verdict": 0,
+      "state_sha256": "f508f476d2657678c5a51df3774d820dd628edbb49671fa78531adc3a8a10889"
+    }
+  ],
+  "unresolved_runtime_gates": [
+    "Authenticated recorder installation and callback lifetime on the actual 1.10.7 RTOS",
+    "Runtime DSP image identity and same-frame gyro/exposure/warp/video correlation",
+    "Proven cache visibility, DSP latch/consumer completion and safe old-bank release",
+    "Minimal native entry/return/recovery and cold-boot rollback",
+    "Single-variable replacement with stock fallback on preview and encoded video"
+  ],
+  "limits": [
+    "Not an installed recorder; token/context receipts are caller-provided, not authenticated hardware observations.",
+    "Original harness models generation status, context/mutex lookup, logical copy, cache-clean call logging and address conversion.",
+    "CRC32 fixture identifies synthetic plane contents; collisions or dishonest receipts are not detected.",
+    "Only mandatory-Get zero branch is supported; debug-gated nonzero branch cannot be relabeled PREPARED.",
+    "No runtime allocation/entry/unregister, SMP synchronization, cache completion, DSP latch or encoded-frame association is proved."
+  ]
+}

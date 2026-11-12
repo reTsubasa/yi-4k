@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "kind": "host pre-record segment runtime contract",
+  "scope": "host MP4 replay only; no camera FIFO or RTOS execution",
+  "manifest": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/replay-run03/manifest.json",
+  "segment_count": 34,
+  "segments": [
+    {
+      "name": "part-000002.mp4",
+      "sha256": "d49a773d30872fbd22441d62fe58e3c6fb74308a9385bba73f1bebf1e4e45a91",
+      "source_start_us": 4070733,
+      "source_end_us": 6072733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.948000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2844,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000003.mp4",
+      "sha256": "97978b6c0f22371235b306bc9365bc0a0aa9b45f8409e3ab3c6f6f07cb0e9a5f",
+      "source_start_us": 6072733,
+      "source_end_us": 8074733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.952000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2877,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000004.mp4",
+      "sha256": "a63de763a7ea931630c868b47ab76641add3608bbc49bedae0cd02398899cc42",
+      "source_start_us": 8074733,
+      "source_end_us": 10076733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.955000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2795,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000005.mp4",
+      "sha256": "6f3195a645ad54e1d36d113d11b045a3a57352881bb3342d055abfb837d22e99",
+      "source_start_us": 10076733,
+      "source_end_us": 12078733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.936000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3120,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000006.mp4",
+      "sha256": "93d565814bce0034e8917d6fa9274b169e4367d56035a226b8cbb4ab36188000",
+      "source_start_us": 12078733,
+      "source_end_us": 14080733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.940000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2844,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000007.mp4",
+      "sha256": "01f1181fd89ed483ab3c8fcf5bda416243382d8997772882eae003dd32c5bad5",
+      "source_start_us": 14080733,
+      "source_end_us": 16082733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.944000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3073,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000008.mp4",
+      "sha256": "c71a006fb86327477435f7202d285fee1d98c2f6dd6e46fdb6c9ce916d53f3b4",
+      "source_start_us": 16082733,
+      "source_end_us": 18084733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.947000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2887,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000009.mp4",
+      "sha256": "861952a0a08b4e01ce650a85045358aab18c05071b32393b3c3cff301730a744",
+      "source_start_us": 18084733,
+      "source_end_us": 20086733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.950000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2883,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000010.mp4",
+      "sha256": "812d01d4933244d95227f62a9b56bcd58ead62de83927395d3b205a76ef1a9f3",
+      "source_start_us": 20086733,
+      "source_end_us": 22088733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.954000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2682,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000011.mp4",
+      "sha256": "5b1484961f5b46edfa5124b1286d3fb2221936ccff8a3628af48f14c564efc9e",
+      "source_start_us": 22088733,
+      "source_end_us": 24090733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.935000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3111,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000012.mp4",
+      "sha256": "388b52b0ff02970d1cd23073da0f0e770227798f022a83bcb40cc9874ef95c44",
+      "source_start_us": 24090733,
+      "source_end_us": 26092733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.939000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2912,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000013.mp4",
+      "sha256": "ac9885faed105747b5357b3bb65870f4a422aca4b5d38559255a60a7e0499c17",
+      "source_start_us": 26092733,
+      "source_end_us": 28094733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.942000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3060,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000014.mp4",
+      "sha256": "38bca8a49b5113c0c53f48726170ab52101165d0d3361aedb88728190e51d6f0",
+      "source_start_us": 28094733,
+      "source_end_us": 30096733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.946000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3030,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000015.mp4",
+      "sha256": "d6228816028f7c1ab7a5e4111fb549620bdd669e608619c4111262daf3b8f3b1",
+      "source_start_us": 30096733,
+      "source_end_us": 32098733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.949000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2858,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000016.mp4",
+      "sha256": "8f1b70a55ca88b9bd3d9c03789c043b6cd2d2b274c07c31bbd967f57880f78bb",
+      "source_start_us": 32098733,
+      "source_end_us": 34100733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.952000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2866,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000017.mp4",
+      "sha256": "a410d7bdaf639cf93737f84667b059e7e6f3ef02cae168685ae11be8def48df1",
+      "source_start_us": 34100733,
+      "source_end_us": 36102733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.956000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2985,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000018.mp4",
+      "sha256": "f71007f578d528ff6f47e151f56fbea51b01cf7f43959984af4329078e460219",
+      "source_start_us": 36102733,
+      "source_end_us": 38104733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.937000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2869,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000019.mp4",
+      "sha256": "ed474831ef6c27ba061f0a54bdcf75a8ff692259487cc3b9ac3eae47979ef6f2",
+      "source_start_us": 38104733,
+      "source_end_us": 40106733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.941000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3116,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000020.mp4",
+      "sha256": "1ef1f9510a06561256ac242abbcdbff5b1529d7aae863d5dfae83d7f227618b2",
+      "source_start_us": 40106733,
+      "source_end_us": 42108733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.944000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3099,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000021.mp4",
+      "sha256": "7b66f80d8418a8270aeb3290eeed2e1f1860dc104337d9702b3848eab228d867",
+      "source_start_us": 42108733,
+      "source_end_us": 44110733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.948000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2941,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000022.mp4",
+      "sha256": "bdb8436b389a0cab0219ae44f0e56da6a8fe746fabe9c101b46910a21900452a",
+      "source_start_us": 44110733,
+      "source_end_us": 46112733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.951000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2937,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000023.mp4",
+      "sha256": "94223f9da9c94c511591fd892965a2c04abb5a0fcaa2e65681643ac1d5c05729",
+      "source_start_us": 46112733,
+      "source_end_us": 48114733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.954000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2976,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000024.mp4",
+      "sha256": "1e19b9dd2028868f556217f351265c3ae904b85fb0bcba0b305db71b4143d2f3",
+      "source_start_us": 48114733,
+      "source_end_us": 50116733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.936000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2909,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000025.mp4",
+      "sha256": "dfd4f173a23f5928930dcd8d6d23161bd565c201a63b59e7009bf3633fd03368",
+      "source_start_us": 50116733,
+      "source_end_us": 52118733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.940000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3125,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000026.mp4",
+      "sha256": "37a815d2e531dc422fa44a25b780eec9c8120b51c2299379fe9217dcee27a0d3",
+      "source_start_us": 52118733,
+      "source_end_us": 54120733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.943000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3089,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000027.mp4",
+      "sha256": "26087bc08afe0d5e172ad70d1f3e6e47ee77d532f337a2126a13ab1f0c27fd79",
+      "source_start_us": 54120733,
+      "source_end_us": 56122733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.946000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2918,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000028.mp4",
+      "sha256": "6e7fa840312d0e0b94dc1f7f6f32dd5eef12cb18f5e0d860ecc075597cce844b",
+      "source_start_us": 56122733,
+      "source_end_us": 58124733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.950000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2888,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000029.mp4",
+      "sha256": "c1885da3a108b008a94adcba4ff7d251eae2bfa259b06bdd4cc930b3bc3df9a6",
+      "source_start_us": 58124733,
+      "source_end_us": 60126733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.953000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3185,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000030.mp4",
+      "sha256": "077c8271d7aad6a60e1784c0936dd6db5b966e5bb92dcd92fae2f0641e2f26ea",
+      "source_start_us": 60126733,
+      "source_end_us": 62128733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.956000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2993,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000031.mp4",
+      "sha256": "689c4b8d8c61b81fc2b55e716982ce05fde4b125a6eeb09610eeb7c1d345e63a",
+      "source_start_us": 62128733,
+      "source_end_us": 64130733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.938000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2960,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000032.mp4",
+      "sha256": "1966c06580320852e2b946cc1042e178d5d6c190836d0ded3157a5b89f4e0f3e",
+      "source_start_us": 64130733,
+      "source_end_us": 66132733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.942000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 3174,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000033.mp4",
+      "sha256": "01e50155056949c3249dc3cdc7a49de29f0acc44cefbd8a4a90bf9e3b559fa3f",
+      "source_start_us": 66132733,
+      "source_end_us": 68134733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.945000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2870,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000034.mp4",
+      "sha256": "c802721fc82abf87815c560624f191000da720870f40bd233cc110f5a4bf785f",
+      "source_start_us": 68134733,
+      "source_end_us": 70136733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.948000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2982,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    },
+    {
+      "name": "part-000035.mp4",
+      "sha256": "3cec1688d76311bf1cef58d5d4bb08d63614a1238b99c25359eb1d8cbc6f8bcc",
+      "source_start_us": 70136733,
+      "source_end_us": 72138733,
+      "video_time_base": "1/30000",
+      "video_duration": "2.002000",
+      "audio_duration": "1.952000",
+      "audio_sample_rate": "48000",
+      "avc_extradata_size": 36,
+      "avc_parameter_set_types": [
+        7,
+        8
+      ],
+      "first_video_packet_flags": "K__",
+      "first_video_packet_nal_types": [
+        5
+      ],
+      "first_video_packet_pts": 0,
+      "first_video_packet_dts": -2002,
+      "first_video_packet_size": 2776,
+      "aac_config_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+    }
+  ],
+  "clip": {
+    "path": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/replay-run03/clip.mp4",
+    "sha256": "2c8bb6c03be4a33d717d0ab2e7e7a7540ba9dcfc5840345c1ba49ac054dbc2df",
+    "video_streams": 1,
+    "audio_streams": 1,
+    "full_decode_passed": true
+  },
+  "validated": {
+    "segment_hashes": true,
+    "all_segments_have_sps_pps_in_mp4_extradata": true,
+    "all_segments_start_with_idr": true,
+    "aac_audio_specific_config_present": true,
+    "aac_config_continuity": true,
+    "published_clip_decodes": true
+  },
+  "runtime_gaps": [
+    "MP4 AVC extradata does not prove that camera FIFO payloads contain NAL7/NAL8 before NAL5.",
+    "Host segment timestamps are reset by the MP4 segmenter and do not prove a camera A/V capture epoch.",
+    "Descriptor sequence, payload address lifetime, FIFO cursor and close/open ownership remain unobserved."
+  ]
+}

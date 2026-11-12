@@ -1,0 +1,10 @@
+0xa03bc6b0  str lr, [sp, #-4]!
+0xa03bc6b4  mov ip, #0x34
+0xa03bc6b8  sub sp, sp, #0xc
+0xa03bc6bc  mov r3, r2
+0xa03bc6c0  mov r2, r1
+0xa03bc6c4  mov r1, #0
+0xa03bc6c8  str ip, [sp]
+0xa03bc6cc  bl #0xa03c3524
+0xa03bc6d0  add sp, sp, #0xc
+0xa03bc6d4  pop {pc}

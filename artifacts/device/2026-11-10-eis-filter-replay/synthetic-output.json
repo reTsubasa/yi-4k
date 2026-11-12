@@ -1,0 +1,279 @@
+{
+  "target": {
+    "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "image": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "base": "0xa0100000",
+    "function": "0xA0384710",
+    "evidence": "local device-image bytes; no device execution"
+  },
+  "sample_kind": "synthetic scalar boundary fixture; not captured from a camera",
+  "input_provenance": {
+    "source": "manual",
+    "purpose": "ordinary/adaptive function replay and candidate arithmetic comparison"
+  },
+  "feedback_mode": "synthetic_chain",
+  "parameters": {
+    "limit": 5000,
+    "gain": 100,
+    "adaptive_enabled": false,
+    "small_motion_degrees": 30,
+    "scale_shift": 24,
+    "small_count_limit": 5,
+    "adaptive_feedback": 90,
+    "radians_numerator": 3.141592653589793,
+    "radians_denominator": 180.0
+  },
+  "static_defaults": {
+    "gain": 100,
+    "small_motion_degrees": 30,
+    "scale_shift": 24,
+    "small_count_limit": 5,
+    "adaptive_feedback": 90,
+    "radians_numerator": 3.141592653589793,
+    "radians_denominator": 180.0
+  },
+  "initial_previous": 0,
+  "initial_small_count": 0,
+  "candidate": {
+    "alpha": 0.2
+  },
+  "reference_semantics": "s32(trunc(s32(previous*feedback)/100)+trunc(s32(input*s8_gain)/100)), then signed clamp",
+  "summary": {
+    "samples": 9,
+    "streams": 1,
+    "arithmetic_wrap_observed": true,
+    "observed_mismatch_sequences": []
+  },
+  "limitations": [
+    "This is host arithmetic replay, not execution on the physical camera.",
+    "A0384710 consumes transformed window accumulation, not raw level-shifted gyro or 50ms text diagnostics.",
+    "The filter does not store through its previous pointer; explicit trace values preserve caller topology.",
+    "synthetic_chain feeds each output back per stream as an experimental assumption; it is not the recovered caller topology.",
+    "The adaptive byte counter is shared across ordered calls, including calls in different streams.",
+    "Candidate EMA comparison is scalar arithmetic only, not a prediction of image stabilization quality.",
+    "Only finite angular conversion and nonnegative runtime limit values are supported."
+  ],
+  "rows": [
+    {
+      "sequence": 0,
+      "tick": 0,
+      "stream": "default",
+      "input": 0,
+      "previous": 0,
+      "stock_reference": 0,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 0,
+        "input_product_i32": 0,
+        "feedback_term": 0,
+        "input_term": 0,
+        "unclamped_i32": 0,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 0,
+      "candidate_minus_stock": 0
+    },
+    {
+      "sequence": 1,
+      "tick": 1,
+      "stream": "default",
+      "input": 100,
+      "previous": 0,
+      "stock_reference": 100,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 0,
+        "input_product_i32": 10000,
+        "feedback_term": 0,
+        "input_term": 100,
+        "unclamped_i32": 100,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 20,
+      "candidate_minus_stock": -80
+    },
+    {
+      "sequence": 2,
+      "tick": 2,
+      "stream": "default",
+      "input": 100,
+      "previous": 100,
+      "stock_reference": 199,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 9900,
+        "input_product_i32": 10000,
+        "feedback_term": 99,
+        "input_term": 100,
+        "unclamped_i32": 199,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 36,
+      "candidate_minus_stock": -163
+    },
+    {
+      "sequence": 3,
+      "tick": 3,
+      "stream": "default",
+      "input": 0,
+      "previous": 199,
+      "stock_reference": 197,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 19701,
+        "input_product_i32": 0,
+        "feedback_term": 197,
+        "input_term": 0,
+        "unclamped_i32": 197,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 28,
+      "candidate_minus_stock": -169
+    },
+    {
+      "sequence": 4,
+      "tick": 4,
+      "stream": "default",
+      "input": -100,
+      "previous": 197,
+      "stock_reference": 95,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 19503,
+        "input_product_i32": -10000,
+        "feedback_term": 195,
+        "input_term": -100,
+        "unclamped_i32": 95,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 3,
+      "candidate_minus_stock": -92
+    },
+    {
+      "sequence": 5,
+      "tick": 5,
+      "stream": "default",
+      "input": -100,
+      "previous": 95,
+      "stock_reference": -6,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": 9405,
+        "input_product_i32": -10000,
+        "feedback_term": 94,
+        "input_term": -100,
+        "unclamped_i32": -6,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": -17,
+      "candidate_minus_stock": -11
+    },
+    {
+      "sequence": 6,
+      "tick": 6,
+      "stream": "default",
+      "input": 0,
+      "previous": -6,
+      "stock_reference": -5,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -594,
+        "input_product_i32": 0,
+        "feedback_term": -5,
+        "input_term": 0,
+        "unclamped_i32": -5,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": -14,
+      "candidate_minus_stock": -9
+    },
+    {
+      "sequence": 7,
+      "tick": 7,
+      "stream": "default",
+      "input": 2147483647,
+      "previous": -5,
+      "stock_reference": -5,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -495,
+        "input_product_i32": -100,
+        "feedback_term": -4,
+        "input_term": -1,
+        "unclamped_i32": -5,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": 5000,
+      "candidate_minus_stock": 5005
+    },
+    {
+      "sequence": 8,
+      "tick": 8,
+      "stream": "default",
+      "input": -2147483648,
+      "previous": -5,
+      "stock_reference": -4,
+      "small_count_after": 0,
+      "arithmetic": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -495,
+        "input_product_i32": 0,
+        "feedback_term": -4,
+        "input_term": 0,
+        "unclamped_i32": -4,
+        "wrapped_feedback_product": false,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      },
+      "candidate_ema": -5000,
+      "candidate_minus_stock": -4996
+    }
+  ],
+  "input": {
+    "path": "artifacts/device/2026-11-10-eis-filter-replay/synthetic-input.json",
+    "sha256": "972311e250f798c134b28ffc4d915f12d90a1a930d0158ecc8f2b259a77b3be7"
+  }
+}

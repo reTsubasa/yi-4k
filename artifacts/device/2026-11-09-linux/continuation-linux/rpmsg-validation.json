@@ -1,0 +1,98 @@
+{
+  "device": "YDXJ2_V13LW",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "host": "192.168.42.1",
+  "scope": "read-only Linux Telnet diagnostics",
+  "rpmsg_endpoints": [
+    {
+      "device": "rpmsg0",
+      "name": "AmbaRpdev_CLK",
+      "src": "0x400",
+      "dst": "0x400",
+      "announce": "false",
+      "driver": "rpmsg_clk"
+    },
+    {
+      "device": "rpmsg1",
+      "name": "aipc_rpc",
+      "src": "0x401",
+      "dst": "0x401",
+      "announce": "false",
+      "driver": "rpmsg_rpc"
+    },
+    {
+      "device": "rpmsg2",
+      "name": "aipc_vfs",
+      "src": "0x402",
+      "dst": "0x402",
+      "announce": "false",
+      "driver": "ambafs"
+    },
+    {
+      "device": "rpmsg3",
+      "name": "aipc_rfs",
+      "src": "0x403",
+      "dst": "0x403",
+      "announce": "false",
+      "driver": "rpmsg_rfs"
+    },
+    {
+      "device": "rpmsg4",
+      "name": "AmbaRpdev_LinkCtrl",
+      "src": "0x404",
+      "dst": "0x404",
+      "announce": "false",
+      "driver": "rpmsg_linkctrl"
+    },
+    {
+      "device": "rpmsg5",
+      "name": "echo_cortex",
+      "src": "0x405",
+      "dst": "0x405",
+      "announce": "false",
+      "driver": "rpmsg_echo"
+    }
+  ],
+  "ipcinfo": [
+    {
+      "program": "0x20000005",
+      "version": 1,
+      "port": 266,
+      "name": "netctrl_svc"
+    },
+    {
+      "program": "0x20000006",
+      "version": 1,
+      "port": 275,
+      "name": "cmdhndlr_svc"
+    },
+    {
+      "program": "0x20000007",
+      "version": 1,
+      "port": 271,
+      "name": "datareq_svc"
+    },
+    {
+      "program": "0x20000009",
+      "version": 1,
+      "port": -4098,
+      "name": "AmbaEventNotifier_LUSVC"
+    },
+    {
+      "program": "0x20000004",
+      "version": 1,
+      "port": 108,
+      "name": "AMBANETFIFO_LUSVC"
+    },
+    {
+      "program": "0x20000001",
+      "version": 1,
+      "port": 104,
+      "name": "linux_util_svc"
+    }
+  ],
+  "source_files": {
+    "rpmsg-endpoints.txt": "a7cb80c8eac795cf6ccec4153b3a036b7a7e8e08d628fee2c5cde2894656b916",
+    "rpmsg-startup.txt": "34ea04d533196419b9d6b1271bd89070352fa3b782f87858d1ed6535037d9612"
+  }
+}

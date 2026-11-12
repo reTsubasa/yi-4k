@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-09T02:08:50.244282+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1024827.182219666,
+      "utc": "2026-11-09T02:08:50.262597+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1024828.007086166,
+      "utc": "2026-11-09T02:08:51.087470+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1024828.0073555,
+      "utc": "2026-11-09T02:08:51.087733+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1024828.0133135,
+      "utc": "2026-11-09T02:08:51.093697+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1024828.013370583,
+      "utc": "2026-11-09T02:08:51.093748+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1024828.020286625,
+      "utc": "2026-11-09T02:08:51.100669+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "memory_probe_run": false,
+  "app_status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "linux": {
+    "uptime": "555.40 534.12",
+    "log_marker_exists": false,
+    "temporary_log_dirs": [],
+    "autoexec_exists": false,
+    "temporary_log_mounts": []
+  }
+}

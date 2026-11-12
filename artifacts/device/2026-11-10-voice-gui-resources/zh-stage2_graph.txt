@@ -1,0 +1,78 @@
+#Netwok: name, input W, input W, #channel, 
+#Input: name, Input_layer_type (UINT8_TO_UNIT8 =0, UINT8_TO_FLOAT=1, UINT8_TO_FIXED8_FLOAT=2, UINT8_TO_PLUS_MINUS1_FLOAT=3, UINT8_TO_FIXED8_PLUS_MINUS1_FLOAT=4,
+#								FLOAT32_TO_FLOAT32=5,FLOAT16_TO_FLOAT16=6), parent_name1
+#padd: name, padd (0='SAME', 1='VALID'), parent_name1
+#Layer: name, conv2D			 ,  kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, outputDtataType (UFLOAT32=0,FLOAT32=1,UINT16=2,INT16=3,UFLOAT32=4,FLOAT32=5,FLOAT16=6,FLOAT32=7,BIN=8) ,need to reorder input = 'YES' (or 'NO'), Bias = 'YES' (or 'NO'), parent_name1
+#Layer: name, conv2D_W			 ,  kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, WeightsType, outputDtataType (UFLOAT32=0,FLOAT32=1,UINT16=2,INT16=3,UFLOAT32=4,FLOAT32=5,FLOAT16=6,FLOAT32=7,BIN=8) ,need to reorder input = 'YES' (or 'NO'), Bias = 'YES' (or 'NO'), parent_name1  
+#             - Input type != Weights tyep
+#Layer: name, conv2D_BN_LK_PD 	 ,  kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, padd=VALID/SAME parent_name1
+#Layer: name, conv2D_BIAS_BN_LK_PD 	 ,  kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, padd=VALID/SAME parent_name1
+#Layer: name, conv2D_RES_BN_LK_PD, kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, padd=VALID/SAME, residual_name1, parent_name1
+#Layer: name, conv2D_BN_AR_PD 	 ,  kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, padd=VALID/SAME parent_name1
+#Layer: name, conv2D_BN_BA_PD 	 , kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, parent_name1
+#Layer: name, conv2D_RES_BN_BA_PD, kernel_sizeY, kernel_sizeX, num_of_output, filter_stirdeY, filter_stirdeX, FIRST CONV = 'YES' (or 'NO'), outputDtataType, residual_name1, parent_name1
+#Layer: name, max_pool, kernel_sizeY, kernel_sizeX, stirdeY, stirdeX, parent_name1
+#Layer: name, batch_norm, parent_name1
+#Layer: name, batch_norm_W, WeightsType, parent_name1  //- Input type != Weights tyep
+#Layer: name, leaky, outputDtataType, parent_name1
+#Layer: name, activated_relu, outputDtataType, parent_name1
+#Layer: name, quantize, shift factor, parent_name1
+#Layer: name, regularize, parent_name1
+#Layer: name, relu, outputDtataType, parent_name1
+#Layer: name, bin_active, parent_name1
+#Layer: name, concat,  Regularize??? = 'YES' (or 'NO'), number_parents, parent_name1, parent_name2, parent_name3 (up to MAX_PARENTS - default ==3)
+#Layer: name, residual_batch, number_parents, parent_name1, parent_name2, parent_name3 (up to MAX_PARENTS - default ==3)
+#Layer: name, residual_batch_W, WeightsType, number_parents, parent_name1, parent_name2, parent_name3 (up to MAX_PARENTS - default ==3) //- Input type != Weights tyep
+#Layer: name, fully_connected, num_of_output, outputDtataType, Bias = 'YES' (or 'NO'), parent_name1
+#Layer: name, fully_connected_BN_LK, num_of_output, outputDtataType, Bias = 'YES' (or 'NO'), parent_name1
+#Layer: name, avg_pool, parent_name1  //image avg pool
+#Layer: name, max, parent_name1       //image max
+#Layer: name, mul, number_vel_inputs, val1, val2....parent_name1
+#Layer: name, mul_image_size, parent_name1  //Height, Height, Witdh, Witdh
+#Layer: name, sigmoid, parent_name1
+#Layer: name, bbox_rel2abs, conf_threshold, bbox_parent, confidence_parent
+#Layer: name, rearrange_Data (0 = Same, 1= Raster ) , number_parents, parent_name1, parent_name2, parent_name3...  
+
+#netwok
+AudioNIN,198,1,13
+
+#input_layer
+input_F32,input,5,AudioNIN
+
+
+#Layer1
+conv1d_1_F32,conv2D_BN_LK_PD,1,7,16,1,2,NO,FLOAT32,VALID,input_F32
+conv1d_2_F32,conv2D_BN_LK_PD,1,1,16,1,1,NO,FLOAT32,SAME,conv1d_1_F32
+conv1d_3_F32,conv2D_BN_LK_PD,1,1,16,1,1,NO,FLOAT32,SAME,conv1d_2_F32
+
+Pool1_F32,max_pool,1,2,1,2,conv1d_3_F32
+
+#Layer2
+padd1_F32,padd,0,Pool1_F32
+conv1d_4_F32,conv2D_BN_LK_PD,1,5,32,1,2,NO,FLOAT32,SAME,padd1_F32
+conv1d_5_F32,conv2D_BN_LK_PD,1,1,32,1,1,NO,FLOAT32,SAME,conv1d_4_F32
+conv1d_6_F32,conv2D_BN_LK_PD,1,1,32,1,1,NO,FLOAT32,SAME,conv1d_5_F32
+
+Pool2_F32,max_pool,1,2,1,2,conv1d_6_F32
+
+#Layer3
+padd2_F32,padd,0,Pool2_F32
+conv1d_7_F32,conv2D_BN_LK_PD,1,3,32,1,1,NO,FLOAT32,SAME,padd2_F32
+conv1d_8_F32,conv2D_BN_LK_PD,1,1,32,1,1,NO,FLOAT32,SAME,conv1d_7_F32
+conv1d_9_F32,conv2D_BN_LK_PD,1,1,32,1,1,NO,FLOAT32,SAME,conv1d_8_F32
+Pool3_F32,max_pool,1,2,1,2,conv1d_9_F32
+
+#Layer4
+padd3_F32,padd,0,Pool3_F32
+conv1d_10_F32,conv2D_BN_LK_PD,1,3,48,1,1,NO,FLOAT32,SAME,padd3_F32
+conv1d_11_F32,conv2D_BN_LK_PD,1,1,48,1,1,NO,FLOAT32,SAME,conv1d_10_F32
+conv1d_12_F32,conv2D_BN_LK_PD,1,1,48,1,1,NO,FLOAT32,SAME,conv1d_11_F32
+Pool4_F32,max_pool,1,2,1,2,conv1d_12_F32
+
+#Layer5
+embdd_layer_fcF32,fully_connected_BN_LK,16,FLOAT32,NO,Pool4_F32
+
+#Layer6
+final_layer_fcF32,fully_connected,10,FLOAT32,YES,embdd_layer_fcF32
+
+outputData,rearrange_Data,0,1,final_layer_fcF32

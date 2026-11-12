@@ -1,0 +1,329 @@
+{
+  "schema": "native-first-entry-contract/v2",
+  "cpu_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "script_sha256": "70bbbacc00bff855669f2d6b53cd3865ce3ef7bfaf5aa90781128df1aca8efff",
+  "fixed_instruction_checks": [
+    {
+      "site": "0xa03cfbfc",
+      "bytes": "3c3401e3",
+      "instruction": "movw r3, #0x143c"
+    },
+    {
+      "site": "0xa03cfc00",
+      "bytes": "7e314ae3",
+      "instruction": "movt r3, #0xa17e"
+    },
+    {
+      "site": "0xa03cfc04",
+      "bytes": "003093e5",
+      "instruction": "ldr r3, [r3]"
+    },
+    {
+      "site": "0xa03cfc08",
+      "bytes": "13ff2fe1",
+      "instruction": "bx r3"
+    },
+    {
+      "site": "0xa03cfbd8",
+      "bytes": "4ff07ff5",
+      "instruction": "dsb sy"
+    },
+    {
+      "site": "0xa03cfbf0",
+      "bytes": "4ff07ff5",
+      "instruction": "dsb sy"
+    },
+    {
+      "site": "0xa03cfbf4",
+      "bytes": "6ff07ff5",
+      "instruction": "isb sy"
+    },
+    {
+      "site": "0xa03cfbf8",
+      "bytes": "1eff2fe1",
+      "instruction": "bx lr"
+    },
+    {
+      "site": "0xa03d0898",
+      "bytes": "cefcffeb",
+      "instruction": "bl #0xa03cfbd8"
+    },
+    {
+      "site": "0xa03d089c",
+      "bytes": "ac4503eb",
+      "instruction": "bl #0xa04a1f54"
+    },
+    {
+      "site": "0xa03d08a0",
+      "bytes": "4ff07ff5",
+      "instruction": "dsb sy"
+    },
+    {
+      "site": "0xa03d08c0",
+      "bytes": "c1aeffeb",
+      "instruction": "bl #0xa03bc3cc"
+    },
+    {
+      "site": "0xa03d08c8",
+      "bytes": "d8cb0fe3",
+      "instruction": "movw ip, #0xfbd8"
+    },
+    {
+      "site": "0xa03d08d0",
+      "bytes": "3cc04ae3",
+      "instruction": "movt ip, #0xa03c"
+    },
+    {
+      "site": "0xa03d08e0",
+      "bytes": "00c083e5",
+      "instruction": "str ip, [r3]"
+    },
+    {
+      "site": "0xa03d08e4",
+      "bytes": "94c902eb",
+      "instruction": "bl #0xa0482f3c"
+    },
+    {
+      "site": "0xa03d0900",
+      "bytes": "10ffffeb",
+      "instruction": "bl #0xa03d0548"
+    },
+    {
+      "site": "0xa03d0904",
+      "bytes": "114f07ee",
+      "instruction": "mcr p15, #0, r4, c7, c1, #0"
+    },
+    {
+      "site": "0xa02a41c0",
+      "bytes": "5f5509fa",
+      "instruction": "blx #0xa04f9744"
+    },
+    {
+      "site": "0xa02a42a4",
+      "bytes": "84ffffeb",
+      "instruction": "bl #0xa02a40bc"
+    },
+    {
+      "site": "0xa02a3934",
+      "bytes": "90b007eb",
+      "instruction": "bl #0xa048fb7c"
+    },
+    {
+      "site": "0xa02a393c",
+      "bytes": "3ab107eb",
+      "instruction": "bl #0xa048fe2c"
+    },
+    {
+      "site": "0xa02a3a94",
+      "bytes": "81b007eb",
+      "instruction": "bl #0xa048fca0"
+    },
+    {
+      "site": "0xa03cffc4",
+      "bytes": "d8cb0fe3",
+      "instruction": "movw ip, #0xfbd8"
+    },
+    {
+      "site": "0xa03cffc8",
+      "bytes": "3cc04ae3",
+      "instruction": "movt ip, #0xa03c"
+    },
+    {
+      "site": "0xa03cffdc",
+      "bytes": "00c083e5",
+      "instruction": "str ip, [r3]"
+    }
+  ],
+  "exports": {
+    "boss_remote_tlb_and_trampoline": {
+      "start": "0xa03cfbd8",
+      "end_exclusive": "0xa03cfc0c",
+      "sha256": "b618898048865eee325ae8614467e27079ea4be99a9a6d9fce086c6e0d79a0aa"
+    },
+    "boss_start_publication_excerpt": {
+      "start": "0xa03cffac",
+      "end_exclusive": "0xa03cfff0",
+      "sha256": "80019a4895082e45c0efa955a16ecafc41d0ae368a34e7632df6fcc5464a4aa9"
+    },
+    "boss_restore_order": {
+      "start": "0xa03d0780",
+      "end_exclusive": "0xa03d0948",
+      "sha256": "d18050f9346223da81e66c0f6d6fccccb4f458ca17301ac67fd0c94d9cae5835"
+    },
+    "interrupt_send": {
+      "start": "0xa0482f3c",
+      "end_exclusive": "0xa0482fcc",
+      "sha256": "c28836c75928700f3ae74b901f24d5e407d67ff56deb5cd932d1f2373228480c"
+    },
+    "ps_dispatch": {
+      "start": "0xa02a3864",
+      "end_exclusive": "0xa02a3b14",
+      "sha256": "9c26c980dd2e3b8339e4f49c02e8d1f5b2bce82d2482c69ef9e223250ac86733"
+    },
+    "ver_dispatch": {
+      "start": "0xa02a40bc",
+      "end_exclusive": "0xa02a42ac",
+      "sha256": "e80b4a680d86b72ba9b878122fecf2e4f8ae4606babf7b004909f764f23e7aa5"
+    },
+    "pool_summary": {
+      "start": "0xa048fb7c",
+      "end_exclusive": "0xa048fca0",
+      "sha256": "b9f7471e99b45f2e2c7c8090af6377a2d3aa589c4b13326d56c2fb3b2697068f"
+    },
+    "pool_detail": {
+      "start": "0xa048fca0",
+      "end_exclusive": "0xa048fe2c",
+      "sha256": "99e9cb58a209e85aaf6af66f1f529512695d4f565dcd783e5c9f9207a14169a0"
+    },
+    "shell_script_reader": {
+      "start": "0xa029d3b4",
+      "end_exclusive": "0xa029d4d8",
+      "sha256": "319f01942eeaecbcdc899556a0a2ebfd794888de30896a7eda475bd6dda46ad0"
+    }
+  },
+  "query_dispatch_runs": [
+    {
+      "command": "ps mem",
+      "entry": "0xa02a3864",
+      "observed_stub_targets": [
+        "0xa048fb7c",
+        "0xa048fe2c"
+      ],
+      "print_formats": [],
+      "return_sp_callee_saved_verified": true
+    },
+    {
+      "command": "ps mem detail",
+      "entry": "0xa02a3864",
+      "observed_stub_targets": [
+        "0xa048fca0"
+      ],
+      "print_formats": [],
+      "return_sp_callee_saved_verified": true
+    },
+    {
+      "command": "ps tsk",
+      "entry": "0xa02a3864",
+      "observed_stub_targets": [
+        "0xa048f43c"
+      ],
+      "print_formats": [],
+      "return_sp_callee_saved_verified": true
+    },
+    {
+      "command": "ver -e",
+      "entry": "0xa02a40f8",
+      "observed_stub_targets": [
+        "0xa029b79c"
+      ],
+      "print_formats": [
+        "Built %s by %s at %s\n"
+      ],
+      "return_sp_callee_saved_verified": true
+    }
+  ],
+  "query_scope": "Original command dispatcher; strcmp/query/build-info/print stubs explicitly declared. No target access or original query body execution.",
+  "historical_capture": {
+    "path": "artifacts/device/2026-11-10-rtos-console-route/collect-after-reboot-03/yi4k_diag_e30da2b76aa5_mem.txt",
+    "sha256": "3373b646de8e407fc6f13fdc29281d5d3cbec0bfa740a19264a6bb8747dcfb2e",
+    "byte_pool_rows": [
+      {
+        "id": 0,
+        "available_bytes": 234597172,
+        "fragments": 522
+      },
+      {
+        "id": 1,
+        "available_bytes": 16643568,
+        "fragments": 9
+      },
+      {
+        "id": 2,
+        "available_bytes": 15592,
+        "fragments": 46
+      },
+      {
+        "id": 3,
+        "available_bytes": 4547464,
+        "fragments": 4
+      },
+      {
+        "id": 4,
+        "available_bytes": 26760,
+        "fragments": 3
+      },
+      {
+        "id": 5,
+        "available_bytes": 2097144,
+        "fragments": 2
+      },
+      {
+        "id": 6,
+        "available_bytes": 278520,
+        "fragments": 2
+      },
+      {
+        "id": 7,
+        "available_bytes": 1039128,
+        "fragments": 2
+      }
+    ],
+    "total_fragments": 590,
+    "app_head_path": "artifacts/device/2026-11-10-rtos-console-route/collect-after-reboot-03/yi4k_diag_e30da2b76aa5_pool1.bin",
+    "app_head_sha256": "463187ae5f799cfedd848085c791b21486dbdd195f2fd6092eb50eaf5a1c1826",
+    "observed_scope": "Existing successful target capture, not a new observation. Pool row1 identity is not proven by summary alone."
+  },
+  "boss_slot": {
+    "address": "0xa17e143c",
+    "references": [
+      {
+        "from": "0xa03cfc04",
+        "to": "0xa17e143c",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03cffcc",
+        "to": "0xa17e143c",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa03cffdc",
+        "to": "0xa17e143c",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03d08cc",
+        "to": "0xa17e143c",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa03d08e0",
+        "to": "0xa17e143c",
+        "type": "WRITE"
+      }
+    ],
+    "observed_write_target": "0xa03cfbd8",
+    "remote_handler": "0xa03cfbfc",
+    "remote_helper_operations": [
+      "dsb sy",
+      "mov r3, #0",
+      "mcr p15, #0, r3, c8, c7, #0",
+      "mcr p15, #0, r3, c8, c6, #0",
+      "mcr p15, #0, r3, c8, c5, #0",
+      "mcr p15, #0, r3, c8, c3, #0",
+      "dsb sy",
+      "isb sy",
+      "bx lr"
+    ],
+    "interpretation": "Observed remote callback is TLB maintenance, not I-cache publication; sender sets IRQ target mask and triggers interrupt, without a completion acknowledgement in this function."
+  },
+  "not_proven": [
+    "No complete external-input-to-allocated-buffer-to-code-entry route established.",
+    "Fixed reference index does not include unknown indirect stores or uncaptured code.",
+    "No real cache, SMP completion, live page table, allocation ownership or cold-reset behavior verified.",
+    "No executable RAM candidate selected; pool free blocks are not reservations."
+  ],
+  "device_access": false,
+  "target_write": false,
+  "payload_or_writer_emitted": false
+}

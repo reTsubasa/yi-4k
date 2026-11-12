@@ -1,0 +1,37 @@
+{
+  "source": {
+    "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+    "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+    "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+    "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+    "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+    "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+    "nal_types": [
+      7,
+      8,
+      5
+    ],
+    "nal_sizes": [
+      54,
+      4,
+      468188
+    ],
+    "audio_packet_position": 468240,
+    "audio_packet_bytes": 341,
+    "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+    "audio_codec": "aac",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+    "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "identity_hex": "e77de324bf167d63ab864296d466841d93b0e742b860ff93a06b891a03d53bda",
+  "config_digest_hex": "17c723071e6f30002b1ce8e28f4568f4f371c66eeba60dd80e91210cdc01c594",
+  "avcc_hex": "014d4033efe10036274d40339a6403c0113f2c8c04040500000303e90000ea60e86000393840000e4e1cbbcb8d0c000727080001c9c397797078442252c001000428ee3880",
+  "asc_hex": "1190000000",
+  "sps_hex": "274d40339a6403c0113f2c8c04040500000303e90000ea60e86000393840000e4e1cbbcb8d0c000727080001c9c397797078442252c0",
+  "pps_hex": "28ee3880",
+  "binding_derivation": "SHA256(archived-source-codec-binding-v1 || source SHA256 bytes || config_digest); config_digest=SHA256(avcC || BE32(length) || exact avcC || ASC || BE32(length) || exact ASC)",
+  "sample_rate_origin": "explicit archived mp4a/ASC; never inferred from raw AAC",
+  "live_encoder_binding_proven": false
+}

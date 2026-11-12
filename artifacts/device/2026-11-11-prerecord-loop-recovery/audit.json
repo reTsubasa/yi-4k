@@ -1,0 +1,214 @@
+{
+  "audit": "prerecord_loop_recovery",
+  "scope": "offline decompiler-export structure audit",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "source_root": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+  "files": {
+    "set_restart_flag": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f4b8c.c",
+      "sha256": "b73f2cc2e553b1dcf752d88fd13973badf5185725fa3dd2ce9a5e2a9afeb162a",
+      "size_bytes": 461,
+      "line_hits": {
+        "DAT_a13c298c": [
+          10,
+          11
+        ]
+      }
+    },
+    "configure_loop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f4bc8.c",
+      "sha256": "8eb9f4cfece29ec8d0399e7c63ee903b0ce85398b3e6434f609faca175f5d165",
+      "size_bytes": 1200,
+      "line_hits": {
+        "DAT_a13c298c": [
+          12
+        ],
+        "DAT_a13c2a50": [
+          13,
+          43
+        ],
+        "DAT_a13c29f4": [
+          14,
+          43
+        ],
+        "DAT_a13c177c": [
+          15,
+          43
+        ]
+      }
+    },
+    "open_mux": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f3338.c",
+      "sha256": "c84187544c6f0735124053390d01b41e3af889e934fe97eeabe747191e4baaaf",
+      "size_bytes": 14250,
+      "line_hits": {
+        "DAT_a13c298c": [
+          81,
+          84
+        ],
+        "DAT_a13c2a38": [
+          82
+        ],
+        "DAT_a13c2a50": [
+          66,
+          68,
+          73,
+          82,
+          222,
+          237
+        ],
+        "DAT_a13c29f4": [
+          71,
+          86,
+          90,
+          92,
+          394,
+          395
+        ],
+        "DAT_a13c177c": [
+          394,
+          395
+        ],
+        "matched_thunk_FUN_a01e656c(0x48010003,2,0)": [
+          398
+        ]
+      }
+    },
+    "record_start": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0124470.c",
+      "sha256": "032e9dbfeec16e2d28c8b2ba050cf27840b61f11f000a7c0703ab160297e3211",
+      "size_bytes": 10593,
+      "line_hits": {}
+    },
+    "delete_loop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f51d0.c",
+      "sha256": "e19f319ac9fd83cbc082ace46080dd1734603bfe539a1f4eb111c28220a5c6d0",
+      "size_bytes": 1716,
+      "line_hits": {
+        "DAT_a13c2a38": [
+          15,
+          17,
+          20,
+          22,
+          30,
+          34,
+          39,
+          46
+        ],
+        "DAT_a13c29f4": [
+          15,
+          16,
+          46
+        ],
+        "DAT_a13c177c": [
+          15,
+          16,
+          33,
+          46
+        ],
+        "matched_FUN_a01f51d0": [
+          2,
+          6
+        ]
+      }
+    },
+    "action_dispatch": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a011a208.c",
+      "sha256": "52ae2e86e10df94a600a473cecb99924f473feb20c5ced3964b4dafed566d9b0",
+      "size_bytes": 795,
+      "line_hits": {
+        "matched_FUN_a01f51d0": [
+          19
+        ]
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "restart flag is explicitly set from caller state",
+      "needles": [
+        "DAT_a13c298c._0_1_ = param_1 != 0;",
+        "s__sIsRestartRecord___d"
+      ]
+    },
+    {
+      "name": "record start passes card/restart bit into restart setter",
+      "needles": [
+        "matched_FUN_a01f4b8c((DAT_a069b3c8 & 0x200) != 0);"
+      ]
+    },
+    {
+      "name": "fresh loop setup clears counters",
+      "needles": [
+        "if ((char)DAT_a13c298c == '\\x01') goto LAB_a01f4cc0;",
+        "DAT_a13c2a50 = 0;",
+        "DAT_a13c29f4 = 0;",
+        "DAT_a13c177c = 0;"
+      ]
+    },
+    {
+      "name": "loop duration maps to segment duration and retention count",
+      "needles": [
+        "if (param_2 == 5)",
+        "DAT_a13c2a4c = 60000;",
+        "DAT_a13c2a4c = 300000;",
+        "DAT_a13c176c = param_2 / 5;"
+      ]
+    },
+    {
+      "name": "fresh loop open seeds delete cursor from primary file",
+      "needles": [
+        "if (DAT_a13c2a40 == 4)",
+        "if ((char)DAT_a13c298c == '\\0')",
+        "DAT_a13c2a38 = DAT_a13c2a50;",
+        "uVar7 = (uint)((char)DAT_a13c298c != '\\0');"
+      ]
+    },
+    {
+      "name": "open increments split count before deferred cleanup check",
+      "needles": [
+        "DAT_a13c29f4 = DAT_a13c29f4 + 1;",
+        "if ((((uVar7 == 1) && (DAT_a13c176c != 0xffffffff))",
+        "matched_thunk_FUN_a01e656c(0x48010003,2,0);"
+      ]
+    },
+    {
+      "name": "deferred cleanup compares retained count against un-deleted splits",
+      "needles": [
+        "DAT_a13c176c < (uint)((int)DAT_a13c29f4 - (int)DAT_a13c177c)"
+      ]
+    },
+    {
+      "name": "deferred action 2 reaches loop deletion only in mode 6",
+      "needles": [
+        "else if (param_1 == 2)",
+        "if (DAT_a1055cfa == '\\x06')",
+        "matched_FUN_a01f51d0();"
+      ]
+    },
+    {
+      "name": "delete routine uses persisted cursor and split bound",
+      "needles": [
+        "if (DAT_a13c177c < DAT_a13c29f4)",
+        "matched_FUN_a01f2ce0(DAT_a13c2a38)",
+        "matched_FUN_a0224bf4(2,0,DAT_a13c2a38)"
+      ]
+    }
+  ],
+  "conclusions": {
+    "restart_flag_controls_counter_reset": true,
+    "fresh_loop_open_seeds_cursor_from_primary_file": true,
+    "restart_loop_open_preserves_prior_cursor_and_counters": true,
+    "restart_open_can_schedule_deferred_delete_action_2": true,
+    "deferred_delete_is_bounded_by_split_count_and_retention_count": true,
+    "next_file_filter_and_cursor_recovery_semantics_closed": false,
+    "runtime_file_identity_and_storage_errors_verified": false,
+    "camera_side_prerecord_implemented": false
+  },
+  "safety": {
+    "camera_connected": false,
+    "firmware_written": false,
+    "ram_or_partition_written": false,
+    "hidden_setter_invoked": false
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "evidence_type": "offline fixed ARM/shared-feedback reference and call-graph audit",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "addresses": {
+    "publication_word": "0xa0699160",
+    "feedback_alias_plus_0x3c": "0xa069919c",
+    "status_block": [
+      "0xa06990e0",
+      "0xa0699160"
+    ],
+    "cpu_shared_state_helper": "0xa02c61d4"
+  },
+  "instruction_checks": [
+    {
+      "address": "0xA02C61EC",
+      "bytes": "580093e5",
+      "instruction": "ldr r0, [r3, #0x58]"
+    },
+    {
+      "address": "0xA02C6204",
+      "bytes": "727607eb",
+      "instruction": "bl #0xa04a3bd4"
+    },
+    {
+      "address": "0xA02C6214",
+      "bytes": "3c3080e5",
+      "instruction": "str r3, [r0, #0x3c]"
+    },
+    {
+      "address": "0xA02C6260",
+      "bytes": "3c3090e5",
+      "instruction": "ldr r3, [r0, #0x3c]"
+    },
+    {
+      "address": "0xA02C60DC",
+      "bytes": "800087e5",
+      "instruction": "str r0, [r7, #0x80]"
+    }
+  ],
+  "reference_index": {
+    "available": true,
+    "publication_refs": [
+      {
+        "from": "0xA02C603C",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6048",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C60DC",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6194",
+        "to": "0xA0699160",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xA02C61C8",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      }
+    ],
+    "feedback_alias_refs": [],
+    "status_block_refs": [
+      {
+        "from": "0xA02C603C",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6048",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6060",
+        "to": "0xA06990E0",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C606C",
+        "to": "0xA06990E4",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6074",
+        "to": "0xA06990E8",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C607C",
+        "to": "0xA06990EC",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C6084",
+        "to": "0xA0699100",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C608C",
+        "to": "0xA06990FE",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C6094",
+        "to": "0xA06990FC",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C609C",
+        "to": "0xA06990F8",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C60A4",
+        "to": "0xA06990FA",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C60AC",
+        "to": "0xA06990F0",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C60B4",
+        "to": "0xA06990F4",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C60C0",
+        "to": "0xA0699104",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C60DC",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xA02C618C",
+        "to": "0xA0699104",
+        "type": "DATA"
+      },
+      {
+        "from": "0xA02C6194",
+        "to": "0xA0699160",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xA02C61C8",
+        "to": "0xA0699160",
+        "type": "WRITE"
+      }
+    ]
+  },
+  "call_graph": {
+    "helper_call_rows": [
+      {
+        "from": "0xA0385780",
+        "site": "0xA03877A0",
+        "to": "0xA02C61D4",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xA0385780",
+        "site": "0xA0387CAC",
+        "to": "0xA02C61D4",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "helper_call_count": 2
+  },
+  "bounded_findings": {
+    "publication_reference_count": 5,
+    "feedback_alias_reference_count": 0,
+    "status_block_reference_count": 18,
+    "external_publication_reference_count": 0,
+    "explicit_cpu_feedback_store": "0xA02C6214 -> translated shared base +0x3c",
+    "explicit_cpu_feedback_load": "0xA02C6260 -> translated shared base +0x3c",
+    "direct_literal_feedback_alias_found": false
+  },
+  "interpretation": [
+    "The reference index contains five direct references to the publication word, all within A02C5FD8's publication helper range.",
+    "The call export lists the known A0385780 call sites into A02C61D4; this is CPU read/reset traffic, not a DSP writer.",
+    "No indexed fixed-data reference names the translated publication word plus 0x3c alias; the CPU helper reaches it through a runtime translated base."
+  ],
+  "not_proven": [
+    "An indirect ORC/DSP/MMIO writer of shared +0x3c",
+    "Whether smem_2_dram completes before CPU reads the alias",
+    "Cache visibility, atomic publication or version retry",
+    "DSP runtime identity, frame association or safe table/slot reuse"
+  ],
+  "device_access": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

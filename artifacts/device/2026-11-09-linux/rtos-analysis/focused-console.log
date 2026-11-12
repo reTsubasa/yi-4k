@@ -1,0 +1,129 @@
+{"same_body": 9940, "changed_body": 1095}
+0xa037d9e0 eis_controller_init same_old_function_body
+0xa037fe20 eis_mode_rowtime_init same_old_function_body
+0xa0385780 eis_gyro_sample_processing same_old_function_body
+0xa03852f8 eis_per_frame same_old_function_body
+0xa0384710 eis_rotation_filter same_old_function_body
+0xa038ea48 eis_calibration_xy_grid same_old_function_body
+0xa0391cf0 eis_row_dependent_warp same_old_function_body
+0xa0392cb0 eis_rotation_grid_coordinator same_old_function_body
+0xa0396ee8 eis_algo2_task same_old_function_body
+0xa0396f34 eis_main_task same_old_function_body
+0xa03975bc eis_task_create_1 same_old_function_body
+0xa0397688 eis_task_create_2 same_old_function_body
+0xa0394cc0 eis_debug_dispatch same_old_function_body
+0xa03b0ce0 image_command_dispatch same_old_function_body
+0xa037ba48 image_sof same_old_function_body
+0xa037b998 image_eof same_old_function_body
+0xa03119a8 warp_calculate changed_old_function_body
+0xa0312460 warp_set changed_old_function_body
+0xa031282c warp_get changed_old_function_body
+0xa047f2a0 gyro_get_info same_old_function_body
+0xa047f0f8 gyro_open same_old_function_body
+0xa047ede4 gyro_read_indirect_candidate old_function_not_discovered
+0xa0247e54 sharepreview_register same_old_function_body
+0xa0247a20 sharepreview_get_meminfo same_old_function_body
+0xa024840c sharepreview_enable same_old_function_body
+0xa02478f4 sharepreview_get_status same_old_function_body
+0xa0248530 sharepreview_init same_old_function_body
+0xa0247b8c sharepreview_update_buffer same_old_function_body
+0xa02484e8 sharepreview_default_config same_old_function_body
+0xa0247e04 sharepreview_frame_callback old_function_not_discovered
+0xa0247d78 sharepreview_copy_and_reset_counter changed_old_function_body
+0xa02480c8 sharepreview_enable_internal same_old_function_body
+0xa0248314 sharepreview_disable_internal same_old_function_body
+0xa0238160 videoanal_is_initialized same_old_function_body
+0xa02382f8 videoanal_register_callback same_old_function_body
+0xa01a18f8 app_test_dispatch changed_old_function_body
+0xa01a4f34 shell_app_dispatch changed_old_function_body
+0xa0295cf8 rtos_mmu_mapping_initializer same_old_function_body
+0xa04a3b24 rtos_virtual_to_physical same_old_function_body
+openjdk version "25.0.1" 2025-10-21
+OpenJDK Runtime Environment Homebrew (build 25.0.1)
+OpenJDK 64-Bit Server VM Homebrew (build 25.0.1, mixed mode)
+INFO  Using log config file: jar:file:/private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: artifacts/device/2026-11-09-linux/rtos-analysis/ghidra-focused.log (LoggingInitialization)  
+INFO  Loading user preferences: /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /Users/hyc/Library/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1472 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Loaded 3 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 109 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (10178 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/ghidra-project/yi4k_device_1107 (HeadlessAnalyzer)  
+INFO  Opening project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/ghidra-project/yi4k_device_1107 (HeadlessProject)  
+INFO  REPORT: Processing project file: /rtos-window.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: Yi4kPrepare.java 'artifacts/device/2026-11-09-linux/rtos-analysis/focus-seeds.tsv'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kPrepare.java (HeadlessAnalyzer)  
+INFO  Yi4kPrepare.java> YI4K_SEEDS good=39 failed=0 (GhidraScript)  
+INFO  REPORT: Execute script: Yi4kFocusedExport.java 'artifacts/device/2026-11-09-linux/rtos-analysis/focused' 'artifacts/device/2026-11-09-linux/rtos-analysis/focus-seeds.tsv'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kFocusedExport.java (HeadlessAnalyzer)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a037d9e0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a037fe20 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0385780 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a03852f8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0384710 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a038ea48 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0391cf0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0392cb0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0396ee8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0396f34 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a03975bc true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0397688 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0394cc0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a03b0ce0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a037ba48 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a037b998 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a03119a8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0312460 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a031282c true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a047f2a0 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a047f0f8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a047ede4 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0247e54 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0247a20 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a024840c true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a02478f4 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0248530 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0247b8c true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a02484e8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0247e04 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0247d78 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a02480c8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0248314 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0238160 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a02382f8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a01a18f8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a01a4f34 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a0295cf8 true (GhidraScript)  
+INFO  Yi4kFocusedExport.java> DEVICE_FOCUSED a04a3b24 true (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /rtos-window.bin (HeadlessAnalyzer)  

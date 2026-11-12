@@ -1,0 +1,6 @@
+0xa0296600  cpy r12,r1
+0xa0296604  cpy r3,r2
+0xa0296608  cpy r1,r0
+0xa029660c  cpy r2,r12
+0xa0296610  mov r0,#0x0
+0xa0296614  b 0xa048e8c8

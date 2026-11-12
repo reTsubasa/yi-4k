@@ -1,0 +1,145 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "sources": [
+    {
+      "entry": "0xa0155d9c",
+      "pseudocode_sha256": "ef4370d52f017985d4b4f51de462477e36ca7b6a573341e8bd43bd7c792c7a0e"
+    },
+    {
+      "entry": "0xa011f21c",
+      "pseudocode_sha256": "9d5b288865e0faa5f0afcd43b580ddcefc5699776fd5c06c363ad281c046029b"
+    },
+    {
+      "entry": "0xa011efc4",
+      "pseudocode_sha256": "f6d3cb1a31f99aa5d81b6899c2f750262e79deb519b5b1263a9b3e5fe8e45b9a"
+    },
+    {
+      "entry": "0xa011f084",
+      "pseudocode_sha256": "2109a266ef10b79e5826ada926228a37cfbf423c6f57646110a34953f6857cb0"
+    },
+    {
+      "entry": "0xa011f0c8",
+      "pseudocode_sha256": "deafb71b6883ca0beff0f7f13e9f845ea6e3d73386e0d5df80c44e267700d4dc"
+    },
+    {
+      "entry": "0xa011f758",
+      "pseudocode_sha256": "a7b79b12b2b59b11b2295197a62aa1ded35c0ed5412e5f6de2488f7f47924cdf"
+    },
+    {
+      "entry": "0xa0165b98",
+      "pseudocode_sha256": "5fe23179a2c8480a43f56642462598c4f1b31b78d14770c09a3f75492ab13edf"
+    }
+  ],
+  "synthetic_cases": [
+    {
+      "synthetic_app_state": 0,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "idle"
+    },
+    {
+      "synthetic_app_state": 5,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "vf"
+    },
+    {
+      "synthetic_app_state": 1,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "record"
+    },
+    {
+      "synthetic_app_state": 0,
+      "native_mode": 4,
+      "flags": "0x200",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "record"
+    },
+    {
+      "synthetic_app_state": 4,
+      "native_mode": 0,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "capture"
+    },
+    {
+      "synthetic_app_state": 0,
+      "native_mode": 0,
+      "flags": "0x2",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "capture"
+    },
+    {
+      "synthetic_app_state": 5,
+      "native_mode": 0,
+      "flags": "0x2",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "capture"
+    },
+    {
+      "synthetic_app_state": 2,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "Unknown"
+    },
+    {
+      "synthetic_app_state": 6,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "Unknown"
+    },
+    {
+      "synthetic_app_state": 255,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "Unknown"
+    },
+    {
+      "synthetic_app_state": 0,
+      "native_mode": 4,
+      "flags": "0x4",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 0,
+      "app_status": "Unknown"
+    },
+    {
+      "synthetic_app_state": 0,
+      "native_mode": 4,
+      "flags": "0x0",
+      "cflags": "0x0",
+      "gflags": "0x0",
+      "d08": 4,
+      "app_status": "Unknown"
+    }
+  ],
+  "scope": "Real stock getter/readiness helpers in synthetic RAM; snprintf/diagnostic print stubbed. No camera connection or observed transition.",
+  "limits": "Unknown examples prove classification, not that those states occurred during the failing Android run."
+}

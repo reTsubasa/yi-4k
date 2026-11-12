@@ -1,0 +1,725 @@
+{
+  "rtos_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "pointer_words": {
+    "0xa078b600": "0xa0001400",
+    "0xa078b604": "0xa0001800",
+    "0xa06f27f8": "0xa0001400",
+    "0xa06f27f4": "0xa0001800"
+  },
+  "system_configuration_names": [
+    {
+      "index": 0,
+      "name": "BOOTSTRAP",
+      "configuration": "0xa05acdfc",
+      "name_pointer": "0xa05aceb4"
+    },
+    {
+      "index": 1,
+      "name": "BOOTLOADER",
+      "configuration": "0xa05ace08",
+      "name_pointer": "0xa05acec0"
+    },
+    {
+      "index": 2,
+      "name": "FW_UPDATER",
+      "configuration": "0xa05ace14",
+      "name_pointer": "0xa05acecc"
+    }
+  ],
+  "fixed_instruction_checks": 8,
+  "original_selector_cases": [
+    {
+      "kind": 0,
+      "index": 0,
+      "returned": "0xa000140c"
+    },
+    {
+      "kind": 0,
+      "index": 1,
+      "returned": "0xa000144c"
+    },
+    {
+      "kind": 0,
+      "index": 2,
+      "returned": "0xa000148c"
+    },
+    {
+      "kind": 0,
+      "index": 3,
+      "returned": "0x0"
+    },
+    {
+      "kind": 0,
+      "index": 12,
+      "returned": "0x0"
+    },
+    {
+      "kind": 0,
+      "index": 4294967295,
+      "returned": "0x0"
+    },
+    {
+      "kind": 1,
+      "index": 0,
+      "returned": "0xa0001808"
+    },
+    {
+      "kind": 1,
+      "index": 1,
+      "returned": "0xa0001848"
+    },
+    {
+      "kind": 1,
+      "index": 2,
+      "returned": "0xa0001888"
+    },
+    {
+      "kind": 1,
+      "index": 12,
+      "returned": "0xa0001b08"
+    },
+    {
+      "kind": 1,
+      "index": 13,
+      "returned": "0x0"
+    },
+    {
+      "kind": 1,
+      "index": 4294967295,
+      "returned": "0x0"
+    },
+    {
+      "kind": 7,
+      "index": 0,
+      "returned": "0xa0001808"
+    },
+    {
+      "kind": 7,
+      "index": 12,
+      "returned": "0xa0001b08"
+    },
+    {
+      "kind": 7,
+      "index": 13,
+      "returned": "0x0"
+    }
+  ],
+  "original_crc_cases": [
+    {
+      "system": true,
+      "original_function_crc": "0x64a1162",
+      "model": "synthetic RAM bytes"
+    },
+    {
+      "system": false,
+      "original_function_crc": "0x116b4868",
+      "model": "synthetic RAM bytes"
+    }
+  ],
+  "parser_corruption_cases": [
+    {
+      "system": true,
+      "case": "truncated",
+      "rejected": "exact table length required: 0x1d0"
+    },
+    {
+      "system": true,
+      "case": "extra_bytes",
+      "rejected": "exact table length required: 0x1d0"
+    },
+    {
+      "system": true,
+      "case": "corrupt_crc",
+      "rejected": "table CRC mismatch"
+    },
+    {
+      "system": true,
+      "case": "wrong_names_valid_crc",
+      "rejected": "record 0 identity mismatch: 'XOOTSTRAP'"
+    },
+    {
+      "system": true,
+      "case": "oversized_actual_valid_crc",
+      "rejected": "invalid record length/allocation"
+    },
+    {
+      "system": false,
+      "case": "truncated",
+      "rejected": "exact table length required: 0x354"
+    },
+    {
+      "system": false,
+      "case": "extra_bytes",
+      "rejected": "exact table length required: 0x354"
+    },
+    {
+      "system": false,
+      "case": "corrupt_crc",
+      "rejected": "table CRC mismatch"
+    },
+    {
+      "system": false,
+      "case": "wrong_names_valid_crc",
+      "rejected": "record 0 identity mismatch: 'XENDOR_DATA'"
+    },
+    {
+      "system": false,
+      "case": "oversized_actual_valid_crc",
+      "rejected": "invalid record length/allocation"
+    }
+  ],
+  "firmware_identity_negative_case": "1.10.7 RTOS image identity mismatch",
+  "device_access": false,
+  "usb_access": false,
+  "target_code_executed": false,
+  "nand_read": false,
+  "runtime_pointers_verified": false,
+  "hidden_partition_bytes_acquired": false,
+  "independent_recovery_proven": false,
+  "existing_pseudocode_sources": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0298c8c.c",
+      "sha256": "711ce05cf2801cca254e299117ae2738370afaf47861fbd2f08251e294083d38"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a048498c.c",
+      "sha256": "df64e8637b43ede6d42b697e83ea25b8348168ee82769391811992fc98d9b447"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0484b0c.c",
+      "sha256": "be48d61c0ff9adbb27106b2081a1ba960795ce22d011ce7ab4a5d0038f5942de"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0484cf4.c",
+      "sha256": "de19b280ba2ae321de8c8975df7c1f68b7e6a385b5fe56d806bdc5ed1d53893a"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0483d98.c",
+      "sha256": "611cbd3f8635810f3a44ab78fa5b03d5e744379b52dd5195c37e7d50c17f789f"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0492dc8.c",
+      "sha256": "b11abcc730b2d8d63c754e669c4a56621e2ec5f457e1c75225aff8ffe29b947c"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02a79f0.c",
+      "sha256": "355a78db4154ef8d715adb7eabcb54a61f488413c3e92cf6047e71ef3f4ae95d"
+    }
+  ],
+  "existing_user_nand_control": {
+    "bytes": 852,
+    "sha256": "816a4affe69f163ec5149e4b0247ab83de8671acae78297d89e1ae49b3a87282",
+    "table_crc32": "0x59998e0c",
+    "header_raw_hex": "ffffffffffffffff",
+    "unclassified_tail_hex": "ff070000fe070000",
+    "records": [
+      {
+        "index": 0,
+        "name": "VENDOR_DATA",
+        "attribute": "0x0",
+        "allocation": 4096,
+        "blocks": 1,
+        "start_block": 1,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 1,
+        "name": "SYS_SW",
+        "attribute": "0x9",
+        "allocation": 33554432,
+        "blocks": 256,
+        "start_block": 12,
+        "load_address": "0x100000",
+        "actual_bytes": 7491432,
+        "status_raw": "0x0",
+        "data_crc32": "0xb3cb97f7",
+        "has_image_fingerprint": true
+      },
+      {
+        "index": 2,
+        "name": "DSP_uCode",
+        "attribute": "0x1",
+        "allocation": 5242880,
+        "blocks": 40,
+        "start_block": 268,
+        "load_address": "0x0",
+        "actual_bytes": 4038656,
+        "status_raw": "0x0",
+        "data_crc32": "0x1435adc7",
+        "has_image_fingerprint": true
+      },
+      {
+        "index": 3,
+        "name": "SYS_DATA",
+        "attribute": "0x1",
+        "allocation": 20971520,
+        "blocks": 160,
+        "start_block": 308,
+        "load_address": "0x0",
+        "actual_bytes": 12937216,
+        "status_raw": "0x0",
+        "data_crc32": "0x1eb19486",
+        "has_image_fingerprint": true
+      },
+      {
+        "index": 4,
+        "name": "LINUX_Kernel",
+        "attribute": "0x9",
+        "allocation": 10485760,
+        "blocks": 80,
+        "start_block": 468,
+        "load_address": "0x3ca08000",
+        "actual_bytes": 5762864,
+        "status_raw": "0x0",
+        "data_crc32": "0x8d8b2045",
+        "has_image_fingerprint": true
+      },
+      {
+        "index": 5,
+        "name": "LINUX_RFS",
+        "attribute": "0x0",
+        "allocation": 62914560,
+        "blocks": 480,
+        "start_block": 548,
+        "load_address": "0x0",
+        "actual_bytes": 28717056,
+        "status_raw": "0x0",
+        "data_crc32": "0x6d551966",
+        "has_image_fingerprint": true
+      },
+      {
+        "index": 6,
+        "name": "LINUX_HIBER_IMG",
+        "attribute": "0x40000000",
+        "allocation": 31457280,
+        "blocks": 240,
+        "start_block": 1028,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 7,
+        "name": "VIDEO_REC_IDX",
+        "attribute": "0x40000010",
+        "allocation": 25165824,
+        "blocks": 204,
+        "start_block": 1268,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 8,
+        "name": "CALIB",
+        "attribute": "0x10",
+        "allocation": 1048576,
+        "blocks": 20,
+        "start_block": 1472,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 9,
+        "name": "USER_SETTING",
+        "attribute": "0x10",
+        "allocation": 262144,
+        "blocks": 14,
+        "start_block": 1492,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 10,
+        "name": "DRIVE_A",
+        "attribute": "0x40000010",
+        "allocation": 5242880,
+        "blocks": 52,
+        "start_block": 1506,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 11,
+        "name": "DRIVE_B",
+        "attribute": "0x40000010",
+        "allocation": 5242880,
+        "blocks": 52,
+        "start_block": 1558,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      },
+      {
+        "index": 12,
+        "name": "RESERVED",
+        "attribute": "0x0",
+        "allocation": 56098816,
+        "blocks": 428,
+        "start_block": 1610,
+        "load_address": "0xffffffff",
+        "actual_bytes": 0,
+        "status_raw": "0xffffffff",
+        "data_crc32": "0xffffffff",
+        "has_image_fingerprint": false
+      }
+    ],
+    "hidden_partition_bytes_acquired": false,
+    "recovery_proven": false,
+    "source": "artifacts/device/2026-11-09-linux/boot-metadata/vendor_data.bin",
+    "new_capture": false,
+    "ram_address_verified": false
+  },
+  "legal_empty_slot_positive_case": {
+    "index": 12,
+    "name": "RESERVED",
+    "attribute": "0x0",
+    "allocation": 0,
+    "blocks": 0,
+    "start_block": 0,
+    "load_address": "0xffffffff",
+    "actual_bytes": 0,
+    "status_raw": "0xffffffff",
+    "data_crc32": "0xffffffff",
+    "has_image_fingerprint": false
+  },
+  "retained_static_pointer_references": [
+    {
+      "source": "0xa0298f04",
+      "destination": "0xa06f27f4",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0298f08",
+      "destination": "0xa06f27f4",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0299210",
+      "destination": "0xa06f27f8",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0299218",
+      "destination": "0xa06f27f8",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0299798",
+      "destination": "0xa06f27f8",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa02997a0",
+      "destination": "0xa06f27f8",
+      "type": "READ"
+    },
+    {
+      "source": "0xa02997b4",
+      "destination": "0xa06f27f4",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa02997c0",
+      "destination": "0xa06f27f4",
+      "type": "READ"
+    },
+    {
+      "source": "0xa03c6194",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa03c6f7c",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04835f4",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04836c0",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04837d0",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04837e0",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04837f4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04837f8",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0483ddc",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0483df0",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0483e08",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0483e18",
+      "destination": "0xa078b604",
+      "type": "DATA"
+    },
+    {
+      "source": "0xa0483fbc",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04849e4",
+      "destination": "0xa078b600",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa04849ec",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484a54",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484ae8",
+      "destination": "0xa078b600",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0484aec",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484b44",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484b84",
+      "destination": "0xa078b604",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0484b8c",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484c00",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484c20",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484cc0",
+      "destination": "0xa078b604",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0484cc4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d08",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d10",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d34",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d4c",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d70",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484d8c",
+      "destination": "0xa078b604",
+      "type": "PARAM"
+    },
+    {
+      "source": "0xa0484d94",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484ebc",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0484eec",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485610",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485aa0",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485ca4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485cf8",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485d2c",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485db4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485de8",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0485e48",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04864cc",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04871b8",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492de4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492e00",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492e40",
+      "destination": "0xa078b600",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492ea4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492ec4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa0492ee4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa049abf8",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04a0890",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04a0944",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04a09e4",
+      "destination": "0xa078b604",
+      "type": "READ"
+    },
+    {
+      "source": "0xa04a0a24",
+      "destination": "0xa078b604",
+      "type": "READ"
+    }
+  ],
+  "pointer_write_reference_count": 0,
+  "pointer_reference_limit": "Retained Ghidra direct refs only; indirect/alias/runtime writes not excluded.",
+  "scope": "Original fixed 1.10.7 selector/CRC instructions in synthetic host RAM; no NAND functions executed."
+}

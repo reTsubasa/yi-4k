@@ -1,0 +1,43 @@
+s3l_bld.files  = $${PWD}/bld/s3l_bld_nand.elf
+s3l_bld.files += $${PWD}/bld/s3l_bld_emmc.elf
+s3l_bld.files += $${PWD}/bld/s3l_bld_spinor.elf
+s3l_bld.files += $${PWD}/bld/s3l_bld_spinor_spansion.elf
+s3l_bld.files += $${PWD}/bld/s3lm_bld_nand.elf
+s3l_bld.files += $${PWD}/bld/s3lm_bld_emmc.elf
+s3l_bld.files += $${PWD}/bld/s3lm_bld_spinor.elf
+s3l_bld.files += $${PWD}/bld/s3lm_bld_spinor_spansion.elf
+s3l_bld.files += $${PWD}/bld/h12_bld_nand.bin
+s3l_bld.path   = $${DATA_DIR}/$${APP_NAME}-$${APP_VERSION}/platform/s3l/bld
+INSTALLS      += s3l_bld
+
+s3l_board.files  = $${PWD}/boards/S3L_DDR3_NAND.board
+s3l_board.files += $${PWD}/boards/S3L_DDR3_EMMC.board
+s3l_board.files += $${PWD}/boards/S3L_DDR3_SPINOR.board
+s3l_board.files += $${PWD}/boards/S3L_DDR3_SPINOR_SPANSION.board
+s3l_board.files += $${PWD}/boards/S3L_LPDDR3_NAND.board
+s3l_board.files += $${PWD}/boards/S3L_LPDDR3_EMMC.board
+s3l_board.files += $${PWD}/boards/S3L_LPDDR3_SPINOR.board
+s3l_board.files += $${PWD}/boards/S3L_LPDDR3_SPINOR_SPANSION.board
+s3l_board.files += $${PWD}/boards/S3Lm_DDR3_NAND.board
+s3l_board.files += $${PWD}/boards/S3Lm_DDR3_EMMC.board
+s3l_board.files += $${PWD}/boards/S3Lm_DDR3_SPINOR.board
+s3l_board.files += $${PWD}/boards/S3Lm_DDR3_SPINOR_SPANSION.board
+s3l_board.files += $${PWD}/boards/S3Lm_LPDDR3_NAND.board
+s3l_board.files += $${PWD}/boards/S3Lm_LPDDR3_EMMC.board
+s3l_board.files += $${PWD}/boards/S3Lm_LPDDR3_SPINOR.board
+s3l_board.files += $${PWD}/boards/S3Lm_LPDDR3_SPINOR_SPANSION.board
+s3l_board.files += $${PWD}/boards/H12_DDR3_NAND.board
+s3l_board.files += $${PWD}/boards/H12_LPDDR3_NAND.board
+s3l_board.path  = $${DATA_DIR}/$${APP_NAME}-$${APP_VERSION}/platform/s3l/boards
+INSTALLS       += s3l_board
+
+s3l_ads.files   = $${PWD}/ads/s3l_ddr3.ads
+s3l_ads.files  += $${PWD}/ads/s3l_lpddr3.ads
+s3l_ads.files  += $${PWD}/ads/s3lm_ddr3.ads
+s3l_ads.files  += $${PWD}/ads/s3lm_lpddr3.ads
+s3l_ads.path    = $${DATA_DIR}/$${APP_NAME}-$${APP_VERSION}/platform/s3l/ads
+INSTALLS       += s3l_ads
+
+s3l_chip.files  = $${PWD}/chip.conf
+s3l_chip.path   = $${DATA_DIR}/$${APP_NAME}-$${APP_VERSION}/platform/s3l
+INSTALLS       += s3l_chip

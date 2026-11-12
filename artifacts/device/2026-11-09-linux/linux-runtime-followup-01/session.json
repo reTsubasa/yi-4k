@@ -1,0 +1,36 @@
+{
+  "host": "192.168.42.1",
+  "scope": "read-only process/sysfs/proc inspection",
+  "commands": [
+    {
+      "name": "proc_cmdlines",
+      "command": "for p in 102 104 108 110 156 266 271 275 288 959; do echo PID=$p; tr '\\0' ' ' < /proc/$p/cmdline; echo; done",
+      "bytes": 586
+    },
+    {
+      "name": "proc_maps",
+      "command": "for p in 102 104 108 110 156 266 271 275 288 959; do echo ====PID=$p; cat /proc/$p/maps; done",
+      "bytes": 44435
+    },
+    {
+      "name": "proc_fds",
+      "command": "for p in 102 104 108 110 156 266 271 275 288 959; do echo ====PID=$p; ls -l /proc/$p/fd 2>&1; done",
+      "bytes": 7515
+    },
+    {
+      "name": "rpmsg_sysfs",
+      "command": "for p in /sys/bus/rpmsg/devices/rpmsg*; do echo ==== $p; readlink -f $p; for f in name modalias driver/uevent power/runtime_status; do [ -e $p/$f ] && { echo --$f; cat $p/$f; }; done; done; for p in /sys/bus/platform/devices/c0_and_c1.7/remoteproc0/*; do [ -f $p ] && { echo ==== $p; cat $p; }; done",
+      "bytes": 1920
+    },
+    {
+      "name": "proc_net",
+      "command": "cat /proc/net/unix; cat /proc/net/tcp; cat /proc/net/udp",
+      "bytes": 4624
+    },
+    {
+      "name": "open_ports",
+      "command": "cat /proc/1/mountinfo; cat /proc/sys/kernel/hostname; cat /proc/sys/kernel/osrelease",
+      "bytes": 986
+    }
+  ]
+}

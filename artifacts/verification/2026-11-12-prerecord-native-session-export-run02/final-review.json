@@ -1,0 +1,30 @@
+{
+  "status": "pass_final_source_and_evidence_review",
+  "sources": [
+    {
+      "path": "scripts/export_prerecord_native_session.py",
+      "sha256": "086f1f376e0ab6250e35a3e24198c3c269f763209ab14f9768ff2f2f9990b439"
+    },
+    {
+      "path": "scripts/verify_prerecord_native_session_export.py",
+      "sha256": "67642211e94221f42fb50ae4ab927b1220e63026a0e0c6d7773c29d9654bc7d8"
+    },
+    {
+      "path": "scripts/audit_prerecord_native_edit_duration.py",
+      "sha256": "ab44b9d178a909398c8533ae341d4237f83f1a98ec9b90c3d8beed8885d26431"
+    },
+    {
+      "path": "docs/prerecord-native-session-export.md",
+      "sha256": "45c268048549a7c799a4630d5103b98868801521cdee2aaeea255697237edbe0"
+    }
+  ],
+  "independent_review_sha256": "2dba08cd0ce34c392afa6ab6a46812e747e6af257cf364fac69ae8ac0b7199e7",
+  "source_hashes_match_executed_records": true,
+  "ordinary_consumer_gate": "pass_final_export_only",
+  "native_second_segment_gate": "reject_preserved",
+  "published_file_exists": true,
+  "pending_absent": true,
+  "input_hashes_unchanged": true,
+  "documentation_local_links_exist": 10,
+  "device_access": false
+}

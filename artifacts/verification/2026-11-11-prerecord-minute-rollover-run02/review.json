@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "offline_only": true,
+  "audit_sha256": "e48cc45c6435a1a0dd8290f5e805bbbf12e011247bfe5e62ebc939ed25b8ac32",
+  "audit_status": "offline_minute_event3_executed",
+  "publication_gate": "reject",
+  "segments": [
+    {
+      "file": "minute-segment-1.mp4",
+      "sha256": "84252722f3928926f3f79d9a7617efc5fe2413e3d827d9daa10e41ca20e99c42",
+      "bytes": 336632257,
+      "strict_gate": "reject",
+      "video_frames": 1800
+    },
+    {
+      "file": "minute-segment-2.mp4",
+      "sha256": "93af88608b02ea405b59c3a1ea731ea24236bb7605848de31686200679567a28",
+      "bytes": 22430113,
+      "strict_gate": "reject",
+      "video_frames": 120
+    }
+  ],
+  "missing_aac": {
+    "file": "missing-source-aac-2815.bin",
+    "source": {
+      "stream": 1,
+      "index": 2815,
+      "pts": 2882560,
+      "dts": 2882560,
+      "duration": 1024,
+      "offset": 336593157,
+      "bytes": 346,
+      "sha256": "ef96aaeaa91e39baf9abaf7a6edcf1b129482b5522cfb130d86b83413bf4ba5a",
+      "key": true
+    }
+  },
+  "second_segment_last_aac_comparison": {
+    "stream": 1,
+    "source_index": 3002,
+    "source_sha256": "21a1b242f5599ad938ff43efa20111df82199e0497a056533687cc077503f996",
+    "output_sha256": "21a1b242f5599ad938ff43efa20111df82199e0497a056533687cc077503f996",
+    "same_payload": true,
+    "pts_error": {
+      "numerator": 0,
+      "denominator": 1,
+      "seconds": 0.0
+    },
+    "dts_error": {
+      "numerator": 0,
+      "denominator": 1,
+      "seconds": 0.0
+    },
+    "duration_error": {
+      "numerator": -11,
+      "denominator": 750,
+      "seconds": -0.014666666666666666
+    }
+  },
+  "all_reported_mp4_hashes_verified": true,
+  "script_digest_matches_executed_report": true
+}

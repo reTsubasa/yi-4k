@@ -1,0 +1,18 @@
+test_empty_virtual_queue_remove_is_explicit_and_non_destructive (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_empty_virtual_queue_remove_is_explicit_and_non_destructive) ... ok
+test_end_markers_override_type_one_and_preserve_descriptor_metadata (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_end_markers_override_type_one_and_preserve_descriptor_metadata) ... ok
+test_end_notification_precedes_payload_limit_and_reader_without_advancing (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_end_notification_precedes_payload_limit_and_reader_without_advancing) ... ok
+test_failed_payload_copy_does_not_advance_cursor (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_failed_payload_copy_does_not_advance_cursor) ... ok
+test_layout_round_trip_and_unknown_types_remain_opaque (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_layout_round_trip_and_unknown_types_remain_opaque) ... ok
+test_only_exact_end_lengths_bypass_normal_payload_bound (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_only_exact_end_lengths_bypass_normal_payload_bound) ... ok
+test_owner_explicitly_removes_end_marker_before_following_normal_payload (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_owner_explicitly_removes_end_marker_before_following_normal_payload) ... ok
+test_payload_bound_is_checked_before_reader (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_payload_bound_is_checked_before_reader) ... ok
+test_payload_is_copied_before_cursor_advances (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_payload_is_copied_before_cursor_advances) ... ok
+test_sequence_and_queue_ownership (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_sequence_and_queue_ownership) ... ok
+test_timestamp_and_payload_bounds_round_trip_without_truncation (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_timestamp_and_payload_bounds_round_trip_without_truncation) ... ok
+test_truncated_and_invalid_values_rejected (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_truncated_and_invalid_values_rejected) ... ok
+test_type_one_is_only_static_mux_hint (scripts.tests.test_prerecord_frame_desc.FrameDescTests.test_type_one_is_only_static_mux_hint) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

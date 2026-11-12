@@ -1,0 +1,59 @@
+python -B -u <<'YI_RESTART_SYMBOLS'
+> import re
+> print('YI_UPTIME '+open('/proc/uptime').read().strip())
+> for line in open('/proc/kallsyms'):
+>     fields=line.split()
+>     if len(fields)>2 and re.search('restart|reboot|reset.*cpu|arm_pm_restart|b
+oss.*(reset|restart)',fields[2],re.I):
+>         print('YI_RESTART_SYMBOL '+line.strip())
+> 
+> YI_RESTART_SYMBOLS
+YI_UPTIME 1785.06 1758.53
+YI_RESTART_SYMBOL 4000f37c t local_restart
+YI_RESTART_SYMBOL 4000fc78 t null_restart
+YI_RESTART_SYMBOL 4000fc7c t __soft_restart
+YI_RESTART_SYMBOL 4000fcec T soft_restart
+YI_RESTART_SYMBOL 4000fdf4 T machine_restart
+YI_RESTART_SYMBOL 400170e8 T setup_mm_for_reboot
+YI_RESTART_SYMBOL 4001d894 T ambarella_restart_machine
+YI_RESTART_SYMBOL 400381f8 T sys_restart_syscall
+YI_RESTART_SYMBOL 40038210 T do_no_restart_syscall
+YI_RESTART_SYMBOL 40039950 T emergency_restart
+YI_RESTART_SYMBOL 40039968 T register_reboot_notifier
+YI_RESTART_SYMBOL 40039978 T unregister_reboot_notifier
+YI_RESTART_SYMBOL 4003a448 T kernel_restart_prepare
+YI_RESTART_SYMBOL 4003a480 T kernel_restart
+YI_RESTART_SYMBOL 4003a4fc T SyS_reboot
+YI_RESTART_SYMBOL 4003a4fc T sys_reboot
+YI_RESTART_SYMBOL 4004753c T clock_nanosleep_restart
+YI_RESTART_SYMBOL 400494ec t process_cpu_nsleep_restart
+YI_RESTART_SYMBOL 4004aa18 t posix_cpu_nsleep_restart
+YI_RESTART_SYMBOL 4006f974 t futex_wait_restart
+YI_RESTART_SYMBOL 400e65e4 t do_restart_poll
+YI_RESTART_SYMBOL 4016caa0 T nlm_host_rebooted
+YI_RESTART_SYMBOL 40170344 T nsm_reboot_lookup
+YI_RESTART_SYMBOL 40170bd8 T nlmsvc_decode_reboot
+YI_RESTART_SYMBOL 40171e44 T nlm4svc_decode_reboot
+YI_RESTART_SYMBOL 403da4f8 T rpc_restart_call
+YI_RESTART_SYMBOL 403db5e4 T rpc_restart_call_prepare
+YI_RESTART_SYMBOL 403f0728 t cache_restart_thread
+YI_RESTART_SYMBOL 403ff8d0 T hrtimer_nanosleep_restart
+YI_RESTART_SYMBOL 40400f48 t alarm_timer_nsleep_restart
+YI_RESTART_SYMBOL 404f2690 r __ksymtab_register_reboot_notifier
+YI_RESTART_SYMBOL 404f3940 r __ksymtab_unregister_reboot_notifier
+YI_RESTART_SYMBOL 404f42b8 r __ksymtab_arm_pm_restart
+YI_RESTART_SYMBOL 404f4e70 r __ksymtab_emergency_restart
+YI_RESTART_SYMBOL 404f5638 r __ksymtab_kernel_restart
+YI_RESTART_SYMBOL 404f6500 r __ksymtab_rpc_restart_call
+YI_RESTART_SYMBOL 404f6508 r __ksymtab_rpc_restart_call_prepare
+YI_RESTART_SYMBOL 404f75d4 r __kstrtab_arm_pm_restart
+YI_RESTART_SYMBOL 404f8f06 r __kstrtab_kernel_restart
+YI_RESTART_SYMBOL 404f8f15 r __kstrtab_unregister_reboot_notifier
+YI_RESTART_SYMBOL 404f8f30 r __kstrtab_register_reboot_notifier
+YI_RESTART_SYMBOL 404f8f49 r __kstrtab_emergency_restart
+YI_RESTART_SYMBOL 4050a22a r __kstrtab_rpc_restart_call
+YI_RESTART_SYMBOL 4050a23b r __kstrtab_rpc_restart_call_prepare
+YI_RESTART_SYMBOL 40529158 T reboot_setup
+YI_RESTART_SYMBOL 3f13f800 t dhd_reboot_callback        [bcmdhd]
+~ # echo __YI_CAPTURE_f3742773b325441aa73640360f9ab835__
+__YI_CAPTURE_f3742773b325441aa73640360f9ab835__

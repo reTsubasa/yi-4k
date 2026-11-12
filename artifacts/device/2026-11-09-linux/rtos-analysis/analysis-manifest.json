@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-09",
+  "scope": "Device 1.10.7 offline RTOS analysis plus bounded read-only Linux/RPC/DRAM observation",
+  "source": {
+    "source": "../sys_sw_partition.bin",
+    "partition_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+    "partition_bytes": 33554432,
+    "analysis_window": {
+      "file": "rtos-window.bin",
+      "offset": 0,
+      "bytes": 7491584,
+      "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+      "base": "0xa0100000",
+      "last_non_ff_end": "0x724ffc",
+      "structured_end_candidate": "0x724f68",
+      "note": "Window includes near-FF tail with isolated cleared bits; exact executable extent is not established."
+    },
+    "mapping_evidence": {
+      "reset_branch_target": "0xa01000fc",
+      "vector_literal_0x238": "0xa0100294",
+      "vector_literal_points_to_file_offset": "0x294",
+      "clear_start": "0xa0fb3000",
+      "clear_last_word": "0xa1a51178"
+    },
+    "old_reference": {
+      "sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+      "bytes": 7491432,
+      "functions": 11035
+    },
+    "function_comparison": {
+      "same_body": 9940,
+      "changed_body": 1095
+    },
+    "gyro_ops_table": {
+      "address": "0xa078b0bc",
+      "entries": [
+        "0xa047f2a0",
+        "0xa047f0f8",
+        "0xa047ede4",
+        "0xa047ed64",
+        "0xa047ed20",
+        "0xa047ec6c",
+        "0xa047ec64",
+        "0x0"
+      ]
+    },
+    "selected_data_ranges": [
+      {
+        "start": "0xa0757a00",
+        "end_exclusive": "0xa0757e00",
+        "same_bytes": true,
+        "device_sha256": "ffb2b1b5e612f805012fbb10e9d79c610596248ecb66efb2b2a9d1236ba6986b"
+      },
+      {
+        "start": "0xa078b0bc",
+        "end_exclusive": "0xa078b0dc",
+        "same_bytes": true,
+        "device_sha256": "89120c24b2c241a67b1fb792a7887eca45b13cb92819f4b040b4263495432a3c"
+      },
+      {
+        "start": "0xa047ede4",
+        "end_exclusive": "0xa047f0f8",
+        "same_bytes": true,
+        "device_sha256": "cdf3849a56f78d55e13cba74865237e8662301afe94aa36da8aa60f384c2b24b"
+      }
+    ],
+    "limitations": [
+      "Old function boundaries are reused only for byte comparison.",
+      "Identical bodies can call changed functions or reference changed data.",
+      "Static addresses are not validated live addresses or permission to patch.",
+      "No on-device execution by this script."
+    ]
+  },
+  "tools": {
+    "ghidra": "12.2 PUBLIC",
+    "capstone": "5.0.7",
+    "java": "OpenJDK 25.0.1"
+  },
+  "automatic_export": {
+    "program": "rtos-window.bin",
+    "language": "ARM:LE:32:v7",
+    "image_base": "0x00000000",
+    "memory_blocks": [
+      {
+        "start": "0xa0100000",
+        "name": "ram",
+        "initialized": true,
+        "bytes": 7491584,
+        "end": "0xa0824fff"
+      },
+      {
+        "start": "0xa0fb3000",
+        "name": "startup_bss_candidate",
+        "initialized": false,
+        "bytes": 11133308,
+        "end": "0xa1a5117b"
+      }
+    ],
+    "executable_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "discovered_functions": 10993,
+    "decompilations_completed": 10985,
+    "decompilations_failed": 8,
+    "function_body_union_bytes": 4013254,
+    "recognized_instruction_count": 1095999,
+    "elapsed_export_seconds": 400,
+    "limitations": [
+      "Automatic static analysis; not a proof of complete function discovery.",
+      "Raw binary contains code and data; inferred boundaries and types may be wrong.",
+      "No on-device execution or ABI validation performed.",
+      "Indirect calls may remain unresolved."
+    ]
+  },
+  "focused_export": {
+    "functions": 39,
+    "decompilations_completed": 39,
+    "inventory": "focused/functions.json"
+  },
+  "runtime": {
+    "rpc": "../sharepreview-read/session.json",
+    "dram_failed_read": "../rtos-readonly-snapshot/session.json",
+    "dram_snapshots": [
+      "../rtos-readonly-mmap-snapshot/session.json",
+      "../rtos-readonly-mmap-snapshot-2/session.json"
+    ],
+    "code_fingerprint_matches": [
+      {
+        "va": "0xa01000fc",
+        "bytes": 64
+      },
+      {
+        "va": "0xa0391cf0",
+        "bytes": 64
+      }
+    ],
+    "sharepreview_rpc_rc": -1,
+    "sharepreview_client_destroy_rc": 0,
+    "memory_cache_coherence_validated": false,
+    "continuous_gyro_stream_verified": false,
+    "rtos_custom_code_executed": false,
+    "firmware_settings_or_memory_written": false,
+    "recording_started": false
+  },
+  "reproduce": "GHIDRA_DIR=/path/to/ghidra JAVA_HOME=/path/to/jdk25 bash scripts/analyze_device_rtos.sh",
+  "report": "../../../../docs/device-1107-eis-validation.md"
+}

@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-11-10T20:41:33.033399+00:00",
+  "evidence_type": "Settings descriptions layout correction; local Android runtime and real process death acceptance",
+  "apk": "artifacts/android/yi4k-control-0.3.14-debug.apk",
+  "sha256": "1503d3bd73d39cd9985c69c2aea04e81b1d863c31e2486cad943a2aa77f6ebe6",
+  "size_bytes": 11542013,
+  "version_name": "0.3.14",
+  "version_code": 17,
+  "checks": {
+    "testDebugUnitTest": true,
+    "testReleaseUnitTest": true,
+    "lintDebug": true,
+    "assembleDebug": true,
+    "assembleRelease": true,
+    "assembleDebugAndroidTest": true
+  },
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 64
+  },
+  "runtime": {
+    "local-suite-run01": {
+      "path": "artifacts/android/0.3.14-device-reports/local-suite-run01/acceptance.json",
+      "sha256": "05f93e19f37670536e0dda7c8172b534c179d8fe77c083598382959331d95d37",
+      "tests": 9,
+      "passed": true,
+      "emulator_stopped": true
+    },
+    "pending-process-death-run01": {
+      "path": "artifacts/android/0.3.14-device-reports/pending-process-death-run01/acceptance.json",
+      "sha256": "59064da9a3110b8405be3d3fb266e5f091268fbcfc427cb164f4c5c36bdc93ca",
+      "tests": 2,
+      "passed": true,
+      "emulator_stopped": true
+    }
+  },
+  "source_hashes": {
+    "android/app/build.gradle": "dde3108f73a6a88ac0748ba0753caf1db6444e91fb2943728d95f6632c360427",
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "edc8b04f9b54e748702f528bb2cbe648be2037b03c89d31a14f05c6ea3f30562",
+    "android/app/src/test/java/dev/yi4k/control/PrototypeRenderTest.java": "0977e7d33d2680876cfc148058b1315d0a6ce2b7367439f2a1200629eedb30fb",
+    "android/app/src/androidTest/java/dev/yi4k/control/SettingsLayoutDeviceTest.java": "f7f0c8f113116c4ba1e4bac8190dda9939c416d8a9a8a599b9d3de48a5721f40"
+  },
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.3.14-tests.apk",
+    "sha256": "f3ac1c5f1a6925fd32224cb7b15b375066cf76c057baa9c6186b55c242936bce"
+  },
+  "scope": {
+    "new_camera_access": false,
+    "physical_phone_execution": false,
+    "firmware_ram_partition_writes": false
+  },
+  "limits": [
+    "Local settings test uses explicit fixture values, not a camera response.",
+    "Actual-camera capture/preview/disconnect evidence remains version 0.3.13; large 4K evidence remains 0.3.12.",
+    "No physical phone, camera prerecord/voice binding or EIS replacement."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "evidence_type": "Delivery audit, compact-window UI fix, host tests, APK manifest and signature verification; no camera access",
+  "packaged_at_utc": "2026-11-10T17:25:34Z",
+  "apk": "artifacts/android/yi4k-control-0.3.10-debug.apk",
+  "sha256": "8707ecf91f042dec3c3c20906150b5c1a175a6040973d4e344e5256f80987faa",
+  "size_bytes": 11533797,
+  "version_name": "0.3.10",
+  "version_code": 13,
+  "manifest": {
+    "application_id": "dev.yi4k.control",
+    "min_sdk": 29,
+    "target_sdk": 35,
+    "permissions": ["android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE"],
+    "main_activity_exported": true,
+    "cleartext_traffic": true
+  },
+  "signature": {
+    "apksigner_v2": true,
+    "signer": "Android Debug"
+  },
+  "changes": [
+    "Compact preview height now adapts down to 72dp so short portrait and landscape layouts do not cover parameter chips or the capture dock.",
+    "Compact previews hide the explanatory sentence and use smaller camera art and metadata pills while retaining the real-preview tap target."
+  ],
+  "checks": {
+    "testDebugUnitTest": true,
+    "lintDebug": true,
+    "assembleDebug": true,
+    "prototype_render_test": true,
+    "capture_ui_test": true,
+    "physical_phone_execution": false,
+    "camera_access_this_turn": false
+  },
+  "acceptance_limits": [
+    "The APK is a debug build signed with the Android Debug certificate.",
+    "No physical Android phone, font scaling, rotation, or direct camera-hotspot run was performed in this audit.",
+    "Camera API behavior remains covered by inherited 0.3.6 runtime evidence and host tests."
+  ]
+}

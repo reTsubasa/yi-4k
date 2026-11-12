@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "Retained evidence; no new camera commands",
+  "python_scripts_compiled": [
+    "device_rtos_log_marker.py",
+    "device_rtos_log_capture.py",
+    "device_api_record.py",
+    "analyze_rtos_log.py"
+  ],
+  "target_log_program_syntax_checked": true,
+  "input_and_transfer_sha256_verified": true,
+  "mode_blocks_verified": 4,
+  "submission_timing_sequences_verified": true,
+  "selected_events_exclude_network_json_and_identifier_keywords": true,
+  "gyro_log_stub_instructions_verified": true,
+  "video_length_and_decoder_result_verified": true,
+  "final_cleanup_and_api_close_verified": true,
+  "local_markdown_links_verified": 70,
+  "note": "The original video decode was performed separately with AVFoundation; not repeated here."
+}

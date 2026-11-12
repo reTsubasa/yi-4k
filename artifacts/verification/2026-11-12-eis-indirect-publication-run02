@@ -1,0 +1,307 @@
+{
+  "evidence_kind": "offline pinned instruction and retained Ghidra pseudocode audit",
+  "target": {
+    "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "checks": [
+    {
+      "address": "0xA02C6060",
+      "bytes": "053387e7",
+      "instruction": "str r3, [r7, r5, lsl #6]"
+    },
+    {
+      "address": "0xA02C6068",
+      "bytes": "055387e0",
+      "instruction": "add r5, r7, r5, lsl #6"
+    },
+    {
+      "address": "0xA02C60C8",
+      "bytes": "0500a0e1",
+      "instruction": "mov r0, r5"
+    },
+    {
+      "address": "0xA02C60CC",
+      "bytes": "947607eb",
+      "instruction": "bl #0xa04a3b24"
+    },
+    {
+      "address": "0xA02C60DC",
+      "bytes": "800087e5",
+      "instruction": "str r0, [r7, #0x80]"
+    },
+    {
+      "address": "0xA02C6178",
+      "bytes": "0300a0e1",
+      "instruction": "mov r0, r3"
+    },
+    {
+      "address": "0xA02C6188",
+      "bytes": "657607eb",
+      "instruction": "bl #0xa04a3b24"
+    },
+    {
+      "address": "0xA02C618C",
+      "bytes": "240085e5",
+      "instruction": "str r0, [r5, #0x24]"
+    },
+    {
+      "address": "0xA02C6190",
+      "bytes": "ccffffea",
+      "instruction": "b #0xa02c60c8"
+    },
+    {
+      "address": "0xA02C6194",
+      "bytes": "34009fe5",
+      "instruction": "ldr r0, [pc, #0x34]"
+    },
+    {
+      "address": "0xA02C61A4",
+      "bytes": "807040e2",
+      "instruction": "sub r7, r0, #0x80"
+    },
+    {
+      "address": "0xA02C61A8",
+      "bytes": "5d7607eb",
+      "instruction": "bl #0xa04a3b24"
+    },
+    {
+      "address": "0xA02C61BC",
+      "bytes": "58008ae5",
+      "instruction": "str r0, [sl, #0x58]"
+    },
+    {
+      "address": "0xA02C61C4",
+      "bytes": "288081e5",
+      "instruction": "str r8, [r1, #0x28]"
+    },
+    {
+      "address": "0xA02C61C8",
+      "bytes": "802087e5",
+      "instruction": "str r2, [r7, #0x80]"
+    },
+    {
+      "address": "0xA02C4EE8",
+      "bytes": "806303e3",
+      "instruction": "movw r6, #0x3380"
+    },
+    {
+      "address": "0xA02C4EEC",
+      "bytes": "6f604ae3",
+      "instruction": "movt r6, #0xa06f"
+    },
+    {
+      "address": "0xA02C4F6C",
+      "bytes": "0100a0e3",
+      "instruction": "mov r0, #1"
+    },
+    {
+      "address": "0xA02C4F70",
+      "bytes": "001096e5",
+      "instruction": "ldr r1, [r6]"
+    },
+    {
+      "address": "0xA02C4F74",
+      "bytes": "7de5ffeb",
+      "instruction": "bl #0xa02be570"
+    },
+    {
+      "address": "0xA02BE574",
+      "bytes": "4233a0e3",
+      "instruction": "mov r3, #0x8000001"
+    },
+    {
+      "address": "0xA02BE57C",
+      "bytes": "003081e5",
+      "instruction": "str r3, [r1]"
+    },
+    {
+      "address": "0xA02BE584",
+      "bytes": "580091e5",
+      "instruction": "ldr r0, [r1, #0x58]"
+    },
+    {
+      "address": "0xA02BE588",
+      "bytes": "659507eb",
+      "instruction": "bl #0xa04a3b24"
+    },
+    {
+      "address": "0xA02BE58C",
+      "bytes": "580084e5",
+      "instruction": "str r0, [r4, #0x58]"
+    },
+    {
+      "address": "0xA02BE5C4",
+      "bytes": "8020a0e3",
+      "instruction": "mov r2, #0x80"
+    },
+    {
+      "address": "0xA02BE5C8",
+      "bytes": "0410a0e1",
+      "instruction": "mov r1, r4"
+    },
+    {
+      "address": "0xA02BE5CC",
+      "bytes": "bdffffeb",
+      "instruction": "bl #0xa02be4c8"
+    },
+    {
+      "address": "0xA02BE504",
+      "bytes": "043193e7",
+      "instruction": "ldr r3, [r3, r4, lsl #2]"
+    },
+    {
+      "address": "0xA02BE510",
+      "bytes": "13ff2fe1",
+      "instruction": "bx r3"
+    },
+    {
+      "address": "0xA02BE53C",
+      "bytes": "043193e7",
+      "instruction": "ldr r3, [r3, r4, lsl #2]"
+    },
+    {
+      "address": "0xA02BE548",
+      "bytes": "13ff2fe1",
+      "instruction": "bx r3"
+    },
+    {
+      "address": "0xA02B4874",
+      "bytes": "546090e5",
+      "instruction": "ldr r6, [r0, #0x54]"
+    },
+    {
+      "address": "0xA02B4888",
+      "bytes": "084096e5",
+      "instruction": "ldr r4, [r6, #8]"
+    },
+    {
+      "address": "0xA02B489C",
+      "bytes": "845386e0",
+      "instruction": "add r5, r6, r4, lsl #7"
+    },
+    {
+      "address": "0xA02B48AC",
+      "bytes": "4e1109fa",
+      "instruction": "blx #0xa04f8dec"
+    },
+    {
+      "address": "0xA02B48B4",
+      "bytes": "084086e5",
+      "instruction": "str r4, [r6, #8]"
+    },
+    {
+      "address": "0xA02B48B8",
+      "bytes": "0810a0e1",
+      "instruction": "mov r1, r8"
+    },
+    {
+      "address": "0xA02B48BC",
+      "bytes": "0720a0e1",
+      "instruction": "mov r2, r7"
+    },
+    {
+      "address": "0xA02B48C0",
+      "bytes": "171109fa",
+      "instruction": "blx #0xa04f8d24"
+    },
+    {
+      "address": "0xA02C61EC",
+      "bytes": "580093e5",
+      "instruction": "ldr r0, [r3, #0x58]"
+    },
+    {
+      "address": "0xA02C6204",
+      "bytes": "727607eb",
+      "instruction": "bl #0xa04a3bd4"
+    },
+    {
+      "address": "0xA02C6214",
+      "bytes": "3c3080e5",
+      "instruction": "str r3, [r0, #0x3c]"
+    }
+  ],
+  "instruction_check_count": 43,
+  "data_checks": {
+    "enable_literal": "0xA0699160",
+    "initial_vcap_object": "0xA064F3C0",
+    "initial_object_command": "0x08000001",
+    "initial_dispatch_index_1": "0xA02B4858",
+    "vcap_field_label": "eis_update_addr"
+  },
+  "observed_chain": [
+    "A02C5FD8 converts shared publication-word address A0699160 and stores it in VCAP +0x58 on enable transition",
+    "selected slot = A06990E0 + index*0x40; slot +0x24 holds the converted warp descriptor pointer",
+    "A02C60C8 converts selected SLOT address; A02C60DC publishes it at A0699160",
+    "A02C4DBC passes the same global VCAP object to A02BE570 with dispatch index 1",
+    "A02BE570 converts VCAP +0x58, labels it eis_update_addr, and sends 0x80 bytes with command 0x08000001",
+    "A02BE4C8 chooses a command-buffer context and indirect dispatch entry",
+    "initial dispatch entry 1 points to A02B4858, which copies the command into a 0x80-byte queue slot"
+  ],
+  "interpretation": {
+    "publication_value_is": "translated state-slot pointer, NOT translated warp-descriptor pointer",
+    "slot_warp_pointer_is": "translated descriptor pointer at selected state slot +0x24",
+    "setup_update_field_is": "translated address of the publication word; this is one level of indirection above the state-slot pointer",
+    "indirect_cpu_command_path_found": true,
+    "dsp_load_or_latch_observed": false,
+    "consumer_acknowledgement_found": false,
+    "old_slot_reclamation_found": false
+  },
+  "negative_evidence_scope": {
+    "decompiled_file_count": 10985,
+    "global_vcap_context_file_count": 62,
+    "reviewed_sources": [
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c5fd8.c",
+        "sha256": "2286a7440df2adfa1f79b752f4c4f4c4d3c687230b16a129cbc3be1b04d2cd29"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c4dbc.c",
+        "sha256": "fa67d288131ff9d530050c31eb32489bd7857ab1b461db7f32538cb75abb0881"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02be570.c",
+        "sha256": "80e6c5f036cd26d486d0b2a97e2bafa302ec37ffcdf02d169b44520f9caeda5c"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02be4c8.c",
+        "sha256": "9e79f1555489060b1412eaf6e14632b558859849a0c3e9f2c6d17acb9445de5c"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02b4858.c",
+        "sha256": "b47b256915b6ba223f05f6b542768d17285223e1887d4dd3774ab2eaebe68fd2"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02b464c.c",
+        "sha256": "8ff45c535c90c673c317e524c8e393c1d562096cc571a187c87626be741e2727"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c61d4.c",
+        "sha256": "5d4f3b7f4fff8b628302d6f68a4a5bd5a89a47a1862209e5a0c036d4b8bef7de"
+      },
+      {
+        "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04a3b24.c",
+        "sha256": "117b00311a45deb02e522b55524343bbc70ac153df46038d34270da9e9d920aa"
+      }
+    ],
+    "not_repeated": "prior five-reference scan of A0699160",
+    "readback_helper": "A02C61D4 translates VCAP +0x58 back and reads +0x10 and +0x20..+0x3C, or writes +0x3C; no slot-pointer dereference, completion acknowledgement, or release proven",
+    "transport_boundary": "CPU command buffering; initial table entry is not proof the runtime table is unchanged, and buffer copy success is not DSP acceptance"
+  },
+  "unknowns": [
+    "DSP microcode read/poll/latch of eis_update_addr and order relative to encoded frames",
+    "runtime virtual/physical translation table and whether repeated conversion is idempotent for these addresses",
+    "cache attributes, barrier owner, descriptor lifetime, old-slot reclamation and worst-case consumer delay",
+    "whether enable precedes the VCAP setup send on every real execution path"
+  ],
+  "tooling": {
+    "new_REA_evidence": false,
+    "method": "Capstone plus existing Ghidra export",
+    "rea_mcp_available_in_session": false,
+    "read_only_doctor_observation": "CLI 6.8.0 reports missing Codex registration, unsupported Node 25.8.1 and no configured analysis engine; no configuration changed"
+  },
+  "device_contacted": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

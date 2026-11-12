@@ -1,0 +1,11 @@
+0xa0191288  stmdb sp!,{r3,r4,r5,lr}
+0xa019128c  cpy r3,r2
+0xa0191290  cpy r4,r2
+0xa0191294  cpy r2,r1
+0xa0191298  mov r1,#0x1
+0xa019129c  bl 0xa032e0d8
+0xa01912a0  cpy r5,r0
+0xa01912a4  cpy r0,r4
+0xa01912a8  bl 0xa032e288
+0xa01912ac  cpy r0,r5
+0xa01912b0  ldmia sp!,{r3,r4,r5,pc}

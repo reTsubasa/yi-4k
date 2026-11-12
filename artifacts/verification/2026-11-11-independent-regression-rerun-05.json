@@ -1,0 +1,74 @@
+{
+  "verification": "2026-11-11 Android 0.3.11 plus bounded camera regression rerun 05",
+  "device_access": "readonly_and_reversible_capture_only",
+  "firmware_execution": false,
+  "writes_to_device": false,
+  "items": [
+    {
+      "path": "artifacts/android/yi4k-control-0.3.11-debug.apk",
+      "bytes": 11535005,
+      "sha256": "d57372206e94b953f116fe53383f26479fc16178666dc47d3782eaa4a0a5295c"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-build-0.3.11.json",
+      "bytes": 1418,
+      "sha256": "7050af4d2a77f9393c58cc5338707eccf280a26228dcc5554765d8d9428040cc"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-apk-integrity-0.3.11.json",
+      "bytes": 582,
+      "sha256": "85d852c4792b7ab3f303a2014002b2ff74d42108dff78bb2717b0e4698006ff5"
+    },
+    {
+      "path": "docs/android-delivery-audit-0.3.11.md",
+      "bytes": 1385,
+      "sha256": "95c78b2836c0bbf6b55435c45f7f246f1fefa4e66610e80374405b984ecdf3bb"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-readonly-probe-04/session.json",
+      "bytes": 9452,
+      "sha256": "e04a90238a292f8a53248622ac0b0443f0beec3c86595fb573f3d3d7c7588666"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-record-probe-01/packet-audit.json",
+      "bytes": 3903,
+      "sha256": "55411ea61b91a98c476e073f416af226b646636717d9faa82930ab5a465cf6f2"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-photo-probe-02/session.json",
+      "bytes": 11060,
+      "sha256": "f8ba767ac2e37cca41fc34f88aa6741a3efce1bc5e69fe9fe1b499597abc1db0"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-photo-probe-02/session-media/YDXJ0162.JPG",
+      "bytes": 2490584,
+      "sha256": "d95b4360c33853313b2b718a1e1a4e5a31e63109ea0b7075b958df801ff801b2"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-proprietary-crossmember/audit.json",
+      "bytes": 118336,
+      "sha256": "b700b3957c916f7e6a829b39ba5a6557712fb9c2b55b6edfeb9fddbdb49e938e"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-producer-continuity/audit.json",
+      "bytes": 12874,
+      "sha256": "52c2f346be32adb4425c78ea07b5b6254c37a9d7550d1096ae07fe490c5c2059"
+    },
+    {
+      "path": "docs/project-roadmap.md",
+      "bytes": 58324,
+      "sha256": "b0dda63e8f32c8e60d35858a5bbf21b18b9bdba1e8bb38bff1fef48acc9187a7"
+    }
+  ],
+  "results": {
+    "android_0_3_11": "debug/release unit tests 110 each; lintDebug, assembleDebug, assembleRelease passed; compact landscape PrototypeRenderTest and CaptureUiTest passed; debug APK v2 verified",
+    "camera_readonly_probe_04": "before/after idle; 44 media entries; settings unchanged",
+    "camera_record_probe_01": "3-second ordinary recording produced decodable H.264/AAC MP4; selected settings unchanged",
+    "camera_photo_probe_02": "capture_mode child setter switched to capture, 4000x3000 JPEG exported and verified, rec_mode restored record",
+    "eis_crossmember": "4 DSP members compared; proprietary transfer semantics remain unresolved",
+    "prerecord_producer_continuity": "18 static checks passed; virtual FIFO cursor/base recycle relation identified; payload lease and epoch remain unproven",
+    "host_python": "37 tests passed, 0 failures, 0 errors",
+    "capture_trigger": "host + ARM semantic checks: 13068 passed"
+  },
+  "scope": "Offline/static evidence plus explicitly bounded readonly and ordinary reversible capture probes; no ORC/RTOS execution, firmware write, RAM write, partition write or boot-region write."
+}

@@ -1,0 +1,525 @@
+{
+  "image_path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "scope": "Offline instruction-prefix execution against synthetic RAM. No camera, RTOS task, codec, dispatcher, or FIFO execution. No instruction patches or helper stubs.",
+  "formula": "floor(low64(u32(frame_count) * u32(samples_per_frame) * u32(pts_clock)) / u32(denominator))",
+  "event_layout": {
+    "0x00": "encoder handle",
+    "0x08": "PTS u64",
+    "0x10": "EOS u32",
+    "0x14": "payload size u32",
+    "0x18": "payload pointer u32"
+  },
+  "sources": [
+    {
+      "entry": "0xa045da98",
+      "body_ranges_inclusive": [
+        "a045da98-a045dc9f"
+      ],
+      "body_sha256": "51185b6b60a16ef75e7cd9fabd12aa81ad643b24af5a56246393971ccfe0404d",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045da98.c",
+      "pseudocode_sha256": "5b3752f2243c376619470768adf8b6272e4ecbb885aa4a6d7a0446006e8ee84d"
+    },
+    {
+      "entry": "0xa0290b60",
+      "body_ranges_inclusive": [
+        "a0290b60-a0290f13"
+      ],
+      "body_sha256": "ba15c8b62f9336392045e2527aeea5fc27b8bcb58119dec89ca0ec7e52bbd506",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0290b60.c",
+      "pseudocode_sha256": "7c78dea589a53bccebc7d87f57ccadefe6338ca28b7e1c59c3b97ff65a999908"
+    },
+    {
+      "entry": "0xa029016c",
+      "body_ranges_inclusive": [
+        "a029016c-a029024b"
+      ],
+      "body_sha256": "2b1bb0c9e61b8bbc5f5ea19e0f1679261f6f5483f9b457806b1ad9789cf1e213",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029016c.c",
+      "pseudocode_sha256": "4af11b1c0293b7135b4dc040eb4b1f4cd5883cf3c7ef2131d4345536d4b182bd"
+    },
+    {
+      "entry": "0xa0295800",
+      "body_ranges_inclusive": [
+        "a0295800-a029589f"
+      ],
+      "body_sha256": "acc0ded9f25e1fb64357479ebbeec66bfcec076fb8e3df945f37ff46b5b5cebe",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0295800.c",
+      "pseudocode_sha256": "b94b5ace228a0a6e46484dffaea8dbbd7dd0404d8ab65637ac1f178f68256d6a"
+    },
+    {
+      "entry": "0xa045e7dc",
+      "body_ranges_inclusive": [
+        "a045e7dc-a045eccf"
+      ],
+      "body_sha256": "78e4c63514b199cc6f367277f994780f76361b019cd8703728670b9d72db75d7",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045e7dc.c",
+      "pseudocode_sha256": "1311b8de899bd874ab650c7bb3dae4626de2cab9ab45ff536c6faa4315f04d75"
+    },
+    {
+      "entry": "0xa045ecd0",
+      "body_ranges_inclusive": [
+        "a045ecd0-a045f1ff"
+      ],
+      "body_sha256": "b28df670cc3b8242f4ac28911d4b942901e4b7dca34a7dd0f0c437d08d59891c",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045ecd0.c",
+      "pseudocode_sha256": "b0f688490854dc19bd59045585e35d03ed591b66b8b376e3926a894d415de210"
+    },
+    {
+      "entry": "0xa02902b4",
+      "body_ranges_inclusive": [
+        "a02902b4-a0290803"
+      ],
+      "body_sha256": "bbb709f1c303847048249d45f0130a48f87fc7f84275ced872f7ef91a6251e95",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02902b4.c",
+      "pseudocode_sha256": "69edc82f2119cdd9b540c4789ebc3e2d067266c29712e700fba8fed435ac8b41"
+    },
+    {
+      "entry": "0xa0506f38",
+      "body_ranges_inclusive": [
+        "a0506f38-a0506f65"
+      ],
+      "body_sha256": "e38a4082822a571bfe243bc88a4060adb2d3b75a5ce160348241eb51734a29b5",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0506f38.c",
+      "pseudocode_sha256": "d15998120d908fb10c1be60ec3da29f0a388984e66ef3ae0a6ca520cee73bfe5"
+    }
+  ],
+  "instruction_windows": [
+    {
+      "start": "0xa029018c",
+      "stop_exclusive": "0xa02901dc",
+      "sha256": "4d21d72682d5a841b9093dbef0632e4c5c640f8fa0ace46739d58057a512b630",
+      "instructions": [
+        {
+          "address": "0xa029018c",
+          "bytes": "101094e5",
+          "mnemonic": "ldr",
+          "operands": "r1, [r4, #0x10]"
+        },
+        {
+          "address": "0xa0290190",
+          "bytes": "246094e5",
+          "mnemonic": "ldr",
+          "operands": "r6, [r4, #0x24]"
+        },
+        {
+          "address": "0xa0290194",
+          "bytes": "205094e5",
+          "mnemonic": "ldr",
+          "operands": "r5, [r4, #0x20]"
+        },
+        {
+          "address": "0xa0290198",
+          "bytes": "08008de5",
+          "mnemonic": "str",
+          "operands": "r0, [sp, #8]"
+        },
+        {
+          "address": "0xa029019c",
+          "bytes": "2c2094e5",
+          "mnemonic": "ldr",
+          "operands": "r2, [r4, #0x2c]"
+        },
+        {
+          "address": "0xa02901a0",
+          "bytes": "966187e0",
+          "mnemonic": "umull",
+          "operands": "r6, r7, r6, r1"
+        },
+        {
+          "address": "0xa02901a4",
+          "bytes": "960581e0",
+          "mnemonic": "umull",
+          "operands": "r0, r1, r6, r5"
+        },
+        {
+          "address": "0xa02901a8",
+          "bytes": "951721e0",
+          "mnemonic": "mla",
+          "operands": "r1, r5, r7, r1"
+        },
+        {
+          "address": "0xa02901ac",
+          "bytes": "015085e2",
+          "mnemonic": "add",
+          "operands": "r5, r5, #1"
+        },
+        {
+          "address": "0xa02901b0",
+          "bytes": "60db09fa",
+          "mnemonic": "blx",
+          "operands": "#0xa0506f38"
+        },
+        {
+          "address": "0xa02901b4",
+          "bytes": "3c3094e5",
+          "mnemonic": "ldr",
+          "operands": "r3, [r4, #0x3c]"
+        },
+        {
+          "address": "0xa02901b8",
+          "bytes": "08208de2",
+          "mnemonic": "add",
+          "operands": "r2, sp, #8"
+        },
+        {
+          "address": "0xa02901bc",
+          "bytes": "1cc094e5",
+          "mnemonic": "ldr",
+          "operands": "ip, [r4, #0x1c]"
+        },
+        {
+          "address": "0xa02901c0",
+          "bytes": "f001cde1",
+          "mnemonic": "strd",
+          "operands": "r0, r1, [sp, #0x10]"
+        },
+        {
+          "address": "0xa02901c4",
+          "bytes": "0800a0e1",
+          "mnemonic": "mov",
+          "operands": "r0, r8"
+        },
+        {
+          "address": "0xa02901c8",
+          "bytes": "205084e5",
+          "mnemonic": "str",
+          "operands": "r5, [r4, #0x20]"
+        },
+        {
+          "address": "0xa02901cc",
+          "bytes": "0010a0e3",
+          "mnemonic": "mov",
+          "operands": "r1, #0"
+        },
+        {
+          "address": "0xa02901d0",
+          "bytes": "20308de5",
+          "mnemonic": "str",
+          "operands": "r3, [sp, #0x20]"
+        },
+        {
+          "address": "0xa02901d4",
+          "bytes": "1cc08de5",
+          "mnemonic": "str",
+          "operands": "ip, [sp, #0x1c]"
+        },
+        {
+          "address": "0xa02901d8",
+          "bytes": "881500eb",
+          "mnemonic": "bl",
+          "operands": "#0xa0295800"
+        }
+      ]
+    },
+    {
+      "start": "0xa045ea38",
+      "stop_exclusive": "0xa045ea50",
+      "sha256": "615e6f63e9875e42418f2a0c57e8db5e0be951c9209bce509965bceb4472222a",
+      "instructions": [
+        {
+          "address": "0xa045ea38",
+          "bytes": "d800c4e1",
+          "mnemonic": "ldrd",
+          "operands": "r0, r1, [r4, #8]"
+        },
+        {
+          "address": "0xa045ea3c",
+          "bytes": "14a094e5",
+          "mnemonic": "ldr",
+          "operands": "sl, [r4, #0x14]"
+        },
+        {
+          "address": "0xa045ea40",
+          "bytes": "18e094e5",
+          "mnemonic": "ldr",
+          "operands": "lr, [r4, #0x18]"
+        },
+        {
+          "address": "0xa045ea44",
+          "bytes": "f802cde1",
+          "mnemonic": "strd",
+          "operands": "r0, r1, [sp, #0x28]"
+        },
+        {
+          "address": "0xa045ea48",
+          "bytes": "38a08de5",
+          "mnemonic": "str",
+          "operands": "sl, [sp, #0x38]"
+        },
+        {
+          "address": "0xa045ea4c",
+          "bytes": "34e08de5",
+          "mnemonic": "str",
+          "operands": "lr, [sp, #0x34]"
+        }
+      ]
+    },
+    {
+      "start": "0xa045dafc",
+      "stop_exclusive": "0xa045db24",
+      "sha256": "9bb11f8ab196bac1b279a7a1b3e96061c3dae975c604ebdb4849051290f50e27",
+      "instructions": [
+        {
+          "address": "0xa045dafc",
+          "bytes": "902f05e3",
+          "mnemonic": "movw",
+          "operands": "r2, #0x5f90"
+        },
+        {
+          "address": "0xa045db00",
+          "bytes": "b6c6d4e1",
+          "mnemonic": "ldrh",
+          "operands": "ip, [r4, #0x66]"
+        },
+        {
+          "address": "0xa045db04",
+          "bytes": "90360de3",
+          "mnemonic": "movw",
+          "operands": "r3, #0xd690"
+        },
+        {
+          "address": "0xa045db08",
+          "bytes": "1010c3e7",
+          "mnemonic": "bfi",
+          "operands": "r1, r0, #0, #4"
+        },
+        {
+          "address": "0xa045db0c",
+          "bytes": "1028dfe7",
+          "mnemonic": "bfi",
+          "operands": "r2, r0, #0x10, #0x10"
+        },
+        {
+          "address": "0xa045db10",
+          "bytes": "45304ae3",
+          "mnemonic": "movt",
+          "operands": "r3, #0xa045"
+        },
+        {
+          "address": "0xa045db14",
+          "bytes": "700084e2",
+          "mnemonic": "add",
+          "operands": "r0, r4, #0x70"
+        },
+        {
+          "address": "0xa045db18",
+          "bytes": "2410cde5",
+          "mnemonic": "strb",
+          "operands": "r1, [sp, #0x24]"
+        },
+        {
+          "address": "0xa045db1c",
+          "bytes": "28308de5",
+          "mnemonic": "str",
+          "operands": "r3, [sp, #0x28]"
+        },
+        {
+          "address": "0xa045db20",
+          "bytes": "1c208de5",
+          "mnemonic": "str",
+          "operands": "r2, [sp, #0x1c]"
+        }
+      ]
+    }
+  ],
+  "test_count": 15,
+  "results": [
+    {
+      "name": "caller_setup_prefix",
+      "entry": "0xa045daf0",
+      "stop_before": "0xa045db5c",
+      "pts_clock": 90000,
+      "denominator": 48000,
+      "write_pointer_callback": "0xa045d690",
+      "passed": true
+    },
+    {
+      "name": "setup_reset_prefix",
+      "entry": "0xa0290b60",
+      "stop_before": "0xa0290bf8",
+      "frame_count_before": 123456,
+      "frame_count_after": 0,
+      "payload_size_after": 0,
+      "pts_clock": 90000,
+      "denominator": 48000,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 0,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 0,
+      "next_count": 1,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 1,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 1920,
+      "next_count": 2,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 2,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 3840,
+      "next_count": 3,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 3,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 5760,
+      "next_count": 4,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 1000000,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 1920000000,
+      "next_count": 1000001,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 4294967294,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 8246337204480,
+      "next_count": 4294967295,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 4294967295,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 8246337206400,
+      "next_count": 0,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 1,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 44100,
+      "eos": 0,
+      "pts": 2089,
+      "next_count": 2,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 2,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 44100,
+      "eos": 0,
+      "pts": 4179,
+      "next_count": 3,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 3,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 44100,
+      "eos": 0,
+      "pts": 6269,
+      "next_count": 4,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 4294967294,
+      "samples_per_frame": 1024,
+      "clock": 90000,
+      "denominator": 44100,
+      "eos": 0,
+      "pts": 8975605120522,
+      "next_count": 4294967295,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 23,
+      "samples_per_frame": 2048,
+      "clock": 90000,
+      "denominator": 48000,
+      "eos": 1,
+      "pts": 88320,
+      "next_count": 24,
+      "passed": true
+    },
+    {
+      "name": "audio_pts_event_prefix",
+      "entry": "0xa029016c",
+      "stop_before": "0xa02901d8",
+      "count": 4294967295,
+      "samples_per_frame": 4294967295,
+      "clock": 4294967295,
+      "denominator": 48000,
+      "eos": 0,
+      "pts": 268435,
+      "next_count": 0,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Denominator name/sample-rate interpretation is inferred; test inputs do not prove camera live configuration.",
+    "Caller uses PTS clock 90000 and setup resets frame counter; this is not a proven shared capture epoch with video.",
+    "Ordinary audio mux scheduling can use sample counts instead of raw descriptor PTS.",
+    "Count wraps at 2^32; extreme overflow test is synthetic, not a supported camera configuration.",
+    "Prefix stops deliberately omit RTOS dispatch, FIFO writes, and complete encoder setup."
+  ]
+}

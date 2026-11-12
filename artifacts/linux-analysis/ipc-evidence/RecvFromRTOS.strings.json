@@ -1,0 +1,302 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x411",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0x41c",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x438",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x447",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x45b",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x475",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0x482",
+    "text": "libambaeventnotifier.so"
+  },
+  {
+    "offset": "0x49a",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x4a0",
+    "text": "AmbaEventNotifier_Reg_cbEvent"
+  },
+  {
+    "offset": "0x4be",
+    "text": "AmbaEventNotifier_ExecEventProcess"
+  },
+  {
+    "offset": "0x4e1",
+    "text": "AmbaEventNotify_Init"
+  },
+  {
+    "offset": "0x4f6",
+    "text": "AmbaEventNotify_Release"
+  },
+  {
+    "offset": "0x50e",
+    "text": "_init"
+  },
+  {
+    "offset": "0x514",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x51e",
+    "text": "signal"
+  },
+  {
+    "offset": "0x52a",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x531",
+    "text": "putchar"
+  },
+  {
+    "offset": "0x539",
+    "text": "abort"
+  },
+  {
+    "offset": "0x53f",
+    "text": "printf"
+  },
+  {
+    "offset": "0x546",
+    "text": "getopt_long"
+  },
+  {
+    "offset": "0x552",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x564",
+    "text": "__cxa_atexit"
+  },
+  {
+    "offset": "0x571",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x578",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x584",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x592",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x59e",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x5ab",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0xb51",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0xb94",
+    "text": "cbEvent"
+  },
+  {
+    "offset": "0xb9c",
+    "text": "recv_from_rtos.c"
+  },
+  {
+    "offset": "0xbad",
+    "text": "%s: Got signal %d, program exits!"
+  },
+  {
+    "offset": "0xbd0",
+    "text": "Got RTOS Card Inserted"
+  },
+  {
+    "offset": "0xbe7",
+    "text": "Invalid event param, length is %d"
+  },
+  {
+    "offset": "0xc0a",
+    "text": "%s is inserted"
+  },
+  {
+    "offset": "0xc1a",
+    "text": "Got RTOS Card Removed"
+  },
+  {
+    "offset": "0xc30",
+    "text": "%s is removed"
+  },
+  {
+    "offset": "0xc3f",
+    "text": "Got RTOS Card Formatted"
+  },
+  {
+    "offset": "0xc57",
+    "text": "%s is formatted"
+  },
+  {
+    "offset": "0xc68",
+    "text": "Got RTOS File Created"
+  },
+  {
+    "offset": "0xc7e",
+    "text": "%s is created"
+  },
+  {
+    "offset": "0xc8d",
+    "text": "Got RTOS File Deleted"
+  },
+  {
+    "offset": "0xca3",
+    "text": "%s is deleted"
+  },
+  {
+    "offset": "0xcb2",
+    "text": "%s: unknown event 0x%08x"
+  },
+  {
+    "offset": "0xccc",
+    "text": "data length: %d"
+  },
+  {
+    "offset": "0xcdd",
+    "text": "%02x "
+  },
+  {
+    "offset": "0xce3",
+    "text": "usage: %s [-f]"
+  },
+  {
+    "offset": "0xcf3",
+    "text": "Paramters:"
+  },
+  {
+    "offset": "0xcff",
+    "text": " \"-f\": same as \"en_fg\", to run at fore-ground."
+  },
+  {
+    "offset": "0xd32",
+    "text": "@@ Fail to do AmbaEventNotify_Init()"
+  },
+  {
+    "offset": "0xd57",
+    "text": "en_fg"
+  },
+  {
+    "offset": "0xef5",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0xf28",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0xf32",
+    "text": ".interp"
+  },
+  {
+    "offset": "0xf3a",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0xf48",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0xf5b",
+    "text": ".hash"
+  },
+  {
+    "offset": "0xf61",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0xf69",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0xf71",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0xf7e",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0xf8d",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0xf96",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0xf9f",
+    "text": ".init"
+  },
+  {
+    "offset": "0xfa5",
+    "text": ".text"
+  },
+  {
+    "offset": "0xfab",
+    "text": ".fini"
+  },
+  {
+    "offset": "0xfb1",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0xfb9",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0xfc4",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0xfce",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0xfda",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0xfeb",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0xff9",
+    "text": ".data"
+  },
+  {
+    "offset": "0x1004",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,195 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "device_contacted": false,
+  "scan": {
+    "bytes": 7491584,
+    "alignment": 4,
+    "encoding": "A32 only",
+    "selected_cp15_encodings": [
+      "p15,0,Rt,c7,c1,0",
+      "p15,0,Rt,c7,c5,0",
+      "p15,0,Rt,c7,c5,1",
+      "p15,0,Rt,c7,c5,4"
+    ]
+  },
+  "instruction_invalidation_candidates": [
+    {
+      "site": "0xa03d0738",
+      "raw": "110f07ee",
+      "instruction": "mcr p15, #0, r0, c7, c1, #0",
+      "operation": "ICIALLUIS",
+      "context": "boss_resume"
+    },
+    {
+      "site": "0xa03d0904",
+      "raw": "114f07ee",
+      "instruction": "mcr p15, #0, r4, c7, c1, #0",
+      "operation": "ICIALLUIS",
+      "context": "boss_restore"
+    },
+    {
+      "site": "0xa03d20c8",
+      "raw": "157f07ee",
+      "instruction": "mcr p15, #0, r7, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "legacy_context_restore"
+    },
+    {
+      "site": "0xa03d2108",
+      "raw": "157f07ee",
+      "instruction": "mcr p15, #0, r7, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "legacy_context_restore"
+    },
+    {
+      "site": "0xa03d2148",
+      "raw": "157f07ee",
+      "instruction": "mcr p15, #0, r7, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "legacy_context_restore"
+    },
+    {
+      "site": "0xa04a2880",
+      "raw": "151f07ee",
+      "instruction": "mcr p15, #0, r1, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "low_power_lockdown_candidate"
+    },
+    {
+      "site": "0xa04a42d4",
+      "raw": "157f07ee",
+      "instruction": "mcr p15, #0, r7, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "mmu_primary"
+    },
+    {
+      "site": "0xa04a43cc",
+      "raw": "154f07ee",
+      "instruction": "mcr p15, #0, r4, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "mmu_primary_alternate"
+    },
+    {
+      "site": "0xa04a442c",
+      "raw": "155f07ee",
+      "instruction": "mcr p15, #0, r5, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "mmu_secondary"
+    },
+    {
+      "site": "0xa04a4490",
+      "raw": "156f07ee",
+      "instruction": "mcr p15, #0, r6, c7, c5, #0",
+      "operation": "ICIALLU",
+      "context": "mmu_secondary_alternate"
+    }
+  ],
+  "legacy_synchronization": [
+    {
+      "site": "0xa01001ac",
+      "raw": "950f07ee",
+      "instruction": "mcr p15, #0, r0, c7, c5, #4",
+      "operation": "legacy prefetch flush / instruction synchronization"
+    }
+  ],
+  "function_evidence": {
+    "boss_restore_context": {
+      "entry": "0xa03d0548",
+      "old_export_body_identical": true,
+      "sha256": "17befc943214345f8a7c7ba47c615e54917240e307a7f8f2e55176e2883be784",
+      "ranges": [
+        [
+          "0xa03d0548",
+          "0xa03d06c8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_restore_context.asm"
+    },
+    "boss_resume": {
+      "entry": "0xa03d06c8",
+      "old_export_body_identical": true,
+      "sha256": "bd6925fd13c7e088b05b7ee851dcbe4d3ae47bb2998e119ce80bc92d5fa70306",
+      "ranges": [
+        [
+          "0xa03d06c8",
+          "0xa03d0750"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_resume.asm"
+    },
+    "boss_restore": {
+      "entry": "0xa03d0780",
+      "old_export_body_identical": true,
+      "sha256": "d18050f9346223da81e66c0f6d6fccccb4f458ca17301ac67fd0c94d9cae5835",
+      "ranges": [
+        [
+          "0xa03d0780",
+          "0xa03d0948"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_restore.asm"
+    },
+    "low_power_icache_lockdown_candidate": {
+      "entry": "0xa04a283c",
+      "old_export_body_identical": true,
+      "sha256": "b5bd52810166320f50d4908e3a73f19b7b15017c2e37682d70bee5378e645841",
+      "ranges": [
+        [
+          "0xa04a283c",
+          "0xa04a28d0"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/low_power_icache_lockdown_candidate.asm"
+    },
+    "mmu_initialization_primary": {
+      "entry": "0xa04a41e8",
+      "old_export_body_identical": true,
+      "sha256": "69626b85758dee43cac34909de1d6eedab916e92c54e0e16f0bf7942ce5527ec",
+      "ranges": [
+        [
+          "0xa04a41e8",
+          "0xa04a43f8"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/mmu_initialization_primary.asm"
+    },
+    "mmu_initialization_secondary": {
+      "entry": "0xa04a43fc",
+      "old_export_body_identical": true,
+      "sha256": "13ff542d836e796920a416abf4001d3d5d2dff86df0c7ad63136159e84d1a1bb",
+      "ranges": [
+        [
+          "0xa04a43fc",
+          "0xa04a44b4"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/mmu_initialization_secondary.asm"
+    },
+    "boss_legacy_restore_excerpt": {
+      "manually_delimited": true,
+      "sha256": "6da4d81ddc69fe78eb142e5b24bce681c5b05d03c59767fab9b0df42c856275c",
+      "ranges": [
+        [
+          "0xa03d2040",
+          "0xa03d2150"
+        ]
+      ],
+      "range_end": "exclusive",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/execution-context-evidence/boss_legacy_restore_excerpt.asm"
+    }
+  },
+  "conclusion": "No standalone returning cache-publication API identified within this scan scope.",
+  "limitations": [
+    "An opcode match does not prove reachable code, CPU execution or correct hardware configuration.",
+    "Thumb encodings, dynamically generated code, uncaptured regions and per-core remote work are not covered.",
+    "Architectural operation names do not establish actual SMP broadcast domain or completion.",
+    "BOSS restore changes task contexts and translation state; MMU functions rebuild/activate page tables.",
+    "No existing function here is approved as a generic clear_cache implementation."
+  ]
+}

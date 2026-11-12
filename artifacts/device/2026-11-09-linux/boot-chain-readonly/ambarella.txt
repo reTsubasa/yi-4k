@@ -1,0 +1,73 @@
+~ # ls -la /proc/ambarella 2>/dev/null; for f in /proc/ambarella/*; do echo ===$
+f; cat "$f" 2>/dev/null; done
+total 0
+dr-xr-xr-x    2 root     root             0 Jan  1 07:19 [1;34m.[0m
+dr-xr-xr-x   65 root     root             0 Jan  1  1970 [1;34m..[0m
+-r--r--r--    1 root     root             0 Jan  1 07:19 [0;0mboard_info[0m
+-r--r--r--    1 root     root             0 Jan  1 07:19 [0;0mclock[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0mmmc_fixed_cd[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0mmutex[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0mrpc_profiler[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0msdio_info[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0mspinlock[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0muart1_rcvr[0m
+-rw-r--r--    1 root     root             0 Jan  1 07:19 [0;0musbphy0[0m
+===/proc/ambarella/board_info
+wifi_mac: 
+wifi1_mac: 
+===/proc/ambarella/clock
+
+Clock Information:
+        gclk_pwm:       3000000 Hz
+        gclk_ssi2:      5250000 Hz
+        gclk_ssi:       21000000 Hz
+        gclk_adc:       6000000 Hz
+        gclk_ir:        3000000 Hz
+        gclk_sd:        120000000 Hz
+        gclk_sdio:      24000000 Hz
+        pll_out_sd:     480000000 Hz
+        gclk_audio:     12288000 Hz
+        gclk_uart:      24000000 Hz
+        gclk_idsp:      168000000 Hz
+        gclk_axi:       264000000 Hz
+        gclk_cortex:    792000000 Hz
+        gclk_apb:       42000000 Hz
+        gclk_ahb:       84000000 Hz
+        gclk_core:      168000000 Hz
+        pll_out_ddr:    1200000000 Hz
+        pll_out_idsp:   168000000 Hz
+        pll_out_core:   336000000 Hz
+===/proc/ambarella/mmc_fixed_cd
+mmc1 fixed_cd=1
+===/proc/ambarella/mutex
+
+usage: echo id [op] > /proc/ambarella/mutex
+    "echo n +" to lock mutex n
+    "echo n -" to unlock mutex n
+
+===/proc/ambarella/rpc_profiler
+1873138176===/proc/ambarella/sdio_info
+SDIO high speed mode:            no
+SDIO output data delay:          0
+SDIO output clock delay:         0
+SDIO input data delay:           0
+SDIO input clock delay:          0
+SDIO data driving strength:      12 mA(1)
+SDIO clock driving strength:     6 mA(2)
+SDIO command driving strength:   12 mA(1)
+SDIO CD and WP driving strength: 12 mA(1)
+===/proc/ambarella/spinlock
+
+usage: echo id [t] > /proc/ambarella/spinlock
+    id is the spinlock id
+    t is the duration(ms) which spinlock is locked. Default is 0
+
+===/proc/ambarella/uart1_rcvr
+UART1, Rx Trigger: 1, FIFO 1/4 full.
+===/proc/ambarella/usbphy0
+Possible parameter: host device
+Current status:
+        port is DEVICE: phy is DEVICE
+
+~ # echo __YI_CAPTURE_d6a542fff78d4e2c939049c51b0d5984__
+__YI_CAPTURE_d6a542fff78d4e2c939049c51b0d5984__

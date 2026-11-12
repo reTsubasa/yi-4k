@@ -1,0 +1,75 @@
+{
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "rtos_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "analysis": "static-only",
+  "write_handlers": {
+    "writeb": "0xA02A2D68",
+    "writew": "0xA02A2DB8",
+    "writel": "0xA02A2E08"
+  },
+  "read_handlers": {
+    "readb": "0xA02A2E58",
+    "readw": "0xA02A2F2C",
+    "readl": "0xA02A3000"
+  },
+  "parse_helpers": {
+    "address_value": "0xA02A2CA4",
+    "address_count": "0xA02A2CFC",
+    "strtoul_like": "0xA04FB328"
+  },
+  "write_properties": [
+    "no_rtos_range_check",
+    "no_alignment_check",
+    "no_cache_maintenance",
+    "no_device_whitelist"
+  ],
+  "read_properties": [
+    "count_unbounded",
+    "output_callback_per_element"
+  ],
+  "dma_candidate": {
+    "handler": "0xA04A8384",
+    "transfer_helper": "0xA04A8298",
+    "signature_candidate": "(channel, src, dst, size)",
+    "source_dcache_clean": "0xA04A22CC",
+    "destination_dcache_invalidate": "0xA04A2038",
+    "data_sync_barrier_observed": true,
+    "icache_sync_observed": false,
+    "arbitrary_call_observed": false,
+    "device_experiment_performed": false
+  },
+  "internal_icache_candidate": {
+    "address": "0xA04A283C",
+    "classification": "instruction-cache lockdown/preload candidate; not a general code publication API",
+    "signature_candidate": "(address, size)",
+    "max_single_range_bytes": 4064,
+    "entry_condition": "CP15 c9,c0,1 low four bits are zero",
+    "disables_irq_fiq": true,
+    "invalidates_entire_icache": true,
+    "cp15_c9_c0_1_writes": ["0xFFFFFFFE", "0xFFFFFFF1"],
+    "loop_operation": "MCR p15,0,r0,c7,c13,1",
+    "isb_observed": false,
+    "cpsr_restored": true,
+    "per_mva_granularity": 32,
+    "callers": ["0xA04A5128", "0xA04A5410"],
+    "device_body_match": true,
+    "shell_export_found": false,
+    "runtime_abi_validated": false
+  },
+  "t_registration": {
+    "register": "0xA029E098",
+    "dispatch": "0xA029E1A4",
+    "pool_init": "0xA029E06C",
+    "mutex": "0xA1446708",
+    "pool": "0xA144A73C",
+    "sentinel": "0xA06F3070",
+    "node_bytes": 12,
+    "max_name_bytes_excluding_nul": 19,
+    "unregister_found": false,
+    "allocation_failure_unlock": false,
+    "handler_dispatch": "bx"
+  },
+  "direct_register_call_sites": 22,
+  "custom_payload_execution_proven": false,
+  "device_write_performed": false
+}

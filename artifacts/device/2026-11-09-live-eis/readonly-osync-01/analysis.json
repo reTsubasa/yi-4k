@@ -1,0 +1,288 @@
+{
+  "samples": 40,
+  "first_t": 0.0015079975128173828,
+  "last_t": 3.9005789756774902,
+  "samples_sha256": "1ac1fcf318bf83f8bfefce3011fcaa3a0da396eeeb54f32c05e2f7795d8fa90a",
+  "median_interval": 0.10000014305114746,
+  "max_interval": 0.10058283805847168,
+  "max_window_copy_seconds": 0.0006000995635986328,
+  "fields": {
+    "rsc_enable": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "extra_gyro_phase": {
+      "first": -2,
+      "last": -2,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ucode_gyro_delay": {
+      "first": 10,
+      "last": 10,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "rsc_scale": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "sample_gate": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "sample_tick": {
+      "first": 2557120,
+      "last": 2557120,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ring_length": {
+      "first": 132,
+      "last": 132,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ring_next_write": {
+      "first": 110,
+      "last": 110,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ring_current_index": {
+      "first": 110,
+      "last": 110,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "processed_sample_tick": {
+      "first": 2557119,
+      "last": 2557119,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "frame_rate_integer": {
+      "first": 30,
+      "last": 30,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "row_time_seconds": {
+      "first": 7.333333542192122e-06,
+      "last": 7.333333542192122e-06,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "frame_length_lines": {
+      "first": 4550,
+      "last": 4550,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eof_time": {
+      "first": 2557113,
+      "last": 2557113,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "sof_time": {
+      "first": 2557105,
+      "last": 2557105,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "previous_eof_time": {
+      "first": 2557113,
+      "last": 2557113,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "previous_sof_time": {
+      "first": 2557105,
+      "last": 2557105,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "task_eof_time": {
+      "first": 2892245,
+      "last": 2895982,
+      "distinct": 20,
+      "changes": 19,
+      "first_change": {
+        "t": 0.10020303726196289,
+        "value": 2892278
+      },
+      "last_change": {
+        "t": 3.800173044204712,
+        "value": 2895982
+      }
+    },
+    "task_sof_time": {
+      "first": 2892237,
+      "last": 2896074,
+      "distinct": 25,
+      "changes": 24,
+      "first_change": {
+        "t": 0.20078587532043457,
+        "value": 2892404
+      },
+      "last_change": {
+        "t": 3.9001688957214355,
+        "value": 2896074
+      }
+    },
+    "task_consumed_sof_time": {
+      "first": 2557105,
+      "last": 2557105,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "task_state": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_magic": {
+      "first": 1414025796,
+      "last": 1414025796,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_run_count": {
+      "first": 564150,
+      "last": 564150,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_saved_sp": {
+      "first": 2695671088,
+      "last": 2695671088,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_wait_state": {
+      "first": 7,
+      "last": 7,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_wait_ticks": {
+      "first": 1000,
+      "last": 1000,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_wait_object": {
+      "first": 2711850724,
+      "last": 2711850724,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_wait_mask": {
+      "first": 2,
+      "last": 2,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "driver_x": {
+      "first": 32753,
+      "last": 32753,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "driver_y": {
+      "first": 32780,
+      "last": 32780,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "driver_z": {
+      "first": 32847,
+      "last": 32847,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    }
+  },
+  "window_distinct_counts": {
+    "0xa0757a40": 1,
+    "0xa1702c30": 1,
+    "0xa1702d00": 1,
+    "0xa170ab10": 1,
+    "0xa1704050": 1,
+    "0xa17045a0": 1,
+    "0xa170ba80": 32
+  },
+  "limitations": [
+    "Changing bytes do not prove cross-core cache coherence or simultaneous fields.",
+    "Repeated ring snapshots are not a reconstructed lossless IMU stream.",
+    "Sample copy duration excludes JSON formatting and transport overhead."
+  ],
+  "record_start_ack_observed": false,
+  "record_stop_ack_observed": false,
+  "api_events_relative_to_ready": []
+}

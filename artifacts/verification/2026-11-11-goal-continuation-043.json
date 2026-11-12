@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-11T10:05:36.850718+00:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.4.3 archived;193 host tests and6 AVD workflows passed; no physical phone/camera acceptance",
+    "eis": "Owned retirement helper10 host/ARM cases,2 instruction interleavings,20 host-thread runs independently passed; device services unbound",
+    "prerecord": "64.064s archived native segment reconstruction:1920 video+3003 AAC exact payload and timing;1920 frames and12300288-byte PCM independently match;AAC2815 omission rejects release",
+    "prerecord_aac_owner": "Bounded reusable C owner;32 host/ARM+517 rational independent rerun;real3003AAC divided2815/188 after upstream overwrites;4096 rational archive reviewer checks passed"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-11-build-0.4.3.json",
+      "sha256": "b3fedb532c6907ab0a05993c5030e2d887105179d58b9ff21e36706380ecd5f2",
+      "bytes": 17369,
+      "status": null,
+      "scope": null,
+      "device_access": null
+    },
+    {
+      "path": "artifacts/android/0.4.3-device-reports/ui-flow-run01/acceptance.json",
+      "sha256": "a53f306ce46c191ea5a6fff63dd10ce6c797f3324c0595e1362188e4001e09e7",
+      "bytes": 4825,
+      "status": null,
+      "scope": "headless Android AVD only; no physical phone or camera access",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-camera-readiness-after-042.json",
+      "sha256": "9da9b81da6a53877d0deaafe2cdd5788bc254d94569873542bac2c174c0ef449",
+      "bytes": 600,
+      "status": null,
+      "scope": "TCP connect only, no camera commands, payload bytes, settings or files written",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-native-rpc-teardown-independent-run02/audit.json",
+      "sha256": "97c6f5e35dcaf408e1e4afad10b2f4af0a880e4d0e89d7694bdc5af841fea636",
+      "bytes": 22360,
+      "status": "pass",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-owned-retirement-parent-review/validation.json",
+      "sha256": "7c5c6ad7e5713f5958205b0a3ec835eddcc5c43262e0de1a4b5e4b9a15fab1ef",
+      "bytes": 9951,
+      "status": "pass",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-custody-recovery-independent-review.json",
+      "sha256": "0aeead7f511396b5ceb5a6f043a2825394693a4891cd5b5db9fa01556f4dc8de",
+      "bytes": 1388,
+      "status": "pass",
+      "scope": "Independent re-read of 42 packet payload/times, frame/PCM decode, and negative publication controls",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-minute-aac-schedule-run01/timing-review.json",
+      "sha256": "a82b4449d9e97fcac8d0b2f2daadb6f53748c05557f4ad5fe370b1bba5a6322a",
+      "bytes": 5644,
+      "status": "expected_native_consumer_rejection_preserved",
+      "scope": null,
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-minute-session-recovery-run01/independent-review.json",
+      "sha256": "895fa1755158e57d86677be4f15952dd7e6d637a577a2299722f24d14c5af11b",
+      "bytes": 1898,
+      "status": "pass_independent_minute_recovery_review",
+      "scope": "Actual native->output packet provenance, 4923 exact source packets/times, complete frame/PCM decode, and AAC2815 omission refuses release",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-minute-session-recovery-drop-run01/independent-review.json",
+      "sha256": "599eb4742fd087835f83dbf4af4b36090a5a9bbe091f280e1e0a9c227f07c28a",
+      "bytes": 1863,
+      "status": "pass_independent_minute_recovery_review",
+      "scope": "Actual native->output packet provenance, 4923 exact source packets/times, complete frame/PCM decode, and AAC2815 omission refuses release",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-aac-boundary-owner-parent-review/validation.json",
+      "sha256": "89bd18bf00e473ff131d9bb61eb0088019e3d95b4fc27619493cd6ad36f68e49",
+      "bytes": 103066,
+      "status": "pass",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-aac-boundary-archive-review-run02/review.json",
+      "sha256": "e43f99bd8c08aa38881297c720a05b84eb23a41c354a597c2f8e110372b2e935",
+      "bytes": 4303,
+      "status": "pass_independent_compiled_archive_replay",
+      "device_access": false
+    }
+  ],
+  "device_scope": "No new camera API/setter/capture/RAM/firmware/partition operation; readiness TCP connects timed out; no physical adb device",
+  "remaining": [
+    "Physical Android phone/UI/hotspot/real disconnect acceptance",
+    "RTOS first entry,code/cache publication and independently proven recovery",
+    "Device retirement service bindings and permanent-gateway ownership",
+    "Live minute SD ring,callback stability/common capture epoch/storage failures",
+    "Actual camera voice commands and physical shutter binding"
+  ]
+}

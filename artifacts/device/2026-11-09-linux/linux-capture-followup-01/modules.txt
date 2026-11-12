@@ -1,0 +1,17 @@
+~ # cat /proc/modules; ls -l /sys/class/rpmsg /sys/bus/rpmsg/devices /sys/class/
+remoteproc
+bcmdhd 850260 0 - Live 0x3f12e000 (O)
+cfg80211 196265 1 bcmdhd, Live 0x3f008000
+ambafs 15150 3 - Live 0x3f000000
+ls: /sys/class/rpmsg: No such file or directory
+ls: /sys/class/remoteproc: No such file or directory
+/sys/bus/rpmsg/devices:
+total 0
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg0[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg0[0m
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg1[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg1[0m
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg2[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg2[0m
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg3[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg3[0m
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg4[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg4[0m
+lrwxrwxrwx    1 root     root             0 Jan  1 04:25 [1;36mrpmsg5[0m -> [1;34m../../../devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg5[0m
+~ # echo __YI_CAPTURE_256c8f09960243af9b6344ae018f8eb0__
+__YI_CAPTURE_256c8f09960243af9b6344ae018f8eb0__

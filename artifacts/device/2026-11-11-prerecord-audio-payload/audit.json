@@ -1,0 +1,681 @@
+{
+  "audit": "prerecord_audio_payload",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "evidence_type": "Original ARM with constructed RAM and explicit OS models; PCM is original CPU codec, AAC library is modeled only in labeled case",
+  "original_arm_cases": 20,
+  "cases": [
+    {
+      "name": "registration_add_observer",
+      "status": 0,
+      "callbacks_before": [
+        "0xa045e7dc",
+        "0x0"
+      ],
+      "callbacks_after": [
+        "0xa045e7dc",
+        "0x10011000"
+      ]
+    },
+    {
+      "name": "registration_duplicate",
+      "status": 0,
+      "callbacks_before": [
+        "0xa045e7dc",
+        "0x0"
+      ],
+      "callbacks_after": [
+        "0xa045e7dc",
+        "0x0"
+      ]
+    },
+    {
+      "name": "registration_full_reports_success",
+      "status": 0,
+      "callbacks_before": [
+        "0xa045e7dc",
+        "0x10011000"
+      ],
+      "callbacks_after": [
+        "0xa045e7dc",
+        "0x10011000"
+      ]
+    },
+    {
+      "name": "original_pcm_task_through_fifo_and_late_observer",
+      "trace": [
+        {
+          "address": "0x1001efc0",
+          "encoder": "0x10000000",
+          "opaque_04": "0x0",
+          "pts": 0,
+          "eos": 0,
+          "size": 16,
+          "payload": "0x10012000",
+          "opaque_1c": "0xa0290298",
+          "name": "stock_audio_callback_entry",
+          "fifo_write": 0
+        },
+        {
+          "name": "fifo_write_entry",
+          "descriptor_hex": "0000000000000000000000000000000008010000002001101000000000000000"
+        },
+        {
+          "address": "0x1001efc0",
+          "encoder": "0x10000000",
+          "opaque_04": "0x0",
+          "pts": 0,
+          "eos": 0,
+          "size": 16,
+          "payload": "0x10012000",
+          "opaque_1c": "0xa0290298",
+          "name": "second_observer",
+          "fifo_write": 1,
+          "locks_held": [
+            "0x10000100"
+          ]
+        }
+      ],
+      "payload_hex": "00310131023103310431053106310731",
+      "fifo_descriptor_hex": "0000000000000000000000000000000008010000002001101000000000000000",
+      "reserved_bytes": 8192,
+      "actual_payload_bytes": 16,
+      "messages": [
+        [
+          268435456,
+          268447744,
+          0
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ],
+      "codec_and_callback_and_fifo_original_arm": true
+    },
+    {
+      "name": "constructed_early_slot_precedes_stock_write",
+      "trace": [
+        {
+          "address": "0x1001efc0",
+          "encoder": "0x10000000",
+          "opaque_04": "0x0",
+          "pts": 0,
+          "eos": 0,
+          "size": 16,
+          "payload": "0x10012000",
+          "opaque_1c": "0xa0290298",
+          "name": "second_observer",
+          "fifo_write": 0,
+          "locks_held": [
+            "0x10000100"
+          ]
+        },
+        {
+          "address": "0x1001efc0",
+          "encoder": "0x10000000",
+          "opaque_04": "0x0",
+          "pts": 0,
+          "eos": 0,
+          "size": 16,
+          "payload": "0x10012000",
+          "opaque_1c": "0xa0290298",
+          "name": "stock_audio_callback_entry",
+          "fifo_write": 0
+        },
+        {
+          "name": "fifo_write_entry",
+          "descriptor_hex": "0000000000000000000000000000000008010000002001101000000000000000"
+        }
+      ],
+      "installation_tested": false,
+      "callback_table_precondition_constructed": true
+    },
+    {
+      "name": "uninitialized_event_words_0xbad055aa",
+      "event": {
+        "address": "0x1001efc0",
+        "encoder": "0x10000000",
+        "opaque_04": "0xbad055aa",
+        "pts": 0,
+        "eos": 0,
+        "size": 16,
+        "payload": "0x10012000",
+        "opaque_1c": "0xbad055aa",
+        "name": "stock_audio_callback_entry",
+        "fifo_write": 0
+      },
+      "metadata_copies_stale_words": true,
+      "event_semantic_fields_exclude_offsets": [
+        "0x04",
+        "0x1c"
+      ]
+    },
+    {
+      "name": "uninitialized_event_words_0x51667788",
+      "event": {
+        "address": "0x1001efc0",
+        "encoder": "0x10000000",
+        "opaque_04": "0x51667788",
+        "pts": 0,
+        "eos": 0,
+        "size": 16,
+        "payload": "0x10012000",
+        "opaque_1c": "0x51667788",
+        "name": "stock_audio_callback_entry",
+        "fifo_write": 0
+      },
+      "metadata_copies_stale_words": true,
+      "event_semantic_fields_exclude_offsets": [
+        "0x04",
+        "0x1c"
+      ]
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x10",
+      "format": "0x10",
+      "chunk_bytes": 1536,
+      "configured_capacity": 4625,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012600",
+        "0x10012c00",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 1536,
+      "retired_reserved_bytes": 1536,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x11",
+      "format": "0x11",
+      "chunk_bytes": 1536,
+      "configured_capacity": 4625,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012600",
+        "0x10012c00",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 1536,
+      "retired_reserved_bytes": 1536,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x12",
+      "format": "0x12",
+      "chunk_bytes": 1536,
+      "configured_capacity": 4625,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012600",
+        "0x10012c00",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 1536,
+      "retired_reserved_bytes": 1536,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x20",
+      "format": "0x20",
+      "chunk_bytes": 2048,
+      "configured_capacity": 6161,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012800",
+        "0x10013000",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 2048,
+      "retired_reserved_bytes": 2048,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x40",
+      "format": "0x40",
+      "chunk_bytes": 2048,
+      "configured_capacity": 6161,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012800",
+        "0x10013000",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 2048,
+      "retired_reserved_bytes": 2048,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x50",
+      "format": "0x50",
+      "chunk_bytes": 2048,
+      "configured_capacity": 6161,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10012800",
+        "0x10013000",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 2048,
+      "retired_reserved_bytes": 2048,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "format_chunk_allocation_and_retirement_0x0",
+      "format": "0x0",
+      "chunk_bytes": 8192,
+      "configured_capacity": 24593,
+      "returned_addresses": [
+        "0x10012000",
+        "0x10014000",
+        "0x10016000",
+        "0x10012000"
+      ],
+      "trailing_unused_bytes": 17,
+      "actual_payload_length": 13,
+      "produced_reserved_bytes": 8192,
+      "retired_reserved_bytes": 8192,
+      "retired_index": 1,
+      "metadata_pts_marker": "0xfee1dead",
+      "metadata_payload_pointer_retained": true,
+      "producer_wrap_did_not_check_consumer_credit": true,
+      "payload_overwrite_simulated": false
+    },
+    {
+      "name": "eos_state_2",
+      "fifo_length": "0xffffff",
+      "produced_reserved": 0,
+      "retired_reserved": 0,
+      "sequence_after": 0,
+      "EOS_payload_not_consumed": true
+    },
+    {
+      "name": "eos_state_5",
+      "fifo_length": "0xfffffe",
+      "produced_reserved": 0,
+      "retired_reserved": 0,
+      "sequence_after": 123,
+      "EOS_payload_not_consumed": true
+    },
+    {
+      "name": "metadata_wrap_zero_size_and_eos_retirement",
+      "metadata_slots": 3,
+      "write_pointer_after": "0x1000b000",
+      "read_pointer_after": "0x1000b000",
+      "removed_metadata": 3,
+      "ordinary_reserved_bytes": 3072,
+      "retired_bytes": 1536,
+      "zero_size_ordinary_does_not_retire_chunk": true,
+      "eos_does_not_retire_chunk": true
+    },
+    {
+      "name": "erase_notification_preserves_chunk_indices",
+      "produced_reserved": 0,
+      "retired_reserved": 0,
+      "metadata_read": "0x1000b000",
+      "metadata_write": "0x1000b000",
+      "producer_index_after": 2,
+      "retired_index_after": 1,
+      "full_audio_lifecycle_reset_proven": false
+    },
+    {
+      "name": "aac_wrapper_destination_and_length_explicit_codec_model",
+      "output_bits": 101,
+      "output_bytes": 13,
+      "trace": [
+        {
+          "name": "aac_codec_explicit_model",
+          "output_bits": 101
+        },
+        {
+          "address": "0x1001efc0",
+          "encoder": "0x10000000",
+          "opaque_04": "0xbad055aa",
+          "pts": 0,
+          "eos": 0,
+          "size": 13,
+          "payload": "0x10012000",
+          "opaque_1c": "0xa0290298",
+          "name": "stock_audio_callback_entry",
+          "fifo_write": 0
+        },
+        {
+          "name": "fifo_write_entry",
+          "descriptor_hex": "0000000000000000000000000000000008010000002001100d00000000000000"
+        }
+      ],
+      "real_aac_encoding_tested": false
+    },
+    {
+      "name": "original_pcm_overwrites_held_virtual_payload_on_chunk_wrap",
+      "frames": 4,
+      "chunks": 3,
+      "first_bytes": "11111211131114111511161117111811",
+      "overwritten_bytes": "11141214131414141514161417141814",
+      "virtual_read": 0,
+      "retired_bytes": 0,
+      "original_pcm_cpu_writes": true,
+      "hardware_aac_or_adc_tested": false
+    }
+  ],
+  "source_checks": 9,
+  "sources": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02902b4.c",
+      "sha256": "69edc82f2119cdd9b540c4789ebc3e2d067266c29712e700fba8fed435ac8b41",
+      "line_hits": {
+        "puVar13[0xf] = uVar4": [
+          44,
+          169
+        ],
+        "matched_FUN_a029024c(param_1)": [
+          45,
+          170
+        ],
+        "matched_FUN_a029016c": [
+          46,
+          171
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029024c.c",
+      "sha256": "4ecf33c48877aeffd8b5f542c6965eff3aa3a71adad04d4ab74ec7bd953bce34",
+      "line_hits": {
+        "PTR_matched_FUN_a028fce8_a05abf8c": [
+          19
+        ],
+        "iVar1 + 0x38": [
+          19
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029011c.c",
+      "sha256": "e7ff76080e8e7260162f6db19bbe7f6c27fb8c51379faa1cf3721a21da594f68",
+      "line_hits": {
+        "iVar1 + 0x38": [
+          14
+        ],
+        "iVar1 + 0x3c": [
+          15
+        ],
+        "matched_FUN_a0255ffc": [
+          16
+        ],
+        "+ 7U >> 3": [
+          20
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029016c.c",
+      "sha256": "4af11b1c0293b7135b4dc040eb4b1f4cd5883cf3c7ef2131d4345536d4b182bd",
+      "line_hits": {
+        "matched_FUN_a0295800(param_1,0,local_40)": [
+          31
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0295800.c",
+      "sha256": "b94b5ace228a0a6e46484dffaea8dbbd7dd0404d8ab65637ac1f178f68256d6a",
+      "line_hits": {
+        "(*(code *)*puVar3)(param_3)": [
+          34
+        ],
+        "iVar2 != iVar1": [
+          36
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02955c0.c",
+      "sha256": "a171c9182434ef487303685b356789e797a6a3aab73fd83e1fd687b7351266aa",
+      "line_hits": {
+        "*piVar6 = param_3": [
+          55
+        ],
+        "if (iVar4 == iVar1) goto LAB_a0295688": [
+          52
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045e7dc.c",
+      "sha256": "1311b8de899bd874ab650c7bb3dae4626de2cab9ab45ff536c6faa4315f04d75",
+      "line_hits": {
+        "uVar8 = 0x600": [
+          122
+        ],
+        "uVar8 = 0x800": [
+          117
+        ],
+        "uVar8 = 0x2000": [
+          127
+        ],
+        "local_30 = 0xfffffe": [
+          105
+        ],
+        "piVar6[7] = iVar2": [
+          68
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045f204.c",
+      "sha256": "9ba7b163ef5cc0ea434559fc3e1b91101f0766a3cecaa1bafeb9bb793538892c",
+      "line_hits": {
+        "local_74 = &DAT_a045cf84": [
+          79
+        ],
+        "local_64 = 1": [
+          80
+        ],
+        "iVar3,0,2,&DAT_a19c71ac": [
+          118
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045d690.c",
+      "sha256": "4201475bd8861819c7542d40f16b22bc7b3b2381f0c6bc8e8c56e01cbaccb5a9",
+      "line_hits": {
+        "iVar5 = 0x600": [
+          40
+        ],
+        "iVar5 = 0x800": [
+          35
+        ],
+        "iVar5 = 0x2000": [
+          45
+        ],
+        "DAT_a19c7310": [
+          49,
+          59,
+          62,
+          65
+        ]
+      }
+    }
+  ],
+  "assertions": [
+    {
+      "address": "0xa02906f4",
+      "bytes": "3c0084e5",
+      "instruction": "str r0, [r4, #0x3c]"
+    },
+    {
+      "address": "0xa02906fc",
+      "bytes": "d2feffeb",
+      "instruction": "bl #0xa029024c"
+    },
+    {
+      "address": "0xa0290710",
+      "bytes": "95feffeb",
+      "instruction": "bl #0xa029016c"
+    },
+    {
+      "address": "0xa02901d8",
+      "bytes": "881500eb",
+      "instruction": "bl #0xa0295800"
+    },
+    {
+      "address": "0xa029586c",
+      "bytes": "33ff2fe1",
+      "instruction": "blx r3"
+    },
+    {
+      "address": "0xa045d184",
+      "bytes": "f8abc4e1",
+      "instruction": "strd sl, fp, [r4, #0xb8]"
+    },
+    {
+      "address": "0xa045d190",
+      "bytes": "f880c6e1",
+      "instruction": "strd r8, sb, [r6, #8]"
+    },
+    {
+      "address": "0xa045d754",
+      "bytes": "965125e0",
+      "instruction": "mla r5, r6, r1, r5"
+    }
+  ],
+  "windows": [
+    {
+      "start": "0xa02906e8",
+      "end_exclusive": "0xa0290714",
+      "sha256": "24907b5f2056c767756fccb455a51979bf452cf6946066091850987fd9293bd3"
+    },
+    {
+      "start": "0xa028fce8",
+      "end_exclusive": "0xa028fe30",
+      "sha256": "2d9b62e40c62b18c9292f55bab2530f523453b31d756f5d43a1f65a0791fdcaf"
+    },
+    {
+      "start": "0xa029011c",
+      "end_exclusive": "0xa029024c",
+      "sha256": "8ac6b4c5a74da144304f6489822be9e2c2c3cc3d55dd2ceda2150cf80347e4f7"
+    },
+    {
+      "start": "0xa029024c",
+      "end_exclusive": "0xa02902b4",
+      "sha256": "84aee0a4fd75c3529fe746a3b7d380cfd5a32ac3300b6210ecf6cc934ab63fa9"
+    },
+    {
+      "start": "0xa02955c0",
+      "end_exclusive": "0xa02956ac",
+      "sha256": "5674b5502a59ac3d8730dba80c4b9d938e549e5f2e2ce706fa6d7594ed10f0cd"
+    },
+    {
+      "start": "0xa0295800",
+      "end_exclusive": "0xa02958a0",
+      "sha256": "acc0ded9f25e1fb64357479ebbeec66bfcec076fb8e3df945f37ff46b5b5cebe"
+    },
+    {
+      "start": "0xa045cf84",
+      "end_exclusive": "0xa045d264",
+      "sha256": "29567e50a71352cd3ebb48bd36fb5289c811357dd6f23861cd74e6c8568b104c"
+    },
+    {
+      "start": "0xa045d690",
+      "end_exclusive": "0xa045d7b8",
+      "sha256": "faa7a6deed880cc793841cce256bb0c0ed7df4de33e56ce4c77a7d5925deeaa9"
+    },
+    {
+      "start": "0xa045e7dc",
+      "end_exclusive": "0xa045ec00",
+      "sha256": "296e9e180ca260833a2b6cd66a2e5bf113fb0f34e308e74c90069c048e97c71d"
+    },
+    {
+      "start": "0xa045f378",
+      "end_exclusive": "0xa045f3e4",
+      "sha256": "7dcf4cc78e847910884b136e5d7220461f27de14a4a66cb3079d98e1e51d12d0"
+    }
+  ],
+  "dependency": {
+    "path": "scripts/prerecord-fifo-lifecycle.py",
+    "sha256": "18d617e70051f649267ab37f2d1ceafc7e5d2446ac60529d07315d0e86001906"
+  },
+  "event_layout": {
+    "0x00": "encoder handle",
+    "0x04": "UNWRITTEN task-stack word; do not interpret",
+    "0x08": "u64 task-local synthetic PTS",
+    "0x10": "u32 EOS, stock accepts 0 or 1",
+    "0x14": "u32 actual payload bytes",
+    "0x18": "CPU payload pointer",
+    "0x1c": "UNWRITTEN task-stack word; do not interpret"
+  },
+  "sequence": [
+    "task calls registered GetWritePointer; obtains base+write_chunk_index*chunk and increments/wraps index without read-credit comparison",
+    "task writes pointer into state+0x3c; codec synchronously writes CPU output, stores actual size state+0x1c",
+    "UpdateBitsBuf builds stack event; synchronous dispatcher holds encoder event mutex and invokes registered slots in ascending order",
+    "stock callback locks all audio instances, stores32B metadata, advances format-reserved accounting and constructs type8 FrameDesc with actual payload length",
+    "stock releases audio instance locks then WriteEntry; second registered observer therefore runs after stock FIFO write",
+    "FIFO worker retirement event invokes A045CF84; one metadata record per count advances read index and format-reserved retired bytes only if size!=0 and EOS==0",
+    "all removed metadata PTS becomes 0x00000000fee1dead; read metadata pointer wraps; payload pointer and bytes remain untouched"
+  ],
+  "conclusions": {
+    "audio_copy_candidate": "synchronous wrapper before stock A045E7DC, or deliberately ordered callback slot before it",
+    "audio_stock_callback_ABI": "int32 callback(const event*) -- not video three-argument ABI",
+    "secondary_registration_alone_is_not_earliest": true,
+    "registration_success_does_not_prove_added": true,
+    "event_has_two_unwritten_words": true,
+    "chunk_wrap_ignores_consumer_credit": true,
+    "original_pcm_overwrite_of_held_descriptor_demonstrated_offline": true,
+    "one_minute_retention_requires_owned_payload": true,
+    "real_aac_payload_stability_proven": false,
+    "camera_prerecord_implemented": false
+  },
+  "external_models": [
+    "inherited mutex take/give: bookkeeping, no actual RTOS scheduling",
+    "inherited queue send: message capture, no automatic worker thread",
+    "inherited printf/FIFO trace suppressed",
+    "second observer: records entry, returns -91",
+    "AAC A0255FFC: one explicitly labeled case sets output bit count; does not encode or generate bytes"
+  ],
+  "limitations": [
+    "No camera, microphone/ADC, RTOS scheduler, SD writer or device hook executed.",
+    "Three-chunk capacities, codec formats, current settings and callback table are synthetic fixture preconditions.",
+    "PCM demonstrates original CPU writes and reuse; AAC wrapper execution does not establish real AAC codec timing, output capacity or cache coherence.",
+    "Synchronous callback establishes task control-flow order, not a hardware lease against other cores, DMA or producers.",
+    "No shared video/audio capture epoch, stable callback installation/uninstallation or one-minute SD spool is implemented."
+  ]
+}

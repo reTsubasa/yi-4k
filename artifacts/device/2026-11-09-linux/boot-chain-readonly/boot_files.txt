@@ -1,0 +1,6 @@
+~ # find / -xdev -type f \( -iname "*boot*" -o -iname "*ptb*" -o -iname "*firmwa
+re*" -o -iname "*recovery*" -o -iname "*upgrade*" \) -print 2>/dev/null | head -
+300
+/etc/init.d/S99bootdone
+~ # echo __YI_CAPTURE_307f6021ac924e9694e36492db5cd60b__
+__YI_CAPTURE_307f6021ac924e9694e36492db5cd60b__

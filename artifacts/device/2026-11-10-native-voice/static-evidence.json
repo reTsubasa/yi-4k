@@ -1,0 +1,1186 @@
+{
+  "evidence_type": "static; saved device window, existing Ghidra pseudocode, Capstone ARM disassembly",
+  "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "base": "0xa0100000",
+  "runtime_validation": "Existing native task table snapshots only; no audio/recognition validation",
+  "existing_runtime_task_snapshots": [
+    {
+      "path": "artifacts/device/2026-11-10-rtos-console-route/collect-after-reboot-03/yi4k_diag_e30da2b76aa5_tsk1.txt",
+      "sha256": "6e9f1e40643f8908eb267d8b975f8ce0827b8a3fa3fcbe85f0852e47c3de73ee",
+      "header": "ID PRI PREEMPT SCHED STAT NEXT_ID STKSIZE STKPEAK STKUSED STKBASE STKEND STKPTR SMP_CORE NAME",
+      "raw_row": "23  170      170      1      EVENT_FLAG       23    32764      168      340  0xa1259ff0  0xa1261feb  0xa1261e98       0x1  VoiceCmd_Task",
+      "id": 23,
+      "priority": 170,
+      "preempt": 170,
+      "schedule_count": 1,
+      "state": "EVENT_FLAG",
+      "stack_bytes": 32764,
+      "stack_base": "0xa1259ff0",
+      "stack_end": "0xa1261feb",
+      "stack_pointer": "0xa1261e98",
+      "core": "0x1",
+      "name": "VoiceCmd_Task"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-rtos-console-route/collect-after-reboot-03/yi4k_diag_e30da2b76aa5_tsk2.txt",
+      "sha256": "bbacdecb7127c193e9e1e7a6a4cc0fec62f881ef2a4c2bd30985b36803bb9f88",
+      "header": "ID PRI PREEMPT SCHED STAT NEXT_ID STKSIZE STKPEAK STKUSED STKBASE STKEND STKPTR SMP_CORE NAME",
+      "raw_row": "23  170      170      1      EVENT_FLAG       23    32764      168      340  0xa1259ff0  0xa1261feb  0xa1261e98       0x1  VoiceCmd_Task",
+      "id": 23,
+      "priority": 170,
+      "preempt": 170,
+      "schedule_count": 1,
+      "state": "EVENT_FLAG",
+      "stack_bytes": 32764,
+      "stack_base": "0xa1259ff0",
+      "stack_end": "0xa1261feb",
+      "stack_pointer": "0xa1261e98",
+      "core": "0x1",
+      "name": "VoiceCmd_Task"
+    }
+  ],
+  "strings": {
+    "0xa056a954": "Usage: vc_switch_lan en | zh",
+    "0xa059a8b0": "en",
+    "0xa056a98c": "zh",
+    "0xa0564038": "[I][HANDLER][%06d][%s]:AMSG_CMD_VC_RECORD_BUTTON",
+    "0xa056406c": "[I][HANDLER][%06d][%s]:AMSG_CMD_VC_RECORD_BUTTON handle record opeartion",
+    "0xa056422c": "[I][HANDLER][%06d][%s]:AMSG_CMD_VC_RECORD_START",
+    "0xa056d3d8": "[W][VOICE_CMD][%06d][%s]:Yi action begin recording\r\n",
+    "0xa0643f80": "libvoice.a"
+  },
+  "pcm_command_names": [
+    "Yi_action_take_photo",
+    "Yi_action_shoot_burst",
+    "Yi_action_begin_recording",
+    "Yi_action_stop_recording",
+    "Yi_action_turn_off"
+  ],
+  "pcm_language_suffixes": [
+    "_en",
+    "_zh"
+  ],
+  "phrase_string_search": {
+    "开始录像": {
+      "utf8_offset": -1,
+      "utf16le_offset": -1
+    },
+    "start recording": {
+      "utf8_offset": 4424371,
+      "utf16le_offset": -1
+    },
+    "begin recording": {
+      "utf8_offset": 4626116,
+      "utf16le_offset": -1
+    }
+  },
+  "model_got": "0xa0821700",
+  "model_references": {
+    "en": [
+      {
+        "got_offset": "0x278",
+        "pointer": "0xa0791ec4",
+        "prefix_16_bytes": "621200003c72bb3f47e12ab60e857687"
+      },
+      {
+        "got_offset": "0x264",
+        "pointer": "0xa079dde8",
+        "prefix_16_bytes": "20bf0000bd1300002c3cde4b63b3c20e"
+      },
+      {
+        "got_offset": "0x94",
+        "pointer": "0xa079ddec",
+        "prefix_16_bytes": "bd1300002c3cde4b63b3c20e43fda068"
+      },
+      {
+        "got_offset": "0x114",
+        "pointer": "0xa079f1b0",
+        "prefix_16_bytes": "87b201004c72bb3f57e12ab61e85768e"
+      },
+      {
+        "got_offset": "0xa4",
+        "pointer": "0xa079ddf0",
+        "prefix_16_bytes": "2c3cde4b63b3c20e43fda068d8f6bf0e"
+      },
+      {
+        "got_offset": "0x190",
+        "pointer": "0xa0791ec8",
+        "prefix_16_bytes": "3c72bb3f47e12ab60e857687c2dd7348"
+      },
+      {
+        "got_offset": "0x60",
+        "pointer": "0xa0790c60",
+        "prefix_16_bytes": "2c3cde4b63b3c20e43fda068d8f6bf0e"
+      },
+      {
+        "got_offset": "0x258",
+        "pointer": "0xa079f1b4",
+        "prefix_16_bytes": "4c72bb3f57e12ab61e85768e5dc506b0"
+      }
+    ],
+    "zh": [
+      {
+        "got_offset": "0x1bc",
+        "pointer": "0xa07bb6a0",
+        "prefix_16_bytes": "621200001cbf00003c72bb3f47e12ab6"
+      },
+      {
+        "got_offset": "0x9c",
+        "pointer": "0xa07bb6a4",
+        "prefix_16_bytes": "1cbf00003c72bb3f47e12ab60e857687"
+      },
+      {
+        "got_offset": "0x224",
+        "pointer": "0xa07c75c4",
+        "prefix_16_bytes": "bd1300002c3cde4b63b3c20e43fda068"
+      },
+      {
+        "got_offset": "0x108",
+        "pointer": "0xa07e3c10",
+        "prefix_16_bytes": "85b20100ea030000e9030000ec030000"
+      },
+      {
+        "got_offset": "0x1cc",
+        "pointer": "0xa07c8988",
+        "prefix_16_bytes": "4c72bb3f51e326a4558071c54ae53ce2"
+      },
+      {
+        "got_offset": "0x1b8",
+        "pointer": "0xa07c75c8",
+        "prefix_16_bytes": "2c3cde4b63b3c20e43fda068d8f6bf0e"
+      },
+      {
+        "got_offset": "0x1dc",
+        "pointer": "0xa07bb6a8",
+        "prefix_16_bytes": "3c72bb3f47e12ab60e857687c2dd7348"
+      },
+      {
+        "got_offset": "0x1c",
+        "pointer": "0xa07ba43c",
+        "prefix_16_bytes": "2c3cde4b63b3c20e43fda068d8f6bf0e"
+      }
+    ]
+  },
+  "instruction_ranges": {
+    "language_shell_selector": [
+      {
+        "address": "0xa01abec0",
+        "mnemonic": "cmp",
+        "operands": "r0, #0"
+      },
+      {
+        "address": "0xa01abec4",
+        "mnemonic": "push",
+        "operands": "{r4, r5, r6, lr}"
+      },
+      {
+        "address": "0xa01abec8",
+        "mnemonic": "mov",
+        "operands": "r6, r2"
+      },
+      {
+        "address": "0xa01abecc",
+        "mnemonic": "ble",
+        "operands": "#0xa01abf3c"
+      },
+      {
+        "address": "0xa01abed0",
+        "mnemonic": "ldr",
+        "operands": "r5, [r1]"
+      },
+      {
+        "address": "0xa01abed4",
+        "mnemonic": "movw",
+        "operands": "r1, #0xa8b0"
+      },
+      {
+        "address": "0xa01abed8",
+        "mnemonic": "movt",
+        "operands": "r1, #0xa059"
+      },
+      {
+        "address": "0xa01abedc",
+        "mnemonic": "mov",
+        "operands": "r0, r5"
+      },
+      {
+        "address": "0xa01abee0",
+        "mnemonic": "blx",
+        "operands": "#0xa04f9744"
+      },
+      {
+        "address": "0xa01abee4",
+        "mnemonic": "subs",
+        "operands": "r4, r0, #0"
+      },
+      {
+        "address": "0xa01abee8",
+        "mnemonic": "beq",
+        "operands": "#0xa01abf20"
+      },
+      {
+        "address": "0xa01abeec",
+        "mnemonic": "movw",
+        "operands": "r1, #0xa98c"
+      },
+      {
+        "address": "0xa01abef0",
+        "mnemonic": "mov",
+        "operands": "r0, r5"
+      },
+      {
+        "address": "0xa01abef4",
+        "mnemonic": "movt",
+        "operands": "r1, #0xa056"
+      },
+      {
+        "address": "0xa01abef8",
+        "mnemonic": "blx",
+        "operands": "#0xa04f9744"
+      },
+      {
+        "address": "0xa01abefc",
+        "mnemonic": "subs",
+        "operands": "r4, r0, #0"
+      },
+      {
+        "address": "0xa01abf00",
+        "mnemonic": "bne",
+        "operands": "#0xa01abf3c"
+      },
+      {
+        "address": "0xa01abf04",
+        "mnemonic": "movw",
+        "operands": "r0, #0xa990"
+      },
+      {
+        "address": "0xa01abf08",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa01abf0c",
+        "mnemonic": "blx",
+        "operands": "r6"
+      },
+      {
+        "address": "0xa01abf10",
+        "mnemonic": "mov",
+        "operands": "r0, #1"
+      },
+      {
+        "address": "0xa01abf14",
+        "mnemonic": "bl",
+        "operands": "#0xa01b2c30"
+      },
+      {
+        "address": "0xa01abf18",
+        "mnemonic": "mov",
+        "operands": "r0, r4"
+      },
+      {
+        "address": "0xa01abf1c",
+        "mnemonic": "pop",
+        "operands": "{r4, r5, r6, pc}"
+      },
+      {
+        "address": "0xa01abf20",
+        "mnemonic": "movw",
+        "operands": "r0, #0xa974"
+      },
+      {
+        "address": "0xa01abf24",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa01abf28",
+        "mnemonic": "blx",
+        "operands": "r6"
+      },
+      {
+        "address": "0xa01abf2c",
+        "mnemonic": "mov",
+        "operands": "r0, r4"
+      },
+      {
+        "address": "0xa01abf30",
+        "mnemonic": "bl",
+        "operands": "#0xa01b2c30"
+      },
+      {
+        "address": "0xa01abf34",
+        "mnemonic": "mov",
+        "operands": "r0, r4"
+      },
+      {
+        "address": "0xa01abf38",
+        "mnemonic": "pop",
+        "operands": "{r4, r5, r6, pc}"
+      },
+      {
+        "address": "0xa01abf3c",
+        "mnemonic": "movw",
+        "operands": "r0, #0xa954"
+      },
+      {
+        "address": "0xa01abf40",
+        "mnemonic": "mvn",
+        "operands": "r4, #0"
+      },
+      {
+        "address": "0xa01abf44",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa01abf48",
+        "mnemonic": "blx",
+        "operands": "r6"
+      },
+      {
+        "address": "0xa01abf4c",
+        "mnemonic": "b",
+        "operands": "#0xa01abf18"
+      },
+      {
+        "address": "0xa01abf50",
+        "mnemonic": "push",
+        "operands": "{r4, r5, r6, r7, r8, sb, lr}"
+      },
+      {
+        "address": "0xa01abf54",
+        "mnemonic": "subs",
+        "operands": "r8, r0, #0"
+      },
+      {
+        "address": "0xa01abf58",
+        "mnemonic": "sub",
+        "operands": "sp, sp, #0xc"
+      },
+      {
+        "address": "0xa01abf5c",
+        "mnemonic": "mov",
+        "operands": "r5, #0"
+      }
+    ],
+    "voice_test_shell_setting": [
+      {
+        "address": "0xa01abd80",
+        "mnemonic": "cmp",
+        "operands": "r0, #0"
+      },
+      {
+        "address": "0xa01abd84",
+        "mnemonic": "ble",
+        "operands": "#0xa01abe18"
+      },
+      {
+        "address": "0xa01abd88",
+        "mnemonic": "mov",
+        "operands": "r3, r1"
+      },
+      {
+        "address": "0xa01abd8c",
+        "mnemonic": "mov",
+        "operands": "r1, #0"
+      },
+      {
+        "address": "0xa01abd90",
+        "mnemonic": "push",
+        "operands": "{r4, lr}"
+      },
+      {
+        "address": "0xa01abd94",
+        "mnemonic": "mov",
+        "operands": "r2, r1"
+      },
+      {
+        "address": "0xa01abd98",
+        "mnemonic": "ldr",
+        "operands": "r0, [r3]"
+      },
+      {
+        "address": "0xa01abd9c",
+        "mnemonic": "blx",
+        "operands": "#0xa04fb1c4"
+      },
+      {
+        "address": "0xa01abda0",
+        "mnemonic": "cmp",
+        "operands": "r0, #1"
+      },
+      {
+        "address": "0xa01abda4",
+        "mnemonic": "movw",
+        "operands": "r3, #0x5cd4"
+      },
+      {
+        "address": "0xa01abda8",
+        "mnemonic": "beq",
+        "operands": "#0xa01abde4"
+      },
+      {
+        "address": "0xa01abdac",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa105"
+      },
+      {
+        "address": "0xa01abdb0",
+        "mnemonic": "mov",
+        "operands": "r4, #0"
+      },
+      {
+        "address": "0xa01abdb4",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3]"
+      },
+      {
+        "address": "0xa01abdb8",
+        "mnemonic": "strb",
+        "operands": "r4, [r3, #0x136]"
+      },
+      {
+        "address": "0xa01abdbc",
+        "mnemonic": "bl",
+        "operands": "#0xa018c6d8"
+      },
+      {
+        "address": "0xa01abdc0",
+        "mnemonic": "movw",
+        "operands": "r3, #0x334c"
+      },
+      {
+        "address": "0xa01abdc4",
+        "mnemonic": "mov",
+        "operands": "r1, r4"
+      },
+      {
+        "address": "0xa01abdc8",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa0fb"
+      },
+      {
+        "address": "0xa01abdcc",
+        "mnemonic": "mov",
+        "operands": "r2, r4"
+      },
+      {
+        "address": "0xa01abdd0",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3, #0x18]"
+      },
+      {
+        "address": "0xa01abdd4",
+        "mnemonic": "mov",
+        "operands": "r0, #0x94"
+      },
+      {
+        "address": "0xa01abdd8",
+        "mnemonic": "blx",
+        "operands": "r3"
+      },
+      {
+        "address": "0xa01abddc",
+        "mnemonic": "mov",
+        "operands": "r0, r4"
+      },
+      {
+        "address": "0xa01abde0",
+        "mnemonic": "pop",
+        "operands": "{r4, pc}"
+      },
+      {
+        "address": "0xa01abde4",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa105"
+      },
+      {
+        "address": "0xa01abde8",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3]"
+      },
+      {
+        "address": "0xa01abdec",
+        "mnemonic": "strb",
+        "operands": "r0, [r3, #0x136]"
+      },
+      {
+        "address": "0xa01abdf0",
+        "mnemonic": "bl",
+        "operands": "#0xa018c6d8"
+      },
+      {
+        "address": "0xa01abdf4",
+        "mnemonic": "movw",
+        "operands": "r3, #0x334c"
+      },
+      {
+        "address": "0xa01abdf8",
+        "mnemonic": "mov",
+        "operands": "r1, #0"
+      },
+      {
+        "address": "0xa01abdfc",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa0fb"
+      },
+      {
+        "address": "0xa01abe00",
+        "mnemonic": "mov",
+        "operands": "r2, r1"
+      },
+      {
+        "address": "0xa01abe04",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3, #0x18]"
+      },
+      {
+        "address": "0xa01abe08",
+        "mnemonic": "mov",
+        "operands": "r0, #0x93"
+      },
+      {
+        "address": "0xa01abe0c",
+        "mnemonic": "blx",
+        "operands": "r3"
+      },
+      {
+        "address": "0xa01abe10",
+        "mnemonic": "mov",
+        "operands": "r0, #0"
+      }
+    ],
+    "session_voice_field_is_sampling_flag": [
+      {
+        "address": "0xa0195cbc",
+        "mnemonic": "movw",
+        "operands": "r3, #0x5cd8"
+      },
+      {
+        "address": "0xa0195cc0",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa105"
+      },
+      {
+        "address": "0xa0195cc4",
+        "mnemonic": "ldrb",
+        "operands": "r0, [r3, #0x2b8]"
+      },
+      {
+        "address": "0xa0195cc8",
+        "mnemonic": "sub",
+        "operands": "r0, r0, #1"
+      },
+      {
+        "address": "0xa0195ccc",
+        "mnemonic": "clz",
+        "operands": "r0, r0"
+      }
+    ],
+    "sampling_start": [
+      {
+        "address": "0xa01358c8",
+        "mnemonic": "push",
+        "operands": "{r4, lr}"
+      },
+      {
+        "address": "0xa01358cc",
+        "mnemonic": "mov",
+        "operands": "r0, #0"
+      },
+      {
+        "address": "0xa01358d0",
+        "mnemonic": "bl",
+        "operands": "#0xa0489ea4"
+      },
+      {
+        "address": "0xa01358d4",
+        "mnemonic": "movw",
+        "operands": "r2, #0x69a4"
+      },
+      {
+        "address": "0xa01358d8",
+        "mnemonic": "mov",
+        "operands": "r4, r0"
+      },
+      {
+        "address": "0xa01358dc",
+        "mnemonic": "movw",
+        "operands": "r0, #0x343c"
+      },
+      {
+        "address": "0xa01358e0",
+        "mnemonic": "movt",
+        "operands": "r2, #0xa054"
+      },
+      {
+        "address": "0xa01358e4",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa054"
+      },
+      {
+        "address": "0xa01358e8",
+        "mnemonic": "movw",
+        "operands": "r1, #0x216b"
+      },
+      {
+        "address": "0xa01358ec",
+        "mnemonic": "bl",
+        "operands": "#0xa02a70ec"
+      },
+      {
+        "address": "0xa01358f0",
+        "mnemonic": "cmp",
+        "operands": "r4, #0"
+      },
+      {
+        "address": "0xa01358f4",
+        "mnemonic": "bne",
+        "operands": "#0xa013591c"
+      },
+      {
+        "address": "0xa01358f8",
+        "mnemonic": "mov",
+        "operands": "r1, r4"
+      },
+      {
+        "address": "0xa01358fc",
+        "mnemonic": "mov",
+        "operands": "r2, #0x66"
+      },
+      {
+        "address": "0xa0135900",
+        "mnemonic": "mov",
+        "operands": "r0, #0x1b"
+      },
+      {
+        "address": "0xa0135904",
+        "mnemonic": "bl",
+        "operands": "#0xa01321c0"
+      },
+      {
+        "address": "0xa0135908",
+        "mnemonic": "mov",
+        "operands": "r1, r4"
+      },
+      {
+        "address": "0xa013590c",
+        "mnemonic": "mov",
+        "operands": "r0, #1"
+      },
+      {
+        "address": "0xa0135910",
+        "mnemonic": "bl",
+        "operands": "#0xa0131584"
+      },
+      {
+        "address": "0xa0135914",
+        "mnemonic": "mov",
+        "operands": "r0, #0"
+      },
+      {
+        "address": "0xa0135918",
+        "mnemonic": "pop",
+        "operands": "{r4, pc}"
+      },
+      {
+        "address": "0xa013591c",
+        "mnemonic": "movw",
+        "operands": "r3, #0x5cd8"
+      },
+      {
+        "address": "0xa0135920",
+        "mnemonic": "movw",
+        "operands": "ip, #0x334c"
+      },
+      {
+        "address": "0xa0135924",
+        "mnemonic": "mov",
+        "operands": "r4, #0"
+      },
+      {
+        "address": "0xa0135928",
+        "mnemonic": "movt",
+        "operands": "ip, #0xa0fb"
+      },
+      {
+        "address": "0xa013592c",
+        "mnemonic": "movt",
+        "operands": "r3, #0xa105"
+      },
+      {
+        "address": "0xa0135930",
+        "mnemonic": "mov",
+        "operands": "r2, #1"
+      },
+      {
+        "address": "0xa0135934",
+        "mnemonic": "strb",
+        "operands": "r2, [r3, #0x2b8]"
+      },
+      {
+        "address": "0xa0135938",
+        "mnemonic": "mov",
+        "operands": "r1, r4"
+      },
+      {
+        "address": "0xa013593c",
+        "mnemonic": "mov",
+        "operands": "r2, r4"
+      },
+      {
+        "address": "0xa0135940",
+        "mnemonic": "strb",
+        "operands": "r4, [r3, #0x2b2]"
+      },
+      {
+        "address": "0xa0135944",
+        "mnemonic": "str",
+        "operands": "r4, [r3, #0x2b4]"
+      },
+      {
+        "address": "0xa0135948",
+        "mnemonic": "mov",
+        "operands": "r0, #0x95"
+      },
+      {
+        "address": "0xa013594c",
+        "mnemonic": "ldr",
+        "operands": "r3, [ip, #0x18]"
+      },
+      {
+        "address": "0xa0135950",
+        "mnemonic": "blx",
+        "operands": "r3"
+      },
+      {
+        "address": "0xa0135954",
+        "mnemonic": "movw",
+        "operands": "r0, #0x3478"
+      },
+      {
+        "address": "0xa0135958",
+        "mnemonic": "mov",
+        "operands": "r1, r4"
+      },
+      {
+        "address": "0xa013595c",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa054"
+      },
+      {
+        "address": "0xa0135960",
+        "mnemonic": "bl",
+        "operands": "#0xa0192944"
+      }
+    ],
+    "ui_language_to_voice_selector": [
+      {
+        "address": "0xa01c779c",
+        "mnemonic": "bne",
+        "operands": "#0xa01c77f0"
+      },
+      {
+        "address": "0xa01c77a0",
+        "mnemonic": "movw",
+        "operands": "r2, #0x5b3c"
+      },
+      {
+        "address": "0xa01c77a4",
+        "mnemonic": "movw",
+        "operands": "r3, #0x404"
+      },
+      {
+        "address": "0xa01c77a8",
+        "mnemonic": "movt",
+        "operands": "r2, #0xa126"
+      },
+      {
+        "address": "0xa01c77ac",
+        "mnemonic": "ldrh",
+        "operands": "r2, [r2]"
+      },
+      {
+        "address": "0xa01c77b0",
+        "mnemonic": "cmp",
+        "operands": "r2, r3"
+      },
+      {
+        "address": "0xa01c77b4",
+        "mnemonic": "moveq",
+        "operands": "r0, #1"
+      },
+      {
+        "address": "0xa01c77b8",
+        "mnemonic": "bl",
+        "operands": "#0xa01b2c30"
+      },
+      {
+        "address": "0xa01c77bc",
+        "mnemonic": "mov",
+        "operands": "r0, r4"
+      }
+    ],
+    "voice_init_config": [
+      {
+        "address": "0xa01b295c",
+        "mnemonic": "ldr",
+        "operands": "r3, [pc, #0x58]"
+      },
+      {
+        "address": "0xa01b2960",
+        "mnemonic": "mov",
+        "operands": "ip, #0"
+      },
+      {
+        "address": "0xa01b2964",
+        "mnemonic": "str",
+        "operands": "lr, [sp, #-4]!"
+      },
+      {
+        "address": "0xa01b2968",
+        "mnemonic": "mov",
+        "operands": "r1, #5"
+      },
+      {
+        "address": "0xa01b296c",
+        "mnemonic": "sub",
+        "operands": "sp, sp, #0x14"
+      },
+      {
+        "address": "0xa01b2970",
+        "mnemonic": "movt",
+        "operands": "ip, #0x4316"
+      },
+      {
+        "address": "0xa01b2974",
+        "mnemonic": "mov",
+        "operands": "r2, #0"
+      },
+      {
+        "address": "0xa01b2978",
+        "mnemonic": "str",
+        "operands": "r1, [sp, #8]"
+      },
+      {
+        "address": "0xa01b297c",
+        "mnemonic": "mov",
+        "operands": "r1, #0x3f800000"
+      },
+      {
+        "address": "0xa01b2980",
+        "mnemonic": "str",
+        "operands": "r0, [sp]"
+      },
+      {
+        "address": "0xa01b2984",
+        "mnemonic": "str",
+        "operands": "ip, [sp, #4]"
+      },
+      {
+        "address": "0xa01b2988",
+        "mnemonic": "str",
+        "operands": "r3, [sp, #0xc]"
+      },
+      {
+        "address": "0xa01b298c",
+        "mnemonic": "b",
+        "operands": "#0xa01b2994"
+      },
+      {
+        "address": "0xa01b2990",
+        "mnemonic": "ldr",
+        "operands": "r3, [sp, #0xc]"
+      },
+      {
+        "address": "0xa01b2994",
+        "mnemonic": "add",
+        "operands": "r3, r3, r2, lsl #2"
+      },
+      {
+        "address": "0xa01b2998",
+        "mnemonic": "add",
+        "operands": "r2, r2, #1"
+      },
+      {
+        "address": "0xa01b299c",
+        "mnemonic": "str",
+        "operands": "r1, [r3]"
+      },
+      {
+        "address": "0xa01b29a0",
+        "mnemonic": "ldr",
+        "operands": "r3, [sp, #8]"
+      },
+      {
+        "address": "0xa01b29a4",
+        "mnemonic": "cmp",
+        "operands": "r3, r2"
+      },
+      {
+        "address": "0xa01b29a8",
+        "mnemonic": "bgt",
+        "operands": "#0xa01b2990"
+      },
+      {
+        "address": "0xa01b29ac",
+        "mnemonic": "mov",
+        "operands": "r0, sp"
+      },
+      {
+        "address": "0xa01b29b0",
+        "mnemonic": "bl",
+        "operands": "#0xa04caf98"
+      },
+      {
+        "address": "0xa01b29b4",
+        "mnemonic": "add",
+        "operands": "sp, sp, #0x14"
+      },
+      {
+        "address": "0xa01b29b8",
+        "mnemonic": "pop",
+        "operands": "{pc}"
+      }
+    ],
+    "voice_record_button_dispatch": [
+      {
+        "address": "0xa019dca8",
+        "mnemonic": "movw",
+        "operands": "r3, #0x33a"
+      },
+      {
+        "address": "0xa019dcac",
+        "mnemonic": "movt",
+        "operands": "r3, #0xf001"
+      },
+      {
+        "address": "0xa019dcb0",
+        "mnemonic": "cmp",
+        "operands": "sl, r3"
+      },
+      {
+        "address": "0xa019dcb4",
+        "mnemonic": "beq",
+        "operands": "#0xa019fc84"
+      },
+      {
+        "address": "0xa019dcb8",
+        "mnemonic": "bls",
+        "operands": "#0xa019e5d0"
+      },
+      {
+        "address": "0xa019dcbc",
+        "mnemonic": "mov",
+        "operands": "r3, #0x33c"
+      },
+      {
+        "address": "0xa019dcc0",
+        "mnemonic": "movt",
+        "operands": "r3, #0xf001"
+      },
+      {
+        "address": "0xa019dcc4",
+        "mnemonic": "cmp",
+        "operands": "sl, r3"
+      },
+      {
+        "address": "0xa019dcc8",
+        "mnemonic": "beq",
+        "operands": "#0xa019f94c"
+      },
+      {
+        "address": "0xa019dccc",
+        "mnemonic": "blo",
+        "operands": "#0xa019f66c"
+      }
+    ],
+    "voice_record_button_gate": [
+      {
+        "address": "0xa019f66c",
+        "mnemonic": "movw",
+        "operands": "r0, #0x4038"
+      },
+      {
+        "address": "0xa019f670",
+        "mnemonic": "movw",
+        "operands": "r2, #0x4358"
+      },
+      {
+        "address": "0xa019f674",
+        "mnemonic": "movt",
+        "operands": "r2, #0xa056"
+      },
+      {
+        "address": "0xa019f678",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa019f67c",
+        "mnemonic": "movw",
+        "operands": "r1, #0xabf"
+      },
+      {
+        "address": "0xa019f680",
+        "mnemonic": "bl",
+        "operands": "#0xa02a70ec"
+      },
+      {
+        "address": "0xa019f684",
+        "mnemonic": "ldr",
+        "operands": "r2, [sp, #0x54]"
+      },
+      {
+        "address": "0xa019f688",
+        "mnemonic": "ldr",
+        "operands": "r3, [sp, #0x24]"
+      },
+      {
+        "address": "0xa019f68c",
+        "mnemonic": "ldr",
+        "operands": "r2, [r2]"
+      },
+      {
+        "address": "0xa019f690",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3]"
+      },
+      {
+        "address": "0xa019f694",
+        "mnemonic": "cmp",
+        "operands": "r2, r3"
+      },
+      {
+        "address": "0xa019f698",
+        "mnemonic": "bne",
+        "operands": "#0xa019f6a8"
+      },
+      {
+        "address": "0xa019f69c",
+        "mnemonic": "ldrb",
+        "operands": "r3, [r4, #0x22]"
+      },
+      {
+        "address": "0xa019f6a0",
+        "mnemonic": "cmp",
+        "operands": "r3, #3"
+      },
+      {
+        "address": "0xa019f6a4",
+        "mnemonic": "bhi",
+        "operands": "#0xa01a0958"
+      },
+      {
+        "address": "0xa019f6a8",
+        "mnemonic": "movw",
+        "operands": "r0, #0x40b8"
+      },
+      {
+        "address": "0xa019f6ac",
+        "mnemonic": "movw",
+        "operands": "r2, #0x4358"
+      },
+      {
+        "address": "0xa019f6b0",
+        "mnemonic": "movt",
+        "operands": "r2, #0xa056"
+      },
+      {
+        "address": "0xa019f6b4",
+        "mnemonic": "movw",
+        "operands": "r1, #0xac4"
+      },
+      {
+        "address": "0xa019f6b8",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa019f6bc",
+        "mnemonic": "bl",
+        "operands": "#0xa02a70ec"
+      },
+      {
+        "address": "0xa019f6c0",
+        "mnemonic": "b",
+        "operands": "#0xa019db34"
+      }
+    ],
+    "voice_to_app_record_event": [
+      {
+        "address": "0xa01a0958",
+        "mnemonic": "movw",
+        "operands": "r0, #0x406c"
+      },
+      {
+        "address": "0xa01a095c",
+        "mnemonic": "movw",
+        "operands": "r2, #0x4358"
+      },
+      {
+        "address": "0xa01a0960",
+        "mnemonic": "movt",
+        "operands": "r2, #0xa056"
+      },
+      {
+        "address": "0xa01a0964",
+        "mnemonic": "movw",
+        "operands": "r1, #0xac1"
+      },
+      {
+        "address": "0xa01a0968",
+        "mnemonic": "movt",
+        "operands": "r0, #0xa056"
+      },
+      {
+        "address": "0xa01a096c",
+        "mnemonic": "bl",
+        "operands": "#0xa02a70ec"
+      },
+      {
+        "address": "0xa01a0970",
+        "mnemonic": "ldr",
+        "operands": "r3, [sp, #0x54]"
+      },
+      {
+        "address": "0xa01a0974",
+        "mnemonic": "mov",
+        "operands": "r0, #0xc"
+      },
+      {
+        "address": "0xa01a0978",
+        "mnemonic": "mov",
+        "operands": "r1, r5"
+      },
+      {
+        "address": "0xa01a097c",
+        "mnemonic": "mov",
+        "operands": "r2, r8"
+      },
+      {
+        "address": "0xa01a0980",
+        "mnemonic": "movt",
+        "operands": "r0, #0xe001"
+      },
+      {
+        "address": "0xa01a0984",
+        "mnemonic": "ldr",
+        "operands": "r3, [r3, #0x28]"
+      },
+      {
+        "address": "0xa01a0988",
+        "mnemonic": "blx",
+        "operands": "r3"
+      }
+    ]
+  },
+  "limitations": [
+    "Model byte format and exact recognized Mandarin phrases are not decoded.",
+    "Compiled code is not proof that the product exposes or enables voice control.",
+    "Existing native ps tsk snapshots show a waiting task; no new live microphone, language change, voice setting write or recording was performed.",
+    "The Ghidra output has inferred signatures; ARM return values must be checked before reuse."
+  ]
+}

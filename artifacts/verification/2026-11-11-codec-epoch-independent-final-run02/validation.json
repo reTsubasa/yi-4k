@@ -1,0 +1,1105 @@
+{
+  "scope": "offline new C binding/cache plus original ARM parser/index/open/close/serializer with explicit RAM file and OS models",
+  "host_cases": 49,
+  "compiled_arm_cases": 49,
+  "results": [
+    {
+      "name": "valid_binding",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "missing_identity",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967294,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "missing_config_digest",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967294,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sps_over_limit",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pps_over_limit",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "truncated_sps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pps_references_wrong_sps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "invalid_emulation_prevention",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "asc_rate_mismatch",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "asc_channel_mismatch",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "non_lc_aot",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "wrong_aac_frame_size",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "reserved_nonzero",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_parameter_limits",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slice_before_config",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slice_only_inject",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "inband_same_no_duplicate",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ordinary_slice_no_injection",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "partial_parameter_pair",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "duplicate_sps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "fresh_non_idr",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967290,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slice_wrong_pps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967293,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "changed_sps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967293,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "changed_pps",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967293,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "trailing_empty_prefix",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "three_byte_prefix",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "forbidden_zero_bit",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "no_vcl",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "one_byte_short_output",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "video_eos_blocks_video_not_audio",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "invalid_eos_not_committed",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "audio_eos_blocks_audio",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "audio_over_limit",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "video_over_limit",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "source_output_alias",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "wrong_frame_identity",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967293,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_video_max",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        1048591,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_audio_max",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "over_nal_count",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "truncated_slice",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "malformed_unescaped_rbsp",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_output_capacity",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rebind_existing_epoch_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "identity_aliases_epoch_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "identity_aliases_input_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "written_aliases_output_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_nal_count",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        463,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "asc_extension_flags_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "idr_with_p_slice_type_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "reports_equal": true,
+      "abi_preserved": true,
+      "report": [
+        4294967292,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "original_arm_complete_mp4_cases": [
+    {
+      "name": "slice_only_injected",
+      "host_arm_adapted_bytes_equal": true,
+      "input_nal_types": [
+        5
+      ],
+      "output_nal_types": [
+        7,
+        8,
+        5
+      ],
+      "adapted_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "original_process_video_sps_bytes": 54,
+      "original_process_video_pps_bytes": 4,
+      "native_close_status": 0,
+      "mp4_path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-11-codec-epoch-independent-final-run02/slice_only_injected.mp4",
+      "mp4_bytes": 469881,
+      "mp4_sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "source_and_output_first_decoded_frame_equal": true,
+      "decoded_frame_sha256": "354babd94f134fb641ff5d6a6abe4ee664449f234ee62e93693576b740113c00",
+      "full_av_decode_passed": true,
+      "native_index_call_count": 48,
+      "native_entries": [
+        "0xa0401ae4",
+        "0xa0402750",
+        "0xa0402884",
+        "0xa0402ed8",
+        "0xa04032fc",
+        "0xa040f710",
+        "0xa040fc04",
+        "0xa0411048",
+        "0xa04111ac",
+        "0xa0411e88",
+        "0xa0433af0",
+        "0xa0435a18",
+        "0xa0436004"
+      ],
+      "modeled_file_writes": 493
+    },
+    {
+      "name": "same_inband_preserved",
+      "host_arm_adapted_bytes_equal": true,
+      "input_nal_types": [
+        7,
+        8,
+        5
+      ],
+      "output_nal_types": [
+        7,
+        8,
+        5
+      ],
+      "adapted_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "original_process_video_sps_bytes": 54,
+      "original_process_video_pps_bytes": 4,
+      "native_close_status": 0,
+      "mp4_path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-11-codec-epoch-independent-final-run02/same_inband_preserved.mp4",
+      "mp4_bytes": 469881,
+      "mp4_sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "source_and_output_first_decoded_frame_equal": true,
+      "decoded_frame_sha256": "354babd94f134fb641ff5d6a6abe4ee664449f234ee62e93693576b740113c00",
+      "full_av_decode_passed": true,
+      "native_index_call_count": 48,
+      "native_entries": [
+        "0xa0401ae4",
+        "0xa0402750",
+        "0xa0402884",
+        "0xa0402ed8",
+        "0xa04032fc",
+        "0xa040f710",
+        "0xa040fc04",
+        "0xa0411048",
+        "0xa04111ac",
+        "0xa0411e88",
+        "0xa0433af0",
+        "0xa0435a18",
+        "0xa0436004"
+      ],
+      "modeled_file_writes": 493
+    }
+  ],
+  "slice_only_without_adapter_control": {
+    "original_process_status": 0,
+    "sps_length": 0,
+    "pps_length": 0,
+    "media_bytes": 468192,
+    "meaning": "raw slice-only return success does not initialize codec parameters"
+  },
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "configuration_provenance": {
+    "source": {
+      "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+      "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+      "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+      "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+      "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+      "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+      "nal_types": [
+        7,
+        8,
+        5
+      ],
+      "nal_sizes": [
+        54,
+        4,
+        468188
+      ],
+      "audio_packet_position": 468240,
+      "audio_packet_bytes": 341,
+      "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+      "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+    },
+    "identity_hex": "e77de324bf167d63ab864296d466841d93b0e742b860ff93a06b891a03d53bda",
+    "config_digest_hex": "17c723071e6f30002b1ce8e28f4568f4f371c66eeba60dd80e91210cdc01c594",
+    "avcc_hex": "014d4033efe10036274d40339a6403c0113f2c8c04040500000303e90000ea60e86000393840000e4e1cbbcb8d0c000727080001c9c397797078442252c001000428ee3880",
+    "asc_hex": "1190000000",
+    "sps_hex": "274d40339a6403c0113f2c8c04040500000303e90000ea60e86000393840000e4e1cbbcb8d0c000727080001c9c397797078442252c0",
+    "pps_hex": "28ee3880",
+    "binding_derivation": "SHA256(archived-source-codec-binding-v1 || source SHA256 bytes || config_digest); config_digest=SHA256(avcC || BE32(length) || exact avcC || ASC || BE32(length) || exact ASC)",
+    "sample_rate_origin": "explicit archived mp4a/ASC; never inferred from raw AAC",
+    "live_encoder_binding_proven": false
+  },
+  "build_commands": [
+    [
+      "/usr/bin/clang",
+      "-arch",
+      "x86_64",
+      "-shared",
+      "-fPIC",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_codec_epoch.c",
+      "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_codec_epoch_test.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/codec.dylib"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_codec_epoch.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/yi4k_1107_codec_epoch.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_codec_epoch_test.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/yi4k_codec_epoch_test.c.o"
+    ],
+    [
+      "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+      "-T",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/codec.ld",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/yi4k_1107_codec_epoch.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/yi4k_codec_epoch_test.c.o",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-codec-epoch-e0ryefs9/codec.elf"
+    ]
+  ],
+  "source_sha256": {
+    "sdk/yi4k_1107_codec_epoch.c": "3b95cc2a50936feeb1083bdbe10d46e16b4e9f923dbbb7fef782401cbc211d7d",
+    "sdk/offline/yi4k_codec_epoch_test.c": "fd86b5aa754251485077fb5eb3ff669a9cd91caf9ca30b1f1915870721696eb6",
+    "sdk/yi4k_1107_codec_epoch.h": "b03ed142b36aac874c7e154df1a00b5a707958bc902898fe1b86e316fe08c9e0"
+  },
+  "validation_script_sha256": "d97e77b17312b812b80b971aff14ada806b4c274803284fb662266405800161c",
+  "native_harness_sha256": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99",
+  "original_writer_harness_sha256": "ba606abc1440844c44dff5424744fd7769e22d226d1f2c0c9cbe652d75acb83b",
+  "imported_harness_hashes": {
+    "audit_prerecord_native_mp4.py": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99",
+    "audit_prerecord_owned_mux_writer.py": "ba606abc1440844c44dff5424744fd7769e22d226d1f2c0c9cbe652d75acb83b"
+  },
+  "imported_harness_files_unchanged_at_completion": {
+    "audit_prerecord_native_mp4.py": true,
+    "audit_prerecord_owned_mux_writer.py": true
+  },
+  "arm_elf_sha256": "77913f41790f027adf48ef81caa820a497c0cd129cd329997ef2bea21d36bc10",
+  "functions": {
+    "nonzero": {
+      "address": 268632480,
+      "bytes": 400
+    },
+    "parameter_ids": {
+      "address": 268632880,
+      "bytes": 496
+    },
+    "ue": {
+      "address": 268635472,
+      "bytes": 416
+    },
+    "arguments": {
+      "address": 268634928,
+      "bytes": 544
+    },
+    "yi4k_1107_codec_init": {
+      "address": 268632064,
+      "bytes": 416
+    },
+    "yi4k_1107_codec_video": {
+      "address": 268633376,
+      "bytes": 1552
+    },
+    "yi4k_1107_codec_audio": {
+      "address": 268635888,
+      "bytes": 172
+    },
+    "yi4k_codec_epoch_test": {
+      "address": 268636060,
+      "bytes": 4252
+    }
+  },
+  "limitations": [
+    "No camera, live encoder configuration binding, hook, FIFO adapter integration, hardware epoch, cache lease or minute spool.",
+    "Identity/digest provenance must be supplied by caller; this test binds exact archived MP4 avcC/ASC/source, not a real producer session.",
+    "C validates framing and initial IDs only, not complete codec syntax; actual original parser and decoder validate the archived positive fixture.",
+    "Native index and MP4 path execute original ARM; file seek/write and OS allocator are explicit memory models, not SD filesystem.",
+    "SPS/PPS each64, one pair, four-byte prefixes, <=64NALs/AU, AAC-LC mono/stereo fixed1024 are intentionally narrow adapter limits.",
+    "No raw AAC sample-rate inference and no arbitrary codec change/rebind; caller must abort/close/quiesce and create fresh binding."
+  ],
+  "device_access": false,
+  "camera_prerecord_implemented": false
+}

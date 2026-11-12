@@ -1,0 +1,55 @@
+0xa03c3448  cmp r0, #0
+0xa03c344c  beq #0xa03c3470
+0xa03c3450  push {r4, r5, r6, r7, r8, lr}
+0xa03c3454  movw ip, #0x5445
+0xa03c3458  ldr lr, [r0]
+0xa03c345c  movt ip, #0x4259
+0xa03c3460  cmp lr, ip
+0xa03c3464  beq #0xa03c3478
+0xa03c3468  mov r0, #2
+0xa03c346c  pop {r4, r5, r6, r7, r8, pc}
+0xa03c3470  mov r0, #2
+0xa03c3474  bx lr
+0xa03c3478  cmp r1, #0
+0xa03c347c  beq #0xa03c3490
+0xa03c3480  cmp r2, #0
+0xa03c3484  bne #0xa03c3498
+0xa03c3488  mov r0, #5
+0xa03c348c  pop {r4, r5, r6, r7, r8, pc}
+0xa03c3490  mov r0, #3
+0xa03c3494  pop {r4, r5, r6, r7, r8, pc}
+0xa03c3498  ldr ip, [r0, #0x1c]
+0xa03c349c  cmp r2, ip
+0xa03c34a0  bhi #0xa03c3488
+0xa03c34a4  cmp r3, #0
+0xa03c34a8  mov r7, r3
+0xa03c34ac  mov r6, r2
+0xa03c34b0  mov r5, r1
+0xa03c34b4  mov r4, r0
+0xa03c34b8  beq #0xa03c34d0
+0xa03c34bc  bl #0xa03c0d08
+0xa03c34c0  cmp r0, #0
+0xa03c34c4  beq #0xa03c34d0
+0xa03c34c8  mov r0, #4
+0xa03c34cc  pop {r4, r5, r6, r7, r8, pc}
+0xa03c34d0  bl #0xa03c0d4c
+0xa03c34d4  movw r3, #0x6c34
+0xa03c34d8  movt r3, #0xa179
+0xa03c34dc  cmp r3, r0
+0xa03c34e0  beq #0xa03c3504
+0xa03c34e4  bl #0xa03c0d08
+0xa03c34e8  cmp r0, #0
+0xa03c34ec  beq #0xa03c350c
+0xa03c34f0  bl #0xa03c0d08
+0xa03c34f4  movw r3, #0xf0ef
+0xa03c34f8  movt r3, #0xf0f0
+0xa03c34fc  cmp r0, r3
+0xa03c3500  bhi #0xa03c350c
+0xa03c3504  mov r0, #0x13
+0xa03c3508  pop {r4, r5, r6, r7, r8, pc}
+0xa03c350c  mov r0, r4
+0xa03c3510  mov r1, r5
+0xa03c3514  mov r2, r6
+0xa03c3518  mov r3, r7
+0xa03c351c  pop {r4, r5, r6, r7, r8, lr}
+0xa03c3520  b #0xa03bcd20

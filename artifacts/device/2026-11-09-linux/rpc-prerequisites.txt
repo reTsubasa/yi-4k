@@ -1,0 +1,11 @@
+python -B -c 'import ctypes,sys; print(sys.version); print(ctypes.sizeof(cty
+pes.c_void_p)); print(ctypes.CDLL("/usr/lib/libambaipc.so"))'; cat /sys/class/mt
+d/mtd1/ecc_failures /sys/class/mtd/mtd1/corrected_bits
+2.7.9 (default, Feb 26 2016, 10:34:35) 
+[GCC 4.9.2 20140904 (prerelease)]
+4
+<CDLL '/usr/lib/libambaipc.so', handle c55be0 at 36a4f210>
+cat: can't open '/sys/class/mtd/mtd1/ecc_failures': No such file or directory
+cat: can't open '/sys/class/mtd/mtd1/corrected_bits': No such file or directory
+~ # echo __YI_CAPTURE_e9fa3897ee294683b17711f946159911__
+__YI_CAPTURE_e9fa3897ee294683b17711f946159911__

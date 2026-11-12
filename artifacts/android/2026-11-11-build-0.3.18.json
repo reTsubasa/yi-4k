@@ -1,0 +1,47 @@
+{
+  "version_name": "0.3.18",
+  "version_code": 21,
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.3.18-debug.apk",
+    "sha256": "86d71ae6b62a6b36a6b325560085d879568e54160305e3f458c855dd150cd9da",
+    "bytes": 11906513
+  },
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.3.18-tests.apk",
+    "sha256": "8ca36deff7381b1290c6ee90f4b886100d56b3094a11edc51e01593f0e05dcaf"
+  },
+  "debug_unit_tests": {
+    "tests": 163,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 68,
+    "report": "artifacts/android/0.3.18-reports/lint-results-debug.xml"
+  },
+  "instrumentation": {
+    "report": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run03/acceptance.json",
+    "tests": 1,
+    "passed": true,
+    "scope": "AOSP34 ARM64, compositor screenshots, pregranted permissions, loopback camera; no phone, camera or RTSP",
+    "emulator_stopped": true,
+    "avd_disk_reclaimed_bytes": 505720832,
+    "details": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run03/workflow-screens/shutter-feedback/shutter-feedback.json",
+    "first_run_permissions_verified": false,
+    "preserved_failed_run": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run02/acceptance.json"
+  },
+  "source_sha256": {
+    "android/app/build.gradle": "c62c948fb08905035e0a8749dae6923c0c539820a1e30d110b68f330eb949df5",
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "af2a22fdfcafff58ed4d07a3e194df6233df7219562105be7a4f15c62cad19ff",
+    "android/app/src/main/java/dev/yi4k/control/CameraVisuals.java": "a8fe556136d818d34befedf9e965113f2de81d84acaf2f109d1de761d1577e89",
+    "android/app/src/androidTest/java/dev/yi4k/control/ShutterFeedbackDeviceTest.java": "4d6d1423485f89ea4a48a4d96878e03360cb7898bce475764cdbdcdc231c3731",
+    "android/app/src/testSupport/java/dev/yi4k/control/SimulatedCamera.java": "87994825d2628fc5a1a6dcee87546b1ce7a33741eff70b5ea9eee25cfc7dd175"
+  },
+  "limitations": [
+    "Physical phone Wi-Fi and capture workflow are not newly verified.",
+    "Haptic strength is not verified by an emulator.",
+    "EIS replacement and camera-side prerecord remain incomplete."
+  ]
+}

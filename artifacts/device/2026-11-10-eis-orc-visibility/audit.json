@@ -1,0 +1,124 @@
+{
+  "evidence_type": "offline full-member ORC architectural visibility opcode scan",
+  "container_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "member": {
+    "name": "orccode.bin",
+    "offset": "0xa000",
+    "bytes": 3036411,
+    "sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6"
+  },
+  "scan": {
+    "word_alignment": 4,
+    "member_words": 759102,
+    "architectural_sync_patterns": {
+      "l.msync": [],
+      "l.psync": [],
+      "l.csync": []
+    },
+    "architectural_sync_total": 0,
+    "rfe_pattern_total": 566,
+    "rfe_pattern_note": "l.rfe encoding-pattern matches are retained as opaque words; reserved lower bits are not assigned a completion meaning"
+  },
+  "windows": {
+    "feedback": {
+      "range": [
+        "0xd7844",
+        "0xd796c"
+      ],
+      "words": 74,
+      "sync_hits": {
+        "l.msync": [],
+        "l.psync": [],
+        "l.csync": []
+      },
+      "rfe_pattern_hits": [],
+      "sha256": "c3228d86805a913cfaa7d7217afa45c728828dd5aef3b99eb4de12f3d3f2db2c"
+    },
+    "preclear": {
+      "range": [
+        "0xd7970",
+        "0xd7ac4"
+      ],
+      "words": 85,
+      "sync_hits": {
+        "l.msync": [],
+        "l.psync": [],
+        "l.csync": []
+      },
+      "rfe_pattern_hits": [],
+      "sha256": "de4b25f4541036307e212dc085dd719849bcc9de2c5ed3ca37293a02a59dea90"
+    },
+    "copy_helpers": {
+      "range": [
+        "0x1a14c4",
+        "0x1a1608"
+      ],
+      "words": 81,
+      "sync_hits": {
+        "l.msync": [],
+        "l.psync": [],
+        "l.csync": []
+      },
+      "rfe_pattern_hits": [
+        {
+          "member_offset": "0x1a14d0",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a14e4",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1508",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1554",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1564",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1580",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1598",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a15b4",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a15cc",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a15e8",
+          "word_le": "0xf0000049"
+        },
+        {
+          "member_offset": "0x1a1600",
+          "word_le": "0xf0000049"
+        }
+      ],
+      "sha256": "16b3ab16a6cbf59c28acc6adf46adfa88933ffb15a80dbc58f83fb5481b9d3a0"
+    }
+  },
+  "conclusion": {
+    "no_architectural_sync_in_member": true,
+    "scope": "complete selected member, aligned word scan",
+    "does_not_prove": [
+      "proprietary staging or code_dma completion",
+      "cache visibility, atomic publication or hardware latch",
+      "DSP runtime PC or exact loaded microcode identity",
+      "safe reuse of state slots, warp tables or scratch banks"
+    ]
+  },
+  "device_access": false,
+  "orc_executed": false,
+  "writes_to_device": false
+}

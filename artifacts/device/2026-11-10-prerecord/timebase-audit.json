@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-10",
+  "method": "Existing Ghidra export, direct ARM/Thumb byte validation, host Unicorn prefix execution. No REA session, camera connection, camera execution, device write, or patch.",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base_address": "0xa0100000",
+    "bytes": 7491584,
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "source_index": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/functions.json",
+    "sha256": "661cf8c05ffa1e970aac2ce8c62b03bfc1acf86cc0ead9f6d07d4537b6392ac4"
+  },
+  "function_windows": [
+    {
+      "entry": "0xa03e5ab8",
+      "body_ranges_inclusive": [
+        "a03e5ab8-a03e5b5b"
+      ],
+      "instruction_set": "ARM",
+      "body_bytes": 164,
+      "body_ranges_concatenated_sha256": "98316ad03e20f06e197e368948b8a710baed76d2381a07f59845d2a0a97b9675",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e5ab8.c",
+      "pseudocode_sha256": "73d91233bcfd85b33ac1a6972b1877c9bc9403d5cf748f4e58007e4d4fa2720b"
+    },
+    {
+      "entry": "0xa03e5b5c",
+      "body_ranges_inclusive": [
+        "a03e5b5c-a03e600f"
+      ],
+      "instruction_set": "ARM",
+      "body_bytes": 1204,
+      "body_ranges_concatenated_sha256": "77e990690eeb5ed4dffa6e122cc171ef4b3b7648178244912c92245ba11a2446",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e5b5c.c",
+      "pseudocode_sha256": "f8df91011d3f695ac066b3d89e2f0aed881daba9e8a9891be4c2e3f6d46bbed3"
+    },
+    {
+      "entry": "0xa042ce28",
+      "body_ranges_inclusive": [
+        "a042ce28-a042d0f7"
+      ],
+      "instruction_set": "ARM",
+      "body_bytes": 720,
+      "body_ranges_concatenated_sha256": "8d014c6f8e01db565af710680a4c88f98d9eceb800b10f241079e96c54c2c522",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a042ce28.c",
+      "pseudocode_sha256": "8ac3580d56de8a90ecae4f87ce8a195894db0db754ebd258204506a90dcbb129"
+    },
+    {
+      "entry": "0xa0506418",
+      "body_ranges_inclusive": [
+        "a0506418-a0506449",
+        "a0506654-a0506673"
+      ],
+      "instruction_set": "Thumb",
+      "body_bytes": 82,
+      "body_ranges_concatenated_sha256": "2b0dec94c17e50fd180f6a5381687d5a929bed947508eb5e125fa09ab0239c78",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0506418.c",
+      "pseudocode_sha256": "c56bee6c703d1d416464580dbff99fa8b77078b9f83d0763e1a06a13baad8c2e"
+    },
+    {
+      "entry": "0xa0506674",
+      "body_ranges_inclusive": [
+        "a0506674-a050668d"
+      ],
+      "instruction_set": "Thumb",
+      "body_bytes": 26,
+      "body_ranges_concatenated_sha256": "e8d8778ce0a632e0aa1b9c836fe8f4611b58c837ef4a4f431af83e30ec9d369a",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0506674.c",
+      "pseudocode_sha256": "7d7bb6c18250ed0688caaa1a57277148abffca686f3372fabc5196ab7090b602"
+    },
+    {
+      "entry": "0xa0506f38",
+      "body_ranges_inclusive": [
+        "a0506f38-a0506f65"
+      ],
+      "instruction_set": "Thumb",
+      "body_bytes": 46,
+      "body_ranges_concatenated_sha256": "e38a4082822a571bfe243bc88a4060adb2d3b75a5ce160348241eb51734a29b5",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0506f38.c",
+      "pseudocode_sha256": "d15998120d908fb10c1be60ec3da29f0a388984e66ef3ae0a6ca520cee73bfe5"
+    },
+    {
+      "entry": "0xa0507008",
+      "body_ranges_inclusive": [
+        "a0507008-a0507037"
+      ],
+      "instruction_set": "Thumb",
+      "body_bytes": 48,
+      "body_ranges_concatenated_sha256": "675cf4daaa8b0f72b075a2a78fd9a630f28aa33f6d5c62ea950b2e796f35fcf0",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0507008.c",
+      "pseudocode_sha256": "749d6e13959a668ca8aa5780da3573a3dea032e2af37550b2192628fedf1fbbb"
+    },
+    {
+      "entry": "0xa05081ac",
+      "body_ranges_inclusive": [
+        "a05081ac-a05082b1"
+      ],
+      "instruction_set": "Thumb",
+      "body_bytes": 262,
+      "body_ranges_concatenated_sha256": "0f3634c9624414461eaaefde98d044339f4911fca57c5ae81e716372c5baca54",
+      "pseudocode_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a05081ac.c",
+      "pseudocode_sha256": "2ef9483892e4ca31979519c904c7767f0db022af7497e079803db14e78b86837"
+    }
+  ],
+  "raw_instruction_checks": [
+    {
+      "address": "0xa03e5b64",
+      "bytes": "d820c1e1",
+      "mnemonic": "ldrd",
+      "operands": "r2, r3, [r1, #8]"
+    },
+    {
+      "address": "0xa03e5c20",
+      "bytes": "900981e0",
+      "mnemonic": "umull",
+      "operands": "r0, r1, r0, sb"
+    },
+    {
+      "address": "0xa03e5c44",
+      "bytes": "060050e0",
+      "mnemonic": "subs",
+      "operands": "r0, r0, r6"
+    },
+    {
+      "address": "0xa03e5c48",
+      "bytes": "0710c1e0",
+      "mnemonic": "sbc",
+      "operands": "r1, r1, r7"
+    },
+    {
+      "address": "0xa03e5c58",
+      "bytes": "991e21e0",
+      "mnemonic": "mla",
+      "operands": "r1, sb, lr, r1"
+    },
+    {
+      "address": "0xa03e5c64",
+      "bytes": "b38404fa",
+      "mnemonic": "blx",
+      "operands": "#0xa0506f38"
+    },
+    {
+      "address": "0xa03e5c7c",
+      "bytes": "960c81e0",
+      "mnemonic": "umull",
+      "operands": "r0, r1, r6, ip"
+    },
+    {
+      "address": "0xa03e5c80",
+      "bytes": "9c1721e0",
+      "mnemonic": "mla",
+      "operands": "r1, ip, r7, r1"
+    },
+    {
+      "address": "0xa03e5c84",
+      "bytes": "ab8404fa",
+      "mnemonic": "blx",
+      "operands": "#0xa0506f38"
+    },
+    {
+      "address": "0xa03e5c94",
+      "bytes": "006096e0",
+      "mnemonic": "adds",
+      "operands": "r6, r6, r0"
+    },
+    {
+      "address": "0xa03e5c98",
+      "bytes": "0170a7e0",
+      "mnemonic": "adc",
+      "operands": "r7, r7, r1"
+    },
+    {
+      "address": "0xa03e5ca4",
+      "bytes": "a38404fa",
+      "mnemonic": "blx",
+      "operands": "#0xa0506f38"
+    },
+    {
+      "address": "0xa03e5ca8",
+      "bytes": "906587e0",
+      "mnemonic": "umull",
+      "operands": "r6, r7, r0, r5"
+    },
+    {
+      "address": "0xa03e5cb4",
+      "bytes": "957127e0",
+      "mnemonic": "mla",
+      "operands": "r7, r5, r1, r7"
+    },
+    {
+      "address": "0xa03e5cbc",
+      "bytes": "f066c4e1",
+      "mnemonic": "strd",
+      "operands": "r6, r7, [r4, #0x60]"
+    },
+    {
+      "address": "0xa03e5cd4",
+      "bytes": "040059e3",
+      "mnemonic": "cmp",
+      "operands": "sb, #4"
+    },
+    {
+      "address": "0xa03e5eac",
+      "bytes": "20c094e5",
+      "mnemonic": "ldr",
+      "operands": "ip, [r4, #0x20]"
+    },
+    {
+      "address": "0xa03e5ec0",
+      "bytes": "069099e0",
+      "mnemonic": "adds",
+      "operands": "sb, sb, r6"
+    },
+    {
+      "address": "0xa03e5f78",
+      "bytes": "f0a2c4e1",
+      "mnemonic": "strd",
+      "operands": "sl, fp, [r4, #0x20]"
+    },
+    {
+      "address": "0xa042cf2c",
+      "bytes": "0ae3feeb",
+      "mnemonic": "bl",
+      "operands": "#0xa03e5b5c"
+    },
+    {
+      "address": "0xa042cf44",
+      "bytes": "0200e003",
+      "mnemonic": "mvneq",
+      "operands": "r0, #2"
+    },
+    {
+      "address": "0xa042cfb0",
+      "bytes": "186503fa",
+      "mnemonic": "blx",
+      "operands": "#0xa0506418"
+    },
+    {
+      "address": "0xa042cfb8",
+      "bytes": "930000e0",
+      "mnemonic": "mul",
+      "operands": "r0, r3, r0"
+    },
+    {
+      "address": "0xa042cfd4",
+      "bytes": "ab93ffeb",
+      "mnemonic": "bl",
+      "operands": "#0xa0411e88"
+    }
+  ],
+  "arithmetic_contract": {
+    "source_scale_offset": "track+0x40 u32",
+    "destination_scale_offset": "track+0x04 u32",
+    "period_offset": "track+0x0c u32",
+    "factor_offset": "track+0x7f u8",
+    "origin_offset": "track+0x58 u64",
+    "bias_offset": "track+0x68 u64 bit pattern",
+    "stored_result_offset": "track+0x60 u64",
+    "formula": "Q=(T/F)*(mode==2?2:1); O=udiv64(mul64(S,B),D); X=udiv64(mul64(sub64(sub64(raw,origin),O),D),S); P=mul64(udiv64(add64(X,Q>>1),Q),Q)",
+    "width": "mul64/sub64/add64 wrap modulo 2^64; nonzero denominators required",
+    "result_is_not_full_success": "Prefix tests stop after result store, before synchronization checks and possible rejection."
+  },
+  "host_emulation": {
+    "python": "3.14.0",
+    "unicorn": "2.1.4",
+    "capstone": "5.0.7",
+    "conversion_entry": "0xa03e5b5c",
+    "conversion_stop_before": "0xa03e5cc0",
+    "real_helper_execution": true,
+    "helper_stubs": false,
+    "instruction_budget_per_case": 100000,
+    "prefix_cases": [
+      {
+        "name": "round_down",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 100001
+        },
+        "expected_u64": 99000,
+        "actual_u64": 99000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "below_half",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 100499
+        },
+        "expected_u64": 99000,
+        "actual_u64": 99000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "half_rounds_up",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 100500
+        },
+        "expected_u64": 102000,
+        "actual_u64": 102000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "nonzero_origin",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 500000,
+          "bias": 0,
+          "raw_pts": 600001
+        },
+        "expected_u64": 99000,
+        "actual_u64": 99000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "scale_1MHz_to_90kHz",
+        "input": {
+          "source_scale": 1000000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 1000000
+        },
+        "expected_u64": 90000,
+        "actual_u64": 90000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "positive_bias",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 3000,
+          "raw_pts": 100001
+        },
+        "expected_u64": 96000,
+        "actual_u64": 96000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "mode_2_double_quantum",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 2,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 100001
+        },
+        "expected_u64": 102000,
+        "actual_u64": 102000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "factor_4",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 4,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 100001
+        },
+        "expected_u64": 99750,
+        "actual_u64": 99750,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "pts_above_u32",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 0,
+          "raw_pts": 4886718345
+        },
+        "expected_u64": 4886718000,
+        "actual_u64": 4886718000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      },
+      {
+        "name": "negative_bias_bit_pattern",
+        "input": {
+          "source_scale": 90000,
+          "destination_scale": 90000,
+          "period": 3000,
+          "factor": 1,
+          "mode": 0,
+          "origin": 0,
+          "bias": 18446744073709548616,
+          "raw_pts": 100001
+        },
+        "expected_u64": 102000,
+        "actual_u64": 102000,
+        "stop_pc": "0xa03e5cc0",
+        "passed": true
+      }
+    ],
+    "unsigned_division_cases": [
+      {
+        "numerator_u64": 9223372036854775824,
+        "denominator_u64": 3,
+        "actual_quotient_u64": 3074457345618258608,
+        "expected_quotient_u64": 3074457345618258608,
+        "passed": true
+      },
+      {
+        "numerator_u64": 18446744073709551615,
+        "denominator_u64": 90000,
+        "actual_quotient_u64": 204963823041217,
+        "expected_quotient_u64": 204963823041217,
+        "passed": true
+      },
+      {
+        "numerator_u64": 4886718345,
+        "denominator_u64": 1000000,
+        "actual_quotient_u64": 4886,
+        "expected_quotient_u64": 4886,
+        "passed": true
+      }
+    ],
+    "passed": 13
+  },
+  "memory_correction": {
+    "descriptor_count": 8192,
+    "stride_bytes": 32,
+    "per_queue_bytes": 262144,
+    "per_queue_KiB": 256,
+    "payload_included": false
+  },
+  "unresolved": [
+    "Production source clock unit and epoch",
+    "Actual track configurations and negative bias semantics across camera modes",
+    "Full DTS progression and track update lifetime",
+    "Audio epoch and A/V alignment",
+    "Real native mux output validity and prerecord lifecycle"
+  ],
+  "safe_next_step": "Extend offline snapshot/adapter contract to include raw descriptor PTS plus track fields 0x04,0x08,0x0c,0x18,0x20,0x40,0x50,0x58,0x60,0x68,0x78,0x7d,0x7e,0x7f,0x89; audit writers before any device integration."
+}

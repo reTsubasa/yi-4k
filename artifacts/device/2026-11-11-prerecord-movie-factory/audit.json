@@ -1,0 +1,1608 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "offline_only": true,
+  "case": "same_movie_memidx_and_public_mux_two_segments",
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "frozen_native_harness_sha256": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99",
+  "factory_pool": {
+    "movie_count": 1,
+    "pool": "0x10000000",
+    "flags": "0x10000708",
+    "version": [
+      2,
+      0
+    ]
+  },
+  "same_movie": "0x10000000",
+  "same_memidx": "0x11000000",
+  "same_mux": "0x13000000",
+  "source": {
+    "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+    "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+    "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+    "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+    "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+    "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+    "nal_types": [
+      7,
+      8,
+      5
+    ],
+    "nal_sizes": [
+      54,
+      4,
+      468188
+    ],
+    "audio_packet_position": 468240,
+    "audio_packet_bytes": 341,
+    "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+    "audio_codec": "aac",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+    "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "segments": [
+    {
+      "number": 1,
+      "before_new": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 0,
+        "sample_counts": [
+          0,
+          0
+        ],
+        "dts": [
+          0,
+          0
+        ],
+        "magic": "0x0",
+        "sps_bytes": 0,
+        "pps_bytes": 0,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": null
+      },
+      "after_original_factory": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          0,
+          0
+        ],
+        "dts": [
+          0,
+          0
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 0,
+        "pps_bytes": 0,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": null
+      },
+      "actual_factory_writes": 511,
+      "factory_writer_pcs": {
+        "0xa04f8e2c": 112,
+        "0xa04f8e32": 112,
+        "0xa04f8e36": 112,
+        "0xa04f8e3e": 112,
+        "0xa04f8e60": 2,
+        "0xa03e2eb4": 1,
+        "0xa03e2eb8": 1,
+        "0xa04f9b70": 2,
+        "0xa04f9b84": 1,
+        "0xa04f9b90": 3,
+        "0xa04f9b9e": 52,
+        "0xa03e2ed0": 1
+      },
+      "recorded": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          3,
+          4
+        ],
+        "dts": [
+          24024,
+          20480
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x12000000",
+        "public_mux_open": 1
+      },
+      "closed": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          3,
+          4
+        ],
+        "dts": [
+          24024,
+          20480
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      },
+      "index": "0x13000058",
+      "readback": {
+        "entries": [
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 0,
+            "value_hex": "00000001"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 1,
+            "value_hex": "00000002"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 2,
+            "value_hex": "00000003"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 0,
+            "value_hex": "00000028"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 1,
+            "value_hex": "00072508"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 2,
+            "value_hex": "000e49e8"
+          },
+          {
+            "track": 0,
+            "kind": 6,
+            "index": 0,
+            "value_hex": "00000000000003e9"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 0,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 1,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 2,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 0,
+            "value_hex": "00156ec8"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 1,
+            "value_hex": "0015701d"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 2,
+            "value_hex": "00157172"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 3,
+            "value_hex": "001572c7"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 0,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 1,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 2,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 3,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 10,
+            "index": 0,
+            "value_hex": "0000000000000400"
+          }
+        ],
+        "actual_memidx_reads": 12
+      },
+      "file": "factory-segment-1.mp4",
+      "bytes": 1407336,
+      "sha256": "ec8bdd69f6e3d5084e4b4f3740bcde98d5a21a000306eacc1ea7dfd8b460e944",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 3003,
+            "nb_read_packets": "3",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 4096,
+            "nb_read_packets": "4",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 16384,
+        "audio_pcm_sha256": "0606efb14ffbbab0d028ea228f12c6bdb19bdb7d361b51543f0c348c1bdd5c68"
+      }
+    },
+    {
+      "number": 2,
+      "before_new": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 0,
+        "sample_counts": [
+          3,
+          4
+        ],
+        "dts": [
+          24024,
+          20480
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      },
+      "after_original_factory": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          0,
+          0
+        ],
+        "dts": [
+          0,
+          0
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 0,
+        "pps_bytes": 0,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      },
+      "actual_factory_writes": 511,
+      "factory_writer_pcs": {
+        "0xa04f8e2c": 112,
+        "0xa04f8e32": 112,
+        "0xa04f8e36": 112,
+        "0xa04f8e3e": 112,
+        "0xa04f8e60": 2,
+        "0xa03e2eb4": 1,
+        "0xa03e2eb8": 1,
+        "0xa04f9b70": 2,
+        "0xa04f9b84": 1,
+        "0xa04f9b90": 3,
+        "0xa04f9b9e": 52,
+        "0xa03e2ed0": 1
+      },
+      "recorded": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          2,
+          3
+        ],
+        "dts": [
+          16016,
+          15360
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x12000000",
+        "public_mux_open": 1
+      },
+      "closed": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 129,
+        "sample_counts": [
+          2,
+          3
+        ],
+        "dts": [
+          16016,
+          15360
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      },
+      "index": "0x13000058",
+      "readback": {
+        "entries": [
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 0,
+            "value_hex": "00000001"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 1,
+            "value_hex": "00000002"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 0,
+            "value_hex": "00000028"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 1,
+            "value_hex": "00072508"
+          },
+          {
+            "track": 0,
+            "kind": 6,
+            "index": 0,
+            "value_hex": "00000000000003e9"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 0,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 1,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 0,
+            "value_hex": "000e49e8"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 1,
+            "value_hex": "000e4b3d"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 2,
+            "value_hex": "000e4c92"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 0,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 1,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 2,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 10,
+            "index": 0,
+            "value_hex": "0000000000000400"
+          }
+        ],
+        "actual_memidx_reads": 9
+      },
+      "file": "factory-segment-2.mp4",
+      "bytes": 938783,
+      "sha256": "e35701bff3d30ddecbe13c90fcfe1168ba607d5faaa7348589641cccf05460cc",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 2002,
+            "nb_read_packets": "2",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 3072,
+            "nb_read_packets": "3",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 12288,
+        "audio_pcm_sha256": "624b96d90e52b4b2fdd0da98e5dbc6bee24c40073f43c001151f2812574b4737"
+      }
+    }
+  ],
+  "boundaries": [
+    {
+      "segment": 1,
+      "new_while_locked_status": -1,
+      "release_status": 0,
+      "second_release_status": -1,
+      "after_release": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 0,
+        "sample_counts": [
+          3,
+          4
+        ],
+        "dts": [
+          24024,
+          20480
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      }
+    },
+    {
+      "segment": 2,
+      "new_while_locked_status": -1,
+      "release_status": 0,
+      "second_release_status": -1,
+      "after_release": {
+        "movie": "0x10000000",
+        "memidx": "0x11000000",
+        "factory_flag": 0,
+        "sample_counts": [
+          2,
+          3
+        ],
+        "dts": [
+          16016,
+          15360
+        ],
+        "magic": "0x12345678",
+        "sps_bytes": 54,
+        "pps_bytes": 4,
+        "memidx_data_pointer": "0x0",
+        "public_mux_open": 0
+      }
+    }
+  ],
+  "function_pins": [
+    {
+      "entry": "0xa01f3338",
+      "body_ranges": [
+        "a01f3338-a01f41df"
+      ],
+      "arm_sha256": "bb8160f30d4db68d3bb731284bbe2207c4f9e63c14127d4299dc3489f717e1a8",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f3338.c",
+      "decompiled_sha256": "c84187544c6f0735124053390d01b41e3af889e934fe97eeabe747191e4baaaf"
+    },
+    {
+      "entry": "0xa01f6088",
+      "body_ranges": [
+        "a01f6088-a01f633f"
+      ],
+      "arm_sha256": "673443d18ccc1d15424d3b73afba398700bb01b0b17dbe02f6f438a8ea965be6",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6088.c",
+      "decompiled_sha256": "398df127e50fe35569f29ca48f2b9532a1297b963389ddea5df4cb1ddbf177c2"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "body_ranges": [
+        "a03e29dc-a03e2afb"
+      ],
+      "arm_sha256": "f0fdf621be4298f7c55b5c7a67d127f58e6b602f065ae6f68cdd0a98b17efd7b",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e29dc.c",
+      "decompiled_sha256": "caaa77c346bd78bea9db940c9fe3dda0c091176e1f612234bbf33698f21a5457"
+    },
+    {
+      "entry": "0xa03e2d3c",
+      "body_ranges": [
+        "a03e2d3c-a03e2daf"
+      ],
+      "arm_sha256": "696feccfb42e2f5ea917135b4979f939901d5189a8b25cfcde48d997dcaaeb77",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e2d3c.c",
+      "decompiled_sha256": "19489c4401e99084da1f6585c244ba0b8d0ffcdebe7723698c762c318f9e4440"
+    },
+    {
+      "entry": "0xa03e2e90",
+      "body_ranges": [
+        "a03e2e90-a03e2ed7"
+      ],
+      "arm_sha256": "7744e7e69674641a2f9cbade9f9372374d49c090ee1e287cef269c46fcf5044f",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e2e90.c",
+      "decompiled_sha256": "a51e3152b0d337d98a7bd1011c3dda9ce5b3605ad66d4e4a66bafd09e6902f5a"
+    },
+    {
+      "entry": "0xa03e2fcc",
+      "body_ranges": [
+        "a03e2f68-a03e30ab"
+      ],
+      "arm_sha256": "044d49bbb858d525b07402249f8954518bd4d0f93d2b7338d64647ea9200616e",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e2fcc.c",
+      "decompiled_sha256": "ac91ff6eea55c94b94da9cd6604d2b8e4dce69adf6bcbfd8ef10b7be01509a1b"
+    },
+    {
+      "entry": "0xa03e30ac",
+      "body_ranges": [
+        "a03e30ac-a03e317f"
+      ],
+      "arm_sha256": "0458e634b653c5dc4bae2a802bb5795db9c40e54a82b914ece531abbd5a25b9d",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e30ac.c",
+      "decompiled_sha256": "3d7e6eb7ed8506fc39875e4522b91fff6789ffddb462106b47a5b97a1d61475f"
+    },
+    {
+      "entry": "0xa03e3c48",
+      "body_ranges": [
+        "a03e3c48-a03e3eff"
+      ],
+      "arm_sha256": "b5fda57512b028095d3872a8c106510e5423a6cb2a825a971c2f072c9f0ad515",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e3c48.c",
+      "decompiled_sha256": "fca2a402bdcf587ed49e50af86c2aa23b70cc4f97f0af775d0e00a718061593f"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "body_ranges": [
+        "a03e3f00-a03e3fdb"
+      ],
+      "arm_sha256": "a8bfc3ff63b9a94dd3e8f5d7cba435ce23379de71cb6f3c3cda07bcebf6b7e1e",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e3f00.c",
+      "decompiled_sha256": "43bd77b52f21c4af584e57160657c9b224e486199702bba749d8033a23627ae8"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "body_ranges": [
+        "a03e40c8-a03e419f"
+      ],
+      "arm_sha256": "68fa604ac7945dfe3e99a4bbbcba65dcaa3f601ab9303726d768d6db78a9657c",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e40c8.c",
+      "decompiled_sha256": "e904c0ad7e886484184dc9529850c20151788eb5680da496bd89b405996c37d9"
+    },
+    {
+      "entry": "0xa03f0ee8",
+      "body_ranges": [
+        "a03f0ee8-a03f1053"
+      ],
+      "arm_sha256": "6b1f7e2ae604ff96a374fafb861f4f4a874e31e6feeece460e90442c5d01f9af",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03f0ee8.c",
+      "decompiled_sha256": "080de513516c75ccbb3658273d160f8fa4bdd8e2db1fa0fa494ac3e4659b498c"
+    },
+    {
+      "entry": "0xa03fdec4",
+      "body_ranges": [
+        "a03fdec4-a03fe07b"
+      ],
+      "arm_sha256": "9cdf3a8642041a799085323637dbb9f67b6d06aab92ecb5d9b4f8e5e4a837a46",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fdec4.c",
+      "decompiled_sha256": "8a0eef5648a665b4fa3a910ec68bf6b5b319c4a0f1a70f89813fd1b2c828daab"
+    },
+    {
+      "entry": "0xa03fe300",
+      "body_ranges": [
+        "a03fe300-a03fe467"
+      ],
+      "arm_sha256": "16902c9c1e2e3ca06341b21b1126b08383ed3305b4548e3fe09655af84d3a561",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fe300.c",
+      "decompiled_sha256": "a181860a9ec0b6a30ea882d9bd84787938ac922bcfbe8fdecf0c0756880c685c"
+    },
+    {
+      "entry": "0xa03fe468",
+      "body_ranges": [
+        "a03fe468-a03fe64b"
+      ],
+      "arm_sha256": "4f4ef8b3521aaf10dc92aaa7dcb9249adcd8ea73f781982e0d451cfe7fd9af60",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fe468.c",
+      "decompiled_sha256": "d1bcb4cd9db9182fd085de25af820d9e09d5f80e0fef1a9be9bae8f484dcaa9a"
+    },
+    {
+      "entry": "0xa03feccc",
+      "body_ranges": [
+        "a03feccc-a03fed43"
+      ],
+      "arm_sha256": "c5746ca556f7ae7a29ac131e58170d2554d2b37489bf994ebb9195280b96b7d4",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03feccc.c",
+      "decompiled_sha256": "600eca3a9cf247600a76b2638aec2c052cc2f1fba556dbc9452340e54a368515"
+    },
+    {
+      "entry": "0xa03fed44",
+      "body_ranges": [
+        "a03fed44-a03fee1f"
+      ],
+      "arm_sha256": "52dfe1fc15a9a61d2f1cd7ae551847c491268809663a4d1095bfdaa865d500ae",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fed44.c",
+      "decompiled_sha256": "4ef858cbbf04bf415ac2824582028d493f1c67766a65553bc1909fd8c3243b84"
+    },
+    {
+      "entry": "0xa0435a18",
+      "body_ranges": [
+        "a0435a18-a0435f63"
+      ],
+      "arm_sha256": "d3975852904ea7167f144ab2027c83d005a9a58099da201bb1650dba7f7475a5",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0435a18.c",
+      "decompiled_sha256": "090ddf795d39dda327c43175c46b75bc8ef08b740a452a8d3a39639cf038be6c"
+    },
+    {
+      "entry": "0xa0436004",
+      "body_ranges": [
+        "a0436004-a04363fb"
+      ],
+      "arm_sha256": "15ea3065954c5c0acb802176b3d43dc4b4f7bc546609265a9296edefeec05dd7",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0436004.c",
+      "decompiled_sha256": "574bd6b9bc45db9ec69bec69cbb62644ab60a03d3348bb9a876a6a0671043564"
+    },
+    {
+      "entry": "0xa0440cd4",
+      "body_ranges": [
+        "a0440cd4-a04412cf"
+      ],
+      "arm_sha256": "8718724cf8bdb267fa121b6d5ff91f8756eefcf6896546323ca875cb7435b13a",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0440cd4.c",
+      "decompiled_sha256": "9c46a4929d8a39da6fbc0d9c1e42f62b0ed217635f7835ead8c47cef770da66f"
+    },
+    {
+      "entry": "0xa0442f20",
+      "body_ranges": [
+        "a0442f20-a0442fc7"
+      ],
+      "arm_sha256": "663db99a327fc7a67d383e2874433c5c7bbb274f9909142fc64e0b5980c4cc69",
+      "decompiled_file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0442f20.c",
+      "decompiled_sha256": "34f14a63bce57d62b4e2059c43a0f43324795ae7d023f5643a6a8bacf59e83bf"
+    }
+  ],
+  "reset_disassembly": [
+    {
+      "address": "0xa03e2e90",
+      "mnemonic": "push",
+      "operands": "{r3, r4, r5, lr}"
+    },
+    {
+      "address": "0xa03e2e94",
+      "mnemonic": "movw",
+      "operands": "r2, #0x708"
+    },
+    {
+      "address": "0xa03e2e98",
+      "mnemonic": "mov",
+      "operands": "r5, r1"
+    },
+    {
+      "address": "0xa03e2e9c",
+      "mnemonic": "mov",
+      "operands": "r1, #0"
+    },
+    {
+      "address": "0xa03e2ea0",
+      "mnemonic": "mov",
+      "operands": "r4, r0"
+    },
+    {
+      "address": "0xa03e2ea4",
+      "mnemonic": "blx",
+      "operands": "#0xa04f8dec"
+    },
+    {
+      "address": "0xa03e2ea8",
+      "mnemonic": "movw",
+      "operands": "r3, #0x5678"
+    },
+    {
+      "address": "0xa03e2eac",
+      "mnemonic": "mov",
+      "operands": "r2, #1"
+    },
+    {
+      "address": "0xa03e2eb0",
+      "mnemonic": "movt",
+      "operands": "r3, #0x1234"
+    },
+    {
+      "address": "0xa03e2eb4",
+      "mnemonic": "strb",
+      "operands": "r2, [r4]"
+    },
+    {
+      "address": "0xa03e2eb8",
+      "mnemonic": "str",
+      "operands": "r3, [r4, #4]"
+    },
+    {
+      "address": "0xa03e2ebc",
+      "mnemonic": "mov",
+      "operands": "r1, r5"
+    },
+    {
+      "address": "0xa03e2ec0",
+      "mnemonic": "add",
+      "operands": "r0, r4, #0x10"
+    },
+    {
+      "address": "0xa03e2ec4",
+      "mnemonic": "mov",
+      "operands": "r2, #0x40"
+    },
+    {
+      "address": "0xa03e2ec8",
+      "mnemonic": "blx",
+      "operands": "#0xa04f9b38"
+    },
+    {
+      "address": "0xa03e2ecc",
+      "mnemonic": "mov",
+      "operands": "r3, #0"
+    },
+    {
+      "address": "0xa03e2ed0",
+      "mnemonic": "strb",
+      "operands": "r3, [r4, #0x4f]"
+    }
+  ],
+  "static_calls": [
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3504",
+      "callee": "0xa03feccc",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3550",
+      "callee": "0xa03fed44",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f35cc",
+      "callee": "0xa03feccc",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f364c",
+      "callee": "0xa03fed44",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3880",
+      "callee": "0xa03e3f00",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3968",
+      "callee": "0xa0440cd4",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3e48",
+      "callee": "0xa03e3f00",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f3338",
+      "site": "0xa01f3f30",
+      "callee": "0xa0440cd4",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f6088",
+      "site": "0xa01f6188",
+      "callee": "0xa03e40c8",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01f6088",
+      "site": "0xa01f6220",
+      "callee": "0xa03e40c8",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e2fcc",
+      "site": "0xa03e3064",
+      "callee": "0xa03e2e90",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e30ac",
+      "site": "0xa03e30b8",
+      "callee": "0xa03e2d3c",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e30ac",
+      "site": "0xa03e30f8",
+      "callee": "0xa03e2e90",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e30ac",
+      "site": "0xa03e3118",
+      "callee": "0xa03e2fcc",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e3c48",
+      "site": "0xa03e3d60",
+      "callee": "0xa03f0ee8",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e3f00",
+      "site": "0xa03e3f30",
+      "callee": "0xa03e30ac",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03e40c8",
+      "site": "0xa03e40fc",
+      "callee": "0xa03e29dc",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03fdec4",
+      "site": "0xa03fdf24",
+      "callee": "0xa0442f20",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03fe300",
+      "site": "0xa03fe374",
+      "callee": "0xa0436004",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03fe468",
+      "site": "0xa03fe500",
+      "callee": "0xa0435a18",
+      "kind": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa03fed44",
+      "site": "0xa03fed74",
+      "callee": "0xa03fdec4",
+      "kind": "UNCONDITIONAL_CALL"
+    }
+  ],
+  "factory_calls": [
+    {
+      "entry": "0xa0440cd4",
+      "args": [
+        268435456,
+        268439552,
+        0,
+        0
+      ],
+      "phase": null,
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e3c48",
+      "args": [
+        285310976,
+        0,
+        1,
+        2692260952
+      ],
+      "phase": "format_init",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03f0ee8",
+      "args": [
+        268437257,
+        268437257,
+        268437256,
+        0
+      ],
+      "phase": "format_init",
+      "caller_return": "0xa03e3d64"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        285311232,
+        268488704,
+        4,
+        1
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e30ac",
+      "args": [
+        285311232,
+        30000,
+        4,
+        1
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03e3f34"
+    },
+    {
+      "entry": "0xa03e2d3c",
+      "args": [
+        285311232,
+        30000,
+        4,
+        1
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03e30bc"
+    },
+    {
+      "entry": "0xa03e2fcc",
+      "args": [
+        285311232,
+        285311232,
+        4,
+        0
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03e311c"
+    },
+    {
+      "entry": "0xa03e2e90",
+      "args": [
+        268435456,
+        285311232,
+        4,
+        0
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03e3068"
+    },
+    {
+      "entry": "0xa04f8dec",
+      "args": [
+        268435456,
+        0,
+        1800,
+        0
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03e2ea8"
+    },
+    {
+      "entry": "0xa0440cd4",
+      "args": [
+        268435456,
+        268439552,
+        4294967169,
+        268437256
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03feccc",
+      "args": [
+        285311488,
+        704,
+        0,
+        2
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03fed44",
+      "args": [
+        285311488,
+        268488704,
+        2688760860,
+        0
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03fdec4",
+      "args": [
+        285311488,
+        30000,
+        2688760860,
+        0
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03fed78"
+    },
+    {
+      "entry": "0xa0442f20",
+      "args": [
+        318767104,
+        2692260868,
+        268484608,
+        318771080
+      ],
+      "phase": "new_movie_1",
+      "caller_return": "0xa03fdf28"
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        318767104,
+        2692260868,
+        0,
+        0
+      ],
+      "phase": "record_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa0435a18",
+      "args": [
+        318767104,
+        285212672,
+        318767192,
+        2
+      ],
+      "phase": "record_1",
+      "caller_return": "0xa03fe504"
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        318767104,
+        4,
+        268561772,
+        0
+      ],
+      "phase": "record_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03fe300",
+      "args": [
+        318767104,
+        0,
+        4294967288,
+        2688271240
+      ],
+      "phase": "record_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa0436004",
+      "args": [
+        318767104,
+        285212672,
+        318767192,
+        2688767536
+      ],
+      "phase": "record_1",
+      "caller_return": "0xa03fe378"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        285311232,
+        268488704,
+        32768,
+        0
+      ],
+      "phase": "release_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e30ac",
+      "args": [
+        285311232,
+        30000,
+        32768,
+        0
+      ],
+      "phase": "release_1",
+      "caller_return": "0xa03e3f34"
+    },
+    {
+      "entry": "0xa03e2d3c",
+      "args": [
+        285311232,
+        30000,
+        32768,
+        0
+      ],
+      "phase": "release_1",
+      "caller_return": "0xa03e30bc"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "args": [
+        268435456,
+        1,
+        2690725812,
+        249
+      ],
+      "phase": "release_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "args": [
+        268435456,
+        1,
+        2690725812,
+        249
+      ],
+      "phase": "release_1",
+      "caller_return": "0xa03e4100"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "args": [
+        268435456,
+        1,
+        268437256,
+        0
+      ],
+      "phase": "release_1",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "args": [
+        268435456,
+        1,
+        268437256,
+        0
+      ],
+      "phase": "release_1",
+      "caller_return": "0xa03e4100"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        285311232,
+        268488704,
+        2690725840,
+        333
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e30ac",
+      "args": [
+        285311232,
+        30000,
+        2690725840,
+        333
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0xa03e3f34"
+    },
+    {
+      "entry": "0xa03e2d3c",
+      "args": [
+        285311232,
+        30000,
+        2690725840,
+        333
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0xa03e30bc"
+    },
+    {
+      "entry": "0xa03e2fcc",
+      "args": [
+        285311232,
+        285311232,
+        2690725840,
+        0
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0xa03e311c"
+    },
+    {
+      "entry": "0xa03e2e90",
+      "args": [
+        268435456,
+        285311232,
+        2690725840,
+        0
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0xa03e3068"
+    },
+    {
+      "entry": "0xa04f8dec",
+      "args": [
+        268435456,
+        0,
+        1800,
+        0
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0xa03e2ea8"
+    },
+    {
+      "entry": "0xa0440cd4",
+      "args": [
+        268435456,
+        268439552,
+        4294967169,
+        268437256
+      ],
+      "phase": "new_movie_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        318767104,
+        704,
+        0,
+        2
+      ],
+      "phase": "record_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa0435a18",
+      "args": [
+        318767104,
+        285212672,
+        318767192,
+        2
+      ],
+      "phase": "record_2",
+      "caller_return": "0xa03fe504"
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        318767104,
+        4,
+        268561772,
+        0
+      ],
+      "phase": "record_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03fe300",
+      "args": [
+        318767104,
+        0,
+        4294967288,
+        2688271240
+      ],
+      "phase": "record_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa0436004",
+      "args": [
+        318767104,
+        285212672,
+        318767192,
+        2688767536
+      ],
+      "phase": "record_2",
+      "caller_return": "0xa03fe378"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        285311232,
+        268488704,
+        32768,
+        0
+      ],
+      "phase": "release_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e30ac",
+      "args": [
+        285311232,
+        30000,
+        32768,
+        0
+      ],
+      "phase": "release_2",
+      "caller_return": "0xa03e3f34"
+    },
+    {
+      "entry": "0xa03e2d3c",
+      "args": [
+        285311232,
+        30000,
+        32768,
+        0
+      ],
+      "phase": "release_2",
+      "caller_return": "0xa03e30bc"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "args": [
+        268435456,
+        1,
+        2690725812,
+        249
+      ],
+      "phase": "release_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "args": [
+        268435456,
+        1,
+        2690725812,
+        249
+      ],
+      "phase": "release_2",
+      "caller_return": "0xa03e4100"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "args": [
+        268435456,
+        1,
+        268437256,
+        0
+      ],
+      "phase": "release_2",
+      "caller_return": "0x10010000"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "args": [
+        268435456,
+        1,
+        268437256,
+        0
+      ],
+      "phase": "release_2",
+      "caller_return": "0xa03e4100"
+    }
+  ],
+  "old_negative": {
+    "report": "artifacts/device/2026-11-11-prerecord-native-mp4/audit.json",
+    "sha256": "a87977ebcd602b6beee4571240a8253521517fb97add92707628a7e73ae4294f",
+    "case": {
+      "name": "negative_reinit_without_fresh_movie",
+      "sample_counts_before": [
+        3,
+        4
+      ],
+      "sample_counts_after_track_init": [
+        3,
+        4
+      ],
+      "new_added": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000004"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "00000028"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0"
+        },
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000005"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "00072508"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e49e8"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e4b3d"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e4c92"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        }
+      ],
+      "expected_first_audio_offset": "000e49e8",
+      "actual_first_audio_index_read": "00156ec8",
+      "close_error": "firmware assertion lr=a040e580, logs=[{'format': '%s() : auto set default audio track to %u', 'arguments': [2690755244, 1, 268439604]}, {'format': '%s START!', 'arguments': [2690747540, 268460052, 2688767536]}, {'format': 'K_ASSERT at %s %d', 'arguments': [2690741140, 1140, 268435456]}]",
+      "logs": [
+        {
+          "format": "%s() : auto set default audio track to %u",
+          "arguments": [
+            2690755244,
+            1,
+            268439604
+          ]
+        },
+        {
+          "format": "%s START!",
+          "arguments": [
+            2690747540,
+            268460052,
+            2688767536
+          ]
+        },
+        {
+          "format": "%s : FilePos = %llx, MdatEnd = %llx, FrameDataPos =%llx, FrameDataSize = %llx, EnableCO64 = %u",
+          "arguments": [
+            2690747560,
+            1405980,
+            0
+          ]
+        },
+        {
+          "format": "%s[%u]: SampleRate = %u, Frame_Size = %u , BitsPerSample = %u, Channels = %u",
+          "arguments": [
+            2690748184,
+            33,
+            48000
+          ]
+        },
+        {
+          "format": "%s END!",
+          "arguments": [
+            2690748016,
+            230,
+            2
+          ]
+        },
+        {
+          "format": "%s() : auto set default audio track to %u",
+          "arguments": [
+            2690755244,
+            1,
+            268439604
+          ]
+        },
+        {
+          "format": "%s START!",
+          "arguments": [
+            2690747540,
+            268460052,
+            2688767536
+          ]
+        },
+        {
+          "format": "K_ASSERT at %s %d",
+          "arguments": [
+            2690741140,
+            1140,
+            268435456
+          ]
+        }
+      ],
+      "partial_media": "no-movie-reset-media.bin",
+      "index_snapshot": "no-movie-reset-index.bin",
+      "boundary": "original track init is not a reset; original camera reopen/reset lifecycle remains unverified"
+    }
+  },
+  "explicit_models": [
+    "original native MP4 harness file/allocator/mutex/RTC and synthetic FIFO models",
+    "event flag creation OS model added for original FormatInit/FifoPoolInit",
+    "single-slot movie pool and caller config/name, stream binding and duration are constructed RAM"
+  ],
+  "limits": [
+    "AppLib full open/close orchestration, tasks, encoder/DMA, CFS/SD, voice and shutter are not executed",
+    "same physical pool slot is released and recreated through original factory, not a live movie reused without release",
+    "synthetic repeated IDR/AAC timeline; no one-minute, long-run, P/B-frame, or timestamp rebase proof"
+  ]
+}

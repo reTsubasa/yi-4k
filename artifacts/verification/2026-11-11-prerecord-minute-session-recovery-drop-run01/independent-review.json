@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "pass_independent_minute_recovery_review",
+  "device_access": false,
+  "positive_reviewed": false,
+  "negative_reviewed": true,
+  "verifier_sha256": "5c964d41bb0c0d0523c7aef5abefd43cded47d2540d7972ba1ae164b33331182",
+  "recovery_script_sha256": "6947ef0583296958d2397717555e70d4895df53a96d09bf0e49b761833f1328b",
+  "iso_rebuilder_sha256": "26907e786322711c9fe271985eaf4f85fcef38c00f4ba633463e9decb901bf5f",
+  "native_input_audit_sha256": "b44dbcf72160dac6a31114ec1598a99044bad1d25fe3544dbf6cc1a6be1da6f3",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "cases": [
+    {
+      "audit": "artifacts/verification/2026-11-11-prerecord-minute-session-recovery-drop-run01/audit.json",
+      "audit_sha256": "1e63cb68aca5030b6e94842e120369ea402268ca1708e93780c2ed83a03e8765",
+      "output_file": "session.pending.mp4",
+      "output_sha256": "a52c92ca22410fb4885d65d743ce9c10e9c634ed33c97be2a74ede41f4836ecd",
+      "counts": {
+        "0": 1920,
+        "1": 3002
+      },
+      "expected_publication": false,
+      "checks": {
+        "strict_packet_time_gate": "reject",
+        "reason": "packet count mismatch",
+        "released": false,
+        "missing_native_audio_index": 2815,
+        "missing_sha256": "ef96aaeaa91e39baf9abaf7a6edcf1b129482b5522cfb130d86b83413bf4ba5a",
+        "retained_pending": true
+      }
+    }
+  ],
+  "scope": "Actual native->output packet provenance, 4923 exact source packets/times, complete frame/PCM decode, and AAC2815 omission refuses release",
+  "limitations": [
+    "Pinned archived zero-origin CFR I/P and AAC fixture only; source epochs are archived caller mappings, not authenticated MP4 capture epochs.",
+    "Host container reconstruction only; no live minute ring, physical SD durability, callback installation or deployable prerecord proven."
+  ]
+}

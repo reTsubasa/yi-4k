@@ -1,0 +1,62 @@
+{
+  "evidence_type": "Android 0.3.8 UI redesign host build and prototype rendering",
+  "built_at_local": "2026-11-11",
+  "apk": "artifacts/android/yi4k-control-0.3.8-debug.apk",
+  "sha256": "c7299179ace76d73ec84f5eca633681cda18f0d32ef6494df70c60c453ee1117",
+  "size_bytes": 11533561,
+  "version_name": "0.3.8",
+  "version_code": 11,
+  "application_id": "dev.yi4k.control",
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "changes": [
+    "iOS/APEX-style capture workbench with device status row, parameter capsules, shutter and camera switch controls",
+    "album uses image-first 16:9 two-column cards with compact export action",
+    "settings rows use Chinese title/description, current-value capsule and accessory arrow",
+    "bottom navigation gains visual hierarchy while preserving camera API behavior"
+  ],
+  "checks": {
+    "test_debug_unit": true,
+    "test_release_unit": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "prototype_render": true,
+    "physical_phone_execution": false,
+    "camera_access_this_turn": false
+  },
+  "render_outputs": [
+    "artifacts/android/0.3.8-reports/prototype-renders/album-disconnected.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/capture-disconnected.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/capture-fixed-360x560.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/capture-fixed-412x700.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/capture-fixed-700x412.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/connection-1.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/connection-2.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/connection-3.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/editor-empty.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/playback-cover.png",
+    "artifacts/android/0.3.8-reports/prototype-renders/settings-disconnected.png"
+  ],
+  "limits": [
+    "No physical Android phone acceptance yet",
+    "0.3.6 real-camera runtime evidence remains version-scoped and was not rerun in this UI-only build",
+    "EIS replacement and camera-side standalone prerecord remain unimplemented"
+  ],
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0
+  }
+}

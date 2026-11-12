@@ -1,0 +1,71 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint, APK signature verification and actual Android Wi-Fi loss/reconnect with real camera; no physical phone",
+  "packaged_at_utc": "2026-11-10T12:48:18.570746+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.4-debug.apk",
+  "sha256": "7177ae40efacf246d2bf436e0b45365ecd8f3f6e99fb399c004f1165f1d26ba0",
+  "size_bytes": 11529397,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.4",
+  "version_code": 7,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.4-build02.log",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "android_emulator_execution": true,
+    "physical_phone_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 104,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 104,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "changes_from_0_3_3": [
+    "Clear and redraw settings/media immediately on network loss, explicit disconnect and failed session; clear old selections/folder/battery",
+    "Reject queued settings/media snapshots from an older connection generation or a closed session"
+  ],
+  "camera_disconnect_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-disconnect-run01/acceptance.json",
+    "details": "artifacts/android/0.3.4-device-reports/camera-disconnect-run01/workflow-screens/camera-disconnect/camera-disconnect.json",
+    "scope": "Real MainActivity and camera API on AOSP emulator; real Wi-Fi Network loss via emulator svc, stale settings clearing and fresh-network UI reconnect. No camera writes, captures or phone hotspot acceptance.",
+    "initial_network": "101",
+    "restored_network": "102",
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  },
+  "failed_previous_version_evidence": "artifacts/android/0.3.3-device-reports/camera-disconnect-run01/acceptance.json",
+  "limits": [
+    "Not physical phone hotspot acceptance",
+    "Prior capture runtime is 0.3.3; preview/media/editor evidence 0.3.2, not all rerun on 0.3.4",
+    "4K/long clips and perceptual audio-video sync unverified",
+    "EIS replacement and camera standalone60s prerecord remain unimplemented"
+  ],
+  "camera_main_workflow": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.4-device-reports/camera-main-workflow-run01/acceptance.json",
+    "scope": "Actual MainActivity guide/Wi-Fi/API, Chinese settings, real camera media selection/batch original export, independent camera SHA equality, MediaStore/decode and disconnect; emulator via host, no physical phone",
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  }
+}

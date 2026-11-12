@@ -1,0 +1,38 @@
+{
+  "status": "pass_independent_native_export_and_rejection_review",
+  "offline_only": true,
+  "device_access": false,
+  "verifier_sha256": "67642211e94221f42fb50ae4ab927b1220e63026a0e0c6d7773c29d9654bc7d8",
+  "reviewed_reports": {
+    "positive": "07fcb527e32db6c72d21f67a416ab4c53461ebf71e1b2fe2d9dd092b0917a76d",
+    "missing": "f7364786318e742d34437be7e87ea20f2ec83e60ff8dd8790e53ffcbbaddd5f5",
+    "close_failure": "039672a948f4420105f7798be7b27a03e6141adde6b22e90996dff8ea7771579"
+  },
+  "output": {
+    "path": "artifacts/verification/2026-11-12-prerecord-native-session-export-run02/session.mp4",
+    "bytes": 359061384,
+    "sha256": "158084641d87323c44a70926bc08d6aba51d22145e67ed8ee5aa3d5cc45cd0e6"
+  },
+  "packet_counts": {
+    "0": 1920,
+    "1": 3003
+  },
+  "ordinary_consumer_native_input_gate": "pass",
+  "ordinary_consumer_source_gate": "pass",
+  "codec_configuration_matches_native_inputs": true,
+  "source_video_frames": 1920,
+  "audio_pcm_bytes": 12300288,
+  "audio_pcm_sha256": "fd7def7d1214705f61861e6120fccc28df28fbb490d1b636575438ae9dc54523",
+  "native_second_segment_consumer_gate": "reject",
+  "native_second_segment_rejection_preserved": true,
+  "missing_aac_rejected_before_native_Open": true,
+  "native_Close0_short_write_rejected_pending_retained": true,
+  "consumer": {
+    "version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers",
+    "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f"
+  },
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "final_export_limit_ms": 64064,
+  "recording_limit_ms": 60000,
+  "scope": "Separate host-emulated original ARM final export; no direct event3/native recording compatibility claim"
+}

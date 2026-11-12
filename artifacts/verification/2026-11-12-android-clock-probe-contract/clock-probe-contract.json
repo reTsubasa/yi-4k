@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T06:42:57.080772+00:00",
+  "status": "pass_host_contract_only",
+  "device_access": false,
+  "camera_write_performed": false,
+  "sync_clock_default": false,
+  "explicit_property": "syncClock=true",
+  "evidence_fields": [
+    "sync_clock_requested",
+    "clock_sync.requested_at",
+    "clock_sync.readback",
+    "clock_sync.readback_verified"
+  ],
+  "source_sha256": {
+    "android/app/build.gradle": "90e3e1569657df26c45f76577d1b588a7e6aa1ea4ab8f6bbeb604a6f2dd95ebd",
+    "android/app/src/test/java/dev/yi4k/control/CameraLiveProbe.java": "76f7dad8622b9d19eb838ee6b5f32b1ddce6386e13056c6b8e879c28dcceeaac",
+    "android/app/src/test/java/dev/yi4k/control/CameraConfigurationTest.java": "2fed265e9734b68c50639f296d6ab180b18b8a2ccc72b26f4c7837052b41c785"
+  },
+  "limitations": [
+    "No physical phone or camera connection",
+    "No camera setting write or RTC readback",
+    "Host contract does not establish timezone or camera clock accuracy"
+  ]
+}

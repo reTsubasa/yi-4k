@@ -1,0 +1,157 @@
+{
+  "scope": "two read-only /proc resource samples separated by 5 seconds",
+  "samples": [
+    "t0",
+    "t5"
+  ],
+  "meminfo_t0_kb": {
+    "MemTotal": 49096,
+    "MemFree": 1584,
+    "Buffers": 3552,
+    "Cached": 21896,
+    "SwapCached": 0,
+    "Active": 19424,
+    "Inactive": 13092,
+    "Active(anon)": 7080,
+    "Inactive(anon)": 40,
+    "Active(file)": 12344,
+    "Inactive(file)": 13052,
+    "Unevictable": 0,
+    "Mlocked": 0,
+    "SwapTotal": 0,
+    "SwapFree": 0,
+    "Dirty": 4,
+    "Writeback": 0,
+    "AnonPages": 7092,
+    "Mapped": 4020,
+    "Shmem": 52,
+    "Slab": 7356,
+    "SReclaimable": 3952,
+    "SUnreclaim": 3404,
+    "KernelStack": 664,
+    "PageTables": 4040,
+    "Bounce": 0,
+    "WritebackTmp": 0,
+    "CommitLimit": 24548,
+    "VmallocTotal": 1515520,
+    "VmallocUsed": 748,
+    "VmallocChunk": 1514620
+  },
+  "processes": [
+    {
+      "pid": 102,
+      "name": "ipcbind",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 344,
+      "rss_kb_t5": 344,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 104,
+      "name": "util_svc",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 524,
+      "rss_kb_t5": 524,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 108,
+      "name": "AmbaNetFifoDaemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 1016,
+      "rss_kb_t5": 1016,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 110,
+      "name": "AmbaEventNotifyDaemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 552,
+      "rss_kb_t5": 552,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 156,
+      "name": "remoteapi_disc_daemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 464,
+      "rss_kb_t5": 464,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 266,
+      "name": "remoteapi_cmd_daemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 976,
+      "rss_kb_t5": 976,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 271,
+      "name": "remoteapi_data_daemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 976,
+      "rss_kb_t5": 976,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 275,
+      "name": "remoteapi_syssvc_daemon",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 812,
+      "rss_kb_t5": 812,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    },
+    {
+      "pid": 288,
+      "name": "XCServer",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 1416,
+      "rss_kb_t5": 1416,
+      "cpu_ticks_delta_5s": 2,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 2
+    },
+    {
+      "pid": 959,
+      "name": "AmbaRTSPServer",
+      "state_t0": "S",
+      "state_t5": "S",
+      "rss_kb_t0": 1824,
+      "rss_kb_t5": 1824,
+      "cpu_ticks_delta_5s": 0,
+      "user_ticks_delta_5s": 0,
+      "system_ticks_delta_5s": 0
+    }
+  ],
+  "limitations": [
+    "Linux clock tick frequency was not independently read here; CPU deltas are raw scheduler ticks.",
+    "The interval is idle/preview state, not an active high-motion recording.",
+    "RSS and heap mappings do not reveal RTOS ownership or cache policy."
+  ]
+}

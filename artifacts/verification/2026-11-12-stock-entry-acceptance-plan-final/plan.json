@@ -1,0 +1,18 @@
+{
+  "schema": "stock-entry-acceptance-plan/v1",
+  "identifier": "5345a5ec7c52",
+  "paths": {
+    "script": "/tmp/SD0/autoexec.ash",
+    "claim": "/tmp/SD0/yi4k_entry_5345a5ec7c52_claim.json",
+    "tasks": "/tmp/SD0/yi4k_entry_5345a5ec7c52_tasks.txt",
+    "fingerprint": "/tmp/SD0/yi4k_entry_5345a5ec7c52_code.bin"
+  },
+  "script_base64": "cHMgdHNrID4gYzpceWk0a19lbnRyeV81MzQ1YTVlYzdjNTJfdGFza3MudHh0CnNhdmViaW4gYzpceWk0a19lbnRyeV81MzQ1YTVlYzdjNTJfY29kZS5iaW4gMHhBMDM5NEJBMCBsIDgK",
+  "script_sha256": "ecc127f17cf1fd9d188112857da4e332eb3e3f20f9e9b2345cbd8a9827638dd4",
+  "claim_base64": "ewogICJpZGVudGlmaWVyIjogIjUzNDVhNWVjN2M1MiIsCiAgImltYWdlX3NoYTI1NiI6ICJlZWU0NGM2YzUzMDE4M2VjZTFlMzg3MmNiM2U4OTU4OTE5YTlhYTQxODk1Mzg5OWRiZWE4Yjk4ODk5ODczODFjIiwKICAib3duZXJzaGlwIjogImV4Y2x1c2l2ZSBuYW1lc3BhY2UgY2xhaW0gb25seTsgbm90IGEgcnVudGltZSBvbmNlIHRva2VuIiwKICAicGF0aHMiOiB7CiAgICAiY2xhaW0iOiAiL3RtcC9TRDAveWk0a19lbnRyeV81MzQ1YTVlYzdjNTJfY2xhaW0uanNvbiIsCiAgICAiZmluZ2VycHJpbnQiOiAiL3RtcC9TRDAveWk0a19lbnRyeV81MzQ1YTVlYzdjNTJfY29kZS5iaW4iLAogICAgInNjcmlwdCI6ICIvdG1wL1NEMC9hdXRvZXhlYy5hc2giLAogICAgInRhc2tzIjogIi90bXAvU0QwL3lpNGtfZW50cnlfNTM0NWE1ZWM3YzUyX3Rhc2tzLnR4dCIKICB9LAogICJzY2hlbWEiOiAic3RvY2stZW50cnktc3RhZ2UtY2xhaW0vdjEiLAogICJzY3JpcHRfc2hhMjU2IjogImVjYzEyN2YxN2NmMWZkOWQxODgxMTI4NTdkYTRlMzMyZWIzZTNmMjBmOWU5YjIzNDVjYmQ4YTk4Mjc2MzhkZDQiCn0K",
+  "claim_sha256": "5b6e8167ec9830e7421def5a649c397f12ff087f2e4cbf7b9a62ff5c741619c4",
+  "expected_code_hex": "0300a0e11eff2fe1",
+  "boot_id_path": "/proc/sys/kernel/random/boot_id",
+  "uptime_path": "/proc/uptime",
+  "max_file_bytes": 65536
+}

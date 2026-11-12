@@ -1,0 +1,10 @@
+~ # python -B -u -c 'import os,base64,hashlib;s=base64.b64decode(os.environ['"'"
+'YI4K_STOCK_REVIEW_SOURCE_B64'"'"']);assert hashlib.sha256(s).hexdigest()=='"'"'
+225119341992aefdbf7ef0ff13b7af190c209810420904e4ae266a68ac157ca2'"'"';exec(compi
+le(s,'"'"'<approved-stock-review>'"'"','"'"'exec'"'"'))'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<approved-stock-review>", line 21, in <module>
+AssertionError: Ownership claim missing
+~ # echo __YI_CAPTURE_9f8c6c6d260d45449aa9882857bf238b__
+__YI_CAPTURE_9f8c6c6d260d45449aa9882857bf238b__

@@ -1,0 +1,29 @@
+{
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "entry_function": "0xA01E627C",
+  "task_create_callsite": "0xA01E638C",
+  "task_create_wrapper": "0xA03BC2BC",
+  "arguments": {
+    "task_object_pointer_load": "[0xA01E6508]",
+    "task_object_runtime_value": "0xA13A20EC",
+    "name": "0xA057E628",
+    "name_text": "AppLib_Host_Control_Manager",
+    "priority": "0x6E",
+    "entry": "0xA01E5BD4",
+    "entry_arg": "0x0",
+    "stack_base": "0xA13901C0",
+    "stack_bytes": "0x10000",
+    "auto_start": "1"
+  },
+  "wrapper_signature_candidate": "kal_task_create(task,name,priority,entry,arg,stack,stack_bytes,auto_start)",
+  "body_comparison": {
+    "a01e627c_same_old_body": true,
+    "a01e5ce8_same_old_body": true
+  },
+  "scope": "offline static evidence; no task creation or payload execution",
+  "limitations": [
+    "Original task object and stack are owned by the firmware subsystem",
+    "A32/Thumb entry state and cache protocol are not live-validated",
+    "No safe runtime allocator/loader trigger has been found"
+  ]
+}

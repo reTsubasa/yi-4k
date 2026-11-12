@@ -1,0 +1,227 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "base": "0xa0100000",
+  "producer_sha256": "274ea5ef858b973763dc8a376a474a2197ee1080fc44464e379e82451008ff13",
+  "capstone_version": "5.0.7",
+  "evidence": [
+    {
+      "label": "a01a6030",
+      "boundary_source": "retained full/functions.json; role inferred: register_app_command",
+      "ranges_end_exclusive": [
+        [
+          "0xa01a6030",
+          "0xa01a6064"
+        ]
+      ],
+      "sha256": "9f5008634a9b3f7f7f2a5acefd70180fb5cbdcc90881e8b17429bbe805992da6"
+    },
+    {
+      "label": "a048f43c",
+      "boundary_source": "retained full/functions.json; role inferred: task_query",
+      "ranges_end_exclusive": [
+        [
+          "0xa048f43c",
+          "0xa048f604"
+        ]
+      ],
+      "sha256": "c8d0e2736f6f1e8ff7d25188a94253a73a54a2ab88973114e782e82724e41a2e"
+    },
+    {
+      "label": "a048fb7c",
+      "boundary_source": "retained full/functions.json; role inferred: byte_pool_summary",
+      "ranges_end_exclusive": [
+        [
+          "0xa048fb7c",
+          "0xa048fc9c"
+        ]
+      ],
+      "sha256": "a6b687d5771111c0b948757a5c128f467a60d445023207b8d20b097cd9605dc5"
+    },
+    {
+      "label": "a048fca0",
+      "boundary_source": "retained full/functions.json; role inferred: byte_pool_block_walk",
+      "ranges_end_exclusive": [
+        [
+          "0xa048fca0",
+          "0xa048fe28"
+        ]
+      ],
+      "sha256": "d18737400ce11b43fb35c25c5a40b396805dedf2674beeb20559ec49385d61c7"
+    },
+    {
+      "label": "a048fe2c",
+      "boundary_source": "retained full/functions.json; role inferred: block_pool_summary",
+      "ranges_end_exclusive": [
+        [
+          "0xa048fe2c",
+          "0xa048ff4c"
+        ]
+      ],
+      "sha256": "1e5d5dea67170bf7294b254db1cc08de5b35b242089ab4884ac865a65bd2732a"
+    },
+    {
+      "label": "a03c36c4",
+      "boundary_source": "retained full/functions.json; role inferred: checked_byte_pool_info",
+      "ranges_end_exclusive": [
+        [
+          "0xa03bd0b8",
+          "0xa03bd130"
+        ],
+        [
+          "0xa03c36c4",
+          "0xa03c3700"
+        ]
+      ],
+      "sha256": "d428ba24d50ddaa8a89bbbc4b33bd27645ec7c234dc40f9d89fafee6cb37007c"
+    },
+    {
+      "label": "a03bd130",
+      "boundary_source": "retained full/functions.json; role inferred: byte_pool_allocator_search_and_split",
+      "ranges_end_exclusive": [
+        [
+          "0xa03bd130",
+          "0xa03bd34c"
+        ]
+      ],
+      "sha256": "270b26ec391003b1aa69fef77fbe5d1455b6d18dc8233f1e937b4de7f55600cc"
+    },
+    {
+      "label": "ps-handler",
+      "boundary_source": "analyst-bounded excerpt; not a recovered complete function",
+      "ranges_end_exclusive": [
+        [
+          "0xa02a3864",
+          "0xa02a3b14"
+        ]
+      ],
+      "sha256": "9c26c980dd2e3b8339e4f49c02e8d1f5b2bce82d2482c69ef9e223250ac86733"
+    },
+    {
+      "label": "app-handler-dispatch",
+      "boundary_source": "analyst-bounded excerpt; not a recovered complete function",
+      "ranges_end_exclusive": [
+        [
+          "0xa01a4f34",
+          "0xa01a5024"
+        ]
+      ],
+      "sha256": "4e4c4c8f3351800bc12290f0b12a0bf1408e0120e0290a9351e74e502ee2ee95"
+    },
+    {
+      "label": "app-mem-print",
+      "boundary_source": "analyst-bounded excerpt; not a recovered complete function",
+      "ranges_end_exclusive": [
+        [
+          "0xa01a5374",
+          "0xa01a53c0"
+        ]
+      ],
+      "sha256": "054d7779d70bdf033f860ee1fbfb811a0135bb0a5c2a615eeb0961be023685dd"
+    }
+  ],
+  "instruction_checks": {
+    "0xa02a3934": [
+      "bl",
+      "#0xa048fb7c"
+    ],
+    "0xa02a393c": [
+      "bl",
+      "#0xa048fe2c"
+    ],
+    "0xa02a39f4": [
+      "bl",
+      "#0xa048f43c"
+    ],
+    "0xa02a3a94": [
+      "bl",
+      "#0xa048fca0"
+    ],
+    "0xa01a4fc8": [
+      "beq",
+      "#0xa01a5374"
+    ],
+    "0xa01a5394": [
+      "ldr",
+      "r1, [r3, #8]"
+    ],
+    "0xa01a53b0": [
+      "ldr",
+      "r1, [r3, #8]"
+    ]
+  },
+  "strings": {
+    "0xa05648c8": "app",
+    "0xa0566e4c": "mem",
+    "0xa0566e7c": "    HEAP    : Available size  = %10d bytes = %4d Mbyte\n\r",
+    "0xa0566eb8": "NON-HEAP    : Available size  = %10d bytes = %4d Mbyte\n\r",
+    "0xa05b01d4": "tsk",
+    "0xa0566290": "detail",
+    "0xa062cdd8": " ID   Available  Fragement  Name\n\r",
+    "0xa062ce30": " ID   Available  Fragement  Size  Start_Addr\n\r",
+    "0xa062ce7c": "\t ID    Start         End            Size     Free\n\r"
+  },
+  "commands": {
+    "t app mem": {
+      "application_pool": "0xa0fd7114",
+      "secondary_pool": "0xa0fe7220",
+      "field_read": "+0x08 available bytes",
+      "output": "global logging function 0xa02a70ec"
+    },
+    "ps mem": {
+      "queries": [
+        "byte pools",
+        "block pools"
+      ],
+      "byte_columns": [
+        "ID",
+        "Available",
+        "Fragement",
+        "Name"
+      ]
+    },
+    "ps mem detail": {
+      "queries": [
+        "byte pools and linked block headers"
+      ],
+      "risk": "Raw traversal outside one whole-list critical section; no explicit cycle/corruption guard. Output scales with fragmentation."
+    },
+    "ps tsk": {
+      "queries": [
+        "task state",
+        "priority",
+        "scheduling count",
+        "stack fields",
+        "core-related query"
+      ],
+      "caveat": "Output via caller-supplied print callback; not proof of live task progress."
+    }
+  },
+  "byte_pool_layout_inferred": {
+    "0x00": "BYTE magic",
+    "0x04": "name pointer",
+    "0x08": "available bytes",
+    "0x0c": "fragment count",
+    "0x10": "block chain start",
+    "0x14": "search pointer",
+    "0x18": "region start",
+    "0x1c": "region size",
+    "0x2c": "next created pool"
+  },
+  "block_layout_inferred": {
+    "0x00": "next block pointer",
+    "0x04": "free marker 0xffffeeee or owner pool",
+    "payload_offset": 8,
+    "free_payload_bytes": "next-current-8 for a valid forward free block"
+  },
+  "scope": {
+    "new_device_rtos_commands": false,
+    "live_pool_capacity_obtained": false
+  },
+  "limitations": [
+    "Static filesystem evidence, not REA Evidence IDs or execution tracing.",
+    "Two handlers were missing from the retained full function index; only explicit excerpts were used.",
+    "Queries write transient scratch output and use synchronization; they are not zero-effect operations.",
+    "Available byte total does not establish a sufficiently large allocatable contiguous block.",
+    "No Linux-to-RTOS shell transport was established by finding these command handlers."
+  ]
+}

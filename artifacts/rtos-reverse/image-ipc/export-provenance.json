@@ -1,0 +1,74 @@
+{
+  "source": "artifacts/firmware/v1.10.52/_part_lrtos.a9s",
+  "sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "base": "0xa0100000",
+  "capstone_version": "5.0.7",
+  "mode": "ARM A32 little-endian",
+  "limitations": [
+    "Selected windows only; may include literal data or adjacent functions.",
+    "No ARM/Thumb discovery, execution, ABI validation or firmware modification.",
+    "MOVW/MOVT string comments are heuristic and may contain false associations."
+  ],
+  "windows": [
+    {
+      "start": "0xa03119a8",
+      "end_exclusive": "0xa0312aa0",
+      "instructions": 1086,
+      "file": "a03119a8.asm"
+    },
+    {
+      "start": "0xa030df5c",
+      "end_exclusive": "0xa030e334",
+      "instructions": 246,
+      "file": "a030df5c.asm"
+    },
+    {
+      "start": "0xa030f030",
+      "end_exclusive": "0xa030fa30",
+      "instructions": 640,
+      "file": "a030f030.asm"
+    },
+    {
+      "start": "0xa03c9188",
+      "end_exclusive": "0xa03c9220",
+      "instructions": 38,
+      "file": "a03c9188.asm"
+    },
+    {
+      "start": "0xa03c4e94",
+      "end_exclusive": "0xa03c51f0",
+      "instructions": 215,
+      "file": "a03c4e94.asm"
+    },
+    {
+      "start": "0xa022d820",
+      "end_exclusive": "0xa022ee00",
+      "instructions": 1400,
+      "file": "a022d820.asm"
+    },
+    {
+      "start": "0xa022b96c",
+      "end_exclusive": "0xa022c8bc",
+      "instructions": 980,
+      "file": "a022b96c.asm"
+    },
+    {
+      "start": "0xa0227dfc",
+      "end_exclusive": "0xa0228300",
+      "instructions": 321,
+      "file": "a0227dfc.asm"
+    },
+    {
+      "start": "0xa0245cf4",
+      "end_exclusive": "0xa02464c0",
+      "instructions": 499,
+      "file": "a0245cf4.asm"
+    },
+    {
+      "start": "0xa03cd3f0",
+      "end_exclusive": "0xa03cd500",
+      "instructions": 68,
+      "file": "a03cd3f0.asm"
+    }
+  ]
+}

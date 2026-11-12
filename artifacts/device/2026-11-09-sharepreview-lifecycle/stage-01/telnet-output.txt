@@ -1,0 +1,35 @@
+python -B -u <<'YI_SHAREPV_PY'
+> import os,stat,hashlib,json,subprocess
+> probe={'identifier': '9aaac7df1031', 'stem': 'yi4k_sharepv_9aaac7df1031', 'mar
+ker': '/tmp/SD0/autoexec.ash', 'begin': '/tmp/yi4k_sharepv_9aaac7df1031_begin', 
+'init_after': '/tmp/yi4k_sharepv_9aaac7df1031_init_after', 'enable_after': '/tmp
+/yi4k_sharepv_9aaac7df1031_enable_after', 'disable_after': '/tmp/yi4k_sharepv_9a
+aac7df1031_disable_after', 'done': '/tmp/yi4k_sharepv_9aaac7df1031_done', 'rpc_s
+cript': '/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py', 'rpc_result': '/tmp/SD0/yi4
+k_sharepv_9aaac7df1031_rpc_result.json', 'autoexec': "t ipc rpc clnt exec1 'touc
+h /tmp/yi4k_sharepv_9aaac7df1031_begin'\nt app test sharepv init\nt ipc rpc clnt
+ exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_init_after'\nt ipc rpc clnt exec1 '
+python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py init'\nt app test sharepv en\nt
+ ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_enable_after'\nt ipc r
+pc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py enable'\nt app t
+est sharepv dis\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9
+> names=[probe['marker'],probe['rpc_script'],probe['rpc_result'],probe['begin'],
+probe['init_after'],probe['enable_after'],probe['disable_after'],probe['done']]
+> for n in names:
+>  assert not os.path.lexists(n),'refuse existing '+n
+> for path,data in [(probe['marker'],probe['autoexec'].encode()),(probe['rpc_scr
+ipt'],probe['rpc_source'].encode())]:
+>  fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0600)
+>  with os.fdopen(fd,'wb') as f:f.write(data)
+>  assert hashlib.sha256(open(path,'rb').read()).hexdigest()==probe[path+'_sha25
+6']
+> subprocess.check_call(['sync'])
+> print('YI_SHAREPV_STAGE '+json.dumps({'created_exclusively':True}))
+> 
+> YI_SHAREPV_PY
+  File "<stdin>", line 2
+    probe={'identifier': '9aaac7df1031', 'stem': 'yi4k_sharepv_9aaac7df1031', 'marker': '/tmp/SD0/autoexec.ash', 'begin': '/tmp/yi4k_sharepv_9aaac7df1031_begin', 'init_after': '/tmp/yi4k_sharepv_9aaac7df1031_init_after', 'enable_after': '/tmp/yi4k_sharepv_9aaac7df1031_enable_after', 'disable_after': '/tmp/yi4k_sharepv_9aaac7df1031_disable_after', 'done': '/tmp/yi4k_sharepv_9aaac7df1031_done', 'rpc_script': '/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py', 'rpc_result': '/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc_result.json', 'autoexec': "t ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_begin'\nt app test sharepv init\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_init_after'\nt ipc rpc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py init'\nt app test sharepv en\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_enable_after'\nt ipc rpc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py enable'\nt app test sharepv dis\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+SyntaxError: EOL while scanning string literal
+~ # echo __YI_CAPTURE_72a71798174f481bb4553b62e7fb4018__
+__YI_CAPTURE_72a71798174f481bb4553b62e7fb4018__

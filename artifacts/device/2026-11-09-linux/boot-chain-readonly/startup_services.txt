@@ -1,0 +1,86 @@
+~ # cat /etc/inittab 2>/dev/null; for f in /etc/init.d/* /etc/rcS.d/* /etc/rc*.d
+/*; do [ -f "$f" ] && echo ===$f && sed -n "1,220p" "$f"; done 2>/dev/null | gre
+p -Ei -C 4 "firm|upgrade|boot|recovery|mtd|nand|rtos|rpmsg" | head -500
+# /etc/inittab
+#
+# Copyright (C) 2001 Erik Andersen <andersen@codepoet.org>
+#
+# Note: BusyBox init doesn't support runlevels.  The runlevels field is
+# completely ignored by BusyBox init. If you want runlevels, use
+# sysvinit.
+#
+# Format for each entry: <id>:<runlevels>:<action>:<process>
+#
+# id        == tty to run on, or empty for /dev/console
+# runlevels == ignored
+# action    == one of sysinit, respawn, askfirst, wait, and once
+# process   == program to run
+
+# Startup the system
+null::sysinit:/bin/mount -t proc proc /proc
+null::sysinit:/bin/mkdir -p /dev/pts
+null::sysinit:/bin/mkdir -p /dev/shm
+null::sysinit:/bin/mount -a
+null::sysinit:/bin/hostname -F /etc/hostname
+# now run any rc scripts
+::sysinit:/etc/init.d/rcS
+
+# Put a getty on the serial port
+::respawn:-/bin/sh
+
+# ttyUSB0 on usb host.
+# ttyUSB0::respawn:-/sbin/getty  115200 ttyUSB0
+
+# ttyGS0 on usb device
+# ttyGS0::respawn:-/bin/sh
+
+# Stuff to do for the 3-finger salute
+::ctrlaltdel:/sbin/reboot
+
+# Stuff to do before rebooting
+null::shutdown:/etc/init.d/rcK
+null::shutdown:/bin/umount -a -r
+null::shutdown:/sbin/swapoff -a
+
+exit $?
+===/etc/init.d/S20urandom
+#! /bin/sh
+#
+# urandom       This script saves the random seed between reboots.
+#               It is called from the boot, halt and reboot scripts.
+#
+# Version:      @(#)urandom  1.33  22-Jun-1998  miquels@cistron.nl
+#
+
+--
+else
+        echo 'Warning: "rpcbind" is not available!'
+fi
+
+#for bootup speed, some modules are preloaded before hibernate
+if [ -x /usr/local/share/script/preload.sh ]; then
+        /usr/local/share/script/preload.sh
+fi
+
+--
+        /usr/sbin/cherokee-worker -a -C /etc/cherokee.conf -j -s -d
+fi
+
+exit $?
+===/etc/init.d/S99bootdone
+#!/bin/sh
+
+echo 'S99bootdone is running...'
+
+#detect Wi-Fi chip, send boot_done to RTOS
+/usr/local/share/script/chip.detecting.sh &
+
+#send boot_done to RTOS
+if [ -x /usr/bin/SendToRTOS ]; then
+    /usr/bin/SendToRTOS boot_done
+fi
+
+exit $?
+===/etc/init.d/nfsroot.sh
+~ # echo __YI_CAPTURE_717971b9da6a4902a31fbbca08935342__
+__YI_CAPTURE_717971b9da6a4902a31fbbca08935342__

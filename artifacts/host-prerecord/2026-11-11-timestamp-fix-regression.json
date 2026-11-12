@@ -1,0 +1,168 @@
+{
+  "scope": "host file replay/remux regression; no camera contact",
+  "created_utc": "2026-11-10T19:48:18.534091+00:00",
+  "files": {
+    "scripts/prerecord_replay.py": "3c6ae9e8b603b0a2e4907e963498356c4bd8443d0830bba94cce12132159ad87",
+    "scripts/tests/test_prerecord_buffer.py": "e2859d252349963e5c03f94c60cf75bf09b89944f93f12a145367bbbba51e98c",
+    "scripts/validate_prerecord_packet_fidelity.py": "03913369b2b7ec2f7296e5dcbcc50a93f94e44960d895f939db5d8e9a60ddc9f"
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_buffer.py -v",
+    "passed": 9,
+    "elapsed_seconds": 12.828,
+    "new_regression": "64-frame GOP, 29.97fps B-frame video, AAC, nonzero window start; uses unchanged packet-fidelity validator"
+  },
+  "runs": {
+    "real-camera-65s-replay-run01": {
+      "manifest_sha256": "042a1eca1111bed9fa5c39e2b5b0474fd0b7a4e078e0c03767404427dff904ef",
+      "clip_sha256": "92a77fd656a4ee466e3638dd89d2d36b4e28bec3d736f89e71e4a653f2d2a285",
+      "selected_segments": 32,
+      "packet_fidelity_passed": false,
+      "checks": {
+        "source_and_output_hashes_match_manifest": true,
+        "selected_segment_packet_order_preserved": true,
+        "compressed_packets_are_contiguous_source_subsequences": true,
+        "pts_dts_durations_preserved": false,
+        "strictly_increasing_dts": true,
+        "common_audio_video_timestamp_offset": false
+      },
+      "common_offset_candidates": [],
+      "tracks": {
+        "video": {
+          "packets": 1920,
+          "timing_candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "947/3000",
+              "offset_spread_seconds": "947/3000",
+              "max_duration_error_seconds": "101/5000",
+              "constant_pts_dts_offset": false,
+              "durations_preserved": false
+            }
+          ]
+        },
+        "audio": {
+          "packets": 3003,
+          "timing_candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "2521/8000",
+              "offset_spread_seconds": "2521/8000",
+              "max_duration_error_seconds": "1/50",
+              "constant_pts_dts_offset": false,
+              "durations_preserved": false
+            }
+          ]
+        }
+      }
+    },
+    "real-camera-65s-replay-run02": {
+      "manifest_sha256": "52174f4753c014c89d98d995a7de0f8926e324676338a03719fb3e6196729c83",
+      "clip_sha256": "b3f85f8b28cf83a4c8bf95f2b8b6c8cb7d1b06703dee04a41137fd709a13b48e",
+      "selected_segments": 32,
+      "packet_fidelity_passed": true,
+      "checks": {
+        "source_and_output_hashes_match_manifest": true,
+        "selected_segment_packet_order_preserved": true,
+        "compressed_packets_are_contiguous_source_subsequences": true,
+        "pts_dts_durations_preserved": true,
+        "strictly_increasing_dts": true,
+        "common_audio_video_timestamp_offset": true
+      },
+      "common_offset_candidates": [
+        {
+          "video_source_packet": 0,
+          "audio_source_packet": 0,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "0"
+        }
+      ],
+      "tracks": {
+        "video": {
+          "packets": 1920,
+          "timing_candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        },
+        "audio": {
+          "packets": 3003,
+          "timing_candidates": [
+            {
+              "source_first_packet": 0,
+              "offset_min_seconds": "0",
+              "offset_max_seconds": "0",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        }
+      }
+    },
+    "synthetic-timing-fix-run01": {
+      "manifest_sha256": "2871ff62ec820ef907f83947f24a4b07ec1930e6707cab0d5e9d3291a00bcdab",
+      "clip_sha256": "a763b917bb4775a0e67311cb1e870e2aea61703ed9392ad583c2843a1cd6bdf0",
+      "selected_segments": 34,
+      "packet_fidelity_passed": true,
+      "checks": {
+        "source_and_output_hashes_match_manifest": true,
+        "selected_segment_packet_order_preserved": true,
+        "compressed_packets_are_contiguous_source_subsequences": true,
+        "pts_dts_durations_preserved": true,
+        "strictly_increasing_dts": true,
+        "common_audio_video_timestamp_offset": true
+      },
+      "common_offset_candidates": [
+        {
+          "video_source_packet": 120,
+          "audio_source_packet": 186,
+          "offset_min_seconds": "-1001/250",
+          "offset_max_seconds": "-1001/250"
+        }
+      ],
+      "tracks": {
+        "video": {
+          "packets": 2040,
+          "timing_candidates": [
+            {
+              "source_first_packet": 120,
+              "offset_min_seconds": "-1001/250",
+              "offset_max_seconds": "-1001/250",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        },
+        "audio": {
+          "packets": 3191,
+          "timing_candidates": [
+            {
+              "source_first_packet": 186,
+              "offset_min_seconds": "-1001/250",
+              "offset_max_seconds": "-1001/250",
+              "offset_spread_seconds": "0",
+              "max_duration_error_seconds": "0",
+              "constant_pts_dts_offset": true,
+              "durations_preserved": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "run01_preserved": true,
+  "validator_modified": false
+}

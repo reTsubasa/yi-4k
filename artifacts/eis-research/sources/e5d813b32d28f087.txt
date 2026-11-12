@@ -1,0 +1,28 @@
+ICCV 2023 Open Access Repository
+ICCV 2023 open access
+These ICCV 2023 papers are the Open Access versions, provided by the
+Computer Vision Foundation.
+Except for the watermark, they are identical to the accepted versions;
+the final published version of the proceedings is available on IEEE Xplore.
+This material is presented to ensure timely dissemination of scholarly and technical work.
+Copyright and all rights therein are retained by authors or by other copyright holders.
+All persons copying this information are expected to adhere to the terms and constraints invoked
+by each author's copyright.
+Powered by:
+Sponsored by:
+Minimum Latency Deep Online Video Stabilization
+Zhuofan Zhang, Zhen Liu, Ping Tan, Bing Zeng, Shuaicheng Liu; Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2023, pp. 23030-23039
+Abstract
+We present a novel camera path optimization framework for the task of online video stabilization. Typically, a stabilization pipeline consists of three steps: motion estimating, path smoothing, and novel view rendering. Most previous methods concentrate on motion estimation, proposing various global or local motion models. In contrast, path optimization receives relatively less attention, especially in the important online setting, where no future frames are available. In this work, we adopt recent off-the-shelf high-quality deep motion models for motion estimation to recover the camera trajectory and focus on the latter two steps. Our network takes a short 2D camera path in a sliding window as input and outputs the stabilizing warp field of the last frame in the window, which warps the coming frame to its stabilized position. A hybrid loss is well-defined to constrain the spatial and temporal consistency. In addition, we build a motion dataset that contains stable and unstable motion pairs for the training. Extensive experiments demonstrate that our approach significantly outperforms state-of-the-art online methods both qualitatively and quantitatively and achieves comparable performance to offline methods.
+Related Material
+[pdf]
+[arXiv]
+[bibtex]
+@InProceedings{Zhang_2023_ICCV,
+author    = {Zhang, Zhuofan and Liu, Zhen and Tan, Ping and Zeng, Bing and Liu, Shuaicheng},
+title     = {Minimum Latency Deep Online Video Stabilization},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+month     = {October},
+year      = {2023},
+pages     = {23030-23039}
+}

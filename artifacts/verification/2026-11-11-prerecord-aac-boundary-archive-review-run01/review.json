@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "status": "pass_independent_compiled_archive_replay",
+  "offline_only": true,
+  "device_access": false,
+  "verifier_sha256": "81e6d466bddab23f9be4451dcc1a0bb1c15ff5576d7e458c4f7667e6fef123d9",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "owner_source_sha256": "b58c229882fb128a13f5352eda538ff28489b1e25b5e071b6c8d2088271c5ac7",
+  "owner_header_sha256": "3cc9dc09a605f08564f8fca1b2f7fc0ea6561af2a5832cedc20fe8c2e509f364",
+  "custody": "Separate downstream Python byte copy, not mux/Close success or durable SD proof",
+  "compile_command": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "-I",
+    "/Users/hyc/Documents/yi4k/sdk",
+    "artifacts/verification/2026-11-11-prerecord-aac-boundary-archive-review-run01/independent-wrapper.c",
+    "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_aac_boundary.c",
+    "-o",
+    "artifacts/verification/2026-11-11-prerecord-aac-boundary-archive-review-run01/independent-owner.dylib"
+  ],
+  "compiled_library_sha256": "3ddeb0d8789dc4b5521c56417cc82f187043ed64a3ab980357a52b8a7af7ca53",
+  "archived_replay": {
+    "aac_packets": 3003,
+    "segment_counts": {
+      "1": 2815,
+      "2": 188
+    },
+    "ordered_payload_sha256_digest": "34c8e32487ad1e6a4139c9f09ba3dcb45f3d4f63eeb6046ad4ee944ca0d08f7b",
+    "crossing": {
+      "source_index": 2815,
+      "pts": 2882560,
+      "bytes": 346,
+      "sha256": "ef96aaeaa91e39baf9abaf7a6edcf1b129482b5522cfb130d86b83413bf4ba5a",
+      "new_source_epoch": 2882560,
+      "ticket": 2816
+    },
+    "upstream_overwrites_preserved": 3003,
+    "retry_untouched_snapshot_checks": 3,
+    "once_only_receipt_checks": 3003
+  },
+  "rational_oracle": {
+    "cases": 4096,
+    "maximum_cross_product_bits": 96,
+    "result": "all exact classifications match arbitrary-precision cross multiplication"
+  },
+  "negative_checks": [
+    "NEXT cannot receipt or overwrite before advance",
+    "invalid advance transactional",
+    "wrong/stale/duplicate receipt cannot release",
+    "RETRY_UNTOUCHED retains exact bytes/metadata/ticket",
+    "AAC end overflow rejects without mutation",
+    "AMBIGUOUS freezes and retains bytes; replay denied"
+  ],
+  "limits": [
+    "Host compiled controller and synthetic caller receipts only; no actual downstream writer custody/Close integration.",
+    "Attestation identity/config and source epoch are fixture bindings, not proof of a hardware shared clock.",
+    "No native mux replay or device/SD operations; one packet owner does not constitute a live minute ring."
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint, APK V2 signature and real-camera 60-second 4K UI capture/download/decode/hash/recovery in Android emulator; no physical phone",
+  "packaged_at_utc": "2026-11-10T13:31:28.240016+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.5-debug.apk",
+  "sha256": "c605901430564d874cea8c02aba18e373abb1fc75a5231c2c5b35ae9d366c97f",
+  "size_bytes": 11530713,
+  "version_name": "0.3.5",
+  "version_code": 8,
+  "application_id": "dev.yi4k.control",
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.5-build01.log",
+  "reports": "artifacts/android/0.3.5-reports",
+  "changes_from_0_3_4": [
+    "Show unsupported current EIS format separately from saved on/off preference; preserve raw camera settings and command behavior"
+  ],
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "physical_phone_execution": false,
+    "android_emulator_execution": true,
+    "signature_verified": true,
+    "signature_scheme": "v2"
+  },
+  "tests": {
+    "debug": {
+      "tests": 109,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 109,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "limits": [
+    "No physical phone hotspot acceptance",
+    "0.3.4 disconnect/batch export regressions and 0.3.2 preview/editor evidence were not rerun on 0.3.5",
+    "Perceptual audio-video sync and timelapse/slowmotion recording unverified",
+    "EIS replacement and camera standalone 60s prerecord remain unimplemented"
+  ],
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "signature_report": "artifacts/android/0.3.5-signature01.txt",
+  "camera_capture_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.5-device-reports/camera-4k60-workflow-run01/acceptance.json",
+    "details": "artifacts/android/0.3.5-device-reports/camera-4k60-workflow-run01/workflow-screens/camera-capture/camera-capture.json",
+    "test_build_log": "artifacts/android/0.3.5-test-build02.log",
+    "scope": "real MainActivity guide/Wi-Fi/API, advertised quality and resolution write/readback, UI 60-second record/stop and photograph, UI restore/disconnect, fresh-session list/download/hash/Android decode",
+    "new_media": [
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0158.MP4",
+        "name": "YDXJ0158.MP4",
+        "bytes": 455840625,
+        "sha256": "577e0f8bf89fb00b8fb922137db5bc979deef0f02483e06fb9065c687e1c0d2e",
+        "type": "video",
+        "decoded_width": 3840,
+        "decoded_height": 2160,
+        "duration_ms": 60127,
+        "has_audio": "yes"
+      },
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0159.JPG",
+        "name": "YDXJ0159.JPG",
+        "bytes": 4309658,
+        "sha256": "cb8f262895b70b0136312372244d1d42b03ff7eb15e203d0e292df3458521347",
+        "type": "photo",
+        "decoded_width": 1000,
+        "decoded_height": 750,
+        "source_width": 1000,
+        "source_height": 750
+      }
+    ],
+    "eis_support_readback": "off",
+    "eis_preference_readback": "on",
+    "new_camera_side_hashes_equal_android": true,
+    "stable_settings_equal": true,
+    "existing_entries_preserved": true,
+    "existing_anchor_files_equal": true,
+    "boot_id_equal": true,
+    "emulator_stopped": true,
+    "physical_phone": false
+  },
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "verification_updated_at_utc": "2026-11-10T13:48:13.534113+00:00",
+  "camera_main_4k_workflow": {
+    "status": "passed",
+    "tests": 1,
+    "evidence": "artifacts/android/0.3.5-device-reports/camera-main-4k60-run01/acceptance.json",
+    "details": "artifacts/android/0.3.5-device-reports/camera-main-4k60-run01/workflow-screens/camera-main.json",
+    "scope": "Actual MainActivity guide/Wi-Fi/Chinese settings/media checkboxes/batch original export; 455.8MB 4K original SHA/decode/MediaStore verified; no camera writes or physical phone",
+    "exports": [
+      {
+        "name": "YDXJ0158.MP4",
+        "bytes": 455840625,
+        "type": "video",
+        "sha256": "577e0f8bf89fb00b8fb922137db5bc979deef0f02483e06fb9065c687e1c0d2e",
+        "decoded_width": 3840,
+        "decoded_height": 2160,
+        "duration_ms": 60127,
+        "has_audio": "yes"
+      },
+      {
+        "name": "YDXJ0159.JPG",
+        "bytes": 4309658,
+        "type": "photo",
+        "sha256": "cb8f262895b70b0136312372244d1d42b03ff7eb15e203d0e292df3458521347"
+      }
+    ],
+    "export_elapsed_ms": 123946,
+    "before_after_stable_settings_status_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  }
+}

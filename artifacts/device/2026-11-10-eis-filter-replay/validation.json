@@ -1,0 +1,289 @@
+{
+  "target": {
+    "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "image": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "base": "0xa0100000",
+    "function": "0xA0384710",
+    "evidence": "local device-image bytes; no device execution"
+  },
+  "validation": "actual pinned A32 bytes in Unicorn compared with host arithmetic model",
+  "unicorn_version": "2.1.4",
+  "function_sha256": "13d3a323453a3322a8867d6e2caf413b9dd1e99f14932e91d3c6fe2005972658",
+  "instruction_checks": [
+    {
+      "address": "0xa038494c",
+      "instruction": "lsl r3, r3, #1",
+      "bytes": "8330a0e1"
+    },
+    {
+      "address": "0xa0384950",
+      "instruction": "add r3, r3, r2",
+      "bytes": "023083e0"
+    },
+    {
+      "address": "0xa0384954",
+      "instruction": "lsl r2, r3, #5",
+      "bytes": "8322a0e1"
+    },
+    {
+      "address": "0xa0384958",
+      "instruction": "add r1, r3, r2",
+      "bytes": "021083e0"
+    },
+    {
+      "address": "0xa0384964",
+      "instruction": "smull r2, r3, r1, r3",
+      "bytes": "9123c3e0"
+    },
+    {
+      "address": "0xa0384968",
+      "instruction": "asr r2, r3, #5",
+      "bytes": "c322a0e1"
+    },
+    {
+      "address": "0xa038496c",
+      "instruction": "asr r3, r1, #0x1f",
+      "bytes": "c13fa0e1"
+    },
+    {
+      "address": "0xa0384970",
+      "instruction": "rsb r0, r3, r2",
+      "bytes": "020063e0"
+    },
+    {
+      "address": "0xa038497c",
+      "instruction": "ldrb r3, [r3]",
+      "bytes": "0030d3e5"
+    },
+    {
+      "address": "0xa0384980",
+      "instruction": "sxtb r3, r3",
+      "bytes": "7330afe6"
+    },
+    {
+      "address": "0xa0384988",
+      "instruction": "mul r1, r2, r3",
+      "bytes": "920301e0"
+    },
+    {
+      "address": "0xa0384994",
+      "instruction": "smull r2, r3, r1, r3",
+      "bytes": "9123c3e0"
+    },
+    {
+      "address": "0xa03849a4",
+      "instruction": "add r3, r0, r3",
+      "bytes": "033080e0"
+    },
+    {
+      "address": "0xa03849bc",
+      "instruction": "cmp r2, r3",
+      "bytes": "030052e1"
+    },
+    {
+      "address": "0xa03849c0",
+      "instruction": "ble #0xa03849d0",
+      "bytes": "020000da"
+    },
+    {
+      "address": "0xa03849d4",
+      "instruction": "rsb r2, r3, #0",
+      "bytes": "002063e2"
+    },
+    {
+      "address": "0xa03849dc",
+      "instruction": "cmp r2, r3",
+      "bytes": "030052e1"
+    },
+    {
+      "address": "0xa03849e0",
+      "instruction": "ble #0xa03849f0",
+      "bytes": "020000da"
+    }
+  ],
+  "differential_cases": 3240,
+  "mismatches": 0,
+  "invalid_input_checks": [
+    "nonempty samples [{sequence, input, previous?, tick?, stream?}] required; sparse raw gyro logs are not boundary inputs",
+    "sample.previous must be a signed 32-bit integer",
+    "sample.sequence must strictly increase; order cannot be inferred from JSON file location",
+    "sample.input must be a signed 32-bit integer",
+    "limit must be non-negative; runtime negative limits have no supported interpretation"
+  ],
+  "overflow_examples": [
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": -128,
+      "limit": 2147483647,
+      "modeled": -21474836,
+      "emulated": -21474836,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": 0,
+        "feedback_term": -21474836,
+        "input_term": 0,
+        "unclamped_i32": -21474836,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": -1,
+      "limit": 2147483647,
+      "modeled": -42949672,
+      "emulated": -42949672,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": -2147483648,
+        "feedback_term": -21474836,
+        "input_term": -21474836,
+        "unclamped_i32": -42949672,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": 0,
+      "limit": 2147483647,
+      "modeled": -21474836,
+      "emulated": -21474836,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": 0,
+        "feedback_term": -21474836,
+        "input_term": 0,
+        "unclamped_i32": -21474836,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": 1,
+      "limit": 2147483647,
+      "modeled": -42949672,
+      "emulated": -42949672,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": -2147483648,
+        "feedback_term": -21474836,
+        "input_term": -21474836,
+        "unclamped_i32": -42949672,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": 100,
+      "limit": 2147483647,
+      "modeled": -21474836,
+      "emulated": -21474836,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": 0,
+        "feedback_term": -21474836,
+        "input_term": 0,
+        "unclamped_i32": -21474836,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483648,
+      "gain": 127,
+      "limit": 2147483647,
+      "modeled": -42949672,
+      "emulated": -42949672,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": -2147483648,
+        "feedback_term": -21474836,
+        "input_term": -21474836,
+        "unclamped_i32": -42949672,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483647,
+      "gain": -128,
+      "limit": 2147483647,
+      "modeled": -21474837,
+      "emulated": -21474837,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": -128,
+        "feedback_term": -21474836,
+        "input_term": -1,
+        "unclamped_i32": -21474837,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": true,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    },
+    {
+      "previous": -2147483648,
+      "input": -2147483647,
+      "gain": -1,
+      "limit": 2147483647,
+      "modeled": 0,
+      "emulated": 0,
+      "details": {
+        "feedback_coefficient": 99,
+        "small_threshold": null,
+        "feedback_product_i32": -2147483648,
+        "input_product_i32": 2147483647,
+        "feedback_term": -21474836,
+        "input_term": 21474836,
+        "unclamped_i32": 0,
+        "wrapped_feedback_product": true,
+        "wrapped_input_product": false,
+        "wrapped_addition": false,
+        "clamped": false
+      }
+    }
+  ],
+  "limitations": [
+    "CPU emulation is not physical camera execution or scheduling/cache validation.",
+    "Ordinary/adaptive finite default angular conversion, nonnegative limits, and selected boundary/random integer cases tested.",
+    "Raw gyro-to-window transformation and outer call topology are not validated by this scalar comparison."
+  ]
+}

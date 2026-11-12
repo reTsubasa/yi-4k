@@ -1,0 +1,310 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x53d",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0x54b",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x567",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0x57c",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x582",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x591",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0x5a5",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0x5ba",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x5cc",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x5e0",
+    "text": "ambaipc_svc_unregister"
+  },
+  {
+    "offset": "0x5f7",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x611",
+    "text": "libambasocksvc.so"
+  },
+  {
+    "offset": "0x623",
+    "text": "SocketSvc_Send"
+  },
+  {
+    "offset": "0x632",
+    "text": "SocketSvc_getMaxAmount"
+  },
+  {
+    "offset": "0x649",
+    "text": "SocketSvc_waitRequest"
+  },
+  {
+    "offset": "0x65f",
+    "text": "SocketSvc_getClntSD"
+  },
+  {
+    "offset": "0x673",
+    "text": "SocketSvc_init"
+  },
+  {
+    "offset": "0x682",
+    "text": "SocketSvc_Recv"
+  },
+  {
+    "offset": "0x691",
+    "text": "SocketSvc_release"
+  },
+  {
+    "offset": "0x6a3",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x6ad",
+    "text": "signal"
+  },
+  {
+    "offset": "0x6b4",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x6bb",
+    "text": "abort"
+  },
+  {
+    "offset": "0x6c1",
+    "text": "fputs"
+  },
+  {
+    "offset": "0x6c7",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x6ce",
+    "text": "malloc"
+  },
+  {
+    "offset": "0x6d5",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x6dc",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x6e4",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x6fb",
+    "text": "__cxa_atexit"
+  },
+  {
+    "offset": "0x708",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x70f",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x71b",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x729",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x735",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x742",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0xfd9",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x101c",
+    "text": "socket_data_process"
+  },
+  {
+    "offset": "0x1030",
+    "text": "init_RPC"
+  },
+  {
+    "offset": "0x1039",
+    "text": "socket_recever"
+  },
+  {
+    "offset": "0x1048",
+    "text": "[AmbaEventNotifier]: Got signal %d, program exits!"
+  },
+  {
+    "offset": "0x107c",
+    "text": "%s: param outof limmit (%u,%u)"
+  },
+  {
+    "offset": "0x109c",
+    "text": "%s: Fail to create client."
+  },
+  {
+    "offset": "0x10b8",
+    "text": "%s: fail to do ambaipc_clnt_call(). %d"
+  },
+  {
+    "offset": "0x10e0",
+    "text": "@@ Fail to do SocketSvc_init!"
+  },
+  {
+    "offset": "0x10ff",
+    "text": "AmbaEventNotifier_LUSVC"
+  },
+  {
+    "offset": "0x1117",
+    "text": "%s: Error to do ambaipc_svc_register %d"
+  },
+  {
+    "offset": "0x1141",
+    "text": "@@ Fail to do init_RPC!"
+  },
+  {
+    "offset": "0x115a",
+    "text": "%s: Fail to malloc Reqbuf!"
+  },
+  {
+    "offset": "0x1176",
+    "text": "%s: Fail to do SocketSvc_waitRequest()! %d"
+  },
+  {
+    "offset": "0x11a2",
+    "text": "%s: Fail to do SocketSvc_Recv()!"
+  },
+  {
+    "offset": "0x11c4",
+    "text": "%s: Fail to do thread_socket_process()!"
+  },
+  {
+    "offset": "0x11ed",
+    "text": "%s: Exit!!(s=%u,f=%u)"
+  },
+  {
+    "offset": "0x13a9",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x13dc",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x13e6",
+    "text": ".interp"
+  },
+  {
+    "offset": "0x13ee",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0x13fc",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x140f",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x1415",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x141d",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x1425",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x1432",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x1441",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x144a",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x1453",
+    "text": ".init"
+  },
+  {
+    "offset": "0x1459",
+    "text": ".text"
+  },
+  {
+    "offset": "0x145f",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x1465",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x146d",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x1478",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x1482",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x148e",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x149f",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x14ad",
+    "text": ".data"
+  },
+  {
+    "offset": "0x14b8",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="dev.yi4k.control" />
+    </queries>
+    <application>
+        <provider android:name="dev.yi4k.control.PendingExportFixtureProvider"
+            android:authorities="dev.yi4k.control.test.pendingfixture"
+            android:exported="true" android:process=":pendingfixture" />
+    </application>
+</manifest>

@@ -1,0 +1,49 @@
+~ # cat /proc/cpuinfo; cat /proc/meminfo
+processor       : 0
+model name      : ARMv7 Processor rev 0 (v7l)
+BogoMIPS        : 887.19
+Features        : swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x3
+CPU part        : 0xc09
+CPU revision    : 0
+
+Hardware        : Ambarella S2E (Flattened Device Tree)
+Revision        : 0000
+Serial          : 0000000000000000
+MemTotal:          49096 kB
+MemFree:            9304 kB
+Buffers:            7848 kB
+Cached:            13744 kB
+SwapCached:            0 kB
+Active:            13128 kB
+Inactive:          15320 kB
+Active(anon):       6868 kB
+Inactive(anon):       40 kB
+Active(file):       6260 kB
+Inactive(file):    15280 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          6880 kB
+Mapped:             3952 kB
+Shmem:                52 kB
+Slab:               3832 kB
+SReclaimable:        656 kB
+SUnreclaim:         3176 kB
+KernelStack:         664 kB
+PageTables:         3980 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       24548 kB
+Committed_AS:     150212 kB
+VmallocTotal:    1515520 kB
+VmallocUsed:         748 kB
+VmallocChunk:    1514620 kB
+~ # echo __YI_CAPTURE_112cd078503d44bf9738b0bea4c33b73__
+__YI_CAPTURE_112cd078503d44bf9738b0bea4c33b73__

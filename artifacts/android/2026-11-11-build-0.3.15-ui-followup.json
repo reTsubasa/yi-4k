@@ -1,0 +1,24 @@
+{
+  "version": "0.3.15",
+  "version_code": 18,
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.3.15-debug.apk",
+    "bytes": 11595765,
+    "sha256": "4d8ceec1077e9e10e5e3985b22c69a0bb96e747275e704b09364b5179173de5e"
+  },
+  "build": {
+    "assembleDebug": "passed",
+    "compileDebugJavaWithJavac": "passed",
+    "lintDebug": "passed"
+  },
+  "targeted_unit_tests": {
+    "LatestUiAcceptanceTest": "passed",
+    "protocol_settings_wifi_preview": "passed"
+  },
+  "full_unit_suite": {
+    "tests": 157,
+    "passed": 157,
+    "failures": 0
+  },
+  "scope": "Final UI follow-up APK; no physical phone, camera radio, firmware, RTOS, RAM or partition access."
+}

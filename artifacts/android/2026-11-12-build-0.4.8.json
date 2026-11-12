@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "version": "0.4.8",
+  "version_code": 31,
+  "created_utc": "2026-11-12T05:45:22.709784+00:00",
+  "status": "pass_host_build_unit_tests_and_local_avd",
+  "device_access": false,
+  "scope": "Known setting value localization plus local UI regression; no camera or physical phone access",
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.8-debug.apk",
+    "bytes": 11658909,
+    "sha256": "161a301f6aaf090fb31e887a44659346af989a33eaf44af143d056959bda68fa"
+  },
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.8-tests.apk",
+    "bytes": 737492,
+    "sha256": "e719200888254603ce86e80b162ed23b677313dc01cf9895368932dad88e2770"
+  },
+  "unit_tests": {
+    "tests": 208,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 74
+  },
+  "tests_run": [
+    "./gradlew --max-workers=1 testDebugUnitTest lintDebug assembleDebug assembleDebugAndroidTest",
+    "python3 scripts/android_emulator_acceptance.py --output artifacts/android/0.4.8-device-reports/settings-values-run01 --apk artifacts/android/yi4k-control-0.4.8-debug.apk --test-apk artifacts/android/yi4k-control-0.4.8-tests.apk --test-class dev.yi4k.control.SettingsLayoutDeviceTest,dev.yi4k.control.FullscreenLayoutDeviceTest --expected-tests 2 --discard-avd-on-success"
+  ],
+  "signature": {
+    "v2_verified": true,
+    "certificate_sha256": "2f3578febd2c24c835e00b3e44aa7b2fabe6c217eb72f03ea7b10f23494d0a15",
+    "same_debug_certificate_as_0_4_7": true,
+    "product_report": "artifacts/android/0.4.8-host-reports/apk-signature.txt",
+    "test_report": "artifacts/android/0.4.8-host-reports/test-apk-signature.txt"
+  },
+  "changed_contracts": [
+    "Known timestamp, burst rate, capture interval, China Wi-Fi region and conditional voice language values have Chinese labels",
+    "Unknown formats and underlying raw setting values/write options remain unchanged",
+    "No new voice action: conditional voice language row stays read-only"
+  ],
+  "source_sha256": {
+    "android/app/src/androidTest/java/dev/yi4k/control/SettingsLayoutDeviceTest.java": "41db9ccf090e45d7f2c8b389cdfb48623a294314a492c1b0c82ad85f3d316529",
+    "android/app/src/main/java/dev/yi4k/control/CameraSettings.java": "039aa54a5f85c9de90a4c017238f86a076b0346a075760f9a000d7fbfa516417",
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "fda832dde7df149f9855b36ac23de1fd3215aa54d1e1e75db822ae8c86659520",
+    "android/app/src/test/java/dev/yi4k/control/CameraSettingsLabelsTest.java": "afa427b7cfa13e1364f8efe8e206fb6d719b88cb98908ecf8c48c31e18b5f443",
+    "android/app/src/test/java/dev/yi4k/control/PrototypeRenderTest.java": "408009b8aca8bbd7212f6c45ec73fed8acfc6e283b27e74f4f55a7c50d306289",
+    "android/app/build.gradle": "fa8a42cfe02b855cd6094210ce3d2c11b9a8a72d63913885bd213f85a49d609d"
+  },
+  "source_index": {
+    "path": "artifacts/android/0.4.8-host-reports/source-index.json",
+    "bytes": 19769,
+    "sha256": "61576a48f4c1806e60fa25a13079a4b823b40b519b328399c02ba0125f1dce62"
+  },
+  "host_reports": "artifacts/android/0.4.8-host-reports",
+  "offline_value_review": {
+    "path": "artifacts/android/0.4.8-host-reports/localized-setting-values.json",
+    "bytes": 1127,
+    "sha256": "22d3a7843a5591db9d563bb0d2e9750c08d5fa64392e9ed19a282aff58bd3205"
+  },
+  "negative_regression": {
+    "path": "artifacts/android/0.4.7-host-value-review/before.xml",
+    "bytes": 5633,
+    "sha256": "fa7b2b1d07416d2fda5ed07c930378036986d293dfffb522b87da8265877e562"
+  },
+  "avd": {
+    "status": "passed",
+    "tests": 2,
+    "acceptance_path": "artifacts/android/0.4.8-device-reports/settings-values-run01/acceptance.json",
+    "acceptance_sha256": "67ed5a2046737aa41f66e7798a77506408f6f2bde893a693c4ab78175d0e9599",
+    "scope": "headless Android AVD only; no physical phone or camera access",
+    "emulator_stopped": true,
+    "physical_phone": false,
+    "camera_access": false,
+    "raw_screenshot_count": 18,
+    "ui_review_path": "artifacts/android/0.4.8-device-reports/settings-values-run01/ui-review.json",
+    "ui_review_sha256": "0006feb0236798f7ea95bd6cb48440571faeed47eef78b31a9f84564d793cd1f",
+    "workflows": [
+      "Seven actual native setting rows with local fixture values, nonoverlap/no truncation/wire preservation/voice read-only",
+      "Real touch fullscreen entry -> landscape -> portrait -> exit -> settings, same preview container and controls reachable"
+    ]
+  },
+  "historical_0_4_7_apk_preserved": true,
+  "limitations": [
+    "No physical phone or live camera acceptance this run",
+    "Local fixture UI does not prove live RTSP, phone hotspot, camera voice recognition or camera clock synchronization",
+    "No >4 GiB export rerun for this value-only change",
+    "No EIS replacement, native execution or minute-prebuffer backend deployed"
+  ]
+}

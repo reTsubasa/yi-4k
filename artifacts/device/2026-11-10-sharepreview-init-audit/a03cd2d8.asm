@@ -1,0 +1,18 @@
+0xa03cd2d8  movw r3, #0x14c
+0xa03cd2dc  str lr, [sp, #-4]!
+0xa03cd2e0  movt r3, #0xa17e
+0xa03cd2e4  sub sp, sp, #0xc
+0xa03cd2e8  mov r2, r0
+0xa03cd2ec  mov r1, sp
+0xa03cd2f0  ldr r0, [r3]
+0xa03cd2f4  mov r3, #0x20
+0xa03cd2f8  bl #0xa03bc77c
+0xa03cd2fc  subs r1, r0, #0
+0xa03cd300  movne r0, #0
+0xa03cd304  bne #0xa03cd318
+0xa03cd308  ldm sp, {r0, r2}
+0xa03cd30c  rsb r2, r0, r2
+0xa03cd310  blx #0xa04f8dec
+0xa03cd314  ldr r0, [sp, #4]
+0xa03cd318  add sp, sp, #0xc
+0xa03cd31c  pop {pc}

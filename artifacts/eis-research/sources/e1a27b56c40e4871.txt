@@ -1,0 +1,15 @@
+Digital Video Stabilization and Rolling Shutter Correction using Gyroscopes
+Digital Video Stabilization and Rolling Shutter Correction using Gyroscopes
+Alexandre Karpenko, Stanford University
+David Jacobs, Stanford University
+Jongmin Baek, Stanford University
+Marc Levoy, Stanford University
+Stanford University Computer Science Tech Report CSTR 2011-03
+September, 2011
+(a) Videos captured with a cell-phone camera tend to be shaky due to the device’s size and weight. (b) The rolling shutter used by sensors in these cameras also produces warping in the output frames (we have exagerrated the effect for illustrative purposes). (c) We use gyroscopes to measure the camera’s rotations during video capture. (d) We use the measured camera motion to stabilize the video and to rectify the rolling shutter. (Golden Gate photo courtesy of Salim Virji.)
+Abstact
+In this paper we present a robust, real-time video stabilization and rolling shutter correction technique based on commodity gyroscopes. First, we develop a unified algorithm for modeling camera motion and rolling shutter warping. We then present a novel framework for automatically calibrating the gyroscope and camera outputs from a single video capture. This calibration allows us to use only gyroscope data to effectively correct rolling shutter warping and to stabilize the video. Using our algorithm, we show results for videos featuring large moving foreground objects, parallax, and low-illumination. We also compare our method with commercial image-based stabilization algorithms. We find that our solution is more robust and computationally inexpensive. Finally, we implement our algorithm directly on a mobile phone. We demonstrate that by using the phone's inbuilt gyroscope and GPU, we can remove camera shake and rolling shutter artifacts in real-time.
+Tech Report (5.2 MB)
+Video Overview (200 MB)
+Source Code
+© Alexandre Karpenko, 2011.

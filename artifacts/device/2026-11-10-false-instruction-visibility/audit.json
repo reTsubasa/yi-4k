@@ -1,0 +1,234 @@
+{
+  "cpu_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "range": {
+    "start": "0xa02a0aa8",
+    "end_exclusive": "0xa02a0ab0",
+    "original_hex": "0000e0e31eff2fe1",
+    "proposed_change": {
+      "address": "0xa02a0aaa",
+      "original_byte": "e0",
+      "changed_byte": "a0",
+      "old_instruction": "mvn r0, #0",
+      "new_instruction": "mov r0, #0",
+      "unchanged_return": "bx lr"
+    }
+  },
+  "references": {
+    "raw_pointer_hits": [
+      {
+        "site": "0xa06f2f10",
+        "value": "0xa02a0aa8",
+        "aligned": true
+      }
+    ],
+    "retained_incoming_interval_refs": [],
+    "aligned_a32_branch_candidates": [],
+    "movw_movt_within_five_instructions": [],
+    "limits": "Byte-pattern and bounded A32 scans are not a proof against computed pointers, arithmetic, Thumb callers, copied tables, runtime scripts or uncaptured code."
+  },
+  "interpreter_alias_callers": [
+    {
+      "caller": "0xa019d1e0",
+      "site": "0xa019e160",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01ac580",
+      "site": "0xa01ac5fc",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01ac580",
+      "site": "0xa01ac630",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01ac580",
+      "site": "0xa01ac65c",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01ac580",
+      "site": "0xa01ac6a8",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0xa01ac580",
+      "site": "0xa01ac6dc",
+      "target": "0xa029de98",
+      "type": "UNCONDITIONAL_CALL"
+    }
+  ],
+  "known_alias_arguments": [
+    "A019E160: dmesg dsp -4096 > c:\\dsp.log",
+    "A01AC580: five t audio-enc init/create/encstart/stop/delete commands"
+  ],
+  "visibility_parser_cases": [
+    {
+      "case": "original",
+      "changed_byte": "0xe0",
+      "handler_return": "0xffffffff",
+      "conditional_print": [
+        "ELSE_HIT",
+        "\n"
+      ],
+      "original_handler_instruction_bytes": "0000e0e31eff2fe1",
+      "sp_callee_saved_verified": true
+    },
+    {
+      "case": "changed",
+      "changed_byte": "0xa0",
+      "handler_return": "0x0",
+      "conditional_print": [
+        "THEN_HIT",
+        "\n"
+      ],
+      "original_handler_instruction_bytes": "0000a0e31eff2fe1",
+      "sp_callee_saved_verified": true
+    },
+    {
+      "case": "restored_data",
+      "changed_byte": "0xe0",
+      "handler_return": "0xffffffff",
+      "conditional_print": [
+        "ELSE_HIT",
+        "\n"
+      ],
+      "original_handler_instruction_bytes": "0000e0e31eff2fe1",
+      "sp_callee_saved_verified": true
+    }
+  ],
+  "loadbin_request_cases": [
+    {
+      "stat_size": 1,
+      "stat_success": true,
+      "events": [
+        {
+          "api": "stat",
+          "success": true
+        },
+        {
+          "api": "fread",
+          "destination": "0xa02a0aaa",
+          "size": 1,
+          "count": 1
+        }
+      ],
+      "return_value": "0x0"
+    },
+    {
+      "stat_size": 2,
+      "stat_success": true,
+      "events": [
+        {
+          "api": "stat",
+          "success": true
+        },
+        {
+          "api": "fread",
+          "destination": "0xa02a0aaa",
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "return_value": "0x0"
+    },
+    {
+      "stat_size": 1,
+      "stat_success": false,
+      "events": [
+        {
+          "api": "stat",
+          "success": false
+        },
+        {
+          "api": "fread",
+          "destination": "0xa02a0aaa",
+          "size": 1,
+          "count": 4660
+        }
+      ],
+      "return_value": "0x0"
+    }
+  ],
+  "partial_sector_cases": [
+    {
+      "sector_offset": 0,
+      "writes": [
+        {
+          "address": "0xa02a0aaa",
+          "size": 1,
+          "value": 160
+        }
+      ],
+      "reported_bytes": 1
+    },
+    {
+      "sector_offset": 17,
+      "writes": [
+        {
+          "address": "0xa02a0aaa",
+          "size": 1,
+          "value": 160
+        }
+      ],
+      "reported_bytes": 1
+    },
+    {
+      "sector_offset": 511,
+      "writes": [
+        {
+          "address": "0xa02a0aaa",
+          "size": 1,
+          "value": 160
+        }
+      ],
+      "reported_bytes": 1
+    }
+  ],
+  "exports": {
+    "false_32byte_line": {
+      "start": "0xa02a0aa0",
+      "end_exclusive": "0xa02a0ac0",
+      "sha256": "576d9419d3bc131a9aaa12cab89082d67a9d59fb6eda4397bf824d255266412e"
+    },
+    "false_neighbor_64bytes": {
+      "start": "0xa02a0a80",
+      "end_exclusive": "0xa02a0ac0",
+      "sha256": "740edf0737ea2529ed2ea3a0167a71c252811aa218159e2ac8597f95b2f2c9c6"
+    },
+    "ordinary_dispatch_call": {
+      "start": "0xa029caf8",
+      "end_exclusive": "0xa029cb30",
+      "sha256": "4eea538ebb8a4c891d8cbdfbf1020ed637386feae7efdbc91f5064a0180b67c1"
+    },
+    "loadbin": {
+      "start": "0xa02a2584",
+      "end_exclusive": "0xa02a26f4",
+      "sha256": "a99e2035bcf93ae55756b883b9ef1e5c2964f0d3ff2ee6891310d2a30ce98f7a"
+    },
+    "partial_sector_reader": {
+      "start": "0xa03534d8",
+      "end_exclusive": "0xa03535a8",
+      "sha256": "dd0684f85f9247f57cc72cdc4e1bb71294a7474efb883458790c1fe119bc978e"
+    },
+    "byte_copy": {
+      "start": "0xa033a6c4",
+      "end_exclusive": "0xa033a740",
+      "sha256": "4692367a5f9edfe24f010114a4679bb7d78484ff676b547a30770e5084b4ce17"
+    }
+  },
+  "limitations": [
+    "No actual file service, SD read/DMA or device memory write is proven by declared file stubs.",
+    "Fresh emulator instances do not model I/D-cache, fetch visibility, concurrency or restoration of live instruction state.",
+    "This is a one-byte instruction visibility candidate, not arbitrary payload execution or a general code publication mechanism."
+  ],
+  "target_access": false,
+  "target_write": false,
+  "binary_or_deployer_emitted": false
+}

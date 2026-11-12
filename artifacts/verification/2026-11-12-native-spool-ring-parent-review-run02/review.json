@@ -1,0 +1,74 @@
+{
+  "accepted": {
+    "shutter": {
+      "C_readers": 63,
+      "bytes": 343127606,
+      "common_origin": {
+        "denominator": 375,
+        "numerator": 1096,
+        "seconds": 2.9226666666666667
+      },
+      "complete_decode_receipt": true,
+      "independently_decoded_previous_output_byte_identical": true,
+      "packets": {
+        "0": 1831,
+        "1": 2863
+      },
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a"
+    },
+    "voice": {
+      "C_readers": 63,
+      "bytes": 343127606,
+      "common_origin": {
+        "denominator": 375,
+        "numerator": 1096,
+        "seconds": 2.9226666666666667
+      },
+      "complete_decode_receipt": true,
+      "independently_decoded_previous_output_byte_identical": true,
+      "packets": {
+        "0": 1831,
+        "1": 2863
+      },
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a"
+    }
+  },
+  "device_access": false,
+  "limits": [
+    "Archive replay and host typed triggers only; not realtime FIFO/RTOS/physical SD",
+    "C closure request comes from host accepted-source ledger, not actual callback-stop proof",
+    "POSIX process-exit/short-Close recovery; not camera loss-of-power acceptance",
+    "New positive files fully decoded by exporter; independent review checks exact packet/timing and byte identity to previously independently decoded candidate",
+    "No Android/player UI or new physical camera acceptance in this experiment"
+  ],
+  "negative": [
+    {
+      "case": "unpinned",
+      "error": "ring is not a complete pinned closed set",
+      "exit_code": 2,
+      "native_Open_reached": false,
+      "report": "artifacts/verification/2026-11-12-native-spool-ring-parent-review-run02/unpinned-rejected/audit.json",
+      "report_sha256": "f7bd91bc1137a30592fe0e6730a268a12ba03a68ca4d9887309f25619f25aa65"
+    },
+    {
+      "case": "truncated-boundary",
+      "error": "new C seal reader rejected coverage",
+      "exit_code": 2,
+      "native_Open_reached": false,
+      "report": "artifacts/verification/2026-11-12-native-spool-ring-parent-review-run02/truncated-boundary-rejected/audit.json",
+      "report_sha256": "2dc13f66dfc0e7e5d6c46f9c81ea30d88bf3b58239548d548e43f5ab58e9ba83"
+    },
+    {
+      "case": "crc-repaired-payload",
+      "error": "new C seal reader rejected coverage",
+      "exit_code": 2,
+      "native_Open_reached": false,
+      "report": "artifacts/verification/2026-11-12-native-spool-ring-parent-review-run02/crc-repaired-payload-rejected/audit.json",
+      "report_sha256": "a3a5ad7dfccc9d5808918510997d4e52d7b6847b666d1c9b9baa03b87ac6a728"
+    }
+  ],
+  "retained_file_checks": 378,
+  "source_spools_unchanged": true,
+  "status": "pass_independent_C_spool_ring_native_export_review",
+  "verifier_sha256": "073907b437d7a25d4a39afa177306659167a519e626d992638c9367c5725c724"
+}

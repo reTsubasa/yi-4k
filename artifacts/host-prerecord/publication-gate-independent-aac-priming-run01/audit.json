@@ -1,0 +1,56 @@
+{
+  "scope": "local host-generated media; no camera contact",
+  "checks": {
+    "positive_published_and_passed": true,
+    "exactly_one_real_remux_injected": true,
+    "negative_full_decode_passed": true,
+    "negative_gate_rejected": true,
+    "negative_failed_manifest": true,
+    "negative_never_published": true,
+    "negative_pending_retained": true,
+    "negative_segments_retained": true,
+    "negative_snapshot_hash_matches": true,
+    "negative_only_av_offset_failed": true,
+    "source_unchanged": true
+  },
+  "passed": true,
+  "injection_commands": [
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-n",
+      "-copyts",
+      "-advanced_editlist",
+      "0",
+      "-i",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-aac-priming-run01/audio-shift-negative/clip.unshifted-negative-control.mp4",
+      "-itsoffset",
+      "0.1",
+      "-advanced_editlist",
+      "0",
+      "-i",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-aac-priming-run01/audio-shift-negative/clip.unshifted-negative-control.mp4",
+      "-map",
+      "0:v:0",
+      "-map",
+      "1:a:0",
+      "-c",
+      "copy",
+      "-avoid_negative_ts",
+      "disabled",
+      "-movie_timescale",
+      "1000000",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-aac-priming-run01/audio-shift-negative/clip.pending.mp4"
+    ]
+  ],
+  "positive_clip_sha256": "40224381d4f146482258f3fbc5a16db7a04e1c9eca41fe5cacb146e9de9b8f23",
+  "negative_clip_sha256": "a0f731f9b3d338b4038ffb6a734e27f16ab1070f6ab42773583ab8f8d76d3c5f",
+  "negative_snapshot_sha256": "cb50c92962a6b2c2d8ab8e9151e940862a36bdd1d82892f2debad22f44ae8397",
+  "code_sha256": {
+    "prerecord_replay.py": "1788a3947431f64363858bd3c900951b2378ce0f49ad020281d328d3128ef231",
+    "validate_prerecord_packet_fidelity.py": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460",
+    "audit_prerecord_publication_gate.py": "9825aef06eab3e05b9cfe7de36fcb9c8ebac6d5d180f2052a32dcc141f28e683"
+  }
+}

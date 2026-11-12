@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-11-11T09:50:19.608025+00:00",
+  "scope": "TCP connect only, no camera commands, payload bytes, settings or files written",
+  "host": "192.168.42.1",
+  "results": [
+    {
+      "port": 23,
+      "tcp_connected": false,
+      "error": "timed out"
+    },
+    {
+      "port": 80,
+      "tcp_connected": false,
+      "error": "timed out"
+    },
+    {
+      "port": 554,
+      "tcp_connected": false,
+      "error": "timed out"
+    },
+    {
+      "port": 7878,
+      "tcp_connected": false,
+      "error": "timed out"
+    }
+  ],
+  "adb_devices": "List of devices attached\n\n"
+}

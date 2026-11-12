@@ -1,0 +1,301 @@
+{
+  "evidence_type": "static little-endian OR1K-compatible core encoding and linked string-reference audit; no execution",
+  "dsp_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "orccode_sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6",
+  "reference": {
+    "repository": "https://github.com/openrisc/binutils-gdb",
+    "branch": "or1k",
+    "commit": "c7c6e55b60b072cdcc5c3fc27164b890a0f34520",
+    "file": "opcodes/or1k-opc.c",
+    "sha256": "4383b2c2ddceafec258d3907dee382d76389ca3604c0cad867fc58d15a30039c"
+  },
+  "instruction_checks": [
+    {
+      "member_offset": "0x0",
+      "word_le": "0x26",
+      "instruction": "l.j 0x98"
+    },
+    {
+      "member_offset": "0x4",
+      "word_le": "0x15000000",
+      "instruction": "l.nop 0x0"
+    },
+    {
+      "member_offset": "0x2453c",
+      "word_le": "0x846e0058",
+      "instruction": "l.lwz r3,88(r14)"
+    },
+    {
+      "member_offset": "0x24540",
+      "word_le": "0xd4101b58",
+      "instruction": "l.sw 856(r16),r3"
+    },
+    {
+      "member_offset": "0x25904",
+      "word_le": "0x84f00358",
+      "instruction": "l.lwz r7,856(r16)"
+    },
+    {
+      "member_offset": "0x2590c",
+      "word_le": "0x405e94e",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "member_offset": "0x91718",
+      "word_le": "0x846a142c",
+      "instruction": "l.lwz r3,5164(r10)"
+    },
+    {
+      "member_offset": "0x91740",
+      "word_le": "0x4043fde",
+      "instruction": "l.jal 0x1a16b8"
+    },
+    {
+      "member_offset": "0x91754",
+      "word_le": "0x40439bc",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "member_offset": "0xd7690",
+      "word_le": "0x846a0024",
+      "instruction": "l.lwz r3,36(r10)"
+    },
+    {
+      "member_offset": "0xd769c",
+      "word_le": "0x9d42ffb0",
+      "instruction": "l.addi r10,r2,-80"
+    },
+    {
+      "member_offset": "0xd76a0",
+      "word_le": "0x403347c",
+      "instruction": "l.jal 0x1a4890"
+    },
+    {
+      "member_offset": "0xd76c0",
+      "word_le": "0x86e2ffb0",
+      "instruction": "l.lwz r23,-80(r2)"
+    },
+    {
+      "member_offset": "0xd76d4",
+      "word_le": "0xe4176000",
+      "instruction": "l.sfeq r23,r12"
+    },
+    {
+      "member_offset": "0xd7730",
+      "word_le": "0x40321c5",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "member_offset": "0xe2ff0",
+      "word_le": "0xa9830000",
+      "instruction": "l.ori r12,r3,0x0"
+    },
+    {
+      "member_offset": "0xe2ff8",
+      "word_le": "0xa9440000",
+      "instruction": "l.ori r10,r4,0x0"
+    },
+    {
+      "member_offset": "0xe3010",
+      "word_le": "0x852c0000",
+      "instruction": "l.lwz r9,0(r12)"
+    },
+    {
+      "member_offset": "0xe301c",
+      "word_le": "0xd40a4818",
+      "instruction": "l.sw 24(r10),r9"
+    },
+    {
+      "member_offset": "0xe3020",
+      "word_le": "0x8d0c0004",
+      "instruction": "l.lbz r8,4(r12)"
+    },
+    {
+      "member_offset": "0xe3024",
+      "word_le": "0xd80a401c",
+      "instruction": "l.sb 28(r10),r8"
+    },
+    {
+      "member_offset": "0xe3028",
+      "word_le": "0x8c8c0005",
+      "instruction": "l.lbz r4,5(r12)"
+    },
+    {
+      "member_offset": "0xe302c",
+      "word_le": "0xd80a201d",
+      "instruction": "l.sb 29(r10),r4"
+    },
+    {
+      "member_offset": "0xe3068",
+      "word_le": "0x44004800",
+      "instruction": "l.jr r9"
+    }
+  ],
+  "instruction_check_count": 24,
+  "string_references": [
+    {
+      "string_member_offset": "0x22e4ba",
+      "text": "pp_setup - VCAP_SETUP_PTS_DELTA_M(ccb) %d VCAP_SETUP_IDSP_CMD_DLY_M(setup_params) %d  VCAP_SETUP_PIP_FRAME_DEC_RATE_M(ccb) %d setup_params->eis_update_addr 0x%x setup_params->main_w_extra %d \n",
+      "movhi_site": "0x258ec",
+      "ori_site": "0x258f0",
+      "constructed_address": "0x82e4ba",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": [
+        "0x2590c"
+      ]
+    },
+    {
+      "string_member_offset": "0x260b98",
+      "text": " gyro delay sleep %d ",
+      "movhi_site": "0x9174c",
+      "ori_site": "0x91750",
+      "constructed_address": "0x860b98",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": [
+        "0x91754"
+      ]
+    },
+    {
+      "string_member_offset": "0x260c57",
+      "text": " mpVideoProcOnePicSec2ToDram : raw cap fid 0x%x  cap info hw pts %d  diff_pts %d icb->gyro_delay %d ",
+      "movhi_site": "0x917b4",
+      "ori_site": "0x917b8",
+      "constructed_address": "0x860c57",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": [
+        "0x917c4"
+      ]
+    },
+    {
+      "string_member_offset": "0x288191",
+      "text": "EIS_DEBUG: cmd_code (0x%x) check fail\n",
+      "movhi_site": "0xd7728",
+      "ori_site": "0xd772c",
+      "constructed_address": "0x888191",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": [
+        "0xd7730"
+      ]
+    },
+    {
+      "string_member_offset": "0x288257",
+      "text": "EIS_DEBUG: h_warp_cmd_active(%d) is not set\n",
+      "movhi_site": "0xd7784",
+      "ori_site": "0xd7788",
+      "constructed_address": "0x888257",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": [
+        "0xd7798"
+      ]
+    },
+    {
+      "string_member_offset": "0x28ccce",
+      "text": "VCAP: >>>> vcap_update_warp_ctrl_command() \n",
+      "movhi_site": "0xe2ffc",
+      "ori_site": "0xe3000",
+      "constructed_address": "0x88ccce",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": []
+    },
+    {
+      "string_member_offset": "0x28ccfb",
+      "text": "VCAP: <<<< vcap_update_warp_ctrl_command() \n",
+      "movhi_site": "0xe3014",
+      "ori_site": "0xe3018",
+      "constructed_address": "0x88ccfb",
+      "constant_string_alias_delta": "0x600000",
+      "nearby_print_calls": []
+    }
+  ],
+  "string_reference_count": 7,
+  "windows": [
+    {
+      "begin": "0x0",
+      "end_exclusive": "0x40",
+      "sha256": "a6753473ed075cdd75d9ce51cfb98652a4c235a821305f85c0bf2470c19550b0",
+      "instructions": 16,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0x24538",
+      "end_exclusive": "0x24558",
+      "sha256": "7a00af37c285775a61cbb84fdd802edc2728d6c54ffcb2f2450385f83e2c0c7d",
+      "instructions": 8,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0x258e8",
+      "end_exclusive": "0x25914",
+      "sha256": "c451c86b128a1f69584a7a8b4f573be950f84add08076653c320f166b904d81f",
+      "instructions": 11,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0x916f0",
+      "end_exclusive": "0x917cc",
+      "sha256": "fe45777dcd7fb26908bd0e84875b09d61dccef4a6767e4366bda2130de797d35",
+      "instructions": 55,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0xd7454",
+      "end_exclusive": "0xd781c",
+      "sha256": "37950dfa6fe36fe03bd8d5fcfb743e723dd83dc2767cdb905e7435f0187ef29c",
+      "instructions": 242,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0xe2fcc",
+      "end_exclusive": "0xe306c",
+      "sha256": "17e20294f405a08f0cca82e1f36e9f2c91b361bc399f018004c8f43230b2a200",
+      "instructions": 40,
+      "unsupported_encoding_offsets": []
+    },
+    {
+      "begin": "0x1a14c4",
+      "end_exclusive": "0x1a1510",
+      "sha256": "9524434229864237fe23be989063cff39db2cfa182dc6462fb1cd064d916b98b",
+      "instructions": 19,
+      "unsupported_encoding_offsets": [
+        "0x1a14cc",
+        "0x1a14d0",
+        "0x1a14e0",
+        "0x1a14e4",
+        "0x1a14f4",
+        "0x1a1504",
+        "0x1a1508"
+      ]
+    },
+    {
+      "begin": "0x1a16b8",
+      "end_exclusive": "0x1a16d0",
+      "sha256": "df3c39ddedba44a62c30a4e042e5cdbd40afa97d851c81ed9353884968be70be",
+      "instructions": 6,
+      "unsupported_encoding_offsets": [
+        "0x1a16b8",
+        "0x1a16bc",
+        "0x1a16c4",
+        "0x1a16c8"
+      ]
+    }
+  ],
+  "supported_encoding_patterns": 66,
+  "observations": [
+    "Seven selected DSP diagnostic addresses are constructed by matched movhi/ori pairs; each equals its orccode file offset plus 0x600000.",
+    "Five diagnostics directly call the same relative target 0x19fe44; two warp-control diagnostics reach it through branches.",
+    "The setup eis_update_addr print argument comes from setup_params+0x358, previously stored from raw command+0x58.",
+    "Warp-control helper at member+0xe2fcc copies input u32/byte/byte to destination+0x18/+0x1c/+0x1d.",
+    "Generic OR1K delay-slot semantics must not be assumed: adjacent calls and function prologues after jr require a separately verified execution model."
+  ],
+  "not_proven": [
+    "Complete ORC ISA, special instruction semantics, delay behavior, actual execution or running image identity",
+    "The 0x600000 string alias is an ARM physical address or DSP code PC base",
+    "DSP shared+0x3c non-sentinel writer, echo/latch/cache protocol, or safe old-slot/table release"
+  ],
+  "next_scope": [
+    "Recover raw VCAP command-to-setup conversion and consumer of setup+0x358; verify DRAM access helpers before assigning ordinary load/store semantics to external memory",
+    "Trace the member+0xd7454 EIS command path and data fetched via helpers 0x1a4890/0x1a14c4; do not treat the diagnostic warp helper as a completion signal"
+  ],
+  "device_access": false,
+  "emulation": false
+}

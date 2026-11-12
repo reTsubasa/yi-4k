@@ -1,0 +1,63 @@
+{
+  "scope": "synthetic saved-snapshot validation only; no USB enumeration or device access",
+  "download_files_verified": 232,
+  "positive_and_unknown_fixtures": [
+    {
+      "vid": "0x4255",
+      "pid": "0x000c",
+      "manufacturer": "Amba",
+      "product": "raw",
+      "location_id": null,
+      "mode": "FORCEUSB descriptor heuristic",
+      "s2e_pid_matches_public_table": true,
+      "ydxj2_compatibility_proven": false,
+      "pre_rtos_entry_proven": false
+    },
+    {
+      "vid": "0x4255",
+      "pid": "0x0001",
+      "manufacturer": "AMBA",
+      "product": "Ambarella USB generic class",
+      "location_id": null,
+      "mode": "AMBOOT descriptor heuristic",
+      "s2e_pid_matches_public_table": false,
+      "ydxj2_compatibility_proven": false,
+      "pre_rtos_entry_proven": false
+    },
+    {
+      "vid": "0x4255",
+      "pid": "0x000c",
+      "manufacturer": "Ambarella",
+      "product": "Ambarella USB generic class",
+      "location_id": null,
+      "mode": "UST descriptor heuristic",
+      "s2e_pid_matches_public_table": true,
+      "ydxj2_compatibility_proven": false,
+      "pre_rtos_entry_proven": false
+    },
+    {
+      "vid": "0x4255",
+      "pid": "0x000c",
+      "manufacturer": null,
+      "product": "unknown",
+      "location_id": null,
+      "mode": "unknown",
+      "s2e_pid_matches_public_table": true,
+      "ydxj2_compatibility_proven": false,
+      "pre_rtos_entry_proven": false
+    },
+    {
+      "vid": "0x4255",
+      "pid": "0x0010",
+      "manufacturer": "Amba",
+      "product": "raw",
+      "location_id": null,
+      "mode": "FORCEUSB descriptor heuristic",
+      "s2e_pid_matches_public_table": false,
+      "ydxj2_compatibility_proven": false,
+      "pre_rtos_entry_proven": false
+    }
+  ],
+  "non_ambarella_excluded": true,
+  "invalid_schema_cases_rejected": 3
+}

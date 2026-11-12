@@ -1,0 +1,117 @@
+{
+  "audit": "prerecord_loop_delete_gate",
+  "scope": "offline decompiler-export structure audit",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "source_root": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+  "files": {
+    "delete_loop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f51d0.c",
+      "sha256": "e19f319ac9fd83cbc082ace46080dd1734603bfe539a1f4eb111c28220a5c6d0",
+      "size_bytes": 1716,
+      "line_hits": {
+        "matched_FUN_a01f51d0": [
+          2,
+          6
+        ],
+        "matched_FUN_a0224bf4": [
+          34
+        ]
+      }
+    },
+    "record_auto_start": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0120b28.c",
+      "sha256": "d76835d4c28cf612e336ef5aae57f2db8fb0dd5be39a09b218329419c095bf1e",
+      "size_bytes": 1905,
+      "line_hits": {
+        "matched_FUN_a01f51d0": [
+          42
+        ],
+        "DAT_a1055cfa == '\\x06'": [
+          34,
+          39
+        ]
+      }
+    },
+    "card_full_stop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0120f10.c",
+      "sha256": "be0677d5c3daa8a8517357af135b9aec84279c9ef8a2bcec30d694511e9b6a12",
+      "size_bytes": 1285,
+      "line_hits": {
+        "matched_FUN_a01f51d0": [
+          25
+        ],
+        "DAT_a1055cfa != '\\x06'": [
+          13
+        ]
+      }
+    },
+    "action_dispatch": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a011a208.c",
+      "sha256": "52ae2e86e10df94a600a473cecb99924f473feb20c5ced3964b4dafed566d9b0",
+      "size_bytes": 795,
+      "line_hits": {
+        "matched_FUN_a01f51d0": [
+          19
+        ],
+        "DAT_a1055cfa == '\\x06'": [
+          16
+        ],
+        "DAT_a1055cfa != '\\x06'": [
+          23
+        ]
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "delete bounded by split counter",
+      "pattern": "if \\(DAT_a13c177c < DAT_a13c29f4\\).*?matched_FUN_a01f2ce0",
+      "matched": "if (DAT_a13c177c < DAT_a13c29f4) {\n    iVar1 = matched_FUN_a01f2ce0"
+    },
+    {
+      "name": "delete uses type 2 database removal",
+      "pattern": "matched_FUN_a0224bf4\\(2,0,DAT_a13c2a38\\)",
+      "matched": "matched_FUN_a0224bf4(2,0,DAT_a13c2a38)"
+    },
+    {
+      "name": "cursor advances after delete attempt",
+      "pattern": "DAT_a13c177c = DAT_a13c177c \\+ 1;.*?matched_FUN_a0224bf4",
+      "matched": "DAT_a13c177c = DAT_a13c177c + 1;\n      iVar2 = matched_FUN_a0224bf4"
+    },
+    {
+      "name": "auto-start card-full path gates deletion on mode 6",
+      "pattern": "else if \\(\\(iVar1 == -4\\) && \\(DAT_a1055cfa == '\\\\x06'\\)\\).*?matched_FUN_a01f51d0",
+      "matched": "else if ((iVar1 == -4) && (DAT_a1055cfa == '\\x06')) {\n      matched_FUN_a0204d58(bVar2);\n      FUN_a02a70ec(s__s_app_rec_connected_cam_<rec_co_a05394b4,DAT_a06f3084);\n      iVar1 = matched_FUN_a01f51d0"
+    },
+    {
+      "name": "card-full stop path gates deletion on mode 6",
+      "pattern": "if \\(DAT_a1055cfa != '\\\\x06'\\).*?return uVar1;.*?matched_FUN_a01f51d0",
+      "matched": "if (DAT_a1055cfa != '\\x06') {\n      FUN_a02a70ec(s__W__REC_CONNECTED_CAM___06d___s__a05397c0,0x1cac,\n                   s_rec_connected_cam_card_full_hand_a053e464);\n      matched_FUN_a0120d2c(0xfffffffc);\n      matched_FUN_a0192944(s_sdcard_full_a05391d0,0);\n                    /* WARNING: Could not recover jumptable at 0xa0120f88. Too many branches */\n                    /* WARNING: Treating indirect jump as call */\n      uVar1 = (*DAT_a0fb3364)(0x13,0,0);\n      return uVar1;\n    }\n    matched_FUN_a0204d58(0);\n    FUN_a02a70ec(s__s_app_rec_connected_cam__start_A_a0539720,DAT_a06f3084);\n    iVar2 = matched_FUN_a01f51d0"
+    },
+    {
+      "name": "action 2 gates deletion on mode 6",
+      "pattern": "else if \\(param_1 == 2\\).*?if \\(DAT_a1055cfa == '\\\\x06'\\).*?matched_FUN_a01f51d0",
+      "matched": "else if (param_1 == 2) {\n    if (DAT_a1055cfa == '\\x06') {\n      matched_FUN_a0204d58(0);\n      FUN_a02a70ec(s__s_app_rec_connected_cam__AppLib_a05362a4,DAT_a06f3084);\n      matched_FUN_a01f51d0"
+    },
+    {
+      "name": "action 3 is rejected outside mode 6",
+      "pattern": "else if \\(\\(param_1 == 3\\) && \\(DAT_a1055cfa != '\\\\x06'\\)\\).*?return 0;",
+      "matched": "else if ((param_1 == 3) && (DAT_a1055cfa != '\\x06')) {\n    FUN_a02a70ec(s__app_rec_connected_cam__rec_conn_a05362e4);\n    return 0;"
+    }
+  ],
+  "conclusions": {
+    "loop_delete_is_bounded_by_split_counter": true,
+    "loop_delete_uses_database_type_2_and_advances_cursor": true,
+    "ordinary_mode_action_3_does_not_enter_loop_delete": true,
+    "card_full_paths_use_loop_delete_only_in_mode_6": true,
+    "recovery_cursor_filter_semantics_closed": false,
+    "runtime_file_identity_and_storage_side_effects_verified": false,
+    "camera_side_prerecord_implemented": false
+  },
+  "safety": {
+    "camera_connected": false,
+    "firmware_written": false,
+    "ram_or_partition_written": false,
+    "hidden_setter_invoked": false
+  }
+}

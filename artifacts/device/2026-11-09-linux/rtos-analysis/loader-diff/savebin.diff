@@ -1,0 +1,34 @@
+--- old
++++ device
+@@ -59,27 +59,27 @@
+ a02a3e98 225d09fa blx      #0xa04fb328
+ a02a3e9c 005085e0 add      r5, r5, r0
+ a02a3ea0 e5ffffea b        #0xa02a3e3c
+-a02a3ea4 5c0c0fe3 movw     r0, #0xfc5c
++a02a3ea4 540c0fe3 movw     r0, #0xfc54
+ a02a3ea8 5a004ae3 movt     r0, #0xa05a
+ a02a3eac 32ff2fe1 blx      r2
+ a02a3eb0 0100e0e3 mvn      r0, #1
+ a02a3eb4 f2ffffea b        #0xa02a3e84
+ a02a3eb8 952802eb bl       #0xa032e114
+ a02a3ebc 0030a0e1 mov      r3, r0
+-a02a3ec0 900c0fe3 movw     r0, #0xfc90
++a02a3ec0 880c0fe3 movw     r0, #0xfc88
+ a02a3ec4 001094e5 ldr      r1, [r4]
+ a02a3ec8 0d20a0e1 mov      r2, sp
+ a02a3ecc 5a004ae3 movt     r0, #0xa05a
+ a02a3ed0 38ff2fe1 blx      r8
+ a02a3ed4 0400e0e3 mvn      r0, #4
+ a02a3ed8 e9ffffea b        #0xa02a3e84
+-a02a3edc 3c0200e3 movw     r0, #0x23c
++a02a3edc 340200e3 movw     r0, #0x234
+ a02a3ee0 001091e5 ldr      r1, [r1]
+ a02a3ee4 5b004ae3 movt     r0, #0xa05b
+ a02a3ee8 32ff2fe1 blx      r2
+ a02a3eec 0000e0e3 mvn      r0, #0
+ a02a3ef0 e3ffffea b        #0xa02a3e84
+-a02a3ef4 680200e3 movw     r0, #0x268
++a02a3ef4 600200e3 movw     r0, #0x260
+ a02a3ef8 5b004ae3 movt     r0, #0xa05b
+ a02a3efc 38ff2fe1 blx      r8
+ a02a3f00 0300e0e3 mvn      r0, #3

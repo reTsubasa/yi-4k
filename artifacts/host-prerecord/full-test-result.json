@@ -1,0 +1,17 @@
+{
+  "scope": "host-only EIS boundary and prerecord tests; no device access",
+  "tests": 33,
+  "errors": 0,
+  "failures": 0,
+  "passed": true,
+  "elapsed_seconds": 10.992,
+  "ffmpeg": ".tools/ffmpeg-host/ffmpeg",
+  "ffprobe": ".tools/ffmpeg-host/ffprobe",
+  "sources": {
+    "scripts/prerecord_buffer.py": "406ef027a6506bf6373fe74f285282bdfd9eed3431666b4eb336be94ec002c9e",
+    "scripts/prerecord_replay.py": "6a9c68f5c825095bc285d7a39e60232106a5b44352f6cdbdc7d38be4ef6951e9",
+    "scripts/tests/test_prerecord_buffer.py": "98a3679f87bc22cf77f31e4df7885c023fdc68913eec0bd0a295a4b4c42cf983",
+    "scripts/audit_eis_warp_consumer.py": "27a87976d99fed09f9f0dc3b26ea9e9dbbc1e17dba854842ce788298ef606539"
+  },
+  "device_contacted": false
+}

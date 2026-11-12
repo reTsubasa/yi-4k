@@ -1,0 +1,55 @@
+~ # for p in /sys/bus/rpmsg/devices/rpmsg*; do echo ==== $p; readlink -f $p; for
+ f in name modalias driver/uevent power/runtime_status; do [ -e $p/$f ] && { ech
+o --$f; cat $p/$f; }; done; done; for p in /sys/bus/platform/devices/c0_and_c1.7
+/remoteproc0/*; do [ -f $p ] && { echo ==== $p; cat $p; }; done
+==== /sys/bus/rpmsg/devices/rpmsg0
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg0
+--name
+AmbaRpdev_CLK
+--modalias
+rpmsg:AmbaRpdev_CLK
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg0/driver/uevent': Permission denied
+==== /sys/bus/rpmsg/devices/rpmsg1
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg1
+--name
+aipc_rpc
+--modalias
+rpmsg:aipc_rpc
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg1/driver/uevent': Permission denied
+==== /sys/bus/rpmsg/devices/rpmsg2
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg2
+--name
+aipc_vfs
+--modalias
+rpmsg:aipc_vfs
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg2/driver/uevent': Permission denied
+==== /sys/bus/rpmsg/devices/rpmsg3
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg3
+--name
+aipc_rfs
+--modalias
+rpmsg:aipc_rfs
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg3/driver/uevent': Permission denied
+==== /sys/bus/rpmsg/devices/rpmsg4
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg4
+--name
+AmbaRpdev_LinkCtrl
+--modalias
+rpmsg:AmbaRpdev_LinkCtrl
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg4/driver/uevent': Permission denied
+==== /sys/bus/rpmsg/devices/rpmsg5
+/sys/devices/platform/c0_and_c1.7/remoteproc0/virtio0/rpmsg5
+--name
+echo_cortex
+--modalias
+rpmsg:echo_cortex
+--driver/uevent
+cat: can't open '/sys/bus/rpmsg/devices/rpmsg5/driver/uevent': Permission denied
+==== /sys/bus/platform/devices/c0_and_c1.7/remoteproc0/uevent
+~ # echo __YI_CAPTURE_413a6baa42db4ba0aabfa97cea119bed__
+__YI_CAPTURE_413a6baa42db4ba0aabfa97cea119bed__

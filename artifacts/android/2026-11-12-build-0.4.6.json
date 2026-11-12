@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "version": "0.4.6",
+  "version_code": 29,
+  "created_utc": "2026-11-12T01:35:34.356687+00:00",
+  "status": "pass_host_clean_build_and_unit_tests",
+  "device_access": false,
+  "scope": "Android UI and protocol changes: voice diagnostic, immersive capture controls, 16:9 preview, camera clock sync",
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.6-debug.apk",
+    "bytes": 11653761,
+    "sha256": "ea100efc6d6f2dba3423a9c93d21c1c0606810f4c8e996938ea959260f5a34b3"
+  },
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.6-tests.apk",
+    "bytes": 414016,
+    "sha256": "d2ce36be9bcb6435f578117c30c8655f08e90dc23d015777899371363747f40b"
+  },
+  "unit_tests": {
+    "tests": 204,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 66
+  },
+  "tests_run": [
+    "./gradlew --max-workers=1 clean test lintDebug assembleDebug assembleDebugAndroidTest"
+  ],
+  "changed_contracts": [
+    "More settings exposes a read-only voice API diagnostic; voice_* fields are never offered as writable controls.",
+    "Immersive monitor mode preserves mode selector, shutter and common parameter OSD while hiding system chrome.",
+    "Preview host surface follows 16:9 RTSP ratio and relayouts on orientation changes.",
+    "Camera clock sync sends msg2 type=camera_clock in local device time and verifies msg1 readback within two seconds."
+  ],
+  "limitations": [
+    "No physical phone or camera acceptance in this run.",
+    "Stock 1.10.7 msg3/msg9 did not advertise voice_control; the app does not fabricate a setter or perform phone-side voice recognition.",
+    "Clock sync is explicit user action and only succeeds when the camera accepts the documented camera_clock write/readback contract."
+  ]
+}

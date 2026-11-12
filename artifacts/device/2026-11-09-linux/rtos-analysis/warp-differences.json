@@ -1,0 +1,752 @@
+[
+  {
+    "entry": "0xa03119a8",
+    "changed_words": 74,
+    "differences": [
+      {
+        "site": "0xa0311b5c",
+        "old_hex": "600906e3",
+        "new_hex": "580906e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6960",
+        "new_pointer": "0xa05e6958",
+        "string": "Error: WARP Calib vin geo x %d, y %d, w %d, h %d, HorSmp %d/%d, VerSmp %d/%d cannot cover"
+      },
+      {
+        "site": "0xa0311b84",
+        "old_hex": "c00002e3",
+        "new_hex": "b80002e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d20c0",
+        "new_pointer": "0xa05d20b8",
+        "string": "       current vin geo x %d, y %d, w %d, h %d, HorSmp %d/%d, VerSmp %d/%d"
+      },
+      {
+        "site": "0xa0311da4",
+        "old_hex": "e00906e3",
+        "new_hex": "d80906e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e69e0",
+        "new_pointer": "0xa05e69d8",
+        "string": "AmbaDSP_ImgCalcWarpCompensation:"
+      },
+      {
+        "site": "0xa0311db4",
+        "old_hex": "380c01e3",
+        "new_hex": "300c01e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d1c38",
+        "new_pointer": "0xa05d1c30",
+        "string": "     Pipe %d, Algo %d, Func %d, Ctx %d, Bch %d, Cfg %d "
+      },
+      {
+        "site": "0xa0311ddc",
+        "old_hex": "040a06e3",
+        "new_hex": "fc0906e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a04",
+        "new_pointer": "0xa05e69fc",
+        "string": "AMBA_DSP_IMG_WARP_CALC_INFO_s:"
+      },
+      {
+        "site": "0xa0311de8",
+        "old_hex": "240a06e3",
+        "new_hex": "1c0a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a24",
+        "new_pointer": "0xa05e6a1c",
+        "string": "     WarpEnb = %d"
+      },
+      {
+        "site": "0xa0311df8",
+        "old_hex": "e80306e3",
+        "new_hex": "e00306e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e63e8",
+        "new_pointer": "0xa05e63e0",
+        "string": "     Control = %d"
+      },
+      {
+        "site": "0xa0311e08",
+        "old_hex": "380a06e3",
+        "new_hex": "300a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a38",
+        "new_pointer": "0xa05e6a30",
+        "string": "     theta = %f"
+      },
+      {
+        "site": "0xa0311e24",
+        "old_hex": "380603e3",
+        "new_hex": "300603e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e3638",
+        "new_pointer": "0xa05e3630",
+        "string": "     VinSensorGeo:"
+      },
+      {
+        "site": "0xa0311e34",
+        "old_hex": "640302e3",
+        "new_hex": "5c0302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2364",
+        "new_pointer": "0xa05d235c",
+        "string": "         StartX = %d"
+      },
+      {
+        "site": "0xa0311e44",
+        "old_hex": "800302e3",
+        "new_hex": "780302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2380",
+        "new_pointer": "0xa05d2378",
+        "string": "         StartY = %d"
+      },
+      {
+        "site": "0xa0311e54",
+        "old_hex": "9c0302e3",
+        "new_hex": "940302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d239c",
+        "new_pointer": "0xa05d2394",
+        "string": "         Width  = %d"
+      },
+      {
+        "site": "0xa0311e64",
+        "old_hex": "b80302e3",
+        "new_hex": "b00302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23b8",
+        "new_pointer": "0xa05d23b0",
+        "string": "         Height = %d"
+      },
+      {
+        "site": "0xa0311e74",
+        "old_hex": "d40302e3",
+        "new_hex": "cc0302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23d4",
+        "new_pointer": "0xa05d23cc",
+        "string": "         HSubSample:"
+      },
+      {
+        "site": "0xa0311e80",
+        "old_hex": "f00302e3",
+        "new_hex": "e80302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23f0",
+        "new_pointer": "0xa05d23e8",
+        "string": "             FactorNum = %d"
+      },
+      {
+        "site": "0xa0311e90",
+        "old_hex": "100402e3",
+        "new_hex": "080402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2410",
+        "new_pointer": "0xa05d2408",
+        "string": "             FactorDen = %d"
+      },
+      {
+        "site": "0xa0311ea0",
+        "old_hex": "300402e3",
+        "new_hex": "280402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2430",
+        "new_pointer": "0xa05d2428",
+        "string": "         VSubSample:"
+      },
+      {
+        "site": "0xa0311eac",
+        "old_hex": "f00302e3",
+        "new_hex": "e80302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23f0",
+        "new_pointer": "0xa05d23e8",
+        "string": "             FactorNum = %d"
+      },
+      {
+        "site": "0xa0311ebc",
+        "old_hex": "100402e3",
+        "new_hex": "080402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2410",
+        "new_pointer": "0xa05d2408",
+        "string": "             FactorDen = %d"
+      },
+      {
+        "site": "0xa0311ecc",
+        "old_hex": "480a06e3",
+        "new_hex": "400a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a48",
+        "new_pointer": "0xa05e6a40",
+        "string": "     R2rOutWinDim.Width  = %d"
+      },
+      {
+        "site": "0xa0311edc",
+        "old_hex": "680a06e3",
+        "new_hex": "600a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a68",
+        "new_pointer": "0xa05e6a60",
+        "string": "     R2rOutWinDim.Height = %d"
+      },
+      {
+        "site": "0xa0311eec",
+        "old_hex": "880a06e3",
+        "new_hex": "800a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6a88",
+        "new_pointer": "0xa05e6a80",
+        "string": "     DmyWinGeo.StartX = %d"
+      },
+      {
+        "site": "0xa0311efc",
+        "old_hex": "a40a06e3",
+        "new_hex": "9c0a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6aa4",
+        "new_pointer": "0xa05e6a9c",
+        "string": "     DmyWinGeo.StartY = %d"
+      },
+      {
+        "site": "0xa0311f0c",
+        "old_hex": "c00a06e3",
+        "new_hex": "b80a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6ac0",
+        "new_pointer": "0xa05e6ab8",
+        "string": "     DmyWinGeo.Width  = %d"
+      },
+      {
+        "site": "0xa0311f1c",
+        "old_hex": "dc0a06e3",
+        "new_hex": "d40a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6adc",
+        "new_pointer": "0xa05e6ad4",
+        "string": "     DmyWinGeo.Height = %d"
+      },
+      {
+        "site": "0xa0311f2c",
+        "old_hex": "f80a06e3",
+        "new_hex": "f00a06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6af8",
+        "new_pointer": "0xa05e6af0",
+        "string": "     CfaWinDim.Width  = %d"
+      },
+      {
+        "site": "0xa0311f3c",
+        "old_hex": "140b06e3",
+        "new_hex": "0c0b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6b14",
+        "new_pointer": "0xa05e6b0c",
+        "string": "     CfaWinDim.Height = %d"
+      },
+      {
+        "site": "0xa0311f50",
+        "old_hex": "300b06e3",
+        "new_hex": "280b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6b30",
+        "new_pointer": "0xa05e6b28",
+        "string": "     ActWinCrop.LeftTopX  = %f"
+      },
+      {
+        "site": "0xa0311f6c",
+        "old_hex": "500b06e3",
+        "new_hex": "480b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6b50",
+        "new_pointer": "0xa05e6b48",
+        "string": "     ActWinCrop.LeftTopY  = %f"
+      },
+      {
+        "site": "0xa0311f88",
+        "old_hex": "700b06e3",
+        "new_hex": "680b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6b70",
+        "new_pointer": "0xa05e6b68",
+        "string": "     ActWinCrop.RightBotX = %f"
+      },
+      {
+        "site": "0xa0311fa4",
+        "old_hex": "900b06e3",
+        "new_hex": "880b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6b90",
+        "new_pointer": "0xa05e6b88",
+        "string": "     ActWinCrop.RightBotY = %f"
+      },
+      {
+        "site": "0xa0311fbc",
+        "old_hex": "b00b06e3",
+        "new_hex": "a80b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6bb0",
+        "new_pointer": "0xa05e6ba8",
+        "string": "     MainWinDim.Width  = %d"
+      },
+      {
+        "site": "0xa0311fcc",
+        "old_hex": "cc0b06e3",
+        "new_hex": "c40b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6bcc",
+        "new_pointer": "0xa05e6bc4",
+        "string": "     MainWinDim.Height = %d"
+      },
+      {
+        "site": "0xa0311fdc",
+        "old_hex": "e80b06e3",
+        "new_hex": "e00b06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6be8",
+        "new_pointer": "0xa05e6be0",
+        "string": "     PrevWinDim[0].Width  = %d"
+      },
+      {
+        "site": "0xa0311fec",
+        "old_hex": "080c06e3",
+        "new_hex": "000c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6c08",
+        "new_pointer": "0xa05e6c00",
+        "string": "     PrevWinDim[0].Height = %d"
+      },
+      {
+        "site": "0xa0311ffc",
+        "old_hex": "280c06e3",
+        "new_hex": "200c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6c28",
+        "new_pointer": "0xa05e6c20",
+        "string": "     PrevWinDim[1].Width  = %d"
+      },
+      {
+        "site": "0xa031200c",
+        "old_hex": "480c06e3",
+        "new_hex": "400c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6c48",
+        "new_pointer": "0xa05e6c40",
+        "string": "     PrevWinDim[1].Height = %d"
+      },
+      {
+        "site": "0xa031201c",
+        "old_hex": "680c06e3",
+        "new_hex": "600c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6c68",
+        "new_pointer": "0xa05e6c60",
+        "string": "     ScreennailDim.Width  = %d"
+      },
+      {
+        "site": "0xa031202c",
+        "old_hex": "880c06e3",
+        "new_hex": "800c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6c88",
+        "new_pointer": "0xa05e6c80",
+        "string": "     ScreennailDim.Height = %d"
+      },
+      {
+        "site": "0xa031203c",
+        "old_hex": "a80c06e3",
+        "new_hex": "a00c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6ca8",
+        "new_pointer": "0xa05e6ca0",
+        "string": "     ThumbnailDim.Width  = %d"
+      },
+      {
+        "site": "0xa031204c",
+        "old_hex": "c80c06e3",
+        "new_hex": "c00c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6cc8",
+        "new_pointer": "0xa05e6cc0",
+        "string": "     ThumbnailDim.Height = %d"
+      },
+      {
+        "site": "0xa031205c",
+        "old_hex": "e80c06e3",
+        "new_hex": "e00c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6ce8",
+        "new_pointer": "0xa05e6ce0",
+        "string": "     HorSkewPhaseInc = %d"
+      },
+      {
+        "site": "0xa0312070",
+        "old_hex": "7c0d06e3",
+        "new_hex": "740d06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6d7c",
+        "new_pointer": "0xa05e6d74",
+        "string": "Warning. AmbaDSP_ImgCalcWarpCompensation() does not support pipe %d"
+      },
+      {
+        "site": "0xa0312120",
+        "old_hex": "040d06e3",
+        "new_hex": "fc0c06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6d04",
+        "new_pointer": "0xa05e6cfc",
+        "string": "     CalibWarpInfo:"
+      },
+      {
+        "site": "0xa031212c",
+        "old_hex": "d00202e3",
+        "new_hex": "c80202e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d22d0",
+        "new_pointer": "0xa05d22c8",
+        "string": "         Version       = 0x%x"
+      },
+      {
+        "site": "0xa031213c",
+        "old_hex": "f00202e3",
+        "new_hex": "e80202e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d22f0",
+        "new_pointer": "0xa05d22e8",
+        "string": "         HorGridNum    = %d"
+      },
+      {
+        "site": "0xa031214c",
+        "old_hex": "0c0302e3",
+        "new_hex": "040302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d230c",
+        "new_pointer": "0xa05d2304",
+        "string": "         VerGridNum    = %d"
+      },
+      {
+        "site": "0xa031215c",
+        "old_hex": "280302e3",
+        "new_hex": "200302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2328",
+        "new_pointer": "0xa05d2320",
+        "string": "         TileWidthExp  = %d"
+      },
+      {
+        "site": "0xa031216c",
+        "old_hex": "440302e3",
+        "new_hex": "3c0302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2344",
+        "new_pointer": "0xa05d233c",
+        "string": "         TileHeightExp = %d"
+      },
+      {
+        "site": "0xa031217c",
+        "old_hex": "340603e3",
+        "new_hex": "2c0603e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e3634",
+        "new_pointer": "0xa05e362c",
+        "string": "         VinSensorGeo:"
+      },
+      {
+        "site": "0xa0312188",
+        "old_hex": "600302e3",
+        "new_hex": "580302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2360",
+        "new_pointer": "0xa05d2358",
+        "string": "             StartX = %d"
+      },
+      {
+        "site": "0xa0312198",
+        "old_hex": "7c0302e3",
+        "new_hex": "740302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d237c",
+        "new_pointer": "0xa05d2374",
+        "string": "             StartY = %d"
+      },
+      {
+        "site": "0xa03121a8",
+        "old_hex": "980302e3",
+        "new_hex": "900302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2398",
+        "new_pointer": "0xa05d2390",
+        "string": "             Width  = %d"
+      },
+      {
+        "site": "0xa03121b8",
+        "old_hex": "b40302e3",
+        "new_hex": "ac0302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23b4",
+        "new_pointer": "0xa05d23ac",
+        "string": "             Height = %d"
+      },
+      {
+        "site": "0xa03121c8",
+        "old_hex": "d00302e3",
+        "new_hex": "c80302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23d0",
+        "new_pointer": "0xa05d23c8",
+        "string": "             HSubSample:"
+      },
+      {
+        "site": "0xa03121d4",
+        "old_hex": "ec0302e3",
+        "new_hex": "e40302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23ec",
+        "new_pointer": "0xa05d23e4",
+        "string": "                 FactorNum = %d"
+      },
+      {
+        "site": "0xa03121e4",
+        "old_hex": "0c0402e3",
+        "new_hex": "040402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d240c",
+        "new_pointer": "0xa05d2404",
+        "string": "                 FactorDen = %d"
+      },
+      {
+        "site": "0xa03121f4",
+        "old_hex": "2c0402e3",
+        "new_hex": "240402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d242c",
+        "new_pointer": "0xa05d2424",
+        "string": "             VSubSample:"
+      },
+      {
+        "site": "0xa0312200",
+        "old_hex": "ec0302e3",
+        "new_hex": "e40302e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d23ec",
+        "new_pointer": "0xa05d23e4",
+        "string": "                 FactorNum = %d"
+      },
+      {
+        "site": "0xa0312210",
+        "old_hex": "0c0402e3",
+        "new_hex": "040402e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d240c",
+        "new_pointer": "0xa05d2404",
+        "string": "                 FactorDen = %d"
+      },
+      {
+        "site": "0xa0312220",
+        "old_hex": "180d06e3",
+        "new_hex": "100d06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6d18",
+        "new_pointer": "0xa05e6d10",
+        "string": "         pWarp = 0x%x"
+      },
+      {
+        "site": "0xa0312244",
+        "old_hex": "300d06e3",
+        "new_hex": "280d06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6d30",
+        "new_pointer": "0xa05e6d28",
+        "string": "             CalibWarpInfo.pWarp (%d, %d) (%d, %d) ... (%d, %d) (%d, %d)"
+      },
+      {
+        "site": "0xa03122c8",
+        "old_hex": "8c0f00e3",
+        "new_hex": "840f00e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d0f8c",
+        "new_pointer": "0xa05d0f84",
+        "string": "Warning. Cannot get context mutex"
+      },
+      {
+        "site": "0xa0312378",
+        "old_hex": "180002e3",
+        "new_hex": "100002e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2018",
+        "new_pointer": "0xa05d2010",
+        "string": "Error: Factors of Calib sample rate and Vin sensor sample rate shall not be 0"
+      },
+      {
+        "site": "0xa0312388",
+        "old_hex": "0c0102e3",
+        "new_hex": "040102e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d210c",
+        "new_pointer": "0xa05d2104",
+        "string": "Error: Dummy window x %d, y %d, w %d, h %d exceed"
+      },
+      {
+        "site": "0xa0312398",
+        "old_hex": "400102e3",
+        "new_hex": "380102e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2140",
+        "new_pointer": "0xa05d2138",
+        "string": "       vin->R2R window w %d, h %d"
+      },
+      {
+        "site": "0xa03123b0",
+        "old_hex": "4c0502e3",
+        "new_hex": "440502e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d254c",
+        "new_pointer": "0xa05d2544",
+        "string": "[Warn] unsupport mode"
+      },
+      {
+        "site": "0xa03123c4",
+        "old_hex": "d40806e3",
+        "new_hex": "cc0806e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e68d4",
+        "new_pointer": "0xa05e68cc",
+        "string": "Error: Warp Version 0x%X != 0x%X, 0x%X"
+      },
+      {
+        "site": "0xa03123d4",
+        "old_hex": "640102e3",
+        "new_hex": "5c0102e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d2164",
+        "new_pointer": "0xa05d215c",
+        "string": "Error: Invalid CfaWinDim %d, %d"
+      },
+      {
+        "site": "0xa03123e4",
+        "old_hex": "bc0906e3",
+        "new_hex": "b40906e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e69bc",
+        "new_pointer": "0xa05e69b4",
+        "string": "Error: Invalid MainWinDim %d, %d"
+      },
+      {
+        "site": "0xa03123f4",
+        "old_hex": "180906e3",
+        "new_hex": "100906e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6918",
+        "new_pointer": "0xa05e6910",
+        "string": "Error: Theta = %f Still mode should not use theta, force theta to zero"
+      },
+      {
+        "site": "0xa0312420",
+        "old_hex": "240f01e3",
+        "new_hex": "1c0f01e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d1f24",
+        "new_pointer": "0xa05d1f1c",
+        "string": "Error: (HorGridNum %d - 1) * TileWidth %d < Calib vin width %d"
+      },
+      {
+        "site": "0xa0312438",
+        "old_hex": "640f01e3",
+        "new_hex": "5c0f01e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d1f64",
+        "new_pointer": "0xa05d1f5c",
+        "string": "Error: (VerGridNum %d - 1) * TileHeight %d < Calib vin height %d"
+      },
+      {
+        "site": "0xa0312450",
+        "old_hex": "fc0806e3",
+        "new_hex": "f40806e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e68fc",
+        "new_pointer": "0xa05e68f4",
+        "string": "Error: Calib pWarp is NULL"
+      }
+    ],
+    "all_changes_same_string_address": true
+  },
+  {
+    "entry": "0xa0312460",
+    "changed_words": 4,
+    "differences": [
+      {
+        "site": "0xa03125f8",
+        "old_hex": "e00d06e3",
+        "new_hex": "d80d06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6de0",
+        "new_pointer": "0xa05e6dd8",
+        "string": "Warning. AmbaDSP_ImgSetWarpCompensation() does not support pipe %d"
+      },
+      {
+        "site": "0xa031261c",
+        "old_hex": "c00d06e3",
+        "new_hex": "b80d06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6dc0",
+        "new_pointer": "0xa05e6db8",
+        "string": "AmbaDSP_ImgSetWarpCompensation:"
+      },
+      {
+        "site": "0xa031262c",
+        "old_hex": "380c01e3",
+        "new_hex": "300c01e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d1c38",
+        "new_pointer": "0xa05d1c30",
+        "string": "     Pipe %d, Algo %d, Func %d, Ctx %d, Bch %d, Cfg %d "
+      },
+      {
+        "site": "0xa03127d8",
+        "old_hex": "8c0f00e3",
+        "new_hex": "840f00e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d0f8c",
+        "new_pointer": "0xa05d0f84",
+        "string": "Warning. Cannot get context mutex"
+      }
+    ],
+    "all_changes_same_string_address": true
+  },
+  {
+    "entry": "0xa031282c",
+    "changed_words": 3,
+    "differences": [
+      {
+        "site": "0xa03128cc",
+        "old_hex": "480e06e3",
+        "new_hex": "400e06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6e48",
+        "new_pointer": "0xa05e6e40",
+        "string": "Warning. AmbaDSP_ImgGetWarpCompensation() does not support pipe %d"
+      },
+      {
+        "site": "0xa031290c",
+        "old_hex": "8c0f00e3",
+        "new_hex": "840f00e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05d0f8c",
+        "new_pointer": "0xa05d0f84",
+        "string": "Warning. Cannot get context mutex"
+      },
+      {
+        "site": "0xa0312924",
+        "old_hex": "240e06e3",
+        "new_hex": "1c0e06e3",
+        "classification": "same_string_at_changed_address",
+        "old_pointer": "0xa05e6e24",
+        "new_pointer": "0xa05e6e1c",
+        "string": "Warning. pWarpCalcInfo is empty."
+      }
+    ],
+    "all_changes_same_string_address": true
+  }
+]

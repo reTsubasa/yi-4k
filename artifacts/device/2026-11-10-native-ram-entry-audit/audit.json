@@ -1,0 +1,548 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "thumb_scan": {
+    "stride_bytes": 2,
+    "range": [
+      "0xa0100000",
+      "0xa0825000"
+    ],
+    "matches": [
+      {
+        "address": "0xa04a42d6",
+        "bytes": "07ee157f",
+        "instruction": "mcr p15, #0, r7, c7, c5, #0",
+        "a32_owners": [
+          "0xa04a41e8"
+        ],
+        "valid_icache_op": true,
+        "uses_pc_as_rt": false,
+        "a32_overlap": [
+          "a04a42d4 mcr p15, #0, r7, c7, c5, #0",
+          "a04a42d8 mcr p15, #0, r7, c8, c5, #0"
+        ],
+        "classification": "cross-boundary reinterpretation inside known A32 MMU initializer"
+      },
+      {
+        "address": "0xa04a43ce",
+        "bytes": "07ee154f",
+        "instruction": "mcr p15, #0, r4, c7, c5, #0",
+        "a32_owners": [
+          "0xa04a41e8"
+        ],
+        "valid_icache_op": true,
+        "uses_pc_as_rt": false,
+        "a32_overlap": [
+          "a04a43cc mcr p15, #0, r4, c7, c5, #0",
+          "a04a43d0 mcr p15, #0, r4, c8, c5, #0"
+        ],
+        "classification": "cross-boundary reinterpretation inside known A32 MMU initializer"
+      },
+      {
+        "address": "0xa04a442e",
+        "bytes": "07ee155f",
+        "instruction": "mcr p15, #0, r5, c7, c5, #0",
+        "a32_owners": [
+          "0xa04a43fc"
+        ],
+        "valid_icache_op": true,
+        "uses_pc_as_rt": false,
+        "a32_overlap": [
+          "a04a442c mcr p15, #0, r5, c7, c5, #0",
+          "a04a4430 mcr p15, #0, r5, c8, c5, #0"
+        ],
+        "classification": "cross-boundary reinterpretation inside known A32 MMU initializer"
+      },
+      {
+        "address": "0xa04a4492",
+        "bytes": "07ee156f",
+        "instruction": "mcr p15, #0, r6, c7, c5, #0",
+        "a32_owners": [
+          "0xa04a43fc"
+        ],
+        "valid_icache_op": true,
+        "uses_pc_as_rt": false,
+        "a32_overlap": [
+          "a04a4490 mcr p15, #0, r6, c7, c5, #0",
+          "a04a4494 mcr p15, #0, r6, c8, c5, #0"
+        ],
+        "classification": "cross-boundary reinterpretation inside known A32 MMU initializer"
+      },
+      {
+        "address": "0xa04d05e2",
+        "bytes": "07eeb5ff",
+        "instruction": "mcr p15, #0, pc, c7, c5, #5",
+        "a32_owners": [],
+        "valid_icache_op": false,
+        "uses_pc_as_rt": true,
+        "classification": "unsupported c7 operation and Rt=pc; no demonstrated callable cache helper"
+      },
+      {
+        "address": "0xa04dc632",
+        "bytes": "07eef1ff",
+        "instruction": "mcr p15, #0, pc, c7, c1, #7",
+        "a32_owners": [
+          "0xa04dc4e0"
+        ],
+        "valid_icache_op": false,
+        "uses_pc_as_rt": true,
+        "classification": "unsupported c7 operation and Rt=pc; no demonstrated callable cache helper"
+      },
+      {
+        "address": "0xa04df232",
+        "bytes": "07eed1ff",
+        "instruction": "mcr p15, #0, pc, c7, c1, #6",
+        "a32_owners": [
+          "0xa04ded3c"
+        ],
+        "valid_icache_op": false,
+        "uses_pc_as_rt": true,
+        "classification": "unsupported c7 operation and Rt=pc; no demonstrated callable cache helper"
+      }
+    ],
+    "new_usable_thumb_icache_helpers": 0,
+    "limitations": "Opcode candidates only; not exhaustive CFG or dynamically loaded/uncaptured code."
+  },
+  "ants_table": [
+    {
+      "index": 0,
+      "name": "lcd",
+      "name_pointer": "0xa0633cd0",
+      "handler": "0xa01ab5dc"
+    },
+    {
+      "index": 1,
+      "name": "led_on",
+      "name_pointer": "0xa056b040",
+      "handler": "0xa01ac514"
+    },
+    {
+      "index": 2,
+      "name": "led_off",
+      "name_pointer": "0xa056b048",
+      "handler": "0xa01ac4a8"
+    },
+    {
+      "index": 3,
+      "name": "led_blink",
+      "name_pointer": "0xa056b050",
+      "handler": "0xa01ab514"
+    },
+    {
+      "index": 4,
+      "name": "led_double_blink",
+      "name_pointer": "0xa056b05c",
+      "handler": "0xa01ac43c"
+    },
+    {
+      "index": 5,
+      "name": "led_triple_blink",
+      "name_pointer": "0xa056b070",
+      "handler": "0xa01ac3d0"
+    },
+    {
+      "index": 6,
+      "name": "lcd_backlight",
+      "name_pointer": "0xa056b084",
+      "handler": "0xa01abbb8"
+    },
+    {
+      "index": 7,
+      "name": "boss_status",
+      "name_pointer": "0xa056b094",
+      "handler": "0xa01ab6d4"
+    },
+    {
+      "index": 8,
+      "name": "switch_work_mode",
+      "name_pointer": "0xa056b0a0",
+      "handler": "0xa01ab3f4"
+    },
+    {
+      "index": 9,
+      "name": "shutter",
+      "name_pointer": "0xa060c5b4",
+      "handler": "0xa01a7cac"
+    },
+    {
+      "index": 10,
+      "name": "power_status",
+      "name_pointer": "0xa056b0b4",
+      "handler": "0xa01ab3e4"
+    },
+    {
+      "index": 11,
+      "name": "beep",
+      "name_pointer": "0xa0564bf4",
+      "handler": "0xa01ab9fc"
+    },
+    {
+      "index": 12,
+      "name": "ntc",
+      "name_pointer": "0xa056b0c4",
+      "handler": "0xa01ac34c"
+    },
+    {
+      "index": 13,
+      "name": "bq24250",
+      "name_pointer": "0xa056b0c8",
+      "handler": "0xa01aba7c"
+    },
+    {
+      "index": 14,
+      "name": "msg_dump",
+      "name_pointer": "0xa056b0d0",
+      "handler": "0xa01a7990"
+    },
+    {
+      "index": 15,
+      "name": "cfg_restore",
+      "name_pointer": "0xa056b0dc",
+      "handler": "0xa01ab2c0"
+    },
+    {
+      "index": 16,
+      "name": "gyro",
+      "name_pointer": "0xa056b0e8",
+      "handler": "0xa01ab96c"
+    },
+    {
+      "index": 17,
+      "name": "audio",
+      "name_pointer": "0xa056b0f0",
+      "handler": "0xa01aad50"
+    },
+    {
+      "index": 18,
+      "name": "vf_switch",
+      "name_pointer": "0xa056b0f8",
+      "handler": "0xa01abb44"
+    },
+    {
+      "index": 19,
+      "name": "set_video_res",
+      "name_pointer": "0xa056b104",
+      "handler": "0xa01aad28"
+    },
+    {
+      "index": 20,
+      "name": "set_standard",
+      "name_pointer": "0xa056b114",
+      "handler": "0xa01aad00"
+    },
+    {
+      "index": 21,
+      "name": "set_photo_size",
+      "name_pointer": "0xa056b124",
+      "handler": "0xa01aacd8"
+    },
+    {
+      "index": 22,
+      "name": "chg_gui",
+      "name_pointer": "0xa056b134",
+      "handler": "0xa01aac5c"
+    },
+    {
+      "index": 23,
+      "name": "tp_event",
+      "name_pointer": "0xa056b13c",
+      "handler": "0xa01a77c0"
+    },
+    {
+      "index": 24,
+      "name": "tp_click",
+      "name_pointer": "0xa056b148",
+      "handler": "0xa01a7c28"
+    },
+    {
+      "index": 25,
+      "name": "tp_slide",
+      "name_pointer": "0xa056b154",
+      "handler": "0xa01a7aa0"
+    },
+    {
+      "index": 26,
+      "name": "rtmp_start",
+      "name_pointer": "0xa056b160",
+      "handler": "0xa01aac4c"
+    },
+    {
+      "index": 27,
+      "name": "rtmp_stop",
+      "name_pointer": "0xa056b16c",
+      "handler": "0xa01aac38"
+    },
+    {
+      "index": 28,
+      "name": "tp_move",
+      "name_pointer": "0xa056b178",
+      "handler": "0xa01a79a0"
+    },
+    {
+      "index": 29,
+      "name": "board",
+      "name_pointer": "0xa056b180",
+      "handler": "0xa01aa78c"
+    },
+    {
+      "index": 30,
+      "name": "factory_result",
+      "name_pointer": "0xa056b188",
+      "handler": "0xa01aa77c"
+    },
+    {
+      "index": 31,
+      "name": "thruput_result",
+      "name_pointer": "0xa056b198",
+      "handler": "0xa01ac2b4"
+    },
+    {
+      "index": 32,
+      "name": "ota_result",
+      "name_pointer": "0xa056b1a8",
+      "handler": "0xa01ac21c"
+    },
+    {
+      "index": 33,
+      "name": "dump_board",
+      "name_pointer": "0xa056b1b4",
+      "handler": "0xa01aa768"
+    },
+    {
+      "index": 34,
+      "name": "tp_fwupdate",
+      "name_pointer": "0xa056b1c0",
+      "handler": "0xa01aa568"
+    },
+    {
+      "index": 35,
+      "name": "get_tp_ver",
+      "name_pointer": "0xa056b1cc",
+      "handler": "0xa01aa4dc"
+    },
+    {
+      "index": 36,
+      "name": "fioprf_thruput",
+      "name_pointer": "0xa05687b8",
+      "handler": "0xa01a7258"
+    },
+    {
+      "index": 37,
+      "name": "power_saving",
+      "name_pointer": "0xa056b1d8",
+      "handler": "0xa01aa3a0"
+    },
+    {
+      "index": 38,
+      "name": "linux_serial",
+      "name_pointer": "0xa056b1e8",
+      "handler": "0xa01a8f94"
+    },
+    {
+      "index": 39,
+      "name": "ps_debug",
+      "name_pointer": "0xa056b1f8",
+      "handler": "0xa01ac18c"
+    },
+    {
+      "index": 40,
+      "name": "slow_motion",
+      "name_pointer": "0xa0565554",
+      "handler": "0xa01a7500"
+    },
+    {
+      "index": 41,
+      "name": "set_gps",
+      "name_pointer": "0xa056b204",
+      "handler": "0xa01aa204"
+    },
+    {
+      "index": 42,
+      "name": "wifi_country",
+      "name_pointer": "0xa0550920",
+      "handler": "0xa01ac0ec"
+    },
+    {
+      "index": 43,
+      "name": "mic_in_check",
+      "name_pointer": "0xa056b20c",
+      "handler": "0xa01ac580"
+    },
+    {
+      "index": 44,
+      "name": "mic_input",
+      "name_pointer": "0xa056b21c",
+      "handler": "0xa01aa11c"
+    },
+    {
+      "index": 45,
+      "name": "cobs",
+      "name_pointer": "0xa056b228",
+      "handler": "0xa01a9e7c"
+    },
+    {
+      "index": 46,
+      "name": "car_msg",
+      "name_pointer": "0xa056b230",
+      "handler": "0xa01a9c1c"
+    },
+    {
+      "index": 47,
+      "name": "usb_mode",
+      "name_pointer": "0xa0550a54",
+      "handler": "0xa01a8e88"
+    },
+    {
+      "index": 48,
+      "name": "save_log",
+      "name_pointer": "0xa055077c",
+      "handler": "0xa01abe20"
+    },
+    {
+      "index": 49,
+      "name": "get_blk_mark",
+      "name_pointer": "0xa056b238",
+      "handler": "0xa01a9c18"
+    },
+    {
+      "index": 50,
+      "name": "show_str",
+      "name_pointer": "0xa056b248",
+      "handler": "0xa01ac08c"
+    },
+    {
+      "index": 51,
+      "name": "get_video_info",
+      "name_pointer": "0xa056b254",
+      "handler": "0xa01a94fc"
+    },
+    {
+      "index": 52,
+      "name": "erase",
+      "name_pointer": "0xa056b264",
+      "handler": "0xa01a9ae4"
+    },
+    {
+      "index": 53,
+      "name": "set_video_vbr",
+      "name_pointer": "0xa056b26c",
+      "handler": "0xa01a9990"
+    },
+    {
+      "index": 54,
+      "name": "photo_priv_info",
+      "name_pointer": "0xa056b27c",
+      "handler": "0xa01a93cc"
+    },
+    {
+      "index": 55,
+      "name": "bitmaps",
+      "name_pointer": "0xa056b28c",
+      "handler": "0xa01acd10"
+    },
+    {
+      "index": 56,
+      "name": "set_video_split_size",
+      "name_pointer": "0xa056b294",
+      "handler": "0xa01a7508"
+    },
+    {
+      "index": 57,
+      "name": "vc_test",
+      "name_pointer": "0xa056b2ac",
+      "handler": "0xa01abd80"
+    },
+    {
+      "index": 58,
+      "name": "vc_test2",
+      "name_pointer": "0xa056b2b4",
+      "handler": "0xa01a90e8"
+    },
+    {
+      "index": 59,
+      "name": "vc_save",
+      "name_pointer": "0xa056b2c0",
+      "handler": "0xa01abf50"
+    },
+    {
+      "index": 60,
+      "name": "vc_switch_lan",
+      "name_pointer": "0xa056b2c8",
+      "handler": "0xa01abec0"
+    },
+    {
+      "index": 61,
+      "name": "vc_send_msg",
+      "name_pointer": "0xa056b2d8",
+      "handler": "0xa01a903c"
+    },
+    {
+      "index": 62,
+      "name": "tlp_power_off",
+      "name_pointer": "0xa056b2e4",
+      "handler": "0xa01a8e10"
+    },
+    {
+      "index": 63,
+      "name": "debug_sd",
+      "name_pointer": "0xa056b2f4",
+      "handler": "0xa01a8d60"
+    },
+    {
+      "index": 64,
+      "name": "bq27421",
+      "name_pointer": "0xa056b300",
+      "handler": "0xa01abd24"
+    },
+    {
+      "index": 65,
+      "name": "rom",
+      "name_pointer": "0xa056a820",
+      "handler": "0xa01abc88"
+    },
+    {
+      "index": 66,
+      "name": "usb_con",
+      "name_pointer": "0xa056b308",
+      "handler": "0xa01abc20"
+    },
+    {
+      "index": 67,
+      "name": "sd_delay",
+      "name_pointer": "0xa056b310",
+      "handler": "0xa01a8838"
+    },
+    {
+      "index": 68,
+      "name": "thumb",
+      "name_pointer": "0xa05529dc",
+      "handler": "0xa01a8998"
+    }
+  ],
+  "dispatch": {
+    "entry": "0xa01ab8bc",
+    "synthetic_handler_calls": [
+      {
+        "argc": 1,
+        "argv": "0x70001008",
+        "first_argument": "audit-argument",
+        "print_pointer": "0x70002000"
+      }
+    ],
+    "synthetic_original_pointer_restored": true,
+    "callee_saved_sp_return_verified": true,
+    "scope": "Real stock dispatcher in synthetic RAM, declared strcmp/print/new-handler stubs; no real handler invocation or target mutation"
+  },
+  "padding": {
+    "range": [
+      "0xa064e214",
+      "0xa064f000"
+    ],
+    "all_zero_in_storage": true,
+    "live_ownership_verified": false,
+    "code_publication_verified": false
+  },
+  "decision": "No runnable RAM probe emitted. First fetch/coherency, padding ownership, single-owner pointer lifetime and failure recovery remain unverified.",
+  "target_access": false,
+  "target_memory_write": false,
+  "payload_emitted": false
+}

@@ -1,0 +1,47 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.yi4k.control'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'dev.yi4k.control'
+        minSdk 29
+        targetSdk 35
+        versionCode 33
+        versionName '0.5.0'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+    sourceSets {
+        test.java.srcDir 'src/testSupport/java'
+        androidTest.java.srcDir 'src/testSupport/java'
+    }
+    lint { abortOnError true }
+    testOptions { unitTests.includeAndroidResources = true }
+}
+dependencies {
+    implementation 'androidx.media3:media3-exoplayer:1.8.0'
+    implementation 'androidx.media3:media3-exoplayer-rtsp:1.8.0'
+    implementation 'androidx.media3:media3-ui:1.8.0'
+    implementation 'androidx.media3:media3-transformer:1.8.0'
+    implementation 'androidx.media3:media3-effect:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+    testImplementation 'org.robolectric:robolectric:4.14.1'
+    // The test APK declares android.test.runner as a system shared library.
+    // Compile against its stubs; packaging these jars duplicates JUnit classes.
+    androidTestCompileOnly files("${android.sdkDirectory}/platforms/android-35/optional/android.test.base.jar", "${android.sdkDirectory}/platforms/android-35/optional/android.test.runner.jar")
+}
+tasks.register('liveCameraProbe', JavaExec) {
+    group = 'verification'
+    description = 'Explicit real-camera check. Capture/config/clock writes require explicit opt-in properties.'
+    dependsOn 'compileDebugUnitTestJavaWithJavac'
+    mainClass = 'dev.yi4k.control.CameraLiveProbe'
+    classpath = files("$buildDir/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes",
+            "$buildDir/intermediates/javac/debug/compileDebugJavaWithJavac/classes") + configurations.debugUnitTestRuntimeClasspath
+    args providers.gradleProperty('cameraHost').getOrElse('192.168.42.1'),
+            providers.gradleProperty('probeOutput').getOrElse("$buildDir/reports/live-camera.json"),
+            providers.gradleProperty('recordSeconds').getOrElse('0'),
+            providers.gradleProperty('capturePhoto').getOrElse('false'),
+            providers.gradleProperty('changeSetting').getOrElse('false'),
+            providers.gradleProperty('syncClock').getOrElse('false')
+}

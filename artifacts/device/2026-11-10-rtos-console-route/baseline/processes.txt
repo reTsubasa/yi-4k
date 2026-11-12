@@ -1,0 +1,55 @@
+~ # ps
+PID   USER     TIME   COMMAND
+    1 root       0:00 init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    5 root       0:00 [kworker/0:0H]
+    6 root       0:00 [kworker/u2:0]
+    7 root       0:00 [rcu_preempt]
+    8 root       0:00 [rcu_bh]
+    9 root       0:00 [rcu_sched]
+   10 root       0:00 [khelper]
+   11 root       0:00 [kdevtmpfs]
+   12 root       0:00 [writeback]
+   13 root       0:00 [bioset]
+   14 root       0:00 [crypto]
+   15 root       0:00 [kblockd]
+   16 root       0:00 [kworker/0:1]
+   17 root       0:00 [rpciod]
+   19 root       0:00 [kswapd0]
+   20 root       0:00 [fsnotify_mark]
+   21 root       0:00 [nfsiod]
+   38 root       0:00 [deferwq]
+   39 root       0:00 [kworker/0:1H]
+   40 root       0:01 [kworker/0:2]
+   61 dbus       0:00 dbus-daemon --system
+   69 root       0:00 /usr/bin/rpcbind
+  102 root       0:00 /usr/bin/ipcbind -b
+  104 root       0:00 /usr/bin/util_svc -b
+  108 root       0:00 /usr/bin/AmbaNetFifoDaemon
+  110 root       0:00 /usr/bin/AmbaEventNotifyDaemon
+  120 root       0:00 [cfg80211]
+  152 root       0:00 /usr/bin/remoteapi_disc_daemon
+  154 root       0:00 /usr/sbin/cherokee-worker -a -C /etc/cherokee.conf -j -s 
+  174 root       0:00 -/bin/sh
+  176 root       0:00 /usr/bin/remoteapi_cmd_daemon
+  185 root       0:00 /usr/bin/remoteapi_data_daemon
+  195 root       0:00 /usr/bin/remoteapi_syssvc_daemon
+  204 root       0:00 /usr/bin/AmbaRTSPServer
+  211 root       0:09 /usr/local/share/script/XCServer
+  218 root       0:04 telnetd
+  219 root       0:00 [kworker/u2:2]
+  425 root       0:00 [wl_escan_handle]
+  426 root       0:09 [dhd_watchdog_th]
+  427 root       0:00 [dhd_dpc]
+  428 root       0:00 [dhd_rxf]
+  448 root       0:01 [ksdioirqd/mmc0]
+  449 root       0:00 [wl_event_handle]
+  463 nobody     0:00 dnsmasq --nodns -5 -K -R -n --dhcp-range=192.168.42.2,192
+  470 root       0:00 wpa_supplicant -Dnl80211 -iwlan0 -c/tmp/wpa_supplicant.ap
+  486 root       0:00 /usr/local/share/script/bsa_server_43340 -d /dev/ttyS1 -p
+  493 root       0:00 /usr/local/share/script/ble_remote --addr 58:70:C6:57:84:
+  574 root       0:00 -sh
+  578 root       0:00 ps
+~ # echo __YI_CAPTURE_179a590959994d4ba9148b932600633f__
+__YI_CAPTURE_179a590959994d4ba9148b932600633f__

@@ -1,0 +1,22 @@
+{
+  "scope": "read-only HTTP copy of ordinary 65-second recording; no RTOS code, settings change or prerecord execution",
+  "source_evidence": "/Users/hyc/Documents/yi4k/artifacts/android/0.3.12-device-reports/camera-capture-65s-run01/workflow-screens/camera-capture/camera-capture.json",
+  "expected": {
+    "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0165.MP4",
+    "name": "YDXJ0165.MP4",
+    "bytes": 367326906,
+    "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+    "type": "video",
+    "decoded_width": 1920,
+    "decoded_height": 1080,
+    "duration_ms": 65098,
+    "has_audio": "yes"
+  },
+  "url": "http://192.168.42.1/DCIM/100MEDIA/YDXJ0165.MP4",
+  "started_utc": "2026-11-10T19:38:01.782250+00:00",
+  "bytes": 367326906,
+  "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "elapsed_seconds": 96.27851287508383,
+  "passed": true,
+  "finished_utc": "2026-11-10T19:39:38.058199+00:00"
+}

@@ -1,0 +1,132 @@
+{
+  "status": "pass_android_available_fields_and_independent_segment_decode",
+  "offline_only": true,
+  "real_camera_access": false,
+  "simulated_device_serial": "emulator-5590",
+  "sdk": 34,
+  "fingerprint": "Android/sdk_phone64_arm64/emu64a:14/UE1A.230829.036.A1/11228894:userdebug/test-keys",
+  "verifier_sha256": "e5f22a03e815173036d4fdd60cab4c581526d4000d8d2bad9372d541ff4953fa",
+  "inputs": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+      "bytes": 367326906,
+      "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-12-prerecord-native-window-compact-run01/session.pending.mp4",
+      "bytes": 343127606,
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a"
+    }
+  ],
+  "records": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/session.json",
+      "sha256": "c01837c9c26b92f936df6b8f9beb6ec4d233fae0b13986ab30880da6465b3ab5"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/source.json",
+      "sha256": "e7e8db0aff64612c1b6ce6c9aa92cf17e58d9a4e0ef571fcbdead1f624d0dcc4"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/candidate.json",
+      "sha256": "e17b148e83b4a53a1fe79c9205fd39e9f91cb914a2e1772a93caf21f2c1122bd"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/device-input-sha256.txt",
+      "sha256": "1648399a4ac4f6a53adcdc9ed41fa6a34c1433001af13415c45eaf470510aa6f"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/source-ffprobe.json",
+      "sha256": "d26ad84558ddee03ddf9419b56fd2de2ecdebd07d4bff3e3bbcb95d4f90aef5f"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/run.py",
+      "sha256": "6834701f54812d95366a9e2949c2773dab9a0bc7909a8abfdde790a862a918fd"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java",
+      "sha256": "4ddb39f26627257f1280c2ea249caababbc7df8ab5e13013b95927f94f8d1943"
+    }
+  ],
+  "source_PTS_oracle": {
+    "binary": "/Users/hyc/Documents/yi4k/.tools/ffmpeg-host/ffprobe",
+    "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f",
+    "version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers"
+  },
+  "common_source_offset": {
+    "numerator": 1096,
+    "denominator": 375
+  },
+  "tracks": [
+    {
+      "kind": "video",
+      "packets": 1831,
+      "first_source_index": 88,
+      "last_source_index": 1918,
+      "compressed_payload_SHA_and_sizes_equal": true,
+      "all_PTS_match_source_common_offset_after_integer_microsecond_projection": true,
+      "first_PTS_us": 13600,
+      "last_PTS_us": 61074600,
+      "DTS_available": false,
+      "packet_duration_available": false,
+      "codec": "c2.goldfish.h264.decoder",
+      "decoded_outputs": 1831,
+      "all_decoded_active_pixel_or_PCM_buffer_SHA_equal_independent_source_segment": true,
+      "decoded_PTS_equal_extractor": true,
+      "track_format": {
+        "literal": "{track-id=1, level=32768, mime=video/avc, frame-count=1831, profile=2, language=```, display-width=1920, csd-1=java.nio.HeapByteBuffer[pos=0 lim=8 cap=8], durationUs=61094366, display-height=1080, width=1920, max-input-size=393972, frame-rate=30, height=1080, csd-0=java.nio.HeapByteBuffer[pos=0 lim=58 cap=58]}",
+        "mime": "video/avc",
+        "width": "1920",
+        "height": "1080",
+        "durationUs": "61094366"
+      },
+      "source_oracle_expected_final_endpoint_seconds": 61.10796666666667,
+      "track_format_duration_us": 61094366,
+      "active_YUV_hashes_exclude_row_and_slice_padding": true
+    },
+    {
+      "kind": "audio",
+      "packets": 2863,
+      "first_source_index": 137,
+      "last_source_index": 2999,
+      "compressed_payload_SHA_and_sizes_equal": true,
+      "all_PTS_match_source_common_offset_after_integer_microsecond_projection": true,
+      "first_PTS_us": 0,
+      "last_PTS_us": 61056000,
+      "DTS_available": false,
+      "packet_duration_available": false,
+      "codec": "c2.android.aac.decoder",
+      "decoded_outputs": 2863,
+      "all_decoded_active_pixel_or_PCM_buffer_SHA_equal_independent_source_segment": true,
+      "decoded_PTS_equal_extractor": true,
+      "track_format": {
+        "literal": "{max-bitrate=48000, sample-rate=48000, track-id=2, mime=audio/mp4a-latm, profile=2, bitrate=48000, language=```, aac-profile=2, encoder-delay=0, durationUs=61077333, channel-count=2, encoder-padding=0, max-input-size=444, csd-0=java.nio.HeapByteBuffer[pos=0 lim=5 cap=5]}",
+        "mime": "audio/mp4a-latm",
+        "durationUs": "61077333",
+        "channel-count": "2",
+        "sample-rate": "48000",
+        "encoder-delay": "0",
+        "encoder-padding": "0"
+      },
+      "source_oracle_expected_final_endpoint_seconds": 61.077333333333335,
+      "track_format_duration_us": 61077333,
+      "pcm_bytes": 11726848,
+      "pcm_sha256": "c54e52309ff674dadd35a2f695e7983450980c13034de65b58379206e7e5d9c2",
+      "sample_frames": 2931712
+    }
+  ],
+  "audio_oracle": "source MediaExtractor skips137 packets before a NEW decoder is created; feed2863 selected AAC. Candidate separately starts a NEW same decoder. Not continuous whole-source decoded PCM cropped to interval.",
+  "video_oracle": "source MediaExtractor skips88 packets to preceding IDR before a NEW decoder; feed1831 selected video samples; candidate separately starts same decoder.",
+  "emulator_stopped": true,
+  "inputs_unchanged": true,
+  "limitations": [
+    "MediaExtractor public API exposes integer microsecond PTS, not DTS or individual packet durations; this is not the full rational-time gate.",
+    "Track format durationUs reflects media duration and is not independently established as complete edited presentation endpoint.",
+    "MediaCodec ByteBuffer/Image full decode only; no Surface render, Media3 end-to-end playback, Android sound output, physical phone, camera trigger/SD or native deployment acceptance.",
+    "Audio comparison uses independently restarted selected AAC; no claim of bit identity to continuous full-source PCM subset.",
+    "Android AAC PCM SHA need not equal FFmpeg or AVFoundation decoder output; same implementation source/candidate comparison is used.",
+    "Pinned emulator/API34 codec implementation only; old ffprobe6.1 and AVFoundation limitations remain separate."
+  ]
+}

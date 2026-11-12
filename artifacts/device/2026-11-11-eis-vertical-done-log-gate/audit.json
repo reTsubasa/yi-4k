@@ -1,0 +1,165 @@
+{
+  "evidence_type": "offline fixed-byte audit of the vertical warp done-log gate",
+  "scope": "Caller and copy-helper windows only; software log-branch semantics recorded without assigning hardware completion meaning.",
+  "inputs": {
+    "container_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+    "reference_sha256": "4383b2c2ddceafec258d3907dee382d76389ca3604c0cad867fc58d15a30039c",
+    "orccode_sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6"
+  },
+  "diagnostic": {
+    "string_member_offset": "0x2b7ba9",
+    "text": "idspdrv_update_vertical_warp_field() done.\n",
+    "reference_pair": [
+      "0x17f280",
+      "0x17f284"
+    ],
+    "logger_call": "0x17f294 -> 0x19fe44"
+  },
+  "caller_checks": [
+    {
+      "offset": "0x17f260",
+      "word_le": "0x9c8a0100",
+      "instruction": "l.addi r4,r10,256"
+    },
+    {
+      "offset": "0x17f264",
+      "word_le": "0xa8700000",
+      "instruction": "l.ori r3,r16,0x0"
+    },
+    {
+      "offset": "0x17f268",
+      "word_le": "0x9ca00c40",
+      "instruction": "l.addi r5,r0,3136"
+    },
+    {
+      "offset": "0x17f26c",
+      "word_le": "0xbc100000",
+      "instruction": "l.sfeqi r16,0"
+    },
+    {
+      "offset": "0x17f270",
+      "word_le": "0xc00000b",
+      "instruction": "l.bnf 0x17f29c"
+    },
+    {
+      "offset": "0x17f27c",
+      "word_le": "0x84d20078",
+      "instruction": "l.lwz r6,120(r18)"
+    },
+    {
+      "offset": "0x17f280",
+      "word_le": "0x1860008b",
+      "instruction": "l.movhi r3,0x8b"
+    },
+    {
+      "offset": "0x17f284",
+      "word_le": "0xa8637ba9",
+      "instruction": "l.ori r3,r3,0x7ba9"
+    },
+    {
+      "offset": "0x17f288",
+      "word_le": "0xa4a60003",
+      "instruction": "l.andi r5,r6,0x3"
+    },
+    {
+      "offset": "0x17f28c",
+      "word_le": "0xbc050000",
+      "instruction": "l.sfeqi r5,0"
+    },
+    {
+      "offset": "0x17f290",
+      "word_le": "0x10000008",
+      "instruction": "l.bf 0x17f2b0"
+    },
+    {
+      "offset": "0x17f294",
+      "word_le": "0x40082ec",
+      "instruction": "l.jal 0x19fe44"
+    },
+    {
+      "offset": "0x17f298",
+      "word_le": "0x6",
+      "instruction": "l.j 0x17f2b0"
+    },
+    {
+      "offset": "0x17f29c",
+      "word_le": "0x95122b32",
+      "instruction": "l.lhz r8,11058(r18)"
+    },
+    {
+      "offset": "0x17f2a0",
+      "word_le": "0xa8e80003",
+      "instruction": "l.ori r7,r8,0x3"
+    },
+    {
+      "offset": "0x17f2a4",
+      "word_le": "0xdcb23b32",
+      "instruction": "l.sh 11058(r18),r7"
+    },
+    {
+      "offset": "0x17f2a8",
+      "word_le": "0x4003621",
+      "instruction": "l.jal 0x18cb2c"
+    },
+    {
+      "offset": "0x17f2ac",
+      "word_le": "0x3fffff4",
+      "instruction": "l.j 0x17f27c"
+    }
+  ],
+  "copy_helper_checks": [
+    {
+      "offset": "0x18cb64",
+      "word_le": "0x7fffc89",
+      "instruction": "l.jal 0x18bd88"
+    },
+    {
+      "offset": "0x18cbc8",
+      "word_le": "0x4005eb6",
+      "instruction": "l.jal 0x1a46a0"
+    },
+    {
+      "offset": "0x18cbdc",
+      "word_le": "0x4005f8a",
+      "instruction": "l.jal 0x1a4a04"
+    },
+    {
+      "offset": "0x18cbe8",
+      "word_le": "0x13ffffee",
+      "instruction": "l.bf 0x18cba0"
+    },
+    {
+      "offset": "0x18cc24",
+      "word_le": "0x4005f78",
+      "instruction": "l.jal 0x1a4a04"
+    },
+    {
+      "offset": "0x18cc28",
+      "word_le": "0x8",
+      "instruction": "l.j 0x18cc48"
+    }
+  ],
+  "software_gate": {
+    "status_load": "0x17f27c: r6 = lwz(r18+120)",
+    "gate": "0x17f288: r5 = r6 & 3; 0x17f28c/0x17f290 branch to 0x17f2b0 when zero",
+    "copy_branch": "nonzero source pointer path at 0x17f270 branches to 0x17f29c, writes r18+0x2b32 |= 3, calls 0x18cb2c, then jumps to the log gate at 0x17f27c",
+    "done_branch": "zero low-two-bit gate skips logging and exits; nonzero gate calls logger 0x19fe44 with the done string then exits",
+    "copy_helper": "0x18cb2c chunks through 0x1a46a0 and 0x1a4a04; final remainder uses 0x1a4a04 before return"
+  },
+  "bounded_findings": [
+    "The done diagnostic is emitted by a normal logger call only when r18+120 has nonzero low two bits; zero skips the log and exits. A nonzero source pointer performs one copy call before reaching this gate, while a null source pointer can reach the same gate without a copy.",
+    "The same caller uses r18+120 only through a low two-bit mask; this static window does not identify the field as a hardware completion register, fence, or DMA status.",
+    "The copy path calls idspdrv_dram2dram (0x18cb2c), which invokes the named dram_2_smem/smem_2_dram helpers before reaching the log gate; no caller loop or standard done-register poll is visible in the bounded caller/copy windows.",
+    "The diagnostic string and its placement establish software control-flow ordering, not that the final hardware reader has stopped using the source table or that cache/atomic publication is complete."
+  ],
+  "not_proven": [
+    "Meaning and ownership of r18+120 and r18+0x2b32",
+    "Proprietary transfer completion, DMA/MMIO, cache, atomic or latch semantics",
+    "Whether 0x18cb2c returns only after hardware transfer completion",
+    "Final hardware reader and safe source-table/state-slot release",
+    "Runtime ORC identity, PC, timing and frame correspondence"
+  ],
+  "device_access": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

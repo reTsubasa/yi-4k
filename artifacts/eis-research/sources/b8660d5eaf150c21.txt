@@ -1,0 +1,29 @@
+CVPR 2024 Open Access Repository
+CVPR 2024 open access
+These CVPR 2024 papers are the Open Access versions, provided by the
+Computer Vision Foundation.
+Except for the watermark, they are identical to the accepted versions;
+the final published version of the proceedings is available on IEEE Xplore.
+This material is presented to ensure timely dissemination of scholarly and technical work.
+Copyright and all rights therein are retained by authors or by other copyright holders.
+All persons copying this information are expected to adhere to the terms and constraints invoked
+by each author's copyright.
+Powered by:
+Sponsored by:
+3D Multi-frame Fusion for Video Stabilization
+Zhan Peng, Xinyi Ye, Weiyue Zhao, Tianqi Liu, Huiqiang Sun, Baopu Li, Zhiguo Cao; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024, pp. 7507-7516
+Abstract
+In this paper we present RStab a novel framework for video stabilization that integrates 3D multi-frame fusion through volume rendering. Departing from conventional methods we introduce a 3D multi-frame perspective to generate stabilized images addressing the challenge of full-frame generation while preserving structure. The core of our RStab framework lies in Stabilized Rendering (SR) a volume rendering module fusing multi-frame information in 3D space. Specifically SR involves warping features and colors from multiple frames by projection fusing them into descriptors to render the stabilized image. However the precision of warped information depends on the projection accuracy a factor significantly influenced by dynamic regions. In response we introduce the Adaptive Ray Range (ARR) module to integrate depth priors adaptively defining the sampling range for the projection process. Additionally we propose Color Correction (CC) assisting geometric constraints with optical flow for accurate color aggregation. Thanks to the three modules our RStab demonstrates superior performance compared with previous stabilizers in the field of view (FOV) image quality and video stability across various datasets.
+Related Material
+[pdf]
+[supp]
+[arXiv]
+[bibtex]
+@InProceedings{Peng_2024_CVPR,
+author    = {Peng, Zhan and Ye, Xinyi and Zhao, Weiyue and Liu, Tianqi and Sun, Huiqiang and Li, Baopu and Cao, Zhiguo},
+title     = {3D Multi-frame Fusion for Video Stabilization},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month     = {June},
+year      = {2024},
+pages     = {7507-7516}
+}

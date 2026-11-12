@@ -1,0 +1,484 @@
+2026-11-05 15:13:09 INFO  (LoggingInitialization) Using log config file: jar:file:/private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-05 15:13:09 INFO  (LoggingInitialization) Using log file: artifacts/rtos-reverse/ghidra-analysis.log  
+2026-11-05 15:13:09 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-05 15:13:09 INFO  (Preferences) Loading user preferences: /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-11-05 15:13:09 INFO  (Preferences) Loading previous preferences: /Users/hyc/Library/ghidra/ghidra_11.4.2_PUBLIC/preferences  
+2026-11-05 15:13:09 INFO  (ClassSearcher) Searching for classes...  
+2026-11-05 15:13:10 INFO  (ClassSearcher) Class search complete (1402 ms)  
+2026-11-05 15:13:11 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-05 15:13:11 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-05 15:13:11 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-05 15:13:11 INFO  (DefaultTrustManagerFactory) Loaded 3 trusted CA certificates from the OS trust store.  
+2026-11-05 15:13:12 INFO  (DefaultTrustManagerFactory) Loaded 109 trusted CA certificates from the Java default trust store.  
+2026-11-05 15:13:15 DEBUG (SleighLanguage) Took 1355ms (377ms inside lock) to initialize language /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/ARM/data/languages/ARM7_le.slaspec -> /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/ARM/data/languages/ARM7_le.sla  
+2026-11-05 15:13:16 INFO  (AnalyzeHeadless) Headless startup complete (13756 ms)  
+2026-11-05 15:13:16 INFO  (ClassSearcher) Class searcher loaded 224 extension points (115 false positives)  
+2026-11-05 15:13:17 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts  
+2026-11-05 15:13:17 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-05 15:13:17 INFO  (HeadlessAnalyzer) Creating project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/rtos-reverse/ghidra-project/yi4k  
+2026-11-05 15:13:17 INFO  (DefaultProject) Creating project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/rtos-reverse/ghidra-project/yi4k  
+2026-11-05 15:13:22 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-11-05 15:13:22 INFO  (HeadlessAnalyzer)      project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/rtos-reverse/ghidra-project/yi4k  
+2026-11-05 15:13:22 INFO  (HeadlessAnalyzer) IMPORTING: file:///Users/hyc/orca/workspaces/orca%E6%B5%8B%E8%AF%95/yi4k/artifacts/firmware/v1.10.52/_part_lrtos.a9s  
+2026-11-05 15:13:22 INFO  (ProgramLoader) Successfully applied "-loader-baseAddr" to "Base Address" (old: "null", new: "0xA0100000")  
+2026-11-05 15:13:22 INFO  (ProgramLoader) Using Loader: Raw Binary  
+2026-11-05 15:13:22 INFO  (ProgramLoader) Using Language/Compiler: ARM:LE:32:v7:default  
+2026-11-05 15:13:22 INFO  (ProgramLoader) Using Library Search Path: [., /System/Library/dyld/dyld_shared_cache_arm64e, /System/Library/dyld/dyld_shared_cache_x86_64, /System/Library/dyld/dyld_shared_cache_x86_64h, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_arm64e, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64h, /Users/hyc/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java]  
+2026-11-05 15:13:23 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-11-05 15:13:24 INFO  (HeadlessAnalyzer) REPORT: Execute script: Yi4kPrepare.java 'artifacts/rtos-reverse/seeds.tsv' 'artifacts/rtos-reverse/tables/seeds.tsv'   
+2026-11-05 15:13:27 INFO  (HeadlessAnalyzer) SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kPrepare.java  
+2026-11-05 15:13:36 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa0226578	imgcmd_help	0x4978e0 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:40 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa0245cf4	ipccmd_rpc	0x4a6c30 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:41 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa01ab8bc	tcmd_ants	registration@0xa01ace64 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa02265b0	tcmd_img	registration@0xa022ee28 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa0245af8	tcmd_ipc	registration@0xa0245ad0 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa04af7e0	tcmd_drv	registration@0xa04af890 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa01ab8bc	appcmd_dispatcher	table@0x46b404 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa02265b0	imgcmd_dispatcher	table@0x4978e0 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa0245af8	ipccmd_dispatcher	table@0x4a6c18 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa04af7e0	drvcmd_dispatcher	table@0x537334 ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> SEED_FAILED 0xa029e098	analyst_t_command_register	code ghidra.program.model.listing.ContextChangeException: Context register change conflicts with one or more instructions  
+2026-11-05 15:13:42 INFO  (GhidraScript) Yi4kPrepare.java> YI4K_SEEDS good=173 failed=11  
+2026-11-05 15:13:42 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///Users/hyc/orca/workspaces/orca%E6%B5%8B%E8%AF%95/yi4k/artifacts/firmware/v1.10.52/_part_lrtos.a9s  
+2026-11-05 15:13:50 ERROR (DecompileProcessFactory) os/mac_x86_64/decompile does not exist (see GettingStarted.md, 'Building Native Components')  
+2026-11-05 15:14:43 DEBUG (FidAnalyzer) No FID Libraries apply for language ARM:LE:32:v7  
+2026-11-05 15:14:43 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/hyc-ghidra/packed-db-cache  
+2026-11-05 15:14:43 DEBUG (PackedDatabaseCache) Caching packed database: /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-11-05 15:14:43 DEBUG (PackedDatabase) Unpacking database /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt -> /var/tmp/hyc-ghidra/packed-db-cache/pdb19B31AB2/db.1.gbf  
+2026-11-05 15:14:43 DEBUG (PackedDatabaseCache) Cache update completed: /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-11-05 15:14:44 DEBUG (SleighLanguage) Took 452ms (136ms inside lock) to initialize language /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.slaspec -> /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.sla  
+2026-11-05 15:14:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-11-05 15:15:08 DEBUG (FidAnalyzer) No FID Libraries apply for language ARM:LE:32:v7  
+2026-11-05 15:15:08 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-11-05 15:15:37 INFO  (FormatStringAnalyzer) No functions detected that make variadic function calls with format strings containing format specifiers  
+2026-11-05 15:15:37 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ARM Constant Reference Analyzer           30.003 secs
+    ARM Symbol                                 0.010 secs
+    ASCII Strings                              1.560 secs
+    Apply Data Archives                        1.058 secs
+    Call Convention ID                         0.100 secs
+    Call-Fixup Installer                       0.357 secs
+    Create Address Tables                      1.067 secs
+    Create Address Tables - One Time           6.010 secs
+    Create Function                            4.140 secs
+    Data Reference                             2.115 secs
+    Decompiler Switch Analysis                 3.888 secs
+    Demangler GNU                              0.222 secs
+    Disassemble                               13.854 secs
+    Disassemble Entry Points                   0.035 secs
+    Embedded Media                             0.050 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.115 secs
+    Function Start Pre Search                  0.276 secs
+    Function Start Search                      2.001 secs
+    Function Start Search After Code           2.518 secs
+    Function Start Search After Data           0.100 secs
+    Function Start Search delayed - One Time   0.486 secs
+    Non-Returning Functions - Discovered       4.444 secs
+    Reference                                  9.135 secs
+    Shared Return Calls                        1.047 secs
+    Source Language Support                    0.069 secs
+    Stack                                     22.632 secs
+    Subroutine References                      5.376 secs
+    Subroutine References - One Time           0.013 secs
+    Variadic Function Signature Override       1.520 secs
+-----------------------------------------------------
+     Total Time   114 secs
+-----------------------------------------------------
+  
+2026-11-05 15:15:37 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///Users/hyc/orca/workspaces/orca%E6%B5%8B%E8%AF%95/yi4k/artifacts/firmware/v1.10.52/_part_lrtos.a9s  
+2026-11-05 15:15:37 INFO  (HeadlessAnalyzer) REPORT: Execute script: Yi4kExport.java 'artifacts/rtos-reverse/full'   
+2026-11-05 15:15:37 INFO  (HeadlessAnalyzer) SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kExport.java  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=100 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=200 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=300 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=400 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=500 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=600 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=700 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=800 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=900 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1000 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1100 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1200 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1300 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1400 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1500 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1600 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1700 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1800 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1900 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2000 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2100 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2200 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2300 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2400 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2500 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2600 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:37 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2700 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2800 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2900 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3000 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3100 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3200 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3300 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3400 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3500 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3600 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3700 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3800 decompiled=0 elapsed_s=0  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3900 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4000 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4100 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4200 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4300 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4400 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4500 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4600 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4700 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4800 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4900 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5000 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5100 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5200 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5300 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5400 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5500 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5600 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5700 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5800 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5900 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6000 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6100 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6200 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6300 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6400 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6500 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6600 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6700 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6800 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6900 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7000 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7100 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7200 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7300 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7400 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7500 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7600 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7700 decompiled=0 elapsed_s=1  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7800 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7900 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8000 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8100 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8200 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8300 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8400 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8500 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8600 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8700 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8800 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8900 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9000 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9100 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9200 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9300 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9400 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9500 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9600 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9700 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9800 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9900 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10000 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10100 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10200 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10300 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10400 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10500 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10600 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10700 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10800 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10900 decompiled=0 elapsed_s=2  
+2026-11-05 15:15:51 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT_COMPLETE {
+  "program": "_part_lrtos.a9s",
+  "language": "ARM:LE:32:v7",
+  "image_base": "0x00000000",
+  "executable_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "discovered_functions": 10951,
+  "decompilations_completed": 0,
+  "decompilations_failed": 10951,
+  "function_body_union_bytes": 3748744,
+  "recognized_instruction_count": 1071849,
+  "elapsed_export_seconds": 14,
+  "limitations": [
+    "Automatic static analysis; not a proof of complete function discovery.",
+    "Raw binary contains code and data; inferred boundaries and types may be wrong.",
+    "No on-device execution or ABI validation performed.",
+    "Indirect calls may remain unresolved."
+  ]
+}  
+2026-11-05 15:15:51 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///Users/hyc/orca/workspaces/orca%E6%B5%8B%E8%AF%95/yi4k/artifacts/firmware/v1.10.52/_part_lrtos.a9s  
+2026-11-05 15:15:51 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///Users/hyc/orca/workspaces/orca%E6%B5%8B%E8%AF%95/yi4k/artifacts/firmware/v1.10.52/_part_lrtos.a9s  
+2026-11-05 15:15:57 INFO  (LocalFileSystem) /_part_lrtos.a9s: file created (hyc)  
+2026-11-05 15:15:57 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /_part_lrtos.a9s (yi4k:/_part_lrtos.a9s)  
+2026-11-05 15:15:57 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-11-05 15:37:40 INFO  (LoggingInitialization) Using log config file: jar:file:/private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-05 15:37:40 INFO  (LoggingInitialization) Using log file: artifacts/rtos-reverse/ghidra-analysis.log  
+2026-11-05 15:37:40 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-05 15:37:40 INFO  (Preferences) Loading user preferences: /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-11-05 15:37:40 INFO  (Preferences) Loading previous preferences: /Users/hyc/Library/ghidra/ghidra_11.4.2_PUBLIC/preferences  
+2026-11-05 15:37:40 INFO  (ClassSearcher) Searching for classes...  
+2026-11-05 15:37:42 INFO  (ClassSearcher) Class search complete (1568 ms)  
+2026-11-05 15:37:42 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-05 15:37:42 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-05 15:37:42 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-05 15:37:43 INFO  (DefaultTrustManagerFactory) Loaded 3 trusted CA certificates from the OS trust store.  
+2026-11-05 15:37:43 INFO  (DefaultTrustManagerFactory) Loaded 109 trusted CA certificates from the Java default trust store.  
+2026-11-05 15:37:44 INFO  (AnalyzeHeadless) Headless startup complete (10383 ms)  
+2026-11-05 15:37:44 INFO  (ClassSearcher) Class searcher loaded 60 extension points (19 false positives)  
+2026-11-05 15:37:45 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts  
+2026-11-05 15:37:45 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-05 15:37:45 INFO  (HeadlessAnalyzer) Opening existing project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/rtos-reverse/ghidra-project/yi4k  
+2026-11-05 15:37:45 INFO  (HeadlessProject) Opening project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/rtos-reverse/ghidra-project/yi4k  
+2026-11-05 15:37:53 DEBUG (SleighLanguage) Took 902ms (289ms inside lock) to initialize language /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/ARM/data/languages/ARM7_le.slaspec -> /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/ARM/data/languages/ARM7_le.sla  
+2026-11-05 15:37:54 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /_part_lrtos.a9s  
+2026-11-05 15:37:55 INFO  (HeadlessAnalyzer) REPORT: Execute script: Yi4kPrepare.java 'artifacts/rtos-reverse/seeds.tsv' 'artifacts/rtos-reverse/tables/seeds.tsv' 'artifacts/rtos-reverse/core/seeds.tsv'   
+2026-11-05 15:37:59 INFO  (HeadlessAnalyzer) SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kPrepare.java  
+2026-11-05 15:37:59 INFO  (GhidraScript) Yi4kPrepare.java> YI4K_SEEDS good=184 failed=0  
+2026-11-05 15:37:59 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: /_part_lrtos.a9s  
+2026-11-05 15:38:19 WARN  (DecompileCallback) Decompiling a03a374c: Unable to read bytes at ram:5845545a  
+2026-11-05 15:38:19 WARN  (DecompileCallback) Decompiling a03a374c: Unable to read bytes at ram:454e5554  
+2026-11-05 15:38:39 WARN  (DecompileCallback) Decompiling a03c88f8: Unable to read bytes at ram:a1797754  
+2026-11-05 15:39:39 DEBUG (FidAnalyzer) No FID Libraries apply for language ARM:LE:32:v7  
+2026-11-05 15:39:39 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/hyc-ghidra/packed-db-cache  
+2026-11-05 15:39:39 DEBUG (PackedDatabaseCache) Using cached packed database: /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-11-05 15:39:40 DEBUG (SleighLanguage) Took 760ms (187ms inside lock) to initialize language /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.slaspec -> /private/tmp/yi4k-reverse-tools/ghidra_12.2_PUBLIC/Ghidra/Processors/x86/data/languages/x86.sla  
+2026-11-05 15:39:41 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-11-05 15:40:02 INFO  (FormatStringAnalyzer) No functions detected that make variadic function calls with format strings containing format specifiers  
+2026-11-05 15:40:02 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ARM Constant Reference Analyzer           26.510 secs
+    ARM Symbol                                 0.124 secs
+    ASCII Strings                              1.093 secs
+    Apply Data Archives                        1.740 secs
+    Call Convention ID                         0.911 secs
+    Call-Fixup Installer                       0.146 secs
+    Create Address Tables                      1.361 secs
+    Create Address Tables - One Time           1.039 secs
+    Create Function                            0.128 secs
+    Data Reference                             5.217 secs
+    Decompiler Switch Analysis                46.450 secs
+    Demangler GNU                              0.428 secs
+    Disassemble                                0.149 secs
+    Disassemble Entry Points                   1.521 secs
+    Embedded Media                             0.075 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.112 secs
+    Function Start Pre Search                  0.240 secs
+    Function Start Search                      3.634 secs
+    Function Start Search After Code           4.705 secs
+    Function Start Search After Data           2.571 secs
+    Function Start Search delayed - One Time   0.009 secs
+    Non-Returning Functions - Discovered       5.171 secs
+    Reference                                  5.988 secs
+    Shared Return Calls                        1.516 secs
+    Source Language Support                    0.020 secs
+    Stack                                      6.848 secs
+    Subroutine References                      2.963 secs
+    Subroutine References - One Time           0.004 secs
+    Variadic Function Signature Override       1.525 secs
+-----------------------------------------------------
+     Total Time   122 secs
+-----------------------------------------------------
+  
+2026-11-05 15:40:02 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: /_part_lrtos.a9s  
+2026-11-05 15:40:02 INFO  (HeadlessAnalyzer) REPORT: Execute script: Yi4kExport.java 'artifacts/rtos-reverse/full'   
+2026-11-05 15:40:02 INFO  (HeadlessAnalyzer) SCRIPT: /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra/Yi4kExport.java  
+2026-11-05 15:40:09 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=100 decompiled=100 elapsed_s=7  
+2026-11-05 15:40:15 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=200 decompiled=200 elapsed_s=13  
+2026-11-05 15:40:22 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=300 decompiled=300 elapsed_s=20  
+2026-11-05 15:40:27 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=400 decompiled=400 elapsed_s=25  
+2026-11-05 15:40:35 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=500 decompiled=500 elapsed_s=33  
+2026-11-05 15:40:36 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=600 decompiled=600 elapsed_s=33  
+2026-11-05 15:40:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=700 decompiled=700 elapsed_s=35  
+2026-11-05 15:40:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=800 decompiled=800 elapsed_s=37  
+2026-11-05 15:40:40 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=900 decompiled=900 elapsed_s=38  
+2026-11-05 15:40:42 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1000 decompiled=1000 elapsed_s=39  
+2026-11-05 15:40:43 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1100 decompiled=1100 elapsed_s=40  
+2026-11-05 15:40:45 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1200 decompiled=1200 elapsed_s=43  
+2026-11-05 15:40:46 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1300 decompiled=1300 elapsed_s=44  
+2026-11-05 15:40:47 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1400 decompiled=1400 elapsed_s=45  
+2026-11-05 15:40:58 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1500 decompiled=1499 elapsed_s=56  
+2026-11-05 15:40:59 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1600 decompiled=1599 elapsed_s=57  
+2026-11-05 15:41:14 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1700 decompiled=1698 elapsed_s=72  
+2026-11-05 15:41:16 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1800 decompiled=1798 elapsed_s=73  
+2026-11-05 15:41:19 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=1900 decompiled=1898 elapsed_s=76  
+2026-11-05 15:41:21 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2000 decompiled=1998 elapsed_s=79  
+2026-11-05 15:41:23 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2100 decompiled=2098 elapsed_s=81  
+2026-11-05 15:41:42 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2200 decompiled=2198 elapsed_s=99  
+2026-11-05 15:41:43 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2300 decompiled=2298 elapsed_s=101  
+2026-11-05 15:41:45 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2400 decompiled=2398 elapsed_s=102  
+2026-11-05 15:41:47 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2500 decompiled=2498 elapsed_s=105  
+2026-11-05 15:41:49 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2600 decompiled=2598 elapsed_s=106  
+2026-11-05 15:41:51 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2700 decompiled=2698 elapsed_s=108  
+2026-11-05 15:41:52 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2800 decompiled=2798 elapsed_s=110  
+2026-11-05 15:41:56 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=2900 decompiled=2898 elapsed_s=113  
+2026-11-05 15:41:57 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3000 decompiled=2998 elapsed_s=115  
+2026-11-05 15:42:02 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3100 decompiled=3098 elapsed_s=120  
+2026-11-05 15:42:05 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3200 decompiled=3198 elapsed_s=123  
+2026-11-05 15:42:11 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3300 decompiled=3298 elapsed_s=129  
+2026-11-05 15:42:13 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3400 decompiled=3398 elapsed_s=131  
+2026-11-05 15:42:16 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3500 decompiled=3498 elapsed_s=133  
+2026-11-05 15:42:18 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3600 decompiled=3598 elapsed_s=136  
+2026-11-05 15:42:21 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3700 decompiled=3698 elapsed_s=139  
+2026-11-05 15:42:24 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3800 decompiled=3798 elapsed_s=142  
+2026-11-05 15:42:27 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=3900 decompiled=3898 elapsed_s=144  
+2026-11-05 15:42:28 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4000 decompiled=3998 elapsed_s=146  
+2026-11-05 15:42:29 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4100 decompiled=4098 elapsed_s=147  
+2026-11-05 15:42:31 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4200 decompiled=4198 elapsed_s=149  
+2026-11-05 15:42:32 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4300 decompiled=4298 elapsed_s=150  
+2026-11-05 15:42:33 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4400 decompiled=4398 elapsed_s=151  
+2026-11-05 15:42:34 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4500 decompiled=4498 elapsed_s=152  
+2026-11-05 15:42:36 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4600 decompiled=4598 elapsed_s=154  
+2026-11-05 15:42:41 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4700 decompiled=4698 elapsed_s=158  
+2026-11-05 15:42:45 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4800 decompiled=4798 elapsed_s=162  
+2026-11-05 15:42:49 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=4900 decompiled=4898 elapsed_s=166  
+2026-11-05 15:42:52 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5000 decompiled=4998 elapsed_s=169  
+2026-11-05 15:42:54 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5100 decompiled=5098 elapsed_s=172  
+2026-11-05 15:42:59 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5200 decompiled=5198 elapsed_s=177  
+2026-11-05 15:43:03 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5300 decompiled=5298 elapsed_s=181  
+2026-11-05 15:43:05 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5400 decompiled=5398 elapsed_s=183  
+2026-11-05 15:43:07 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5500 decompiled=5498 elapsed_s=185  
+2026-11-05 15:43:08 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5600 decompiled=5598 elapsed_s=186  
+2026-11-05 15:43:10 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5700 decompiled=5698 elapsed_s=188  
+2026-11-05 15:43:13 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5800 decompiled=5798 elapsed_s=190  
+2026-11-05 15:43:20 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=5900 decompiled=5898 elapsed_s=198  
+2026-11-05 15:43:23 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6000 decompiled=5998 elapsed_s=201  
+2026-11-05 15:43:26 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6100 decompiled=6098 elapsed_s=204  
+2026-11-05 15:43:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6200 decompiled=6197 elapsed_s=216  
+2026-11-05 15:43:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6300 decompiled=6297 elapsed_s=216  
+2026-11-05 15:43:39 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6400 decompiled=6397 elapsed_s=216  
+2026-11-05 15:43:56 WARN  (DecompileCallback) Decompiling a03a374c: Unable to read bytes at ram:5845545a  
+2026-11-05 15:43:56 WARN  (DecompileCallback) Decompiling a03a374c: Unable to read bytes at ram:454e5554  
+2026-11-05 15:43:56 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6500 decompiled=6495 elapsed_s=234  
+2026-11-05 15:43:57 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6600 decompiled=6595 elapsed_s=235  
+2026-11-05 15:44:07 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6700 decompiled=6694 elapsed_s=244  
+2026-11-05 15:44:10 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6800 decompiled=6794 elapsed_s=247  
+2026-11-05 15:44:11 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=6900 decompiled=6894 elapsed_s=248  
+2026-11-05 15:44:12 WARN  (DecompileCallback) Decompiling a03c88f8: Unable to read bytes at ram:a1797754  
+2026-11-05 15:44:12 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7000 decompiled=6994 elapsed_s=250  
+2026-11-05 15:44:13 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7100 decompiled=7094 elapsed_s=251  
+2026-11-05 15:44:14 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7200 decompiled=7194 elapsed_s=252  
+2026-11-05 15:44:16 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7300 decompiled=7294 elapsed_s=254  
+2026-11-05 15:44:20 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7400 decompiled=7394 elapsed_s=257  
+2026-11-05 15:44:24 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7500 decompiled=7494 elapsed_s=261  
+2026-11-05 15:44:25 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7600 decompiled=7594 elapsed_s=263  
+2026-11-05 15:44:30 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7700 decompiled=7694 elapsed_s=267  
+2026-11-05 15:44:38 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7800 decompiled=7792 elapsed_s=276  
+2026-11-05 15:44:40 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=7900 decompiled=7892 elapsed_s=278  
+2026-11-05 15:44:42 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8000 decompiled=7992 elapsed_s=280  
+2026-11-05 15:44:44 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8100 decompiled=8092 elapsed_s=281  
+2026-11-05 15:44:45 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8200 decompiled=8192 elapsed_s=283  
+2026-11-05 15:44:48 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8300 decompiled=8292 elapsed_s=286  
+2026-11-05 15:44:51 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8400 decompiled=8392 elapsed_s=289  
+2026-11-05 15:44:52 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8500 decompiled=8492 elapsed_s=290  
+2026-11-05 15:44:53 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8600 decompiled=8592 elapsed_s=290  
+2026-11-05 15:44:53 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8700 decompiled=8692 elapsed_s=291  
+2026-11-05 15:44:54 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8800 decompiled=8792 elapsed_s=292  
+2026-11-05 15:44:56 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=8900 decompiled=8892 elapsed_s=293  
+2026-11-05 15:44:57 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9000 decompiled=8992 elapsed_s=294  
+2026-11-05 15:44:58 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9100 decompiled=9092 elapsed_s=295  
+2026-11-05 15:44:58 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9200 decompiled=9192 elapsed_s=296  
+2026-11-05 15:45:01 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9300 decompiled=9292 elapsed_s=298  
+2026-11-05 15:45:01 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9400 decompiled=9392 elapsed_s=299  
+2026-11-05 15:45:03 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9500 decompiled=9492 elapsed_s=301  
+2026-11-05 15:45:04 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9600 decompiled=9592 elapsed_s=302  
+2026-11-05 15:45:05 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9700 decompiled=9692 elapsed_s=302  
+2026-11-05 15:45:07 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9800 decompiled=9792 elapsed_s=304  
+2026-11-05 15:45:07 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=9900 decompiled=9892 elapsed_s=305  
+2026-11-05 15:45:09 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10000 decompiled=9992 elapsed_s=307  
+2026-11-05 15:45:12 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10100 decompiled=10092 elapsed_s=310  
+2026-11-05 15:45:13 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10200 decompiled=10192 elapsed_s=310  
+2026-11-05 15:45:18 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10300 decompiled=10292 elapsed_s=315  
+2026-11-05 15:45:21 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10400 decompiled=10392 elapsed_s=319  
+2026-11-05 15:45:22 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10500 decompiled=10492 elapsed_s=320  
+2026-11-05 15:45:23 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10600 decompiled=10592 elapsed_s=320  
+2026-11-05 15:45:27 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10700 decompiled=10692 elapsed_s=324  
+2026-11-05 15:45:30 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10800 decompiled=10792 elapsed_s=327  
+2026-11-05 15:45:31 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=10900 decompiled=10892 elapsed_s=328  
+2026-11-05 15:45:34 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT functions=11000 decompiled=10992 elapsed_s=331  
+2026-11-05 15:45:35 WARN  (DecompileCallback) Decompiling a069cbd8, pcode error at a069cbe4: Unable to resolve constructor at a069cbe4  
+2026-11-05 15:45:46 INFO  (GhidraScript) Yi4kExport.java> YI4K_EXPORT_COMPLETE {
+  "program": "_part_lrtos.a9s",
+  "language": "ARM:LE:32:v7",
+  "image_base": "0x00000000",
+  "memory_blocks": [
+    {
+      "name": "ram",
+      "start": "0xa0100000",
+      "end": "0xa0824f67",
+      "bytes": 7491432,
+      "initialized": true
+    }
+  ],
+  "executable_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "discovered_functions": 11035,
+  "decompilations_completed": 11027,
+  "decompilations_failed": 8,
+  "function_body_union_bytes": 4043528,
+  "recognized_instruction_count": 1097354,
+  "elapsed_export_seconds": 343,
+  "limitations": [
+    "Automatic static analysis; not a proof of complete function discovery.",
+    "Raw binary contains code and data; inferred boundaries and types may be wrong.",
+    "No on-device execution or ABI validation performed.",
+    "Indirect calls may remain unresolved."
+  ]
+}  
+2026-11-05 15:45:46 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: /_part_lrtos.a9s  
+2026-11-05 15:45:46 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: /_part_lrtos.a9s  
+2026-11-05 15:45:46 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /_part_lrtos.a9s  

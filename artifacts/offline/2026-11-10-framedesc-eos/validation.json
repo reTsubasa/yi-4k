@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-10T14:11:55.696077+00:00",
+  "scope": "Host FrameDesc EOS classification and non-consuming notification only; no device access",
+  "tests": 13,
+  "test_returncode": 0,
+  "syntax_returncode": 0,
+  "command": [
+    "/Users/hyc/Documents/yi4k/.venv-reverse/bin/python",
+    "-m",
+    "unittest",
+    "scripts.tests.test_prerecord_frame_desc",
+    "-v"
+  ],
+  "test_log": "host-tests.log",
+  "syntax_log": "syntax.log",
+  "files": {
+    "scripts/prerecord_frame_desc.py": "f9da53b1f633403256735e2effe93202c7e34861e7887441e000f37c35dad1e9",
+    "scripts/tests/test_prerecord_frame_desc.py": "7912475fde421dc6d0a2cd729894517defc3bee790fc4b2bb736d915ebebcd5d",
+    "docs/prerecord-output-contract.md": "581886b0d4da9c4ee3b116ee17e72d63c87dac27b72e82c9ebfe0d96283f43c0",
+    "docs/prerecord-static-stream-contract.md": "07af8346379ffe3a31b8d322806a19091632606b91ff38c2fb144409237355b6",
+    "docs/prerecord-host-replay.md": "4c78da0bf0bac53b6fe623e9d8cab4ddfadce253a3fa397ac955d99b859e091b"
+  }
+}

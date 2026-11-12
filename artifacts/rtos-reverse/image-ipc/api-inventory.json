@@ -1,0 +1,502 @@
+{
+  "schema": "yi4k-static-api-inventory-v1",
+  "target": "YI 4K v1.10.52 _part_lrtos.a9s",
+  "sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "analysis_base": "0xA0100000",
+  "scope": "Image/DSP/IPC selected functions, not complete RTOS API",
+  "limitations": [
+    "Static analysis only; no camera execution or ABI validation.",
+    "Prototypes and names are investigation candidates, not SDK declarations.",
+    "Confidence describes static call/data-flow evidence, not production safety.",
+    "No address portability to other versions/models established."
+  ],
+  "apis": [
+    {
+      "address": "0xA022D820",
+      "name": "warp_shell_handler",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "handler(argc, argv, print_cb)",
+      "confidence_static": "high",
+      "notes": "t img -warp handler; debug-only argument and fixed-size assumptions",
+      "evidence": [
+        "../full/decompiled/a022d820.c",
+        "a022d820.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA031282C",
+      "name": "AmbaDSP_ImgGetWarpCompensation",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, out_info_0xc0)",
+      "confidence_static": "high",
+      "notes": "Name from own warning; mutex-protected 0xc0 byte copy",
+      "evidence": [
+        "../full/decompiled/a031282c.c",
+        "a03119a8.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03119A8",
+      "name": "AmbaDSP_ImgCalcWarpCompensation",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, inout_info_0xc0)",
+      "confidence_static": "high",
+      "notes": "Name from own logs; geometry validation and calculator call; warning bit 0x10000000",
+      "evidence": [
+        "../full/decompiled/a03119a8.c",
+        "a03119a8.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0312460",
+      "name": "AmbaDSP_ImgSetWarpCompensation",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx)",
+      "confidence_static": "high",
+      "notes": "Name from own logs; copies two 0x1800 tables; cleans D-cache; frame-dependent DSP submit",
+      "evidence": [
+        "../full/decompiled/a0312460.c",
+        "a03119a8.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA032CF38",
+      "name": "warp_internal_calculator",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, intermediate, result)",
+      "confidence_static": "medium",
+      "notes": "Called by Calc; full internal structures unresolved",
+      "evidence": [
+        "../full/decompiled/a032cf38.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA02BD9F0",
+      "name": "warp_dsp_submit_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(frame_id, zero, config)",
+      "confidence_static": "medium",
+      "notes": "Called by Set when frame_id low nibble != 0xf; DSP command layout unresolved",
+      "evidence": [
+        "../full/decompiled/a02bd9f0.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA02BC3F8",
+      "name": "warp_secondary_submit_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(frame_id, config)",
+      "confidence_static": "medium",
+      "notes": "Conditional secondary Set call",
+      "evidence": [
+        "../full/decompiled/a02bc3f8.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0308880",
+      "name": "image_context_mutex_lookup",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(pipe_ctx_pair, out_mutex)",
+      "confidence_static": "medium",
+      "notes": "Repeated common pattern in warp and MCTF getters/setters",
+      "evidence": [
+        "../full/decompiled/a0308880.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0308754",
+      "name": "image_context_lookup",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(pipe_ctx_pair, out_context)",
+      "confidence_static": "medium",
+      "notes": "Common context resolution; full layout unknown",
+      "evidence": [
+        "../full/decompiled/a0308754.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0227DFC",
+      "name": "AppLibTune_Mctf",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "handler(argc, argv, print_cb)",
+      "confidence_static": "high",
+      "notes": "Name from own string; info, enable, blob load/save",
+      "evidence": [
+        "../full/decompiled/a0227dfc.c",
+        "a0227dfc.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030E810",
+      "name": "AmbaDSP_ImgGetVideoMctfInfo",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, out_info_0x3c)",
+      "confidence_static": "high",
+      "notes": "Name from own error; video 0x3c copy; still path not safe to assume supported",
+      "evidence": [
+        "../full/decompiled/a030e810.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030DF5C",
+      "name": "DSP_ImgGetVideoMctfAddr",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, void **out)",
+      "confidence_static": "high",
+      "notes": "Name from own error; video only; dereferences context+0x40c50 pointer field",
+      "evidence": [
+        "../full/decompiled/a030df5c.c",
+        "a030df5c.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030E2F8",
+      "name": "mctf_info_set_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, info)",
+      "confidence_static": "medium",
+      "notes": "Called from MCTF handler; complete public structure not recovered",
+      "evidence": [
+        "../full/decompiled/a030e2f8.c",
+        "a030df5c.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030F1E4",
+      "name": "AmbaDSP_ImgSetVideoMctfEnable",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, uint8_enable)",
+      "confidence_static": "high",
+      "notes": "Name from own error; >1 warning flag and checker a032984c",
+      "evidence": [
+        "../full/decompiled/a030f1e4.c",
+        "a030f030.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030F3DC",
+      "name": "mctf_compression_enable_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, uint8_enable)",
+      "confidence_static": "medium",
+      "notes": "Handler cmpr_en call",
+      "evidence": [
+        "../full/decompiled/a030f3dc.c",
+        "a030f030.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030F820",
+      "name": "mctf_zmv_enable_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, uint8_enable)",
+      "confidence_static": "medium",
+      "notes": "Handler zmv_en call",
+      "evidence": [
+        "../full/decompiled/a030f820.c",
+        "a030f030.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030F030",
+      "name": "mctf_ghost_set_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, packed_y_cb_cr)",
+      "confidence_static": "medium",
+      "notes": "Handler packs three uint8; checker and DSP update; complete structure unresolved",
+      "evidence": [
+        "../full/decompiled/a030f030.c",
+        "a030f030.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA030F9F4",
+      "name": "mctf_zmv_get_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(ctx, out)",
+      "confidence_static": "medium",
+      "notes": "Handler info path",
+      "evidence": [
+        "../full/decompiled/a030f9f4.c",
+        "a030f030.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA022B96C",
+      "name": "idsp_shell_handler",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "handler(argc, argv, print_cb)",
+      "confidence_static": "high",
+      "notes": "dump/debug/dbgthd/cache clean/flush commands",
+      "evidence": [
+        "../full/decompiled/a022b96c.c",
+        "a022b96c.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA02CB808",
+      "name": "capture_state_get_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(out_capture_info)",
+      "confidence_static": "medium",
+      "notes": "IDSP dump checks first word 0x330",
+      "evidence": [
+        "../full/decompiled/a02cb808.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA02C629C",
+      "name": "idsp_debug_set_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(module_u8, mask_u32, zero)",
+      "confidence_static": "medium",
+      "notes": "Handler debug dispatch",
+      "evidence": [
+        "../full/decompiled/a02c629c.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA02C6314",
+      "name": "idsp_debug_thread_set_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(mask_u8)",
+      "confidence_static": "medium",
+      "notes": "Handler dbgthd dispatch",
+      "evidence": [
+        "../full/decompiled/a02c6314.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0498728",
+      "name": "dcache_clean_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(addr, bytes)",
+      "confidence_static": "medium",
+      "notes": "IDSP clean and MCTF blob-update call sites",
+      "evidence": [
+        "../full/decompiled/a0498728.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA04987F0",
+      "name": "dcache_flush_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(addr, bytes)",
+      "confidence_static": "medium",
+      "notes": "IDSP flush call site",
+      "evidence": [
+        "../full/decompiled/a04987f0.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA04A22CC",
+      "name": "dcache_clean_lowlevel_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(addr, bytes)",
+      "confidence_static": "medium",
+      "notes": "Warp Set calls for each 0x1800 table",
+      "evidence": [
+        "../full/decompiled/a04a22cc.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA0245CF4",
+      "name": "ipc_rpc_shell_handler",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "handler(argc, argv, print_cb)",
+      "confidence_static": "high",
+      "notes": "list, service, client and profile branches",
+      "evidence": [
+        "../full/decompiled/a0245cf4.c",
+        "a0245cf4.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03C4E94",
+      "name": "rpc_client_create_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "client*(host, program, version)",
+      "confidence_static": "high",
+      "notes": "Object initialization and bind; bind failure may return nonnull client",
+      "evidence": [
+        "../full/decompiled/a03c4e94.c",
+        "a03c4e94.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03C4F40",
+      "name": "rpc_call_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(client, proc, in, inlen, out, outcap, timeout)",
+      "confidence_static": "high",
+      "notes": "Copy/send/event-wait/reply-copy chain; no obvious request size or proc-range check",
+      "evidence": [
+        "../full/decompiled/a03c4f40.c",
+        "a03c4e94.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03C4C1C",
+      "name": "rpc_client_destroy_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(client)",
+      "confidence_static": "medium",
+      "notes": "Client cleanup call in handler",
+      "evidence": [
+        "../full/decompiled/a03c4c1c.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03C9188",
+      "name": "linux_exec_sync_rpc_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status_candidate(cmd, out_0x800, client)",
+      "confidence_static": "high",
+      "notes": "proc1, strlen+2, timeout5000; Ghidra void return untrusted; status is not proven process exit code",
+      "evidence": [
+        "../full/decompiled/a03c9188.c",
+        "a03c9188.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03C91D0",
+      "name": "linux_exec_oneway_rpc_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status_candidate(cmd, unused_out, client)",
+      "confidence_static": "high",
+      "notes": "proc2, strlen+2, no output, timeout0",
+      "evidence": [
+        "../full/decompiled/a03c91d0.c",
+        "a03c9188.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CAAB4",
+      "name": "rpc_service_register_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(unrecovered_arguments)",
+      "confidence_static": "medium",
+      "notes": "Test service program0x10000001/ver1, two procedures, priority0x41, stack0x1000",
+      "evidence": [
+        "../full/decompiled/a03caab4.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CAC1C",
+      "name": "rpc_service_unregister_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status(program, version)",
+      "confidence_static": "medium",
+      "notes": "Test service remove path",
+      "evidence": [
+        "../full/decompiled/a03cac1c.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CAA4C",
+      "name": "rpc_service_list_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(print_cb)",
+      "confidence_static": "medium",
+      "notes": "rpc list branch",
+      "evidence": [
+        "../full/decompiled/a03caa4c.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CD2D8",
+      "name": "rpc_allocator_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "void*(bytes)",
+      "confidence_static": "medium",
+      "notes": "Client and command allocations",
+      "evidence": [
+        "../full/decompiled/a03cd2d8.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CD264",
+      "name": "rpc_free_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown(ptr)",
+      "confidence_static": "medium",
+      "notes": "RPC allocation cleanup candidate",
+      "evidence": [
+        "../full/decompiled/a03cd264.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CD3F0",
+      "name": "ambalink_shell_handler",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "handler(argc, argv, print_cb)",
+      "confidence_static": "high",
+      "notes": "argc2; load and boot lifecycle, not generic messaging",
+      "evidence": [
+        "../full/decompiled/a03cd3f0.c",
+        "a03cd3f0.asm"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CD3B4",
+      "name": "linux_load_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "unknown()",
+      "confidence_static": "medium",
+      "notes": "ambalink load dispatch",
+      "evidence": [
+        "../full/decompiled/a03cd3b4.c"
+      ],
+      "runtime_validated": false
+    },
+    {
+      "address": "0xA03CF31C",
+      "name": "linux_boot_candidate",
+      "name_origin": "analyst candidate unless identified by own debug/error string in notes",
+      "prototype_candidate": "status_candidate(timeout)",
+      "confidence_static": "medium",
+      "notes": "ambalink boot passes5000",
+      "evidence": [
+        "../full/decompiled/a03cf31c.c"
+      ],
+      "runtime_validated": false
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "utc": "2026-11-09T05:00:58.639715+00:00",
+  "events": [
+    {
+      "host_monotonic": 1035154.593938625,
+      "utc": "2026-11-09T05:00:57.732484+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1035155.449031125,
+      "utc": "2026-11-09T05:00:58.587591+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1035155.4492425,
+      "utc": "2026-11-09T05:00:58.587782+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1035155.458289166,
+      "utc": "2026-11-09T05:00:58.596833+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "msg_id": 1,
+      "reply": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1035155.458338791,
+      "utc": "2026-11-09T05:00:58.596878+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1035155.473836458,
+      "utc": "2026-11-09T05:00:58.612381+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "msg_id": 3,
+      "reply": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": [
+          {
+            "camera_clock": "2014-01-01 04:34:46"
+          },
+          {
+            "video_standard": "NTSC"
+          },
+          {
+            "app_status": "idle"
+          },
+          {
+            "video_resolution": "1920x1080 30P 16:9"
+          },
+          {
+            "video_stamp": "date/time"
+          },
+          {
+            "video_quality": "S.Fine"
+          },
+          {
+            "timelapse_video": "2"
+          },
+          {
+            "capture_mode": "precise quality"
+          },
+          {
+            "photo_size": "12MP (4000x3000 4:3) fov:w"
+          },
+          {
+            "photo_stamp": "off"
+          },
+          {
+            "photo_quality": "S.Fine"
+          },
+          {
+            "precise_cont_time": "0.5 sec"
+          },
+          {
+            "precise_cont_poweroff": "off"
+          },
+          {
+            "precise_cont_poweroff_settable": "off"
+          },
+          {
+            "buzzer_volume": "low"
+          },
+          {
+            "buzzer_ring": "off"
+          },
+          {
+            "burst_capture_number": "3 p / s"
+          },
+          {
+            "restore_factory_settings": "on"
+          },
+          {
+            "restore_wifi": "on"
+          },
+          {
+            "restore_bt": "on"
+          },
+          {
+            "wifi_ssid": "YDXJ_0143183_5G"
+          },
+          {
+            "wifi_password": "<redacted>"
+          },
+          {
+            "sta_ssid": ""
+          },
+          {
+            "sta_password": "<redacted>"
+          },
+          {
+            "sta_connect_password": "<redacted>"
+          },
+          {
+            "sta_ip": ""
+          },
+          {
+            "wifi_mode": "ap"
+          },
+          {
+            "led_mode": "all disable"
+          },
+          {
+            "meter_mode": "average"
+          },
+          {
+            "sd_card_status": "insert"
+          },
+          {
+            "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746"
+          },
+          {
+            "hw_version": "YDXJ2_V13LW"
+          },
+          {
+            "dual_stream_status": "on"
+          },
+          {
+            "streaming_status": "off"
+          },
+          {
+            "precise_cont_capturing": "off"
+          },
+          {
+            "piv_enable": "off"
+          },
+          {
+            "auto_low_light": "on"
+          },
+          {
+            "warp_enable": "on"
+          },
+          {
+            "support_auto_low_light": "off"
+          },
+          {
+            "precise_selftime": "5s"
+          },
+          {
+            "precise_self_running": "off"
+          },
+          {
+            "auto_power_off": "off"
+          },
+          {
+            "serial_number": "Z16V13LW735LCN0143183"
+          },
+          {
+            "system_mode": "record"
+          },
+          {
+            "system_default_mode": "last used mode"
+          },
+          {
+            "precise_self_remain_time": "0"
+          },
+          {
+            "sdcard_need_format": "no-need"
+          },
+          {
+            "video_rotate": "auto"
+          },
+          {
+            "rec_mode": "record"
+          },
+          {
+            "record_photo_time": "5"
+          },
+          {
+            "dev_functions": "8967"
+          },
+          {
+            "timelapse_video_duration": "120s"
+          },
+          {
+            "timelapse_video_resolution": "3840x2160 30P 16:9"
+          },
+          {
+            "video_photo_resolution": "1920x1080 60P 16:9"
+          },
+          {
+            "slow_motion_rate": "4"
+          },
+          {
+            "slow_motion_res": "1280x720x4"
+          },
+          {
+            "loop_rec_duration": "5 minutes"
+          },
+          {
+            "iq_eis_enable": "on"
+          },
+          {
+            "iq_photo_iso_min": "100"
+          },
+          {
+            "iq_photo_iso": "auto"
+          },
+          {
+            "iq_video_iso": "auto"
+          },
+          {
+            "iq_photo_shutter": "auto"
+          },
+          {
+            "iq_photo_ev": "0"
+          },
+          {
+            "iq_video_ev": "0"
+          },
+          {
+            "iq_photo_wb": "auto"
+          },
+          {
+            "iq_video_wb": "auto"
+          },
+          {
+            "protune": "off"
+          },
+          {
+            "screen_auto_lock": "60s"
+          },
+          {
+            "dewarp_support_status": "on"
+          },
+          {
+            "eis_support_status": "on"
+          },
+          {
+            "mic_level": "low"
+          },
+          {
+            "photo_flat_color": "yi"
+          },
+          {
+            "video_flat_color": "yi"
+          },
+          {
+            "long_shutter_define": "power_off"
+          },
+          {
+            "product_name": "YI 4K Action Camera"
+          },
+          {
+            "stamp_enable": "on"
+          },
+          {
+            "ev_enable": "on"
+          },
+          {
+            "fov": "medium"
+          },
+          {
+            "wifi_country": "CN"
+          },
+          {
+            "wifi_country_editable": "on"
+          },
+          {
+            "rec_audio_support": "on"
+          },
+          {
+            "photo_sharpness": "medium"
+          },
+          {
+            "video_sharpness": "high"
+          },
+          {
+            "support_flat_color": "on"
+          },
+          {
+            "support_sharpness": "on"
+          },
+          {
+            "timelapse_photo_shutter": "auto"
+          },
+          {
+            "support_fov": "on"
+          },
+          {
+            "support_iso": "on"
+          },
+          {
+            "support_wb": "on"
+          },
+          {
+            "quick_view": "Off"
+          },
+          {
+            "video_file_max_size": "max"
+          },
+          {
+            "language": "CN"
+          },
+          {
+            "photo_file_type": "jpg"
+          },
+          {
+            "photo_file_type_settable": "off"
+          },
+          {
+            "sound_effect": "wind"
+          },
+          {
+            "sound_effect_support": "on"
+          }
+        ]
+      }
+    },
+    {
+      "host_monotonic": 1035155.473930041,
+      "utc": "2026-11-09T05:00:58.612470+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 13
+      }
+    },
+    {
+      "host_monotonic": 1035155.49584325,
+      "utc": "2026-11-09T05:00:58.634388+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 13,
+        "type": "battery",
+        "param": 100
+      }
+    },
+    {
+      "msg_id": 13,
+      "reply": {
+        "rval": 0,
+        "msg_id": 13,
+        "type": "battery",
+        "param": 100
+      }
+    },
+    {
+      "host_monotonic": 1035155.495891208,
+      "utc": "2026-11-09T05:00:58.634430+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1035155.501090458,
+      "utc": "2026-11-09T05:00:58.639634+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ]
+}

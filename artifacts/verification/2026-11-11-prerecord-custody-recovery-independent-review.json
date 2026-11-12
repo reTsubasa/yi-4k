@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "device_access": false,
+  "cases": [
+    {
+      "audit": "artifacts/verification/2026-11-11-prerecord-custody-recovery-final-run03/audit.json",
+      "audit_sha256": "cb8b86eaca5c8b982a1783c5b771f48b56da5e8297a93238fc7ca9a79b5426c7",
+      "output_sha256": "76fd3a2c1bf9a3f561aab81ac5418557b4fa93241661911c6f3b5c09c76adf7a",
+      "publication_expected": true
+    },
+    {
+      "audit": "artifacts/verification/2026-11-11-prerecord-custody-recovery-final-omit-run02/audit.json",
+      "audit_sha256": "09ac41f9b9f7c3968240108dcb75f91a886c1a0885831b5e1c115b777656f73c",
+      "output_sha256": "5c063b431a308b783d2dd9725bb397cf3df67c5d0d43440db42b40435e44b5d9",
+      "publication_expected": false
+    },
+    {
+      "audit": "artifacts/verification/2026-11-11-prerecord-custody-recovery-final-corrupt-run02/audit.json",
+      "audit_sha256": "b415893688a9da187b01b8f592bb15dc5611ce557340c813753f86262b7736b5",
+      "output_sha256": "81c3ac29963ecdef867b4e2b3e6757f6ddedd2c90b4fa46827e638aa9f019250",
+      "publication_expected": false
+    }
+  ],
+  "verifier_sha256": "36928eeed9ba4ff36129bf2799fa7ce194e688117d5e6cc0312a411750779abe",
+  "recovery_script_sha256": "26907e786322711c9fe271985eaf4f85fcef38c00f4ba633463e9decb901bf5f",
+  "scope": "Independent re-read of 42 packet payload/times, frame/PCM decode, and negative publication controls"
+}

@@ -1,0 +1,266 @@
+{
+  "evidence_kind": "offline component inventory and ARM loader verification; ORC strings are localization only",
+  "rtos_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "public_dsp": {
+    "path": "artifacts/firmware/v1.10.52/_part_dsp.a9s",
+    "sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+    "bytes": 4038656,
+    "crc32": "0x1435adc7"
+  },
+  "device_identity_boundary": {
+    "vendor_data_sha256": "69c4fcd4c096e0b02b0c0303483c11a364cafc0c46fe5aefaf73983fff7f3844",
+    "device_dsp_prefix_sha256": "60585bc5f546386b6653f43ed6e52ce7dbc1625e85cd9d40ff5140c8496fe33a",
+    "captured_bytes": 65536,
+    "prefix_byte_equal": true,
+    "ptb_actual_size_equal": true,
+    "ptb_crc32_equal": true,
+    "full_device_dsp_sha256_available": true,
+    "full_device_capture": {
+      "directory": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-10-dsp-full-readonly",
+      "bytes": 4038656,
+      "sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+      "reference_byte_equal": true,
+      "remote_sha256_equal": true,
+      "running_dsp_identity_proven": false
+    },
+    "classification": "exact stored DSP image; running image not observed"
+  },
+  "loader_instruction_checks": [
+    {
+      "address": "0xa029a828",
+      "bytes": "201c0de3",
+      "instruction": "movw r1, #0xdc20"
+    },
+    {
+      "address": "0xa029a830",
+      "bytes": "5a104ae3",
+      "instruction": "movt r1, #0xa05a"
+    },
+    {
+      "address": "0xa029a834",
+      "bytes": "a020a0e3",
+      "instruction": "mov r2, #0xa0"
+    },
+    {
+      "address": "0xa029a83c",
+      "bytes": "8f0700eb",
+      "instruction": "bl #0xa029c680"
+    },
+    {
+      "address": "0xa029a878",
+      "bytes": "f7b000eb",
+      "instruction": "bl #0xa02c6c5c"
+    },
+    {
+      "address": "0xa029a898",
+      "bytes": "64008de5",
+      "instruction": "str r0, [sp, #0x64]"
+    },
+    {
+      "address": "0xa029a89c",
+      "bytes": "8c108de5",
+      "instruction": "str r1, [sp, #0x8c]"
+    },
+    {
+      "address": "0xa029a8a0",
+      "bytes": "b4208de5",
+      "instruction": "str r2, [sp, #0xb4]"
+    },
+    {
+      "address": "0xa029a8a4",
+      "bytes": "dc308de5",
+      "instruction": "str r3, [sp, #0xdc]"
+    },
+    {
+      "address": "0xa029a8b4",
+      "bytes": "41a407eb",
+      "instruction": "bl #0xa04839c0"
+    },
+    {
+      "address": "0xa029a8d0",
+      "bytes": "24c094e5",
+      "instruction": "ldr ip, [r4, #0x24]"
+    },
+    {
+      "address": "0xa029a8e0",
+      "bytes": "4aa407eb",
+      "instruction": "bl #0xa0483a10"
+    },
+    {
+      "address": "0xa029a8f8",
+      "bytes": "284084e2",
+      "instruction": "add r4, r4, #0x28"
+    },
+    {
+      "address": "0xa02c6c70",
+      "bytes": "b0514ae3",
+      "instruction": "movt r5, #0xa1b0"
+    },
+    {
+      "address": "0xa02c6c74",
+      "bytes": "f8414ae3",
+      "instruction": "movt r4, #0xa1f8"
+    },
+    {
+      "address": "0xa02c6c78",
+      "bytes": "00e24ae3",
+      "instruction": "movt lr, #0xa200"
+    },
+    {
+      "address": "0xa02c6c7c",
+      "bytes": "08c24ae3",
+      "instruction": "movt ip, #0xa208"
+    },
+    {
+      "address": "0xa02c6c80",
+      "bytes": "005080e5",
+      "instruction": "str r5, [r0]"
+    },
+    {
+      "address": "0xa02c6c84",
+      "bytes": "004081e5",
+      "instruction": "str r4, [r1]"
+    },
+    {
+      "address": "0xa02c6c88",
+      "bytes": "00e082e5",
+      "instruction": "str lr, [r2]"
+    },
+    {
+      "address": "0xa02c6c8c",
+      "bytes": "00c083e5",
+      "instruction": "str ip, [r3]"
+    }
+  ],
+  "instruction_check_count": 21,
+  "members": [
+    {
+      "name": "orccode.bin",
+      "directory_offset": "0x8",
+      "offset": "0xa000",
+      "bytes": 3036411,
+      "crc32": "0x206bf8f5",
+      "sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6",
+      "rtos_cpu_load_address": "0xa1b00000",
+      "architecture": "opaque Ambarella ORC payload; not decoded as ARM"
+    },
+    {
+      "name": "orcme.bin",
+      "directory_offset": "0x54",
+      "offset": "0x2ef800",
+      "bytes": 473660,
+      "crc32": "0xe762bba4",
+      "sha256": "2fcef2875413c8da1ec66e5a94118262454c14ee09525c8f767234634332d381",
+      "rtos_cpu_load_address": "0xa1f80000",
+      "architecture": "opaque Ambarella ORC payload; not decoded as ARM"
+    },
+    {
+      "name": "orcmdxf.bin",
+      "directory_offset": "0xa0",
+      "offset": "0x363800",
+      "bytes": 150760,
+      "crc32": "0x610e8918",
+      "sha256": "bc4fe432b6b4079341dda3b0cd8cc40db49c234d4efd89afc4c160e2e107ecda",
+      "rtos_cpu_load_address": "0xa2000000",
+      "architecture": "opaque Ambarella ORC payload; not decoded as ARM"
+    },
+    {
+      "name": "default_binary.bin",
+      "directory_offset": "0xec",
+      "offset": "0x388800",
+      "bytes": 332480,
+      "crc32": "0xa4df8625",
+      "sha256": "70907dada4feb32d30bb24407ff2bac57949ad445fc42553afdf26c6ac702286",
+      "rtos_cpu_load_address": "0xa2080000",
+      "architecture": "default binary data; no code architecture asserted"
+    }
+  ],
+  "directory_negative_checks": [
+    {
+      "case": "payload CRC",
+      "rejected": true
+    },
+    {
+      "case": "member size bounds",
+      "rejected": true
+    },
+    {
+      "case": "member overlap",
+      "rejected": true
+    }
+  ],
+  "selected_orccode_strings": [
+    {
+      "member_offset": "0x22e4ba",
+      "partition_offset": "0x2384ba",
+      "text": "pp_setup - VCAP_SETUP_PTS_DELTA_M(ccb) %d VCAP_SETUP_IDSP_CMD_DLY_M(setup_params) %d  VCAP_SETUP_PIP_FRAME_DEC_RATE_M(ccb) %d setup_params->eis_update_addr 0x%x setup_params->main_w_extra %d "
+    },
+    {
+      "member_offset": "0x260b98",
+      "partition_offset": "0x26ab98",
+      "text": " gyro delay sleep %d "
+    },
+    {
+      "member_offset": "0x260c57",
+      "partition_offset": "0x26ac57",
+      "text": " mpVideoProcOnePicSec2ToDram : raw cap fid 0x%x  cap info hw pts %d  diff_pts %d icb->gyro_delay %d "
+    },
+    {
+      "member_offset": "0x288191",
+      "partition_offset": "0x292191",
+      "text": "EIS_DEBUG: cmd_code (0x%x) check fail"
+    },
+    {
+      "member_offset": "0x288257",
+      "partition_offset": "0x292257",
+      "text": "EIS_DEBUG: h_warp_cmd_active(%d) is not set"
+    },
+    {
+      "member_offset": "0x28ccce",
+      "partition_offset": "0x296cce",
+      "text": "VCAP: >>>> vcap_update_warp_ctrl_command() "
+    },
+    {
+      "member_offset": "0x28ccfb",
+      "partition_offset": "0x296cfb",
+      "text": "VCAP: <<<< vcap_update_warp_ctrl_command() "
+    }
+  ],
+  "reviewed_sources": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029a824.c",
+      "sha256": "14e36ecf5616875ca20939772715975854b3e68d89222eb6494d1def9049a6b4"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c6c5c.c",
+      "sha256": "2958d65a271b2aadfbba5fcb63772ad422c93eb051a775104e464f0e7dcd2a3a"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04839c0.c",
+      "sha256": "bd8c9ba9ebdb0c2e73afe824570dcc6f0b7239e217c0f0aa0dcad6d32d99e537"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0483a10.c",
+      "sha256": "2a10c11e3abd5ef58f25b14deb5603ae89b2d16d92fe128b389e01afafdbdf8e"
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c61d4.c",
+      "sha256": "5d4f3b7f4fff8b628302d6f68a4a5bd5a89a47a1862209e5a0c036d4b8bef7de"
+    }
+  ],
+  "readback_helper_boundary": "The subsequent CPU completion-state audit recovered direct read/reset callers A03877A0 and A0387CAC in the focused export of A0385780. Full/decompiled omission was a decompiler timeout, not absence of callers. DSP non-sentinel write/latch/release remain unproven.",
+  "readback_helper_followup": "docs/eis-completion-state-boundary.md",
+  "next_evidence": [
+    "Use a correctly identified ORC ISA/provider to recover references to the eis_update_addr and EIS_DEBUG strings; do not run ARM disassembly on them",
+    "Recover the per-frame shared-word/state-slot/warp-descriptor load order and writes to shared tail fields",
+    "Observe stock-only lock/latch/ack and old-slot release before any custom warp submission"
+  ],
+  "not_proven": [
+    "DSP instruction semantics, code base mapping or a consumer call graph",
+    "Shared tail fields are acknowledgement counters",
+    "Read/latch ordering, cache ownership or safe two-slot reuse",
+    "Any custom algorithm execution or image-quality effect"
+  ],
+  "device_access": false,
+  "new_REA_evidence": false
+}

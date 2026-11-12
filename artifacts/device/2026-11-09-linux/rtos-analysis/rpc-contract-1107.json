@@ -1,0 +1,327 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "analysis": "offline annotated static reconstruction",
+  "device_contacted": false,
+  "services": [
+    {
+      "name": "test",
+      "program": "0x10000001",
+      "version": 1,
+      "constructor": "0xa0245cf4",
+      "registration_call": "0xa024621c",
+      "constructor_sha256": "2a258ce98993fef4baf80e9047a42f7fbd21f18dcfe8163c83c6a39620e0611c",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0245620",
+          "mode_raw": 1,
+          "store_site": "0xa02461f8",
+          "table_offset": 0
+        },
+        {
+          "procedure": 2,
+          "handler": "0xa024566c",
+          "mode_raw": 0,
+          "store_site": "0xa0246208",
+          "table_offset": 8
+        }
+      ]
+    },
+    {
+      "name": "sharepreview",
+      "program": "0x1000000c",
+      "version": 1,
+      "constructor": "0xa0247e54",
+      "registration_call": "0xa0248018",
+      "constructor_sha256": "11d83039c22a20dfa87a6c7f3edd9bd36896eec4eb079237a2abb533573b0f46",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0247a20",
+          "mode_raw": 0,
+          "store_site": "0xa0247f5c",
+          "table_offset": 0
+        },
+        {
+          "procedure": 2,
+          "handler": "0xa024840c",
+          "mode_raw": 0,
+          "store_site": "0xa0247fa0",
+          "table_offset": 8
+        },
+        {
+          "procedure": 3,
+          "handler": "0xa02478f4",
+          "mode_raw": 0,
+          "store_site": "0xa0247ff0",
+          "table_offset": 16
+        }
+      ]
+    },
+    {
+      "name": "linux_command_handler",
+      "program": "0x1000000b",
+      "version": 1,
+      "constructor": "0xa0476380",
+      "registration_call": "0xa0476404",
+      "constructor_sha256": "ed0a09df79dd0b778302426b6ec78288f8f31044c723b7e874eb39040404d1dd",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0477a44",
+          "mode_raw": 0,
+          "store_site": "0xa04763ec",
+          "table_offset": 0
+        }
+      ]
+    },
+    {
+      "name": "net_control",
+      "program": "0x10000005",
+      "version": 1,
+      "constructor": "0xa0476bb4",
+      "registration_call": "0xa0476cb0",
+      "constructor_sha256": "acb96ffc325eccfb0325ae862b6f3c8604ce6355ee41252c4039c63f7defd054",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0477b48",
+          "mode_raw": 1,
+          "store_site": "0xa0476c88",
+          "table_offset": 0
+        },
+        {
+          "procedure": 2,
+          "handler": "0xa0477b9c",
+          "mode_raw": 1,
+          "store_site": "0xa0476c9c",
+          "table_offset": 8
+        }
+      ]
+    },
+    {
+      "name": "data_notify",
+      "program": "0x10000006",
+      "version": 1,
+      "constructor": "0xa04771d0",
+      "registration_call": "0xa04772c4",
+      "constructor_sha256": "9a9c4255d7da7af20bf759025b44cdf16ed5a439548d82691cc757573db1a89e",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0477780",
+          "mode_raw": 1,
+          "store_site": "0xa0477298",
+          "table_offset": 0
+        },
+        {
+          "procedure": 2,
+          "handler": "0xa0477950",
+          "mode_raw": 1,
+          "store_site": "0xa04772ac",
+          "table_offset": 8
+        }
+      ]
+    },
+    {
+      "name": "event_notifier",
+      "program": "0x10000009",
+      "version": 1,
+      "constructor": "0xa0478580",
+      "registration_call": "0xa0478620",
+      "constructor_sha256": "b1e220c954e0677da07d26053332a3c10b9f089cf3d867bb1fd3a989470bdd1f",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0478418",
+          "mode_raw": 1,
+          "store_site": "0xa0478604",
+          "table_offset": 0
+        }
+      ]
+    },
+    {
+      "name": "net_fifo",
+      "program": "0x10000004",
+      "version": 1,
+      "constructor": "0xa04793a0",
+      "registration_call": "0xa047955c",
+      "constructor_sha256": "654be58bcef55c27afb06b33a20372fc2cd56c26fd2d9c51a706f5e2e2279d1d",
+      "callbacks": [
+        {
+          "procedure": 1,
+          "handler": "0xa0478744",
+          "mode_raw": 0,
+          "store_site": "0xa047947c",
+          "table_offset": 0
+        },
+        {
+          "procedure": 2,
+          "handler": "0xa0478820",
+          "mode_raw": 0,
+          "store_site": "0xa04794a0",
+          "table_offset": 8
+        },
+        {
+          "procedure": 3,
+          "handler": "0xa0478cb0",
+          "mode_raw": 0,
+          "store_site": "0xa0479530",
+          "table_offset": 16
+        },
+        {
+          "procedure": 4,
+          "handler": "0xa0478cf4",
+          "mode_raw": 0,
+          "store_site": "0xa04794a8",
+          "table_offset": 24
+        },
+        {
+          "procedure": 5,
+          "handler": "0xa0478d38",
+          "mode_raw": 0,
+          "store_site": "0xa0479498",
+          "table_offset": 32
+        },
+        {
+          "procedure": 6,
+          "handler": "0xa0478dc0",
+          "mode_raw": 0,
+          "store_site": "0xa04794b0",
+          "table_offset": 40
+        },
+        {
+          "procedure": 7,
+          "handler": "0xa0478e70",
+          "mode_raw": 0,
+          "store_site": "0xa04794b8",
+          "table_offset": 48
+        },
+        {
+          "procedure": 8,
+          "handler": "0xa0478f20",
+          "mode_raw": 0,
+          "store_site": "0xa04794c0",
+          "table_offset": 56
+        },
+        {
+          "procedure": 9,
+          "handler": "0xa0478f64",
+          "mode_raw": 0,
+          "store_site": "0xa0479534",
+          "table_offset": 64
+        },
+        {
+          "procedure": 10,
+          "handler": "0xa0479004",
+          "mode_raw": 0,
+          "store_site": "0xa04794dc",
+          "table_offset": 72
+        },
+        {
+          "procedure": 11,
+          "handler": "0xa04786ac",
+          "mode_raw": 0,
+          "store_site": "0xa04794e0",
+          "table_offset": 80
+        },
+        {
+          "procedure": 12,
+          "handler": "0xa0478938",
+          "mode_raw": 0,
+          "store_site": "0xa04794e8",
+          "table_offset": 88
+        },
+        {
+          "procedure": 13,
+          "handler": "0xa0478b00",
+          "mode_raw": 0,
+          "store_site": "0xa0479538",
+          "table_offset": 96
+        },
+        {
+          "procedure": 14,
+          "handler": "0xa0478bac",
+          "mode_raw": 0,
+          "store_site": "0xa0479540",
+          "table_offset": 104
+        },
+        {
+          "procedure": 15,
+          "handler": "0xa0478c20",
+          "mode_raw": 0,
+          "store_site": "0xa047953c",
+          "table_offset": 112
+        }
+      ]
+    }
+  ],
+  "function_evidence": {
+    "0xa0245cf4": {
+      "sha256": "2a258ce98993fef4baf80e9047a42f7fbd21f18dcfe8163c83c6a39620e0611c",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a0245cf4.asm"
+    },
+    "0xa0247e54": {
+      "sha256": "11d83039c22a20dfa87a6c7f3edd9bd36896eec4eb079237a2abb533573b0f46",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a0247e54.asm"
+    },
+    "0xa03ca6e8": {
+      "sha256": "1ce990ad98e5802ac4eae58471f751989884e8016b7cb3278ebc1c2e3ffd1dfa",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03ca6e8.asm"
+    },
+    "0xa03ca870": {
+      "sha256": "59939dc7682d18622805848f6d11b64f7680f6e37f669b5284aa4a5c4090617a",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03ca870.asm"
+    },
+    "0xa03caab4": {
+      "sha256": "b97f99436b25fe6f09960bdf2ab221976463bcbdd8860d63da96de31144d69a8",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03caab4.asm"
+    },
+    "0xa03cac1c": {
+      "sha256": "79c4193e77ae1c0c5240eff254d90806b347c604c94b3b9c835f186b59186f30",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03cac1c.asm"
+    },
+    "0xa03cadcc": {
+      "sha256": "c7fdb72437c311a313021bb712d8c54f0d705dddf7308d78c89b0dad25e663b1",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03cadcc.asm"
+    },
+    "0xa03cae84": {
+      "sha256": "13bb1da844fc581066dee235244879a60cc5cbe111172d893549a22ba6770661",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a03cae84.asm"
+    },
+    "0xa0476380": {
+      "sha256": "ed0a09df79dd0b778302426b6ec78288f8f31044c723b7e874eb39040404d1dd",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a0476380.asm"
+    },
+    "0xa0476bb4": {
+      "sha256": "acb96ffc325eccfb0325ae862b6f3c8604ce6355ee41252c4039c63f7defd054",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a0476bb4.asm"
+    },
+    "0xa04771d0": {
+      "sha256": "9a9c4255d7da7af20bf759025b44cdf16ed5a439548d82691cc757573db1a89e",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a04771d0.asm"
+    },
+    "0xa0478580": {
+      "sha256": "b1e220c954e0677da07d26053332a3c10b9f089cf3d867bb1fd3a989470bdd1f",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a0478580.asm"
+    },
+    "0xa04793a0": {
+      "sha256": "654be58bcef55c27afb06b33a20372fc2cd56c26fd2d9c51a706f5e2e2279d1d",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a04793a0.asm"
+    },
+    "0xa04a283c": {
+      "sha256": "b5bd52810166320f50d4908e3a73f19b7b15017c2e37682d70bee5378e645841",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a04a283c.asm"
+    },
+    "0xa04b3b94": {
+      "sha256": "5e5eaadf92780db9e450769fe13b9571bde050dae6b7f8fd720b801daf8b43b5",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/rpc-contract-evidence/a04b3b94.asm"
+    }
+  },
+  "limitations": [
+    "Tables are manual reconstructions corroborated by constants and STR offsets.",
+    "Mode words require per-service interpretation; this is not a complete type system.",
+    "No firmware execution, current registration state, or general loader is established.",
+    "Constructor constant checks do not prove all control/data-flow relationships."
+  ]
+}

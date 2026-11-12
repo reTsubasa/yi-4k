@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "version_name": "0.4.0",
+  "version_code": 23,
+  "built_utc": "2026-11-11T06:31:15.056141+00:00",
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.4.0-debug.apk",
+    "sha256": "cf2f90f05b57bf93901a4745f77ceb5422e9ed833d5acdadee2e06bab3cc52d5",
+    "bytes": 11961657
+  },
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.0-tests.apk",
+    "sha256": "3dadd62e2e463440bfc4ecd97e5e499af1cc9544e2efa84b06677b8007a91c3d",
+    "bytes": 636548
+  },
+  "host_unit_tests": {
+    "total": 174,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suites": [
+      {
+        "suite": "dev.yi4k.control.CameraCaptureStateTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraConfigurationTest",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraLivePreviewTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraMediaCacheTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraMediaViewerTest",
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraOptionPresentationTest",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraOptionSheetTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraPreviewAddressTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraProtocolTest",
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraSettingsLabelsTest",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraStorageTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraThumbnailStoreTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CameraWifiConnectorTest",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CaptureAlbumFeedbackTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CaptureParametersTest",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CaptureTriggerAdapterTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CaptureTriggerRouterTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.CaptureUiTest",
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.LatestUiAcceptanceTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.LocalVideoFilesTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.NetworkLossUiTest",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.PendingOriginalExportsTest",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.PreviewSessionTest",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.PrototypeRenderTest",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.SettingsAndTransferTest",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.SettingsHierarchyTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.SimulatedCameraIntegrationTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.VideoEditPlanTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.VideoEditSessionTest",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "suite": "dev.yi4k.control.VideoEditorTest",
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 64,
+    "report": "android/app/build/reports/lint-results-debug.xml"
+  },
+  "instrumentation": {
+    "report": "artifacts/android/0.4.0-device-reports/ui-layout-run05/acceptance.json",
+    "tests": 2,
+    "passed": true,
+    "scope": "headless Android AVD only; no physical phone or camera access",
+    "emulator_stopped": true,
+    "avd_disposal": {
+      "requested": true,
+      "removed": true,
+      "allocated_bytes_before": 522432512
+    }
+  },
+  "implemented_scope": [
+    "unified bottom option sheet",
+    "in-page back navigation",
+    "shared palette and aligned resolution tags",
+    "disconnected capture landing after first guide visit",
+    "connection guide entry from preview affordance",
+    "stable capture dock and automatic feedback"
+  ],
+  "remaining": [
+    "physical phone visual/tactile acceptance",
+    "physical camera full workflow and long export",
+    "EIS native execution/replacement",
+    "camera-side one-minute prerecord and voice/shutter binding"
+  ]
+}

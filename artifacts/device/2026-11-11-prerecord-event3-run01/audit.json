@@ -1,0 +1,3242 @@
+{
+  "schema": 1,
+  "status": "offline_event3_executed",
+  "offline_only": true,
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "script_sha256": "207f2b9d081a926ee3307ae428f4c3d7fed6dd8171d532ce45a4d2d8e4734a2f",
+  "source_sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+  "frozen_harness_sha256": {
+    "audit_prerecord_real_gop.py": "a2b0835d771a1775bf8a60f8ee96c2d110fe7c16e899a855f793f7939ae7f12f",
+    "audit_prerecord_native_mp4.py": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99",
+    "audit_prerecord_movie_factory.py": "be794e9d19c10c873884d96f20825153f773be4883a181613ba2f7f294388f02"
+  },
+  "function_pins": [
+    {
+      "entry": "0xa01f3124",
+      "inclusive_ranges": [
+        "a01f3124-a01f3273"
+      ],
+      "arm_sha256": "f49523cade9d3cc8cac68cd0ffd701c162911385a6c65e27444b29a45244469a"
+    },
+    {
+      "entry": "0xa01f569c",
+      "inclusive_ranges": [
+        "a01f569c-a01f5fef"
+      ],
+      "arm_sha256": "cf1b838267eb811c9b48c0b343f2ece4b7fd1a47546142045840578cbd5c9e45"
+    },
+    {
+      "entry": "0xa01f68b8",
+      "inclusive_ranges": [
+        "a01f68b8-a01f69af"
+      ],
+      "arm_sha256": "8aafcc720707b40b136e784122bcf2f1273429976357dee54f27d76ece38e759"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "inclusive_ranges": [
+        "a03e3f00-a03e3fdb"
+      ],
+      "arm_sha256": "a8bfc3ff63b9a94dd3e8f5d7cba435ce23379de71cb6f3c3cda07bcebf6b7e1e"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "inclusive_ranges": [
+        "a03e40c8-a03e419f"
+      ],
+      "arm_sha256": "68fa604ac7945dfe3e99a4bbbcba65dcaa3f601ab9303726d768d6db78a9657c"
+    },
+    {
+      "entry": "0xa03e41a0",
+      "inclusive_ranges": [
+        "a03e41a0-a03e42bf"
+      ],
+      "arm_sha256": "b1baf96dde76a3f5ab45fd876769d1454e9a3bbed654540deb6418691ae16486"
+    },
+    {
+      "entry": "0xa03fe300",
+      "inclusive_ranges": [
+        "a03fe300-a03fe467"
+      ],
+      "arm_sha256": "16902c9c1e2e3ca06341b21b1126b08383ed3305b4548e3fe09655af84d3a561"
+    },
+    {
+      "entry": "0xa03fe468",
+      "inclusive_ranges": [
+        "a03fe468-a03fe64b"
+      ],
+      "arm_sha256": "4f4ef8b3521aaf10dc92aaa7dcb9249adcd8ea73f781982e0d451cfe7fd9af60"
+    },
+    {
+      "entry": "0xa04404d8",
+      "inclusive_ranges": [
+        "a0440394-a044042b",
+        "a04404d8-a044055b"
+      ],
+      "arm_sha256": "d4a23b0c6ef20b0d5dcd578ad58a2b1b8ba4f91e0b50c7287fc9f8ee52a285a6"
+    },
+    {
+      "entry": "0xa0441d60",
+      "inclusive_ranges": [
+        "a0441d60-a0441fdf"
+      ],
+      "arm_sha256": "b0fc71a98f8c45ffd1230e2927ad302afdbe2235bf766d24b5095153f76038ec"
+    },
+    {
+      "entry": "0xa0441fe0",
+      "inclusive_ranges": [
+        "a0441fe0-a0442673"
+      ],
+      "arm_sha256": "48fa7f996fcc6250e4373aef8e9bc78555ee45b8d31011153da4605661f9087e"
+    },
+    {
+      "entry": "0xa0442674",
+      "inclusive_ranges": [
+        "a0442674-a044287f"
+      ],
+      "arm_sha256": "2ee497c55a50e08369bdec093298651d3f6d7f1efe5ccfde1ce063a2b6999f27"
+    },
+    {
+      "entry": "0xa0443720",
+      "inclusive_ranges": [
+        "a0443720-a044374b",
+        "a0443760-a04438ff"
+      ],
+      "arm_sha256": "fea9bca146b05256d4113d465281e613fc1e23336b24f26a1837a307aca6cf13"
+    },
+    {
+      "entry": "0xa0451960",
+      "inclusive_ranges": [
+        "a0451960-a0451afb"
+      ],
+      "arm_sha256": "1319750e3ed5aa154c162cde27c03503089b393ce5af4ffad472cf58f06d3c07"
+    },
+    {
+      "entry": "0xa0451c94",
+      "inclusive_ranges": [
+        "a0451c94-a0452027"
+      ],
+      "arm_sha256": "6ed029881098509b1aa6775140561d9f13a336bf7df87d36a9f780d77f2b58a9"
+    }
+  ],
+  "scope": "Complete original OnMovieEvent/OnPipeLimit/event3 callback with original Close0/New/Copy/Rel/Reset/Open; explicit file/name/OS/notification models",
+  "synthetic_limit_ms": 200,
+  "boundary_source": {
+    "stream": 0,
+    "index": 8,
+    "pts": 8008,
+    "dts": 8008,
+    "duration": 1001,
+    "offset": 1439516,
+    "bytes": 205536,
+    "sha256": "f5707b342913c36a150b29679dd7466fa9dd039270a11d67cacbaffb4590fd8e",
+    "key": true
+  },
+  "first_submissions": [
+    {
+      "source": {
+        "stream": 0,
+        "index": 0,
+        "pts": 0,
+        "dts": 0,
+        "duration": 1001,
+        "offset": 48,
+        "bytes": 468192,
+        "sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 0,
+        "pts": 0,
+        "dts": 0,
+        "duration": 1024,
+        "offset": 468240,
+        "bytes": 341,
+        "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 1,
+        "pts": 1024,
+        "dts": 1024,
+        "duration": 1024,
+        "offset": 468581,
+        "bytes": 440,
+        "sha256": "5ee3f4771fa0fad6619953a5f409464766b526413c66cc83acee6797f75c01ee",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 1,
+        "pts": 1001,
+        "dts": 1001,
+        "duration": 1001,
+        "offset": 469021,
+        "bytes": 220800,
+        "sha256": "6dde5b8523f5884ac89ba1e77eecc26e627b9b37bdd11f8b2103dc3297f023d1",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 2,
+        "pts": 2048,
+        "dts": 2048,
+        "duration": 1024,
+        "offset": 689821,
+        "bytes": 427,
+        "sha256": "4ccbce49fa1cfa6a0a98a4abf7e3b77126999ef14fe09de51357d7f33f4f58db",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 3,
+        "pts": 3072,
+        "dts": 3072,
+        "duration": 1024,
+        "offset": 690248,
+        "bytes": 417,
+        "sha256": "e9809bace877fd8e7bb110914ab8c4aca0dedd94cf5d159bf2dfd71b1cd78793",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 2,
+        "pts": 2002,
+        "dts": 2002,
+        "duration": 1001,
+        "offset": 690665,
+        "bytes": 95008,
+        "sha256": "f99a24109a0f46f6b25588b2df1ea3be90d8e4cd3cb2d24054a67de4ad8173bc",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 4,
+        "pts": 4096,
+        "dts": 4096,
+        "duration": 1024,
+        "offset": 785673,
+        "bytes": 407,
+        "sha256": "99cebbea7a6a2481362abcffccb7549971a1d984dff6719adcacad002430f1ff",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 3,
+        "pts": 3003,
+        "dts": 3003,
+        "duration": 1001,
+        "offset": 786080,
+        "bytes": 126528,
+        "sha256": "8296d794665b9ff72665be56ebc3533289bf54e8986c985f95e3d0dabafb61f0",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 5,
+        "pts": 5120,
+        "dts": 5120,
+        "duration": 1024,
+        "offset": 912608,
+        "bytes": 417,
+        "sha256": "b67d0dc0db86d20d162def4c861c22abe9eb8f1bc8ebc03d112481454eaf251f",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 6,
+        "pts": 6144,
+        "dts": 6144,
+        "duration": 1024,
+        "offset": 913025,
+        "bytes": 386,
+        "sha256": "eb16f146af993ae1881927886395162e82b0781542706a7b8c7aa2c18cb8c5dd",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 4,
+        "pts": 4004,
+        "dts": 4004,
+        "duration": 1001,
+        "offset": 913411,
+        "bytes": 124448,
+        "sha256": "b88f7f276ff134aeb798be961037d67d3def4c8e915d86d9ad89cc347739ac70",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 7,
+        "pts": 7168,
+        "dts": 7168,
+        "duration": 1024,
+        "offset": 1037859,
+        "bytes": 395,
+        "sha256": "099f0ea52c944dd9716beb0c7e3f4ed54daaa940128e02f5e646bc420497aab3",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 5,
+        "pts": 5005,
+        "dts": 5005,
+        "duration": 1001,
+        "offset": 1038254,
+        "bytes": 137504,
+        "sha256": "40bc3cc0da0b1cbafd7fc193158e9360019e3966a441d152f34c9e68c3f6b7b3",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 8,
+        "pts": 8192,
+        "dts": 8192,
+        "duration": 1024,
+        "offset": 1175758,
+        "bytes": 364,
+        "sha256": "ec8c5a7968567ff262dd165b4249f25f0e92a7b21491b41486ac4e4806ec0ef9",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 9,
+        "pts": 9216,
+        "dts": 9216,
+        "duration": 1024,
+        "offset": 1176122,
+        "bytes": 363,
+        "sha256": "bc5b284528aa9289f07f8372ead9f0bbd7a72b96769d92bd508372d18053997b",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 6,
+        "pts": 6006,
+        "dts": 6006,
+        "duration": 1001,
+        "offset": 1176485,
+        "bytes": 129888,
+        "sha256": "c11fdc42aeabd7585f7f228148313bb2229b8a7949b82b433138e27a28872560",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 10,
+        "pts": 10240,
+        "dts": 10240,
+        "duration": 1024,
+        "offset": 1306373,
+        "bytes": 376,
+        "sha256": "07b0d3b6f54050f5473e418f5941b8596a890b55e1bb3016df6dc674ec1cb94f",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 0,
+        "index": 7,
+        "pts": 7007,
+        "dts": 7007,
+        "duration": 1001,
+        "offset": 1306749,
+        "bytes": 132064,
+        "sha256": "52e07783c088fdbb812c2a0c9c24ff42b5282ccdfe1c0f9ec08543c4d8c71eda",
+        "key": false
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 11,
+        "pts": 11264,
+        "dts": 11264,
+        "duration": 1024,
+        "offset": 1438813,
+        "bytes": 367,
+        "sha256": "69a91d436c905b0cb7b37b3c9af6b07051fa70692cd90f986cec0ba4609d6a35",
+        "key": true
+      },
+      "status": 0
+    },
+    {
+      "source": {
+        "stream": 1,
+        "index": 12,
+        "pts": 12288,
+        "dts": 12288,
+        "duration": 1024,
+        "offset": 1439180,
+        "bytes": 336,
+        "sha256": "20467b7528d9e45293c151b3659aa0302d2f65e8f5fffe4ef936d6a53908d78c",
+        "key": true
+      },
+      "status": 0
+    }
+  ],
+  "before": {
+    "cursor": 0,
+    "fifo": "000000000040001034120000010000000030001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800010001000008000000000000000000000000000000001000000000000008877000000000000000000000000000000000000000000000000000000000000ff000000000000000000000000000000",
+    "descriptor": "7b00000000000000481f00000000000001010000200000202223030000000000",
+    "dts": [
+      64064,
+      66560
+    ]
+  },
+  "limit_dts": [
+    18446744073709551615,
+    66560
+  ],
+  "after": {
+    "cursor": 0,
+    "fifo": "000000000040001034120000010000000030001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800010001000008000000000000000000000000000000001000000000000008877000000000000000000000000000000000000000000000000000000000000ff000000000000000000000000000000",
+    "descriptor": "7b00000000000000481f00000000000001010000200000202223030000000000",
+    "movie": "0x10000708",
+    "dts": [
+      0,
+      2496
+    ],
+    "pipe_state": 2,
+    "split_counter": 2,
+    "format_open": 1
+  },
+  "event_status": 0,
+  "original_calls": [
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        "0x11018100",
+        "0x1000d000",
+        "0x4",
+        "0x1"
+      ],
+      "lr": "0x10010000",
+      "phase": null
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        "0x13000000",
+        "0xa078a404",
+        "0x0",
+        "0x0"
+      ],
+      "lr": "0x10010000",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x1f48",
+        "0x0"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x1400",
+        "0x1"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x2800",
+        "0x2"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x3e90",
+        "0x1"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x3c00",
+        "0x3"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x5000",
+        "0x4"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x5dd8",
+        "0x2"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x6400",
+        "0x5"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x7d20",
+        "0x3"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x7800",
+        "0x6"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x8c00",
+        "0x7"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x9c68",
+        "0x4"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xa000",
+        "0x8"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xbbb0",
+        "0x5"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xb400",
+        "0x9"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xc800",
+        "0xa"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xdaf8",
+        "0x6"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xdc00",
+        "0xb"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xfa40",
+        "0x7"
+      ],
+      "lr": "0xa042d520",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xf000",
+        "0xc"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x10400",
+        "0xd"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "first_segment"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "boundary_limit"
+    },
+    {
+      "entry": "0xa0443720",
+      "args": [
+        "0x1101c000",
+        "0x13000000",
+        "0x3",
+        "0xffffffff"
+      ],
+      "lr": "0x10010000",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa0442674",
+      "args": [
+        "0x1101c000",
+        "0x13000000",
+        "0x1001ef3c",
+        "0x1"
+      ],
+      "lr": "0xa0443850",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa04404d8",
+      "args": [
+        "0x10000000",
+        "0x13000000",
+        "0x13000000",
+        "0x0"
+      ],
+      "lr": "0xa044274c",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa0441fe0",
+      "args": [
+        "0x1101c000",
+        "0x1001ef3c",
+        "0x10000120",
+        "0x0"
+      ],
+      "lr": "0xa0442760",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa0441d60",
+      "args": [
+        "0x1101c000",
+        "0xc8",
+        "0xffffffff",
+        "0xffffffff"
+      ],
+      "lr": "0xa044266c",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa01f569c",
+      "args": [
+        "0x1101c000",
+        "0x3",
+        "0x0",
+        "0xa01f569c"
+      ],
+      "lr": "0xa0442824",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa03fe300",
+      "args": [
+        "0x13000000",
+        "0x0",
+        "0x0",
+        "0xa03fe300"
+      ],
+      "lr": "0xa01f58b0",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa03e3f00",
+      "args": [
+        "0xa13c29f8",
+        "0x1001ee24",
+        "0xa13c29f8",
+        "0x1"
+      ],
+      "lr": "0xa01f5980",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa03e41a0",
+      "args": [
+        "0x10000708",
+        "0x10000000",
+        "0xffffff81",
+        "0x0"
+      ],
+      "lr": "0xa01f599c",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "args": [
+        "0x10000000",
+        "0x1",
+        "0xfffffff8",
+        "0x0"
+      ],
+      "lr": "0xa01f59b0",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa01f68b8",
+      "args": [
+        "0x10000708",
+        "0x10000708",
+        "0x10000e10",
+        "0xa13c2a44"
+      ],
+      "lr": "0xa01f59dc",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa01f3124",
+      "args": [
+        "0x10000708",
+        "0xa13c1758",
+        "0x0",
+        "0x0"
+      ],
+      "lr": "0xa01f59f8",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ed14",
+        "0x0",
+        "0x0"
+      ],
+      "lr": "0xa01f70ec",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa03fe468",
+      "args": [
+        "0x13000000",
+        "0xa13c29f8",
+        "0x2",
+        "0xa03fe468"
+      ],
+      "lr": "0xa01f5a30",
+      "phase": "original_event3"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x1f48",
+        "0x0"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x1dc0",
+        "0x1"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x31c0",
+        "0x2"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x3e90",
+        "0x1"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x45c0",
+        "0x3"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x5dd8",
+        "0x2"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x59c0",
+        "0x4"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x6dc0",
+        "0x5"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x7d20",
+        "0x3"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x81c0",
+        "0x6"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x9c68",
+        "0x4"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x95c0",
+        "0x7"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xa9c0",
+        "0x8"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xbbb0",
+        "0x5"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xbdc0",
+        "0x9"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xdaf8",
+        "0x6"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xd1c0",
+        "0xa"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xe5c0",
+        "0xb"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef24",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa042d13c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xfa40",
+        "0x7"
+      ],
+      "lr": "0xa042d520",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0xf9c0",
+        "0xc"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451960",
+      "args": [
+        "0x10004000",
+        "0x1001ef30",
+        "0x0",
+        "0x20100000"
+      ],
+      "lr": "0xa043177c",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa0451c94",
+      "args": [
+        "0x10004000",
+        "0x1",
+        "0x10dc0",
+        "0xd"
+      ],
+      "lr": "0xa0431ad0",
+      "phase": "retained_first_sample"
+    },
+    {
+      "entry": "0xa03fe300",
+      "args": [
+        "0x13000000",
+        "0x0",
+        "0x2",
+        "0xc"
+      ],
+      "lr": "0x10010000",
+      "phase": "final_close"
+    }
+  ],
+  "modeled_external_events": [
+    {
+      "kind": "diagnostic_sprintf_model",
+      "address": "0xa04f9450",
+      "args": [
+        "0x1001ee58",
+        "0xa061ad0c",
+        "0x1101c000",
+        "0x2"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "diagnostic_pipe_formatting_omitted",
+      "address": "0xa0440998",
+      "args": [
+        "0x1101c000",
+        "0x1001ee58",
+        "0x1101c000",
+        "0x2"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "ram_file_close",
+      "address": "0x10012100",
+      "args": [
+        "0x1000c000",
+        "0x0",
+        "0x8000",
+        "0x10012100"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "unique_name_callback",
+      "address": "0x10012200",
+      "args": [
+        "0x2",
+        "0x0",
+        "0xa05581cc",
+        "0x1"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "ram_file_open",
+      "address": "0x10012000",
+      "args": [
+        "0x1000c000",
+        "0xa13c29f8",
+        "0x2",
+        "0x2"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "secondary_stream_disabled_query",
+      "address": "0xa021f894",
+      "args": [
+        "0x0",
+        "0x4",
+        "0x1001eb74",
+        "0x0"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "optional_userdata_omitted",
+      "address": "0xa01f538c",
+      "args": [
+        "0x0",
+        "0xa05b1520",
+        "0xa0582840",
+        "0x303"
+      ],
+      "phase": "original_event3"
+    },
+    {
+      "kind": "app_message",
+      "address": "0xa01e659c",
+      "args": [
+        "0x48010003",
+        "0x3",
+        "0x0",
+        "0x2"
+      ],
+      "phase": "original_event3"
+    }
+  ],
+  "diagnostics": [
+    {
+      "format": "%s() : auto set default audio track to %u",
+      "arguments": [
+        2690755244,
+        1,
+        268439604
+      ]
+    },
+    {
+      "format": "%s START!",
+      "arguments": [
+        2690747540,
+        318767212,
+        2688767536
+      ]
+    },
+    {
+      "format": "%s : FilePos = %llx, MdatEnd = %llx, FrameDataPos =%llx, FrameDataSize = %llx, EnableCO64 = %u",
+      "arguments": [
+        2690747560,
+        1439508,
+        0
+      ]
+    },
+    {
+      "format": "%s[%u]: SampleRate = %u, Frame_Size = %u , BitsPerSample = %u, Channels = %u",
+      "arguments": [
+        2690748184,
+        33,
+        48000
+      ]
+    },
+    {
+      "format": "%s END!",
+      "arguments": [
+        2690748016,
+        294,
+        2
+      ]
+    },
+    {
+      "format": "%s[Applib - Format] <Mp4Mux_AutoSplit> create main split file:%s\n",
+      "arguments": [
+        2690323744,
+        2705074680,
+        1
+      ]
+    },
+    {
+      "format": "%s START!",
+      "arguments": [
+        2690747540,
+        318767212,
+        2688767536
+      ]
+    },
+    {
+      "format": "%s[Applib - Format] <%s:%d> SplitCount++ : %d\n",
+      "arguments": [
+        2690323744,
+        2690132032,
+        771
+      ]
+    },
+    {
+      "format": "%s : FilePos = %llx, MdatEnd = %llx, FrameDataPos =%llx, FrameDataSize = %llx, EnableCO64 = %u",
+      "arguments": [
+        2690747560,
+        1615320,
+        0
+      ]
+    },
+    {
+      "format": "%s[%u]: SampleRate = %u, Frame_Size = %u , BitsPerSample = %u, Channels = %u",
+      "arguments": [
+        2690748184,
+        33,
+        48000
+      ]
+    },
+    {
+      "format": "%s END!",
+      "arguments": [
+        2690748016,
+        294,
+        2
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "file": "event3-segment-1.mp4",
+      "bytes": 1440624,
+      "sha256": "b58cb12999c95569504f1a9005378710e6332c0fb3b55fe24fe351352471c6a0",
+      "packet_counts": {
+        "0": 8,
+        "1": 12
+      },
+      "packets": [
+        {
+          "stream": 0,
+          "index": 0,
+          "pts": 0,
+          "dts": 0,
+          "duration": 1001,
+          "offset": 40,
+          "bytes": 468192,
+          "sha256": "299d7eee243e9439e0ff6e778083ec603ea4a0e424f1813a2948bdb7427a16c4",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 0,
+          "pts": 0,
+          "dts": 0,
+          "duration": 1024,
+          "offset": 468232,
+          "bytes": 341,
+          "sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 1,
+          "pts": 1024,
+          "dts": 1024,
+          "duration": 1024,
+          "offset": 468573,
+          "bytes": 440,
+          "sha256": "5ee3f4771fa0fad6619953a5f409464766b526413c66cc83acee6797f75c01ee",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 1,
+          "pts": 1001,
+          "dts": 1001,
+          "duration": 1001,
+          "offset": 469013,
+          "bytes": 220800,
+          "sha256": "6dde5b8523f5884ac89ba1e77eecc26e627b9b37bdd11f8b2103dc3297f023d1",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 2,
+          "pts": 2048,
+          "dts": 2048,
+          "duration": 1024,
+          "offset": 689813,
+          "bytes": 427,
+          "sha256": "4ccbce49fa1cfa6a0a98a4abf7e3b77126999ef14fe09de51357d7f33f4f58db",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 3,
+          "pts": 3072,
+          "dts": 3072,
+          "duration": 1024,
+          "offset": 690240,
+          "bytes": 417,
+          "sha256": "e9809bace877fd8e7bb110914ab8c4aca0dedd94cf5d159bf2dfd71b1cd78793",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 2,
+          "pts": 2002,
+          "dts": 2002,
+          "duration": 1001,
+          "offset": 690657,
+          "bytes": 95008,
+          "sha256": "f99a24109a0f46f6b25588b2df1ea3be90d8e4cd3cb2d24054a67de4ad8173bc",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 4,
+          "pts": 4096,
+          "dts": 4096,
+          "duration": 1024,
+          "offset": 785665,
+          "bytes": 407,
+          "sha256": "99cebbea7a6a2481362abcffccb7549971a1d984dff6719adcacad002430f1ff",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 3,
+          "pts": 3003,
+          "dts": 3003,
+          "duration": 1001,
+          "offset": 786072,
+          "bytes": 126528,
+          "sha256": "8296d794665b9ff72665be56ebc3533289bf54e8986c985f95e3d0dabafb61f0",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 5,
+          "pts": 5120,
+          "dts": 5120,
+          "duration": 1024,
+          "offset": 912600,
+          "bytes": 417,
+          "sha256": "b67d0dc0db86d20d162def4c861c22abe9eb8f1bc8ebc03d112481454eaf251f",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 6,
+          "pts": 6144,
+          "dts": 6144,
+          "duration": 1024,
+          "offset": 913017,
+          "bytes": 386,
+          "sha256": "eb16f146af993ae1881927886395162e82b0781542706a7b8c7aa2c18cb8c5dd",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 4,
+          "pts": 4004,
+          "dts": 4004,
+          "duration": 1001,
+          "offset": 913403,
+          "bytes": 124448,
+          "sha256": "b88f7f276ff134aeb798be961037d67d3def4c8e915d86d9ad89cc347739ac70",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 7,
+          "pts": 7168,
+          "dts": 7168,
+          "duration": 1024,
+          "offset": 1037851,
+          "bytes": 395,
+          "sha256": "099f0ea52c944dd9716beb0c7e3f4ed54daaa940128e02f5e646bc420497aab3",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 5,
+          "pts": 5005,
+          "dts": 5005,
+          "duration": 1001,
+          "offset": 1038246,
+          "bytes": 137504,
+          "sha256": "40bc3cc0da0b1cbafd7fc193158e9360019e3966a441d152f34c9e68c3f6b7b3",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 8,
+          "pts": 8192,
+          "dts": 8192,
+          "duration": 1024,
+          "offset": 1175750,
+          "bytes": 364,
+          "sha256": "ec8c5a7968567ff262dd165b4249f25f0e92a7b21491b41486ac4e4806ec0ef9",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 9,
+          "pts": 9216,
+          "dts": 9216,
+          "duration": 1024,
+          "offset": 1176114,
+          "bytes": 363,
+          "sha256": "bc5b284528aa9289f07f8372ead9f0bbd7a72b96769d92bd508372d18053997b",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 6,
+          "pts": 6006,
+          "dts": 6006,
+          "duration": 1001,
+          "offset": 1176477,
+          "bytes": 129888,
+          "sha256": "c11fdc42aeabd7585f7f228148313bb2229b8a7949b82b433138e27a28872560",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 10,
+          "pts": 10240,
+          "dts": 10240,
+          "duration": 1024,
+          "offset": 1306365,
+          "bytes": 376,
+          "sha256": "07b0d3b6f54050f5473e418f5941b8596a890b55e1bb3016df6dc674ec1cb94f",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 7,
+          "pts": 7007,
+          "dts": 7007,
+          "duration": 1001,
+          "offset": 1306741,
+          "bytes": 132064,
+          "sha256": "52e07783c088fdbb812c2a0c9c24ff42b5282ccdfe1c0f9ec08543c4d8c71eda",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 11,
+          "pts": 11264,
+          "dts": 11264,
+          "duration": 1024,
+          "offset": 1438805,
+          "bytes": 367,
+          "sha256": "69a91d436c905b0cb7b37b3c9af6b07051fa70692cd90f986cec0ba4609d6a35",
+          "key": true
+        }
+      ],
+      "container": {
+        "movie_clock": 30000,
+        "tracks": [
+          {
+            "media_clock": 30000,
+            "media_duration": 8008,
+            "edit_list": [
+              {
+                "duration": 8008,
+                "media_time": 0,
+                "media_rate": 65536
+              }
+            ],
+            "edit_list_hex": "0000001c656c7374000000000000000100001f480000000000010000",
+            "stts_durations": [
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001
+            ],
+            "stts_hex": "0000001873747473000000000000000100000008000003e9",
+            "delay": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "media_clock": 48000,
+            "media_duration": 12288,
+            "edit_list": [
+              {
+                "duration": 7680,
+                "media_time": 0,
+                "media_rate": 65536
+              }
+            ],
+            "edit_list_hex": "0000001c656c7374000000000000000100001e000000000000010000",
+            "stts_durations": [
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024
+            ],
+            "stts_hex": "000000187374747300000000000000010000000c00000400",
+            "delay": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          }
+        ]
+      },
+      "video_frames": 8,
+      "video_frame_md5": [
+        "6f54030da59d51a0d2ff03198b18cc4b",
+        "42c68ad6eac3ccf24d178a852ab5558e",
+        "fe2a0921346144257135efe880d67bbb",
+        "a8456cc9cbf55fda52e63f7a6ef0aae5",
+        "8289a564ff1b43166cc30f8109089b1c",
+        "dbec27a39477f72e00a36d470b977dec",
+        "b3d4c42fcf399353a356915f680048a3",
+        "345aed014752330dcabd74ebef59b3b0"
+      ],
+      "video_matches_archived_window": true,
+      "strict_packet_time_gate": {
+        "status": "reject",
+        "same_retained_payload": true,
+        "exact_retained_timing": true,
+        "missing_submitted_packets": [
+          {
+            "stream": 1,
+            "index": 12,
+            "pts": 12288,
+            "dts": 12288,
+            "duration": 1024,
+            "offset": 1439180,
+            "bytes": 336,
+            "sha256": "20467b7528d9e45293c151b3659aa0302d2f65e8f5fffe4ef936d6a53908d78c",
+            "key": true
+          }
+        ],
+        "compared_packets": [
+          {
+            "stream": 0,
+            "source_index": 0,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 1,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 2,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 3,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 4,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 5,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 6,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 7,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 0,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 1,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 2,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 3,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 4,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 5,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 6,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 7,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 8,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 9,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 10,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 11,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          }
+        ]
+      },
+      "audio_pcm_bytes": 49152,
+      "audio_pcm_sha256": "c4fabf8b763d1ab835c91e672536ff9855480f9d77b84eff4e306ca8672d60e7"
+    },
+    {
+      "file": "event3-segment-2.mp4",
+      "bytes": 1616463,
+      "sha256": "2b6b2b9ed3bc342e4189b6bac104326adac79dacad7c7606001ec5e35aca0669",
+      "packet_counts": {
+        "0": 8,
+        "1": 12
+      },
+      "packets": [
+        {
+          "stream": 0,
+          "index": 0,
+          "pts": 0,
+          "dts": 0,
+          "duration": 1001,
+          "offset": 40,
+          "bytes": 205536,
+          "sha256": "f5707b342913c36a150b29679dd7466fa9dd039270a11d67cacbaffb4590fd8e",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 0,
+          "pts": 499,
+          "dts": 499,
+          "duration": 1024,
+          "offset": 205576,
+          "bytes": 344,
+          "sha256": "6aa8a40bac9d37057c0edeccf5f9c3b41090ef6003671999ac7c24fd7fa69b71",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 1,
+          "pts": 1523,
+          "dts": 1523,
+          "duration": 1024,
+          "offset": 205920,
+          "bytes": 334,
+          "sha256": "4f720971f85fcdb393bd2068b3f35ef275e0312892e973fd2a68390534601bfa",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 1,
+          "pts": 1001,
+          "dts": 1001,
+          "duration": 1001,
+          "offset": 206254,
+          "bytes": 174368,
+          "sha256": "fd4398868e67730d3e0eea27f326807db1838174af2fed3a32f9a12728b795c5",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 2,
+          "pts": 2547,
+          "dts": 2547,
+          "duration": 1024,
+          "offset": 380622,
+          "bytes": 307,
+          "sha256": "ae748499a11627e49df11bbb3b9bd104815cf53c172bffda3b14867ebca323f1",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 2,
+          "pts": 2002,
+          "dts": 2002,
+          "duration": 1001,
+          "offset": 380929,
+          "bytes": 180832,
+          "sha256": "4cf323134c6826f6d7564d44ae6297093dfc365e4c9ef9d4eccdabbeca093734",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 3,
+          "pts": 3571,
+          "dts": 3571,
+          "duration": 1024,
+          "offset": 561761,
+          "bytes": 316,
+          "sha256": "82881aac693dde403b8ecd95c6bec0e5f5a13b0d667356a805a3fb6505bc88ea",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 4,
+          "pts": 4595,
+          "dts": 4595,
+          "duration": 1024,
+          "offset": 562077,
+          "bytes": 293,
+          "sha256": "f4e7a1b1dfeb87f94d7c802e20989eca18657fe60a6867adc0cc749c125844cd",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 3,
+          "pts": 3003,
+          "dts": 3003,
+          "duration": 1001,
+          "offset": 562370,
+          "bytes": 218752,
+          "sha256": "8442ed7fe4562754ef7700b1ee765494597e4e0ea61556df9643ee51944e3bb8",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 5,
+          "pts": 5619,
+          "dts": 5619,
+          "duration": 1024,
+          "offset": 781122,
+          "bytes": 319,
+          "sha256": "66f308770b7822709f8f2971642513412389f5e99ec476961dd46c471795e735",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 4,
+          "pts": 4004,
+          "dts": 4004,
+          "duration": 1001,
+          "offset": 781441,
+          "bytes": 210592,
+          "sha256": "89ecab08c6030b42f0b8370adb9caaeb5c2ba08017209c4372c2e2daecd0bb8b",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 6,
+          "pts": 6643,
+          "dts": 6643,
+          "duration": 1024,
+          "offset": 992033,
+          "bytes": 316,
+          "sha256": "97feb5e5454cc519993e58181dca320277ebc8d2f56cf4e1dd819b445cd150ea",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 7,
+          "pts": 7667,
+          "dts": 7667,
+          "duration": 1024,
+          "offset": 992349,
+          "bytes": 319,
+          "sha256": "f2ead2ec0e3c808a56d82cd666120cbac5ce308f8cf36d116fa6d55e64285a4e",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 5,
+          "pts": 5005,
+          "dts": 5005,
+          "duration": 1001,
+          "offset": 992668,
+          "bytes": 204000,
+          "sha256": "c5e0c1f34c592794d121697917ec63e24b224f41de21c81b43884ece7e6b6352",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 8,
+          "pts": 8691,
+          "dts": 8691,
+          "duration": 1024,
+          "offset": 1196668,
+          "bytes": 303,
+          "sha256": "42269da5376ab164684826d64e53f3083c519ac98338ba95789105476c3d8bc5",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 6,
+          "pts": 6006,
+          "dts": 6006,
+          "duration": 1001,
+          "offset": 1196971,
+          "bytes": 209088,
+          "sha256": "1a15f149373b86237d12a7a37a083c7b12833cfa66a110e854c8426507c95057",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 9,
+          "pts": 9715,
+          "dts": 9715,
+          "duration": 1024,
+          "offset": 1406059,
+          "bytes": 294,
+          "sha256": "f745da0523ac0086cf5b924e5398ee0a470b5de54468eeb59166408dade053c2",
+          "key": true
+        },
+        {
+          "stream": 1,
+          "index": 10,
+          "pts": 10739,
+          "dts": 10739,
+          "duration": 1024,
+          "offset": 1406353,
+          "bytes": 313,
+          "sha256": "58590d7960d14216666e6030ecb0914e0bd53ca17f5b6561514e03d4058e8600",
+          "key": true
+        },
+        {
+          "stream": 0,
+          "index": 7,
+          "pts": 7007,
+          "dts": 7007,
+          "duration": 1001,
+          "offset": 1406666,
+          "bytes": 208000,
+          "sha256": "08d56fcf076028c48ac94b7bb89bf7880dd75b8c53b11fbede44d9eca9232259",
+          "key": false
+        },
+        {
+          "stream": 1,
+          "index": 11,
+          "pts": 11763,
+          "dts": 11763,
+          "duration": 525,
+          "offset": 1614666,
+          "bytes": 333,
+          "sha256": "e3cc3d5ddb3d212ded3ae4efca0275a5246bace08e97ad3364385ffb71bf87ef",
+          "key": true
+        }
+      ],
+      "container": {
+        "movie_clock": 30000,
+        "tracks": [
+          {
+            "media_clock": 30000,
+            "media_duration": 8008,
+            "edit_list": [
+              {
+                "duration": 8008,
+                "media_time": 0,
+                "media_rate": 65536
+              }
+            ],
+            "edit_list_hex": "0000001c656c7374000000000000000100001f480000000000010000",
+            "stts_durations": [
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001,
+              1001
+            ],
+            "stts_hex": "0000001873747473000000000000000100000008000003e9",
+            "delay": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "media_clock": 48000,
+            "media_duration": 12288,
+            "edit_list": [
+              {
+                "duration": 312,
+                "media_time": -1,
+                "media_rate": 65536
+              },
+              {
+                "duration": 7680,
+                "media_time": 0,
+                "media_rate": 65536
+              }
+            ],
+            "edit_list_hex": "00000028656c7374000000000000000200000138ffffffff0001000000001e000000000000010000",
+            "stts_durations": [
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024,
+              1024
+            ],
+            "stts_hex": "000000187374747300000000000000010000000c00000400",
+            "delay": {
+              "numerator": 13,
+              "denominator": 1250,
+              "seconds": 0.0104
+            }
+          }
+        ]
+      },
+      "video_frames": 8,
+      "video_frame_md5": [
+        "65b2bb6e3e2e52822fd315ee364d1cfc",
+        "5c9cc3139b65df225e453a1df5bfa67a",
+        "2cd6bf96533775acc2bbc251c5a03ae7",
+        "b203bb0e9f7043e3450a404822185c53",
+        "779f0198d4586db1924257ea79b25615",
+        "b4551a6cbda984601a684118c1513bc1",
+        "da8b77673a80083baf447610ade35b43",
+        "85b5e6f70478e3eba4f0195fca13f610"
+      ],
+      "video_matches_archived_window": true,
+      "strict_packet_time_gate": {
+        "status": "reject",
+        "same_retained_payload": true,
+        "exact_retained_timing": false,
+        "missing_submitted_packets": [
+          {
+            "stream": 1,
+            "index": 25,
+            "pts": 25600,
+            "dts": 25600,
+            "duration": 1024,
+            "offset": 3054475,
+            "bytes": 321,
+            "sha256": "ab05749b33fdaeb529f011f7cafc05c6522815c0280357407fbec87c1ffb0cf4",
+            "key": true
+          }
+        ],
+        "compared_packets": [
+          {
+            "stream": 0,
+            "source_index": 8,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 9,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 10,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 11,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 12,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 13,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 14,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 0,
+            "source_index": 15,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 13,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 14,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 15,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 16,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 17,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 18,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 19,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 20,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 21,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 22,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 23,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            }
+          },
+          {
+            "stream": 1,
+            "source_index": 24,
+            "same_payload": true,
+            "pts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "dts_error": {
+              "numerator": -1,
+              "denominator": 240000,
+              "seconds": -4.166666666666667e-06
+            },
+            "duration_error": {
+              "numerator": -499,
+              "denominator": 48000,
+              "seconds": -0.010395833333333333
+            }
+          }
+        ]
+      },
+      "audio_pcm_bytes": 49152,
+      "audio_pcm_sha256": "015a4c186378b4467ed9e338ca92f1268cedb625cfa35743b63fabb3a0425075"
+    }
+  ],
+  "publication_gate": "reject_missing_AAC_12_and_25_and_segment_2_consumer_time_mismatch",
+  "proven": [
+    "Retained synchronous source video frame 8 survives complete modeled event3 callback and is written once to new MP4.",
+    "Original Close0/New/Copy/Rel/count reset/ResetMovie/Open run in order, with same FIFO state before and after callback.",
+    "Both resulting MP4s decode their eight distinct source video frames exactly.",
+    "Normal event3 does not repair the AAC12/25 trimming loss or the segment2 1/240000 second consumer offset in this fixture."
+  ],
+  "not_proven": [
+    "No camera/encoder/DMA/callback installation/SD writes or real-time scheduler.",
+    "Short synthetic duration; not a one-minute ring/spool or complete pre-record feature.",
+    "One constructed FIFO reused by caller, not simultaneous real audio/video producer queues.",
+    "Packet/timestamp continuity requires separate strict comparison; successful Close and decoding are insufficient."
+  ]
+}

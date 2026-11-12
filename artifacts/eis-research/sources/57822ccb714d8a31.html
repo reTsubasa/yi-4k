@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/labs/assets/css/style.css?v=b3a835b48f3841ba7f188f3f79af367548cf6b13">
+	  <link rel="shortcut icon" type="image/png" href="https://gopro.github.io/labs/assets/images/favicon.png">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <span><a href="https://gopro.com"><img src="https://gopro.github.io/labs/assets/images/top.png" class="img-responsive"></a></span>
+      <span>
+      <h1 class="project-name">Full List the Settings Commands</h1>
+      <h2 class="project-tagline">GoPro Labs</h2>
+      
+        <a href="https://github.com/gopro/labs" class="btn">View on GitHub</a>
+      
+      </span>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h2 id="full-list-the-settings-commands">Full List the Settings Commands</h2>
+
+<script src="../../qrcodeborder.js"></script>
+
+<style>
+        #qrcode{
+            height: 380px;
+            width: 380px;
+            margin: 0px;
+        }
+        div{
+            height: 380px;
+            width: 380px;
+            margin: 0px;
+            display: inline-block;
+        }
+</style>
+
+<p>Mode commands:</p>
+<ul>
+  <li><strong>mV</strong> - mode Video</li>
+  <li><strong>mVL</strong> - mode Video Looping (*)</li>
+  <li><strong>mP</strong> - mode Photo</li>
+  <li><strong>mT</strong> - mode Timelapse video (**)</li>
+  <li><strong>mTP</strong> - mode Timelapse Photo (**)</li>
+  <li><strong>mTW</strong> - mode TimeWarp</li>
+  <li><strong>mPB</strong> - mode Photo Burst</li>
+  <li><strong>mPN</strong> - mode Photo Night</li>
+  <li><strong>mNL</strong> - mode Night-Lapse Video (**)</li>
+  <li><strong>mNP</strong> - mode Night-Lapse Photo (**)</li>
+  <li><strong>mL</strong> - mode Live-Burst Photo (HERO10 only)</li>
+  <li><strong>mST</strong> - mode Star Trails (HERO11/12/13/MISSION only)</li>
+  <li><strong>mLP</strong> - mode Light Painting (HERO11/12/13/MISSION only)</li>
+  <li><strong>mLT</strong> - mode Vehicle Lights (HERO11/12/13/MISSION only)</li>
+  <li><strong>mVN</strong> - mode Video Night, new Low Light mode (MISSION only)</li>
+</ul>
+
+<p><b>* Video Looping:</b> You need to create this preset on camera, before this command will select it.<br />
+<b>** Time/Night-Lapse modes:</b> The camera defaults to having presets for only one time-lapse mode and one night-lapse mode, yet both modes have two configurations (video or photo.) For all QR Code mode commands to work, a preset is needed for every mode you wish to use. e.g. If you only have a preset for night-lapse video (NLV), the QR command for NLV will work, but will not for night-lapse photo (NLP). To solve this, create a new preset for NLP, and both video and photo night-lapse commands will work.</p>
+
+<p>Defaults modes on power up (MISSION uses last used only):</p>
+<ul>
+  <li><strong>dL</strong> - last used mode</li>
+  <li><strong>dV</strong> - last used Video mode</li>
+  <li><strong>dP</strong> - last used Photo mode</li>
+  <li><strong>dT</strong> - last used Timelapse mode</li>
+</ul>
+
+<p>Resolutions:</p>
+<ul>
+  <li><strong>r1</strong> or <strong>r10</strong> or <strong>r1080</strong>  - 1920x1080</li>
+  <li><strong>r1T</strong> or <strong>r14</strong> or <strong>r1440</strong>  - 1920x1440</li>
+  <li><strong>r2</strong> or <strong>r27</strong> - for 2.7K 16x9</li>
+  <li><strong>r2T</strong> or <strong>r27T</strong> - for 2.7K Tall the 4x3 mode</li>
+  <li><strong>r3</strong> - 3K 360° for GoPro MAX</li>
+  <li><strong>r4</strong> - 4k 16x9</li>
+  <li><strong>r4T</strong> - 4k Tall, the 4x3 mode</li>
+  <li><strong>r4X</strong> - 4k Extreme, the 8x7 mode (H11/12)</li>
+  <li><strong>r5</strong> - 5k for HERO5 and 5K 360° for GoPro MAX</li>
+  <li><strong>r5T</strong> - 5k Tall, the 4x3 mode</li>
+  <li><strong>r5X</strong> - 5k Extreme, the 8x7 mode (H11/12)</li>
+  <li><strong>r8</strong> - 8k for MAX2 and MISSION</li>
+  <li><strong>r8T</strong> - 8k Tall, the 8K 4x3 mode</li>
+</ul>
+
+<p>Frame rates:</p>
+<ul>
+  <li><strong>p24</strong> - 24 fps</li>
+  <li><strong>p25</strong> - 25 fps</li>
+  <li><strong>p30</strong> - 30 fps</li>
+  <li><strong>p50</strong> - 50 fps</li>
+  <li><strong>p60</strong> - 60 fps</li>
+  <li><strong>p100</strong> - 100 fps</li>
+  <li><strong>p120</strong> - 120 fps</li>
+  <li><strong>p200</strong> - 200 fps</li>
+  <li><strong>p240</strong> - 240 fps</li>
+  <li>(only supports existing frame rates, so p65 or p1000 will be ignored.)</li>
+</ul>
+
+<p>Time-lapse frame rates:</p>
+<ul>
+  <li><strong>p2</strong> (0.5s or 2Hz/2p capture)</li>
+  <li><strong>p1</strong> (1s interval)</li>
+  <li><strong>p.2</strong> (2s interval)</li>
+  <li><strong>p.5</strong> (5s interval)</li>
+  <li><strong>p.10</strong> through <strong>p.60</strong> (10 to 60s interval)</li>
+</ul>
+
+<p>NightLapse frame rates:</p>
+<ul>
+  <li><strong>p.120</strong> through <strong>p.1800</strong> (2 minutes to 60 minute interval)</li>
+</ul>
+
+<p>Lens - FOV:</p>
+<ul>
+  <li><strong>fN</strong> - Narrow (some cameras)</li>
+  <li><strong>fM</strong> - Medium</li>
+  <li><strong>fW</strong> - Wide</li>
+  <li><strong>fX</strong> - SuperMax Wide (Max Lens Mod)</li>
+  <li><strong>fH</strong> - Horizonal Level + Linear (H9-12)</li>
+  <li><strong>fV</strong> - HyperView (H11/12)</li>
+</ul>
+
+<p>Audio (Raw controls):</p>
+<ul>
+  <li><strong>aL</strong> - Low Processing</li>
+  <li><strong>aM</strong> - Medium Processing</li>
+  <li><strong>aH</strong> - High Processing</li>
+</ul>
+
+<p>Bitrate:</p>
+<ul>
+  <li><strong>b0</strong> - Standard Bitrate</li>
+  <li><strong>b1</strong> - High Bitrate</li>
+  <li><strong>b2</strong> - Max bitrate (MISSION only - if the mode supports)</li>
+  <li><strong>bS</strong> - bitrate Standard/Low (MISSION only)</li>
+  <li><strong>bH</strong> - bitrate High (MISSION only)</li>
+  <li><strong>bM</strong> - bitrate Max1 (MISSION only)</li>
+</ul>
+
+<p>Color:</p>
+<ul>
+  <li><strong>cG</strong> - Color Vibrant</li>
+  <li><strong>cN</strong> - Color Natural (H10/11/12/13/MISSION)</li>
+  <li><strong>cF</strong> - Color Flat</li>
+  <li><strong>cC</strong> - color Cinematic (MISSION only)</li>
+  <li><strong>cL</strong> - color GPLog2 (MISSION only)</li>
+</ul>
+
+<p>Depth (H11/12/13/MAX2/MISSION):</p>
+<ul>
+  <li><strong>d0</strong> or <strong>d8</strong> - 8-bit color</li>
+  <li><strong>d1</strong> or <strong>d10</strong> - 10-bit color</li>
+</ul>
+
+<p>Denoise</p>
+<ul>
+  <li><strong>oN2</strong> denoise Low (HERO13 or MISSION)</li>
+  <li><strong>oN1</strong> denoise Medium (HERO13 or MISSION)</li>
+  <li><strong>oN</strong> denoise High (HERO13 or MISSION)</li>
+  <li><strong>dL</strong> - denoise Low (MISSION only)</li>
+  <li><strong>dM</strong> - denoise Medium (MISSION only)</li>
+  <li><strong>dH</strong> - denoise High (MISSION only)</li>
+</ul>
+
+<p>EIS (Hypersmooth control):</p>
+<ul>
+  <li><strong>e0</strong> - Off</li>
+  <li><strong>e1</strong> - On</li>
+  <li><strong>e2</strong> - High</li>
+  <li><strong>e3</strong> - Boost</li>
+  <li><strong>e4</strong> - Auto</li>
+</ul>
+
+<p>Exposure Lock:</p>
+<ul>
+  <li><strong>eL0</strong> - Off</li>
+  <li><strong>eL1</strong> - On</li>
+  <li><strong>eL2 - eL9</strong> -  Lock after 2 to 9 seconds.</li>
+</ul>
+
+<p>Hindsight (Video modes H9-12):</p>
+<ul>
+  <li><strong>hS0</strong> - Off</li>
+  <li><strong>hS1</strong> - On 15s window</li>
+  <li><strong>hS2</strong> - On 30s window</li>
+  <li><strong>hS5</strong> - Experimental Labs H11/12 - 5s window</li>
+</ul>
+
+<p>HLG (MISSION only)</p>
+<ul>
+  <li><strong>hH0</strong> - HLG off</li>
+  <li><strong>hH or hH1</strong> - HLG on</li>
+</ul>
+
+<p>White Balance:</p>
+<ul>
+  <li><strong>wA</strong> - Auto White Balance</li>
+  <li><strong>w23</strong> - 2300K White balance</li>
+  <li><strong>w28</strong>, <strong>w32</strong>, <strong>w40</strong>, <strong>w45</strong>  - 2800K, 3200K, 4000K, 4500K</li>
+  <li><strong>w50</strong>, <strong>w55</strong>, <strong>w60</strong>, <strong>w65</strong>  - 5000K, 5500K, 6000K, 6500K</li>
+  <li><strong>wN</strong> - Native White Balance (sensor raw)</li>
+</ul>
+
+<p>ISO Minimum and Maximum (set to together with format i(max)M(min)) (not MISSION):</p>
+<ul>
+  <li><strong>i1M1</strong> - 100 ISO Max &amp; Min</li>
+  <li><strong>i2M1</strong> - 200 ISO Max with 100 ISO Min</li>
+  <li><strong>i16M8</strong> - 1600 ISO Max with 800 ISO Min</li>
+  <li><strong>i32M1</strong>  - 3200 ISO Mac with 100 ISO Min</li>
+  <li><strong>i64M16</strong>  - 6400 ISO Mac with 1600 ISO Min</li>
+</ul>
+
+<p>ISO Maximum and Shutter Lock (set to together format i(max)S(angle)) (not MISSION): :</p>
+<ul>
+  <li><strong>i1S180</strong> - 100 ISO Max with a 180 degree shutter angle</li>
+  <li><strong>i8S90</strong> - 800 ISO Max with a 90 degree shutter angle</li>
+  <li><strong>i4S45</strong> - 400 ISO Max with a 45 degree shutter angle</li>
+  <li><strong>i16S22</strong> - 1600 ISO Max with a 22 degree shutter angle</li>
+  <li><strong>i1S22</strong> - 100 ISO Max with a 22 degree shutter angle</li>
+  <li><strong>i1S0</strong> - 100 ISO Max with an <strong>Automatic</strong> shutter angle</li>
+  <li>Angles between 22 and 1 degrees do have limited support. Experiment for higher shutter speeds.  You will need a good amount of light and/or a higher ISO.</li>
+</ul>
+
+<p>ISO Range (MISSION only)</p>
+<ul>
+  <li><strong>i1</strong> - Range up to 100</li>
+  <li><strong>i2</strong> - Range up to 200</li>
+  <li><strong>i4</strong> - Range up to 400</li>
+  <li><strong>i8</strong> - Range up to 800</li>
+  <li><strong>i16</strong> - Range up to 1600</li>
+  <li><strong>i32</strong> - Range up to 3200</li>
+  <li><strong>i64</strong> - Range up to 6400</li>
+</ul>
+
+<p>ISO Fixed (MISSION only)</p>
+<ul>
+  <li><strong>i1M1</strong> - Fixed at 100</li>
+  <li><strong>i2M2</strong> - Fixed at 200</li>
+  <li><strong>i4M4</strong> - Fixed at 400</li>
+  <li><strong>i8M8</strong> - Fixed at 800</li>
+  <li><strong>i16M16</strong> - Fixed at 1600</li>
+  <li><strong>i32M32</strong> - Fixed at 3200</li>
+  <li><strong>i64M64</strong> - Fixed at 6400</li>
+</ul>
+
+<p>Shutter Controls  (MISSION only)</p>
+<ul>
+  <li><strong>s0</strong> - Auto shutter</li>
+  <li><strong>s360</strong> - fixed 360 degrees</li>
+  <li><strong>s180</strong> - fixed 180 degrees</li>
+  <li><strong>s90</strong> - fixed 90 degrees</li>
+  <li><strong>s45</strong> - fixed 45 degrees</li>
+  <li><strong>s22</strong> - fixed 22 degrees</li>
+  <li><strong>s11</strong> - fixed 11 degrees</li>
+  <li><strong>s360M</strong> - Minimum shutter angle up to 360 degrees (in available)</li>
+  <li><strong>s180M</strong> - Minimum shutter angle up to 180 degrees (in available)</li>
+  <li><strong>s90M</strong> - Minimum shutter angle up to 90 degrees (in available)</li>
+  <li><strong>s45M</strong> - Minimum shutter angle up to 45 degrees (in available)</li>
+  <li><strong>s22M</strong> - Minimum shutter angle up to 22 degrees (in available)</li>
+  <li><strong>s11M</strong> - Minimum shutter angle up to 11 degrees (in available)</li>
+</ul>
+
+<p>EV Compensation:</p>
+<ul>
+  <li><strong>x0</strong> - EV 0 default</li>
+  <li><strong>x-.5</strong> - EV -0.5</li>
+  <li><strong>x.5</strong> - EV +0.5</li>
+  <li><strong>x-1</strong> - EV -1.0</li>
+  <li><strong>x1</strong> - EV +1.0</li>
+  <li><strong>x-1.5</strong> - EV -1.5</li>
+  <li><strong>x1.5</strong> - EV +1.5</li>
+  <li><strong>x-2</strong> - EV -2.0</li>
+  <li><strong>x2</strong> - EV +2.0<br />
+ on some cameras models you can extend this to larger amounts (beyond the range the camera menu supports).</li>
+  <li><strong>x-5</strong> - EV -5.0</li>
+  <li><strong>x3</strong> - EV +3.0</li>
+</ul>
+
+<p>Sharpness:</p>
+<ul>
+  <li><strong>sL</strong> - Low</li>
+  <li><strong>sM</strong> - Medium</li>
+  <li><strong>sH</strong> - High</li>
+</ul>
+
+<p>Night Photo exposure time:</p>
+<ul>
+  <li><strong>eA</strong> - Auto exposure</li>
+  <li><strong>e2</strong> - 2 second shutter</li>
+  <li><strong>…</strong></li>
+  <li><strong>e30</strong> - 30 second shutter</li>
+</ul>
+
+<p>GoPro MAX Shooting Modes</p>
+<ul>
+  <li><strong>mH</strong> - mode Hero</li>
+  <li><strong>mHF</strong> - mode Hero Front</li>
+  <li><strong>mHR</strong> - mode Hero Rear</li>
+  <li><strong>m3</strong> - mode 360°</li>
+  <li><strong>m3F</strong> - mode 360° front on LCD</li>
+  <li><strong>m3R</strong> - mode 360° rear on LCD</li>
+  <li><strong>mF</strong> - mode monitor Front lens</li>
+  <li><strong>mR</strong> - mode monitor Rear lens</li>
+</ul>
+
+<p>Tuning Modes (MISSION only)</p>
+<ul>
+  <li><strong>tW</strong> - Underwater tuning</li>
+  <li><strong>tU</strong> - Underwater tuning</li>
+  <li><strong>tD</strong> - Underwater tuning</li>
+  <li><strong>tF</strong> - Face tuning</li>
+  <li><strong>tS</strong> - Sport tuning</li>
+  <li><strong>tB</strong> - Balanced tuning</li>
+</ul>
+
+<p>Motion Blur Controls (MISSION only)</p>
+<ul>
+  <li><strong>bA</strong> - motion blur Adaptive</li>
+  <li><strong>bR</strong> - motion blur Reduced</li>
+  <li><strong>bX</strong> - motion blur Cinematic Low</li>
+  <li><strong>bY</strong> - motion blur Cinematic Medium</li>
+  <li><strong>bC</strong> - motion blur Cinematic High</li>
+  <li><strong>bP</strong> - motion blur Photo</li>
+</ul>
+
+<p>Feature with off and on commands:</p>
+<ul>
+  <li>EIS (Hypersmooth stabilization): <strong>e0</strong> - off, <strong>e</strong> or <strong>e1</strong> - on, <strong>e2</strong> - High, <strong>e3</strong> Boost, <strong>e4</strong> Auto (H11/12)</li>
+  <li>(Deprecated) GPS Active: <strong>g0</strong> - off, <strong>g</strong> or <strong>g1</strong> - on</li>
+  <li>(Deprecated) Quick Capture: <strong>q0</strong> - off, <strong>q</strong> or <strong>q1</strong> - on</li>
+  <li>(Deprecated) Voice Commands: <strong>v0</strong> - off, <strong>v</strong> or <strong>v1</strong> - on</li>
+</ul>
+
+<p>Option (‘o’) commands:</p>
+<ul>
+  <li>Brightness of the LCDs - <strong>oB0</strong> … <strong>oB9</strong> - (100%)</li>
+  <li>Camera Auto Off - <strong>oC0</strong> - Never, <strong>oC1</strong> - 1min, <strong>oC5</strong> - 5min, <strong>oC15</strong> - 15min, <strong>oC30</strong> - 30min</li>
+  <li>LCDs off now - <strong>oDO</strong></li>
+  <li>LED control - <strong>oD0</strong> - all off, <strong>oD2</strong> - some on, <strong>oD4</strong> - all on</li>
+  <li>Extern Audio options - <strong>oE1</strong> - Standard Mic, <strong>oE2</strong> - Standard+ Mic, <strong>oE3</strong> - Powered Mic, <strong>oE4</strong> - Powered+ Mic, <strong>oE5</strong> - Line In (HERO10/11/12 only)</li>
+  <li>Front Screen control - <strong>oFxy</strong> - (see list below)</li>
+  <li>GPS Options (HERO11 v2.1) - <strong>oG0</strong> - off, <strong>oG1</strong> - on</li>
+  <li>Language - <strong>oL</strong>x - <strong>0</strong> English USA, <strong>01</strong> English UK, <strong>02</strong> English Aus, <strong>03</strong> English India, <strong>1</strong> German, <strong>2</strong> French, <strong>3</strong> Italian, <strong>4</strong> Spanish, <strong>5</strong> Chinese, <strong>6</strong> Japanese, <strong>7</strong> Korean, <strong>8</strong> Portuaguese, <strong>9</strong> Russian, <strong>91</strong> Swedish</li>
+  <li>Noise Reduction control (HERO13) - <strong>oN0</strong> High/Default (less noise/detail),  <strong>oN1</strong> Medium,  <strong>oN2</strong> Low (more noise/detail),</li>
+  <li>Quick Capture (HERO11 v2.1) - <strong>oQ0</strong> - off, <strong>oQ1</strong> - on</li>
+  <li>Rotation, Camera Orientation - <strong>oR0</strong> - Auto, <strong>oR1</strong> - Up, <strong>oR2</strong> - Down, <strong>oR2</strong> - Left, <strong>oR3</strong> - Right</li>
+  <li>Screen Auto Off - <strong>oS0</strong> - Never, <strong>oS1</strong> - 1min … <strong>oS3</strong> - 3min</li>
+  <li>Shortcut Menu on LCD - <strong>oSA</strong>x - Upper Left, <strong>oSB</strong>x - Lower Left, <strong>oSC</strong>x - Upper Right, <strong>oSD</strong>x - Lower Right, <strong>oSR</strong> - reset. Where x is in the list below.</li>
+  <li>Time and date - <strong>oT</strong>yymmddhhmmss.sss</li>
+  <li>Time, daylight savings - <strong>oTD1</strong> for daylight savings on or <strong>oTD0</strong> for off</li>
+  <li>Timezone (H11/12) - <strong>oTZ-7</strong> or <strong>oTZ-420</strong> e.g. -7 hour or -420 minutes timezone offset</li>
+  <li>Volume of Beeps - <strong>oV0</strong> - Mute, <strong>oV1</strong> … <strong>oV9</strong> (min through max.)</li>
+  <li>Volume Control - <strong>oVC0</strong> - off, <strong>oVC1</strong> - on</li>
+  <li>WiFi Connection - <strong>oW0</strong> - off, <strong>oW1</strong> - on</li>
+  <li>Max Lens Mod -  <strong>oX0</strong> - disabled, <strong>oX1</strong> - MLM original enabled, <strong>oX2</strong> - MLM 2.0 enanled</li>
+  <li>Capture Info - <strong>oI0</strong> - off, <strong>oI</strong> - on (MISSION only)</li>
+</ul>
+
+<p>GoPro HERO9-12 Front Screen option commands</p>
+<ul>
+  <li><strong>oF0 or oFO</strong> - turn the front LCD off</li>
+  <li><strong>oFU</strong> - UI interface mode info only</li>
+  <li><strong>oFF</strong> - Full image (image is letterboxed)</li>
+  <li><strong>oFC</strong> - Cropped image (filling the front LCD)</li>
+  <li><strong>oFN</strong> - Never turn off</li>
+  <li><strong>oFM</strong> - Match rear screen on/off behavior</li>
+  <li><strong>oF1</strong> - turn off after 1 minute</li>
+  <li><strong>oF2</strong> - turn off after 2 minutes</li>
+  <li><strong>oF3</strong> - turn off after 3 minutes</li>
+  <li><strong>oF5</strong> - turn off after 5 minutes</li>
+</ul>
+
+<p>Shortcut Menu Types (to be used with oSA, oSB, oSC and oSD)  (coming soon)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>value</th>
+      <th>Feature</th>
+      <th>value</th>
+      <th>Feature</th>
+      <th>value</th>
+      <th>Feature</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>clear shortcut</td>
+      <td>0</td>
+      <td>burst rate</td>
+      <td>8</td>
+      <td>ISO max</td>
+      <td>15</td>
+      <td>horizon control</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>zoom</td>
+      <td>1</td>
+      <td>duration</td>
+      <td>9</td>
+      <td>mic type</td>
+      <td>16</td>
+      <td>speed ramp</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>fov</td>
+      <td>2</td>
+      <td>color</td>
+      <td>10</td>
+      <td>raw audio</td>
+      <td>18</td>
+      <td>scheduled capture</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>slowmo</td>
+      <td>3</td>
+      <td>EV comp</td>
+      <td>11</td>
+      <td>sharpness</td>
+      <td>19</td>
+      <td>hindsight</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>white balance</td>
+      <td>5</td>
+      <td>hypersmooth</td>
+      <td>12</td>
+      <td>timer</td>
+      <td>20</td>
+      <td>10-bit</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>shutter</td>
+      <td>6</td>
+      <td>interval</td>
+      <td>13</td>
+      <td>timewarp speed</td>
+      <td>21</td>
+      <td>nightphoto</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>bit rate</td>
+      <td>7</td>
+      <td>ISO min</td>
+      <td>14</td>
+      <td>wind noise</td>
+      <td>23</td>
+      <td>trail length</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>HERO11/12 UX modes:</p>
+<ul>
+  <li><strong>mE</strong> - mode Easy</li>
+  <li><strong>mPR</strong> - mode Pro</li>
+</ul>
+
+<h1 id="experiment-here">Experiment Here</h1>
+<h2 id="typing-in-your-custom-mode">Typing-in Your Custom Mode:</h2>
+
+<div id="qrcode_txt" style="width: 360px">
+ <center>
+  <div id="qrcode"></div><br />
+  <b><font color="#009FDF">GoProQR:</font></b> <em id="qrtext"></em>
+ </center>
+</div>
+
+<p>Custom Mode: <input type="text" id="tryit" value="" /><br /></p>
+
+<p>updated: May 22, 2026</p>
+
+<p><a href="..">Learn more</a> on QR Control</p>
+
+<script>
+var once = true;
+var qrcode;
+var cmd = "";
+
+function makeQR() {	
+  if(once == true)
+  {
+    qrcode = new QRCode(document.getElementById("qrcode"), 
+    {
+      text : "\"Try It\"",
+      width : 400,
+      height : 400,
+      correctLevel : QRCode.CorrectLevel.M
+    });
+    once = false;
+  }
+}
+
+function HTMLPrint(txt)
+{
+	var txt2 = txt.replaceAll("<", "&#60;");
+	var newtxt = txt2.replaceAll(">", "&#62;");
+	return newtxt;
+}
+
+function timeLoop()
+{
+  if(document.getElementById("tryit") != null)
+  {
+    cmd = document.getElementById("tryit").value;
+	if(cmd.length == 0)
+	{
+		cmd = "\"Try It\"";
+	}
+  }
+  else
+  {
+    cmd = "\"Try It\"";
+  }
+
+  qrcode.clear(); 
+  qrcode.makeCode(cmd);
+  
+  document.getElementById("qrtext").innerHTML = HTMLPrint(cmd);
+  
+  var t = setTimeout(timeLoop, 50);
+}
+
+function myReloadFunction() {
+  location.reload();
+}
+
+makeQR();
+timeLoop();
+
+</script>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/gopro/labs">labs</a> is maintained by <a href="https://github.com/gopro">gopro</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

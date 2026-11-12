@@ -1,0 +1,35 @@
+~ # cat /proc/iomem; cat /proc/partitions; cat /proc/mtd
+3ca00000-3fffffff : System RAM
+   3ca08000-3cf25abb : Kernel code
+   3cf4a000-3cfa86c7 : Kernel data
+major minor  #blocks  name
+
+  31        0        128 mtdblock0
+  31        1      32768 mtdblock1
+  31        2       5120 mtdblock2
+  31        3      20480 mtdblock3
+  31        4      10240 mtdblock4
+  31        5      61440 mtdblock5
+  31        6      30720 mtdblock6
+  31        7      26112 mtdblock7
+  31        8       2560 mtdblock8
+  31        9       1792 mtdblock9
+  31       10       6656 mtdblock10
+  31       11       6656 mtdblock11
+  31       12      54784 mtdblock12
+dev:    size   erasesize  name
+mtd0: 00020000 00020000 "VENDOR_DATA"
+mtd1: 02000000 00020000 "SYS_SW"
+mtd2: 00500000 00020000 "DSP_uCode"
+mtd3: 01400000 00020000 "SYS_DATA"
+mtd4: 00a00000 00020000 "LINUX_Kernel"
+mtd5: 03c00000 00020000 "LINUX_RFS"
+mtd6: 01e00000 00020000 "LINUX_HIBER_IMG"
+mtd7: 01980000 00020000 "VIDEO_REC_IDX"
+mtd8: 00280000 00020000 "CALIB"
+mtd9: 001c0000 00020000 "USER_SETTING"
+mtd10: 00680000 00020000 "DRIVE_A"
+mtd11: 00680000 00020000 "DRIVE_B"
+mtd12: 03580000 00020000 "RESERVED"
+~ # echo __YI_CAPTURE_dffc592148cd41dcb53d32c055966ef4__
+__YI_CAPTURE_dffc592148cd41dcb53d32c055966ef4__

@@ -1,0 +1,38 @@
+{
+  "old_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "device_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "functions": {
+    "loadbin": {
+      "entry": "0xa02a2584",
+      "end_inclusive": "0xa02a26f3",
+      "old_instruction_lines": 92,
+      "device_instruction_lines": 92,
+      "changed_bytes": 6,
+      "diff_lines": 52
+    },
+    "savebin": {
+      "entry": "0xa02a3db0",
+      "end_inclusive": "0xa02a3f07",
+      "old_instruction_lines": 86,
+      "device_instruction_lines": 86,
+      "changed_bytes": 4,
+      "diff_lines": 34
+    },
+    "t_dispatch": {
+      "entry": "0xa029e1a4",
+      "end_inclusive": "0xa029e25f",
+      "old_instruction_lines": 47,
+      "device_instruction_lines": 47,
+      "changed_bytes": 1,
+      "diff_lines": 11
+    },
+    "t_register": {
+      "entry": "0xa029e098",
+      "end_inclusive": "0xa029e1a3",
+      "old_instruction_lines": 67,
+      "device_instruction_lines": 67,
+      "changed_bytes": 0,
+      "diff_lines": 0
+    }
+  }
+}

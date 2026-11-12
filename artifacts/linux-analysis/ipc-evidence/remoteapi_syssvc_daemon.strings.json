@@ -1,0 +1,534 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x6cd",
+    "text": "libpthread.so.0"
+  },
+  {
+    "offset": "0x6dd",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x6f9",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x70d",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x727",
+    "text": "sigaction"
+  },
+  {
+    "offset": "0x731",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0x742",
+    "text": "system"
+  },
+  {
+    "offset": "0x749",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0x754",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x763",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0x770",
+    "text": "libnsl.so.1"
+  },
+  {
+    "offset": "0x77c",
+    "text": "libcrc.so"
+  },
+  {
+    "offset": "0x786",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x78c",
+    "text": "libambamem.so"
+  },
+  {
+    "offset": "0x79a",
+    "text": "AmbaMem_convert"
+  },
+  {
+    "offset": "0x7aa",
+    "text": "AmbaMem_init"
+  },
+  {
+    "offset": "0x7b7",
+    "text": "AmbaMem_release"
+  },
+  {
+    "offset": "0x7c7",
+    "text": "AmbaMem_munmap"
+  },
+  {
+    "offset": "0x7d6",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0x7e3",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0x7f1",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0x806",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0x81a",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0x82f",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x841",
+    "text": "ambaipc_svc_unregister"
+  },
+  {
+    "offset": "0x858",
+    "text": "libcrypto.so.1.0.0"
+  },
+  {
+    "offset": "0x86b",
+    "text": "libpkgencap.so"
+  },
+  {
+    "offset": "0x87a",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x884",
+    "text": "strcpy"
+  },
+  {
+    "offset": "0x890",
+    "text": "sprintf"
+  },
+  {
+    "offset": "0x898",
+    "text": "closedir"
+  },
+  {
+    "offset": "0x8a1",
+    "text": "ftell"
+  },
+  {
+    "offset": "0x8ac",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x8b3",
+    "text": "abort"
+  },
+  {
+    "offset": "0x8b9",
+    "text": "rewind"
+  },
+  {
+    "offset": "0x8c0",
+    "text": "strtok"
+  },
+  {
+    "offset": "0x8c7",
+    "text": "fgets"
+  },
+  {
+    "offset": "0x8cd",
+    "text": "strlen"
+  },
+  {
+    "offset": "0x8d4",
+    "text": "memset"
+  },
+  {
+    "offset": "0x8db",
+    "text": "fseek"
+  },
+  {
+    "offset": "0x8e1",
+    "text": "chdir"
+  },
+  {
+    "offset": "0x8e7",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x8ee",
+    "text": "fclose"
+  },
+  {
+    "offset": "0x8f5",
+    "text": "malloc"
+  },
+  {
+    "offset": "0x8fc",
+    "text": "strcat"
+  },
+  {
+    "offset": "0x903",
+    "text": "opendir"
+  },
+  {
+    "offset": "0x90b",
+    "text": "getcwd"
+  },
+  {
+    "offset": "0x912",
+    "text": "fread"
+  },
+  {
+    "offset": "0x918",
+    "text": "localtime"
+  },
+  {
+    "offset": "0x922",
+    "text": "readdir64"
+  },
+  {
+    "offset": "0x92c",
+    "text": "sleep"
+  },
+  {
+    "offset": "0x932",
+    "text": "fopen64"
+  },
+  {
+    "offset": "0x93a",
+    "text": "strcmp"
+  },
+  {
+    "offset": "0x941",
+    "text": "strerror"
+  },
+  {
+    "offset": "0x94a",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x961",
+    "text": "__xstat64"
+  },
+  {
+    "offset": "0x96b",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x972",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x97e",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x98c",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x998",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x9a5",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x1f81",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x1fd8",
+    "text": "ambalink_notify_status"
+  },
+  {
+    "offset": "0x1fef",
+    "text": "ambalink_dir_list"
+  },
+  {
+    "offset": "0x2001",
+    "text": "ambalink_print_working_directory"
+  },
+  {
+    "offset": "0x2022",
+    "text": "ambalink_change_dir"
+  },
+  {
+    "offset": "0x2036",
+    "text": "handle_cd"
+  },
+  {
+    "offset": "0x2040",
+    "text": "/usr/local/share/script/wifi_status.sh > /tmp/wifi_status_tmp.conf "
+  },
+  {
+    "offset": "0x2140",
+    "text": "cat /pref/wifi.conf | grep -v '#' | grep -v '^\\s*$' | grep -v '^WEP*' > /tmp/wifi_ap_tmp.conf "
+  },
+  {
+    "offset": "0x2240",
+    "text": "sed -i"
+  },
+  {
+    "offset": "0x3640",
+    "text": "ambalink_set_wifi_setting"
+  },
+  {
+    "offset": "0x365a",
+    "text": "cmdhndlr_unregister_svc"
+  },
+  {
+    "offset": "0x3674",
+    "text": "/usr/local/share/script/wifi_stop.sh unload"
+  },
+  {
+    "offset": "0x36a0",
+    "text": "/usr/local/share/script/wifi_start.sh"
+  },
+  {
+    "offset": "0x36c6",
+    "text": "/usr/local/share/script/wifi_start.sh > /dev/null"
+  },
+  {
+    "offset": "0x36f8",
+    "text": "%s,%d, Fail to create the client for linux commands "
+  },
+  {
+    "offset": "0x372e",
+    "text": "+++ The error code which is INVALID_PATH(-2) will be returned if the filepath is NULL"
+  },
+  {
+    "offset": "0x3791",
+    "text": "%s/%s"
+  },
+  {
+    "offset": "0x3797",
+    "text": "%c{\"%s/\":"
+  },
+  {
+    "offset": "0x37a1",
+    "text": "%c{\"%s\":"
+  },
+  {
+    "offset": "0x37aa",
+    "text": "\"%u bytes|%04d-%02d-%02d %02d:%02d:%02d\"}"
+  },
+  {
+    "offset": "0x37d4",
+    "text": "\"%u bytes|%04d-%02d-%02d %02d:%02d:%02d|%u\"}"
+  },
+  {
+    "offset": "0x3801",
+    "text": "\"%u bytes\"}"
+  },
+  {
+    "offset": "0x380d",
+    "text": "\"%u bytes|%u\"}"
+  },
+  {
+    "offset": "0x381c",
+    "text": "\"%04d-%02d-%02d %02d:%02d:%02d\"}"
+  },
+  {
+    "offset": "0x383d",
+    "text": "\"%04d-%02d-%02d %02d:%02d:%02d|%u\"}"
+  },
+  {
+    "offset": "0x3861",
+    "text": "\"%u\"}"
+  },
+  {
+    "offset": "0x3867",
+    "text": "%s %d %s"
+  },
+  {
+    "offset": "0x3874",
+    "text": "%s: getcwd fail"
+  },
+  {
+    "offset": "0x3885",
+    "text": "%s: chdir fail"
+  },
+  {
+    "offset": "0x3895",
+    "text": "%s,%d, The pointer which is indicted to the result section is NULL!"
+  },
+  {
+    "offset": "0x38da",
+    "text": "%s,%d, Fial to conver the memory!"
+  },
+  {
+    "offset": "0x38ff",
+    "text": "amba_boss_get_wifi_status: Fail to fopen the file "
+  },
+  {
+    "offset": "0x3937",
+    "text": "rm /tmp/wifi_status_tmp.conf"
+  },
+  {
+    "offset": "0x3954",
+    "text": "amba_boss_get_wifi_setting: Fail to fopen config file "
+  },
+  {
+    "offset": "0x3990",
+    "text": "rm /tmp/wifi_ap_tmp.conf"
+  },
+  {
+    "offset": "0x39a9",
+    "text": "[%s]: Reading File Error"
+  },
+  {
+    "offset": "0x39c3",
+    "text": " -e 's/\\("
+  },
+  {
+    "offset": "0x39cf",
+    "text": "=\\).*/\\1"
+  },
+  {
+    "offset": "0x39db",
+    "text": " /tmp/FL0/pref/wifi.conf"
+  },
+  {
+    "offset": "0x39f4",
+    "text": "amba_boss_set_wifi_setting : %s "
+  },
+  {
+    "offset": "0x3a16",
+    "text": "AmbaMem_init() fail!"
+  },
+  {
+    "offset": "0x3a2d",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x3a55",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x3a7f",
+    "text": "AmbaMem_release() fail!"
+  },
+  {
+    "offset": "0x3a99",
+    "text": "%s,%d Fail to destroy the client, rval = %d"
+  },
+  {
+    "offset": "0x3ac6",
+    "text": "%s,%d G_LnxCmd_Clnt is zero"
+  },
+  {
+    "offset": "0x3ae3",
+    "text": "cmdhndlr_svc"
+  },
+  {
+    "offset": "0x3d11",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x3d44",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x3d4e",
+    "text": ".interp"
+  },
+  {
+    "offset": "0x3d56",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0x3d64",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x3d77",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x3d7d",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x3d85",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x3d8d",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x3d9a",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x3da9",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x3db2",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x3dbb",
+    "text": ".init"
+  },
+  {
+    "offset": "0x3dc1",
+    "text": ".text"
+  },
+  {
+    "offset": "0x3dc7",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x3dcd",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x3dd5",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x3de0",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x3dea",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x3df6",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x3e07",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x3e15",
+    "text": ".data"
+  },
+  {
+    "offset": "0x3e20",
+    "text": ".ARM.attributes"
+  }
+]

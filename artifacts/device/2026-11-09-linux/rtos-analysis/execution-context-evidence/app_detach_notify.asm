@@ -1,0 +1,5 @@
+a019c3a8 0100a0e3 mov r0, #1
+a019c3ac 0010a0e3 mov r1, #0
+a019c3b0 01004fe3 movt r0, #0xf001
+a019c3b4 0120a0e1 mov r2, r1
+a019c3b8 762801ea b #0xa01e6598

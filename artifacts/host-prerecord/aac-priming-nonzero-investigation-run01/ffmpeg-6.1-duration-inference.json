@@ -1,0 +1,17 @@
+{
+  "reference": "https://github.com/FFmpeg/FFmpeg/blob/n6.1/libavformat/mov.c#L9017",
+  "full_source_sha256": "b5f0792dbe49b851a5c88b91ab20872a50ebeccafd1d60406288b653a3b80cf6",
+  "scope": "public source explaining ffprobe inference; not executed target code",
+  "excerpt_start_line": 9017,
+  "excerpt": [
+    "    } else {",
+    "        int64_t next_dts = (sc->current_sample < ffstream(st)->nb_index_entries) ?",
+    "            ffstream(st)->index_entries[sc->current_sample].timestamp : st->duration;",
+    "",
+    "        if (next_dts >= pkt->dts)",
+    "            pkt->duration = next_dts - pkt->dts;",
+    "        pkt->pts = pkt->dts;",
+    "    }"
+  ],
+  "explanation": "Without CTTS, final packet next_dts uses st->duration; for positive start 512 ticks, final dts383488 and duration384000 imply 512 despite STTS sample duration1024. At offsets where next_dts < DTS, duration remains unset and AAC parser infers1024; no such offset workaround is used."
+}

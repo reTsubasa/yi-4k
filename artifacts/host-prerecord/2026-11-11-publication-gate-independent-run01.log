@@ -1,0 +1,52 @@
+{
+  "scope": "local host-generated media; no camera contact",
+  "checks": {
+    "positive_published_and_passed": true,
+    "exactly_one_real_remux_injected": true,
+    "negative_full_decode_passed": true,
+    "negative_gate_rejected": true,
+    "negative_failed_manifest": true,
+    "negative_never_published": true,
+    "negative_pending_retained": true,
+    "negative_segments_retained": true,
+    "negative_snapshot_hash_matches": true,
+    "negative_only_av_offset_failed": true,
+    "source_unchanged": true
+  },
+  "passed": true,
+  "injection_commands": [
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-n",
+      "-copyts",
+      "-i",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-run01/audio-shift-negative/clip.unshifted-negative-control.mp4",
+      "-itsoffset",
+      "0.1",
+      "-i",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-run01/audio-shift-negative/clip.unshifted-negative-control.mp4",
+      "-map",
+      "0:v:0",
+      "-map",
+      "1:a:0",
+      "-c",
+      "copy",
+      "-avoid_negative_ts",
+      "disabled",
+      "-movie_timescale",
+      "1000000",
+      "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/publication-gate-independent-run01/audio-shift-negative/clip.pending.mp4"
+    ]
+  ],
+  "positive_clip_sha256": "98f1fed688618376291c60f852f36d84a18c9c698673b0f534c925c101c70cdb",
+  "negative_clip_sha256": "7026e86df841c2a78b77d92e11c285b5ef672a451784b6a040be43a8981d1db3",
+  "negative_snapshot_sha256": "168951190d626bad188665565e8154d2ecf72da94346653e074f7200312b5e03",
+  "code_sha256": {
+    "prerecord_replay.py": "110be45e27d3ea5cee275a83292af81b632e8063765bab0bd93969eef26cdc11",
+    "validate_prerecord_packet_fidelity.py": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460",
+    "audit_prerecord_publication_gate.py": "50abb9c5769a3fdcc911412ffc336f5f5c81a15b1c96aba85e7e8750289d48eb"
+  }
+}

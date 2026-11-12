@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "status": "failed_at_configured_native_time_limit",
+  "minute_prefix_passed": false,
+  "offline_only": true,
+  "device_access": false,
+  "command": ".venv-reverse/bin/python scripts/audit_prerecord_minute_native.py --output artifacts/verification/2026-11-11-prerecord-minute-native-independent-run02 --video-frames 1920",
+  "script_sha256": "e2660f136fa1e9eccb9c2e866c5bb480a96dd4b3b3635c84c8abd01c910fbe87",
+  "source": {
+    "path": "artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+    "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c"
+  },
+  "requested": {
+    "video_frames": 1920,
+    "stop_time_seconds": "8008/125",
+    "stop_time_decimal_seconds": 64.064,
+    "selected_packets": 4923
+  },
+  "observed_failure": {
+    "provenance": "Prior parent-run exception reported to this audit task; no original stdout/traceback file was retained in this directory. This task did not rerun the long ARM replay.",
+    "packet_ordinal_zero_based": 4616,
+    "video_packet_index_zero_based": 1800,
+    "packet_pts": 1801800,
+    "packet_time_base": "1/30000",
+    "packet_time_seconds": "3003/50",
+    "packet_time_decimal_seconds": 60.06,
+    "status": 3,
+    "failing_assertion": "assert status == 0 at scripts/audit_prerecord_minute_native.py:81"
+  },
+  "independently_checked_packet": {
+    "method": "Read-only ffprobe packet extraction and select_window; no ARM replay",
+    "stream": 0,
+    "index": 1800,
+    "pts": 1801800,
+    "dts": 1801800,
+    "duration": 1001,
+    "offset": 336593503,
+    "bytes": 388448,
+    "sha256": "1dce73de56a2669a4b0504bc7c4280ab2f878e5512e9f67bd1e688f79dcb05dc",
+    "key": true,
+    "video_packets_before": 1800,
+    "audio_packets_before": 2816
+  },
+  "root_cause": {
+    "configured_time_limit_ms": 60000,
+    "configuration_sites": [
+      {
+        "line": 64,
+        "setting": "mux + 0x10 = 60000"
+      },
+      {
+        "line": 79,
+        "setting": "ProcessVideo duration_ms argument = 60000"
+      },
+      {
+        "line": 80,
+        "setting": "ProcessAudio duration_ms argument = 60000"
+      }
+    ],
+    "native_contract": "Default-track CheckLimit returns 3 when track.DTS >= track.origin + ceil(duration_ms * timescale / 1000); video checks before writing a type-1 synchronous frame.",
+    "supported_by": "docs/prerecord-sync-boundary.md",
+    "conclusion": "The harness requests one 64.064-second segment while explicitly configuring a 60-second native time limit. The key video packet at 60.06 seconds reaches that boundary; return 3 is a time-limit result rather than proof of packet corruption. The harness has no rollover handling at its unconditional zero-status assertion."
+  },
+  "outputs": {
+    "audit_json_produced": false,
+    "native_prefix_mp4_produced": false,
+    "final_close_reached": false,
+    "strict_gate_run": false,
+    "complete_decode_run": false
+  },
+  "required_next_step": "Implement and verify legitimate boundary/rollover scheduling and complete A/V packet/time ownership; do not raise or bypass the 60000 ms limit merely to relabel this run as a minute pass.",
+  "limitations": [
+    "Failure classification combines the parent-reported exception with independent script/configuration and archived-packet checks.",
+    "This record does not assert FIFO state, RAM-file contents, index state or recovery at the failure point; those transient objects were not retained.",
+    "The archived 8-frame calibration is a calibration only and does not establish minute replay, live prerecord, SD persistence, or voice/shutter binding."
+  ]
+}

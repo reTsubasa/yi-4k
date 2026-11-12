@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-11T04:56:23.046054+00:00",
+  "host": "192.168.42.1",
+  "scope": "TCP connect only; no camera API messages, memory reads or device writes",
+  "ports": [
+    {
+      "port": 23,
+      "tcp_reachable": false,
+      "error": "TimeoutError"
+    },
+    {
+      "port": 7878,
+      "tcp_reachable": false,
+      "error": "TimeoutError"
+    }
+  ]
+}

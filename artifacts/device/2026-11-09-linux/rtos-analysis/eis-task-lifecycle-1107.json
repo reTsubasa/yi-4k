@@ -1,0 +1,67 @@
+{
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "rtos_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "task_create_wrapper": "0xA03BC2BC",
+  "task_smp_core_exclusion_set": "0xA03BC7D8",
+  "task_smp_core_exclusion_get": "0xA03BC7DC",
+  "task_resume_after_create": "0xA03BC31C",
+  "task_suspend_wrapper": "0xA03BC318",
+  "task_delete_wrapper": "0xA03BC30C",
+  "task_terminate_wrapper": "0xA03BC310",
+  "task_entry_trampoline": "0xA03C0A74",
+  "entry_control_block_offsets": {
+    "entry": "0x44",
+    "arg": "0x48",
+    "state": "0x30",
+    "completion": "0x38",
+    "exit_notify": "0xC8"
+  },
+  "create_semantics": {
+    "auto_start_zero": "registers_control_block_without_ready_queue_insertion",
+    "initial_state_observed": 3,
+    "control_block_bytes": 216
+  },
+  "eis_tasks": [
+    {
+      "name": "AmbaImageMainEisTask",
+      "create": "0xA03975BC",
+      "task_object": "0xA170BBB0",
+      "entry": "0xA0396F34",
+      "priority_argument_at_callsite": 7,
+      "stack": "0xA0AC9200",
+      "stack_bytes": 8192,
+      "auto_start": 0,
+      "core_exclusion_argument": "~3",
+      "core_exclusion_low2_after_mask": 0,
+      "resume": "0xA03BC31C"
+    },
+    {
+      "name": "AmbaImageMainEisAlgo2Task",
+      "create": "0xA0397688",
+      "task_object": "0xA170BA90",
+      "entry": "0xA0396EE8",
+      "priority_argument_at_callsite": 12,
+      "stack": "0xA0ACB200",
+      "stack_bytes": 8192,
+      "auto_start": 0,
+      "core_exclusion_argument": "~3",
+      "core_exclusion_low2_after_mask": 0,
+      "resume": "0xA03BC31C"
+    }
+  ],
+  "evidence": [
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a03975bc.asm",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0397688.asm",
+    "artifacts/rtos-reverse/full/decompiled/a03c0bc4.c",
+    "artifacts/rtos-reverse/full/decompiled/a03bfc90.c",
+    "artifacts/rtos-reverse/full/decompiled/a03c4644.c",
+    "artifacts/rtos-reverse/full/decompiled/a03c0a74.c",
+    "artifacts/rtos-reverse/full/decompiled/a03c1d5c.c",
+    "artifacts/rtos-reverse/full/decompiled/a03bc30c.c",
+    "artifacts/rtos-reverse/full/decompiled/a03bc310.c",
+    "artifacts/rtos-reverse/full/decompiled/a03bc318.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0188944.c",
+    "artifacts/firmware/rtos-string-leads.json"
+  ],
+  "runtime_validated": false
+}

@@ -1,0 +1,34 @@
+{
+  "host_date": "2026-11-09",
+  "transport": "Wi-Fi / Telnet root",
+  "host": "192.168.42.1",
+  "firmware_build": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "hardware_version": "YDXJ2_V13LW",
+  "kernel_version": "3.10.71 #1 PREEMPT Fri Feb 2 12:17:50 CST 2018",
+  "linux_system_ram_bytes": 56623104,
+  "linux_memtotal_kib": 49096,
+  "linux_visible_cpu_count": 1,
+  "cortex_clock_hz_observed": 792000000,
+  "bootcmd_hook_present": false,
+  "settings_changed": false,
+  "firmware_flashed": false,
+  "rtos_payload_executed": false,
+  "sharepreview_executed": false,
+  "api_session_closed": true,
+  "old_rtos_addresses_compatible": "Not established; firmware differs, do not reuse fixed addresses",
+  "listeners_observed": {
+    "23": "telnetd",
+    "80": "cherokee-worker",
+    "554": "AmbaRTSPServer",
+    "7878": "remoteapi_cmd_daemon",
+    "8787": "remoteapi_data_daemon",
+    "9888": "AmbaEventNotifyDaemon",
+    "9898": "AmbaNetFifoDaemon"
+  },
+  "capture_notes": [
+    "Camera wall clock not calibrated",
+    "system_mode record means recording mode, not active recording",
+    "Snapshot memory values and idle load are not algorithm benchmarks",
+    "Partition readouts are logical MTD, not physical NAND/OOB backups"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "host": "192.168.42.1",
+  "started_utc": "2026-11-09T01:09:04.239346+00:00",
+  "image_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+  "command": "python -B -u <<'YI_MEM_PY'\nimport os, binascii, json, signal\nsignal.alarm(8)\nfd = os.open('/dev/mem', os.O_RDONLY)\ndef read_va(va, count):\n    os.lseek(fd, va - 0xa0000000, os.SEEK_SET)\n    data = os.read(fd, count)\n    assert len(data) == count\n    return data\ntry:\n    for va, expected in [(2685403388, 'b01f10ee031001e200000fe1000051e31f00c0e3d10080e300f021e118219f0518219f1500d092e51f00c0e3d20080e300f021e108219f0508219f1500d092e5'), (2688097520, '04e02de56cd04de204008de5403604e370314ae30c3093e540308de5403604e370314ae3103093e53c308de5c83a07e375304ae30030d3e5010053e32800008a')]:\n        assert binascii.hexlify(read_va(va, len(expected)//2)) == expected, 'Live text fingerprint mismatch; no state read'\n    print('YI_RTOS_TEXT_MATCHED')\n    for va, count in [(2692053568, 272), (2708483136, 192), (2708488272, 640), (2708489632, 96), (2705603864, 64), (2711836068, 4)]:\n        print('YI_RTOS_MEMORY ' + json.dumps({'va': hex(va).rstrip('L'), 'pa': hex(va-0xa0000000).rstrip('L'), 'hex': binascii.hexlify(read_va(va, count))}))\nfinally:\n    os.close(fd)\n    signal.alarm(0)\n\nYI_MEM_PY",
+  "limitations": [
+    "Not atomic or cache coherent with RTOS; values may be stale.",
+    "No high-frequency gyro stream or performance measurement."
+  ],
+  "text_fingerprints_matched": false,
+  "memory": []
+}

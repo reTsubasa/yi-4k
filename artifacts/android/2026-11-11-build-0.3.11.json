@@ -1,0 +1,46 @@
+{
+  "evidence_type": "Android 0.3.11 delivery, compact landscape UI fix, mode-switch probe fix and host tests",
+  "apk": "artifacts/android/yi4k-control-0.3.11-debug.apk",
+  "sha256": "d57372206e94b953f116fe53383f26479fc16178666dc47d3782eaa4a0a5295c",
+  "size_bytes": 11535005,
+  "version_name": "0.3.11",
+  "version_code": 14,
+  "changes": [
+    "Landscape compact layout hides only decorative preview and shrinks parameter chips so shutter, chips, modes and navigation remain visible.",
+    "CameraLiveProbe restores and switches modes through CameraConfiguration.selectMode child setters instead of direct system_mode writes."
+  ],
+  "checks": {
+    "testDebugUnitTest": true,
+    "testReleaseUnitTest": true,
+    "lintDebug": true,
+    "assembleDebug": true,
+    "assembleRelease": true,
+    "prototype_render_test": true,
+    "capture_ui_test": true,
+    "physical_phone_execution": false,
+    "camera_access_during_build": false
+  },
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "signature": {
+    "v2": true,
+    "signers": 1,
+    "certificate": "Android Debug"
+  },
+  "limits": [
+    "Debug APK is signed with Android Debug certificate.",
+    "No physical Android phone execution in this build audit."
+  ]
+}

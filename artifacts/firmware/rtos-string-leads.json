@@ -1,0 +1,7030 @@
+[
+  {
+    "offset": 4389056,
+    "text": "[I][MISC_POWERSAVING][%06d][%s]:AmbaDSP_Suspend"
+  },
+  {
+    "offset": 4389104,
+    "text": "[I][MISC_POWERSAVING][%06d][%s]:AmbaSensor_Disable"
+  },
+  {
+    "offset": 4389216,
+    "text": "[I][MISC_POWERSAVING][%06d][%s]:AmbaPLL_SetOpMode"
+  },
+  {
+    "offset": 4393268,
+    "text": "%s[pb_multi_get_file] A9s not support B-frame decode or other format video now."
+  },
+  {
+    "offset": 4394408,
+    "text": "%s[pb_multi_config_media_info] A9s not support B-frame decode or other format video now."
+  },
+  {
+    "offset": 4409900,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:HMSG_RECORDER_STATE_GYRO_CHANGE param1 = %d param2 %d"
+  },
+  {
+    "offset": 4415952,
+    "text": "Z16V13L_1.10.9_build-20180622051856_git-efbdfd85_r2748"
+  },
+  {
+    "offset": 4416552,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:Not support EIS"
+  },
+  {
+    "offset": 4416604,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:support EIS"
+  },
+  {
+    "offset": 4423396,
+    "text": "%s[rec_connected_cam] <vf_stop> AMBA Link not booted yet! Do nothing!"
+  },
+  {
+    "offset": 4437404,
+    "text": "[rec_connected_cam_set_fov_eis_range] set eis range:%d"
+  },
+  {
+    "offset": 4441380,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:CaptureTime:%d, AmbaPWC_WakeupByAlarm(%d s) ----> POWER OFF"
+  },
+  {
+    "offset": 4465544,
+    "text": "%s[F][CAM_TOUCH][%06d][%s]:AmbaRTC_GetSystemTime failure. ReturnValue = %d"
+  },
+  {
+    "offset": 4467008,
+    "text": "[I][CAM_TOUCH][%06d][%s]:app_status.eis_support: %d"
+  },
+  {
+    "offset": 4470936,
+    "text": "[I][CAM_TOUCH][%06d][%s]:switch eis: cur: %d, support: %d"
+  },
+  {
+    "offset": 4479408,
+    "text": "gui_set_eis"
+  },
+  {
+    "offset": 4508000,
+    "text": "rec_connected_cam_settings_set_gui_eis_enable"
+  },
+  {
+    "offset": 4510148,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:GuiPref.eis_status %d"
+  },
+  {
+    "offset": 4512620,
+    "text": "rec_connected_cam_settings_set_sys_eis_enable"
+  },
+  {
+    "offset": 4513492,
+    "text": "[W][REC_CONNECTED_CAM][%06d][%s]:Current video_res: %d ,not support eis"
+  },
+  {
+    "offset": 4517676,
+    "text": "rec_connected_cam_settings_set_eis_enable"
+  },
+  {
+    "offset": 4518368,
+    "text": "rec_connected_cam_settings_get_eis_status"
+  },
+  {
+    "offset": 4523988,
+    "text": "iq_eis_enable"
+  },
+  {
+    "offset": 4524172,
+    "text": "eis_support_status"
+  },
+  {
+    "offset": 4531060,
+    "text": "[I][REC_CONNECTED_CAM][%06d][%s]:Send return OK to AMBA_RECORD_STOP"
+  },
+  {
+    "offset": 4531308,
+    "text": "%s[rec_connected_cam] <netctrl_get_device_info> AmbaVer_GetVerInfo() fail"
+  },
+  {
+    "offset": 4531512,
+    "text": "ambarella"
+  },
+  {
+    "offset": 4537664,
+    "text": "[I][REC_CAM_TPCTRL][%06d][%s]:Set eis %d"
+  },
+  {
+    "offset": 4537708,
+    "text": "[W][REC_CAM_TPCTRL][%06d][%s]:eis the same value "
+  },
+  {
+    "offset": 4544488,
+    "text": "rec_connected_cam_tpctrl_set_eis"
+  },
+  {
+    "offset": 4554656,
+    "text": "[I][THUMB_RENDER][%06d][%s]:A9s not support B-frame decode now."
+  },
+  {
+    "offset": 4563316,
+    "text": "%s[Menu Time] AmbaRTC_GetSystemTime failure. ReturnValue = %d"
+  },
+  {
+    "offset": 4563380,
+    "text": "%s[Menu Time] AmbaRTC_SetSystemTime failure. ReturnValue = %d"
+  },
+  {
+    "offset": 4564392,
+    "text": "%s[E][touch_screen_op][%06d][%s]:AmbaKAL_TimerChange ERROR"
+  },
+  {
+    "offset": 4565300,
+    "text": "imx377_a9s"
+  },
+  {
+    "offset": 4566192,
+    "text": "imx377_a9s"
+  },
+  {
+    "offset": 4566240,
+    "text": "sensor_imx377_a9s_get_still_capture_mode_config"
+  },
+  {
+    "offset": 4566328,
+    "text": "sensor_imx377_a9s_get_capture_mode_ar"
+  },
+  {
+    "offset": 4566400,
+    "text": "sensor_imx377_a9s_get_still_capture_mode_config"
+  },
+  {
+    "offset": 4566448,
+    "text": "%ssensor_imx377_a9s_get_piv_size failed, ReturnValue:%d"
+  },
+  {
+    "offset": 4566508,
+    "text": "[sensor_imx377_a9s_get_piv_size]fov:%d, videoResId:%d, width:%d, height:%d"
+  },
+  {
+    "offset": 4566608,
+    "text": "[sensor_imx377_a9s_get_piv_size] 2nd_wide_fov_for_wvga == TRUE, width:%d"
+  },
+  {
+    "offset": 4567364,
+    "text": "_sensor_imx377_a9s_get_piv_size"
+  },
+  {
+    "offset": 4567416,
+    "text": "sensor_imx377_a9s_get_vinMode"
+  },
+  {
+    "offset": 4568936,
+    "text": "AmbaShell Started"
+  },
+  {
+    "offset": 4569332,
+    "text": "Load AMBA_DSP_IMG_MCTF_CFG_SIZE.bin failed!"
+  },
+  {
+    "offset": 4569636,
+    "text": "AmbaFS_ChangeDir() : DRI_A need frmat!"
+  },
+  {
+    "offset": 4569676,
+    "text": "AmbaNVM_ErasePartition() : erase start!"
+  },
+  {
+    "offset": 4569716,
+    "text": "AmbaNVM_ErasePartition() : AMBA_USER_PARTITION_FAT_DRIVE_A fail!"
+  },
+  {
+    "offset": 4569784,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_FAT_DRIVE_A start!"
+  },
+  {
+    "offset": 4569844,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_FAT_DRIVE_A fail!"
+  },
+  {
+    "offset": 4569904,
+    "text": "AmbaFS_Format() : start!"
+  },
+  {
+    "offset": 4570236,
+    "text": "AmbaNAND_Init() fail!"
+  },
+  {
+    "offset": 4570260,
+    "text": "AmbaNAND_Config() faile!"
+  },
+  {
+    "offset": 4570288,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_VIDEO_REC_INDEX fail!"
+  },
+  {
+    "offset": 4570352,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_CALIBRATION_DATA fail!"
+  },
+  {
+    "offset": 4570416,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_USER_SETTING fail!"
+  },
+  {
+    "offset": 4570476,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_FAT_DRIVE_B fail!"
+  },
+  {
+    "offset": 4570540,
+    "text": "AmbaFS_ChangeDir() : DRI_B need frmat!"
+  },
+  {
+    "offset": 4570580,
+    "text": "AmbaNVM_ErasePartition() : AMBA_USER_PARTITION_FAT_DRIVE_B fail!"
+  },
+  {
+    "offset": 4570648,
+    "text": "AmbaNAND_FtlInit() : AMBA_USER_PARTITION_FAT_DRIVE_B start!"
+  },
+  {
+    "offset": 4570708,
+    "text": "AmbaFS_Format(DrvB) : start!"
+  },
+  {
+    "offset": 4570740,
+    "text": "%sAmbaNand_InitMiscBoardConfig(...) Faild:%d"
+  },
+  {
+    "offset": 4570788,
+    "text": "%sAmbaNand_InitHWBoardConfig(...) Faild:%d"
+  },
+  {
+    "offset": 4570832,
+    "text": "%s[AppMainTask] AmbaROM_Init failure %%"
+  },
+  {
+    "offset": 4570964,
+    "text": "AmbaUserAudioCodec_Init"
+  },
+  {
+    "offset": 4571048,
+    "text": "XiaoYi_Z16"
+  },
+  {
+    "offset": 4576304,
+    "text": "AmbaKAL_TaskTerminate failed"
+  },
+  {
+    "offset": 4576336,
+    "text": "AmbaKAL_TaskDelete failed"
+  },
+  {
+    "offset": 4576364,
+    "text": "AmbaKAL_MutexDelete failed"
+  },
+  {
+    "offset": 4579408,
+    "text": "CustomPref.eis_enable"
+  },
+  {
+    "offset": 4581408,
+    "text": "AppUtil_SetEIS"
+  },
+  {
+    "offset": 4586940,
+    "text": "AmbaRTC_GetSystemTime failure. RetVal = %d"
+  },
+  {
+    "offset": 4587812,
+    "text": "%s[E][APP_UTIL][%06d][%s]:AmbaFS_CleanDir Failed:%d"
+  },
+  {
+    "offset": 4590000,
+    "text": "%s[App Util] AmbaRTC_SetSystemTime failure. ReturnValue = %d"
+  },
+  {
+    "offset": 4602052,
+    "text": "[I][HANDLER][%06d][%s]:AMBA_DEL_FILE @(%d, %d)"
+  },
+  {
+    "offset": 4603628,
+    "text": "[I][HANDLER][%06d][%s]:[AppHandler_Entry] HMSG_RECORDER_STATE_GYRO_CHANGE"
+  },
+  {
+    "offset": 4606972,
+    "text": "%sAmbaKAL_BytePoolAllocate failed ... line: %d"
+  },
+  {
+    "offset": 4607696,
+    "text": "killall AmbaRTSPServer"
+  },
+  {
+    "offset": 4607720,
+    "text": "/usr/bin/AmbaRTSPServer --en_audio --en_rtcp"
+  },
+  {
+    "offset": 4607768,
+    "text": "/usr/bin/AmbaRTSPServer"
+  },
+  {
+    "offset": 4608128,
+    "text": "C:\\DCIM\\100MEDIA\\AMBA%04d.MP4"
+  },
+  {
+    "offset": 4609076,
+    "text": "EIS_enable"
+  },
+  {
+    "offset": 4609388,
+    "text": "set_EIS_range"
+  },
+  {
+    "offset": 4609424,
+    "text": "eis_support = %d"
+  },
+  {
+    "offset": 4609536,
+    "text": "AmbaDSP_EventDbg = %d"
+  },
+  {
+    "offset": 4611864,
+    "text": " EIS_enable [1:on |0:off]"
+  },
+  {
+    "offset": 4612173,
+    "text": " set_EIS_range [%]"
+  },
+  {
+    "offset": 4616068,
+    "text": "<AUCODEC> AmbaAudio_CodecWrite: NG"
+  },
+  {
+    "offset": 4616104,
+    "text": "<AUCODEC> AmbaAudio_CodecRead: 0x%x, 0x%x, 0x%x"
+  },
+  {
+    "offset": 4630492,
+    "text": "gyro chip id: 0x%02x"
+  },
+  {
+    "offset": 4630516,
+    "text": "gyro chip_id"
+  },
+  {
+    "offset": 4631672,
+    "text": "AmbaKAL_BytePoolAllocate failed [%d]... line: %d"
+  },
+  {
+    "offset": 4634448,
+    "text": "%s[E][APP_BEEP][%06d][%s]:AmbaROM_GetSize fail."
+  },
+  {
+    "offset": 4634500,
+    "text": "%s[E][APP_BEEP][%06d][%s]:AmbaKAL_BytePoolAllocate failed"
+  },
+  {
+    "offset": 4634560,
+    "text": "%s[E][APP_BEEP][%06d][%s]:AmbaNVM_ReadRomFile failed"
+  },
+  {
+    "offset": 4635312,
+    "text": "%s[E][APP_BEEP][%06d][%s]:AmbaFS_GetFileInfo failed %d"
+  },
+  {
+    "offset": 4636124,
+    "text": "AmbaUserAudioCodec_EQDisable"
+  },
+  {
+    "offset": 4636156,
+    "text": "in AmbaAudio_CodecFactoryTest"
+  },
+  {
+    "offset": 4636188,
+    "text": "c:\\factory\\z16_spk_mic_test.aac"
+  },
+  {
+    "offset": 4636220,
+    "text": "out AmbaAudio_CodecFactoryTest"
+  },
+  {
+    "offset": 4636252,
+    "text": "AmbaUserAudioCodec_EQEnable"
+  },
+  {
+    "offset": 4636952,
+    "text": "c:\\factory\\z16_cal_test_enable.txt"
+  },
+  {
+    "offset": 4637540,
+    "text": "AmbaFS_fclose failed %d"
+  },
+  {
+    "offset": 4637576,
+    "text": "c:\\factory\\z16_burnin_test_enable.txt"
+  },
+  {
+    "offset": 4637720,
+    "text": "c:\\factory\\z16_factory_reset_enable.txt"
+  },
+  {
+    "offset": 4637788,
+    "text": "Z16V12LB503DAB"
+  },
+  {
+    "offset": 4637908,
+    "text": "c:\\factory\\z16_factory_test_result_delete.txt"
+  },
+  {
+    "offset": 4638020,
+    "text": "c:\\factory\\z16_smt_test_enable.txt"
+  },
+  {
+    "offset": 4638056,
+    "text": "c:\\factory\\z16_cal_wb_get_golden_value.txt"
+  },
+  {
+    "offset": 4638192,
+    "text": "c:\\factory\\z16_spk_mic_test_enable.txt"
+  },
+  {
+    "offset": 4638288,
+    "text": "c:\\factory\\z16_bt_lcd_tp_imu_test_enable.txt"
+  },
+  {
+    "offset": 4638392,
+    "text": "c:\\factory\\z16_wifi_test_enable.txt"
+  },
+  {
+    "offset": 4639200,
+    "text": "c:\\factory\\z16_factory_test_enable.txt"
+  },
+  {
+    "offset": 4639576,
+    "text": "c:\\factory\\z16_mic_alc.txt"
+  },
+  {
+    "offset": 4639784,
+    "text": "c:\\factory\\z16_mic_check.txt"
+  },
+  {
+    "offset": 4640184,
+    "text": "c:\\factory\\z16_cal_lens_shading.txt"
+  },
+  {
+    "offset": 4640232,
+    "text": "c:\\factory\\z16_cal_wb_high.txt"
+  },
+  {
+    "offset": 4640276,
+    "text": "c:\\factory\\z16_cal_bp_dark.txt"
+  },
+  {
+    "offset": 4640324,
+    "text": "c:\\factory\\z16_cal_bp_bright.txt"
+  },
+  {
+    "offset": 4640372,
+    "text": "c:\\factory\\z16_cal_wb_low.txt"
+  },
+  {
+    "offset": 4641292,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_IDLE Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4641384,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagTake VOICE_CMD_EVENT_ENABLE Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4641556,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagQuery VOICE_CMD_EVENT_PROCESS Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4643896,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_EventFlagCreate Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4643988,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_TaskCreate Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4644056,
+    "text": "%s[E][VOICE_CMD][%06d][%s]:AmbaKAL_TaskSmpCoreExclusionSet Fail, ReturnValue:%d"
+  },
+  {
+    "offset": 4651524,
+    "text": "AMBA_START_SESSION >> 000 "
+  },
+  {
+    "offset": 4651556,
+    "text": "AMBA_START_SESSION >> 001 "
+  },
+  {
+    "offset": 4651588,
+    "text": "AMBA_START_SESSION >> 002 "
+  },
+  {
+    "offset": 4651620,
+    "text": "AMBA_START_SESSION >> 003 "
+  },
+  {
+    "offset": 4651652,
+    "text": "AMBA_START_SESSION >> 004 "
+  },
+  {
+    "offset": 4651724,
+    "text": "AMBA_START_SESSION >> 005: %s "
+  },
+  {
+    "offset": 4660024,
+    "text": "Clear AmbaNVM_EraseBldMagicCode"
+  },
+  {
+    "offset": 4668432,
+    "text": "[ZL::WARING]<%s>%sAmbaNAND_LoadBitmapsFileHeader(...) = %d"
+  },
+  {
+    "offset": 4668492,
+    "text": "[ZL::WARING]<%s>%sAmbaNAND_GetBitmapsFileSize() = %d"
+  },
+  {
+    "offset": 4668548,
+    "text": "[ZL::WARING]<%s>%sAmbaNAND_ReadBitmapsFile(...) = %d"
+  },
+  {
+    "offset": 4669580,
+    "text": "[ZL::WARING]<%s>%sAmbaNAND_WriteBitmapsFile(...) = %d"
+  },
+  {
+    "offset": 4670248,
+    "text": "AmbaSample_AdjCustomGet"
+  },
+  {
+    "offset": 4670620,
+    "text": "AmbaSample_AdjCustomSet"
+  },
+  {
+    "offset": 4671184,
+    "text": "[AppLib - ImgProcTest] --- Amba ImgProc Lib., Verison : %5d ----"
+  },
+  {
+    "offset": 4671500,
+    "text": "[AppLib - ImgProcTest] --- Amba Ae  Lib.,Verison : %5d ----"
+  },
+  {
+    "offset": 4671560,
+    "text": "[AppLib - ImgProcTest] --- Amba Awb Lib.,Verison : %5d ----"
+  },
+  {
+    "offset": 4671620,
+    "text": "[AppLib - ImgProcTest] --- Amba Adj Lib.,Verison : %5d ----"
+  },
+  {
+    "offset": 4697840,
+    "text": "t cal warp merge_bin [ca/warp] [filename] [filename] [filename] ....  : combine ca/warp binary for amba calibrationt cal warp merge_bin [ca/warp] merge [filename] [num]: the file name is warp0.bin warp1.bin .... warp7.bin [filename]= driver:warp [num]= 8. t cal warp merge_bin sur_warp merge [filename] [num]: the file name is warp_F.bin warp_B.bin ..... "
+  },
+  {
+    "offset": 4698208,
+    "text": "[WARP] set AMBA_DSP_IMG_WARP_CORE_SENSOR_V_FLIP and AMBA_DSP_IMG_WARP_CORE_DMA_H_FLIP"
+  },
+  {
+    "offset": 4702840,
+    "text": "%sAmbaAudio_CalibData.pMemAlignedBase = %x"
+  },
+  {
+    "offset": 4704372,
+    "text": " bpc : Amba bad pixel calibration"
+  },
+  {
+    "offset": 4704408,
+    "text": " vnc : Amba vignette calibration"
+  },
+  {
+    "offset": 4704444,
+    "text": " blc : Amba black level calibration"
+  },
+  {
+    "offset": 4704480,
+    "text": " wb : Amba black level calibration"
+  },
+  {
+    "offset": 4705320,
+    "text": "A9S_SDK"
+  },
+  {
+    "offset": 4711000,
+    "text": "%s[AppLib - ComSvcHcmgr] <RcvMsg> UserMsgQueue AmbaKAL_MsgQueueReceive fail (%d)"
+  },
+  {
+    "offset": 4711316,
+    "text": "%s[AppLib - ComSvcHcmgr] <RcvMsg> AmbaKAL_MsgQueueReceive fail (%d)"
+  },
+  {
+    "offset": 4713516,
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/rtos/app/connected/applib/src/dcf/ApplibDcf.c"
+  },
+  {
+    "offset": 4715248,
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/rtos/app/connected/applib/src/dcf/ApplibDcf_Filter.c"
+  },
+  {
+    "offset": 4715784,
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/rtos/app/connected/applib/src/dcf/ApplibDcf_NamingRule.c"
+  },
+  {
+    "offset": 4729248,
+    "text": "%s[AppLibFormatMuxMp4_GetDateInfo] AmbaRTC_GetSystemTime failed, returnValue:%d"
+  },
+  {
+    "offset": 4729332,
+    "text": "[AppLibFormatMuxMp4_GetDateInfo] AmbaRTC_GetSystemTime(AMBA_TIME_STD_UNIX) Return:%d, timeSpec.Seconds:%d"
+  },
+  {
+    "offset": 4733188,
+    "text": "[Format_MuxMp4] AmbaFS_RemoveDir(%s), ReturnValue:%d"
+  },
+  {
+    "offset": 4735864,
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/rtos/app/connected/applib/src/format/ApplibFormatLib.c"
+  },
+  {
+    "offset": 4740384,
+    "text": "AmbaNVM_ReadRomFile fail"
+  },
+  {
+    "offset": 4740412,
+    "text": "AmbaNVM_ReadRomFile %d %s 0x%x 0x%x 0x%x"
+  },
+  {
+    "offset": 4743916,
+    "text": "AppLibBMPFont_InitFromROMFS AmbaNVM_ReadRomFile failed"
+  },
+  {
+    "offset": 4751584,
+    "text": "[Graphics] <_ApplibGraph_Clut_Load> AmbaROM_FileExists fail."
+  },
+  {
+    "offset": 4751648,
+    "text": "[Graphics] <_ApplibGraph_Clut_Load> AmbaROM_GetSize fail."
+  },
+  {
+    "offset": 4753268,
+    "text": "%s[AppLib - Image] <Amba_Img_VIn_Changed_Prior> Create failure!!"
+  },
+  {
+    "offset": 4753336,
+    "text": "%s[AppLib - Image] <Amba_Img_VIn_Changed_Post> Create failure!!"
+  },
+  {
+    "offset": 4753404,
+    "text": "%s[AppLib - Image] <Amba_Img_VDspCfa_Handler> Create failure!!"
+  },
+  {
+    "offset": 4753468,
+    "text": "%s[AppLib - Image] <Amba_Img_VDspRgb_Handler> Create failure!!"
+  },
+  {
+    "offset": 4753592,
+    "text": "%s[AppLib - Image] <Init> AmbaImgSchdlr_Init Fail!"
+  },
+  {
+    "offset": 4753708,
+    "text": "[AppLib - Image] <CreateImgSchdlr> AmbaImgSchdlr_Create()"
+  },
+  {
+    "offset": 4753932,
+    "text": "%s[AppLib - Image] <EnableImgSchdlr> AmbaImgSchdlr_Enable failure!!"
+  },
+  {
+    "offset": 4754072,
+    "text": "%s[AppLib - Image] <VinInvalidCallbackFunc> Amba_Img_VIn_Invalid failure!!"
+  },
+  {
+    "offset": 4754148,
+    "text": "%s[AppLib - Image] <Amba_Img_VIn_Valid> Create failure!!"
+  },
+  {
+    "offset": 4754272,
+    "text": "%s[AppLib - Image] <AmbaImgSchdlr_Delete> failure!!"
+  },
+  {
+    "offset": 4754328,
+    "text": "%s[AppLib - Image] <AmbaImgSchdlr_Delete> schdlr doesn't exist!!"
+  },
+  {
+    "offset": 4754456,
+    "text": "%s[AppLib - Image] <AmbaImgSchdlr_Enable> failure!!"
+  },
+  {
+    "offset": 4754576,
+    "text": "%s[AppLib - Image] <Amba_Img_VIn_Invalid> failure!!"
+  },
+  {
+    "offset": 4755368,
+    "text": "AmbaSD_InitCard - SD_CARD ok"
+  },
+  {
+    "offset": 4778516,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_Detach fail %d"
+  },
+  {
+    "offset": 4778580,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_InputDelete fail "
+  },
+  {
+    "offset": 4778644,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_EncDelete fail %d"
+  },
+  {
+    "offset": 4778708,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_BufferDelete fail %d"
+  },
+  {
+    "offset": 4778776,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_EncDelete fail "
+  },
+  {
+    "offset": 4778840,
+    "text": "%s[Applib - AudioEnc] <TaskDelete> AmbaAudio_BufferDelete fail "
+  },
+  {
+    "offset": 4788548,
+    "text": "[Applib - StillEnc] RawCap Call AmbaTUNE_Init() Fail"
+  },
+  {
+    "offset": 4788604,
+    "text": "[Applib - StillEnc] RawCap Call AmbaTUNE_Load_IDSP(%s) Fail"
+  },
+  {
+    "offset": 4799956,
+    "text": "AMBA_DSP_STILL_HISO_FILTER"
+  },
+  {
+    "offset": 4799984,
+    "text": "AMBA_DSP_STILL_LISO_FILTER"
+  },
+  {
+    "offset": 4803356,
+    "text": "[Applib - VideoEnc] <Init> AmbaEncMonitor_Init Fail!"
+  },
+  {
+    "offset": 4803476,
+    "text": "[Applib - VideoEnc] <Init> AmbaEncMonitorStream_Init Fail!"
+  },
+  {
+    "offset": 4803604,
+    "text": "[Applib - VideoEnc] <Init> AmbaEncMonitorBRC_init Fail!"
+  },
+  {
+    "offset": 4803692,
+    "text": "%s[Applib - VideoEnc] <LiveViewInit> Pri AmbaEncMonitor_StreamRegister failure!!"
+  },
+  {
+    "offset": 4803776,
+    "text": "%s[Applib - VideoEnc] <LiveViewInit> Sec AmbaEncMonitor_StreamRegister failure!!"
+  },
+  {
+    "offset": 4804916,
+    "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+  },
+  {
+    "offset": 4807172,
+    "text": "%s: EIS start"
+  },
+  {
+    "offset": 4809448,
+    "text": "%sAmbaSCM_GetSlotStatus Failed[%d, %d]"
+  },
+  {
+    "offset": 4824340,
+    "text": "[AppLib][WARNING]Call AmbaTUNE_Init() Fail"
+  },
+  {
+    "offset": 4824384,
+    "text": "[AppLib][WARNING]Call AmbaTUNE_Load_IDSP(%s) Fail"
+  },
+  {
+    "offset": 4834596,
+    "text": "%s() %d, call AmbaTUNE_Init() Fail"
+  },
+  {
+    "offset": 4834724,
+    "text": "%s() %d, call AmbaTUNE_Save_IDSP(FilePath:%s) Fail"
+  },
+  {
+    "offset": 4836892,
+    "text": "EIS.HorSkewPhaseInc = %d"
+  },
+  {
+    "offset": 4836920,
+    "text": "EIS.VerSkewPhaseInc = %d"
+  },
+  {
+    "offset": 4838188,
+    "text": "EIS superview"
+  },
+  {
+    "offset": 4847312,
+    "text": "%s[Applib - Usb] AmbaUSB_System_Init USB_SYSTEM_RELEASED flag take fail"
+  },
+  {
+    "offset": 4847420,
+    "text": "%s[Applib - Usb] AmbaUSB_System_Init fail"
+  },
+  {
+    "offset": 4847836,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_Class_Msc_Init fail"
+  },
+  {
+    "offset": 4847936,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_Class_Msc_SetInfo fail"
+  },
+  {
+    "offset": 4847992,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_Class_Msc_SetProp fail"
+  },
+  {
+    "offset": 4848048,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_Class_Msc_Mount fail"
+  },
+  {
+    "offset": 4848192,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_Class_Msc_Mount fail Slot = %d"
+  },
+  {
+    "offset": 4848388,
+    "text": "%s[Applib - Usb MSC] AmbaUSB_System_ClassHook fail"
+  },
+  {
+    "offset": 4848948,
+    "text": "%s[Applib - Usb Amage] AmbaUSB_System_ClassHook fail"
+  },
+  {
+    "offset": 4849036,
+    "text": "%s[Applib - Usb Amage] AmbaUSB_System_ClassUnHook fail"
+  },
+  {
+    "offset": 4850200,
+    "text": "%s[E][USB_UART][%06d][%s]:[Applib - UsbUart] Failed to AmbaUSB_System_ClassUnHook"
+  },
+  {
+    "offset": 4851340,
+    "text": "%s[E][USB_UART][%06d][%s]:[Applib - Usb Uart] AmbaUSB_System_ClassHook fail"
+  },
+  {
+    "offset": 4853084,
+    "text": "USB_UVC [Applib - Usb Uvc] AmbaUSB_System_ClassHook fail"
+  },
+  {
+    "offset": 4855648,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB>[NO BOOTED] NET_EVENT_LINUX_WIFI_MODULE"
+  },
+  {
+    "offset": 4855740,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB>[BOOTED] NET_EVENT_LINUX_WIFI_MODULE"
+  },
+  {
+    "offset": 4855828,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BOOTED"
+  },
+  {
+    "offset": 4855904,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_NETWORK_READY:[SET:%d][SSID = %s, size = %u], [GET:%d][SSID = %s]"
+  },
+  {
+    "offset": 4856520,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_TEST_STATION[%u]: %s"
+  },
+  {
+    "offset": 4856680,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX %d"
+  },
+  {
+    "offset": 4856752,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_NETWORK_OFF"
+  },
+  {
+    "offset": 4856832,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_SET_MODE"
+  },
+  {
+    "offset": 4856988,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_DOWN"
+  },
+  {
+    "offset": 4857140,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_GET_PAIR_HAVE_DEV"
+  },
+  {
+    "offset": 4857232,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_GET_PAIR_NO_DEV"
+  },
+  {
+    "offset": 4857320,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_GET_PAIR_NO_ERR"
+  },
+  {
+    "offset": 4857408,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_RM_PAIR_FAIL"
+  },
+  {
+    "offset": 4857492,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_RM_PAIR_OKAY"
+  },
+  {
+    "offset": 4857576,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_RM_PAIR_NO_DEV"
+  },
+  {
+    "offset": 4857664,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_BIND_OKAY"
+  },
+  {
+    "offset": 4857748,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_CONN_OKAY"
+  },
+  {
+    "offset": 4857832,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_BIND_ERR"
+  },
+  {
+    "offset": 4857936,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> EVENTNOTIFIER_LINUXEVENT_DEC_COMPLITE"
+  },
+  {
+    "offset": 4858028,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> EVENTNOTIFIER_LINUXEVENT_DEC_FAILED"
+  },
+  {
+    "offset": 4858116,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_DAEMON_READY"
+  },
+  {
+    "offset": 4858200,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_INFO: %s %d"
+  },
+  {
+    "offset": 4858284,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BT_CMD_CB: %s %d"
+  },
+  {
+    "offset": 4858372,
+    "text": "%s[AppLib - NetBase] <AmbaLink_NetEventNotifierCB> unknown event flag %d"
+  },
+  {
+    "offset": 4858448,
+    "text": "%s[AppLib - NetBase] <AmbaLink_KillHookDefaultUserRPCTask> delete task failed!"
+  },
+  {
+    "offset": 4858560,
+    "text": "%s[AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> AMBA_LINK_HIBER_TO_DISK done"
+  },
+  {
+    "offset": 4858644,
+    "text": "%s[AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> AMBA_LINK_HIBER_TO_RAM done"
+  },
+  {
+    "offset": 4858724,
+    "text": "%s[AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> AMBA_LINK_STANDBY_TO_RAM done"
+  },
+  {
+    "offset": 4858808,
+    "text": "%s[AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> AMBA_LINK_SLEEP_TO_RAM done"
+  },
+  {
+    "offset": 4858888,
+    "text": "%s[AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> Linux is %s and IPC is ready!"
+  },
+  {
+    "offset": 4858984,
+    "text": "%s[AppLib - NetBase] <AmbaLink_SuspendDoneCallBack> AMBA_LINK_HIBER_TO_DISK done"
+  },
+  {
+    "offset": 4859132,
+    "text": "%s[AppLib - NetBase] <AmbaLink_SuspendDoneCallBack> AMBA_LINK_HIBER_TO_RAM done"
+  },
+  {
+    "offset": 4859216,
+    "text": "%s[AppLib - NetBase] <AmbaLink_SuspendDoneCallBack> AMBA_LINK_STANDBY_TO_RAM done"
+  },
+  {
+    "offset": 4859300,
+    "text": "%s[AppLib - NetBase] <AmbaLink_SuspendDoneCallBack> AMBA_LINK_SLEEP_TO_RAM done"
+  },
+  {
+    "offset": 4859384,
+    "text": "%s[AppLib - NetBase] <InitAmbaLink> AMBA_LINK Enable fail. (pMemoryPool is NULL)"
+  },
+  {
+    "offset": 4859468,
+    "text": "%s[AppLib - NetBase] <InitAmbaLink> AMBA_LINK enable"
+  },
+  {
+    "offset": 4859524,
+    "text": "%s[AppLib - NetBase] <InitAmbaLink> Allocate stack buffer fail"
+  },
+  {
+    "offset": 4859612,
+    "text": "%s[AppLib - NetBase] <InitAmbaLink> Fail to do thread_entry_exit_notify(AmbaLink_KillHookDefaultUserRPCTask)"
+  },
+  {
+    "offset": 4859724,
+    "text": "AmbaLink_SuspendDoneCallBack"
+  },
+  {
+    "offset": 4860928,
+    "text": "%s[AppLib - NetControl] <CloseDataConnection> AmbaKAL_EventFlagTake() timeout"
+  },
+  {
+    "offset": 4861232,
+    "text": "AmbaFS_fwrite %d bytes != %d bytes"
+  },
+  {
+    "offset": 4861268,
+    "text": "AmbaFS_fwrite %d bytes OK!"
+  },
+  {
+    "offset": 4867320,
+    "text": "%sAMBA_SET_RTMP_SETTING"
+  },
+  {
+    "offset": 4871464,
+    "text": "[I][APPLIBNET_CONTROL][%06d][%s]:AMBA_STOP_SESSION"
+  },
+  {
+    "offset": 4871516,
+    "text": "[I][APPLIBNET_CONTROL][%06d][%s]:AMBA_RECORD_START"
+  },
+  {
+    "offset": 4871568,
+    "text": "[I][APPLIBNET_CONTROL][%06d][%s]:AMBA_TAKE_PHOTO"
+  },
+  {
+    "offset": 4872344,
+    "text": "[I][APPLIBNET_CONTROL][%06d][%s]:AMBA_CONTINUE_CAPTURE_STOP"
+  },
+  {
+    "offset": 4872404,
+    "text": "[I][APPLIBNET_CONTROL][%06d][%s]:AMBA_DEL_FILE ReturnValue %d, sendmsgtoapp %d"
+  },
+  {
+    "offset": 4875736,
+    "text": "%s[AppLib - NetFifo] <PlaybackSendMsg> AmbaKAL_MsgQueueSend() fail"
+  },
+  {
+    "offset": 4876792,
+    "text": "%s[AppLib - NetFifo] <PlaybackRecvMsg> AmbaKAL_MsgQueueReceive() fail"
+  },
+  {
+    "offset": 4877948,
+    "text": "%s: AmbaIPC_Alloc failed!"
+  },
+  {
+    "offset": 4879620,
+    "text": "register AmbaLink_BootDoneCallBack"
+  },
+  {
+    "offset": 4879880,
+    "text": "AmbaIPC_TestInit"
+  },
+  {
+    "offset": 4881832,
+    "text": "AmbaIPC_LinkCtrlSuspendLinux(%d)"
+  },
+  {
+    "offset": 4881868,
+    "text": "AmbaIPC_LinkCtrlWaitSuspendLinux(%d) done."
+  },
+  {
+    "offset": 4881912,
+    "text": "AmbaIPC_LinkCtrlResumeLinux(%d)"
+  },
+  {
+    "offset": 4881944,
+    "text": "AmbaIPC_LinkCtrlWaitResumeLinux(%d) done."
+  },
+  {
+    "offset": 4896604,
+    "text": "AmbaAudio_DecSetVolume"
+  },
+  {
+    "offset": 4896628,
+    "text": "AmbaAudio_DecTaskCreate"
+  },
+  {
+    "offset": 4896652,
+    "text": "AmbaAudio_DecTaskStart"
+  },
+  {
+    "offset": 4896676,
+    "text": "AmbaAudio_DecTaskDelete"
+  },
+  {
+    "offset": 4896700,
+    "text": "AmbaAudio_DecChkEos"
+  },
+  {
+    "offset": 4896720,
+    "text": "AmbaAudio_DecSizeQuery"
+  },
+  {
+    "offset": 4896744,
+    "text": "AmbaAudio_DecMaxConfigSize"
+  },
+  {
+    "offset": 4896836,
+    "text": "AmbaAudio_DecOutputData"
+  },
+  {
+    "offset": 4896860,
+    "text": "AmbaAudio_Decode"
+  },
+  {
+    "offset": 4896880,
+    "text": "AmbaAudio_DecCreate"
+  },
+  {
+    "offset": 4897588,
+    "text": "AmbaAudio_DecTaskStop"
+  },
+  {
+    "offset": 4897612,
+    "text": "AmbaAudio_DecIBufferOp"
+  },
+  {
+    "offset": 4897700,
+    "text": "AmbaAudio_DecGetDesc"
+  },
+  {
+    "offset": 4897724,
+    "text": "AmbaAudio_DecFadeReport"
+  },
+  {
+    "offset": 4897748,
+    "text": "AmbaAudio_DecBypassOp"
+  },
+  {
+    "offset": 4897772,
+    "text": "AmbaAudio_DecSetVpts"
+  },
+  {
+    "offset": 4897796,
+    "text": "AmbaAudio_DecDelete"
+  },
+  {
+    "offset": 4897816,
+    "text": "AmbaAudio_DecTaskSetUp"
+  },
+  {
+    "offset": 4897840,
+    "text": "AmbaAudio_DecTaskEntry"
+  },
+  {
+    "offset": 4897900,
+    "text": "AmbaAudio_EffectCalibBufferSize"
+  },
+  {
+    "offset": 4897932,
+    "text": "AmbaAudio_EncSetVolume"
+  },
+  {
+    "offset": 4897956,
+    "text": "AmbaAudio_EncIBufferOp"
+  },
+  {
+    "offset": 4897980,
+    "text": "AmbaAudio_EncTaskSetUp"
+  },
+  {
+    "offset": 4898004,
+    "text": "AmbaAudio_EncUpdateBitsBuf"
+  },
+  {
+    "offset": 4898032,
+    "text": "ratlAmbaAudio_EncCheckInput"
+  },
+  {
+    "offset": 4898124,
+    "text": "AmbaAudio_EncTaskEntry"
+  },
+  {
+    "offset": 4898148,
+    "text": "AmbaAudio_EncMaxConfigSize"
+  },
+  {
+    "offset": 4898176,
+    "text": "AmbaAudio_EncTaskCreate"
+  },
+  {
+    "offset": 4898200,
+    "text": "AmbaAudio_EncCreate"
+  },
+  {
+    "offset": 4898220,
+    "text": "AmbaAudio_EncTaskDelete"
+  },
+  {
+    "offset": 4898460,
+    "text": "AmbaAudio_AacSetup ErrorStatus = %d"
+  },
+  {
+    "offset": 4898496,
+    "text": "AmbaAudio_AacOpen ErrorStatus = %d"
+  },
+  {
+    "offset": 4898532,
+    "text": "AmbaAudio_AacEncode ErrorStatus = %d"
+  },
+  {
+    "offset": 4898764,
+    "text": "AmbaAudio_EncSizeQuery"
+  },
+  {
+    "offset": 4898788,
+    "text": "AmbaAudio_EncTaskStart"
+  },
+  {
+    "offset": 4898812,
+    "text": "AmbaAudio_EncDelete"
+  },
+  {
+    "offset": 4898832,
+    "text": "AmbaAudio_EncTaskStop"
+  },
+  {
+    "offset": 4898856,
+    "text": "AmbaAudio_EncFadeReport"
+  },
+  {
+    "offset": 4898920,
+    "text": "AmbaAudio_InputPluginEffectEnable"
+  },
+  {
+    "offset": 4898956,
+    "text": "AmbaAudio_InputTaskEntry"
+  },
+  {
+    "offset": 4898984,
+    "text": "AmbaAudio_InputPluginEffectDisable"
+  },
+  {
+    "offset": 4899020,
+    "text": "AmbaAudio_InputCalibReport"
+  },
+  {
+    "offset": 4899048,
+    "text": "AmbaAudio_InputTaskCreate"
+  },
+  {
+    "offset": 4899076,
+    "text": "AmbaAudio_InputTaskStart"
+  },
+  {
+    "offset": 4899104,
+    "text": "AmbaAudio_InputTaskStop"
+  },
+  {
+    "offset": 4899128,
+    "text": "AmbaAudio_InputSetUpCalib"
+  },
+  {
+    "offset": 4899176,
+    "text": "%s: AmbaAudio_EffectFcSetUp 1 failed!"
+  },
+  {
+    "offset": 4899216,
+    "text": "%s: AmbaAudio_EffectFcSetUp 2 failed!"
+  },
+  {
+    "offset": 4899468,
+    "text": "%s: AmbaAudio_EffectCalibSetUp failed!"
+  },
+  {
+    "offset": 4899508,
+    "text": "%s: AmbaAudio_EffectFcEnable failed!"
+  },
+  {
+    "offset": 4899548,
+    "text": "AmbaAudio_InputSetFc"
+  },
+  {
+    "offset": 4899572,
+    "text": "AmbaAudio_InputCreate"
+  },
+  {
+    "offset": 4899596,
+    "text": "AmbaAudio_InputPluginEffectInstall"
+  },
+  {
+    "offset": 4899632,
+    "text": "AmbaAudio_InputDelete"
+  },
+  {
+    "offset": 4899656,
+    "text": "AmbaAudio_InputCalibGetCurve"
+  },
+  {
+    "offset": 4899688,
+    "text": "AmbaAudio_InputTaskDelete"
+  },
+  {
+    "offset": 4899716,
+    "text": "AmbaAudio_InputCalibGet_dBFS"
+  },
+  {
+    "offset": 4899748,
+    "text": "AmbaAudio_InputCachedSizeQuery"
+  },
+  {
+    "offset": 4899780,
+    "text": "AmbaAudio_InputCalibGetTHD_N"
+  },
+  {
+    "offset": 4899812,
+    "text": "AmbaAudio_InputPluginEffectUpdate"
+  },
+  {
+    "offset": 4899848,
+    "text": "AmbaAudio_InputNonCachedSizeQuery"
+  },
+  {
+    "offset": 4899884,
+    "text": "AmbaAudio_InputDataProc"
+  },
+  {
+    "offset": 4899908,
+    "text": "AmbaAudio_InputCalibGetFreqCurve"
+  },
+  {
+    "offset": 4899944,
+    "text": "AmbaAudio_InputDisableCalib"
+  },
+  {
+    "offset": 4899972,
+    "text": "AmbaAudio_BufferCreate"
+  },
+  {
+    "offset": 4899996,
+    "text": "AmbaAudio_Combine"
+  },
+  {
+    "offset": 4900016,
+    "text": "AmbaAudio_Detach"
+  },
+  {
+    "offset": 4900036,
+    "text": "AmbaAudio_BufferDelete"
+  },
+  {
+    "offset": 4900060,
+    "text": "AmbaAudio_BufferReset"
+  },
+  {
+    "offset": 4900084,
+    "text": "AmbaAudio_BufferOpenDstIoNode"
+  },
+  {
+    "offset": 4900116,
+    "text": "AmbaAudio_BufferOpenSrcIoNode"
+  },
+  {
+    "offset": 4900148,
+    "text": "AmbaAudio_BufferCloseSrcIoNode"
+  },
+  {
+    "offset": 4900180,
+    "text": "AmbaAudio_BufferSizeQuery"
+  },
+  {
+    "offset": 4900208,
+    "text": "AmbaAudio_OutputCreate"
+  },
+  {
+    "offset": 4900232,
+    "text": "AmbaAudio_OutputTaskEntry"
+  },
+  {
+    "offset": 4900260,
+    "text": "AmbaAudio_OutputTaskStart"
+  },
+  {
+    "offset": 4900492,
+    "text": "AmbaAudio_OutputTaskStop"
+  },
+  {
+    "offset": 4900520,
+    "text": "AmbaAudio_OutputTaskCreate"
+  },
+  {
+    "offset": 4900548,
+    "text": "AmbaAudio_OutputNonCachedSizeQuery"
+  },
+  {
+    "offset": 4900584,
+    "text": "AmbaAudio_OutputDataProc"
+  },
+  {
+    "offset": 4900612,
+    "text": "AmbaAudio_OutputCachedSizeQuery"
+  },
+  {
+    "offset": 4900644,
+    "text": "AmbaAudio_SetDebugLevel"
+  },
+  {
+    "offset": 4900668,
+    "text": "AmbaAudio_EventHandlerCtrlConfig"
+  },
+  {
+    "offset": 4900704,
+    "text": "AmbaAudio_RegisterEventHandler"
+  },
+  {
+    "offset": 4900816,
+    "text": "AmbaAudio_UnRegisterEventHandler"
+  },
+  {
+    "offset": 4901352,
+    "text": "[AmbaUserSD_DelayCtrl] Debug SD Card Param: MaxFreq:%d, RoundDelay:%d, DetailDelay:%d"
+  },
+  {
+    "offset": 4901872,
+    "text": "%sAmbaUserAudioCodec_EQEnable Enter"
+  },
+  {
+    "offset": 4901912,
+    "text": "%sAmbaUserAudioCodec_EQEnable Exit"
+  },
+  {
+    "offset": 4901948,
+    "text": "%sAmbaUserAudioCodec_EQDisable Enter"
+  },
+  {
+    "offset": 4901988,
+    "text": "%sAmbaUserAudioCodec_EQDisable Exit"
+  },
+  {
+    "offset": 4904908,
+    "text": "AmbaFirmware update fail ..."
+  },
+  {
+    "offset": 4904980,
+    "text": "AmbaFwUpdaterTask"
+  },
+  {
+    "offset": 4906492,
+    "text": "AmbaFs_GetErr %d"
+  },
+  {
+    "offset": 4907176,
+    "text": "libthreadx.a"
+  },
+  {
+    "offset": 4907828,
+    "text": "SD card raw access is not supported, please use AmbaFS instead"
+  },
+  {
+    "offset": 4908400,
+    "text": "*                        AmbaShell ;)                           *"
+  },
+  {
+    "offset": 4908660,
+    "text": "AmbaShell_CliTask"
+  },
+  {
+    "offset": 4908680,
+    "text": "AmbaShell_ExecTask"
+  },
+  {
+    "offset": 4908760,
+    "text": "loadbin"
+  },
+  {
+    "offset": 4908820,
+    "text": "savebin"
+  },
+  {
+    "offset": 4909429,
+    "text": "AmbaShell Test Command [Version 1.0.0000]"
+  },
+  {
+    "offset": 4909472,
+    "text": "(C) Copyright 2004-2014 Ambarella Corp."
+  },
+  {
+    "offset": 4911992,
+    "text": "thruput AmbaShell_MemAllocate fail"
+  },
+  {
+    "offset": 4912920,
+    "text": "AmbaFS_write failed (%d)"
+  },
+  {
+    "offset": 4920552,
+    "text": "AmbaPrintTask"
+  },
+  {
+    "offset": 4921768,
+    "text": "AmbaTUNE_Load_IDSP"
+  },
+  {
+    "offset": 4921788,
+    "text": "AmbaTUNE_Set_AeInfo"
+  },
+  {
+    "offset": 4921808,
+    "text": "AmbaTUNE_Set_WbSimInfo"
+  },
+  {
+    "offset": 4921832,
+    "text": "AmbaTUNE_Get_ItunerInfo"
+  },
+  {
+    "offset": 4921856,
+    "text": "AmbaTUNE_Save_Data"
+  },
+  {
+    "offset": 4921940,
+    "text": "AmbaTUNE_Load_Data"
+  },
+  {
+    "offset": 4921960,
+    "text": "_AmbaTUNE_Check_Mutex_Created"
+  },
+  {
+    "offset": 4922096,
+    "text": "[TUNE MNG][ERROR]AmbaTUNE get memory buffer size %d fail"
+  },
+  {
+    "offset": 4922288,
+    "text": "AmbaTUNE_Get_ItunerInfo=%d"
+  },
+  {
+    "offset": 4922316,
+    "text": "AmbaTUNE_Get_SystemInfo"
+  },
+  {
+    "offset": 4922340,
+    "text": "AmbaTUNE_Set_SystemInfo"
+  },
+  {
+    "offset": 4922364,
+    "text": "AmbaTUNE_Execute_IDSP"
+  },
+  {
+    "offset": 4922388,
+    "text": "AmbaTUNE_Change_Parser_Mode"
+  },
+  {
+    "offset": 4922424,
+    "text": "AmbaTUNE_Save_IDSP"
+  },
+  {
+    "offset": 4938836,
+    "text": "[TEXT HDLR][WARNING]%s() %d, call AmbaItuner_Refresh() Fail"
+  },
+  {
+    "offset": 4946816,
+    "text": "[AmbaTune_USBHdlr] _USBHdlr_Get_ItunerFile"
+  },
+  {
+    "offset": 4946928,
+    "text": "[USB HDLR][WARNING]%s() %d, call AmbaItuner_Refresh() Fail"
+  },
+  {
+    "offset": 4946988,
+    "text": "[AmbaTune_USBHdlr] USBHdlr_Get_ItunerFile_Get_LineBuf"
+  },
+  {
+    "offset": 4947372,
+    "text": "[AmbaTune_USBHdlr] USBHdlr_AmageCommunication Get_Ituner_File"
+  },
+  {
+    "offset": 4947820,
+    "text": "[AmbaTune_USBHdlr] _USBHdlr_Get_Item_Process Get_ITUNER_FILE"
+  },
+  {
+    "offset": 4951132,
+    "text": "AmbaDSP_ArmCommTask"
+  },
+  {
+    "offset": 4951616,
+    "text": "AmbaDSP_BatchCmdBufFlush"
+  },
+  {
+    "offset": 4951644,
+    "text": "AmbaDSP_BatchCmdBufAutoProcess"
+  },
+  {
+    "offset": 4951676,
+    "text": "AmbaDSP_BatchCmdBufCheck"
+  },
+  {
+    "offset": 4951704,
+    "text": "AmbaDSP_ResetVideoBatchBuffer"
+  },
+  {
+    "offset": 4951736,
+    "text": "AmbaDSP_BatchCmdBufRelease"
+  },
+  {
+    "offset": 4951764,
+    "text": "AmbaDSP_BatchCmdBufReleaseBySeqNum"
+  },
+  {
+    "offset": 4951800,
+    "text": "AmbaDSP_BatchCmdBufProcess"
+  },
+  {
+    "offset": 4952856,
+    "text": "AmbaDSP_BatchCmdBufWrite"
+  },
+  {
+    "offset": 4968864,
+    "text": " horizontal_software_gyro_sample  : 0x%X"
+  },
+  {
+    "offset": 4968992,
+    "text": " vertical_software_gyro_sample    : 0x%X"
+  },
+  {
+    "offset": 4989384,
+    "text": " eis_update_addr          = 0x%x"
+  },
+  {
+    "offset": 5007356,
+    "text": "ERR: take AmbaDSP_EventHandlerCtrl[%d].Mutex fail"
+  },
+  {
+    "offset": 5007448,
+    "text": "AmbaDSP_EventInit"
+  },
+  {
+    "offset": 5007468,
+    "text": "AmbaDSP_IntInit"
+  },
+  {
+    "offset": 5007540,
+    "text": "ERR %s() AmbaKAL_EventFlagCreate Fail."
+  },
+  {
+    "offset": 5007580,
+    "text": "ERR %s AmbaINT_IsrHook %d error"
+  },
+  {
+    "offset": 5007612,
+    "text": "AmbaDSP_IntTask"
+  },
+  {
+    "offset": 5008068,
+    "text": "AmbaDSP_LiveviewChannelCtrl"
+  },
+  {
+    "offset": 5008396,
+    "text": "ERR: NumChannel > %d in AmbaDSP_LiveviewConfig()"
+  },
+  {
+    "offset": 5008528,
+    "text": "Please call AmbaDSP_VideoEncMainStreamConfig() to set overall main stream size"
+  },
+  {
+    "offset": 5008648,
+    "text": "ERR: NumChannel > %d in AmbaDSP_LiveviewDispConfig()"
+  },
+  {
+    "offset": 5008780,
+    "text": "ERR: NumChannel > %d in AmbaDSP_VideoEncMainStreamConfig()"
+  },
+  {
+    "offset": 5008840,
+    "text": "ERR: NumChannel > %d in AmbaDSP_VideoEncSecStreamConfig()"
+  },
+  {
+    "offset": 5009932,
+    "text": "AmbaDSP_SetDebugThread"
+  },
+  {
+    "offset": 5009956,
+    "text": "AmbaDSP_LiveviewDispConfig"
+  },
+  {
+    "offset": 5009984,
+    "text": "AmbaDSP_LiveviewDispCtrl"
+  },
+  {
+    "offset": 5010012,
+    "text": "AmbaDSP_LiveviewSetVoutSeamlessBuffer"
+  },
+  {
+    "offset": 5010052,
+    "text": "AmbaDSP_LiveviewCtrl"
+  },
+  {
+    "offset": 5010076,
+    "text": "AmbaDSP_LiveviewEisConfig"
+  },
+  {
+    "offset": 5010108,
+    "text": "AmbaDSP_SetDebugLevel"
+  },
+  {
+    "offset": 5010132,
+    "text": "AmbaDSP_LiveviewConfig"
+  },
+  {
+    "offset": 5010164,
+    "text": "AmbaDSP_LiveviewMctfBypass"
+  },
+  {
+    "offset": 5010192,
+    "text": "AmbaDSP_VideoEncMainStreamConfig"
+  },
+  {
+    "offset": 5010304,
+    "text": "AmbaDSP_Resume"
+  },
+  {
+    "offset": 5010320,
+    "text": "ERR: Please call AmbaDSP_LiveviewCtrl(0, 0) first"
+  },
+  {
+    "offset": 5010400,
+    "text": "AmbaDSP_WaitEventFlag(0x%x, %d, %d) timeout"
+  },
+  {
+    "offset": 5012716,
+    "text": "ERR: AMBA_DSP_EVENT_2FOV_VCAP_RAW_DATA_READY"
+  },
+  {
+    "offset": 5012800,
+    "text": "AMBA_DSP_EVENT_SCAP_RAW_DATA_READY addr 0x%x"
+  },
+  {
+    "offset": 5012848,
+    "text": "ERR: AMBA_DSP_EVENT_SCAP_RAW_DATA_READY at mode 5"
+  },
+  {
+    "offset": 5012928,
+    "text": "AMBA_DSP_EVENT_SCAP_YUV_DATA_READY addr 0x%x"
+  },
+  {
+    "offset": 5012976,
+    "text": "ERR: AMBA_DSP_EVENT_SCAP_YUV_DATA_READY LCD"
+  },
+  {
+    "offset": 5013020,
+    "text": "ERR: AMBA_DSP_EVENT_SCAP_YUV_DATA_READY TV"
+  },
+  {
+    "offset": 5013064,
+    "text": "ERR: Main AMBA_DSP_EVENT_SCAP_YUV_DATA_READY"
+  },
+  {
+    "offset": 5013112,
+    "text": "ERR: Nail AMBA_DSP_EVENT_SCAP_YUV_DATA_READY pitch = %d"
+  },
+  {
+    "offset": 5013388,
+    "text": "AMBA_DSP_EVENT_SCAP_YUV_DATA_READY video thumbnail fail"
+  },
+  {
+    "offset": 5013492,
+    "text": "AMBA_DSP_EVENT_LIVEVIEW_RAW_DATA_READY addr 0x%x"
+  },
+  {
+    "offset": 5013544,
+    "text": "AMBA_DSP_EVENT_LIVEVIEW_RAW_DATA_READY fail"
+  },
+  {
+    "offset": 5013756,
+    "text": "AmbaJpegBitsDescIdx %d, pBitsInfo 0x%x"
+  },
+  {
+    "offset": 5013956,
+    "text": "AmbaDSP_MsgDispatchTask"
+  },
+  {
+    "offset": 5014020,
+    "text": "AmbaDSP_WaitJpegEncodeDone(%d) time out"
+  },
+  {
+    "offset": 5014060,
+    "text": "AmbaDSP_WaitYuvSyncRawCnt(%d) time out"
+  },
+  {
+    "offset": 5014100,
+    "text": "AmbaDSP_WaitYuvGenDone(%d, %d) time out"
+  },
+  {
+    "offset": 5014140,
+    "text": "AmbaDSP_WaitDspMemChange(%d) time out"
+  },
+  {
+    "offset": 5014180,
+    "text": "AmbaDSP_WaitRaw2Yuv3A(%d) time out"
+  },
+  {
+    "offset": 5014216,
+    "text": "AmbaDSP_WaitPivAvail(%d) time out"
+  },
+  {
+    "offset": 5014252,
+    "text": "AmbaDSP_WaitPreviewDone(%d, %d) time out"
+  },
+  {
+    "offset": 5014296,
+    "text": "AmbaDSP_WaitPreviewStart(%d, %d) time out"
+  },
+  {
+    "offset": 5019848,
+    "text": "AmbaDSP_JpegEncBitRateCtrl"
+  },
+  {
+    "offset": 5019876,
+    "text": "AmbaDSP_StillCaptureConfig"
+  },
+  {
+    "offset": 5019904,
+    "text": "AmbaDSP_StillGenerateCleanRaw"
+  },
+  {
+    "offset": 5019936,
+    "text": "AmbaDSP_StillRaw2Yuv"
+  },
+  {
+    "offset": 5020016,
+    "text": "ERR: Please set valid pJpegEncConfig->pBitsBufAddr in AmbaDSP_JpegEncConfig() after DSP boot or changed from decode mode"
+  },
+  {
+    "offset": 5020220,
+    "text": "ERR: AmbaDSP_CmdSetSystemInfo fail!"
+  },
+  {
+    "offset": 5020256,
+    "text": "ERR: AmbaDSP_StillCaptureRaw() at wrong dsp mode"
+  },
+  {
+    "offset": 5020484,
+    "text": "ERR: AmbaDSP_StillCaptureRaw() at wrong dsp state"
+  },
+  {
+    "offset": 5020536,
+    "text": "AmbaDSP_ExtRawBuffering %d RawCapCnt %d CapNum %d"
+  },
+  {
+    "offset": 5020680,
+    "text": "Fail to un-register AMBA_DSP_EVENT_SSP_DSP_INT_VIN0_SOF event handler"
+  },
+  {
+    "offset": 5020752,
+    "text": "Fail to un-register AMBA_DSP_EVENT_SSP_DSP_INT_VIN0_EOF event handler"
+  },
+  {
+    "offset": 5020824,
+    "text": "Fail to register AMBA_DSP_EVENT_SSP_DSP_INT_VIN0_SOF event handler"
+  },
+  {
+    "offset": 5020892,
+    "text": "Fail to register AMBA_DSP_EVENT_SSP_DSP_INT_VIN0_EOF event handler"
+  },
+  {
+    "offset": 5021128,
+    "text": "AmbaDSP_CmdVcapThreadRestart"
+  },
+  {
+    "offset": 5021172,
+    "text": "ERR: AmbaDSP_StillGenerateRaw3A not supported for non-background process mode"
+  },
+  {
+    "offset": 5021272,
+    "text": "ERR: region with over support in AmbaDSP_StillGenerateRaw3A()"
+  },
+  {
+    "offset": 5021336,
+    "text": "ERR: AmbaDSP_StillGenerateCleanRaw input null parameters!!"
+  },
+  {
+    "offset": 5021396,
+    "text": "ERR: either pWorkYuvBufAddr in AmbaDSP_StillRaw2Yuv() or pYuvQuickViewTV in AmbaDSP_StillQuickviewConfig() must be set"
+  },
+  {
+    "offset": 5021572,
+    "text": "ERR: AmbaDSP_StillGenerateScrnNails not supported for non-background process mode"
+  },
+  {
+    "offset": 5021704,
+    "text": "YuvGen Not init yet, please call AmbaDSP_StillCaptureConfig() first"
+  },
+  {
+    "offset": 5021772,
+    "text": "AmbaDSP_StillYuvBlend not supported yet"
+  },
+  {
+    "offset": 5022400,
+    "text": "AmbaDSP_StillGenerateScrnNails"
+  },
+  {
+    "offset": 5022432,
+    "text": "AmbaDSP_JpegEncConfig"
+  },
+  {
+    "offset": 5022456,
+    "text": "AmbaDSP_JpegEncode"
+  },
+  {
+    "offset": 5022476,
+    "text": "AmbaDSP_StillGenerateRaw3A"
+  },
+  {
+    "offset": 5022536,
+    "text": "AmbaDSP_StillRaw2YuvTileConfig"
+  },
+  {
+    "offset": 5022568,
+    "text": "AmbaDSP_StillQuickviewConfig"
+  },
+  {
+    "offset": 5028468,
+    "text": "AmbaDSP_VinCaptureConfig"
+  },
+  {
+    "offset": 5028496,
+    "text": "AmbaDSP_VoutDisplayCvbsVoltageCtrl"
+  },
+  {
+    "offset": 5028532,
+    "text": "AmbaDSP_VoutVideoConfig"
+  },
+  {
+    "offset": 5028556,
+    "text": "AmbaDSP_VoutDisplayCvbsSetup"
+  },
+  {
+    "offset": 5028588,
+    "text": "AmbaDSP_VoutWaitUpdate"
+  },
+  {
+    "offset": 5028648,
+    "text": "AmbaDSP_VoutVideoWindowSetup"
+  },
+  {
+    "offset": 5028680,
+    "text": "AmbaDSP_VoutVideoCtrl"
+  },
+  {
+    "offset": 5028704,
+    "text": "AmbaDSP_VoutDisplaySetCscMatrix"
+  },
+  {
+    "offset": 5028744,
+    "text": "AmbaDSP_VoutOsdBufSetup"
+  },
+  {
+    "offset": 5028768,
+    "text": "AmbaDSP_VoutDefaultImgSetup"
+  },
+  {
+    "offset": 5028796,
+    "text": "AmbaDSP_VoutReset"
+  },
+  {
+    "offset": 5028816,
+    "text": "AmbaDSP_VoutDisplayCvbsColorBar"
+  },
+  {
+    "offset": 5028848,
+    "text": "AmbaDSP_VoutOsdWindowSetup"
+  },
+  {
+    "offset": 5028876,
+    "text": "AmbaDSP_VoutOsdScalerSetup"
+  },
+  {
+    "offset": 5028904,
+    "text": "AmbaDSP_VoutOsdSetDataFormat"
+  },
+  {
+    "offset": 5028936,
+    "text": "AmbaDSP_VoutOsdCtrl"
+  },
+  {
+    "offset": 5028956,
+    "text": "AmbaDSP_VoutDisplayConfigCscMatrix"
+  },
+  {
+    "offset": 5028992,
+    "text": "AmbaDSP_VoutMixerSetBackColor"
+  },
+  {
+    "offset": 5029048,
+    "text": "AmbaDSP_VoutDisplayTimingSetup"
+  },
+  {
+    "offset": 5029080,
+    "text": "AmbaDSP_VoutOsdSetCLUT"
+  },
+  {
+    "offset": 5029104,
+    "text": "AmbaDSP_VoutMixerSetCscMatrix"
+  },
+  {
+    "offset": 5029136,
+    "text": "AmbaDSP_VoutMixerSetup"
+  },
+  {
+    "offset": 5029160,
+    "text": "AmbaDSP_VoutDisplayDigitalSetup"
+  },
+  {
+    "offset": 5029204,
+    "text": "AmbaDSP_VoutVideoSourceSel"
+  },
+  {
+    "offset": 5029232,
+    "text": "AmbaDSP_VoutDisplayHdmiSetup"
+  },
+  {
+    "offset": 5029356,
+    "text": "Warning: VOUT 0 already started, please call AmbaDSP_VoutReset(0) first"
+  },
+  {
+    "offset": 5029428,
+    "text": "Warning: VOUT 1 already started, please call AmbaDSP_VoutReset(1) first"
+  },
+  {
+    "offset": 5029500,
+    "text": "Warning: %s should be called before AmbaDSP_VoutDisplayXxxxSetup"
+  },
+  {
+    "offset": 5031804,
+    "text": "AmbaDSP_WarpCore_CalcWindowInfo"
+  },
+  {
+    "offset": 5038252,
+    "text": "  eis_update_addr          = 0x%x"
+  },
+  {
+    "offset": 5041852,
+    "text": "AmbaDsp_EncStreamCycleCreate"
+  },
+  {
+    "offset": 5041884,
+    "text": "AmbaDsp_EncStreamCycleStart"
+  },
+  {
+    "offset": 5050288,
+    "text": "Warning. AmbaDSP_Img3aEnbAaaStat() does not support pipe %d"
+  },
+  {
+    "offset": 5050492,
+    "text": "Warning. AmbaDSP_ImgGetLocalExposure() does not support pipe %d"
+  },
+  {
+    "offset": 5050556,
+    "text": "Warning. AmbaDSP_Img3aSetAeStatInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5050620,
+    "text": "Warning. AmbaDSP_Img3aSetAwbStatInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5050684,
+    "text": "Warning. AmbaDSP_Img3aSetAfStatInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5050748,
+    "text": "Warning. AmbaDSP_Img3aSetAfStatExInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5050848,
+    "text": "Warning. AmbaDSP_Img3aGetAfStatExInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5050916,
+    "text": "Warning. AmbaDSP_Img3aSetAaaStatInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5051008,
+    "text": "Warning. AmbaDSP_Img3aGetAaaStatInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5051072,
+    "text": "Warning. AmbaDSP_Img3aSetAaaFloatTileInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5051184,
+    "text": "Warning. AmbaDSP_Img3aGetAaaFloatTileInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5051296,
+    "text": "Warning. AmbaDSP_Img3aGetAaaFloatTileSimplfiedInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5051376,
+    "text": "Warning. AmbaDSP_Img3aSetAaaPseudoY() does not support pipe %d"
+  },
+  {
+    "offset": 5051472,
+    "text": "Warning. AmbaDSP_Img3aGetAaaPseudoY() does not support pipe %d"
+  },
+  {
+    "offset": 5051536,
+    "text": "Warning. AmbaDSP_Img3aSetAaaEarlyWbGain() does not support pipe %d"
+  },
+  {
+    "offset": 5051640,
+    "text": "Warning. AmbaDSP_Img3aGetAaaEarlyWbGain() does not support pipe %d"
+  },
+  {
+    "offset": 5053460,
+    "text": "AmbaDSP_ImgSetAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5053552,
+    "text": "Warning. AmbaDSP_ImgSetAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5053648,
+    "text": "Warning. AmbaDSP_ImgGetAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5053868,
+    "text": "AmbaDSP_ImgSetAntiAliasing:"
+  },
+  {
+    "offset": 5053976,
+    "text": "Warning. AmbaDSP_ImgSetAntiAliasing() does not support pipe %d"
+  },
+  {
+    "offset": 5054072,
+    "text": "Warning. AmbaDSP_ImgGetAntiAliasing() does not support pipe %d"
+  },
+  {
+    "offset": 5054136,
+    "text": "AmbaDSP_ImgSetAntiAliasing"
+  },
+  {
+    "offset": 5054164,
+    "text": "AmbaDSP_ImgSetCawarpCompensation"
+  },
+  {
+    "offset": 5054852,
+    "text": "AmbaDSP_ImgCalcCawarpCompensation:"
+  },
+  {
+    "offset": 5054888,
+    "text": "AMBA_DSP_IMG_CAWARP_CALC_INFO_s:"
+  },
+  {
+    "offset": 5055748,
+    "text": "Warning. AmbaDSP_ImgCalcCawarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5055844,
+    "text": "AmbaDSP_ImgSetCawarpCompensation:"
+  },
+  {
+    "offset": 5055880,
+    "text": "Warning. AmbaDSP_ImgSetCawarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5055984,
+    "text": "Warning. AmbaDSP_ImgGetCawarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5057092,
+    "text": "Warning. AmbaDSP_ImgSetCawarpCompensationByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5057208,
+    "text": "Warning. AmbaDSP_ImgGetCawarpCompensationBypass() does not support pipe %d"
+  },
+  {
+    "offset": 5057512,
+    "text": "AmbaDSP_ImgSetCfaLeakageFilter:"
+  },
+  {
+    "offset": 5057624,
+    "text": "Warning. AmbaDSP_ImgSetCfaLeakageFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5057724,
+    "text": "Warning. AmbaDSP_ImgGetCfaLeakageFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5057792,
+    "text": "AmbaDSP_ImgSetCfaLeakageFilter"
+  },
+  {
+    "offset": 5058480,
+    "text": "AmbaDSP_ImgSetCfaNoiseFilter:"
+  },
+  {
+    "offset": 5058692,
+    "text": "Warning. AmbaDSP_ImgSetCfaNoiseFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5058988,
+    "text": "Warning. AmbaDSP_ImgGetCfaNoiseFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5059376,
+    "text": "AmbaDSP_ImgSetChromaFilter:"
+  },
+  {
+    "offset": 5059524,
+    "text": "Warning. AmbaDSP_ImgSetChromaFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5059624,
+    "text": "Warning. AmbaDSP_ImgGetChromaFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5060280,
+    "text": "AmbaDSP_ImgSetChromaMedianFilter:"
+  },
+  {
+    "offset": 5060488,
+    "text": "Warning. AmbaDSP_ImgSetChromaMedianFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5060596,
+    "text": "Warning. AmbaDSP_ImgGetChromaMedianFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5060668,
+    "text": "AmbaDSP_ImgSetChromaScale:"
+  },
+  {
+    "offset": 5060876,
+    "text": "Warning. AmbaDSP_ImgSetChromaScale() does not support pipe %d"
+  },
+  {
+    "offset": 5060972,
+    "text": "Warning. AmbaDSP_ImgGetChromaScale() does not support pipe %d"
+  },
+  {
+    "offset": 5061036,
+    "text": "AmbaDSP_ImgSetColorCorrection:"
+  },
+  {
+    "offset": 5061100,
+    "text": "Warning. AmbaDSP_ImgSetColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5061200,
+    "text": "Warning. AmbaDSP_ImgGetColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5061268,
+    "text": "Warning. AmbaDSP_ImgSetSpecificColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5061376,
+    "text": "Warning. AmbaDSP_ImgGetSpecificColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5061452,
+    "text": "AmbaDSP_ImgSetColorCorrectionReg:"
+  },
+  {
+    "offset": 5061516,
+    "text": "Warning. AmbaDSP_ImgSetColorCorrectionReg() does not support pipe %d"
+  },
+  {
+    "offset": 5061624,
+    "text": "Warning. AmbaDSP_ImgGetColorCorrectionReg() does not support pipe %d"
+  },
+  {
+    "offset": 5061696,
+    "text": "Warning. AmbaDSP_ImgSetCDNRToneCurveSelect() does not support pipe %d"
+  },
+  {
+    "offset": 5061944,
+    "text": "AmbaDSP_ImgSetColorDependentNoiseReduction:"
+  },
+  {
+    "offset": 5062024,
+    "text": "Warning. AmbaDSP_ImgSetColorDependentNoiseReduction() does not support pipe %d"
+  },
+  {
+    "offset": 5062132,
+    "text": "Warning. AmbaDSP_ImgGetColorDependentNoiseReduction() does not support pipe %d"
+  },
+  {
+    "offset": 5062284,
+    "text": "AmbaDSP_ImgSetDeferredBlackLevel:"
+  },
+  {
+    "offset": 5062332,
+    "text": "Warning. AmbaDSP_ImgSetDeferredBlackLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5062432,
+    "text": "Warning. AmbaDSP_ImgGetDeferredBlackLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5063156,
+    "text": "AmbaDSP_ImgSetDemosaic:"
+  },
+  {
+    "offset": 5063412,
+    "text": "Warning. AmbaDSP_ImgSetDemosaic() does not support pipe %d"
+  },
+  {
+    "offset": 5063504,
+    "text": "Warning. AmbaDSP_ImgGetDemosaic() does not support pipe %d"
+  },
+  {
+    "offset": 5063896,
+    "text": "AmbaDSP_ImgSetDgainSaturationLevel:"
+  },
+  {
+    "offset": 5064000,
+    "text": "Warning. AmbaDSP_ImgSetDgainSaturationLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5064104,
+    "text": "Warning. AmbaDSP_ImgGetDgainSaturationLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5064176,
+    "text": "AmbaDSP_ImgSetDynamicBadPixelCorrection"
+  },
+  {
+    "offset": 5064564,
+    "text": "AmbaDSP_ImgSetDynamicBadPixelCorrection:"
+  },
+  {
+    "offset": 5064684,
+    "text": "Warning. AmbaDSP_ImgProcessDynamicBadPixelCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5064792,
+    "text": "Warning. AmbaDSP_ImgGetDynamicBadPixelCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5065144,
+    "text": "AmbaDSP_ImgSetSetGbGrMismatch:"
+  },
+  {
+    "offset": 5065248,
+    "text": "Warning. AmbaDSP_ImgSetGbGrMismatch() does not support pipe %d"
+  },
+  {
+    "offset": 5065348,
+    "text": "Warning. AmbaDSP_ImgGetGbGrMismatch() does not support pipe %d"
+  },
+  {
+    "offset": 5068704,
+    "text": "Warning. DSP_ImgHighIsoPreExeCfg() AlgoMode %d != AMBA_DSP_IMG_CFG_STATE_INIT"
+  },
+  {
+    "offset": 5068784,
+    "text": "Error. DSP_ImgHighIsoPreExeCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_HISO"
+  },
+  {
+    "offset": 5068924,
+    "text": "Warning. DSP_ImgHighIsoPostExeCfg() State %d != AMBA_DSP_IMG_CFG_STATE_INIT || AMBA_DSP_IMG_CFG_STATE_PREEXE || AMBA_DSP_IMG_CFG_STATE_POSTEXE"
+  },
+  {
+    "offset": 5069068,
+    "text": "Error. DSP_ImgHighIsoPostExeCfg() AlgoMode %d != AMBA_DSP_IMG_ALGO_MODE_HISO"
+  },
+  {
+    "offset": 5069304,
+    "text": "Error. DSP_ImgHighIsoPrintCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_HISO"
+  },
+  {
+    "offset": 5075840,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetDebugMode() does not support pipe %d"
+  },
+  {
+    "offset": 5075908,
+    "text": "Warning. AmbaDSP_ImgHighIsoDumpCfg() does not support pipe %d"
+  },
+  {
+    "offset": 5075972,
+    "text": "Error. AmbaDSP_ImgHighIsoDumpCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_HISO"
+  },
+  {
+    "offset": 5076132,
+    "text": "AmbaDSP_ImgSetHighIsoAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5076176,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5076292,
+    "text": "AmbaDSP_ImgSetHighIsoHighAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5076340,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5076460,
+    "text": "AmbaDSP_ImgSetHighIsoLowAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5076508,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLowAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5076804,
+    "text": "AmbaDSP_ImgSetHighIsoMed1AdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5076852,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMed1AdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5076972,
+    "text": "AmbaDSP_ImgSetHighIsoMed2AdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5077020,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMed2AdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5077140,
+    "text": "AmbaDSP_ImgSetHighIsoLi2ndAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5077188,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLi2ndAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5077776,
+    "text": "AmbaDSP_ImgSetHighIsoChromaAdvanceSpatialFilter:"
+  },
+  {
+    "offset": 5077908,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoChromaAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078024,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078144,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078264,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLowAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078388,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMed1AdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078512,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMed2AdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078636,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLi2ndAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5078760,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoChromaAdvanceSpatialFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5079356,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterHigh:"
+  },
+  {
+    "offset": 5079396,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterHigh() does not support pipe %d"
+  },
+  {
+    "offset": 5079512,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterHigh() does not support pipe %d"
+  },
+  {
+    "offset": 5079588,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterLowVeryLow:"
+  },
+  {
+    "offset": 5079700,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterLowVeryLow() does not support pipe %d"
+  },
+  {
+    "offset": 5079824,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterLowVeryLow() does not support pipe %d"
+  },
+  {
+    "offset": 5080340,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterPre:"
+  },
+  {
+    "offset": 5080484,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterPre() does not support pipe %d"
+  },
+  {
+    "offset": 5080596,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterPre() does not support pipe %d"
+  },
+  {
+    "offset": 5081108,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterMed:"
+  },
+  {
+    "offset": 5081148,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterMed() does not support pipe %d"
+  },
+  {
+    "offset": 5081260,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterMed() does not support pipe %d"
+  },
+  {
+    "offset": 5081772,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterLow:"
+  },
+  {
+    "offset": 5081812,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterLow() does not support pipe %d"
+  },
+  {
+    "offset": 5081924,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterLow() does not support pipe %d"
+  },
+  {
+    "offset": 5082456,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterVeryLow:"
+  },
+  {
+    "offset": 5082500,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterVeryLow() does not support pipe %d"
+  },
+  {
+    "offset": 5082620,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterVeryLow() does not support pipe %d"
+  },
+  {
+    "offset": 5083140,
+    "text": "AmbaDSP_ImgHighIsoSetLumaNoiseCombine:"
+  },
+  {
+    "offset": 5083312,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetLumaNoiseCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5083428,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetLumaNoiseCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5083920,
+    "text": "AmbaDSP_ImgHighIsoSetLowASFCombine:"
+  },
+  {
+    "offset": 5083956,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetLowASFCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5084064,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetLowASFCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5085124,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterMedCombine:"
+  },
+  {
+    "offset": 5085404,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterMedCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5085528,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterMedCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5086540,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterLowCombine:"
+  },
+  {
+    "offset": 5086588,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterLowCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5086712,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterLowCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5087768,
+    "text": "AmbaDSP_ImgHighIsoSetChromaFilterVeryLowCombine:"
+  },
+  {
+    "offset": 5087820,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetChromaFilterVeryLowCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5087952,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetChromaFilterVeryLowCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5088116,
+    "text": "AmbaDSP_ImgHighIsoSetHighIsoFreqRecover:"
+  },
+  {
+    "offset": 5088184,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetHighIsoFreqRecover() does not support pipe %d"
+  },
+  {
+    "offset": 5088300,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetHighIsoFreqRecover() does not support pipe %d"
+  },
+  {
+    "offset": 5089416,
+    "text": "AmbaDSP_ImgHighIsoSetHighIsoCombine:"
+  },
+  {
+    "offset": 5089568,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetHighIsoCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5089676,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetHighIsoCombine() does not support pipe %d"
+  },
+  {
+    "offset": 5089824,
+    "text": "AmbaDSP_ImgHighIsoSetHighIsoLumaBlend:"
+  },
+  {
+    "offset": 5089880,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetHighIsoLumaBlend() does not support pipe %d"
+  },
+  {
+    "offset": 5089996,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetHighIsoLumaBlend() does not support pipe %d"
+  },
+  {
+    "offset": 5090116,
+    "text": "AmbaDSP_ImgHighIsoSetHighIsoBlendLumaLevel:"
+  },
+  {
+    "offset": 5090160,
+    "text": "Warning. AmbaDSP_ImgHighIsoSetHighIsoBlendLumaLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5090284,
+    "text": "Warning. AmbaDSP_ImgHighIsoGetHighIsoBlendLumaLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5090528,
+    "text": "AmbaDSP_ImgSetHighIsoAntiAliasing:"
+  },
+  {
+    "offset": 5090564,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoAntiAliasing() does not support pipe %d"
+  },
+  {
+    "offset": 5090680,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoAntiAliasing() does not support pipe %d"
+  },
+  {
+    "offset": 5090752,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoCfaLeakageFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5091244,
+    "text": "AmbaDSP_ImgSetHighIsoDynamicBadPixelCorrection:"
+  },
+  {
+    "offset": 5092044,
+    "text": "AmbaDSP_ImgSetHighIsoCfaNoiseFilter:"
+  },
+  {
+    "offset": 5092084,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoCfaNoiseFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5092404,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoCfaNoiseFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5092780,
+    "text": "AmbaDSP_ImgSetSetHighIsoGbGrMismatch:"
+  },
+  {
+    "offset": 5092820,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoGbGrMismatch() does not support pipe %d"
+  },
+  {
+    "offset": 5092936,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoGbGrMismatch() does not support pipe %d"
+  },
+  {
+    "offset": 5093716,
+    "text": "AmbaDSP_ImgSetHighIsoDemosaic:"
+  },
+  {
+    "offset": 5093748,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoDemosaic() does not support pipe %d"
+  },
+  {
+    "offset": 5093816,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoDemosaic() does not support pipe %d"
+  },
+  {
+    "offset": 5094524,
+    "text": "AmbaDSP_ImgSetHighIsoChromaMedianFilter:"
+  },
+  {
+    "offset": 5094568,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoChromaMedianFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5094688,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoChromaMedianFilter() does not support pipe %d"
+  },
+  {
+    "offset": 5094844,
+    "text": "AmbaDSP_ImgSetHighIsoDeferColorCorrection:"
+  },
+  {
+    "offset": 5094888,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoDeferColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5095020,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoDeferColorCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5095288,
+    "text": "AmbaDSP_ImgSetHighIsoColorDependentNoiseReduction:"
+  },
+  {
+    "offset": 5095340,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoColorDependentNoiseReduction() does not support pipe %d"
+  },
+  {
+    "offset": 5095428,
+    "text": "Warning. AmbaDSP_ImgGethighisoColorDependentNoiseReduction() does not support pipe %d"
+  },
+  {
+    "offset": 5095880,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseMaxChange:"
+  },
+  {
+    "offset": 5096020,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseMaxChange() does not support pipe %d"
+  },
+  {
+    "offset": 5096236,
+    "text": "AmbaDSP_ImgPrintSetHighIsoHighSharpenNoiseNoise:"
+  },
+  {
+    "offset": 5096340,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5096516,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5096568,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5096696,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5096760,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5097040,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5097104,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5097400,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5097464,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5097736,
+    "text": "AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenScaleCoring:"
+  },
+  {
+    "offset": 5097796,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5097932,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5098060,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5098180,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5098312,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5098436,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5098536,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5098632,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5099132,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseMaxChange() does not support pipe %d"
+  },
+  {
+    "offset": 5099336,
+    "text": "AmbaDSP_ImgPrintSetHighIsoMedSharpenNoiseNoise:"
+  },
+  {
+    "offset": 5099384,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5099560,
+    "text": "AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5099612,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5099700,
+    "text": "AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5099748,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5100000,
+    "text": "AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5100064,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5100320,
+    "text": "AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5100380,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5100624,
+    "text": "AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenScaleCoring:"
+  },
+  {
+    "offset": 5100680,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5100816,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5100940,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5101060,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5101192,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5101316,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5101412,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5101508,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5101972,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseMaxChange:"
+  },
+  {
+    "offset": 5102024,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseMaxChange() does not support pipe %d"
+  },
+  {
+    "offset": 5102144,
+    "text": "AmbaDSP_ImgPrintSetHighIsoLiso1SharpenNoiseNoise:"
+  },
+  {
+    "offset": 5102196,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5102372,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5102428,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5102556,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5102608,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5102748,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5102812,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5102964,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5103028,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5103176,
+    "text": "AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenScaleCoring:"
+  },
+  {
+    "offset": 5103236,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5103332,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5103412,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5103492,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5103580,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5103668,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5103768,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5103868,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5104336,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseMaxChange:"
+  },
+  {
+    "offset": 5104388,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseMaxChange() does not support pipe %d"
+  },
+  {
+    "offset": 5104508,
+    "text": "AmbaDSP_ImgPrintSetHighIsoLiso2SharpenNoiseNoise:"
+  },
+  {
+    "offset": 5104560,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5104736,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5104792,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5104920,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5104972,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5105112,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5105176,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5105328,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5105392,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5105540,
+    "text": "AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenScaleCoring:"
+  },
+  {
+    "offset": 5105600,
+    "text": "Warning. AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5105696,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5105776,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5105856,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5105944,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5106032,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5106132,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5106232,
+    "text": "Warning. AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5106328,
+    "text": "AmbaDSP_ImgSetLocalExposure:"
+  },
+  {
+    "offset": 5106924,
+    "text": "Warning. AmbaDSP_ImgSetLocalExposure() does not support pipe %d"
+  },
+  {
+    "offset": 5107316,
+    "text": "Warning. DSP_ImgLowIsoPreExeCfg() AlgoMode %d != AMBA_DSP_IMG_CFG_STATE_INIT"
+  },
+  {
+    "offset": 5107396,
+    "text": "Error. DSP_ImgLowIsoPreExeCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_LISO"
+  },
+  {
+    "offset": 5107528,
+    "text": "Warning. DSP_ImgLowIsoPostExeCfg() State %d != AMBA_DSP_IMG_CFG_STATE_INIT || AMBA_DSP_IMG_CFG_STATE_PREEXE"
+  },
+  {
+    "offset": 5107636,
+    "text": "Error. DSP_ImgLowIsoPostExeCfg() AlgoMode %d != AMBA_DSP_IMG_ALGO_MODE_LISO"
+  },
+  {
+    "offset": 5107712,
+    "text": "Warning. AmbaDSP_ImgLowIsoSetDebugMode() does not support pipe %d"
+  },
+  {
+    "offset": 5107840,
+    "text": "Error. DSP_ImgLowIsoPrintCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_LISO"
+  },
+  {
+    "offset": 5112304,
+    "text": "Warning. AmbaDSP_ImgLowIsoDumpCfg() does not support pipe %d"
+  },
+  {
+    "offset": 5112368,
+    "text": "Error. AmbaDSP_ImgLowIsoDumpCfg() State %d != AMBA_DSP_IMG_ALGO_MODE_LISO"
+  },
+  {
+    "offset": 5114908,
+    "text": "AmbaDSP_ImgSetMultiFrameBlendInfo index %d:"
+  },
+  {
+    "offset": 5115400,
+    "text": "Warning. AmbaDSP_ImgSetMultiFrameBlendInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5115508,
+    "text": "Warning. AmbaDSP_ImgGetMultiFrameBlendInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5115580,
+    "text": "Warning. AmbaDSP_ImgGetMultiFrameBlendingCfgInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5115972,
+    "text": "AmbaDSP_ImgSetRgbToYuvMatrix:"
+  },
+  {
+    "offset": 5116088,
+    "text": "Warning. AmbaDSP_ImgSetRgbToYuvMatrix() does not support pipe %d"
+  },
+  {
+    "offset": 5116188,
+    "text": "Warning. AmbaDSP_ImgGetRgbToYuvMatrix() does not support pipe %d"
+  },
+  {
+    "offset": 5117928,
+    "text": "Error: AmbaDSP_ImgSet1stLumaProcessingMode undefined Select %d"
+  },
+  {
+    "offset": 5117992,
+    "text": "AmbaDSP_ImgSet1stLumaProcessingMode:"
+  },
+  {
+    "offset": 5118048,
+    "text": "Warning. AmbaDSP_ImgSet1stLumaProcessingMode() does not support pipe %d"
+  },
+  {
+    "offset": 5118148,
+    "text": "Warning. AmbaDSP_ImgGet1stLumaProcessingMode() does not support pipe %d"
+  },
+  {
+    "offset": 5118308,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5118352,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5118460,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5118540,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5118584,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5118684,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5118804,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5118860,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5118976,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5119108,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5119164,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5119256,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5119388,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseSharpenScaleCoring:"
+  },
+  {
+    "offset": 5119440,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5119524,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5119932,
+    "text": "AmbaDSP_ImgSet1stSharpenNoiseBoth:"
+  },
+  {
+    "offset": 5119968,
+    "text": "Warning. AmbaDSP_ImgSetSharpenAMaxChange() does not support pipe %d"
+  },
+  {
+    "offset": 5120064,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5120160,
+    "text": "AmbaDSP_ImgSetSet1stSharpenNoiseNoise:"
+  },
+  {
+    "offset": 5120200,
+    "text": "Warning. AmbaDSP_ImgSet1stSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5120308,
+    "text": "Warning. AmbaDSP_ImgGet1stSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5120468,
+    "text": "AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoring:"
+  },
+  {
+    "offset": 5120516,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoring() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5120612,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoring() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5120708,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5120792,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoring() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5120888,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoring() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5120984,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5121100,
+    "text": "AmbaDSP_ImgSetFinalSharpenNoiseSharpenFir:"
+  },
+  {
+    "offset": 5121144,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenFir() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5121240,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenFir() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5121336,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5121416,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenFir() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5121512,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenFir() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5121608,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenFir() does not support pipe %d"
+  },
+  {
+    "offset": 5121732,
+    "text": "AmbaDSP_ImgSetFinalSharpenNoiseSharpenMinCoringResult:"
+  },
+  {
+    "offset": 5121788,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenMinCoringResult() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5121896,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenMinCoringResult() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122004,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5122096,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenMinCoringResult() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122204,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenMinCoringResult() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122312,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenMinCoringResult() does not support pipe %d"
+  },
+  {
+    "offset": 5122448,
+    "text": "AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoringIndexScale:"
+  },
+  {
+    "offset": 5122504,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoringIndexScale() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122612,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoringIndexScale() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122720,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5122812,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoringIndexScale() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5122920,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoringIndexScale() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5123028,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoringIndexScale() does not support pipe %d"
+  },
+  {
+    "offset": 5123160,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenScaleCoring() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5123264,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenScaleCoring() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5123368,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5123456,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenScaleCoring() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5123560,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenScaleCoring() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5123664,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseSharpenScaleCoring() does not support pipe %d"
+  },
+  {
+    "offset": 5124092,
+    "text": "AmbaDSP_ImgSetSharpenBMaxChange:"
+  },
+  {
+    "offset": 5124128,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseBoth() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124216,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseBoth() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124304,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5124404,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseBoth() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124492,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseBoth() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124580,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseBoth() does not support pipe %d"
+  },
+  {
+    "offset": 5124680,
+    "text": "AmbaDSP_ImgSetSharpenBSignalRetainLevel:"
+  },
+  {
+    "offset": 5124724,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseNoise() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124812,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseNoise() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5124900,
+    "text": "Warning. AmbaDSP_ImgSetFinalSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5124976,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseNoise() does not support Video Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5125064,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseNoise() does not support Still Pipe AlgoMode %d"
+  },
+  {
+    "offset": 5125152,
+    "text": "Warning. AmbaDSP_ImgGetFinalSharpenNoiseNoise() does not support pipe %d"
+  },
+  {
+    "offset": 5125228,
+    "text": "Warning. AmbaDSP_ImgSetStaticBadPixelCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5125452,
+    "text": "AmbaDSP_ImgSetStaticBadPixelCorrection:"
+  },
+  {
+    "offset": 5125492,
+    "text": "AMBA_DSP_IMG_MODE_CFG_s:"
+  },
+  {
+    "offset": 5125520,
+    "text": "AMBA_DSP_IMG_SBP_CORRECTION_s:"
+  },
+  {
+    "offset": 5125952,
+    "text": "Warning. AmbaDSP_ImgGetStaticBadPixelCorrection() does not support pipe %d"
+  },
+  {
+    "offset": 5126156,
+    "text": "Warning. AmbaDSP_ImgSetStaticBadPixelCorrectionByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5126276,
+    "text": "Warning. AmbaDSP_ImgGetStaticBadPixelCorrectionByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5126448,
+    "text": "AmbaDSP_ImgSetStaticBadPixelCorrection"
+  },
+  {
+    "offset": 5126808,
+    "text": "AmbaDSP_ImgSetStaticBlackLevel:"
+  },
+  {
+    "offset": 5126888,
+    "text": "Warning. AmbaDSP_ImgSetStaticBlackLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5126988,
+    "text": "Warning. AmbaDSP_ImgGetStaticBlackLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5127580,
+    "text": "AmbaDSP_ImgSetToneCurve:"
+  },
+  {
+    "offset": 5127740,
+    "text": "Warning. AmbaDSP_ImgSetToneCurve() does not support pipe %d"
+  },
+  {
+    "offset": 5127832,
+    "text": "Warning. AmbaDSP_ImgGetToneCurve() does not support pipe %d"
+  },
+  {
+    "offset": 5127916,
+    "text": "AmbaDSP_ImgHighIsoCfgUsePhysTblAddr"
+  },
+  {
+    "offset": 5127952,
+    "text": "AmbaDSP_ImgPostExeCfg"
+  },
+  {
+    "offset": 5127976,
+    "text": "AmbaDSP_ImgHighIsoCfgUseVirtTblAddr"
+  },
+  {
+    "offset": 5128012,
+    "text": "AmbaDSP_ImgLowIsoCfgUseVirtTblAddr"
+  },
+  {
+    "offset": 5132348,
+    "text": "%s() %d, call AmbaDSP_ImgIsoCfgUseVirtTblAddr() Fail"
+  },
+  {
+    "offset": 5132404,
+    "text": "Warning.Video Pipe does not need to Update SizeInfo in AmbaDSP_ImgSetSizeInfo()"
+  },
+  {
+    "offset": 5132484,
+    "text": "Warning. AmbaDSP_ImgSetSizeInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5132544,
+    "text": "Warning. AmbaDSP_ImgSetDebugMode() does not support pipe %d"
+  },
+  {
+    "offset": 5132604,
+    "text": "Warning. AmbaDSP_ImgGetDebugMode() does not support pipe %d"
+  },
+  {
+    "offset": 5132664,
+    "text": "AmbaDSP_ImgLowIsoCfgUsePhysTblAddr"
+  },
+  {
+    "offset": 5132748,
+    "text": "Warning. amba_img_dsp_set_amp_linearization() does not support pipe %d"
+  },
+  {
+    "offset": 5132860,
+    "text": "Warning. AmbaDSP_ImgSetContrastEnhance() does not support pipe %d"
+  },
+  {
+    "offset": 5132964,
+    "text": "AmbaDSP_ImgGetAmpLinearization"
+  },
+  {
+    "offset": 5133148,
+    "text": "Warning. _AmbaDSP_CmdVcapMctfGmvSetup() does not support pipe %d"
+  },
+  {
+    "offset": 5133216,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfPowerSaving() does not support pipe %d"
+  },
+  {
+    "offset": 5133288,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfPowerSaving() does not support pipe %d"
+  },
+  {
+    "offset": 5134096,
+    "text": "AmbaDSP_ImgSetVideoMctf:"
+  },
+  {
+    "offset": 5134124,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctf() does not support pipe %d"
+  },
+  {
+    "offset": 5134216,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctf() does not support pipe %d"
+  },
+  {
+    "offset": 5134616,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5134716,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfLevel() does not support pipe %d"
+  },
+  {
+    "offset": 5134784,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfGhostPrv() does not support pipe %d"
+  },
+  {
+    "offset": 5134884,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfGhostPrv() does not support pipe %d"
+  },
+  {
+    "offset": 5135004,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135096,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135164,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfCompensationEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135244,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfCompressionEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135324,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfGlobalMotionVector() does not support pipe %d"
+  },
+  {
+    "offset": 5135404,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfGlobalMotionVector() does not support pipe %d"
+  },
+  {
+    "offset": 5135536,
+    "text": "Warning. AmbaDSP_ImgSetVideoMctfZMVEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135636,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfZMVEnable() does not support pipe %d"
+  },
+  {
+    "offset": 5135708,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfVcap() does not support pipe %d"
+  },
+  {
+    "offset": 5136028,
+    "text": "AmbaDSP_ImgSetVideoMctfMbTemporal:"
+  },
+  {
+    "offset": 5136148,
+    "text": "Warning. AmbaDSP_ImgGetVideoMctfMbTemporal() does not support pipe %d"
+  },
+  {
+    "offset": 5136320,
+    "text": "AmbaDSP_ImgSetVignetteCompensation"
+  },
+  {
+    "offset": 5137212,
+    "text": "AmbaDSP_ImgCalcVignetteCompensation:"
+  },
+  {
+    "offset": 5137252,
+    "text": "AMBA_DSP_IMG_VIGNETTE_CALC_INFO_s:"
+  },
+  {
+    "offset": 5137800,
+    "text": "Warning. AmbaDSP_ImgCalcVignetteCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5138020,
+    "text": "AmbaDSP_ImgSetVignetteCompensation:"
+  },
+  {
+    "offset": 5138056,
+    "text": "Warning. AmbaDSP_ImgSetVignetteCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5138168,
+    "text": "Warning. AmbaDSP_ImgGetVignetteCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5138240,
+    "text": "Warning. AmbaDSP_ImgSetVignetteCompensationByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5138320,
+    "text": "Warning. AmbaDSP_ImgGetVignetteCompensationByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5138480,
+    "text": "Warning. AmbaDSP_ImgSetVinSensorInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5138580,
+    "text": "Warning. AmbaDSP_ImgGetVinSensorInfo() does not support pipe %d"
+  },
+  {
+    "offset": 5138912,
+    "text": "AmbaDSP_ImgCalcWarpCompensation:"
+  },
+  {
+    "offset": 5138948,
+    "text": "AMBA_DSP_IMG_WARP_CALC_INFO_s:"
+  },
+  {
+    "offset": 5139836,
+    "text": "Warning. AmbaDSP_ImgCalcWarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5139904,
+    "text": "AmbaDSP_ImgSetWarpCompensation:"
+  },
+  {
+    "offset": 5139936,
+    "text": "Warning. AmbaDSP_ImgSetWarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5140040,
+    "text": "Warning. AmbaDSP_ImgGetWarpCompensation() does not support pipe %d"
+  },
+  {
+    "offset": 5140748,
+    "text": "Warning. AmbaDSP_ImgSetWarpCompensationByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5140864,
+    "text": "Warning. AmbaDSP_ImgGetWarpCompensationByPass() does not support pipe %d"
+  },
+  {
+    "offset": 5140988,
+    "text": "Warning. AmbaDSP_ImgGetWarpCompensationVwarpFirstLine() does not support pipe %d"
+  },
+  {
+    "offset": 5141072,
+    "text": "Warning. AmbaDSP_ImgSetWarpUpdateTableIndexDelay() does not support pipe %d"
+  },
+  {
+    "offset": 5141148,
+    "text": "Warning. AmbaDSP_ImgSetWarpUpdateTableIndexDelay() Delay(%d) should not bigger than TblNum(%d)"
+  },
+  {
+    "offset": 5141508,
+    "text": "AmbaDSP_ImgSetWbGain:"
+  },
+  {
+    "offset": 5141592,
+    "text": "Warning. AmbaDSP_ImgSetWbGain() does not support pipe %d"
+  },
+  {
+    "offset": 5141680,
+    "text": "Warning. AmbaDSP_ImgGetWbGain() does not support pipe %d"
+  },
+  {
+    "offset": 5141740,
+    "text": "Error: AmbaDSP_ImgSetAdvanceSpatialFilter not support in current operation mode"
+  },
+  {
+    "offset": 5143460,
+    "text": "Error: undefined enable %d in AmbaDSP_ImgSetChromaScale"
+  },
+  {
+    "offset": 5171156,
+    "text": "AmbaFS_CreateBootArea"
+  },
+  {
+    "offset": 5171180,
+    "text": "AmbaFS_CreateFat"
+  },
+  {
+    "offset": 5181860,
+    "text": "Amba_Adj_Still_High_Iso_Control"
+  },
+  {
+    "offset": 5188632,
+    "text": "Amba_Adj_Video_Init"
+  },
+  {
+    "offset": 5188764,
+    "text": "=== Amba Adj Lib., Revision : %5d ==="
+  },
+  {
+    "offset": 5194584,
+    "text": "=== Amba Ae Lib., Revision : %5d ==="
+  },
+  {
+    "offset": 5228348,
+    "text": "=== Amba Awb Lib., Revision : %5d ==="
+  },
+  {
+    "offset": 5235884,
+    "text": "[Warp Tool] AmbaCalib_CalWarpTable ERROR! div 0 "
+  },
+  {
+    "offset": 5236288,
+    "text": "[Warp Tool] AmbaCalib_CalTopViewTable ERROR! div 0 "
+  },
+  {
+    "offset": 5236700,
+    "text": "%s: EisFocalLength = %d, FocalValue = %d"
+  },
+  {
+    "offset": 5236776,
+    "text": "Spf=%d, AdjPtr: %d(%d) %d, DiffTime=%d, Dsp=%d, UpdateEisStatusDo=%d"
+  },
+  {
+    "offset": 5236848,
+    "text": "=============AmbaImageMainEis_CalcRotateFactor start==========="
+  },
+  {
+    "offset": 5236960,
+    "text": "=============AmbaImageMainEis_CalcRotateFactor end============"
+  },
+  {
+    "offset": 5237056,
+    "text": "====AmbaImgEisCtrl_Init starts===="
+  },
+  {
+    "offset": 5237120,
+    "text": "EisMv.MaxAngX=%d"
+  },
+  {
+    "offset": 5237140,
+    "text": "EisMv.MaxAngY=%d"
+  },
+  {
+    "offset": 5237160,
+    "text": "====AmbaImgEisCtrl_Init finish===="
+  },
+  {
+    "offset": 5237212,
+    "text": "EisUpdateEndTime1=%d"
+  },
+  {
+    "offset": 5237236,
+    "text": "EisUpdateEndTime2=%d"
+  },
+  {
+    "offset": 5237260,
+    "text": "EisWarpUpdateEndTime1=%d"
+  },
+  {
+    "offset": 5237316,
+    "text": "============AmbaImageMainEis_CalCurrRange start==============="
+  },
+  {
+    "offset": 5237380,
+    "text": "EisRotateFactor=%d"
+  },
+  {
+    "offset": 5237400,
+    "text": "EisStatus.EisDzoomFactor=%d"
+  },
+  {
+    "offset": 5237428,
+    "text": "%sEisZoomRatio: %g x"
+  },
+  {
+    "offset": 5237452,
+    "text": "============AmbaImageMainEis_CalCurrRange end==============="
+  },
+  {
+    "offset": 5237516,
+    "text": "CurrEisRangePerct  = %d"
+  },
+  {
+    "offset": 5238048,
+    "text": "AmbaDSP_WarpCore_SetWarpReferenceDummyWinMarginPixels = %d @%d"
+  },
+  {
+    "offset": 5238112,
+    "text": "%s[EIS] initialize calibration warp: %d %d %d %d %d %d %d %d %d %d %d %d %d"
+  },
+  {
+    "offset": 5238512,
+    "text": "========AmbaImageMainEis_SetDummy======="
+  },
+  {
+    "offset": 5238556,
+    "text": "---------AmbaImageMainEis_GyroParamInit starts-------"
+  },
+  {
+    "offset": 5238612,
+    "text": "GyroParam.OffsetX=%d"
+  },
+  {
+    "offset": 5238636,
+    "text": "GyroParam.OffsetY=%d"
+  },
+  {
+    "offset": 5238660,
+    "text": "GyroCalibInfo.SenseX=%d"
+  },
+  {
+    "offset": 5238684,
+    "text": "GyroCalibInfo.SenseY=%d"
+  },
+  {
+    "offset": 5238708,
+    "text": "---------AmbaImageMainEis_GyroParamInit finishes-------"
+  },
+  {
+    "offset": 5238764,
+    "text": "---------AmbaImageMainEis_ParamInit starts-------"
+  },
+  {
+    "offset": 5238816,
+    "text": "DefEisParam.SensorCellSizeX=%d"
+  },
+  {
+    "offset": 5238848,
+    "text": "GyroInfo.VolDivDen=%d"
+  },
+  {
+    "offset": 5238872,
+    "text": "DefEisParam.EisScaleFactorDenX=%d"
+  },
+  {
+    "offset": 5238908,
+    "text": "DefEisParam.SensorCellSizeY=%d"
+  },
+  {
+    "offset": 5238940,
+    "text": "DefEisParam.EisScaleFactorDenY=%d"
+  },
+  {
+    "offset": 5238976,
+    "text": "EisParam.EisScaleFactorDenX=%d"
+  },
+  {
+    "offset": 5239008,
+    "text": "EisParam.EisScaleFactorDenY=%d"
+  },
+  {
+    "offset": 5239040,
+    "text": "GyroCalibInfo.SenseZ=%d"
+  },
+  {
+    "offset": 5239064,
+    "text": "EisParam.EisScaleFactorDenZ=%d, EisParam.EisScaleFactorNum=%d"
+  },
+  {
+    "offset": 5239128,
+    "text": "---------AmbaImageMainEis_ParamInit finishes-------"
+  },
+  {
+    "offset": 5239180,
+    "text": "====AmbaImgEisCtrl_ModeInit starts===="
+  },
+  {
+    "offset": 5239300,
+    "text": "EisSensorStatus.ModeInfo.FrameLengthLines=%d"
+  },
+  {
+    "offset": 5239348,
+    "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=%d"
+  },
+  {
+    "offset": 5239400,
+    "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=%d"
+  },
+  {
+    "offset": 5239464,
+    "text": "EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=%d"
+  },
+  {
+    "offset": 5239964,
+    "text": "====AmbaImageMainEis_GyroLogInit start===="
+  },
+  {
+    "offset": 5240008,
+    "text": "====AmbaImageMainEis_GyroLogInit finish===="
+  },
+  {
+    "offset": 5240052,
+    "text": "EisMv.MaxPixX=%d"
+  },
+  {
+    "offset": 5240072,
+    "text": "EisMv.MaxPixY=%d"
+  },
+  {
+    "offset": 5240128,
+    "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=%d"
+  },
+  {
+    "offset": 5240192,
+    "text": "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=%d"
+  },
+  {
+    "offset": 5240340,
+    "text": "Set ucode gyro_delay = %dms"
+  },
+  {
+    "offset": 5240392,
+    "text": "====AmbaImgEisCtrl_ModeInit finish===="
+  },
+  {
+    "offset": 5240432,
+    "text": "-------- AmbaImageMainEis_RangeUpdate Start --------"
+  },
+  {
+    "offset": 5241184,
+    "text": "EisLimP.MovX= %d"
+  },
+  {
+    "offset": 5241224,
+    "text": "EisLimN.MovX= %d"
+  },
+  {
+    "offset": 5241264,
+    "text": "EisLimP.MovY= %d"
+  },
+  {
+    "offset": 5241304,
+    "text": "EisLimN.MovY= %d"
+  },
+  {
+    "offset": 5241344,
+    "text": "-------- AmbaImageMainEis_RangeUpdate End --------"
+  },
+  {
+    "offset": 5241476,
+    "text": "====AmbaImgEisCtrl_Enable starts===="
+  },
+  {
+    "offset": 5241516,
+    "text": "EisObj.Enable=%d"
+  },
+  {
+    "offset": 5241536,
+    "text": "EisObj.EnableCmd=%d"
+  },
+  {
+    "offset": 5241556,
+    "text": "EisObj.StabilizerType=%d"
+  },
+  {
+    "offset": 5241584,
+    "text": "EisObj.MeEnable=%d"
+  },
+  {
+    "offset": 5241604,
+    "text": "FlgEisDzEffect=%d"
+  },
+  {
+    "offset": 5241624,
+    "text": "========AmbaImageMainEis_SetRange(1)======="
+  },
+  {
+    "offset": 5241668,
+    "text": "EisEnableDlyCnt=%d"
+  },
+  {
+    "offset": 5241688,
+    "text": "====AmbaImageMainEis_RangeUpdate starts===="
+  },
+  {
+    "offset": 5241732,
+    "text": "EisObj.EnablePref=%d"
+  },
+  {
+    "offset": 5241756,
+    "text": "EisObj.RscEnablePref=%d"
+  },
+  {
+    "offset": 5241780,
+    "text": "====AmbaImgEisCtrl_Enable finish===="
+  },
+  {
+    "offset": 5241820,
+    "text": "set EIS processing mode: 5"
+  },
+  {
+    "offset": 5241848,
+    "text": "set EIS processing mode: 0"
+  },
+  {
+    "offset": 5241876,
+    "text": "========AmbaImageMainEis_SetMcEnable======="
+  },
+  {
+    "offset": 5241920,
+    "text": "EisObj.RscEnable=%d"
+  },
+  {
+    "offset": 5241940,
+    "text": "EisObj.McEnable=%d"
+  },
+  {
+    "offset": 5241960,
+    "text": "========AmbaImageMainEis_SetRscEnable======="
+  },
+  {
+    "offset": 5242276,
+    "text": "Eis-Warp calculation not in-time for ucode: %d %d"
+  },
+  {
+    "offset": 5242328,
+    "text": "Do EisPerFrame: %d %d(%d) %d (%4d %4d %1.2f)"
+  },
+  {
+    "offset": 5242376,
+    "text": "Do EisPerFrame: %d(%d) %d %d (%4d %4d %1.2f)"
+  },
+  {
+    "offset": 5242424,
+    "text": "EIS main task interval = %6d (%10d %10d)  ;  DiffTime = %2d"
+  },
+  {
+    "offset": 5242484,
+    "text": "%sEIS main task interval = %6d (%10d %10d)  ;  DiffTime = %2d"
+  },
+  {
+    "offset": 5242548,
+    "text": "GyroData= %8u, %8u, %8u, %5u"
+  },
+  {
+    "offset": 5242580,
+    "text": "GyroData= %8u, %8u, %8u"
+  },
+  {
+    "offset": 5242604,
+    "text": "GyroBias= %8u, %8u, %8u"
+  },
+  {
+    "offset": 5242840,
+    "text": "--- Gyro sample loss = %d!!    DiffTimeSampleLoss=%d ---"
+  },
+  {
+    "offset": 5243084,
+    "text": "[EIS] Warp content not ready last frame: ArmSysTim=%d, WarpReady=%d, update: ADV=%d WarpTime1=%d"
+  },
+  {
+    "offset": 5243400,
+    "text": "EisOffsetInfo.MovX=%d %d (%d)"
+  },
+  {
+    "offset": 5243504,
+    "text": "UpdateEisStatusDo exceeds max number: %d"
+  },
+  {
+    "offset": 5243548,
+    "text": "UpdateEisStatusDo=%d, DiffTime=%d (%d %d)"
+  },
+  {
+    "offset": 5243592,
+    "text": "GyroSampleOffset=%d (%d), ExposureTime=%d"
+  },
+  {
+    "offset": 5244092,
+    "text": "pCalcWinInfo.EisInfo.HorSkewPhaseInc  = %d"
+  },
+  {
+    "offset": 5244136,
+    "text": "pCalcWinInfo.EisInfo.VerSkewPhaseInc  = %d"
+  },
+  {
+    "offset": 5244624,
+    "text": "update_eis_status_do = %d %d %d %d %d"
+  },
+  {
+    "offset": 5245384,
+    "text": "EIS main task = %6d (%10d %10d)  ;  DiffTime = %2d"
+  },
+  {
+    "offset": 5245436,
+    "text": "%sEIS main task = %6d (%10d %10d)  ;  DiffTime = %2d"
+  },
+  {
+    "offset": 5245956,
+    "text": "[EIS debug] enable frame check"
+  },
+  {
+    "offset": 5245988,
+    "text": "[EIS debug] enable gyro sample loss check"
+  },
+  {
+    "offset": 5246032,
+    "text": "[EIS debug] enable 1ms task check"
+  },
+  {
+    "offset": 5246068,
+    "text": "%sInvalid EIS debug item ..."
+  },
+  {
+    "offset": 5246100,
+    "text": "====EnableEis===="
+  },
+  {
+    "offset": 5246120,
+    "text": "EIS_Enable_RSC=%d"
+  },
+  {
+    "offset": 5246140,
+    "text": "Before: GyroInfo.GyroXPolar=%d"
+  },
+  {
+    "offset": 5246172,
+    "text": "After: GyroInfo.GyroXPolar=%d"
+  },
+  {
+    "offset": 5246204,
+    "text": "Before: GyroInfo.GyroYPolar=%d"
+  },
+  {
+    "offset": 5246236,
+    "text": "After: GyroInfo.GyroYPolar=%d"
+  },
+  {
+    "offset": 5246268,
+    "text": "Before: GyroInfo.GyroZPolar=%d"
+  },
+  {
+    "offset": 5246300,
+    "text": "After: GyroInfo.GyroZPolar=%d"
+  },
+  {
+    "offset": 5246444,
+    "text": "EnEisXyUsingWarp=%d, EnEisPerspectCorrect=%d"
+  },
+  {
+    "offset": 5246492,
+    "text": "EnEisRotationCorrect=%d, FlgNormalWarpRotation=%d"
+  },
+  {
+    "offset": 5246544,
+    "text": "EIS_WARP_UPDATE_ADV_TIME=%d, EisWarpUpdateEndTime1=%d"
+  },
+  {
+    "offset": 5246600,
+    "text": "EisUpdateEndTime1=%d, EisUpdateEndTime2=%d"
+  },
+  {
+    "offset": 5246644,
+    "text": "EnEisInMode5=%d, EnEisXyUsingWarp=%d"
+  },
+  {
+    "offset": 5246684,
+    "text": "GyroDelayMode5=%d"
+  },
+  {
+    "offset": 5246704,
+    "text": "EIS_UPDATE_ADV_TIME=%d, EisUpdateEndTime1=%d, EisUpdateEndTime2=%d"
+  },
+  {
+    "offset": 5246796,
+    "text": "set AmbaDSP_LiveviewSetSec2ExtraLine(%d)"
+  },
+  {
+    "offset": 5246840,
+    "text": "ExtraGyroPhaseDelay=%d   ExtraRSCPhaseDelay=%d"
+  },
+  {
+    "offset": 5246888,
+    "text": "EnEisXy2ndCompensation=%d"
+  },
+  {
+    "offset": 5246916,
+    "text": "MaxEisRangePerct=MinEisRangePerct=%d"
+  },
+  {
+    "offset": 5246956,
+    "text": "EisFocalLength=%d, VideoFocalValueScaleFactor=%d, FocalValue=%d"
+  },
+  {
+    "offset": 5247020,
+    "text": "EnEisLbcUsingWarp=%d"
+  },
+  {
+    "offset": 5247044,
+    "text": "AmbaDSP_ImgIsSupportVirtualMemory()=%d, 0x%x becomes 0x%x"
+  },
+  {
+    "offset": 5247124,
+    "text": "EnEisLDcUsingWarp=%d, EnEisLDcUsingWarpSimple=%d"
+  },
+  {
+    "offset": 5247292,
+    "text": "TestEISOff5 = %d"
+  },
+  {
+    "offset": 5247312,
+    "text": "TestEISOff0 = %d"
+  },
+  {
+    "offset": 5247776,
+    "text": "EnEisRotationCorrect = %d, FlgNormalWarpRotation = %d"
+  },
+  {
+    "offset": 5247832,
+    "text": "EnEisInMode5 = %d, EnEisXyUsingWarp = %d, EnEisPerspectCorrect = %d"
+  },
+  {
+    "offset": 5247900,
+    "text": "EnEisXy2ndCompensation = %d"
+  },
+  {
+    "offset": 5247928,
+    "text": "EnEisLbcUsingWarp = %d"
+  },
+  {
+    "offset": 5247952,
+    "text": "EnEisLDcUsingWarp = %d, EnEisLDcUsingWarpSimple = %d"
+  },
+  {
+    "offset": 5248008,
+    "text": "MaxEisRangePerct = MinEisRangePerct = %d"
+  },
+  {
+    "offset": 5248052,
+    "text": "RotateFreq = %f, EisAngleLimit = %d"
+  },
+  {
+    "offset": 5248088,
+    "text": "EIS_UPDATE_ADV_TIME = %d, EisUpdateEndTime1 = %d, EisUpdateEndTime2 = %d"
+  },
+  {
+    "offset": 5248164,
+    "text": "EIS_WARP_UPDATE_ADV_TIME = %d, EisWarpUpdateEndTime1 = %d"
+  },
+  {
+    "offset": 5248224,
+    "text": "ExtraGyroPhaseDelay = %d"
+  },
+  {
+    "offset": 5248252,
+    "text": "EisFocalLength = %d, VideoFocalValueScaleFactor = %d, FocalValue = %d"
+  },
+  {
+    "offset": 5248552,
+    "text": "GyroInfo.GyroPolar = %d %d %d"
+  },
+  {
+    "offset": 5248616,
+    "text": "GyroX=%d, GyroY=%d, GyroZ=%d"
+  },
+  {
+    "offset": 5248672,
+    "text": "Eis rev. 0x%x"
+  },
+  {
+    "offset": 5248708,
+    "text": "AmbaImgEisCtrl_SetFocalLength"
+  },
+  {
+    "offset": 5248740,
+    "text": "AmbaImageMainEis_SetDummy"
+  },
+  {
+    "offset": 5248768,
+    "text": "AmbaImageMainEis_RangeUpdate"
+  },
+  {
+    "offset": 5248800,
+    "text": "AmbaImgEisCtrl_Disable"
+  },
+  {
+    "offset": 5248824,
+    "text": "EisAlgo_CalcLbcWarpTable"
+  },
+  {
+    "offset": 5248852,
+    "text": "eis stop..."
+  },
+  {
+    "offset": 5248864,
+    "text": "eis init... task_ver %d"
+  },
+  {
+    "offset": 5248888,
+    "text": "eis range %d"
+  },
+  {
+    "offset": 5248904,
+    "text": "eis init without rotation..."
+  },
+  {
+    "offset": 5248936,
+    "text": "eis timer (%d) = (%d, %d)"
+  },
+  {
+    "offset": 5248964,
+    "text": "AmbaImageMainEisTask"
+  },
+  {
+    "offset": 5248988,
+    "text": "AmbaImageMainEisAlgo2Task"
+  },
+  {
+    "offset": 5249556,
+    "text": "AmbaKAL_TaskSmpCoreExclusionSet() failed!"
+  },
+  {
+    "offset": 5249696,
+    "text": "Adding AmbaImgEncodeMonitor_Dbg"
+  },
+  {
+    "offset": 5251280,
+    "text": "AmbaItuner_Execute"
+  },
+  {
+    "offset": 5251312,
+    "text": "_AmbaItuner_Check_Filter"
+  },
+  {
+    "offset": 5251628,
+    "text": "[ITUNER][WARNING]%s() %d, call _AmbaItuner_Check_Filter() Fail"
+  },
+  {
+    "offset": 5251828,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_Img3aSetAeStatInfo(pMode, &GData.AeStatisticsInfo) Fail"
+  },
+  {
+    "offset": 5251928,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_Img3aSetAwbStatInfo(pMode, &GData.AwbStatisticsInfo) Fail"
+  },
+  {
+    "offset": 5252032,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_Img3aSetAfStatInfo(pMode, &GData.AfStatisticsInfo) Fail"
+  },
+  {
+    "offset": 5252132,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetStaticBlackLevel(pMode, &GData.StaticBlackLevel) Fail"
+  },
+  {
+    "offset": 5252236,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetCawarpCompensation(pMode) Fail"
+  },
+  {
+    "offset": 5252320,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetStaticBadPixelCorrectionHighlightMode(pMode, &FpnHighlight) Fail"
+  },
+  {
+    "offset": 5252436,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetCDNRToneCurveSelect(pMode, &DoNotUsePostToneCurveForCdnr) Fail"
+  },
+  {
+    "offset": 5252552,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetNoiseRreduceResampleLuma(pMode, &NoiseReduceResampleLumaEnable) Fail"
+  },
+  {
+    "offset": 5252672,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVinSensorInfo(pMode, &GData.SensorInfo) Fail"
+  },
+  {
+    "offset": 5252812,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVinSensorInfo(pMode, &GData.SensorInfo) Fail"
+  },
+  {
+    "offset": 5252996,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetStaticBadPixelCorrectionByPass(pMode, &GData.SbpCorrByPass) Fail"
+  },
+  {
+    "offset": 5253196,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetStaticBadPixelCorrection(pMode, &GData.SbpCorr) Fail"
+  },
+  {
+    "offset": 5253396,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVignetteCompensationByPass(pMode, &GData.VignetteByPass) Fail"
+  },
+  {
+    "offset": 5253596,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgCalcVignetteCompensation(pMode, &GData.VignetteCalcInfo) Fail"
+  },
+  {
+    "offset": 5253708,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVignetteCompensation(pMode) Fail"
+  },
+  {
+    "offset": 5253792,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgCalcWarpCompensation(pMode, &GData.WarpCalcInfo) Fail"
+  },
+  {
+    "offset": 5254140,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetWarpCompensationByPass(pMode, &GData.WarpByPass) Fail"
+  },
+  {
+    "offset": 5254328,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetWarpCompensation(pMode) Fail"
+  },
+  {
+    "offset": 5254608,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetCawarpCompensationByPass(pMode, &GData.CAByPass) Fail"
+  },
+  {
+    "offset": 5254796,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgCalcCawarpCompensation(pMode, &GData.CACalcInfo) Fail"
+  },
+  {
+    "offset": 5254980,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetColorCorrectionReg(pMode, &GData.CcReg) Fail"
+  },
+  {
+    "offset": 5255160,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetColorCorrection(pMode, &GData.CcThreeD) Fail"
+  },
+  {
+    "offset": 5255256,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetDeferredBlackLevel(pMode, &GData.DeferredBlackLevel) Fail"
+  },
+  {
+    "offset": 5255364,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetDynamicBadPixelCorrection(pMode, &GData.DynamicBadPixelCorrection) Fail"
+  },
+  {
+    "offset": 5255488,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetCfaLeakageFilter(pMode, &GData.CfaLeakageFilter) Fail"
+  },
+  {
+    "offset": 5255592,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetCfaNoiseFilter(pMode, &GData.CfaNoiseFilter) Fail"
+  },
+  {
+    "offset": 5255692,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetAntiAliasing(pMode, &GData.AntiAliasing) Fail"
+  },
+  {
+    "offset": 5255788,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetWbGain(pMode, &GData.WbGain) Fail"
+  },
+  {
+    "offset": 5255872,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetDgainSaturationLevel(pMode, &GData.DgainSaturationLevel) Fail"
+  },
+  {
+    "offset": 5255984,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetLocalExposure(pMode, &GData.LocalExposure) Fail"
+  },
+  {
+    "offset": 5256184,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetToneCurve(pMode, &GData.ToneCurve) Fail"
+  },
+  {
+    "offset": 5256276,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetRgbToYuvMatrix(pMode, &GData.RgbToYuvMatrix) Fail"
+  },
+  {
+    "offset": 5256376,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetChromaScale(pMode, &GData.ChromaScale) Fail"
+  },
+  {
+    "offset": 5256472,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetChromaMedianFilter(pMode, &GData.ChromaMedianFilter) Fail"
+  },
+  {
+    "offset": 5256580,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetDemosaic(pMode, &GData.DemosaicFilter) Fail"
+  },
+  {
+    "offset": 5256676,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetGbGrMismatch( pMode, &GData.GbGrMismatch) Fail"
+  },
+  {
+    "offset": 5256776,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stLumaProcessingMode(pMode, (AMBA_DSP_IMG_SHP_A_SELECT_e)GData.ShpAOrSpatialFilterSelect) Fail"
+  },
+  {
+    "offset": 5256924,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetColorDependentNoiseReduction(pMode, &GData.CDNR) Fail"
+  },
+  {
+    "offset": 5257028,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetChromaFilter( pMode, &GData.ChromaFilter) Fail"
+  },
+  {
+    "offset": 5257208,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetAdvanceSpatialFilter(pMode, &GData.AsfInfo.AsfInfo) Fail"
+  },
+  {
+    "offset": 5257404,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseBoth(pMode, &GData.SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5257516,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseNoise(pMode, &GData.SharpenNoise) Fail"
+  },
+  {
+    "offset": 5257620,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseSharpenFir(pMode, &GData.Fir) Fail"
+  },
+  {
+    "offset": 5257720,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseSharpenCoring(pMode, &GData.Coring) Fail"
+  },
+  {
+    "offset": 5257828,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseSharpenCoringIndexScale(pMode, &GData.CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5257956,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseSharpenMinCoringResult(pMode, &GData.MinCoringResult) Fail"
+  },
+  {
+    "offset": 5258080,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSet1stSharpenNoiseSharpenScaleCoring(pMode, &GData.ScaleCoring) Fail"
+  },
+  {
+    "offset": 5258196,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVideoMctf( pMode, &GData.VideoMctf) Fail"
+  },
+  {
+    "offset": 5258288,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVideoMctfLevel( pMode, &GData.VideoMctfLevel) Fail"
+  },
+  {
+    "offset": 5258392,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetVideoMctfMbTemporal( pMode, &GData.VideoMctfMbTemporal) Fail"
+  },
+  {
+    "offset": 5258592,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseBoth(pMode, &GData.FinalSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5258712,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseNoise(pMode, &GData.FinalSharpenNoise) Fail"
+  },
+  {
+    "offset": 5258824,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseSharpenFir(pMode, &GData.FinalFir) Fail"
+  },
+  {
+    "offset": 5258932,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoring(pMode, &GData.FinalCoring) Fail"
+  },
+  {
+    "offset": 5259048,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseSharpenCoringIndexScale(pMode, &GData.FinalCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5259184,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseSharpenMinCoringResult(pMode, &GData.FinalMinCoringResult) Fail"
+  },
+  {
+    "offset": 5259316,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetFinalSharpenNoiseSharpenScaleCoring(pMode, &GData.FinalScaleCoring) Fail"
+  },
+  {
+    "offset": 5259440,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoAntiAliasing( pMode, &GData.HisoAntiAliasing) Fail"
+  },
+  {
+    "offset": 5259548,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoCfaLeakageFilter( pMode, &GData.HisoCfaLeakageFilter) Fail"
+  },
+  {
+    "offset": 5259664,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoDynamicBadPixelCorrection( pMode, &GData.HisoDynamicBadPixelCorrection) Fail"
+  },
+  {
+    "offset": 5259800,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoCfaNoiseFilter( pMode, &GData.HisoCfaNoiseFilter) Fail"
+  },
+  {
+    "offset": 5259912,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoGbGrMismatch( pMode, &GData.HisoGbGrMismatch) Fail"
+  },
+  {
+    "offset": 5260020,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoDemosaic( pMode, &GData.HisoDemosaicFilter) Fail"
+  },
+  {
+    "offset": 5260128,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoChromaMedianFilter( pMode, &GData.HisoChromaMedianFilter) Fail"
+  },
+  {
+    "offset": 5260248,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoColorDependentNoiseReduction(pMode, &GData.HisoCDNR) Fail"
+  },
+  {
+    "offset": 5260364,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoDeferColorCorrection(pMode, &GData.HisoDeferColorCorrection) Fail"
+  },
+  {
+    "offset": 5260572,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoAdvanceSpatialFilter(pMode, &GData.HisoAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5260776,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighAdvanceSpatialFilter(pMode, &GData.HisoHighAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5260988,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLowAdvanceSpatialFilter(pMode, &GData.HisoLowAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5261196,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMed1AdvanceSpatialFilter(pMode, &GData.HisoMed1Asf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5261408,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMed2AdvanceSpatialFilter(pMode, &GData.HisoMed2Asf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5261620,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLi2ndAdvanceSpatialFilter(pMode, &GData.HisoLi2ndAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5261836,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoChromaAdvanceSpatialFilter(pMode, &GData.HisoChromaAsf.ChromaAsfInfo) Fail"
+  },
+  {
+    "offset": 5262060,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseBoth(pMode, &GData.HisoHighSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5262188,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseNoise(pMode, &GData.HisoHighSharpenNoise) Fail"
+  },
+  {
+    "offset": 5262308,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenFir(pMode, &GData.HisoHighFir) Fail"
+  },
+  {
+    "offset": 5262424,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoring(pMode, &GData.HisoHighCoring) Fail"
+  },
+  {
+    "offset": 5262548,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoHighCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5262692,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoHighMinCoringResult) Fail"
+  },
+  {
+    "offset": 5262832,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoHighSharpenNoiseSharpenScaleCoring(pMode, &GData.HisoHighScaleCoring) Fail"
+  },
+  {
+    "offset": 5263056,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseBoth(pMode, &GData.HisoMedSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5263184,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseNoise(pMode, &GData.HisoMedSharpenNoise) Fail"
+  },
+  {
+    "offset": 5263304,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenFir(pMode, &GData.HisoMedFir) Fail"
+  },
+  {
+    "offset": 5263420,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoring(pMode, &GData.HisoMedCoring) Fail"
+  },
+  {
+    "offset": 5263540,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoMedCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5263680,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoMedMinCoringResult) Fail"
+  },
+  {
+    "offset": 5263820,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoMedSharpenNoiseSharpenScaleCoring(pMode, &GData.HisoMedScaleCoring) Fail"
+  },
+  {
+    "offset": 5264044,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseBoth(pMode, &GData.HisoLiso1SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5264176,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseNoise(pMode, &GData.HisoLiso1SharpenNoise) Fail"
+  },
+  {
+    "offset": 5264300,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenFir(pMode, &GData.HisoLiso1Fir) Fail"
+  },
+  {
+    "offset": 5264420,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoring(pMode, &GData.HisoLiso1Coring) Fail"
+  },
+  {
+    "offset": 5264544,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoLiso1CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5264688,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoLiso1MinCoringResult) Fail"
+  },
+  {
+    "offset": 5264832,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso1SharpenNoiseSharpenScaleCoring(pMode, &GData.HisoLiso1ScaleCoring) Fail"
+  },
+  {
+    "offset": 5265060,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseBoth(pMode, &GData.HisoLiso2SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5265192,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseNoise(pMode, &GData.HisoLiso2SharpenNoise) Fail"
+  },
+  {
+    "offset": 5265316,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenFir(pMode, &GData.HisoLiso2Fir) Fail"
+  },
+  {
+    "offset": 5265436,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoring(pMode, &GData.HisoLiso2Coring) Fail"
+  },
+  {
+    "offset": 5265560,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoLiso2CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5265704,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoLiso2MinCoringResult) Fail"
+  },
+  {
+    "offset": 5265848,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgSetHighIsoLiso2SharpenNoiseSharpenScaleCoring(pMode, &GData.HisoLiso2ScaleCoring) Fail"
+  },
+  {
+    "offset": 5265984,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterHigh(pMode, &GData.HisoChromaFilterHigh) Fail"
+  },
+  {
+    "offset": 5266100,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterLowVeryLow(pMode, &GData.HisoChromaFilterLowVeryLow) Fail"
+  },
+  {
+    "offset": 5266228,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterPre(pMode, &GData.HisoChromaFilterPre) Fail"
+  },
+  {
+    "offset": 5266344,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterMed(pMode, &GData.HisoChromaFilterMed) Fail"
+  },
+  {
+    "offset": 5266460,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterLow(pMode, &GData.HisoChromaFilterLow) Fail"
+  },
+  {
+    "offset": 5266576,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterVeryLow(pMode, &GData.HisoChromaFilterVeryLow) Fail"
+  },
+  {
+    "offset": 5266800,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterMedCombine(pMode, &GData.HisoChromaFilterMedCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5267040,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterLowCombine(pMode, &GData.HisoChromaFilterLowCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5267284,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetChromaFilterVeryLowCombine(pMode, &GData.HisoChromaFilterVeryLowCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5267532,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetLumaNoiseCombine(pMode, &GData.HisoLumaNoiseCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5267756,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetLowASFCombine(pMode, &GData.HisoLowASFCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5267968,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetHighIsoCombine(pMode, &GData.HighIsoCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5268088,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetHighIsoFreqRecover(pMode, &GData.HisoFreqRecover) Fail"
+  },
+  {
+    "offset": 5268200,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetHighIsoLumaBlend(pMode, &GData.HisoLow2LumaBlend) Fail"
+  },
+  {
+    "offset": 5268312,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoSetHighIsoBlendLumaLevel(pMode, &GData.HisoLow2BlendLumaLevel) Fail"
+  },
+  {
+    "offset": 5268436,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetStaticBadPixelCorrection(pMode, &GData.SbpCorr) Fail"
+  },
+  {
+    "offset": 5268580,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetStaticBadPixelCorrectionByPass(pMode, &GData.SbpCorrByPass) Fail"
+  },
+  {
+    "offset": 5268720,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVignetteCompensation(pMode, &GData.VignetteCalcInfo) Fail"
+  },
+  {
+    "offset": 5268828,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVignetteCompensationByPass(pMode, &GData.VignetteByPass) Fail"
+  },
+  {
+    "offset": 5268940,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetWarpCompensation(pMode, &GData.WarpCalcInfo) Fail"
+  },
+  {
+    "offset": 5269040,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetWarpCompensationByPass(pMode, &GData.WarpByPass) Fail"
+  },
+  {
+    "offset": 5269144,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetCawarpCompensation(pMode, &GData.CACalcInfo) Fail"
+  },
+  {
+    "offset": 5269244,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetCawarpCompensationBypass(pMode, &GData.CAByPass) Fail"
+  },
+  {
+    "offset": 5269348,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetColorCorrectionReg(pMode, &GData.CcReg) Fail"
+  },
+  {
+    "offset": 5269444,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetColorCorrection(pMode, &GData.CcThreeD) Fail"
+  },
+  {
+    "offset": 5269540,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetStaticBlackLevel(pMode, &GData.StaticBlackLevel) Fail"
+  },
+  {
+    "offset": 5269644,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetDeferredBlackLevel(pMode, &GData.DeferredBlackLevel) Fail"
+  },
+  {
+    "offset": 5269752,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetDynamicBadPixelCorrection(pMode, &GData.DynamicBadPixelCorrection) Fail"
+  },
+  {
+    "offset": 5269876,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetCfaLeakageFilter(pMode, &GData.CfaLeakageFilter) Fail"
+  },
+  {
+    "offset": 5269980,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetCfaNoiseFilter(pMode, &GData.CfaNoiseFilter) Fail"
+  },
+  {
+    "offset": 5270080,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetAntiAliasing(pMode, &GData.AntiAliasing) Fail"
+  },
+  {
+    "offset": 5270176,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetWbGain(pMode, &GData.WbGain) Fail"
+  },
+  {
+    "offset": 5270260,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetDgainSaturationLevel(pMode, &GData.DgainSaturationLevel) Fail"
+  },
+  {
+    "offset": 5270372,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetLocalExposure(pMode, &GData.LocalExposure) Fail"
+  },
+  {
+    "offset": 5270472,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetToneCurve(pMode, &GData.ToneCurve) Fail"
+  },
+  {
+    "offset": 5270564,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetRgbToYuvMatrix(pMode, &GData.RgbToYuvMatrix) Fail"
+  },
+  {
+    "offset": 5270664,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetChromaScale(pMode, &GData.ChromaScale) Fail"
+  },
+  {
+    "offset": 5270760,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetChromaMedianFilter(pMode, &GData.ChromaMedianFilter) Fail"
+  },
+  {
+    "offset": 5270868,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetDemosaic(pMode, &GData.DemosaicFilter) Fail"
+  },
+  {
+    "offset": 5270964,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetGbGrMismatch(pMode, &GData.GbGrMismatch) Fail"
+  },
+  {
+    "offset": 5271060,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stLumaProcessingMode(pMode, (AMBA_DSP_IMG_SHP_A_SELECT_e*)&GData.ShpAOrSpatialFilterSelect) Fail"
+  },
+  {
+    "offset": 5271208,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetColorDependentNoiseReduction(pMode, &GData.CDNR) Fail"
+  },
+  {
+    "offset": 5271312,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetChromaFilter(pMode, &GData.ChromaFilter) Fail"
+  },
+  {
+    "offset": 5271408,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetAdvanceSpatialFilter(pMode, &GData.AsfInfo.AsfInfo) Fail"
+  },
+  {
+    "offset": 5271516,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseBoth(pMode, &GData.SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5271628,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseNoise(pMode, &GData.SharpenNoise) Fail"
+  },
+  {
+    "offset": 5271732,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseSharpenFir(pMode, &GData.Fir) Fail"
+  },
+  {
+    "offset": 5271832,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseSharpenCoring(pMode, &GData.Coring) Fail"
+  },
+  {
+    "offset": 5271940,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseSharpenCoringIndexScale(pMode, &GData.CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5272068,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseSharpenMinCoringResult(pMode, &GData.MinCoringResult) Fail"
+  },
+  {
+    "offset": 5272192,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGet1stSharpenNoiseSharpenScaleCoring(pMode, &GData.ScaleCoring) Fail"
+  },
+  {
+    "offset": 5272308,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVideoMctf(pMode, &GData.VideoMctf) Fail"
+  },
+  {
+    "offset": 5272400,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVideoMctfLevel(pMode, &GData.VideoMctfLevel) Fail"
+  },
+  {
+    "offset": 5272500,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetVideoMctfMbTemporal(pMode, &GData.VideoMctfMbTemporal) Fail"
+  },
+  {
+    "offset": 5272612,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseBoth(pMode, &GData.FinalSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5272732,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseNoise(pMode, &GData.FinalSharpenNoise) Fail"
+  },
+  {
+    "offset": 5272844,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseSharpenFir(pMode, &GData.FinalFir) Fail"
+  },
+  {
+    "offset": 5272952,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoring(pMode, &GData.FinalCoring) Fail"
+  },
+  {
+    "offset": 5273068,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseSharpenCoringIndexScale(pMode, &GData.FinalCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5273204,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseSharpenMinCoringResult(pMode, &GData.FinalMinCoringResult) Fail"
+  },
+  {
+    "offset": 5273336,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetFinalSharpenNoiseSharpenScaleCoring(pMode, &GData.FinalScaleCoring) Fail"
+  },
+  {
+    "offset": 5273460,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoAntiAliasing(pMode, &GData.HisoAntiAliasing) Fail"
+  },
+  {
+    "offset": 5273568,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoCfaLeakageFilter(pMode, &GData.HisoCfaLeakageFilter) Fail"
+  },
+  {
+    "offset": 5273684,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoDynamicBadPixelCorrection(pMode, &GData.HisoDynamicBadPixelCorrection) Fail"
+  },
+  {
+    "offset": 5273820,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoCfaNoiseFilter(pMode, &GData.HisoCfaNoiseFilter) Fail"
+  },
+  {
+    "offset": 5273932,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoGbGrMismatch(pMode, &GData.HisoGbGrMismatch) Fail"
+  },
+  {
+    "offset": 5274040,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoDemosaic(pMode, &GData.HisoDemosaicFilter) Fail"
+  },
+  {
+    "offset": 5274148,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoChromaMedianFilter(pMode, &GData.HisoChromaMedianFilter) Fail"
+  },
+  {
+    "offset": 5274268,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoColorDependentNoiseReduction(pMode, &GData.HisoCDNR) Fail"
+  },
+  {
+    "offset": 5274384,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoDeferColorCorrection(pMode, &GData.HisoDeferColorCorrection) Fail"
+  },
+  {
+    "offset": 5274508,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoAdvanceSpatialFilter(pMode, &GData.HisoAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5274624,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighAdvanceSpatialFilter(pMode, &GData.HisoHighAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5274748,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLowAdvanceSpatialFilter(pMode, &GData.HisoLowAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5274868,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMed1AdvanceSpatialFilter(pMode, &GData.HisoMed1Asf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5274992,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMed2AdvanceSpatialFilter(pMode, &GData.HisoMed2Asf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5275116,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighisoLi2ndAdvanceSpatialFilter(pMode, &GData.HisoLi2ndAsf.AsfInfo) Fail"
+  },
+  {
+    "offset": 5275240,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoChromaAdvanceSpatialFilter(pMode, &GData.HisoChromaAsf.ChromaAsfInfo) Fail"
+  },
+  {
+    "offset": 5275372,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseBoth(pMode, &GData.HisoHighSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5275500,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseNoise(pMode, &GData.HisoHighSharpenNoise) Fail"
+  },
+  {
+    "offset": 5275620,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenFir(pMode, &GData.HisoHighFir) Fail"
+  },
+  {
+    "offset": 5275736,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenCoring(pMode, &GData.HisoHighCoring) Fail"
+  },
+  {
+    "offset": 5275860,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoHighCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5276004,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoHighMinCoringResult) Fail"
+  },
+  {
+    "offset": 5276144,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoHighSharpenNoiseSharpenScaleCoring(pMode, &GData.HisoHighScaleCoring) Fail"
+  },
+  {
+    "offset": 5276276,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseBoth(pMode, &GData.HisoMedSharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5276404,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseNoise(pMode, &GData.HisoMedSharpenNoise) Fail"
+  },
+  {
+    "offset": 5276524,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenFir(pMode, &GData.HisoMedFir) Fail"
+  },
+  {
+    "offset": 5276640,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenCoring(pMode, &GData.HisoMedCoring) Fail"
+  },
+  {
+    "offset": 5276760,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoMedCoringIndexScale) Fail"
+  },
+  {
+    "offset": 5276900,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoMedMinCoringResult) Fail"
+  },
+  {
+    "offset": 5277040,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoMedSharpenNoiseSharpenScaleCoring(pMode, &GData.HisoMedScaleCoring) Fail"
+  },
+  {
+    "offset": 5277172,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseBoth(pMode, &GData.HisoLiso1SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5277304,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseNoise(pMode, &GData.HisoLiso1SharpenNoise) Fail"
+  },
+  {
+    "offset": 5277428,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenFir(pMode, &GData.HisoLiso1Fir) Fail"
+  },
+  {
+    "offset": 5277548,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenCoring(pMode, &GData.HisoLiso1Coring) Fail"
+  },
+  {
+    "offset": 5277672,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoLiso1CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5277816,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoLiso1MinCoringResult) Fail"
+  },
+  {
+    "offset": 5277960,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso1SharpenNoiseSharpenScaleCoring(pMode, &GData.HisoLiso1ScaleCoring) Fail"
+  },
+  {
+    "offset": 5278096,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseBoth(pMode, &GData.HisoLiso2SharpenBoth.BothInfo) Fail"
+  },
+  {
+    "offset": 5278228,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseNoise(pMode, &GData.HisoLiso2SharpenNoise) Fail"
+  },
+  {
+    "offset": 5278352,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenFir(pMode, &GData.HisoLiso2Fir) Fail"
+  },
+  {
+    "offset": 5278472,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenCoring(pMode, &GData.HisoLiso2Coring) Fail"
+  },
+  {
+    "offset": 5278596,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenCoringIndexScale(pMode, &GData.HisoLiso2CoringIndexScale) Fail"
+  },
+  {
+    "offset": 5278740,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenMinCoringResult(pMode, &GData.HisoLiso2MinCoringResult) Fail"
+  },
+  {
+    "offset": 5278884,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgGetHighIsoLiso2SharpenNoiseSharpenScaleCoring(pMode, &GData.HisoLiso2ScaleCoring) Fail"
+  },
+  {
+    "offset": 5279020,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterHigh(pMode, &GData.HisoChromaFilterHigh) Fail"
+  },
+  {
+    "offset": 5279136,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterLowVeryLow(pMode, &GData.HisoChromaFilterLowVeryLow) Fail"
+  },
+  {
+    "offset": 5279264,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterPre(pMode, &GData.HisoChromaFilterPre) Fail"
+  },
+  {
+    "offset": 5279380,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterMed(pMode, &GData.HisoChromaFilterMed) Fail"
+  },
+  {
+    "offset": 5279496,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterLow(pMode, &GData.HisoChromaFilterLow) Fail"
+  },
+  {
+    "offset": 5279612,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterVeryLow(pMode, &GData.HisoChromaFilterVeryLow) Fail"
+  },
+  {
+    "offset": 5279736,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterMedCombine(pMode, &GData.HisoChromaFilterMedCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5279876,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterLowCombine(pMode, &GData.HisoChromaFilterLowCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5280016,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetChromaFilterVeryLowCombine(pMode, &GData.HisoChromaFilterVeryLowCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5280164,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetLumaNoiseCombine(pMode, &GData.HisoLumaNoiseCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5280292,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetLowASFCombine(pMode, &GData.HisoLowASFCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5280416,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetHighIsoCombine(pMode, &GData.HighIsoCombine.CombineInfo) Fail"
+  },
+  {
+    "offset": 5280536,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetHighIsoFreqRecover(pMode, &GData.HisoFreqRecover) Fail"
+  },
+  {
+    "offset": 5280648,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetHighIsoLumaBlend(pMode, &GData.HisoLow2LumaBlend) Fail"
+  },
+  {
+    "offset": 5280760,
+    "text": "[ITUNER][WARNING]%s() Line:%d, call AmbaDSP_ImgHighIsoGetHighIsoBlendLumaLevel(pMode, &GData.HisoLow2BlendLumaLevel) Fail"
+  },
+  {
+    "offset": 5284696,
+    "text": "AmbaItuner_Refresh"
+  },
+  {
+    "offset": 5286356,
+    "text": "AmbaImg_AdjTask_MemMgr_Init"
+  },
+  {
+    "offset": 5286384,
+    "text": "AmbaImg_AdjTask"
+  },
+  {
+    "offset": 5286468,
+    "text": "---- AmbaImg_AdjTask_Init Failed! ---"
+  },
+  {
+    "offset": 5286508,
+    "text": "AmbaImgAdjCtrlTask#%d"
+  },
+  {
+    "offset": 5286532,
+    "text": "AmbaImg_AeTask_MemMgr_Init"
+  },
+  {
+    "offset": 5286560,
+    "text": "AmbaImg_AeTask"
+  },
+  {
+    "offset": 5286604,
+    "text": "AmbaImgAeCtrlTask#%d"
+  },
+  {
+    "offset": 5286628,
+    "text": "AmbaImg_AwbTask"
+  },
+  {
+    "offset": 5286644,
+    "text": "AmbaImg_AwbTask_MemMgr_Init"
+  },
+  {
+    "offset": 5286700,
+    "text": "---- AmbaImg_AwbTask_Init Failed! ---"
+  },
+  {
+    "offset": 5286740,
+    "text": "AmbaImgAwbCtrlTask#%d"
+  },
+  {
+    "offset": 5286784,
+    "text": "AmbaImg_CtrlFunc_MemMgr_Init"
+  },
+  {
+    "offset": 5286816,
+    "text": "AmbaImg_CtrlFunc_Param_Init"
+  },
+  {
+    "offset": 5287072,
+    "text": "=== AmbaImgProc Module, Revision : %5d ==="
+  },
+  {
+    "offset": 5289124,
+    "text": "Amba_Img_Exif_Compute_AAA_Exif"
+  },
+  {
+    "offset": 5290376,
+    "text": "AmbaImgProc AmbaImg_CtrlFunc_Get_Mem_CtrlAddr Error !"
+  },
+  {
+    "offset": 5290508,
+    "text": "AmbaImgProc_Init_Video_Params"
+  },
+  {
+    "offset": 5290572,
+    "text": "AmbaImg_VDsp_Handler_MemMgr_Init"
+  },
+  {
+    "offset": 5290608,
+    "text": "Amba_Img_VDspCfa_Handler"
+  },
+  {
+    "offset": 5290760,
+    "text": "Amba_Img_Reset_Video_Pipe_Ctrl_Params"
+  },
+  {
+    "offset": 5290800,
+    "text": "Amba_Img_VDspRgb_Handler"
+  },
+  {
+    "offset": 5290864,
+    "text": "Amba_Img_VIn_Changed_Post"
+  },
+  {
+    "offset": 5294904,
+    "text": "AmbaIPC_SendBinderMsg"
+  },
+  {
+    "offset": 5295088,
+    "text": "The crc in ThreadX: %u"
+  },
+  {
+    "offset": 5295436,
+    "text": "AmbaIPC_ClockInit"
+  },
+  {
+    "offset": 5295572,
+    "text": "AmbaRpdev_CLK"
+  },
+  {
+    "offset": 5295588,
+    "text": "AmbaRpdev_SD"
+  },
+  {
+    "offset": 5295652,
+    "text": "AmbaIPC_HiberSuspend"
+  },
+  {
+    "offset": 5295676,
+    "text": "AmbaIPC_HiberResume"
+  },
+  {
+    "offset": 5295716,
+    "text": "AmbaIPC_HiberPrepare"
+  },
+  {
+    "offset": 5295740,
+    "text": "AmbaIPC_LinkCtrlSuspendLinux"
+  },
+  {
+    "offset": 5295772,
+    "text": "AmbaIPC_LinkCtrlWaitSuspendLinux"
+  },
+  {
+    "offset": 5295888,
+    "text": "AmbaSD_ReadSector failed. <Sector %d, Sectors %d>"
+  },
+  {
+    "offset": 5295940,
+    "text": "AmbaNAND_Read failed. <Block %d>"
+  },
+  {
+    "offset": 5295976,
+    "text": "AmbaNAND_Read failed. <Block %d, Page %d, Pages %d>"
+  },
+  {
+    "offset": 5296172,
+    "text": "%s: AmbaKAL_EventFlagClear failed!(0x2)"
+  },
+  {
+    "offset": 5296212,
+    "text": "%s: AmbaKAL_EventFlagTake failed!(%d)"
+  },
+  {
+    "offset": 5296252,
+    "text": "AmbaNAND_EraseBlock failed. <Block %d>"
+  },
+  {
+    "offset": 5296312,
+    "text": "AmbaNAND_Program failed. <Block %d, Page %d>"
+  },
+  {
+    "offset": 5296384,
+    "text": "AmbaSD_WriteSector failed. <Sector %d, Sectors %d>"
+  },
+  {
+    "offset": 5296508,
+    "text": "AmbaNAND_Read failed. <Block %d, Page %d>"
+  },
+  {
+    "offset": 5296588,
+    "text": "%s: AmbaKAL_EventFlagGive failed!(0x2)"
+  },
+  {
+    "offset": 5296736,
+    "text": "AmbaNAND_Program failed. <Block %d>"
+  },
+  {
+    "offset": 5296772,
+    "text": "AmbaNAND_Program failed. <Block %d, Page %d, Pages %d>"
+  },
+  {
+    "offset": 5297032,
+    "text": "AmbaRpdev_LinkCtrl"
+  },
+  {
+    "offset": 5297152,
+    "text": "%s: AmbaKAL_TaskSmpCoreExclusionSet is failed! (0x%x)"
+  },
+  {
+    "offset": 5297208,
+    "text": "%s: AmbaKAL_TaskResume is failed! (%d)"
+  },
+  {
+    "offset": 5297248,
+    "text": "AmbaIPC_LinkCtrlWaitResumeLinux"
+  },
+  {
+    "offset": 5297304,
+    "text": "AmbaIPC_HiberInit"
+  },
+  {
+    "offset": 5297364,
+    "text": "AmbaIPC_HiberSaveRpmsgInfo"
+  },
+  {
+    "offset": 5297404,
+    "text": "AmbaIPC_HiberRestoreRpmsgInfo"
+  },
+  {
+    "offset": 5297476,
+    "text": "AmbaIPC_MutexGive"
+  },
+  {
+    "offset": 5297496,
+    "text": "AmbaIPC_OWNER_IS_LOCAL"
+  },
+  {
+    "offset": 5297520,
+    "text": "%s: AmbaIPC_MutexTake invalid id %d"
+  },
+  {
+    "offset": 5297560,
+    "text": "%s: AmbaKAL_MutexTake error (0x%08x, %d)."
+  },
+  {
+    "offset": 5297620,
+    "text": "AmbaIPC_MutexGive invalid id %d"
+  },
+  {
+    "offset": 5297656,
+    "text": "AmbaIPC_MutexGive(%d) non-owner error"
+  },
+  {
+    "offset": 5297696,
+    "text": "%s: AmbaKAL_MutexGive error (0x%08x, %d)."
+  },
+  {
+    "offset": 5297740,
+    "text": "AmbaIPC_MutexTake"
+  },
+  {
+    "offset": 5297760,
+    "text": "AmbaIPC_MutexInit"
+  },
+  {
+    "offset": 5297780,
+    "text": "AmbaIPC_RfsInit"
+  },
+  {
+    "offset": 5297820,
+    "text": "Failed to create AmbaIPC RFS event flags"
+  },
+  {
+    "offset": 5297864,
+    "text": "Failed to create AmbaIPC RFS queue"
+  },
+  {
+    "offset": 5297924,
+    "text": "AmbaIPC_RpcInit"
+  },
+  {
+    "offset": 5298060,
+    "text": "/usr/local/share/script/sd_script.sh mount /tmp/SD0 c: ambafs"
+  },
+  {
+    "offset": 5298692,
+    "text": "-------------------From ThreadX to Linux-------------------"
+  },
+  {
+    "offset": 5299024,
+    "text": "-------------------From Linux to ThreadX-------------------"
+  },
+  {
+    "offset": 5299448,
+    "text": "AmbaIPC_RpcSyncRTC failed (%d)."
+  },
+  {
+    "offset": 5299580,
+    "text": "AmbaIPC_RpcUsbOwnerSwitch failed (%d)."
+  },
+  {
+    "offset": 5299844,
+    "text": "ambalink is not ready"
+  },
+  {
+    "offset": 5299912,
+    "text": "AmbaIPC_RpcSyncRtc"
+  },
+  {
+    "offset": 5299932,
+    "text": "AmbaIPC_RpcUsbOwnerSwitch"
+  },
+  {
+    "offset": 5299960,
+    "text": "AmbaIPC_RpmsgRestoreData"
+  },
+  {
+    "offset": 5300188,
+    "text": "%s: AmbaLink_Malloc failed!!"
+  },
+  {
+    "offset": 5300292,
+    "text": "AmbaIPC_RpmsgSuspend"
+  },
+  {
+    "offset": 5300332,
+    "text": "AmbaIPC_SpinInit"
+  },
+  {
+    "offset": 5301696,
+    "text": "%s: AmbaKAL_EventFlagClear failed (%d)"
+  },
+  {
+    "offset": 5301828,
+    "text": "%s: AmbaKAL_MsgQueueSend failed (%d)"
+  },
+  {
+    "offset": 5301900,
+    "text": "%s: AmbaKAL_EventFlagTake failed (%d)"
+  },
+  {
+    "offset": 5302460,
+    "text": "AmbaIPC_VfsInit"
+  },
+  {
+    "offset": 5302816,
+    "text": "------------------ From ThreadX to Linux -------------------"
+  },
+  {
+    "offset": 5302880,
+    "text": "Avg injection rate in ThreadX    : %lf"
+  },
+  {
+    "offset": 5303352,
+    "text": "------------------ From Linux to ThreadX ------------------"
+  },
+  {
+    "offset": 5303452,
+    "text": "Avg ThreadXResponseTime          : %6.6lf ms"
+  },
+  {
+    "offset": 5303500,
+    "text": "Max ThreadX ResponseTime         : %6.6lf ms"
+  },
+  {
+    "offset": 5303608,
+    "text": "AmbaLink_Load"
+  },
+  {
+    "offset": 5303624,
+    "text": "AmbaLink_Init"
+  },
+  {
+    "offset": 5303640,
+    "text": "AmbaLink_SetIrqOwner"
+  },
+  {
+    "offset": 5303664,
+    "text": "ambalink"
+  },
+  {
+    "offset": 5303712,
+    "text": "AmbaLink_Free failed!"
+  },
+  {
+    "offset": 5303736,
+    "text": "%s: AmbaKAL_EventFlagGive failed (%d)!"
+  },
+  {
+    "offset": 5303840,
+    "text": "AmbaLink: SpinLock 0x%08x, 0x%08x"
+  },
+  {
+    "offset": 5303876,
+    "text": "AmbaLink: Mutex    0x%08x"
+  },
+  {
+    "offset": 5303928,
+    "text": "%s: can't not create AmbaLink event flag"
+  },
+  {
+    "offset": 5303972,
+    "text": "%s: AmbaBiss_Init failed! (0x%x)"
+  },
+  {
+    "offset": 5304008,
+    "text": "AmbaLink_BootType"
+  },
+  {
+    "offset": 5304080,
+    "text": "%s: AmbaLink_Malloc failed!"
+  },
+  {
+    "offset": 5304108,
+    "text": "%s: AmbaNAND_Read failed. <Block: %d>"
+  },
+  {
+    "offset": 5304148,
+    "text": "%s: AmbaEMMC_MediaPartRead failed. <Sector: %d>"
+  },
+  {
+    "offset": 5304260,
+    "text": "AmbaLink: cmdline: %s"
+  },
+  {
+    "offset": 5304348,
+    "text": "AmbaLink: reserved mem = %08x, %08x"
+  },
+  {
+    "offset": 5304384,
+    "text": "AmbaLink: atag   = 0x%08x, 0x%08x"
+  },
+  {
+    "offset": 5304420,
+    "text": "AmbaLink: mem    = 0x%08x, 0x%08x"
+  },
+  {
+    "offset": 5304456,
+    "text": "AmbaLink: rev    = 0x%08x"
+  },
+  {
+    "offset": 5304484,
+    "text": "AmbaLink: wifi   = %08x  %08x"
+  },
+  {
+    "offset": 5304516,
+    "text": "AmbaLink: ppm2   = 0x%x, 0x%x"
+  },
+  {
+    "offset": 5304548,
+    "text": "AmbaLink_AtagInit"
+  },
+  {
+    "offset": 5305268,
+    "text": "AmbaBoss_SetIrqOwner"
+  },
+  {
+    "offset": 5305316,
+    "text": "AmbaBoss_InitSvc"
+  },
+  {
+    "offset": 5305336,
+    "text": "AmbaBoss_GetIrqOwner"
+  },
+  {
+    "offset": 5305360,
+    "text": "AmbaBoss_SetIrqOwner"
+  },
+  {
+    "offset": 5305384,
+    "text": "AmbaBoss_Start"
+  },
+  {
+    "offset": 5305400,
+    "text": "AmbaBoss_Init"
+  },
+  {
+    "offset": 5305416,
+    "text": "AmbaBoss_Boot"
+  },
+  {
+    "offset": 5305448,
+    "text": "AmbaBoss_Suspend"
+  },
+  {
+    "offset": 5305468,
+    "text": "%s: AmbaKAL_EventFlagTake failed (%d)!"
+  },
+  {
+    "offset": 5305616,
+    "text": "%s: AmbaNAND_LoadPartition fail"
+  },
+  {
+    "offset": 5305912,
+    "text": "%s: lock AmbaBossMutex failed!"
+  },
+  {
+    "offset": 5305960,
+    "text": "%s: can not create AmbaBossLoadTask!"
+  },
+  {
+    "offset": 5306060,
+    "text": "%s: can't not create AmbaBoss task"
+  },
+  {
+    "offset": 5306096,
+    "text": "%s: suspend AmbaBossTask failed! (%d)"
+  },
+  {
+    "offset": 5306168,
+    "text": "%s: AmbaKAL_TaskTerminate failed! (%d)"
+  },
+  {
+    "offset": 5306208,
+    "text": "%s: AmbaKAL_TaskDelete failed! (%d)"
+  },
+  {
+    "offset": 5306284,
+    "text": "AmbaBoss_Start"
+  },
+  {
+    "offset": 5306300,
+    "text": "AmbaBoss_Resume"
+  },
+  {
+    "offset": 5306316,
+    "text": "AmbaBoss_ChangePriority"
+  },
+  {
+    "offset": 5306340,
+    "text": "AmbaBoss_Return"
+  },
+  {
+    "offset": 5306356,
+    "text": "AmbaBoss_SetDeviceOwner"
+  },
+  {
+    "offset": 5306380,
+    "text": "AmbaBoss_Wipeout"
+  },
+  {
+    "offset": 5306400,
+    "text": "AmbaBoss_Suspend"
+  },
+  {
+    "offset": 5306420,
+    "text": "AmbaBoss_Resume"
+  },
+  {
+    "offset": 5306452,
+    "text": "AmbaBoss_Return"
+  },
+  {
+    "offset": 5306468,
+    "text": "AmbaBossImpl_Suspend"
+  },
+  {
+    "offset": 5306492,
+    "text": "AmbaBossImpl_Start"
+  },
+  {
+    "offset": 5306528,
+    "text": "AmbaBossImpl_Resume"
+  },
+  {
+    "offset": 5306548,
+    "text": "AmbaBossImpl_Start"
+  },
+  {
+    "offset": 5306652,
+    "text": "AmbaKAL_EventFlagTake failed!(0x2)"
+  },
+  {
+    "offset": 5306688,
+    "text": "Done AmbaLink Setup"
+  },
+  {
+    "offset": 5306708,
+    "text": "%s: BackupSize (0x%08x) > AmbaLinkCtrl.BossSuspBackupSize (0x%08x)!"
+  },
+  {
+    "offset": 5306776,
+    "text": "AmbaBossImpl_Wipeout"
+  },
+  {
+    "offset": 5307504,
+    "text": "axi0_amba_interrupt_reg[2]"
+  },
+  {
+    "offset": 5307880,
+    "text": "axi0_amba_interrupt_reg[3]"
+  },
+  {
+    "offset": 5308144,
+    "text": "axi0_amba_interrupt_reg[8]"
+  },
+  {
+    "offset": 5308172,
+    "text": "axi0_amba_interrupt_reg[7]"
+  },
+  {
+    "offset": 5308220,
+    "text": "axi0_amba_interrupt_reg[6]"
+  },
+  {
+    "offset": 5308280,
+    "text": "axi0_amba_interrupt_reg[5]"
+  },
+  {
+    "offset": 5308396,
+    "text": "axi0_amba_interrupt_reg[4]"
+  },
+  {
+    "offset": 5308560,
+    "text": "axi0_amba_interrupt_reg[0]"
+  },
+  {
+    "offset": 5308588,
+    "text": "axi0_amba_interrupt_reg[1]"
+  },
+  {
+    "offset": 5308844,
+    "text": "AMBALINK_AMP_SUSPEND_KICK"
+  },
+  {
+    "offset": 5309028,
+    "text": "axi0_amba_interrupt_reg[9]"
+  },
+  {
+    "offset": 5312120,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fseek(%llu) failed! ErrNum: %d. "
+  },
+  {
+    "offset": 5312184,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_ftell() failed! ErrNum: %d. "
+  },
+  {
+    "offset": 5312244,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_seek() to end failed! ErrNum: %d. "
+  },
+  {
+    "offset": 5312484,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_GetDriveInfo(%c) failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5313104,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_FSync() failed ErrNum: %d. "
+  },
+  {
+    "offset": 5313224,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_remove() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5313464,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Move() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5313588,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_ChangeFileMode() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5313840,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_FileCombine() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5314036,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Divide() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5314096,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Mkdir() failed! ErrNum: %d. "
+  },
+  {
+    "offset": 5314156,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Rmdir() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5314748,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_FSync() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5314808,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fclose() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5314992,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Format(%c) failed! ErrNum: %d. "
+  },
+  {
+    "offset": 5315056,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_Sync(%c) failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5316028,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_FileSearchFirst fail. ErrNum: %d "
+  },
+  {
+    "offset": 5316092,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_FileSearchNext fail. ErrNum: %d "
+  },
+  {
+    "offset": 5316260,
+    "text": "AmpCFS_SearchAmbaFsFSNext"
+  },
+  {
+    "offset": 5316324,
+    "text": "AmpCFS_SearchAmbaFsFSFirst"
+  },
+  {
+    "offset": 5316908,
+    "text": "Unsupported search pattern \"*.\"! AmbaFS's implementation is different from PrFile2's API doc"
+  },
+  {
+    "offset": 5317220,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_GetDriveInfo() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318456,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_ftell() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318516,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fseek() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318576,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_ClusterAppend() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318644,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fwrite() failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318764,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fclose(%p) failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318828,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_ClusterInsert(%u %u) failed. ErrNum: %d. "
+  },
+  {
+    "offset": 5318900,
+    "text": "%s[%05u][CFS][E][%s] AmbaFS_fwrite() failed. DataSize: %u, written size: %llu. ErrNum: %d. "
+  },
+  {
+    "offset": 5319376,
+    "text": "%s[%05u][CFS][E][%s] AmbaKAL_TaskSmpCoreExclusionSet() fail! "
+  },
+  {
+    "offset": 5319440,
+    "text": "%s[%05u][CFS][E][%s] AmbaKAL_TaskResume() fail! "
+  },
+  {
+    "offset": 5322928,
+    "text": "AmpFormat_ParseAmbaBox2x"
+  },
+  {
+    "offset": 5323988,
+    "text": "AmpFormat_PutAmbaBox1x() error!"
+  },
+  {
+    "offset": 5324044,
+    "text": "AmpFormat_PutAmbaBox2x() error!"
+  },
+  {
+    "offset": 5324172,
+    "text": "AmpFormat_CheckAmbaBoxVersion() error!"
+  },
+  {
+    "offset": 5324212,
+    "text": "AmpFormat_ParseAmbaBox1x() error!"
+  },
+  {
+    "offset": 5324248,
+    "text": "AmpFormat_ParseAmbaBox2x() error!"
+  },
+  {
+    "offset": 5324908,
+    "text": "AmpFormat_PutAmbaBox1x"
+  },
+  {
+    "offset": 5324932,
+    "text": "AmpFormat_PutAmbaBox"
+  },
+  {
+    "offset": 5325004,
+    "text": "AmpFormat_PutAmbaBox2x"
+  },
+  {
+    "offset": 5325184,
+    "text": "AmpFormat_ParseAmbaBox"
+  },
+  {
+    "offset": 5325256,
+    "text": "AmpFormat_GetAmbaBoxSize"
+  },
+  {
+    "offset": 5325284,
+    "text": "AmpFormat_CheckAmbaBoxVersion"
+  },
+  {
+    "offset": 5325456,
+    "text": "AmpFormat_ParseAmbaBox1x"
+  },
+  {
+    "offset": 5327536,
+    "text": "Ambarella              "
+  },
+  {
+    "offset": 5327560,
+    "text": "Ambarella MK-1         "
+  },
+  {
+    "offset": 5327800,
+    "text": "AmpExifMux_PutAmbaBox"
+  },
+  {
+    "offset": 5330200,
+    "text": "AmpExifDmx_ParseAmbaBox"
+  },
+  {
+    "offset": 5333544,
+    "text": "AmbaNVM_WriteSector() failed!"
+  },
+  {
+    "offset": 5333576,
+    "text": "AmbaNVM_ReadSector() failed!"
+  },
+  {
+    "offset": 5333608,
+    "text": "AmbaNVM_ReadSector() failed"
+  },
+  {
+    "offset": 5333844,
+    "text": "AmbaNAND_ErasePartition() failed"
+  },
+  {
+    "offset": 5334916,
+    "text": "AmbaKAL_TaskQuery() error!"
+  },
+  {
+    "offset": 5334984,
+    "text": "AmbaKAL_TaskResume() failed"
+  },
+  {
+    "offset": 5335012,
+    "text": "AmbaKAL_TaskSmpCoreExclusionSet() failed"
+  },
+  {
+    "offset": 5340848,
+    "text": "AmpFormat_ParseAmbaBox() error!"
+  },
+  {
+    "offset": 5345400,
+    "text": "Wrong value of Amba box size"
+  },
+  {
+    "offset": 5345432,
+    "text": "AmpFormat_PutAmbaBox() error!"
+  },
+  {
+    "offset": 5347784,
+    "text": "AmbaRTC_GetSystemTime() failed"
+  },
+  {
+    "offset": 5348372,
+    "text": "AmbaKAL_TaskTerminate() error!"
+  },
+  {
+    "offset": 5348504,
+    "text": "AmbaKAL_TaskResume() faile!"
+  },
+  {
+    "offset": 5348532,
+    "text": "AmbaKAL_TaskReset() faile!"
+  },
+  {
+    "offset": 5349756,
+    "text": "AmbaKAL_TaskSleep() failed"
+  },
+  {
+    "offset": 5350964,
+    "text": "AmbaKAL_TaskResume() fail!"
+  },
+  {
+    "offset": 5357104,
+    "text": "%s[%05u][DCF][E][%s] AmbaKAL_TaskResume() failed "
+  },
+  {
+    "offset": 5357156,
+    "text": "%s[%05u][DCF][E][%s] AmbaKAL_TaskSmpCoreExclusionSet() failed "
+  },
+  {
+    "offset": 5359744,
+    "text": "AmbaDSP_VoutReset fail %d"
+  },
+  {
+    "offset": 5364120,
+    "text": "AmbaAudioOutputOpenStart"
+  },
+  {
+    "offset": 5364340,
+    "text": "%s: AmbaKAL_MutexCreate failed"
+  },
+  {
+    "offset": 5364372,
+    "text": "%s: AmbaAudio_EventHandlerCtrlConfig failed"
+  },
+  {
+    "offset": 5364416,
+    "text": "%s: AmbaAudio_OutputTaskCreate: fail"
+  },
+  {
+    "offset": 5364456,
+    "text": "%s: AmbaAudio_RegisterEventHandler failed"
+  },
+  {
+    "offset": 5364508,
+    "text": "AmbaAudio_OutputTaskStart: fail"
+  },
+  {
+    "offset": 5364568,
+    "text": "%s: AmbaAudio_BufferOpenDstIoNode failed"
+  },
+  {
+    "offset": 5364620,
+    "text": "%s: AmbaAudioOutputStart failed"
+  },
+  {
+    "offset": 5364812,
+    "text": "AmbaAudioOutputStart"
+  },
+  {
+    "offset": 5364836,
+    "text": "AmbaAudioOutputStop"
+  },
+  {
+    "offset": 5365384,
+    "text": "[Beep Error] [%s]: AmbaAudio_Combine %d"
+  },
+  {
+    "offset": 5365424,
+    "text": "[Beep Error] [%s]: AmbaAudio_DecTaskCreate %d"
+  },
+  {
+    "offset": 5365472,
+    "text": "[Beep Error] [%s]: AmbaAudio_RegisterEventHandler %d"
+  },
+  {
+    "offset": 5365528,
+    "text": "[Beep Error] [%s]: AmbaKAL_EventFlagCreate %d"
+  },
+  {
+    "offset": 5365576,
+    "text": "[Beep Error] [%s]: AmbaKAL_EventFlagClear %d"
+  },
+  {
+    "offset": 5365644,
+    "text": "[Beep Dbg] [%s]: AmbaAudio_DecTaskStop failed: %d"
+  },
+  {
+    "offset": 5365696,
+    "text": "[Beep Dbg] [%s]: AmbaAudioOutputStop failed: %d"
+  },
+  {
+    "offset": 5365744,
+    "text": "[Beep Error] [%s]: AmbaAudio_DecTaskSetUp %d"
+  },
+  {
+    "offset": 5365792,
+    "text": "[Beep Error] [%s]: AmbaAudio_BufferReset %d"
+  },
+  {
+    "offset": 5365836,
+    "text": "[Beep Error] [%s]: AmbaAudio_BufferOpenSrcIoNode %d"
+  },
+  {
+    "offset": 5365920,
+    "text": "[Beep Error] [%s]: AmbaAudio_DecTaskStart %d"
+  },
+  {
+    "offset": 5366000,
+    "text": "[Beep Error] [%s]: AmbaAudioOutputOpenStart %d"
+  },
+  {
+    "offset": 5366892,
+    "text": "AmbaAud_GetBSCallback"
+  },
+  {
+    "offset": 5367356,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_Combine fail %d"
+  },
+  {
+    "offset": 5367408,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecTaskCreate: fail %d"
+  },
+  {
+    "offset": 5367464,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_RegisterEventHandler: fail"
+  },
+  {
+    "offset": 5367524,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_EventHandlerCtrlConfig: fail"
+  },
+  {
+    "offset": 5367636,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecTaskDelete failed (%d)"
+  },
+  {
+    "offset": 5367696,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_Detach failed (%d)"
+  },
+  {
+    "offset": 5367748,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_BufferDelete failed (%d)"
+  },
+  {
+    "offset": 5367808,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecDelete failed (%d)"
+  },
+  {
+    "offset": 5367864,
+    "text": "[AudioDec Error] [%s]: AmbaAudioOutputOpenStart failed"
+  },
+  {
+    "offset": 5367920,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecTaskStop failed"
+  },
+  {
+    "offset": 5367972,
+    "text": "[AudioDec Error] [%s]: AmbaAudioOutputStop failed"
+  },
+  {
+    "offset": 5368024,
+    "text": "[AudioDec Error] [%s]: AmbaKAL_EventFlagTake failed (%d). Timeout = 0x%X"
+  },
+  {
+    "offset": 5368100,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecTaskSetUp failed"
+  },
+  {
+    "offset": 5368156,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecSetVpts failed"
+  },
+  {
+    "offset": 5368208,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_BufferReset failed"
+  },
+  {
+    "offset": 5368260,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_BufferOpenSrcIoNode failed"
+  },
+  {
+    "offset": 5368320,
+    "text": "[AudioDec Error] [%s]: AmbaAudio_DecTaskStart failed"
+  },
+  {
+    "offset": 5368656,
+    "text": "[AudioDec Error] [%s]: AmbaKAL_TaskCreate failed"
+  },
+  {
+    "offset": 5368812,
+    "text": "[AudioDec Error] [%s]: AmbaKAL_TaskSmpCoreExclusionSet failed"
+  },
+  {
+    "offset": 5368876,
+    "text": "[AudioDec Error] [%s]: AmbaKAL_TaskResume failed"
+  },
+  {
+    "offset": 5370316,
+    "text": "[VideoDec Error] [%s]: AmbaDSP_VideoDecSpeedDirSet failed %d"
+  },
+  {
+    "offset": 5370476,
+    "text": "[VideoDec Error] [%s]: AmbaDSP_VideoDecSpeedDirSet failed"
+  },
+  {
+    "offset": 5371528,
+    "text": "[VideoDec Error] [%s]: AmbaDSP_VideoDecStop failed"
+  },
+  {
+    "offset": 5371580,
+    "text": "[VideoDec Error] [%s]: %d AmbaDSP_VideoDecStop failed %d"
+  },
+  {
+    "offset": 5372164,
+    "text": "[VideoDec Error] [%s]: %d AmbaDSP_VideoDecConfig failed %d"
+  },
+  {
+    "offset": 5372224,
+    "text": "[VideoDec Error] [%s]: %d AmbaDSP_VideoEncConfig failed"
+  },
+  {
+    "offset": 5372280,
+    "text": "[VideoDec Error] [%s]: %d AmbaDSP_VideoDecSpeedDirSet failed %d"
+  },
+  {
+    "offset": 5372344,
+    "text": "[VideoDec Error] [%s]: %d AmbaDSP_VideoDecStart failed %d"
+  },
+  {
+    "offset": 5373704,
+    "text": "[VideoDec Error] [%s]: AmbaDSP_VideoDecVideo2Yuv StreamID = %d, Buffer Address = 0x%08X"
+  },
+  {
+    "offset": 5377136,
+    "text": "%s() : AmbaPLL_SetOpMode() failed"
+  },
+  {
+    "offset": 5378008,
+    "text": "AmbaKAL_MutexTake failed"
+  },
+  {
+    "offset": 5378052,
+    "text": "AmbaKAL_MutexGive failed"
+  },
+  {
+    "offset": 5378112,
+    "text": "AmbaAudio_InputTaskStart failed!"
+  },
+  {
+    "offset": 5378148,
+    "text": "AmbaAudio_BufferReset failed!"
+  },
+  {
+    "offset": 5378180,
+    "text": "AmbaAudio_BufferOpenDstIoNode failed!"
+  },
+  {
+    "offset": 5378220,
+    "text": "AmbaAudio_EncTaskStart failed!"
+  },
+  {
+    "offset": 5378292,
+    "text": "AmbaAudio_BufferOpenSrcIoNode failed!"
+  },
+  {
+    "offset": 5378332,
+    "text": "AmbaAudio_InputTaskStop failed!"
+  },
+  {
+    "offset": 5378364,
+    "text": "AmbaAudio_EncTaskStop failed!"
+  },
+  {
+    "offset": 5378432,
+    "text": "AmbaAudio_EncTaskSetUp failed!"
+  },
+  {
+    "offset": 5378572,
+    "text": "AmbaAudio_InputDisableCalib failed!"
+  },
+  {
+    "offset": 5378636,
+    "text": "AmbaAudio_InputTaskDelete failed!"
+  },
+  {
+    "offset": 5378672,
+    "text": "AmbaAudio_UnRegisterEventHandler failed!"
+  },
+  {
+    "offset": 5378716,
+    "text": "AmbaAudio_EncTaskDelete failed!"
+  },
+  {
+    "offset": 5378768,
+    "text": "AmbaAudio_BufferCloseSrcIoNode failed"
+  },
+  {
+    "offset": 5378864,
+    "text": "AmbaAudio_InputTaskCreate failed!"
+  },
+  {
+    "offset": 5378900,
+    "text": "AmbaAudio_RegisterEventHandler failed!"
+  },
+  {
+    "offset": 5378940,
+    "text": "AmbaAudio_EncTaskCreate failed!"
+  },
+  {
+    "offset": 5379020,
+    "text": "AmbaAudio_EventHandlerCtrlConfig() failed!"
+  },
+  {
+    "offset": 5379064,
+    "text": "AmbaAudio_InputSetUpCalib() failed!"
+  },
+  {
+    "offset": 5379224,
+    "text": "AmbaAudio_InputTaskCreate: fail"
+  },
+  {
+    "offset": 5379256,
+    "text": "AmbaAudio_InputSetUpCalib failed!"
+  },
+  {
+    "offset": 5379292,
+    "text": "AmbaAudio_EventHandlerCtrlConfig failed!"
+  },
+  {
+    "offset": 5379336,
+    "text": "AmbaAudio_InputTaskStart: fail, maybe have started"
+  },
+  {
+    "offset": 5379388,
+    "text": "AmbaAudio_InputDelete failed!"
+  },
+  {
+    "offset": 5379420,
+    "text": "AmbaAudio_InputSetVolume failed!"
+  },
+  {
+    "offset": 5379456,
+    "text": "AmbaAudio_EncSetVolume failed!"
+  },
+  {
+    "offset": 5380800,
+    "text": " AmbaDSP_LiveviewCtrl start, ofst(%d %d) cap(%d %d) dsp (0x%X %d) Show %d"
+  },
+  {
+    "offset": 5381780,
+    "text": "[B2LV]AmbaDSP_LiveviewCtrl start, ofst(%d %d) cap(%d %d)"
+  },
+  {
+    "offset": 5388652,
+    "text": "AmbaDSP_LiveviewCtrl Fail!"
+  },
+  {
+    "offset": 5389804,
+    "text": "%s() : AmbaDSP_WarpCore_Init() failed"
+  },
+  {
+    "offset": 5389844,
+    "text": "%s() : AmbaDSP_Resume() failed"
+  },
+  {
+    "offset": 5389976,
+    "text": "%s() : AmbaDSP_Init() failed"
+  },
+  {
+    "offset": 5392228,
+    "text": "AmbaSensor_Config() failed"
+  },
+  {
+    "offset": 5392504,
+    "text": "ParseValueTypeIsString"
+  },
+  {
+    "offset": 5396092,
+    "text": "%s:%d, Fail to AmbaIPC_SvcRegister, rval = %d"
+  },
+  {
+    "offset": 5396296,
+    "text": "%s:%d, AmbaIPC_ClientCreate fail."
+  },
+  {
+    "offset": 5396484,
+    "text": "%s:%d, AmbaIPC_ClientDestroy fail, rval = %d."
+  },
+  {
+    "offset": 5396532,
+    "text": "%s:%d, Fail to AmbaIPC_SvcUnregister, rval = %d."
+  },
+  {
+    "offset": 5396584,
+    "text": "%s:%d, AmbaIPC_SvcUnregister fail, rval = %d."
+  },
+  {
+    "offset": 5397288,
+    "text": "%s:%d, AmbaIPC_SvcRegister fail, rval = %d"
+  },
+  {
+    "offset": 5398896,
+    "text": "%s[%d]: fail to do AmbaIPC_ClientCall(). %d"
+  },
+  {
+    "offset": 5399776,
+    "text": "%s: fail to do AmbaIPC_ClientCall(). %d"
+  },
+  {
+    "offset": 5404760,
+    "text": "[I][IT7250][%06d][%s]:AmbaKAL_SemTake failed"
+  },
+  {
+    "offset": 5408944,
+    "text": "ERROR: Bosch gyro ID [0x%x], read gyro ID [0x%x]"
+  },
+  {
+    "offset": 5408996,
+    "text": "ERROR: Cannot open gyro with SPI!!!"
+  },
+  {
+    "offset": 5419496,
+    "text": "AmbaNAND_WriteBitmapsFileHeader"
+  },
+  {
+    "offset": 5419528,
+    "text": "AmbaNAND_GetBitmapsFileInfo"
+  },
+  {
+    "offset": 5419556,
+    "text": "AmbaNAND_ReadBitmapsFile"
+  },
+  {
+    "offset": 5419584,
+    "text": "AmbaNAND_GetBitmapsFileInfo"
+  },
+  {
+    "offset": 5419612,
+    "text": "AmbaNAND_LoadBitmapsFileHeader"
+  },
+  {
+    "offset": 5419644,
+    "text": "AmbaNAND_GetBitmapsFileSize"
+  },
+  {
+    "offset": 5420680,
+    "text": "AmbaNAND_WriteBitmapsFileHeader"
+  },
+  {
+    "offset": 5420712,
+    "text": "AmbaNAND_LoadBitmapsFileHeader"
+  },
+  {
+    "offset": 5420744,
+    "text": "AmbaNAND_WriteBitmapsFile"
+  },
+  {
+    "offset": 5420772,
+    "text": "AmbaNAND_GetBitmapsFileSize"
+  },
+  {
+    "offset": 5420800,
+    "text": "AmbaNand_PrintBoardConfig"
+  },
+  {
+    "offset": 5421312,
+    "text": "Z16V12LB503DAB%07u"
+  },
+  {
+    "offset": 5422356,
+    "text": "AmbaNand_InitHWBoardConfig"
+  },
+  {
+    "offset": 5422384,
+    "text": "AmbaNand_LoadBoardCurrentConfig"
+  },
+  {
+    "offset": 5422828,
+    "text": "AmbaSD_EraseSector"
+  },
+  {
+    "offset": 5422848,
+    "text": "AmbaSD_SdCardInit"
+  },
+  {
+    "offset": 5422868,
+    "text": "AmbaSD_WaitIrqStatus"
+  },
+  {
+    "offset": 5422892,
+    "text": "AmbaSD_WriteSector"
+  },
+  {
+    "offset": 5422912,
+    "text": "AmbaSD_SetupUhsMode"
+  },
+  {
+    "offset": 5422932,
+    "text": "%s[AmbaSD_SetCardConfig]: SdChanNo: %d, CardMaxFrequency: %ld, RoundDelay: %d, DetailDelay = 0x%x"
+  },
+  {
+    "offset": 5423480,
+    "text": "%sAmbaSD0_ReadSector failed, re-init %d"
+  },
+  {
+    "offset": 5423524,
+    "text": "%sAmbaSD0_ReadSector failed, SD %d  is ejected"
+  },
+  {
+    "offset": 5423572,
+    "text": "%sAmbaSD0_WriteSector failed, re-init %d"
+  },
+  {
+    "offset": 5423616,
+    "text": "%sAmbaSD0_WriteSector failed, SD %d  is ejected"
+  },
+  {
+    "offset": 5423668,
+    "text": "AmbaSD_MmcCardInit"
+  },
+  {
+    "offset": 5423688,
+    "text": "AmbaSD_MemCardInit"
+  },
+  {
+    "offset": 5423708,
+    "text": "AmbaSD_CardInit"
+  },
+  {
+    "offset": 5423780,
+    "text": "AmbaSD_CardMonitorTask"
+  },
+  {
+    "offset": 5428840,
+    "text": "[AmbaRTSL_NandLoadMiscDefaultConfig]: Ver: 0x%08x"
+  },
+  {
+    "offset": 5430416,
+    "text": "AmbaCache_Clean"
+  },
+  {
+    "offset": 5430432,
+    "text": "AmbaCache_Invalidate"
+  },
+  {
+    "offset": 5430456,
+    "text": "AmbaCache_Flush"
+  },
+  {
+    "offset": 5435188,
+    "text": "AmbaNFTL_ReadSector"
+  },
+  {
+    "offset": 5435252,
+    "text": "AmbaNFTL_Init"
+  },
+  {
+    "offset": 5435344,
+    "text": "AmbaNAND_UpdateBBT FAIL"
+  },
+  {
+    "offset": 5436216,
+    "text": "AmbaNFTL_InitLock"
+  },
+  {
+    "offset": 5436256,
+    "text": "AmbaNFTL_IsInit"
+  },
+  {
+    "offset": 5436316,
+    "text": "AmbaNFTL_Read"
+  },
+  {
+    "offset": 5436400,
+    "text": "AmbaNFTL_Write"
+  },
+  {
+    "offset": 5436864,
+    "text": "AmbaNFTL_GetTotalSecs"
+  },
+  {
+    "offset": 5446072,
+    "text": "ambarellambarell"
+  },
+  {
+    "offset": 5446164,
+    "text": "ambarellaa9s"
+  },
+  {
+    "offset": 5470892,
+    "text": "AmbaUSB_System_ClassHook"
+  },
+  {
+    "offset": 5470920,
+    "text": "AmbaUSB_System_TaskCreate"
+  },
+  {
+    "offset": 5470948,
+    "text": "AmbaUSBD_System_SetSoftwareConnect"
+  },
+  {
+    "offset": 5471004,
+    "text": "AmbaUSB_System_SetDeviceDataConn"
+  },
+  {
+    "offset": 5471084,
+    "text": "AmbaUSB_System_ClassUnHook"
+  },
+  {
+    "offset": 5471112,
+    "text": "AmbaUSB_System_DeviceSystemSetup"
+  },
+  {
+    "offset": 5472712,
+    "text": "%s(): not support now, please use AmbaUSBD_System_SetSoftwareConnect() instead."
+  },
+  {
+    "offset": 5473168,
+    "text": "[USBD] USB IRQ owner is AmbaLink, NO VBUS detection."
+  },
+  {
+    "offset": 5473536,
+    "text": "[USBD] USB IRQ owner is AmbaLink."
+  },
+  {
+    "offset": 5473572,
+    "text": "[USBD] No AmbaLink enabled."
+  },
+  {
+    "offset": 5473600,
+    "text": "[USBD] Wait for AmbaUSBD_System_ClassHook()"
+  },
+  {
+    "offset": 5473716,
+    "text": "[USBD] Wait for AmbaUSBD_System_ClassUnHook()"
+  },
+  {
+    "offset": 5473848,
+    "text": "[USBD] AmbaUSBD_System_ClassHook() called."
+  },
+  {
+    "offset": 5473992,
+    "text": "%s(): No AmbaUSBD_System_ClassUnHook() was called before."
+  },
+  {
+    "offset": 5474264,
+    "text": "[USBD] AmbaUSBD_System_ClassUnHook() called."
+  },
+  {
+    "offset": 5475292,
+    "text": "AmbaUSBDeviceVbusCheckTask"
+  },
+  {
+    "offset": 5477240,
+    "text": "AmbaUSB_Class_CDC_ACM_Reset"
+  },
+  {
+    "offset": 5477664,
+    "text": "AmbaUSB_Class_CDC_ACM_Multi_Reset"
+  },
+  {
+    "offset": 5477700,
+    "text": "AmbaUSBD_Hid_Reset"
+  },
+  {
+    "offset": 5478148,
+    "text": "AmbaUSBD_Hid_Start"
+  },
+  {
+    "offset": 5478672,
+    "text": "[AmbaUSB_Class_Msc_SetProp] Invalid drive = %d"
+  },
+  {
+    "offset": 5478768,
+    "text": "[AmbaUSB_Class_Msc_Mount] Invalid drive = %d"
+  },
+  {
+    "offset": 5478868,
+    "text": "[AmbaUSB_Class_Msc_UnMount] Invalid drive = %d"
+  },
+  {
+    "offset": 5478916,
+    "text": "[AmbaUSB_Class_Msc_UnMount] Mount Remapping ERROR %d, %d!!"
+  },
+  {
+    "offset": 5479240,
+    "text": "AmbaUSB_Class_Msc_Mount"
+  },
+  {
+    "offset": 5479264,
+    "text": "AmbaUSB_Class_Msc_UnMount"
+  },
+  {
+    "offset": 5479292,
+    "text": "AmbaUSB_Class_Msc_Mount"
+  },
+  {
+    "offset": 5480252,
+    "text": "AmbaUSB_Class_Pictbridge_ConfigJob, NOT DISCOVERY"
+  },
+  {
+    "offset": 5480384,
+    "text": "AmbaUSB_Class_Pictbridge_Start"
+  },
+  {
+    "offset": 5480732,
+    "text": "AmbaUSB_Class_Simple_Reset"
+  },
+  {
+    "offset": 5480760,
+    "text": "AmbaUSB_Class_Stream_Reset"
+  },
+  {
+    "offset": 5481660,
+    "text": "AmbaUSB_Class_Stream_Start"
+  },
+  {
+    "offset": 5482088,
+    "text": "AmbaUSBD_UVC_Reset"
+  },
+  {
+    "offset": 5482148,
+    "text": "AmbaUSB_Descriptor_GetInitInfo"
+  },
+  {
+    "offset": 5482708,
+    "text": "AmbaUSB_Drv_StallEndpoint"
+  },
+  {
+    "offset": 5482736,
+    "text": "[USB] AmbaUSB_Drv_StallEndpoint: failed"
+  },
+  {
+    "offset": 5482868,
+    "text": "AmbaUSB_Drv_InitHardware"
+  },
+  {
+    "offset": 5483048,
+    "text": "AmbaUSB_Drv_EndpointMapCreate"
+  },
+  {
+    "offset": 5485100,
+    "text": "AmbaUSB_ControlRequestTask"
+  },
+  {
+    "offset": 5485168,
+    "text": "AmbaUSB_IsrTask"
+  },
+  {
+    "offset": 5485776,
+    "text": "[USBD] AmbaUSB_Drv_EmptyDmaFifo: failed"
+  },
+  {
+    "offset": 5488728,
+    "text": "AmbaUSB_Drv_EndpointMapGet"
+  },
+  {
+    "offset": 5488860,
+    "text": "AmbaUSB_Drv_WaitIsrOperationEmpty"
+  },
+  {
+    "offset": 5490492,
+    "text": "AmbaUSB_Host_Class_Storage_GetStatus"
+  },
+  {
+    "offset": 5491468,
+    "text": "AmbaUSB_Host_Class_Storage_Read"
+  },
+  {
+    "offset": 5491500,
+    "text": "AmbaUSB_Host_Class_Storage_Write"
+  },
+  {
+    "offset": 5491624,
+    "text": "AmbaUSB_Host_Init_SwitchUsbOwner"
+  },
+  {
+    "offset": 5521208,
+    "text": "libimg_eis.a"
+  },
+  {
+    "offset": 5521224,
+    "text": "libimg_eis_task.a"
+  },
+  {
+    "offset": 5521340,
+    "text": "amba_app.elf"
+  },
+  {
+    "offset": 5891560,
+    "text": "GRP_L2_VIDEO_EIS"
+  },
+  {
+    "offset": 5892808,
+    "text": "GRP_L2_VIDEO_TIMELAPSE_EIS"
+  },
+  {
+    "offset": 5895112,
+    "text": "GRP_L2_VIDEO_LOOP_EIS"
+  },
+  {
+    "offset": 5928432,
+    "text": "iq_eis_enable"
+  },
+  {
+    "offset": 5929632,
+    "text": "eis_support_status"
+  },
+  {
+    "offset": 6184164,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6184180,
+    "text": "XiaoYi Z16"
+  },
+  {
+    "offset": 6184836,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6185196,
+    "text": "Amba Video Class MJPG+H264"
+  },
+  {
+    "offset": 6185316,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6185700,
+    "text": "Ambarella"
+  },
+  {
+    "offset": 6261648,
+    "text": "A9S_sdk_main"
+  },
+  {
+    "offset": 6735260,
+    "text": "ambacam_rev"
+  },
+  {
+    "offset": 6866404,
+    "text": "2015 Ambarella Device Stack 1.1"
+  },
+  {
+    "offset": 6867276,
+    "text": "Amba cdcacm class"
+  },
+  {
+    "offset": 6867332,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6867532,
+    "text": "Amba HID Class"
+  },
+  {
+    "offset": 6867884,
+    "text": "Amba cdcacm class"
+  },
+  {
+    "offset": 6867913,
+    "text": "Ambarella UART0"
+  },
+  {
+    "offset": 6867932,
+    "text": "Ambarella UART1"
+  },
+  {
+    "offset": 6868740,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6869484,
+    "text": "Amba SIMPLE Class"
+  },
+  {
+    "offset": 6869540,
+    "text": "AmbarellaInc"
+  },
+  {
+    "offset": 6869597,
+    "text": "com.Amba.P01"
+  },
+  {
+    "offset": 6869740,
+    "text": "Amba Video Class"
+  },
+  {
+    "offset": 6869796,
+    "text": "AmbarellaInc"
+  }
+]

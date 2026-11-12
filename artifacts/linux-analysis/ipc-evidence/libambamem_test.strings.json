@@ -1,0 +1,258 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x3d5",
+    "text": "libambamem.so"
+  },
+  {
+    "offset": "0x3e3",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x3ff",
+    "text": "AmbaMem_convert"
+  },
+  {
+    "offset": "0x40f",
+    "text": "AmbaMem_init"
+  },
+  {
+    "offset": "0x41c",
+    "text": "AmbaMem_release"
+  },
+  {
+    "offset": "0x42c",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x432",
+    "text": "AmbaMem_munmap"
+  },
+  {
+    "offset": "0x441",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x450",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0x45d",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x471",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x48b",
+    "text": "librt.so.1"
+  },
+  {
+    "offset": "0x496",
+    "text": "libutil.so.1"
+  },
+  {
+    "offset": "0x4a3",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x4b2",
+    "text": "abort"
+  },
+  {
+    "offset": "0x4b8",
+    "text": "printf"
+  },
+  {
+    "offset": "0x4bf",
+    "text": "strtoul"
+  },
+  {
+    "offset": "0x4c7",
+    "text": "sleep"
+  },
+  {
+    "offset": "0x4cd",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x4df",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x4e6",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x4f2",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x500",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x50c",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x519",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x925",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x94c",
+    "text": "Invalid input address or Please use addr larger than 0!"
+  },
+  {
+    "offset": "0x984",
+    "text": "AmbaMem_init() fail!"
+  },
+  {
+    "offset": "0x99b",
+    "text": "AmbaMem_init() success!"
+  },
+  {
+    "offset": "0x9b5",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x9dd",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_HEAP) success!"
+  },
+  {
+    "offset": "0xa08",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_DSP) fail!"
+  },
+  {
+    "offset": "0xa2f",
+    "text": "AmbaMem_mmap(AMBAMEM_TYPE_DSP) success!"
+  },
+  {
+    "offset": "0xa59",
+    "text": "src: %p, mmap: %p"
+  },
+  {
+    "offset": "0xa6c",
+    "text": "write 0x%08x to %p"
+  },
+  {
+    "offset": "0xa80",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0xaaa",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_HEAP) success!"
+  },
+  {
+    "offset": "0xad7",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_DSP) fail!"
+  },
+  {
+    "offset": "0xb00",
+    "text": "AmbaMem_munmap(AMBAMEM_TYPE_DSP) success!"
+  },
+  {
+    "offset": "0xb2c",
+    "text": "AmbaMem_release() fail!"
+  },
+  {
+    "offset": "0xcad",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0xce0",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0xcea",
+    "text": ".interp"
+  },
+  {
+    "offset": "0xcf2",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0xd00",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0xd13",
+    "text": ".hash"
+  },
+  {
+    "offset": "0xd19",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0xd21",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0xd29",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0xd36",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0xd45",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0xd4e",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0xd57",
+    "text": ".init"
+  },
+  {
+    "offset": "0xd5d",
+    "text": ".text"
+  },
+  {
+    "offset": "0xd63",
+    "text": ".fini"
+  },
+  {
+    "offset": "0xd69",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0xd71",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0xd7c",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0xd86",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0xd92",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0xda3",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0xdb1",
+    "text": ".data"
+  },
+  {
+    "offset": "0xdbc",
+    "text": ".ARM.attributes"
+  }
+]

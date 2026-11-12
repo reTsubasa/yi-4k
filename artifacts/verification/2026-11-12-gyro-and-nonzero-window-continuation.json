@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T04:42:05.112731+00:00",
+  "goal_status": "active",
+  "turn_classification": "progress: bounded original ARM gyro contract and selected nonzero native final-export candidate with strict independent gates and failure custody",
+  "previous_index": "artifacts/verification/2026-11-12-native-export-and-trigger-pin-continuation.json",
+  "summary": {
+    "gyro": "22 original ARM cases /14 instruction pins; original math helpers executed; mode1 recenter / XY swap and stock nominal131counts/(degree/s); SPI failures may return stale/mixed sample with0; no hardware calibration",
+    "prerecord": "START63 STOP64 selected archived window; original ARM mux plus explicit common-origin/MVHD caller adapter;1831video/2863AAC strict packets/timing/full decode, original MDAT/STBL equal stock control; retry identical",
+    "presentation_limit": "0.922666667s initial empty presentation, total62.030633333s; only selected fixture accepted, no tight zero-origin or arbitrary-window claim",
+    "native_execution": "No new physical camera operations; P1/P5/P11 and device entry/recovery remain open"
+  },
+  "current_source_sha256": {
+    "scripts/audit_gyro_input_contract.py": "81bb5685c1a0a5dcdb41a3409aee74cbbd260cc56c1037202a70617da683bcd0",
+    "scripts/export_prerecord_native_window.py": "c2cb4a7cfbf3655f28e2b7f8395236b053bdfaa1fb6a94a7ce17e2d843429c51",
+    "scripts/verify_prerecord_native_window.py": "95c3ecd36b452b198e1b743e84f564cc465ff45b7b21338b048b695949920497"
+  },
+  "evidence": [
+    {
+      "path": "docs/eis-gyro-input-contract.md",
+      "bytes": 6321,
+      "sha256": "e0ebc6d40d6edd84e649710a6630e0b4a5ce2dcc20b1a5cac1b53fab5b0b482a",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-gyro-input-contract/audit.json",
+      "bytes": 26052,
+      "sha256": "7f2c684f6e5b6656957c8c9f922f8605e69157c4b47dcfd5dd132d6d2b2976cd",
+      "status": "pass_bounded_original_ARM_execution"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-gyro-input-contract/descriptor.bin",
+      "bytes": 62,
+      "sha256": "2a8a4c81fde9ead491a9bbda8ec66c481c62b04d55fadb57b4630e0b4e04e344",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-gyro-input-contract/reference/source.json",
+      "bytes": 405,
+      "sha256": "39e16a9e77d5ac9f1bd4313f0f0f2399247cd49dc00f0e316ec98dc1516fe2c8",
+      "status": "retained_reference"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-gyro-input-contract/reference/bst-bmi160-ds000.pdf",
+      "bytes": 2669088,
+      "sha256": "0c3dca28517322bdcfcef9be8b1dd2b872ff9df9464d0088c17ccc4a67472f3b",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-gyro-input-contract/reference/page-060.png",
+      "bytes": 206054,
+      "sha256": "f492815c1272cc8ebaedef48af8669dd30167d44b094347588f74df9febc98b4",
+      "status": "documented"
+    },
+    {
+      "path": "docs/prerecord-native-window-export.md",
+      "bytes": 7057,
+      "sha256": "e9f875c0c6b0fbbfb82591fe5af3f6e91c7fc1bec3a899d7c456842afe357b99",
+      "status": "documented"
+    },
+    {
+      "path": "docs/prerecord-native-session-export.md",
+      "bytes": 6773,
+      "sha256": "7530063725abc3813b5e5eddd2adb24749984300d1dcdabde58d11e46cc74f4d",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-review.json",
+      "bytes": 3777,
+      "sha256": "25217052c1a17be6f2f615e2fc60ebd5f7e4d13800f8f57b9e29b8ad2bb76360",
+      "status": "pass_independent_nonzero_native_window_review"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/final-review.json",
+      "bytes": 2078,
+      "sha256": "230a14d4a0cc050457f3494664e4fdece6af29796462f89a3cbcdddc6a3fe475",
+      "status": "pass_final_source_and_document_pins"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/audit.json",
+      "bytes": 19158473,
+      "sha256": "f73edd839d836e49878c090d967485e14cc672b120906c698ef3cfbd63309efb",
+      "status": "pass_original_arm_window_export_with_common_origin_adapter"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-stock-control-run01/audit.json",
+      "bytes": 11275514,
+      "sha256": "167237748ef3e34e4ab3d0983cdebdec6bee3423963bd38778acaed8f5e1bff3",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run01/audit.json",
+      "bytes": 11275644,
+      "sha256": "40b5d090fda55b6108bee2fe4ee2bd7930ee1c87f5651572e71fae557e7a183f",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-missing-aac-run01/audit.json",
+      "bytes": 2935222,
+      "sha256": "ca1f2da3e3095810426e95b904f1465559944831e3163f15bc5111a8ab7871a9",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-close-failure-run01/audit.json",
+      "bytes": 8258104,
+      "sha256": "ea7cb87bad3f02e0e707c93be2c57b652007f7a45f8a2c0ebf656c9e173e643a",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-recovery-run01/audit.json",
+      "bytes": 19158131,
+      "sha256": "287884001f981c9b1f756702affa4c7915e0d8775aab21b5c70a864061cd1d14",
+      "status": "pass_original_arm_window_export_with_common_origin_adapter"
+    }
+  ],
+  "published_output": {
+    "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/session.mp4",
+    "sha256": "351bdba510ffec1d93da80e6fd9b2bc5b0c275a25a103a2575707b148c2df7d4",
+    "bytes": 343127618
+  },
+  "independent_review_sha256": "25217052c1a17be6f2f615e2fc60ebd5f7e4d13800f8f57b9e29b8ad2bb76360",
+  "no_device_access_this_turn": true,
+  "permission": {
+    "status": "existing_stock_entry_question_pending;no_stage_or_reboot_performed",
+    "plan": "docs/device-1107-stock-entry-acceptance-plan.md"
+  },
+  "remaining": [
+    "Real camera native entry, cache visibility and independent recovery",
+    "Gyro actual configuration/freshness/bias/camera axes and frame clock alignment",
+    "Actual DSP mapping/crop geometry and native candidate quality/rollback acceptance",
+    "General trigger windows, presentation start and unsupported zero-preset first-second case",
+    "Live stock encoder/FIFO source epoch and minute SD ring integration",
+    "Actual stock Chinese/English spoken START and physical shutter routing",
+    "Physical SD throughput/storage-fault/power-loss recovery acceptance"
+  ],
+  "limits": [
+    "Original stock second-segment consumer rejection retained",
+    "Unadapted stock and MDHD-only selected-window rejects retained",
+    "Clean retry uses unchanged sealed inputs; not physical camera recovery",
+    "Source epochs remain caller receipts",
+    "Vendor typical131.2 and stock nominal131 are distinct; neither is hardware calibration"
+  ],
+  "local_links_checked": 472
+}

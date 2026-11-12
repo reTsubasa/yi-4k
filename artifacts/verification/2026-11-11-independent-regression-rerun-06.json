@@ -1,0 +1,250 @@
+{
+  "verification": "2026-11-11 Android 0.3.12 and offline EIS/prerecord integration rerun 06",
+  "created_utc": "2026-11-10T18:45:33.348421+00:00",
+  "current_run_scope": {
+    "physical_android_phone": false,
+    "android_emulator": true,
+    "camera_access": "ordinary reversible viewfinder through real MainActivity; status/settings/media/boot readback",
+    "camera_recording_requested": false,
+    "camera_photo_requested": false,
+    "camera_settings_changed": false,
+    "camera_media_files_written": false,
+    "custom_rtos_or_orc_execution": false,
+    "firmware_ram_partition_boot_writes": false
+  },
+  "results": {
+    "android_full_debug_tests": 113,
+    "android_full_release_tests": 113,
+    "android_test_failures": 0,
+    "final_render_debug_tests": 3,
+    "final_render_release_tests": 3,
+    "lint_errors": 0,
+    "lint_warnings": 62,
+    "apk_v2_verified": true,
+    "actual_android_rotation_tests": 1,
+    "actual_camera_main_preview_tests": 1,
+    "actual_camera_first_frames": 2,
+    "camera_state_settings_media_and_boot_unchanged": true,
+    "eis_log_gate_checks": "18 caller + 6 copy-helper fixed instruction checks",
+    "eis_debug_mask_owner": "60 fixed instructions, 3 original diagnostics, 9 windows; module5 debug configuration",
+    "prerecord_cursor_registry": "9 original ARM synthetic cases + 6 source checks",
+    "prerecord_payload_reclaim": "13 original ARM synthetic cases + 8 source checks + 6 exact instruction assertions",
+    "prerecord_early_copy": "22 host + 22 compiled ARM cases; 20000 accepted/consumed owned frames in host pthread check",
+    "backend_contract": "v2: 7 evidence consistency checks, 10 states, 9 transitions; rejects stock virtual cursor as payload lease"
+  },
+  "items": [
+    {
+      "path": "artifacts/android/yi4k-control-0.3.12-debug.apk",
+      "bytes": 11536637,
+      "sha256": "b242bab1e7c3e80ab5b8bd45821ed3aa3c1eb54a63677dc332ec23f39cf3cc09"
+    },
+    {
+      "path": "artifacts/android/yi4k-control-0.3.12-tests.apk",
+      "bytes": 319584,
+      "sha256": "0282f9f318c08a886085cfb28a8d46b8128c32ccde6a9a852b712968efab1b39"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-build-0.3.12.json",
+      "bytes": 3537,
+      "sha256": "88e04ccb4af6a1d7cff35f715cf238dc92eb1e7d963bf2c8cc1e667c071e9a79"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-apk-integrity-0.3.12.json",
+      "bytes": 761,
+      "sha256": "2837df5c843613350828ac6aa9534081dcaaf7e4919a2767fc6fe186a6968faa"
+    },
+    {
+      "path": "artifacts/android/0.3.12-reports/full-suite-counts.json",
+      "bytes": 183,
+      "sha256": "2151de7ffa89ed8370162e0f46fe4b810538787d42bc4ca0d3d02113e9b283ab"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-build-0.3.12.log",
+      "bytes": 7439,
+      "sha256": "4778cc768682f42d8887e68cb2f83503d3769198ef0456d9ff9bded19195bcf9"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-final-render-0.3.12.log",
+      "bytes": 2940,
+      "sha256": "f0bfb16fc70b1d1ea3c0a01df7090f2c0937f23feadaff45e99d7fb7ebad45dd"
+    },
+    {
+      "path": "artifacts/android/0.3.12-device-reports/capture-layout-run01/acceptance.json",
+      "bytes": 4505,
+      "sha256": "62e5f2231cb4b92771f3b7db9131aec2a5195f0e86ea2f61a5c916d5cb072cbd"
+    },
+    {
+      "path": "artifacts/android/0.3.12-device-reports/capture-layout-run01/workflow-screens/capture-layout/capture-layout.json",
+      "bytes": 2630,
+      "sha256": "d921358742d951d4db5c853366e1e6382bee8f846022b64cb560fb3650fa9a07"
+    },
+    {
+      "path": "artifacts/android/0.3.12-device-reports/camera-main-preview-run01/acceptance.json",
+      "bytes": 41883,
+      "sha256": "84c08b2691b75cab1d7458178df8f1c6dd04ff68177af7ab33d66c64979a5669"
+    },
+    {
+      "path": "artifacts/android/0.3.12-device-reports/camera-main-preview-run01/workflow-screens/camera-main-preview/camera-main-preview.json",
+      "bytes": 8045,
+      "sha256": "be65db12b897e8b4bec709d51e8804088f2814946e41b0a73fc23531d21fc399"
+    },
+    {
+      "path": "scripts/audit_eis_vertical_done_log_gate.py",
+      "bytes": 6583,
+      "sha256": "698917b180d78e5088c2d1bcd691e6a75fb2d76b33b89e614f991c26e9abc03a"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-eis-vertical-done-log-gate/audit.json",
+      "bytes": 5380,
+      "sha256": "5783ab178c78f2ed0dc9e89fcb79d2f521798ca4c3308fe2763be47769c7de30"
+    },
+    {
+      "path": "scripts/audit_eis_orc_debug_mask_owner.py",
+      "bytes": 6998,
+      "sha256": "3ce03a51d63e0ce0568ae550235af75f8a8c5a2451563cf5bb1d687891a419ee"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-debug-mask-owner/audit.json",
+      "bytes": 11312,
+      "sha256": "c27d5228b921a02781066162ad4fa0bd801aa2d60cd6a2167c43c6240f16c3b5"
+    },
+    {
+      "path": "scripts/audit_eis_orc_transfer_dependencies.py",
+      "bytes": 7390,
+      "sha256": "da7dfd21bb01a0e4cdb1591bd6baab6a6184fbece5a5983aeb7c8929801240af"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-transfer-dependencies/audit.json",
+      "bytes": 44087,
+      "sha256": "82a870ce235a76c36cd349b0b8e6e987cb8d116559ff1cc59603e2cb9b44417a"
+    },
+    {
+      "path": "scripts/audit_prerecord_cursor_registry.py",
+      "bytes": 9175,
+      "sha256": "00f7b6f073438d786c653e8f9cb860429478696f816dd583c2f197ba1526d463"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-cursor-registry/audit.json",
+      "bytes": 14227,
+      "sha256": "7f2a694125e3036ef0657d746602dfa553fc371186ab43c5a9473b5e3ce89740"
+    },
+    {
+      "path": "scripts/audit_prerecord_producer_continuity.py",
+      "bytes": 13679,
+      "sha256": "6edd40a96829f2c575bd7b1f396a95ddb6f28b649636683a974af685c4402955"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-producer-continuity/audit.json",
+      "bytes": 13018,
+      "sha256": "625d61ee4c2e47b7bb1e5586f81f6d9e50a83b999a70522019d35ad078f2c42d"
+    },
+    {
+      "path": "scripts/audit_prerecord_payload_reclaim.py",
+      "bytes": 15273,
+      "sha256": "e9db007cf664d1007bfd0da12df95782046bdc6e0104ae434fbbeae5e213fe16"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-payload-reclaim/audit.json",
+      "bytes": 15958,
+      "sha256": "40d79f22fcff6b99e3202dc55df14c577c3f6076120f3ef68447d28927bdd3a8"
+    },
+    {
+      "path": "scripts/validate_prerecord_early_copy.py",
+      "bytes": 8843,
+      "sha256": "cdad8cb5020c6209a07702f1c98cdffbd2ce5b159772a0c0d15d87fabf49f338"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-early-copy/validation.json",
+      "bytes": 15876,
+      "sha256": "c78a67e4fbffe2ce30d782afd8607811906ca3530a32a99216b3f66b0dab658c"
+    },
+    {
+      "path": "sdk/yi4k_1107_early_copy.h",
+      "bytes": 4739,
+      "sha256": "f3c0c6dca3196170d12ef0a622b533f7f70043b2064eb6c86d977e3e9ed89404"
+    },
+    {
+      "path": "sdk/yi4k_1107_early_copy.c",
+      "bytes": 5924,
+      "sha256": "72701725fd25cafb36b245b08d3d11520317f8ef6c1546f382ade5750cbba88f"
+    },
+    {
+      "path": "sdk/offline/yi4k_early_copy_test.c",
+      "bytes": 9766,
+      "sha256": "264d3f8d7795043ddd390ea819f05d0f601ae8b99f5bf237279b89b8757db86b"
+    },
+    {
+      "path": "sdk/offline/yi4k_early_copy_threads.c",
+      "bytes": 3822,
+      "sha256": "3c2183f15afe73d6517a7d01275643345522286868d20f34cf16cad72741f928"
+    },
+    {
+      "path": "scripts/build_prerecord_backend_contract.py",
+      "bytes": 13812,
+      "sha256": "23120602c927ec5e46cb52c3cb09ae013ca799c70ff29c27f994cf38e9a3a629"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-backend-contract/contract.json",
+      "bytes": 12688,
+      "sha256": "ae9a1a390c52a3d1ae89749ce3dd76cb755930643c43c3cfdd0d7030678ac3be"
+    },
+    {
+      "path": "docs/android-delivery-audit-0.3.12.md",
+      "bytes": 3443,
+      "sha256": "536169ec7ba27c32f4bab1a517903c286f8aac61dcc6bacdde347c9d7a9d36b7"
+    },
+    {
+      "path": "docs/android-probe-mode-restoration.md",
+      "bytes": 1655,
+      "sha256": "4f17ee82a24134d302b86f795b782961960331e8705f59686039015f18d9c2fa"
+    },
+    {
+      "path": "docs/eis-orc-debug-mask-owner.md",
+      "bytes": 4138,
+      "sha256": "905e51cf0afd9bbb436590ef8d6825a66b2e46f5eb64757ec6bb52ad67b21f7a"
+    },
+    {
+      "path": "docs/prerecord-payload-reclaim.md",
+      "bytes": 8063,
+      "sha256": "d8eead3bd78dd935c10fb63e4cb53f765a746277b11cd82c717aec4177532c07"
+    },
+    {
+      "path": "docs/prerecord-early-copy-adapter.md",
+      "bytes": 7686,
+      "sha256": "80876076cef89f026ea5657c40c69c2da9c2b2e3875df894a940cf024e522973"
+    },
+    {
+      "path": "docs/prerecord-minimum-backend-contract.md",
+      "bytes": 7330,
+      "sha256": "b04e0cb1f181f3d5edd80e6619ae4da0eac966983d3aa1ac3caa0d31c18c7a7f"
+    },
+    {
+      "path": "docs/goal-evidence-matrix.md",
+      "bytes": 4605,
+      "sha256": "050a3ed90f59fe047701da49ee8e9d14294dcfaf098cac90cd54ed3d2d2220d5"
+    },
+    {
+      "path": "docs/project-roadmap.md",
+      "bytes": 60721,
+      "sha256": "81610c1759246a96d34c0db6f9db2f9aabfa0e5e3ee61b21b725f9ec66daf693"
+    },
+    {
+      "path": "android/README.md",
+      "bytes": 11887,
+      "sha256": "56a635c6fa88e6a12dbf7b5ca9163959f0eb39d3b1bad63f96eb5452c96f04d4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14114,
+      "sha256": "15f891f013412a15a5ed90107def4267985f57f509a90f08e140d2a0a020a5dc"
+    }
+  ],
+  "limits": [
+    "Fixed firmware / synthetic original ARM / compiled ARM and host queue checks do not prove DSP/DMA stability or real camera prerecord.",
+    "No current-version physical phone or complete capture/export acceptance.",
+    "Current real camera preview is portrait in an emulator; disconnected rotation tests do not prove landscape stream rendering.",
+    "EIS replacement and camera-side 60-second prerecord with real voice/shutter delivery remain incomplete.",
+    "Historical earlier manifests describe their then-current snapshots; changed reports have new hashes in this index.",
+    "Historical config probe is separate ordinary API normal restoration, not a newly repeated failure-injection test."
+  ]
+}

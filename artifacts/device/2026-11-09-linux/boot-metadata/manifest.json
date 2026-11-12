@@ -1,0 +1,35 @@
+{
+  "date_utc": "2026-11-09T07:14:33.502628+00:00",
+  "host": "192.168.42.1",
+  "scope": "bounded logical MTD reads only; no writes, no raw NAND/OOB, no /dev/mem",
+  "captures": [
+    {
+      "file": "vendor_data.bin",
+      "source": "/dev/mtdblock0",
+      "bytes": 131072,
+      "sha256": "69c4fcd4c096e0b02b0c0303483c11a364cafc0c46fe5aefaf73983fff7f3844",
+      "remote_hash_matches": true
+    },
+    {
+      "file": "dsp_prefix.bin",
+      "source": "/dev/mtdblock2",
+      "bytes": 65536,
+      "sha256": "60585bc5f546386b6653f43ed6e52ce7dbc1625e85cd9d40ff5140c8496fe33a",
+      "remote_hash_matches": true
+    },
+    {
+      "file": "sys_data_prefix.bin",
+      "source": "/dev/mtdblock3",
+      "bytes": 65536,
+      "sha256": "4b61f0a6ad4ed4c38eae8a348a4e15c499fa68a1f4122589dcf2e17898fe8651",
+      "remote_hash_matches": true
+    },
+    {
+      "file": "reserved_prefix.bin",
+      "source": "/dev/mtdblock12",
+      "bytes": 65536,
+      "sha256": "73fd5e7c20023ac9b9b73d17d405d7c0fdca6d85b61488590c50f9b705fa857d",
+      "remote_hash_matches": true
+    }
+  ]
+}

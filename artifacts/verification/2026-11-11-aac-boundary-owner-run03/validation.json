@@ -1,0 +1,4374 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "offline_only": true,
+  "cases": 32,
+  "rational_oracle_cases": 517,
+  "results": [
+    {
+      "name": "exact_end_current",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "one_tick_crossing_held",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        2,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "real_fractional_crossing_preserves_source",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        1,
+        2,
+        2882560,
+        2883584,
+        0,
+        2815,
+        2882560,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "busy_no_overwrite",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "safe_failure_retry_same_ticket",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "ambiguous_handoff_freezes",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "wrong_ticket_retains",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "duplicate_packet_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "sequence_gap_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "pts_gap_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "reorder_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "identity_change_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "config_change_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "epoch_change_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "timescale_change_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "duration_change_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "packet_end_overflow",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "uint64_exact_end",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        1,
+        4294966271,
+        4294967295,
+        4294967295,
+        0,
+        4294966271,
+        4294967295,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "96bit_comparison",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        2,
+        1,
+        1,
+        0,
+        4294967295,
+        4294967295,
+        0,
+        4294966271,
+        4294967295,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "capacity_retry",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "ticket_overflow",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        4294967295,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sequence_wrap_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        1,
+        1,
+        0,
+        1024,
+        0,
+        4294967295,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "advance_transactional_bounds",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        1,
+        1,
+        2,
+        0,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        17,
+        2882400000,
+        1
+      ]
+    },
+    {
+      "name": "packet_before_source_origin",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        0,
+        1,
+        1024,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "payload_alias_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "eos_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "video_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "descriptor_pts_mismatch",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        3,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "missing_binding_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "invalid_split",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "live_reinit_rejected",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        204,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "3003_packets_two_segments_once_only",
+      "host_passed": true,
+      "compiled_arm_passed": true,
+      "abi_preserved": true,
+      "report": [
+        2815,
+        188,
+        2882560,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "rational_oracle": [
+    {
+      "packet_end": 1024,
+      "scale": 48000,
+      "split": 1024,
+      "split_scale": 48000,
+      "expected": 1
+    },
+    {
+      "packet_end": 1024,
+      "scale": 48000,
+      "split": 1023,
+      "split_scale": 48000,
+      "expected": 2
+    },
+    {
+      "packet_end": 18446744073709551615,
+      "scale": 4294967295,
+      "split": 18446744073709551615,
+      "split_scale": 4294967295,
+      "expected": 1
+    },
+    {
+      "packet_end": 18446744073709551615,
+      "scale": 48000,
+      "split": 18446744073709551615,
+      "split_scale": 1,
+      "expected": 1
+    },
+    {
+      "packet_end": 18446744073709551615,
+      "scale": 1,
+      "split": 18446744073709551615,
+      "split_scale": 4294967295,
+      "expected": 2
+    },
+    {
+      "packet_end": 5903667448091999354,
+      "scale": 2975766248,
+      "split": 9695422205498268433,
+      "split_scale": 3553922184,
+      "expected": 1
+    },
+    {
+      "packet_end": 13666780553789045627,
+      "scale": 3463970718,
+      "split": 5852389501783614016,
+      "split_scale": 629195261,
+      "expected": 1
+    },
+    {
+      "packet_end": 5918363458710482616,
+      "scale": 1334641544,
+      "split": 2207506215774017304,
+      "split_scale": 2692972285,
+      "expected": 2
+    },
+    {
+      "packet_end": 11849673613525814187,
+      "scale": 450115198,
+      "split": 17644897191204263042,
+      "split_scale": 118852075,
+      "expected": 1
+    },
+    {
+      "packet_end": 5859573459751128852,
+      "scale": 1763565055,
+      "split": 458834399532674241,
+      "split_scale": 2126670311,
+      "expected": 2
+    },
+    {
+      "packet_end": 13179430660989598111,
+      "scale": 2293571522,
+      "split": 16337657172621034449,
+      "split_scale": 815662340,
+      "expected": 1
+    },
+    {
+      "packet_end": 11172930139425185907,
+      "scale": 2145043806,
+      "split": 14892028804798670283,
+      "split_scale": 3804340753,
+      "expected": 2
+    },
+    {
+      "packet_end": 8918930658393316921,
+      "scale": 3575059394,
+      "split": 2254269345076252320,
+      "split_scale": 3706012188,
+      "expected": 2
+    },
+    {
+      "packet_end": 4329316603057398772,
+      "scale": 3802328046,
+      "split": 2368636494916470547,
+      "split_scale": 3265967300,
+      "expected": 2
+    },
+    {
+      "packet_end": 2886054097904397209,
+      "scale": 4033068842,
+      "split": 9528964411456531840,
+      "split_scale": 2314479467,
+      "expected": 1
+    },
+    {
+      "packet_end": 15135795349992980410,
+      "scale": 2534164408,
+      "split": 5839623213675813577,
+      "split_scale": 1647735339,
+      "expected": 2
+    },
+    {
+      "packet_end": 1589457138602717165,
+      "scale": 86329754,
+      "split": 8139990429189760217,
+      "split_scale": 1467402944,
+      "expected": 2
+    },
+    {
+      "packet_end": 17182901085908226149,
+      "scale": 2835421740,
+      "split": 18352426309280148404,
+      "split_scale": 1145326050,
+      "expected": 1
+    },
+    {
+      "packet_end": 10627816318941797122,
+      "scale": 3198772308,
+      "split": 4874418230751670511,
+      "split_scale": 832967284,
+      "expected": 1
+    },
+    {
+      "packet_end": 9652080932393461160,
+      "scale": 2384464534,
+      "split": 14845058218255469289,
+      "split_scale": 1630194172,
+      "expected": 1
+    },
+    {
+      "packet_end": 11856265062541559706,
+      "scale": 1266081042,
+      "split": 7947611217319386201,
+      "split_scale": 2765885145,
+      "expected": 2
+    },
+    {
+      "packet_end": 9730341745591721143,
+      "scale": 3242255308,
+      "split": 4878919856752224442,
+      "split_scale": 2959144899,
+      "expected": 2
+    },
+    {
+      "packet_end": 2926779172139217424,
+      "scale": 2290858415,
+      "split": 9499581564960470513,
+      "split_scale": 3915662248,
+      "expected": 1
+    },
+    {
+      "packet_end": 3654112610624456339,
+      "scale": 402062981,
+      "split": 6331784774866457030,
+      "split_scale": 1378006463,
+      "expected": 2
+    },
+    {
+      "packet_end": 15241118904663759011,
+      "scale": 4172197596,
+      "split": 11446510398011458866,
+      "split_scale": 141191114,
+      "expected": 1
+    },
+    {
+      "packet_end": 9132663119733357900,
+      "scale": 2149474908,
+      "split": 12184792093529751075,
+      "split_scale": 3903122299,
+      "expected": 2
+    },
+    {
+      "packet_end": 151570565785085468,
+      "scale": 4142123801,
+      "split": 6883345667405419210,
+      "split_scale": 950927862,
+      "expected": 1
+    },
+    {
+      "packet_end": 18074177462713536683,
+      "scale": 2260606570,
+      "split": 3638777234792366365,
+      "split_scale": 2650330910,
+      "expected": 2
+    },
+    {
+      "packet_end": 7075955375441741537,
+      "scale": 1980069846,
+      "split": 13869694504613912533,
+      "split_scale": 3966779490,
+      "expected": 2
+    },
+    {
+      "packet_end": 10536935115322975214,
+      "scale": 611402117,
+      "split": 3472602666748486633,
+      "split_scale": 322182186,
+      "expected": 2
+    },
+    {
+      "packet_end": 820972786417399448,
+      "scale": 3763949307,
+      "split": 1127422407638324365,
+      "split_scale": 540213926,
+      "expected": 1
+    },
+    {
+      "packet_end": 402654748138600946,
+      "scale": 148846911,
+      "split": 16895154235770183406,
+      "split_scale": 3891736387,
+      "expected": 1
+    },
+    {
+      "packet_end": 380763146105158838,
+      "scale": 1336449829,
+      "split": 16050883930949740225,
+      "split_scale": 350948679,
+      "expected": 1
+    },
+    {
+      "packet_end": 16324942002973510740,
+      "scale": 3121022089,
+      "split": 13064437285849368143,
+      "split_scale": 4264657388,
+      "expected": 2
+    },
+    {
+      "packet_end": 6182941741770554893,
+      "scale": 587909762,
+      "split": 10274278872001077023,
+      "split_scale": 2020232888,
+      "expected": 2
+    },
+    {
+      "packet_end": 4309483354396651794,
+      "scale": 3610074095,
+      "split": 14845506220638278693,
+      "split_scale": 2238504667,
+      "expected": 1
+    },
+    {
+      "packet_end": 3985174187905842818,
+      "scale": 2904928527,
+      "split": 7634023575186118367,
+      "split_scale": 634586704,
+      "expected": 1
+    },
+    {
+      "packet_end": 6500673390494006541,
+      "scale": 1706194493,
+      "split": 6794844611486424544,
+      "split_scale": 1642645622,
+      "expected": 1
+    },
+    {
+      "packet_end": 12370716649986497213,
+      "scale": 1294892921,
+      "split": 5108761370747403332,
+      "split_scale": 2263432577,
+      "expected": 2
+    },
+    {
+      "packet_end": 11792054963879193750,
+      "scale": 3148140093,
+      "split": 4043359695031041294,
+      "split_scale": 645707180,
+      "expected": 1
+    },
+    {
+      "packet_end": 2409282935810675288,
+      "scale": 2641934196,
+      "split": 3211499494371428076,
+      "split_scale": 2741331873,
+      "expected": 1
+    },
+    {
+      "packet_end": 17280676575604522165,
+      "scale": 2313111762,
+      "split": 7589448906562967998,
+      "split_scale": 2404109721,
+      "expected": 2
+    },
+    {
+      "packet_end": 13240098217252919185,
+      "scale": 2015236754,
+      "split": 876443658757340974,
+      "split_scale": 4182850525,
+      "expected": 2
+    },
+    {
+      "packet_end": 13734959555678934394,
+      "scale": 1933376630,
+      "split": 8255409371407774857,
+      "split_scale": 3916258458,
+      "expected": 2
+    },
+    {
+      "packet_end": 14337364978062400552,
+      "scale": 3410756439,
+      "split": 2158730460549599346,
+      "split_scale": 1493940303,
+      "expected": 2
+    },
+    {
+      "packet_end": 8384947653942378786,
+      "scale": 3435776733,
+      "split": 8753938436850270199,
+      "split_scale": 1309894188,
+      "expected": 1
+    },
+    {
+      "packet_end": 1050769203129988487,
+      "scale": 4148970497,
+      "split": 7626537864722028265,
+      "split_scale": 3272339160,
+      "expected": 1
+    },
+    {
+      "packet_end": 4851829346312233009,
+      "scale": 2857134929,
+      "split": 9099451616163288244,
+      "split_scale": 549512252,
+      "expected": 1
+    },
+    {
+      "packet_end": 6856529878589164701,
+      "scale": 1398051583,
+      "split": 4043847556400611388,
+      "split_scale": 2417578248,
+      "expected": 2
+    },
+    {
+      "packet_end": 12368967491665236979,
+      "scale": 2914266748,
+      "split": 4317392930260324404,
+      "split_scale": 1918291220,
+      "expected": 2
+    },
+    {
+      "packet_end": 9114442186012901140,
+      "scale": 164040963,
+      "split": 5654397833062855340,
+      "split_scale": 4094177860,
+      "expected": 2
+    },
+    {
+      "packet_end": 9491195424483170942,
+      "scale": 3522490493,
+      "split": 12604942402844103539,
+      "split_scale": 2592435935,
+      "expected": 1
+    },
+    {
+      "packet_end": 4420298338807479084,
+      "scale": 1173493715,
+      "split": 220983105190582413,
+      "split_scale": 1171252061,
+      "expected": 2
+    },
+    {
+      "packet_end": 10630501217398754093,
+      "scale": 4104396571,
+      "split": 18386796870448360518,
+      "split_scale": 3262805436,
+      "expected": 1
+    },
+    {
+      "packet_end": 18295112766847761736,
+      "scale": 799314725,
+      "split": 2747421706750952062,
+      "split_scale": 3793688962,
+      "expected": 2
+    },
+    {
+      "packet_end": 17658941933335207373,
+      "scale": 62881522,
+      "split": 15663644602920404820,
+      "split_scale": 2260655527,
+      "expected": 2
+    },
+    {
+      "packet_end": 4672013880050262334,
+      "scale": 2254545653,
+      "split": 1263308973689597648,
+      "split_scale": 3682546133,
+      "expected": 2
+    },
+    {
+      "packet_end": 3521318423045585508,
+      "scale": 560492884,
+      "split": 5615776464753418168,
+      "split_scale": 224834391,
+      "expected": 1
+    },
+    {
+      "packet_end": 12912452897728049174,
+      "scale": 1800247921,
+      "split": 10246102530882591085,
+      "split_scale": 2260564442,
+      "expected": 2
+    },
+    {
+      "packet_end": 16356813772891782438,
+      "scale": 1136292436,
+      "split": 3512798112162649416,
+      "split_scale": 4077513051,
+      "expected": 2
+    },
+    {
+      "packet_end": 18385778051718474056,
+      "scale": 1187287178,
+      "split": 16023067897786932138,
+      "split_scale": 3427579438,
+      "expected": 2
+    },
+    {
+      "packet_end": 3550143584672508217,
+      "scale": 1127463885,
+      "split": 11702080898681376303,
+      "split_scale": 537755333,
+      "expected": 1
+    },
+    {
+      "packet_end": 11244648053179473347,
+      "scale": 2145358458,
+      "split": 3469217814419013029,
+      "split_scale": 549707808,
+      "expected": 1
+    },
+    {
+      "packet_end": 17786968081482355312,
+      "scale": 990563120,
+      "split": 16071739728958757466,
+      "split_scale": 1876577286,
+      "expected": 2
+    },
+    {
+      "packet_end": 13931260855201020040,
+      "scale": 3163652612,
+      "split": 15683280187641326902,
+      "split_scale": 3436372019,
+      "expected": 1
+    },
+    {
+      "packet_end": 10751796854928238211,
+      "scale": 1912562435,
+      "split": 17119467309314674948,
+      "split_scale": 586210934,
+      "expected": 1
+    },
+    {
+      "packet_end": 11036028610528747925,
+      "scale": 949357506,
+      "split": 15654946857161977627,
+      "split_scale": 2440582898,
+      "expected": 2
+    },
+    {
+      "packet_end": 12493128036575828546,
+      "scale": 2669346921,
+      "split": 13983947561578024366,
+      "split_scale": 4214385921,
+      "expected": 2
+    },
+    {
+      "packet_end": 13815183250497382546,
+      "scale": 1535629421,
+      "split": 12556381897371355629,
+      "split_scale": 1834087362,
+      "expected": 2
+    },
+    {
+      "packet_end": 1737678434945577723,
+      "scale": 3868372966,
+      "split": 14530096164392785894,
+      "split_scale": 2055578504,
+      "expected": 1
+    },
+    {
+      "packet_end": 7502112661943115152,
+      "scale": 255610882,
+      "split": 13897805328609957985,
+      "split_scale": 3408215024,
+      "expected": 2
+    },
+    {
+      "packet_end": 95764404013467369,
+      "scale": 1000041738,
+      "split": 7969298562145890049,
+      "split_scale": 3333178747,
+      "expected": 1
+    },
+    {
+      "packet_end": 12428737587294120979,
+      "scale": 1619192360,
+      "split": 6763272975730798734,
+      "split_scale": 3054134285,
+      "expected": 2
+    },
+    {
+      "packet_end": 18332307385533687876,
+      "scale": 2001259009,
+      "split": 13456445132217404009,
+      "split_scale": 400317910,
+      "expected": 1
+    },
+    {
+      "packet_end": 7780499027993397683,
+      "scale": 843162835,
+      "split": 400830057719905523,
+      "split_scale": 3296429223,
+      "expected": 2
+    },
+    {
+      "packet_end": 13982757930097962354,
+      "scale": 2584578060,
+      "split": 9417199825646603399,
+      "split_scale": 1676030290,
+      "expected": 1
+    },
+    {
+      "packet_end": 12623298745663521163,
+      "scale": 1943605340,
+      "split": 11773531106095486264,
+      "split_scale": 4033912751,
+      "expected": 2
+    },
+    {
+      "packet_end": 15650981541560843493,
+      "scale": 452518579,
+      "split": 9810811447321907933,
+      "split_scale": 1694035535,
+      "expected": 2
+    },
+    {
+      "packet_end": 2867445036029318776,
+      "scale": 781873439,
+      "split": 2872496867506703945,
+      "split_scale": 950282537,
+      "expected": 2
+    },
+    {
+      "packet_end": 3480117996867006352,
+      "scale": 1880148559,
+      "split": 4267158787724270221,
+      "split_scale": 1164432245,
+      "expected": 1
+    },
+    {
+      "packet_end": 17924050610652643765,
+      "scale": 2016193275,
+      "split": 9047168263679964349,
+      "split_scale": 1529172282,
+      "expected": 2
+    },
+    {
+      "packet_end": 13031198065282890141,
+      "scale": 963323876,
+      "split": 1013990953401877653,
+      "split_scale": 2202721746,
+      "expected": 2
+    },
+    {
+      "packet_end": 6254868096329943160,
+      "scale": 1711603192,
+      "split": 6900503471851354956,
+      "split_scale": 88767456,
+      "expected": 1
+    },
+    {
+      "packet_end": 15463755348279154631,
+      "scale": 3456359757,
+      "split": 8708988124272903833,
+      "split_scale": 1214358856,
+      "expected": 1
+    },
+    {
+      "packet_end": 13774492421132905676,
+      "scale": 1314810278,
+      "split": 13967475760337366241,
+      "split_scale": 2745567936,
+      "expected": 2
+    },
+    {
+      "packet_end": 17108762955962188102,
+      "scale": 387772967,
+      "split": 3050434166802634718,
+      "split_scale": 1359472242,
+      "expected": 2
+    },
+    {
+      "packet_end": 11271852412038208347,
+      "scale": 2275261514,
+      "split": 4364828941664574220,
+      "split_scale": 1911632995,
+      "expected": 2
+    },
+    {
+      "packet_end": 4917804726791002113,
+      "scale": 182685729,
+      "split": 251211819155401473,
+      "split_scale": 1463049867,
+      "expected": 2
+    },
+    {
+      "packet_end": 4050810557495988712,
+      "scale": 81792537,
+      "split": 15150646724465065603,
+      "split_scale": 2338284369,
+      "expected": 2
+    },
+    {
+      "packet_end": 13659495107046878311,
+      "scale": 2019712309,
+      "split": 11979761802359051051,
+      "split_scale": 1730021842,
+      "expected": 1
+    },
+    {
+      "packet_end": 7940207298679571792,
+      "scale": 1658564702,
+      "split": 5008008113904774724,
+      "split_scale": 570136870,
+      "expected": 1
+    },
+    {
+      "packet_end": 3861745821594601919,
+      "scale": 413521759,
+      "split": 18045202628515460997,
+      "split_scale": 2463825201,
+      "expected": 2
+    },
+    {
+      "packet_end": 1798013227020766481,
+      "scale": 3574815937,
+      "split": 11529635320685869739,
+      "split_scale": 1075225845,
+      "expected": 1
+    },
+    {
+      "packet_end": 2078186435032923187,
+      "scale": 862917627,
+      "split": 28548509507951627,
+      "split_scale": 973577046,
+      "expected": 2
+    },
+    {
+      "packet_end": 5298168117313338322,
+      "scale": 1479798344,
+      "split": 18015525978301291803,
+      "split_scale": 3089147903,
+      "expected": 1
+    },
+    {
+      "packet_end": 10924836429163598203,
+      "scale": 2642313772,
+      "split": 12942611398589934671,
+      "split_scale": 3595439568,
+      "expected": 2
+    },
+    {
+      "packet_end": 2354527528719982993,
+      "scale": 3915049031,
+      "split": 16117699286566932402,
+      "split_scale": 1039859745,
+      "expected": 1
+    },
+    {
+      "packet_end": 5983346414254775597,
+      "scale": 2124608046,
+      "split": 4300320938333342304,
+      "split_scale": 392348986,
+      "expected": 1
+    },
+    {
+      "packet_end": 11439922572287811660,
+      "scale": 1294508316,
+      "split": 878157420587270599,
+      "split_scale": 3552899571,
+      "expected": 2
+    },
+    {
+      "packet_end": 9886939914161885888,
+      "scale": 1300574291,
+      "split": 16880619552387602717,
+      "split_scale": 3742313973,
+      "expected": 2
+    },
+    {
+      "packet_end": 4960451103236433386,
+      "scale": 464317158,
+      "split": 2502056975164780074,
+      "split_scale": 730401549,
+      "expected": 2
+    },
+    {
+      "packet_end": 8191962572777055896,
+      "scale": 1021432981,
+      "split": 13693441112095801671,
+      "split_scale": 1904829524,
+      "expected": 2
+    },
+    {
+      "packet_end": 15847587719746877124,
+      "scale": 2517591460,
+      "split": 9199898133932993704,
+      "split_scale": 3239650731,
+      "expected": 2
+    },
+    {
+      "packet_end": 7184596474763025156,
+      "scale": 1321507631,
+      "split": 5208425250586536692,
+      "split_scale": 2884100187,
+      "expected": 2
+    },
+    {
+      "packet_end": 11023037104113794595,
+      "scale": 1236208685,
+      "split": 14486870478070105422,
+      "split_scale": 2286742854,
+      "expected": 2
+    },
+    {
+      "packet_end": 7472926486072850464,
+      "scale": 1231835873,
+      "split": 1989789373650707381,
+      "split_scale": 1565169979,
+      "expected": 2
+    },
+    {
+      "packet_end": 3230780914548748146,
+      "scale": 2692679716,
+      "split": 13564265962906910987,
+      "split_scale": 294511476,
+      "expected": 1
+    },
+    {
+      "packet_end": 6517655767676085882,
+      "scale": 1968305137,
+      "split": 15470924129091739966,
+      "split_scale": 461561128,
+      "expected": 1
+    },
+    {
+      "packet_end": 4695828726197539330,
+      "scale": 2351532244,
+      "split": 16426177910132544296,
+      "split_scale": 3317166360,
+      "expected": 1
+    },
+    {
+      "packet_end": 1528341724699896183,
+      "scale": 2197723550,
+      "split": 4404585446494165496,
+      "split_scale": 3092876685,
+      "expected": 1
+    },
+    {
+      "packet_end": 9440447275606143236,
+      "scale": 4265651442,
+      "split": 7117112866023298197,
+      "split_scale": 3668953842,
+      "expected": 2
+    },
+    {
+      "packet_end": 1983624536415097285,
+      "scale": 2629707527,
+      "split": 3794034389343184567,
+      "split_scale": 1769661661,
+      "expected": 1
+    },
+    {
+      "packet_end": 17950150062789568979,
+      "scale": 2108267317,
+      "split": 9550579331534223869,
+      "split_scale": 1067954321,
+      "expected": 1
+    },
+    {
+      "packet_end": 618966985798033193,
+      "scale": 2946391922,
+      "split": 12017288238570769307,
+      "split_scale": 2096339720,
+      "expected": 1
+    },
+    {
+      "packet_end": 4807869634546355848,
+      "scale": 2203057527,
+      "split": 3615044576654216221,
+      "split_scale": 4006243204,
+      "expected": 2
+    },
+    {
+      "packet_end": 4021587382022288999,
+      "scale": 1975467639,
+      "split": 7644259950433097836,
+      "split_scale": 2348113333,
+      "expected": 1
+    },
+    {
+      "packet_end": 2539772337356879660,
+      "scale": 608952822,
+      "split": 367326077539594413,
+      "split_scale": 3235871197,
+      "expected": 2
+    },
+    {
+      "packet_end": 4719503846454513840,
+      "scale": 1926318303,
+      "split": 5989077045707176903,
+      "split_scale": 8882649,
+      "expected": 1
+    },
+    {
+      "packet_end": 17339180730401135420,
+      "scale": 647011093,
+      "split": 3209425622980455455,
+      "split_scale": 364454649,
+      "expected": 2
+    },
+    {
+      "packet_end": 7059425391515001695,
+      "scale": 526274290,
+      "split": 14282362836515410955,
+      "split_scale": 2733356501,
+      "expected": 2
+    },
+    {
+      "packet_end": 3364329324457035295,
+      "scale": 1277596090,
+      "split": 9658932841289164027,
+      "split_scale": 3537091490,
+      "expected": 1
+    },
+    {
+      "packet_end": 2399454483117017058,
+      "scale": 3019572931,
+      "split": 14914305481111989197,
+      "split_scale": 107618354,
+      "expected": 1
+    },
+    {
+      "packet_end": 120285119954232828,
+      "scale": 1264410224,
+      "split": 298642319895666725,
+      "split_scale": 3953516465,
+      "expected": 2
+    },
+    {
+      "packet_end": 9087025627156552241,
+      "scale": 93761754,
+      "split": 9299641771896884567,
+      "split_scale": 3950246838,
+      "expected": 2
+    },
+    {
+      "packet_end": 2394321049351538458,
+      "scale": 2231512337,
+      "split": 13648607523404073102,
+      "split_scale": 1014054950,
+      "expected": 1
+    },
+    {
+      "packet_end": 16251330233579256722,
+      "scale": 4170713497,
+      "split": 9932026068828448013,
+      "split_scale": 755679421,
+      "expected": 1
+    },
+    {
+      "packet_end": 3474157590423425866,
+      "scale": 3138870591,
+      "split": 13120665994334312574,
+      "split_scale": 3806764748,
+      "expected": 1
+    },
+    {
+      "packet_end": 16906703431177698646,
+      "scale": 4056637615,
+      "split": 12027466126272189710,
+      "split_scale": 1379081859,
+      "expected": 1
+    },
+    {
+      "packet_end": 8756994094978418734,
+      "scale": 955939810,
+      "split": 12368301651942213781,
+      "split_scale": 4276776374,
+      "expected": 2
+    },
+    {
+      "packet_end": 4915666162482408304,
+      "scale": 3651441025,
+      "split": 7310197593426458742,
+      "split_scale": 3112862525,
+      "expected": 1
+    },
+    {
+      "packet_end": 3668945433175661640,
+      "scale": 3269426006,
+      "split": 16266719215260503768,
+      "split_scale": 900947014,
+      "expected": 1
+    },
+    {
+      "packet_end": 57264149866799474,
+      "scale": 1182716998,
+      "split": 3644495673428371312,
+      "split_scale": 653272913,
+      "expected": 1
+    },
+    {
+      "packet_end": 14677723510080154914,
+      "scale": 892886336,
+      "split": 15170420302587443770,
+      "split_scale": 496144263,
+      "expected": 1
+    },
+    {
+      "packet_end": 2882296678695009565,
+      "scale": 586803905,
+      "split": 14116319552478869971,
+      "split_scale": 389386499,
+      "expected": 1
+    },
+    {
+      "packet_end": 10259045957921510384,
+      "scale": 3501161640,
+      "split": 134922673589870273,
+      "split_scale": 505877713,
+      "expected": 2
+    },
+    {
+      "packet_end": 8775505193310737523,
+      "scale": 148488814,
+      "split": 15628516619403565220,
+      "split_scale": 4256774353,
+      "expected": 2
+    },
+    {
+      "packet_end": 8119950121284463397,
+      "scale": 666758232,
+      "split": 14354781740987647769,
+      "split_scale": 4126120004,
+      "expected": 2
+    },
+    {
+      "packet_end": 1809479687091763026,
+      "scale": 3347120979,
+      "split": 2696800341108164221,
+      "split_scale": 2797696887,
+      "expected": 1
+    },
+    {
+      "packet_end": 16885774235062608460,
+      "scale": 3334400003,
+      "split": 13444048722383508488,
+      "split_scale": 4005637764,
+      "expected": 2
+    },
+    {
+      "packet_end": 14948702960038549700,
+      "scale": 3408561774,
+      "split": 10026531715173456776,
+      "split_scale": 1064450820,
+      "expected": 1
+    },
+    {
+      "packet_end": 5685424521383279291,
+      "scale": 772748289,
+      "split": 6463014649124912122,
+      "split_scale": 1446300305,
+      "expected": 2
+    },
+    {
+      "packet_end": 13050326957241431171,
+      "scale": 2876250662,
+      "split": 6807917589622476427,
+      "split_scale": 2460656858,
+      "expected": 2
+    },
+    {
+      "packet_end": 8211778337876950053,
+      "scale": 2345721657,
+      "split": 11202258867624055802,
+      "split_scale": 4233575158,
+      "expected": 2
+    },
+    {
+      "packet_end": 6028966932665843668,
+      "scale": 3502772670,
+      "split": 10546297713706422244,
+      "split_scale": 1264176503,
+      "expected": 1
+    },
+    {
+      "packet_end": 4465967830389070309,
+      "scale": 1195757659,
+      "split": 10641668705735074848,
+      "split_scale": 3996603241,
+      "expected": 2
+    },
+    {
+      "packet_end": 15258921001037519364,
+      "scale": 194613043,
+      "split": 15768521592159144679,
+      "split_scale": 1140319088,
+      "expected": 2
+    },
+    {
+      "packet_end": 2364812181521821940,
+      "scale": 2455104099,
+      "split": 6354355551400103807,
+      "split_scale": 316238640,
+      "expected": 1
+    },
+    {
+      "packet_end": 10068661562303018672,
+      "scale": 3590498110,
+      "split": 6883531691907672036,
+      "split_scale": 4165089475,
+      "expected": 2
+    },
+    {
+      "packet_end": 5501160946958249027,
+      "scale": 2433259871,
+      "split": 14276074997289106524,
+      "split_scale": 1892098044,
+      "expected": 1
+    },
+    {
+      "packet_end": 17439746001454487486,
+      "scale": 452432993,
+      "split": 7172568958206461644,
+      "split_scale": 1941232244,
+      "expected": 2
+    },
+    {
+      "packet_end": 17614089876556670786,
+      "scale": 1764300228,
+      "split": 5585983417079071602,
+      "split_scale": 358779732,
+      "expected": 1
+    },
+    {
+      "packet_end": 18111207395355015641,
+      "scale": 899835062,
+      "split": 1904460982692202867,
+      "split_scale": 1859717438,
+      "expected": 2
+    },
+    {
+      "packet_end": 13588936044059648344,
+      "scale": 1031168157,
+      "split": 16166066334914712292,
+      "split_scale": 2122973686,
+      "expected": 2
+    },
+    {
+      "packet_end": 9117265802348553,
+      "scale": 1388329511,
+      "split": 80913395133156470,
+      "split_scale": 4064208422,
+      "expected": 1
+    },
+    {
+      "packet_end": 11201643333732610421,
+      "scale": 2249026211,
+      "split": 1567599547967510811,
+      "split_scale": 307567327,
+      "expected": 1
+    },
+    {
+      "packet_end": 15783745502202038876,
+      "scale": 1410220274,
+      "split": 6091687098974260588,
+      "split_scale": 166766940,
+      "expected": 1
+    },
+    {
+      "packet_end": 14380144808406018195,
+      "scale": 2031914667,
+      "split": 4159066750141250802,
+      "split_scale": 3805912061,
+      "expected": 2
+    },
+    {
+      "packet_end": 15476501403748040881,
+      "scale": 2737896322,
+      "split": 16670055781111954897,
+      "split_scale": 444655180,
+      "expected": 1
+    },
+    {
+      "packet_end": 13718005454239003465,
+      "scale": 367906446,
+      "split": 5484624660433862512,
+      "split_scale": 2243276781,
+      "expected": 2
+    },
+    {
+      "packet_end": 6299498082384300083,
+      "scale": 190329935,
+      "split": 11285836809732821353,
+      "split_scale": 1221658165,
+      "expected": 2
+    },
+    {
+      "packet_end": 14545275708707956434,
+      "scale": 3548776753,
+      "split": 8415568741987846919,
+      "split_scale": 135219768,
+      "expected": 1
+    },
+    {
+      "packet_end": 14390981975653853108,
+      "scale": 2588842097,
+      "split": 13202748025519944364,
+      "split_scale": 4157337631,
+      "expected": 2
+    },
+    {
+      "packet_end": 10048431630710672779,
+      "scale": 1022044321,
+      "split": 11089847667183510335,
+      "split_scale": 4169564847,
+      "expected": 2
+    },
+    {
+      "packet_end": 6266791998693148591,
+      "scale": 1866793474,
+      "split": 14491917558168928551,
+      "split_scale": 920796440,
+      "expected": 1
+    },
+    {
+      "packet_end": 15188001203044548732,
+      "scale": 1003978140,
+      "split": 5204593446862424510,
+      "split_scale": 1507615996,
+      "expected": 2
+    },
+    {
+      "packet_end": 5147348079783581353,
+      "scale": 3826168928,
+      "split": 523721012275254029,
+      "split_scale": 1499452418,
+      "expected": 2
+    },
+    {
+      "packet_end": 11119705535662948851,
+      "scale": 1990003918,
+      "split": 6557043343390531340,
+      "split_scale": 3143329899,
+      "expected": 2
+    },
+    {
+      "packet_end": 17129625015750282115,
+      "scale": 1473576321,
+      "split": 10089237645987391035,
+      "split_scale": 1662124575,
+      "expected": 2
+    },
+    {
+      "packet_end": 13250954910851930762,
+      "scale": 4068141726,
+      "split": 10066827809636956583,
+      "split_scale": 1553644028,
+      "expected": 1
+    },
+    {
+      "packet_end": 7030622637189644775,
+      "scale": 1406700131,
+      "split": 15422494461745236295,
+      "split_scale": 2366287608,
+      "expected": 1
+    },
+    {
+      "packet_end": 7518166802063873290,
+      "scale": 2796304713,
+      "split": 3515166224948740830,
+      "split_scale": 922218379,
+      "expected": 1
+    },
+    {
+      "packet_end": 16866816115320715668,
+      "scale": 3770834781,
+      "split": 8904187679511628316,
+      "split_scale": 2943626660,
+      "expected": 2
+    },
+    {
+      "packet_end": 5071170123692973110,
+      "scale": 2922925938,
+      "split": 12939069016615596165,
+      "split_scale": 1209728481,
+      "expected": 1
+    },
+    {
+      "packet_end": 5458218290428002945,
+      "scale": 2383327027,
+      "split": 15134189755633936334,
+      "split_scale": 3517349837,
+      "expected": 1
+    },
+    {
+      "packet_end": 17500236231386737769,
+      "scale": 1087104966,
+      "split": 910217828352518989,
+      "split_scale": 3384441276,
+      "expected": 2
+    },
+    {
+      "packet_end": 9202478465914031417,
+      "scale": 936863951,
+      "split": 14315607601702228331,
+      "split_scale": 563766619,
+      "expected": 1
+    },
+    {
+      "packet_end": 5945103935206060665,
+      "scale": 3327750047,
+      "split": 1668396460710003444,
+      "split_scale": 2824974669,
+      "expected": 2
+    },
+    {
+      "packet_end": 10286934574465632111,
+      "scale": 905810345,
+      "split": 17495971067991144687,
+      "split_scale": 2497446161,
+      "expected": 2
+    },
+    {
+      "packet_end": 16306904995006803765,
+      "scale": 599518872,
+      "split": 2133983460543850676,
+      "split_scale": 1580595211,
+      "expected": 2
+    },
+    {
+      "packet_end": 13649540646012171685,
+      "scale": 2640092388,
+      "split": 8247275588548922260,
+      "split_scale": 632354242,
+      "expected": 1
+    },
+    {
+      "packet_end": 3899975843525393065,
+      "scale": 3099149883,
+      "split": 16731720019888849932,
+      "split_scale": 763603030,
+      "expected": 1
+    },
+    {
+      "packet_end": 12399158287113929802,
+      "scale": 1544482448,
+      "split": 2848004154860231083,
+      "split_scale": 1725131490,
+      "expected": 2
+    },
+    {
+      "packet_end": 6676243393741170980,
+      "scale": 1861020268,
+      "split": 11665138959294660701,
+      "split_scale": 518150056,
+      "expected": 1
+    },
+    {
+      "packet_end": 12459733161203249573,
+      "scale": 376856854,
+      "split": 7486427601801657711,
+      "split_scale": 1293884518,
+      "expected": 2
+    },
+    {
+      "packet_end": 9171465323236911387,
+      "scale": 2255906025,
+      "split": 12173316741794748350,
+      "split_scale": 3757811251,
+      "expected": 2
+    },
+    {
+      "packet_end": 2310700814259834978,
+      "scale": 3527809598,
+      "split": 17193325540403325780,
+      "split_scale": 4172081317,
+      "expected": 1
+    },
+    {
+      "packet_end": 3710929225070688501,
+      "scale": 1161906071,
+      "split": 3373535287697147483,
+      "split_scale": 2714797370,
+      "expected": 2
+    },
+    {
+      "packet_end": 4430798644350376881,
+      "scale": 2329115272,
+      "split": 2517899551134160798,
+      "split_scale": 3781429918,
+      "expected": 2
+    },
+    {
+      "packet_end": 4816651092157288809,
+      "scale": 1328530677,
+      "split": 9472383374378200786,
+      "split_scale": 3280078770,
+      "expected": 2
+    },
+    {
+      "packet_end": 1816160254049871567,
+      "scale": 4175008009,
+      "split": 11089764343574762188,
+      "split_scale": 1904995953,
+      "expected": 1
+    },
+    {
+      "packet_end": 10224274987440394848,
+      "scale": 2864413280,
+      "split": 15870043898094639486,
+      "split_scale": 1217734162,
+      "expected": 1
+    },
+    {
+      "packet_end": 1309922219875259060,
+      "scale": 2793390906,
+      "split": 11666476636349010036,
+      "split_scale": 3023711305,
+      "expected": 1
+    },
+    {
+      "packet_end": 3996673557975561754,
+      "scale": 1714213920,
+      "split": 6529160246443041153,
+      "split_scale": 2974135316,
+      "expected": 2
+    },
+    {
+      "packet_end": 13056433818242740382,
+      "scale": 3352869026,
+      "split": 17994863223858682635,
+      "split_scale": 468256894,
+      "expected": 1
+    },
+    {
+      "packet_end": 5238617053366232280,
+      "scale": 2530037443,
+      "split": 5318765810373902434,
+      "split_scale": 734210575,
+      "expected": 1
+    },
+    {
+      "packet_end": 16904447951892410754,
+      "scale": 1393419341,
+      "split": 6390940805432766130,
+      "split_scale": 2765729357,
+      "expected": 2
+    },
+    {
+      "packet_end": 1643562656748314980,
+      "scale": 57404002,
+      "split": 13131059688123202251,
+      "split_scale": 2361587208,
+      "expected": 2
+    },
+    {
+      "packet_end": 1939365592116755016,
+      "scale": 2966908116,
+      "split": 15481206273681209894,
+      "split_scale": 1486038184,
+      "expected": 1
+    },
+    {
+      "packet_end": 7601490595010889298,
+      "scale": 2174321328,
+      "split": 17095745686680067797,
+      "split_scale": 4055245421,
+      "expected": 1
+    },
+    {
+      "packet_end": 11079772489151416111,
+      "scale": 2037870086,
+      "split": 1108948851258489279,
+      "split_scale": 1697495357,
+      "expected": 2
+    },
+    {
+      "packet_end": 3489607739297191141,
+      "scale": 2535005447,
+      "split": 6826464241519845015,
+      "split_scale": 3852779575,
+      "expected": 1
+    },
+    {
+      "packet_end": 14055958598373882765,
+      "scale": 830544361,
+      "split": 15948559662212774303,
+      "split_scale": 1527178519,
+      "expected": 2
+    },
+    {
+      "packet_end": 16278528263050405916,
+      "scale": 2204931962,
+      "split": 1537545619302477493,
+      "split_scale": 3723611431,
+      "expected": 2
+    },
+    {
+      "packet_end": 1227126503669095010,
+      "scale": 3724454252,
+      "split": 17728242964410883401,
+      "split_scale": 1966849739,
+      "expected": 1
+    },
+    {
+      "packet_end": 6534623069479076394,
+      "scale": 1850561059,
+      "split": 2986274535272199790,
+      "split_scale": 1616452849,
+      "expected": 2
+    },
+    {
+      "packet_end": 229887158074981882,
+      "scale": 2733118882,
+      "split": 493297215868364759,
+      "split_scale": 3705615256,
+      "expected": 1
+    },
+    {
+      "packet_end": 12170226111268149840,
+      "scale": 3325793075,
+      "split": 18280312160964341300,
+      "split_scale": 4067691969,
+      "expected": 1
+    },
+    {
+      "packet_end": 4034612720308958783,
+      "scale": 2855415632,
+      "split": 14565576520625695295,
+      "split_scale": 2746571948,
+      "expected": 1
+    },
+    {
+      "packet_end": 768053583512779096,
+      "scale": 1747459423,
+      "split": 2210941651865164168,
+      "split_scale": 2963531100,
+      "expected": 1
+    },
+    {
+      "packet_end": 2927221695349958739,
+      "scale": 1590435416,
+      "split": 11059573034948193293,
+      "split_scale": 3859543312,
+      "expected": 1
+    },
+    {
+      "packet_end": 6491158404354864264,
+      "scale": 339806215,
+      "split": 18005503558537206207,
+      "split_scale": 3665349842,
+      "expected": 2
+    },
+    {
+      "packet_end": 1529678942942373331,
+      "scale": 1466012929,
+      "split": 9881883326312001115,
+      "split_scale": 2790559193,
+      "expected": 1
+    },
+    {
+      "packet_end": 9819677888874649374,
+      "scale": 715054817,
+      "split": 8331003518558473715,
+      "split_scale": 1849596992,
+      "expected": 2
+    },
+    {
+      "packet_end": 595164796462415182,
+      "scale": 2811138315,
+      "split": 1507260340998202517,
+      "split_scale": 2378926863,
+      "expected": 1
+    },
+    {
+      "packet_end": 90476237809911164,
+      "scale": 1996606789,
+      "split": 16744276381040387430,
+      "split_scale": 1383008107,
+      "expected": 1
+    },
+    {
+      "packet_end": 4730311932647496824,
+      "scale": 998372896,
+      "split": 4842704828277924258,
+      "split_scale": 852240974,
+      "expected": 1
+    },
+    {
+      "packet_end": 1444024719322974265,
+      "scale": 3817934674,
+      "split": 16307662820639735155,
+      "split_scale": 1697675084,
+      "expected": 1
+    },
+    {
+      "packet_end": 4314870444473334173,
+      "scale": 120033661,
+      "split": 735512794332991869,
+      "split_scale": 4071098758,
+      "expected": 2
+    },
+    {
+      "packet_end": 10344183841554255484,
+      "scale": 1903321013,
+      "split": 6515215487837993377,
+      "split_scale": 1959290312,
+      "expected": 2
+    },
+    {
+      "packet_end": 3806337995316317308,
+      "scale": 1660289531,
+      "split": 18353389308107511393,
+      "split_scale": 4069942137,
+      "expected": 1
+    },
+    {
+      "packet_end": 7571120689265040215,
+      "scale": 194628736,
+      "split": 14373130420309830259,
+      "split_scale": 3894656799,
+      "expected": 2
+    },
+    {
+      "packet_end": 11011623522365882236,
+      "scale": 1981051703,
+      "split": 5642255263028887360,
+      "split_scale": 1559305566,
+      "expected": 2
+    },
+    {
+      "packet_end": 17993511127472765400,
+      "scale": 757456469,
+      "split": 1712976715121258722,
+      "split_scale": 1878896131,
+      "expected": 2
+    },
+    {
+      "packet_end": 4123694107502760813,
+      "scale": 1000575697,
+      "split": 10897132708855838368,
+      "split_scale": 1463861026,
+      "expected": 1
+    },
+    {
+      "packet_end": 5501707429432972918,
+      "scale": 2073588256,
+      "split": 113111889600051149,
+      "split_scale": 1093968044,
+      "expected": 2
+    },
+    {
+      "packet_end": 5593984506919212158,
+      "scale": 2019715925,
+      "split": 3829945144795894590,
+      "split_scale": 1262555417,
+      "expected": 1
+    },
+    {
+      "packet_end": 9743724592932104974,
+      "scale": 599144175,
+      "split": 9143287234993639972,
+      "split_scale": 365839145,
+      "expected": 1
+    },
+    {
+      "packet_end": 4472144995642984358,
+      "scale": 2367923789,
+      "split": 3139677453572008404,
+      "split_scale": 448909206,
+      "expected": 1
+    },
+    {
+      "packet_end": 2101932919373490667,
+      "scale": 3297401734,
+      "split": 5493329067358747311,
+      "split_scale": 2189755615,
+      "expected": 1
+    },
+    {
+      "packet_end": 6760288715438751239,
+      "scale": 2530481585,
+      "split": 10121904103211475752,
+      "split_scale": 1502436501,
+      "expected": 1
+    },
+    {
+      "packet_end": 6727040836651631873,
+      "scale": 4091730217,
+      "split": 17241249847475606588,
+      "split_scale": 1399215507,
+      "expected": 1
+    },
+    {
+      "packet_end": 16070515491317600248,
+      "scale": 1329055676,
+      "split": 5236645551751761298,
+      "split_scale": 969374559,
+      "expected": 2
+    },
+    {
+      "packet_end": 9498920524819375060,
+      "scale": 3490355274,
+      "split": 10770091758886415362,
+      "split_scale": 3150053192,
+      "expected": 1
+    },
+    {
+      "packet_end": 14834795927477736948,
+      "scale": 4079418839,
+      "split": 16601509048628642703,
+      "split_scale": 4177588595,
+      "expected": 1
+    },
+    {
+      "packet_end": 16463431382177858233,
+      "scale": 478065127,
+      "split": 15928378565301073171,
+      "split_scale": 161766811,
+      "expected": 1
+    },
+    {
+      "packet_end": 3396942558080281947,
+      "scale": 1334777833,
+      "split": 8597323786974865746,
+      "split_scale": 1212985122,
+      "expected": 1
+    },
+    {
+      "packet_end": 4149624631237059311,
+      "scale": 1445495840,
+      "split": 2640635339648957801,
+      "split_scale": 3570840394,
+      "expected": 2
+    },
+    {
+      "packet_end": 10511803774565652110,
+      "scale": 2239924296,
+      "split": 17651373774812683396,
+      "split_scale": 947058588,
+      "expected": 1
+    },
+    {
+      "packet_end": 18225367016406839202,
+      "scale": 1607263696,
+      "split": 8700057095981742856,
+      "split_scale": 3315270221,
+      "expected": 2
+    },
+    {
+      "packet_end": 4362244521214028096,
+      "scale": 2448640533,
+      "split": 12409919254769436794,
+      "split_scale": 2166632703,
+      "expected": 1
+    },
+    {
+      "packet_end": 11817816205141094,
+      "scale": 52913565,
+      "split": 7439287152875830210,
+      "split_scale": 3556397300,
+      "expected": 1
+    },
+    {
+      "packet_end": 11159313168175149412,
+      "scale": 4082123255,
+      "split": 4877390446628567598,
+      "split_scale": 2972708188,
+      "expected": 2
+    },
+    {
+      "packet_end": 6059219924435369410,
+      "scale": 3254961237,
+      "split": 2408839643280997044,
+      "split_scale": 214588554,
+      "expected": 1
+    },
+    {
+      "packet_end": 15977744430315590830,
+      "scale": 2209683028,
+      "split": 4041083753559129222,
+      "split_scale": 41903374,
+      "expected": 1
+    },
+    {
+      "packet_end": 10899147760269535205,
+      "scale": 1229664793,
+      "split": 3188883353061181898,
+      "split_scale": 1194676299,
+      "expected": 2
+    },
+    {
+      "packet_end": 14281447933099585605,
+      "scale": 28103682,
+      "split": 2201092901090923542,
+      "split_scale": 1152390758,
+      "expected": 2
+    },
+    {
+      "packet_end": 7015699666098895334,
+      "scale": 2684026873,
+      "split": 11617065810025487489,
+      "split_scale": 846264359,
+      "expected": 1
+    },
+    {
+      "packet_end": 16671963522819586891,
+      "scale": 576055515,
+      "split": 734821867904890138,
+      "split_scale": 48031687,
+      "expected": 2
+    },
+    {
+      "packet_end": 4117545784703424829,
+      "scale": 1399147735,
+      "split": 15370705708970121276,
+      "split_scale": 3040282970,
+      "expected": 1
+    },
+    {
+      "packet_end": 16985899789300889110,
+      "scale": 2118145062,
+      "split": 18330502179439450239,
+      "split_scale": 1164944254,
+      "expected": 1
+    },
+    {
+      "packet_end": 13540916732726101321,
+      "scale": 586499851,
+      "split": 2264312151787761669,
+      "split_scale": 916380692,
+      "expected": 2
+    },
+    {
+      "packet_end": 6846293006890634821,
+      "scale": 2945224073,
+      "split": 18095077729625084318,
+      "split_scale": 617343170,
+      "expected": 1
+    },
+    {
+      "packet_end": 16950744758278473476,
+      "scale": 1035493335,
+      "split": 9724612079313720072,
+      "split_scale": 1734685767,
+      "expected": 2
+    },
+    {
+      "packet_end": 4963213767497007543,
+      "scale": 4030523508,
+      "split": 4018539670328641309,
+      "split_scale": 977234658,
+      "expected": 1
+    },
+    {
+      "packet_end": 11218470608415362836,
+      "scale": 1433426710,
+      "split": 9650367312092036666,
+      "split_scale": 3771924053,
+      "expected": 2
+    },
+    {
+      "packet_end": 9357921636919533416,
+      "scale": 3278552480,
+      "split": 13707627328462962621,
+      "split_scale": 1512580270,
+      "expected": 1
+    },
+    {
+      "packet_end": 2266194156444127492,
+      "scale": 844696477,
+      "split": 25405350584236486,
+      "split_scale": 2705323554,
+      "expected": 2
+    },
+    {
+      "packet_end": 4503302049196066855,
+      "scale": 2680471849,
+      "split": 14430421717369486278,
+      "split_scale": 1669546854,
+      "expected": 1
+    },
+    {
+      "packet_end": 13591068102493254069,
+      "scale": 699598645,
+      "split": 55432478556089585,
+      "split_scale": 284485927,
+      "expected": 2
+    },
+    {
+      "packet_end": 14943188046887292996,
+      "scale": 2559370813,
+      "split": 2156630486922383975,
+      "split_scale": 4062424365,
+      "expected": 2
+    },
+    {
+      "packet_end": 14673491487229393750,
+      "scale": 1434559118,
+      "split": 6297989722256563438,
+      "split_scale": 2943086189,
+      "expected": 2
+    },
+    {
+      "packet_end": 17261569997516621061,
+      "scale": 3435459469,
+      "split": 15949767542052272996,
+      "split_scale": 2758311568,
+      "expected": 1
+    },
+    {
+      "packet_end": 3870330022808448313,
+      "scale": 3689046254,
+      "split": 2986916742919329756,
+      "split_scale": 1222792724,
+      "expected": 1
+    },
+    {
+      "packet_end": 3673326229483392334,
+      "scale": 2169952836,
+      "split": 269754655843386726,
+      "split_scale": 3412497087,
+      "expected": 2
+    },
+    {
+      "packet_end": 309799435037856266,
+      "scale": 535306163,
+      "split": 17998922309600324951,
+      "split_scale": 2332107933,
+      "expected": 1
+    },
+    {
+      "packet_end": 200060557298364196,
+      "scale": 1423109549,
+      "split": 12049568082634835109,
+      "split_scale": 2656381392,
+      "expected": 1
+    },
+    {
+      "packet_end": 13189829620589556894,
+      "scale": 502350975,
+      "split": 11212424133313157070,
+      "split_scale": 3427171098,
+      "expected": 2
+    },
+    {
+      "packet_end": 17572800912076898153,
+      "scale": 2599128398,
+      "split": 8469744001066806793,
+      "split_scale": 1453951659,
+      "expected": 2
+    },
+    {
+      "packet_end": 17316319392712315594,
+      "scale": 881849277,
+      "split": 16404750766438144895,
+      "split_scale": 3386681500,
+      "expected": 2
+    },
+    {
+      "packet_end": 3316928695301226589,
+      "scale": 1735452732,
+      "split": 11962261334203624689,
+      "split_scale": 4260784061,
+      "expected": 1
+    },
+    {
+      "packet_end": 4973220006381869158,
+      "scale": 886316031,
+      "split": 13096875196830628509,
+      "split_scale": 2180545795,
+      "expected": 1
+    },
+    {
+      "packet_end": 7384853028689199499,
+      "scale": 1752887819,
+      "split": 10412272587621192751,
+      "split_scale": 1157706139,
+      "expected": 1
+    },
+    {
+      "packet_end": 11649639410798451536,
+      "scale": 3501352133,
+      "split": 5618763811926088177,
+      "split_scale": 3376938419,
+      "expected": 2
+    },
+    {
+      "packet_end": 2300139783283433634,
+      "scale": 3543103554,
+      "split": 4886813604869049294,
+      "split_scale": 1548998237,
+      "expected": 1
+    },
+    {
+      "packet_end": 16003179129056884044,
+      "scale": 4068194640,
+      "split": 5064380472366603484,
+      "split_scale": 1190037226,
+      "expected": 1
+    },
+    {
+      "packet_end": 17072352219267702564,
+      "scale": 2230818420,
+      "split": 5555789612001193378,
+      "split_scale": 932727958,
+      "expected": 2
+    },
+    {
+      "packet_end": 10062729773910056846,
+      "scale": 913715460,
+      "split": 314473854850777916,
+      "split_scale": 3364422021,
+      "expected": 2
+    },
+    {
+      "packet_end": 18367313706416056016,
+      "scale": 2974147023,
+      "split": 8492579546435797882,
+      "split_scale": 732150887,
+      "expected": 1
+    },
+    {
+      "packet_end": 7854292489920811866,
+      "scale": 806372446,
+      "split": 6919738973981043796,
+      "split_scale": 2943582409,
+      "expected": 2
+    },
+    {
+      "packet_end": 35926956323886253,
+      "scale": 542725040,
+      "split": 16564897759262714610,
+      "split_scale": 1475167016,
+      "expected": 1
+    },
+    {
+      "packet_end": 11904265734010236694,
+      "scale": 2918818042,
+      "split": 16275445444914674654,
+      "split_scale": 2849446786,
+      "expected": 1
+    },
+    {
+      "packet_end": 15493747025330160258,
+      "scale": 2708217789,
+      "split": 5854760953113287522,
+      "split_scale": 2267346822,
+      "expected": 2
+    },
+    {
+      "packet_end": 3865556422932374498,
+      "scale": 1228050187,
+      "split": 8857239578150057201,
+      "split_scale": 3733737805,
+      "expected": 2
+    },
+    {
+      "packet_end": 6740242240885309026,
+      "scale": 3522214182,
+      "split": 16207501978792446560,
+      "split_scale": 1646843878,
+      "expected": 1
+    },
+    {
+      "packet_end": 16442225861881014485,
+      "scale": 1484029617,
+      "split": 17769973293731830419,
+      "split_scale": 2433249472,
+      "expected": 2
+    },
+    {
+      "packet_end": 7048667769609931733,
+      "scale": 2396350716,
+      "split": 15075834755455898152,
+      "split_scale": 2368558451,
+      "expected": 1
+    },
+    {
+      "packet_end": 15501215233013319257,
+      "scale": 4287900926,
+      "split": 9190499084346453956,
+      "split_scale": 163178813,
+      "expected": 1
+    },
+    {
+      "packet_end": 12525480905242509104,
+      "scale": 2732866044,
+      "split": 17993452894933026275,
+      "split_scale": 2339379561,
+      "expected": 1
+    },
+    {
+      "packet_end": 595339766543940923,
+      "scale": 3779851301,
+      "split": 12750328735863131206,
+      "split_scale": 3436298425,
+      "expected": 1
+    },
+    {
+      "packet_end": 8611815509451111333,
+      "scale": 1026903301,
+      "split": 2072935957025097184,
+      "split_scale": 4033707539,
+      "expected": 2
+    },
+    {
+      "packet_end": 104086401574510698,
+      "scale": 96834723,
+      "split": 17951877497490045814,
+      "split_scale": 408448064,
+      "expected": 1
+    },
+    {
+      "packet_end": 5191687126042121057,
+      "scale": 527898009,
+      "split": 14824864140728344739,
+      "split_scale": 1319339665,
+      "expected": 1
+    },
+    {
+      "packet_end": 13300593676370189062,
+      "scale": 4260018613,
+      "split": 15785198082436844455,
+      "split_scale": 1016597363,
+      "expected": 1
+    },
+    {
+      "packet_end": 14222690888618820023,
+      "scale": 2781962818,
+      "split": 13263630499848623684,
+      "split_scale": 984428518,
+      "expected": 1
+    },
+    {
+      "packet_end": 3148220505632940284,
+      "scale": 2506648230,
+      "split": 10263821097981105191,
+      "split_scale": 400466445,
+      "expected": 1
+    },
+    {
+      "packet_end": 12299266709301472141,
+      "scale": 974269943,
+      "split": 1395850290505902179,
+      "split_scale": 3608260647,
+      "expected": 2
+    },
+    {
+      "packet_end": 18060050483927417375,
+      "scale": 704713398,
+      "split": 1311731905696162591,
+      "split_scale": 2970956884,
+      "expected": 2
+    },
+    {
+      "packet_end": 8685255787542161187,
+      "scale": 450192991,
+      "split": 8699838511315312106,
+      "split_scale": 2625674846,
+      "expected": 2
+    },
+    {
+      "packet_end": 4789221692599369008,
+      "scale": 275185429,
+      "split": 4287258168876756122,
+      "split_scale": 1941877855,
+      "expected": 2
+    },
+    {
+      "packet_end": 17085252343180277739,
+      "scale": 4065294832,
+      "split": 17867785352835859601,
+      "split_scale": 2650734536,
+      "expected": 1
+    },
+    {
+      "packet_end": 9550321346389388358,
+      "scale": 2893948767,
+      "split": 17036686843735129188,
+      "split_scale": 133749429,
+      "expected": 1
+    },
+    {
+      "packet_end": 9427233934847989511,
+      "scale": 3468253617,
+      "split": 4165609294364436219,
+      "split_scale": 159867363,
+      "expected": 1
+    },
+    {
+      "packet_end": 586835078962793701,
+      "scale": 2248744645,
+      "split": 17672147255192221800,
+      "split_scale": 2458075152,
+      "expected": 1
+    },
+    {
+      "packet_end": 5938723331379073919,
+      "scale": 959229776,
+      "split": 15359811999387705194,
+      "split_scale": 2961622800,
+      "expected": 2
+    },
+    {
+      "packet_end": 14073713313007213529,
+      "scale": 2803954418,
+      "split": 1151587357789953753,
+      "split_scale": 1135450034,
+      "expected": 2
+    },
+    {
+      "packet_end": 14665029473124033381,
+      "scale": 2657670716,
+      "split": 11457039342743601778,
+      "split_scale": 408732423,
+      "expected": 1
+    },
+    {
+      "packet_end": 2191505158306740371,
+      "scale": 1804166111,
+      "split": 16380237899182683178,
+      "split_scale": 2864954255,
+      "expected": 1
+    },
+    {
+      "packet_end": 16078004763578508479,
+      "scale": 3906545653,
+      "split": 244669456695484838,
+      "split_scale": 1711199295,
+      "expected": 2
+    },
+    {
+      "packet_end": 17423514502852052914,
+      "scale": 1540634917,
+      "split": 13379570950748769985,
+      "split_scale": 1123536819,
+      "expected": 1
+    },
+    {
+      "packet_end": 18286717173587398836,
+      "scale": 2124772049,
+      "split": 7988982484121320673,
+      "split_scale": 3793087229,
+      "expected": 2
+    },
+    {
+      "packet_end": 10566954726908794490,
+      "scale": 3908785733,
+      "split": 13862240275274690780,
+      "split_scale": 1666165042,
+      "expected": 1
+    },
+    {
+      "packet_end": 4241845614124254839,
+      "scale": 2635886962,
+      "split": 11443731726658565350,
+      "split_scale": 843645982,
+      "expected": 1
+    },
+    {
+      "packet_end": 12277650289380498642,
+      "scale": 2703523261,
+      "split": 12056460556784242754,
+      "split_scale": 2365647355,
+      "expected": 1
+    },
+    {
+      "packet_end": 4122220519878873801,
+      "scale": 4215358094,
+      "split": 13301765344650458380,
+      "split_scale": 3863169778,
+      "expected": 1
+    },
+    {
+      "packet_end": 799948946014036144,
+      "scale": 4113947478,
+      "split": 6577996379350513106,
+      "split_scale": 3339875384,
+      "expected": 1
+    },
+    {
+      "packet_end": 1578859704471717352,
+      "scale": 3748742040,
+      "split": 12155496612097122796,
+      "split_scale": 3505237805,
+      "expected": 1
+    },
+    {
+      "packet_end": 9665260791457177715,
+      "scale": 3671932736,
+      "split": 10765701924639563171,
+      "split_scale": 1370129142,
+      "expected": 1
+    },
+    {
+      "packet_end": 11134002618417874919,
+      "scale": 208332591,
+      "split": 5163251678260939998,
+      "split_scale": 3414212867,
+      "expected": 2
+    },
+    {
+      "packet_end": 7705532758829662894,
+      "scale": 1745756265,
+      "split": 6040213245915959251,
+      "split_scale": 3629352586,
+      "expected": 2
+    },
+    {
+      "packet_end": 30402639726507889,
+      "scale": 1960320374,
+      "split": 6645043374884573405,
+      "split_scale": 4280923960,
+      "expected": 1
+    },
+    {
+      "packet_end": 9430374255125771181,
+      "scale": 2648918993,
+      "split": 13069267429687476800,
+      "split_scale": 1192412984,
+      "expected": 1
+    },
+    {
+      "packet_end": 4750831658032703621,
+      "scale": 2591446046,
+      "split": 770797083886238355,
+      "split_scale": 3704309367,
+      "expected": 2
+    },
+    {
+      "packet_end": 11487862973195300460,
+      "scale": 1139374539,
+      "split": 9102736179481517147,
+      "split_scale": 3221361474,
+      "expected": 2
+    },
+    {
+      "packet_end": 13826838776963739877,
+      "scale": 2369831444,
+      "split": 2832429970105328053,
+      "split_scale": 1976365001,
+      "expected": 2
+    },
+    {
+      "packet_end": 4670573016504880261,
+      "scale": 215387547,
+      "split": 16090617694140422073,
+      "split_scale": 1462203755,
+      "expected": 2
+    },
+    {
+      "packet_end": 8002866103281872330,
+      "scale": 1011152310,
+      "split": 4649196597307099073,
+      "split_scale": 1665888581,
+      "expected": 2
+    },
+    {
+      "packet_end": 9035216637478872983,
+      "scale": 4077131451,
+      "split": 16554555020125777894,
+      "split_scale": 1084454780,
+      "expected": 1
+    },
+    {
+      "packet_end": 2079908947701213011,
+      "scale": 1068827432,
+      "split": 1930651724945694842,
+      "split_scale": 3385010046,
+      "expected": 2
+    },
+    {
+      "packet_end": 9268490007780403568,
+      "scale": 4209953857,
+      "split": 5984380451821854272,
+      "split_scale": 4279205839,
+      "expected": 2
+    },
+    {
+      "packet_end": 4197533223831638315,
+      "scale": 2777402925,
+      "split": 13993621173682392431,
+      "split_scale": 427009021,
+      "expected": 1
+    },
+    {
+      "packet_end": 7125716845028747774,
+      "scale": 435218388,
+      "split": 9131905966387548041,
+      "split_scale": 4152833718,
+      "expected": 2
+    },
+    {
+      "packet_end": 279724893615206454,
+      "scale": 1037163921,
+      "split": 12572170318706890964,
+      "split_scale": 2347566171,
+      "expected": 1
+    },
+    {
+      "packet_end": 4918413710305720056,
+      "scale": 2800737434,
+      "split": 7806645086675767964,
+      "split_scale": 2774113134,
+      "expected": 1
+    },
+    {
+      "packet_end": 3053740336342299951,
+      "scale": 3492810749,
+      "split": 10322193032277039308,
+      "split_scale": 2135273094,
+      "expected": 1
+    },
+    {
+      "packet_end": 16247903895914650029,
+      "scale": 4173624207,
+      "split": 12710957407495959898,
+      "split_scale": 1457933238,
+      "expected": 1
+    },
+    {
+      "packet_end": 7114438358155040010,
+      "scale": 2743322198,
+      "split": 2928008273240027324,
+      "split_scale": 1652983990,
+      "expected": 2
+    },
+    {
+      "packet_end": 4222568092669747913,
+      "scale": 1304781739,
+      "split": 16617404407579738608,
+      "split_scale": 3634628397,
+      "expected": 1
+    },
+    {
+      "packet_end": 14098137738008415759,
+      "scale": 2560832781,
+      "split": 17192242320642126518,
+      "split_scale": 57229834,
+      "expected": 1
+    },
+    {
+      "packet_end": 2040861945254028254,
+      "scale": 3790858202,
+      "split": 6038036035218686434,
+      "split_scale": 100063361,
+      "expected": 1
+    },
+    {
+      "packet_end": 15073875463782166957,
+      "scale": 1180841950,
+      "split": 10506710916227167918,
+      "split_scale": 3854655549,
+      "expected": 2
+    },
+    {
+      "packet_end": 16075604411662751598,
+      "scale": 4251714148,
+      "split": 15770156112074077958,
+      "split_scale": 449376115,
+      "expected": 1
+    },
+    {
+      "packet_end": 1447512909095539064,
+      "scale": 2068553476,
+      "split": 15234801189459300884,
+      "split_scale": 3747554497,
+      "expected": 1
+    },
+    {
+      "packet_end": 4209868348037895061,
+      "scale": 899888698,
+      "split": 9989112511770568973,
+      "split_scale": 2389983703,
+      "expected": 2
+    },
+    {
+      "packet_end": 15277172652280049948,
+      "scale": 3224046984,
+      "split": 14964321781541117212,
+      "split_scale": 772597614,
+      "expected": 1
+    },
+    {
+      "packet_end": 16645394790855877587,
+      "scale": 367659097,
+      "split": 14753705895410389096,
+      "split_scale": 2599029107,
+      "expected": 2
+    },
+    {
+      "packet_end": 18170710415508152528,
+      "scale": 1592075938,
+      "split": 10150351589976446436,
+      "split_scale": 1190295623,
+      "expected": 2
+    },
+    {
+      "packet_end": 9279550223123956481,
+      "scale": 3826768289,
+      "split": 8098774002477694000,
+      "split_scale": 3636685867,
+      "expected": 2
+    },
+    {
+      "packet_end": 2275735125665995352,
+      "scale": 3484079866,
+      "split": 1929232246975763951,
+      "split_scale": 2832379222,
+      "expected": 1
+    },
+    {
+      "packet_end": 16503723221728977005,
+      "scale": 2861973127,
+      "split": 2714643127845410000,
+      "split_scale": 4035023188,
+      "expected": 2
+    },
+    {
+      "packet_end": 4880270789588027774,
+      "scale": 2232757713,
+      "split": 546817677164992133,
+      "split_scale": 3522754430,
+      "expected": 2
+    },
+    {
+      "packet_end": 7719770912443792544,
+      "scale": 1986909551,
+      "split": 14951018070115448002,
+      "split_scale": 1365101004,
+      "expected": 1
+    },
+    {
+      "packet_end": 12250520212131538076,
+      "scale": 3871866525,
+      "split": 9223755325217766866,
+      "split_scale": 2504271398,
+      "expected": 1
+    },
+    {
+      "packet_end": 2401463974891241827,
+      "scale": 2103886510,
+      "split": 1300650215515915629,
+      "split_scale": 2362226537,
+      "expected": 2
+    },
+    {
+      "packet_end": 15377023642013037524,
+      "scale": 3712995624,
+      "split": 6281548439973663593,
+      "split_scale": 706706597,
+      "expected": 1
+    },
+    {
+      "packet_end": 4312457662998815801,
+      "scale": 1154340064,
+      "split": 1294576474889357765,
+      "split_scale": 3336557385,
+      "expected": 2
+    },
+    {
+      "packet_end": 11620257736796828198,
+      "scale": 571029152,
+      "split": 10783499853346401454,
+      "split_scale": 2146323821,
+      "expected": 2
+    },
+    {
+      "packet_end": 9901666412594934181,
+      "scale": 3615215403,
+      "split": 4651782669362030503,
+      "split_scale": 3589652961,
+      "expected": 2
+    },
+    {
+      "packet_end": 5833115074794359835,
+      "scale": 4293226321,
+      "split": 17793474675538790816,
+      "split_scale": 1219026630,
+      "expected": 1
+    },
+    {
+      "packet_end": 13965274277914821344,
+      "scale": 2372650016,
+      "split": 9463285882711381784,
+      "split_scale": 79955896,
+      "expected": 1
+    },
+    {
+      "packet_end": 4246787318945063989,
+      "scale": 3064205719,
+      "split": 4979157754385163194,
+      "split_scale": 1991662398,
+      "expected": 1
+    },
+    {
+      "packet_end": 10599885531683446214,
+      "scale": 1492124960,
+      "split": 13110310308028917069,
+      "split_scale": 2588415319,
+      "expected": 2
+    },
+    {
+      "packet_end": 3326287299578606935,
+      "scale": 2543358720,
+      "split": 6710887055349871012,
+      "split_scale": 3822400146,
+      "expected": 1
+    },
+    {
+      "packet_end": 14708398275230705526,
+      "scale": 1136045425,
+      "split": 5669103998292366705,
+      "split_scale": 1634406505,
+      "expected": 2
+    },
+    {
+      "packet_end": 6841105953444977130,
+      "scale": 3859415221,
+      "split": 1464822271907448056,
+      "split_scale": 3756444046,
+      "expected": 2
+    },
+    {
+      "packet_end": 16772973998875943962,
+      "scale": 1295408140,
+      "split": 2728021931911369594,
+      "split_scale": 4146223826,
+      "expected": 2
+    },
+    {
+      "packet_end": 8310733715788443148,
+      "scale": 3064385651,
+      "split": 1395458483985952617,
+      "split_scale": 2980623088,
+      "expected": 2
+    },
+    {
+      "packet_end": 15245467957855991077,
+      "scale": 2519949461,
+      "split": 11294585826185051896,
+      "split_scale": 1996053350,
+      "expected": 2
+    },
+    {
+      "packet_end": 12238450281610187907,
+      "scale": 1642369099,
+      "split": 12338146219326550248,
+      "split_scale": 2591616762,
+      "expected": 2
+    },
+    {
+      "packet_end": 9948133853528687641,
+      "scale": 3192048435,
+      "split": 4398488755738347561,
+      "split_scale": 426772580,
+      "expected": 1
+    },
+    {
+      "packet_end": 3576231427680796548,
+      "scale": 2511900835,
+      "split": 11493629270466409563,
+      "split_scale": 2075879615,
+      "expected": 1
+    },
+    {
+      "packet_end": 3663904644344986645,
+      "scale": 1447166592,
+      "split": 209582881797456447,
+      "split_scale": 3703636096,
+      "expected": 2
+    },
+    {
+      "packet_end": 8830060689313373761,
+      "scale": 1398596524,
+      "split": 10352870055590537749,
+      "split_scale": 2617694034,
+      "expected": 2
+    },
+    {
+      "packet_end": 15549618396354245102,
+      "scale": 4249034319,
+      "split": 255860550720399580,
+      "split_scale": 2174065562,
+      "expected": 2
+    },
+    {
+      "packet_end": 2232973359931176894,
+      "scale": 3965280223,
+      "split": 9714138533095693323,
+      "split_scale": 3525248748,
+      "expected": 1
+    },
+    {
+      "packet_end": 2832966354252548712,
+      "scale": 3133002339,
+      "split": 17313946561063825221,
+      "split_scale": 791544720,
+      "expected": 1
+    },
+    {
+      "packet_end": 16224598518517201678,
+      "scale": 33228209,
+      "split": 14414335161705578423,
+      "split_scale": 697106436,
+      "expected": 2
+    },
+    {
+      "packet_end": 13446961509979577930,
+      "scale": 1377806727,
+      "split": 2271891384521686675,
+      "split_scale": 4257100758,
+      "expected": 2
+    },
+    {
+      "packet_end": 12400533506133245071,
+      "scale": 271769067,
+      "split": 11008797023070609988,
+      "split_scale": 3153299088,
+      "expected": 2
+    },
+    {
+      "packet_end": 10539085348984206256,
+      "scale": 3925941915,
+      "split": 8992629162012176617,
+      "split_scale": 3053277304,
+      "expected": 1
+    },
+    {
+      "packet_end": 3841240545583435054,
+      "scale": 2530794156,
+      "split": 14141491085001753829,
+      "split_scale": 947350247,
+      "expected": 1
+    },
+    {
+      "packet_end": 11383114869658828280,
+      "scale": 1600218023,
+      "split": 17210080348042909868,
+      "split_scale": 4025330938,
+      "expected": 2
+    },
+    {
+      "packet_end": 12384534441015762460,
+      "scale": 3910457275,
+      "split": 11140750743977160008,
+      "split_scale": 1255999730,
+      "expected": 1
+    },
+    {
+      "packet_end": 6047219074445249236,
+      "scale": 4052794010,
+      "split": 3671757505771525247,
+      "split_scale": 1908809393,
+      "expected": 1
+    },
+    {
+      "packet_end": 4251360921716389908,
+      "scale": 2970239903,
+      "split": 17521759431188487200,
+      "split_scale": 4000325452,
+      "expected": 1
+    },
+    {
+      "packet_end": 5884076938837612164,
+      "scale": 2638665668,
+      "split": 12654433288479183794,
+      "split_scale": 723582160,
+      "expected": 1
+    },
+    {
+      "packet_end": 4821775011749577641,
+      "scale": 4010110653,
+      "split": 3562893878560018152,
+      "split_scale": 3795812281,
+      "expected": 2
+    },
+    {
+      "packet_end": 16101469919887268680,
+      "scale": 845855595,
+      "split": 6896858386775612918,
+      "split_scale": 2936588300,
+      "expected": 2
+    },
+    {
+      "packet_end": 16811041735836916235,
+      "scale": 3511947042,
+      "split": 6669772052198215783,
+      "split_scale": 862719932,
+      "expected": 1
+    },
+    {
+      "packet_end": 9614293194984809589,
+      "scale": 701990910,
+      "split": 1507843416049532690,
+      "split_scale": 430334857,
+      "expected": 2
+    },
+    {
+      "packet_end": 9871346353193881088,
+      "scale": 4095723344,
+      "split": 17672542963452146501,
+      "split_scale": 1270304293,
+      "expected": 1
+    },
+    {
+      "packet_end": 11720821242401198190,
+      "scale": 532389758,
+      "split": 5186442277118602868,
+      "split_scale": 2842360157,
+      "expected": 2
+    },
+    {
+      "packet_end": 10223813699428804455,
+      "scale": 4042374594,
+      "split": 18307110714407814971,
+      "split_scale": 2480608352,
+      "expected": 1
+    },
+    {
+      "packet_end": 18131211382348072685,
+      "scale": 337106479,
+      "split": 1999172546625819956,
+      "split_scale": 3996595881,
+      "expected": 2
+    },
+    {
+      "packet_end": 11388580582663022361,
+      "scale": 493419912,
+      "split": 130837105083124435,
+      "split_scale": 3521858972,
+      "expected": 2
+    },
+    {
+      "packet_end": 9674453298498827410,
+      "scale": 996043718,
+      "split": 3408159849609889837,
+      "split_scale": 3445882020,
+      "expected": 2
+    },
+    {
+      "packet_end": 7768694206556768862,
+      "scale": 2813757763,
+      "split": 14723808037860396649,
+      "split_scale": 3915398145,
+      "expected": 1
+    },
+    {
+      "packet_end": 8669301403004141020,
+      "scale": 578715904,
+      "split": 1622725287197902398,
+      "split_scale": 2079723597,
+      "expected": 2
+    },
+    {
+      "packet_end": 13534459656617103534,
+      "scale": 945686087,
+      "split": 696234802702062942,
+      "split_scale": 1717458759,
+      "expected": 2
+    },
+    {
+      "packet_end": 7796700793636021326,
+      "scale": 3159994223,
+      "split": 14840727249784033265,
+      "split_scale": 764056670,
+      "expected": 1
+    },
+    {
+      "packet_end": 12564429122724751906,
+      "scale": 3579616083,
+      "split": 619921674193774675,
+      "split_scale": 1872717651,
+      "expected": 2
+    },
+    {
+      "packet_end": 6172475404644890415,
+      "scale": 1701898989,
+      "split": 5129957575681709671,
+      "split_scale": 1781697405,
+      "expected": 2
+    },
+    {
+      "packet_end": 9479905870431562232,
+      "scale": 4010282826,
+      "split": 8618133135119128165,
+      "split_scale": 601556413,
+      "expected": 1
+    },
+    {
+      "packet_end": 15004220203449564149,
+      "scale": 1548725094,
+      "split": 7704797992304871548,
+      "split_scale": 2491108634,
+      "expected": 2
+    },
+    {
+      "packet_end": 2270888212044560683,
+      "scale": 3074028036,
+      "split": 15010004442094000254,
+      "split_scale": 3802645196,
+      "expected": 1
+    },
+    {
+      "packet_end": 2306316010468426884,
+      "scale": 2696535384,
+      "split": 11060662160203111882,
+      "split_scale": 2116413259,
+      "expected": 1
+    },
+    {
+      "packet_end": 11851438934718103416,
+      "scale": 3784573746,
+      "split": 8593752878855944070,
+      "split_scale": 4128874529,
+      "expected": 2
+    },
+    {
+      "packet_end": 16614560144859611674,
+      "scale": 1201343078,
+      "split": 1999795428206174880,
+      "split_scale": 4246517265,
+      "expected": 2
+    },
+    {
+      "packet_end": 2452118528418285943,
+      "scale": 2202434942,
+      "split": 11715190479400400158,
+      "split_scale": 3076356718,
+      "expected": 1
+    },
+    {
+      "packet_end": 12967053887630300856,
+      "scale": 1173264287,
+      "split": 10483117954790880570,
+      "split_scale": 3818031740,
+      "expected": 2
+    },
+    {
+      "packet_end": 1796677445536244799,
+      "scale": 4277446717,
+      "split": 3534475630348035395,
+      "split_scale": 604847818,
+      "expected": 1
+    },
+    {
+      "packet_end": 5622487160841243231,
+      "scale": 1917293334,
+      "split": 11350985084504482811,
+      "split_scale": 3638582387,
+      "expected": 1
+    },
+    {
+      "packet_end": 14974605189568915662,
+      "scale": 3113622989,
+      "split": 3807227170690911775,
+      "split_scale": 1801364604,
+      "expected": 2
+    },
+    {
+      "packet_end": 17397831116937702468,
+      "scale": 186014307,
+      "split": 15504035896013392271,
+      "split_scale": 165066870,
+      "expected": 1
+    },
+    {
+      "packet_end": 839866196056167517,
+      "scale": 4064294774,
+      "split": 4340350025019196276,
+      "split_scale": 2392931037,
+      "expected": 1
+    },
+    {
+      "packet_end": 6970463449078249575,
+      "scale": 3947888406,
+      "split": 16988024452292165164,
+      "split_scale": 2017360087,
+      "expected": 1
+    },
+    {
+      "packet_end": 858495962175422385,
+      "scale": 4193419943,
+      "split": 16191590583227973732,
+      "split_scale": 2555700670,
+      "expected": 1
+    },
+    {
+      "packet_end": 10783436966341854339,
+      "scale": 419208929,
+      "split": 12912691056140689493,
+      "split_scale": 189853541,
+      "expected": 1
+    },
+    {
+      "packet_end": 10799777329420494359,
+      "scale": 4049856623,
+      "split": 8061090374209861376,
+      "split_scale": 952167230,
+      "expected": 1
+    },
+    {
+      "packet_end": 13819203663638596713,
+      "scale": 135562066,
+      "split": 2346622930619237380,
+      "split_scale": 2052930061,
+      "expected": 2
+    },
+    {
+      "packet_end": 9361936209486316200,
+      "scale": 3418967715,
+      "split": 3045398533979779723,
+      "split_scale": 1930416694,
+      "expected": 2
+    },
+    {
+      "packet_end": 9607187511887587551,
+      "scale": 1725544213,
+      "split": 10294788917569896146,
+      "split_scale": 2040964958,
+      "expected": 2
+    },
+    {
+      "packet_end": 9447959693885255529,
+      "scale": 1162827331,
+      "split": 10765808412654062576,
+      "split_scale": 2322841662,
+      "expected": 2
+    },
+    {
+      "packet_end": 3358522867717165939,
+      "scale": 1133810323,
+      "split": 12687715766828357914,
+      "split_scale": 3264151003,
+      "expected": 1
+    },
+    {
+      "packet_end": 10029876256062836305,
+      "scale": 2946616063,
+      "split": 9023898699271225950,
+      "split_scale": 3168322098,
+      "expected": 2
+    },
+    {
+      "packet_end": 15613639912462287269,
+      "scale": 1304697860,
+      "split": 4779872701644263135,
+      "split_scale": 2247033170,
+      "expected": 2
+    },
+    {
+      "packet_end": 14109516807675451617,
+      "scale": 3258292276,
+      "split": 14343699042348863385,
+      "split_scale": 1309085024,
+      "expected": 1
+    },
+    {
+      "packet_end": 11760409206669581118,
+      "scale": 1967499726,
+      "split": 2857772157749685539,
+      "split_scale": 3157507889,
+      "expected": 2
+    },
+    {
+      "packet_end": 10871653897594859833,
+      "scale": 176402959,
+      "split": 15533700139858703787,
+      "split_scale": 3821655062,
+      "expected": 2
+    },
+    {
+      "packet_end": 11104733750399164131,
+      "scale": 960181950,
+      "split": 10160482325126091504,
+      "split_scale": 2650366871,
+      "expected": 2
+    },
+    {
+      "packet_end": 10110339223990303101,
+      "scale": 2545334,
+      "split": 16216913500868191274,
+      "split_scale": 4092944952,
+      "expected": 2
+    },
+    {
+      "packet_end": 12449024581580436587,
+      "scale": 2925679983,
+      "split": 161319842266426990,
+      "split_scale": 3928729221,
+      "expected": 2
+    },
+    {
+      "packet_end": 6611384068235872207,
+      "scale": 2967829097,
+      "split": 5087804797436091952,
+      "split_scale": 866110278,
+      "expected": 1
+    },
+    {
+      "packet_end": 12421771090349114137,
+      "scale": 2961403209,
+      "split": 15779114781980212419,
+      "split_scale": 3154945785,
+      "expected": 1
+    },
+    {
+      "packet_end": 5082896202800981727,
+      "scale": 3529440060,
+      "split": 10324958829963255116,
+      "split_scale": 2315182174,
+      "expected": 1
+    },
+    {
+      "packet_end": 3116612911852352506,
+      "scale": 3990116547,
+      "split": 1165604754969379374,
+      "split_scale": 4104499302,
+      "expected": 2
+    },
+    {
+      "packet_end": 13744976771369134059,
+      "scale": 259873010,
+      "split": 10673290939774170230,
+      "split_scale": 1114671018,
+      "expected": 2
+    },
+    {
+      "packet_end": 18321163010890697540,
+      "scale": 1225441938,
+      "split": 7087102810103421352,
+      "split_scale": 3685461829,
+      "expected": 2
+    },
+    {
+      "packet_end": 14590252545141339424,
+      "scale": 611999205,
+      "split": 15820884587412482647,
+      "split_scale": 119641794,
+      "expected": 1
+    },
+    {
+      "packet_end": 7810793947159597159,
+      "scale": 2957347099,
+      "split": 5105584718239470101,
+      "split_scale": 2352839410,
+      "expected": 2
+    },
+    {
+      "packet_end": 705123035005772159,
+      "scale": 3629033638,
+      "split": 10609746862556919736,
+      "split_scale": 1393674861,
+      "expected": 1
+    },
+    {
+      "packet_end": 10398496537895702756,
+      "scale": 3398273378,
+      "split": 12227254190001307884,
+      "split_scale": 3121593621,
+      "expected": 1
+    },
+    {
+      "packet_end": 11522803406426405180,
+      "scale": 1817521458,
+      "split": 13977109445187098470,
+      "split_scale": 2035499138,
+      "expected": 1
+    },
+    {
+      "packet_end": 2439644356199042890,
+      "scale": 203044698,
+      "split": 236942210351538161,
+      "split_scale": 3464886503,
+      "expected": 2
+    },
+    {
+      "packet_end": 10537365093951605977,
+      "scale": 1812375953,
+      "split": 3380632920145319292,
+      "split_scale": 4000679693,
+      "expected": 2
+    },
+    {
+      "packet_end": 14133272096447401803,
+      "scale": 3060000244,
+      "split": 18009163208433892387,
+      "split_scale": 1249612218,
+      "expected": 1
+    },
+    {
+      "packet_end": 3240365718422940313,
+      "scale": 2217398807,
+      "split": 7721317349265755931,
+      "split_scale": 1723873303,
+      "expected": 1
+    },
+    {
+      "packet_end": 13736331418715888866,
+      "scale": 1721180673,
+      "split": 2371351090349032372,
+      "split_scale": 537235800,
+      "expected": 2
+    },
+    {
+      "packet_end": 11301143878705250965,
+      "scale": 2177349202,
+      "split": 12846611051688941814,
+      "split_scale": 3694214418,
+      "expected": 2
+    },
+    {
+      "packet_end": 5580191701884964564,
+      "scale": 1309381820,
+      "split": 10209936931639077834,
+      "split_scale": 3779957393,
+      "expected": 2
+    },
+    {
+      "packet_end": 10698054012896564521,
+      "scale": 1399134467,
+      "split": 9679926704030159876,
+      "split_scale": 2340797473,
+      "expected": 2
+    },
+    {
+      "packet_end": 3642476511099240877,
+      "scale": 3600139069,
+      "split": 16528539203746993183,
+      "split_scale": 1380841815,
+      "expected": 1
+    },
+    {
+      "packet_end": 10945696650522370216,
+      "scale": 3476355207,
+      "split": 16462938786533005208,
+      "split_scale": 198912696,
+      "expected": 1
+    },
+    {
+      "packet_end": 9602539784174553254,
+      "scale": 4279599237,
+      "split": 16215479712903311731,
+      "split_scale": 3808605578,
+      "expected": 1
+    },
+    {
+      "packet_end": 6325586515776033993,
+      "scale": 485350319,
+      "split": 15188660616543503087,
+      "split_scale": 1839944174,
+      "expected": 2
+    },
+    {
+      "packet_end": 4167359697041466633,
+      "scale": 3022493473,
+      "split": 17180819904813705848,
+      "split_scale": 797486420,
+      "expected": 1
+    },
+    {
+      "packet_end": 11576914929138504170,
+      "scale": 2485780557,
+      "split": 8210185824839388434,
+      "split_scale": 1833802816,
+      "expected": 2
+    },
+    {
+      "packet_end": 3942701684100603641,
+      "scale": 54706153,
+      "split": 11983924563551106150,
+      "split_scale": 2831527735,
+      "expected": 2
+    },
+    {
+      "packet_end": 10974253253598992590,
+      "scale": 2567236449,
+      "split": 531294709356815804,
+      "split_scale": 3017684652,
+      "expected": 2
+    },
+    {
+      "packet_end": 4088770914898175149,
+      "scale": 596649477,
+      "split": 3639907279537116172,
+      "split_scale": 1372267280,
+      "expected": 2
+    },
+    {
+      "packet_end": 16020652746541741922,
+      "scale": 497523350,
+      "split": 15629229422637908861,
+      "split_scale": 3376697672,
+      "expected": 2
+    },
+    {
+      "packet_end": 520612754748887886,
+      "scale": 937549301,
+      "split": 5692255817272610700,
+      "split_scale": 418684540,
+      "expected": 1
+    },
+    {
+      "packet_end": 13762081217997285201,
+      "scale": 2656287521,
+      "split": 7944451351107042475,
+      "split_scale": 11338102,
+      "expected": 1
+    },
+    {
+      "packet_end": 17136397673365154399,
+      "scale": 1690336704,
+      "split": 9726688149132428671,
+      "split_scale": 3976271050,
+      "expected": 2
+    },
+    {
+      "packet_end": 6212872846532736497,
+      "scale": 1286704869,
+      "split": 5505615112125875264,
+      "split_scale": 3072941975,
+      "expected": 2
+    },
+    {
+      "packet_end": 3273517241684516809,
+      "scale": 3734918247,
+      "split": 10747521201487382583,
+      "split_scale": 1340197419,
+      "expected": 1
+    },
+    {
+      "packet_end": 10728839930669841372,
+      "scale": 1897926627,
+      "split": 14708831000442674757,
+      "split_scale": 2960847418,
+      "expected": 2
+    },
+    {
+      "packet_end": 15848379056852123698,
+      "scale": 3977047100,
+      "split": 9116081490740802628,
+      "split_scale": 437212896,
+      "expected": 1
+    },
+    {
+      "packet_end": 2340564418865478510,
+      "scale": 1156970868,
+      "split": 11148971345283422093,
+      "split_scale": 1750539917,
+      "expected": 1
+    },
+    {
+      "packet_end": 9995175534367751578,
+      "scale": 2868277285,
+      "split": 15035595705662233754,
+      "split_scale": 3435126619,
+      "expected": 1
+    },
+    {
+      "packet_end": 12751807140687533633,
+      "scale": 398338305,
+      "split": 14186178153419488568,
+      "split_scale": 3745634912,
+      "expected": 2
+    },
+    {
+      "packet_end": 580583816563942303,
+      "scale": 1222576274,
+      "split": 7249654352296775129,
+      "split_scale": 1134821355,
+      "expected": 1
+    },
+    {
+      "packet_end": 884237343037502994,
+      "scale": 698194106,
+      "split": 3692466086176050830,
+      "split_scale": 2214152302,
+      "expected": 1
+    },
+    {
+      "packet_end": 7799427965066052658,
+      "scale": 2488351547,
+      "split": 1645352560062753299,
+      "split_scale": 2768598478,
+      "expected": 2
+    },
+    {
+      "packet_end": 9957325781141215914,
+      "scale": 3500974040,
+      "split": 12479777282928838452,
+      "split_scale": 3442326574,
+      "expected": 1
+    },
+    {
+      "packet_end": 13066485103495101036,
+      "scale": 3140706654,
+      "split": 9696903578778804394,
+      "split_scale": 3955460117,
+      "expected": 2
+    },
+    {
+      "packet_end": 6014192060532255335,
+      "scale": 825396155,
+      "split": 10997470358123168614,
+      "split_scale": 1133833281,
+      "expected": 1
+    },
+    {
+      "packet_end": 5458001704899582162,
+      "scale": 92411835,
+      "split": 9214618792497427060,
+      "split_scale": 4287293670,
+      "expected": 2
+    },
+    {
+      "packet_end": 8737548984686774410,
+      "scale": 672748759,
+      "split": 13303475767619201256,
+      "split_scale": 3311268198,
+      "expected": 2
+    },
+    {
+      "packet_end": 12132604740370849665,
+      "scale": 587265107,
+      "split": 15961993609073886114,
+      "split_scale": 2725248182,
+      "expected": 2
+    },
+    {
+      "packet_end": 14074300340239642433,
+      "scale": 3096974477,
+      "split": 15782900553014523232,
+      "split_scale": 651500648,
+      "expected": 1
+    },
+    {
+      "packet_end": 9919082482776130637,
+      "scale": 144003867,
+      "split": 12082252291050877950,
+      "split_scale": 567779084,
+      "expected": 2
+    },
+    {
+      "packet_end": 996602389814839537,
+      "scale": 1682612809,
+      "split": 2084469649543789977,
+      "split_scale": 1396017997,
+      "expected": 1
+    },
+    {
+      "packet_end": 10099179156357281886,
+      "scale": 3029392205,
+      "split": 17987169948697561987,
+      "split_scale": 2290974940,
+      "expected": 1
+    },
+    {
+      "packet_end": 16138098850186943024,
+      "scale": 3923780712,
+      "split": 10707448251925336788,
+      "split_scale": 2524580673,
+      "expected": 1
+    },
+    {
+      "packet_end": 3525550397162753096,
+      "scale": 815574943,
+      "split": 15856312398497434258,
+      "split_scale": 3738786430,
+      "expected": 2
+    },
+    {
+      "packet_end": 7677919339340042011,
+      "scale": 3429841810,
+      "split": 11895343603833500001,
+      "split_scale": 820516543,
+      "expected": 1
+    },
+    {
+      "packet_end": 7766110071356767425,
+      "scale": 3438768905,
+      "split": 17192866566360854127,
+      "split_scale": 1054736098,
+      "expected": 1
+    },
+    {
+      "packet_end": 12344197143714719758,
+      "scale": 1997480607,
+      "split": 9533958992033760208,
+      "split_scale": 1661858643,
+      "expected": 2
+    },
+    {
+      "packet_end": 5040296733531064324,
+      "scale": 2421441724,
+      "split": 2822467812679062865,
+      "split_scale": 2240987771,
+      "expected": 2
+    },
+    {
+      "packet_end": 17880689055178156503,
+      "scale": 629198434,
+      "split": 17552233873779483108,
+      "split_scale": 3695176973,
+      "expected": 2
+    },
+    {
+      "packet_end": 483179373810623170,
+      "scale": 1679910581,
+      "split": 6023203896318830975,
+      "split_scale": 3514319998,
+      "expected": 1
+    },
+    {
+      "packet_end": 14285609055100126551,
+      "scale": 1141525848,
+      "split": 8323455437679073972,
+      "split_scale": 36825429,
+      "expected": 1
+    },
+    {
+      "packet_end": 4305941883250843444,
+      "scale": 408802473,
+      "split": 4678074785102899743,
+      "split_scale": 563675736,
+      "expected": 2
+    },
+    {
+      "packet_end": 14195394867412201228,
+      "scale": 526034103,
+      "split": 4446147316135538011,
+      "split_scale": 4272127115,
+      "expected": 2
+    },
+    {
+      "packet_end": 16271112429466234218,
+      "scale": 1464577884,
+      "split": 7358426362637423645,
+      "split_scale": 768063544,
+      "expected": 2
+    },
+    {
+      "packet_end": 17505132683534143141,
+      "scale": 304697398,
+      "split": 796114324682436654,
+      "split_scale": 1903393623,
+      "expected": 2
+    },
+    {
+      "packet_end": 2874548928683872852,
+      "scale": 3114924593,
+      "split": 4921248833076365611,
+      "split_scale": 2115981746,
+      "expected": 1
+    },
+    {
+      "packet_end": 9585019637794028024,
+      "scale": 2510331924,
+      "split": 1588506385225479345,
+      "split_scale": 1418095381,
+      "expected": 2
+    },
+    {
+      "packet_end": 4111079541064959149,
+      "scale": 1858030280,
+      "split": 185531454362826699,
+      "split_scale": 4004638951,
+      "expected": 2
+    },
+    {
+      "packet_end": 6289788090668112606,
+      "scale": 3112119801,
+      "split": 1265167729241564648,
+      "split_scale": 357531082,
+      "expected": 1
+    },
+    {
+      "packet_end": 7878242615147042634,
+      "scale": 996220765,
+      "split": 5788304765696878259,
+      "split_scale": 2867958971,
+      "expected": 2
+    },
+    {
+      "packet_end": 8547662004090564557,
+      "scale": 423763578,
+      "split": 2067229574797614204,
+      "split_scale": 1617745551,
+      "expected": 2
+    },
+    {
+      "packet_end": 2668774166156331733,
+      "scale": 2136284865,
+      "split": 18290179087307974943,
+      "split_scale": 1924040764,
+      "expected": 1
+    },
+    {
+      "packet_end": 18098434642988281927,
+      "scale": 168489884,
+      "split": 3863443150608533768,
+      "split_scale": 3119266268,
+      "expected": 2
+    },
+    {
+      "packet_end": 11939301874954972264,
+      "scale": 2303658248,
+      "split": 16941850388588504361,
+      "split_scale": 483689042,
+      "expected": 1
+    },
+    {
+      "packet_end": 7645397260213883952,
+      "scale": 950936974,
+      "split": 14085256748445172475,
+      "split_scale": 1298863379,
+      "expected": 1
+    },
+    {
+      "packet_end": 1170545770729374930,
+      "scale": 3111822789,
+      "split": 4023580383083586325,
+      "split_scale": 2822038743,
+      "expected": 1
+    },
+    {
+      "packet_end": 6531998099304299520,
+      "scale": 1564426801,
+      "split": 33738972632040925,
+      "split_scale": 1977148019,
+      "expected": 2
+    },
+    {
+      "packet_end": 5996646109469842014,
+      "scale": 3288151675,
+      "split": 4932787359362893567,
+      "split_scale": 2241995230,
+      "expected": 1
+    },
+    {
+      "packet_end": 5174388368820029149,
+      "scale": 12593190,
+      "split": 5453539379795767551,
+      "split_scale": 2823693203,
+      "expected": 2
+    },
+    {
+      "packet_end": 8998501425168129533,
+      "scale": 3389007325,
+      "split": 8357679357227256968,
+      "split_scale": 1894574315,
+      "expected": 1
+    },
+    {
+      "packet_end": 6787820671164306901,
+      "scale": 311707451,
+      "split": 16640643945437580081,
+      "split_scale": 2555031460,
+      "expected": 2
+    },
+    {
+      "packet_end": 12599641691112301448,
+      "scale": 2947174770,
+      "split": 5174635527928825638,
+      "split_scale": 4179154854,
+      "expected": 2
+    },
+    {
+      "packet_end": 15267041971432574939,
+      "scale": 2087076845,
+      "split": 6880890375138135045,
+      "split_scale": 3026143335,
+      "expected": 2
+    },
+    {
+      "packet_end": 11719859335333762798,
+      "scale": 2154578718,
+      "split": 15249406363146245104,
+      "split_scale": 4145943329,
+      "expected": 2
+    },
+    {
+      "packet_end": 14731903682339124398,
+      "scale": 4059162408,
+      "split": 143661444904978860,
+      "split_scale": 3235582709,
+      "expected": 2
+    },
+    {
+      "packet_end": 2084897741569522118,
+      "scale": 1798383300,
+      "split": 4046069917068339466,
+      "split_scale": 3601790622,
+      "expected": 2
+    }
+  ],
+  "commands": [
+    [
+      "/usr/bin/clang",
+      "-arch",
+      "x86_64",
+      "-shared",
+      "-fPIC",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_aac_boundary.c",
+      "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_aac_boundary_test.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/owner.dylib"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_aac_boundary.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/yi4k_1107_aac_boundary.c.o"
+    ],
+    [
+      "/usr/bin/clang",
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-builtin",
+      "-I/Users/hyc/Documents/yi4k/sdk",
+      "-c",
+      "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_aac_boundary_test.c",
+      "-o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/yi4k_aac_boundary_test.c.o"
+    ],
+    [
+      "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+      "-T",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/owner.ld",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/yi4k_1107_aac_boundary.c.o",
+      "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-aac-boundary-1rv4vc1g/yi4k_aac_boundary_test.c.o",
+      "-o",
+      "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-11-aac-boundary-owner-run03/aac-boundary-offline.elf"
+    ]
+  ],
+  "compiled_arm_elf_sha256": "6e91f2c378410fc3ae2ecddad70af6bee5d5b1a983e740e94ffe8043e4e09364",
+  "source_hashes": {
+    "sdk/yi4k_1107_aac_boundary.c": "b58c229882fb128a13f5352eda538ff28489b1e25b5e071b6c8d2088271c5ac7",
+    "sdk/offline/yi4k_aac_boundary_test.c": "8342119481990d2c72857d07bed3c0c1d2123bb50450ef01c7180071ef54e7e2",
+    "sdk/yi4k_1107_aac_boundary.h": "3cc9dc09a605f08564f8fca1b2f7fc0ea6561af2a5832cedc20fe8c2e509f364",
+    "sdk/yi4k_1107_audio_early_copy.h": "ad2bf7380927251f462774713280bfa5e592aa5d4c56642c00dee3b1df3b7756",
+    "sdk/yi4k_1107_audio_event.h": "68e2829a7325639b96fc9b2d298518b7bf69f664c8b61371d0dec9ae8f1f5024",
+    "sdk/yi4k_1107_codec_epoch.h": "b03ed142b36aac874c7e154df1a00b5a707958bc902898fe1b86e316fe08c9e0",
+    "sdk/yi4k_1107_early_copy.h": "9a344099b61728a274240560db4ea5ea3d0fa69471abffb3714908806c0b3c26",
+    "sdk/yi4k_1107_eis_shadow.h": "6270d2548d0266bb409805293f2eaed501b48d54c58097e7601c9c0860649052",
+    "sdk/yi4k_1107_eis_shadow_v2.h": "5698ef76bc24f4fa3826afe54ef6781adf202a044d280a9912f8975da5634dd0",
+    "sdk/yi4k_1107_eis_stage_trace.h": "901487450339aa1e492a4439027d712513bbb7ae57d36e5713de7bf519898e78",
+    "sdk/yi4k_1107_fifo_consumer.h": "0157139306c71f5335755378356630d8f533534c7326cd717a8e64b34895ba78",
+    "sdk/yi4k_1107_internal.h": "af6430efe337ec3c41de643d1a60561c4d482ef3a1752360607ce0e74346731f",
+    "sdk/yi4k_1107_owned_mux.h": "9abd7ab04be037c1af155816f3b22f671a81a6f31c49bb8fdcfad05e235d4110",
+    "sdk/yi4k_1107_owned_retirement.h": "b1ba2df06cfbe3a9fc272dc9a95534ef22f1ccef36a3d615fba6b42876c53416",
+    "sdk/yi4k_1107_packet_custody.h": "e4e371085126080d12f2e6d83da3a111e64ef4d20c7cb2ffa7402ef9048c91f9",
+    "sdk/yi4k_1107_payload_copy.h": "91aaa546cedc9845d2c4c7b6398f66cff55c49ecdc6c2b8cdfd04b0f9f3d3da2",
+    "sdk/yi4k_1107_rpc.h": "ee520c5d62def51a092d261c85a7054eca8f3db159da3efd8404616501a9fc1d",
+    "sdk/yi4k_1107_video_descriptor.h": "d2dcde7b77b48dce86f37b0e48cb90a4347dfea8ba9269a89ced65b1923ea002",
+    "scripts/validate_prerecord_aac_boundary.py": "ee10918af5d53243447d5c35f2a291e6a8d457bb697a6b37b7b7222f2cf6d577"
+  },
+  "limitations": [
+    "Synthetic payloads and caller-supplied codec/source-time identities only; no live AAC or common hardware epoch validation.",
+    "Custody receipt is caller attestation; ProcessAudio/Close success alone is insufficient and actual independent closed-file verification is external.",
+    "One-slot ownership and exact split classification only, not live minute backend, producer scheduling, native mux, SD durability or deployment."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "rootfs": "artifacts/linux-analysis/rootfs",
+  "scope": "Extracted files; no target execution",
+  "counts": {
+    "directory": 143,
+    "file": 1191,
+    "symlink": 832
+  },
+  "regular_file_bytes": 54647349,
+  "bytes_by_top_directory": {
+    "init": 242,
+    "usr": 49251183,
+    "bin": 892368,
+    "sbin": 60620,
+    "etc": 331103,
+    "root": 336,
+    "lib": 4106825,
+    "tmp": 4672
+  },
+  "elf_files": 245,
+  "elf_machines": {
+    "EM_ARM": 244,
+    "EM_X86_64": 1
+  },
+  "elf_types": {
+    "ET_EXEC": 88,
+    "ET_REL": 36,
+    "ET_DYN": 121
+  },
+  "kernel_path": "artifacts/firmware/v1.10.52/_part_lnx.a9s",
+  "kernel_sha256": "d2a56ebe33f42866466b37b4a8ac29cf79a5c60c035ea776c431567ddeec1f7f",
+  "kernel_versions": [
+    "Linux version 3.10.71 (jenkins@360ants) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 PREEMPT Fri Jun 22 05:12:12 CST 2018"
+  ],
+  "ikconfig_gzip_offset": "0x400908",
+  "ikconfig_sha256": "d8c73bf01d5dc96ad676338f9a529ec59a31687e40ee957382c1b60fe6bb629a",
+  "extraction_limitations": [
+    "dev/console and dev/null device nodes were not created on host; see extract.log",
+    "Host ownership is not firmware ownership; consult unsquashfs listing",
+    "No symlinks were followed when reading files"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "kind": "offline pre-record segment contract manifest",
+  "generator": "scripts/prerecord-segment-manifest.py",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xA0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "evidence_files": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+      "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+      "kind": "firmware-window"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-sync-boundary-audit.json",
+      "sha256": "e0736be5ee0877a349716ce63dd75e0d52c44f298ed6dfccc737a15f01e04da3",
+      "kind": "audit-json"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-audio-config-audit.json",
+      "sha256": "1502b233328f455e9c1bd1277e48590cc2ff05120591735edbe6fd0eada6313c",
+      "kind": "audit-json"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/audio-producer-audit.json",
+      "sha256": "cdce90dd2dbce968335a3f51a6f0d85b9dfbdb5ff994189cbecd0b2320615125",
+      "kind": "audit-json"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/prerecord-session-rollover-audit.json",
+      "sha256": "75b6a5ee0c85a192a58fcfccdc014adec521188a68584fa9cb412afd99fb01f1",
+      "kind": "audit-json"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/output-contract.json",
+      "sha256": "020b853ddb02004a3c1b173fb05542e6db6bd1317fdf942d7b6589281bdf6902",
+      "kind": "audit-json"
+    },
+    {
+      "path": "artifacts/device/2026-11-10-prerecord/track-writers-audit.json",
+      "sha256": "6e2dff391caa363f222ff94028e11f454bcf3cbd86dc3f03ea8f6ea1072956a0",
+      "kind": "audit-json"
+    }
+  ],
+  "validated": {
+    "sync_boundary_cases": 67,
+    "audio_config_cases": 10,
+    "audio_producer_cases": 15,
+    "session_rollover_cases": 21,
+    "output_contract_checks": 9
+  },
+  "video_boundary": {
+    "type1_only_limit_gate": true,
+    "return_before_consume": true,
+    "new_open_clears_movie_range": [
+      "0x338",
+      "0x670"
+    ],
+    "parser_positive_without_parameter_sets": true,
+    "sps_pps_rebuild_required": true
+  },
+  "audio_config": {
+    "audited_selectors": [
+      0,
+      1,
+      2
+    ],
+    "configured_sample_rate_hz": 48000,
+    "samples_per_frame_typical": 1024,
+    "eventrecord_audio_period_formula_separate": true,
+    "shared_capture_epoch_proven": false,
+    "aac_config_continuity_proven": false
+  },
+  "tracks": {
+    "primary_and_secondary_use_mux_limit_helper_static": true,
+    "secondary_boundary_requires_default_ended_static": true,
+    "audio_video_interleaving_traced": false,
+    "producer_clock_epoch_traced": false,
+    "writer_ownership_runtime_proven": false,
+    "track_writer_unresolved": [
+      "Runtime active selector/mode, secondary-stream overrides and encoding producer clock epoch.",
+      "Whether all callback table entries are exposed or usable camera recording modes.",
+      "Hardware encoder PTS-to-sensor-scale behavior across mode switches and discontinuities.",
+      "A/V sample boundary and real FIFO start skew; audio ordinary mux does not reuse video ConvertPTS.",
+      "Whether native EventRecord period truncation is corrected elsewhere.",
+      "Second mux writer/60-second ring lifecycle, memory and output validity on a camera."
+    ]
+  },
+  "mux_reuse": {
+    "ordinary_event3_close_open_candidate": true,
+    "same_mux_pipe_candidate": true,
+    "movie_counters_and_pts_reset_static": true,
+    "producer_restart_observed": false,
+    "eventrecord_standby_or_concurrent_writer_proven": false,
+    "virtual_fifo_quiescence_barrier_proven": false
+  },
+  "playability": {
+    "sps_pps_complete": false,
+    "aac_config_continuity": false,
+    "av_sync_continuity": false,
+    "playable_output": false
+  },
+  "required_runtime_observations": [
+    "descriptor type, PTS, payload address/size and FIFO cursor per consumer",
+    "first new-segment sync payload bytes, including NAL7/NAL8/NAL5 ordering",
+    "SPS/PPS cache lengths and bytes after each new IsoMux_Open",
+    "AAC AudioSpecificConfig and sample-entry continuity in every new file",
+    "audio/video first-sample timestamps and producer clock epoch",
+    "close/open return values, writer ownership and payload lifetime",
+    "final files opened by an independent MP4/H.264/AAC validator"
+  ],
+  "limitations": [
+    "All evidence is offline original ARM execution or static linkage over synthetic RAM.",
+    "A positive slice parser return does not establish SPS/PPS completeness or decodability.",
+    "The 48 kHz/1024 audio values are configuration evidence, not a live ADC measurement.",
+    "Ordinary mux event-3 close/open is a reuse candidate; producer restart and seamless A/V continuity remain unproven.",
+    "No final playable output is claimed until runtime payload, metadata and file validation are captured."
+  ]
+}

@@ -1,0 +1,73 @@
+~ # cat /etc/inittab; ls -l /etc/init.d; cat /etc/init.d/S99postboot; cat /etc/i
+nit.d/S99bootdone
+# /etc/inittab
+#
+# Copyright (C) 2001 Erik Andersen <andersen@codepoet.org>
+#
+# Note: BusyBox init doesn't support runlevels.  The runlevels field is
+# completely ignored by BusyBox init. If you want runlevels, use
+# sysvinit.
+#
+# Format for each entry: <id>:<runlevels>:<action>:<process>
+#
+# id        == tty to run on, or empty for /dev/console
+# runlevels == ignored
+# action    == one of sysinit, respawn, askfirst, wait, and once
+# process   == program to run
+
+# Startup the system
+null::sysinit:/bin/mount -t proc proc /proc
+null::sysinit:/bin/mkdir -p /dev/pts
+null::sysinit:/bin/mkdir -p /dev/shm
+null::sysinit:/bin/mount -a
+null::sysinit:/bin/hostname -F /etc/hostname
+# now run any rc scripts
+::sysinit:/etc/init.d/rcS
+
+# Put a getty on the serial port
+::respawn:-/bin/sh
+
+# ttyUSB0 on usb host.
+# ttyUSB0::respawn:-/sbin/getty  115200 ttyUSB0
+
+# ttyGS0 on usb device
+# ttyGS0::respawn:-/bin/sh
+
+# Stuff to do for the 3-finger salute
+::ctrlaltdel:/sbin/reboot
+
+# Stuff to do before rebooting
+null::shutdown:/etc/init.d/rcK
+null::shutdown:/bin/umount -a -r
+null::shutdown:/sbin/swapoff -a
+
+total 12
+-rwxr-xr-x    1 root     root           241 Feb  2  2018 [1;32mS10mdev[0m
+-rwxr-xr-x    1 root     root          1365 Feb  2  2018 [1;32mS20urandom[0m
+-rwxr-xr-x    1 root     root          1769 Feb  2  2018 [1;32mS30dbus[0m
+-rwxr-xr-x    1 root     root           455 Aug 26  2015 [1;32mS30rpcbind[0m
+-rwxr-xr-x    1 root     root           281 Feb  2  2018 [1;32mS40network[0m
+-rwxr-xr-x    1 root     root          1933 Feb  2  2018 [1;32mS50service[0m
+lrwxrwxrwx    1 root     root            38 Feb  2  2018 [1;36mS51hibernation[0m -> [1;32m/usr/local/share/script/ambernation.sh[0m
+-rwxr-xr-x    1 root     root           779 Feb  2  2018 [1;32mS51pref[0m
+-rwxr-xr-x    1 root     root           788 Feb  2  2018 [1;32mS60postservice[0m
+-rwxr-xr-x    1 root     root           239 Feb  2  2018 [1;32mS99bootdone[0m
+-rwxr-xr-x    1 root     root           521 Feb  2  2018 [1;32mnfsroot.sh[0m
+-rwxr-xr-x    1 root     root           445 Feb  2  2018 [1;32mrcK[0m
+-rwxr-xr-x    1 root     root           490 Feb  2  2018 [1;32mrcS[0m
+cat: can't open '/etc/init.d/S99postboot': No such file or directory
+#!/bin/sh
+
+echo 'S99bootdone is running...'
+
+#detect Wi-Fi chip, send boot_done to RTOS
+/usr/local/share/script/chip.detecting.sh &
+
+#send boot_done to RTOS
+if [ -x /usr/bin/SendToRTOS ]; then
+    /usr/bin/SendToRTOS boot_done
+fi
+
+exit $?
+~ # echo __YI_CAPTURE_e7478cae7cd145668fa65b3d9c2a1713__
+__YI_CAPTURE_e7478cae7cd145668fa65b3d9c2a1713__

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T06:57:15.950985+00:00",
+  "status": "pass_android_0_4_8_build_rerun",
+  "command": "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
+  "unit_tests": 208,
+  "unit_test_failures_or_errors": 0,
+  "lint_errors": 0,
+  "lint_warnings": 74,
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.4.8-debug.apk",
+    "sha256": "161a301f6aaf090fb31e887a44659346af989a33eaf44af143d056959bda68fa",
+    "bytes": 11658909
+  },
+  "fresh_build_apk": {
+    "path": "android/app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "161a301f6aaf090fb31e887a44659346af989a33eaf44af143d056959bda68fa",
+    "bytes": 11658909
+  },
+  "device_access": false,
+  "limitations": [
+    "Host Gradle and local test environment only; no physical phone or camera acceptance."
+  ]
+}

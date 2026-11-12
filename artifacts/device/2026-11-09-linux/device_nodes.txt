@@ -1,0 +1,48 @@
+~ # ls -l /dev/amba* /dev/rpmsg* /dev/video* /dev/iio* /dev/mtd* /dev/ttyGS*
+ls: /dev/rpmsg*: No such file or directory
+ls: /dev/video*: No such file or directory
+ls: /dev/iio*: No such file or directory
+ls: /dev/ttyGS*: No such file or directory
+crw-rw----    1 root     root       10,  61 Jan  1  1970 [1;35m/dev/amba_dspmem[0m
+crw-rw----    1 root     root       10,  62 Jan  1  1970 [1;35m/dev/amba_heapmem[0m
+crw-rw----    1 root     root       90,   0 Jan  1  1970 [1;35m/dev/mtd0[0m
+crw-rw----    1 root     root       90,   1 Jan  1  1970 [1;35m/dev/mtd0ro[0m
+crw-rw----    1 root     root       90,   2 Jan  1  1970 [1;35m/dev/mtd1[0m
+crw-rw----    1 root     root       90,  20 Jan  1  1970 [1;35m/dev/mtd10[0m
+crw-rw----    1 root     root       90,  21 Jan  1  1970 [1;35m/dev/mtd10ro[0m
+crw-rw----    1 root     root       90,  22 Jan  1  1970 [1;35m/dev/mtd11[0m
+crw-rw----    1 root     root       90,  23 Jan  1  1970 [1;35m/dev/mtd11ro[0m
+crw-rw----    1 root     root       90,  24 Jan  1  1970 [1;35m/dev/mtd12[0m
+crw-rw----    1 root     root       90,  25 Jan  1  1970 [1;35m/dev/mtd12ro[0m
+crw-rw----    1 root     root       90,   3 Jan  1  1970 [1;35m/dev/mtd1ro[0m
+crw-rw----    1 root     root       90,   4 Jan  1  1970 [1;35m/dev/mtd2[0m
+crw-rw----    1 root     root       90,   5 Jan  1  1970 [1;35m/dev/mtd2ro[0m
+crw-rw----    1 root     root       90,   6 Jan  1  1970 [1;35m/dev/mtd3[0m
+crw-rw----    1 root     root       90,   7 Jan  1  1970 [1;35m/dev/mtd3ro[0m
+crw-rw----    1 root     root       90,   8 Jan  1  1970 [1;35m/dev/mtd4[0m
+crw-rw----    1 root     root       90,   9 Jan  1  1970 [1;35m/dev/mtd4ro[0m
+crw-rw----    1 root     root       90,  10 Jan  1  1970 [1;35m/dev/mtd5[0m
+crw-rw----    1 root     root       90,  11 Jan  1  1970 [1;35m/dev/mtd5ro[0m
+crw-rw----    1 root     root       90,  12 Jan  1  1970 [1;35m/dev/mtd6[0m
+crw-rw----    1 root     root       90,  13 Jan  1  1970 [1;35m/dev/mtd6ro[0m
+crw-rw----    1 root     root       90,  14 Jan  1  1970 [1;35m/dev/mtd7[0m
+crw-rw----    1 root     root       90,  15 Jan  1  1970 [1;35m/dev/mtd7ro[0m
+crw-rw----    1 root     root       90,  16 Jan  1  1970 [1;35m/dev/mtd8[0m
+crw-rw----    1 root     root       90,  17 Jan  1  1970 [1;35m/dev/mtd8ro[0m
+crw-rw----    1 root     root       90,  18 Jan  1  1970 [1;35m/dev/mtd9[0m
+crw-rw----    1 root     root       90,  19 Jan  1  1970 [1;35m/dev/mtd9ro[0m
+brw-rw----    1 root     root       31,   0 Jan  1  1970 [1;35m/dev/mtdblock0[0m
+brw-rw----    1 root     root       31,   1 Jan  1  1970 [1;35m/dev/mtdblock1[0m
+brw-rw----    1 root     root       31,  10 Jan  1  1970 [1;35m/dev/mtdblock10[0m
+brw-rw----    1 root     root       31,  11 Jan  1  1970 [1;35m/dev/mtdblock11[0m
+brw-rw----    1 root     root       31,  12 Jan  1  1970 [1;35m/dev/mtdblock12[0m
+brw-rw----    1 root     root       31,   2 Jan  1  1970 [1;35m/dev/mtdblock2[0m
+brw-rw----    1 root     root       31,   3 Jan  1  1970 [1;35m/dev/mtdblock3[0m
+brw-rw----    1 root     root       31,   4 Jan  1  1970 [1;35m/dev/mtdblock4[0m
+brw-rw----    1 root     root       31,   5 Jan  1  1970 [1;35m/dev/mtdblock5[0m
+brw-rw----    1 root     root       31,   6 Jan  1  1970 [1;35m/dev/mtdblock6[0m
+brw-rw----    1 root     root       31,   7 Jan  1  1970 [1;35m/dev/mtdblock7[0m
+brw-rw----    1 root     root       31,   8 Jan  1  1970 [1;35m/dev/mtdblock8[0m
+brw-rw----    1 root     root       31,   9 Jan  1  1970 [1;35m/dev/mtdblock9[0m
+~ # echo __YI_CAPTURE_6bba9d25f579492ab4c443c4648b87ff__
+__YI_CAPTURE_6bba9d25f579492ab4c443c4648b87ff__

@@ -1,0 +1,35 @@
+openjdk version "25.0.1" 2025-10-21
+OpenJDK Runtime Environment Homebrew (build 25.0.1)
+OpenJDK 64-Bit Server VM Homebrew (build 25.0.1, mixed mode)
+[Warning] generic.log4j.xml:12:50: Include operation failed, reverting to fallback. Resource error reading file as XML (href='log4j-appender-console.xml'). Reason: Opaque part contains invalid character: 测
+[Fatal Error] generic.log4j.xml:12:50: An include with href 'log4j-appender-console.xml'failed, and no fallback element was found.
+2026-11-10T01:18:38.184651Z main ERROR Error parsing jar:file:/Users/hyc/orca/workspaces/orca测试/yi4k/.tools/restored-20261110/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml
+org.xml.sax.SAXParseException; systemId: jar:file:/Users/hyc/orca/workspaces/orca测试/yi4k/.tools/restored-20261110/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml; lineNumber: 12; columnNumber: 50; An include with href 'log4j-appender-console.xml'failed, and no fallback element was found.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:263)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:335)
+	at org.apache.logging.log4j.core.config.xml.XmlConfiguration.<init>(XmlConfiguration.java:90)
+	at org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory.getConfiguration(XmlConfigurationFactory.java:46)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:587)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:562)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:483)
+	at org.apache.logging.log4j.core.config.ConfigurationFactory.getConfiguration(ConfigurationFactory.java:323)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:778)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:808)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:311)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:264)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:48)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:119)
+	at ghidra.framework.LoggingInitialization.installConfigFile(LoggingInitialization.java:74)
+	at ghidra.framework.LoggingInitialization.initializeLoggingSystem(LoggingInitialization.java:50)
+	at ghidra.framework.Application.initializeLogging(Application.java:174)
+	at ghidra.framework.Application.initializeLogging(Application.java:142)
+	at ghidra.framework.Application.initialize(Application.java:90)
+	at ghidra.framework.Application.initializeApplication(Application.java:110)
+	at ghidra.app.util.headless.HeadlessAnalyzer.getLoggableInstance(HeadlessAnalyzer.java:135)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:186)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:41)
+
+2026-11-10T01:18:43.277994Z main ERROR No logging configuration
+Unable to find 'detail' default appender
+Unable to find 'script' default appender

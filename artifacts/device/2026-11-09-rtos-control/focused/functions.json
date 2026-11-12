@@ -1,0 +1,6508 @@
+[
+  {
+    "entry": "0xa02a3db0",
+    "name": "shell_savebin",
+    "body_bytes": 344,
+    "references": [
+      {
+        "from": "0xa02a3dc4",
+        "to": "0xa02a3edc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3dd4",
+        "to": "0xa02a3ea4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3de0",
+        "to": "0xa04f9b38",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3df0",
+        "to": "0xa04fb328",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3dfc",
+        "to": "0xa06372ec",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e08",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e10",
+        "to": "0xa02a3e8c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e1c",
+        "to": "0xa05f45c0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e20",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e28",
+        "to": "0xa02a3ef4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e34",
+        "to": "0xa04fb328",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e44",
+        "to": "0xa0576b5c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e48",
+        "to": "0xa032e0c8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e50",
+        "to": "0xa02a3eb8",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e64",
+        "to": "0xa032e0d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e6c",
+        "to": "0xa02a3eb8",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e74",
+        "to": "0xa032e0d0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e80",
+        "to": "0xa02a3eb8",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3e98",
+        "to": "0xa04fb328",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ea0",
+        "to": "0xa02a3e3c",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ea8",
+        "to": "0xa05afc54",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3eb4",
+        "to": "0xa02a3e84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3eb8",
+        "to": "0xa032e114",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ecc",
+        "to": "0xa05afc88",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ed8",
+        "to": "0xa02a3e84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ee4",
+        "to": "0xa05b0234",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ef0",
+        "to": "0xa02a3e84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3ef8",
+        "to": "0xa05b0260",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02a3f04",
+        "to": "0xa02a3e84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0477a44",
+    "name": "lnxcmd_rpc_handler",
+    "body_bytes": 72,
+    "references": [
+      {
+        "from": "0xa0477a50",
+        "to": "0xa1a30c28",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0477a58",
+        "to": "0xa0477a78",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0477a7c",
+        "to": "0xa0625cac",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0477a80",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0478418",
+    "name": "event_notify_rpc_handler",
+    "body_bytes": 88,
+    "references": [
+      {
+        "from": "0xa0478434",
+        "to": "0xa0478458",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa029de88",
+    "name": "shell_schedule_autoexec",
+    "body_bytes": 12,
+    "references": [
+      {
+        "from": "0xa029de88",
+        "to": "0xa029de94",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa029de88",
+        "to": "0xa1446558",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa029de90",
+        "to": "0xa03bc4e8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa029de98",
+    "name": "shell_exec_direct",
+    "body_bytes": 4,
+    "references": [
+      {
+        "from": "0xa029de98",
+        "to": "0xa029ccb8",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0245cf4",
+    "name": "shell_ipc_rpc_handler",
+    "body_bytes": 1412,
+    "references": [
+      {
+        "from": "0xa0245d0c",
+        "to": "0xa0245ff0",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d1c",
+        "to": "0xa05a7160",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d24",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d2c",
+        "to": "0xa0245fbc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d38",
+        "to": "0xa05a7168",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d3c",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d44",
+        "to": "0xa0245d94",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d4c",
+        "to": "0xa0245fd4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d58",
+        "to": "0xa0531228",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d5c",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d64",
+        "to": "0xa0245d84",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d74",
+        "to": "0xa02461a0",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d80",
+        "to": "0xa03cac1c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245d9c",
+        "to": "0xa05a7194",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245da0",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245da8",
+        "to": "0xa0245f68",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245db4",
+        "to": "0xa0531228",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245dbc",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245dc4",
+        "to": "0xa0246088",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245dd0",
+        "to": "0xa05a719c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245dd4",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ddc",
+        "to": "0xa0245df8",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245de8",
+        "to": "0xa05a71a4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245dec",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245df4",
+        "to": "0xa02460bc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e04",
+        "to": "0xa03c4e94",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e08",
+        "to": "0xStack[-0x440]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245e10",
+        "to": "0xa03cd2d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e1c",
+        "to": "0xa03cd2d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e28",
+        "to": "0xStack[-0x43c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245e2c",
+        "to": "0xa04f8dec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e38",
+        "to": "0xa04f9900",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e40",
+        "to": "0xa0245e80",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e4c",
+        "to": "0xa05fc918",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e54",
+        "to": "0xa05fc918",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e60",
+        "to": "0xa04f99f0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e74",
+        "to": "0xa04f9900",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e7c",
+        "to": "0xa0245e58",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e80",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0245e88",
+        "to": "0xa02460bc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e94",
+        "to": "0xa0531228",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245e9c",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ea4",
+        "to": "0xa0245f20",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245eb4",
+        "to": "0xa02460cc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ebc",
+        "to": "0xa0245f20",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ec8",
+        "to": "0xa062fe78",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ed0",
+        "to": "0xa04f94a0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ed8",
+        "to": "0xStack[-0x430]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0245eec",
+        "to": "0xStack[-0x44c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245ef4",
+        "to": "0xStack[-0x448]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245efc",
+        "to": "0xStack[-0x450]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245f00",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0245f04",
+        "to": "0xStack[-0x42c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0245f08",
+        "to": "0xa03c4f40",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f10",
+        "to": "0xStack[-0x434]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0245f14",
+        "to": "0xa05a71c4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f28",
+        "to": "0xa05a719c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f2c",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f34",
+        "to": "0xa02460e0",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f40",
+        "to": "0xa05a71a4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f44",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f4c",
+        "to": "0xa024616c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f50",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0245f54",
+        "to": "0xa03c4c1c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f70",
+        "to": "0xa05a6d7c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f74",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f7c",
+        "to": "0xa02460a4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f88",
+        "to": "0xa05901a4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f90",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245f98",
+        "to": "0xa024622c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fa4",
+        "to": "0xa056bf78",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fa8",
+        "to": "0xa04f9744",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fb0",
+        "to": "0xa0245d84",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fb4",
+        "to": "0xa03c8ab0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fb8",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fc0",
+        "to": "0xa03caa4c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245fd8",
+        "to": "0xa05a716c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0245ff8",
+        "to": "0xa05a6da8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246004",
+        "to": "0xa05a6f48",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246010",
+        "to": "0xa05a6f74",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024601c",
+        "to": "0xa05a6fa4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246028",
+        "to": "0xa05a6fd4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246034",
+        "to": "0xa05a7010",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246040",
+        "to": "0xa05a7054",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024604c",
+        "to": "0xa05a707c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246058",
+        "to": "0xa05a70a4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246064",
+        "to": "0xa05a70f4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246070",
+        "to": "0xa05a7130",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024607c",
+        "to": "0xa05a7148",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246084",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246090",
+        "to": "0xa03c4e94",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246098",
+        "to": "0xStack[-0x440]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa024609c",
+        "to": "0xStack[-0x43c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa02460a0",
+        "to": "0xa0245e80",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460ac",
+        "to": "0xa05a7200",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460b8",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460c0",
+        "to": "0xa05a71ac",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460c8",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460d0",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa02460d4",
+        "to": "0xa0245cb4",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460dc",
+        "to": "0xa0245f20",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460e4",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa02460e8",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa02460ec",
+        "to": "0xa03c9188",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460f0",
+        "to": "0xStack[-0x434]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa02460f8",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02460fc",
+        "to": "0xStack[-0x434]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246104",
+        "to": "0xa0246244",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246108",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa024610c",
+        "to": "0xa04f99f0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246118",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246120",
+        "to": "0xa0246160",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246134",
+        "to": "0xa0246264",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246138",
+        "to": "0xa029c680",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024613c",
+        "to": "0xStack[-0x29]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0246148",
+        "to": "0xa0635574",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024615c",
+        "to": "0xa0246124",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246160",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246164",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246168",
+        "to": "0xa0245f50",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024616c",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246174",
+        "to": "0xStack[-0x440]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246178",
+        "to": "0xa03c91d0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246184",
+        "to": "0xStack[-0x434]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0246188",
+        "to": "0xa0246234",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024618c",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246190",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246198",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024619c",
+        "to": "0xa0245f50",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02461a8",
+        "to": "0xa03cd2d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02461b8",
+        "to": "0xStack[-0x428]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa02461bc",
+        "to": "0xa03cd2d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02461c8",
+        "to": "0xStack[-0x424]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa02461d8",
+        "to": "0xStack[-0x424]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa02461f4",
+        "to": "0xa05a7184",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa02461f8",
+        "to": "0xa0245620",
+        "type": "DATA",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246200",
+        "to": "0xStack[-0x424]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246208",
+        "to": "0xa024566c",
+        "type": "DATA",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024620c",
+        "to": "0xStack[-0x450]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0246210",
+        "to": "0xStack[-0x444]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0246214",
+        "to": "0xStack[-0x44c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0246218",
+        "to": "0xStack[-0x448]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa024621c",
+        "to": "0xa03caab4",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246220",
+        "to": "0xStack[-0x424]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0246224",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246228",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024622c",
+        "to": "0xa03c8988",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246230",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246238",
+        "to": "0xa05a71dc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246240",
+        "to": "0xa024618c",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa024624c",
+        "to": "0xa05a71dc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246258",
+        "to": "0xStack[-0x43c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa024625c",
+        "to": "0xa03cd264",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246260",
+        "to": "0xa0245d84",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246270",
+        "to": "0xa029c680",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0246274",
+        "to": "0xa0246140",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa03c9188",
+    "name": "rpc_linux_exec1",
+    "body_bytes": 72,
+    "references": [
+      {
+        "from": "0xa03c919c",
+        "to": "0xa04f99f0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03c91ac",
+        "to": "0xStack[-0x20]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03c91b8",
+        "to": "0xStack[-0x1c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03c91c0",
+        "to": "0xStack[-0x18]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03c91c4",
+        "to": "0xa03c4f40",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0394cc0",
+    "name": "eis_debug_dispatch",
+    "body_bytes": 6696,
+    "references": [
+      {
+        "from": "0xa0394cc8",
+        "to": "0xStack[-0x64]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0394ccc",
+        "to": "0xStack[-0x68]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0394cd0",
+        "to": "0xStack[-0x6c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0394cd4",
+        "to": "0xStack[-0x64]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03954c8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03954d0",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03954d8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03954f8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395534",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa039554c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395554",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03956f0",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395738",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396ec4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395774",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395820",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395890",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa039590c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395940",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03959bc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395d00",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395d90",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395dbc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395e00",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395e54",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395ef4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395f48",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395f8c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395fd4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa039604c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03960c8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396128",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396180",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03961cc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396254",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396290",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396ed8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03962cc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396368",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03963e8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396468",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03964a4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03964e8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396540",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396584",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03965bc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396600",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa039663c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03967a4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396808",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396854",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396880",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03966b0",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03966f4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396730",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa03968d8",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396c00",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396cb4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396d28",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396e10",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396e7c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0396ea4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395acc",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395b3c",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395b88",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0395cb4",
+        "type": "CONDITIONAL_COMPUTED_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce0",
+        "to": "0xa0394ce8",
+        "type": "DATA",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0394ce4",
+        "to": "0xa0396ec4",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954c8",
+        "to": "0xa0382ba0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954cc",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954d0",
+        "to": "0xa0382f88",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954d4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954d8",
+        "to": "0xa0382ba0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954e0",
+        "to": "0xa0600c94",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954e4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954e8",
+        "to": "0xa037d9e0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954ec",
+        "to": "0xa037fe20",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954f0",
+        "to": "0xa0382f88",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954f4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03954f8",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395510",
+        "to": "0xa0757a68",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039551c",
+        "to": "0xa0757a68",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395524",
+        "to": "0xa0600ca8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039552c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395530",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395534",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395544",
+        "to": "0xa03833b0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395548",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039554c",
+        "to": "0xa0383568",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395550",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395554",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395560",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395564",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395570",
+        "to": "0xa03955dc",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039557c",
+        "to": "0xa1702ccb",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395588",
+        "to": "0xa0600cbc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395590",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395594",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03955a0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03955a4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03955b4",
+        "to": "0xa1702ccb",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03955c0",
+        "to": "0xa1702ccb",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03955cc",
+        "to": "0xa0600cdc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03955d4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03955d8",
+        "to": "0xa03956ec",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03955dc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03955e8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03955ec",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03955f8",
+        "to": "0xa0395664",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395604",
+        "to": "0xa1702ccc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395610",
+        "to": "0xa0600cfc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395618",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039561c",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395628",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa039562c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039563c",
+        "to": "0xa1702ccc",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395648",
+        "to": "0xa1702ccc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395654",
+        "to": "0xa0600d1c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039565c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395660",
+        "to": "0xa03956ec",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395664",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395670",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395674",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395680",
+        "to": "0xa03956ec",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039568c",
+        "to": "0xa1702ccd",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395698",
+        "to": "0xa0600d3c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956a0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956a4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03956b0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03956b4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03956c4",
+        "to": "0xa1702ccd",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03956d0",
+        "to": "0xa1702ccd",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03956dc",
+        "to": "0xa0600d5c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956e4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956e8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956ec",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03956f0",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03956fc",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395700",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395710",
+        "to": "0xa17045ad",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039571c",
+        "to": "0xa17045ad",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395728",
+        "to": "0xa0600d7c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395730",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395734",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395748",
+        "to": "0xa1702c54",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395750",
+        "to": "0xa03b0ce0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039575c",
+        "to": "0xa1702c57",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395764",
+        "to": "0xa0600d88",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039576c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395770",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395780",
+        "to": "0xa03aaaf0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395784",
+        "to": "0xStack[-0x2c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039578c",
+        "to": "0xStack[-0x2b]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395794",
+        "to": "0xStack[-0x2a]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039579c",
+        "to": "0xStack[-0x29]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03957a0",
+        "to": "0xStack[-0x78]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03957a8",
+        "to": "0xa0600d98",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03957b0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03957b8",
+        "to": "0xStack[-0x2c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03957c8",
+        "to": "0xa03ab424",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03957dc",
+        "to": "0xa03b0ce0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03957e0",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03957e8",
+        "to": "0xa0395b80",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03957f0",
+        "to": "0xStack[-0x44]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03957f4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03957fc",
+        "to": "0xa0395b84",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395804",
+        "to": "0xStack[-0x40]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395818",
+        "to": "0xa03b0ce0",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039581c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395820",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039582c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395830",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395840",
+        "to": "0xa170ab14",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395844",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395854",
+        "to": "0xa0757ab4",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395860",
+        "to": "0xa170ab14",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395870",
+        "to": "0xa0757ab4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039587c",
+        "to": "0xa0600dbc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395888",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039588c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395890",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039589c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03958a0",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03958b0",
+        "to": "0xa17045d9",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03958b4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03958c0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03958c4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03958d4",
+        "to": "0xa17045d8",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03958e0",
+        "to": "0xa17045d9",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03958f0",
+        "to": "0xa17045d8",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03958f8",
+        "to": "0xa0600dec",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395904",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395908",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039590c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039591c",
+        "to": "0xa0757aa4",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395920",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395938",
+        "to": "0xa17045cc",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039593c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395940",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039594c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395950",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395960",
+        "to": "0xa17045d7",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395964",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395970",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395974",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395984",
+        "to": "0xa17045d4",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395990",
+        "to": "0xa17045d7",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03959a0",
+        "to": "0xa17045d4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03959a8",
+        "to": "0xa0600e1c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03959b4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03959b8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03959bc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03959c8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03959cc",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03959dc",
+        "to": "0xa0757a51",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03959e8",
+        "to": "0xa170422a",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03959f8",
+        "to": "0xa0757a51",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395a10",
+        "to": "0xa170422b",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a1c",
+        "to": "0xa170422b",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a28",
+        "to": "0xa0395a60",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395a34",
+        "to": "0xa170422b",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a44",
+        "to": "0xa1702c50",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a5c",
+        "to": "0xa170422b",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a68",
+        "to": "0xa0757a51",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395a78",
+        "to": "0xa170422b",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395a84",
+        "to": "0xa0600e50",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395a90",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395a9c",
+        "to": "0xa1704228",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395aac",
+        "to": "0xa1704229",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395ab8",
+        "to": "0xa0600e88",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ac4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ac8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395acc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395ad8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395adc",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395aec",
+        "to": "0xa17045d9",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395af8",
+        "to": "0xa17045d9",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395b04",
+        "to": "0xa17045da",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395b10",
+        "to": "0xa17045da",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395b20",
+        "to": "0xa17045d9",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395b28",
+        "to": "0xa0600eb4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b34",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b38",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b3c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395b48",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395b4c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395b5c",
+        "to": "0xa0757ab1",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b68",
+        "to": "0xa0757ab1",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b70",
+        "to": "0xa0600edc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b78",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b7c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395b88",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395b94",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395b98",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395ba8",
+        "to": "0xa0757a50",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395bb4",
+        "to": "0xa0757a50",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395bc4",
+        "to": "0xa1704228",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395bd0",
+        "to": "0xa1702c50",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395be0",
+        "to": "0xa1704229",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395be4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395bf0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395bf4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395c04",
+        "to": "0xa0757a51",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c10",
+        "to": "0xa0757a51",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c20",
+        "to": "0xa170422b",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395c2c",
+        "to": "0xa0757a50",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c3c",
+        "to": "0xa1704228",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395c4c",
+        "to": "0xa1704229",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395c58",
+        "to": "0xa0600ef0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c5c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c68",
+        "to": "0xa0757a51",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c78",
+        "to": "0xa170422b",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395c84",
+        "to": "0xa0600e50",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c90",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395c9c",
+        "to": "0xa0757aa2",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ca4",
+        "to": "0xa0600f34",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cac",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cb0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cb4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395cc0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395cc4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395cd0",
+        "to": "0xa02c1bfc",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cd4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395ce0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395ce4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395cf0",
+        "to": "0xa0600f4c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cf8",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395cfc",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d00",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395d0c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395d10",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395d20",
+        "to": "0xa0757ab0",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d24",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395d30",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395d34",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395d44",
+        "to": "0xa17045e8",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395d54",
+        "to": "0xa0757ad0",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d60",
+        "to": "0xa0757ab0",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d70",
+        "to": "0xa17045e8",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395d7c",
+        "to": "0xa0600f78",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d88",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d8c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395d90",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395d9c",
+        "to": "0xa0396170",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395da4",
+        "to": "0xa0396178",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395db4",
+        "to": "0xa17045e0",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395db8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395dbc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395dc8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395dcc",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395ddc",
+        "to": "0xa17045db",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395de8",
+        "to": "0xa17045db",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395df0",
+        "to": "0xa0600fa8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395df8",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395dfc",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e00",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395e18",
+        "to": "0xa0757a74",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e24",
+        "to": "0xa0757a74",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e30",
+        "to": "0xa0757a70",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e3c",
+        "to": "0xa0757a70",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e44",
+        "to": "0xa0600fc4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e4c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e50",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e54",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395e60",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395e64",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395e74",
+        "to": "0xa0757b48",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e80",
+        "to": "0xa0757a58",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395e90",
+        "to": "0xa0757b48",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395eb0",
+        "to": "0xa0757a54",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ebc",
+        "to": "0xa0757a58",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ec8",
+        "to": "0xa0757b48",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ed8",
+        "to": "0xa0757a54",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ee0",
+        "to": "0xa0600fec",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395eec",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ef0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395ef4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f00",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395f04",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f10",
+        "to": "0xa0395f1c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f14",
+        "to": "0xa037e218",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f18",
+        "to": "0xa0395f44",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f1c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f28",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395f2c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f38",
+        "to": "0xa0395f44",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f3c",
+        "to": "0xa037e288",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f40",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f44",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f48",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f54",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395f58",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f68",
+        "to": "0xa17045dc",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395f74",
+        "to": "0xa17045dc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395f7c",
+        "to": "0xa060102c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f84",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f88",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395f8c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395f98",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395f9c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395fa4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395fb0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0395fb4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0395fcc",
+        "to": "0xa038e98c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395fd0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395fd4",
+        "to": "0xa0308b8c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0395fe4",
+        "to": "0xa17045fc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395ff0",
+        "to": "0xa17045fc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0395ff8",
+        "to": "0xa04a3b24",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396004",
+        "to": "0xa0601044",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396010",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396014",
+        "to": "0xa0308b8c",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396020",
+        "to": "0xa0396030",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396028",
+        "to": "0xe8118000",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa039602c",
+        "to": "0xa0396038",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396034",
+        "to": "0x70118000",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa039603c",
+        "to": "0xa0601080",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396040",
+        "to": "0xe8118000",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa0396040",
+        "to": "0x70118000",
+        "type": "PARAM"
+      },
+      {
+        "from": "0xa0396044",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396048",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039604c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396058",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa039605c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039606c",
+        "to": "0xa17045dd",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396070",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039607c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396080",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396090",
+        "to": "0xa17045de",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039609c",
+        "to": "0xa17045dd",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03960ac",
+        "to": "0xa17045de",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03960b4",
+        "to": "0xa0601094",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03960c0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03960c4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03960c8",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03960d8",
+        "to": "0xa0757b4c",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03960dc",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03960ec",
+        "to": "0xa0757b50",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03960f8",
+        "to": "0xa0757b4c",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396108",
+        "to": "0xa0757b50",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396110",
+        "to": "0xStack[-0x78]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396118",
+        "to": "0xa06010c8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396120",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396124",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396128",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396134",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396138",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396148",
+        "to": "0xa170aef8",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396154",
+        "to": "0xa170aef8",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039615c",
+        "to": "0xa06010f4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396164",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396168",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396180",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039618c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396190",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03961a0",
+        "to": "0xa1702cba",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03961a4",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03961b0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03961b4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03961c4",
+        "to": "0xa1702cbb",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03961c8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03961cc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03961d8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03961dc",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03961ec",
+        "to": "0xa170af8e",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03961fc",
+        "to": "0xa170af90",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039620c",
+        "to": "0xa0757af0",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396210",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039621c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396220",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396230",
+        "to": "0xa170af94",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039623c",
+        "to": "0xa170af8e",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396244",
+        "to": "0xa060110c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039624c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396250",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396254",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039626c",
+        "to": "0xa0757b44",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396278",
+        "to": "0xa0757b44",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396280",
+        "to": "0xa060111c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396288",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039628c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396290",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03962a8",
+        "to": "0xa0757ac4",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962b4",
+        "to": "0xa0757ac4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962bc",
+        "to": "0xa060112c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962c4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962c8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962d4",
+        "to": "0xa17045da",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03962dc",
+        "to": "0xa0396324",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03962e0",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03962ec",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03962f0",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396300",
+        "to": "0xa170af29",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039630c",
+        "to": "0xa170af29",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396314",
+        "to": "0xa060113c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039631c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396320",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396324",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396330",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396334",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396344",
+        "to": "0xa170af2a",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396350",
+        "to": "0xa170af2a",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396358",
+        "to": "0xa0601150",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396360",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396364",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396368",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396374",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396378",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039638c",
+        "to": "0xa17042e0",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396390",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039639c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03963a0",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03963b4",
+        "to": "0xa17042e8",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03963c0",
+        "to": "0xa17042e0",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03963cc",
+        "to": "0xa17042e8",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03963d4",
+        "to": "0xa0601164",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03963e0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03963e4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03963e8",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03963f4",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03963f8",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039640c",
+        "to": "0xa17042e4",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396410",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039641c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396420",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396434",
+        "to": "0xa17042ec",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396440",
+        "to": "0xa17042e4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039644c",
+        "to": "0xa17042ec",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396454",
+        "to": "0xa0601174",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396460",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396464",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396468",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396480",
+        "to": "0xa170aeec",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039648c",
+        "to": "0xa170aeec",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396494",
+        "to": "0xa0601184",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039649c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03964a0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03964a4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03964b0",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03964b4",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03964c4",
+        "to": "0xa170af80",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03964d0",
+        "to": "0xa170af80",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03964d8",
+        "to": "0xa0601194",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03964e0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03964e4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03964e8",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03964f4",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03964f8",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396508",
+        "to": "0xa0757ab8",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396514",
+        "to": "0xa170ab74",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396524",
+        "to": "0xa0757ab8",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039652c",
+        "to": "0xa06011b0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396538",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039653c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396540",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039654c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396550",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396560",
+        "to": "0xa170af8d",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039656c",
+        "to": "0xa170af8d",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396574",
+        "to": "0xa06011e0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039657c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396580",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396584",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396594",
+        "to": "0xa0757aec",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965a0",
+        "to": "0xa0757aec",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965ac",
+        "to": "0xa06011f0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965b4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965b8",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965bc",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03965c8",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03965cc",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03965dc",
+        "to": "0xa170af88",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03965e8",
+        "to": "0xa170af88",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03965f0",
+        "to": "0xa0601208",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965f8",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03965fc",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396600",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396618",
+        "to": "0xa0757ad4",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396624",
+        "to": "0xa0757ad4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039662c",
+        "to": "0xa0601220",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396634",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396638",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039663c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396648",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa039664c",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039665c",
+        "to": "0xa0757ad8",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396660",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396678",
+        "to": "0xa0757adc",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396684",
+        "to": "0xa0757ad8",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396694",
+        "to": "0xa0757adc",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039669c",
+        "to": "0xa0601238",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966a8",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966ac",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966b0",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03966bc",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03966c0",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03966d0",
+        "to": "0xa170af8a",
+        "type": "WRITE",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03966dc",
+        "to": "0xa170af8a",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03966e4",
+        "to": "0xa060126c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966ec",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966f0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03966f4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039670c",
+        "to": "0xa0757ae0",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396718",
+        "to": "0xa0757ae0",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396720",
+        "to": "0xa0601284",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396728",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039672c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396730",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039673c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396740",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396750",
+        "to": "0xa0757ae4",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396754",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039676c",
+        "to": "0xa0757ae8",
+        "type": "WRITE",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396778",
+        "to": "0xa0757ae4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396788",
+        "to": "0xa0757ae8",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396790",
+        "to": "0xa0601298",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039679c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967a0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967a4",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03967b4",
+        "to": "0xStack[-0x14]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03967b8",
+        "to": "0xStack[-0x14]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03967c0",
+        "to": "0xa03967d4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967c8",
+        "to": "0xa06012cc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967cc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967d0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03967d4",
+        "to": "0xStack[-0x14]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03967d8",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03967e4",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03967e8",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396800",
+        "to": "0xa0757af8",
+        "type": "DATA",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396804",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396808",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396810",
+        "to": "0xStack[-0x30]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa039681c",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396824",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396830",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396834",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396850",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396854",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396870",
+        "to": "0xa0757af8",
+        "type": "DATA",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396874",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa039687c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396880",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396890",
+        "to": "0xStack[-0x18]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396894",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03968a4",
+        "to": "0xStack[-0x1c]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03968a8",
+        "to": "0xStack[-0x18]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03968ac",
+        "to": "0xStack[-0x1c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03968b4",
+        "to": "0xa037d738",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03968c0",
+        "to": "0xa06012e4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03968c8",
+        "to": "0xStack[-0x18]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03968cc",
+        "to": "0xStack[-0x1c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa03968d0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03968d4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03968e0",
+        "to": "0xa17045d7",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03968f0",
+        "to": "0xa17045d4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03968f8",
+        "to": "0xa0601320",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396904",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396910",
+        "to": "0xa17045da",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396920",
+        "to": "0xa17045d9",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396930",
+        "to": "0xa17045d8",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396938",
+        "to": "0xa0601358",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa039693c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396948",
+        "to": "0xa17045db",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396950",
+        "to": "0xa060139c",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396958",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396964",
+        "to": "0xa17045dc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa039696c",
+        "to": "0xa06013b8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396974",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396980",
+        "to": "0xa17045dd",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396990",
+        "to": "0xa17045de",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396998",
+        "to": "0xa06013d0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969a4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969b0",
+        "to": "0xa0757a70",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969b8",
+        "to": "0xa0601408",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969c0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969cc",
+        "to": "0xa0757aa4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969dc",
+        "to": "0xa17045cc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa03969e0",
+        "to": "0xStack[-0x78]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa03969e8",
+        "to": "0xa0601434",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969f0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa03969fc",
+        "to": "0xa0757a50",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a0c",
+        "to": "0xa1704228",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396a1c",
+        "to": "0xa1704229",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396a28",
+        "to": "0xa0601458",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a2c",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a38",
+        "to": "0xa0757a51",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a48",
+        "to": "0xa170422b",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396a54",
+        "to": "0xa06014a4",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a60",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a6c",
+        "to": "0xa0757ab0",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a78",
+        "to": "0xa06014e0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a80",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a8c",
+        "to": "0xa0757a58",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396a98",
+        "to": "0xa0757b48",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396aa8",
+        "to": "0xa0757a54",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ab0",
+        "to": "0xa06014fc",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396abc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ac8",
+        "to": "0xa170ab14",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396ad8",
+        "to": "0xa0757ab4",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ae4",
+        "to": "0xa0601544",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396af0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396afc",
+        "to": "0xa0757b4c",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b0c",
+        "to": "0xa0757b50",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b14",
+        "to": "0xStack[-0x78]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396b1c",
+        "to": "0xa0601578",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b24",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b30",
+        "to": "0xa170ab74",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396b40",
+        "to": "0xa0757ab8",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b48",
+        "to": "0xa06011b0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b54",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b60",
+        "to": "0xa170af8a",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396b70",
+        "to": "0xa170af88",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396b78",
+        "to": "0xa06015a8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b84",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396b90",
+        "to": "0xa1702cb9",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396ba0",
+        "to": "0xa1702cba",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396bb0",
+        "to": "0xa1702cbb",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396bb8",
+        "to": "0xa06015d8",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396bbc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396bc8",
+        "to": "0xa1702ccb",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396bd8",
+        "to": "0xa1702ccc",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396be8",
+        "to": "0xa1702ccd",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396bf4",
+        "to": "0xa0601628",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396bf8",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396bfc",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396c08",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c14",
+        "to": "0xa0396c34",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396c20",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c2c",
+        "to": "0xa1702cc0",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c3c",
+        "to": "0xa1702cc0",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c4c",
+        "to": "0xa1702ce4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c5c",
+        "to": "0xa1702cde",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c6c",
+        "to": "0xa1702ce0",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c80",
+        "to": "0xa1702cd4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c90",
+        "to": "0xa1702cd6",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396c94",
+        "to": "0xStack[-0x78]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396c98",
+        "to": "0xStack[-0x74]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396ca0",
+        "to": "0xa0601648",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396cac",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396cb0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396cbc",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396cc8",
+        "to": "0xa0396cec",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396cd4",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396ce4",
+        "to": "0xa1702c30",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396cf4",
+        "to": "0xa1702c30",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396d04",
+        "to": "0xa1702c32",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396d14",
+        "to": "0xa1702c34",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396d1c",
+        "to": "0xa0601668",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396d20",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396d24",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396d28",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d34",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396d38",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d3c",
+        "to": "0xStack[-0x1d]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396d40",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d4c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396d50",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d54",
+        "to": "0xStack[-0x1e]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396d60",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396d6c",
+        "to": "0xa0396da4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396d78",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396d80",
+        "to": "0xStack[-0x1d]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d88",
+        "to": "0xStack[-0x1e]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396d9c",
+        "to": "0xa170ba44",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396da4",
+        "to": "0xStack[-0x1d]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396dac",
+        "to": "0xa0601688",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396db4",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396dbc",
+        "to": "0xStack[-0x11]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396dc0",
+        "to": "0xa0396dfc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396dc4",
+        "to": "0xStack[-0x11]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396dc8",
+        "to": "0xStack[-0x11]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396ddc",
+        "to": "0xa170ba44",
+        "type": "DATA",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396de4",
+        "to": "0xa0601694",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396dec",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396df0",
+        "to": "0xStack[-0x11]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396df8",
+        "to": "0xStack[-0x11]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396dfc",
+        "to": "0xStack[-0x11]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e00",
+        "to": "0xStack[-0x1e]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e08",
+        "to": "0xa0396dc4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396e0c",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396e18",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396e24",
+        "to": "0xa0396e78",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396e30",
+        "to": "0xa1a355a4",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0396e38",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e44",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396e48",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e50",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e5c",
+        "to": "0xStack[-0x70]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396e60",
+        "to": "0xStack[-0x70]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e74",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396e78",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396e7c",
+        "to": "0xStack[-0x68]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e88",
+        "to": "0xStack[-0x6c]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396e9c",
+        "to": "0xa0394ba8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ea0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396eac",
+        "to": "0xStack[-0x24]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0396eb4",
+        "to": "0xa06016a0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396eb8",
+        "to": "0xStack[-0x24]",
+        "type": "READ"
+      },
+      {
+        "from": "0xa0396ebc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ec0",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ec8",
+        "to": "0xa06016b0",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ecc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0396ed4",
+        "to": "0xa0396edc",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0186e3c",
+    "name": "app_shell_init",
+    "body_bytes": 172,
+    "references": [
+      {
+        "from": "0xa0186e54",
+        "to": "0xa055b6fc",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e54",
+        "to": "0xa055b700",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e54",
+        "to": "0xa055b704",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e54",
+        "to": "0xa055b708",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e5c",
+        "to": "0xStack[-0x40]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0186e60",
+        "to": "0xStack[-0x34]",
+        "type": "WRITE"
+      },
+      {
+        "from": "0xa0186e64",
+        "to": "0xStack[-0x30]",
+        "type": "DATA"
+      },
+      {
+        "from": "0xa0186e68",
+        "to": "0xa055b70c",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e68",
+        "to": "0xa055b710",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e68",
+        "to": "0xa055b714",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e68",
+        "to": "0xa055b718",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e6c",
+        "to": "0xStack[-0x20]",
+        "type": "DATA"
+      },
+      {
+        "from": "0xa0186e74",
+        "to": "0xa0fd7114",
+        "type": "PARAM",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0186e84",
+        "to": "0xa029a7d8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e8c",
+        "to": "0xa0186ed8",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186e94",
+        "to": "0xa029dc38",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ea0",
+        "to": "0xa078b608",
+        "type": "READ",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ea4",
+        "to": "0xa1a39c85",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0186eac",
+        "to": "0xa0186ec4",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186eb8",
+        "to": "0xa0296618",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ebc",
+        "to": "0xa0296600",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ec0",
+        "to": "0xa029de40",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ec8",
+        "to": "0xa055b768",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ecc",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186edc",
+        "to": "0xa055b748",
+        "type": "PARAM",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ee0",
+        "to": "0xa02a70ec",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0186ee4",
+        "to": "0xa0186e90",
+        "type": "UNCONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0296618",
+    "name": "app_shell_read_callback",
+    "body_bytes": 92,
+    "references": [
+      {
+        "from": "0xa0296628",
+        "to": "0xa1445460",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0296634",
+        "to": "0xa029664c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0296640",
+        "to": "0xa1445468",
+        "type": "READ",
+        "block": "startup_bss_candidate",
+        "initialized": false
+      },
+      {
+        "from": "0xa0296648",
+        "to": "0xa029666c",
+        "type": "CONDITIONAL_JUMP",
+        "block": "ram",
+        "initialized": true
+      },
+      {
+        "from": "0xa0296668",
+        "to": "0xa048eab8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  },
+  {
+    "entry": "0xa0296600",
+    "name": "app_shell_write_callback",
+    "body_bytes": 24,
+    "references": [
+      {
+        "from": "0xa0296614",
+        "to": "0xa048e8c8",
+        "type": "UNCONDITIONAL_CALL",
+        "block": "ram",
+        "initialized": true
+      }
+    ],
+    "decompile_completed": true
+  }
+]

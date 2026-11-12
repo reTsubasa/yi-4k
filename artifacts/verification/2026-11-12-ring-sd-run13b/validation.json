@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "status": "pass_host_bounded_ring_sd_simulation",
+  "device_access": false,
+  "source_sha256": {
+    "scripts/validate_prerecord_ring_sd_backend.py": "8415240d935956abaf30743073884c5f14262db6c27e398ed50d4a579fd4861f"
+  },
+  "host": {
+    "python": "3.14.0",
+    "platform": "macOS-26.5-x86_64-i386-64bit-Mach-O"
+  },
+  "cases": [
+    {
+      "name": "60s_snapshot_lease_epoch_rollover",
+      "segments_before": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "snapshot_records": 120,
+      "evicted": 1,
+      "held_aac_transferred": true,
+      "backpressure_while_leased": true,
+      "device_access": false
+    },
+    {
+      "name": "closed_writer_restart_reader_reconstructs_segment",
+      "segment": 4,
+      "records": 30,
+      "payload_bytes": 780,
+      "transcript_sha256": "f5121a52de72d4517c211edf6ed9d46e933383df9ee46ada2b0f3b4d5d6418c9",
+      "device_access": false
+    },
+    {
+      "name": "ambiguous_sync_freezes_and_retains",
+      "frozen": true,
+      "retained_spool": true,
+      "eviction_manifest_empty": true,
+      "device_access": false
+    },
+    {
+      "name": "tampered_sidecar_rejected",
+      "valid": false,
+      "device_access": false
+    },
+    {
+      "name": "restart_reader_rejects_tampered_spool_after_writer_close",
+      "valid": false,
+      "device_access": false
+    }
+  ],
+  "assertions": 15,
+  "limitations": [
+    "POSIX files and fsync are a host SD-adapter simulation, not a physical card or camera backend.",
+    "Synthetic one-second video/AAC fixtures exercise ownership and boundaries; they are not source encoder output or AAC parser evidence.",
+    "The ring orchestrator does not install RTOS callbacks, prove scheduler quiescence, or authenticate a hardware A/V clock.",
+    "Seals prove only the simulation's expected source ledger and retained files; no MP4 publication or complete recording claim."
+  ]
+}

@@ -1,0 +1,2058 @@
+{
+  "status": "PASS",
+  "source_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "counters": {
+    "instructions": 3654,
+    "invocations": 57,
+    "aligned_calls": 213
+  },
+  "physical_cases": [
+    {
+      "label": "release_without_press",
+      "events": [],
+      "steps": [
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "normal_short_repeat_low",
+      "events": [
+        [
+          3758161950,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "repeated_high_before_short",
+      "events": [
+        [
+          3758161950,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "two_complete_short_cycles",
+      "events": [
+        [
+          3758161950,
+          0,
+          0
+        ],
+        [
+          3758161950,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "long_then_one_release",
+      "events": [
+        [
+          4026598194,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": "timer",
+          "press_latch": 1,
+          "long_suppression": 1,
+          "result": 0,
+          "messages": [
+            [
+              4026598194,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [],
+          "gpio_reads": 0,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": []
+        },
+        {
+          "step": 0,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "long_then_duplicate_low_boundary",
+      "events": [
+        [
+          4026598194,
+          0,
+          0
+        ],
+        [
+          3758161950,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": "timer",
+          "press_latch": 1,
+          "long_suppression": 1,
+          "result": 0,
+          "messages": [
+            [
+              4026598194,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [],
+          "gpio_reads": 0,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": []
+        },
+        {
+          "step": 0,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "raw_bounce_is_two_cycles",
+      "events": [
+        [
+          3758161950,
+          0,
+          0
+        ],
+        [
+          3758161950,
+          0,
+          0
+        ]
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        },
+        {
+          "step": 1,
+          "press_latch": 1,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc64c",
+              "args": [
+                2705609844,
+                1500,
+                0,
+                1
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 1
+        },
+        {
+          "step": 0,
+          "press_latch": 0,
+          "long_suppression": 0,
+          "result": 0,
+          "messages": [
+            [
+              3758161950,
+              0,
+              0
+            ]
+          ],
+          "timer_calls": [
+            {
+              "entry": "0xa03bc648",
+              "args": [
+                2705609844,
+                1887432691,
+                0,
+                0
+              ]
+            }
+          ],
+          "gpio_reads": 1,
+          "critical_calls": [],
+          "scheduler_calls": [],
+          "queue_failure_dumps": 0,
+          "log_calls": 0,
+          "app_dispatch": [],
+          "operations": [],
+          "button_record_calls": 0,
+          "button_photo_calls": 0,
+          "readiness_calls": [],
+          "special_ui_calls": [],
+          "recorder_side_calls": [],
+          "level": 0
+        }
+      ]
+    },
+    {
+      "label": "other_gpio_ignored",
+      "result": 12,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "level": 1
+    }
+  ],
+  "registration": [
+    {
+      "result": -1608920820,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": []
+    },
+    {
+      "result": -1608921272,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": []
+    }
+  ],
+  "queue_cases": [
+    {
+      "label": "short_queue_copy",
+      "copied_words": [
+        3758161950,
+        0,
+        0,
+        123456
+      ],
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [
+        "0xa03c13b0",
+        "0xa03c1428"
+      ],
+      "scheduler_calls": [
+        [
+          "0xa03bc41c",
+          2704941900
+        ]
+      ],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "real_queue": true
+    },
+    {
+      "label": "short_wrapper_payload_duplication",
+      "copied_words": [
+        3758161950,
+        7,
+        7,
+        123456
+      ],
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [
+        "0xa03c13b0",
+        "0xa03c1428"
+      ],
+      "scheduler_calls": [
+        [
+          "0xa03bc41c",
+          2704941900
+        ]
+      ],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "real_queue": true
+    },
+    {
+      "label": "long_queue_copy",
+      "copied_words": [
+        4026598194,
+        7,
+        9,
+        123456
+      ],
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [
+        "0xa03c13b0",
+        "0xa03c1428"
+      ],
+      "scheduler_calls": [
+        [
+          "0xa03bc41c",
+          2704941900
+        ]
+      ],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "real_queue": true
+    },
+    {
+      "label": "direct_waiting_receiver_copy",
+      "copied_words": [
+        3758161950,
+        0,
+        0,
+        123456
+      ],
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [
+        "0xa03c13b0",
+        "0xa03c1428"
+      ],
+      "scheduler_calls": [
+        [
+          "0xa03c17c4",
+          1879179264
+        ],
+        [
+          "0xa03bc41c",
+          2704941900
+        ]
+      ],
+      "queue_failure_dumps": 0,
+      "log_calls": 0,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "real_queue": true
+    },
+    {
+      "label": "queue_full_drops_without_retry",
+      "copied_words": [
+        2863311530,
+        2863311530,
+        2863311530,
+        2863311530
+      ],
+      "result": 11,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [
+        "0xa03c13b0",
+        "0xa03c1428"
+      ],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 1,
+      "log_calls": 1,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "real_queue": true
+    }
+  ],
+  "app_cases": [
+    {
+      "mode": 0,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161934,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 1,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161934,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 2,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161934,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 3,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161934,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 4,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161932,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 5,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161932,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 6,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161932,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 7,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161932,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 8,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [
+        [
+          3758161932,
+          17,
+          29
+        ]
+      ],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 4,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [
+        1
+      ],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 1
+    },
+    {
+      "mode": 4,
+      "ui1": 1,
+      "ui2": 0,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [
+        [
+          "0xa012f8fc",
+          3
+        ]
+      ],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 4,
+      "ui1": 0,
+      "ui2": 1,
+      "rtmp": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 4,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [
+        [
+          "0xa012f950",
+          2
+        ]
+      ],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "mode": 4,
+      "ui1": 0,
+      "ui2": 0,
+      "rtmp": 1,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true,
+      "readiness": 0
+    },
+    {
+      "label": "record_event_table_slot",
+      "initialized": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 1,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true
+    },
+    {
+      "label": "record_event_table_slot",
+      "initialized": 4,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 1,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 1,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "stub_buttons": true
+    }
+  ],
+  "toggle_cases": [
+    {
+      "label": "idle_start",
+      "status": 0,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 1,
+      "app_dispatch": [],
+      "operations": [
+        [
+          58,
+          0,
+          0
+        ],
+        [
+          18,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "starting_not_actually_started_no_stop",
+      "status": 1,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "confirmed_recording_stop",
+      "status": 1,
+      "flags1": "0x4",
+      "flags2": "0x80",
+      "mode": 4,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [
+        [
+          19,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "only_first_start_flag_no_stop",
+      "status": 1,
+      "flags1": "0x4",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "mode5_alternative_stop_gate",
+      "status": 1,
+      "flags1": "0x80000000",
+      "flags2": "0x0",
+      "mode": 5,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [
+        [
+          19,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "preference_alternative_stop_gate",
+      "status": 1,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 3,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 3,
+      "app_dispatch": [],
+      "operations": [
+        [
+          19,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "vf_to_record",
+      "status": 5,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": 0,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 2,
+      "app_dispatch": [],
+      "operations": [
+        [
+          58,
+          0,
+          0
+        ],
+        [
+          88,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 0
+    },
+    {
+      "label": "formatting_blocks",
+      "status": 0,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": -1,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 2,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "prerequisite": 0
+    },
+    {
+      "label": "start_prerequisite_failure",
+      "status": 0,
+      "flags1": "0x0",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": 7,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 2,
+      "app_dispatch": [],
+      "operations": [
+        [
+          58,
+          0,
+          0
+        ]
+      ],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [
+        [
+          "0xa01345a8",
+          202
+        ],
+        [
+          "0xa017697c",
+          4294967295
+        ]
+      ],
+      "prerequisite": 7
+    },
+    {
+      "label": "record_busy_blocks",
+      "status": 0,
+      "flags1": "0x400000",
+      "flags2": "0x0",
+      "mode": 4,
+      "pref77": 0,
+      "result": -1,
+      "messages": [],
+      "timer_calls": [],
+      "gpio_reads": 0,
+      "critical_calls": [],
+      "scheduler_calls": [],
+      "queue_failure_dumps": 0,
+      "log_calls": 2,
+      "app_dispatch": [],
+      "operations": [],
+      "button_record_calls": 0,
+      "button_photo_calls": 0,
+      "readiness_calls": [],
+      "special_ui_calls": [],
+      "recorder_side_calls": [],
+      "prerequisite": 0
+    }
+  ],
+  "static_evidence": [
+    {
+      "address": "0xa019da28",
+      "instruction": "bl #0xa01881f4"
+    },
+    {
+      "address": "0xa019da34",
+      "instruction": "bl #0xa01e5f08"
+    },
+    {
+      "address": "0xa019da54",
+      "instruction": "bl #0xa019ca44"
+    },
+    {
+      "address": "0xa019da5c",
+      "instruction": "bl #0xa0199a14"
+    },
+    {
+      "address": "0xa019da64",
+      "instruction": "blt #0xa019dd84"
+    },
+    {
+      "address": "0xa019e390",
+      "instruction": "beq #0xa019f4e0"
+    },
+    {
+      "address": "0xa019e8f0",
+      "instruction": "beq #0xa019efd4"
+    },
+    {
+      "address": "0xa019ef90",
+      "instruction": "bl #0xa01b22e0"
+    },
+    {
+      "address": "0xa019e60c",
+      "instruction": "bl #0xa01b25e4"
+    },
+    {
+      "address": "0xa01a0f80",
+      "instruction": "ldr r3, [r3, #0x28]"
+    },
+    {
+      "address": "0xa01a0f84",
+      "instruction": "blx r3"
+    },
+    {
+      "address": "0xa01a0988",
+      "instruction": "blx r3"
+    },
+    {
+      "address": "0xa0187bac",
+      "instruction": "bl #0xa0296b7c"
+    },
+    {
+      "address": "0xa0187bb8",
+      "instruction": "bl #0xa0296b8c"
+    },
+    {
+      "address": "0xa0187bbc",
+      "instruction": "bl #0xa0296b9c"
+    },
+    {
+      "address": "0xa01e62a4",
+      "instruction": "mov r2, #0x10"
+    },
+    {
+      "address": "0xa01e62a8",
+      "instruction": "mov r3, #0x80"
+    },
+    {
+      "address": "0xa01e62b0",
+      "instruction": "bl #0xa03bc534"
+    },
+    {
+      "address": "0xa03bc548",
+      "instruction": "lsr r2, r2, #2"
+    }
+  ],
+  "fingerprints": [
+    {
+      "start": "0xa02969d8",
+      "end_exclusive": "0xa0296ac8",
+      "sha256": "cee658737240b024ef06b65d5c1bede6ba915a445200cad026409ba967f77b3b"
+    },
+    {
+      "start": "0xa019cf48",
+      "end_exclusive": "0xa019cf5c",
+      "sha256": "d44ce07c3104764121fcad905a2949546c7814e5ee67339385784523ac10c7ae"
+    },
+    {
+      "start": "0xa019d10c",
+      "end_exclusive": "0xa019d124",
+      "sha256": "bcc774061bb7c2d0d49224a203061e8a9cbaef543762c809be83caef9ec394ad"
+    },
+    {
+      "start": "0xa0296b08",
+      "end_exclusive": "0xa0296bcc",
+      "sha256": "0b082666115540223422d1aa96a78b51bcf0f1b02e321696f9171e98df2b3bcf"
+    },
+    {
+      "start": "0xa01e656c",
+      "end_exclusive": "0xa01e65a0",
+      "sha256": "fddd83e4c67065827871cb29faa9083f7144dca4da444d8f7231a349dd71413d"
+    },
+    {
+      "start": "0xa01e5da4",
+      "end_exclusive": "0xa01e5e20",
+      "sha256": "fa904845dbd15b7c4c87ef99308b6bcd57641b68583c3ef6b4a93b17ff7cc934"
+    },
+    {
+      "start": "0xa03c3f68",
+      "end_exclusive": "0xa03c3ff0",
+      "sha256": "f84c608207f8cffd1f564b7b6457ba8e30d8e6638d7be3c093e53bb41ce1363c"
+    },
+    {
+      "start": "0xa03bf3d4",
+      "end_exclusive": "0xa03bf554",
+      "sha256": "72e11c4d43c34b7de3db57c86ce54fc378edccd1caba366706d91718cbf7eb05"
+    },
+    {
+      "start": "0xa0113808",
+      "end_exclusive": "0xa01172a8",
+      "sha256": "e29dd3a4b6f1432f939e142cd9c0f0499eb095ac787bdd428f483cd5e045c972"
+    },
+    {
+      "start": "0xa012c220",
+      "end_exclusive": "0xa012c6b8",
+      "sha256": "7ff79af8931c54b7be41f1f85a48d36d9b2a45dce8efa250cdb6a56661bd64e1"
+    },
+    {
+      "start": "0xa019da24",
+      "end_exclusive": "0xa019da68",
+      "sha256": "1757c57578f5f5907407edf29ac9f2d5a09e5d59455fed04cf34cf4cacd6797a"
+    },
+    {
+      "start": "0xa019f4e0",
+      "end_exclusive": "0xa019f564",
+      "sha256": "698d67fa745057eb93fc698a5ece12cb31cac153c56b5fbbe45c821570db411e"
+    },
+    {
+      "start": "0xa019efd4",
+      "end_exclusive": "0xa019f05c",
+      "sha256": "1a3a3d67feb607fed4d2da80157b421b307be5868b39cebde3ca7e31cc344ae3"
+    },
+    {
+      "start": "0xa01a0f70",
+      "end_exclusive": "0xa01a0f8c",
+      "sha256": "b385ebacbde21d48753e93222e4516e4b130f8f8a515f2ed7150a126fd0e2e98"
+    },
+    {
+      "start": "0xa01e627c",
+      "end_exclusive": "0xa01e64d8",
+      "sha256": "8a8f15e1a95c85b95cbbaac2bc0180493a1e7115b9b0bf6052c95ef3382989c5"
+    },
+    {
+      "start": "0xa04918a0",
+      "end_exclusive": "0xa04919cc",
+      "sha256": "229fdefcfad90268393c81a9a8a10c2335f815a23f207d6e5753945d8dd49b8a"
+    },
+    {
+      "start": "0xa03bc534",
+      "end_exclusive": "0xa03bc564",
+      "sha256": "df0046e83c5c83ee0c53889e14075df8bf45cd6b00d9ba3b172e2a48628d631e"
+    }
+  ],
+  "limits": [
+    "Synthetic GPIO sequences do not prove hardware debounce or IRQ/timer ordering.",
+    "Long-release duplicate-low boundary demonstrably can emit a short in this model.",
+    "Zero-wait queue can drop events; no delivery guarantee is established.",
+    "No camera calls, settings writes, encoder, filesystem or patch executed.",
+    "Backend commit/stop confirmation and provenance adapter remain unimplemented."
+  ]
+}

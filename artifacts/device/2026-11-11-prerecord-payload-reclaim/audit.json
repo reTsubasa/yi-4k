@@ -1,0 +1,528 @@
+{
+  "audit": "prerecord_payload_reclaim",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "evidence_type": "Original ARM executed with constructed RAM; bounded worker dispatch plus explicit existing external models",
+  "original_arm_cases": 13,
+  "cases": [
+    {
+      "name": "producer_threshold_3000",
+      "threshold": 3000,
+      "ring_bytes": 4096,
+      "after_producer": {
+        "base_read": 100,
+        "base_write": 103,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "after_worker": {
+        "base_read": 100,
+        "base_write": 103,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [
+        [
+          268435456,
+          268447744,
+          0
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ],
+      "held_virtual_cursor_did_not_prevent_retirement": false,
+      "payload_overwrite_simulated": false,
+      "payload_bytes_preserved_in_fixture": true
+    },
+    {
+      "name": "producer_threshold_4000",
+      "threshold": 4000,
+      "ring_bytes": 4096,
+      "after_producer": {
+        "base_read": 101,
+        "base_write": 103,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "after_worker": {
+        "base_read": 101,
+        "base_write": 103,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 512,
+        "bits_head": "0x1000b030",
+        "first_metadata_payload": "0x0"
+      },
+      "messages": [
+        [
+          268435456,
+          268447744,
+          1
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ],
+      "held_virtual_cursor_did_not_prevent_retirement": true,
+      "payload_overwrite_simulated": false,
+      "payload_bytes_preserved_in_fixture": true
+    },
+    {
+      "name": "descriptor_reserve_pending_63",
+      "capacity": 128,
+      "pending_before": 63,
+      "removed": 0,
+      "payload_bounds_disabled_to_isolate_descriptor_branch": true,
+      "state": {
+        "base_read": 100,
+        "base_write": 164,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [
+        [
+          268435456,
+          268447744,
+          0
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "descriptor_reserve_pending_64",
+      "capacity": 128,
+      "pending_before": 64,
+      "removed": 1,
+      "payload_bounds_disabled_to_isolate_descriptor_branch": true,
+      "state": {
+        "base_read": 101,
+        "base_write": 165,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [
+        [
+          268435456,
+          268447744,
+          1
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "descriptor_reserve_pending_65",
+      "capacity": 128,
+      "pending_before": 65,
+      "removed": 2,
+      "payload_bounds_disabled_to_isolate_descriptor_branch": true,
+      "state": {
+        "base_read": 102,
+        "base_write": 166,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [
+        [
+          268435456,
+          268447744,
+          2
+        ],
+        [
+          67108866,
+          268447744,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "virtual_remove_base_b0_0",
+      "state": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 101,
+        "held_virtual_payload": "0x0",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [
+        [
+          67108864,
+          268451840,
+          1
+        ]
+      ],
+      "immediate_bits_retirement": false
+    },
+    {
+      "name": "virtual_remove_base_b0_1",
+      "state": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 101,
+        "held_virtual_payload": "0x0",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "messages": [],
+      "immediate_bits_retirement": false
+    },
+    {
+      "name": "bits_retire_prefix_7",
+      "stream": 0,
+      "count": 1,
+      "before": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "after": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "arithmetic": "align_up_64(65)+align_up_64(128)=256; EOS 0xffffff adds zero"
+    },
+    {
+      "name": "bits_retire_prefix_8",
+      "stream": 1,
+      "count": 1,
+      "before": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 0,
+        "bits_head": "0x1000b000",
+        "first_metadata_payload": "0x1000e000"
+      },
+      "after": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 256,
+        "bits_head": "0x1000b060",
+        "first_metadata_payload": "0x0"
+      },
+      "arithmetic": "align_up_64(65)+align_up_64(128)=256; EOS 0xffffff adds zero"
+    },
+    {
+      "name": "bits_retire_prefix_9",
+      "stream": 0,
+      "count": 1,
+      "before": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 256,
+        "bits_head": "0x1000b060",
+        "first_metadata_payload": "0x0"
+      },
+      "after": {
+        "base_read": 100,
+        "base_write": 102,
+        "virtual_read": 100,
+        "held_virtual_payload": "0x1000e000",
+        "bits_retired_bytes": 256,
+        "bits_head": "0x1000b090",
+        "first_metadata_payload": "0x0"
+      },
+      "arithmetic": "align_up_64(65)+align_up_64(128)=256; EOS 0xffffff adds zero"
+    },
+    {
+      "name": "register_occupied_false",
+      "status": 0,
+      "callback_after": "0x10011000",
+      "subscriber_fanout": false
+    },
+    {
+      "name": "register_occupied_true",
+      "status": -1,
+      "callback_after": "0xa046ca94",
+      "subscriber_fanout": false
+    },
+    {
+      "name": "used_space_tracks_produced_minus_retired",
+      "before": [
+        1024,
+        0
+      ],
+      "after": [
+        512,
+        0
+      ]
+    }
+  ],
+  "source_checks": 8,
+  "sources": [
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a046fecc.c",
+      "sha256": "6f942eff6c603ec94ce06234517b21531c20bc93ff13479bc0f1e6ea46cff455",
+      "line_hits": {
+        "local_5c = 1": [
+          189
+        ],
+        "local_74 = 0x2800": [
+          188
+        ],
+        "local_6c = matched_FUN_a046e3e0": [
+          187
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0452254.c",
+      "sha256": "ef7ca65c960d6092c3aa675b03640cf97a8cdad886f58f6aeacd82be0a8721ab",
+      "line_hits": {
+        "local_a4 = (0x41 - *(uint *)(iVar9 + 0x88)) + local_a4": [
+          103
+        ],
+        "local_50 = 0x10000000": [
+          242
+        ],
+        "local_50 = 0x4000002": [
+          281
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0451c94.c",
+      "sha256": "e6fb6e5e36603f047bb2594220b501e088d35250e813abc3ba3accac304a1e6a",
+      "line_hits": {
+        "if ((iVar6 == 0) || (*(char *)(iVar6 + 0xb0) != '\\x01'))": [
+          96
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a046e3e0.c",
+      "sha256": "1027ffd49086cf7e09a7cc5739b09d694d3fbcb80ec57b35951c4a9ab2d1b1c1",
+      "line_hits": {
+        "if (param_2 == 0x4000000)": [
+          34
+        ],
+        "matched_FUN_a0460c98": [
+          40
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0460c98.c",
+      "sha256": "d754882965fd5ffabd88f198a6556ec56d68dde4256171e8f9937932d6ac5ab0",
+      "line_hits": {
+        "0xfee1dead": [
+          56
+        ],
+        "*(undefined4 *)(uVar4 + 0x18) = 0": [
+          83
+        ],
+        "*(int *)(uVar4 + 0x24) + 0x3fU & 0xffffffc0": [
+          77
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0460754.c",
+      "sha256": "ec184a86646b696e8767e1a875a004ac127d5d0e10693293c94ba20d7f6cc431",
+      "line_hits": {
+        "matched_analyst_dcache_invalidate": [
+          113,
+          117
+        ],
+        "(*(code *)(&DAT_a19c7a00)[iVar7])(0,0x1f,param_1)": [
+          156
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04611cc.c",
+      "sha256": "8b5315789a07f9bc2b61f75d35584e3fe893d73fd5e66b4ca263784391a34d02",
+      "line_hits": {
+        "if ((&DAT_a19c7a00)[param_1 + 0x42] == 0)": [
+          14
+        ],
+        "(&DAT_a19c7a00)[param_1 + 0x42] = param_3": [
+          15
+        ]
+      }
+    },
+    {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04612bc.c",
+      "sha256": "efd072ac28f00149e414c85bac7c73b55103d147957868f7704f315707ac19d7",
+      "line_hits": {
+        "*param_3 = iVar3 - iVar4": [
+          22
+        ]
+      }
+    }
+  ],
+  "assertions": [
+    {
+      "address": "0xa044f16c",
+      "bytes": "33ff2fe1",
+      "instruction": "blx r3"
+    },
+    {
+      "address": "0xa044f3dc",
+      "bytes": "f069c5e1",
+      "instruction": "strd r6, r7, [r5, #0x90]"
+    },
+    {
+      "address": "0xa044f718",
+      "bytes": "33ff2fe1",
+      "instruction": "blx r3"
+    },
+    {
+      "address": "0xa0460d2c",
+      "bytes": "f061c301",
+      "instruction": "strdeq r6, r7, [r3, #0x10]"
+    },
+    {
+      "address": "0xa0460db4",
+      "bytes": "f004c4e1",
+      "instruction": "strd r0, r1, [r4, #0x40]"
+    },
+    {
+      "address": "0xa0460db8",
+      "bytes": "18e083e5",
+      "instruction": "str lr, [r3, #0x18]"
+    }
+  ],
+  "windows": [
+    {
+      "start": "0xa0452254",
+      "end_exclusive": "0xa0452b64",
+      "sha256": "3f79c211f25bcd5c931c4d47fbd1fa9a3cd5dc0eaefc5f71418737117a43ddee"
+    },
+    {
+      "start": "0xa044f0c0",
+      "end_exclusive": "0xa044f438",
+      "sha256": "dd385bd1269ac1b0254b04d941755bbd12aaf61042584dba8c51cb30a9f70ff9"
+    },
+    {
+      "start": "0xa044f5e8",
+      "end_exclusive": "0xa044f628",
+      "sha256": "d03c3b83cd7e06cf6fdc1b080c23d2fb57911fbcb894dd3334b1bc7dd542ba72"
+    },
+    {
+      "start": "0xa044f6e4",
+      "end_exclusive": "0xa044f748",
+      "sha256": "4a7264a7bb755f1f540030efe13fcf9792228f987bd7a89906415fe0dc667276"
+    },
+    {
+      "start": "0xa046e3e0",
+      "end_exclusive": "0xa046e4b0",
+      "sha256": "4023cfdff43a5d027427c7488e42cd876f9410eeacda17c80f304a7f7c834c3d"
+    },
+    {
+      "start": "0xa0460c98",
+      "end_exclusive": "0xa0460e54",
+      "sha256": "8b3bb3ecbd23543e130bfe275d8bbb8c04d9662c97b8d8e073aabbf01f209cf7"
+    }
+  ],
+  "dependency": {
+    "path": "scripts/prerecord-fifo-lifecycle.py",
+    "sha256": "18d617e70051f649267ab37f2d1ceafc7e5d2446ac60529d07315d0e86001906"
+  },
+  "sequence": [
+    "BitsMgr Obtain updates produced byte count, conditionally invalidates cache, records event, unlocks, calls single callback event 0x1f",
+    "Video FrameDesc callback calls WriteEntry; enabled RemoveOnWrite can advance base read while virtual read remains held",
+    "WriteEntry queues 0x10000000 retirement count before 0x4000002 data-ready message",
+    "FIFO worker retirement message calls base callback event 0x4000000 under base write mutex",
+    "VideoEnc_BitstreamFifoHandler calls BitsMgr_ConsumeBitstream(stream,bank,count)",
+    "BitsMgr marks stream entries 0xfee1dead; retires only contiguous prefix; increments retired bytes by aligned64 length excluding EOS; clears metadata payload pointer"
+  ],
+  "candidate_backend_interface": {
+    "status": "offline_design_only_not_bound_or_device_ready",
+    "hook": "single BitsMgr stream callback wrapper, before chaining existing video FrameDesc callback",
+    "method": "copy_ready_video_event(event, cpu_ring_bounds, owned_nonblocking_sink)",
+    "preconditions": [
+      "safe callback installation before producer start with original callback retained",
+      "known CPU ring bounds and stock cache invalidation decision",
+      "preallocated bounded owner storage",
+      "measured hardware copy deadline and DMA/cache stability"
+    ],
+    "operation_order": [
+      "copy transient event metadata",
+      "exclude EOS",
+      "validate address/length and wrap",
+      "copy payload into owned storage",
+      "publish owned frame",
+      "chain original callback exactly once on every path"
+    ],
+    "constraints": [
+      "do not block encoder callback on SD/network I/O",
+      "do not advance base cursor, call BitsMgr Consume or free encoder addresses",
+      "overflow records a gap/fails pre-record explicitly while stock path continues",
+      "one-minute retention belongs to owned spool storage after immediate copy"
+    ],
+    "blockers": [
+      "stock Register cannot add a second observer when slot is already occupied",
+      "no hardware proof that callback entry grants stable payload lifetime for whole copy",
+      "payload ring size and worst-case transfer budget unmeasured",
+      "audio equivalent copy/retire path and A/V epoch still unproven"
+    ]
+  },
+  "conclusions": {
+    "held_virtual_descriptor_is_not_payload_lease": true,
+    "video_remove_on_write_bypasses_virtual_remove_messages": true,
+    "real_fifo_worker_to_bitsmgr_retirement_chain_executed_offline": true,
+    "one_minute_descriptor_only_history_rejected": true,
+    "owned_payload_copy_before_retirement_required": true,
+    "actual_dsp_overwrite_or_copy_deadline_proven": false,
+    "camera_pre_record_implemented": false
+  },
+  "limitations": [
+    "All initial FIFO/metadata/global states and queue messages are synthetic; actual camera configuration and scheduler are not observed.",
+    "The bounded task starts after queue receive and stops before next receive; lock, message, diagnostic and allocation functions are explicit fixture models.",
+    "Retired byte accounting and metadata invalidation do not prove when hardware overwrites payload; the fixture intentionally preserves payload bytes.",
+    "Real BitsMgr Obtain/cache invalidation and DSP hardware are statically traced, not executed here.",
+    "No Android/roadmap changes, camera connections, device writes, hidden setters or firmware execution."
+  ],
+  "safety": {
+    "camera_connected": false,
+    "device_written": false,
+    "hardware_executed": false
+  }
+}

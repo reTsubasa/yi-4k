@@ -1,0 +1,8 @@
+~ # ls -l /dev/ttyS* /dev/ttyUSB* /dev/ttyGS* /dev/rpmsg*
+ls: /dev/ttyUSB*: No such file or directory
+ls: /dev/ttyGS*: No such file or directory
+ls: /dev/rpmsg*: No such file or directory
+crw-rw----    1 root     root        4,  65 Jan  2 01:10 [1;35m/dev/ttyS1[0m
+crw-rw----    1 root     root        4,  66 Jan  1  1970 [1;35m/dev/ttyS2[0m
+~ # echo __YI_CAPTURE_ddddcdbef538406ca8a8cf8103abcecc__
+__YI_CAPTURE_ddddcdbef538406ca8a8cf8103abcecc__

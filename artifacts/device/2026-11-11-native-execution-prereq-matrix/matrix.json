@@ -1,0 +1,52 @@
+{
+  "title": "YI 4K 1.10.7 EIS minimal native execution prerequisite matrix",
+  "updated": "2026-11-11",
+  "firmware": {
+    "model": "YDXJ2_V13LW",
+    "version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "rtos_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "scope": "Offline evidence matrix only; no device RAM, firmware, partition, boot-area write, payload execution, or deployable command.",
+  "status_definitions": {
+    "confirmed": "Directly covered by bounded evidence for the fixed firmware identity and documented test model.",
+    "partial": "Related static or host evidence exists, but runtime ownership, concurrency, publication, or recovery is incomplete.",
+    "missing": "No sufficient evidence yet; must be closed before the next gate.",
+    "stop": "Stop further write/execute work and return to read-only observation."
+  },
+  "sources": [
+    "docs/device-1107-first-entry-implementation-contract.md",
+    "docs/device-1107-native-execution-gate.md",
+    "docs/device-1107-nc-pool-allocation-contract.md",
+    "docs/device-1107-noncache-executable-ram.md",
+    "docs/device-1107-code-publication.md",
+    "docs/device-1107-task-launch-path.md",
+    "docs/eis-stock-producer-contract.md",
+    "docs/eis-vcap-update-address-owner-audit.md",
+    "docs/eis-orc-smem-vcap-scope-audit.md",
+    "docs/eis-orc-staging-helper-scope-audit.md"
+  ],
+  "rows": [
+    {"id":"P0","name":"Fixed firmware identity and address scope","status":"confirmed","evidence":["Fixed 1.10.7 RTOS SHA-256 and model are recorded in the first-entry and native-execution documents."],"missing":"Re-record firmware fingerprint, boot ID, and mapping baseline before any device run.","stop":"Fingerprint, hardware identity, or mapping differs from baseline.","user_confirmation":false},
+    {"id":"P1","name":"Externally reachable controlled first-entry path","status":"missing","evidence":["loadbin direct execution was excluded; shell registration and task ABI were recovered."],"missing":"A complete loader or handler from Linux/SD input to a checked entry is not recovered.","stop":"Relying on arbitrary address jumps, unreviewed handlers, loadbin, echo_cortex, or a fixed BOSS slot.","user_confirmation":true},
+    {"id":"P2","name":"Exclusive code/constant allocation contract","status":"partial","evidence":["A2100000..A3100000 is a static NC/XN=0 candidate; allocator alignment, original/aligned ownership, and release were host-validated."],"missing":"Runtime handle, free/contiguous capacity, contention, lifetime, and an external allocation control plane.","stop":"Original/aligned ownership or pool membership cannot be proven; borrowing zero, audio, USB, DSP, or free-list memory.","user_confirmation":true},
+    {"id":"P3","name":"Runtime page-table and execution-attribute readback","status":"partial","evidence":["Static MMU construction contains Normal non-cacheable XN=0 AP=3 RAM."],"missing":"Current TTBR/SCTLR, active page table, aliases, and runtime attributes.","stop":"Runtime XN=1, alias mismatch, or mapping may have been changed by recovery paths.","user_confirmation":true},
+    {"id":"P4","name":"Write integrity and data-cache publication","status":"partial","evidence":["Allocator locks use DMB/DSB and existing D-cache helpers are identified."],"missing":"New-code write/readback ordering, exact length, and completion acknowledgement.","stop":"Readback, length, checksum, or write completion is uncertain.","user_confirmation":true},
+    {"id":"P5","name":"Instruction-cache and branch-state synchronization","status":"missing","evidence":["ICIALLUIS/ICIALLU occurrences are confined to BOSS resume/restore, MMU, or low-power contexts; no generic clear-cache API was found."],"missing":"A target-buffer, target-core, returnable I-cache invalidate/ISB protocol with completion acknowledgement.","stop":"Slicing cache instructions from another function or substituting DSB/NC attributes for first-fetch proof.","user_confirmation":true},
+    {"id":"P6","name":"Execution core and SMP visibility","status":"partial","evidence":["BOSS callbacks, inter-core notification, and task core exclusion order are statically recovered; notification has no remote completion receipt."],"missing":"Fixed execution core, absence of stale pointers/fetches, and cross-core publication completion.","stop":"Target core or remote completion is unknown; another core may read an old pointer.","user_confirmation":true},
+    {"id":"P7","name":"Task or synchronous-handler ABI","status":"partial","evidence":["Task wrapper, create/core-exclusion/resume order, and dispatcher ABI are recovered."],"missing":"A32/Thumb state, stack alignment, register ABI, exception path, and unregister semantics.","stop":"Unknown ABI/stack/core mask or borrowing the main, EIS, or video stack.","user_confirmation":true},
+    {"id":"P8","name":"Independent minimal-probe result channel","status":"partial","evidence":["Native logs, linux_util_svc, and a fixed result area are candidate channels; read-only diagnostics already work."],"missing":"Exclusive result-area ownership and non-ambiguous enter/return/error/timeout receipt.","stop":"Inferring entry from missing logs or using a result area another task may overwrite.","user_confirmation":true},
+    {"id":"P9","name":"EIS isolation and bypass constraints","status":"missing","evidence":["Stock EIS producer and VCAP/ORC publication audits identify the production boundary; host shadow/side-channel tests exist."],"missing":"Proof that the minimal probe cannot touch EIS mutexes, rings, DSP publication words, DMA/MMIO, or recording state.","stop":"Probe changes EIS tables, shared feedback, DMA/MMIO, recording state, or stock return values.","user_confirmation":true},
+    {"id":"P10","name":"Exit, revocation, and release order","status":"missing","evidence":["Documents require task stop, command return, and disappearance of old pointers before freeing original memory; ordinary registration lacks full unregister."],"missing":"Runtime stop receipt, old-caller quiescence, pointer revocation, and safe free acknowledgement.","stop":"Task/handler may still run, an old core may retain a pointer, or consumers cannot be proven stopped.","user_confirmation":true},
+    {"id":"P11","name":"Cold-start and failure recovery","status":"missing","evidence":["Boot ID, RTOS state, and pool construction are available from read-only evidence; static boot extension is offline only."],"missing":"Independent recovery path, real cold-reset test, trigger disablement, and firmware/partition rollback validation.","stop":"Shell recovery is unavailable, device is lost, fingerprint changes, or rollback cannot be verified.","user_confirmation":true},
+    {"id":"P12","name":"Phased device validation strategy","status":"partial","evidence":["A staged plan exists: fixed marker/log, idle, preview, then short recording; read-only and ordinary-recording recovery are evidenced."],"missing":"Per-stage input, timeout, receipt, recovery, and evidence-file contract for a native entry.","stop":"Any stage exceeds its stop condition or requires an unreviewed expansion of write scope.","user_confirmation":true}
+  ],
+  "hard_gate": {
+    "must_close_before_device_execution": ["P1","P3","P4","P5","P6","P8","P10","P11"],
+    "probe_constraints": ["fixed marker/log only","no gyro read","no warp write","no DMA/MMIO","no EIS/video shared locks","independent enter/return/error channel","documented disable and rollback"],
+    "eis_replacement_separate_gate": true
+  },
+  "user_confirmation_boundary": {
+    "required_for": ["RAM/firmware/boot-area/partition writes","RTOS task creation or recovery","command-table/callback changes","EIS/VCAP/ORC shared-state changes","code execution that may crash, disconnect, brick, or require physical recovery"],
+    "not_required_for": ["host analysis","offline disassembly","read-only API/state capture","builds and tests"]
+  }
+}

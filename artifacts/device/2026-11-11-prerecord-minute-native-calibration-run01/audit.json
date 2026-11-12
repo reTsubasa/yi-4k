@@ -1,0 +1,1424 @@
+{
+  "scope": "original ARM factory/index/Open/ProcessVideo/ProcessAudio/Close0; RAM file/OS models; archived normal camera recording, not on-camera prerecord",
+  "source": {
+    "path": "artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+    "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+    "video_picture_types": {
+      "I": 244,
+      "P": 1707
+    }
+  },
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "harness_sha256": {
+    "audit_prerecord_real_gop.py": "a2b0835d771a1775bf8a60f8ee96c2d110fe7c16e899a855f793f7939ae7f12f",
+    "audit_prerecord_native_mp4.py": "3dc7b00032803b6440124e8e6ce7316701a595333365253da935494bf208da99",
+    "audit_prerecord_movie_factory.py": "be794e9d19c10c873884d96f20825153f773be4883a181613ba2f7f294388f02"
+  },
+  "script_sha256": "e2660f136fa1e9eccb9c2e866c5bb480a96dd4b3b3635c84c8abd01c910fbe87",
+  "mode": "calibration_only",
+  "simulated_trigger_seconds": null,
+  "stop_time": {
+    "numerator": 1001,
+    "denominator": 3750,
+    "seconds": 0.26693333333333336
+  },
+  "history_at_simulated_trigger_seconds": null,
+  "common_endpoint": false,
+  "omitted_crossing_packets": [
+    {
+      "stream": 1,
+      "index": 12,
+      "pts": 12288,
+      "dts": 12288,
+      "duration": 1024,
+      "offset": 899140,
+      "bytes": 340,
+      "sha256": "70a05065750c36cffc00d30b8cc381d14bd26b8e1cc05c2431d74130e079e3e0",
+      "key": true
+    }
+  ],
+  "hook_differential": {
+    "video_frames": 8,
+    "packet_count": 20,
+    "same_firmware_output_and_all_inherited_events": true,
+    "output_sha256": "08d474e89e95aea840a2c074a651a80e736277d6991bbd73509b87fd949555e5",
+    "filtered_hook_address_count": 223,
+    "filter_addresses": [
+      "0x10000000",
+      "0x10000350",
+      "0x10001000",
+      "0x10001100",
+      "0x10002000",
+      "0x10003000",
+      "0x10004000",
+      "0x10006000",
+      "0x10008000",
+      "0x1000c000",
+      "0x1000c100",
+      "0x1000d000",
+      "0x10010000",
+      "0x10011000",
+      "0x10011200",
+      "0x10011400",
+      "0x10011600",
+      "0x10011800",
+      "0x10011a00",
+      "0x10011c00",
+      "0x10011e00",
+      "0x10012000",
+      "0x1001f000",
+      "0x11000000",
+      "0x11001000",
+      "0x11010000",
+      "0x11018000",
+      "0x11018100",
+      "0x11018200",
+      "0x12000000",
+      "0x12345678",
+      "0x13000000",
+      "0x14000000",
+      "0x20000000",
+      "0x2000003f",
+      "0x20000100",
+      "0x20200000",
+      "0x55550000",
+      "0x60000000",
+      "0x65736473",
+      "0x6d703461",
+      "0x87654321",
+      "0xa0100000",
+      "0xa01f3124",
+      "0xa01f3338",
+      "0xa01f6088",
+      "0xa01f69b0",
+      "0xa01f6be8",
+      "0xa01f705c",
+      "0xa01f721c",
+      "0xa01f845c",
+      "0xa01f8e68",
+      "0xa01f8e80",
+      "0xa01f8f08",
+      "0xa01f91c0",
+      "0xa0233434",
+      "0xa0233570",
+      "0xa02335ac",
+      "0xa02335c4",
+      "0xa02335f8",
+      "0xa029a7d8",
+      "0xa02a70ec",
+      "0xa02a7524",
+      "0xa02c7660",
+      "0xa02c76f0",
+      "0xa02c76f4",
+      "0xa02c7764",
+      "0xa02c776c",
+      "0xa02ca5a0",
+      "0xa02ca950",
+      "0xa02ca9f8",
+      "0xa02ca9fc",
+      "0xa02cb7c8",
+      "0xa02cb804",
+      "0xa02cb808",
+      "0xa03bc458",
+      "0xa03bc46c",
+      "0xa03bc498",
+      "0xa03bc49c",
+      "0xa03bc598",
+      "0xa03bc714",
+      "0xa03bc74c",
+      "0xa03c3414",
+      "0xa03c3c5c",
+      "0xa03e29dc",
+      "0xa03e2d3c",
+      "0xa03e2e90",
+      "0xa03e2fcc",
+      "0xa03e30ac",
+      "0xa03e3c48",
+      "0xa03e3f00",
+      "0xa03e40c8",
+      "0xa03e4d1c",
+      "0xa03e5b5c",
+      "0xa03e627c",
+      "0xa03e62b8",
+      "0xa03e62c4",
+      "0xa03e62f0",
+      "0xa03e62f4",
+      "0xa03eaf94",
+      "0xa03ef858",
+      "0xa03efe74",
+      "0xa03f0ee8",
+      "0xa03fdec4",
+      "0xa03fe300",
+      "0xa03fe468",
+      "0xa03feccc",
+      "0xa03fed44",
+      "0xa0401ae4",
+      "0xa0402610",
+      "0xa0402750",
+      "0xa0402884",
+      "0xa0402ed8",
+      "0xa04032fc",
+      "0xa040f710",
+      "0xa040fc04",
+      "0xa0411048",
+      "0xa04111ac",
+      "0xa0411e88",
+      "0xa0425e18",
+      "0xa0429498",
+      "0xa04294a0",
+      "0xa042ce28",
+      "0xa042d0f8",
+      "0xa042fafc",
+      "0xa043173c",
+      "0xa0432188",
+      "0xa0432230",
+      "0xa0432d14",
+      "0xa0432d18",
+      "0xa0432d1c",
+      "0xa0433138",
+      "0xa04331f4",
+      "0xa0433af0",
+      "0xa0433c1c",
+      "0xa0435630",
+      "0xa0435a18",
+      "0xa0436004",
+      "0xa0440948",
+      "0xa0440cd4",
+      "0xa0442f20",
+      "0xa044e734",
+      "0xa044e8d4",
+      "0xa044ee58",
+      "0xa044eea0",
+      "0xa044ef1c",
+      "0xa044f024",
+      "0xa044f05c",
+      "0xa044f0bc",
+      "0xa044f0d0",
+      "0xa044f5ac",
+      "0xa044f5b4",
+      "0xa044f5bc",
+      "0xa04509b0",
+      "0xa04509dc",
+      "0xa04509e4",
+      "0xa0450bbc",
+      "0xa0450bd4",
+      "0xa0450bdc",
+      "0xa0450be4",
+      "0xa0450bec",
+      "0xa0450bf4",
+      "0xa0450c04",
+      "0xa0450c70",
+      "0xa0450f24",
+      "0xa0450f2c",
+      "0xa0451050",
+      "0xa0451284",
+      "0xa0451288",
+      "0xa04514dc",
+      "0xa04514e4",
+      "0xa045177c",
+      "0xa0451960",
+      "0xa0451b04",
+      "0xa0451c94",
+      "0xa0451e28",
+      "0xa0451e78",
+      "0xa0452028",
+      "0xa0452448",
+      "0xa0452464",
+      "0xa045246c",
+      "0xa0452470",
+      "0xa0460754",
+      "0xa046ca94",
+      "0xa046cae4",
+      "0xa046cb7c",
+      "0xa046cb80",
+      "0xa046cda0",
+      "0xa04894fc",
+      "0xa04a3bd4",
+      "0xa04f8dec",
+      "0xa06890e0",
+      "0xa13c1000",
+      "0xa13c1758",
+      "0xa13c8000",
+      "0xa13c82d8",
+      "0xa1445000",
+      "0xa1458000",
+      "0xa1458478",
+      "0xa1458568",
+      "0xa1796000",
+      "0xa17962e8",
+      "0xa1965000",
+      "0xa19653d4",
+      "0xa19653e0",
+      "0xa19653ec",
+      "0xa19653f9",
+      "0xa19653fa",
+      "0xa1965a6c",
+      "0xa1965a70",
+      "0xa1965a74",
+      "0xa1965a7c",
+      "0xa1965a80",
+      "0xa1965a85",
+      "0xa1966000",
+      "0xa196608c",
+      "0xa196618c",
+      "0xa19c9000",
+      "0xdeadbeef",
+      "0xffff0000",
+      "0xffffff00",
+      "0xfffffff0",
+      "0xffffffff"
+    ]
+  },
+  "execution": {
+    "submitted_counts": [
+      8,
+      12
+    ],
+    "closed": {
+      "movie": "0x10000000",
+      "memidx": "0x11000000",
+      "factory_flag": 129,
+      "sample_counts": [
+        8,
+        12
+      ],
+      "dts": [
+        64064,
+        61440
+      ],
+      "magic": "0x12345678",
+      "sps_bytes": 54,
+      "pps_bytes": 4,
+      "memidx_data_pointer": "0x0",
+      "public_mux_open": 0
+    },
+    "elapsed_seconds": 0.28022191603668034,
+    "max_adapted_payload_bytes": 302850,
+    "descriptor_count": 20,
+    "actual_native_calls": {
+      "0xa0435a18": 1,
+      "0xa04032fc": 1,
+      "0xa040f710": 1,
+      "0xa0402750": 37,
+      "0xa0411e88": 43,
+      "0xa04111ac": 20,
+      "0xa0436004": 1,
+      "0xa0411048": 2,
+      "0xa0401ae4": 12,
+      "0xa0402884": 10,
+      "0xa0433af0": 1,
+      "0xa040fc04": 1,
+      "0xa0402ed8": 1
+    },
+    "modeled_os_events": 1,
+    "modeled_file_writes": 518,
+    "mock_index_events": 0
+  },
+  "output": {
+    "file": "native-prefix.mp4",
+    "bytes": 900584,
+    "sha256": "08d474e89e95aea840a2c074a651a80e736277d6991bbd73509b87fd949555e5",
+    "counts": {
+      "0": 8,
+      "1": 12
+    },
+    "container": {
+      "movie_clock": 30000,
+      "tracks": [
+        {
+          "media_clock": 30000,
+          "media_duration": 8008,
+          "edit_list": [
+            {
+              "duration": 8008,
+              "media_time": 0,
+              "media_rate": 65536
+            }
+          ],
+          "edit_list_hex": "0000001c656c7374000000000000000100001f480000000000010000",
+          "stts_durations": [
+            1001,
+            1001,
+            1001,
+            1001,
+            1001,
+            1001,
+            1001,
+            1001
+          ],
+          "stts_hex": "0000001873747473000000000000000100000008000003e9",
+          "delay": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          }
+        },
+        {
+          "media_clock": 48000,
+          "media_duration": 12288,
+          "edit_list": [
+            {
+              "duration": 7680,
+              "media_time": 0,
+              "media_rate": 65536
+            }
+          ],
+          "edit_list_hex": "0000001c656c7374000000000000000100001e000000000000010000",
+          "stts_durations": [
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024
+          ],
+          "stts_hex": "000000187374747300000000000000010000000c00000400",
+          "delay": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          }
+        }
+      ]
+    },
+    "strict_packet_and_time_gate": {
+      "status": "pass",
+      "payload_equal": true,
+      "exact_timeline_equal": true,
+      "mismatches": [],
+      "packets": [
+        {
+          "stream": 0,
+          "source_index": 0,
+          "same_payload": true,
+          "source_sha256": "99726536854d5a00e7ae32836f1cb14024bb3317351d39d83300c1edc62dfdbe",
+          "output_sha256": "99726536854d5a00e7ae32836f1cb14024bb3317351d39d83300c1edc62dfdbe",
+          "expected_pts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "observed_pts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "observed_dts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 1,
+          "same_payload": true,
+          "source_sha256": "65b4834b0612f8d4332375a605f3be06d3a5e53f697f266c7d8ccdcadc9d1ee8",
+          "output_sha256": "65b4834b0612f8d4332375a605f3be06d3a5e53f697f266c7d8ccdcadc9d1ee8",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 2,
+          "same_payload": true,
+          "source_sha256": "42d51d404db0a5a078c9ff994329da03b44e5f6d1d052ed080dbe525f9f52af4",
+          "output_sha256": "42d51d404db0a5a078c9ff994329da03b44e5f6d1d052ed080dbe525f9f52af4",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 15000,
+            "seconds": 0.06673333333333334
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 15000,
+            "seconds": 0.06673333333333334
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 15000,
+            "seconds": 0.06673333333333334
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 15000,
+            "seconds": 0.06673333333333334
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 3,
+          "same_payload": true,
+          "source_sha256": "d3b417dc377cf4fdd1b0cf6abf00461e21e1c7c833793d630940fa3183543018",
+          "output_sha256": "d3b417dc377cf4fdd1b0cf6abf00461e21e1c7c833793d630940fa3183543018",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 10000,
+            "seconds": 0.1001
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 10000,
+            "seconds": 0.1001
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 10000,
+            "seconds": 0.1001
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 10000,
+            "seconds": 0.1001
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 4,
+          "same_payload": true,
+          "source_sha256": "2197ec1f4254d65aec4871ec2c33fbc76f4e749414d27b1d509bac952fe5ebb8",
+          "output_sha256": "2197ec1f4254d65aec4871ec2c33fbc76f4e749414d27b1d509bac952fe5ebb8",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 7500,
+            "seconds": 0.13346666666666668
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 7500,
+            "seconds": 0.13346666666666668
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 7500,
+            "seconds": 0.13346666666666668
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 7500,
+            "seconds": 0.13346666666666668
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 5,
+          "same_payload": true,
+          "source_sha256": "155a34b05f7525e98ed0d6fdb50a9351fb29e0583a4f982f92557e67808d518d",
+          "output_sha256": "155a34b05f7525e98ed0d6fdb50a9351fb29e0583a4f982f92557e67808d518d",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 6000,
+            "seconds": 0.16683333333333333
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 6000,
+            "seconds": 0.16683333333333333
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 6000,
+            "seconds": 0.16683333333333333
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 6000,
+            "seconds": 0.16683333333333333
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 6,
+          "same_payload": true,
+          "source_sha256": "8b27c229ff7a4ea33a4a7e82f9fd600a29059e253849f68c1a8925e217f5110c",
+          "output_sha256": "8b27c229ff7a4ea33a4a7e82f9fd600a29059e253849f68c1a8925e217f5110c",
+          "expected_pts": {
+            "numerator": 1001,
+            "denominator": 5000,
+            "seconds": 0.2002
+          },
+          "observed_pts": {
+            "numerator": 1001,
+            "denominator": 5000,
+            "seconds": 0.2002
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 1001,
+            "denominator": 5000,
+            "seconds": 0.2002
+          },
+          "observed_dts": {
+            "numerator": 1001,
+            "denominator": 5000,
+            "seconds": 0.2002
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 0,
+          "source_index": 7,
+          "same_payload": true,
+          "source_sha256": "4b968c9137a333b89997b9cba51f6f20d880fb45ee31a9144fe03b9753a418d9",
+          "output_sha256": "4b968c9137a333b89997b9cba51f6f20d880fb45ee31a9144fe03b9753a418d9",
+          "expected_pts": {
+            "numerator": 7007,
+            "denominator": 30000,
+            "seconds": 0.23356666666666667
+          },
+          "observed_pts": {
+            "numerator": 7007,
+            "denominator": 30000,
+            "seconds": 0.23356666666666667
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 7007,
+            "denominator": 30000,
+            "seconds": 0.23356666666666667
+          },
+          "observed_dts": {
+            "numerator": 7007,
+            "denominator": 30000,
+            "seconds": 0.23356666666666667
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "observed_duration": {
+            "numerator": 1001,
+            "denominator": 30000,
+            "seconds": 0.03336666666666667
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 0,
+          "same_payload": true,
+          "source_sha256": "7455931015a47bca5482f6d33d4039e788f68792b9eb8f4de2eb0507a3c18fb0",
+          "output_sha256": "7455931015a47bca5482f6d33d4039e788f68792b9eb8f4de2eb0507a3c18fb0",
+          "expected_pts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "observed_pts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "observed_dts": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 1,
+          "same_payload": true,
+          "source_sha256": "ab3075703f2ba3e37275d750dc2c34ba9478de8bbcd3303980cf0d7f65a41340",
+          "output_sha256": "ab3075703f2ba3e37275d750dc2c34ba9478de8bbcd3303980cf0d7f65a41340",
+          "expected_pts": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_pts": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_dts": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 2,
+          "same_payload": true,
+          "source_sha256": "75175878527102ebb59599ac8d669057743e1951157a67f4ad62ba39f3ed8e61",
+          "output_sha256": "75175878527102ebb59599ac8d669057743e1951157a67f4ad62ba39f3ed8e61",
+          "expected_pts": {
+            "numerator": 16,
+            "denominator": 375,
+            "seconds": 0.042666666666666665
+          },
+          "observed_pts": {
+            "numerator": 16,
+            "denominator": 375,
+            "seconds": 0.042666666666666665
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 16,
+            "denominator": 375,
+            "seconds": 0.042666666666666665
+          },
+          "observed_dts": {
+            "numerator": 16,
+            "denominator": 375,
+            "seconds": 0.042666666666666665
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 3,
+          "same_payload": true,
+          "source_sha256": "d6f9711c65f5eacc252e16a14d1ffe17fbf55ac1fcbb61732e9b20c04d07bc72",
+          "output_sha256": "d6f9711c65f5eacc252e16a14d1ffe17fbf55ac1fcbb61732e9b20c04d07bc72",
+          "expected_pts": {
+            "numerator": 8,
+            "denominator": 125,
+            "seconds": 0.064
+          },
+          "observed_pts": {
+            "numerator": 8,
+            "denominator": 125,
+            "seconds": 0.064
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 8,
+            "denominator": 125,
+            "seconds": 0.064
+          },
+          "observed_dts": {
+            "numerator": 8,
+            "denominator": 125,
+            "seconds": 0.064
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 4,
+          "same_payload": true,
+          "source_sha256": "f365e5881d0e1219f1ec9f2a7014168c850aa2704c700a2905c39dbbbc11296d",
+          "output_sha256": "f365e5881d0e1219f1ec9f2a7014168c850aa2704c700a2905c39dbbbc11296d",
+          "expected_pts": {
+            "numerator": 32,
+            "denominator": 375,
+            "seconds": 0.08533333333333333
+          },
+          "observed_pts": {
+            "numerator": 32,
+            "denominator": 375,
+            "seconds": 0.08533333333333333
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 32,
+            "denominator": 375,
+            "seconds": 0.08533333333333333
+          },
+          "observed_dts": {
+            "numerator": 32,
+            "denominator": 375,
+            "seconds": 0.08533333333333333
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 5,
+          "same_payload": true,
+          "source_sha256": "05c7e8977119aebac084556acba30c4e3a53290df1481d0dd8e5496b46967129",
+          "output_sha256": "05c7e8977119aebac084556acba30c4e3a53290df1481d0dd8e5496b46967129",
+          "expected_pts": {
+            "numerator": 8,
+            "denominator": 75,
+            "seconds": 0.10666666666666667
+          },
+          "observed_pts": {
+            "numerator": 8,
+            "denominator": 75,
+            "seconds": 0.10666666666666667
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 8,
+            "denominator": 75,
+            "seconds": 0.10666666666666667
+          },
+          "observed_dts": {
+            "numerator": 8,
+            "denominator": 75,
+            "seconds": 0.10666666666666667
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 6,
+          "same_payload": true,
+          "source_sha256": "1ec8471ee778fb4767f4032799669efc7ebc96aa5a24e527cdc841ce240b0612",
+          "output_sha256": "1ec8471ee778fb4767f4032799669efc7ebc96aa5a24e527cdc841ce240b0612",
+          "expected_pts": {
+            "numerator": 16,
+            "denominator": 125,
+            "seconds": 0.128
+          },
+          "observed_pts": {
+            "numerator": 16,
+            "denominator": 125,
+            "seconds": 0.128
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 16,
+            "denominator": 125,
+            "seconds": 0.128
+          },
+          "observed_dts": {
+            "numerator": 16,
+            "denominator": 125,
+            "seconds": 0.128
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 7,
+          "same_payload": true,
+          "source_sha256": "b49ed2768b720885479aa233de0555053b49dd95c273c6a0574761967c7b7466",
+          "output_sha256": "b49ed2768b720885479aa233de0555053b49dd95c273c6a0574761967c7b7466",
+          "expected_pts": {
+            "numerator": 56,
+            "denominator": 375,
+            "seconds": 0.14933333333333335
+          },
+          "observed_pts": {
+            "numerator": 56,
+            "denominator": 375,
+            "seconds": 0.14933333333333335
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 56,
+            "denominator": 375,
+            "seconds": 0.14933333333333335
+          },
+          "observed_dts": {
+            "numerator": 56,
+            "denominator": 375,
+            "seconds": 0.14933333333333335
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 8,
+          "same_payload": true,
+          "source_sha256": "1e48d62f2baebd6229e180096a64f67da135bc9d647db027eb11727262af0c1f",
+          "output_sha256": "1e48d62f2baebd6229e180096a64f67da135bc9d647db027eb11727262af0c1f",
+          "expected_pts": {
+            "numerator": 64,
+            "denominator": 375,
+            "seconds": 0.17066666666666666
+          },
+          "observed_pts": {
+            "numerator": 64,
+            "denominator": 375,
+            "seconds": 0.17066666666666666
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 64,
+            "denominator": 375,
+            "seconds": 0.17066666666666666
+          },
+          "observed_dts": {
+            "numerator": 64,
+            "denominator": 375,
+            "seconds": 0.17066666666666666
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 9,
+          "same_payload": true,
+          "source_sha256": "8b6d33892a8b08e3797eef9c171995596225f28ee57447e56b59cfc3f36877cd",
+          "output_sha256": "8b6d33892a8b08e3797eef9c171995596225f28ee57447e56b59cfc3f36877cd",
+          "expected_pts": {
+            "numerator": 24,
+            "denominator": 125,
+            "seconds": 0.192
+          },
+          "observed_pts": {
+            "numerator": 24,
+            "denominator": 125,
+            "seconds": 0.192
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 24,
+            "denominator": 125,
+            "seconds": 0.192
+          },
+          "observed_dts": {
+            "numerator": 24,
+            "denominator": 125,
+            "seconds": 0.192
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 10,
+          "same_payload": true,
+          "source_sha256": "8352adfb78894e7425a825a48b5ff70daa2da67ac094d65a7643ab5a3dc0b5f9",
+          "output_sha256": "8352adfb78894e7425a825a48b5ff70daa2da67ac094d65a7643ab5a3dc0b5f9",
+          "expected_pts": {
+            "numerator": 16,
+            "denominator": 75,
+            "seconds": 0.21333333333333335
+          },
+          "observed_pts": {
+            "numerator": 16,
+            "denominator": 75,
+            "seconds": 0.21333333333333335
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 16,
+            "denominator": 75,
+            "seconds": 0.21333333333333335
+          },
+          "observed_dts": {
+            "numerator": 16,
+            "denominator": 75,
+            "seconds": 0.21333333333333335
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        },
+        {
+          "stream": 1,
+          "source_index": 11,
+          "same_payload": true,
+          "source_sha256": "37f399a70bf10da2c84736d8374eb255ee8174cb1a46bcd81fbad341c15df9c2",
+          "output_sha256": "37f399a70bf10da2c84736d8374eb255ee8174cb1a46bcd81fbad341c15df9c2",
+          "expected_pts": {
+            "numerator": 88,
+            "denominator": 375,
+            "seconds": 0.23466666666666666
+          },
+          "observed_pts": {
+            "numerator": 88,
+            "denominator": 375,
+            "seconds": 0.23466666666666666
+          },
+          "pts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_dts": {
+            "numerator": 88,
+            "denominator": 375,
+            "seconds": 0.23466666666666666
+          },
+          "observed_dts": {
+            "numerator": 88,
+            "denominator": 375,
+            "seconds": 0.23466666666666666
+          },
+          "dts_error": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "expected_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "observed_duration": {
+            "numerator": 8,
+            "denominator": 375,
+            "seconds": 0.021333333333333333
+          },
+          "duration_equal": true,
+          "pts_equal": true,
+          "dts_equal": true
+        }
+      ]
+    }
+  },
+  "decode": {
+    "ffmpeg_xerror": true,
+    "video_frames": 8,
+    "video_frame_md5": [
+      "d45855df69f1905c17a3b7ea04659a81",
+      "7c15fe002d6b6ded54a4b53c726858f8",
+      "f74121834d344821594d9cb468340568",
+      "7e2c5431dff4863057bf467cdb6b8e7f",
+      "23588290186df5712045b01f1e8461fb",
+      "1757453176092624e0281425b5e58548",
+      "11623fbb727c94d6dfc2cee3a90c0c9c",
+      "1f1e898cafa03bd28706ae7377f8b50d"
+    ],
+    "video_matches_archived_prefix": true,
+    "audio_pcm_bytes": 49152,
+    "audio_pcm_sha256": "87d9fabbf75701870b42a2954950acc89428650959b6564b1f6a394d14cbdd9f",
+    "audio_matches_continuous_selected_aac_decoder": true
+  },
+  "limitations": [
+    "Only 1080p29.97 I/P and 48kHz stereo AAC from one archived recording.",
+    "The zero-origin 64.064s endpoint is an exact video/AAC common endpoint; arbitrary trigger/cut boundaries remain unproved.",
+    "This does not install a callback, preserve a live one-minute history, prove owned queue/SD throughput or bind voice/shutter.",
+    "RAM stream and OS models do not establish physical SD persistence, power-loss recovery or real-time performance.",
+    "Continuous ADTS reference proves selected compressed sequence decoding, not original hardware AAC capture epoch."
+  ]
+}

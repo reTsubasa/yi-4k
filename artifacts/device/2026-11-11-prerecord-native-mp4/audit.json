@@ -1,0 +1,1361 @@
+{
+  "schema": 1,
+  "offline_only": true,
+  "firmware": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "function_pins": [
+    {
+      "entry": "0xa03e3c48",
+      "body_ranges": [
+        "a03e3c48-a03e3eff"
+      ],
+      "arm_sha256": "b5fda57512b028095d3872a8c106510e5423a6cb2a825a971c2f072c9f0ad515",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e3c48.c",
+      "decompiled_sha256": "fca2a402bdcf587ed49e50af86c2aa23b70cc4f97f0af775d0e00a718061593f"
+    },
+    {
+      "entry": "0xa03e4d1c",
+      "body_ranges": [
+        "a03e4d1c-a03e4d37"
+      ],
+      "arm_sha256": "97e14b9d00b1aff58d1b1482bacf80f7112215af61e5d1cd8bf1d4231d30b98d",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e4d1c.c",
+      "decompiled_sha256": "9c52c91298b76c321c34d857541c5bd61b476970e988309cf34850f121c48204"
+    },
+    {
+      "entry": "0xa03eaf94",
+      "body_ranges": [
+        "a03eaf94-a03eb28b"
+      ],
+      "arm_sha256": "357fd939126a740bc5ec73705dd94270b714e10dedc6b74bff0b71fd12c12d1d",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03eaf94.c",
+      "decompiled_sha256": "d87699310e22be788c2bd428bfd4a30cb262c88b9cdabad49644fb5e160298a9"
+    },
+    {
+      "entry": "0xa0401ae4",
+      "body_ranges": [
+        "a0401ae4-a0401d6b"
+      ],
+      "arm_sha256": "b885940855f7df25052fd1f47f873910ecd8713ce8b1c3817f3344caab13369e",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401ae4.c",
+      "decompiled_sha256": "5c774ec8d5e129702c8be2642bda45e33f4ef5e5d8838d1261d924f33931b4bf"
+    },
+    {
+      "entry": "0xa0402610",
+      "body_ranges": [
+        "a0402610-a040274f"
+      ],
+      "arm_sha256": "2efc99943780175b7d214be33eb4ba8fa2236dd34b8d7ca54694940b0b6ea0a9",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0402610.c",
+      "decompiled_sha256": "f92fb02b650281269e4a986bf4ebb8771b734b3c2cfc0377bb0e4eabbdea7180"
+    },
+    {
+      "entry": "0xa0402750",
+      "body_ranges": [
+        "a0402750-a0402883"
+      ],
+      "arm_sha256": "f4033cc67b9139d13828cafdcb38d1157c4c26c39caf12e32a399e3cee267093",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0402750.c",
+      "decompiled_sha256": "98c92b71a159c61cec17d814cd9fdf5d73211dcb780226c4ada26da2d4b7f251"
+    },
+    {
+      "entry": "0xa0402884",
+      "body_ranges": [
+        "a0402884-a04029b7"
+      ],
+      "arm_sha256": "a428fccdc0867751b0fad73641f4aeb91544e7ffb3f81a70c6684189c805fde4",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0402884.c",
+      "decompiled_sha256": "439c45fc9d9bbee8488bd9eb6e27d72ef448d147154c22b3925eb41e3803c95c"
+    },
+    {
+      "entry": "0xa0402ed8",
+      "body_ranges": [
+        "a0402ed8-a0402fcf"
+      ],
+      "arm_sha256": "373aa561eec7561cc0ea5215502bd69936f8980c80c6b354018dcd5d31615cb5",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0402ed8.c",
+      "decompiled_sha256": "c673846cbd076da0520d91a5e81dee8212b8703499f529bd9fcbcd574c07a0fa"
+    },
+    {
+      "entry": "0xa04032fc",
+      "body_ranges": [
+        "a04032fc-a04033ef"
+      ],
+      "arm_sha256": "14a64e990c8a0ba289bc8ee2edff383817289e6e45d7cdca9e861828792de4c6",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04032fc.c",
+      "decompiled_sha256": "bd4c4dc94362aafbc5d728dd80b0e7b5a1b56e9e047c6130239677f09fadff51"
+    },
+    {
+      "entry": "0xa040f710",
+      "body_ranges": [
+        "a040f710-a040fc03"
+      ],
+      "arm_sha256": "89507d73c2beb8d4d05eed68710df6f9a88fbcbfa3ddc7df7b38950932065ffd",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040f710.c",
+      "decompiled_sha256": "142a82e9ad6f9a55a6380c4a854f05722ea35912623d48159690fdc91bbc3985"
+    },
+    {
+      "entry": "0xa040fc04",
+      "body_ranges": [
+        "a040fc04-a040fde3"
+      ],
+      "arm_sha256": "58555e8d599d9619ebe6ad48fd0386072114272111020c0cc25a505eee9e1a42",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040fc04.c",
+      "decompiled_sha256": "efe90f211cd0435ac5aff716d35213a25d3c8e1edc87b4b5185ec8e39b2f316b"
+    },
+    {
+      "entry": "0xa0411048",
+      "body_ranges": [
+        "a0411048-a04111ab"
+      ],
+      "arm_sha256": "a35c989ac38eaf37e6b353bd571454185dd807e642160886f86c0cc43e321b01",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0411048.c",
+      "decompiled_sha256": "cf770096666e0a0ac5cbb3c9e4deb7b56778ba5c321ec1bbba04d6658c813784"
+    },
+    {
+      "entry": "0xa04111ac",
+      "body_ranges": [
+        "a04111ac-a0411527"
+      ],
+      "arm_sha256": "a2a723c8d1b307ac9b8004d7dab6be60d6a5c92b90fa33720fbc5eeb055d5d98",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04111ac.c",
+      "decompiled_sha256": "2af0537bb02a12dd44f666c1bb7382b0e284b8579bc5b7089a144b89869312fa"
+    },
+    {
+      "entry": "0xa0411e88",
+      "body_ranges": [
+        "a0411e88-a041205b"
+      ],
+      "arm_sha256": "a12ef56b6d166ae1cad2823611ad026f7a647aaefbdb4b4545a1d05bd7b988c8",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0411e88.c",
+      "decompiled_sha256": "029ede4b4294c7ec1794dee363b31722ec249c93a09747f4bd8e57ef525742c3"
+    },
+    {
+      "entry": "0xa042d0f8",
+      "body_ranges": [
+        "a042d0f8-a042d6c3"
+      ],
+      "arm_sha256": "dc63f45f4d4fbb9cb4ac685044c0d494fbd8239f7cc9ea76c6bb12d224fc94e0",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a042d0f8.c",
+      "decompiled_sha256": "bf2ac59c3f8dd4f4c87941c2e1e04ad1edb82c8ac86850af91b057816de5faef"
+    },
+    {
+      "entry": "0xa043173c",
+      "body_ranges": [
+        "a043173c-a0431af7"
+      ],
+      "arm_sha256": "5ed94771658e840f72dfac7253168391544aed3311982317bcfcb4dedbc79c1a",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a043173c.c",
+      "decompiled_sha256": "a8a0dc0e2178db8b8848f8845908f4fd5f5865dcc0e767cf26528da487fa538f"
+    },
+    {
+      "entry": "0xa0433af0",
+      "body_ranges": [
+        "a0433af0-a0433c1b"
+      ],
+      "arm_sha256": "f12214b199842a0e588d0e086cc2dcd47889524003f6fead4b21853a36d3703d",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0433af0.c",
+      "decompiled_sha256": "9800131e9fbc438b865b8ad86a1fc244117a7559378a8a739c611af3e968081b"
+    },
+    {
+      "entry": "0xa0435a18",
+      "body_ranges": [
+        "a0435a18-a0435f63"
+      ],
+      "arm_sha256": "d3975852904ea7167f144ab2027c83d005a9a58099da201bb1650dba7f7475a5",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0435a18.c",
+      "decompiled_sha256": "090ddf795d39dda327c43175c46b75bc8ef08b740a452a8d3a39639cf038be6c"
+    },
+    {
+      "entry": "0xa0436004",
+      "body_ranges": [
+        "a0436004-a04363fb"
+      ],
+      "arm_sha256": "15ea3065954c5c0acb802176b3d43dc4b4f7bc546609265a9296edefeec05dd7",
+      "decompiled_path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0436004.c",
+      "decompiled_sha256": "574bd6b9bc45db9ec69bec69cbb62644ab60a03d3348bb9a876a6a0671043564"
+    }
+  ],
+  "sample_source": {
+    "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+    "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d",
+    "source": "archived ordinary recording MP4, not raw encoder/FIFO observation",
+    "video_extraction": "ffmpeg stream copy first packet h264_mp4toannexb; each start prefix normalized to 4 bytes",
+    "source_annexb_sha256": "18c2088c8255db7c4d93580fca25053c4db4fec5a61aa88c93b27138f1c4f85e",
+    "normalized_annexb_sha256": "4436bc07994695b5b30552492184ed6573973d8ad3f7c17833a2e855866e4783",
+    "nal_types": [
+      7,
+      8,
+      5
+    ],
+    "nal_sizes": [
+      54,
+      4,
+      468188
+    ],
+    "audio_packet_position": 468240,
+    "audio_packet_bytes": 341,
+    "audio_packet_sha256": "85867eff0bf940a0b082042a415f2f78c0633faa72e088b5879632d0671c9293",
+    "audio_codec": "aac",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "audio_extradata": "\n00000000: 1190 0000 00                             .....\n",
+    "ffmpeg_version": "ffmpeg version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "fixture": "Repeated archived IDR and AAC packets with synthetic monotonic PTS; not continuous raw camera capture",
+  "original_arm": [
+    "MemIdx Create/Open/Write/Read/Close",
+    "IsoIdx Create/Add/Commit/Flush/Delete",
+    "AmpIndexCache_Read",
+    "MP4 Open/ProcessVideo/ProcessAudio/Close including MOOV serializer and mdat header patch"
+  ],
+  "explicit_models": [
+    "positional RAM file Write/Read/Seek/Tell/Length/Sync/Func",
+    "allocator/mutex/RTC OS boundaries",
+    "constructed movie/FIFO/registry RAM including Amba metadata version 2.0 and a fresh zeroed movie structure per new segment"
+  ],
+  "source_decode": {
+    "video_frame_md5": [
+      "6f54030da59d51a0d2ff03198b18cc4b"
+    ],
+    "audio_pcm_bytes": 4096,
+    "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+  },
+  "cases": [
+    {
+      "name": "native_single",
+      "status": 0,
+      "file": "native-output.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      },
+      "state": {
+        "output_bytes": 469881,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 10,
+        "index_backend_writes": 11,
+        "frees": 3,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 11,
+          "0xa0411e88": 7,
+          "0xa04111ac": 2,
+          "0xa0436004": 1,
+          "0xa0411048": 2,
+          "0xa0401ae4": 9,
+          "0xa0402884": 10,
+          "0xa0433af0": 1,
+          "0xa040fc04": 1,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      }
+    },
+    {
+      "name": "native_segment_1",
+      "status": 0,
+      "same_memidx_object": "0x11000000",
+      "file": "native-segment-1.mp4",
+      "bytes": 1407336,
+      "sha256": "87f99904e2deb93ca311b9748721178c25514d53d951be816593b7e1c9c198f4",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 3003,
+            "nb_read_packets": "3",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 4096,
+            "nb_read_packets": "4",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 16384,
+        "audio_pcm_sha256": "0606efb14ffbbab0d028ea228f12c6bdb19bdb7d361b51543f0c348c1bdd5c68"
+      },
+      "readback": {
+        "entries": [
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000001"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00000002"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "00000003"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000028"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00072508"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "000e49e8"
+          },
+          {
+            "track": 0,
+            "kind": 6,
+            "index": 0,
+            "bytes": 8,
+            "value_hex": "00000000000003e9"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00156ec8"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "0015701d"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "00157172"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 3,
+            "bytes": 4,
+            "value_hex": "001572c7"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 3,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 10,
+            "index": 0,
+            "bytes": 8,
+            "value_hex": "0000000000000400"
+          }
+        ],
+        "backend_reads_during_readback": 12
+      },
+      "state": {
+        "output_bytes": 1407336,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 25,
+        "index_backend_writes": 21,
+        "frees": 3,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 21,
+          "0xa0411e88": 19,
+          "0xa04111ac": 7,
+          "0xa0411048": 4,
+          "0xa0401ae4": 46,
+          "0xa0402884": 25,
+          "0xa0436004": 1,
+          "0xa0433af0": 1,
+          "0xa040fc04": 1,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      }
+    },
+    {
+      "name": "native_segment_2",
+      "status": 0,
+      "same_memidx_object": "0x11000000",
+      "file": "native-segment-2.mp4",
+      "bytes": 938783,
+      "sha256": "f72fb99cfddf706c045e9d97e6f32e607faad549e06a73eedc0a87b672eb9b47",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 2002,
+            "nb_read_packets": "2",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 3072,
+            "nb_read_packets": "3",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 12288,
+        "audio_pcm_sha256": "624b96d90e52b4b2fdd0da98e5dbc6bee24c40073f43c001151f2812574b4737"
+      },
+      "readback": {
+        "entries": [
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000001"
+          },
+          {
+            "track": 0,
+            "kind": 5,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00000002"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000028"
+          },
+          {
+            "track": 0,
+            "kind": 3,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00072508"
+          },
+          {
+            "track": 0,
+            "kind": 6,
+            "index": 0,
+            "bytes": 8,
+            "value_hex": "00000000000003e9"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 0,
+            "kind": 2,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "000724e0"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "000e49e8"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "000e4b3d"
+          },
+          {
+            "track": 1,
+            "kind": 9,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "000e4c92"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 0,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 1,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 8,
+            "index": 2,
+            "bytes": 4,
+            "value_hex": "00000155"
+          },
+          {
+            "track": 1,
+            "kind": 10,
+            "index": 0,
+            "bytes": 8,
+            "value_hex": "0000000000000400"
+          }
+        ],
+        "backend_reads_during_readback": 9
+      },
+      "state": {
+        "output_bytes": 938783,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 39,
+        "index_backend_writes": 38,
+        "frees": 6,
+        "native_call_counts": {
+          "0xa0435a18": 2,
+          "0xa04032fc": 2,
+          "0xa040f710": 2,
+          "0xa0402750": 38,
+          "0xa0411e88": 33,
+          "0xa04111ac": 12,
+          "0xa0411048": 8,
+          "0xa0401ae4": 79,
+          "0xa0402884": 39,
+          "0xa0436004": 2,
+          "0xa0433af0": 2,
+          "0xa040fc04": 2,
+          "0xa0402ed8": 2
+        },
+        "mock_index_events": 0
+      }
+    },
+    {
+      "name": "negative_reinit_without_fresh_movie",
+      "sample_counts_before": [
+        3,
+        4
+      ],
+      "sample_counts_after_track_init": [
+        3,
+        4
+      ],
+      "new_added": [
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000004"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "00000028"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0"
+        },
+        {
+          "track": 0,
+          "kind": 5,
+          "data_hex": "00000005"
+        },
+        {
+          "track": 0,
+          "kind": 3,
+          "data_hex": "00072508"
+        },
+        {
+          "track": 0,
+          "kind": 2,
+          "data_hex": "000724e0"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e49e8"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e4b3d"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        },
+        {
+          "track": 1,
+          "kind": 9,
+          "data_hex": "000e4c92"
+        },
+        {
+          "track": 1,
+          "kind": 8,
+          "data_hex": "00000155"
+        }
+      ],
+      "expected_first_audio_offset": "000e49e8",
+      "actual_first_audio_index_read": "00156ec8",
+      "close_error": "firmware assertion lr=a040e580, logs=[{'format': '%s() : auto set default audio track to %u', 'arguments': [2690755244, 1, 268439604]}, {'format': '%s START!', 'arguments': [2690747540, 268460052, 2688767536]}, {'format': 'K_ASSERT at %s %d', 'arguments': [2690741140, 1140, 268435456]}]",
+      "logs": [
+        {
+          "format": "%s() : auto set default audio track to %u",
+          "arguments": [
+            2690755244,
+            1,
+            268439604
+          ]
+        },
+        {
+          "format": "%s START!",
+          "arguments": [
+            2690747540,
+            268460052,
+            2688767536
+          ]
+        },
+        {
+          "format": "%s : FilePos = %llx, MdatEnd = %llx, FrameDataPos =%llx, FrameDataSize = %llx, EnableCO64 = %u",
+          "arguments": [
+            2690747560,
+            1405980,
+            0
+          ]
+        },
+        {
+          "format": "%s[%u]: SampleRate = %u, Frame_Size = %u , BitsPerSample = %u, Channels = %u",
+          "arguments": [
+            2690748184,
+            33,
+            48000
+          ]
+        },
+        {
+          "format": "%s END!",
+          "arguments": [
+            2690748016,
+            230,
+            2
+          ]
+        },
+        {
+          "format": "%s() : auto set default audio track to %u",
+          "arguments": [
+            2690755244,
+            1,
+            268439604
+          ]
+        },
+        {
+          "format": "%s START!",
+          "arguments": [
+            2690747540,
+            268460052,
+            2688767536
+          ]
+        },
+        {
+          "format": "K_ASSERT at %s %d",
+          "arguments": [
+            2690741140,
+            1140,
+            268435456
+          ]
+        }
+      ],
+      "partial_media": "no-movie-reset-media.bin",
+      "index_snapshot": "no-movie-reset-index.bin",
+      "boundary": "original track init is not a reset; original camera reopen/reset lifecycle remains unverified"
+    },
+    {
+      "name": "native_close_audio_trim",
+      "submitted_audio": 5,
+      "saved_audio": 4,
+      "file": "native-trim.mp4",
+      "bytes": 1407336,
+      "sha256": "87f99904e2deb93ca311b9748721178c25514d53d951be816593b7e1c9c198f4",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 3003,
+            "nb_read_packets": "3",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 4096,
+            "nb_read_packets": "4",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b",
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 16384,
+        "audio_pcm_sha256": "0606efb14ffbbab0d028ea228f12c6bdb19bdb7d361b51543f0c348c1bdd5c68"
+      },
+      "state": {
+        "output_bytes": 1407336,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 17,
+        "index_backend_writes": 21,
+        "frees": 3,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 21,
+          "0xa0411e88": 21,
+          "0xa04111ac": 8,
+          "0xa0436004": 1,
+          "0xa0411048": 2,
+          "0xa0401ae4": 27,
+          "0xa0402884": 17,
+          "0xa0433af0": 1,
+          "0xa040fc04": 1,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      }
+    },
+    {
+      "name": "byte_allocation_failure_then_new_open",
+      "failure_status": -1,
+      "failed": {
+        "output_bytes": 0,
+        "fifo_read_cursor": 0,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": false,
+        "index_backend_reads": 0,
+        "index_backend_writes": 2,
+        "frees": 1,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 2,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      },
+      "recovery": "clear injected allocator fault and perform a new open",
+      "file": "reopen-byte.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      }
+    },
+    {
+      "name": "block_allocation_failure_then_new_open",
+      "failure_status": -1,
+      "failed": {
+        "output_bytes": 0,
+        "fifo_read_cursor": 0,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": false,
+        "index_backend_reads": 0,
+        "index_backend_writes": 2,
+        "frees": 0,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 2,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      },
+      "recovery": "clear injected allocator fault and perform a new open",
+      "file": "reopen-block.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      }
+    },
+    {
+      "name": "payload_short_write",
+      "status": -1,
+      "failed": {
+        "output_bytes": 43,
+        "fifo_read_cursor": 0,
+        "memidx_data_pointer": "0x12000000",
+        "index_zeroed": false,
+        "index_backend_reads": 0,
+        "index_backend_writes": 2,
+        "frees": 0,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 2,
+          "0xa0411e88": 3
+        },
+        "mock_index_events": 0
+      },
+      "writes": [
+        {
+          "offset": 0,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "2de44621c76edf2debbc2df62ccb52c5036b1919dca3af0c0a886cc48dbfaeba"
+        },
+        {
+          "offset": 4,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "970b39b67f61786d7fd8a24fee291fe3172790276bfe9c1dbf234088ba7c0767"
+        },
+        {
+          "offset": 8,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "946ac35c1cee62013308d4b5400d9f6d52f930c3c57dc551f1b75df52a587f73"
+        },
+        {
+          "offset": 12,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "offset": 16,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "946ac35c1cee62013308d4b5400d9f6d52f930c3c57dc551f1b75df52a587f73"
+        },
+        {
+          "offset": 20,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "2c42f720d41266a5f9a5fe70f96a0e62dd50c0690bd91160c7d58810c5c8a4b8"
+        },
+        {
+          "offset": 24,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "offset": 28,
+          "source_address": "0x1001ed54",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "offset": 32,
+          "source_address": "0x1001ee3c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        {
+          "offset": 36,
+          "source_address": "0x1001ee3c",
+          "requested_bytes": 4,
+          "returned_bytes": 4,
+          "sha256": "4af27f74f7695aa0b93d8700b891f45295b4cffeb35614e67fba5d84a93b42e7"
+        },
+        {
+          "offset": 40,
+          "source_address": "0x1001ec7c",
+          "requested_bytes": 4,
+          "returned_bytes": 3,
+          "sha256": "a104db2e8cbc3504ce912ac37e4022a86172cf5a1d9d0e3ea09c98a2ecdacf20"
+        }
+      ],
+      "boundary": "partial payload retained; do not replay this frame into the same output"
+    },
+    {
+      "name": "real_commit_memidx_lock_failure_recovery",
+      "failure_status": -1,
+      "failed": {
+        "output_bytes": 468232,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x12000000",
+        "index_zeroed": false,
+        "index_backend_reads": 0,
+        "index_backend_writes": 3,
+        "frees": 0,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 3,
+          "0xa0411e88": 4,
+          "0xa04111ac": 1
+        },
+        "mock_index_events": 0
+      },
+      "recovery": "clear transient MemIdx lock failure; flush retained cache and close without replaying consumed frame",
+      "identical_to_baseline": true,
+      "file": "commit-recovered.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      },
+      "logs": [
+        {
+          "format": "%s() : auto set default audio track to %u",
+          "arguments": [
+            2690755244,
+            1,
+            268439604
+          ]
+        },
+        {
+          "format": "%s START!",
+          "arguments": [
+            2690747540,
+            268460052,
+            2688767536
+          ]
+        },
+        {
+          "format": "%s[Error]%s:%u %s\n",
+          "arguments": [
+            2690323696,
+            2690735668,
+            410
+          ],
+          "function": "AmpMemIdx_Write",
+          "line": 410,
+          "message": "Take mutex fail!"
+        },
+        {
+          "format": "%s[Error]%s:%u %s\n",
+          "arguments": [
+            2690323696,
+            2690734896,
+            254
+          ],
+          "function": "AmpIndexCache_WriteImpl",
+          "line": 254,
+          "message": "Write data to index file failed!"
+        },
+        {
+          "format": "%s[Error]%s:%u %s\n",
+          "arguments": [
+            2690323696,
+            2690735396,
+            284
+          ],
+          "function": "AmpIndexCache_Flush",
+          "line": 284,
+          "message": "AmpIndexCache_WriteImpl() failed!"
+        },
+        {
+          "format": "%s[Error]%s:%u %s\n",
+          "arguments": [
+            2690323696,
+            2690734852,
+            313
+          ],
+          "function": "AmpIndexCache_Commit",
+          "line": 313,
+          "message": "AmpIndexCache_Flush() failed!"
+        },
+        {
+          "format": "%s[Error]%s:%u %s\n",
+          "arguments": [
+            2690323696,
+            2690741412,
+            1471
+          ],
+          "function": "IsoIdx_Commit",
+          "line": 1471,
+          "message": "AmpIndexCache_Commit() error!"
+        },
+        {
+          "format": "%s : FilePos = %llx, MdatEnd = %llx, FrameDataPos =%llx, FrameDataSize = %llx, EnableCO64 = %u",
+          "arguments": [
+            2690747560,
+            468573,
+            0
+          ]
+        },
+        {
+          "format": "%s[%u]: SampleRate = %u, Frame_Size = %u , BitsPerSample = %u, Channels = %u",
+          "arguments": [
+            2690748184,
+            33,
+            48000
+          ]
+        },
+        {
+          "format": "%s END!",
+          "arguments": [
+            2690748016,
+            206,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "moov_short_write",
+      "failure_status": -12,
+      "failed": {
+        "output_bytes": 468576,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 5,
+        "index_backend_writes": 11,
+        "frees": 3,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 11,
+          "0xa0411e88": 7,
+          "0xa04111ac": 2,
+          "0xa0436004": 1,
+          "0xa0411048": 2,
+          "0xa0401ae4": 9,
+          "0xa0402884": 5,
+          "0xa0433af0": 1,
+          "0xa040fc04": 1,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      },
+      "partial_file": "moov_short_write.bin",
+      "recovery": "abandon partial output and open a new segment; index was deleted so do not retry close",
+      "file": "reopen-moov_short_write.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      }
+    },
+    {
+      "name": "tail_seek_failure",
+      "failure_status": -12,
+      "failed": {
+        "output_bytes": 469881,
+        "fifo_read_cursor": 1,
+        "memidx_data_pointer": "0x0",
+        "index_zeroed": true,
+        "index_backend_reads": 10,
+        "index_backend_writes": 11,
+        "frees": 3,
+        "native_call_counts": {
+          "0xa0435a18": 1,
+          "0xa04032fc": 1,
+          "0xa040f710": 1,
+          "0xa0402750": 11,
+          "0xa0411e88": 7,
+          "0xa04111ac": 2,
+          "0xa0436004": 1,
+          "0xa0411048": 2,
+          "0xa0401ae4": 9,
+          "0xa0402884": 10,
+          "0xa0433af0": 1,
+          "0xa040fc04": 1,
+          "0xa0402ed8": 1
+        },
+        "mock_index_events": 0
+      },
+      "partial_file": "tail_seek_failure.bin",
+      "recovery": "abandon partial output and open a new segment; index was deleted so do not retry close",
+      "file": "reopen-tail_seek_failure.mp4",
+      "bytes": 469881,
+      "sha256": "1135af2049def089228c4c84f059bb8b563f9ef0e0bbf11344b2fa126460ec05",
+      "decoded": {
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "width": 1920,
+            "height": 1080,
+            "time_base": "1/30000",
+            "duration_ts": 1001,
+            "nb_read_packets": "1",
+            "extradata_size": 69
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "sample_rate": "48000",
+            "channels": 2,
+            "time_base": "1/48000",
+            "duration_ts": 1024,
+            "nb_read_packets": "1",
+            "extradata_size": 5
+          }
+        ],
+        "video_frame_md5": [
+          "6f54030da59d51a0d2ff03198b18cc4b"
+        ],
+        "audio_pcm_bytes": 4096,
+        "audio_pcm_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+      }
+    }
+  ],
+  "case_count": 11,
+  "status": "pass",
+  "limits": [
+    "No physical SD/CFS, power loss, DMA/cache coherence, real FIFO producer, camera trigger or microphone tested",
+    "No one-minute retention, unique P/B-frame timeline, long-run memory pressure, or live firmware injection proved",
+    "Transient modeled RAM-index mutex recovery is not SD corruption or storage crash recovery"
+  ]
+}

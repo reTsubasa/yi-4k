@@ -1,0 +1,18 @@
+~ # cat /proc/mounts
+rootfs / rootfs rw 0 0
+/dev/root / squashfs ro,relatime 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=24476k,nr_inodes=6119,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,gid=5,mode=620 0 0
+tmpfs /dev/shm tmpfs rw,relatime,mode=777 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+a: /tmp/FL0 ambafs rw,relatime 0 0
+c: /tmp/SD0 ambafs rw,relatime 0 0
+c:/dcim /tmp/DCIM ambafs rw,relatime 0 0
+c: /tmp/fuse_d ambafs rw,relatime 0 0
+c:/dcim /var/www/DCIM ambafs rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+a: /pref ambafs rw,relatime 0 0
+~ # echo __YI_CAPTURE_d32e664b8ec24d128436ed408cef1fea__
+__YI_CAPTURE_d32e664b8ec24d128436ed408cef1fea__

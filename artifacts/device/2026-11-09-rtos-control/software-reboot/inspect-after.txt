@@ -1,0 +1,57 @@
+ls -l /sbin/reboot; ps; cat /proc/uptime
+lrwxrwxrwx    1 root     root            14 Feb  2  2018 [1;36m/sbin/reboot[0m -> [1;32m../bin/busybox[0m
+PID   USER     TIME   COMMAND
+    1 root       0:00 init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    5 root       0:00 [kworker/0:0H]
+    6 root       0:00 [kworker/u2:0]
+    7 root       0:00 [rcu_preempt]
+    8 root       0:00 [rcu_bh]
+    9 root       0:00 [rcu_sched]
+   10 root       0:00 [khelper]
+   11 root       0:00 [kdevtmpfs]
+   12 root       0:00 [writeback]
+   13 root       0:00 [bioset]
+   14 root       0:00 [crypto]
+   15 root       0:00 [kblockd]
+   16 root       0:00 [kworker/0:1]
+   17 root       0:00 [rpciod]
+   19 root       0:00 [kswapd0]
+   20 root       0:00 [fsnotify_mark]
+   21 root       0:00 [nfsiod]
+   38 root       0:00 [deferwq]
+   39 root       0:00 [kworker/0:1H]
+   61 dbus       0:00 dbus-daemon --system
+   69 root       0:00 /usr/bin/rpcbind
+  102 root       0:00 /usr/bin/ipcbind -b
+  104 root       0:00 /usr/bin/util_svc -b
+  108 root       0:00 /usr/bin/AmbaNetFifoDaemon
+  110 root       0:00 /usr/bin/AmbaEventNotifyDaemon
+  120 root       0:00 [cfg80211]
+  156 root       0:00 /usr/bin/remoteapi_disc_daemon
+  158 root       0:00 /usr/sbin/cherokee-worker -a -C /etc/cherokee.conf -j -s 
+  177 root       0:00 -/bin/sh
+  179 root       0:00 /usr/bin/remoteapi_cmd_daemon
+  192 root       0:00 /usr/bin/remoteapi_data_daemon
+  197 root       0:00 /usr/bin/remoteapi_syssvc_daemon
+  208 root       0:00 /usr/bin/AmbaRTSPServer
+  213 root       0:05 /usr/local/share/script/XCServer
+  221 root       0:02 telnetd
+  222 root       0:00 [kworker/u2:2]
+  427 root       0:00 [wl_escan_handle]
+  428 root       0:05 [dhd_watchdog_th]
+  429 root       0:01 [dhd_dpc]
+  430 root       0:00 [dhd_rxf]
+  450 root       0:03 [ksdioirqd/mmc0]
+  451 root       0:00 [wl_event_handle]
+  465 nobody     0:00 dnsmasq --nodns -5 -K -R -n --dhcp-range=192.168.42.2,192
+  472 root       0:00 wpa_supplicant -Dnl80211 -iwlan0 -c/tmp/wpa_supplicant.ap
+  488 root       0:00 /usr/local/share/script/bsa_server_43340 -d /dev/ttyS1 -p
+  495 root       0:00 /usr/local/share/script/ble_remote --addr 58:70:C6:57:84:
+  508 root       0:01 [kworker/0:0]
+  556 root       0:00 -sh
+  558 root       0:00 ps
+909.15 878.48
+~ # echo __YI_CAPTURE_2837868b278d4a85a525afea7da61e0c__
+__YI_CAPTURE_2837868b278d4a85a525afea7da61e0c__

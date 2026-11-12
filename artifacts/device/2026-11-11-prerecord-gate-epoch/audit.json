@@ -1,0 +1,1258 @@
+{
+  "scope": "offline original complete event/gate functions, synthetic RAM",
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "sources": [
+    {
+      "entry": "0xa046e6fc",
+      "end_exclusive": "0xa046e784",
+      "raw_sha256": "86e10df37a94797a46120e6e571b4acd08b69ab09a28044f77385329b3387e6b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a046e6fc.c",
+      "pseudocode_sha256": "d2fbe83f19dedc6c09857d2ff2532f39585663a9d5a05d600e1d68084a8d5820"
+    },
+    {
+      "entry": "0xa045fd38",
+      "end_exclusive": "0xa045fdd4",
+      "raw_sha256": "f90c185f5e6fb157a2017f62af0573d0347d698ac51723409dafa68dd1ea61d5",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045fd38.c",
+      "pseudocode_sha256": "9d4c5dfed52bc7264cef4d3c4fe50fd16f22007bb4d2dfa88df0a9bfb67bcaf5"
+    },
+    {
+      "entry": "0xa045d570",
+      "end_exclusive": "0xa045d608",
+      "raw_sha256": "f7d5490d0c04d436c27088abd7fb976d85396bf0d2be91f8ae85329d3d2877cc",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045d570.c",
+      "pseudocode_sha256": "0c1e201c3fa6568b97c4336d710bdc1a1d4f3f5b6a999f6046d4003d974c74b3"
+    },
+    {
+      "entry": "0xa045d60c",
+      "end_exclusive": "0xa045d68c",
+      "raw_sha256": "fa527ad34d0a54de8687bbdd3c8760f7db084c27f39b7aa199b8a830564411b7",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045d60c.c",
+      "pseudocode_sha256": "6f9337e08e4b77a5f1227d0042c62402d3d9e64a4fdd378a99f1cab177c51429"
+    },
+    {
+      "entry": "0xa045d7b8",
+      "end_exclusive": "0xa045d85c",
+      "raw_sha256": "17e9003c857e1092795e8031ae7ef06e6566f24bbbe2b194ac985e888c859f9b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045d7b8.c",
+      "pseudocode_sha256": "2a72d99ebba69d8cfd652b22641ed5b4a8c0318d226fe0a5383923ff7a9958b3"
+    },
+    {
+      "entry": "0xa029351c",
+      "end_exclusive": "0xa02935fc",
+      "raw_sha256": "d1d512865e487e57dddf945eef979bc99038e015457c5ed4ae303cea8c09ded1",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a029351c.c",
+      "pseudocode_sha256": "98c15cd88d2a07b8a0c2092a51ef238c6a81baec371cb35c0346453a7caad053"
+    }
+  ],
+  "instruction_pins": 8,
+  "cases": [
+    {
+      "name": "closed_gate_opens_counter_nonzero",
+      "initial_gate_flags": [
+        0
+      ],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        }
+      ],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c",
+        "0xa045d7b8",
+        "0xa029351c"
+      ],
+      "passed": true
+    },
+    {
+      "name": "already_open_repeated_event_no_rebase",
+      "initial_gate_flags": [
+        1
+      ],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 3,
+      "nonstack_stores": [
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        },
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        },
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        }
+      ],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c",
+        "0xa045d7b8",
+        "0xa029351c"
+      ],
+      "passed": true
+    },
+    {
+      "name": "two_nodes_only_flag_stores",
+      "initial_gate_flags": [
+        0,
+        2
+      ],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        },
+        {
+          "address": "0x10003104",
+          "bytes": 1,
+          "value": 1
+        }
+      ],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654324"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654324"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c",
+        "0xa045d7b8",
+        "0xa029351c"
+      ],
+      "passed": true
+    },
+    {
+      "name": "no_nodes_no_store",
+      "initial_gate_flags": [],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c",
+        "0xa045d7b8"
+      ],
+      "passed": true
+    },
+    {
+      "name": "other_event_selector_no_store",
+      "initial_gate_flags": [
+        0
+      ],
+      "event_word4": 1,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc"
+      ],
+      "passed": true
+    },
+    {
+      "name": "audio_guard_off_no_store",
+      "initial_gate_flags": [
+        0
+      ],
+      "event_word4": 0,
+      "guard": 0,
+      "pipeline_match": true,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38"
+      ],
+      "passed": true
+    },
+    {
+      "name": "pipeline_mismatch_no_store",
+      "initial_gate_flags": [
+        0
+      ],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": false,
+      "encoder_frame_count": 12345,
+      "event_tail": [
+        3735928559,
+        324508639
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c"
+      ],
+      "passed": true
+    },
+    {
+      "name": "different_counter_and_event_tail_same_gate",
+      "initial_gate_flags": [
+        0
+      ],
+      "event_word4": 0,
+      "guard": 1,
+      "pipeline_match": true,
+      "encoder_frame_count": 4294967295,
+      "event_tail": [
+        1985229328,
+        610839776
+      ],
+      "repetitions": 1,
+      "nonstack_stores": [
+        {
+          "address": "0x10003004",
+          "bytes": 1,
+          "value": 1
+        }
+      ],
+      "event_reads": [
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        },
+        {
+          "offset": 4,
+          "bytes": 4
+        }
+      ],
+      "encoder_state_unchanged": true,
+      "mutex_stub_calls": [
+        {
+          "kind": "take",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c9ed0"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0x87654320"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7268"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7358"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7448"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7538"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7628"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7718"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c7808"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19c78f8"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca020"
+        },
+        {
+          "kind": "take",
+          "object": "0xa19ca170"
+        },
+        {
+          "kind": "give",
+          "object": "0xa19ca170"
+        }
+      ],
+      "visited_real_functions": [
+        "0xa046e6fc",
+        "0xa045fd38",
+        "0xa045d570",
+        "0xa045d60c",
+        "0xa045d7b8",
+        "0xa029351c"
+      ],
+      "passed": true
+    }
+  ],
+  "stubs": "RTOS mutex take/give successful return only; no mutex side effects modeled",
+  "new_conclusion": "event 0x13 successful gate reopening does not rebase audio producer PTS",
+  "limitations": [
+    "No real capture time or common hardware clock established",
+    "No RTOS scheduling/mutex/DMA/codec or callback concurrency executed",
+    "Successful and selected-filter paths only; failures/debug printing excluded",
+    "Audio start setup is established by prior audit, not rerun here"
+  ],
+  "target_access": false,
+  "target_written": false
+}

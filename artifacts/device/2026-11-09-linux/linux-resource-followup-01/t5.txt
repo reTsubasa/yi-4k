@@ -1,0 +1,430 @@
+~ # echo LABEL=t5; cat /proc/meminfo; cat /proc/loadavg; for p in 102 104 108 11
+0 156 266 271 275 288 959; do echo PID=$p; cat /proc/$p/stat; cat /proc/$p/statu
+s; done
+LABEL=t5
+MemTotal:          49096 kB
+MemFree:            1580 kB
+Buffers:            3552 kB
+Cached:            21896 kB
+SwapCached:            0 kB
+Active:            19428 kB
+Inactive:          13092 kB
+Active(anon):       7084 kB
+Inactive(anon):       40 kB
+Active(file):      12344 kB
+Inactive(file):    13052 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:          7096 kB
+Mapped:             4020 kB
+Shmem:                52 kB
+Slab:               7356 kB
+SReclaimable:       3952 kB
+SUnreclaim:         3404 kB
+KernelStack:         664 kB
+PageTables:         4040 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       24548 kB
+Committed_AS:     151084 kB
+VmallocTotal:    1515520 kB
+VmallocUsed:         748 kB
+VmallocChunk:    1514620 kB
+0.00 0.01 0.05 1/83 1200
+PID=102
+102 (ipcbind) S 1 102 102 0 -1 4194368 92 0 0 0 0 0 0 0 20 0 1 0 191 1880064 86 4294967295 65536 71452 1054027392 1054026884 921524598 0 0 0 0 1076900104 0 0 17 0 0 0 0 0 0 136988 137480 30621696 1054027624 1054027644 1054027644 1054027755 0
+Name:   ipcbind
+State:  S (sleeping)
+Tgid:   102
+Pid:    102
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:     1836 kB
+VmSize:     1836 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       344 kB
+VmRSS:       344 kB
+VmData:      180 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      1096 kB
+VmPTE:         8 kB
+VmSwap:        0 kB
+Threads:        1
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180000000
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        35
+nonvoluntary_ctxt_switches:     19
+PID=104
+104 (util_svc) S 1 104 104 0 -1 4194368 347 16626 0 16 0 3 675 68 20 0 2 0 193 4059136 131 4294967295 65536 69628 1052663424 1052662448 920867490 0 0 0 16384 4294967295 0 0 17 0 0 0 0 0 0 135168 135612 20721664 1052663654 1052663675 1052663675 1052663786 0
+Name:   util_svc
+State:  S (sleeping)
+Tgid:   104
+Pid:    104
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:     4988 kB
+VmSize:     3964 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       528 kB
+VmRSS:       524 kB
+VmData:     2232 kB
+VmStk:       136 kB
+VmExe:         4 kB
+VmLib:      1112 kB
+VmPTE:        12 kB
+VmSwap:        0 kB
+Threads:        2
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004000
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        15
+nonvoluntary_ctxt_switches:     6
+PID=108
+108 (AmbaNetFifoDaem) S 1 108 108 0 -1 4194624 274 0 0 0 0 5 0 0 20 0 4 0 196 14491648 254 4294967295 65536 76020 1052376688 1052376016 921133828 0 0 0 17927 4294967295 0 0 17 0 0 0 0 0 0 141556 142072 28049408 1052376919 1052376946 1052376946 1052377057 0
+Name:   AmbaNetFifoDaem
+State:  S (sleeping)
+Tgid:   108
+Pid:    108
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:    15048 kB
+VmSize:    14152 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:      1016 kB
+VmRSS:      1016 kB
+VmData:    11780 kB
+VmStk:       136 kB
+VmExe:        12 kB
+VmLib:      1344 kB
+VmPTE:        16 kB
+VmSwap:        0 kB
+Threads:        4
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004607
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        717
+nonvoluntary_ctxt_switches:     12
+PID=110
+110 (AmbaEventNotify) S 1 110 110 0 -1 4194368 142 0 0 0 0 0 0 0 20 0 3 0 197 4440064 138 4294967295 65536 70160 1050603120 1050602520 921260804 0 0 0 16903 4294967295 0 0 17 0 0 0 0 0 0 135696 136100 749568 1050603343 1050603374 1050603374 1050603485 0
+Name:   AmbaEventNotify
+State:  S (sleeping)
+Tgid:   110
+Pid:    110
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:     5360 kB
+VmSize:     4336 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       552 kB
+VmRSS:       552 kB
+VmData:     2364 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      1148 kB
+VmPTE:        10 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        19
+nonvoluntary_ctxt_switches:     4
+PID=156
+156 (remoteapi_disc_) S 1 156 156 0 -1 4194368 92 0 0 0 0 0 0 0 20 0 1 0 452 3657728 116 4294967295 65536 69960 1050414704 1050413724 921966444 0 0 0 16384 1076900104 0 0 17 0 0 0 0 0 0 135496 135956 16683008 1050414927 1050414958 1050414958 1050415069 0
+Name:   remoteapi_disc_
+State:  S (sleeping)
+Tgid:   156
+Pid:    156
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:     3572 kB
+VmSize:     3572 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       464 kB
+VmRSS:       464 kB
+VmData:       68 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      2404 kB
+VmPTE:         8 kB
+VmSwap:        0 kB
+Threads:        1
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004000
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        1
+nonvoluntary_ctxt_switches:     0
+PID=266
+266 (remoteapi_cmd_d) S 1 266 266 0 -1 4194368 246 418 1 2 3 5 0 3 20 0 3 0 749 458252288 244 4294967295 65536 70544 1053933168 1053927136 921174788 0 0 0 16903 4294967295 0 0 17 0 0 0 0 0 0 136080 136472 7151616 1053933393 1053933423 1053933423 1053933534 0
+Name:   remoteapi_cmd_d
+State:  S (sleeping)
+Tgid:   266
+Pid:    266
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   447512 kB
+VmSize:   447512 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       976 kB
+VmRSS:       976 kB
+VmData:     2384 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      2484 kB
+VmPTE:       446 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        131
+nonvoluntary_ctxt_switches:     44
+PID=271
+271 (remoteapi_data_) S 1 271 271 0 -1 4194368 238 0 0 0 0 3 0 0 20 0 3 0 753 458252288 244 4294967295 65536 70552 1052311152 1052300680 921944836 0 0 0 16903 4294967295 0 0 17 0 0 0 0 0 0 136088 136480 32169984 1052311375 1052311406 1052311406 1052311517 0
+Name:   remoteapi_data_
+State:  S (sleeping)
+Tgid:   271
+Pid:    271
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   448408 kB
+VmSize:   447512 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       976 kB
+VmRSS:       976 kB
+VmData:     2384 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      2484 kB
+VmPTE:       444 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        72
+nonvoluntary_ctxt_switches:     55
+PID=275
+275 (remoteapi_syssv) S 1 275 275 0 -1 4194368 187 0 0 0 0 2 0 0 20 0 3 0 760 457973760 203 4294967295 65536 80636 1051160176 1051159232 919089826 0 0 0 17927 4294967295 0 0 17 0 0 0 0 0 0 146172 146700 30760960 1051160395 1051160428 1051160428 1051160539 0
+Name:   remoteapi_syssv
+State:  S (sleeping)
+Tgid:   275
+Pid:    275
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   447240 kB
+VmSize:   447240 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       812 kB
+VmRSS:       812 kB
+VmData:     2380 kB
+VmStk:       136 kB
+VmExe:        16 kB
+VmLib:      2404 kB
+VmPTE:       446 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004607
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        5
+nonvoluntary_ctxt_switches:     28
+PID=288
+288 (XCServer) S 1 104 104 0 -1 4194304 458 0 3 0 1211 6497 0 0 20 0 3 0 781 13377536 354 4294967295 65536 206712 1052397168 1052330832 919610116 0 0 0 16903 4294967295 0 0 17 0 0 0 0 0 0 272248 273196 10809344 1052397387 1052397420 1052397420 1052397531 0
+Name:   XCServer
+State:  S (sleeping)
+Tgid:   288
+Pid:    288
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:    14088 kB
+VmSize:    13064 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:      1416 kB
+VmRSS:      1416 kB
+VmData:     9628 kB
+VmStk:       136 kB
+VmExe:       140 kB
+VmLib:      2260 kB
+VmPTE:        14 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        4157355
+nonvoluntary_ctxt_switches:     2512
+PID=959
+959 (AmbaRTSPServer) S 1 959 959 0 -1 4194624 461 0 0 0 1 2 0 0 20 0 3 0 1678381 466243584 456 4294967295 65536 132844 1053765248 1053764672 919851666 0 0 4096 83463 4294967295 0 0 17 0 0 0 0 0 0 198380 199329 11149312 1053765469 1053765493 1053765493 1053765604 0
+Name:   AmbaRTSPServer
+State:  S (sleeping)
+Tgid:   959
+Pid:    959
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   456340 kB
+VmSize:   455316 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:      1824 kB
+VmRSS:      1824 kB
+VmData:    10088 kB
+VmStk:       136 kB
+VmExe:        68 kB
+VmLib:      2448 kB
+VmPTE:       446 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000001000
+SigCgt: 0000000180014607
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        74
+nonvoluntary_ctxt_switches:     16
+~ # echo __YI_CAPTURE_d682082a44fe46de8084ace1724c02c1__
+__YI_CAPTURE_d682082a44fe46de8084ace1724c02c1__

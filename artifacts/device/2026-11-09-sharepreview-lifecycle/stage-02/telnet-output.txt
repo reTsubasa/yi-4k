@@ -1,0 +1,100 @@
+python -B -u <<'YI_SHAREPV_PY'
+> import os,stat,hashlib,json,subprocess,base64
+> probe=json.loads(base64.b64decode((
+
+>     'eyJhdXRvZXhlY19zaGEyNTYiOiAiODdhOWEyMDVhNzgzOWYwMmYzNDNjNTE0NGQ0YjYwOTU2Z
+WE0ZjIwYTYwMjEzNmQwOThlNDc0MTM1NWU0YjAyYiIsICJiZWdpbiI6'
+
+>     'ICIvdG1wL3lpNGtfc2hhcmVwdl9kNjg5NDFlZGQyNTNfYmVnaW4iLCAiZGlzYWJsZV9hZnRlc
+iI6ICIvdG1wL3lpNGtfc2hhcmVwdl9kNjg5NDFlZGQyNTNfZGlzYWJs'
+
+>     'ZV9hZnRlciIsICJkb25lIjogIi90bXAveWk0a19zaGFyZXB2X2Q2ODk0MWVkZDI1M19kb25lI
+iwgImVuYWJsZV9hZnRlciI6ICIvdG1wL3lpNGtfc2hhcmVwdl9kNjg5'
+
+>     'NDFlZGQyNTNfZW5hYmxlX2FmdGVyIiwgImlkZW50aWZpZXIiOiAiZDY4OTQxZWRkMjUzIiwgI
+mluaXRfYWZ0ZXIiOiAiL3RtcC95aTRrX3NoYXJlcHZfZDY4OTQxZWRk'
+
+>     'MjUzX2luaXRfYWZ0ZXIiLCAibWFya2VyIjogIi90bXAvU0QwL2F1dG9leGVjLmFzaCIsICJwY
+Xlsb2FkcyI6IHsiYXV0b2V4ZWMiOiAiZENCcGNHTWdjbkJqSUdOc2Ju'
+
+>     'UWdaWGhsWXpFZ0ozUnZkV05vSUM5MGJYQXZlV2swYTE5emFHRnlaWEIyWDJRMk9EazBNV1ZrW
+kRJMU0xOWlaV2RwYmljS2RDQmhjSEFnZEdWemRDQnphR0Z5WlhCMklH'
+
+>     'bHVhWFFLZENCcGNHTWdjbkJqSUdOc2JuUWdaWGhsWXpFZ0ozUnZkV05vSUM5MGJYQXZlV2swY
+TE5emFHRnlaWEIyWDJRMk9EazBNV1ZrWkRJMU0xOXBibWwwWDJGbWRH'
+
+>     'VnlKd3AwSUdsd1l5QnljR01nWTJ4dWRDQmxlR1ZqTVNBbmNIbDBhRzl1SUM5MGJYQXZVMFF3T
+DNscE5HdGZjMmhoY21Wd2RsOWtOamc1TkRGbFpHUXlOVE5mY25Cakxu'
+>     'QjVJR2x1YVhRbkNuUWdZWEJ3SUhSbGMzUWdjMmhoY21Wd2RpQmxiZ3AwSUdsd1l5QnljR01nW
+TJ4dWRDQmxlR1ZqTVNBbmRHOTFZMmdnTDNSdGNDOTVhVFJyWDNOb1lY'
+>     'SmxjSFpmWkRZNE9UUXhaV1JrTWpVelgyVnVZV0pzWlY5aFpuUmxjaWNLZENCcGNHTWdjbkJqS
+UdOc2JuUWdaWGhsWXpFZ0ozQjVkR2h2YmlBdmRHMXdMMU5FTUM5NWFU'
+>     'UnJYM05vWVhKbGNIWmZaRFk0T1RReFpXUmtNalV6WDNKd1l5NXdlU0JsYm1GaWJHVW5DblFnW
+VhCd0lIUmxjM1FnYzJoaGNtVndkaUJrYVhNS2RDQnBjR01nY25CaklH'
+>     'TnNiblFnWlhobFl6RWdKM1J2ZFdOb0lDOTBiWEF2ZVdrMGExOXphR0Z5WlhCMlgyUTJPRGswT
+VdWa1pESTFNMTlrYVhOaFlteGxYMkZtZEdWeUp3cDBJR2x3WXlCeWNH'
+>     'TWdZMnh1ZENCbGVHVmpNU0FuY0hsMGFHOXVJQzkwYlhBdlUwUXdMM2xwTkd0ZmMyaGhjbVZ3Z
+Gw5a05qZzVOREZsWkdReU5UTmZjbkJqTG5CNUlHUnBjMkZpYkdVbkNu'
+>     'UWdhWEJqSUhKd1l5QmpiRzUwSUdWNFpXTXhJQ2QwYjNWamFDQXZkRzF3TDNscE5HdGZjMmhoY
+21Wd2RsOWtOamc1TkRGbFpHUXlOVE5mWkc5dVpTY0siLCAicnBjX3Nv'
+>     'dXJjZSI6ICJhVzF3YjNKMElHTjBlWEJsY3lCaGN5QkRMQ0JxYzI5dUxDQnZjeXdnYzNsekxDQ
+m9ZWE5vYkdsaUxDQnphV2R1WVd3S2MybG5ibUZzTG1Gc1lYSnRLRGdw'
+>     'Q25Cb1lYTmxQWE41Y3k1aGNtZDJXekZkQ214cFluQmhkR2c5Snk5MWMzSXZiR2xpTDJ4cFltR
+nRZbUZwY0dNdWMyOG5DbXhwWWoxRExrTkVURXdvYkdsaWNHRjBhQ2tL'
+>     'YkdsaUxtRnRZbUZwY0dOZlkyeHVkRjlqY21WaGRHVXVZWEpuZEhsd1pYTTlXME11WTE5MWFXN
+TBNeklzUXk1algzVnBiblF6TWl4RExtTmZkV2x1ZERNeVhUc2diR2xp'
+>     'TG1GdFltRnBjR05mWTJ4dWRGOWpjbVZoZEdVdWNtVnpkSGx3WlQxRExtTmZkbTlwWkY5d0Nte
+HBZaTVoYldKaGFYQmpYMk5zYm5SZlkyRnNiQzVoY21kMGVYQmxjejFi'
+>     'UXk1algzWnZhV1JmY0N4RExtTmZkV2x1ZERNeUxFTXVZMTkyYjJsa1gzQXNReTVqWDNWcGJuU
+XpNaXhETG1OZmRtOXBaRjl3TEVNdVkxOTFhVzUwTXpJc1F5NWpYM1Zw'
+>     'Ym5Rek1sMDdJR3hwWWk1aGJXSmhhWEJqWDJOc2JuUmZZMkZzYkM1eVpYTjBlWEJsUFVNdVkxO
+XBiblFLYkdsaUxtRnRZbUZwY0dOZlkyeHVkRjlrWlhOMGNtOTVMbUZ5'
+>     'WjNSNWNHVnpQVnRETG1OZmRtOXBaRjl3WFRzZ2JHbGlMbUZ0WW1GcGNHTmZZMnh1ZEY5a1pYT
+jBjbTk1TG5KbGMzUjVjR1U5UXk1algybHVkQXBqUFd4cFlpNWhiV0po'
+>     'YVhCalgyTnNiblJmWTNKbFlYUmxLREVzTUhneE1EQXdNREF3WXl3eEtRcHlQWHNuY0doaGMyV
+W5PbkJvWVhObExDZHNhV0p5WVhKNVgzTm9ZVEkxTmljNmFHRnphR3hw'
+>     'WWk1emFHRXlOVFlvYjNCbGJpaHNhV0p3WVhSb0xDZHlZaWNwTG5KbFlXUW9LU2t1YUdWNFpHb
+G5aWE4wS0NsOUNtbG1JRzV2ZENCak9nb2djbHNuWTJ4cFpXNTBKMTA5'
+>     'SjI1MWJHd25DbVZzYzJVNkNpQnpQVU11WTE5MWFXNTBNeklvTUhoa1pXRmtZbVZsWmlrN0lIS
+mJKM04wWVhSMWMxOXlZeWRkUFd4cFlpNWhiV0poYVhCalgyTnNiblJm'
+>     'WTJGc2JDaGpMRE1zVG05dVpTd3dMRU11WW5seVpXWW9jeWtzTkN3eE1EQXdLVHNnY2xzbmMzU
+mhkSFZ6SjEwOWN5NTJZV3gxWlFvZ2FXWWdjbHNuYzNSaGRIVnpYM0pq'
+>     'SjEwOVBUQTZDaUFnYVc1bWJ6MG9ReTVqWDNWcGJuUXpNaW8yS1NncVd6QjRaR1ZoWkdKbFpXW
+mRLallwT3lCeVd5ZHRaVzFwYm1adlgzSmpKMTA5YkdsaUxtRnRZbUZw'
+>     'Y0dOZlkyeHVkRjlqWVd4c0tHTXNNU3hPYjI1bExEQXNReTVpZVhKbFppaHBibVp2S1N3eU5Dd
+3hNREF3S1RzZ2Nsc25iV1Z0YVc1bWIxOTFNekluWFQxc2FYTjBLR2x1'
+>     'Wm04cENpQnlXeWRrWlhOMGNtOTVYM0pqSjEwOWJHbGlMbUZ0WW1GcGNHTmZZMnh1ZEY5a1pYT
+jBjbTk1S0dNcENuUnllVG9LSUc5c1pEMXFjMjl1TG14dllXUW9iM0Js'
+>     'YmlnbkwzUnRjQzlUUkRBdmVXazBhMTl6YUdGeVpYQjJYMlEyT0RrME1XVmtaREkxTTE5eWNHT
+mZjbVZ6ZFd4MExtcHpiMjRuS1NrS1pYaGpaWEIwT2dvZ2IyeGtQVnRk'
+>     'Q205c1pDNWhjSEJsYm1Rb2Npa0tabVE5YjNNdWIzQmxiaWduTDNSdGNDOVRSREF2ZVdrMGExO
+XphR0Z5WlhCMlgyUTJPRGswTVdWa1pESTFNMTl5Y0dOZmNtVnpkV3gw'
+>     'TG1wemIyNG5MRzl6TGs5ZlYxSlBUa3haZkc5ekxr
+>     'WkN4emIzSjBYMnRsZVhNOVZISjFaU2twQ205ekxtTnNiM05sS0daa0tRcHdjbWx1ZENnbldVb
+GZVMGhCVWtWUVZsOVNVRU1nSnl0cWMyOXVMbVIxYlhCektISXNjMjl5'
+>     'ZEY5clpYbHpQVlJ5ZFdVcEtRbz0ifSwgInJwY19yZXN1bHQiOiAiL3RtcC9TRDAveWk0a19za
+GFyZXB2X2Q2ODk0MWVkZDI1M19ycGNfcmVzdWx0Lmpzb24iLCAicnBj'
+>     'X3NjcmlwdCI6ICIvdG1wL1NEMC95aTRrX3NoYXJlcHZfZDY4OTQxZWRkMjUzX3JwYy5weSIsI
+CJycGNfc2NyaXB0X3NoYTI1NiI6ICI0YmQ4N2U5NDc2ZDE5MDIxM2Yy'
+>     'MWE5ODFjMDhkZGY3N2VlMGJhN2ZmYjhjY2ZkMDlmZjM0ZjkwZGZjMDQ0MDVjIiwgInN0ZW0iO
+iAieWk0a19zaGFyZXB2X2Q2ODk0MWVkZDI1MyJ9'
+> )))
+> names=[prob
+> for n in names:
+>  assert not os.path.lexists(n),'refuse existing '+n
+> for key,path in [('autoexec',probe['marker']),('rpc_source',probe[
+>  data=base64.b64decode(probe['payloads'][key])
+>  fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0600)
+>  with os.fdopen(fd,'wb') as f:f
+>  assert hashlib.sha256(open(path,'rb').read()).hexdigest()==probe[key+'_sha256
+']
+> subprocess.check_call(['sync'])
+> print('YI_SHAREPV_STA
+> 
+> YI_SHAREPV_PY
+  File "<stdin>", line 33
+    'TG1wemIyNG5MRzl6TGs5ZlYxSlBUa3haZkc5ekxr
+                                            ^
+SyntaxError: EOL while scanning string literal
+~ # echo __YI_CAPTURE_622065103aee458ea0c758f8315e1df4__
+__YI_CAPTURE_622065103aee458ea0c758f8315e1df4__

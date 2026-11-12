@@ -1,0 +1,20 @@
+~ # cat /proc/1/mountinfo; cat /proc/sys/kernel/hostname; cat /proc/sys/kernel/o
+srelease
+13 1 31:5 / / ro,relatime - squashfs /dev/root ro
+14 13 0:5 / /dev rw,relatime - devtmpfs devtmpfs rw,size=24476k,nr_inodes=6119,mode=755
+15 13 0:3 / /proc rw,relatime - proc proc rw
+16 14 0:10 / /dev/pts rw,relatime - devpts devpts rw,gid=5,mode=620
+17 14 0:12 / /dev/shm rw,relatime - tmpfs tmpfs rw,mode=777
+18 13 0:13 / /tmp rw,relatime - tmpfs tmpfs rw
+19 13 0:14 / /sys rw,relatime - sysfs sysfs rw
+20 18 0:15 / /tmp/FL0 rw,relatime - ambafs a: rw
+21 18 0:16 / /tmp/SD0 rw,relatime - ambafs c: rw
+22 18 0:17 / /tmp/DCIM rw,relatime - ambafs c:/dcim rw
+23 18 0:16 / /tmp/fuse_d rw,relatime - ambafs c: rw
+24 13 0:17 / /var/www/DCIM rw,relatime - ambafs c:/dcim rw
+25 19 0:6 / /sys/kernel/debug rw,relatime - debugfs none rw
+26 13 0:15 /pref /pref rw,relatime - ambafs a: rw
+a9s
+3.10.71
+~ # echo __YI_CAPTURE_60ea8318806745378bab9587796f4d4d__
+__YI_CAPTURE_60ea8318806745378bab9587796f4d4d__

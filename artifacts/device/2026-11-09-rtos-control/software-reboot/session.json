@@ -1,0 +1,98 @@
+{
+  "started_utc": "2026-11-09T02:44:22.920188+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1026959.853456541,
+      "utc": "2026-11-09T02:44:22.945809+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1026960.647685125,
+      "utc": "2026-11-09T02:44:23.740045+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1026960.647743958,
+      "utc": "2026-11-09T02:44:23.740091+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1026960.655881583,
+      "utc": "2026-11-09T02:44:23.748229+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1026960.6558955,
+      "utc": "2026-11-09T02:44:23.748242+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1026960.667631833,
+      "utc": "2026-11-09T02:44:23.759982+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1026960.667676625,
+      "utc": "2026-11-09T02:44:23.760023+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1026960.67265075,
+      "utc": "2026-11-09T02:44:23.765004+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "uptime_before": "cat /proc/uptime\n885.12 855.38\n~ # echo __YI_CAPTURE_972fbc32bc5549359f05d59701d4b03a__\n__YI_CAPTURE_972fbc32bc5549359f05d59701d4b03a__\n",
+  "payload_hashes_confirmed": true,
+  "sync": "~ # sync\n~ # echo __YI_CAPTURE_f62d3c4aaff44a3a92515eb2c9579456__\n__YI_CAPTURE_f62d3c4aaff44a3a92515eb2c9579456__\n",
+  "reboot_command_sent": true
+}

@@ -1,0 +1,55 @@
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:7:25: warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+ 5 | let url = URL(fileURLWithPath: CommandLine.arguments[1])
+ 6 | let asset = AVURLAsset(url: url)
+ 7 | guard let track = asset.tracks(withMediaType: .video).first else {
+   |                         `- warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+ 8 |     fatalError("No video track")
+ 9 | }
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:35:20: warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+33 |     "validator": "macOS AVFoundation / AVAssetReader, decoded pixel buffers",
+34 |     "file": url.lastPathComponent,
+35 |     "width": track.naturalSize.width,
+   |                    `- warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+36 |     "height": track.naturalSize.height,
+37 |     "nominal_fps": track.nominalFrameRate,
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:36:21: warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+34 |     "file": url.lastPathComponent,
+35 |     "width": track.naturalSize.width,
+36 |     "height": track.naturalSize.height,
+   |                     `- warning: 'naturalSize' was deprecated in macOS 13.0: Use load(.naturalSize) instead
+37 |     "nominal_fps": track.nominalFrameRate,
+38 |     "duration_seconds": CMTimeGetSeconds(asset.duration),
+
+artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift:37:26: warning: 'nominalFrameRate' was deprecated in macOS 13.0: Use load(.nominalFrameRate) instead
+35 |     "width": track.naturalSize.width,
+36 |     "height": track.naturalSize.height,
+37 |     "nominal_fps": track.nominalFrameRate,
+   |                          `- warning: 'nominalFrameRate' was deprecated in macOS 13.0: Use load(.nominalFrameRate) instead
+38 |     "duration_seconds": CMTimeGetSeconds(asset.duration),
+39 |     "decoded_video_frames": count,
+
+main/inspect-video.swift:8: Fatal error: No video track
+Stack dump:
+0.	Program arguments: /Library/Developer/CommandLineTools/usr/bin/swift-frontend -frontend -interpret artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift -enable-objc-interop -stack-check -sdk /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -new-driver-path /Library/Developer/CommandLineTools/usr/bin/swift-driver -empty-abi-descriptor -resource-dir /Library/Developer/CommandLineTools/usr/lib/swift -module-name main -disable-clang-spi -target-sdk-version 15.4 -target-sdk-name macosx15.4 -external-plugin-path /Library/Developer/Developer/usr/lib/swift/host/plugins#/Library/Developer/Developer/usr/bin/swift-plugin-server -external-plugin-path /Library/Developer/Developer/usr/local/lib/swift/host/plugins#/Library/Developer/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Library/Developer/CommandLineTools/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Library/Developer/CommandLineTools/usr/lib/swift/host/plugins -plugin-path /Library/Developer/CommandLineTools/usr/local/lib/swift/host/plugins -- artifacts/device/2026-11-09-live-eis/reboot-api-only-01/YDXJ0135.SEC
+1.	Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+2.	Compiling with effective version 5.10
+3.	While running user code "artifacts/device/2026-11-09-live-eis/reboot-api-only-01/inspect-video.swift"
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
+0  swift-frontend           0x000000010b460708 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) + 40
+1  swift-frontend           0x000000010b45e039 llvm::sys::RunSignalHandlers() + 233
+2  swift-frontend           0x000000010b460cee SignalHandler(int) + 302
+3  libsystem_platform.dylib 0x00007ff8068b13bd _sigtramp + 29
+4  libsystem_platform.dylib 0x000000031760e270 _sigtramp + 18446603383748284112
+5  libsystem_platform.dylib 0x000000012b897f44 _sigtramp + 18446603375496555428
+6  swift-frontend           0x000000010450ad8f llvm::orc::runAsMain(int (*)(int, char**), llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, std::__1::optional<llvm::StringRef>) + 1295
+7  swift-frontend           0x0000000104405b53 swift::SwiftJIT::runMain(llvm::ArrayRef<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>) + 675
+8  swift-frontend           0x0000000104412f9b swift::RunImmediately(swift::CompilerInstance&, std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>> const&, swift::IRGenOptions const&, swift::SILOptions const&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&) + 1435
+9  swift-frontend           0x0000000104391361 processCommandLineAndRunImmediately(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>&&, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::FrontendObserver*, int&) + 545
+10 swift-frontend           0x000000010438b6a6 performCompileStepsPostSILGen(swift::CompilerInstance&, std::__1::unique_ptr<swift::SILModule, std::__1::default_delete<swift::SILModule>>, llvm::PointerUnion<swift::ModuleDecl*, swift::SourceFile*>, swift::PrimarySpecificPaths const&, int&, swift::FrontendObserver*) + 2374
+11 swift-frontend           0x000000010438abb9 swift::performCompileStepsPostSema(swift::CompilerInstance&, int&, swift::FrontendObserver*) + 3385
+12 swift-frontend           0x000000010438ef33 performCompile(swift::CompilerInstance&, int&, swift::FrontendObserver*) + 4835
+13 swift-frontend           0x000000010438ca16 swift::performFrontend(llvm::ArrayRef<char const*>, char const*, void*, swift::FrontendObserver*) + 4518
+14 swift-frontend           0x00000001042fbb09 swift::mainEntry(int, char const**) + 3241
+15 dyld                     0x000000020f4e2b28 start + 3240

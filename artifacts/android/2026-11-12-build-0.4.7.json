@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "version": "0.4.7",
+  "version_code": 30,
+  "created_utc": "2026-11-12T03:54:56.399204+00:00",
+  "status": "pass_host_build_unit_tests_and_local_avd",
+  "device_access": false,
+  "scope": "Android prototype UI, immersive overlay, localized curated settings; no physical phone or camera operations",
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.7-debug.apk",
+    "bytes": 12022913,
+    "sha256": "6bc5ae09660e1d06eb1f8e6101738e1a1958f410d81d6929b9be6db62aea9320"
+  },
+  "unit_tests": {
+    "tests": 206,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 74
+  },
+  "tests_run": [
+    "./gradlew testDebugUnitTest lintDebug assembleDebug",
+    "./gradlew assembleDebugAndroidTest"
+  ],
+  "source_sha256": {
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "fda832dde7df149f9855b36ac23de1fd3215aa54d1e1e75db822ae8c86659520",
+    "android/app/src/main/java/dev/yi4k/control/CameraLivePreview.java": "c99a8cb50a00dc9a317b652af4051d27941e440b32cc941efe9acf8fa1c9dea6",
+    "android/app/src/main/java/dev/yi4k/control/CameraSettings.java": "096a26c945dba9d2630b49a6614fb19133b29ef5b03501929e8aee66e0055cd6",
+    "android/app/src/main/java/dev/yi4k/control/SettingsHierarchy.java": "3a6df3fc7f83b93758edddcd27df7e5b2a18a4215e29690ecbcab83302caf11e",
+    "android/app/src/main/java/dev/yi4k/control/AppPalette.java": "03102cc3287d0b32ff6427810fa2cc1e639f2c01baad99bfd525c3b4133ecfc2",
+    "android/app/build.gradle": "d2bd4a277b4011b6775f19bd7f441d80b3a3ce6cce24c42fc810095f0857fe7a"
+  },
+  "host_reports": "artifacts/android/0.4.7-host-reports",
+  "changed_contracts": [
+    "No top message banner; Toast feedback and separate export progress row",
+    "Single-line RES/FPS/FOV/EV/COLOR capsules, actual settings values",
+    "Fullscreen reuses preview container with right parameter rail and bottom mode/shutter controls; window orientation reflow",
+    "Fill/crop and complete-frame modes remain consistent across navigation",
+    "Chinese names for actual network and identifier keys; capability/status/action and alias filtering preserves raw JSON",
+    "Known identifiers and telemetry show no misleading edit action; clock synchronization uses one row"
+  ],
+  "avd": {
+    "status": "passed",
+    "tests": 3,
+    "acceptance_path": "artifacts/android/0.4.7-device-reports/ui-review-run04/acceptance.json",
+    "acceptance_sha256": "c619f63c718a1cbf7e861990290c10871f18eaef2816030d74553820029c8397",
+    "scope": "headless Android AVD only; no physical phone or camera access",
+    "emulator_stopped": true,
+    "physical_phone": false,
+    "camera_access": false,
+    "workflows": [
+      "Chinese setting name/value geometry",
+      "Normal orientation retains preview container",
+      "Real touch fullscreen -> landscape -> portrait -> exit -> settings; modes/shutter/parameters reachable"
+    ],
+    "ui_review_path": "artifacts/android/0.4.7-device-reports/ui-review-run04/ui-review.json",
+    "ui_review_sha256": "c0cd8d19fb82599d6773016b7299bc77e918d9d412736b5dbf84081de59b305f",
+    "reviewed_screenshots": 16
+  },
+  "limitations": [
+    "No physical phone or live camera acceptance in this run",
+    "Fill mode crops the preview edges; complete mode preserves source framing",
+    "No exact recording duration is fabricated from app elapsed time",
+    "No camera voice setter, EIS replacement, native execution or minute-prebuffer backend deployed"
+  ],
+  "test_apk": {
+    "path": "artifacts/android/yi4k-control-0.4.7-tests-final.apk",
+    "bytes": 736468,
+    "sha256": "e4486279dc6487d1eb515977ef97299bedc884c8cb41bf7376b6ff5e3c343b89"
+  },
+  "historical_avd_runs": {
+    "index": "artifacts/android/0.4.7-device-reports/ui-review-investigation.json",
+    "note": "Runs01-03 contain older builds, setup failures and the parameter clipping regression; none counts as final acceptance"
+  }
+}

@@ -1,0 +1,30 @@
+find /sys/class/remoteproc -maxdepth 2 -type f -print 2>/dev/null; for f in 
+/sys/class/remoteproc/remoteproc*/name /sys/class/remoteproc/remoteproc*/state /
+sys/class/remoteproc/remoteproc*/firmware; do echo ===$f; cat $f 2>/dev/null; do
+ne; find /sys/bus/rpmsg -maxdepth 3 -type f -print 2>/dev/null | head -100
+===/sys/class/remoteproc/remoteproc*/name
+===/sys/class/remoteproc/remoteproc*/state
+===/sys/class/remoteproc/remoteproc*/firmware
+/sys/bus/rpmsg/drivers/rpmsg_echo/bind
+/sys/bus/rpmsg/drivers/rpmsg_echo/uevent
+/sys/bus/rpmsg/drivers/rpmsg_echo/unbind
+/sys/bus/rpmsg/drivers/ambafs/bind
+/sys/bus/rpmsg/drivers/ambafs/uevent
+/sys/bus/rpmsg/drivers/ambafs/unbind
+/sys/bus/rpmsg/drivers/rpmsg_clk/bind
+/sys/bus/rpmsg/drivers/rpmsg_clk/uevent
+/sys/bus/rpmsg/drivers/rpmsg_clk/unbind
+/sys/bus/rpmsg/drivers/rpmsg_rfs/bind
+/sys/bus/rpmsg/drivers/rpmsg_rfs/uevent
+/sys/bus/rpmsg/drivers/rpmsg_rfs/unbind
+/sys/bus/rpmsg/drivers/rpmsg_rpc/bind
+/sys/bus/rpmsg/drivers/rpmsg_rpc/uevent
+/sys/bus/rpmsg/drivers/rpmsg_rpc/unbind
+/sys/bus/rpmsg/drivers/rpmsg_linkctrl/bind
+/sys/bus/rpmsg/drivers/rpmsg_linkctrl/uevent
+/sys/bus/rpmsg/drivers/rpmsg_linkctrl/unbind
+/sys/bus/rpmsg/uevent
+/sys/bus/rpmsg/drivers_probe
+/sys/bus/rpmsg/drivers_autoprobe
+~ # echo __YI_CAPTURE_719bcec0af2945459d3a51aaebff33e9__
+__YI_CAPTURE_719bcec0af2945459d3a51aaebff33e9__

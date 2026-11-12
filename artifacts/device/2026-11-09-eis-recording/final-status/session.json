@@ -1,0 +1,102 @@
+{
+  "api_events": [
+    {
+      "host_monotonic": 1029445.915864625,
+      "utc": "2026-11-09T03:25:49.022269+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1029445.925461,
+      "utc": "2026-11-09T03:25:49.031866+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1029445.925500125,
+      "utc": "2026-11-09T03:25:49.031901+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1029445.933218375,
+      "utc": "2026-11-09T03:25:49.039623+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1029445.933254875,
+      "utc": "2026-11-09T03:25:49.039656+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1029445.943759916,
+      "utc": "2026-11-09T03:25:49.050165+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1029445.943798875,
+      "utc": "2026-11-09T03:25:49.050200+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1029445.965990916,
+      "utc": "2026-11-09T03:25:49.072396+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "utc": "2026-11-09T03:25:49.004884+00:00",
+  "status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "result": {
+    "other_transport_files": 0,
+    "uptime": "232.42",
+    "all_probe_paths_absent": true,
+    "temporary_log_directories": 0,
+    "paths_checked": 16,
+    "temporary_log_mounts": 0
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "scope": "public YI 1.10.52 BLD gate only; synthetic UART/timer; no devices",
+  "source": "artifacts/firmware/v1.10.52/_part_bld.a9s",
+  "sha256": "259ed36093252298186c7e39c5f3400ba307f44224aba467ab885da8e1e5cbd7",
+  "fixed_instruction_checks": 21,
+  "cases": [
+    {
+      "label": "idle",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": null
+        },
+        {
+          "counter": 100,
+          "rx": null
+        },
+        {
+          "counter": 1440000,
+          "rx": null
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 62,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "single_ctrl_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 23
+        },
+        {
+          "counter": 1440000,
+          "rx": null
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 55,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "two_ctrl_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 23
+        },
+        {
+          "counter": 100,
+          "rx": 23
+        }
+      ],
+      "outcome": "shell_gate_passed",
+      "instructions_executed": 69,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "ctrl_w_idle_ctrl_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 23
+        },
+        {
+          "counter": 1,
+          "rx": null
+        },
+        {
+          "counter": 2,
+          "rx": 23
+        }
+      ],
+      "outcome": "shell_gate_passed",
+      "instructions_executed": 84,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "ctrl_w_other_ctrl_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 23
+        },
+        {
+          "counter": 1,
+          "rx": 65
+        },
+        {
+          "counter": 2,
+          "rx": 23
+        },
+        {
+          "counter": 1440000,
+          "rx": null
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 101,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "other_ctrl_w_ctrl_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 65
+        },
+        {
+          "counter": 1,
+          "rx": 23
+        },
+        {
+          "counter": 2,
+          "rx": 23
+        }
+      ],
+      "outcome": "shell_gate_passed",
+      "instructions_executed": 86,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "two_ascii_w",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 119
+        },
+        {
+          "counter": 1,
+          "rx": 119
+        },
+        {
+          "counter": 1440000,
+          "rx": null
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 72,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "two_ctrl_c",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 0,
+          "rx": 3
+        },
+        {
+          "counter": 1,
+          "rx": 3
+        },
+        {
+          "counter": 1440000,
+          "rx": null
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 72,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "deadline_inclusive",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 1439998,
+          "rx": 23
+        },
+        {
+          "counter": 1439999,
+          "rx": 23
+        }
+      ],
+      "outcome": "shell_gate_passed",
+      "instructions_executed": 69,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "late_second_byte",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 1439999,
+          "rx": 23
+        },
+        {
+          "counter": 1440000,
+          "rx": 23
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 55,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "expired_before_rx",
+      "argument": 0,
+      "polls": [
+        {
+          "counter": 1440000,
+          "rx": 23
+        }
+      ],
+      "outcome": "timeout_returned",
+      "instructions_executed": 32,
+      "modeled_mmio_writes": [
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "address": "0xe8170258",
+          "size": 4,
+          "value": 1
+        }
+      ],
+      "actual_hardware_access": false
+    },
+    {
+      "label": "caller_forced_shell",
+      "argument": 1,
+      "polls": [],
+      "outcome": "shell_gate_passed",
+      "instructions_executed": 9,
+      "modeled_mmio_writes": [],
+      "actual_hardware_access": false
+    }
+  ],
+  "windows": {
+    "serial_gate": {
+      "start": "0x10005a64",
+      "end_exclusive": "0x10005b2c",
+      "sha256": "ce72b34f8ce825b8b564c825971e78e7867fce16cca571b7918a16a3af5bad36",
+      "path": "artifacts/device/2026-11-11-public-yi-bld-serial-entry/serial_gate.asm"
+    },
+    "serial_gate_timeout": {
+      "start": "0x10006530",
+      "end_exclusive": "0x10006548",
+      "sha256": "783d5e7f15e3275aa108552c259f30c9e2a67f1000f1f27bac650edbecd6963f",
+      "path": "artifacts/device/2026-11-11-public-yi-bld-serial-entry/serial_gate_timeout.asm"
+    },
+    "pre_kernel_call_order": {
+      "start": "0x10006b34",
+      "end_exclusive": "0x10006b78",
+      "sha256": "937e68e42dc84e5ac7777536501205c731a487f322ad0b29f8a1d7772ed75565",
+      "path": "artifacts/device/2026-11-11-public-yi-bld-serial-entry/pre_kernel_call_order.asm"
+    },
+    "kernel_load_jump": {
+      "start": "0x10006918",
+      "end_exclusive": "0x1000699c",
+      "sha256": "b0e735d5dc0bbe3dcb0e1d232f7a29ab05e0a645698d3ef3a3b5657b3dea93f6",
+      "path": "artifacts/device/2026-11-11-public-yi-bld-serial-entry/kernel_load_jump.asm"
+    }
+  },
+  "generic_cli_field_mismatch": {
+    "source": {
+      "src/session.c": {
+        "sha256": "844ce9c444dcc1f2c144bdba562354766cfbf938c87f78acaefb5875598d0208",
+        "commit": "82414537ff857f3abe4a1bfd19665b6fe4c12f19",
+        "url": "https://raw.githubusercontent.com/getnexar/ambausb_cli/82414537ff857f3abe4a1bfd19665b6fe4c12f19/src/session.c"
+      },
+      "src/ambausb_proto.h": {
+        "sha256": "b2b8a894d2da0dedac141da415ecfe64bc761abf4774bbf8a21d1a379f705657",
+        "commit": "82414537ff857f3abe4a1bfd19665b6fe4c12f19",
+        "url": "https://raw.githubusercontent.com/getnexar/ambausb_cli/82414537ff857f3abe4a1bfd19665b6fe4c12f19/src/ambausb_proto.h"
+      },
+      "src/elf.c": {
+        "sha256": "1b0b7916d97d972e843f02a6e6a4b52999856720ae548a850993c3397d6579d1",
+        "commit": "82414537ff857f3abe4a1bfd19665b6fe4c12f19",
+        "url": "https://raw.githubusercontent.com/getnexar/ambausb_cli/82414537ff857f3abe4a1bfd19665b6fe4c12f19/src/elf.c"
+      }
+    },
+    "public_yi_version_offset_word": "0xe38000d1",
+    "public_yi_satisfies_cli_version_guard": false,
+    "cli_dram_patch_offset": "0x48",
+    "public_yi_word": "0xe592d000",
+    "public_yi_instruction": "ldr sp, [r2]",
+    "cli_dram_patch_requires_valid_version": false,
+    "interpretation": "Feeding this flat YI BLD into that generic patcher would replace a startup instruction, not a DRAM metadata field; no such session was run."
+  },
+  "uart_address": "0xe8005000",
+  "timer_address": "0xe8170000",
+  "counter_threshold": 1439999,
+  "semantics": "last two received bytes must both be 0x17 before counter exceeds threshold; idle polls do not count as received bytes",
+  "deliberately_not_executed": "after shell gate 0x10005b28, kernel handoff, target services or MMIO",
+  "limitations": [
+    "Not current 1.10.7 hidden BLD identity.",
+    "No timer clock-to-seconds, physical pinout, logic voltage or reachable UART wiring proof.",
+    "No USB download, NAND/OOB backup/write or independent recovery was exercised or established."
+  ]
+}

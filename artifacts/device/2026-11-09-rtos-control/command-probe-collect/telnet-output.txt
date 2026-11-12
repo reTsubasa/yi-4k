@@ -1,0 +1,41 @@
+python -B -u <<'YI_COMMAND_PROBE_PY'
+> import os,stat,hashlib,json,binascii,subprocess
+> probe = {'identifier': '0df64432c397', 'begin': '/tmp/yi4k_probe_0df64432c397_
+begin', 'done': '/tmp/yi4k_probe_0df64432c397_done', 'output': '/tmp/SD0/yi4k_pr
+obe_0df64432c397.bin', 'script': "t ipc rpc clnt exec1 'touch /tmp/yi4k_probe_0d
+f64432c397_begin'\nsavebin c:\\yi4k_probe_0df64432c397.bin 0xA0394BA0 l 8\nt ipc
+ rpc clnt exec1 'touch /tmp/yi4k_probe_0df64432c397_done'\n\n", 'script_sha256':
+ '13d3a42a695bc9a71e0e0ce8da3f3788006f54ceffd195c57a8a01d5f134c53a'}
+> path = '/tmp/SD0/autoexec.ash'
+> expected_code = '0300a0e11eff2fe1'
+> result={}
+> for key in ('begin','done'):
+>     name=probe[key]
+>     assert os.path.lexists(name), 'Execution marker missing: '+key
+>     st=os.lstat(name)
+>     assert stat.S_ISREG(st.st_mode) and st.st_size==0, 'Modified marker: '+key
+>     result[key]=True
+> st=os.lstat(path)
+> assert stat.S_ISREG(st.st_mode), 'Modified autoexec type'
+> assert hashlib.sha256(open(path,'rb').read()).hexdigest()==probe['script_sha25
+6'], 'Modified autoexec content'
+> st=os.lstat(probe['output'])
+> assert stat.S_ISREG(st.st_mode) and st.st_size==8, 'Unexpected RTOS output'
+> data=open(probe['output'],'rb').read()
+> assert binascii.hexlify(data)==expected_code, 'RTOS output fingerprint mismatc
+h'
+> result.update({'output_hex':binascii.hexlify(data),'output_sha256':hashlib.sha
+256(data).hexdigest(),'output_bytes':len(data)})
+> # Verify every artifact before any removal; leave mismatches for review.
+> for name in (path,probe['output'],probe['begin'],probe['done']):
+>     os.unlink(name)
+> assert all(not os.path.lexists(name) for name in (path,probe['output'],probe['
+begin'],probe['done']))
+> subprocess.check_call(['sync'])
+> result['owned_files_removed']=True
+> print('YI_COMMAND_PROBE '+json.dumps(result))
+> 
+> YI_COMMAND_PROBE_PY
+YI_COMMAND_PROBE {"begin": true, "output_bytes": 8, "done": true, "owned_files_removed": true, "output_sha256": "5e64b91b57eaf124341a5f84484d853cfe5e97bae40e8d7c8bf60c7ed4c6969d", "output_hex": "0300a0e11eff2fe1"}
+~ # echo __YI_CAPTURE_25ad8768d08444fcbae3281dec76bf2b__
+__YI_CAPTURE_25ad8768d08444fcbae3281dec76bf2b__

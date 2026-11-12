@@ -1,0 +1,49 @@
+for d in /sys/bus/rpmsg/devices/rpmsg*; do echo ===$d===; for f in name src 
+dst announce uevent; do echo -n "$f="; cat $d/$f 2>/dev/null; done; done; echo =
+==remoteproc===; for f in /sys/devices/platform/c0_and_c1.7/remoteproc0/*; do [ 
+-f $f ] && echo -n "$f=" && cat $f; done
+===/sys/bus/rpmsg/devices/rpmsg0===
+name=AmbaRpdev_CLK
+src=0x400
+dst=0x400
+announce=false
+uevent=DRIVER=rpmsg_clk
+MODALIAS=rpmsg:AmbaRpdev_CLK
+===/sys/bus/rpmsg/devices/rpmsg1===
+name=aipc_rpc
+src=0x401
+dst=0x401
+announce=false
+uevent=DRIVER=rpmsg_rpc
+MODALIAS=rpmsg:aipc_rpc
+===/sys/bus/rpmsg/devices/rpmsg2===
+name=aipc_vfs
+src=0x402
+dst=0x402
+announce=false
+uevent=DRIVER=ambafs
+MODALIAS=rpmsg:aipc_vfs
+===/sys/bus/rpmsg/devices/rpmsg3===
+name=aipc_rfs
+src=0x403
+dst=0x403
+announce=false
+uevent=DRIVER=rpmsg_rfs
+MODALIAS=rpmsg:aipc_rfs
+===/sys/bus/rpmsg/devices/rpmsg4===
+name=AmbaRpdev_LinkCtrl
+src=0x404
+dst=0x404
+announce=false
+uevent=DRIVER=rpmsg_linkctrl
+MODALIAS=rpmsg:AmbaRpdev_LinkCtrl
+===/sys/bus/rpmsg/devices/rpmsg5===
+name=echo_cortex
+src=0x405
+dst=0x405
+announce=false
+uevent=DRIVER=rpmsg_echo
+MODALIAS=rpmsg:echo_cortex
+===remoteproc===
+/sys/devices/platform/c0_and_c1.7/remoteproc0/uevent=~ # echo __YI_CAPTURE_d2d50739213d4870b6ae58cb48da2ae7__
+__YI_CAPTURE_d2d50739213d4870b6ae58cb48da2ae7__

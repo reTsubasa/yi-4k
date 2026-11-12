@@ -1,0 +1,15 @@
+{
+  "verification": "host temporary directory simulation only; no camera connection or RTOS execution",
+  "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "script_sha256": "1c66e3f213f5c3c51fc7e97e372a1e69eec97a4dd592dca33deef766080834df",
+  "checks": [
+    "three modified Python scripts compile",
+    "new-init-only: exclusive stage, partial collection without removal, backup hashes, refuse changed target before any deletion, cleanup matching snapshot",
+    "historical-stage-06: exclusive stage, partial collection without removal, backup hashes, refuse changed target before any deletion, cleanup matching snapshot",
+    "new worker compiles on host; new autoexec contains init only"
+  ],
+  "limits": [
+    "Host Python is not camera Python 2.7.",
+    "No camera SD fsync, startup timing, libambaipc or RTOS behavior verified."
+  ]
+}

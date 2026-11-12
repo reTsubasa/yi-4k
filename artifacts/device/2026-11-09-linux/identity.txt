@@ -1,0 +1,12 @@
+uname -a; cat /proc/version; cat /etc/os-release; id; uptime
+Linux a9s 3.10.71 #1 PREEMPT Fri Feb 2 12:17:50 CST 2018 armv7l GNU/Linux
+Linux version 3.10.71 (jenkins@360ants) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 PREEMPT Fri Feb 2 12:17:50 CST 2018
+NAME=Buildroot
+VERSION=2015.05-ga8f840c
+ID=buildroot
+VERSION_ID=2015.05
+PRETTY_NAME="Buildroot 2015.05"
+uid=0(root) gid=0(root) groups=0(root),10(wheel)
+ 00:19:39 up 2 min,  1 users,  load average: 0.02, 0.05, 0.03
+~ # echo __YI_CAPTURE_f964ba85f544478f9e82355a70bc51e5__
+__YI_CAPTURE_f964ba85f544478f9e82355a70bc51e5__

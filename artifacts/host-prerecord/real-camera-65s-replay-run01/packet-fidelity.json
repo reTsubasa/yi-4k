@@ -1,0 +1,70 @@
+{
+  "scope": "host MP4 compressed packet/timestamp comparison; no device contact or FIFO proof",
+  "manifest": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/real-camera-65s-replay-run01/manifest.json",
+  "manifest_sha256": "042a1eca1111bed9fa5c39e2b5b0474fd0b7a4e078e0c03767404427dff904ef",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "clip_sha256": "92a77fd656a4ee466e3638dd89d2d36b4e28bec3d736f89e71e4a653f2d2a285",
+  "timestamp_tolerance_seconds": "1/500",
+  "selected_segments": 32,
+  "tracks": {
+    "video": {
+      "codec": "h264",
+      "source_packet_count": 1951,
+      "clip_packet_count": 1920,
+      "selected_segment_packet_count": 1920,
+      "selected_segments_equal_clip_packets": true,
+      "source_contiguous_hash_match_count": 1,
+      "source_identity_unique": true,
+      "source_matching_timing_candidates": [
+        {
+          "source_first_packet": 0,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "947/3000",
+          "offset_spread_seconds": "947/3000",
+          "max_duration_error_seconds": "101/5000",
+          "constant_pts_dts_offset": false,
+          "durations_preserved": false
+        }
+      ],
+      "faithful_timing_candidates": [],
+      "dts_strictly_increasing": true
+    },
+    "audio": {
+      "codec": "aac",
+      "source_packet_count": 3051,
+      "clip_packet_count": 3003,
+      "selected_segment_packet_count": 3003,
+      "selected_segments_equal_clip_packets": true,
+      "source_contiguous_hash_match_count": 1,
+      "source_identity_unique": true,
+      "source_matching_timing_candidates": [
+        {
+          "source_first_packet": 0,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "2521/8000",
+          "offset_spread_seconds": "2521/8000",
+          "max_duration_error_seconds": "1/50",
+          "constant_pts_dts_offset": false,
+          "durations_preserved": false
+        }
+      ],
+      "faithful_timing_candidates": [],
+      "dts_strictly_increasing": true
+    }
+  },
+  "common_timestamp_offset_candidates": [],
+  "checks": {
+    "source_and_output_hashes_match_manifest": true,
+    "selected_segment_packet_order_preserved": true,
+    "compressed_packets_are_contiguous_source_subsequences": true,
+    "pts_dts_durations_preserved": false,
+    "strictly_increasing_dts": true,
+    "common_audio_video_timestamp_offset": false
+  },
+  "passed": false,
+  "limits": [
+    "Container timestamps do not prove a common hardware capture epoch.",
+    "No RTOS payload ownership, callback installation, SD spool or real trigger is exercised.",
+    "Repeated identical compressed packets can make source position ambiguous; all candidates are retained."
+  ]
+}

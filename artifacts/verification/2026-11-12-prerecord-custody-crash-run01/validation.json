@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "status": "pass_host_custody_process_exit_recovery",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.5517416249495,
+  "implementation_sha256": {
+    "scripts/validate_prerecord_media_store_recovery.py": "bc67f3fd88879572983eb20a66c4ce0a07d371df59ac769bf9667b6e6e413fbf",
+    "scripts/prerecord_media_store.py": "99c466bd21d296dd9b0ef51c1d5b69654622c1e3d798a94ee096e64b3d6ca53f",
+    "scripts/tests/test_prerecord_media_store.py": "8cb0c0cbd1cc102c1075506e96dad8749189f62939468e9e384a9d53125bead3"
+  },
+  "cases": [
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_capacity_rejects_without_deleting_unacknowledged_custody",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_fresh_owner_rejects_existing_custody",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_full_budget_does_not_prevent_frozen_recovery",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_mutated_segment_prevents_eviction_and_preserves_file",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_pin_sync_failure_never_acknowledges_trigger",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_pinned_trigger_history_cannot_be_deleted",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_protects_trigger_history_and_post_trigger_media",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_rejects_missing_or_changed_trigger_receipt",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_symlink_media_and_checkpoint_are_rejected_without_changing_target",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_sync_failure_freezes_without_issuing_receipt_or_deleting",
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_unpinned_eviction_checks_and_removes_only_receipted_owned_file",
+      "passed": true
+    }
+  ],
+  "subcases": [
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "before_admission"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_admission"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "during_pin_write"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_pin_file_sync"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_pin_ack"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "post_payload_before_receipt"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_post_receipt"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_rejects_missing_or_changed_trigger_receipt",
+      "parameters": {
+        "change": "missing"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_rejects_missing_or_changed_trigger_receipt",
+      "parameters": {
+        "change": "changed"
+      },
+      "passed": true
+    }
+  ],
+  "process_exit_cases": [
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "before_admission"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_admission"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "during_pin_write"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_pin_file_sync"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_pin_ack"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "post_payload_before_receipt"
+      },
+      "passed": true
+    },
+    {
+      "test": "test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody",
+      "parameters": {
+        "phase": "after_post_receipt"
+      },
+      "passed": true
+    }
+  ],
+  "host": "macOS-26.5-x86_64-i386-64bit-Mach-O",
+  "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "device_access": false,
+  "limits": [
+    "Actual local subprocess os._exit and POSIX files only; not physical SD power loss.",
+    "Recovery is frozen and preserves all receipted files; it cannot resume producer or eviction.",
+    "Unreceipted media is retained without claiming it is closed or playable.",
+    "Checkpoint protects custody identity; no real encoder/session clock, microphone or GPIO binding."
+  ]
+}

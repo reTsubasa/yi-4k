@@ -1,0 +1,57 @@
+{
+  "source": "artifacts/device/2026-11-09-eis-recording/native-log/RtosActive.log",
+  "sha256": "ee8580574269fca22042f0a48db0a181d98972daf40f8d650d1eae71896fb3ee",
+  "bytes": 123504,
+  "total_printed_event_counts": {},
+  "phases": [
+    {
+      "mode_index": 0,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "init_tick": 963,
+      "first_source_line": 798,
+      "last_source_line": null,
+      "mode_fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "GyroParam.OffsetX": 8388608,
+        "GyroParam.OffsetY": 8388608,
+        "GyroCalibInfo.SenseX": 33536,
+        "GyroCalibInfo.SenseY": 33536,
+        "GyroInfo.VolDivDen": 1,
+        "GyroCalibInfo.SenseZ": 33536,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "printed_event_counts": {},
+      "observed_log_tick_range": [],
+      "gyro_log_tick_delta_histogram": {},
+      "exposure_values_raw": [],
+      "arm_update_values_hex": []
+    }
+  ],
+  "unassigned_or_during_mode_init_events": 0,
+  "bounded_error_string_counts": {
+    "Eis-Warp calculation not in-time": 0,
+    "Warp content not ready last frame": 0
+  },
+  "limitations": [
+    "Exact numeric print formats only; unmatched lines are excluded.",
+    "Log tick is not an IMU hardware timestamp; tick units are not inferred.",
+    "Fourth gyro slot is not defined by the mode-1 three-axis read.",
+    "Frame ArmSysTim is retained as an opaque raw value; frame identity is uncalibrated.",
+    "Modulo-decimated buffered text is not lossless IMU telemetry.",
+    "No axis orientation, physical units or exposure-to-gyro synchronization established.",
+    "Phase assignment follows file line ordering between completed mode initializations.",
+    "No camera-video PTS alignment is inferred.",
+    "Internal geometry alone does not establish recording; correlate with actual API and video.",
+    "A printed frame_update event is not proof of one uniquely identified video frame.",
+    "Error-string counts only cover retained bytes and enabled print branches."
+  ]
+}

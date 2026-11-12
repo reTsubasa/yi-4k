@@ -1,0 +1,13 @@
+a01a054c 000202e3 movw r0, #0x2200
+a01a0550 582304e3 movw r2, #0x4358
+a01a0554 56204ae3 movt r2, #0xa056
+a01a0558 bf1600e3 movw r1, #0x6bf
+a01a055c 56004ae3 movt r0, #0xa056
+a01a0560 e11a04eb bl #0xa02a70ec
+a01a0564 54309de5 ldr r3, [sp, #0x54]
+a01a0568 0510a0e1 mov r1, r5
+a01a056c 0820a0e1 mov r2, r8
+a01a0570 58009de5 ldr r0, [sp, #0x58]
+a01a0574 283093e5 ldr r3, [r3, #0x28]
+a01a0578 33ff2fe1 blx r3
+a01a057c 6cf5ffea b #0xa019db34

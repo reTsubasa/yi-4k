@@ -1,0 +1,122 @@
+{
+  "image": "artifacts/firmware/v1.10.52/_part_lrtos.a9s",
+  "sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "load_base": "0xa0100000",
+  "producer": {
+    "sample_function": "0xA0385780",
+    "timer_getter": "0xA048E3F8",
+    "sample_tick_field": "0xA1702C40",
+    "processed_tick_field": "0xA170AB60",
+    "current_index_field": "0xA170AB38",
+    "next_write_field": "0xA1702F14",
+    "ring_length_field": "0xA1702F10",
+    "raw_driver_xyz": [
+      "0xA1702C30",
+      "0xA1702C32",
+      "0xA1702C34"
+    ]
+  },
+  "allocation": {
+    "configured_rate_value": 30,
+    "formula": "(1000 / configured_rate) * 4",
+    "ring_slots_from_image": 132,
+    "observed_live_ring_slots": 132,
+    "max_slots_from_initialization_loop": 132
+  },
+  "arrays": [
+    {
+      "name": "raw_x",
+      "word_offset": "0x0",
+      "start": "0xa1702d00",
+      "end_exclusive": "0xa1702f10",
+      "slots": 132
+    },
+    {
+      "name": "raw_y",
+      "word_offset": "0x89",
+      "start": "0xa1702f24",
+      "end_exclusive": "0xa1703134",
+      "slots": 132
+    },
+    {
+      "name": "raw_z",
+      "word_offset": "0x112",
+      "start": "0xa1703148",
+      "end_exclusive": "0xa1703358",
+      "slots": 132
+    },
+    {
+      "name": "bias_x_or_integral_x",
+      "word_offset": "0x19b",
+      "start": "0xa170336c",
+      "end_exclusive": "0xa170357c",
+      "slots": 132
+    },
+    {
+      "name": "bias_y_or_integral_y",
+      "word_offset": "0x224",
+      "start": "0xa1703590",
+      "end_exclusive": "0xa17037a0",
+      "slots": 132
+    },
+    {
+      "name": "bias_z_or_integral_z",
+      "word_offset": "0x2ad",
+      "start": "0xa17037b4",
+      "end_exclusive": "0xa17039c4",
+      "slots": 132
+    },
+    {
+      "name": "rsc_x_or_aux_x",
+      "word_offset": "0x336",
+      "start": "0xa17039d8",
+      "end_exclusive": "0xa1703be8",
+      "slots": 132
+    },
+    {
+      "name": "rsc_y_or_aux_y",
+      "word_offset": "0x3bf",
+      "start": "0xa1703bfc",
+      "end_exclusive": "0xa1703e0c",
+      "slots": 132
+    },
+    {
+      "name": "filtered_z",
+      "word_offset": "0x448",
+      "start": "0xa1703e20",
+      "end_exclusive": "0xa1704030",
+      "slots": 132
+    }
+  ],
+  "write_sequence": [
+    "current_index = next_write",
+    "store raw X/Y/Z into arrays 0/0x89/0x112",
+    "processed_tick = sample_tick",
+    "next_write = (next_write + 1) mod ring_length",
+    "left_shift raw X/Y/Z by 8 in place",
+    "update bias/integral arrays 0x19B/0x224/0x2AD"
+  ],
+  "frame_events": {
+    "sof_callback": {
+      "event_bit": "0x4",
+      "callback": "0xA03974D4",
+      "timestamp": "0xA170BC90",
+      "command": "0x100E"
+    },
+    "eof_callback": {
+      "event_bit": "0x8",
+      "callback": "0xA0397500",
+      "timestamp": "0xA170BA84",
+      "command": "0x100D"
+    },
+    "sample_timer_event_bit": "0x1",
+    "sample_command": "0x100F",
+    "per_frame_command": "0x1010"
+  },
+  "interpretation": [
+    "Ring snapshots are not a lossless stream; producer-side copying is required.",
+    "The stored values are shifted after the raw write, so a consumer must define the capture point.",
+    "The common tick is a software counter; it is not yet an IMU hardware timestamp.",
+    "The 1.10.52 image and 1.10.7 device addresses must not be mixed for writes."
+  ]
+}

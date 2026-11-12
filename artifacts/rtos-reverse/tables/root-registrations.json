@@ -1,0 +1,139 @@
+{
+  "image_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "register_function": "0xa029e098",
+  "method_limit": "A32 direct b/bl and nearby movw/movt only; runtime registration reachability not proved",
+  "records": [
+    {
+      "name": "sd_shmoo",
+      "handler": "0xa04ad6f0",
+      "registration_callsite": "0xa0186f30",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "app",
+      "handler": "0xa01a4f34",
+      "registration_callsite": "0xa01a6044",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "fifo",
+      "handler": "0xa04501a4",
+      "registration_callsite": "0xa01a6058",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "ants",
+      "handler": "0xa01ab8bc",
+      "registration_callsite": "0xa01ace64",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "wi-fi",
+      "handler": "0xa01ab7f0",
+      "registration_callsite": "0xa01ace78",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "pref",
+      "handler": "0xa01ab704",
+      "registration_callsite": "0xa01ace8c",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "zl",
+      "handler": "0xa01a7ed0",
+      "registration_callsite": "0xa01acea0",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "stawpa",
+      "handler": "0xa01a7ccc",
+      "registration_callsite": "0xa01aceb4",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "audio-enc",
+      "handler": "0xa018b218",
+      "registration_callsite": "0xa01acec8",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "audio-dec",
+      "handler": "0xa018c4c8",
+      "registration_callsite": "0xa01acee0",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "imgproc",
+      "handler": "0xa01c8e20",
+      "registration_callsite": "0xa01c98e0",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "cal",
+      "handler": "0xa01e14fc",
+      "registration_callsite": "0xa01e168c",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "img",
+      "handler": "0xa02265b0",
+      "registration_callsite": "0xa022ee28",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "wifi",
+      "handler": "0xa023e8b4",
+      "registration_callsite": "0xa023ec18",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "netevent",
+      "handler": "0xa023ec9c",
+      "registration_callsite": "0xa023eda8",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "ipc",
+      "handler": "0xa0245af8",
+      "registration_callsite": "0xa0245ad0",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "hiber",
+      "handler": "0xa024769c",
+      "registration_callsite": "0xa02478e8",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "dsp",
+      "handler": "0xa02dad40",
+      "registration_callsite": "0xa02dce9c",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "syslog",
+      "handler": "0xa02da9b0",
+      "registration_callsite": "0xa02dceb4",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "ambalink",
+      "handler": "0xa03cd3f0",
+      "registration_callsite": "0xa03cd4f0",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "boss",
+      "handler": "0xa03d16b0",
+      "registration_callsite": "0xa03d1ae4",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    },
+    {
+      "name": "drv",
+      "handler": "0xa04af7e0",
+      "registration_callsite": "0xa04af890",
+      "evidence": "nearby movw/movt construction of r0=name,r1=handler followed by b/bl to 0xA029E098"
+    }
+  ]
+}

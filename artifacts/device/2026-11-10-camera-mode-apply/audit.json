@@ -1,0 +1,437 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "table_rows": {
+    "capture_mode": {
+      "key_address": "0xa06a6268",
+      "msg2_handler": "0xa0157204"
+    },
+    "system_mode": {
+      "key_address": "0xa06a7078",
+      "msg2_handler": "0xa0158844"
+    },
+    "rec_mode": {
+      "key_address": "0xa06a726c",
+      "msg2_handler": "0xa0158aa8"
+    }
+  },
+  "sources": [
+    {
+      "entry": "0xa01649a0",
+      "body_ranges": [
+        "a01649a0-a0164bab"
+      ],
+      "bytes_sha256": "a7e8fbd2977bcaaa3e03f0ca8543e2a56a31ec4a4bd3267ac9553b50e41197b7",
+      "pseudocode_sha256": "834bc3560a59ead6a383ad06d1467ba2de58d1eda0d72f7094e0d8fd2f46410d"
+    },
+    {
+      "entry": "0xa0158844",
+      "body_ranges": [
+        "a0158844-a01588ff"
+      ],
+      "bytes_sha256": "eb3f2f625e81859ea5c14966dd38eca6a5f4fbb13394b06d7094958449e7e969",
+      "pseudocode_sha256": "6d72a37a08ae91a5af8eaab0a46cfda01ef17a370b1a4b40881322db5d6a45cc"
+    },
+    {
+      "entry": "0xa01555c8",
+      "body_ranges": [
+        "a01555c8-a01556b3"
+      ],
+      "bytes_sha256": "336814455a07d51a3d5029a282ad0a567e5c3ebe85ff55147510c9de1a6731b4",
+      "pseudocode_sha256": "f1b8e69c065b9ce62371c5fee5dfd6740141bbfc00726ee50c787fdc6e0f3bf8"
+    },
+    {
+      "entry": "0xa01554bc",
+      "body_ranges": [
+        "a01554bc-a01555c7"
+      ],
+      "bytes_sha256": "7f457cc762f5e5c0219d537cadc2eb0c073af0f67d70f9118cb449e21ff58016",
+      "pseudocode_sha256": "1cab3a92a8f2bfc3885846d8b38e70ce1d6e3c97cfef6bda9777bae13e70ce57"
+    },
+    {
+      "entry": "0xa015663c",
+      "body_ranges": [
+        "a015663c-a0156677"
+      ],
+      "bytes_sha256": "57ca1db944f1cc514e9a4ee166c3fc9f88b71b64ee41487261b68a9548788430",
+      "pseudocode_sha256": "4948948316b4dad91a471e758237de00f5fb6b9ba22d548dd780f48d41dd0acf"
+    },
+    {
+      "entry": "0xa0157204",
+      "body_ranges": [
+        "a0157204-a01572eb"
+      ],
+      "bytes_sha256": "08103bb339f211b799e87a17b1f020442cb0ca17a020ff3d5069481e9f2ff554",
+      "pseudocode_sha256": "1f1a29b5f1a93401bf8807bc819c2248e9951dad89e3a6e23a8ca987f4789a45"
+    },
+    {
+      "entry": "0xa014bdd0",
+      "body_ranges": [
+        "a014bdd0-a014bf23"
+      ],
+      "bytes_sha256": "164d6aa3d035216f50d4fa313adf90ab251fae19c899b7d6da080841acbd4834",
+      "pseudocode_sha256": "cca46fa81366298901930ad112caf796e472f283184e76315b170149ab475b3e"
+    },
+    {
+      "entry": "0xa0145e10",
+      "body_ranges": [
+        "a0145e10-a0145fff"
+      ],
+      "bytes_sha256": "a4b389b2e9bce277326bb5483cf749aea264713ce92bc592dc8d761d4a195da5",
+      "pseudocode_sha256": "36faaf3a78fef8e7561cfaf2730c1728805a4f31c33e61b22da469c05795de59"
+    },
+    {
+      "entry": "0xa0158aa8",
+      "body_ranges": [
+        "a0158aa8-a0158b87"
+      ],
+      "bytes_sha256": "3b8a38b3075b462c774810623a5fe1046373e7f59ba0a2c297258359262430ab",
+      "pseudocode_sha256": "17ce3b1b89bac4e1e89dc26edb9d7fb63e3a37969161b69b4913d7ff5bd0c3d5"
+    },
+    {
+      "entry": "0xa014bf24",
+      "body_ranges": [
+        "a014bf24-a014c077"
+      ],
+      "bytes_sha256": "9e7c78c041976ca70a0617f74c8468dd9a7c4604c3ba7b257cc23811912e0a78",
+      "pseudocode_sha256": "40d9f900437b091c03cbfb4a19282d0008a51c450a3ac2d37394e6b9ac3512bf"
+    },
+    {
+      "entry": "0xa0146228",
+      "body_ranges": [
+        "a0146228-a014638f"
+      ],
+      "bytes_sha256": "812644f4d6731135d86ec4d36016021cbc56c88b29b416b9bf1a8ac8ea0a5c42",
+      "pseudocode_sha256": "c2be38375ad85d977912f06ab77710d87fca390d028630a89866d816cd626843"
+    }
+  ],
+  "parent_saved_runtime_probe": {
+    "path": "artifacts/android/0.3.2-mode-switch-probe-run03.json",
+    "sha256": "2c12fa3ce4ed5b890b666965230d1357cbb67fcbc3646970e896fd03e061d86f",
+    "capture_mode_observed": "capture",
+    "restored_system_mode": "record",
+    "restored_status": "idle",
+    "provenance": "Parent ordinary API run; this audit only reads saved JSON"
+  },
+  "instruction_assertions": 6,
+  "synthetic_setter_cases": [
+    {
+      "requested": "precise quality",
+      "current_native_mode": 4,
+      "target": 0,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xf0010309",
+          0,
+          0
+        ],
+        [
+          "0xd8090004",
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "precise quality",
+      "current_native_mode": 0,
+      "target": 0,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "precise quality",
+      "current_native_mode": 4,
+      "target": 0,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "precise self quality",
+      "current_native_mode": 4,
+      "target": 1,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xf0010309",
+          0,
+          0
+        ],
+        [
+          "0xd8090004",
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "precise self quality",
+      "current_native_mode": 1,
+      "target": 1,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "precise self quality",
+      "current_native_mode": 4,
+      "target": 1,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "burst quality",
+      "current_native_mode": 4,
+      "target": 2,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xf0010309",
+          0,
+          0
+        ],
+        [
+          "0xd8090004",
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "burst quality",
+      "current_native_mode": 2,
+      "target": 2,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "burst quality",
+      "current_native_mode": 4,
+      "target": 2,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "precise quality cont.",
+      "current_native_mode": 4,
+      "target": 3,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xf0010309",
+          0,
+          0
+        ],
+        [
+          "0xd8090004",
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "precise quality cont.",
+      "current_native_mode": 3,
+      "target": 3,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "precise quality cont.",
+      "current_native_mode": 4,
+      "target": 3,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record",
+      "current_native_mode": 0,
+      "target": 4,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xd8090004",
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "record",
+      "current_native_mode": 4,
+      "target": 4,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record",
+      "current_native_mode": 0,
+      "target": 4,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_timelapse",
+      "current_native_mode": 0,
+      "target": 5,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xd8090004",
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "record_timelapse",
+      "current_native_mode": 5,
+      "target": 5,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_timelapse",
+      "current_native_mode": 0,
+      "target": 5,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_loop",
+      "current_native_mode": 0,
+      "target": 6,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xd8090004",
+          6,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "record_loop",
+      "current_native_mode": 6,
+      "target": 6,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_loop",
+      "current_native_mode": 0,
+      "target": 6,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_photo",
+      "current_native_mode": 0,
+      "target": 7,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xd8090004",
+          7,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "record_photo",
+      "current_native_mode": 7,
+      "target": 7,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_photo",
+      "current_native_mode": 0,
+      "target": 7,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_slow_motion",
+      "current_native_mode": 0,
+      "target": 8,
+      "busy": false,
+      "same": false,
+      "return": "0x0",
+      "gui_dispatches": [
+        [
+          "0xd8090004",
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "requested": "record_slow_motion",
+      "current_native_mode": 8,
+      "target": 8,
+      "busy": false,
+      "same": true,
+      "return": "0x0",
+      "gui_dispatches": []
+    },
+    {
+      "requested": "record_slow_motion",
+      "current_native_mode": 0,
+      "target": 8,
+      "busy": true,
+      "same": false,
+      "return": "0xffffffeb",
+      "gui_dispatches": []
+    }
+  ],
+  "scope": "Pinned stock mode leaf setters with declared readiness/preference/GUI stubs; no camera connection or real mode completion",
+  "limitation": "No GUI event consumer, encoder, sensor or storage is emulated; parent runtime probe must prove system_mode readback."
+}

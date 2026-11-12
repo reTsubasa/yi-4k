@@ -1,0 +1,546 @@
+[
+  {
+    "offset": "0x7e9",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x7f8",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x7fe",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x81a",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x834",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0x843",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x857",
+    "text": "pthread_mutex_lock"
+  },
+  {
+    "offset": "0x86a",
+    "text": "pthread_cond_wait"
+  },
+  {
+    "offset": "0x87c",
+    "text": "pthread_cond_signal"
+  },
+  {
+    "offset": "0x890",
+    "text": "pthread_mutex_unlock"
+  },
+  {
+    "offset": "0x8a5",
+    "text": "select"
+  },
+  {
+    "offset": "0x8ac",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0x8c1",
+    "text": "calloc"
+  },
+  {
+    "offset": "0x8c8",
+    "text": "nl_alloc_pkt"
+  },
+  {
+    "offset": "0x8d5",
+    "text": "nl_open_socket"
+  },
+  {
+    "offset": "0x8e4",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x8eb",
+    "text": "strlen"
+  },
+  {
+    "offset": "0x8f7",
+    "text": "nl_send_pkt"
+  },
+  {
+    "offset": "0x903",
+    "text": "nl_recv_pkt"
+  },
+  {
+    "offset": "0x90f",
+    "text": "malloc"
+  },
+  {
+    "offset": "0x916",
+    "text": "pthread_mutexattr_init"
+  },
+  {
+    "offset": "0x92d",
+    "text": "pthread_mutexattr_settype"
+  },
+  {
+    "offset": "0x947",
+    "text": "pthread_mutex_init"
+  },
+  {
+    "offset": "0x95a",
+    "text": "pthread_attr_init"
+  },
+  {
+    "offset": "0x96c",
+    "text": "getpagesize"
+  },
+  {
+    "offset": "0x978",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x980",
+    "text": "pthread_attr_setstacksize"
+  },
+  {
+    "offset": "0x99a",
+    "text": "pthread_attr_setguardsize"
+  },
+  {
+    "offset": "0x9b4",
+    "text": "pthread_create"
+  },
+  {
+    "offset": "0x9c3",
+    "text": "pthread_cond_init"
+  },
+  {
+    "offset": "0x9da",
+    "text": "pthread_cancel"
+  },
+  {
+    "offset": "0x9e9",
+    "text": "pthread_join"
+  },
+  {
+    "offset": "0x9f6",
+    "text": "pthread_mutex_destroy"
+  },
+  {
+    "offset": "0xa0c",
+    "text": "rpc_size"
+  },
+  {
+    "offset": "0xa15",
+    "text": "stderr"
+  },
+  {
+    "offset": "0xa1c",
+    "text": "ambaipc_svc_unregister"
+  },
+  {
+    "offset": "0xa33",
+    "text": "nl_close_socket"
+  },
+  {
+    "offset": "0xa43",
+    "text": "nl_free_pkt"
+  },
+  {
+    "offset": "0xa4f",
+    "text": "ambaipc_svc_sendreply"
+  },
+  {
+    "offset": "0xa65",
+    "text": "pthread_mutex_trylock"
+  },
+  {
+    "offset": "0xa7b",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0xa8c",
+    "text": "read_timer"
+  },
+  {
+    "offset": "0xa97",
+    "text": "rpc_record_stats"
+  },
+  {
+    "offset": "0xaa8",
+    "text": "memset"
+  },
+  {
+    "offset": "0xaaf",
+    "text": "getpid"
+  },
+  {
+    "offset": "0xab6",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0xacb",
+    "text": "getCrc"
+  },
+  {
+    "offset": "0xad2",
+    "text": "getPrivCrc"
+  },
+  {
+    "offset": "0xadd",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0xaf1",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0xb03",
+    "text": "rpc_stat"
+  },
+  {
+    "offset": "0xb0c",
+    "text": "ambaipc_strerror"
+  },
+  {
+    "offset": "0xb22",
+    "text": "getsockname"
+  },
+  {
+    "offset": "0xb2e",
+    "text": "close"
+  },
+  {
+    "offset": "0xb39",
+    "text": "setsockopt"
+  },
+  {
+    "offset": "0xb49",
+    "text": "libcrc.so"
+  },
+  {
+    "offset": "0xb53",
+    "text": "libcrc_priv.so"
+  },
+  {
+    "offset": "0xb62",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0xb6c",
+    "text": "libaipc_cfg.so"
+  },
+  {
+    "offset": "0xb7b",
+    "text": "raise"
+  },
+  {
+    "offset": "0xb81",
+    "text": "_edata"
+  },
+  {
+    "offset": "0xb88",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0xb94",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0xba2",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0xbae",
+    "text": "__end__"
+  },
+  {
+    "offset": "0xbbb",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0xbc9",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x11b9",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0x11e9",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0x2ea8",
+    "text": "@BpG8"
+  },
+  {
+    "offset": "0x2f14",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0x2f2c",
+    "text": "svc_thread_func"
+  },
+  {
+    "offset": "0x2f3c",
+    "text": "ThreadPoolFunc Mutex Lock Error: status is 0x%x"
+  },
+  {
+    "offset": "0x2f70",
+    "text": "ThreadPoolFunc Mutex Unlock Error: status is 0x%x"
+  },
+  {
+    "offset": "0x2fa4",
+    "text": "Add Task Mutex Lock Error: status is 0x%x"
+  },
+  {
+    "offset": "0x2fd0",
+    "text": "Add Task Mutex Unlock Error: status is 0x%x"
+  },
+  {
+    "offset": "0x3000",
+    "text": "threadpool: creat thread failed"
+  },
+  {
+    "offset": "0x3020",
+    "text": "%s Can't get memory for svc allocation"
+  },
+  {
+    "offset": "0x3048",
+    "text": "binder2 %d %s"
+  },
+  {
+    "offset": "0x3058",
+    "text": "ambaipc_svc_register, stack=%d, guard=%d"
+  },
+  {
+    "offset": "0x3084",
+    "text": "%s svc is already registered"
+  },
+  {
+    "offset": "0x30a4",
+    "text": "%s can't get memory for svc result"
+  },
+  {
+    "offset": "0x30c8",
+    "text": "svc_thread_func receving error: %s"
+  },
+  {
+    "offset": "0x30ec",
+    "text": "ERROR!! reached AIPC_CLIENT_NR_MAX!!"
+  },
+  {
+    "offset": "0x3114",
+    "text": "clnt_ctrl_recv"
+  },
+  {
+    "offset": "0x3124",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x3138",
+    "text": "%s receiving error: %s"
+  },
+  {
+    "offset": "0x3150",
+    "text": "%s update server info"
+  },
+  {
+    "offset": "0x3168",
+    "text": "The crc in Linux: %u"
+  },
+  {
+    "offset": "0x3180",
+    "text": "The crc in Thread: %u"
+  },
+  {
+    "offset": "0x3198",
+    "text": "The CRC values are not matching"
+  },
+  {
+    "offset": "0x31b8",
+    "text": "CRC values check error!"
+  },
+  {
+    "offset": "0x31d0",
+    "text": "can not find svc for program %d! Client needs to bind again next time!"
+  },
+  {
+    "offset": "0x3218",
+    "text": "ambaipc_clnt_create, stack=%d, guard = %d"
+  },
+  {
+    "offset": "0x3244",
+    "text": "%s Client id is invalid"
+  },
+  {
+    "offset": "0x3260",
+    "text": "%s Binding svc program timeout."
+  },
+  {
+    "offset": "0x3284",
+    "text": "%s Can not find svc for program id %d."
+  },
+  {
+    "offset": "0x32ac",
+    "text": "%s Other binding problem."
+  },
+  {
+    "offset": "0x32c8",
+    "text": "receiving: timeout error!"
+  },
+  {
+    "offset": "0x32e4",
+    "text": "no such error code"
+  },
+  {
+    "offset": "0x32f8",
+    "text": "can't open nl socket"
+  },
+  {
+    "offset": "0x3310",
+    "text": "can't create new socket"
+  },
+  {
+    "offset": "0x3328",
+    "text": "setsockopt failed"
+  },
+  {
+    "offset": "0x333c",
+    "text": "recv error!!"
+  },
+  {
+    "offset": "0x334c",
+    "text": "success"
+  },
+  {
+    "offset": "0x3354",
+    "text": "rpc program is unavailable"
+  },
+  {
+    "offset": "0x3370",
+    "text": "rpc parameter is invalid"
+  },
+  {
+    "offset": "0x338c",
+    "text": "system error"
+  },
+  {
+    "offset": "0x339c",
+    "text": "timeout"
+  },
+  {
+    "offset": "0x33a4",
+    "text": "invalid client id"
+  },
+  {
+    "offset": "0x33b8",
+    "text": "the svc is not registered"
+  },
+  {
+    "offset": "0x33d4",
+    "text": "the svc is double registered"
+  },
+  {
+    "offset": "0x33f4",
+    "text": "the memory allocation for svc is failed"
+  },
+  {
+    "offset": "0x341c",
+    "text": "ambalink is not ready"
+  },
+  {
+    "offset": "0x3434",
+    "text": "crc values of rpc headers are inconsistent"
+  },
+  {
+    "offset": "0x36b5",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x36e6",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x36f0",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x3703",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x3709",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x3711",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x3719",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x3726",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x3735",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x373e",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x3747",
+    "text": ".init"
+  },
+  {
+    "offset": "0x374d",
+    "text": ".text"
+  },
+  {
+    "offset": "0x3753",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x3759",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x3761",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x376b",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x3777",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x3788",
+    "text": ".data.rel.ro"
+  },
+  {
+    "offset": "0x3795",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x37a3",
+    "text": ".data"
+  },
+  {
+    "offset": "0x37ae",
+    "text": ".ARM.attributes"
+  }
+]

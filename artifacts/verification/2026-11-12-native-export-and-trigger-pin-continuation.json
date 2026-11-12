@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T04:22:01.211482+00:00",
+  "goal_status": "active",
+  "previous_turn_classification": "progress: Android final evidence, original voice semantic/resource proof, EIS v2/archive and real-media ring were completed and archived",
+  "summary": {
+    "prerecord_native": "Unmodified original ARM mux separate final export, fixed zero-origin64.064s,1920video/3003AAC exact packet/timeline/decode; missing AAC and short Close reject publication",
+    "prerecord_custody": "Durable trigger pin plus explicit frozen restart;12 tests include7 real process exit points;48 related regressions and3 real-media end-to-end cases pass",
+    "eis_algorithm": "17 original ARM/Thumb coordinate cases, calibrated coordinate displacement precision16 units and exact signed arithmetic;DSP final sampling direction/runtime geometry unknown",
+    "eis_native": "Stock watchdog handler is not a nonblocking independent recovery deadline;P1/P5/P11 remain open",
+    "device": "Current read-only API/Linux12-command baseline passed;before/after idle and settings equal;no target writes or state-changing operations"
+  },
+  "evidence": [
+    {
+      "path": "docs/prerecord-native-session-export.md",
+      "bytes": 6426,
+      "sha256": "45c268048549a7c799a4630d5103b98868801521cdee2aaeea255697237edbe0",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-timing-root-cause/audit.json",
+      "bytes": 2632,
+      "sha256": "da5e613b7ecaf9aad55fc43ddfe4cef3045f31ee96fc452e281e8fd630d8552c",
+      "status": "pass_native_edit_constructor_and_consumer_endpoint_reproduction"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-session-export-run02/final-review.json",
+      "bytes": 1121,
+      "sha256": "7a56ab49de7db133f5d031046514929ac8657a3186ac9ab5e04c54bf57294a8a",
+      "status": "pass_final_source_and_evidence_review"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-session-export-review.json",
+      "bytes": 1781,
+      "sha256": "2dba08cd0ce34c392afa6ab6a46812e747e6af257cf364fac69ae8ac0b7199e7",
+      "status": "pass_independent_native_export_and_rejection_review"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-session-export-run02/audit.json",
+      "bytes": 17467477,
+      "sha256": "07fcb527e32db6c72d21f67a416ab4c53461ebf71e1b2fe2d9dd092b0917a76d",
+      "status": "pass_original_arm_final_export_from_native_event3_segments"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-session-missing-aac-run01/audit.json",
+      "bytes": 2935397,
+      "sha256": "f7364786318e742d34437be7e87ea20f2ec83e60ff8dd8790e53ffcbbaddd5f5",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-session-close-failure-run01/audit.json",
+      "bytes": 5579188,
+      "sha256": "039672a948f4420105f7798be7b27a03e6141adde6b22e90996dff8ea7771579",
+      "status": "rejected_inputs_and_pending_retained"
+    },
+    {
+      "path": "docs/prerecord-trigger-pin-recovery.md",
+      "bytes": 4183,
+      "sha256": "3ee482c351e7823c7e0a7294eb7e97f975f9c13ec7b17ba09fa114b4ccc21b02",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-custody-crash-run01/validation.json",
+      "bytes": 6528,
+      "sha256": "3f4859f7167005b8307657bb8ea17721e99f199c16904f04206aa28b2c3f4922",
+      "status": "pass_host_custody_process_exit_recovery"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-durable-pin-run01/validation.json",
+      "bytes": 38288,
+      "sha256": "e4425a91d2f44b77d5d47dc4e0c67e7e17b27b0ebc280a7f086f64ae86d4f135",
+      "status": "pass_archived_media_incremental_ring_publication_and_recovery"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-durable-pin-regression/validation.json",
+      "bytes": 980,
+      "sha256": "1c131675207956a737a4dba600287ac2458bce2ed472ea623ae163d226c9a7a8",
+      "status": "passed"
+    },
+    {
+      "path": "docs/eis-stock-coordinate-contract.md",
+      "bytes": 5719,
+      "sha256": "cd50de61b97a69136c916c1780adc851c5bee1bd9d4e09b90af6d65a5232e84e",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-stock-coordinate-contract/audit.json",
+      "bytes": 32572,
+      "sha256": "b34a88976efefeb0cece19e476dd54d1d89a1392832e43f4a6d8937001255341",
+      "status": "pass_bounded_original_coordinate_evidence"
+    },
+    {
+      "path": "docs/device-1107-native-watchdog-recovery-boundary.md",
+      "bytes": 6883,
+      "sha256": "a5aa934d3c79e37770820f4fff512841d81c0564e29e8ab5b1f648d143aa4916",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-watchdog-recovery-boundary-run01/audit.json",
+      "bytes": 8354,
+      "sha256": "d9a0705b50973881a48f2116aea250da2a5779d25432447fa1bafaaadbcec23e",
+      "status": "documented"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-readiness-probe-03/session.json",
+      "bytes": 7106,
+      "sha256": "f5aaaf8a0b9a439fa414ca36e55f39fd8a085fc05051ab9c1b36acb10e2aa9c9",
+      "status": "documented"
+    }
+  ],
+  "current_source_sha256": {
+    "scripts/prerecord_media_store.py": "99c466bd21d296dd9b0ef51c1d5b69654622c1e3d798a94ee096e64b3d6ca53f",
+    "scripts/validate_prerecord_media_ring.py": "111a2f8396acdc9f96f02152a4bf76456af199fb49076b10230a3c290b16e9e2",
+    "scripts/validate_prerecord_media_store_recovery.py": "bc67f3fd88879572983eb20a66c4ce0a07d371df59ac769bf9667b6e6e413fbf",
+    "scripts/tests/test_prerecord_media_store.py": "8cb0c0cbd1cc102c1075506e96dad8749189f62939468e9e384a9d53125bead3",
+    "scripts/export_prerecord_native_session.py": "086f1f376e0ab6250e35a3e24198c3c269f763209ab14f9768ff2f2f9990b439",
+    "scripts/verify_prerecord_native_session_export.py": "67642211e94221f42fb50ae4ab927b1220e63026a0e0c6d7773c29d9654bc7d8",
+    "scripts/audit_prerecord_native_edit_duration.py": "ab44b9d178a909398c8533ae341d4237f83f1a98ec9b90c3d8beed8885d26431",
+    "scripts/audit_eis_stock_coordinate_contract.py": "91a4e82a0f5ceceb81dad87ea1419ab886ff33be4b9c91fef8ab8cb9345441fe",
+    "scripts/audit_native_watchdog_recovery_boundary.py": "8ac0bfc2fc19608460ac7884d80a8661b610155042e8c66b588c18760ab8ba69"
+  },
+  "local_links_checked": 469,
+  "remaining": [
+    "Physical camera EIS entry/cache publication/independent rollback",
+    "Actual DSP mapping, calibrated gyro and real encoded quality comparison",
+    "Arbitrary nonzero trigger window for stock final export",
+    "Live encoder/FIFO source epoch and SD minute ring integration",
+    "Spoken stock en/zh START and physical shutter bound to running prerecord backend",
+    "Real storage failure and independent recovery acceptance"
+  ],
+  "permission": {
+    "stock_entry_plan": "docs/device-1107-stock-entry-acceptance-plan.md",
+    "status": "user_question_pending;no_stage_or_reboot_authorized_or_run"
+  },
+  "limits": [
+    "Original event3 second segment ordinary consumer remains reject",
+    "Final native export is a separate host-emulated session;recording limit remains60000ms",
+    "Host process exits/fsync are not physicalSD power loss",
+    "Post-trigger recovery still needs intact failed/prepublish manifests",
+    "Previous047 receipts retain their original source hashes and are historical where code changed"
+  ]
+}

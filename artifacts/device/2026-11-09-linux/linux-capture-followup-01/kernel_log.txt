@@ -1,0 +1,433 @@
+~ # dmesg
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.10.71 (jenkins@360ants) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 PREEMPT Fri Feb 2 12:17:50 CST 2018
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Ambarella S2E (Flattened Device Tree), model: Ambarella A9S EVK Cheetah
+[    0.000000] boss: dc950000 [3c950000]
+[    0.000000] aipc_spin_lock_setup done
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] Ambarella:      AHB = 0x60000000[0xe0000000],0x01000000 0
+[    0.000000] Ambarella:      APB = 0x70000000[0xe8000000],0x01000000 0
+[    0.000000] Ambarella:      PPM = 0x3c000000[0xdc000000],0x00a00000 9
+[    0.000000] Ambarella:     PPM2 = 0x00100000[0xa0100000],0x3bf00000 9
+[    0.000000] Ambarella:      AXI = 0xf0000000[0xf0000000],0x00100000 0
+[    0.000000] Ambarella:    DRAMC = 0xdffe0000[0xef000000],0x00020000 0
+[    0.000000] aipc: smem: 0xdc000000 [0x3c000000], 0x00a00000
+[    0.000000] On node 0 totalpages: 13824
+[    0.000000] free_area_init_node: node 0, pgdat 4057bf1c, node_mem_map 405ad000
+[    0.000000]   Normal zone: 108 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 13824 pages, LIFO batch:3
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 13716
+[    0.000000] Kernel command line: root=/dev/mtdblock5 rootfstype=squashfs console=ttyS2 nr_cpus=1 maxcpus=0 boss=0xdc950000
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 54MB = 54MB total
+[    0.000000] Memory: 48956k/48956k available, 6340k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x43800000 - 0xa0000000   (1480 MB)
+[    0.000000]     lowmem  : 0x40000000 - 0x43600000   (  54 MB)
+[    0.000000]     modules : 0x3f000000 - 0x40000000   (  16 MB)
+[    0.000000]       .text : 0x40008000 - 0x40525abc   (5239 kB)
+[    0.000000]       .init : 0x40526000 - 0x405497c4   ( 142 kB)
+[    0.000000]       .data : 0x4054a000 - 0x40586f30   ( 244 kB)
+[    0.000000]        .bss : 0x40586f30 - 0x405a86c8   ( 134 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:272
+[    0.000000] sched_clock: 32 bits at 96MHz, resolution 10ns, wraps every 44739ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [ttyS2] enabled
+[    0.214561] Calibrating delay loop... 887.19 BogoMIPS (lpj=4435968)
+[    0.252381] pid_max: default: 32768 minimum: 301
+[    0.256558] Mount-cache hash table entries: 512
+[    0.264557] CPU: Testing write buffer coherency: ok
+[    0.269117] Setting up static identity map for 0x404018b0 - 0x40401918
+[    0.277869] devtmpfs: initialized
+[    0.282605] pinctrl core: initialized pinctrl subsystem
+[    0.287440] NET: Registered protocol family 16
+[    0.291692] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.297997] L310 cache controller enabled
+[    0.301521] l2x0: 16 ways, CACHE_ID 0x4100c4c8, AUX_CTRL 0x22070000, Cache size: 1048576 B
+[    0.311776] ambarella-pinctrl 70009000.pinctrl: Ambarella pinctrl driver registered
+[    0.319148] ambarella-gpio gpio.0: Ambarella GPIO driver registered
+[    0.327568] aipc_mutex_init done
+[    0.333818] bio: create slab <bio-0> at 0
+[    0.338147]  remoteproc0: c0_and_c1 is available
+[    0.342229]  remoteproc0: Note: remoteproc is still under development and considered experimental.
+[    0.350081]  remoteproc0: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    0.359213]  remoteproc0: registered virtio0 (type 7)
+[    0.363848]  remoteproc0: powering up c0_and_c1
+[    0.367801]  remoteproc0: Booting fw image dummy, size 0
+[    0.372994] virtio_rpmsg_bus virtio0: rpmsg host is online
+[    0.378237] Bluetooth: Core ver 2.16
+[    0.381414] NS announcement: 41 6d 62 61 52 70 64 65 76 5f 43 4c 4b 00 ef ef  AmbaRpdev_CLK...
+[    0.381425] NS announcement: ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef  ................
+[    0.381434] NS announcement: 00 04 00 00 00 00 00 00                          ........
+[    0.381446] virtio_rpmsg_bus virtio0: creating channel AmbaRpdev_CLK addr 0x400
+[    0.387956] NET: Registered protocol family 31
+[    0.391850] Bluetooth: HCI device and connection manager initialized
+[    0.397401] Bluetooth: HCI socket layer initialized
+[    0.401689] Bluetooth: L2CAP socket layer initialized
+[    0.406119] Bluetooth: SCO socket layer initialized
+[    0.411023] NS announcement: 61 69 70 63 5f 72 70 63 00 ef ef ef ef ef ef ef  aipc_rpc........
+[    0.411034] NS announcement: ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef  ................
+[    0.411042] NS announcement: 01 04 00 00 00 00 00 00                          ........
+[    0.411054] virtio_rpmsg_bus virtio0: creating channel aipc_rpc addr 0x401
+[    0.417182] Switching to clocksource ambarella-cs-timer
+[    0.428766] NET: Registered protocol family 2
+[    0.433262] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.439270] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.444847] TCP: Hash tables configured (established 512 bind 512)
+[    0.450289] TCP: reno registered
+[    0.453129] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.458225] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.463893] NET: Registered protocol family 1
+[    0.468015] RPC: Registered named UNIX socket transport module.
+[    0.473223] RPC: Registered udp transport module.
+[    0.477322] RPC: Registered tcp transport module.
+[    0.481419] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.488168] ambarella-sd 6000c000.sdmmc1: Slot0 use bounce buffer[0x42f80000<->0x3f980000]
+[    0.495416] ambarella-sd 6000c000.sdmmc1: Slot0 req_size=0x00080000, segs=128, seg_size=0x00080000
+[    0.503256] ambarella-sd 6000c000.sdmmc1: Slot0 use ADMA
+[    0.581900] ambarella-sd 6000c000.sdmmc1: 1 slots @ 48000000Hz
+[    0.587703] NS announcement: 61 69 70 63 5f 76 66 73 00 ef ef ef ef ef ef ef  aipc_vfs........
+[    0.587716] NS announcement: ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef  ................
+[    0.587724] NS announcement: 02 04 00 00 00 00 00 00                          ........
+[    0.587737] virtio_rpmsg_bus virtio0: creating channel aipc_vfs addr 0x402
+[    0.600726] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.606953] msgmni has been set to 95
+[    0.613263] NET: Registered protocol family 38
+[    0.617336] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.623892] io scheduler noop registered
+[    0.627310] io scheduler deadline registered
+[    0.631045] io scheduler cfq registered (default)
+[    0.635627] 7001f000.uart: ttyS1 at MMIO 0x7001f000 (irq = 25) is a ambuart
+[    0.642042] 70014000.uart: ttyS2 at MMIO 0x70014000 (irq = 91) is a ambuart
+[    0.648872] brd: module loaded
+[    0.654212] loop: module loaded
+[    0.657101] Probe amba_heapmem successfully
+[    0.660917] Probe amba_dspmem successfully
+[    0.664819] Ambarella read-only mtdblock
+[    0.670463] ambarella-nand 60001000.nand: in ecc-[6]bit mode
+[    0.675429] ambarella_nand: Use On Flash BBT
+[    0.679302] NAND device: Manufacturer ID: 0x01, Chip ID: 0xda (AMD/Spansion NAND 256MiB 3,3V 8-bit), 256MiB, page size: 2048, OOB size: 64
+[    0.690428] Bad block table found at page 131008, version 0xFF
+[    0.695860] Bad block table found at page 130944, version 0xFF
+[    0.701585] 13 ofpart partitions found on MTD device amba_nand
+[    0.706718] Creating 13 MTD partitions on "amba_nand":
+[    0.711208] 0x000000020000-0x000000040000 : "VENDOR_DATA"
+[    0.716678] 0x000000180000-0x000002180000 : "SYS_SW"
+[    0.721697] 0x000002180000-0x000002680000 : "DSP_uCode"
+[    0.726976] 0x000002680000-0x000003a80000 : "SYS_DATA"
+[    0.732234] 0x000003a80000-0x000004480000 : "LINUX_Kernel"
+[    0.737649] 0x000004480000-0x000008080000 : "LINUX_RFS"
+[    0.743209] 0x000008080000-0x000009e80000 : "LINUX_HIBER_IMG"
+[    0.748873] 0x000009e80000-0x00000b800000 : "VIDEO_REC_IDX"
+[    0.754503] 0x00000b800000-0x00000ba80000 : "CALIB"
+[    0.759390] 0x00000ba80000-0x00000bc40000 : "USER_SETTING"
+[    0.764875] 0x00000bc40000-0x00000c2c0000 : "DRIVE_A"
+[    0.769925] 0x00000c2c0000-0x00000c940000 : "DRIVE_B"
+[    0.775051] 0x00000c940000-0x00000fec0000 : "RESERVED"
+[    0.780433] ambarella-rtc 7000d000.rtc: =====RTC ever lost power=====
+[    0.786097] ambarella-rtc 7000d000.rtc: ambrtc_set_alarm_or_time is not supported in dual-OSes!
+[    0.793907] ambarella-rtc 7000d000.rtc: rtc core: registered rtc-ambarella as rtc0
+[    0.801379] TCP: cubic registered
+[    0.804292] Initializing XFRM netlink socket
+[    0.808046] NET: Registered protocol family 17
+[    0.812104] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.818787] ThumbEE CPU extension supported.
+[    0.823679] ambarella-rtc 7000d000.rtc: setting system clock to 2018-03-31 22:50:23 UTC (1522536623)
+[    0.834546] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+[    0.841688] devtmpfs: mounted
+[    0.844492] Freeing unused kernel memory: 140K (40526000 - 40549000)
+[    1.830017] NS announcement: 61 69 70 63 5f 72 66 73 00 20 10 00 08 00 78 08  aipc_rfs. ....x.
+[    1.830034] NS announcement: 88 01 08 00 00 00 12 40 00 00 40 00 80 10 14 00  .......@..@.....
+[    1.830042] NS announcement: 03 04 00 00 00 00 00 00                          ........
+[    1.830059] virtio_rpmsg_bus virtio0: creating channel aipc_rfs addr 0x403
+[    1.857492] NS announcement: 41 6d 62 61 52 70 64 65 76 5f 4c 69 6e 6b 43 74  AmbaRpdev_LinkCt
+[    1.857506] NS announcement: 72 6c 00 00 40 20 10 00 00 00 00 00 00 80 10 10  rl..@ ..........
+[    1.857514] NS announcement: 04 04 00 00 00 00 00 00                          ........
+[    1.857527] virtio_rpmsg_bus virtio0: creating channel AmbaRpdev_LinkCtrl addr 0x404
+[    1.884913] NS announcement: 65 63 68 6f 5f 63 6f 72 74 65 78 00 7c 30 6f a0  echo_cortex.|0o.
+[    1.884926] NS announcement: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+[    1.884935] NS announcement: 05 04 00 00 00 00 00 00                          ........
+[    1.884948] virtio_rpmsg_bus virtio0: creating channel echo_cortex addr 0x405
+[    2.072106] cfg80211: Calling CRDA to update world regulatory domain
+[    3.267012] PM: Syncing filesystems ... done.
+[    3.270953] Freezing user space processes ... (elapsed 0.03 seconds) done.
+[    3.314148] rpmsg_linkctrl_cmd_hiber_prepare: 0x3cf873e0
+[    3.319063] PM: Preallocating image memory... done (allocated 3523 pages)
+[    3.336017] PM: Allocated 14092 kbytes in 0.01 seconds (1409.20 MB/s)
+[    3.341640] Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+[    3.364304] Suspending console(s) (use no_console_suspend to debug)
+[    3.370462] PM: freeze of devices complete after 0.685 msecs
+[    3.370729] PM: late freeze of devices complete after 0.260 msecs
+[    3.371287] PM: noirq freeze of devices complete after 0.551 msecs
+[    3.371352] PM: Creating hibernation image:
+[    3.371352] PM: Need to copy 3520 pages
+[    3.371352] pm_abaoss_entry returned 0x1
+[    6.742728] Switching to clocksource jiffies
+[    6.742728] Switching to clocksource ambarella-cs-timer
+[    6.743205] PM: noirq restore of devices complete after 0.165 msecs
+[    6.743566] PM: early restore of devices complete after 0.070 msecs
+[    6.757451] PM: restore of devices complete after 3.070 msecs
+[    6.828301] rpmsg_linkctrl_cmd_hiber_exit:
+[    6.833637] Restarting tasks ... done.
+[    8.853467] mmc0: queuing unknown CIS tuple 0x80 (2 bytes)
+[    8.863463] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[    8.872937] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[    8.887137] mmc0: queuing unknown CIS tuple 0x80 (7 bytes)
+[    8.977463] mmc0: queuing unknown CIS tuple 0x91 (3 bytes)
+[    8.983867] mmc0: new high speed SDIO card at address 0001
+[    9.297744] dhd_module_init: in
+[    9.310256] ======== dhd_wlan_init_plat_data ========
+[    9.316188] dhd_wlan_init_gpio: GPIO(WL_REG_ON) = -1
+[    9.331531] dhd_wifi_platform_load: Enter
+[    9.336359] Power-up adapter 'DHD generic adapter'
+[    9.342768] wifi_platform_set_power = 1
+[    9.356457] ======== PULL WL_REG_ON(-1) HIGH! ========
+[    9.749559] wifi_platform_bus_enumerate device present 1
+[    9.774879] bcmsdh_register: register client driver
+[    9.795886] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[    9.801595] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[    9.807114] bus num (host idx)=0, slot num (rca)=1
+[    9.815802] found adapter info 'DHD generic adapter'
+[    9.821967] sdioh_attach: set sd_f2_blocksize 256
+[    9.828138] dhdsdio_probe : no mutex held. set lock
+[    9.834058] F1 signature read @0x18000000=0x1602a94c
+[    9.845905] F1 signature OK, socitype:0x1 chip:0xa94c rev:0x2 pkg:0x0
+[    9.856070] DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+[    9.865246] wifi_platform_get_mac_addr
+[    9.869669] ======== dhd_wlan_get_mac_addr ========
+[    9.875297] mac: 58:70:C6:00:00:00
+[    9.890395] dhd_conf_set_chiprev: chip=0xa94c, chiprev=2, detect = 0
+[    9.897993] dhd_conf_set_conf_path_by_nv_path: config_path=nconfig.txt
+[    9.914319] dhd_conf_read_config: Ignore config file nconfig.txt
+[    9.946161] wl_create_event_handler(): thread:wl_event_handler:d6 started
+[    9.954266] tsk Enter, tsk = 0x424e1378
+[    9.969864] wl_escan_attach: Enter
+[    9.973842] wl_escan_init: Enter
+[    9.994869] tsk Enter, tsk = 0x42390148
+[    9.999303] wl_create_event_handler(): thread:wl_escan_handler:d8 started
+[   10.009468] dhd_attach(): thread:dhd_watchdog_thread:d9 started
+[   10.016563] dhd_attach(): thread:dhd_dpc:da started
+[   10.022313] dhd_attach(): thread:dhd_rxf:db started
+[   10.028012] dhd_deferred_work_init: work queue initialized 
+[   10.061214] Dongle Host Driver, version 1.363.59.144.7 (r)
+[   10.073724] Register interface [null0]  MAC: ac:83:f3:89:28:21
+[   10.073724] 
+[   10.083619] wl_event_handler: was terminated
+[   10.106940] wl_destroy_event_handler(): thread:wl_event_handler:d6 terminated OK
+[   10.131134] dhd_wl_ioctl: returning as busstate=0
+[   10.136656] dhd_txglom_enable: enable 0
+[   10.141100] dhd_conf_set_txglom_params: swtxglom=0, txglom_ext=0, txglom_bucket_size=0
+[   10.175752] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0, bus_txglom=-1
+[   10.185084] dhd_conf_set_txglom_params: tx_in_rx=1, txinrx_thres=-1, dhd_txminmax=1
+[   10.210993] dhd_conf_set_txglom_params: tx_max_offset=1, txctl_tmo_fix=1
+[   10.223616] sdioh_set_mode: set txglom_mode to copy
+[   10.229256] dhd_bus_devreset:  WLAN OFF DONE
+[   10.252087] wifi_platform_set_power = 0
+[   10.256530] ======== mmc_power_save_host! ========
+[   10.283102] ======== PULL WL_REG_ON(-1) LOW! ========
+[   10.289125] dhdsdio_probe : the lock is released.
+[   10.295216] dhd_module_init: Exit err=0
+[   10.443086] dhd_ioctl_entry: Interface is down 
+[   10.860217] dhd_module_cleanup: Enter
+[   10.864544] sdioh_remove: Enter
+[   10.868413] dhdsdio_disconnect : no mutex held. set lock
+[   10.874653] dhd_wlfc_deinit():3711, Already disabled!
+[   10.880492] wl_escan_detach: Enter
+[   10.885188] wl_escan_deinit: Enter
+[   10.889209] wl_escan_event_handler: was terminated
+[   10.896401] wl_destroy_event_handler(): thread:wl_escan_handler:d8 terminated OK
+[   10.975928] dhd_detach(): thread:dhd_watchdog_thread:d9 terminated OK
+[   10.996281] dhd_detach(): thread:dhd_rxf:db terminated OK
+[   11.002748] dhd_dpc_thread: Unexpected up_cnt 0
+[   11.009602] dhd_detach(): thread:dhd_dpc:da terminated OK
+[   11.658383] phys_mem_access_prot: set as noncached
+[   11.726979] phys_mem_access_prot: set as noncached
+[   11.774627] phys_mem_access_prot: set as noncached
+[   11.868302] phys_mem_access_prot: set as noncached
+[   12.223923] 6000c000.sdmmc1.0: cmd52 1@[0:100], sta=0x1f80000
+[   13.380160] 6000c000.sdmmc1.0: cmd52 1@[0:100], sta=0x1f80000
+[   13.386916] dhdsdio_disconnect : the lock is released.
+[   14.547985] 6000c000.sdmmc1.0: cmd52 1@[0:100], sta=0x1f80000
+[   15.704233] 6000c000.sdmmc1.0: cmd52 1@[0:100], sta=0x1f80000
+[   15.715860] unregister wifi platform drivers
+[   15.726885] wifi_platform_bus_enumerate device present 0
+[   15.738927] ======== dhd_wlan_deinit_plat_data ========
+[   15.746240] dhd_module_cleanup: Exit
+[   15.940140] mmc0: card 0001 removed
+[   20.310557] mmc0: queuing unknown CIS tuple 0x80 (2 bytes)
+[   20.319102] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   20.327398] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   20.337188] mmc0: queuing unknown CIS tuple 0x80 (7 bytes)
+[   20.421567] mmc0: queuing unknown CIS tuple 0x91 (3 bytes)
+[   20.428085] mmc0: new high speed SDIO card at address 0001
+[   20.680697] dhd_module_init: in
+[   20.684358] ======== dhd_wlan_init_plat_data ========
+[   20.703710] dhd_wlan_init_gpio: GPIO(WL_REG_ON) = -1
+[   20.714250] dhd_wifi_platform_load: Enter
+[   20.718962] Power-up adapter 'DHD generic adapter'
+[   20.725710] wifi_platform_set_power = 1
+[   20.737570] ======== PULL WL_REG_ON(-1) HIGH! ========
+[   21.138596] wifi_platform_bus_enumerate device present 1
+[   21.163049] bcmsdh_register: register client driver
+[   21.174880] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[   21.186741] bcmsdh_sdmmc: bcmsdh_sdmmc_probe Enter
+[   21.199433] bus num (host idx)=0, slot num (rca)=1
+[   21.205099] found adapter info 'DHD generic adapter'
+[   21.211419] sdioh_attach: set sd_f2_blocksize 256
+[   21.217695] dhdsdio_probe : no mutex held. set lock
+[   21.223751] F1 signature read @0x18000000=0x1602a94c
+[   21.238201] F1 signature OK, socitype:0x1 chip:0xa94c rev:0x2 pkg:0x0
+[   21.247536] DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+[   21.256551] wifi_platform_get_mac_addr
+[   21.260870] ======== dhd_wlan_get_mac_addr ========
+[   21.266599] mac: 58:70:C6:02:2F:4F
+[   21.271930] dhd_conf_set_chiprev: chip=0xa94c, chiprev=2
+[   21.278328] dhd_conf_set_conf_path_by_nv_path: config_path=/usr/local/bcmdhd/config.txt
+[   21.287818] dhd_os_open_image: /usr/local/bcmdhd/config.txt (378 bytes) open success
+[   21.305644] dhd_conf_read_country_list: 39 country in list
+[   21.325485] wl_create_event_handler(): thread:wl_event_handler:1c7 started
+[   21.333485] tsk Enter, tsk = 0x41fa1378
+[   21.351741] wl_escan_attach: Enter
+[   21.355761] wl_escan_init: Enter
+[   21.381526] wl_create_event_handler(): thread:wl_escan_handler:1c9 started
+[   21.391156] tsk Enter, tsk = 0x423f0148
+[   21.402620] dhd_attach(): thread:dhd_watchdog_thread:1ca started
+[   21.410232] dhd_attach(): thread:dhd_dpc:1cb started
+[   21.416173] dhd_attach(): thread:dhd_rxf:1cc started
+[   21.423481] dhd_deferred_work_init: work queue initialized 
+[   21.459481] Dongle Host Driver, version 1.363.59.144.7 (r)
+[   21.473833] Register interface [wlan0]  MAC: ac:83:f3:89:28:21
+[   21.473833] 
+[   21.497082] wl_event_handler: was terminated
+[   21.515419] wl_destroy_event_handler(): thread:wl_event_handler:1c7 terminated OK
+[   21.530109] dhd_wl_ioctl: returning as busstate=0
+[   21.540339] dhd_txglom_enable: enable 0
+[   21.550941] dhd_conf_set_txglom_params: swtxglom=0, txglom_ext=0, txglom_bucket_size=0
+[   21.572107] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0, bus_txglom=-1
+[   21.587734] dhd_conf_set_txglom_params: tx_in_rx=1, txinrx_thres=-1, dhd_txminmax=1
+[   21.609465] dhd_conf_set_txglom_params: tx_max_offset=1, txctl_tmo_fix=1
+[   21.630600] sdioh_set_mode: set txglom_mode to copy
+[   21.642739] dhd_bus_devreset:  WLAN OFF DONE
+[   21.648105] wifi_platform_set_power = 0
+[   21.652575] ======== mmc_power_save_host! ========
+[   21.683488] ======== PULL WL_REG_ON(-1) LOW! ========
+[   21.689362] dhdsdio_probe : the lock is released.
+[   21.696893] dhd_module_init: Exit err=0
+[   21.799473] dhd_inetaddr_notifier_call: bus not ready, exit
+[   21.806026] dhd_open: Enter 42243000
+[   21.812326] 
+[   21.812326] Dongle Host Driver, version 1.363.59.144.7 (r)
+[   21.820591] wl_android_wifi_on in 1
+[   21.824789] wl_android_wifi_on in 2: g_wifi_on=0
+[   21.830293] wifi_platform_set_power = 1
+[   21.834762] ======== PULL WL_REG_ON(-1) HIGH! ========
+[   21.840726] ======== mmc_power_restore_host! ========
+[   21.975563] mmc0: queuing unknown CIS tuple 0x80 (2 bytes)
+[   21.983930] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   21.992199] mmc0: queuing unknown CIS tuple 0x80 (3 bytes)
+[   22.002122] mmc0: queuing unknown CIS tuple 0x80 (7 bytes)
+[   22.456876] sdioh_start: set sd_f2_blocksize 256
+[   22.463051] 
+[   22.463051] 
+[   22.463051] dhd_bus_devreset: == WLAN ON ==
+[   22.473180] F1 signature read @0x18000000=0x1602a94c
+[   22.486122] F1 signature OK, socitype:0x1 chip:0xa94c rev:0x2 pkg:0x0
+[   22.494829] DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+[   22.505763] dhd_os_open_image: /usr/local/bcmdhd/config.txt (378 bytes) open success
+[   22.515712] dhd_conf_read_country_list: 39 country in list
+[   22.524237] dhd_conf_set_fw_name_by_chip: firmware_path=/usr/local/bcmdhd/fw_apsta43340.bin
+[   22.533980] dhd_conf_set_bus_params: set polling mode 1
+[   22.540076] dhd_conf_set_bus_params: set use_rxchain 0
+[   22.547644] dhd_conf_set_bus_params: set txglomsize 16
+[   22.553654] Final fw_path=/usr/local/bcmdhd/fw_apsta43340.bin
+[   22.560335] Final nv_path=/usr/local/bcmdhd/nvram43340.txt
+[   22.566717] Final conf_path=/usr/local/bcmdhd/config.txt
+[   22.574402] dhd_os_open_image: /usr/local/bcmdhd/fw_apsta43340.bin (382354 bytes) open success
+[   22.771732] dhd_os_open_image: /usr/local/bcmdhd/nvram43340.txt (2583 bytes) open success
+[   16.853377] aipc_router xprt error: host=116, port=1730161714
+[   22.782959] NVRAM version: AP6234_NVRAM_V1.3_20160204
+[   22.790949] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[   22.984720] dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+[   22.994949] Disable tdls_auto_op failed. -1
+[   22.999859] dhd_conf_set_intiovar: set WLC_SET_BAND 142 0
+[   23.008086] dhd_preinit_ioctls: Set tcpack_sup_mode 0
+[   23.014138] wifi_platform_get_mac_addr
+[   23.018455] ======== dhd_wlan_get_mac_addr ========
+[   23.024385] mac: 58:70:C6:02:2F:4F
+[   23.030952] Firmware up: op_mode=0x0002, MAC=58:70:c6:02:2f:4f
+[   23.037762] dhd_conf_set_country: set country CN, revision 0
+[   23.143683] Country code: CN (CN/0)
+[   23.148352] dhd_conf_set_intiovar: set roam_off 1
+[   23.161383] dhd_preinit_ioctls event_msgs_ext not support or version mismatch -23
+[   23.174179] Firmware version = wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7
+[   23.185713]   Driver: 1.363.59.144.7 (r)
+[   23.185713]   Firmware: wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7 
+[   23.203264] dhd_txglom_enable: enable 0
+[   23.207684] dhd_conf_set_txglom_params: swtxglom=0, txglom_ext=0, txglom_bucket_size=0
+[   23.217079] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0, bus_txglom=-1
+[   23.226371] dhd_conf_set_txglom_params: tx_in_rx=1, txinrx_thres=-1, dhd_txminmax=1
+[   23.235367] dhd_conf_set_txglom_params: tx_max_offset=1, txctl_tmo_fix=1
+[   23.244696] sdioh_set_mode: set txglom_mode to copy
+[   23.250359] dhd_conf_get_disable_proptx: fw_proptx=1, disable_proptx=0
+[   23.266266] dhd_preinit_ioctls wl ampdu_hostreorder failed -23
+[   23.273745] dhd_wlfc_init(): successfully enabled bdcv2 tlv signaling, 79
+[   23.283733] dhd_conf_set_intiovar: set ampdu_hostreorder 1
+[   23.291089] CONFIG-ERROR) dhd_conf_set_intiovar: ampdu_hostreorder setting failed -23
+[   23.301122] dhd_wl_ioctl_get_intiovar: get int iovar wlfc_mode failed, ERR -23
+[   23.309555] dhd_wlfc_init(): wlfc_mode=0x0, ret=-23
+[   23.317556] wl_android_wifi_on: Success
+[   23.322756] wl_create_event_handler(): thread:wl_event_handler:1e1 started
+[   23.330798] tsk Enter, tsk = 0x41fa1378
+[   23.431206] CFG80211-ERROR) wl_update_wiphybands : error reading vhtmode (-23)
+[   23.465247] dhd_open: Exit ret=0
+[   24.179921] CFG80211-ERROR) wl_cfg80211_del_station : Disconnect STA : ff:ff:ff:ff:ff:ff scb_val.val 3
+[   24.205308] dhd_wl_ioctl_set_intiovar: set int iovar ndoe failed, ERR -23
+[   24.213310] dhd_ndo_enable: failed to enabe ndo to 0, retcode = -23
+[   24.220716] CFG80211-ERROR) wl_cfg80211_start_ap : wl_cfg80211_start_ap: Disabling NDO Failed -23
+[   24.232794] netdev_ifidx(3), chan_type(1) target channel(161) 
+[   24.456420] _dhd_wlfc_mac_entry_update():1853, entry(32)
+[   24.468479] wl_iw_event: Link UP with BSSID=58:70:00:00:2f:4f
+[   24.477013] CFG80211-ERROR) wl_notify_connect_status_ap : ** AP/GO Link up event **
+[   40.668187] wl_notify_connect_status_ap: connected device 9a:a9:12:8e:af:5d
+[   18.869938] Switching to clocksource jiffies
+[   18.869938] Switching to clocksource ambarella-cs-timer
+[   24.170304] Switching to clocksource jiffies
+[   24.170304] Switching to clocksource ambarella-cs-timer
+[  102.710311] Switching to clocksource jiffies
+[  102.710311] Switching to clocksource ambarella-cs-timer
+[ 1670.644495] Switching to clocksource jiffies
+[ 1670.644495] Switching to clocksource ambarella-cs-timer
+[ 1693.981292] Switching to clocksource jiffies
+[ 1693.981292] Switching to clocksource ambarella-cs-timer
+[ 2209.110358] Switching to clocksource jiffies
+[ 2209.110358] Switching to clocksource ambarella-cs-timer
+[ 2230.955381] Switching to clocksource jiffies
+[ 2230.955381] Switching to clocksource ambarella-cs-timer
+[ 2525.134282] Switching to clocksource jiffies
+[ 2525.134282] Switching to clocksource ambarella-cs-timer
+[ 2546.898612] Switching to clocksource jiffies
+[ 2546.898612] Switching to clocksource ambarella-cs-timer
+[ 5682.846814] Switching to clocksource jiffies
+[ 5682.846814] Switching to clocksource ambarella-cs-timer
+[ 5704.413153] Switching to clocksource jiffies
+[ 5704.413153] Switching to clocksource ambarella-cs-timer
+[ 7244.118992] Switching to clocksource jiffies
+[ 7244.118992] Switching to clocksource ambarella-cs-timer
+[ 7292.684069] phys_mem_access_prot: set as noncached
+[ 7299.901731] Switching to clocksource jiffies
+[ 7299.901731] Switching to clocksource ambarella-cs-timer
+~ # echo __YI_CAPTURE_c265779c5b6d48958868d5b875b83a73__
+__YI_CAPTURE_c265779c5b6d48958868d5b875b83a73__

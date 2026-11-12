@@ -1,0 +1,146 @@
+{
+  "target": {
+    "firmware": "YI 4K 1.10.7",
+    "rtos_image_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+    "image_base": "0xA0100000"
+  },
+  "service": {
+    "program": "0x1000000c",
+    "version": 1,
+    "name": "APPLIB_RPC_SVC_SHAREPREVIEW",
+    "procedure_numbers": {
+      "init": "registration side effect; not RPC proc",
+      "get_meminfo": 1,
+      "enable": 2,
+      "get_status": 3
+    },
+    "states": {
+      "0": "uninitialized",
+      "1": "initialized but disabled",
+      "2": "enabled"
+    },
+    "state_basis": "DAT_a1443d18 assignments in init/enable/disable and GetStatus path"
+  },
+  "functions": {
+    "init": "0xA0248530",
+    "register": "0xA0247E54",
+    "get_meminfo": "0xA0247A20",
+    "enable_rpc": "0xA024840C",
+    "enable_internal": "0xA02480C8",
+    "disable_internal": "0xA0248314",
+    "disable_unregister_frame_callback": "0xA0248030",
+    "update_buffer": "0xA0247B8C",
+    "frame_callback": "0xA0247E04",
+    "default_config": "0xA02484E8"
+  },
+  "config_layout": [
+    {
+      "offset": "0x00",
+      "type": "pointer",
+      "meaning": "RTOS memory pool; must be nonzero"
+    },
+    {
+      "offset": "0x04",
+      "type": "u32",
+      "meaning": "SharePreview service task parameter; default 0xB4"
+    },
+    {
+      "offset": "0x08",
+      "type": "u32",
+      "meaning": "SharePreview service stack/parameter; default 0x2000"
+    },
+    {
+      "offset": "0x0c",
+      "type": "u32",
+      "meaning": "default 2; exact semantic not required for registration"
+    },
+    {
+      "offset": "0x10",
+      "type": "u16",
+      "meaning": "VideoAnal callback selector; default config 2; shell init with no optional args changes it to 0"
+    },
+    {
+      "offset": "0x12",
+      "type": "u16",
+      "meaning": "UpdatePeriod; default config 0; shell init with no optional args changes it to 30; enable rejects zero"
+    },
+    {
+      "offset": "0x14",
+      "type": "u16",
+      "meaning": "frame pitch/width field used by update path; default 1024"
+    },
+    {
+      "offset": "0x16",
+      "type": "u16",
+      "meaning": "frame height; default 752"
+    }
+  ],
+  "init_gates": [
+    "videoanal_is_initialized() must be true",
+    "memory pool and width and height must be nonzero",
+    "allocates share buffer of width*height*3 + 0x38 bytes and reader buffer of 8 bytes",
+    "attempts to register RPC service only after both allocations succeed",
+    "initial status becomes 1 even though the inner service-register return is ignored; state alone is not registration proof"
+  ],
+  "enable_gates": [
+    "videoanal_is_initialized() must be true",
+    "state must be 1; state 0 and state 2 return errors",
+    "UpdatePeriod must be nonzero",
+    "videoanal_register_callback(selector, frame_callback) must return 0",
+    "on success state becomes 2"
+  ],
+  "frame_contract": {
+    "callback_input_offsets": {
+      "0x04": "source Y pointer",
+      "0x10": "pitch",
+      "0x12": "width",
+      "0x14": "height"
+    },
+    "filter": "callback increments a counter; it copies only when input width/height equal configured width/height and counter equals UpdatePeriod",
+    "copy_size": "pitch * height bytes",
+    "cache_order": "invalidate source; copy source to selected shared buffer; clean destination; publish active index and clean 0x38-byte header",
+    "ring": "three Y buffers; header entries contain pitch,width,height,size; pointer table is at header +0x2c/+0x30/+0x34",
+    "reader": "8-byte reader area; its +0x04 value is consulted as reader index"
+  },
+  "videoanal_callback_registry": {
+    "register_function": "0xA02382F8",
+    "unregister_function": "0xA0238394",
+    "selector_to_event": {
+      "1": "0x02000004",
+      "2": "0x02000008",
+      "other_including_0": "0x02000009"
+    },
+    "slots": "16 callback slots beginning at 0xA14307B8; each slot stride 8, function/event fields are at slot_base+0x1dc/+0x1e0",
+    "unregister_match": "matches both callback pointer and mapped event code before clearing slot"
+  },
+  "runtime_evidence": {
+    "sharepreview_status_va": "0xA1443D18",
+    "observed_value": "0",
+    "observed_in": "artifacts/device/2026-11-09-linux/rtos-readonly-mmap-snapshot-2/session.json",
+    "rpc_query": "program 0x1000000c proc 3 returned service not found"
+  },
+  "shell_entry": {
+    "usage": "t app test sharepv [init | en | dis]",
+    "init_no_optional_args": "sets callback selector 0 and UpdatePeriod 30 after default_config",
+    "init_optional_args": "first optional value is selector and second is UpdatePeriod; width/height remain defaults in this handler"
+  },
+  "evidence": [
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0248530.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0247e54.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0247a20.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a024840c.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a02480c8.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0248314.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0247b8c.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a0247e04.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a02484e8.c",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/focused/a01a18f8.c"
+  ],
+  "limitations": [
+    "Function names and structure fields are inferred from disassembly/pseudocode.",
+    "The shell command was recovered statically and has not been executed on the device in this round.",
+    "No frame timestamp is present in the recovered SharePreview header; frame/gyro alignment remains unresolved.",
+    "A service registration contract does not establish that the default callback selector is valid in every video mode.",
+    "Disable unregisters only the VideoAnal frame callback; it does not release buffers or unregister the RPC service."
+  ]
+}

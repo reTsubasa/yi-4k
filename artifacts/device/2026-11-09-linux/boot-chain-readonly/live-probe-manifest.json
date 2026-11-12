@@ -1,0 +1,26 @@
+{
+  "scope": "read-only current Linux probe",
+  "host": "192.168.42.1",
+  "files": {
+    "boot-reason.txt": {
+      "bytes": 338,
+      "sha256": "ccf33c727d67b9e3f6b6dde6ea68eeb84da5a086ed3d597dd7021c433f4ddb59"
+    },
+    "nand-sysfs.txt": {
+      "bytes": 398,
+      "sha256": "4e29ffe29b137d3a9f2764c80439b61f788b6e5914f72472347bd19d14fba43c"
+    },
+    "remoteproc.txt": {
+      "bytes": 1351,
+      "sha256": "c1ee0eec373b630882079a3b77d8ba662f38dbb64ab25a7d3a0d38f14e97d171"
+    },
+    "mtd-attrs.txt": {
+      "bytes": 1990,
+      "sha256": "1ef8f51a2bf48c69b2b7b42ba6b82463d8dbf93662f5d238f56b98552b18d742"
+    },
+    "dmesg-boot.txt": {
+      "bytes": 2058,
+      "sha256": "a0844a2338aed0638c78e7c83ab314f77cc16934f4de9bc717a6df5629b493c7"
+    }
+  }
+}

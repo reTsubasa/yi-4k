@@ -1,0 +1,143 @@
+{
+  "target": {
+    "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "image": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "base": "0xa0100000",
+    "function": "0xA0384710",
+    "evidence": "local device-image bytes; no device execution"
+  },
+  "evidence_kind": "offline compiled v2 C/A32 wrapper and pinned stock filter in Unicorn",
+  "sdk_sources": {
+    "sdk/yi4k_1107_eis_shadow.h": "6270d2548d0266bb409805293f2eaed501b48d54c58097e7601c9c0860649052",
+    "sdk/yi4k_1107_eis_shadow_v2.h": "5698ef76bc24f4fa3826afe54ef6781adf202a044d280a9912f8975da5634dd0",
+    "sdk/yi4k_1107_eis_shadow_v2.c": "fc0f2a118bc77150bb953806e2bd4d5462db48b096e46dc143cbf29300c2927c",
+    "sdk/yi4k_1107_eis_shadow_v2_veneer.S": "45f237af6b61f1a69b80493cd8bb017dbf31a1ca8f843090036f428848152096",
+    "sdk/offline/yi4k_eis_shadow_v2_emulation.ld": "aad28035228c9d8b36356afb51e4b5617514075f4be716113d170dc70bdf361a"
+  },
+  "build": {
+    "symbols": {
+      "yi4k_1107_eis_shadow_v2.c": 0,
+      "$a": 268649288,
+      "__ARMv7ABSLongThunk_yi4k_eis_stock_filter": 268649288,
+      "yi4k_eis_shadow_v2_initialize": 268648448,
+      "yi4k_eis_shadow_v2_dispatch": 268648584,
+      "yi4k_eis_shadow_control_v2": 268652544,
+      "yi4k_eis_stock_filter": 2688042768,
+      "yi4k_eis_shadow_sources_1107_v2": 268649300,
+      "yi4k_eis_shadow_v2_site1": 268649256,
+      "yi4k_eis_shadow_v2_site2": 268649272
+    },
+    "elf_sha256": "a999ebb24e3102056a9fa24612196aba38460e0aa48940cac431572ebe577e41",
+    "elf_bytes": 21412,
+    "compile_flags": [
+      "--target=armv7-none-eabi",
+      "-mcpu=cortex-a9",
+      "-marm",
+      "-mfloat-abi=soft",
+      "-mfpu=none",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-fno-pic",
+      "-fno-unwind-tables",
+      "-fno-asynchronous-unwind-tables",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "commands": [
+      [
+        "clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_eis_shadow_v2.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/yi4k_1107_eis_shadow_v2.c.o"
+      ],
+      [
+        "clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_eis_shadow_v2_veneer.S",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/yi4k_1107_eis_shadow_v2_veneer.S.o"
+      ],
+      [
+        "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+        "-T",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/emulation.ld",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/yi4k_1107_eis_shadow_v2.c.o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/yi4k_1107_eis_shadow_v2_veneer.S.o",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-shadow-v2-rofs2eyt/shadow-v2.elf"
+      ]
+    ]
+  },
+  "callsite_checks": [
+    {
+      "address": "0xa03937f0",
+      "bytes": "c6c3ffeb"
+    },
+    {
+      "address": "0xa0393c00",
+      "bytes": "c2c2ffeb"
+    }
+  ],
+  "record_layout": {
+    "version": 2,
+    "record_bytes": 88,
+    "legacy_commit_offset": 76,
+    "previous_after_offset": 80,
+    "commit_v2_offset": 84,
+    "buffer_bytes": 11328
+  },
+  "differential_wrapper_cases": 512,
+  "mismatches": 0,
+  "full_buffer_validation": {
+    "capacity": 128,
+    "record_bytes": 88,
+    "buffer_bytes": 11328,
+    "additional_calls": 7,
+    "dropped_full": 7,
+    "legacy_commit_zero": true,
+    "previous_after_checked": true
+  },
+  "disarmed_stock_bypass": true,
+  "maximum_observed_stack_use_bytes": 112,
+  "limitations": [
+    "Synthetic ELF addresses only; no loader, hook installation, or device entry exists.",
+    "Unicorn does not prove SMP exclusive-monitor behavior, cache publication, timing, or rollback.",
+    "The v2 object is a host-side integration candidate and is not a flashable payload."
+  ],
+  "device_contacted": false
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T00:00:00+08:00",
+  "goal_status": "active",
+  "summary": {
+    "prerecord": "Typed voice START and shutter paths now share one host ring publication/recovery evidence; no camera binding",
+    "eis_native": "Static entry scan remains negative: 10 I-cache sites, 151 handlers, 0 direct sync handlers; no normal returning sync entry",
+    "eis_algorithm": "Affine sweep remains 27/27 synthetic poses; readiness gate blocks deployment on runtime DSP latch/old-slot gaps"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run03/validation.json",
+      "sha256": "4bf9ca5ce7847d37f9bbe2fbf7008bde83647027ec6e579d7859fa919c402ed1",
+      "status": "pass_host_triggered_media_ring_recovery",
+      "scope": "host archived H264/AAC replay with typed voice/shutter events; no camera/SD",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-media-ring-integration-run03.md",
+      "sha256": "e57cf52f77f393ee268dbe3b27ffbc184431c3634c9e4cd0fd76b4e26ddfbbef",
+      "status": "documented_host_trigger_mux_closure",
+      "scope": "documents three cases and explicit camera boundary",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-replacement-readiness-run05",
+      "sha256": "6fc0fdb7e65ed7acaa4a25ff1c3a22e0b6d7fc83e281b2aa25672418f8a5ee19",
+      "status": "pass_offline_eis_replacement_readiness_gate",
+      "scope": "hash-checked static/host readiness ledger; no device/ORC/RTOS/RAM writes",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-stock-affine-sweep06/sweep.json",
+      "sha256": "3c4eb7d7ff0b3a82ac544dbe54b820370c800dc7dd8713be360cfb0f61109952",
+      "status": "pass_host_stock_affine_sweep",
+      "scope": "synthetic poses and unmodified stock ARM generator; no camera/DSP",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-entry-scan-run05/summary.json",
+      "sha256": "2fd67821f76b8f0b4b9b66c5a7ce569c28b6aa459a22bf449479b287dfd71b85",
+      "status": "pass_negative_native_entry_scan",
+      "scope": "static entry scan; no device contact",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "No new camera firmware, RAM, partition, RTC, recording, voice or shutter write was performed.",
+    "The media ring evidence uses archived H264/AAC and injected typed events; it does not prove microphone recognition, GPIO, realtime encoder/FIFO, physical SD or camera mux binding.",
+    "EIS evidence remains offline/static; no custom ARM entry, cache/SMP publication, rollback or encoded-video acceptance.",
+    "The earlier approved stock diagnostic lifecycle remains the only device_access=true evidence and is already cleaned."
+  ],
+  "remaining": [
+    "Custom EIS entry with cache/SMP completion and independent rollback/recovery on target",
+    "Real gyro/lens/axis/frame calibration and encoded-video comparison",
+    "Realtime encoder/FIFO callback and physical one-minute SD ring with power-loss/full-card recovery",
+    "Original spoken phrase and physical shutter bound to camera prerecord backend",
+    "Physical Android phone acceptance and authorized RTC write/readback"
+  ]
+}

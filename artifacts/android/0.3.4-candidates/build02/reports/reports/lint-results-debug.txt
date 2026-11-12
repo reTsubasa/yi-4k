@@ -1,0 +1,274 @@
+/Users/hyc/Documents/yi4k/android/app/build.gradle:8: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 35
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/hyc/Documents/yi4k/android/app/build.gradle:22: Warning: A newer version of androidx.media3:media3-exoplayer than 1.8.0 is available: 1.11.1 [GradleDependency]
+    implementation 'androidx.media3:media3-exoplayer:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/build.gradle:23: Warning: A newer version of androidx.media3:media3-exoplayer-rtsp than 1.8.0 is available: 1.11.1 [GradleDependency]
+    implementation 'androidx.media3:media3-exoplayer-rtsp:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/build.gradle:24: Warning: A newer version of androidx.media3:media3-ui than 1.8.0 is available: 1.11.1 [GradleDependency]
+    implementation 'androidx.media3:media3-ui:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/build.gradle:25: Warning: A newer version of androidx.media3:media3-transformer than 1.8.0 is available: 1.11.1 [GradleDependency]
+    implementation 'androidx.media3:media3-transformer:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/build.gradle:26: Warning: A newer version of androidx.media3:media3-effect than 1.8.0 is available: 1.11.1 [GradleDependency]
+    implementation 'androidx.media3:media3-effect:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/hyc/Documents/yi4k/android/app/src/main/AndroidManifest.xml:5: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+        android:allowBackup="false" android:usesCleartextTraffic="true" android:supportsRtl="true">
+                             ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/CameraMediaViewer.java:121: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                Path path = new Path(); path.moveTo(cx + dp(5), cy - dp(10));
+                            ~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/CameraMediaViewer.java:476: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                Path triangle = new Path(); triangle.moveTo(cx - radius * .23f, cy - radius * .43f);
+                                ~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:414: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+            Path clip = new Path(); clip.addRoundRect(0, 0, w, h, dp(18), dp(18), Path.Direction.CW); canvas.save(); canvas.clipPath(clip);
+                        ~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:415: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+            paint.setShader(new LinearGradient(0, 0, w, h, Color.rgb(218, 230, 237), Color.rgb(151, 176, 192), Shader.TileMode.CLAMP)); canvas.drawRect(0, 0, w, h, paint); paint.setShader(null);
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:416: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+            LineIcon cameraIcon = new LineIcon(0, Color.argb(210, 255, 255, 255));
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:393: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                Bitmap b = frames.get(i); Rect source = new Rect(0, 0, b.getWidth(), b.getHeight());
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:394: Warning: Avoid object allocations during draw/layout operations (preallocate and reuse instead) [DrawAllocation]
+                Rect target = new Rect(i * getWidth() / frames.size(), 0, (i + 1) * getWidth() / frames.size(), getHeight());
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DrawAllocation":
+   You should avoid allocating objects during a drawing or layout operation.
+   These are called frequently, so a smooth UI can be interrupted by garbage
+   collection pauses caused by the object allocations.
+
+   The way this is generally handled is to allocate the needed objects up
+   front and to reuse them for each drawing operation.
+
+   Some methods allocate memory on your behalf (such as Bitmap.create), and
+   these should be handled in the same way.
+
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/CameraMediaCache.java:51: Warning: Consider also using StorageManager#getAllocatableBytes and allocateBytes which will consider clearable cached data [UsableSpace]
+            if (expected > Math.max(0, directory.getUsableSpace() - 16L * 1024 * 1024))
+                                                 ~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/LocalVideoFiles.java:26: Warning: Consider also using StorageManager#getAllocatableBytes and allocateBytes which will consider clearable cached data [UsableSpace]
+            long budget = directory.getUsableSpace() - 64L * 1024 * 1024;
+                                    ~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:279: Warning: Consider also using StorageManager#getAllocatableBytes and allocateBytes which will consider clearable cached data [UsableSpace]
+            if (getCacheDir().getUsableSpace() < 64L * 1024 * 1024) throw new IOException("手机剩余空间不足");
+                              ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UsableSpace":
+   When you need to allocate disk space for large files, consider using the
+   new allocateBytes(FileDescriptor, long) API, which will automatically clear
+   cached files belonging to other apps (as needed) to meet your request.
+
+   When deciding if the device has enough disk space to hold your new data,
+   call getAllocatableBytes(UUID) instead of using getUsableSpace(), since the
+   former will consider any cached data that the system is willing to clear on
+   your behalf.
+
+   Note that these methods require API level 26. If your app is running on
+   older devices, you will probably need to use both APIs, conditionally
+   switching on Build.VERSION.SDK_INT. Lint only looks in the same compilation
+   unit to see if you are already using both APIs, so if it warns even though
+   you are already using the new API, consider moving the calls to the same
+   file or suppressing the warning.
+
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/CameraMediaViewer.java:205: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        status.setText("正在通过相机 Wi-Fi 读取原片…");
+                       ~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:231: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            state.setText("已连接 · " + CameraSettings.displayValue("app_status", status));
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:232: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            detail.setText(CaptureParameters.value(settings, "product_name") + " · "
+                           ^
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:233: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    + CaptureParameters.value(settings, "video_resolution") + " · EIS "
+                                                                              ~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:476: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            item.getValue().setText(title + "\n" + value);
+                                    ~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:483: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            previewQuality.setText(CaptureParameters.resolution(shown) + " / " + CaptureParameters.fps(shown));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:484: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            previewFov.setText("FOV " + CaptureParameters.value(shown, "fov"));
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:484: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            previewFov.setText("FOV " + CaptureParameters.value(shown, "fov"));
+                               ~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:641: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    private void updateExportSelectedButton() { if (exportSelectedButton != null) exportSelectedButton.setText("导出选中（" + selectedMedia.size() + "）"); }
+                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:975: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                            count -> ui(() -> operation.setText("导出 " + index + "/" + entries.size() + " · " + entry.name + " · " + count / 1024 + " KiB" + (entry.bytes > 0 ? " / " + entry.bytes / 1024 + " KiB" : ""))));
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:975: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                            count -> ui(() -> operation.setText("导出 " + index + "/" + entries.size() + " · " + entry.name + " · " + count / 1024 + " KiB" + (entry.bytes > 0 ? " / " + entry.bytes / 1024 + " KiB" : ""))));
+                                                                                                                                                   ~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:1059: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        if (deviceBattery != null) deviceBattery.setText(percent + "%");
+                                                         ~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:82: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                progress.setProgress(holder.progress); status.setText("正在导出  " + holder.progress + "%");
+                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:186: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        range.setText("起点 " + time(startMs) + "  ·  终点 " + time(endMs) + "  ·  保留 " + time(endMs - startMs));
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:190: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        mute.setText(muted ? "已静音" : "保留原声"); filter.setText(grayscale ? "黑白" : "原色"); rotate.setText("旋转 " + rotation + "°");
+                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:242: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    sourceName.setText("已导入视频  ·  " + time(durationMs)); progress.setVisibility(View.GONE);
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:249: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    loading = false; progress.setVisibility(View.GONE); status.setText("无法读取视频：" + message(error));
+                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:265: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    status.setText("手机暂时无法预览此视频，可调整后尝试导出：" + message(error));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:269: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        } catch (RuntimeException error) { status.setText("预览失败：" + message(error)); releasePlayer(); }
+                                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:292: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                                        finishExport(); status.setText("已保存到相册 Movies/YI4K/Edited");
+                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:299: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                                    finishExport(); status.setText("保存失败：" + message(error));
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/VideoEditorActivity.java:353: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            sourceName.setText("已导入视频  ·  " + time(durationMs)); status.setText("已恢复剪辑，导出任务如有中断可重新开始");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:261: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        state.setTextColor(TEXT); state.setTextSize(12); state.setGravity(Gravity.RIGHT); state.setPadding(0, 0, 0, 0);
+                                                                                  ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:391: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        previewQuality = overlayPill("--", Gravity.TOP | Gravity.LEFT);
+                                                                 ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:392: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        previewFov = overlayPill("FOV --", Gravity.TOP | Gravity.RIGHT);
+                                                                 ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:393: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        previewStatus = overlayPill("连接相机", Gravity.BOTTOM | Gravity.LEFT);
+                                                                     ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:394: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        previewRec = overlayPill("--", Gravity.BOTTOM | Gravity.RIGHT);
+                                                                ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:395: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        preview.addView(previewQuality, overlayParams(Gravity.TOP | Gravity.LEFT)); preview.addView(previewFov, overlayParams(Gravity.TOP | Gravity.RIGHT));
+                                                                                                                                                    ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:395: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        preview.addView(previewQuality, overlayParams(Gravity.TOP | Gravity.LEFT)); preview.addView(previewFov, overlayParams(Gravity.TOP | Gravity.RIGHT));
+                                                                            ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:396: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        preview.addView(previewStatus, overlayParams(Gravity.BOTTOM | Gravity.LEFT)); preview.addView(previewRec, overlayParams(Gravity.BOTTOM | Gravity.RIGHT));
+                                                                                                                                                         ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:396: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        preview.addView(previewStatus, overlayParams(Gravity.BOTTOM | Gravity.LEFT)); preview.addView(previewRec, overlayParams(Gravity.BOTTOM | Gravity.RIGHT));
+                                                                              ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:542: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        state.setTextColor(TEXT); state.setTextSize(18); state.setGravity(Gravity.LEFT); state.setPadding(0, dp(6), 0, dp(6));
+                                                                                  ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:543: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        detail.setTextColor(SECONDARY); detail.setTextSize(13); detail.setGravity(Gravity.LEFT);
+                                                                                          ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:561: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        state.setTextColor(TEXT); state.setTextSize(18); state.setGravity(Gravity.LEFT); state.setPadding(0, dp(6), 0, dp(6));
+                                                                                  ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:562: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        detail.setTextColor(SECONDARY); detail.setTextSize(13); detail.setGravity(Gravity.LEFT);
+                                                                                          ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:598: Warning: Use "Gravity.START" instead of "Gravity.LEFT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        view.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT); view.setPadding(dp(16), 0, dp(16), 0); return view;
+                                                          ~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:617: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        FrameLayout.LayoutParams checkParams = new FrameLayout.LayoutParams(dp(48), dp(48), Gravity.TOP | Gravity.RIGHT); thumb.addView(choose, checkParams); card.addView(thumb);
+                                                                                                                  ~~~~~
+/Users/hyc/Documents/yi4k/android/app/src/main/java/dev/yi4k/control/MainActivity.java:830: Warning: Use "Gravity.END" instead of "Gravity.RIGHT" to ensure correct behavior in right-to-left locales [RtlHardcoded]
+        TextView path = label("/" + folder.substring("/tmp/fuse_d/".length()), 11); path.setTextColor(SECONDARY); path.setGravity(Gravity.RIGHT); libraryHeader.addView(path); content.addView(libraryHeader);
+                                                                                                                                          ~~~~~
+
+   Explanation for issues of type "RtlHardcoded":
+   Using Gravity#LEFT and Gravity#RIGHT can lead to problems when a layout is
+   rendered in locales where text flows from right to left. Use Gravity#START
+   and Gravity#END instead. Similarly, in XML gravity and layout_gravity
+   attributes, use start rather than left.
+
+   For XML attributes such as paddingLeft and layout_marginLeft, use
+   paddingStart and layout_marginStart. NOTE: If your minSdkVersion is less
+   than 17, you should add both the older left/right attributes as well as the
+   new start/end attributes. On older platforms, where RTL is not supported
+   and the start/end attributes are unknown and therefore ignored, you need
+   the older left/right attributes. There is a separate lint check which
+   catches that type of error.
+
+   (Note: For Gravity#LEFT and Gravity#START, you can use these constants even
+   when targeting older platforms, because the start bitmask is a superset of
+   the left bitmask. Therefore, you can use gravity="start" rather than
+   gravity="left|start".)
+
+0 errors, 55 warnings

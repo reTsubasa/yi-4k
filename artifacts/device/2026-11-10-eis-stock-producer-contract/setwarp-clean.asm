@@ -1,0 +1,15 @@
+a03127f0: 0700a0e1 mov r0, r7
+a03127f4: 061ba0e3 mov r1, #0x1800
+a03127f8: b33e06eb bl #0xa04a22cc
+a03127fc: 0600a0e1 mov r0, r6
+a0312800: 061ba0e3 mov r1, #0x1800
+a0312804: b03e06eb bl #0xa04a22cc
+a0312808: 040094e5 ldr r0, [r4, #4]
+a031280c: 0f3000e2 and r3, r0, #0xf
+a0312810: 0f0053e3 cmp r3, #0xf
+a0312814: 69ffff0a beq #0xa03125c0
+a0312818: 0510a0e1 mov r1, r5
+a031281c: 0820a0e1 mov r2, r8
+a0312820: 72acfeeb bl #0xa02bd9f0
+a0312824: 0050a0e1 mov r5, r0
+a0312828: 64ffffea b #0xa03125c0

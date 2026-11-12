@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-05",
+  "target": "YI 4K / Z16 (not 4K+)",
+  "artifact_scope": "public community firmware; not supplied by or read from the user camera",
+  "download_url": "https://github.com/psolyca/Yi_4k_ROOTFS/releases/download/v1.10.52/firmware_1.10.52.bin",
+  "release_url": "https://github.com/psolyca/Yi_4k_ROOTFS/releases/tag/v1.10.52",
+  "firmware": {
+    "file": "artifacts/firmware/firmware_1.10.52.bin",
+    "bytes": 59188220,
+    "sha256": "d24ce6c53fa2811fe42a11290c23cffbf8f3a1e9b66789a3a04d30db19549c5b"
+  },
+  "checks": {
+    "whole_firmware_roundtrip_byte_identical": true,
+    "repacked_sha256": "d24ce6c53fa2811fe42a11290c23cffbf8f3a1e9b66789a3a04d30db19549c5b",
+    "romfs_roundtrip_byte_identical": true,
+    "romfs_sha256": "1d29bda9567c7f931e8b5d23bdc43f96479f4d5d46a84e4c4156a3b387c576f1",
+    "partition_data_crc_matches": 8,
+    "partition_cumulative_crc_matches": 8,
+    "romfs_content_files": 69,
+    "romfs_file_crc_matches": 69
+  },
+  "warning": "Unpacker emitted Detection finished with unusual condition; exact byte roundtrip passed for this artifact only.",
+  "commands": {
+    "extract": "python3 -W ignore::DeprecationWarning references/psolyca_unpacker/firmware_unpacker/amba_fwpak_yi.py -vvv -x -f artifacts/firmware/firmware_1.10.52.bin -d v1.10.52",
+    "repack": "python3 -W ignore::DeprecationWarning references/psolyca_unpacker/firmware_unpacker/amba_fwpak_yi.py -vvv -p -f artifacts/firmware/roundtrip_1.10.52.bin -d v1.10.52",
+    "romfs_extract": "python3 -W ignore::DeprecationWarning references/psolyca_unpacker/firmware_unpacker/amba_romfs_yi.py -vvv -x -f artifacts/firmware/v1.10.52/_part_romfs.a9s -d ../romfs",
+    "romfs_repack": "python3 -W ignore::DeprecationWarning references/psolyca_unpacker/firmware_unpacker/amba_romfs_yi.py -vvv -p -f artifacts/firmware/romfs-roundtrip.a9s -d romfs"
+  },
+  "evidence_types": [
+    "reference source review",
+    "offline raw byte inventory",
+    "offline CRC verification",
+    "offline ASCII string extraction",
+    "candidate pointer-table structural inference"
+  ],
+  "not_performed": [
+    "native decompilation",
+    "device connection",
+    "flashing",
+    "on-device native payload execution",
+    "full boot chain verification"
+  ],
+  "sources": [
+    {
+      "repository": "https://github.com/irungentoo/Xiaomi_Yi_4k_Camera",
+      "commit": "75af5a6683e4743a060cfaa6d2f362994ad1db2f",
+      "local_path": "references/Xiaomi_Yi_4k_Camera"
+    },
+    {
+      "repository": "https://github.com/psolyca/Yi_4k_ROOTFS",
+      "commit": "6a6e87526f3985ec8bfddb4e7b0074d51f9d3b52",
+      "local_path": "references/Yi_4k_ROOTFS"
+    },
+    {
+      "repository": "https://github.com/psolyca/Yi_4k_Events_Manager",
+      "commit": "b95432a849a11fa51ae47ad6e93d72b6a8de306c",
+      "local_path": "references/Yi_4k_Events_Manager"
+    },
+    {
+      "repository": "https://github.com/psolyca/Xiaomi_Yi_4k_Camera",
+      "commit": "e47664877c910b7b4039f4f425ae09397b3a3e4d",
+      "local_path": "references/psolyca_unpacker"
+    },
+    {
+      "repository": "https://github.com/petabyt/liemoth",
+      "commit": "3c15be953d5bab3406cd7325677686059c643d13",
+      "local_path": "references/liemoth"
+    },
+    {
+      "repository": "https://github.com/o-gs/dji-firmware-tools",
+      "commit": "1db36ddf45d8018ea849f0c03c5e45d2f3068844",
+      "local_path": "references/related_soc/dji-firmware-tools"
+    }
+  ]
+}

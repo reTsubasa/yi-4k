@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T00:00:00+08:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.5.0 UI/connection/shutter host delivery complete; physical acceptance pending",
+    "prerecord": "Host ring and typed voice/shutter recovery evidence extended; realtime camera SD binding pending",
+    "eis_native": "Native entry/cache/SMP/recovery gate remains open; no target write",
+    "eis_algorithm": "Candidate quality/mesh behavior extended offline; stock ABI and encoded-video acceptance remain blocked"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-12-build-0.5.0.json",
+      "sha256": "01e8a2798812218fa5221c16528fee150ab7c82b325e749bee7387b637e2ff40",
+      "status": "pass_android_0_5_0_host_build",
+      "scope": "Android 212 unit tests, lint and APK; no physical phone",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-13-eis-candidate-quality-run01",
+      "sha256": "35de27ac6750009dc9e7cbdf2fadb84a2aca498df7de341f7d844611560ad77a",
+      "status": "pass_offline_eis_candidate_quality",
+      "scope": "Synthetic causal gyro residual behavior; no real gyro/video",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-13-eis-candidate-archive-run01",
+      "sha256": "08ea2dc09cb293cacd8294867d559c67e39e396990d570deb79cada9b13f9516",
+      "status": "pass_offline_eis_candidate_archive",
+      "scope": "Candidate archive/ABI audit; deployment gate remains closed",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-voice-prerecord-binding/audit.json",
+      "sha256": "366e388a769498b355ef407e0c7c69be621f7a7d6284fc713e87c1d7c3c9aabe",
+      "status": "pass_offline_voice_prerecord_binding",
+      "scope": "Typed START/STOP semantic binding; no acoustic/physical camera test",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-media-ring-run03/validation.json",
+      "sha256": "4bf9ca5ce7847d37f9bbe2fbf7008bde83647027ec6e579d7859fa919c402ed1",
+      "status": "pass_host_prerecord_ring_recovery",
+      "scope": "Host H264/AAC trigger/recovery and playable output; no realtime camera/SD",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "No custom firmware, RAM, partition, RTC, recording, voice or shutter write was performed in this continuation.",
+    "EIS candidate results are synthetic/host and do not prove real gyro, lens calibration, DSP latch, encoded-video quality or deployment.",
+    "Prerecord ring results use archived H264/AAC and typed events; they do not prove microphone recognition, GPIO, realtime encoder/FIFO, physical SD or camera mux binding.",
+    "Android APK has no physical-phone or real-camera acceptance in this run."
+  ],
+  "remaining": [
+    "Target EIS entry with cache/SMP completion and independent rollback/recovery",
+    "Real gyro/lens/axis/frame calibration and encoded-video comparison",
+    "Realtime encoder/FIFO callback and physical one-minute SD ring with power-loss/full-card recovery",
+    "Original spoken phrase and physical shutter bound to camera prerecord backend",
+    "Physical Android phone acceptance and authorized RTC write/readback"
+  ]
+}

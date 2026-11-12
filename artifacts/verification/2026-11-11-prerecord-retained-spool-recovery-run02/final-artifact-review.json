@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "status": "pass_final_read_only_artifact_review",
+  "scope": "No rerun, no camera access, no matrix or roadmap edits; only final report written",
+  "audit_sha256": "259048247bb453c828a1ffb3888549ef53d62170fe4a0ccc05b367bd30dafa1f",
+  "source_hash_checks": {
+    "recovery_script_sha256": "f67001fbddda657c7e5044c8803e7cf992efd71e4fb39f9eb4f12e98bb693ba8",
+    "spool_core_sha256": "300196050a915e8bf2716044c3ddde718f45379d9d08c407a9326116ebfa9ebe",
+    "spool_header_sha256": "36758602a36841d8253daa57d069399387b74baaac0adee45945e14ce516ba80",
+    "wrapper_sha256": "c6009686567e5d2dc9d877a1e1d2b3fb237ef91bc698b2cdd8d03636044687af",
+    "compiled_library_sha256": "e4867d511ab7054fcee4bf4ffda8f8525a879c84f5752355f971eb5b22cbaea2",
+    "all_integration_dependencies_match": true
+  },
+  "positive_packets_verified": 22,
+  "positive_sets": [
+    21,
+    1
+  ],
+  "negative_sets_verified": 2,
+  "original_snapshots_unchanged": true,
+  "source_oracle_used_for_payload": false,
+  "whole_recording_publication_gate": "reject",
+  "cases": [
+    {
+      "name": "close-failure-and-held12-positive",
+      "spool_sha256": "162c78775a7f23829ac475fbabee4064e92f8d0b0e6015ef1efad8e423126eb1",
+      "readback_sha256": "98c7d6a4aee097b60de8bc5b388acc91c00aa2a3647be45a9ddbb492da3fc967",
+      "expected_manifest_sha256": "6686a87fd50241bb3af38b7796a25a2377207577fcc49ea2a036ee2a292723cf",
+      "records": 21,
+      "expected_records": 21,
+      "snapshot_gate": "pass",
+      "verified_directory_present": true,
+      "all_recovered_packet_SHA_and_bytes_match_original_snapshots": true,
+      "scan_status": 0
+    },
+    {
+      "name": "close-failure-and-held12-record-boundary-cut",
+      "spool_sha256": "6f51a9b5425bb9c38975879b97b56d73786500471c1f4ba825c125db9d2c02f7",
+      "readback_sha256": "e930289c82261c12d8b1ea6f33dae0449f5412c8fd20f3ff18aecee7a46bdc7e",
+      "expected_manifest_sha256": "6686a87fd50241bb3af38b7796a25a2377207577fcc49ea2a036ee2a292723cf",
+      "records": 20,
+      "expected_records": 21,
+      "snapshot_gate": "reject",
+      "verified_directory_present": false,
+      "all_recovered_packet_SHA_and_bytes_match_original_snapshots": true,
+      "scan_status": 0
+    },
+    {
+      "name": "close-failure-and-held12-torn-final-marker",
+      "spool_sha256": "6eb0a3c4d30b0d4c2e9e7203efd097f14307a19a38c4cedbabbeb932c86a82f4",
+      "readback_sha256": "3b0eb6192c3d709120cd74866660a7a66710bb53b35e99483fc84c1fec9bba2b",
+      "expected_manifest_sha256": "6686a87fd50241bb3af38b7796a25a2377207577fcc49ea2a036ee2a292723cf",
+      "records": 20,
+      "expected_records": 21,
+      "snapshot_gate": "reject",
+      "verified_directory_present": false,
+      "all_recovered_packet_SHA_and_bytes_match_original_snapshots": true,
+      "scan_status": -5
+    },
+    {
+      "name": "final-held25-positive",
+      "spool_sha256": "39b45734db911d4c842b9b69ea2227610fc27ba26f4c9ebc159f4e30a53c948c",
+      "readback_sha256": "2af65fc7a9c9af682595592b3c2aa6c82bbb4cabff654232e08fd0e60af2946c",
+      "expected_manifest_sha256": "baa66af39409336e77c3bea93f9ada56502912dbd131cdf94d254e92cf2dfcd8",
+      "records": 1,
+      "expected_records": 1,
+      "snapshot_gate": "pass",
+      "verified_directory_present": true,
+      "all_recovered_packet_SHA_and_bytes_match_original_snapshots": true,
+      "scan_status": 0
+    }
+  ],
+  "limitations": [
+    "Canonical archived metadata only; unavailable source addresses/reserved descriptor fields are not recovered.",
+    "Host POSIX recovery evidence only; no physical SD power-loss durability, target binding or complete recording proof."
+  ]
+}

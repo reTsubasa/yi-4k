@@ -1,0 +1,431 @@
+{
+  "schema": "native-execution-entry-scan/v2",
+  "scope": "offline fixed A32 RTOS window and fixed Ghidra exports; no device contact",
+  "device_access": false,
+  "target_write": false,
+  "payload_or_writer_emitted": false,
+  "image": {
+    "path": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "base": "0xa0100000",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "icache_scan": {
+    "alignment": 4,
+    "encoding": "A32",
+    "sites": [
+      {
+        "address": "0xa03d0738",
+        "operation": "ICIALLUIS",
+        "bytes": "110f07ee",
+        "instruction": "mcr p15, #0, r0, c7, c1, #0",
+        "owner": {
+          "entry": "0xa03d06c8",
+          "name": "matched_FUN_a03d06c8",
+          "body_range": "a03d06c8-a03d074f"
+        },
+        "owner_incoming": []
+      },
+      {
+        "address": "0xa03d0904",
+        "operation": "ICIALLUIS",
+        "bytes": "114f07ee",
+        "instruction": "mcr p15, #0, r4, c7, c1, #0",
+        "owner": {
+          "entry": "0xa03d0780",
+          "name": "matched_FUN_a03d0780",
+          "body_range": "a03d0780-a03d0947"
+        },
+        "owner_incoming": []
+      },
+      {
+        "address": "0xa03d20c8",
+        "operation": "ICIALLU",
+        "bytes": "157f07ee",
+        "instruction": "mcr p15, #0, r7, c7, c5, #0",
+        "owner": null,
+        "owner_incoming": []
+      },
+      {
+        "address": "0xa03d2108",
+        "operation": "ICIALLU",
+        "bytes": "157f07ee",
+        "instruction": "mcr p15, #0, r7, c7, c5, #0",
+        "owner": null,
+        "owner_incoming": []
+      },
+      {
+        "address": "0xa03d2148",
+        "operation": "ICIALLU",
+        "bytes": "157f07ee",
+        "instruction": "mcr p15, #0, r7, c7, c5, #0",
+        "owner": null,
+        "owner_incoming": []
+      },
+      {
+        "address": "0xa04a2880",
+        "operation": "ICIALLU",
+        "bytes": "151f07ee",
+        "instruction": "mcr p15, #0, r1, c7, c5, #0",
+        "owner": {
+          "entry": "0xa04a283c",
+          "name": "matched_FUN_a04a283c",
+          "body_range": "a04a283c-a04a28cf"
+        },
+        "owner_incoming": [
+          {
+            "caller": "0xa04a5128",
+            "site": "0xa04a52a8",
+            "target": "0xa04a283c",
+            "type": "UNCONDITIONAL_CALL"
+          },
+          {
+            "caller": "0xa04a5410",
+            "site": "0xa04a5474",
+            "target": "0xa04a283c",
+            "type": "UNCONDITIONAL_CALL"
+          }
+        ]
+      },
+      {
+        "address": "0xa04a42d4",
+        "operation": "ICIALLU",
+        "bytes": "157f07ee",
+        "instruction": "mcr p15, #0, r7, c7, c5, #0",
+        "owner": {
+          "entry": "0xa04a41e8",
+          "name": "matched_FUN_a04a41e8",
+          "body_range": "a04a41e8-a04a43f7"
+        },
+        "owner_incoming": [
+          {
+            "caller": "0xa04a1d2c",
+            "site": "0xa04a1d40",
+            "target": "0xa04a41e8",
+            "type": "UNCONDITIONAL_CALL"
+          }
+        ]
+      },
+      {
+        "address": "0xa04a43cc",
+        "operation": "ICIALLU",
+        "bytes": "154f07ee",
+        "instruction": "mcr p15, #0, r4, c7, c5, #0",
+        "owner": {
+          "entry": "0xa04a41e8",
+          "name": "matched_FUN_a04a41e8",
+          "body_range": "a04a41e8-a04a43f7"
+        },
+        "owner_incoming": [
+          {
+            "caller": "0xa04a1d2c",
+            "site": "0xa04a1d40",
+            "target": "0xa04a41e8",
+            "type": "UNCONDITIONAL_CALL"
+          }
+        ]
+      },
+      {
+        "address": "0xa04a442c",
+        "operation": "ICIALLU",
+        "bytes": "155f07ee",
+        "instruction": "mcr p15, #0, r5, c7, c5, #0",
+        "owner": {
+          "entry": "0xa04a43fc",
+          "name": "matched_FUN_a04a43fc",
+          "body_range": "a04a43fc-a04a44b3"
+        },
+        "owner_incoming": [
+          {
+            "caller": "0xa01000fc",
+            "site": "0xa03bc21c",
+            "target": "0xa04a43fc",
+            "type": "UNCONDITIONAL_CALL"
+          }
+        ]
+      },
+      {
+        "address": "0xa04a4490",
+        "operation": "ICIALLU",
+        "bytes": "156f07ee",
+        "instruction": "mcr p15, #0, r6, c7, c5, #0",
+        "owner": {
+          "entry": "0xa04a43fc",
+          "name": "matched_FUN_a04a43fc",
+          "body_range": "a04a43fc-a04a44b3"
+        },
+        "owner_incoming": [
+          {
+            "caller": "0xa01000fc",
+            "site": "0xa03bc21c",
+            "target": "0xa04a43fc",
+            "type": "UNCONDITIONAL_CALL"
+          }
+        ]
+      }
+    ],
+    "absent_in_scope": [
+      "ICIMVAU (MCR c7,c5,1)"
+    ],
+    "limitations": [
+      "No Thumb/dynamic/uncaptured code; opcode is not reachability or hardware completion."
+    ]
+  },
+  "returning_candidates": {
+    "boss_start": {
+      "start": "0xa03cf01c",
+      "end_exclusive": "0xa03cf194",
+      "bytes": 376,
+      "sha256": "ddd2f85624905ab18f7424a8717b05959b6f200821be0d1c3b2f05a5b58901ac",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/boss_start.asm"
+    },
+    "boss_resume": {
+      "start": "0xa03cf4a0",
+      "end_exclusive": "0xa03cf538",
+      "bytes": 152,
+      "sha256": "806d8057e0dae9288d3cbe14cd38f1aa9bbdd61ea95d47d861408f7a4fdc6369",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/boss_resume.asm"
+    },
+    "boss_restore": {
+      "start": "0xa03d0780",
+      "end_exclusive": "0xa03d0948",
+      "bytes": 456,
+      "sha256": "d18050f9346223da81e66c0f6d6fccccb4f458ca17301ac67fd0c94d9cae5835",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/boss_restore.asm"
+    },
+    "boss_callback_and_send": {
+      "start": "0xa03cfbd8",
+      "end_exclusive": "0xa03cfc0c",
+      "bytes": 52,
+      "sha256": "b618898048865eee325ae8614467e27079ea4be99a9a6d9fce086c6e0d79a0aa",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/boss_callback_and_send.asm"
+    },
+    "low_power_dispatch": {
+      "start": "0xa04a5410",
+      "end_exclusive": "0xa04a54d0",
+      "bytes": 192,
+      "sha256": "54982261bc5817d5928f2fc379fb24fb7e630e4038a20c0ec21084fb55a0eb4c",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/low_power_dispatch.asm"
+    },
+    "low_power_cache_lockdown": {
+      "start": "0xa04a283c",
+      "end_exclusive": "0xa04a28d0",
+      "bytes": 148,
+      "sha256": "b5bd52810166320f50d4908e3a73f19b7b15017c2e37682d70bee5378e645841",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/low_power_cache_lockdown.asm"
+    },
+    "remote_interrupt_send": {
+      "start": "0xa0482f3c",
+      "end_exclusive": "0xa0482fcc",
+      "bytes": 144,
+      "sha256": "c28836c75928700f3ae74b901f24d5e407d67ff56deb5cd932d1f2373228480c",
+      "asm": "artifacts/device/2026-11-11-native-execution-entry-scan/remote_interrupt_send.asm"
+    }
+  },
+  "direct_target_inventory": [
+    {
+      "target": "0xa03cfbd8",
+      "label": "boss_local_tlb_helper",
+      "callers": [
+        {
+          "caller": "0xa03cfcac",
+          "site": "0xa03cff88",
+          "target": "0xa03cfbd8",
+          "type": "UNCONDITIONAL_CALL"
+        },
+        {
+          "caller": "0xa03d0780",
+          "site": "0xa03d0898",
+          "target": "0xa03cfbd8",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "target": "0xa03d06c8",
+      "label": "boss_resume",
+      "callers": []
+    },
+    {
+      "target": "0xa03d0780",
+      "label": "boss_restore",
+      "callers": []
+    },
+    {
+      "target": "0xa04a283c",
+      "label": "low_power_cache_lockdown",
+      "callers": [
+        {
+          "caller": "0xa04a5128",
+          "site": "0xa04a52a8",
+          "target": "0xa04a283c",
+          "type": "UNCONDITIONAL_CALL"
+        },
+        {
+          "caller": "0xa04a5410",
+          "site": "0xa04a5474",
+          "target": "0xa04a283c",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "target": "0xa04a5128",
+      "label": "low_power_sleep_body",
+      "callers": [
+        {
+          "caller": "0xa04a5410",
+          "site": "0xa04a5424",
+          "target": "0xa04a5128",
+          "type": "UNCONDITIONAL_CALL"
+        }
+      ]
+    },
+    {
+      "target": "0xa04a5410",
+      "label": "low_power_dispatch_with_callbacks",
+      "callers": [
+        {
+          "caller": "0xa049a3c8",
+          "site": "0xa049a3c8",
+          "target": "0xa04a5410",
+          "type": "UNCONDITIONAL_JUMP"
+        }
+      ]
+    }
+  ],
+  "remote_callback_notification": {
+    "entry": "0xa0482f3c",
+    "direct_callers": [
+      {
+        "caller": "0xa03cfcac",
+        "site": "0xa03cffe0",
+        "target": "0xa0482f3c",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "caller": "0xa03d0780",
+        "site": "0xa03d08e4",
+        "target": "0xa0482f3c",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "core_selection": "calls A04A2990 for current core; mode=1 selects bitwise-complement target mask",
+    "operations": [
+      "A0497454 configures target mask",
+      "A0497628 triggers interrupt/event",
+      "A03C3C5C releases lock"
+    ],
+    "completion_wait_in_body": false,
+    "ack_generation_or_status_read_in_body": false,
+    "interpretation": "notification sender only; return is not remote handler completion"
+  },
+  "task_and_core_context": {
+    "boss_resume": {
+      "entry": "0xa03d06c8",
+      "task_argument": "param_1 points saved BOSS task/context",
+      "normal_condition": "takes event flag (0x40, timeout 5000), then restores context and returns 0",
+      "core_selection": "no caller-controlled core argument; context restore owns task/core state"
+    },
+    "boss_restore": {
+      "entry": "0xa03d0780",
+      "normal_condition": "task state at context+0xac must satisfy (state-2 & ~2)==0",
+      "side_effects": "suspends/restores BOSS context, writes mappings/TCB, not a standalone entry"
+    }
+  },
+  "callback_ownership": {
+    "boss_descriptor": {
+      "descriptor_factory": "0xa03cfbcc",
+      "descriptor_data": "0xa078965c",
+      "descriptor_words": [
+        "0xa03cfcac",
+        "0xa03d0998",
+        "0xa03cfc14",
+        "0xa03d02d4",
+        "0xa03d06c8",
+        "0xa03d0780",
+        "0xa03d0a88",
+        "0xa03cfc0c"
+      ],
+      "manager_object": "0xa0789610",
+      "callback_slot_write_sites": [
+        "0xa03cfcac",
+        "0xa03d08e0"
+      ],
+      "callback_invocation": "A03CF01C loads descriptor+0x10 and calls it; A03CF4A0 calls descriptor+0x10 on resume",
+      "external_parameter": false,
+      "returning": true,
+      "publication": false
+    },
+    "low_power": {
+      "entry": "0xa04a5410",
+      "incoming": [
+        {
+          "caller": "0xa049a3c8",
+          "site": "0xa049a3c8",
+          "type": "UNCONDITIONAL_JUMP"
+        }
+      ],
+      "parameter_references": [
+        {
+          "site": "0xa049a3c8",
+          "type": "UNCONDITIONAL_JUMP"
+        },
+        {
+          "site": "0xa04a5294",
+          "type": "PARAM"
+        },
+        {
+          "site": "0xa04a5470",
+          "type": "PARAM"
+        }
+      ],
+      "callback_sites": [
+        "0xa04a5438 (blx r1)",
+        "0xa04a5128 receives r1/r2 as callbacks"
+      ],
+      "external_parameter": false,
+      "returning": true,
+      "publication": false,
+      "normal_callers": [
+        "0xa049a3c8 thunk",
+        "0xa04a5128/0xa04a5410 internal low-power path"
+      ]
+    }
+  },
+  "stock_command_handler_scan": {
+    "tables": [
+      [
+        "antscmd",
+        69
+      ],
+      [
+        "imgcmd",
+        17
+      ],
+      [
+        "ipccmd",
+        6
+      ],
+      [
+        "drvcmd",
+        21
+      ],
+      [
+        "shell",
+        38
+      ]
+    ],
+    "handler_count": 151,
+    "handlers_with_direct_sync_candidate": [],
+    "all_handlers_directly_checked": true,
+    "limitations": [
+      "Indirect calls/computed handler pointers remain unknown; table inventory is static."
+    ]
+  },
+  "conclusion": {
+    "normal_returning_sync_entry": false,
+    "best_next_action": "Do not attempt a stock handler or callback for code publication; only pursue startup-integrated/static extension or obtain a separately approved runtime ownership and completion contract.",
+    "reason": "ICIALLUIS/ICIALLU sites remain embedded in BOSS restore, MMU/context restore, or low-power setup. BOSS callback ownership is fixed descriptor state with no external parameter and no completion acknowledgment; low-power callbacks are internal parameters and never reach a stock command handler."
+  },
+  "script_sha256": "515eaba5afa9c59ef053db553b32543db79f18c6a732162981e29b1e3bcfd892"
+}

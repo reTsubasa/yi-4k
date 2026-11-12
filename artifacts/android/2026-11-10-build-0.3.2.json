@@ -1,0 +1,120 @@
+{
+  "evidence_type": "Host Gradle tests and actual Android 34 AOSP arm64 emulator execution; no physical phone acceptance",
+  "packaged_at_utc": "2026-11-10T11:07:53.084574+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.2-debug.apk",
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "sha256": "b81ba526cf4d39379903a277123bf0115a1864e829c466b29d19c3239a7856a8",
+  "size_bytes": 11526461,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.2",
+  "version_code": 5,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug assembleDebugAndroidTest",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "android_emulator_execution": true,
+    "physical_phone_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 54
+  },
+  "android_runtime": {
+    "system": "AOSP API 34 arm64-v8a",
+    "tests": 7,
+    "failures": 0,
+    "actual_media3_export": true,
+    "actual_mediastore_publication_and_cancel": true,
+    "actual_system_picker_editor_save_workflow": true,
+    "synthetic_source": "3s H264 320x180 at 15fps + AAC48k; not camera footage",
+    "reports": "artifacts/android/0.3.2-device-reports/local-suite-run01",
+    "emulator_stopped": true
+  },
+  "camera_preview": {
+    "evidence": "artifacts/android/0.3.2-device-reports/camera-preview-run02/acceptance.json",
+    "scope": "actual Android CameraLivePreview/Network socket and rendered first frame on AVD via host route; CELLULAR network; not physical phone Wi-Fi or full MainActivity workflow",
+    "video": "Camera-advertised live RTSP source; no synthetic video",
+    "audio_track_observed": false,
+    "audio_evidence": "prior host probe; this Android first-frame case does not inspect audio tracks",
+    "status_restored": true,
+    "settings_equal": true
+  },
+  "limits": [
+    "Physical phone hotspot routing, UI capture/settings-write/disconnection recovery and phone RTSP compatibility await acceptance",
+    "Short 1080p real original editor and UI original exports passed on AVD; 4K, large files, long clips and perceptual A/V sync remain unverified",
+    "Seven local AVD tests ran together; preview, camera media, MainActivity and real-source editor suites ran separately",
+    "No BGM/text/transitions/speed/multiclip editing",
+    "Camera EIS replacement and standalone 60s prerecord remain unimplemented"
+  ],
+  "reports": "artifacts/android/0.3.2-reports",
+  "media3_version": "1.8.0",
+  "changes_from_0_3_1": [
+    "Upgrade Media3 1.5.1 to 1.8.0; per-processor GL resource ownership avoids shared stale EGL contexts",
+    "Add actual DocumentsUI -> editor controls -> codec -> MediaStore workflow regression test",
+    "Include actual MediaStore publication/cancellation in default seven-test AVD suite"
+  ],
+  "verification_updated_at_utc": "2026-11-10T11:39:06.264624+00:00",
+  "camera_media": {
+    "evidence": "artifacts/android/0.3.2-device-reports/camera-media-run01/acceptance.json",
+    "tests": 2,
+    "failures": 0,
+    "scope": "Actual Android Network/CameraClient/MediaExporter/MediaStore with real camera original video and photo; AVD via host route, not MainActivity UI or physical phone",
+    "independent_camera_side_sha256": true,
+    "published_bytes_equal_camera": true,
+    "actual_video_and_jpeg_decode": true,
+    "cancellation_after_actual_camera_bytes": true,
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "target_files_written": false,
+    "emulator_stopped": true
+  },
+  "camera_main_workflow": {
+    "evidence": "artifacts/android/0.3.2-device-reports/camera-main-workflow-run02/acceptance.json",
+    "tests": 1,
+    "failures": 0,
+    "scope": "Actual MainActivity guide, Android Wi-Fi Network selection, camera API connect, Chinese settings read, folder browse, two checkboxes/batch original export, hash/decode validation and disconnect; AVD via host route",
+    "physical_phone_hotspot": false,
+    "camera_capture_or_settings_write": false,
+    "before_after_status_settings_listings_files_boot_id_equal": true,
+    "emulator_stopped": true
+  },
+  "real_camera_editor": {
+    "evidence": "artifacts/android/0.3.2-device-reports/camera-original-editor-run01/acceptance.json",
+    "details": "artifacts/android/0.3.2-device-reports/camera-original-editor-run01/workflow-screens/camera-original-editor/camera-original-editor.json",
+    "tests": 1,
+    "failures": 0,
+    "scope": "Actual existing 1080p H264/AAC camera original -> Network-bound API/HTTP export -> real DocumentsUI -> actual editor UI non-keyframe trim 500-2500ms, audio enabled, grayscale, rotation90 -> MediaStore -> decode/pixel/encoded sample timeline validation",
+    "source": "YDXJ0136.MP4",
+    "source_bytes": 31400038,
+    "source_duration_ms": 3637,
+    "source_hash_preserved": true,
+    "output_duration_ms": 2017,
+    "output_decoded_width": 1080,
+    "output_decoded_height": 1920,
+    "video_samples": 60,
+    "audio_samples": 94,
+    "perceptual_audio_video_sync_verified": false,
+    "physical_phone": false,
+    "emulator_stopped": true,
+    "before_after_status_settings_listings_files_boot_id_equal": true
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T01:36:42.408615+00:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.4.6 host delivery: clean build, 204 unit tests, 0 lint errors, immersive controls/16:9/orientation, voice diagnostic and explicit camera clock sync",
+    "prerecord": "Host ring/SD simulation plus typed voice/shutter seam and real-camera-source publication gate; live camera callback/trigger/SD backend still unverified",
+    "eis": "49-check native evidence consistency; read-only 1.10.7 readiness confirmed; stock-only trace staging/failed startup trigger/cleanup recovered; host candidate mesh remains non-deployed"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-12-build-0.4.6.json",
+      "sha256": "d20dbee8cd53efecd0cfd6a29e3ac23ef068fbfdfbd9f3dde30b08144a920649",
+      "bytes": 1788,
+      "status": "pass_host_clean_build_and_unit_tests",
+      "scope": "host Android build; no physical phone/camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/android-ui-0.4.6.md",
+      "sha256": "290106453ede67584444724c3046b63cfa592fff578c86db593c0e8508ab70e8",
+      "bytes": 1759,
+      "status": "documented_delivery",
+      "scope": "host/loopback scope; no physical phone/camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-spool-seal-run04/validation.json",
+      "sha256": "ef407fbbfc7672a72e59f352e658d0583654afd31d648fa60106ae6cf199e29d",
+      "bytes": 38913,
+      "status": "pass_source_coverage_seal_host_arm_posix",
+      "scope": "host POSIX + Cortex-A9 emulation; no device/SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-spool-seal-run04/ubsan-host-48.txt",
+      "sha256": "5187df76c399e24c3cc3f86a3d9185fdf175080451a06a32bb0c163811c25ad4",
+      "bytes": 402,
+      "status": "pass_ubsan_host_48_cases",
+      "scope": "host Apple Clang UBSan; no device/SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-native-evidence-consistency-run01/audit.json",
+      "sha256": "429ce7b14bd29229f50874c19c99f41e83520ea3f44d8cf79b633dde87c9f0c8",
+      "bytes": 12133,
+      "status": "passed",
+      "scope": "offline provenance over fixed RTOS image; no target execution",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-mesh/validation.json",
+      "sha256": "6cab1e7e0d7aada4f0a349e6586d4e78abd963b8e7bba702a906fac1f2a48dc1",
+      "bytes": 1038,
+      "status": "passed_host_candidate_and_rejection_checks",
+      "scope": "synthetic gyro trace host candidate; no device access",
+      "device_access": false
+    },
+    {
+      "path": "docs/eis-candidate-mesh-replacement.md",
+      "sha256": "af1e0abe23de97318741ef28b1bcddba8868d3e11b008b0de80d26c786e5be8c",
+      "bytes": 2481,
+      "status": "documented_candidate",
+      "scope": "host algorithm candidate boundary; no device access",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-ring-sd-backend.md",
+      "sha256": "6905743872a6bd169fc7171609897c22af4fbcb92d634d3a6d0d3cb19f6dccfe",
+      "bytes": 2537,
+      "status": "documented_host_simulation",
+      "scope": "bounded ring/eviction simulation; no device access",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-ring-sd-run12/validation.json",
+      "sha256": "c55a07a73d41bea558d9e89a1e5077474cf4966275bec0d7cda9600241604949",
+      "bytes": 1492,
+      "status": "pass_host_bounded_ring_sd_simulation",
+      "scope": "POSIX host bounded ring with sidecar tamper rejection; no camera/physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-native-evidence-consistency-run04/audit.json",
+      "sha256": "429ce7b14bd29229f50874c19c99f41e83520ea3f44d8cf79b633dde87c9f0c8",
+      "bytes": 12133,
+      "status": "passed",
+      "scope": "offline provenance over fixed RTOS image; no target execution",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/device/2026-11-12-readiness-probe-01/session.json",
+      "sha256": "288276e596d847ba5795212367a67abd8414b4d5a455d580188641da18c41c1d",
+      "bytes": 7096,
+      "status": "pass_readonly_device_readiness",
+      "scope": "read-only API/Linux probe; no target write",
+      "device_access": true
+    },
+    {
+      "path": "docs/device-readiness-probe-01.md",
+      "sha256": "c007e829bd1dcf4dd3ca3830478c801701c5f330916575f21147cf2119a4613c",
+      "bytes": 1129,
+      "status": "documented_readonly_probe",
+      "scope": "read-only device reachability and identity; no target write",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/device/2026-11-12-rtos-readiness-stage-01/session.json",
+      "sha256": "2a3c7410b51b236372274757422d2d27046145be0341c6730c572ef11c3f38f2",
+      "bytes": 8059,
+      "status": "pass_staged_and_hash_verified",
+      "scope": "stock diagnostic files staged exclusively; no firmware/RAM write",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-rtos-readiness-collect-01/session.json",
+      "sha256": "6f6b6eaabec1c6d1abf8847ae09b693880c8892cfa6c5eccf14bb954a41b988d",
+      "bytes": 11128,
+      "status": "pass_collect_no_startup_trigger",
+      "scope": "collect observed no autoexec outputs; no custom RTOS execution",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-rtos-readiness-cleanup-01/session.json",
+      "sha256": "5dbfe982d0b61469a1289a442b5c1649415aa41929c79ffd20d4af13845e9f6e",
+      "bytes": 5871,
+      "status": "pass_owned_cleanup",
+      "scope": "staged diagnostic files hash-checked and removed",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-native-eis-trace-stage-01/session.json",
+      "sha256": "4850f80007e94fc29f061a96a16b34312fd37441c018fa6e42819d682626a8e1",
+      "bytes": 10849,
+      "status": "pass_stock_only_trace_staged",
+      "scope": "diagnostic-only stock EIS trace staged; no custom code",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-native-eis-trace-collect-01/session.json",
+      "sha256": "8684ce17d37eb26c18fce62398c05fcc7a188431e7ee0acba4284181acf23df5",
+      "bytes": 10596,
+      "status": "expected_failure_no_startup_trigger",
+      "scope": "active snapshot absent; execution not claimed",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-native-eis-trace-disarm-01/session.json",
+      "sha256": "122c7090cf41ab2ab9f9256f873138fcc5a5a99cad66480e5586c6f9d36b9cdd",
+      "bytes": 10643,
+      "status": "pass_owned_configuration_removed",
+      "scope": "failed trace configuration removed with evidence retained",
+      "device_access": true
+    },
+    {
+      "path": "artifacts/device/2026-11-12-readiness-probe-02/session.json",
+      "sha256": "1ae41e622a69e9334950f55ceac22d365e6be219af9a84a0e7b350f292f36b63",
+      "bytes": 7109,
+      "status": "pass_readonly_post_cleanup",
+      "scope": "post-cleanup idle/EIS-on/SD-insert readback",
+      "device_access": true
+    },
+    {
+      "path": "docs/device-native-eis-trace-run-01.md",
+      "sha256": "9dfad9dd26a42abf39123bd9f3c106a7933df77c6b04e04d44fb084a92c63474",
+      "bytes": 1840,
+      "status": "documented_device_failure_recovery",
+      "scope": "stock-only trace failure and cleanup boundary",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/host-prerecord/trigger-buffer-integration.json",
+      "sha256": "9e24f41a3027fa6c84526ae3a37285b3bb2a1c3d142b565b68453c84d478986d",
+      "bytes": 23641,
+      "status": "pass_host_typed_trigger_buffer_seam",
+      "scope": "typed voice/shutter trigger to 60s host buffer; no camera/mic/GPIO",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/host-prerecord/real-camera-65s-publication-gate-run01/manifest.json",
+      "sha256": "4c139cacbef55c150896b418f52f3edeb8a372c065afdd6be9a079046f4b1c15",
+      "bytes": 19793,
+      "status": "pass_host_replay_real_camera_source",
+      "scope": "real camera ordinary recording source replay/publication gate; no live prerecord trigger",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-trigger-contract.md",
+      "sha256": "b2ce4a8e91a47012ba5e03b412d1cfef1f5f73c20ba15c3e951c494fb534a9ae",
+      "bytes": 1883,
+      "status": "documented_trigger_boundary",
+      "scope": "voice/shutter host contract; firmware recognition and physical input unverified",
+      "device_access": false
+    }
+  ],
+  "remaining": [
+    "Bind ring backend to real camera callback/session epoch and physical SD durability tests",
+    "EIS algorithm replacement and camera-side shutter/voice trigger binding",
+    "Live one-minute SD ring, callback stability, common A/V epoch and storage failure recovery",
+    "Map candidate mesh to the recovered A032CF38/warp table ABI and run stock-preserving shadow comparison",
+    "Physical Android phone UI/hotspot and real camera acceptance",
+    "RTOS first entry, I-cache publication, scheduler/SMP stop and rollback proof",
+    "Run a controlled camera restart window to trigger the staged stock-only trace, only with explicit rollback and cleanup conditions",
+    "Voice recognition/firmware voice API behavior on the camera"
+  ],
+  "device_scope": "No new physical camera operation, firmware/RAM/partition/SD write or custom RTOS execution in this continuation.",
+  "updated_utc": "2026-11-12T02:39:01.166539+00:00"
+}

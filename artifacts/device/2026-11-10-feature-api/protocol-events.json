@@ -1,0 +1,236 @@
+[
+  {
+    "host_monotonic": 1110324.801723916,
+    "utc": "2026-11-10T01:53:47.815231+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 257
+    }
+  },
+  {
+    "host_monotonic": 1110324.808742875,
+    "utc": "2026-11-10T01:53:47.822241+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": 0,
+      "msg_id": 257,
+      "model": "Z16",
+      "rtsp": "rtsp://192.168.42.1/live"
+    }
+  },
+  {
+    "host_monotonic": 1110324.808765083,
+    "utc": "2026-11-10T01:53:47.822262+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 1,
+      "type": "app_status"
+    }
+  },
+  {
+    "host_monotonic": 1110324.816084833,
+    "utc": "2026-11-10T01:53:47.829586+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    }
+  },
+  {
+    "host_monotonic": 1110324.816120083,
+    "utc": "2026-11-10T01:53:47.829617+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 9,
+      "type": "video_resolution"
+    }
+  },
+  {
+    "host_monotonic": 1110324.822710041,
+    "utc": "2026-11-10T01:53:47.836208+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": -7,
+      "msg_id": 9
+    }
+  },
+  {
+    "host_monotonic": 1110324.822723875,
+    "utc": "2026-11-10T01:53:47.836221+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 9,
+      "type": "iq_eis_enable"
+    }
+  },
+  {
+    "host_monotonic": 1110324.828037083,
+    "utc": "2026-11-10T01:53:47.841540+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": -7,
+      "msg_id": 9
+    }
+  },
+  {
+    "host_monotonic": 1110324.828074333,
+    "utc": "2026-11-10T01:53:47.841571+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 9,
+      "type": "video_quality"
+    }
+  },
+  {
+    "host_monotonic": 1110324.833215875,
+    "utc": "2026-11-10T01:53:47.846714+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": -7,
+      "msg_id": 9
+    }
+  },
+  {
+    "host_monotonic": 1110324.833234083,
+    "utc": "2026-11-10T01:53:47.846731+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 9,
+      "type": "system_mode"
+    }
+  },
+  {
+    "host_monotonic": 1110324.839438125,
+    "utc": "2026-11-10T01:53:47.852940+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": -7,
+      "msg_id": 9
+    }
+  },
+  {
+    "host_monotonic": 1110324.839476166,
+    "utc": "2026-11-10T01:53:47.852973+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 9,
+      "type": "photo_size"
+    }
+  },
+  {
+    "host_monotonic": 1110324.844277666,
+    "utc": "2026-11-10T01:53:47.857777+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": -7,
+      "msg_id": 9
+    }
+  },
+  {
+    "host_monotonic": 1110324.844308916,
+    "utc": "2026-11-10T01:53:47.857806+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 1282,
+      "param": "/tmp/fuse_d/DCIM/"
+    }
+  },
+  {
+    "host_monotonic": 1110324.853395541,
+    "utc": "2026-11-10T01:53:47.866897+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": 0,
+      "msg_id": 1282,
+      "from": -1,
+      "to": -1,
+      "total": 1,
+      "listing": [
+        {
+          "100MEDIA/": "13|2014-01-01 01:18:24"
+        }
+      ]
+    }
+  },
+  {
+    "host_monotonic": 1110324.853432791,
+    "utc": "2026-11-10T01:53:47.866929+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 1282,
+      "param": "/tmp/fuse_d/DCIM/100MEDIA/"
+    }
+  },
+  {
+    "host_monotonic": 1110324.86194475,
+    "utc": "2026-11-10T01:53:47.875444+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": 0,
+      "msg_id": 1282,
+      "from": -1,
+      "to": -1,
+      "total": 13,
+      "listing": [
+        {
+          "YDXJ0135.MP4": "31575424 bytes|2014-01-01 01:18:30"
+        },
+        {
+          "YDXJ0135.SEC": "584032 bytes|2014-01-01 01:18:30"
+        },
+        {
+          "YDXJ0136.MP4": "31400038 bytes|2014-01-01 01:37:22"
+        },
+        {
+          "YDXJ0136.SEC": "583942 bytes|2014-01-01 01:37:22"
+        },
+        {
+          "YDXJ0137.MP4": "23817714 bytes|2014-01-01 02:06:18"
+        },
+        {
+          "YDXJ0137.SEC": "421618 bytes|2014-01-01 02:06:18"
+        },
+        {
+          "YDXJ0138.MP4": "16661328 bytes|2014-01-01 02:24:34"
+        },
+        {
+          "YDXJ0138.SEC": "275600 bytes|2014-01-01 02:24:34"
+        },
+        {
+          "YDXJ0139.MP4": "16254590 bytes|2014-01-01 02:56:14"
+        },
+        {
+          "YDXJ0139.SEC": "270558 bytes|2014-01-01 02:56:14"
+        },
+        {
+          "YDXJ0140.MP4": "9626737 bytes|2014-01-01 07:35:02"
+        },
+        {
+          "YDXJ0140.SEC": "152337 bytes|2014-01-01 07:35:02"
+        },
+        {
+          "YDXJ0141.JPG": "4726713 bytes|2014-01-01 07:35:14"
+        }
+      ]
+    }
+  },
+  {
+    "host_monotonic": 1110324.86197125,
+    "utc": "2026-11-10T01:53:47.875468+00:00",
+    "direction": "send",
+    "message": {
+      "msg_id": 258
+    }
+  },
+  {
+    "host_monotonic": 1110324.868889041,
+    "utc": "2026-11-10T01:53:47.882389+00:00",
+    "direction": "receive",
+    "message": {
+      "rval": 0,
+      "msg_id": 258
+    }
+  }
+]

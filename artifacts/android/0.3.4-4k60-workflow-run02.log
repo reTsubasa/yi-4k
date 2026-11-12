@@ -1,0 +1,10 @@
+Launched own AVD pid=77126 serial=emulator-5582
+Android boot complete
+{"instrumentation_passed": true, "reports": "/Users/hyc/Documents/yi4k/artifacts/android/0.3.4-device-reports/camera-4k60-workflow-run02"}
+Traceback (most recent call last):
+  File "/Users/hyc/Documents/yi4k/scripts/android_emulator_acceptance.py", line 405, in <module>
+    main()
+    ~~~~^^
+  File "/Users/hyc/Documents/yi4k/scripts/android_emulator_acceptance.py", line 401, in main
+    raise RuntimeError(report['error'])
+RuntimeError: Camera media/control after-state verification failed

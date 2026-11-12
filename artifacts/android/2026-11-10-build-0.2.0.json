@@ -1,0 +1,46 @@
+{
+  "evidence_type": "Local Android host build; no Android device, AVD or camera execution in this build round",
+  "packaged_at_utc": "2026-11-10T10:06:00.962502+00:00",
+  "apk": "artifacts/android/yi4k-control-0.2.0-debug.apk",
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "sha256": "7a10e02755dcab0fa15c12e72770e97b1d9fc4cee4beeb831610887bc786778a",
+  "size_bytes": 11190958,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.2.0",
+  "version_code": 2,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug compileDebugAndroidTestJavaWithJavac",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "compile_debug_android_test_java": true,
+    "apk_signature_verified": true,
+    "apk_signature_scheme": "v2",
+    "adb_device_or_avd_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 73,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 73,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 38
+  },
+  "ui_scope": "APEX-inspired black/white rounded UI: three-step connection guide, capture, Chinese settings, two-column media browser, cached original-media viewer with playback timeline and local favorites. Real album thumbnails and video editing remain unimplemented.",
+  "preview_scope": "Media3 RTSP with selected Android Network SocketFactory and TCP interleaved. Host loopback verifies OPTIONS/DESCRIBE/SETUP and cleanup, with no RTP payload or first-frame decode. Actual camera/phone preview is unverified.",
+  "device_scope": "Phone Wi-Fi routing, camera capture/configuration, video decoder, MediaStore publication/cancellation, lifecycle and large files require manual device acceptance.",
+  "render_scope": "Robolectric host renders; not Android device screenshots or real camera imagery. Playback render uses a synthetic fixture.",
+  "reports": "artifacts/android/0.2.0-reports"
+}

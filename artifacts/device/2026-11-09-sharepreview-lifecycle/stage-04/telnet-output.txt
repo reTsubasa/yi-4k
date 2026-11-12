@@ -1,0 +1,7 @@
+~ # python -B -u /tmp/yi4k-py-e4c1697dc0064ac2875e3b8434f8001e.py
+Traceback (most recent call last):
+  File "/tmp/yi4k-py-e4c1697dc0064ac2875e3b8434f8001e.py", line 69, in <module>
+    assert hashlib.sha256(open(path,'rb').read()).hexdigest()==probe[key+'_sha256']
+KeyError: 'rpc_source_sha256'
+~ # echo __YI_CAPTURE_1011e141536440b2906c789cc768cf28__
+__YI_CAPTURE_1011e141536440b2906c789cc768cf28__

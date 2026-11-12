@@ -1,0 +1,118 @@
+uptime; ps; dmesg | tail -60; ls -l /tmp/SD0/DCIM; find /tmp/SD0/DCIM -type 
+f | tail -10
+ 01:00:15 up 43 min,  1 users,  load average: 0.00, 0.01, 0.09
+PID   USER     TIME   COMMAND
+    1 root       0:00 init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    5 root       0:00 [kworker/0:0H]
+    6 root       0:00 [kworker/u2:0]
+    7 root       0:00 [rcu_preempt]
+    8 root       0:00 [rcu_bh]
+    9 root       0:00 [rcu_sched]
+   10 root       0:00 [khelper]
+   11 root       0:00 [kdevtmpfs]
+   12 root       0:00 [writeback]
+   13 root       0:00 [bioset]
+   14 root       0:00 [crypto]
+   15 root       0:00 [kblockd]
+   16 root       0:27 [kworker/0:1]
+   17 root       0:00 [rpciod]
+   18 root       0:00 [kworker/u2:1]
+   19 root       0:00 [kswapd0]
+   20 root       0:00 [fsnotify_mark]
+   21 root       0:00 [nfsiod]
+   38 root       0:00 [deferwq]
+   39 root       0:00 [kworker/0:1H]
+   61 dbus       0:00 dbus-daemon --system
+   69 root       0:00 /usr/bin/rpcbind
+  102 root       0:00 /usr/bin/ipcbind -b
+  104 root       0:00 /usr/bin/util_svc -b
+  108 root       0:00 /usr/bin/AmbaNetFifoDaemon
+  110 root       0:00 /usr/bin/AmbaEventNotifyDaemon
+  120 root       0:00 [cfg80211]
+  152 root       0:00 /usr/bin/remoteapi_disc_daemon
+  154 root       0:00 /usr/sbin/cherokee-worker -a -C /etc/cherokee.conf -j -s 
+  172 root       0:00 -/bin/sh
+  176 root       0:00 /usr/bin/remoteapi_cmd_daemon
+  189 root       0:00 /usr/bin/remoteapi_data_daemon
+  194 root       0:00 /usr/bin/remoteapi_syssvc_daemon
+  204 root       0:00 /usr/bin/AmbaRTSPServer
+  212 root       0:10 /usr/local/share/script/XCServer
+  216 root       0:25 telnetd
+  423 root       0:00 [wl_escan_handle]
+  424 root       0:10 [dhd_watchdog_th]
+  425 root       0:05 [dhd_dpc]
+  426 root       0:01 [dhd_rxf]
+  446 root       0:13 [ksdioirqd/mmc0]
+  447 root       0:00 [wl_event_handle]
+  461 nobody     0:00 dnsmasq --nodns -5 -K -R -n --dhcp-range=192.168.42.2,192
+  468 root       0:00 wpa_supplicant -Dnl80211 -iwlan0 -c/tmp/wpa_supplicant.ap
+  484 root       0:00 /usr/local/share/script/bsa_server_43340 -d /dev/ttyS1 -p
+  491 root       0:00 /usr/local/share/script/ble_remote --addr 58:70:C6:57:84:
+  555 root       0:00 [kworker/0:0]
+  822 root       0:00 -sh
+  824 root       0:00 ps
+[   20.338479] mac: 58:70:C6:02:2F:4F
+[   20.345224] Firmware up: op_mode=0x0002, MAC=58:70:c6:02:2f:4f
+[   20.353764] dhd_conf_set_country: set country CN, revision 0
+[   20.459749] Country code: CN (CN/0)
+[   20.464478] dhd_conf_set_intiovar: set roam_off 1
+[   20.477745] dhd_preinit_ioctls event_msgs_ext not support or version mismatch -23
+[   20.490273] Firmware version = wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7
+[   20.501721]   Driver: 1.363.59.144.7 (r)
+[   20.501721]   Firmware: wl0: Jul 18 2016 11:45:40 version 6.10.191_d12 (TOB) (r1984) FWID 01-4722f3a7 
+[   20.519424] dhd_txglom_enable: enable 0
+[   20.523891] dhd_conf_set_txglom_params: swtxglom=0, txglom_ext=0, txglom_bucket_size=0
+[   20.533113] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0, bus_txglom=-1
+[   20.542521] dhd_conf_set_txglom_params: tx_in_rx=1, txinrx_thres=-1, dhd_txminmax=1
+[   20.552966] dhd_conf_set_txglom_params: tx_max_offset=1, txctl_tmo_fix=1
+[   20.560873] sdioh_set_mode: set txglom_mode to copy
+[   20.566580] dhd_conf_get_disable_proptx: fw_proptx=1, disable_proptx=0
+[   20.582443] dhd_preinit_ioctls wl ampdu_hostreorder failed -23
+[   20.591514] dhd_wlfc_init(): successfully enabled bdcv2 tlv signaling, 79
+[   20.600143] dhd_conf_set_intiovar: set ampdu_hostreorder 1
+[   20.607429] CONFIG-ERROR) dhd_conf_set_intiovar: ampdu_hostreorder setting failed -23
+[   20.617418] dhd_wl_ioctl_get_intiovar: get int iovar wlfc_mode failed, ERR -23
+[   20.627197] dhd_wlfc_init(): wlfc_mode=0x0, ret=-23
+[   20.633970] wl_android_wifi_on: Success
+[   20.639246] wl_create_event_handler(): thread:wl_event_handler:1bf started
+[   20.647359] tsk Enter, tsk = 0x420a1378
+[   20.747591] CFG80211-ERROR) wl_update_wiphybands : error reading vhtmode (-23)
+[   20.782963] dhd_open: Exit ret=0
+[   21.493248] CFG80211-ERROR) wl_cfg80211_del_station : Disconnect STA : ff:ff:ff:ff:ff:ff scb_val.val 3
+[   21.562263] dhd_wl_ioctl_set_intiovar: set int iovar ndoe failed, ERR -23
+[   21.570770] dhd_ndo_enable: failed to enabe ndo to 0, retcode = -23
+[   21.578254] CFG80211-ERROR) wl_cfg80211_start_ap : wl_cfg80211_start_ap: Disabling NDO Failed -23
+[   21.591875] netdev_ifidx(3), chan_type(1) target channel(165) 
+[   21.796640] _dhd_wlfc_mac_entry_update():1853, entry(32)
+[   21.808655] wl_iw_event: Link UP with BSSID=58:70:00:00:2f:4f
+[   21.815593] CFG80211-ERROR) wl_notify_connect_status_ap : ** AP/GO Link up event **
+[   22.224503] wl_notify_connect_status_ap: connected device 9a:a9:12:8e:af:5d
+[   35.928519] Switching to clocksource jiffies
+[   35.928519] Switching to clocksource ambarella-cs-timer
+[  114.423093] Switching to clocksource jiffies
+[  114.423093] Switching to clocksource ambarella-cs-timer
+[  139.735934] Switching to clocksource jiffies
+[  139.735934] Switching to clocksource ambarella-cs-timer
+[  169.703035] gen(1), entry->generation(0)
+[  174.949890] gen(1), entry->generation(0)
+[  180.201399] gen(1), entry->generation(0)
+[  185.413144] gen(0), entry->generation(1)
+[  190.701091] gen(1), entry->generation(0)
+[  201.099845] gen(0), entry->generation(1)
+[  216.952872] gen(0), entry->generation(1)
+[  222.202399] gen(0), entry->generation(1)
+[ 1039.123461] Switching to clocksource jiffies
+[ 1039.123461] Switching to clocksource ambarella-cs-timer
+[ 1097.612823] Switching to clocksource jiffies
+[ 1097.612823] Switching to clocksource ambarella-cs-timer
+[ 1097.730428] Switching to clocksource jiffies
+[ 1097.730428] Switching to clocksource ambarella-cs-timer
+[ 1077.309496] Switching to clocksource jiffies
+[ 1077.309496] Switching to clocksource ambarella-cs-timer
+[ 1096.040623] Switching to clocksource jiffies
+[ 1096.040623] Switching to clocksource ambarella-cs-timer
+total 0
+~ # echo __YI_CAPTURE_87ee8de0fb874d2e8b428c4e6d2aa064__
+__YI_CAPTURE_87ee8de0fb874d2e8b428c4e6d2aa064__

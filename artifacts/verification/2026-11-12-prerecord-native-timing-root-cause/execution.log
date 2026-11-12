@@ -1,0 +1,74 @@
+{
+  "status": "pass_native_edit_constructor_and_consumer_endpoint_reproduction",
+  "offline_only": true,
+  "device_access": false,
+  "script_sha256": "ab44b9d178a909398c8533ae341d4237f83f1a98ec9b90c3d8beed8885d26431",
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "native_function": {
+    "entry": "0xa0425e18",
+    "ranges": [
+      "a0425e18-a0425f4b"
+    ],
+    "arm_sha256": "6c57ddc62fd27cce0a5646cdfa71b451392f0058f0d06d8e26d01807acc16d5b",
+    "decompiled_sha256": "b114160e7b2676901a41de8db532b6012a62181d41c4a94e0ca31bb64732ff9d"
+  },
+  "synthetic_track": {
+    "common_clock": 240000,
+    "start": 1600,
+    "end": 962560,
+    "movie_clock": 30000
+  },
+  "original_ARM_result": {
+    "entries": 2,
+    "empty_duration": 200,
+    "media_duration": 120120,
+    "empty_media_time": 18446744073709551615,
+    "media_time": 0
+  },
+  "archived_file": {
+    "path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-11-prerecord-minute-aac-schedule-run01/native-segment-2.mp4",
+    "sha256": "c78f4422a767a513ddb93413247e0fc3ae7614d1ec10200946bc68d3c01dd9fe"
+  },
+  "ordinary_consumer": {
+    "first_video_pts": 200,
+    "last_video_pts": 119319,
+    "last_video_duration": 801,
+    "media_duration_ts": 120120,
+    "exact_duration": 1001,
+    "loss_ticks": 200,
+    "loss_seconds": "1/150",
+    "strict_gate": "reject"
+  },
+  "ignore_editlist_diagnostic": {
+    "last_video_duration": 1001,
+    "used_as_publication_gate": false
+  },
+  "consumer_source": {
+    "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n6.1/libavformat/mov.c",
+    "sha256": "b5f0792dbe49b851a5c88b91ab20872a50ebeccafd1d60406288b653a3b80cf6",
+    "formula_lines": [
+      {
+        "text": "st->duration = FFMIN(st->duration, edit_list_dts_entry_end - start_dts);",
+        "lines": [
+          4102
+        ]
+      },
+      {
+        "text": "ffstream(st)->index_entries[sc->current_sample].timestamp : st->duration;",
+        "lines": [
+          9019
+        ]
+      },
+      {
+        "text": "pkt->duration = next_dts - pkt->dts;",
+        "lines": [
+          9022
+        ]
+      }
+    ],
+    "binary_identity_is_separately_pinned": true,
+    "source_build_identity_not_authenticated": true
+  },
+  "conclusion": "Stock ARM emits self-consistent full media edit plus 200-tick empty edit. Fixed consumer reports final duration from unshifted st.duration minus edit-shifted final DTS, matching 801 ticks. Reordering AAC cannot erase actual source video delay; separate continuous final export retains common source chronology and has no nonzero empty edit.",
+  "no_gate_relaxation": true
+}

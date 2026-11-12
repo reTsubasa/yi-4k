@@ -1,0 +1,139 @@
+{
+  "source": "artifacts/device/2026-11-09-eis-recording/native-log-02/RtosActive.log",
+  "sha256": "5529f3828fa987a5e3fefc0955b55a23a92fa3c1d2a7ed333fc386744136083c",
+  "bytes": 234033,
+  "total_printed_event_counts": {
+    "exposure": 84,
+    "frame_update": 83,
+    "gyro": 59
+  },
+  "phases": [
+    {
+      "mode_index": 0,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "init_tick": 964,
+      "first_source_line": 798,
+      "last_source_line": 1926,
+      "mode_fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "GyroParam.OffsetX": 8388608,
+        "GyroParam.OffsetY": 8388608,
+        "GyroCalibInfo.SenseX": 33536,
+        "GyroCalibInfo.SenseY": 33536,
+        "GyroInfo.VolDivDen": 1,
+        "GyroCalibInfo.SenseZ": 33536,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "printed_event_counts": {
+        "exposure": 17,
+        "frame_update": 17,
+        "gyro": 11
+      },
+      "observed_log_tick_range": [
+        24994,
+        25534
+      ],
+      "gyro_log_tick_delta_histogram": {
+        "50": 10
+      },
+      "exposure_values_raw": [
+        16
+      ],
+      "arm_update_values_hex": [
+        "0x105",
+        "0x106"
+      ]
+    },
+    {
+      "mode_index": 1,
+      "sensor_geometry": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532",
+      "init_tick": 25712,
+      "first_source_line": 1951,
+      "last_source_line": 2785,
+      "mode_fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 2182,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 18,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 2160,
+        "CapStartY": 0,
+        "DlyMs": 16
+      },
+      "printed_event_counts": {
+        "gyro": 48,
+        "exposure": 67,
+        "frame_update": 66
+      },
+      "observed_log_tick_range": [
+        25851,
+        28233
+      ],
+      "gyro_log_tick_delta_histogram": {
+        "50": 47
+      },
+      "exposure_values_raw": [
+        16
+      ],
+      "arm_update_values_hex": [
+        "0x105",
+        "0x106"
+      ]
+    },
+    {
+      "mode_index": 2,
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "init_tick": 28411,
+      "first_source_line": 2810,
+      "last_source_line": null,
+      "mode_fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "printed_event_counts": {},
+      "observed_log_tick_range": [],
+      "gyro_log_tick_delta_histogram": {},
+      "exposure_values_raw": [],
+      "arm_update_values_hex": []
+    }
+  ],
+  "unassigned_or_during_mode_init_events": 0,
+  "bounded_error_string_counts": {
+    "Eis-Warp calculation not in-time": 0,
+    "Warp content not ready last frame": 0
+  },
+  "limitations": [
+    "Exact numeric print formats only; unmatched lines are excluded.",
+    "Log tick is not an IMU hardware timestamp; tick units are not inferred.",
+    "Fourth gyro slot is not defined by the mode-1 three-axis read.",
+    "Frame ArmSysTim is retained as an opaque raw value; frame identity is uncalibrated.",
+    "Modulo-decimated buffered text is not lossless IMU telemetry.",
+    "No axis orientation, physical units or exposure-to-gyro synchronization established.",
+    "Phase assignment follows file line ordering between completed mode initializations.",
+    "No camera-video PTS alignment is inferred.",
+    "Internal geometry alone does not establish recording; correlate with actual API and video.",
+    "A printed frame_update event is not proof of one uniquely identified video frame.",
+    "Error-string counts only cover retained bytes and enabled print branches."
+  ]
+}

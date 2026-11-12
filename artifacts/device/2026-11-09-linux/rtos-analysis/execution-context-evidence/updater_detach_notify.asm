@@ -1,0 +1,5 @@
+a01bd570 0100a0e3 mov r0, #1
+a01bd574 0010a0e3 mov r1, #0
+a01bd578 01004fe3 movt r0, #0xf001
+a01bd57c 0120a0e1 mov r2, r1
+a01bd580 04a400ea b #0xa01e6598

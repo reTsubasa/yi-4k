@@ -1,0 +1,449 @@
+{
+  "started_utc": "2026-11-10T10:31:53.029247+00:00",
+  "host": "192.168.42.1",
+  "source": "/dev/mtdblock2",
+  "expected_bytes": 4038656,
+  "expected_crc32": "0x1435adc7",
+  "scope": "bounded logical DSP partition reads; no target files written",
+  "target_files_written": false,
+  "rtos_shell_invoked": false,
+  "memory_mapping_run": false,
+  "reboot_requested": false,
+  "recording_requested": false,
+  "settings_changed": false,
+  "api_events": [
+    {
+      "host_monotonic": 1141409.8596795,
+      "utc": "2026-11-10T10:31:53.038606+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1141410.722079875,
+      "utc": "2026-11-10T10:31:53.901014+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1141410.722122583,
+      "utc": "2026-11-10T10:31:53.901052+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1141410.729165416,
+      "utc": "2026-11-10T10:31:53.908099+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1141410.729203916,
+      "utc": "2026-11-10T10:31:53.908134+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1141410.74031025,
+      "utc": "2026-11-10T10:31:53.919244+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1141410.740384208,
+      "utc": "2026-11-10T10:31:53.919314+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1141410.746315458,
+      "utc": "2026-11-10T10:31:53.925247+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1141427.152921458,
+      "utc": "2026-11-10T10:32:10.332038+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1141427.161054375,
+      "utc": "2026-11-10T10:32:10.340145+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1141427.161126791,
+      "utc": "2026-11-10T10:32:10.340213+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1141427.166333541,
+      "utc": "2026-11-10T10:32:10.345424+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1141427.166380541,
+      "utc": "2026-11-10T10:32:10.345467+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1141427.177658083,
+      "utc": "2026-11-10T10:32:10.356751+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1141427.177943208,
+      "utc": "2026-11-10T10:32:10.357030+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1141427.183395125,
+      "utc": "2026-11-10T10:32:10.362488+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "reads": [
+    {
+      "offset": 0,
+      "bytes": 131072,
+      "sha256": "9aa680848f13a64d83db6a94003bea51600b3f0caef005a30ecbda78e18fba96",
+      "seconds": 0.53,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=0 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 131072,
+      "bytes": 131072,
+      "sha256": "a5d77bfc4377ca323b2eeaf8b0fe07a818eaa76e0a58d406099ce849bb595389",
+      "seconds": 0.497,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=32 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 262144,
+      "bytes": 131072,
+      "sha256": "d7c29155d7efb87470107ceb738518ebd0f58b509a28c173d27ffea2c5ce3e03",
+      "seconds": 0.498,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=64 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 393216,
+      "bytes": 131072,
+      "sha256": "b59c9c36c05cb02b1fa1b6926e2cacd16d218fc04d65f61694485b0f662f5d11",
+      "seconds": 0.494,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=96 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 524288,
+      "bytes": 131072,
+      "sha256": "aa252986f8303a79657c5f275a2eed89a56f51318bf12be665bb4db2292a894c",
+      "seconds": 0.478,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=128 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 655360,
+      "bytes": 131072,
+      "sha256": "f62fc0102911b8839c8af13563719f937531a4dd85490ce0c0e4eab5383381f9",
+      "seconds": 0.482,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=160 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 786432,
+      "bytes": 131072,
+      "sha256": "aa27504a977c604b639e9ec5b948c54ac9a871aca3977cff96ade08c1209bdde",
+      "seconds": 0.674,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=192 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 917504,
+      "bytes": 131072,
+      "sha256": "6abc542acd2e03794b4dabebe097a273a483c92fd8639f4d9be1c47a2c51e1df",
+      "seconds": 0.481,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=224 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1048576,
+      "bytes": 131072,
+      "sha256": "7552c003d075ca81a8b8fea23c220009e6a25f2905def83d8b5afe1ce6fe39f5",
+      "seconds": 0.478,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=256 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1179648,
+      "bytes": 131072,
+      "sha256": "64eeb57bc4030b315b6937c470d355656e848ae166711674ffb0ab5053b456a1",
+      "seconds": 0.496,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=288 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1310720,
+      "bytes": 131072,
+      "sha256": "b8817d864b2280402a263e62f6461a3974dc812daa7ea97b63bedc6212e739ed",
+      "seconds": 0.493,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=320 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1441792,
+      "bytes": 131072,
+      "sha256": "91be3f54d66af83bdab3b6d0fdda000a95bb6d3c9c437c8d945cd4f67390c757",
+      "seconds": 0.5,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=352 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1572864,
+      "bytes": 131072,
+      "sha256": "26f211edbfd14cdddcabe9eae38a2368a54f0e16b15aa3db333f36c298f7d9ba",
+      "seconds": 0.495,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=384 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1703936,
+      "bytes": 131072,
+      "sha256": "7cd9e022b86df9ee013bab6ebee38d8e62a4b86f37361f2ec46a350b622c72d6",
+      "seconds": 0.501,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=416 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1835008,
+      "bytes": 131072,
+      "sha256": "101d9a860198d410c8969047f2a798c6a7871d1d376a0b6360d30d7b877f2f99",
+      "seconds": 0.497,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=448 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 1966080,
+      "bytes": 131072,
+      "sha256": "0b8ddf31be3af4cfab7a374095ed142d2f579c75c8457e2fb5fec80884e94d99",
+      "seconds": 0.49,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=480 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2097152,
+      "bytes": 131072,
+      "sha256": "e3ba6a19ab48f4c832a02df917e13bf7226707747f80990de0330b06a06acda5",
+      "seconds": 0.489,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=512 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2228224,
+      "bytes": 131072,
+      "sha256": "c154f5e2575e0a0dbaccdadbfd78bae226eca4080d8037b8a80a4e377fc01d49",
+      "seconds": 0.487,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=544 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2359296,
+      "bytes": 131072,
+      "sha256": "02d9ce3a439e479b182d16e9b8f94ad8e382bc79c1382215326164c081e4ff67",
+      "seconds": 0.486,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=576 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2490368,
+      "bytes": 131072,
+      "sha256": "6c2c34adc72700737d3a0960dbf5246fb0d643ec41d8e361a7c908117dd50450",
+      "seconds": 0.487,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=608 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2621440,
+      "bytes": 131072,
+      "sha256": "4dea4fb6fc79d3c53ae2fb534f83b2864f2130bda7efffb3ee4b416c5c90e82c",
+      "seconds": 0.472,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=640 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2752512,
+      "bytes": 131072,
+      "sha256": "8b5f428656ccb00ed554c61d6665ab0703eddfd46f5cf716a9d3225c46380e5a",
+      "seconds": 0.485,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=672 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 2883584,
+      "bytes": 131072,
+      "sha256": "ec4e9e6b5a090f5e4b1258f2fc62de3aed0beb6516a326d40ff0d3348b4ae672",
+      "seconds": 0.497,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=704 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3014656,
+      "bytes": 131072,
+      "sha256": "f781a2dd96d41dda040fbec29a5e1b3554c84ba1d57f43865b2b5367b44076e6",
+      "seconds": 0.493,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=736 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3145728,
+      "bytes": 131072,
+      "sha256": "7ebf772ec82c5276ac28877ddac2cd4f6b56567719d9840311fc29ef912991dd",
+      "seconds": 0.494,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=768 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3276800,
+      "bytes": 131072,
+      "sha256": "6150483663fe4a1d549d93e65de4bc1e9143a19c1e48016a93aa5fbf716cb0ed",
+      "seconds": 0.504,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=800 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3407872,
+      "bytes": 131072,
+      "sha256": "a46ed1a23a094e04b9b6faacb767ad9aeff764af52aed6380dee8b48ef4722dd",
+      "seconds": 0.491,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=832 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3538944,
+      "bytes": 131072,
+      "sha256": "6b79593f46e8dbca1467a608b428b47faea8c43adff18ba7475b457909f5e713",
+      "seconds": 0.485,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=864 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3670016,
+      "bytes": 131072,
+      "sha256": "57cc2594596998943df4620aea166744d2e033128c3c6d9bc34cae92b1a5f74d",
+      "seconds": 0.479,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=896 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3801088,
+      "bytes": 131072,
+      "sha256": "d09fca70e631ac573d942cd2317eb6bab179755576604685d07d9f042052a873",
+      "seconds": 0.484,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=928 count=32 2>/dev/null | base64"
+    },
+    {
+      "offset": 3932160,
+      "bytes": 106496,
+      "sha256": "1290700734146f3f0600cd556ec25e91d6389dabfe1984fe2e6f3528fa3be1e6",
+      "seconds": 0.403,
+      "command": "dd if=/dev/mtdblock2 bs=4096 skip=960 count=26 2>/dev/null | base64"
+    }
+  ],
+  "running_dsp_identity_proven": false,
+  "before": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 30P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "record",
+      "iq_eis_enable": "on"
+    }
+  },
+  "after": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 30P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "record",
+      "iq_eis_enable": "on"
+    }
+  },
+  "camera_state_equal": true,
+  "file": "dsp-partition-image.bin",
+  "bytes": 4038656,
+  "sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "crc32": "0x1435adc7",
+  "remote_sha256_equal": true,
+  "boot_id_unchanged": true,
+  "reference_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "reference_byte_equal": true,
+  "stored_partition_identity_proven": true,
+  "finished_utc": "2026-11-10T10:32:10.392971+00:00"
+}

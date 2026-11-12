@@ -1,0 +1,20 @@
+{
+  "sample_kind": "synthetic scalar boundary fixture; not captured from a camera",
+  "provenance": {"source": "manual", "purpose": "ordinary/adaptive function replay and candidate arithmetic comparison"},
+  "feedback_mode": "synthetic_chain",
+  "initial_previous": 0,
+  "initial_small_count": 0,
+  "parameters": {"limit": 5000, "gain": 100, "adaptive_enabled": false},
+  "candidate": {"alpha": 0.2},
+  "samples": [
+    {"sequence": 0, "tick": 0, "input": 0},
+    {"sequence": 1, "tick": 1, "input": 100},
+    {"sequence": 2, "tick": 2, "input": 100},
+    {"sequence": 3, "tick": 3, "input": 0},
+    {"sequence": 4, "tick": 4, "input": -100},
+    {"sequence": 5, "tick": 5, "input": -100},
+    {"sequence": 6, "tick": 6, "input": 0},
+    {"sequence": 7, "tick": 7, "input": 2147483647},
+    {"sequence": 8, "tick": 8, "input": -2147483648}
+  ]
+}

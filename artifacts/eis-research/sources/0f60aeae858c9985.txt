@@ -1,0 +1,1752 @@
+No Labels, No Look-Ahead: Unsupervised Online Video Stabilization with Classical Priors
+Skip to main content
+Report GitHub Issue
+×
+Title:
+Content selection saved. Describe the issue below:
+Description:
+Submit without GitHub
+Submit in GitHub
+Why HTML?
+Report Issue
+Back to Abstract
+Download PDF
+Contents
+Reading mode
+Colour theme
+Abstract
+1 Introduction
+2 Related Work
+2.1 Video Stabilization
+2.2 Feature Detection
+2.3 Optical Flow Estimation
+3 Method
+3.1 Motion Estimation
+Notation
+(1) Keypoint Collaboration Detection
+(2) Homogenization
+(3) Sparse Keypoint-Guided Causal Flow Fusion
+3.2 Motion Propagation
+(1) Multi-Grid Homography Prior
+(2) Residual Network
+(3) Core Self-Supervised Loss
+3.3 Motion Compensation
+(1) Causal Kernel Smoother
+(2) Core Self-Supervised Loss (definitions included)
+(3) Frame-Level Compensation and Rendering
+3.4 UAV-Test Dataset
+4 Experiment
+4.1 Quantitative Evaluation
+4.2 Qualitative Results
+4.3 User Study
+5 Ablation Study
+6 Conclusion
+7 Appendix
+8 Details of EfficientMotionPro
+8.1 Training Objectives
+(1) Homography Projection Constraint
+(2) Structure-Preservation Constraint
+(3) Total Loss
+8.2 Network Architecture
+(1) Implementation Details
+(2) Complexity Analysis
+Parameter Count
+Time Complexity
+Memory Complexity
+Complexity Estimation
+9 OnlineSmoother Details
+9.1 Training Objectives
+(1) Spatial Distortion Constraint
+(2) Keypoint Projection Consistency Constraint
+(3) Total Loss
+9.2 Network Architecture
+(1) Implementation Details
+(2) Complexity Analysis
+Parameter Count.
+Time Complexity.
+Memory Complexity.
+Numerical Estimation (Default C=64,kt=5,T=7C=64,k_{t}=5,T=7).
+10 Multi-Threaded Asynchronous Buffering Pipeline: Additional Details
+(1) Motivation and Formulation
+(2) Pipeline Architecture
+(3) Theoretical Analysis
+(4) Complexity and Real-Time Properties
+11 Frame Outpainting Details
+Cropping Ratio and Cropped Size
+Scaling Factors for Outpainting
+Outpainting with the ProPainter Model
+12 Additional Details for UAV-Test Dataset
+Data Collection Protocol
+Scene Distribution
+Annotation and Cleaning
+Partitioning and Licensing
+13 Runtime Analysis
+14 Evaluation Metrics and Implementation
+Cropping Ratio (C)
+Distortion Value (D)
+Stability Score (S)
+PSNR
+15 Quantitative Evaluation
+16 User Study
+17 Additional Visualization Results
+Motion Visualization
+Trajectory Visualization
+Keypoint Density Visualization
+Optical Flow Visualization
+18 Video Results
+19 Limitations
+References
+License: CC BY 4.0
+arXiv:2602.23141v1 [cs.CV] 26 Feb 2026
+No Labels, No Look-Ahead: Unsupervised Online Video Stabilization with Classical Priors
+Tao Liu
+††thanks: Equal contribution
+Affiliation: School of Electronic and Optical Engineering, Nanjing University of Science and Technology
+Email: liutao23@njust.edu.cn
+Gang Wan
+Affiliation: School of Electronic and Optical Engineering, Nanjing University of Science and Technology
+Email: wangang@njust.edu.cn
+Kan Ren
+††thanks: Corresponding author
+Affiliation: School of Electronic and Optical Engineering, Nanjing University of Science and Technology
+Email: K.ren.@njust.edu.cn
+Shibo Wen11
+1
+https://github.com/liutao23/LightStab.git.
+Affiliation: College of Geoexploration Science and Technology, Jilin University
+Email: wensb23@mails.jlu.edu.cn
+Abstract
+We propose a new unsupervised framework11
+1
+https://github.com/liutao23/LightStab.git.for online video stabilization. Unlike methods based on deep learning that require paired stable and unstable datasets, our approach instantiates the classical stabilization pipeline with three stages and incorporates a multithreaded buffering mechanism. This design addresses three longstanding challenges in end-to-end learning: limited data, poor controllability, and inefficiency on hardware with constrained resources. Existing benchmarks focus mainly on handheld videos with a forward view in visible light, which restricts the applicability of stabilization to domains such as UAV nighttime remote sensing. To fill this gap, we introduce a new multimodal UAV aerial video dataset (UAV-Test). Experiments show that our method consistently outperforms state-of-the-art online stabilizers in both quantitative metrics and visual quality, while achieving performance comparable to offline methods.
+1 Introduction
+Video stabilization is a common requirement in both amateur and professional video capture, aiming to suppress unintended camera shake and enhance visual quality. To avoid the high cost and operational complexity of physical stabilizers, researchers have proposed a wide range of algorithmic solutions. Classical approaches typically follow a three-stage pipeline: motion estimation, motion smoothing, and stabilized frame generation. Based on the dimensionality of the motion model, these methods can be classified as 2D, 2.5D, or 3D. 2D methods adopt affine transformations [13], homographies [33], or optical flow [28, 57], achieving high efficiency but struggling with parallax and depth variations. 2.5D approaches [25, 51] incorporate limited 3D cues from feature trajectories to mitigate parallax, but remain computationally expensive. 3D methods leverage depth sensors [23], reconstructed point clouds [24], or epipolar geometry [12] to address complex scenes effectively, but entail significant computational overhead.
+Deep learning enables end-to-end stabilization by directly generating stabilized frames from shaky inputs. However, such frameworks are often difficult to interpret or control and typically rely on large paired datasets of stable/unstable videos. In practice, unavoidable temporal and spatial misalignments make available data prone to parallax effects [48], limited scenario coverage [55], and synthetic-to-real gaps [22]. Recent studies, therefore, explore a decoupled design. DUT [52] augments the classical pipeline with neural motion propagation and smoothing, achieving strong stabilization. Nevertheless, it remains constrained by its network architecture [44] and a global smoothing strategy, and therefore operates offline. Another line of work [59] leverages high-quality motion-estimation networks [53] and focuses on optimizing the smoothing module, thereby enabling online stabilization. Yet, the lack of open-source motion estimators and reduced robustness in complex scenes still pose significant challenges.
+Figure 1: Limitations of existing methods and an overview of our approach.
+(a) Traditional pipelines rely on sparse, spatially biased keypoints, leading to inaccurate motion estimation and blur/distortion in stabilized frames.
+(b) Over-smoothing and fixed filtering ignore scene motion trends, resulting in residual jitter, black borders, and warping in the output video.
+(c) Our approach uses dense, evenly distributed keypoints together with accurate optical flow to propagate motion estimates across frames; it operates online without future frames, enabling real-time processing.
+(d) In the bottom-right chart, our method (red star) outperforms both traditional offline methods and recent online methods in stabilization quality, achieving state-of-the-art performance for online unsupervised stabilization.
+Our literature review and empirical analysis highlight three key limitations common to both classical and learning-based stabilizers:
+•
+Perception Limitations: Classical methods rely on handcrafted keypoint detectors [36, 31, 37], which struggle with weak textures, occlusions, and large motions, leading to biased motion estimation [27]. Although deep learning methods [60] improve robustness, they lack interpretability and controllability, limiting their adaptability to real-world scenarios.
+•
+Smoothing Limitations: Classical methods employ fixed smoothing strategies [29], which fail to generalize well, resulting in residual jitter [26]. Learning-based smoothing methods lack geometric interpretability [7], thereby risking over-smoothing or distortion [48].
+•
+Online Processing Limitations: Many stabilizers, both classical and learning-based, are not designed for online processing and rely on offline aggregation or batch processing, introducing delays. Additionally, learning-based methods require large labeled datasets and significant computational resources [48], hindering online deployment.
+As shown in Fig. 1, existing stabilizers face challenges in motion perception and trajectory smoothing, which often lead to artifacts under complex conditions, and are mostly limited to offline processing. To address these challenges, we propose the following solutions. For Motion Perception, we combine multi-detector collaboration with keypoint uniformization to enhance robustness, reduce optical flow overhead, and introduce an efficient motion propagation network to maintain global motion consistency. In terms of Trajectory Smoothing, we present an online dynamic-kernel optimization method that avoids fixed filters and future-frame dependencies, enabling online stabilization with improved control. For System Design, we implement a multi-threaded asynchronous pipeline that decouples and parallelizes core modules, reducing latency and enabling high-frame-rate processing.
+In summary, our framework combines robust motion perception, interpretable trajectory smoothing, and efficient system design into a simulation-informed stabilization chain, which overcomes existing limitations in perception, analysis, and online performance. The main contributions of this work are as follows:
+•
+We propose a novel unsupervised online video stabilization model that removes the need for paired training data while enabling online processing of unstable videos.
+•
+We introduce UAV-Test, a realistic multimodal dataset of unstable aerial videos covering diverse drone-shake scenarios, intended as a benchmark for related research, to be released upon acceptance.
+•
+Extensive experiments on public and newly collected datasets show that our method surpasses state-of-the-art online stabilizers in quality and achieves performance on par with offline approaches.
+2 Related Work
+2.1 Video Stabilization
+Traditional video stabilization methods [13, 27] suppress screen jitter by estimating camera motion trajectories and applying smoothing techniques, or by using adaptive sparse grids for real-time performance [26]. However, these methods often rely on manually designed feature detectors, which may lead to uneven keypoint distribution, require offline processing in most cases, and exhibit limited robustness in complex scenes. With the development of deep learning, the end-to-end, data-driven paradigm has gradually become dominant. StabNet [48] was the first to propose a supervised online stabilization framework based on convolutional neural networks (CNNs), followed by PWStableNet [60] and Yu et al. [57], which introduced pixel-level 2D deformation fields for more precise motion correction. FuSta [30] improved stabilization performance by integrating multi-scale spatial and feature information, while DIFRINT [7] effectively reduced cropping artifacts through unsupervised inter-frame interpolation. Subsequently, DUT [52] achieved stabilization without manual annotation by utilizing motion priors or trajectory consistency. NNDVS [59] achieved high-quality, low-latency video stabilization using existing motion estimation frameworks. FastStab [61] enabled fast offline 2D stabilization through optical flow guidance. To further enhance temporal consistency and scene adaptability, VidStabFormer [21] and MetaStab [1] introduced self-supervised and meta-learning strategies, respectively. In recent years, 3D-based stabilization techniques have emerged: Deep3D [23] jointly estimates depth and pose; DeepFused [40] integrates optical flow and gyroscope data to predict virtual 3D camera trajectories; RStab [34] employs a neural rendering technique with adaptive modules; and Gavs [54] achieves high-fidelity, clipping-free stabilization through Gaussian-based 3D scene reconstruction. Despite these advances, deep learning methods are often complex and resource-intensive. As an efficient alternative, our method adopts a hybrid strategy that integrates multi-threaded buffering technology into a three-stage processing pipeline.
+2.2 Feature Detection
+Classical detectors [36, 31, 37] remain widely used, whereas deep methods [8, 38, 45, 63, 62, 35, 11]
+have been shown to improve robustness to illumination and viewpoint changes. In addition, methods [42, 50] have achieved strong performance in low-texture and large-parallax cases. Existing stabilizers often rigidly couple detection, limiting adaptability. We propose a decoupled framework with keypoint uniformization and multi-detector collaboration, enabling scene-adaptive feature selection while retaining real-time efficiency.
+2.3 Optical Flow Estimation
+Variational methods [15] pioneered the use of global optimization, while deep methods such as those in [10, 18, 41, 17, 43, 19, 16, 39] achieved state-of-the-art accuracy. NeuFlow [58] targets edge devices. For stabilization, optical flow can aggregate local motion cues into global priors. MemFlow [9] demonstrated real-time performance by incorporating historical memory. Optical flow better captures non-rigid motion than top-down keypoint matching.
+3 Method
+Our pipeline consists of three stages: (i) motion estimation, (ii) motion propagation, and (iii) motion compensation. All three stages are strictly causal (i.e., past-only) and never access future frames. Training is fully unsupervised (see the self-supervised objectives in Secs. 3.2 and 3.3); inference utilizes a multi-threaded, asynchronous pipeline for enhanced efficiency. Due to space constraints, full details of our multi-process acceleration strategy are deferred to the supplementary material (Sec. C).
+Figure 2: Overview of our video stabilization framework, consisting of three key modules: motion estimation,
+motion propagation, and motion compensation. The motion estimation module detects keypoints and calculates
+optical flow to estimate motion between frames. The motion propagation module transfers the estimated motion
+information to a global trajectory buffer, ensuring motion consistency across frames. The motion compensation
+module adjusts the frames based on the updated trajectories to produce a stabilized output. A multi-threaded
+processing structure utilizes three threads, each dedicated to one of the core modules, and leverages shared
+buffer queues for efficient parallel execution. This approach improves processing speed and online performance,
+enabling the stabilization of video frames with minimal latency.
+3.1 Motion Estimation
+This section presents a strictly online observation pipeline that outputs keypoints KtK_{t}, displacements 𝐮t\mathbf{u}_{t}, and a causal dense backward flow 𝐟^t←t−1\hat{\mathbf{f}}_{t\leftarrow t-1}. These serve as inputs to motion propagation and motion compensation. This step depends only on {It−1,It}\{I_{t-1},I_{t}\} and never uses future frames.
+Notation
+Let ItI_{t} represent the tt-th frame. We generate online:
+(i) candidate keypoints K~t={(xi,yi,si)}i\tilde{K}_{t}=\{(x_{i},y_{i},s_{i})\}_{i} (with confidence sis_{i}); (ii) the uniformized subset KtK_{t}; and (iii) a causal dense backward optical flow 𝐟^t←t−1∈ℝH×W×2\hat{\mathbf{f}}_{t\leftarrow t-1}\in\mathbb{R}^{H\times W\times 2}, estimated from {It−1,It}\{I_{t-1},I_{t}\}. Next, we sample the observed displacements 𝐮t\mathbf{u}_{t} at the keypoint locations and construct the feature representation for subsequent modules.
+(1) Keypoint Collaboration Detection
+To reduce the computational cost and mitigate dynamic-object sensitivity in dense flow methods [56, 2], we adopt a flexible framework that incorporates feature points from heterogeneous detectors. Let
+𝒟={Dmtrad}m=1M∪{Dndeep}n=1N,\mathcal{D}=\big\{D^{\mathrm{trad}}_{m}\big\}_{m=1}^{M}\cup\big\{D^{\mathrm{deep}}_{n}\big\}_{n=1}^{N},
+(1)
+with each producing K~t(j)={(xi,yi,si)(j)}i\tilde{K}_{t}^{(j)}=\{(x_{i},y_{i},s_{i})^{(j)}\}_{i}. We normalize the confidence scores, apply NMS, and fuse the proposals from different sources using weighted averages:
+K~t=NMS⁡(⋃jwj⋅K~t(j)),\tilde{K}_{t}=\operatorname{NMS}\!\Big(\bigcup_{j}w_{j}\cdot\tilde{K}_{t}^{(j)}\Big),
+(2)
+where wjw_{j} can be configured online according to scene characteristics or runtime budget.
+(2) Homogenization
+To prevent clustering of keypoints in texture-rich regions, we employ Spatially Selective Clustering (SSC) [3]. The image is partitioned into a Gx×GyG_{x}\times G_{y} grid; for each cell 𝒞\mathcal{C}, the top-kk keypoints are selected based on confidence ss, subject to a minimum separation threshold τ\tau:
+Kt=⋃𝒞arg​topk{(x,y,s)∈K~t∩𝒞|min(x′,y′)∈Kt∩𝒞∥(x,y)−(x′,y′)∥2≥τ}.\begin{split}K_{t}=\bigcup_{\mathcal{C}}\operatorname*{arg\,top}_{k}\Big\{(x,y,s)\in\tilde{K}_{t}\cap\mathcal{C}\;\big|\\
+\min_{(x^{\prime},y^{\prime})\in K_{t}\cap\mathcal{C}}\|(x,y)-(x^{\prime},y^{\prime})\|_{2}\geq\tau\Big\}.\end{split}
+(3)
+(3) Sparse Keypoint-Guided Causal Flow Fusion
+We estimate the causal dense backward flow 𝐟t←t−1\mathbf{f}_{t\leftarrow t-1} using MemFlow [9].
+To incorporate guidance from sparse keypoints, we build the mask using the denser candidate set K~t\tilde{K}_{t}
+(to improve coverage), while the uniformized subset KtK_{t} is used for subsequent geometric estimation.
+Mt(x)=[minp∈K~t∥x−p∥2≤r].M_{t}(x)=\mathbf{1}\!\left[\min_{p\in\tilde{K}_{t}}\|x-p\|_{2}\leq r\right].
+(4)
+where the mask is set to 1 within a circular neighborhood of radius rr centered at each keypoint, and 0 elsewhere.
+We then synthesize a reweighted flow field by directly using the estimated dense flow within the keypoint neighborhood, while using keypoint-based interpolated flow outside the neighborhood:
+𝐟^t←t−1​(x)=Mt​(x)⊙𝐟t←t−1​(x)+(1−Mt(x))⊙ℐ(𝐟t←t−1,K~t),\begin{split}\hat{\mathbf{f}}_{t\leftarrow t-1}(x)&=M_{t}(x)\odot\mathbf{f}_{t\leftarrow t-1}(x)\\
+&\quad+(1-M_{t}(x))\odot\mathcal{I}\!\big(\mathbf{f}_{t\leftarrow t-1},\tilde{K}_{t}\big),\end{split}
+(5)
+Finally, we extract the optical flow displacements at the keypoint locations from the reweighted flow field
+𝐟^t←t−1\hat{\mathbf{f}}_{t\leftarrow t-1} as the observation:
+𝐮t=𝐟^t←t−1​(Kt)∈ℝ|Kt|×2,\mathbf{u}_{t}=\hat{\mathbf{f}}_{t\leftarrow t-1}(K_{t})\in\mathbb{R}^{|K_{t}|\times 2},
+(6)
+and concatenate them with the keypoint coordinates to form the motion feature vector for subsequent tasks:
+𝐦t=[xk​p;yk​p;u;v].\mathbf{m}_{t}=[x_{kp};\,y_{kp};\,u;\,v].
+(7)
+3.2 Motion Propagation
+While sparse keypoints and their associated initialized flow can capture local motion, dynamic and non-rigid scenes still pose challenges to modeling the camera’s global trajectory. To address this, we propose EfficientMotionPro, which anchors displacements to a regular grid using multi-homography priors, while focusing on learning only the non-rigid/parallax residuals. This design produces a full-frame grid motion field Δ​gt\Delta g_{t}. Importantly, both training and inference rely solely on past information (without access to future frames), and the entire process is conducted in a fully self-supervised manner. We denote the set of causal keypoints at time tt as Ωk​p\Omega_{kp} and the set of grid vertices as Ωg​r​i​d\Omega_{grid}.
+(1) Multi-Grid Homography Prior
+Let Khomo≥1K_{\text{homo}}\!\geq\!1 be a hyperparameter (the number of homography clusters). We cluster 𝐮t\mathbf{u}_{t} into KhomoK_{\text{homo}} groups via K-means and estimate a homography for each cluster with RANSAC, yielding Ht,1,…,Ht,KhomoH_{t,1},\ldots,H_{t,K_{\text{homo}}}. Let gg denote the regular grid vertices (g∈Ωg​r​i​dg\in\Omega_{grid}); projecting gg produces {g^t,k}k=1Khomo\{\hat{g}_{t,k}\}_{k=1}^{K_{\text{homo}}}. We then compute soft fusion weights {αt,k​(g)}k=1Khomo\{\alpha_{t,k}(g)\}_{k=1}^{K_{\text{homo}}} based on local cluster prevalence or distance, with ∑kαt,k​(g)=1\sum_{k}\alpha_{t,k}(g)=1:
+g^t=∑k=1Khomoαt,k​(g)​g^t,k,Δ​gbase,t=g−g^t.\hat{g}_{t}=\sum_{k=1}^{K_{\text{homo}}}\alpha_{t,k}(g)\,\hat{g}_{t,k},\qquad\Delta g_{\text{base},t}=g-\hat{g}_{t}.
+(8)
+(2) Residual Network
+Given 𝐦t=[xk​p;yk​p;u;v]\mathbf{m}_{t}=[x_{kp};\,y_{kp};\,u;\,v], a lightweight backbone (Ghost [14]+ECA [49]) predicts per-vertex residuals Δ​gres,t\Delta g_{\text{res},t}, from which we obtain
+Δ​gt=Δ​gbase,t+Δ​gres,t.\Delta g_{t}=\Delta g_{\text{base},t}+\Delta g_{\text{res},t}.
+(9)
+All temporal operators are implemented as causal convolutions (left-padded).
+(3) Core Self-Supervised Loss
+Our unsupervised objective enforces that the predicted grid displacements remain consistent with the observed causal keypoint motions. To improve robustness against noise and outliers, we adopt the Charbonnier penalty [5] and further introduce per-keypoint confidence weights ωt,p∈[0,1]\omega_{t,p}\in[0,1] that adaptively downweight unreliable keypoints:
+ℒkp=1|Ωk​p|​∑p∈Ωk​pωt,p​∥𝐮t,p−Δ​gt​(p)∥22+ϵ2,\mathcal{L}_{\text{kp}}=\tfrac{1}{|\Omega_{kp}|}\sum_{p\in\Omega_{kp}}\omega_{t,p}\,\sqrt{\lVert\mathbf{u}_{t,p}-\Delta g_{t}(p)\rVert_{2}^{2}+\epsilon^{2}},
+(10)
+where ϵ\epsilon is a small stabilizing constant (e.g., 10−310^{-3}).
+This confidence-weighted keypoint consistency loss serves as the core driver of propagation. Additional regularization terms (e.g., projection consistency and a structure-preservation constraint) are incorporated to further improve stability and prevent degenerate solutions; see supplement (Sec. A).
+3.3 Motion Compensation
+In dynamic scenes or under low-frame-rate conditions, grid vertex trajectories often exhibit local oscillations due to jitter, occlusion, or non-rigid disturbances, which compromise the stability of the overall motion field. To mitigate this issue, we introduce OnlineSmoother, a lightweight online trajectory smoothing module inspired by [59, 47]. Without relying on future frames, it employs a learnable causal kernel to smooth propagation-generated trajectories, followed by frame-wise grid deformation that produces stabilized videos. Neither training nor inference requires annotations or ground-truth data.
+(1) Causal Kernel Smoother
+A left-padded causal convolution encodes long-term memory; the decoder predicts 33-tap causal kernels for the xx and yy directions (66 channels total), corresponding to an effective temporal window of L=7L{=}7 frames. We denote the kernel tensor by
+𝒦=concat⁡(𝒦x,𝒦y)∈ℝB×6×T×H×W,\mathcal{K}=\mathrm{concat}(\mathcal{K}^{x},\mathcal{K}^{y})\in\mathbb{R}^{B\times 6\times T\times H\times W},
+(11)
+where BB is the batchsize, TT is the number of causal time steps held in the buffer, and H×WH{\times}W is the grid resolution (number of vertices in Ωg​r​i​d\Omega_{grid}). For the xx direction at time tt,
+Stx=λ​∑r∈{1,2,3}kt,rx​St−rx+Otx1+λ​∑r|kt,rx|,S_{t}^{x}=\frac{\lambda\sum_{r\in\{1,2,3\}}k_{t,r}^{x}\,S_{t-r}^{x}+O_{t}^{x}}{1+\lambda\sum_{r}|k_{t,r}^{x}|},
+(12)
+where OtO_{t} is the input trajectory (e.g., grid-vertex trajectories from Δ​gt\Delta g_{t} or its integral) and λ=100\lambda{=}100 by default. Only cached past states are accessed (no look-ahead). We empirically set L=7L{=}7 and use Δmax=⌊(L−1)/2⌋=3\Delta_{\max}{=}\lfloor(L-1)/2\rfloor{=}3 in the temporal loss below; see figure 5 for ablations.
+(2) Core Self-Supervised Loss (definitions included)
+To ensure stable yet responsive trajectories under causal constraints, we combine a time-adaptive second-order penalty with a frequency prior. Let p∈Ωg​r​i​dp\in\Omega_{grid} index grid vertices. The adaptive temporal term is
+ℒtime=1|Ωg​r​i​d|​∑p∈Ωg​r​i​d∑Δ=1ΔmaxαΔ​e−β​‖St​(p)−St−Δ​(p)‖22Δ2⋅‖St​(p)−2​St−Δ​(p)+St−2​Δ​(p)‖22+ϵ2.\begin{split}\mathcal{L}_{\text{time}}&=\tfrac{1}{|\Omega_{grid}|}\sum_{p\in\Omega_{grid}}\sum_{\Delta=1}^{\Delta_{\max}}\frac{\alpha_{\Delta}\,e^{-\beta\|S_{t}(p)-S_{t-\Delta}(p)\|_{2}^{2}}}{\Delta^{2}}\\
+&\quad\cdot\sqrt{\|S_{t}(p)-2S_{t-\Delta}(p)+S_{t-2\Delta}(p)\|_{2}^{2}+\epsilon^{2}}.\end{split}
+(13)
+Definitions.
+(i) Δmax∈ℕ\Delta_{\max}\in\mathbb{N} is the causal horizon used by the loss (we set Δmax=3\Delta_{\max}{=}3 for L=7L{=}7 so that the largest stencil t−2​Δt-2\Delta remains within the causal window).
+(ii) αΔ≥0\alpha_{\Delta}\!\geq\!0 are fixed, distance-decaying weights
+αΔ=exp(−Δ/τtime)∑d=1Δmaxexp(−d/τtime),\alpha_{\Delta}=\frac{\exp(-\Delta/\tau_{\text{time}})}{\sum_{d=1}^{\Delta_{\max}}\exp(-d/\tau_{\text{time}})},
+(14)
+where τtime=2\tau_{\text{time}}=2 by default.
+(iii) β≥0\beta\!\geq\!0 controls motion-adaptive attenuation; we use a global learnable scalar with softplus reparameterization, initialized to β0=0.02\beta_{0}{=}0.02. Larger β\beta downweights the penalty when recent motion magnitude ‖St−St−Δ‖\|S_{t}{-}S_{t-\Delta}\| is large.
+The frequency term suppresses high-frequency oscillations within each causal window of length LL:
+ℒfreq=1|Ωg​r​i​d|​∑p∈Ωg​r​i​d∑m=1⌊L/2⌋γ⁡(ωm)​‖S^p​(ωm)‖22,\mathcal{L}_{\text{freq}}=\tfrac{1}{|\Omega_{grid}|}\sum_{p\in\Omega_{grid}}\sum_{m=1}^{\lfloor L/2\rfloor}\gamma(\omega_{m})\,\|\hat{S}_{p}(\omega_{m})\|_{2}^{2},
+(15)
+where S^p​(ωm)\hat{S}_{p}(\omega_{m}) is the DFT magnitude of {St−d​(p)}d=0L−1\{S_{t-d}(p)\}_{d=0}^{L-1} at frequency ωm=2​π​m/L\omega_{m}{=}2\pi m/L, and the frequency weights are γ⁡(ωm)=γ0​(ωmωN)2\gamma(\omega_{m})=\gamma_{0}\!\left(\frac{\omega_{m}}{\omega_{N}}\right)^{2} with ωN=π\omega_{N}=\pi and γ0≥0\gamma_{0}\geq 0, by default we set γ0=0.1\gamma_{0}=0.1.
+The overall temporal objective is
+ℒtemp=λtime​ℒtime+λfreq​ℒfreq,\mathcal{L}_{\text{temp}}=\lambda_{\text{time}}\mathcal{L}_{\text{time}}+\lambda_{\text{freq}}\mathcal{L}_{\text{freq}},
+(16)
+with λtime,λfreq>0\lambda_{\text{time}},\lambda_{\text{freq}}\!>\!0 (default λtime=1.0\lambda_{\text{time}}=1.0, λfreq=0.1\lambda_{\text{freq}}=0.1). All loss terms are fully causal.
+(3) Frame-Level Compensation and Rendering
+Let Mt=St−OtM_{t}=S_{t}-O_{t} denote the compensation displacement field (defined on grid vertices). For each pixel xx, obtain Mt​(x)M_{t}(x) by bilinear interpolation from vertex displacements, and perform either forward grid warping or backward sampling:
+x′=x+Mt​(x),I~t​(x)=It​(𝒲⁡(x,Mt)).x^{\prime}=x+M_{t}(x),\qquad\tilde{I}_{t}(x)=I_{t}\!\big(\mathcal{W}(x;M_{t})\big).
+(17)
+where 𝒲\mathcal{W} is the backward mapping with bilinear resampling to avoid holes. We employ ProPainter [64] for outpainting at frame boundaries to minimize black borders; see supplement (Sec. D) for details.
+3.4 UAV-Test Dataset
+Most existing video stabilization benchmarks are collected with handheld devices under visible-light conditions, which limits their applicability in real-world scenarios. In contrast, unstable videos frequently arise in safety-critical domains such as UAV-based night-time remote sensing and guided munitions. To bridge this gap, we introduce the UAV-Test dataset, comprising unstable aerial videos in both visible and infrared modalities. UAV-Test contains 92 sequences spanning five representative scenarios: urban areas, highways, forests/mountains, waterfronts, and industrial sites. Summary statistics are reported in Table 1, with additional implementation details and extended dataset analysis provided in the supplemental material (Sec. E).
+Table 1: Overview of the UAV-Test dataset.
+Scene Type
+Sensor
+Tilt Range
+Resolution
+FPS
+Occlusion
+Sequences
+Urban areas
+Visible/IR
+30∘30^{\circ}- 90∘90^{\circ}
+1920×10801920\times 1080
+25
+Partial building occlusion
+19
+Highways
+Visible/IR
+30∘30^{\circ}- 90∘90^{\circ}
+1280×7201280\times 720
+30
+Minimal occlusion
+22
+Forests/mountains
+Visible/IR
+45∘45^{\circ}- 90∘90^{\circ}
+1920×10801920\times 1080
+25
+Frequent canopy occlusion
+18
+Waterfronts
+Visible
+60∘60^{\circ}- 90∘90^{\circ}
+1920×10801920\times 1080
+30
+Mild vapor occlusion
+20
+Industrial sites
+Visible/IR
+30∘30^{\circ}- 60∘60^{\circ}
+1280×7201280\times 720
+25
+Large machinery occlusion
+13
+4 Experiment
+4.1 Quantitative Evaluation
+Table 2: Quantitative results on the NUS [27], DeepStab [48], Selfie [55], GyRo [40] and UAV-Test datasets. We report Cropping Ratio (C), Distortion Value (D), and Stability Score (S). All metrics range from 0 to 1; higher is better. Best results in each group (offline or online) are in red, second best in blue. A runtime (fps) comparison among online methods is provided in the supplementary material (Sec. F).
+Method
+NUS
+DeepStab
+Selfie
+GyRo
+UAV-Test
+C↑
+D↑
+S↑
+C↑
+D↑
+S↑
+C↑
+D↑
+S↑
+C↑
+D↑
+S↑
+C↑
+D↑
+S↑
+Offline
+Grundmann et al. [13]
+0.71
+0.76
+0.82
+0.77
+0.87
+0.84
+0.75
+0.81
+0.83
+0.91
+0.89
+0.81
+0.72
+0.64
+0.76
+Bundle [27]
+0.81
+0.78
+0.82
+0.80
+0.90
+0.85
+0.74
+0.82
+0.80
+0.93
+0.82
+0.85
+0.79
+0.69
+0.88
+DIFRINT [7]
+1.00
+0.87
+0.84
+1.00
+0.91
+0.78
+1.00
+0.78
+0.84
+1.00
+0.83
+0.85
+1.00
+0.86
+0.87
+Yu and Ramamoorthi [57]
+0.85
+0.81
+0.86
+0.87
+0.92
+0.82
+0.83
+0.79
+0.86
+1.00
+0.92
+0.84
+0.85
+0.83
+0.86
+PWStableNet [60]
+0.91
+0.97
+0.86
+0.97
+0.97
+0.87
+0.99
+0.92
+0.89
+0.99
+0.96
+0.83
+0.90
+0.88
+0.90
+DUT [52]
+0.98
+0.88
+0.85
+0.99
+0.95
+0.95
+0.99
+0.98
+0.93
+0.99
+0.98
+0.89
+0.95
+0.89
+0.94
+Deep3D [23]
+0.66
+0.90
+0.94
+0.75
+0.98
+0.92
+0.35
+0.70
+0.95
+0.99
+0.94
+0.77
+0.68
+0.89
+0.86
+FuSta [30]
+1.00
+0.87
+0.86
+1.00
+0.83
+0.87
+1.00
+0.92
+0.82
+1.00
+0.97
+0.87
+1.00
+0.88
+0.83
+RStab [34]
+1.00
+0.99
+0.94
+1.00
+0.98
+0.96
+1.00
+0.92
+0.95
+1.00
+0.95
+0.92
+1.00
+0.96
+0.94
+MetaStab [1]
+1.00
+0.99
+0.91
+1.00
+0.99
+0.91
+1.00
+0.96
+0.58
+1.00
+0.99
+0.90
+1.00
+0.99
+0.91
+VidStabFormer [21]
+1.00
+0.90
+0.85
+1.00
+0.90
+0.82
+1.00
+0.85
+0.88
+1.00
+0.89
+0.86
+1.00
+0.87
+0.84
+Gavs [54]
+1.00
+0.98
+0.93
+1.00
+0.96
+0.90
+1.00
+0.78
+0.85
+1.00
+0.99
+0.93
+1.00
+0.83
+0.87
+Adobe Premiere Pro (2025)
+0.84
+0.82
+0.91
+0.73
+0.87
+0.87
+0.71
+0.80
+0.84
+0.73
+0.96
+0.60
+0.75
+0.86
+0.90
+Online
+MeshFlow [26]
+0.78
+0.83
+0.85
+0.81
+0.87
+0.86
+0.75
+0.88
+0.84
+0.79
+0.88
+0.82
+0.77
+0.83
+0.70
+StabNet [48]
+0.66
+0.88
+0.82
+0.65
+0.86
+0.80
+0.70
+0.78
+0.83
+0.69
+0.85
+0.83
+0.73
+0.84
+0.73
+NNDVS [59]
+0.92
+0.98
+0.87
+0.93
+0.91
+0.84
+0.97
+0.92
+0.91
+0.99
+0.93
+0.88
+0.89
+0.87
+0.84
+Liu et al. [29]
+0.72
+0.89
+0.89
+0.89
+0.88
+0.85
+0.79
+0.89
+0.85
+0.99
+0.94
+0.89
+0.82
+0.89
+0.85
+Ours
+0.95
+0.98
+0.90
+0.94
+0.91
+0.85
+0.98
+0.93
+0.91
+0.99
+0.96
+0.93
+0.94
+0.90
+0.89
+Baselines.
+We evaluate our method against a diverse set of representative stabilization algorithms, covering both offline and online approaches. Offline baselines include [13, 27, 7, 57, 60, 52, 23, 30, 34, 1, 21, 54] together with the commercial stabilizer Adobe Premiere Pro 2025. Online methods include [26, 48, 59, 29]. For comparison, we use either official videos or results from official implementations with default settings or pretrained models.
+Datasets.
+We evaluate on three public benchmarks and an additional multimodal UAV dataset:
+(1) NUS [27], 144 sequences across six categories (Regular, Running, Zooming, Crowd, Parallax, QuickRotating);
+(2) DeepStab [48], 60 pairs of synchronized unstable/stable videos;
+(3) Selfie [55], 33 front camera sequences with severe shaking;
+(4) GyRo [40], which consists of 50 videos with precise alignment of gyroscope and OIS data; the test set is divided into six categories: GENERAL, ROTATION, PARALLAX, DRIVING, PEOPLE, and RUNNING;
+(5) UAV-Test, consisting of 92 videos (74 RGB, 18 infrared) captured by UAVs across diverse scenarios, including urban highways, forests, dense cities, industrial sites, and waterfronts.
+Metrics.
+Following prior works [52, 23, 30, 34, 48, 59], we report three metrics:
+(1) Cropping Ratio (C): content preservation after stabilization (higher is better);
+(2) Distortion Value (D): anisotropy of estimated homographies, indicating geometric fidelity (higher is better);
+(3) Stability Score (S): low-frequency energy ratio, reflecting motion smoothness (higher is better).
+Together, these metrics capture content integrity, geometric fidelity, and temporal stability.
+Results on the NUS dataset.
+On the NUS benchmark [27] (Table 2), our method achieves the best online performance across all three metrics (C=0.95C=0.95, D=0.98D=0.98, S=0.90S=0.90). Compared with NNDVS [59], our approach matches its geometric fidelity (D=0.98D=0.98) while surpassing it in stability and cropping. This highlights our advantage in maintaining boundary completeness and suppressing distortion, while remaining close to the strongest offline method RStab [34].
+Results on the DeepStab dataset.
+For DeepStab [48] (paired 720p), our method ranks first among online methods in Cropping Ratio (C=0.94C=0.94), ties with NNDVS in geometric fidelity (D=0.91D=0.91), and achieves competitive stability (S=0.85S=0.85, second only to MeshFlow [26] at 0.860.86). This shows good transfer from low resolution, fast shaking scenarios to higher definition inputs, achieving a balanced trade-off between smoothness and content preservation.
+Results on the Selfie dataset.
+The Selfie dataset [55], with severe handheld shake and large motion, poses challenges to stabilization. As reported in Table 2 (center right), our method delivers the best online performance with C=0.98C=0.98, D=0.93D=0.93, and S=0.91S=0.91. This confirms that our model handles extreme motion and dynamic scenes better than traditional geometric and deep content-driven baselines.
+Results on the GyRo dataset.
+On the GyRo benchmark [40], which involves gyroscope-based scenarios, our method achieves state-of-the-art online performance with Cropping Ratio (C=0.99C=0.99), Distortion Value (D=0.96D=0.96), and Stability Score (S=0.93S=0.93). This outperforms other online approaches, such as NNDVS [59] (C=0.99C=0.99, D=0.93D=0.93, S=0.88S=0.88) and Liu et al. [29] (C=0.99C=0.99, D=0.94D=0.94, S=0.89S=0.89), and is competitive with top offline methods like Gavs [54] (C=1.00C=1.00, D=0.99D=0.99, S=0.93S=0.93), demonstrating the effectiveness of our causal framework.
+Results on the UAV-Test dataset.
+Finally, on the new UAV-Test benchmark with visible/IR sequences across diverse scenarios, our method sets a new online state of the art: C=0.94C=0.94, D=0.90D=0.90, S=0.89S=0.89, outperforming NNDVS [59] (C=0.89C=0.89, D=0.87D=0.87, S=0.84S=0.84) and Liu et al. [29] (C=0.82C=0.82, D=0.89D=0.89, S=0.85S=0.85). Compared with the strongest offline models (e.g., RStab [34]), our results remain competitive while relying only on causal information, showcasing strong generalization across modalities and complex UAV scenarios.
+4.2 Qualitative Results
+The visual comparison results in Figure 3 show that competing online methods [26, 48, 59, 29] often produce artifacts such as shear, distortion, or excessive cropping. In contrast, our method generates fewer artifacts across various scenes and is more effective at preserving scene structure, demonstrating superior generalization without the use of future frames.
+Figure 3: Comparison of visual results across different online methods. Distorted regions and black borders are
+highlighted with red boxes.
+4.3 User Study
+We conducted a user study to compare our method with other online approaches [26, 48, 59, 29]. Five datasets were prepared, each containing two randomly selected video types. Fifty participants ranked the videos from best to worst based on their preference. The videos were randomly ordered and included the original unstable videos. The results, shown in Figure 4, indicate that users generally preferred our videos as the best. See the supplemental material (Sec. I) for details.
+Figure 4: User study preferences.
+5 Ablation Study
+We perform ablation experiments on multiple datasets, as shown in Fig. 5, where A10 is the full model (L=7L=7). The results demonstrate the effectiveness of each component:
+•
+w/o MP (Sec. 3.2): Removing motion propagation (A1) degrades D and PSNR, confirming its importance for global motion modeling.
+•
+w/o TS (Sec. 3.3): Without trajectory smoothing (A2), structural stability decreases, as reflected in higher D.
+•
+w/o MP&TS: Disabling both (A3) causes the most severe drop, highlighting their complementarity.
+•
+w/o Losskp (Eq. 10): Excluding keypoint consistency loss (A4) weakens motion supervision, lowering D and slightly PSNR.
+•
+w/o Losstemp (Eq. 16): Without temporal regularization (A5), grid trajectories become less stable, increasing D while PSNR remains similar.
+•
+w/o Homo (Sec. 3.2): Replacing multi-homography with a single homography (A6) introduces jitter and local distortions, reducing D and SSIM.
+•
+w/o KPC (Sec. 3.1): Using raw keypoints without collaboration (A7) leads to uneven sampling and lower D.
+•
+Window length (Sec. 3.3): Shorter windows (A8, L=5L=5) improve stability but reduce fidelity, while longer windows (A9, L=9L=9) increase cost without consistent gains. L=7L=7 (A10) provides the best trade-off.
+Overall, the full model achieves the highest scores, validating the contribution of each module.
+Figure 5: Normalized ablation study results on five datasets (NUS, DeepStab, Selfile, GyRo, UAV-Test). The x-axis denotes ablation configurations A1–A9 (variants with modules removed/modified) and A10 (our full model with window length L=7L=7). The y-axis shows normalized scores (higher is better) for five metrics: Consistency (C), Distortion Value (D), Peak Signal-to-Noise Ratio (PSNR), Stability Score (S), and Structural Similarity (SSIM).
+6 Conclusion
+In this paper, we present a novel, lightweight, unsupervised framework for online video stabilization that overcomes the limitations of conventional end-to-end models, namely strong reliance on paired datasets, limited controllability, and difficulty of deployment on resource-constrained devices. The framework comprises three stages: motion estimation, motion propagation, and motion compensation, together with a system-level multithreaded acceleration strategy. By introducing collaborative keypoint detection and a keypoint uniformization scheme, the framework achieves accurate and robust motion estimation. Coupled with grid-based residual propagation and a dynamic smoothing kernel generation mechanism, it enables fine-grained modeling of complex motion trajectories with online smoothing. A multithreaded buffering mechanism further ensures stable operation on embedded platforms. In addition, we introduce a new multimodal aerial view dataset of unstable videos, UAV-Test, covering diverse geographic scenes and viewpoints to complement existing benchmarks. Extensive experiments show that our method outperforms state-of-the-art online approaches overall and approaches the performance of offline methods, demonstrating strong potential for real-time applications.
+7 Appendix
+The supplementary material additionally provides the following:
+•
+Implementation details of the motion propagation networks;
+•
+Implementation details of the trajectory smoothing networks;
+•
+Details of the multi-threaded asynchronous buffering pipeline;
+•
+Details of frame outpainting;
+•
+Information on the multimodal UAV dataset;
+•
+Runtime comparison on embedded platforms;
+•
+Comprehensive description of the evaluation metrics used in this work;
+•
+Per-scene quantitative evaluation of online methods;
+•
+Additional visualizations of key modules and optical flow;
+•
+A 3-minute video demonstrating comparisons with online methods;
+•
+Limitations and future directions.
+8 Details of EfficientMotionPro
+8.1 Training Objectives
+We propose a grid-based motion propagation network (EfficientMotionPro). Building upon multi-homography priors, this module explicitly encodes the relationship between sparse keypoint residuals and vertex distances. Through lightweight feature extraction, attention-weighted aggregation, and residual decoding, it achieves end-to-end propagation from sparse keypoints to a dense grid, thereby yielding a more robust global motion field. We additionally employ projection consistency and structure-preservation objectives for training.
+(1) Homography Projection Constraint
+To enhance the geometric fidelity of the propagated motion field, we introduce a homography-based projection loss.
+Specifically, the estimated keypoint motion is projected via a local homography mapping generated from the predicted
+grid motion vectors. The Euclidean distance between this projected position and the actual ground-truth keypoint
+position after motion constitutes the projection error:
+ℒproj=1|Ωk​p|​∑p∈Ωk​pωt,p​‖𝐮t,p−Htlocal​(p,Δ​gt)⋅p‖22+ϵ2.\mathcal{L}_{\text{proj}}=\tfrac{1}{|\Omega_{kp}|}\sum_{p\in\Omega_{kp}}\omega_{t,p}\,\sqrt{\left\lVert\mathbf{u}_{t,p}-H_{t}^{\text{local}}(p;\,\Delta g_{t})\cdot p\right\rVert_{2}^{2}+\epsilon^{2}}.
+(18)
+Here, Htlocal​(p,Δ​gt)H_{t}^{\text{local}}(p;\,\Delta g_{t}) denotes the local homography transformation, obtained via bilinear sampling from
+the grid motion field Δ​gt\Delta g_{t} surrounding point pp. This term effectively constrains the grid deformation
+predicted by the residual network to be geometrically plausible, reducing inconsistent distortions.
+(2) Structure-Preservation Constraint
+In low-texture regions, the propagation estimate is prone to local distortions or discontinuous boundaries. To maintain
+the rigid structure of the mesh, we design a structure-preserving loss based on the angular relationships between adjacent
+vertices. For each grid cell defined by its four vertices {gi,j,gi+1,j,gi,j+1,gi+1,j+1}\{g_{i,j},g_{i+1,j},g_{i,j+1},g_{i+1,j+1}\}, we enforce orthogonality between adjacent edges:
+ℒstruct=1|G|​∑i,j(⟨gi+1,j−gi,j,R90∘​(gi,j+1−gi,j)⟩‖gi+1,j−gi,j‖⋅‖gi,j+1−gi,j‖)2,\mathcal{L}_{\text{struct}}=\tfrac{1}{|G|}\sum_{i,j}\left(\frac{\big\langle g_{i+1,j}-g_{i,j},\;R_{90^{\circ}}\!\big(g_{i,j+1}-g_{i,j}\big)\big\rangle}{\left\lVert g_{i+1,j}-g_{i,j}\right\rVert\cdot\left\lVert g_{i,j+1}-g_{i,j}\right\rVert}\right)^{2},
+(19)
+where R90∘R_{90^{\circ}} denotes a 90∘90^{\circ} rotation operator, ⟨⋅,⋅⟩\langle\cdot,\cdot\rangle is the dot product, and |G||G| is
+the total number of grid cells. This loss penalizes deviations from orthogonality, suppressing shear and anisotropic
+scaling, thereby preserving local shape and preventing distortion.
+(3) Total Loss
+The final optimization objective for the motion-propagation module is defined as the weighted combination of all three
+losses:
+ℒ=λ1​ℒkp+λ2​ℒproj+λ3​ℒstruct,\mathcal{L}=\lambda_{1}\mathcal{L}_{\text{kp}}+\lambda_{2}\mathcal{L}_{\text{proj}}+\lambda_{3}\mathcal{L}_{\text{struct}},
+(20)
+with default settings (λ1,λ2,λ3)=(10,40,40)(\lambda_{1},\lambda_{2},\lambda_{3})=(10,40,40).
+Figure 6: The architecture of our EfficientMotionPro network.
+8.2 Network Architecture
+Fig. 6 illustrates the architecture of our EfficientMotionPro network. Each frame produces an input tensor of size [B,4,N][B,4,N] constructed from NN keypoints: two channels encode distance
+(or distance-derived) features and two channels encode residual motion. Distance and motion branches use Ghost [14]
+modules for lightweight embeddings and depthwise separable convolutions; motion features are refined with ECA [49]
+attention. Features are fused via a Lightweight Fusion Block, aggregated with attention weights, and decoded by a two-layer
+MLP to yield residuals [B,2][B,2]. The final displacements are reshaped into a grid field [H/P,W/P, 2][H/P,\,W/P,\,2] and smoothed by
+median pooling. Table 3 details the configuration.
+Table 3: Architecture of the proposed EfficientMotionPro module.
+The input tensor [B,4,N][B,4,N] is split into distance and motion channels, embedded via Ghost modules, enhanced with ECA, fused,
+and finally decoded into grid displacements.
+Component
+Operation
+Output Size
+Input
+Distance & Motion channels
+[B,4,N][B,4,N]
+Distance branch
+GhostModule + DWConv + PWConv
+[B,48,N][B,48,N]
+Feature reduction
+[B,24,N][B,24,N]
+Distance attention extractor
+[B,1,N][B,1,N]
+Motion branch
+GhostModule + DWConv + PWConv
+[B,48,N][B,48,N]
+ECA attention enhancement
+[B,48,N][B,48,N]
+Fusion
+Concat (Dist+Motion) →\rightarrow FusionBlock
+[B,48,N][B,48,N]
+Aggregation
+Attention-weighted sum
+[B,48][B,48]
+Decoder
+2-layer MLP
+[B,2][B,2]
+Reshape + MedianPool
+Grid displacement field
+[H/P,W/P, 2][H/P,\,W/P,\,2]
+Figure 7: Training curves of EfficientMotionPro: the blue line shows training loss and the orange line shows validation loss.
+(1) Implementation Details
+We train EfficientMotionPro on an in-house unstable video dataset [65, 66, 20] with train/val splits.
+Batch size is 6464; optimizer is Adam (β1=0.9,β2=0.999)(\beta_{1}=0.9,\beta_{2}=0.999) with weight decay ×10−51\!\times\!10^{-5}.
+Learning rate follows OneCycleLR, peaking at ×10−42\!\times\!10^{-4} with 30%30\% warm-up, then cosine decay.
+Training is conducted for 100100 epochs on a single NVIDIA RTX 4090 GPU, taking approximately 1212 hours.
+We save checkpoints every 33 epochs and keep the best validation loss as shown in Fig. 7.
+(2) Complexity Analysis
+Parameter Count
+Let CeC_{e} be the embedding dimension (default Ce=48C_{e}=48).
+Core components include Ghost modules, depthwise separable convolutions (DW), pointwise convolutions (PW, kernel 11), and
+ECA attention. At Ce=48C_{e}=48, the whole module has ∼2.3×104\sim 2.3\times 10^{4} (≈22.9\approx 22.9K) parameters, significantly fewer
+than those in typical full-frame 2D CNN or Transformer-based propagation heads.
+Time Complexity
+Let NN be the number of keypoints per frame.
+Since convolutions, softmax, and weighted aggregation are along the keypoint dimension with small kernels, the dominant MACs
+come from PW convolutions:
+𝒪(NCe2)[PW: dist reduction Ce→Ce/2]+𝒪(4NCe2)[PW: motion 2Ce→2Ce]+𝒪(NCe2)[PW: motion Ce→Ce]+𝒪⁡(N​Ce​k)​[DW blocks]+𝒪⁡(N)​[aggregation]≈𝒪⁡(5​N​Ce2).\begin{split}&\mathcal{O}(NC_{e}^{2})\;[\text{PW: dist reduction }C_{e}\!\to\!C_{e}/2]\\
+&+\mathcal{O}(4NC_{e}^{2})\;[\text{PW: motion }2C_{e}\!\to\!2C_{e}]\\
+&+\mathcal{O}(NC_{e}^{2})\;[\text{PW: motion }C_{e}\!\to\!C_{e}]\\
+&+\mathcal{O}(NC_{e}k)\;[\text{DW blocks}]\;+\;\mathcal{O}(N)\;[\text{aggregation}]\\
+&\approx\mathcal{O}(5NC_{e}^{2}).\end{split}
+(21)
+Thus the cost scales linearly with NN and is largely decoupled from image resolution or grid size;
+the cost of median pooling is negligible due to its small kernel size.
+Memory Complexity
+Intermediate tensors scale as 𝒪⁡(B​Ce​N)\mathcal{O}(BC_{e}N) (independent of H​WHW).
+Complexity Estimation
+Numerical MAC estimates (ignoring BN/activations/ECA) with Ce=48C_{e}=48 are shown in Table 4.
+Table 4: Estimated MACs per frame of EfficientMotionPro under different keypoint counts NN.
+Keypoints NN
+Estimated MACs / frame
+128128
+≈2.14\approx 2.14M
+256256
+≈4.28\approx 4.28M
+512512
+≈8.55\approx 8.55M
+9 OnlineSmoother Details
+9.1 Training Objectives
+In dynamic scenes or under low-frame-rate conditions, grid vertex trajectories often exhibit local oscillations due
+to jitter, occlusion, or non-rigid disturbances, which compromise temporal consistency and introduce geometric
+distortions. To achieve online stabilization with minimal latency and without using future frames, we introduce
+the OnlineSmoother network. It leverages only the historical trajectory data from a sliding buffer,
+employing a Lite LS-3D [46] encoder to extract spatio-temporal features and a Star-gated [32] decoder
+to predict dynamic smoothing kernels for the xx and yy directions separately. This kernel-based iterative update
+mechanism progressively suppresses high-frequency oscillations while preserving motion intentionality.
+We additionally employ spatial consistency and projection consistency objectives for training.
+(1) Spatial Distortion Constraint
+To maintain the local geometric structure of the mesh during temporal transformation, we introduce a distortion loss
+based on triangular mesh elements. The smoothed trajectories are mapped back to the grid coordinate system to
+construct triangular structures (eight varying configurations per quad). The loss penalizes deviations in edge
+length ratios and angles from their initial reference state:
+ℒspatial=1|G|∑i,j[λedge∑edges ​e(∥e∥∥e0∥−1)2+ϵ2+λangle∑angles ​θ(θθ0−1)2+ϵ2]\begin{split}\mathcal{L}_{\text{spatial}}&=\tfrac{1}{|G|}\sum_{i,j}\Bigg[\lambda_{\text{edge}}\sum_{\text{edges }e}\sqrt{\left(\frac{\lVert e\rVert}{\lVert e_{0}\rVert}-1\right)^{2}+\epsilon^{2}}\\
+&\quad+\lambda_{\text{angle}}\sum_{\text{angles }\theta}\sqrt{\left(\frac{\theta}{\theta_{0}}-1\right)^{2}+\epsilon^{2}}\Bigg]\end{split}
+(22)
+where e0e_{0} and θ0\theta_{0} represent the edge lengths and angles of the triangles in the initial, undeformed
+reference mesh grefg_{\text{ref}}, and |G||G| is the total number of grid cells.
+(2) Keypoint Projection Consistency Constraint
+To further ensure the alignment between the smoothed motion field and the observed keypoint trajectories, we
+introduce a homography-based projection supervision. Specifically, local homography transformations are constructed
+from the smoothed grid motion field StS_{t}. The original keypoint positions are then projected using these
+homographies, and a consistency error is computed against their actual warped positions:
+ℒproj=1|Ωk​p|​∑p∈Ωk​pωt,p​ρ​(𝒲⁡(p,Ot),Htlocal​(p,St)⋅p),\mathcal{L}_{\text{proj}}=\tfrac{1}{|\Omega_{kp}|}\sum_{p\in\Omega_{kp}}\omega_{t,p}\,\rho\!\left(\mathcal{W}(p;O_{t}),\,H_{t}^{\text{local}}(p;S_{t})\cdot p\right),
+(23)
+where ρ⁡(⋅,⋅)\rho(\cdot,\cdot) denotes the Charbonnier penalty ρ⁡(a,b)=∥a−b∥22+ϵ2\rho(a,b)=\sqrt{\lVert a-b\rVert_{2}^{2}+\epsilon^{2}},
+and Htlocal​(p,St)H_{t}^{\text{local}}(p;S_{t}) represents the local homography estimated from the smoothed grid StS_{t} at point pp.
+This term effectively enhances the accuracy and geometric plausibility of the smoothed trajectory field at the
+locations of real keypoints.
+(3) Total Loss
+The final optimization objective for the trajectory smoothing module is defined as the weighted combination of all
+three losses:
+ℒtotal=ℒtemp+λspatial​ℒspatial+λproj​ℒproj,\mathcal{L}_{\text{total}}=\mathcal{L}_{\text{temp}}+\lambda_{\text{spatial}}\mathcal{L}_{\text{spatial}}+\lambda_{\text{proj}}\mathcal{L}_{\text{proj}},
+(24)
+where λtime=20\lambda_{\text{time}}=20, λfreq=1\lambda_{\text{freq}}=1, λspatial=10\lambda_{\text{spatial}}=10, and
+λproj=5\lambda_{\text{proj}}=5 are the default hyperparameters inside/alongside ℒtemp\mathcal{L}_{\text{temp}} (time/freq) and the two auxiliary terms.
+Figure 8: The architecture of our OnlineSmoother network.
+9.2 Network Architecture
+Fig. 8 illustrates the architecture of our OnlineSmoother network. Given frame-wise
+displacements, we form a causal trajectory tensor [B,2,T,H,W][B,2,T,H,W] (two channels for x/yx/y). OnlineSmoother
+consists of: trajectory encoder (Linear (→64)(2\!\to\!64) + ReLU), spatiotemporal modeling (Lite LS-3D [46]:
+temporal large-kernel DW-Conv3d + spatial ××31\!\times\!3\!\times\!3 DW-Conv3d, optional
+××11\!\times\!1\!\times\!1 PW-Conv3d for mixing), Star-gated [32] dynamic-kernel decoder (two linear heads
+for gating/amplitude and one scale head), and kernel-guided iterative smoothing. Table 5
+summarizes the design.
+Table 5: Architecture of the OnlineSmoother module. Per-vertex processing; outputs are per-vertex kernels
+and smoothed trajectories.
+Submodule
+Tensor Shape (Input →\to Output)
+Structural Components
+Trajectory Encoder
+[B,2,T,H,W]→[B,64,T,H,W][B,2,T,H,W]\to[B,64,T,H,W]
+Linear (→64)(2\!\to\!64) + ReLU
+Lite LS-3D (Temporal)
+[B,64,T,H,W]→[B,64,T,H,W][B,64,T,H,W]\to[B,64,T,H,W]
+DW-Conv3d (kt××1(k_{t}\!\times\!1\!\times\!1, dilation OPENdt)d_{t}) + ReLU
+Lite LS-3D (Spatial)
+[B,64,T,H,W]→[B,64,T,H,W][B,64,T,H,W]\to[B,64,T,H,W]
+DW-Conv3d (××3)(1\!\times\!3\!\times\!3) + ReLU
+(Optional) Channel Mixing
+[B,64,T,H,W]→[B,64,T,H,W][B,64,T,H,W]\to[B,64,T,H,W]
+PW-Conv3d (××1(1\!\times\!1\!\times\!1, groups=4) + ReLU
+Kernel Decoder (x)
+[64]→[6][64]\to[6] (per vertex)
+Linear (gate), Sigmoid; Linear (amplitude)
+Kernel Decoder (y)
+[64]→[6][64]\to[6] (per vertex)
+Same as xx
+Scale Decoder (shared)
+[64]→[1][64]\to[1] (per vertex)
+Linear (scale)
+Kernel Map
+[B,12,T,H,W][B,12,T,H,W]
+Element-wise mult., Star-gated fusion
+Kernel-guided Smoothing
+[B,2,T,H,W]→[B,2,T,H,W][B,2,T,H,W]\to[B,2,T,H,W]
+Iterative consistency refinement (6-step kernel)
+(1) Implementation Details
+We train and evaluate OnlineSmoother on the same self-collected unstable video dataset (with sequence-level
+train/val splits) that is also used for EfficientMotionPro.
+Batch size is 11 to preserve causality.
+Optimizer: Adam (β1=0.9,β2=0.99)(\beta_{1}=0.9,\beta_{2}=0.99), weight decay 1×10−51\times 10^{-5}.
+Learning rate: OneCycleLR with maximum 2×10−42\times 10^{-4}, warm-up for the first 30%30\% steps, then cosine annealing.
+The smoothing loss combines ℒtime\mathcal{L}_{\text{time}}, ℒspatial\mathcal{L}_{\text{spatial}}, and ℒproj\mathcal{L}_{\text{proj}} with default
+weights (λtime,λspatial,λproj)=(20,10,5)(\lambda_{\text{time}},\lambda_{\text{spatial}},\lambda_{\text{proj}})=(20,10,5) and internal λfreq=1\lambda_{\text{freq}}=1.
+Training runs for 100100 epochs; gradient clipping (threshold 5.05.0) ensures numerical stability.
+Figure 9: Training curves of OnlineSmoother: blue for training loss, orange for validation loss.
+Validation is performed every 33 epochs; the best model based on the validation loss (Fig. 9) is saved.
+Training is conducted on a single NVIDIA RTX 4090 GPU (about 2.52.5 hours).
+(2) Complexity Analysis
+Parameter Count.
+Let C=64C=64 (embedding dim), temporal kernel kt=5k_{t}=5, and optional PW mixing controlled by use_pointwise.
+Counts (approx.): Encoder Linear (→C)(2\!\to\!C): 2​C2C;
+DW-temporal: 𝒪⁡(C​kt)\mathcal{O}(Ck_{t});
+DW-spatial: 𝒪⁡(9​C)\mathcal{O}(9C);
+(Opt.) PW-Conv3d (groups=4): ≈C2/4\approx C^{2}/4;
+Star-gated decoder: two Linear (C→6)(C\!\to\!6) per direction (2⋅6​C2\cdot 6C each) + one Linear (C→1)(C\!\to\!1) scale.
+Total (no PW): for C=64,kt=5C=64,k_{t}=5 is ∼2.6\sim 2.6K; with PW (groups=4) adds ∼1.0\sim 1.0K, totaling ∼3.6\sim 3.6K.
+Time Complexity.
+Let batch BB, temporal window TT, grid size H×WH\times W.
+Dominant MACs (ignoring BN/activations/Sigmoid) come from per-vertex Linear and depthwise 3D convolutions:
+𝒪⁡(B​T​H​W⋅(2​C+C​kt+9​C))\mathcal{O}\!\big(BTHW\cdot(2C+Ck_{t}+9C)\big)
+(25)
+plus decoder heads ≈𝒪⁡(B​T​H​W⋅25​C)\approx\mathcal{O}(BTHW\cdot 25C) and (opt.) PW mixing 𝒪⁡(B​T​H​W⋅C2/groups)\mathcal{O}(BTHW\cdot C^{2}/\text{groups}).
+Overall (no PW):
+𝒪⁡(B​T​H​W⋅(2​C+C​kt+9​C+25​C)).\mathcal{O}\!\big(BTHW\cdot(2C+Ck_{t}+9C+25C)\big).
+(26)
+Kernel-guided updates with RR rounds and six history steps are scalar-weighted and negligible relative to the forward pass (even with R=20R=20).
+Memory Complexity.
+Feature maps are [B,C,T,H,W][B,C,T,H,W]; kernel heads [B,6,T,H,W][B,6,T,H,W] and [B,1,T,H,W][B,1,T,H,W].
+Thus memory is 𝒪⁡(B​C​T​H​W)\mathcal{O}(BCTHW), independent of input image resolution.
+Numerical Estimation (Default C=64,kt=5,T=7C=64,k_{t}=5,T=7).
+Ignoring BN/activations/Sigmoid and with B=1B=1:
+MACs≈T⋅H⋅W⋅C⋅(kt+35)\mathrm{MACs}\approx T\cdot H\cdot W\cdot C\cdot(k_{t}+35)
+(27)
+For H=W=32H=W=32:
+7⋅32⋅32⋅64⋅40≈ 18.4​M7\cdot 32\cdot 32\cdot 64\cdot 40\;\approx\;18.4\,\mathrm{M}
+(28)
+We summarize per-grid costs in Table 6.
+Table 6: Estimated MACs of the OnlineSmoother backbone at different grid sizes (C=64C=64, kt=5k_{t}=5, T=7T=7, B=1B=1).
+Window TT
+Grid H×WH\times W
+MACs / frame
+77
+16×1616\times 16
+≈4.6\approx 4.6M
+77
+32×3232\times 32
+≈18.4\approx 18.4M
+77
+48×4848\times 48
+≈41.5\approx 41.5M
+10 Multi-Threaded Asynchronous Buffering Pipeline: Additional Details
+(1) Motivation and Formulation
+Although each individual module is computationally lightweight, executing them in sequence leads to the accumulation
+of stage latencies:
+Tserial=test+tprop+tsmooth,T_{\text{serial}}=t_{\text{est}}+t_{\text{prop}}+t_{\text{smooth}},
+(29)
+where testt_{\text{est}}, tpropt_{\text{prop}}, and tsmootht_{\text{smooth}} denote the average per-frame runtimes of
+the Motion Estimation, Motion Propagation, and Motion Compensation stages, respectively.
+This serial bottleneck prevents strict real-time performance.
+(2) Pipeline Architecture
+To mitigate this, we decompose the stabilization pipeline into three concurrent daemon threads, decoupled by bounded
+FIFO (First-In-First-Out) shared queues with back-pressure (threads block on empty/full states). This design ensures
+safe resource handling even under exceptional conditions:
+•
+TME (Motion Estimation): Acquires input frames ItI_{t}, performs keypoint
+collaboration detection 𝒟\mathcal{D}, homogenization via SSC, and sparse keypoint-guided causal flow fusion
+to produce 𝐦t=[xk​p;yk​p;u;v]\mathbf{m}_{t}=[x_{kp};y_{kp};u;v] and the reweighted flow field
+𝐟^t←t−1\hat{\mathbf{f}}_{t\leftarrow t-1}.
+•
+TMP (Motion Propagation): Consumes outputs from TME.
+Executes the EfficientMotionPro network, which computes the multi-homography prior, predicts per-vertex
+residuals Δ​gres,t\Delta g_{\text{res},t} via the lightweight backbone, and outputs the full-frame grid motion field
+Δ​gt\Delta g_{t}.
+•
+TMC (Motion Compensation): Consumes grid motions Δ​gt\Delta g_{t} (or integrated
+trajectories OtO_{t}) from TMP. Applies the OnlineSmoother network for online causal smoothing,
+yielding the stabilized trajectory StS_{t}. Finally, it computes the compensation field Mt=St−OtM_{t}=S_{t}-O_{t},
+performs frame warping via 𝒲⁡(x,Mt)\mathcal{W}(x;M_{t}), and outputs the stabilized frame I~t\tilde{I}_{t}.
+Threads communicate exclusively through the following shared queues:
+QME→MP:Transmits ​𝐦t​ (keypoint motion features),plus metadata,QMP→MC:Transmits ​Δ​gt​ (grid motion field),plus metadata.\begin{array}[]{l @{\quad} l}\lx@intercol Q_{\text{ME}\to\text{MP}}\colon\hfil\lx@intercol\\
+&\text{Transmits }\mathbf{m}_{t}\text{ (keypoint motion features)},\\
+&\text{plus metadata},\\
+\lx@intercol Q_{\text{MP}\to\text{MC}}\colon\hfil\lx@intercol\\
+&\text{Transmits }\Delta g_{t}\text{ (grid motion field)},\\
+&\text{plus metadata}.\end{array}
+(30)
+(3) Theoretical Analysis
+Let the steady-state per-frame service times be 𝐭=(test,tprop,tsmooth)\mathbf{t}=(t_{\text{est}},t_{\text{prop}},t_{\text{smooth}})
+and the capacity of each queue be CC:
+•
+Throughput (Steady-State): The pipeline’s frame rate is bounded by the slowest stage.
+ηpipe\displaystyle\eta_{\text{pipe}}
+≈1max⁡{test,tprop,tsmooth},\displaystyle\approx\frac{1}{\max\{t_{\text{est}},t_{\text{prop}},t_{\text{smooth}}\}},
+(31)
+FPSmax\displaystyle\text{FPS}_{\text{max}}
+≈1max⁡{test,tprop,tsmooth}.\displaystyle\approx\frac{1}{\max\{t_{\text{est}},t_{\text{prop}},t_{\text{smooth}}\}}.
+•
+Theoretical Speedup (vs. Serial Execution):
+S=test+tprop+tsmoothmax⁡{test,tprop,tsmooth}.S=\frac{t_{\text{est}}+t_{\text{prop}}+t_{\text{smooth}}}{\max\{t_{\text{est}},t_{\text{prop}},t_{\text{smooth}}\}}.
+(32)
+•
+End-to-End Latency: The delay for a frame to traverse the entire pipeline is reduced from
+the serial sum to the duration of the longest stage plus queuing delays, which are minimal for adequately
+sized buffers.
+•
+Memory Overhead: The memory footprint is dominated by the bounded queues.
+ℳ=𝒪⁡(CME⋅|𝐦t|+CMP⋅|Δ​gt|),\mathcal{M}=\mathcal{O}\!\big(C_{\text{ME}}\cdot|\mathbf{m}_{t}|+C_{\text{MP}}\cdot|\Delta g_{t}|\big),
+(33)
+where |𝐦t||\mathbf{m}_{t}| and |Δ​gt||\Delta g_{t}| represent the size of the data packets transmitted between
+threads, and CME,CMPC_{\text{ME}},C_{\text{MP}} are the capacities of the respective queues.
+(4) Complexity and Real-Time Properties
+•
+Computational Complexity: Pipeline parallelism does not change the asymptotic complexity
+𝒪⁡(⋅)\mathcal{O}(\cdot) of each individual stage; it primarily reduces the wall-clock time from the sum
+test+tprop+tsmootht_{\text{est}}+t_{\text{prop}}+t_{\text{smooth}} to the maximum max⁡{test,tprop,tsmooth}\max\{t_{\text{est}},t_{\text{prop}},t_{\text{smooth}}\}.
+•
+Memory/Bandwidth: The memory and inter-thread communication bandwidth scale linearly with the
+chosen queue capacities. This overhead is typically negligible compared to the memory required for processing
+batches of frames or implementing global buffering and reordering strategies.
+•
+Real-Time Performance: If the service times are balanced (test≈tprop≈tsmootht_{\text{est}}\approx t_{\text{prop}}\approx t_{\text{smooth}}), the throughput approaches a 3×3\times speedup over serial
+execution. If one stage is the dominant bottleneck, the overall throughput is determined by that stage’s
+processing rate, while the latency for an individual frame is still reduced to approximately the duration
+of that longest stage.
+11 Frame Outpainting Details
+When the stabilized video is cropped, we first compute the cropping ratio and then determine the scaling required for outpainting. The scaling factors are derived from the cropped dimensions defined by the frame borders.
+Cropping Ratio and Cropped Size
+Let Worig,HorigW_{\text{orig}},H_{\text{orig}} be the original width and height. Let BhorB_{\text{hor}} and BverB_{\text{ver}} denote the per-side horizontal (left/right) and vertical (top/bottom) border thickness (in pixels), respectively. Then
+Wcropped\displaystyle W_{\text{cropped}}
+=Worig−2​Bhor,\displaystyle=W_{\text{orig}}-2\,B_{\text{hor}},
+(34)
+Hcropped\displaystyle H_{\text{cropped}}
+=Horig−2​Bver.\displaystyle=H_{\text{orig}}-2\,B_{\text{ver}}.
+The cropping ratio (content preservation) is
+C=Wcropped​HcroppedWorig​Horig∈(0,1].C\;=\;\frac{W_{\text{cropped}}\,H_{\text{cropped}}}{W_{\text{orig}}\,H_{\text{orig}}}\in(0,1].
+(35)
+Scaling Factors for Outpainting
+To compensate for the cropped regions, we define the anisotropic scaling factors
+scalew=WorigWcropped=WorigWorig−2​Bhor,\text{scale}_{w}\;=\;\frac{W_{\text{orig}}}{W_{\text{cropped}}}=\frac{W_{\text{orig}}}{W_{\text{orig}}-2\,B_{\text{hor}}},
+(36)
+scaleh=HorigHcropped=HorigHorig−2​Bver.\text{scale}_{h}\;=\;\frac{H_{\text{orig}}}{H_{\text{cropped}}}=\frac{H_{\text{orig}}}{H_{\text{orig}}-2\,B_{\text{ver}}}.
+(37)
+If aspect ratio must be preserved (recommended), use an isotropic factor
+s=max⁡(scalew,scaleh)​(s≥1).s\;=\;\max\!\big(\text{scale}_{w},\;\text{scale}_{h}\big)\;\;\;(\,s\geq 1\,).
+(38)
+Outpainting with the ProPainter Model
+ProPainter [64] is then applied to the missing boundary regions induced by the target scaling. In practice, we first warp each stabilized frame to the outpainted canvas using the chosen factor (scalew,scaleh\text{scale}_{w},\text{scale}_{h} or ss), and then invoke ProPainter to fill the uncovered areas near the borders. This preserves the original content while minimizing visible seams at frame boundaries. Figures 10 illustrates the difference between the pre- and post-stabilization video with outpainting.
+Figure 10: Left to right: Original unstable video; Stabilized (uncropped); Stabilized (cropped); Stabilized (with frame outpainting).
+Figure 11: Representative examples of unstable UAV visible-light videos from diverse scenarios, including urban
+areas, highways, forested mountains, waterfronts, and industrial sites.
+Figure 12: Representative examples of unstable UAV infrared videos from diverse scenarios, including urban areas,
+highways, forested mountains, and industrial sites.
+12 Additional Details for UAV-Test Dataset
+To comprehensively evaluate robustness and generalization in complex real-world conditions, we construct and release
+the UAV-Test dataset for video stabilization. This dataset captures instability patterns common in aerial
+operations, such as high-frequency vibrations, aggressive maneuvers, and occlusions.
+Figures 11 and 12 present sample visible-light and infrared scenes.
+Data Collection Protocol
+Data were captured using a DJI Matrice 300 RTK UAV equipped with a DJI Zenmuse H20N gimbal camera, featuring both
+a wide-angle visible-light sensor and a long-wave infrared sensor. The visible-light lens supports optical zoom from
+4.5–360 mm, while the infrared lens (8–14 μ\mum) has a fixed focal length of 150 mm. The shutter speed was set to
+automatic, and ISO was set within 100–1600. Videos were recorded at 1280×\times720 and 1920×\times1080 resolutions,
+with frame rates of 25–30 FPS, simulating varying transmission bandwidths and computational loads.
+Scene Distribution
+UAV-Test comprises 92 video sequences totaling ∼\sim26 minutes, covering five categories:
+•
+Urban Areas (19 sequences, 4.5 min): Building circumnavigation and traversal under wind levels
+3–4.
+•
+Highways (22 sequences, 6.3 min): High-speed parallel tracking under wind levels 2–3.
+•
+Forested Mountains (18 sequences, 5.9 min): Canopy penetration and terrain tracking under wind
+levels 3–5.
+•
+Waterfronts (20 sequences, 6.0 min): Disturbance from water-surface reflections under wind
+levels 3–4.
+•
+Industrial Sites (13 sequences, 3.2 min): Occlusions from machinery under wind level 3.
+Annotation and Cleaning
+Corrupted frames caused by transmission errors were automatically detected and removed using ffmpeg,
+ensuring clean sequences for evaluation.
+Partitioning and Licensing
+UAV-Test is designated as a pure testing set. A stratified sampling strategy based on scene type, weather
+(sunny/rainy/foggy), and time of day (day/night) ensures diversity. The dataset will be released with source code;
+access can be requested via email. All flights complied with airspace regulations, and privacy-sensitive information
+such as human faces and license plates was blurred.
+13 Runtime Analysis
+Table 7: Per-frame runtime comparison on Jetson AGX Orin.
+We report the average per-frame runtime (ms) and FPS.
+Our method is significantly faster than MeshFlow, StabNet, and NNDVS,
+and second only to the highly lightweight Liu et al. [29].
+Method
+Runtime (ms)
+FPS
+MeshFlow [26]
+168.95
+5.92
+StabNet [48]
+179.88
+5.56
+NNDVS [59]
+340.02
+2.94
+Liu et al. [29]
+36.41
+27.47
+Ours
+78.94
+12.67
+While many stabilization algorithms achieve real-time performance on high-end GPUs, their efficiency often drops
+sharply on embedded platforms. To assess practical efficiency, we benchmarked our method on the Jetson AGX Orin and
+compared it with MeshFlow [26], StabNet [48], NNDVS [59], and Liu et al. [29]. Experimental
+results show that, thanks to its lightweight architecture and multi-threaded buffering, our method runs at ∼\sim13 FPS
+(78.94 ms per frame). This is markedly faster than MeshFlow, StabNet, and NNDVS, and second only to the extremely
+lightweight approach of Liu et al., demonstrating a favorable trade-off among accuracy, real-time performance, and
+deployment adaptability. Note: all timings exclude the optional frame-outpainting post-processing step; only the
+time to produce a stabilized frame is measured for every method.
+Figure 13: Visualization of motion propagation. The sparse optical flow guided by initial keypoints is
+contrasted with the grid-wise motion after propagation by our EfficientMotionPro module. The results show
+that our propagation yields more consistent and structured motion, robust to disturbances caused by dynamic
+objects and noise.
+14 Evaluation Metrics and Implementation
+For reproducibility, we explicitly define the three core metrics used in the main paper, following [28],
+together with implementation details.
+Cropping Ratio (C)
+For each frame, a global homography between the input and the stabilized output is estimated, and the scaling
+components are used to compute the cropping ratio. The overall cropping ratio CC is defined as the average
+across all frames. Let the effective field of view after stabilization be Ωt\Omega_{t} and the original field
+of view be Ω\Omega, then:
+C=1T​∑t=1T|Ωt||Ω|.C=\frac{1}{T}\sum_{t=1}^{T}\frac{|\Omega_{t}|}{|\Omega|}.
+(39)
+Implementation details. The cropping ratio is estimated from the scaling factors sx,sys_{x},s_{y} of
+the frame homography HtH_{t}. To obtain a stricter measure, the four image corners are projected onto the stabilized view,
+and the preserved ratios along the width and height are computed; the minimum of the two defines the FOV metric,
+capturing the worst-case preserved region.
+Distortion Value (D)
+The distortion value measures anisotropic scaling introduced by the affine part of the homography. Specifically,
+for each frame tt, let σmax​(Ht)\sigma_{\max}(H_{t}) and σmin​(Ht)\sigma_{\min}(H_{t}) be the singular values of the estimated
+homography HtH_{t}. The frame-wise distortion (higher is better) is
+Dt=σmin​(Ht)σmax​(Ht)∈(0,1].D_{t}=\frac{\sigma_{\min}(H_{t})}{\sigma_{\max}(H_{t})}\in(0,1].
+(40)
+The global distortion metric DD is defined as the minimum value across all frames, ensuring robustness against
+outliers:
+D=mint⁡Dt.D=\min_{t}D_{t}.
+(41)
+Stability Score (S)
+The stability score is defined by frequency-domain analysis of the estimated camera trajectory. The translation and
+rotation components are extracted as 1D temporal signals. The stability score is defined as the proportion of
+low-frequency energy (2nd–6th order frequencies, excluding the DC component). Formally, let X⁡(f)X(f) denote the
+Fourier spectrum of the trajectory signal and BlowB_{\text{low}} the low-frequency band:
+S=∑f∈Blow|X⁡(f)|2∑f|X⁡(f)|2.S=\frac{\sum_{f\in B_{\text{low}}}|X(f)|^{2}}{\sum_{f}|X(f)|^{2}}.
+(42)
+Implementation details. Trajectories are accumulated frame by frame using relative homographies,
+from which translation and rotation (approximated by arctan⁡(sx/sy)\arctan(s_{x}/s_{y})) are extracted. FFT is applied to both
+translation and rotation sequences. After removing the DC component, the energy ratio of the first five non-zero
+frequencies (2nd–6th) is computed. The final stability score is the minimum of the translation-based and
+rotation-based ratios, yielding a strict evaluation.
+PSNR
+Peak Signal-to-Noise Ratio (PSNR) is used to measure reconstruction quality in videos and images:
+PSNR=10⋅log10⁡(MAXI2MSE),\mathrm{PSNR}=10\cdot\log_{10}\Big(\frac{\mathrm{MAX}_{I}^{2}}{\mathrm{MSE}}\Big),
+(43)
+where MAXI\mathrm{MAX}_{I} is the maximum possible pixel value (255 for 8-bit images). The mean squared error
+(MSE) between a reference frame IiI_{i} and a test frame KiK_{i} with NN total pixels is
+MSE=1N​∑i=1N(Ii−Ki)2.\mathrm{MSE}=\frac{1}{N}\sum_{i=1}^{N}(I_{i}-K_{i})^{2}.
+(44)
+Figure 14: Per-scene quantitative evaluation.
+15 Quantitative Evaluation
+Fig. 14 presents the per-scene evaluation results for our method and other online approaches on
+the NUS [27], Selfie [55], and DeepStab [48] datasets. Both our method and representative 2D-based
+full-frame methods [25, 60, 7] achieve the maximum cropping ratio of 1, indicating that the stabilized videos
+retain the full field of view without cropping. In terms of distortion and stability, our method achieves performance
+comparable to the state-of-the-art 3D-based method [34], while outperforming 2D-based methods [25, 60, 7, 26].
+In summary, the proposed method demonstrates both effectiveness and robustness across diverse scenarios.
+16 User Study
+We conducted a user study via an online SurveyPlus questionnaire. From the five datasets described in the paper,
+we randomly selected two video sequences from each, resulting in ten short video clips in total. The original
+unstable videos were synchronized and displayed side-by-side with stabilized outputs generated by four
+state-of-the-art online methods and our approach. The stabilized videos were arranged in randomized order, with
+each video potentially appearing in either central or peripheral positions. Participants could replay the videos
+to ensure a fair comparison. Finally, they were asked to rank the visual quality from best to worst, with the
+best video assigned 5 points, followed by 4, 3, 2, and 1 point for the worst.
+Figure 15 illustrates an example of our questionnaire design.
+Figure 15: Example question from the user study survey.
+17 Additional Visualization Results
+Motion Visualization
+Fig. 13 illustrates the sparse optical-flow motion guided by the initial keypoints and
+the grid-wise motion obtained after propagation with our EfficientMotionPro module. After propagation, the
+estimated motion remains consistently structured and is less affected by dynamic objects and noise.
+Trajectory Visualization
+Figure 16: Visualization of mesh vertex trajectories during online smoothing. Six vertices are randomly selected,
+showing comparisons between unsmoothed trajectories after motion propagation and those refined by our
+OnlineSmoother.
+Figure 17: Comparison of trajectory variance before and after applying OnlineSmoother, demonstrating its
+effectiveness in suppressing fluctuations.
+Figure 18: Frequency-domain analysis of trajectories via FFT, highlighting that OnlineSmoother effectively
+attenuates high-frequency noise.
+As illustrated in Figs. 16, 17, and 18, we
+visualize mesh-vertex trajectories during online smoothing, comparing trajectories obtained after motion propagation
+without OnlineSmoother to those refined by OnlineSmoother. For clarity, we randomly select six
+mesh vertices to display their smoothed trajectories. We also plot trajectory variance and FFT spectra to further
+highlight the effectiveness of our OnlineSmoother module.
+Keypoint Density Visualization
+Figure 19: Keypoint density heatmaps of representative detectors (SIFT [31], SuperPoint [8],
+RFdet [38], DISK [45], DoG-HardNet [6], ALIKED [62], XFeat [35], DAD [11], and
+Ours) on a sample scene. Our collaborative detector achieves more uniform coverage across the image grid.
+To further illustrate the advantage of our collaborative detector, we visualize keypoint density maps of
+different detectors in Fig. 19. The heatmaps are computed over a 16×1616\times 16 grid.
+As shown, traditional and learning-based detectors often produce highly clustered distributions
+(e.g., SIFT [31] and SuperPoint [8]), whereas our collaborative method yields more uniform spatial
+coverage, providing a stronger foundation for downstream geometric estimation.
+Figure 20: Comparison of representative optical-flow algorithms on diverse examples. We report results from several
+state-of-the-art methods [4, 17, 41, 43, 58, 39, 9], among which MemFlow [9] is adopted in our
+experiments for its balance of accuracy and memory efficiency.
+Optical Flow Visualization
+Fig. 20 presents the results of several representative and state-of-the-art optical-flow
+algorithms, including [4, 17, 41, 43, 58, 39, 9]. In our experiments, we adopt MemFlow [9],
+which achieves high accuracy while being memory-efficient.
+18 Video Results
+In the supplementary material, we provide a 3-minute comparison video of our online stabilization method against other online methods. This video offers an intuitive view of our method’s behavior across diverse scenarios.
+19 Limitations
+Our method achieves unsupervised online video stabilization through explicit motion estimation and trajectory smoothing.
+However, there are two main limitations. First, it relies on existing optical-flow estimators, which may be less accurate in complex scenes. Second, to improve visual quality, we currently rely on a post-processing frame outpainting step to handle black borders; due to its computational cost, it is not integrated into the online pipeline.
+To address these issues, we plan to (i) explore more accurate yet efficient optical-flow models, and (ii) develop lighter, online-friendly outpainting techniques that improve edge quality without sacrificing real-time performance.
+References
+[1]
+M. K. Ali, E. W. Im, D. Kim, and T. H. Kim (2024)
+Harnessing meta-learning for improving full-frame video stabilization.
+In CVPR,
+pp. 12605–12614.
+Cited by: §2.1,
+§4.1,
+Table 2.
+[2]
+R. Ashar, B. Sadiq, H. Mohiuddin, S. Ashraf, M. Imran, and A. Ullah (2023)
+Video stabilization using raft-based optical flow.
+In ICRAI,
+pp. 1–5.
+Cited by: §3.1.
+[3]
+O. Bailo, F. Rameau, K. Joo, J. Park, O. Bogdan, and I. S. Kweon (2018)
+Efficient adaptive non-maximal suppression algorithms for homogeneous spatial keypoint distribution.
+PRL 106, pp. 53–60.
+Cited by: §3.1.
+[4]
+S. Baker and I. Matthews (2004)
+Lucas-kanade 20 years on: a unifying framework.
+IJCV 56 (3), pp. 221–255.
+Cited by: Figure 20,
+Figure 20,
+§17.
+[5]
+J. T. Barron (2019)
+A general and adaptive robust loss function.
+In CVPR,
+pp. 4331–4339.
+Cited by: §3.2.
+[6]
+P. Chao, C. Kao, Y. Ruan, C. Huang, and Y. Lin (2019)
+Hardnet: a low memory traffic network.
+In ICCV,
+pp. 3552–3561.
+Cited by: Figure 19,
+Figure 19.
+[7]
+J. Choi and I. S. Kweon (2020)
+Deep iterative frame interpolation for full-frame video stabilization.
+ACM TOG 39 (1), pp. 1–9.
+Cited by: 2nd item,
+§15,
+§2.1,
+§4.1,
+Table 2.
+[8]
+D. DeTone, T. Malisiewicz, and A. Rabinovich (2018)
+SuperPoint: self-supervised interest point detection and description.
+In CVPRW,
+pp. 224–236.
+Cited by: Figure 19,
+Figure 19,
+§17,
+§2.2.
+[9]
+Q. Dong and Y. Fu (2024)
+Memflow: optical flow estimation and prediction with memory.
+In CVPR,
+pp. 19068–19078.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3,
+§3.1.
+[10]
+A. Dosovitskiy, P. Fischer, E. Ilg, P. Hausser, C. Hazirbas, V. Golkov, P. Van Der Smagt, D. Cremers, and T. Brox (2015)
+FlowNet: learning optical flow with convolutional networks.
+In ICCV,
+pp. 2758–2766.
+Cited by: §2.3.
+[11]
+J. Edstedt, G. Bökman, M. Wadenbäck, and M. Felsberg (2025)
+DaD: distilled reinforcement learning for diverse keypoint detection.
+arXiv preprint arXiv:2503.07347.
+Cited by: Figure 19,
+Figure 19,
+§2.2.
+[12]
+A. Goldstein and R. Fattal (2012)
+Video stabilization using epipolar geometry.
+ACM TOG 31 (5), pp. 1–10.
+Cited by: §1.
+[13]
+M. Grundmann, V. Kwatra, and I. Essa (2011)
+Auto-directed video stabilization with robust l1 optimal camera paths.
+In CVPR,
+pp. 225–232.
+Cited by: §1,
+§2.1,
+§4.1,
+Table 2.
+[14]
+K. Han, Y. Wang, Q. Tian, J. Guo, C. Xu, and C. Xu (2020)
+GhostNet: more features from cheap operations.
+In CVPR,
+pp. 1580–1589.
+Cited by: §3.2,
+§8.2.
+[15]
+B. K. P. Horn and B. G. Schunck (1981)
+Determining optical flow.
+AI 17 (1-3), pp. 185–203.
+Cited by: §2.3.
+[16]
+Z. Huang, X. Shi, C. Zhang, Q. Wang, K. C. Cheung, H. Qin, J. Dai, and H. Li (2022)
+FlowFormer: a transformer architecture for optical flow.
+In ECCV,
+Cited by: §2.3.
+[17]
+T. Hui, X. Tang, and C. C. Loy (2018)
+LiteFlowNet: a lightweight convolutional neural network for optical flow estimation.
+In CVPR,
+pp. 8981–8989.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3.
+[18]
+E. Ilg, N. Mayer, T. Saikia, M. Keuper, A. Dosovitskiy, and T. Brox (2017)
+FlowNet 2.0: evolution of optical flow estimation with deep networks.
+In CVPR,
+pp. 2462–2470.
+Cited by: §2.3.
+[19]
+S. Jiang, D. Campbell, Y. Lu, H. Li, and R. Hartley (2021)
+Learning to estimate hidden motions with global motion aggregation.
+In ICCV,
+pp. 9772–9781.
+Cited by: §2.3.
+[20]
+P. Jodoin, L. Maddalena, A. Petrosino, and Y. Wang (2017)
+Extensive benchmark and survey of modeling methods for scene background initialization.
+IEEE TIP 26 (11), pp. 5244–5256.
+Cited by: §8.2.
+[21]
+L. Karacan and M. Sarigül (2025)
+Full-frame video stabilization via spatiotemporal transformers.
+Computational Visual Media 11 (3), pp. 655–667.
+Cited by: §2.1,
+§4.1,
+Table 2.
+[22]
+A. Kerim, W. L. S. Ramos, L. S. Marcolino, E. R. Nascimento, and R. Jiang (2024)
+Leveraging synthetic data to learn video stabilization under adverse conditions.
+In IEEE WACV,
+pp. 6931–6940.
+Cited by: §1.
+[23]
+Y. Lee, K. Tseng, Y. Chen, C. Chen, C. Chen, and Y. Hung (2021)
+3D video stabilization with depth estimation by cnn-based optimization.
+In CVPR,
+pp. 10621–10630.
+Cited by: §1,
+§2.1,
+§4.1,
+§4.1,
+Table 2.
+[24]
+F. Liu, M. Gleicher, H. Jin, and A. Agarwala (2009)
+Content-preserving warps for 3d video stabilization.
+ACM TOG 28 (3), pp. 223–231.
+Cited by: §1.
+[25]
+F. Liu, M. Gleicher, J. Wang, H. Jin, and A. Agarwala (2011)
+Subspace video stabilization.
+ACM TOG 30 (1), pp. 1–10.
+Cited by: §1,
+§15.
+[26]
+S. Liu, P. Tan, L. Yuan, J. Sun, and B. Zeng (2016)
+Meshflow: minimum latency online video stabilization.
+In ECCV,
+pp. 800–815.
+Cited by: 2nd item,
+Table 7,
+§13,
+§15,
+§2.1,
+§4.1,
+§4.1,
+§4.2,
+§4.3,
+Table 2.
+[27]
+S. Liu, L. Yuan, P. Tan, and J. Sun (2013)
+Bundled camera paths for video stabilization.
+ACM TOG 32 (4), pp. 1–10.
+Cited by: 1st item,
+§15,
+§2.1,
+§4.1,
+§4.1,
+§4.1,
+Table 2,
+Table 2,
+Table 2.
+[28]
+S. Liu, L. Yuan, P. Tan, and J. Sun (2014)
+Steadyflow: spatially smooth optical flow for video stabilization.
+In CVPR,
+pp. 4209–4216.
+Cited by: §1,
+§14.
+[29]
+T. Liu, G. Wan, H. Bai, X. Kong, B. Tang, and F. Wang (2024)
+Real-time video stabilization algorithm based on superpoint.
+IEEE TIM 73, pp. 1–13.
+Cited by: 2nd item,
+Table 7,
+Table 7,
+Table 7,
+§13,
+§4.1,
+§4.1,
+§4.1,
+§4.2,
+§4.3,
+Table 2.
+[30]
+Y. Liu, W. Lai, M. Yang, Y. Chuang, and J. Huang (2021)
+Hybrid neural fusion for full-frame video stabilization.
+In ICCV,
+pp. 2299–2308.
+Cited by: §2.1,
+§4.1,
+§4.1,
+Table 2.
+[31]
+D. G. Lowe (2004)
+Distinctive image features from scale-invariant keypoints.
+IJCV 60 (2), pp. 91–110.
+Cited by: 1st item,
+Figure 19,
+Figure 19,
+§17,
+§2.2.
+[32]
+X. Ma, X. Dai, Y. Bai, Y. Wang, and Y. Fu (2024)
+Rewrite the stars.
+In CVPR,
+pp. 5694–5703.
+Cited by: §9.1,
+§9.2.
+[33]
+Y. Matsushita, E. Ofek, W. Ge, X. Tang, and H. Shum (2006)
+Full-frame video stabilization with motion inpainting.
+IEEE TPAMI 28 (7), pp. 1150–1163.
+Cited by: §1.
+[34]
+Z. Peng, X. Ye, W. Zhao, T. Liu, H. Sun, B. Li, and Z. Cao (2024)
+3D multi-frame fusion for video stabilization.
+In CVPR,
+pp. 7507–7516.
+Cited by: §15,
+§2.1,
+§4.1,
+§4.1,
+§4.1,
+§4.1,
+Table 2.
+[35]
+G. Potje, F. Cadar, A. Araujo, R. Martins, and E. R. Nascimento (2024)
+XFeat: accelerated features for lightweight image matching.
+In CVPR,
+pp. 2682–2691.
+Cited by: Figure 19,
+Figure 19,
+§2.2.
+[36]
+E. Rosten and T. Drummond (2006)
+Machine learning for high-speed corner detection.
+In ECCV,
+pp. 430–443.
+Cited by: 1st item,
+§2.2.
+[37]
+E. Rublee, V. Rabaud, K. Konolige, and G. Bradski (2011)
+ORB: an efficient alternative to sift or surf.
+In ICCV,
+pp. 2564–2571.
+Cited by: 1st item,
+§2.2.
+[38]
+X. Shen, C. Wang, X. Li, Z. Yu, J. Li, C. Wen, M. Cheng, and Z. He (2019)
+RF-net: an end-to-end image matching network based on receptive field.
+In CVPR,
+pp. 8132–8140.
+Cited by: Figure 19,
+Figure 19,
+§2.2.
+[39]
+X. Shi, Z. Huang, D. Li, M. Zhang, K. C. Cheung, S. See, H. Qin, J. Dai, and H. Li (2023)
+FlowFormer++: masked cost volume autoencoding for pretraining optical flow estimation.
+In CVPR,
+pp. 1599–1610.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3.
+[40]
+Z. Shi, F. Shi, W. Lai, C. Liang, and Y. Liang (2022)
+Deep online fused video stabilization.
+In CVPR,
+pp. 1250–1258.
+Cited by: §2.1,
+§4.1,
+§4.1,
+Table 2,
+Table 2.
+[41]
+D. Sun, X. Yang, M. Liu, and J. Kautz (2018)
+PWC-net: cnns for optical flow using pyramid, warping, and cost volume.
+In CVPR,
+pp. 8934–8943.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3.
+[42]
+J. Sun, Z. Shen, Y. Wang, H. Bao, and X. Zhou (2021)
+LoFTR: detector-free local feature matching with transformers.
+In CVPR,
+pp. 8922–8931.
+Cited by: §2.2.
+[43]
+Z. Teed and J. Deng (2020)
+RAFT: recurrent all-pairs field transforms for optical flow.
+In ECCV,
+pp. 402–419.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3.
+[44]
+D. Tran, L. Bourdev, R. Fergus, L. Torresani, and M. Paluri (2015)
+Learning spatiotemporal features with 3d convolutional networks.
+In ICCV,
+pp. 4489–4497.
+Cited by: §1.
+[45]
+M. Tyszkiewicz, P. Fua, and E. Trulls (2020)
+DISK: learning local features with policy gradient.
+NeurIPS 33, pp. 14254–14265.
+Cited by: Figure 19,
+Figure 19,
+§2.2.
+[46]
+A. Wang, H. Chen, Z. Lin, J. Han, and G. Ding (2025)
+LSNet: see large, focus small.
+In CVPR,
+pp. 9718–9729.
+Cited by: §9.1,
+§9.2.
+[47]
+F. Wang, B. Zhong, T. Liu, X. Kong, H. Bai, and G. Wan (2024)
+Deep matching online video stabilization using tsnet.
+IEEE TIM 73 (1), pp. 1–13.
+Cited by: §3.3.
+[48]
+M. Wang, G. Yang, J. Lin, S. Zhang, A. Shamir, S. Lu, and S. Hu (2019)
+Deep online video stabilization with multi-grid warping transformation learning.
+IEEE TIP 28 (5), pp. 2283–2292.
+Cited by: 2nd item,
+3rd item,
+§1,
+Table 7,
+§13,
+§15,
+§2.1,
+§4.1,
+§4.1,
+§4.1,
+§4.1,
+§4.2,
+§4.3,
+Table 2,
+Table 2,
+Table 2.
+[49]
+Q. Wang, B. Wu, P. Zhu, P. Li, W. Zuo, and Q. Hu (2020)
+ECA-net: efficient channel attention for deep convolutional neural networks.
+In CVPR,
+pp. 11534–11542.
+Cited by: §3.2,
+§8.2.
+[50]
+Y. Wang, X. He, S. Peng, D. Tan, and X. Zhou (2024)
+Efficient loftr: semi-dense local feature matching with sparse-like speed.
+In CVPR,
+pp. 21666–21675.
+Cited by: §2.2.
+[51]
+Y. S. Wang, F. Liu, P. S. Hsu, and T. Y. Lee (2013)
+Spatially and temporally optimized video stabilization.
+IEEE TVCG 19 (8), pp. 1354–1361.
+Cited by: §1.
+[52]
+Y. Xu, J. Zhang, S. J. Maybank, and D. Tao (2022)
+DUT: learning video stabilization by simply watching unstable videos.
+IEEE TIP 31, pp. 4306–4320.
+Cited by: §1,
+§2.1,
+§4.1,
+§4.1,
+Table 2.
+[53]
+N. Ye, C. Wang, S. Liu, L. Jia, J. Wang, and Y. Cui (2019)
+DeepMeshFlow: content adaptive mesh deformation for robust image registration.
+arXiv preprint arXiv:1912.05131.
+Cited by: §1.
+[54]
+Z. You, S. Georgoulis, A. Chen, S. Tang, and D. Dai (2025)
+GaVS: 3d-grounded video stabilization via temporally-consistent local reconstruction and rendering.
+In Proceedings of the ACM SIGGRAPH 2025 Conference,
+Cited by: §2.1,
+§4.1,
+§4.1,
+Table 2.
+[55]
+J. Yu, R. Ramamoorthi, K. Cheng, M. Sarkis, and N. Bi (2021)
+Real-time selfie video stabilization.
+In CVPR,
+pp. 12036–12044.
+Cited by: §1,
+§15,
+§4.1,
+§4.1,
+Table 2,
+Table 2.
+[56]
+J. Yu and R. Ramamoorthi (2019)
+Robust video stabilization by optimization in cnn weight space.
+In CVPR,
+pp. 3800–3808.
+Cited by: §3.1.
+[57]
+J. Yu and R. Ramamoorthi (2020)
+Learning video stabilization using optical flow.
+In CVPR,
+pp. 8159–8167.
+Cited by: §1,
+§2.1,
+§4.1,
+Table 2.
+[58]
+Z. Zhang, H. Jiang, and H. Singh (2024)
+NeuFlow: real-time, high-accuracy optical flow estimation on robots using edge devices.
+In IEEE IROS,
+pp. 5048–5055.
+Cited by: Figure 20,
+Figure 20,
+§17,
+§2.3.
+[59]
+Z. Zhang, Z. Liu, P. Tan, B. Zeng, and S. Liu (2023)
+Minimum latency deep online video stabilization.
+In ICCV,
+pp. 23030–23039.
+Cited by: §1,
+Table 7,
+§13,
+§2.1,
+§3.3,
+§4.1,
+§4.1,
+§4.1,
+§4.1,
+§4.1,
+§4.2,
+§4.3,
+Table 2.
+[60]
+M. Zhao and Q. Ling (2020)
+PWStablenet: learning pixel-wise warping maps for video stabilization.
+IEEE TIP 29, pp. 3582–3595.
+Cited by: 1st item,
+§15,
+§2.1,
+§4.1,
+Table 2.
+[61]
+W. Zhao, X. Li, Z. Peng, X. Luo, X. Ye, H. Lu, and Z. Cao (2023)
+Fast full-frame video stabilization with iterative optimization.
+In CVPR,
+pp. 23534–23544.
+Cited by: §2.1.
+[62]
+X. Zhao, X. Wu, W. Chen, P. C. Y. Chen, Q. Xu, and Z. Li (2023)
+Aliked: a lighter keypoint and descriptor extraction network via deformable transformation.
+IEEE TIM 72, pp. 1–16.
+Cited by: Figure 19,
+Figure 19,
+§2.2.
+[63]
+X. Zhao, X. Wu, J. Miao, W. Chen, P. C. Y. Chen, and Z. Li (2022)
+Alike: accurate and lightweight keypoint detection and descriptor extraction.
+IEEE TMM 25, pp. 3101–3112.
+Cited by: §2.2.
+[64]
+S. Zhou, C. Li, K. C. Chan, and C. C. Loy (2023)
+Propainter: improving propagation and transformer for video inpainting.
+In ICCV,
+pp. 10477–10486.
+Cited by: §11,
+§3.3.
+[65]
+P. Zhu, L. Wen, D. Du, X. Bian, H. Fan, Q. Hu, and H. Ling (2021)
+Detection and tracking meet drones challenge.
+IEEE TPAMI 44 (11), pp. 7380–7399.
+Cited by: §8.2.
+[66]
+Y. Zhu, Q. Wang, C. Li, J. Tang, C. Gu, and Z. Huang (2025)
+Visible–thermal multiple object tracking: large-scale video dataset and progressive fusion approach.
+PR 161, pp. 111330.
+Cited by: §8.2.
+Experimental support, please
+view the build logs
+for errors. Generated by
+L
+A
+T
+E
+xml
+.
+Instructions for reporting errors
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+methods listed below:
+Click the "Report Issue" (
+) button, located in the page header.
+Tip: You can select the relevant text first, to include it in your report.
+Our team has already identified the following issues. We appreciate your time reviewing and reporting rendering errors we
+may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+all.
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a list of packages that need conversion, and welcome developer contributions.
+We gratefully acknowledge support from our major funders,
+member institutions, ,
+and all contributors.
+About ·
+Help ·
+Contact ·
+Subscribe ·
+Copyright ·
+Privacy ·
+Accessibility ·
+Operational Status (opens in new tab)

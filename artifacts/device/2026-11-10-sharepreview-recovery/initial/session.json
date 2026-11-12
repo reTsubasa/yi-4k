@@ -1,0 +1,96 @@
+{
+  "started_utc": "2026-11-10T00:31:40.244785+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1105397.239517958,
+      "utc": "2026-11-10T00:31:40.264256+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1105398.073788583,
+      "utc": "2026-11-10T00:31:41.098527+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1105398.073887083,
+      "utc": "2026-11-10T00:31:41.098617+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1105398.081497958,
+      "utc": "2026-11-10T00:31:41.106230+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1105398.081547291,
+      "utc": "2026-11-10T00:31:41.106277+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1105398.092836416,
+      "utc": "2026-11-10T00:31:41.117576+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1105398.092934,
+      "utc": "2026-11-10T00:31:41.117664+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1105398.118077291,
+      "utc": "2026-11-10T00:31:41.142813+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "memory_mapping_run": false,
+  "recording_requested": false,
+  "api_status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  }
+}

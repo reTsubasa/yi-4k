@@ -1,0 +1,29 @@
+a03c1428 00100fe1 mrs r1, apsr
+a03c142c c03081e3 orr r3, r1, #0xc0
+a03c1430 03f02fe1 msr cpsr_fsxc, r3
+a03c1434 60109fe5 ldr r1, [pc, #0x60]
+a03c1438 b03f10ee mrc p15, #0, r3, c0, c0, #5
+a03c143c 033003e2 and r3, r3, #3
+a03c1440 082091e5 ldr r2, [r1, #8]
+a03c1444 030052e1 cmp r2, r3
+a03c1448 1100001a bne #0xa03c1494
+a03c144c 0c2091e5 ldr r2, [r1, #0xc]
+a03c1450 000052e3 cmp r2, #0
+a03c1454 0e00000a beq #0xa03c1494
+a03c1458 012042e2 sub r2, r2, #1
+a03c145c 0c2081e5 str r2, [r1, #0xc]
+a03c1460 000052e3 cmp r2, #0
+a03c1464 0a00001a bne #0xa03c1494
+a03c1468 30209fe5 ldr r2, [pc, #0x30]
+a03c146c 003092e5 ldr r3, [r2]
+a03c1470 000053e3 cmp r3, #0
+a03c1474 0600001a bne #0xa03c1494
+a03c1478 0020e0e3 mvn r2, #0
+a03c147c 082081e5 str r2, [r1, #8]
+a03c1480 5ff07ff5 dmb sy
+a03c1484 0020a0e3 mov r2, #0
+a03c1488 002081e5 str r2, [r1]
+a03c148c 4ff07ff5 dsb sy
+a03c1490 04f020e3 sev 
+a03c1494 00f021e1 msr cpsr_c, r0
+a03c1498 1eff2fe1 bx lr

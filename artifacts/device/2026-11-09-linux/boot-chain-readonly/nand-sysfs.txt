@@ -1,0 +1,11 @@
+cat /sys/devices/60000000.ahb/60001000.nand/uevent; cat /sys/devices/6000000
+0.ahb/60001000.nand/modalias
+DRIVER=ambarella-nand
+OF_NAME=nand
+OF_FULLNAME=/ahb@60000000/nand@60001000
+OF_COMPATIBLE_0=ambarella,nand
+OF_COMPATIBLE_N=1
+MODALIAS=of:NnandT<NULL>Cambarella,nand
+platform:60001000.nand
+~ # echo __YI_CAPTURE_2d4da39180d749269253601d68a0d028__
+__YI_CAPTURE_2d4da39180d749269253601d68a0d028__

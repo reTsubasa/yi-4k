@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-11-09T02:01:43.333150+00:00",
+  "host": "192.168.42.1",
+  "memory_probe_run": false,
+  "recording_commands_sent": false,
+  "limitations": [
+    "Live files can grow or change during reads.",
+    "Initial file size limits the copied prefix.",
+    "Read-only mount still uses RTOS filesystem service."
+  ],
+  "files": [],
+  "unmounted": false,
+  "error": "RuntimeError('Capture or temporary mount cleanup not confirmed')"
+}

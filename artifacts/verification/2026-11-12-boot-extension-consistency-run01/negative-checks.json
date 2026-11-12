@@ -1,0 +1,13 @@
+{
+  "scope": "temporary host files only; no device or target writes",
+  "cases": [
+    {
+      "case": "recovery_claim_changed_to_true",
+      "rejected_by": "recovery_still_unproven"
+    },
+    {
+      "case": "payload_bit_changed",
+      "rejected_by": "payload_sha256"
+    }
+  ]
+}

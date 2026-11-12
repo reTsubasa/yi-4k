@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-11-09T01:57:21.093880+00:00",
+  "source": "/dev/mtdblock4",
+  "scope": "Read-only logical flash windows; no running-memory access",
+  "windows": [
+    {
+      "file": "kernel-head.bin",
+      "offset": 0,
+      "bytes": 131072,
+      "va": "0x40008000",
+      "sha256": "d729a6faf6f274378be6ab60d6ee51d604b24e87a0b2ddcff55a13e5219be83b",
+      "command": "dd if=/dev/mtdblock4 bs=4096 skip=0 count=32 2>/dev/null | base64"
+    },
+    {
+      "file": "kernel-mem-drivers.bin",
+      "offset": 2445312,
+      "bytes": 172032,
+      "va": "0x4025d000",
+      "sha256": "b1598f4d511f7d6323d702988fd2b1bf8917f6cf90b32a2523fd2785abd3e7ad",
+      "command": "dd if=/dev/mtdblock4 bs=4096 skip=597 count=42 2>/dev/null | base64"
+    }
+  ]
+}

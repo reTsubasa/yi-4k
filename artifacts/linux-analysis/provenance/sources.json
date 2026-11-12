@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-05",
+  "scope": "Community provenance statements; not device evidence",
+  "sources": [
+    {
+      "file": "artifacts/linux-analysis/provenance/releases.json",
+      "url": "https://api.github.com/repos/psolyca/Yi_4k_ROOTFS/releases?per_page=30",
+      "sha256": "2f80ee87925bef996b8c9a134b116b7d61511bca9ff7e083f912fb53591e7403"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/initial-import-tree.json",
+      "url": "https://api.github.com/repos/psolyca/Yi_4k_ROOTFS/git/trees/7a5e134d8078f5ca0fad40539cd3954ff290d7f1?recursive=1",
+      "sha256": "c858066f1a517d9c44db7d7c5daed42ee42c62b6f6952b61aeb31a05a9ab775b"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/bootcmd-history.json",
+      "url": "https://api.github.com/repos/psolyca/Yi_4k_ROOTFS/commits?path=1.10.9/etc/init.d/S99postboot&per_page=20",
+      "sha256": "3a5776c4825a525ad7c3840691c8feecae8379df847766f1cf296ef4949a4177"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/python-history.json",
+      "url": "https://api.github.com/repos/psolyca/Yi_4k_ROOTFS/commits?path=1.10.9/usr/bin/python2.7&per_page=20",
+      "sha256": "d07b64d8e728813385faa5336a86c03af77950be63cf6644307972486082a2c6"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/service-history.json",
+      "url": "https://api.github.com/repos/psolyca/Yi_4k_ROOTFS/commits?path=1.10.9/etc/init.d/S50service&per_page=30",
+      "sha256": "6bd5a19b94c3041750841c2e3b9e15b232243c59d23c9324989f86a544c45a7c"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/original-import-usr__local__share__script__wifi.conf",
+      "url": "https://raw.githubusercontent.com/psolyca/Yi_4k_ROOTFS/7a5e134d8078f5ca0fad40539cd3954ff290d7f1/1.10.9/usr/local/share/script/wifi.conf",
+      "sha256": "e07e0ff5fcac11312c7198eda9f6d316f44f089ff55e1ea806e91bfd7ca6f6cb"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/original-import-etc__init.d__S50service",
+      "url": "https://raw.githubusercontent.com/psolyca/Yi_4k_ROOTFS/7a5e134d8078f5ca0fad40539cd3954ff290d7f1/1.10.9/etc/init.d/S50service",
+      "sha256": "e196853ef06953506cffb31bf53a51bab6322c5270137fab2a45f6badad102c9"
+    },
+    {
+      "file": "artifacts/linux-analysis/provenance/original-import-etc__init.d__S60postservice",
+      "url": "https://raw.githubusercontent.com/psolyca/Yi_4k_ROOTFS/7a5e134d8078f5ca0fad40539cd3954ff290d7f1/1.10.9/etc/init.d/S60postservice",
+      "sha256": "03593c51c9dbe15581e98e6cebe16cb3b4ddde9bf12b9f364c8f325d6a6a69c6"
+    }
+  ]
+}

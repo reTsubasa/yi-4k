@@ -1,0 +1,148 @@
+cat /proc/uptime; pidof remoteapi_cmd_daemon; cat /proc/176/maps; cat /proc/
+176/status; ls -l /tmp/SD0/DCIM; dmesg | tail -25
+3109.52 2849.45
+176
+00010000-00012000 r-xp 00000000 1f:05 869        /usr/bin/remoteapi_cmd_daemon
+00021000-00022000 rw-p 00001000 1f:05 869        /usr/bin/remoteapi_cmd_daemon
+00996000-009b7000 rw-p 00000000 00:00 0          [heap]
+1ba00000-1ba21000 rw-p 00000000 00:00 0 
+1ba21000-1bb00000 ---p 00000000 00:00 0 
+1bba1000-1bba2000 ---p 00000000 00:00 0 
+1bba2000-1bbc1000 rwxp 00000000 00:00 0          [stack:200]
+1bbc1000-36ac2000 rw-s 21100000 00:05 158        /dev/amba_heapmem
+36ac2000-36ac3000 ---p 00000000 00:00 0 
+36ac3000-36bc2000 rwxp 00000000 00:00 0          [stack:196]
+36bc2000-36bca000 r-xp 00000000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36bca000-36bd9000 ---p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36bd9000-36bda000 r--p 00007000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36bda000-36bdb000 rw-p 00008000 1f:05 536        /lib/libnss_files-2.19-2014.08.so
+36bdb000-36bdd000 r-xp 00000000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bdd000-36bec000 ---p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bec000-36bed000 r--p 00001000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bed000-36bee000 rw-p 00002000 1f:05 525        /lib/libdl-2.19-2014.08.so
+36bee000-36bef000 r-xp 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bef000-36bfe000 ---p 00001000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bfe000-36bff000 rw-p 00000000 1f:05 993        /usr/lib/libaipc_cfg.so
+36bff000-36c00000 r-xp 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c00000-36c0f000 ---p 00001000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c0f000-36c10000 rw-p 00000000 1f:05 1021       /usr/lib/libcrc_priv.so
+36c10000-36c11000 r-xp 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36c11000-36c20000 ---p 00001000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36c20000-36c21000 rw-p 00000000 1f:05 1101       /usr/lib/libpkgencap.so.1
+36c21000-36d59000 r-xp 00000000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d59000-36d68000 ---p 00138000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d68000-36d7d000 rw-p 00137000 1f:05 1023       /usr/lib/libcrypto.so.1.0.0
+36d7d000-36d80000 rw-p 00000000 00:00 0 
+36d80000-36d84000 r-xp 00000000 1f:05 997        /usr/lib/libambaipc.so
+36d84000-36d93000 ---p 00004000 1f:05 997        /usr/lib/libambaipc.so
+36d93000-36d94000 rw-p 00003000 1f:05 997        /usr/lib/libambaipc.so
+36d94000-36d95000 r-xp 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36d95000-36da4000 ---p 00001000 1f:05 999        /usr/lib/libambamem.so.1
+36da4000-36da5000 rw-p 00000000 1f:05 999        /usr/lib/libambamem.so.1
+36da5000-36da6000 r-xp 00000000 1f:05 1020       /usr/lib/libcrc.so
+36da6000-36db5000 ---p 00001000 1f:05 1020       /usr/lib/libcrc.so
+36db5000-36db6000 rw-p 00000000 1f:05 1020       /usr/lib/libcrc.so
+36db6000-36dc3000 r-xp 00000000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36dc3000-36dd2000 ---p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36dd2000-36dd3000 r--p 0000c000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36dd3000-36dd4000 rw-p 0000d000 1f:05 532        /lib/libnsl-2.19-2014.08.so
+36dd4000-36dd6000 rw-p 00000000 00:00 0 
+36dd6000-36dd8000 r-xp 00000000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36dd8000-36de7000 ---p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36de7000-36de8000 r--p 00001000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36de8000-36de9000 rw-p 00002000 1f:05 546        /lib/libutil-2.19-2014.08.so
+36de9000-36dee000 r-xp 00000000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dee000-36dfd000 ---p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dfd000-36dfe000 r--p 00004000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dfe000-36dff000 rw-p 00005000 1f:05 542        /lib/librt-2.19-2014.08.so
+36dff000-36e0f000 r-xp 00000000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e0f000-36e1e000 ---p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e1e000-36e1f000 r--p 0000f000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e1f000-36e20000 rw-p 00010000 1f:05 538        /lib/libpthread-2.19-2014.08.so
+36e20000-36e22000 rw-p 00000000 00:00 0 
+36e22000-36efc000 r-xp 00000000 1f:05 521        /lib/libc-2.19-2014.08.so
+36efc000-36f0c000 ---p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f0c000-36f0e000 r--p 000da000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f0e000-36f0f000 rw-p 000dc000 1f:05 521        /lib/libc-2.19-2014.08.so
+36f0f000-36f12000 rw-p 00000000 00:00 0 
+36f12000-36f1a000 r-xp 00000000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36f1a000-36f29000 ---p 00008000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36f29000-36f2a000 rw-p 00007000 1f:05 1110       /usr/lib/libremoteapidatadaemon.so.1
+36f2a000-36f2b000 rw-p 00000000 00:00 0 
+36f2b000-36f2f000 r-xp 00000000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36f2f000-36f3e000 ---p 00004000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36f3e000-36f3f000 rw-p 00003000 1f:05 1108       /usr/lib/libremoteapicmddaemon.so.1
+36f3f000-36f57000 r-xp 00000000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f5d000-36f61000 rw-p 00000000 00:00 0 
+36f62000-36f63000 rw-p 00000000 00:00 0 
+36f63000-36f65000 rw-p 00000000 00:00 0 
+36f65000-36f66000 r-xp 00000000 00:00 0          [sigpage]
+36f66000-36f67000 r--p 00017000 1f:05 517        /lib/ld-2.19-2014.08.so
+36f67000-36f68000 rw-p 00018000 1f:05 517        /lib/ld-2.19-2014.08.so
+3ed48000-3ed69000 rwxp 00000000 00:00 0          [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+Name:   remoteapi_cmd_d
+State:  S (sleeping)
+Tgid:   176
+Pid:    176
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   448408 kB
+VmSize:   447512 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       972 kB
+VmRSS:       972 kB
+VmData:     2384 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      2484 kB
+VmPTE:       444 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        123
+nonvoluntary_ctxt_switches:     23
+total 0
+[   22.224503] wl_notify_connect_status_ap: connected device 9a:a9:12:8e:af:5d
+[   35.928519] Switching to clocksource jiffies
+[   35.928519] Switching to clocksource ambarella-cs-timer
+[  114.423093] Switching to clocksource jiffies
+[  114.423093] Switching to clocksource ambarella-cs-timer
+[  139.735934] Switching to clocksource jiffies
+[  139.735934] Switching to clocksource ambarella-cs-timer
+[  169.703035] gen(1), entry->generation(0)
+[  174.949890] gen(1), entry->generation(0)
+[  180.201399] gen(1), entry->generation(0)
+[  185.413144] gen(0), entry->generation(1)
+[  190.701091] gen(1), entry->generation(0)
+[  201.099845] gen(0), entry->generation(1)
+[  216.952872] gen(0), entry->generation(1)
+[  222.202399] gen(0), entry->generation(1)
+[ 1039.123461] Switching to clocksource jiffies
+[ 1039.123461] Switching to clocksource ambarella-cs-timer
+[ 1097.612823] Switching to clocksource jiffies
+[ 1097.612823] Switching to clocksource ambarella-cs-timer
+[ 1097.730428] Switching to clocksource jiffies
+[ 1097.730428] Switching to clocksource ambarella-cs-timer
+[ 1077.309496] Switching to clocksource jiffies
+[ 1077.309496] Switching to clocksource ambarella-cs-timer
+[ 1096.040623] Switching to clocksource jiffies
+[ 1096.040623] Switching to clocksource ambarella-cs-timer
+~ # echo __YI_CAPTURE_25b8ad39990549079dbe030dcdb36cd7__
+__YI_CAPTURE_25b8ad39990549079dbe030dcdb36cd7__

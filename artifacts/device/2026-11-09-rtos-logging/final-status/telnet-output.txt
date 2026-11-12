@@ -1,0 +1,14 @@
+python -B -u <<'YI_FINAL_PY'
+> import os,json
+> mounts=[line.strip() for line in open('/proc/mounts') if 'yi4k-rtos-logs-' in 
+line]
+> print('YI_FINAL_STATUS '+json.dumps({'uptime':open('/proc/uptime').read().stri
+p(),'log_marker_exists':os.path.lexists('/tmp/SD0/save_log_enable.script'),'temp
+orary_log_mounts':mounts,'temporary_log_dirs':[name for name in os.listdir('/tmp
+') if name.startswith('yi4k-rtos-logs-')],'autoexec_exists':os.path.lexists('/tm
+p/SD0/autoexec.ash')}))
+> 
+> YI_FINAL_PY
+YI_FINAL_STATUS {"uptime": "555.40 534.12", "log_marker_exists": false, "temporary_log_dirs": [], "autoexec_exists": false, "temporary_log_mounts": []}
+~ # echo __YI_CAPTURE_3386c5e842fd4812b28a66472b896845__
+__YI_CAPTURE_3386c5e842fd4812b28a66472b896845__

@@ -1,0 +1,4542 @@
+{
+  "evidence_type": "offline cross-member comparison of opaque ORC transfer-word patterns",
+  "scope": "Exact word/fence counts across all four DSP members and bounded decoding of the local orccode transfer cluster; no ORC execution or device access.",
+  "inputs": {
+    "container_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+    "reference_sha256": "4383b2c2ddceafec258d3907dee382d76389ca3604c0cad867fc58d15a30039c",
+    "orccode_sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6",
+    "fence_word": "0xf0000049",
+    "family_masks": {
+      "fc60": "0xfc600000",
+      "f1e3": "0xf1e30000",
+      "mask": "0xffff0000"
+    }
+  },
+  "member_summary": {
+    "orccode.bin": {
+      "sha256": "9b005a4fabfad2ddfeac71eca88d7968f7d2ddcc3f385d970cdbb7be12f2f1f6",
+      "bytes": 3036411,
+      "f0000049_count": 119,
+      "fc60_family_count": 76,
+      "f1e3_family_count": 4,
+      "fc60_or_f1e3_then_fence_pairs": 19,
+      "pair_examples": [
+        {
+          "offset": "0xa2bb0",
+          "preceding_word": "0xfc602e1a",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0xa2c00",
+          "preceding_word": "0xfc602a9b",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x179a24",
+          "preceding_word": "0xfc602107",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a14cc",
+          "preceding_word": "0xf1e30222",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a14e0",
+          "preceding_word": "0xf1e30223",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1504",
+          "preceding_word": "0xf1e32222",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1550",
+          "preceding_word": "0xfc606e06",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1560",
+          "preceding_word": "0xfc602e06",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1594",
+          "preceding_word": "0xfc60001c",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a15c8",
+          "preceding_word": "0xfc60001c",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a15fc",
+          "preceding_word": "0xfc600008",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1630",
+          "preceding_word": "0xfc600008",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1664",
+          "preceding_word": "0xfc600008",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a1680",
+          "preceding_word": "0xfc606f87",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a57b0",
+          "preceding_word": "0xfc602f9b",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a6b78",
+          "preceding_word": "0xfc603606",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a6bc8",
+          "preceding_word": "0xfc603606",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a6edc",
+          "preceding_word": "0xfc606e06",
+          "fence_word": "0xf0000049"
+        },
+        {
+          "offset": "0x1a6f1c",
+          "preceding_word": "0xfc605a87",
+          "fence_word": "0xf0000049"
+        }
+      ]
+    },
+    "orcme.bin": {
+      "sha256": "2fcef2875413c8da1ec66e5a94118262454c14ee09525c8f767234634332d381",
+      "bytes": 473660,
+      "f0000049_count": 0,
+      "fc60_family_count": 0,
+      "f1e3_family_count": 0,
+      "fc60_or_f1e3_then_fence_pairs": 0,
+      "pair_examples": []
+    },
+    "orcmdxf.bin": {
+      "sha256": "bc4fe432b6b4079341dda3b0cd8cc40db49c234d4efd89afc4c160e2e107ecda",
+      "bytes": 150760,
+      "f0000049_count": 0,
+      "fc60_family_count": 0,
+      "f1e3_family_count": 0,
+      "fc60_or_f1e3_then_fence_pairs": 0,
+      "pair_examples": []
+    },
+    "default_binary.bin": {
+      "sha256": "70907dada4feb32d30bb24407ff2bac57949ad445fc42553afdf26c6ac702286",
+      "bytes": 332480,
+      "f0000049_count": 0,
+      "fc60_family_count": 0,
+      "f1e3_family_count": 0,
+      "fc60_or_f1e3_then_fence_pairs": 0,
+      "pair_examples": []
+    }
+  },
+  "local_transfer_cluster": {
+    "range": [
+      "0x1a14c4",
+      "0x1a1688"
+    ],
+    "word_counts": {
+      "0xf1e30222": 1,
+      "0xf0000049": 16,
+      "0xf1e30223": 2,
+      "0xf1e32222": 1,
+      "0xfc602006": 1,
+      "0xfc602906": 1,
+      "0xfc603206": 1,
+      "0xfc603b06": 1,
+      "0xfc604406": 1,
+      "0xfc606d06": 1,
+      "0xfc606e06": 1,
+      "0xfc602506": 1,
+      "0xfc602e06": 1,
+      "0xfc606000": 2,
+      "0xfc60001c": 2,
+      "0xfc606001": 3,
+      "0xfc600008": 3,
+      "0xfc606f87": 1
+    },
+    "family_or_fence_records": [
+      {
+        "offset": "0x1a14cc",
+        "word_le": "0xf1e30222",
+        "family": "f1e3",
+        "context": [
+          {
+            "offset": "0x1a14ac",
+            "word_le": "0x9c630004",
+            "decoded": "l.addi r3,r3,4"
+          },
+          {
+            "offset": "0x1a14b0",
+            "word_le": "0x13fffffa",
+            "decoded": "l.bf 0x1a1498"
+          },
+          {
+            "offset": "0x1a14b4",
+            "word_le": "0x85210000",
+            "decoded": "l.lwz r9,0(r1)"
+          },
+          {
+            "offset": "0x1a14b8",
+            "word_le": "0x84410004",
+            "decoded": "l.lwz r2,4(r1)"
+          },
+          {
+            "offset": "0x1a14bc",
+            "word_le": "0x9c210008",
+            "decoded": "l.addi r1,r1,8"
+          },
+          {
+            "offset": "0x1a14c0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14c4",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14c8",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14cc",
+            "word_le": "0xf1e30222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d0",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d4",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14d8",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14dc",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14e0",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a14d0",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a14b0",
+            "word_le": "0x13fffffa",
+            "decoded": "l.bf 0x1a1498"
+          },
+          {
+            "offset": "0x1a14b4",
+            "word_le": "0x85210000",
+            "decoded": "l.lwz r9,0(r1)"
+          },
+          {
+            "offset": "0x1a14b8",
+            "word_le": "0x84410004",
+            "decoded": "l.lwz r2,4(r1)"
+          },
+          {
+            "offset": "0x1a14bc",
+            "word_le": "0x9c210008",
+            "decoded": "l.addi r1,r1,8"
+          },
+          {
+            "offset": "0x1a14c0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14c4",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14c8",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14cc",
+            "word_le": "0xf1e30222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d0",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d4",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14d8",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14dc",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14e0",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a14e0",
+        "word_le": "0xf1e30223",
+        "family": "f1e3",
+        "context": [
+          {
+            "offset": "0x1a14c0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14c4",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14c8",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14cc",
+            "word_le": "0xf1e30222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d0",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d4",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14d8",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14dc",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14e0",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          },
+          {
+            "offset": "0x1a1500",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a1504",
+            "word_le": "0xf1e32222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a14e4",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a14c4",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14c8",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14cc",
+            "word_le": "0xf1e30222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d0",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14d4",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14d8",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14dc",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14e0",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          },
+          {
+            "offset": "0x1a1500",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a1504",
+            "word_le": "0xf1e32222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a14f4",
+        "word_le": "0xf1e30223",
+        "family": "f1e3",
+        "context": [
+          {
+            "offset": "0x1a14d4",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14d8",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14dc",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14e0",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          },
+          {
+            "offset": "0x1a1500",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a1504",
+            "word_le": "0xf1e32222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1504",
+        "word_le": "0xf1e32222",
+        "family": "f1e3",
+        "context": [
+          {
+            "offset": "0x1a14e4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          },
+          {
+            "offset": "0x1a1500",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a1504",
+            "word_le": "0xf1e32222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1508",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a14e8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14ec",
+            "word_le": "0xb9e40042",
+            "decoded": "l.srli r15,r4,2"
+          },
+          {
+            "offset": "0x1a14f0",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a14f4",
+            "word_le": "0xf1e30223",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a14f8",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a14fc",
+            "word_le": "0xb9e40043",
+            "decoded": "l.srli r15,r4,3"
+          },
+          {
+            "offset": "0x1a1500",
+            "word_le": "0x9e25ffff",
+            "decoded": "l.addi r17,r5,-1"
+          },
+          {
+            "offset": "0x1a1504",
+            "word_le": "0xf1e32222",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1528",
+        "word_le": "0xfc602006",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1508",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a152c",
+        "word_le": "0xfc602906",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a150c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1530",
+        "word_le": "0xfc603206",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1510",
+            "word_le": "0xf1600019",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1534",
+        "word_le": "0xfc603b06",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1514",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1538",
+        "word_le": "0xfc604406",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1518",
+            "word_le": "0xf0030018",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a151c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1520",
+            "word_le": "0xf0030818",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1544",
+        "word_le": "0xfc606d06",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1524",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1528",
+            "word_le": "0xfc602006",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a152c",
+            "word_le": "0xfc602906",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1550",
+        "word_le": "0xfc606e06",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1530",
+            "word_le": "0xfc603206",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1554",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1534",
+            "word_le": "0xfc603b06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1538",
+            "word_le": "0xfc604406",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a155c",
+        "word_le": "0xfc602506",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a153c",
+            "word_le": "0x19a00050",
+            "decoded": "l.movhi r13,0x50"
+          },
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1560",
+        "word_le": "0xfc602e06",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1540",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1564",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1544",
+            "word_le": "0xfc606d06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1548",
+            "word_le": "0x19a00000",
+            "decoded": "l.movhi r13,0x0"
+          },
+          {
+            "offset": "0x1a154c",
+            "word_le": "0xa9ad0000",
+            "decoded": "l.ori r13,r13,0x0"
+          },
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1570",
+        "word_le": "0xfc606000",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1550",
+            "word_le": "0xfc606e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1554",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1558",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a155c",
+            "word_le": "0xfc602506",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1580",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1560",
+            "word_le": "0xfc602e06",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1564",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1568",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a156c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1570",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15a0",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15a4",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1594",
+        "word_le": "0xfc60001c",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1574",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15a0",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15a4",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1598",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1578",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a157c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1584"
+          },
+          {
+            "offset": "0x1a1580",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15a0",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15a4",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15a4",
+        "word_le": "0xfc606000",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1584",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1588",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a158c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1570"
+          },
+          {
+            "offset": "0x1a1590",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15a0",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15a4",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15b4",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1594",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1598",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a159c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15a0",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15a4",
+            "word_le": "0xfc606000",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15d4",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15d8",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15c8",
+        "word_le": "0xfc60001c",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a15a8",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15d4",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15d8",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15cc",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a15ac",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15b0",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15b8"
+          },
+          {
+            "offset": "0x1a15b4",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15d4",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15d8",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15d8",
+        "word_le": "0xfc606001",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a15b8",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15bc",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15c0",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15a4"
+          },
+          {
+            "offset": "0x1a15c4",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15d4",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15d8",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15e8",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a15c8",
+            "word_le": "0xfc60001c",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15cc",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15d0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a15d4",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a15d8",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1608",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a160c",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a15fc",
+        "word_le": "0xfc600008",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a15dc",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1608",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a160c",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1600",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a15e0",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a15e4",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a15ec"
+          },
+          {
+            "offset": "0x1a15e8",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1608",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a160c",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a160c",
+        "word_le": "0xfc606001",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a15ec",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a15f0",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a15f4",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a15d8"
+          },
+          {
+            "offset": "0x1a15f8",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1608",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a160c",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a161c",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a15fc",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1600",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1604",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1608",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a160c",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a163c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1640",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1630",
+        "word_le": "0xfc600008",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1610",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a163c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1640",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1634",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1614",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a1618",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1620"
+          },
+          {
+            "offset": "0x1a161c",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a163c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1640",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          },
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1640",
+        "word_le": "0xfc606001",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1620",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1624",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a1628",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a160c"
+          },
+          {
+            "offset": "0x1a162c",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a163c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1640",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          },
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1650",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1630",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1634",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1638",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a163c",
+            "word_le": "0x9de4ffff",
+            "decoded": "l.addi r15,r4,-1"
+          },
+          {
+            "offset": "0x1a1640",
+            "word_le": "0xfc606001",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          },
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1670",
+            "word_le": "0xa4840fff",
+            "decoded": "l.andi r4,r4,0xfff"
+          },
+          {
+            "offset": "0x1a1674",
+            "word_le": "0xa4a50fff",
+            "decoded": "l.andi r5,r5,0xfff"
+          },
+          {
+            "offset": "0x1a1678",
+            "word_le": "0xb9a4000c",
+            "decoded": "l.slli r13,r4,12"
+          },
+          {
+            "offset": "0x1a167c",
+            "word_le": "0xe1ad2804",
+            "decoded": "l.or r13,r13,r5"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1664",
+        "word_le": "0xfc600008",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1644",
+            "word_le": "0xa62f0003",
+            "decoded": "l.andi r17,r15,0x3"
+          },
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          },
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1670",
+            "word_le": "0xa4840fff",
+            "decoded": "l.andi r4,r4,0xfff"
+          },
+          {
+            "offset": "0x1a1674",
+            "word_le": "0xa4a50fff",
+            "decoded": "l.andi r5,r5,0xfff"
+          },
+          {
+            "offset": "0x1a1678",
+            "word_le": "0xb9a4000c",
+            "decoded": "l.slli r13,r4,12"
+          },
+          {
+            "offset": "0x1a167c",
+            "word_le": "0xe1ad2804",
+            "decoded": "l.or r13,r13,r5"
+          },
+          {
+            "offset": "0x1a1680",
+            "word_le": "0xfc606f87",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1684",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1688",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a168c",
+            "word_le": "0xfc030809",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1690",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1668",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1648",
+            "word_le": "0xbc110000",
+            "decoded": "l.sfeqi r17,0"
+          },
+          {
+            "offset": "0x1a164c",
+            "word_le": "0xc000002",
+            "decoded": "l.bnf 0x1a1654"
+          },
+          {
+            "offset": "0x1a1650",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1654",
+            "word_le": "0xe40f0000",
+            "decoded": "l.sfeq r15,r0"
+          },
+          {
+            "offset": "0x1a1658",
+            "word_le": "0x9defffff",
+            "decoded": "l.addi r15,r15,-1"
+          },
+          {
+            "offset": "0x1a165c",
+            "word_le": "0xffffff9",
+            "decoded": "l.bnf 0x1a1640"
+          },
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1670",
+            "word_le": "0xa4840fff",
+            "decoded": "l.andi r4,r4,0xfff"
+          },
+          {
+            "offset": "0x1a1674",
+            "word_le": "0xa4a50fff",
+            "decoded": "l.andi r5,r5,0xfff"
+          },
+          {
+            "offset": "0x1a1678",
+            "word_le": "0xb9a4000c",
+            "decoded": "l.slli r13,r4,12"
+          },
+          {
+            "offset": "0x1a167c",
+            "word_le": "0xe1ad2804",
+            "decoded": "l.or r13,r13,r5"
+          },
+          {
+            "offset": "0x1a1680",
+            "word_le": "0xfc606f87",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1684",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1688",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a168c",
+            "word_le": "0xfc030809",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1690",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1694",
+            "word_le": "0xfc601009",
+            "decoded": null
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1680",
+        "word_le": "0xfc606f87",
+        "family": "fc60",
+        "context": [
+          {
+            "offset": "0x1a1660",
+            "word_le": "0x15000000",
+            "decoded": "l.nop 0x0"
+          },
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1670",
+            "word_le": "0xa4840fff",
+            "decoded": "l.andi r4,r4,0xfff"
+          },
+          {
+            "offset": "0x1a1674",
+            "word_le": "0xa4a50fff",
+            "decoded": "l.andi r5,r5,0xfff"
+          },
+          {
+            "offset": "0x1a1678",
+            "word_le": "0xb9a4000c",
+            "decoded": "l.slli r13,r4,12"
+          },
+          {
+            "offset": "0x1a167c",
+            "word_le": "0xe1ad2804",
+            "decoded": "l.or r13,r13,r5"
+          },
+          {
+            "offset": "0x1a1680",
+            "word_le": "0xfc606f87",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1684",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1688",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a168c",
+            "word_le": "0xfc030809",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1690",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1694",
+            "word_le": "0xfc601009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1698",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a169c",
+            "word_le": "0xfc602009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16a0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a16a4",
+            "word_le": "0xfc601009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16a8",
+            "word_le": "0xfc602009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16ac",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          }
+        ]
+      },
+      {
+        "offset": "0x1a1684",
+        "word_le": "0xf0000049",
+        "family": "fence",
+        "context": [
+          {
+            "offset": "0x1a1664",
+            "word_le": "0xfc600008",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1668",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a166c",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1670",
+            "word_le": "0xa4840fff",
+            "decoded": "l.andi r4,r4,0xfff"
+          },
+          {
+            "offset": "0x1a1674",
+            "word_le": "0xa4a50fff",
+            "decoded": "l.andi r5,r5,0xfff"
+          },
+          {
+            "offset": "0x1a1678",
+            "word_le": "0xb9a4000c",
+            "decoded": "l.slli r13,r4,12"
+          },
+          {
+            "offset": "0x1a167c",
+            "word_le": "0xe1ad2804",
+            "decoded": "l.or r13,r13,r5"
+          },
+          {
+            "offset": "0x1a1680",
+            "word_le": "0xfc606f87",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1684",
+            "word_le": "0xf0000049",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1688",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a168c",
+            "word_le": "0xfc030809",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1690",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a1694",
+            "word_le": "0xfc601009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a1698",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a169c",
+            "word_le": "0xfc602009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16a0",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a16a4",
+            "word_le": "0xfc601009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16a8",
+            "word_le": "0xfc602009",
+            "decoded": null
+          },
+          {
+            "offset": "0x1a16ac",
+            "word_le": "0x44004800",
+            "decoded": "l.jr r9"
+          },
+          {
+            "offset": "0x1a16b0",
+            "word_le": "0xfc603009",
+            "decoded": null
+          }
+        ]
+      }
+    ],
+    "family_then_fence_pairs": [
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a14cc",
+        "preceding_word": "0xf1e30222",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a14e0",
+        "preceding_word": "0xf1e30223",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1504",
+        "preceding_word": "0xf1e32222",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1550",
+        "preceding_word": "0xfc606e06",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1560",
+        "preceding_word": "0xfc602e06",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1594",
+        "preceding_word": "0xfc60001c",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a15c8",
+        "preceding_word": "0xfc60001c",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a15fc",
+        "preceding_word": "0xfc600008",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1630",
+        "preceding_word": "0xfc600008",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1664",
+        "preceding_word": "0xfc600008",
+        "fence_word": "0xf0000049"
+      },
+      {
+        "member": "orccode.bin",
+        "offset": "0x1a1680",
+        "preceding_word": "0xfc606f87",
+        "fence_word": "0xf0000049"
+      }
+    ]
+  },
+  "bounded_findings": [
+    "F0000049, FC60xxxx, and F1E3xxxx patterns occur in orccode.bin only; the other three DSP members have zero exact fence words and zero words in both selected families.",
+    "Within the local transfer cluster, F0000049 follows several distinct FC60 and F1E3 words, including F1E30222, F1E30223, F1E32222, FC60001C, FC600008, FC606E06, and FC606F87. Repetition establishes a shared encoding/fence pattern, not a decoded operation.",
+    "Some local FC60 words are followed by a return, while loop variants are followed by branch/count instructions. This excludes treating F0000049 as a universally visible function return; it does not identify whether it is a completion, issue, or serialization instruction.",
+    "The local cluster also contains F1E30223 at 0x1a14f4 without an immediately following F0000049, so the presence of the fence word is not invariant across all staging-like variants.",
+    "Cross-member repetition provides no independent semantic anchor for direction, DMA/MMIO target, cache maintenance, or completion; those meanings remain hidden in proprietary words or runtime hardware state."
+  ],
+  "not_proven": [
+    "Meaning or operand format of F0000049, FC60xxxx, and F1E3xxxx",
+    "Whether any word is executable code versus data outside the bounded orccode cluster",
+    "DMA/MMIO register targets, transfer direction, error, completion, cache or atomic semantics",
+    "Runtime ORC identity, PC, dispatch and timing",
+    "Whether F0000049 is a fence, issue, wait, return-adjacent marker, or another operation"
+  ],
+  "device_access": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

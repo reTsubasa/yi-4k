@@ -1,0 +1,216 @@
+{
+  "evidence_type": "offline ARM VCAP EIS update-address ownership audit",
+  "scope": "exact DAT_a06f3380+0x58 decompilation references plus pinned call-site argument checks",
+  "inputs": {
+    "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "decompiled_directory": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+    "calls_tsv_sha256": "2e75c7ed3d04d6c21ea6357fee3117e99aa5430b61110aedbb0ec002c509f039"
+  },
+  "exact_source_references": [
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c5fd8.c",
+      "line": 27,
+      "role": "reset VCAP +0x58 to zero when param_2 == 0"
+    },
+    {
+      "file": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02c61d4.c",
+      "line": 12,
+      "role": "read VCAP +0x58 as translated shared base"
+    }
+  ],
+  "call_sites": {
+    "A02C5FD8_shutdown_reset": [
+      {
+        "address": "0xA0382EDC",
+        "bytes": "0000a0e3",
+        "instruction": "mov r0, #0"
+      },
+      {
+        "address": "0xA0382EE0",
+        "bytes": "0010a0e3",
+        "instruction": "mov r1, #0"
+      },
+      {
+        "address": "0xA0382EE4",
+        "bytes": "0020a0e3",
+        "instruction": "mov r2, #0"
+      },
+      {
+        "address": "0xA0382EE8",
+        "bytes": "3a0cfdeb",
+        "instruction": "bl #0xa02c5fd8"
+      }
+    ],
+    "A02C5FD8_publish": [
+      {
+        "address": "0xA038B298",
+        "bytes": "100304e3",
+        "instruction": "movw r0, #0x4310"
+      },
+      {
+        "address": "0xA038B29C",
+        "bytes": "70014ae3",
+        "instruction": "movt r0, #0xa170"
+      },
+      {
+        "address": "0xA038B2A0",
+        "bytes": "0110a0e3",
+        "instruction": "mov r1, #1"
+      },
+      {
+        "address": "0xA038B2A4",
+        "bytes": "0320a0e1",
+        "instruction": "mov r2, r3"
+      },
+      {
+        "address": "0xA038B2A8",
+        "bytes": "4aebfceb",
+        "instruction": "bl #0xa02c5fd8"
+      }
+    ],
+    "A02C5FD8_clear_slot": [
+      {
+        "address": "0xA038B2CC",
+        "bytes": "003093e5",
+        "instruction": "ldr r3, [r3]"
+      },
+      {
+        "address": "0xA038B2D0",
+        "bytes": "0000a0e3",
+        "instruction": "mov r0, #0"
+      },
+      {
+        "address": "0xA038B2D4",
+        "bytes": "0110a0e3",
+        "instruction": "mov r1, #1"
+      },
+      {
+        "address": "0xA038B2D8",
+        "bytes": "0320a0e1",
+        "instruction": "mov r2, r3"
+      },
+      {
+        "address": "0xA038B2DC",
+        "bytes": "3debfceb",
+        "instruction": "bl #0xa02c5fd8"
+      }
+    ],
+    "A02C61D4_read": [
+      {
+        "address": "0xA0387794",
+        "bytes": "c80f0ae3",
+        "instruction": "movw r0, #0xafc8"
+      },
+      {
+        "address": "0xA0387798",
+        "bytes": "70014ae3",
+        "instruction": "movt r0, #0xa170"
+      },
+      {
+        "address": "0xA038779C",
+        "bytes": "0010a0e3",
+        "instruction": "mov r1, #0"
+      },
+      {
+        "address": "0xA03877A0",
+        "bytes": "8bfafceb",
+        "instruction": "bl #0xa02c61d4"
+      }
+    ],
+    "A02C61D4_reset": [
+      {
+        "address": "0xA0387C94",
+        "bytes": "ef3e0be3",
+        "instruction": "movw r3, #0xbeef"
+      },
+      {
+        "address": "0xA0387C98",
+        "bytes": "ad3e4de3",
+        "instruction": "movt r3, #0xdead"
+      },
+      {
+        "address": "0xA0387C9C",
+        "bytes": "203082e5",
+        "instruction": "str r3, [r2, #0x20]"
+      },
+      {
+        "address": "0xA0387CA0",
+        "bytes": "c80f0ae3",
+        "instruction": "movw r0, #0xafc8"
+      },
+      {
+        "address": "0xA0387CA4",
+        "bytes": "70014ae3",
+        "instruction": "movt r0, #0xa170"
+      },
+      {
+        "address": "0xA0387CA8",
+        "bytes": "0110a0e3",
+        "instruction": "mov r1, #1"
+      },
+      {
+        "address": "0xA0387CAC",
+        "bytes": "48f9fceb",
+        "instruction": "bl #0xa02c61d4"
+      }
+    ]
+  },
+  "call_graph": {
+    "A02C5FD8": [
+      {
+        "from": "0xA037E218",
+        "site": "0xA037E270",
+        "to": "0xA02C5FD8",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xA0382BA0",
+        "site": "0xA0382EE8",
+        "to": "0xA02C5FD8",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xA0385780",
+        "site": "0xA038B2A8",
+        "to": "0xA02C5FD8",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xA0385780",
+        "site": "0xA038B2DC",
+        "to": "0xA02C5FD8",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ],
+    "A02C61D4": [
+      {
+        "from": "0xA0385780",
+        "site": "0xA03877A0",
+        "to": "0xA02C61D4",
+        "type": "UNCONDITIONAL_CALL"
+      },
+      {
+        "from": "0xA0385780",
+        "site": "0xA0387CAC",
+        "to": "0xA02C61D4",
+        "type": "UNCONDITIONAL_CALL"
+      }
+    ]
+  },
+  "bounded_findings": [
+    "The full decompiled ARM set contains exactly two direct references to DAT_a06f3380 + 0x58.",
+    "A02C5FD8 writes zero to that field only on its param_2 == 0 reset branch; the checked shutdown call supplies r0=0,r1=0.",
+    "The checked A02C5FD8 publish and clear-slot calls supply param_2=1, so they do not write the VCAP +0x58 field.",
+    "A02C61D4 reads the field as the translated shared base. Its param_2=1 call writes CPU cache +0x20 to translated base +0x3c; the caller first stores DEADBEEF, so this is the CPU consume/reset sentinel path.",
+    "No fixed ARM non-sentinel writer of shared +0x3c is exposed by this exact-reference scan; ORC smem_2_dram remains outside the ARM reference index."
+  ],
+  "not_proven": [
+    "ORC runtime identity or execution of the smem_2_dram candidate",
+    "external-copy completion, cache visibility, atomic publication or old-slot release",
+    "a non-literal MMIO/DMA/indirect writer not represented by these decompiled ARM references"
+  ],
+  "device_access": false,
+  "firmware_executed": false,
+  "writes_to_device": false
+}

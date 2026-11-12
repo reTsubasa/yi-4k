@@ -1,0 +1,26 @@
+{
+  "firmware": "Z16V13L_1.10.7_a8f840ce_r2746",
+  "native_conditional_runtime_verified": true,
+  "api_ready_gate_verified": true,
+  "complete_debug_table_restored": true,
+  "recording_phase_counts": {
+    "gyro": 48,
+    "exposure": 67,
+    "frame_update": 66
+  },
+  "nominal_common_tick_ms": 1,
+  "nominal_tick_scope": "Static timer configuration; not oscillator/exposure/IMU timestamp calibration",
+  "video": {
+    "file": "YDXJ0139.MP4",
+    "bytes": 16254590,
+    "sha256": "1dc7d72892e54dcacaf4c6b032e3ec017237a44dad66d24edb4ba305f98970ee"
+  },
+  "decoded_video_frames": 48,
+  "cleanup_verified": true,
+  "final_status": "idle",
+  "arbitrary_arm_code_execution_verified": false,
+  "lossless_imu_stream_recovered": false,
+  "video_frame_gyro_alignment_recovered": false,
+  "algorithm_changed": false,
+  "jelly_improvement_measured": false
+}

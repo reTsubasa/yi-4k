@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "status": "failed_retained",
+  "device_access": false,
+  "source": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "implementation_sha256": {
+    "scripts/validate_prerecord_media_ring.py": "1526d766d907389f9a9c078e79f136795cbe0a66142d74c64cf35d919110e760",
+    "scripts/prerecord_replay.py": "25d1e532ba5b59de8f36ab64598851f47e3d741ba524aad580ab3d72577267b2",
+    "scripts/prerecord_buffer.py": "406ef027a6506bf6373fe74f285282bdfd9eed3431666b4eb336be94ec002c9e",
+    "scripts/prerecord_trigger.py": "e3dfd44a218166d1ebf3e4106f67205d3813dbdf33bc1c04c9b23563e6f18af8",
+    "scripts/prerecord_media_store.py": "cf48737d245184405156edc87132b4321f8c6a5acbd7a1debb1c727cb2731c99",
+    "scripts/validate_prerecord_packet_fidelity.py": "6052ab74a94be2571185ced90ca9bee4f2a8085eebdd4a965e35551e32995460"
+  },
+  "cases": [],
+  "limits": [
+    "Archived ordinary recording is replayed on the host; no live camera producer or physical SD is exercised.",
+    "Typed voice START and shutter press are injected host events, not speech/GPIO recognition.",
+    "POSIX SIGSTOP/SIGCONT pauses FFmpeg at closed-segment notifications; this does not prove RTOS callback quiescence.",
+    "Capacity is measured at delivery checkpoints, not a continuous quota, throughput or power-loss guarantee.",
+    "MP4 file custody receipts are not C packet spool source-coverage seals or a hardware capture epoch.",
+    "Original native event3 two-segment consumer timing remains rejected; this path uses audited FFmpeg streamcopy."
+  ],
+  "error": "packet fidelity publication gate rejected pending clip"
+}

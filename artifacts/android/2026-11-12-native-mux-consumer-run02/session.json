@@ -1,0 +1,224 @@
+{
+  "started_utc": "2026-11-12T05:00:23.060959+00:00",
+  "scope": "owned new cold AVD; standalone local files only; no camera App/physical device/camera/network requests",
+  "serial": "emulator-5590",
+  "commands": [
+    {
+      "argv": [
+        "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/bin/javac",
+        "-source",
+        "11",
+        "-target",
+        "11",
+        "-cp",
+        "/Users/hyc/Library/Android/sdk/platforms/android-34/android.jar",
+        "-d",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/classes",
+        "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java"
+      ],
+      "returncode": 0,
+      "log": "javac.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/build-tools/35.0.0/d8",
+        "--lib",
+        "/Users/hyc/Library/Android/sdk/platforms/android-34/android.jar",
+        "--min-api",
+        "34",
+        "--output",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/dex",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/classes/NativeMuxConsumer.class"
+      ],
+      "returncode": 0,
+      "log": "d8.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "svc",
+        "wifi",
+        "disable"
+      ],
+      "returncode": 0,
+      "log": "disable-wifi.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "svc",
+        "data",
+        "disable"
+      ],
+      "returncode": 0,
+      "log": "disable-data.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "getprop"
+      ],
+      "returncode": 0,
+      "log": "android-properties.txt"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "mkdir",
+        "/data/local/tmp/yi4k_native_mux_20261112"
+      ],
+      "returncode": 0,
+      "log": "device-mkdir.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "push",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/dex/classes.dex",
+        "/data/local/tmp/yi4k_native_mux_20261112/classes.dex"
+      ],
+      "returncode": 0,
+      "log": "push-classes.dex.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "push",
+        "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+        "/data/local/tmp/yi4k_native_mux_20261112/source.mp4"
+      ],
+      "returncode": 0,
+      "log": "push-source.mp4.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "push",
+        "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-12-prerecord-native-window-compact-run01/session.pending.mp4",
+        "/data/local/tmp/yi4k_native_mux_20261112/candidate.mp4"
+      ],
+      "returncode": 0,
+      "log": "push-candidate.mp4.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "sha256sum",
+        "/data/local/tmp/yi4k_native_mux_20261112/source.mp4",
+        "/data/local/tmp/yi4k_native_mux_20261112/candidate.mp4"
+      ],
+      "returncode": 0,
+      "log": "device-input-sha256.txt"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "CLASSPATH=/data/local/tmp/yi4k_native_mux_20261112/classes.dex app_process /system/bin NativeMuxConsumer /data/local/tmp/yi4k_native_mux_20261112/source.mp4 /data/local/tmp/yi4k_native_mux_20261112/source.json source"
+      ],
+      "returncode": 0,
+      "log": "source-consumer.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "pull",
+        "/data/local/tmp/yi4k_native_mux_20261112/source.json",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/source.json"
+      ],
+      "returncode": 0,
+      "log": "pull-source.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "shell",
+        "CLASSPATH=/data/local/tmp/yi4k_native_mux_20261112/classes.dex app_process /system/bin NativeMuxConsumer /data/local/tmp/yi4k_native_mux_20261112/candidate.mp4 /data/local/tmp/yi4k_native_mux_20261112/candidate.json candidate"
+      ],
+      "returncode": 0,
+      "log": "candidate-consumer.log"
+    },
+    {
+      "argv": [
+        "/Users/hyc/Library/Android/sdk/platform-tools/adb",
+        "-s",
+        "emulator-5590",
+        "pull",
+        "/data/local/tmp/yi4k_native_mux_20261112/candidate.json",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run02/candidate.json"
+      ],
+      "returncode": 0,
+      "log": "pull-candidate.log"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+      "bytes": 367326906,
+      "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-12-prerecord-native-window-compact-run01/session.pending.mp4",
+      "bytes": 343127606,
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/run.py",
+      "sha256": "6834701f54812d95366a9e2949c2773dab9a0bc7909a8abfdde790a862a918fd"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java",
+      "sha256": "4ddb39f26627257f1280c2ea249caababbc7df8ab5e13013b95927f94f8d1943"
+    }
+  ],
+  "emulator_stopped": true,
+  "emulator_pid": 90558,
+  "emulator_argv": [
+    "/Users/hyc/Library/Android/sdk/emulator/emulator",
+    "-avd",
+    "yi4k-native-mux-api34",
+    "-port",
+    "5590",
+    "-no-window",
+    "-no-audio",
+    "-no-boot-anim",
+    "-no-snapshot",
+    "-gpu",
+    "swiftshader",
+    "-memory",
+    "2048",
+    "-cores",
+    "2"
+  ],
+  "status": "completed_owned_android_consumer_runs",
+  "inputs_unchanged": true
+}

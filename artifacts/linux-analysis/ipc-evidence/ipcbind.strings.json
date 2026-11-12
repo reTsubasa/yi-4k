@@ -1,0 +1,362 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x551",
+    "text": "libnsl.so.1"
+  },
+  {
+    "offset": "0x55d",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x579",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x588",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x59c",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x5b6",
+    "text": "libcrc.so"
+  },
+  {
+    "offset": "0x5c0",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x5c6",
+    "text": "getCrc"
+  },
+  {
+    "offset": "0x5cd",
+    "text": "_init"
+  },
+  {
+    "offset": "0x5d3",
+    "text": "libcrc_priv.so"
+  },
+  {
+    "offset": "0x5e2",
+    "text": "getPrivCrc"
+  },
+  {
+    "offset": "0x5ed",
+    "text": "libaipc_cfg.so"
+  },
+  {
+    "offset": "0x5fc",
+    "text": "rpc_size"
+  },
+  {
+    "offset": "0x605",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x60f",
+    "text": "socket"
+  },
+  {
+    "offset": "0x616",
+    "text": "strcpy"
+  },
+  {
+    "offset": "0x627",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x62e",
+    "text": "abort"
+  },
+  {
+    "offset": "0x634",
+    "text": "printf"
+  },
+  {
+    "offset": "0x63b",
+    "text": "calloc"
+  },
+  {
+    "offset": "0x642",
+    "text": "strlen"
+  },
+  {
+    "offset": "0x64e",
+    "text": "memset"
+  },
+  {
+    "offset": "0x65f",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x666",
+    "text": "setsockopt"
+  },
+  {
+    "offset": "0x671",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x678",
+    "text": "getopt_long"
+  },
+  {
+    "offset": "0x684",
+    "text": "fwrite"
+  },
+  {
+    "offset": "0x68b",
+    "text": "close"
+  },
+  {
+    "offset": "0x691",
+    "text": "getsockname"
+  },
+  {
+    "offset": "0x69d",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x6b4",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x6bb",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x6c7",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x6d5",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x6e1",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x6ee",
+    "text": "rpc_stat"
+  },
+  {
+    "offset": "0x6f7",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x1405",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x142c",
+    "text": "failed to be a daemon process"
+  },
+  {
+    "offset": "0x144c",
+    "text": "Usage: ipcbind [OPTION]"
+  },
+  {
+    "offset": "0x1464",
+    "text": "-b, --background"
+  },
+  {
+    "offset": "0x1475",
+    "text": " run in the background"
+  },
+  {
+    "offset": "0x148c",
+    "text": "-h, --help"
+  },
+  {
+    "offset": "0x1497",
+    "text": " print the help for ipcbind"
+  },
+  {
+    "offset": "0x14b4",
+    "text": "ipcbind will run in the foreground, if no option is given."
+  },
+  {
+    "offset": "0x14f4",
+    "text": "failed to open binding port with code %d"
+  },
+  {
+    "offset": "0x1520",
+    "text": "[IPCBINDER->] unknown command %d"
+  },
+  {
+    "offset": "0x1544",
+    "text": "[IPCBINDER->] service %d already exit, ignore new request"
+  },
+  {
+    "offset": "0x1580",
+    "text": "background"
+  },
+  {
+    "offset": "0x1594",
+    "text": "no such error code"
+  },
+  {
+    "offset": "0x15a8",
+    "text": "can't open nl socket"
+  },
+  {
+    "offset": "0x15c0",
+    "text": "can't create new socket"
+  },
+  {
+    "offset": "0x15d8",
+    "text": "setsockopt failed"
+  },
+  {
+    "offset": "0x15ec",
+    "text": "recv error!!"
+  },
+  {
+    "offset": "0x15fc",
+    "text": "success"
+  },
+  {
+    "offset": "0x1604",
+    "text": "rpc program is unavailable"
+  },
+  {
+    "offset": "0x1620",
+    "text": "rpc parameter is invalid"
+  },
+  {
+    "offset": "0x163c",
+    "text": "system error"
+  },
+  {
+    "offset": "0x164c",
+    "text": "timeout"
+  },
+  {
+    "offset": "0x1654",
+    "text": "invalid client id"
+  },
+  {
+    "offset": "0x1668",
+    "text": "the svc is not registered"
+  },
+  {
+    "offset": "0x1684",
+    "text": "the svc is double registered"
+  },
+  {
+    "offset": "0x16a4",
+    "text": "the memory allocation for svc is failed"
+  },
+  {
+    "offset": "0x16cc",
+    "text": "ambalink is not ready"
+  },
+  {
+    "offset": "0x16e4",
+    "text": "crc values of rpc headers are inconsistent"
+  },
+  {
+    "offset": "0x190d",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x1940",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x194a",
+    "text": ".interp"
+  },
+  {
+    "offset": "0x1952",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0x1960",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x1973",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x1979",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x1981",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x1989",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x1996",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x19a5",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x19ae",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x19b7",
+    "text": ".init"
+  },
+  {
+    "offset": "0x19bd",
+    "text": ".text"
+  },
+  {
+    "offset": "0x19c3",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x19c9",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x19d1",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x19dc",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x19e6",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x19f2",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x1a03",
+    "text": ".data.rel.ro"
+  },
+  {
+    "offset": "0x1a10",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x1a1e",
+    "text": ".data"
+  },
+  {
+    "offset": "0x1a29",
+    "text": ".ARM.attributes"
+  }
+]

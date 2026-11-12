@@ -1,0 +1,106 @@
+cat /proc/176/status; cat /proc/176/wchan; cat /proc/176/stack; ls /proc/176
+/task; for p in /proc/176/task/*; do echo "$p"; cat "$p/wchan" "$p/stack"; done;
+ netstat -ntp; cat /proc/net/netlink; ls -l /proc/176/fd
+Name:   remoteapi_cmd_d
+State:  S (sleeping)
+Tgid:   176
+Pid:    176
+PPid:   1
+TracerPid:      0
+Uid:    0       0       0       0
+Gid:    0       0       0       0
+FDSize: 32
+Groups: 
+VmPeak:   448408 kB
+VmSize:   447512 kB
+VmLck:         0 kB
+VmPin:         0 kB
+VmHWM:       972 kB
+VmRSS:       972 kB
+VmData:     2384 kB
+VmStk:       136 kB
+VmExe:         8 kB
+VmLib:      2484 kB
+VmPTE:       444 kB
+VmSwap:        0 kB
+Threads:        3
+SigQ:   0/382
+SigPnd: 0000000000000000
+ShdPnd: 0000000000000000
+SigBlk: 0000000000000000
+SigIgn: 0000000000000000
+SigCgt: 0000000180004207
+CapInh: 0000000000000000
+CapPrm: 0000001fffffffff
+CapEff: 0000001fffffffff
+CapBnd: 0000001fffffffff
+Cpus_allowed:   1
+Cpus_allowed_list:      0
+voluntary_ctxt_switches:        40
+nonvoluntary_ctxt_switches:     17
+poll_schedule_timeoutcat: can't open '/proc/176/stack': No such file or directory
+[1;34m176[0m  [1;34m196[0m  [1;34m200[0m
+/proc/176/task/176
+poll_schedule_timeoutcat: can't open '/proc/176/task/176/stack': No such file or directory
+/proc/176/task/196
+__skb_recv_datagramcat: can't open '/proc/176/task/196/stack': No such file or directory
+/proc/176/task/200
+__skb_recv_datagramcat: can't open '/proc/176/task/200/stack': No such file or directory
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:33540         127.0.0.1:9888          ESTABLISHED 212/XCServer
+tcp        0      0 127.0.0.1:33544         127.0.0.1:9888          ESTABLISHED 491/ble_remote
+tcp        0      0 127.0.0.1:9888          127.0.0.1:33544         ESTABLISHED 110/AmbaEventNotify
+tcp        0      0 127.0.0.1:9888          127.0.0.1:33540         ESTABLISHED 110/AmbaEventNotify
+tcp        0      0 127.0.0.1:52391         127.0.0.1:9898          ESTABLISHED 204/AmbaRTSPServer
+tcp        0    436 192.168.42.1:23         192.168.42.2:50817      ESTABLISHED 216/telnetd
+tcp        0      0 127.0.0.1:9898          127.0.0.1:52391         ESTABLISHED 108/AmbaNetFifoDaem
+netstat: /proc/net/tcp6: No such file or directory
+sk       Eth Pid    Groups   Rmem     Wmem     Dump     Locks     Drops     Inode
+41fa2200 0   467    00000001 0        0        00000000 2        0        904     
+42e53a00 0   0      00000000 0        0        00000000 2        0        8       
+41fa2800 0   455    00000440 0        0        00000000 2        0        877     
+4304b400 4   0      00000000 0        0        00000000 2        0        234     
+4304b600 6   0      00000000 0        0        00000000 2        0        235     
+42f17a00 10  0      00000000 0        0        00000000 2        0        110     
+42e79800 11  0      00000000 0        0        00000000 2        0        24      
+42e53c00 15  0      00000000 0        0        00000000 2        0        10      
+41e50e00 16  2508194260 00000000 0        0        00000000 2        0        927     
+41e50400 16  1656750548 00000000 0        0        00000000 2        0        926     
+41fa2400 16  3934257619 00000000 0        0        00000000 2        0        905     
+41fa2000 16  624951763 0000000e 0        0        00000000 2        0        906     
+42e79c00 16  0      00000000 0        0        00000000 2        0        25      
+41e50c00 25  4294963189 00000000 0        0        00000000 2        0        575     
+431ec200 25  104    00000000 0        0        00000000 2        0        315     
+42218000 25  4294963198 00000000 0        0        00000000 2        0        328     
+422cc800 25  194    00000000 0        0        00000000 2        0        373     
+431ec400 25  4294963193 00000000 0        0        00000000 2        0        379     
+431ece00 25  4294963194 00000000 704      0        00000000 2        0        378     
+431eca00 25  4294963192 00000000 704      0        00000000 2        0        381     
+41e50800 25  212    00000000 0        0        00000000 2        0        574     
+422cc600 25  189    00000000 0        0        00000000 2        0        372     
+422ccc00 25  4294963190 00000000 0        0        00000000 2        0        386     
+41fa2c00 25  4294963185 00000000 0        0        00000000 2        0        958     
+41fa2a00 25  491    00000000 0        0        00000000 2        0        957     
+431ecc00 25  4294963199 00000000 0        0        00000000 2        0        326     
+422cc000 25  4294963196 00000000 704      0        00000000 2        0        374     
+42218800 25  204    00000000 0        0        00000000 2        0        385     
+431ec800 25  108    00000000 0        0        00000000 2        0        323     
+431ec600 25  110    00000000 0        0        00000000 2        0        325     
+42f2f000 25  0      00000000 0        0        00000000 2        0        119     
+422cc400 25  4294963195 00000000 0        0        00000000 2        0        375     
+42218e00 25  4294963191 00000000 0        0        00000000 2        0        382     
+422cca00 25  176    00000000 0        0        00000000 2        0        377     
+431ec000 25  111    00000000 0        0        00000000 2        0        314     
+41f9aa00 30  0      00000000 0        0        00000000 2        0        795     
+total 0
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m4[0m -> [1;35msocket:[365][0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m5[0m -> [1;35msocket:[377][0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m6[0m -> [1;35msocket:[378][0m
+lrwx------    1 root     root            64 Jan  1 00:19 [1;36m7[0m -> [1;35msocket:[379][0m
+~ # echo __YI_CAPTURE_c0e154ab79bc4ce99d646dcc6fe4d2f1__
+__YI_CAPTURE_c0e154ab79bc4ce99d646dcc6fe4d2f1__

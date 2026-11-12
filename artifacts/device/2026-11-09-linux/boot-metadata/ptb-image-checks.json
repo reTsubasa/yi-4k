@@ -1,0 +1,16 @@
+{
+  "ptb_source_sha256": "69c4fcd4c096e0b02b0c0303483c11a364cafc0c46fe5aefaf73983fff7f3844",
+  "checks": [
+    {
+      "name": "SYS_SW",
+      "source": "artifacts/device/2026-11-09-linux/sys_sw_partition.bin",
+      "source_bytes": 33554432,
+      "actual_size_from_ptb": 7491432,
+      "source_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+      "crc32_computed_over_actual_size": "0xb3cb97f7",
+      "crc32_from_ptb": "0xb3cb97f7",
+      "matches": true
+    }
+  ],
+  "scope": "Only local captures supplied to this command; no claim about un-captured partitions or NAND OOB."
+}

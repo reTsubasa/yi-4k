@@ -1,0 +1,16 @@
+{
+  "source": "artifacts/device/2026-11-09-eis-recording/native-log/RtosActive.log",
+  "bytes": 123504,
+  "sha256": "ee8580574269fca22042f0a48db0a181d98972daf40f8d650d1eae71896fb3ee",
+  "counts": {},
+  "events": [],
+  "gyro_log_tick_delta_histogram": {},
+  "limitations": [
+    "Exact numeric print formats only; unmatched lines are excluded.",
+    "Log tick is not an IMU hardware timestamp; tick units are not inferred.",
+    "Fourth gyro slot is not defined by the mode-1 three-axis read.",
+    "Frame ArmSysTim is retained as an opaque raw value; frame identity is uncalibrated.",
+    "Modulo-decimated buffered text is not lossless IMU telemetry.",
+    "No axis orientation, physical units or exposure-to-gyro synchronization established."
+  ]
+}

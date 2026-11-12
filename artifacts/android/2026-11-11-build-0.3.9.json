@@ -1,0 +1,66 @@
+{
+  "evidence_type": "Host Android UI copy audit, label tests, prototype render tests, debug/release unit tests, lint and APK build; no camera access",
+  "packaged_at_utc": "2026-11-10T16:40:17Z",
+  "apk": "artifacts/android/yi4k-control-0.3.9-debug.apk",
+  "sha256": "a7db05b4b23b84c987c9f8c3cb990b7299f2929046100a779176d9ee9c87cbf1",
+  "size_bytes": 11533673,
+  "version_name": "0.3.9",
+  "version_code": 12,
+  "changes": [
+    "Replaced CAMERA CONTROL, FOV and EIS user-facing copy with Chinese labels in the capture UI.",
+    "Added NTSC/PAL human-readable value labels.",
+    "Added host assertions for Chinese capture labels and standard video-system labels."
+  ],
+  "checks": {
+    "gradle_test_debug": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "physical_phone_execution": false,
+    "camera_access_this_turn": false,
+    "gradle_test_release": true,
+    "prototype_render": true
+  },
+  "technical_english_retained": [
+    "APEX",
+    "YI 4K",
+    "EIS in the explicit setting name",
+    "NTSC/PAL",
+    "ISO",
+    "JPEG",
+    "Flat",
+    "MP4/JPG",
+    "firmware/hardware identifiers",
+    "raw unknown keys for diagnostics"
+  ],
+  "verification_run": "independent final rerun: test lintDebug assembleDebug",
+  "render_outputs": [
+    "artifacts/android/0.3.9-reports/prototype-renders/album-disconnected.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/capture-disconnected.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/capture-fixed-360x560.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/capture-fixed-412x700.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/capture-fixed-700x412.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/connection-1.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/connection-2.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/connection-3.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/editor-empty.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/playback-cover.png",
+    "artifacts/android/0.3.9-reports/prototype-renders/settings-disconnected.png"
+  ],
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0
+  }
+}

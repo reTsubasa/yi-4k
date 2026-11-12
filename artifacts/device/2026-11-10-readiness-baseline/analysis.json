@@ -1,0 +1,36 @@
+{
+  "api_before": "idle",
+  "api_after": "idle",
+  "selected_settings_equal": true,
+  "uptime_before": 1423.09,
+  "uptime_after": 1423.51,
+  "linux_boot_id": "fd7df2a1-a706-44ba-bfdb-107c7a372ac4",
+  "linux_meminfo_kb": {
+    "MemTotal": 49096,
+    "MemFree": 6000,
+    "Buffers": 9088,
+    "Cached": 15548
+  },
+  "rpmsg_names": [
+    "AmbaRpdev_CLK",
+    "aipc_rpc",
+    "aipc_vfs",
+    "aipc_rfs",
+    "AmbaRpdev_LinkCtrl",
+    "echo_cortex"
+  ],
+  "uport_present": false,
+  "listed_serial_nodes": [
+    "/dev/ttyS1",
+    "/dev/ttyS2"
+  ],
+  "ttyS1_observed_user": "bsa_server_43340 -d /dev/ttyS1 -p",
+  "startup_autoexec_present": false,
+  "startup_logging_marker_present": false,
+  "live_rtos_pool_statistics_obtained": false,
+  "limitations": [
+    "Linux memory figures are not RTOS application-pool capacity.",
+    "No RTOS shell command executed.",
+    "No assertion about physical availability or wiring of any UART."
+  ]
+}

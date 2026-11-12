@@ -1,0 +1,35 @@
+{
+  "status": "pass_final_source_and_document_pins",
+  "offline_only": true,
+  "device_access": false,
+  "files": [
+    {
+      "path": "scripts/export_prerecord_native_window.py",
+      "sha256": "c2cb4a7cfbf3655f28e2b7f8395236b053bdfaa1fb6a94a7ce17e2d843429c51",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/source-snapshot/export_prerecord_native_window.py"
+    },
+    {
+      "path": "scripts/verify_prerecord_native_window.py",
+      "sha256": "95c3ecd36b452b198e1b743e84f564cc465ff45b7b21338b048b695949920497",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/source-snapshot/verify_prerecord_native_window.py"
+    },
+    {
+      "path": "docs/prerecord-native-window-export.md",
+      "sha256": "e9f875c0c6b0fbbfb82591fe5af3f6e91c7fc1bec3a899d7c456842afe357b99",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/source-snapshot/prerecord-native-window-export.md"
+    },
+    {
+      "path": "docs/prerecord-native-session-export.md",
+      "sha256": "7530063725abc3813b5e5eddd2adb24749984300d1dcdabde58d11e46cc74f4d",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/source-snapshot/prerecord-native-session-export.md"
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-review.json",
+      "sha256": "25217052c1a17be6f2f615e2fc60ebd5f7e4d13800f8f57b9e29b8ad2bb76360",
+      "snapshot": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/source-snapshot/2026-11-12-prerecord-native-window-export-review.json"
+    }
+  ],
+  "positive": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/audit.json",
+  "independent_review": "artifacts/verification/2026-11-12-prerecord-native-window-export-review.json",
+  "accepted_scope": "Selected START63 STOP64 original ARM final mux with explicit common-origin/MVHD caller adapter and 0.922666667s leading empty presentation; not stock-only arbitrary-window or hardware acceptance"
+}

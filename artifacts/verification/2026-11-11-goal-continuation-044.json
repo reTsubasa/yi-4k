@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-11T10:41:55.604623+00:00",
+  "goal_status": "active",
+  "previous_index": "artifacts/verification/2026-11-11-goal-continuation-043.json",
+  "summary": {
+    "android": "0.4.4 code27: import rotation/cancellation/handoff recovery and separate pending edited-export startup barrier. 199 host tests, Lint0/66,8 regular AVD tests+2 process-death recovery tests passed; recovery prepare phases intentionally interrupted, not counted as completed tests.",
+    "eis": "32 original ARM TaskQuery/terminate/delete cases+3 interleavings and one completion scheduler removal independently passed. Natural-completion state1 retains SMP lock until scheduler removal; suspended termination state2 allows deletion before notifier returns. Generic state1/2 is insufficient as stopped proof; device retirement binding remains absent.",
+    "prerecord_composition": "Compiled C AAC boundary owner and custody actually connected to stock event3. 41 submitted packets verified after closed-output readback before release; tail AAC25 held. Capacity and Close short-write retain bytes. Strict complete-publication gate rejects duration discrepancy.",
+    "prerecord_spool": "Append-only C packet spool, double sync and independent readback before ACK.31 host/ARM cases,3003 actual AAC packets,8 child-process exit points independently passed. Scan OK means only a valid prefix and requires independently sealed coverage.",
+    "prerecord_recovery": "Actual frozen Close-failure8video+12AAC+heldAAC12 plus separate heldAAC25 written to fresh exclusive POSIX files and recovered in fresh processes without source-oracle bytes.21+1 payloads match. Record-boundary cut and torn marker refuse complete snapshot recovery.",
+    "final_review": "Independent final audit checked108 Android source hashes,68 lower-level source/snapshot hashes,434 documentation links,199 unit XML totals,all3 successful same-package AVD reports,and product/test v2 signatures."
+  },
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.4.4-debug.apk",
+    "sha256": "d1de574a209126534b89cd5c5e98657ebdb8d83ed9e66e3c72cec386bf2884c8"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-11-build-0.4.4.json",
+      "sha256": "68916d262fabf6bcb05e7d506f165244d6d497c4d928cc0cae2710d08edcb7f6",
+      "bytes": 18803,
+      "status": null,
+      "scope": null,
+      "device_access": null
+    },
+    {
+      "path": "artifacts/android/0.4.4-device-reports/ui-flow-run03/acceptance.json",
+      "sha256": "66e64194bec5c18cdcaea68d051d6c9c03402d046c625b59e1c38c59714e42ed",
+      "bytes": 4942,
+      "status": "pass",
+      "scope": "headless Android AVD only; no physical phone or camera access",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/android/0.4.4-device-reports/original-process-death-run02/acceptance.json",
+      "sha256": "5298c99abae20a1f76a2e088d7ab3fc371e93f397baf3a21d66fadae331280a9",
+      "bytes": 7246,
+      "status": "pass",
+      "scope": "headless Android AVD only; no physical phone or camera access",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/android/0.4.4-device-reports/edited-process-death-run01/acceptance.json",
+      "sha256": "5b52fcf1c607914609e03a5decfb1cb56e24826818105e33185e07f708b6de6c",
+      "bytes": 6749,
+      "status": "pass",
+      "scope": "headless Android AVD only; no physical phone or camera access",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-camera-readiness-before-044.json",
+      "sha256": "2f1bec9fc40692eca8425d770f14504713053e84dac6d2dbb28cd220925d56c9",
+      "bytes": 595,
+      "status": null,
+      "scope": "TCP connect only; no payload bytes, camera API, settings or files written",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-native-task-stop-proof-parent-review/audit.json",
+      "sha256": "1bd819bd1f9879d9e78e88439b3bf07a2cc08ff669ea9a4f753008012bfca2d7",
+      "bytes": 71440,
+      "status": "pass",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-eis-stop-evidence-review-run01/review.json",
+      "sha256": "8b5522d58759ccb793047a1b2b130b9a85350a88ad5fe81408fa7bb3489fd6f2",
+      "bytes": 5797,
+      "status": "pass",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-aac-custody-native-integration-run03/audit.json",
+      "sha256": "53d9d44471a71b35af4dd83049640310eaeae57b1edc4ce7665eea089c682471",
+      "bytes": 135385,
+      "status": "pass_composition_with_expected_publication_rejection",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-aac-custody-native-parent-review/audit.json",
+      "sha256": "d8e0d780a28dd375736403660d0b24e8221a78c5ccf6c50903200158ced31baf",
+      "bytes": 135377,
+      "status": "pass_composition_with_expected_publication_rejection",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-packet-spool-run02/validation.json",
+      "sha256": "1fa4e3a8cd6af2ec715df3b44abf30ded211a3d7ca72f1ff66f3562f1e2bcf86",
+      "bytes": 15342,
+      "status": "pass_host_arm_and_posix_spool",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-packet-spool-independent-run03/validation.json",
+      "sha256": "e8f25b1cfd3c472f8202f5a26f615d09e900295815baaad9294ff8f47cbfacc4",
+      "bytes": 15378,
+      "status": "pass_host_arm_and_posix_spool",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-retained-spool-recovery-run02/audit.json",
+      "sha256": "259048247bb453c828a1ffb3888549ef53d62170fe4a0ccc05b367bd30dafa1f",
+      "bytes": 8846,
+      "status": "pass_actual_frozen_snapshot_spool_recovery",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-retained-spool-recovery-parent-review/audit.json",
+      "sha256": "cf68591138b179e0b4172146d232cb4d1a4e3db0d34894e71c79df63645eb9f1",
+      "bytes": 8862,
+      "status": "pass_actual_frozen_snapshot_spool_recovery",
+      "scope": null,
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-prerecord-retained-spool-recovery-run02/final-artifact-review.json",
+      "sha256": "6c96b945de9470086e37ccd7d9a5ae008b76987919b9a9e6978deace467d55a9",
+      "bytes": 3619,
+      "status": "pass_final_read_only_artifact_review",
+      "scope": "No rerun, no camera access, no matrix or roadmap edits; only final report written",
+      "device_access": null
+    },
+    {
+      "path": "artifacts/verification/2026-11-11-goal-044-final-review.json",
+      "sha256": "ab14dffc80faae7864d353f8c45965082716bd6e1678d306a77fc4084ee6361e",
+      "bytes": 1982,
+      "status": "pass_independent_final_delivery_review",
+      "scope": null,
+      "device_access": false
+    }
+  ],
+  "device_scope": "TCP-only readiness connections to192.168.42.1:23/80/554/7878 timed out. No new camera API/setter/capture/RAM/firmware/partition operation. Android execution was local headless AVD only; emulators stopped.",
+  "remaining": [
+    "Physical Android phone/UI/hotspot/real Wi-Fi disconnect and long-file acceptance",
+    "RTOS first entry,code/cache publication,exclusive ownership and independently proven recovery",
+    "Device retirement service bindings and permanent-gateway ownership; P10/P11 remain unresolved",
+    "Live minute SD ring,callback stability/common capture epoch/storage failures and sealed coverage lifecycle",
+    "Actual camera voice commands and physical shutter binding",
+    "Live complete MP4 publication with exact A/V source coverage and verified timing"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "evidence_kind": "offline device-byte cache/publication audit; no runtime execution",
+  "target": {
+    "firmware": "YI 4K 1.10.7",
+    "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+    "sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "base": "0xa0100000"
+  },
+  "checks": [
+    {
+      "address": "0xA0312734",
+      "instruction": "bl #0xa04a22cc",
+      "bytes": "e43e06eb"
+    },
+    {
+      "address": "0xA0312740",
+      "instruction": "bl #0xa04a22cc",
+      "bytes": "e13e06eb"
+    },
+    {
+      "address": "0xA03127F8",
+      "instruction": "bl #0xa04a22cc",
+      "bytes": "b33e06eb"
+    },
+    {
+      "address": "0xA0312804",
+      "instruction": "bl #0xa04a22cc",
+      "bytes": "b03e06eb"
+    },
+    {
+      "address": "0xA02C60DC",
+      "instruction": "str r0, [r7, #0x80]",
+      "bytes": "800087e5"
+    },
+    {
+      "address": "0xA02C60E0",
+      "instruction": "add r3, r3, #1",
+      "bytes": "013083e2"
+    },
+    {
+      "address": "0xA02C60E8",
+      "instruction": "cmp r3, #1",
+      "bytes": "010053e3"
+    },
+    {
+      "address": "0xA02C60EC",
+      "instruction": "movhi r3, #0",
+      "bytes": "0030a083"
+    },
+    {
+      "address": "0xA02C60F0",
+      "instruction": "strb r3, [r2]",
+      "bytes": "0030c2e5"
+    }
+  ],
+  "publication_contract_check_count": 31,
+  "cache_boundary": {
+    "setwarp_function": "0xA0312460",
+    "plane_bytes_each": 6144,
+    "clean_helper": "0xA04A22CC",
+    "setwarp_clean_calls": [
+      {
+        "address": "0xA031258C",
+        "target": "#0xa04a22cc"
+      },
+      {
+        "address": "0xA0312598",
+        "target": "#0xa04a22cc"
+      },
+      {
+        "address": "0xA0312734",
+        "target": "#0xa04a22cc"
+      },
+      {
+        "address": "0xA0312740",
+        "target": "#0xa04a22cc"
+      },
+      {
+        "address": "0xA03127F8",
+        "target": "#0xa04a22cc"
+      },
+      {
+        "address": "0xA0312804",
+        "target": "#0xa04a22cc"
+      }
+    ],
+    "setwarp_clean_call_count": 6,
+    "planes_cleaned_per_executed_branch": 2,
+    "static_sites_covering_branches": 3,
+    "status_function": "0xA02C5FD8",
+    "status_clean_calls_visible": [],
+    "status_clean_call_count": 0,
+    "interpretation": "A0312460 visibly cleans two 0x1800 planes on each branch; A02C5FD8 has no visible call to the same helper in the audited range. This does not prove the status slots are coherent or incoherent."
+  },
+  "publication_boundary": {
+    "slot_stride_bytes": 64,
+    "slot_count_observed": 2,
+    "published_pointer_offset": 128,
+    "sequence": [
+      "store translated descriptor at selected slot +0x24",
+      "store translated descriptor at status +0x80",
+      "increment index",
+      "wrap index when greater than 1"
+    ],
+    "consumer_acknowledgement_found": false,
+    "old_slot_reclamation_found": false,
+    "barrier_or_ack_semantics": "unresolved from fixed bytes",
+    "full_reference_index": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/references.tsv",
+      "published_pointer": "0xA0699160",
+      "status_block": [
+        "0xA06990E0",
+        "0xA0699160"
+      ],
+      "available": true,
+      "pointer_references": [
+        {
+          "from": "0xA02C603C",
+          "to": "0xA0699160",
+          "type": "WRITE"
+        },
+        {
+          "from": "0xA02C6048",
+          "to": "0xA0699160",
+          "type": "WRITE"
+        },
+        {
+          "from": "0xA02C60DC",
+          "to": "0xA0699160",
+          "type": "WRITE"
+        },
+        {
+          "from": "0xA02C6194",
+          "to": "0xA0699160",
+          "type": "PARAM"
+        },
+        {
+          "from": "0xA02C61C8",
+          "to": "0xA0699160",
+          "type": "WRITE"
+        }
+      ],
+      "status_block_reference_count": 18,
+      "external_pointer_reference_count": 0
+    }
+  },
+  "known_callers": [
+    {
+      "caller": "0xA038B2A8",
+      "callee": "0xA02C5FD8",
+      "evidence": "fixed BL in focused A0385780 disassembly"
+    },
+    {
+      "caller": "0xA037E218",
+      "callee": "0xA02C5FD8",
+      "evidence": "Ghidra pseudocode and fixed call reference"
+    },
+    {
+      "caller": "0xA02C61D4",
+      "callee": "0xA04A3BD4",
+      "evidence": "address translation helper; reads shared state via translated base"
+    }
+  ],
+  "negative_evidence": [
+    "No fixed-byte reference in the audited A02C5FD8 body identifies a DSP consumer acknowledgement or old-slot release.",
+    "The full indexed image has no external fixed-code reference to the published +0x80 pointer when the reference index is available; an indirect DSP/MMIO consumer may still be absent from this index.",
+    "A02C61D4 reads/writes translated shared state fields but is not proven to read the two LiveviewEisConfig slots or acknowledge their lifetime.",
+    "The +0x80 publication pointer and one-byte index wrap do not establish frame identity, DSP latch timing, or safe two-slot reuse.",
+    "The absence of a visible clean call in A02C5FD8 is not proof that no cache/barrier exists elsewhere in the caller or DSP path."
+  ],
+  "next_static_contract": {
+    "name": "cache/publication boundary",
+    "proven": [
+      "four A04A22CC calls in A0312460, each on a 0x1800 plane branch",
+      "A02C5FD8 pointer publication and index wrap stores"
+    ],
+    "blocked_until": [
+      "DSP consumer/latch reference",
+      "old-slot reuse condition",
+      "cache/barrier ownership and timing",
+      "frame/status index mapping"
+    ]
+  },
+  "limitations": [
+    "No custom table was submitted and no camera state was modified.",
+    "Static call and store evidence is not an execution trace.",
+    "Do not design a replacement hook or assume two slots are safe to recycle from this audit."
+  ],
+  "device_contacted": false
+}

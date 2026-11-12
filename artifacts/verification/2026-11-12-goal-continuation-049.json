@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T06:57:15.950985+00:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.4.8 regression rerun passes: 208 unit tests, 0 lint errors/74 warnings, Debug APK reproduced; clock sync remains opt-in host contract only",
+    "eis_native": "Approved stock diagnostic lifecycle is complete and cleaned; no custom ARM entry, cache/SMP publication, or recovery evidence",
+    "eis_algorithm": "27/27 synthetic stock-affine poses executed with independent integer plane checks; max continuous error 0.177909 px and two-stage reconstruction 0.177399 px; no device deployment",
+    "prerecord": "Writer-closed independent reader and tamper rejection pass in POSIX ring simulation; no realtime encoder, physical SD, or camera trigger binding",
+    "voice": "Host-side voice/shutter typed trigger paths remain candidates only; original microphone/physical shutter binding is unaccepted"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/2026-11-12-build-0.4.8-rerun.json",
+      "bytes": 821,
+      "sha256": "60acfd2efad9128c8a40881ea62d6ed5cadf2cced3c1a309486698ec021a1ed5",
+      "status": "pass_android_0_4_8_build_rerun",
+      "scope": "host Gradle/unit tests/lint; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/yi4k-control-0.4.8-debug.apk",
+      "bytes": 11658909,
+      "sha256": "161a301f6aaf090fb31e887a44659346af989a33eaf44af143d056959bda68fa",
+      "status": "pass_android_0_4_8_debug_apk",
+      "scope": "host/AVD artifact; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-android-clock-probe-contract/clock-probe-contract.json",
+      "bytes": 993,
+      "sha256": "a1c57a4d90aa13543856a36734122adcb481ec35af0f259a056c1a0296459cf5",
+      "status": "pass_host_clock_sync_contract_only",
+      "scope": "host contract audit; no camera write/readback",
+      "device_access": false
+    },
+    {
+      "path": "docs/android-clock-sync-probe.md",
+      "bytes": 1356,
+      "sha256": "4353c40e94c70ba808323a4380d0fd81a48153c0cc4bdc751ff9ad6441b66fcb",
+      "status": "documented_clock_sync_boundary",
+      "scope": "documents opt-in syncClock=true and readback fields; no camera operation",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-stock-affine-sweep06/sweep.json",
+      "bytes": 51882,
+      "sha256": "3c4eb7d7ff0b3a82ac544dbe54b820370c800dc7dd8713be360cfb0f61109952",
+      "status": "pass_host_stock_affine_sweep",
+      "scope": "synthetic 1920x1080 geometry and unmodified ARM generator replay; no camera/DSP",
+      "device_access": false
+    },
+    {
+      "path": "docs/eis-candidate-stock-affine-sweep.md",
+      "bytes": 2348,
+      "sha256": "e8c8196e60b20e5a2589d399d20e34115b54790133d91a13abc12e3f46795c33",
+      "status": "documented_eis_algorithm_replacement_candidate",
+      "scope": "offline candidate and limits; no deployment or image-quality acceptance",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-ring-sd-run13b/validation.json",
+      "bytes": 1903,
+      "sha256": "bc003646e9ca209dc71bde26e0614e1b051a7f3eb6c08cbc67171b4919c8c0be",
+      "status": "pass_host_bounded_ring_sd_restart_reader",
+      "scope": "POSIX SD-adapter simulation with writer-closed independent reader; no physical SD/camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-ring-sd-backend.md",
+      "bytes": 3346,
+      "sha256": "b94cc818a09ffb9be2008c345b74da18b506d560f2f7350eb6af7278aa2b3aa5",
+      "status": "documented_prerecord_ring_boundary",
+      "scope": "host simulation and explicit physical/runtime limitations",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-lifecycle-review.json",
+      "bytes": 9548,
+      "sha256": "6f062848f21a8b8f9a07b0846f884a9515eb8e1ad4ec7b9875fffddf65bac036",
+      "status": "pass_stock_diagnostic_lifecycle_review",
+      "scope": "approved stock read-only diagnostic on camera with exact cleanup; no custom ARM/RAM/firmware write",
+      "device_access": true
+    },
+    {
+      "path": "docs/device-1107-stock-entry-approved-run01.md",
+      "bytes": 6054,
+      "sha256": "29bce4fcf6e59c03cbcfd8fc56d6084ee603b57652d5e5bc1f8539e0f2a50234",
+      "status": "documented_stock_diagnostic_lifecycle",
+      "scope": "camera task summary/fingerprint collection and cleanup; not EIS execution or recording acceptance",
+      "device_access": true
+    }
+  ],
+  "limits": [
+    "No new camera firmware, RAM, partition, recording, voice or shutter write was performed in this continuation.",
+    "Stock diagnostic device_access=true is limited to the previously approved read-only script lifecycle; its task list and fingerprint do not prove EIS replacement or voice recording.",
+    "Clock sync defaults off and was not executed against a camera; a real RTC write/readback requires separate authorization.",
+    "EIS sweep is synthetic/offline and does not prove DSP latch/cache, gyro/lens calibration, encoded-video quality or native execution.",
+    "Ring validation is a POSIX host simulation and does not prove physical SD durability, RTOS callback safety, realtime throughput, power-loss recovery or MP4 publication."
+  ],
+  "remaining": [
+    "Custom EIS entry plus I-cache/SMP completion, rollback and independent recovery on target.",
+    "Real gyro/lens/axis/frame calibration and encoded-video comparison.",
+    "Realtime encoder/FIFO callback, one-minute physical SD ring, power-loss/full-card recovery and original mux binding.",
+    "Original spoken “开始录像”/“start recording” microphone event and physical shutter bound to camera prerecord backend.",
+    "Physical Android phone acceptance and authorized real camera clock synchronization."
+  ]
+}

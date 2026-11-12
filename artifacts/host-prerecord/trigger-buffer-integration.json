@@ -1,0 +1,839 @@
+{
+  "scope": "offline typed camera-event to host buffer seam; no camera, microphone, GPIO, firmware or storage",
+  "window_us": 60000000,
+  "cases": [
+    {
+      "name": "voice_start_then_shutter_duplicate",
+      "start_source": "camera_voice",
+      "accepted_at_us": 65000000,
+      "duplicate_after_start": "duplicate",
+      "evicted_segments": 5,
+      "summary": {
+        "state": "complete",
+        "window_us": 60000000,
+        "trigger_us": 65000000,
+        "requested_stop_us": 71000000,
+        "selected_start_us": 5000000,
+        "selected_end_us": 71000000,
+        "available_pretrigger_us": 60000000,
+        "full_window_available": true,
+        "stop_overshoot_us": 0,
+        "segments": [
+          {
+            "name": "part-0005.mp4",
+            "start_us": 5000000,
+            "end_us": 6000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0006.mp4",
+            "start_us": 6000000,
+            "end_us": 7000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0007.mp4",
+            "start_us": 7000000,
+            "end_us": 8000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0008.mp4",
+            "start_us": 8000000,
+            "end_us": 9000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0009.mp4",
+            "start_us": 9000000,
+            "end_us": 10000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0010.mp4",
+            "start_us": 10000000,
+            "end_us": 11000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0011.mp4",
+            "start_us": 11000000,
+            "end_us": 12000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0012.mp4",
+            "start_us": 12000000,
+            "end_us": 13000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0013.mp4",
+            "start_us": 13000000,
+            "end_us": 14000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0014.mp4",
+            "start_us": 14000000,
+            "end_us": 15000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0015.mp4",
+            "start_us": 15000000,
+            "end_us": 16000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0016.mp4",
+            "start_us": 16000000,
+            "end_us": 17000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0017.mp4",
+            "start_us": 17000000,
+            "end_us": 18000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0018.mp4",
+            "start_us": 18000000,
+            "end_us": 19000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0019.mp4",
+            "start_us": 19000000,
+            "end_us": 20000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0020.mp4",
+            "start_us": 20000000,
+            "end_us": 21000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0021.mp4",
+            "start_us": 21000000,
+            "end_us": 22000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0022.mp4",
+            "start_us": 22000000,
+            "end_us": 23000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0023.mp4",
+            "start_us": 23000000,
+            "end_us": 24000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0024.mp4",
+            "start_us": 24000000,
+            "end_us": 25000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0025.mp4",
+            "start_us": 25000000,
+            "end_us": 26000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0026.mp4",
+            "start_us": 26000000,
+            "end_us": 27000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0027.mp4",
+            "start_us": 27000000,
+            "end_us": 28000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0028.mp4",
+            "start_us": 28000000,
+            "end_us": 29000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0029.mp4",
+            "start_us": 29000000,
+            "end_us": 30000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0030.mp4",
+            "start_us": 30000000,
+            "end_us": 31000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0031.mp4",
+            "start_us": 31000000,
+            "end_us": 32000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0032.mp4",
+            "start_us": 32000000,
+            "end_us": 33000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0033.mp4",
+            "start_us": 33000000,
+            "end_us": 34000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0034.mp4",
+            "start_us": 34000000,
+            "end_us": 35000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0035.mp4",
+            "start_us": 35000000,
+            "end_us": 36000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0036.mp4",
+            "start_us": 36000000,
+            "end_us": 37000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0037.mp4",
+            "start_us": 37000000,
+            "end_us": 38000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0038.mp4",
+            "start_us": 38000000,
+            "end_us": 39000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0039.mp4",
+            "start_us": 39000000,
+            "end_us": 40000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0040.mp4",
+            "start_us": 40000000,
+            "end_us": 41000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0041.mp4",
+            "start_us": 41000000,
+            "end_us": 42000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0042.mp4",
+            "start_us": 42000000,
+            "end_us": 43000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0043.mp4",
+            "start_us": 43000000,
+            "end_us": 44000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0044.mp4",
+            "start_us": 44000000,
+            "end_us": 45000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0045.mp4",
+            "start_us": 45000000,
+            "end_us": 46000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0046.mp4",
+            "start_us": 46000000,
+            "end_us": 47000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0047.mp4",
+            "start_us": 47000000,
+            "end_us": 48000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0048.mp4",
+            "start_us": 48000000,
+            "end_us": 49000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0049.mp4",
+            "start_us": 49000000,
+            "end_us": 50000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0050.mp4",
+            "start_us": 50000000,
+            "end_us": 51000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0051.mp4",
+            "start_us": 51000000,
+            "end_us": 52000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0052.mp4",
+            "start_us": 52000000,
+            "end_us": 53000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0053.mp4",
+            "start_us": 53000000,
+            "end_us": 54000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0054.mp4",
+            "start_us": 54000000,
+            "end_us": 55000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0055.mp4",
+            "start_us": 55000000,
+            "end_us": 56000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0056.mp4",
+            "start_us": 56000000,
+            "end_us": 57000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0057.mp4",
+            "start_us": 57000000,
+            "end_us": 58000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0058.mp4",
+            "start_us": 58000000,
+            "end_us": 59000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0059.mp4",
+            "start_us": 59000000,
+            "end_us": 60000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0060.mp4",
+            "start_us": 60000000,
+            "end_us": 61000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0061.mp4",
+            "start_us": 61000000,
+            "end_us": 62000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0062.mp4",
+            "start_us": 62000000,
+            "end_us": 63000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0063.mp4",
+            "start_us": 63000000,
+            "end_us": 64000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0064.mp4",
+            "start_us": 64000000,
+            "end_us": 65000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0065.mp4",
+            "start_us": 65000000,
+            "end_us": 66000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0066.mp4",
+            "start_us": 66000000,
+            "end_us": 67000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0067.mp4",
+            "start_us": 67000000,
+            "end_us": 68000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0068.mp4",
+            "start_us": 68000000,
+            "end_us": 69000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0069.mp4",
+            "start_us": 69000000,
+            "end_us": 70000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0070.mp4",
+            "start_us": 70000000,
+            "end_us": 71000000,
+            "starts_with_keyframe": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "shutter_start_then_voice_duplicate",
+      "start_source": "shutter",
+      "accepted_at_us": 65000000,
+      "duplicate_after_start": "duplicate",
+      "evicted_segments": 5,
+      "summary": {
+        "state": "complete",
+        "window_us": 60000000,
+        "trigger_us": 65000000,
+        "requested_stop_us": 71000000,
+        "selected_start_us": 5000000,
+        "selected_end_us": 71000000,
+        "available_pretrigger_us": 60000000,
+        "full_window_available": true,
+        "stop_overshoot_us": 0,
+        "segments": [
+          {
+            "name": "part-0005.mp4",
+            "start_us": 5000000,
+            "end_us": 6000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0006.mp4",
+            "start_us": 6000000,
+            "end_us": 7000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0007.mp4",
+            "start_us": 7000000,
+            "end_us": 8000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0008.mp4",
+            "start_us": 8000000,
+            "end_us": 9000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0009.mp4",
+            "start_us": 9000000,
+            "end_us": 10000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0010.mp4",
+            "start_us": 10000000,
+            "end_us": 11000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0011.mp4",
+            "start_us": 11000000,
+            "end_us": 12000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0012.mp4",
+            "start_us": 12000000,
+            "end_us": 13000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0013.mp4",
+            "start_us": 13000000,
+            "end_us": 14000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0014.mp4",
+            "start_us": 14000000,
+            "end_us": 15000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0015.mp4",
+            "start_us": 15000000,
+            "end_us": 16000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0016.mp4",
+            "start_us": 16000000,
+            "end_us": 17000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0017.mp4",
+            "start_us": 17000000,
+            "end_us": 18000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0018.mp4",
+            "start_us": 18000000,
+            "end_us": 19000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0019.mp4",
+            "start_us": 19000000,
+            "end_us": 20000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0020.mp4",
+            "start_us": 20000000,
+            "end_us": 21000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0021.mp4",
+            "start_us": 21000000,
+            "end_us": 22000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0022.mp4",
+            "start_us": 22000000,
+            "end_us": 23000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0023.mp4",
+            "start_us": 23000000,
+            "end_us": 24000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0024.mp4",
+            "start_us": 24000000,
+            "end_us": 25000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0025.mp4",
+            "start_us": 25000000,
+            "end_us": 26000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0026.mp4",
+            "start_us": 26000000,
+            "end_us": 27000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0027.mp4",
+            "start_us": 27000000,
+            "end_us": 28000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0028.mp4",
+            "start_us": 28000000,
+            "end_us": 29000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0029.mp4",
+            "start_us": 29000000,
+            "end_us": 30000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0030.mp4",
+            "start_us": 30000000,
+            "end_us": 31000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0031.mp4",
+            "start_us": 31000000,
+            "end_us": 32000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0032.mp4",
+            "start_us": 32000000,
+            "end_us": 33000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0033.mp4",
+            "start_us": 33000000,
+            "end_us": 34000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0034.mp4",
+            "start_us": 34000000,
+            "end_us": 35000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0035.mp4",
+            "start_us": 35000000,
+            "end_us": 36000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0036.mp4",
+            "start_us": 36000000,
+            "end_us": 37000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0037.mp4",
+            "start_us": 37000000,
+            "end_us": 38000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0038.mp4",
+            "start_us": 38000000,
+            "end_us": 39000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0039.mp4",
+            "start_us": 39000000,
+            "end_us": 40000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0040.mp4",
+            "start_us": 40000000,
+            "end_us": 41000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0041.mp4",
+            "start_us": 41000000,
+            "end_us": 42000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0042.mp4",
+            "start_us": 42000000,
+            "end_us": 43000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0043.mp4",
+            "start_us": 43000000,
+            "end_us": 44000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0044.mp4",
+            "start_us": 44000000,
+            "end_us": 45000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0045.mp4",
+            "start_us": 45000000,
+            "end_us": 46000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0046.mp4",
+            "start_us": 46000000,
+            "end_us": 47000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0047.mp4",
+            "start_us": 47000000,
+            "end_us": 48000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0048.mp4",
+            "start_us": 48000000,
+            "end_us": 49000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0049.mp4",
+            "start_us": 49000000,
+            "end_us": 50000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0050.mp4",
+            "start_us": 50000000,
+            "end_us": 51000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0051.mp4",
+            "start_us": 51000000,
+            "end_us": 52000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0052.mp4",
+            "start_us": 52000000,
+            "end_us": 53000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0053.mp4",
+            "start_us": 53000000,
+            "end_us": 54000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0054.mp4",
+            "start_us": 54000000,
+            "end_us": 55000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0055.mp4",
+            "start_us": 55000000,
+            "end_us": 56000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0056.mp4",
+            "start_us": 56000000,
+            "end_us": 57000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0057.mp4",
+            "start_us": 57000000,
+            "end_us": 58000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0058.mp4",
+            "start_us": 58000000,
+            "end_us": 59000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0059.mp4",
+            "start_us": 59000000,
+            "end_us": 60000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0060.mp4",
+            "start_us": 60000000,
+            "end_us": 61000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0061.mp4",
+            "start_us": 61000000,
+            "end_us": 62000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0062.mp4",
+            "start_us": 62000000,
+            "end_us": 63000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0063.mp4",
+            "start_us": 63000000,
+            "end_us": 64000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0064.mp4",
+            "start_us": 64000000,
+            "end_us": 65000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0065.mp4",
+            "start_us": 65000000,
+            "end_us": 66000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0066.mp4",
+            "start_us": 66000000,
+            "end_us": 67000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0067.mp4",
+            "start_us": 67000000,
+            "end_us": 68000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0068.mp4",
+            "start_us": 68000000,
+            "end_us": 69000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0069.mp4",
+            "start_us": 69000000,
+            "end_us": 70000000,
+            "starts_with_keyframe": true
+          },
+          {
+            "name": "part-0070.mp4",
+            "start_us": 70000000,
+            "end_us": 71000000,
+            "starts_with_keyframe": true
+          }
+        ]
+      }
+    }
+  ],
+  "assertions": 14
+}

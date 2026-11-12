@@ -1,0 +1,6 @@
+0xa0191270  stmdb sp!,{r4,lr}
+0xa0191274  cpy r4,r0
+0xa0191278  bl 0xa032e288
+0xa019127c  cpy r0,r4
+0xa0191280  ldmia sp!,{r4,lr}
+0xa0191284  b 0xa032e0d0

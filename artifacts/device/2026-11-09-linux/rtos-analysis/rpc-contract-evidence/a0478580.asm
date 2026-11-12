@@ -1,0 +1,60 @@
+a0478580 f0402de9 push {r4, r5, r6, r7, lr}
+a0478584 006050e2 subs r6, r0, #0
+a0478588 1cd04de2 sub sp, sp, #0x1c
+a047858c 3000000a beq #0xa0478654
+a0478590 f43e00e3 movw r3, #0xef4
+a0478594 a3314ae3 movt r3, #0xa1a3
+a0478598 0040d3e5 ldrb r4, [r3]
+a047859c 000054e3 cmp r4, #0
+a04785a0 0040a013 movne r4, #0
+a04785a4 2700001a bne #0xa0478648
+a04785a8 002096e5 ldr r2, [r6]
+a04785ac fc7e00e3 movw r7, #0xefc
+a04785b0 0150a0e3 mov r5, #1
+a04785b4 a3714ae3 movt r7, #0xa1a3
+a04785b8 080096e5 ldr r0, [r6, #8]
+a04785bc 042083e5 str r2, [r3, #4]
+a04785c0 0050c3e5 strb r5, [r3]
+a04785c4 4353fdeb bl #0xa03cd2d8
+a04785c8 000087e5 str r0, [r7]
+a04785cc 0800a0e3 mov r0, #8
+a04785d0 10508de5 str r5, [sp, #0x10]
+a04785d4 3f53fdeb bl #0xa03cd2d8
+a04785d8 0020a0e1 mov r2, r0
+a04785dc 183408e3 movw r3, #0x8418
+a04785e0 14208de5 str r2, [sp, #0x14]
+a04785e4 47304ae3 movt r3, #0xa047
+a04785e8 045082e5 str r5, [r2, #4]
+a04785ec 10e08de2 add lr, sp, #0x10
+a04785f0 14c09de5 ldr ip, [sp, #0x14]
+a04785f4 d02106e3 movw r2, #0x61d0
+a04785f8 0510a0e1 mov r1, r5
+a04785fc 62204ae3 movt r2, #0xa062
+a0478600 9102a0e3 mov r0, #0x10000009
+a0478604 00308ce5 str r3, [ip]
+a0478608 00c097e5 ldr ip, [r7]
+a047860c 043096e5 ldr r3, [r6, #4]
+a0478610 00c08de5 str ip, [sp]
+a0478614 08c096e5 ldr ip, [r6, #8]
+a0478618 0c508de5 str r5, [sp, #0xc]
+a047861c 00508de9 stmib sp, {ip, lr}
+a0478620 2349fdeb bl #0xa03caab4
+a0478624 14009de5 ldr r0, [sp, #0x14]
+a0478628 0d53fdeb bl #0xa03cd264
+a047862c 0400a0e1 mov r0, r4
+a0478630 0520a0e1 mov r2, r5
+a0478634 9212a0e3 mov r1, #0x20000009
+a0478638 1532fdeb bl #0xa03c4e94
+a047863c f03e00e3 movw r3, #0xef0
+a0478640 a3314ae3 movt r3, #0xa1a3
+a0478644 000083e5 str r0, [r3]
+a0478648 0400a0e1 mov r0, r4
+a047864c 1cd08de2 add sp, sp, #0x1c
+a0478650 f080bde8 pop {r4, r5, r6, r7, pc}
+a0478654 b80106e3 movw r0, #0x61b8
+a0478658 e81006e3 movw r1, #0x60e8
+a047865c 62004ae3 movt r0, #0xa062
+a0478660 62104ae3 movt r1, #0xa062
+a0478664 a0baf8eb bl #0xa02a70ec
+a0478668 0040e0e3 mvn r4, #0
+a047866c f5ffffea b #0xa0478648

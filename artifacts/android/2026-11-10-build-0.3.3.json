@@ -1,0 +1,107 @@
+{
+  "evidence_type": "Host Gradle tests/build/lint, V2 signature and actual MainActivity camera capture workflow on AOSP34 AVD; no physical phone acceptance",
+  "packaged_at_utc": "2026-11-10T12:29:53.854562+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.3-debug.apk",
+  "sha256": "7d6f3af2a8576a1f86716e06e55ef42f94e0dfeb3b1abd812949666a91374f99",
+  "size_bytes": 11763437,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.3",
+  "version_code": 6,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_log": "artifacts/android/0.3.3-build03.log",
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug assembleDebugAndroidTest",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "assemble_debug_android_test": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "physical_phone_execution": false,
+    "android_emulator_execution": true
+  },
+  "tests": {
+    "debug": {
+      "tests": 103,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 103,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 55
+  },
+  "changes_from_0_3_2": [
+    "Apply camera capture_mode/rec_mode to switch real stock system mode; do not trust the no-op system_mode setter",
+    "Reapply unchanged child mode when its system category is inactive; verify parent, child and readiness with read-only polling, never retry an uncertain write",
+    "Route power telemetry to battery status and preserve operation messages; initial refresh queries actual power",
+    "Await actual record or idle/vf after one capture request; stop acknowledgement and Unknown do not unlock another capture"
+  ],
+  "protocol_evidence": "docs/android-camera-mode-apply.md",
+  "camera_capture_runtime": {
+    "status": "passed",
+    "tests": 1,
+    "reports": "artifacts/android/0.3.3-device-reports/camera-capture-workflow-run02",
+    "evidence": "artifacts/android/0.3.3-device-reports/camera-capture-workflow-run02/acceptance.json",
+    "scope": "real MainActivity guide/Wi-Fi/API, advertised scalar quality write/readback, UI three-second record/stop and photograph, UI restore/disconnect, fresh-session list/download/hash/Android decode",
+    "new_media": [
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0150.MP4",
+        "name": "YDXJ0150.MP4",
+        "bytes": 20542234,
+        "sha256": "ba30ba2ef270ed3cd65ef351fe7f48383045ae6c0d19d1372613b9ec22c851a9",
+        "type": "video",
+        "decoded_width": 1920,
+        "decoded_height": 1080,
+        "duration_ms": 3003,
+        "has_audio": "yes"
+      },
+      {
+        "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0151.JPG",
+        "name": "YDXJ0151.JPG",
+        "bytes": 4306738,
+        "sha256": "5deaf11984960da61c70de5e063d489550bf94243ef25c0f6592c6b6cee85593",
+        "type": "photo",
+        "decoded_width": 1000,
+        "decoded_height": 750,
+        "source_width": 1000,
+        "source_height": 750
+      }
+    ],
+    "quality_changed_readback": "Fine",
+    "quality_after_readback": "S.Fine",
+    "new_camera_side_hashes_equal_android": true,
+    "existing_entries_preserved": true,
+    "status_equal": true,
+    "settings_equal": true,
+    "existing_anchor_files_equal": true,
+    "boot_id_equal": true,
+    "emulator_stopped": true,
+    "physical_phone": false,
+    "new_camera_files_retained": true,
+    "android_new_rows_cleaned": true
+  },
+  "limits": [
+    "No physical phone acceptance",
+    "Same-parent timelapse/slowmotion readback can reflect preferences before GUI native transition; actual submode recording remains unverified",
+    "Prior preview/media/editor runtime acceptance applies to APK 0.3.2; not rerun yet on 0.3.3",
+    "EIS replacement and camera standalone 60s prerecord remain unimplemented"
+  ],
+  "stop_state_evidence": "docs/android-camera-stop-readiness.md",
+  "failed_candidate": {
+    "manifest": "artifacts/android/0.3.3-candidates/candidate01-build.json",
+    "reports": "artifacts/android/0.3.3-device-reports/camera-capture-workflow-run01",
+    "reason": "Stop acknowledged while app_status was not yet ready; following mode precheck rejected. Camera restored."
+  },
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "verification_updated_at_utc": "2026-11-10T12:32:00.780953+00:00",
+  "reports": "artifacts/android/0.3.3-reports"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "rejected_incorrect_identity_remap_assumption",
+  "device_access": false,
+  "failure": "assert snapshots[remapped] == expected_rotated",
+  "finding": "A032C940 reparameterizes X displacement along displaced-Y; identity geometric ratios do not mean identity remap for nonconstant calibration",
+  "source_state": "Initial attempt superseded; no exact initial source snapshot retained; do not treat current source hash as that attempted version",
+  "published_outputs": false
+}

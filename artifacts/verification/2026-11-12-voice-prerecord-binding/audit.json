@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "pass_offline_voice_to_prerecord_binding_audit",
+  "device_access": false,
+  "device_write": false,
+  "scope": "Evidence join only; no microphone recognition, camera event transport, GPIO, SD, firmware, RAM or partition operation",
+  "recommendation": "Reuse the stock START semantic after camera recognition; do not replace keywords merely to add prerecord.",
+  "stock_semantics": {
+    "class_to_public_code": [
+      1002,
+      1001,
+      1004,
+      1003,
+      1005
+    ],
+    "start_result": 1003,
+    "stop_result": 1004,
+    "start_name": "Yi_action_begin_recording",
+    "stop_name": "Yi_action_stop_recording",
+    "task_snapshots": 2,
+    "phrase_string_search": {
+      "开始录像": {
+        "utf8_offset": -1,
+        "utf16le_offset": -1
+      },
+      "start recording": {
+        "utf8_offset": 4424371,
+        "utf16le_offset": -1
+      },
+      "begin recording": {
+        "utf8_offset": 4626116,
+        "utf16le_offset": -1
+      }
+    },
+    "exact_acoustic_phrases_verified": false
+  },
+  "typed_event_seam": {
+    "python_router": "scripts/prerecord_trigger.py",
+    "c_router": "sdk/yi4k_capture_trigger.c",
+    "android_adapter": "android/app/src/main/java/dev/yi4k/control/CaptureTriggerAdapter.java",
+    "android_calls_camera_client": false,
+    "production_input": "typed START_RECORDING event; phrase recognition remains camera responsibility"
+  },
+  "host_ring": {
+    "validation": "artifacts/verification/2026-11-12-prerecord-media-ring-run03/validation.json",
+    "voice_recovery_clip_sha256": "9b9cac86840a00e9781ce9a2428eb4ac91f4474c6d93feebd1b02d4b48ed505c",
+    "shutter_exact_same_clip_as_voice_recovery": true,
+    "cases": [
+      "changed_retained_segment_rejects_recovery",
+      "shutter_live_delivery_and_publication",
+      "voice_interruption_retention_and_recovery"
+    ]
+  },
+  "checks": {
+    "stock_semantic_class_3_is_start_1003": true,
+    "stock_semantic_class_2_is_stop_1004": true,
+    "stock_named_voice_task_present": true,
+    "exact_acoustic_phrases_unverified": true,
+    "typed_host_voice_fixture_contains_both_requested_phrases": true,
+    "android_adapter_does_not_call_camera_client": true,
+    "host_ring_voice_recovery_decode_passed": true,
+    "host_ring_shutter_matches_voice_recovery_sha": true
+  },
+  "evidence_hashes": {
+    "artifacts/device/2026-11-10-voice-semantics/audit.json": "f18fdff807225a43a1f394ad901ed2f8b17f68be0c2a39d582447c0d29109d2d",
+    "artifacts/device/2026-11-10-native-voice/static-evidence.json": "a343ab0cb0f3df0efedbffffafda39e20f5db665c74b5966868f0916c6ca0e51",
+    "artifacts/verification/2026-11-12-prerecord-media-ring-run03/validation.json": "4bf9ca5ce7847d37f9bbe2fbf7008bde83647027ec6e579d7859fa919c402ed1",
+    "scripts/prerecord_trigger.py": "e3dfd44a218166d1ebf3e4106f67205d3813dbdf33bc1c04c9b23563e6f18af8",
+    "sdk/yi4k_capture_trigger.c": "c24ff9823dac9cb97ab5998dc7f769b47814facb2a55534fc1cadadde03a58d5",
+    "android/app/src/main/java/dev/yi4k/control/CaptureTriggerAdapter.java": "25a699c8a6f413a0a71860bc982035be040243ac0a3b426a404e56195ea0deb8",
+    "android/app/src/main/java/dev/yi4k/control/CaptureTriggerRouter.java": "66940c8687ee1f9b0a4ac21284851643df7139ba5452e7af5e6f42773c70181a"
+  },
+  "limits": [
+    "The static task table and compiled ARM path do not prove that a particular spoken Mandarin or English phrase is recognized by this camera.",
+    "The host phrase list is a test fixture; it is not ASR and does not modify the camera model.",
+    "The ring run injects typed voice/shutter events into archived H264/AAC replay; it does not prove camera event delivery, realtime encoder/FIFO, physical SD durability or original mux binding.",
+    "A new keyword would require model/feature/pipeline validation and a separately approved reversible device experiment."
+  ]
+}

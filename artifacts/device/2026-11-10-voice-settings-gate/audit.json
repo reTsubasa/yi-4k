@@ -1,0 +1,1729 @@
+{
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "table": {
+    "base": "0xa06a5fa4",
+    "count": 96,
+    "stride": 100,
+    "sha256": "e6e24536f5e3111245cb61dcaa50867b27284562df72c25809e5bad848fddbca",
+    "rows": [
+      {
+        "index": 0,
+        "address": "0xa06a5fa4",
+        "id": 0,
+        "key": "camera_clock",
+        "getter": 2685754544,
+        "options": 2685773900,
+        "setter": 2685758144
+      },
+      {
+        "index": 1,
+        "address": "0xa06a6008",
+        "id": 1,
+        "key": "video_standard",
+        "getter": 2685754764,
+        "options": 2685774332,
+        "setter": 2685758548
+      },
+      {
+        "index": 2,
+        "address": "0xa06a606c",
+        "id": 2,
+        "key": "app_status",
+        "getter": 2685754780,
+        "options": 2685774740,
+        "setter": 0
+      },
+      {
+        "index": 3,
+        "address": "0xa06a60d0",
+        "id": 3,
+        "key": "video_resolution",
+        "getter": 2685755052,
+        "options": 2685775188,
+        "setter": 2685758864
+      },
+      {
+        "index": 4,
+        "address": "0xa06a6134",
+        "id": 4,
+        "key": "video_stamp",
+        "getter": 2685755096,
+        "options": 2685775604,
+        "setter": 2685759212
+      },
+      {
+        "index": 5,
+        "address": "0xa06a6198",
+        "id": 5,
+        "key": "video_quality",
+        "getter": 2685755112,
+        "options": 2685776012,
+        "setter": 2685759492
+      },
+      {
+        "index": 6,
+        "address": "0xa06a61fc",
+        "id": 6,
+        "key": "timelapse_video",
+        "getter": 2685755128,
+        "options": 2685776420,
+        "setter": 2685759756
+      },
+      {
+        "index": 7,
+        "address": "0xa06a6260",
+        "id": 7,
+        "key": "capture_mode",
+        "getter": 2685755144,
+        "options": 2685776828,
+        "setter": 2685760004
+      },
+      {
+        "index": 8,
+        "address": "0xa06a62c4",
+        "id": 8,
+        "key": "photo_size",
+        "getter": 2685755160,
+        "options": 2685777236,
+        "setter": 2685760236
+      },
+      {
+        "index": 9,
+        "address": "0xa06a6328",
+        "id": 9,
+        "key": "photo_stamp",
+        "getter": 2685755180,
+        "options": 2685777644,
+        "setter": 2685760452
+      },
+      {
+        "index": 10,
+        "address": "0xa06a638c",
+        "id": 10,
+        "key": "photo_quality",
+        "getter": 2685755196,
+        "options": 2685778052,
+        "setter": 2685760668
+      },
+      {
+        "index": 11,
+        "address": "0xa06a63f0",
+        "id": 11,
+        "key": "precise_cont_time",
+        "getter": 2685755212,
+        "options": 2685778460,
+        "setter": 2685760884
+      },
+      {
+        "index": 12,
+        "address": "0xa06a6454",
+        "id": 12,
+        "key": "precise_cont_poweroff",
+        "getter": 2685755228,
+        "options": 2685778868,
+        "setter": 2685760884
+      },
+      {
+        "index": 13,
+        "address": "0xa06a64b8",
+        "id": 13,
+        "key": "precise_cont_poweroff_settable",
+        "getter": 2685755244,
+        "options": 2685779276,
+        "setter": 0
+      },
+      {
+        "index": 14,
+        "address": "0xa06a651c",
+        "id": 15,
+        "key": "buzzer_volume",
+        "getter": 2685755260,
+        "options": 2685779684,
+        "setter": 2685761100
+      },
+      {
+        "index": 15,
+        "address": "0xa06a6580",
+        "id": 16,
+        "key": "buzzer_ring",
+        "getter": 2685755276,
+        "options": 2685780092,
+        "setter": 2685761312
+      },
+      {
+        "index": 16,
+        "address": "0xa06a65e4",
+        "id": 18,
+        "key": "burst_capture_number",
+        "getter": 2685755336,
+        "options": 2685780412,
+        "setter": 2685761536
+      },
+      {
+        "index": 17,
+        "address": "0xa06a6648",
+        "id": 19,
+        "key": "restore_factory_settings",
+        "getter": 2685755352,
+        "options": 2685780828,
+        "setter": 2685761752
+      },
+      {
+        "index": 18,
+        "address": "0xa06a66ac",
+        "id": 20,
+        "key": "restore_wifi",
+        "getter": 2685755384,
+        "options": 2685781132,
+        "setter": 2685762016
+      },
+      {
+        "index": 19,
+        "address": "0xa06a6710",
+        "id": 21,
+        "key": "restore_bt",
+        "getter": 2685755416,
+        "options": 2685781436,
+        "setter": 2685762276
+      },
+      {
+        "index": 20,
+        "address": "0xa06a6774",
+        "id": 22,
+        "key": "wifi_ssid",
+        "getter": 2685755448,
+        "options": 2685781740,
+        "setter": 2685762536
+      },
+      {
+        "index": 21,
+        "address": "0xa06a67d8",
+        "id": 23,
+        "key": "wifi_password",
+        "getter": 2685755600,
+        "options": 2685781956,
+        "setter": 2685762788
+      },
+      {
+        "index": 22,
+        "address": "0xa06a683c",
+        "id": 24,
+        "key": "sta_ssid",
+        "getter": 2685755764,
+        "options": 2685782172,
+        "setter": 2685763040
+      },
+      {
+        "index": 23,
+        "address": "0xa06a68a0",
+        "id": 25,
+        "key": "sta_password",
+        "getter": 2685755924,
+        "options": 2685782388,
+        "setter": 2685763292
+      },
+      {
+        "index": 24,
+        "address": "0xa06a6904",
+        "id": 26,
+        "key": "sta_connect_password",
+        "getter": 2685756076,
+        "options": 2685782604,
+        "setter": 2685763544
+      },
+      {
+        "index": 25,
+        "address": "0xa06a6968",
+        "id": 27,
+        "key": "sta_ip",
+        "getter": 2685756228,
+        "options": 2685782820,
+        "setter": 2685763796
+      },
+      {
+        "index": 26,
+        "address": "0xa06a69cc",
+        "id": 28,
+        "key": "wifi_mode",
+        "getter": 2685756380,
+        "options": 2685783036,
+        "setter": 2685764120
+      },
+      {
+        "index": 27,
+        "address": "0xa06a6a30",
+        "id": 29,
+        "key": "led_mode",
+        "getter": 2685756544,
+        "options": 2685783444,
+        "setter": 2685764400
+      },
+      {
+        "index": 28,
+        "address": "0xa06a6a94",
+        "id": 31,
+        "key": "meter_mode",
+        "getter": 2685756560,
+        "options": 2685783852,
+        "setter": 2685764616
+      },
+      {
+        "index": 29,
+        "address": "0xa06a6af8",
+        "id": 32,
+        "key": "sd_card_status",
+        "getter": 2685756576,
+        "options": 2685784260,
+        "setter": 0
+      },
+      {
+        "index": 30,
+        "address": "0xa06a6b5c",
+        "id": 37,
+        "key": "sw_version",
+        "getter": 2685756636,
+        "options": 2685784580,
+        "setter": 0
+      },
+      {
+        "index": 31,
+        "address": "0xa06a6bc0",
+        "id": 38,
+        "key": "hw_version",
+        "getter": 2685756652,
+        "options": 2685784796,
+        "setter": 0
+      },
+      {
+        "index": 32,
+        "address": "0xa06a6c24",
+        "id": 39,
+        "key": "dual_stream_status",
+        "getter": 2685756656,
+        "options": 2685785012,
+        "setter": 0
+      },
+      {
+        "index": 33,
+        "address": "0xa06a6c88",
+        "id": 40,
+        "key": "streaming_status",
+        "getter": 2685756708,
+        "options": 2685785228,
+        "setter": 0
+      },
+      {
+        "index": 34,
+        "address": "0xa06a6cec",
+        "id": 41,
+        "key": "precise_cont_capturing",
+        "getter": 2685756760,
+        "options": 2685785444,
+        "setter": 0
+      },
+      {
+        "index": 35,
+        "address": "0xa06a6d50",
+        "id": 42,
+        "key": "piv_enable",
+        "getter": 2685756808,
+        "options": 2685785660,
+        "setter": 0
+      },
+      {
+        "index": 36,
+        "address": "0xa06a6db4",
+        "id": 43,
+        "key": "auto_low_light",
+        "getter": 2685756856,
+        "options": 2685785876,
+        "setter": 2685764832
+      },
+      {
+        "index": 37,
+        "address": "0xa06a6e18",
+        "id": 45,
+        "key": "warp_enable",
+        "getter": 2685756872,
+        "options": 2685786284,
+        "setter": 2685765044
+      },
+      {
+        "index": 38,
+        "address": "0xa06a6e7c",
+        "id": 46,
+        "key": "support_auto_low_light",
+        "getter": 2685756888,
+        "options": 2685786692,
+        "setter": 0
+      },
+      {
+        "index": 39,
+        "address": "0xa06a6ee0",
+        "id": 47,
+        "key": "precise_selftime",
+        "getter": 2685756904,
+        "options": 2685786908,
+        "setter": 2685765260
+      },
+      {
+        "index": 40,
+        "address": "0xa06a6f44",
+        "id": 48,
+        "key": "precise_self_running",
+        "getter": 2685756920,
+        "options": 2685787316,
+        "setter": 0
+      },
+      {
+        "index": 41,
+        "address": "0xa06a6fa8",
+        "id": 49,
+        "key": "auto_power_off",
+        "getter": 2685756968,
+        "options": 2685787532,
+        "setter": 2685765488
+      },
+      {
+        "index": 42,
+        "address": "0xa06a700c",
+        "id": 50,
+        "key": "serial_number",
+        "getter": 2685756984,
+        "options": 2685787940,
+        "setter": 0
+      },
+      {
+        "index": 43,
+        "address": "0xa06a7070",
+        "id": 51,
+        "key": "system_mode",
+        "getter": 2685756988,
+        "options": 2685788156,
+        "setter": 2685765700
+      },
+      {
+        "index": 44,
+        "address": "0xa06a70d4",
+        "id": 52,
+        "key": "system_default_mode",
+        "getter": 2685757048,
+        "options": 2685788476,
+        "setter": 2685765888
+      },
+      {
+        "index": 45,
+        "address": "0xa06a7138",
+        "id": 55,
+        "key": "precise_self_remain_time",
+        "getter": 2685757064,
+        "options": 2685788892,
+        "setter": 0
+      },
+      {
+        "index": 46,
+        "address": "0xa06a719c",
+        "id": 56,
+        "key": "sdcard_need_format",
+        "getter": 2685757100,
+        "options": 2685789108,
+        "setter": 0
+      },
+      {
+        "index": 47,
+        "address": "0xa06a7200",
+        "id": 57,
+        "key": "video_rotate",
+        "getter": 2685757160,
+        "options": 2685789428,
+        "setter": 2685766100
+      },
+      {
+        "index": 48,
+        "address": "0xa06a7264",
+        "id": 61,
+        "key": "rec_mode",
+        "getter": 2685757176,
+        "options": 2685789836,
+        "setter": 2685766312
+      },
+      {
+        "index": 49,
+        "address": "0xa06a72c8",
+        "id": 62,
+        "key": "record_photo_time",
+        "getter": 2685757192,
+        "options": 2685790244,
+        "setter": 2685766536
+      },
+      {
+        "index": 50,
+        "address": "0xa06a732c",
+        "id": 63,
+        "key": "dev_functions",
+        "getter": 2685757208,
+        "options": 2685790652,
+        "setter": 0
+      },
+      {
+        "index": 51,
+        "address": "0xa06a7390",
+        "id": 65,
+        "key": "timelapse_video_duration",
+        "getter": 2685757256,
+        "options": 2685790868,
+        "setter": 2685766752
+      },
+      {
+        "index": 52,
+        "address": "0xa06a73f4",
+        "id": 66,
+        "key": "timelapse_video_resolution",
+        "getter": 2685757272,
+        "options": 2685791276,
+        "setter": 2685766956
+      },
+      {
+        "index": 53,
+        "address": "0xa06a7458",
+        "id": 67,
+        "key": "video_photo_resolution",
+        "getter": 2685757316,
+        "options": 2685791684,
+        "setter": 2685767324
+      },
+      {
+        "index": 54,
+        "address": "0xa06a74bc",
+        "id": 69,
+        "key": "slow_motion_rate",
+        "getter": 2685757360,
+        "options": 2685792092,
+        "setter": 2685767692
+      },
+      {
+        "index": 55,
+        "address": "0xa06a7520",
+        "id": 70,
+        "key": "slow_motion_res",
+        "getter": 2685757400,
+        "options": 2685792492,
+        "setter": 2685767900
+      },
+      {
+        "index": 56,
+        "address": "0xa06a7584",
+        "id": 71,
+        "key": "loop_rec_duration",
+        "getter": 2685757444,
+        "options": 2685792892,
+        "setter": 2685768116
+      },
+      {
+        "index": 57,
+        "address": "0xa06a75e8",
+        "id": 72,
+        "key": "iq_eis_enable",
+        "getter": 2685757476,
+        "options": 2685793716,
+        "setter": 2685768532
+      },
+      {
+        "index": 58,
+        "address": "0xa06a764c",
+        "id": 73,
+        "key": "iq_photo_iso_min",
+        "getter": 2685757492,
+        "options": 2685794132,
+        "setter": 2685768740
+      },
+      {
+        "index": 59,
+        "address": "0xa06a76b0",
+        "id": 74,
+        "key": "iq_photo_iso",
+        "getter": 2685757508,
+        "options": 2685794548,
+        "setter": 2685768948
+      },
+      {
+        "index": 60,
+        "address": "0xa06a7714",
+        "id": 76,
+        "key": "iq_video_iso",
+        "getter": 2685757524,
+        "options": 2685794964,
+        "setter": 2685769156
+      },
+      {
+        "index": 61,
+        "address": "0xa06a7778",
+        "id": 77,
+        "key": "iq_photo_shutter",
+        "getter": 2685757460,
+        "options": 2685793300,
+        "setter": 2685768324
+      },
+      {
+        "index": 62,
+        "address": "0xa06a77dc",
+        "id": 78,
+        "key": "iq_photo_ev",
+        "getter": 2685757540,
+        "options": 2685795380,
+        "setter": 2685769364
+      },
+      {
+        "index": 63,
+        "address": "0xa06a7840",
+        "id": 79,
+        "key": "iq_video_ev",
+        "getter": 2685757556,
+        "options": 2685795796,
+        "setter": 2685769572
+      },
+      {
+        "index": 64,
+        "address": "0xa06a78a4",
+        "id": 80,
+        "key": "iq_photo_wb",
+        "getter": 2685757572,
+        "options": 2685796212,
+        "setter": 2685769780
+      },
+      {
+        "index": 65,
+        "address": "0xa06a7908",
+        "id": 81,
+        "key": "iq_video_wb",
+        "getter": 2685757588,
+        "options": 2685796628,
+        "setter": 2685769988
+      },
+      {
+        "index": 66,
+        "address": "0xa06a796c",
+        "id": 82,
+        "key": "protune",
+        "getter": 2685757604,
+        "options": 2685797044,
+        "setter": 2685770196
+      },
+      {
+        "index": 67,
+        "address": "0xa06a79d0",
+        "id": 83,
+        "key": "screen_auto_lock",
+        "getter": 2685757620,
+        "options": 2685797460,
+        "setter": 2685770404
+      },
+      {
+        "index": 68,
+        "address": "0xa06a7a34",
+        "id": 85,
+        "key": "dewarp_support_status",
+        "getter": 2685757636,
+        "options": 2685797868,
+        "setter": 0
+      },
+      {
+        "index": 69,
+        "address": "0xa06a7a98",
+        "id": 86,
+        "key": "eis_support_status",
+        "getter": 2685757652,
+        "options": 2685798276,
+        "setter": 0
+      },
+      {
+        "index": 70,
+        "address": "0xa06a7afc",
+        "id": 87,
+        "key": "mic_level",
+        "getter": 2685758048,
+        "options": 2685806752,
+        "setter": 2685772904
+      },
+      {
+        "index": 71,
+        "address": "0xa06a7b60",
+        "id": 88,
+        "key": "photo_flat_color",
+        "getter": 2685757668,
+        "options": 2685799308,
+        "setter": 2685771260
+      },
+      {
+        "index": 72,
+        "address": "0xa06a7bc4",
+        "id": 89,
+        "key": "video_flat_color",
+        "getter": 2685757684,
+        "options": 2685799716,
+        "setter": 2685771476
+      },
+      {
+        "index": 73,
+        "address": "0xa06a7c28",
+        "id": 91,
+        "key": "long_shutter_define",
+        "getter": 2685757776,
+        "options": 2685798900,
+        "setter": 2685770612
+      },
+      {
+        "index": 74,
+        "address": "0xa06a7c8c",
+        "id": 90,
+        "key": "product_name",
+        "getter": 2685757700,
+        "options": 2685798684,
+        "setter": 0
+      },
+      {
+        "index": 75,
+        "address": "0xa06a7cf0",
+        "id": 92,
+        "key": "stamp_enable",
+        "getter": 2685757792,
+        "options": 2685800124,
+        "setter": 0
+      },
+      {
+        "index": 76,
+        "address": "0xa06a7d54",
+        "id": 93,
+        "key": "ev_enable",
+        "getter": 2685757808,
+        "options": 2685800532,
+        "setter": 0
+      },
+      {
+        "index": 77,
+        "address": "0xa06a7db8",
+        "id": 94,
+        "key": "fov",
+        "getter": 2685757824,
+        "options": 2685800940,
+        "setter": 2685770828
+      },
+      {
+        "index": 78,
+        "address": "0xa06a7e1c",
+        "id": 95,
+        "key": "wifi_country",
+        "getter": 2685757840,
+        "options": 2685801756,
+        "setter": 2685771044
+      },
+      {
+        "index": 79,
+        "address": "0xa06a7e80",
+        "id": 96,
+        "key": "wifi_country_editable",
+        "getter": 2685757856,
+        "options": 2685801348,
+        "setter": 0
+      },
+      {
+        "index": 80,
+        "address": "0xa06a7ee4",
+        "id": 97,
+        "key": "rec_audio_support",
+        "getter": 2685757872,
+        "options": 2685802280,
+        "setter": 0
+      },
+      {
+        "index": 81,
+        "address": "0xa06a7f48",
+        "id": 98,
+        "key": "photo_sharpness",
+        "getter": 2685757888,
+        "options": 2685802688,
+        "setter": 2685771692
+      },
+      {
+        "index": 82,
+        "address": "0xa06a7fac",
+        "id": 99,
+        "key": "video_sharpness",
+        "getter": 2685757904,
+        "options": 2685803096,
+        "setter": 2685771908
+      },
+      {
+        "index": 83,
+        "address": "0xa06a8010",
+        "id": 100,
+        "key": "support_flat_color",
+        "getter": 2685757936,
+        "options": 2685803912,
+        "setter": 0
+      },
+      {
+        "index": 84,
+        "address": "0xa06a8074",
+        "id": 101,
+        "key": "support_sharpness",
+        "getter": 2685757920,
+        "options": 2685803504,
+        "setter": 0
+      },
+      {
+        "index": 85,
+        "address": "0xa06a80d8",
+        "id": 102,
+        "key": "timelapse_photo_shutter",
+        "getter": 2685757952,
+        "options": 2685804320,
+        "setter": 2685772124
+      },
+      {
+        "index": 86,
+        "address": "0xa06a813c",
+        "id": 103,
+        "key": "support_fov",
+        "getter": 2685757968,
+        "options": 2685804728,
+        "setter": 0
+      },
+      {
+        "index": 87,
+        "address": "0xa06a81a0",
+        "id": 104,
+        "key": "support_iso",
+        "getter": 2685757984,
+        "options": 2685805136,
+        "setter": 0
+      },
+      {
+        "index": 88,
+        "address": "0xa06a8204",
+        "id": 105,
+        "key": "support_wb",
+        "getter": 2685758000,
+        "options": 2685805544,
+        "setter": 0
+      },
+      {
+        "index": 89,
+        "address": "0xa06a8268",
+        "id": 107,
+        "key": "quick_view",
+        "getter": 2685758016,
+        "options": 2685805952,
+        "setter": 2685772340
+      },
+      {
+        "index": 90,
+        "address": "0xa06a82cc",
+        "id": 106,
+        "key": "video_file_max_size",
+        "getter": 2685758032,
+        "options": 2685806360,
+        "setter": 2685772632
+      },
+      {
+        "index": 91,
+        "address": "0xa06a8330",
+        "id": 108,
+        "key": "language",
+        "getter": 2685758128,
+        "options": 2685808792,
+        "setter": 2685773608
+      },
+      {
+        "index": 92,
+        "address": "0xa06a8394",
+        "id": 109,
+        "key": "photo_file_type",
+        "getter": 2685758096,
+        "options": 2685807976,
+        "setter": 2685773392
+      },
+      {
+        "index": 93,
+        "address": "0xa06a83f8",
+        "id": 110,
+        "key": "photo_file_type_settable",
+        "getter": 2685758112,
+        "options": 2685808384,
+        "setter": 0
+      },
+      {
+        "index": 94,
+        "address": "0xa06a845c",
+        "id": 111,
+        "key": "sound_effect",
+        "getter": 2685758064,
+        "options": 2685807160,
+        "setter": 2685773120
+      },
+      {
+        "index": 95,
+        "address": "0xa06a84c0",
+        "id": 112,
+        "key": "sound_effect_support",
+        "getter": 2685758080,
+        "options": 2685807568,
+        "setter": 0
+      }
+    ],
+    "voice_key_registered": false,
+    "internal_id84_registered": false
+  },
+  "instruction_checks": [
+    {
+      "address": "0xa016326c",
+      "bytes": "6000a0e3",
+      "instruction": "mov r0, #0x60"
+    },
+    {
+      "address": "0xa0163270",
+      "bytes": "1eff2fe1",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xa01662b0",
+      "bytes": "edf3ffeb",
+      "instruction": "bl #0xa016326c"
+    },
+    {
+      "address": "0xa0166364",
+      "bytes": "503094e5",
+      "instruction": "ldr r3, [r4, #0x50]"
+    },
+    {
+      "address": "0xa0166354",
+      "bytes": "05b200eb",
+      "instruction": "bl #0xa0192b70"
+    },
+    {
+      "address": "0xa016635c",
+      "bytes": "644084e2",
+      "instruction": "add r4, r4, #0x64"
+    },
+    {
+      "address": "0xa0164824",
+      "bytes": "90faffeb",
+      "instruction": "bl #0xa016326c"
+    },
+    {
+      "address": "0xa01648a8",
+      "bytes": "645085e2",
+      "instruction": "add r5, r5, #0x64"
+    },
+    {
+      "address": "0xa01648c8",
+      "bytes": "043094e5",
+      "instruction": "ldr r3, [r4, #4]"
+    },
+    {
+      "address": "0xa0164904",
+      "bytes": "f80905eb",
+      "instruction": "bl #0xa02a70ec"
+    },
+    {
+      "address": "0xa016490c",
+      "bytes": "2f8a03eb",
+      "instruction": "bl #0xa02471d0"
+    },
+    {
+      "address": "0xa0164914",
+      "bytes": "7e5f09eb",
+      "instruction": "bl #0xa03bc714"
+    },
+    {
+      "address": "0xa0164920",
+      "bytes": "f081bde8",
+      "instruction": "pop {r4, r5, r6, r7, r8, pc}"
+    },
+    {
+      "address": "0xa0148afc",
+      "bytes": "155bffeb",
+      "instruction": "bl #0xa011f758"
+    },
+    {
+      "address": "0xa0148b08",
+      "bytes": "c359ffeb",
+      "instruction": "bl #0xa011f21c"
+    },
+    {
+      "address": "0xa0148b18",
+      "bytes": "3661c3e5",
+      "instruction": "strb r6, [r3, #0x136]"
+    },
+    {
+      "address": "0xa0148b1c",
+      "bytes": "ed0e01eb",
+      "instruction": "bl #0xa018c6d8"
+    },
+    {
+      "address": "0xa0148b2c",
+      "bytes": "9300a003",
+      "instruction": "moveq r0, #0x93"
+    },
+    {
+      "address": "0xa0148b30",
+      "bytes": "9400a013",
+      "instruction": "movne r0, #0x94"
+    },
+    {
+      "address": "0xa012d5f0",
+      "bytes": "cef500eb",
+      "instruction": "bl #0xa016ad30"
+    },
+    {
+      "address": "0xa01391b8",
+      "bytes": "dcc600eb",
+      "instruction": "bl #0xa016ad30"
+    },
+    {
+      "address": "0xa016ada0",
+      "bytes": "4990ffea",
+      "instruction": "b #0xa014eecc"
+    },
+    {
+      "address": "0xa014ef1c",
+      "bytes": "e2e6ffeb",
+      "instruction": "bl #0xa0148aac"
+    },
+    {
+      "address": "0xa014f0b4",
+      "bytes": "5400a0e3",
+      "instruction": "mov r0, #0x54"
+    },
+    {
+      "address": "0xa019317c",
+      "bytes": "070302e3",
+      "instruction": "movw r0, #0x2307"
+    },
+    {
+      "address": "0xa0193180",
+      "bytes": "1eff2fe1",
+      "instruction": "bx lr"
+    },
+    {
+      "address": "0xa0129640",
+      "bytes": "a0bbffeb",
+      "instruction": "bl #0xa01184c8"
+    },
+    {
+      "address": "0xa012a100",
+      "bytes": "17b9ffeb",
+      "instruction": "bl #0xa0118564"
+    }
+  ],
+  "function_fingerprints": [
+    {
+      "entry": "0xa016326c",
+      "spans": [
+        "a016326c-a0163273"
+      ],
+      "code_sha256": "78aba9cbacd1443933135d22dae690dfbcc86a0185128645889a3a5c9716da8e",
+      "pseudocode_sha256": "80d37d101cea24976acbdef4a58e3d0e3ed7c255cc838f6fd1f1c899cd73a76f"
+    },
+    {
+      "entry": "0xa0163294",
+      "spans": [
+        "a0163294-a0163337"
+      ],
+      "code_sha256": "e46870237e4fbb1a7fc8fbf07eb51d6333bef3b0e21f0983820270192cda8408",
+      "pseudocode_sha256": "707b78d380f96a2ba276485b579f1b417f016a6d69210b6192b8fec1241bc1cc"
+    },
+    {
+      "entry": "0xa0166274",
+      "spans": [
+        "a0166274-a01664b7"
+      ],
+      "code_sha256": "3310030184735ede18d47c74976c4512123617b710edb7f4ddf263e340849680",
+      "pseudocode_sha256": "e5419cf0678ee77050ae36372afa10ce3b1fbd14b02bf60510244c8b374b9103"
+    },
+    {
+      "entry": "0xa01647fc",
+      "spans": [
+        "a01647fc-a0164997"
+      ],
+      "code_sha256": "caa790d1edac639fcdb779414af4bc5e81cba5f98727f3137f3e6b14a04b01a6",
+      "pseudocode_sha256": "d961e3f87ff508db8d5eb7a4c6e2b691b86123619bce8d59b63895511ccdb440"
+    },
+    {
+      "entry": "0xa01649a0",
+      "spans": [
+        "a01649a0-a0164bab"
+      ],
+      "code_sha256": "a7e8fbd2977bcaaa3e03f0ca8543e2a56a31ec4a4bd3267ac9553b50e41197b7",
+      "pseudocode_sha256": "834bc3560a59ead6a383ad06d1467ba2de58d1eda0d72f7094e0d8fd2f46410d"
+    },
+    {
+      "entry": "0xa0164bb0",
+      "spans": [
+        "a0164bb0-a0164e0b"
+      ],
+      "code_sha256": "5a7062bf5d6e29eb28fab89ae8d2e43676e2dc5a920ec8771393799098accf9f",
+      "pseudocode_sha256": "a1513bdda452be6e344785e12b86b7d974f3136e5ca486150c685ff6b01ec97f"
+    },
+    {
+      "entry": "0xa01549fc",
+      "spans": [
+        "a01549fc-a0154caf",
+        "a0154cc0-a0154e63"
+      ],
+      "code_sha256": "1fe277ed61627013e5c35a520068dffb0c5c2545069d8329e77d7e395c1353ac",
+      "pseudocode_sha256": "b52a1ee2d777c949beb9d8caad54b2eb4fff0ff42b5ce2106c75c56ba3263e04"
+    },
+    {
+      "entry": "0xa0148aac",
+      "spans": [
+        "a0148aac-a0148ba3"
+      ],
+      "code_sha256": "33f35f5272e0feae4a5508f02f42bbc69f00860f9a96817ecefb92d149e20d42",
+      "pseudocode_sha256": "cd591c7dc1641500e80a5d7ce9349d96a8773dbfbe4ce8ba121aee2a5c329cb8"
+    },
+    {
+      "entry": "0xa014eecc",
+      "spans": [
+        "a014eecc-a014f0cf"
+      ],
+      "code_sha256": "55cfd9465d0abd027250d1c4e52b1e2cc3d071984d812fb4abf89a6e5eb1daf4",
+      "pseudocode_sha256": "a149a25104306ca2f0a399da5f7dd985852bd65fb81c1d9fd1a2a4152cbdec2c"
+    },
+    {
+      "entry": "0xa01abd80",
+      "spans": [
+        "a01abd80-a01abe1f"
+      ],
+      "code_sha256": "9b94be6b082fd041197dd63ca93e4212494cb9f97bbc9696b3949fd7beb57540",
+      "pseudocode_sha256": "fe5d8dd2511fd00a995f10651a2fa7c60f3cda58a7aec562809eb8d5b3446cbf"
+    },
+    {
+      "entry": "0xa012d5bc",
+      "spans": [
+        "a012d5bc-a012d63b"
+      ],
+      "code_sha256": "c03af210065fc45560d4fa993fe39f9b717b1eca0b446089a27de9cb4ec575c9",
+      "pseudocode_sha256": "bf110133f830cb7d212b296b33868e83b34a68a66866d560b99ff63886c213ec"
+    },
+    {
+      "entry": "0xa016ad30",
+      "spans": [
+        "a016ad30-a016adc3"
+      ],
+      "code_sha256": "d1842900b3bab8f56c4823733943cbac50ebbaa04a724af0e25263dbbe61f2bc",
+      "pseudocode_sha256": "e32bf9e7124b7da54e8d066a05587ddf8184552ba5b901e268cca6e29a1c1fb7"
+    },
+    {
+      "entry": "0xa01321c0",
+      "spans": [
+        "a01321c0-a01322cf",
+        "a0132398-a01326a3",
+        "a0132734-a0132b0f",
+        "a0132b5c-a013313b",
+        "a0133148-a01345a7"
+      ],
+      "code_sha256": "1bd83c68f3bc482ee03405224382287df0637139b46bb180c0bdd4c03ddf2a74",
+      "pseudocode_sha256": "733a73f7c2e2b7192e0dd2a73675081dc27a80856b4c23a244a91df22e210821"
+    },
+    {
+      "entry": "0xa0138f84",
+      "spans": [
+        "a0138f84-a0139003",
+        "a01390cc-a01390db",
+        "a01391a4-a013943f",
+        "a0139450-a01394fb",
+        "a013950c-a013959b",
+        "a01395e4-a01395f7",
+        "a0139620-a013962f",
+        "a0139660-a0139673",
+        "a01396c0-a0139a6b",
+        "a0139abc-a0139acb",
+        "a0139b50-a0139b5f",
+        "a0139b7c-a0139bd3",
+        "a0139bfc-a0139cd3",
+        "a0139d38-a013a637",
+        "a013a654-a013cae3"
+      ],
+      "code_sha256": "92e9f897dde44ab9b1e7b5c3f5b9ff35a18f92c88384576eb5de2e2c5da75c13",
+      "pseudocode_sha256": "89f11b2e074b4084d3204cff005120f19618ecc102797fdf25e26d1c7b92dc96"
+    },
+    {
+      "entry": "0xa011f084",
+      "spans": [
+        "a011f084-a011f0c7"
+      ],
+      "code_sha256": "1c1a8aaba62f1a405f17fd9a48ef353a0c7ae4d935824a770bd524ed0873850f",
+      "pseudocode_sha256": "2109a266ef10b79e5826ada926228a37cfbf423c6f57646110a34953f6857cb0"
+    },
+    {
+      "entry": "0xa011f0c8",
+      "spans": [
+        "a011f0c8-a011f12b"
+      ],
+      "code_sha256": "06ad754533bbfded396cfe3b9030d8e6d29c73b105cc955531181d8e01cc469b",
+      "pseudocode_sha256": "deafb71b6883ca0beff0f7f13e9f845ea6e3d73386e0d5df80c44e267700d4dc"
+    },
+    {
+      "entry": "0xa019317c",
+      "spans": [
+        "a019317c-a0193183"
+      ],
+      "code_sha256": "798a887fbdf4c14cb18917dcecdcfc6298ae30a6067d35ae97f314b80401b02e",
+      "pseudocode_sha256": "b98e8c3176ff5a569806845ba8781f5533626e83d9873e26e90755607a059136"
+    },
+    {
+      "entry": "0xa01184c8",
+      "spans": [
+        "a01184c8-a0118563"
+      ],
+      "code_sha256": "ee2da6949337d668d1849ee53ac793ace252faf6cdf2a36331a8bc085a08f1de",
+      "pseudocode_sha256": "cc72d311b44c80b193f98dc040d630941881716225a95ca6edf9e69ad92bb78e"
+    },
+    {
+      "entry": "0xa0118564",
+      "spans": [
+        "a0118564-a0118607"
+      ],
+      "code_sha256": "0f19154beea6aae4a3af81e7e2783a782de0f67895ffc091aa366c3b4bb4a261",
+      "pseudocode_sha256": "385c6968be5979e62fa4a642a0dd6c6805c09d2ece7ad91712c4ecb6ee64dcec"
+    },
+    {
+      "entry": "0xa01282e0",
+      "spans": [
+        "a01282e0-a01282fb",
+        "a0128558-a0129d9f",
+        "a0129dc4-a012b2f3",
+        "a012b2fc-a012b56b"
+      ],
+      "code_sha256": "aed45d6e81d08d71284cd94b7287bf82f8f256af238d1eaa26d451a15c337e05",
+      "pseudocode_sha256": "0621b779c8aa4c367a2f74693ceb231532a77f47f963695c39fd600d49dfe67f"
+    }
+  ],
+  "api_synthetic_cases": [
+    {
+      "message": 9,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "voice_control",
+      "return": -1
+    },
+    {
+      "message": 9,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "not_a_setting",
+      "return": -1
+    },
+    {
+      "message": 9,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [
+        "0xa015b08c"
+      ],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "video_quality",
+      "return": 0
+    },
+    {
+      "message": 9,
+      "replies": [
+        [
+          9,
+          -7
+        ]
+      ],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "voice_control",
+      "parse_error": -1,
+      "return": -1
+    },
+    {
+      "message": 9,
+      "replies": [
+        [
+          9,
+          -7
+        ]
+      ],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "voice_control",
+      "field_error": -1,
+      "return": -1
+    },
+    {
+      "message": 2,
+      "replies": [
+        [
+          2,
+          -1
+        ]
+      ],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "voice_control",
+      "return": -1
+    },
+    {
+      "message": 1,
+      "replies": [
+        [
+          1,
+          -13
+        ]
+      ],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "key": "voice_control",
+      "return": -1
+    }
+  ],
+  "msg3_synthetic_enumeration": {
+    "replies": [],
+    "enumerated": [
+      "camera_clock",
+      "video_standard",
+      "app_status",
+      "video_resolution",
+      "video_stamp",
+      "video_quality",
+      "timelapse_video",
+      "capture_mode",
+      "photo_size",
+      "photo_stamp",
+      "photo_quality",
+      "precise_cont_time",
+      "precise_cont_poweroff",
+      "precise_cont_poweroff_settable",
+      "buzzer_volume",
+      "buzzer_ring",
+      "burst_capture_number",
+      "restore_factory_settings",
+      "restore_wifi",
+      "restore_bt",
+      "wifi_ssid",
+      "wifi_password",
+      "sta_ssid",
+      "sta_password",
+      "sta_connect_password",
+      "sta_ip",
+      "wifi_mode",
+      "led_mode",
+      "meter_mode",
+      "sd_card_status",
+      "sw_version",
+      "hw_version",
+      "dual_stream_status",
+      "streaming_status",
+      "precise_cont_capturing",
+      "piv_enable",
+      "auto_low_light",
+      "warp_enable",
+      "support_auto_low_light",
+      "precise_selftime",
+      "precise_self_running",
+      "auto_power_off",
+      "serial_number",
+      "system_mode",
+      "system_default_mode",
+      "precise_self_remain_time",
+      "sdcard_need_format",
+      "video_rotate",
+      "rec_mode",
+      "record_photo_time",
+      "dev_functions",
+      "timelapse_video_duration",
+      "timelapse_video_resolution",
+      "video_photo_resolution",
+      "slow_motion_rate",
+      "slow_motion_res",
+      "loop_rec_duration",
+      "iq_eis_enable",
+      "iq_photo_iso_min",
+      "iq_photo_iso",
+      "iq_video_iso",
+      "iq_photo_shutter",
+      "iq_photo_ev",
+      "iq_video_ev",
+      "iq_photo_wb",
+      "iq_video_wb",
+      "protune",
+      "screen_auto_lock",
+      "dewarp_support_status",
+      "eis_support_status",
+      "mic_level",
+      "photo_flat_color",
+      "video_flat_color",
+      "long_shutter_define",
+      "product_name",
+      "stamp_enable",
+      "ev_enable",
+      "fov",
+      "wifi_country",
+      "wifi_country_editable",
+      "rec_audio_support",
+      "photo_sharpness",
+      "video_sharpness",
+      "support_flat_color",
+      "support_sharpness",
+      "timelapse_photo_shutter",
+      "support_fov",
+      "support_iso",
+      "support_wb",
+      "quick_view",
+      "video_file_max_size",
+      "language",
+      "photo_file_type",
+      "photo_file_type_settable",
+      "sound_effect",
+      "sound_effect_support"
+    ],
+    "handlers": [],
+    "sent_json": 1,
+    "readiness_calls": [],
+    "persists": 0,
+    "operations": [],
+    "return": 0
+  },
+  "native_leaf_synthetic_cases": [
+    {
+      "enabled": 0,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 0,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 1,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 0,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 0,
+      "return": 0
+    },
+    {
+      "enabled": 0,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf",
+        "ready"
+      ],
+      "persists": 1,
+      "operations": [
+        [
+          147,
+          0,
+          0
+        ]
+      ],
+      "vf": 0,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 0,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf"
+      ],
+      "persists": 0,
+      "operations": [],
+      "vf": 1,
+      "ready": 1,
+      "return": -36
+    },
+    {
+      "enabled": 0,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf",
+        "ready"
+      ],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 0,
+      "return": -21
+    },
+    {
+      "enabled": 1,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf",
+        "ready"
+      ],
+      "persists": 1,
+      "operations": [
+        [
+          148,
+          0,
+          0
+        ]
+      ],
+      "vf": 0,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 1,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf"
+      ],
+      "persists": 0,
+      "operations": [],
+      "vf": 1,
+      "ready": 1,
+      "return": -36
+    },
+    {
+      "enabled": 1,
+      "requested": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [
+        "vf",
+        "ready"
+      ],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 0,
+      "return": -21
+    },
+    {
+      "enabled": 1,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 1,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 1,
+      "ready": 1,
+      "return": 0
+    },
+    {
+      "enabled": 1,
+      "requested": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 0,
+      "operations": [],
+      "vf": 0,
+      "ready": 0,
+      "return": 0
+    }
+  ],
+  "debug_synthetic_cases": [
+    {
+      "input": 1,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 1,
+      "operations": [
+        [
+          147,
+          0,
+          0
+        ]
+      ],
+      "vf": 1,
+      "ready": 0,
+      "return": 0
+    },
+    {
+      "input": 0,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 1,
+      "operations": [
+        [
+          148,
+          0,
+          0
+        ]
+      ],
+      "vf": 1,
+      "ready": 0,
+      "return": 0
+    },
+    {
+      "input": 2,
+      "replies": [],
+      "enumerated": [],
+      "handlers": [],
+      "sent_json": 0,
+      "readiness_calls": [],
+      "persists": 1,
+      "operations": [
+        [
+          148,
+          0,
+          0
+        ]
+      ],
+      "vf": 1,
+      "ready": 0,
+      "return": 0
+    }
+  ],
+  "vc_test_registration": {
+    "name": "vc_test",
+    "handler": 2686107008,
+    "address": "0xa056b5cc"
+  },
+  "gui_menu_row": {
+    "address": "0xa06a339c",
+    "name": "MENU_SETUP_VOICE_CONTROL_SWITCHER",
+    "handler": "0xa012d5bc"
+  },
+  "saved_api_evidence": {
+    "readonly_sha256": "b6f1c39143266b7d0ab6525b7d60328f35eaf1b97430f3ebbaa99a4b6ad9f773",
+    "events_sha256": "1cfcc0e3ce0d8eb28279f16994e00cdddd96e105265db801852e735ddd9bd845",
+    "query_event_index": 6,
+    "query": {
+      "host_monotonic": 1110287.797323875,
+      "utc": "2026-11-10T01:53:10.810881+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 9,
+        "param": "voice_control"
+      }
+    },
+    "subsequent_events": [
+      {
+        "host_monotonic": 1110293.8084205,
+        "utc": "2026-11-10T01:53:16.822007+00:00",
+        "direction": "send",
+        "message": {
+          "msg_id": 258
+        }
+      },
+      {
+        "host_monotonic": 1110293.819691166,
+        "utc": "2026-11-10T01:53:16.833243+00:00",
+        "direction": "receive",
+        "message": {
+          "rval": 0,
+          "msg_id": 258
+        }
+      }
+    ]
+  },
+  "boundaries": {
+    "device_access": false,
+    "target_write": false,
+    "recognition_verified": false,
+    "exact_chinese_phrase_verified": false,
+    "exact_english_phrase_verified": false,
+    "compile_policy_or_model_reason_recovered": false
+  },
+  "stubs": "JSON/parsing, allocation, IO/logging, generic getters/options/setters, readiness, preference save, failing app callback; stock API loops/count/native leaf/debug control flow executes in synthetic RAM"
+}

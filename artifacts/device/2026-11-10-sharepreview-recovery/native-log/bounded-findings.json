@@ -1,0 +1,63 @@
+{
+  "files": [
+    {
+      "name": "RtosActive.log",
+      "bytes": 1873920,
+      "sha256": "e13a838e81424d5026f3efb85209670ef2bab78c762b03d293a1c8480aa3cda6",
+      "tick_first": 187,
+      "tick_last": 8848501,
+      "tick_max": 8848501,
+      "bounded_pattern_counts": {
+        "sharepreview": 0,
+        "probe_identifier": 0,
+        "autoexec": 0,
+        "videoanal_initialized": 1,
+        "exception_keywords": 0
+      },
+      "videoanal_init_lines": [
+        "[00001134][CA9_1] [AppLib - VideoAnal] <FrmHdlr_Init> VA init done"
+      ]
+    },
+    {
+      "name": "RtosOlder.log",
+      "bytes": 314410,
+      "sha256": "6ddb3a9d3d3546f400fd2fb1930a71c5fc104d1d04ddca38fd1bb9982ad10452",
+      "tick_first": 187,
+      "tick_last": 735753,
+      "tick_max": 735753,
+      "bounded_pattern_counts": {
+        "sharepreview": 0,
+        "probe_identifier": 0,
+        "autoexec": 0,
+        "videoanal_initialized": 1,
+        "exception_keywords": 0
+      },
+      "videoanal_init_lines": [
+        "[00001133][CA9_1] [AppLib - VideoAnal] <FrmHdlr_Init> VA init done"
+      ]
+    },
+    {
+      "name": "RtosOldest.log",
+      "bytes": 663085,
+      "sha256": "19981f0cc00fa3e1c42efc19e98313eeb65f620465d63c9868257a074564101f",
+      "tick_first": 187,
+      "tick_last": 1311123,
+      "tick_max": 1311123,
+      "bounded_pattern_counts": {
+        "sharepreview": 0,
+        "probe_identifier": 0,
+        "autoexec": 0,
+        "videoanal_initialized": 1,
+        "exception_keywords": 0
+      },
+      "videoanal_init_lines": [
+        "[00001134][CA9_1] [AppLib - VideoAnal] <FrmHdlr_Init> VA init done"
+      ]
+    }
+  ],
+  "limitations": [
+    "Files are retained logs from b:; their names and camera wall clock do not establish which boot or experiment they cover.",
+    "Missing strings in these three retained files do not prove that the staged commands never executed.",
+    "Linux /tmp lifecycle markers are volatile across reboot."
+  ]
+}

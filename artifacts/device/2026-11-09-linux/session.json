@@ -1,0 +1,98 @@
+{
+  "host": "192.168.42.1",
+  "started_utc": "2026-11-09T00:45:51.149367+00:00",
+  "transport": "Existing Telnet, root, empty password",
+  "scope": "Linux inspection commands; target not flashed or patched",
+  "commands": [
+    {
+      "name": "identity",
+      "command": "uname -a; cat /proc/version; cat /etc/os-release; id; uptime",
+      "elapsed_seconds": 0.081,
+      "output": "identity.txt"
+    },
+    {
+      "name": "boot_arguments",
+      "command": "cat /proc/cmdline; cat /proc/uptime",
+      "elapsed_seconds": 0.037,
+      "output": "boot_arguments.txt"
+    },
+    {
+      "name": "cpu_memory",
+      "command": "cat /proc/cpuinfo; cat /proc/meminfo",
+      "elapsed_seconds": 0.052,
+      "output": "cpu_memory.txt"
+    },
+    {
+      "name": "memory_map",
+      "command": "cat /proc/iomem; cat /proc/partitions; cat /proc/mtd",
+      "elapsed_seconds": 0.061,
+      "output": "memory_map.txt"
+    },
+    {
+      "name": "mounts",
+      "command": "cat /proc/mounts; df -k",
+      "elapsed_seconds": 0.05,
+      "output": "mounts.txt"
+    },
+    {
+      "name": "processes",
+      "command": "ps; ps -ef",
+      "elapsed_seconds": 0.097,
+      "output": "processes.txt"
+    },
+    {
+      "name": "network",
+      "command": "ifconfig; route -n; netstat -lntup",
+      "elapsed_seconds": 0.084,
+      "output": "network.txt"
+    },
+    {
+      "name": "modules",
+      "command": "cat /proc/modules; ls -l /sys/class/rpmsg /sys/bus/rpmsg/devices /sys/class/remoteproc",
+      "elapsed_seconds": 0.058,
+      "output": "modules.txt"
+    },
+    {
+      "name": "device_nodes",
+      "command": "ls -l /dev/amba* /dev/rpmsg* /dev/video* /dev/iio* /dev/mtd* /dev/ttyGS*",
+      "elapsed_seconds": 0.058,
+      "output": "device_nodes.txt"
+    },
+    {
+      "name": "ambarella",
+      "command": "ls -l /proc/ambarella; cat /proc/ambarella/board_info; cat /proc/ambarella/uport",
+      "elapsed_seconds": 0.061,
+      "output": "ambarella.txt"
+    },
+    {
+      "name": "sd_root",
+      "command": "ls -la /tmp/SD0; ls -ld /tmp/SD0 /tmp/fuse_d /pref; ls -l /tmp/yi4k_rtos_probe.ok",
+      "elapsed_seconds": 0.067,
+      "output": "sd_root.txt"
+    },
+    {
+      "name": "startup",
+      "command": "cat /etc/inittab; ls -l /etc/init.d; cat /etc/init.d/S99postboot; cat /etc/init.d/S99bootdone",
+      "elapsed_seconds": 0.092,
+      "output": "startup.txt"
+    },
+    {
+      "name": "tools",
+      "command": "ls -l /usr/bin/python* /usr/bin/strace /usr/bin/gdbserver /usr/bin/SendToRTOS /usr/bin/RecvFromRTOS /usr/bin/example_sharepreview /usr/bin/ipcinfo",
+      "elapsed_seconds": 0.054,
+      "output": "tools.txt"
+    },
+    {
+      "name": "kernel_config",
+      "command": "zcat /proc/config.gz",
+      "elapsed_seconds": 0.145,
+      "output": "kernel_config.txt"
+    },
+    {
+      "name": "kernel_log",
+      "command": "dmesg",
+      "elapsed_seconds": 0.087,
+      "output": "kernel_log.txt"
+    }
+  ]
+}

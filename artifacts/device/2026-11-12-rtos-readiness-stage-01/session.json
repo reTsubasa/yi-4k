@@ -1,0 +1,131 @@
+{
+  "action": "stage",
+  "host": "192.168.42.1",
+  "probe": {
+    "identifier": "ac212ca64224",
+    "paths": {
+      "fingerprint": "/tmp/SD0/yi4k_diag_ac212ca64224_fingerprint.bin",
+      "pool1": "/tmp/SD0/yi4k_diag_ac212ca64224_pool1.bin",
+      "pool2": "/tmp/SD0/yi4k_diag_ac212ca64224_pool2.bin",
+      "va1": "/tmp/SD0/yi4k_diag_ac212ca64224_va1.bin",
+      "va2": "/tmp/SD0/yi4k_diag_ac212ca64224_va2.bin",
+      "mem": "/tmp/SD0/yi4k_diag_ac212ca64224_mem.txt",
+      "tsk1": "/tmp/SD0/yi4k_diag_ac212ca64224_tsk1.txt",
+      "tsk2": "/tmp/SD0/yi4k_diag_ac212ca64224_tsk2.txt",
+      "claim": "/tmp/SD0/yi4k_diag_ac212ca64224_claim.json",
+      "done": "/tmp/SD0/yi4k_diag_ac212ca64224_done.json",
+      "autoexec": "/tmp/SD0/autoexec.ash",
+      "worker": "/tmp/SD0/yi4k_diag_ac212ca64224.py",
+      "ready": "/tmp/SD0/yi4k_diag_ac212ca64224_ready"
+    },
+    "startup_delay_seconds": 18,
+    "payloads": {
+      "autoexec": "dCBpcGMgcnBjIGNsbnQgZXhlYzEgJ3NsZWVwIDMnCnQgaXBjIHJwYyBjbG50IGV4ZWMxICdzbGVlcCAzJwp0IGlwYyBycGMgY2xudCBleGVjMSAnc2xlZXAgMycKdCBpcGMgcnBjIGNsbnQgZXhlYzEgJ3NsZWVwIDMnCnQgaXBjIHJwYyBjbG50IGV4ZWMxICdzbGVlcCAzJwp0IGlwYyBycGMgY2xudCBleGVjMSAnc2xlZXAgMycKc2F2ZWJpbiBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X2ZpbmdlcnByaW50LmJpbiAweEEwMzk0QkEwIGwgOAp0IGlwYyBycGMgY2xudCBleGVjMSAncHl0aG9uIC1CIC90bXAvU0QwL3lpNGtfZGlhZ19hYzIxMmNhNjQyMjQucHkgY2xhaW0nCmNkIGM6XHlpNGtfZGlhZ19hYzIxMmNhNjQyMjRfcmVhZHkKaWYgJD87IHRoZW4gc2F2ZWJpbiBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X3Bvb2wxLmJpbiAweEEwRkQ3MTE0IGwgNDg7IGZpCmNkIGM6XHlpNGtfZGlhZ19hYzIxMmNhNjQyMjRfcmVhZHkKaWYgJD87IHRoZW4gc2F2ZWJpbiBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X3ZhMS5iaW4gMHhBMTQzMDdCOCBsIDIyMDsgZmkKY2QgYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF9yZWFkeQppZiAkPzsgdGhlbiBwcyBtZW0gPiBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X21lbS50eHQ7IGZpCmNkIGM6XHlpNGtfZGlhZ19hYzIxMmNhNjQyMjRfcmVhZHkKaWYgJD87IHRoZW4gcHMgdHNrID4gYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF90c2sxLnR4dDsgZmkKY2QgYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF9yZWFkeQppZiAkPzsgdGhlbiB0IGFwcCBtZW07IGZpCmNkIGM6XHlpNGtfZGlhZ19hYzIxMmNhNjQyMjRfcmVhZHkKaWYgJD87IHRoZW4gdCBpcGMgcnBjIGNsbnQgZXhlYzEgJ3NsZWVwIDMnOyBmaQpjZCBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X3JlYWR5CmlmICQ/OyB0aGVuIHNhdmViaW4gYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF9wb29sMi5iaW4gMHhBMEZENzExNCBsIDQ4OyBmaQpjZCBjOlx5aTRrX2RpYWdfYWMyMTJjYTY0MjI0X3JlYWR5CmlmICQ/OyB0aGVuIHNhdmViaW4gYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF92YTIuYmluIDB4QTE0MzA3QjggbCAyMjA7IGZpCmNkIGM6XHlpNGtfZGlhZ19hYzIxMmNhNjQyMjRfcmVhZHkKaWYgJD87IHRoZW4gcHMgdHNrID4gYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF90c2syLnR4dDsgZmkKY2QgYzpceWk0a19kaWFnX2FjMjEyY2E2NDIyNF9yZWFkeQppZiAkPzsgdGhlbiB0IGlwYyBycGMgY2xudCBleGVjMSAncHl0aG9uIC1CIC90bXAvU0QwL3lpNGtfZGlhZ19hYzIxMmNhNjQyMjQucHkgZG9uZSc7IGZpCmNkIGM6XAoK",
+      "worker": "aW1wb3J0IG9zLHN5cyxzdGF0LGpzb24saGFzaGxpYix0aW1lCnBhdGhzPXsnZmluZ2VycHJpbnQnOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF9maW5nZXJwcmludC5iaW4nLCAncG9vbDEnOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF9wb29sMS5iaW4nLCAncG9vbDInOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF9wb29sMi5iaW4nLCAndmExJzogJy90bXAvU0QwL3lpNGtfZGlhZ19hYzIxMmNhNjQyMjRfdmExLmJpbicsICd2YTInOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF92YTIuYmluJywgJ21lbSc6ICcvdG1wL1NEMC95aTRrX2RpYWdfYWMyMTJjYTY0MjI0X21lbS50eHQnLCAndHNrMSc6ICcvdG1wL1NEMC95aTRrX2RpYWdfYWMyMTJjYTY0MjI0X3RzazEudHh0JywgJ3RzazInOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF90c2syLnR4dCcsICdjbGFpbSc6ICcvdG1wL1NEMC95aTRrX2RpYWdfYWMyMTJjYTY0MjI0X2NsYWltLmpzb24nLCAnZG9uZSc6ICcvdG1wL1NEMC95aTRrX2RpYWdfYWMyMTJjYTY0MjI0X2RvbmUuanNvbicsICdhdXRvZXhlYyc6ICcvdG1wL1NEMC9hdXRvZXhlYy5hc2gnLCAnd29ya2VyJzogJy90bXAvU0QwL3lpNGtfZGlhZ19hYzIxMmNhNjQyMjQucHknLCAncmVhZHknOiAnL3RtcC9TRDAveWk0a19kaWFnX2FjMjEyY2E2NDIyNF9yZWFkeSd9CmV4cGVjdGVkPScxZThlOTUyYzVhMDY0NjYwYzMwOTliZGE4Njg2OTYyZGQ1OGMyMjg5OTFkYjdjYWRkZGViNjJiY2JiYzQxNDIxJwpkZWYgZGlnZXN0KHApOiByZXR1cm4gaGFzaGxpYi5zaGEyNTYob3BlbihwLCdyYicpLnJlYWQoKSkuaGV4ZGlnZXN0KCkKZGVmIHdyaXRlX2pzb24ocCwgdmFsdWUpOgogZmQ9b3Mub3BlbihwLG9zLk9fV1JPTkxZfG9zLk9fQ1JFQVR8b3MuT19FWENMLDBvNjAwKQogd2l0aCBvcy5mZG9wZW4oZmQsJ3diJykgYXMgZjoKICBmLndyaXRlKGpzb24uZHVtcHModmFsdWUpKTsgZi5mbHVzaCgpOyBvcy5mc3luYyhmLmZpbGVubygpKQogb3Muc3lzdGVtKCdzeW5jJykKcGhhc2U9c3lzLmFyZ3ZbMV0KaWYgcGhhc2U9PSdjbGFpbSc6CiBpZiBvcy5wYXRoLmxleGlzdHMocGF0aHNbJ3JlYWR5J10pOgogIGFzc2VydCBvcy5wYXRoLmlzZGlyKHBhdGhzWydyZWFkeSddKSBhbmQgb3MubGlzdGRpcihwYXRoc1sncmVhZHknXSk9PVtdCiAgb3Mucm1kaXIocGF0aHNbJ3JlYWR5J10pOyBvcy5zeXN0ZW0oJ3N5bmMnKQogaWYgb3MucGF0aC5sZXhpc3RzKHBhdGhzWydjbGFpbSddKTogc3lzLmV4aXQoMCkKIGFzc2VydCBkaWdlc3QocGF0aHNbJ2ZpbmdlcnByaW50J10pPT0nNWU2NGI5MWI1N2VhZjEyNDM0MWE1Zjg0NDg0ZDg1M2NmZTVlOTdiYWU0MGU4ZDdjOGJmNjBjN2VkNGM2OTY5ZCcsICdGaXJtd2FyZSBmaW5nZXJwcmludCBtaXNtYXRjaCcKIGFzc2VydCBzdGF0LlNfSVNSRUcob3MubHN0YXQocGF0aHNbJ2F1dG9leGVjJ10pLnN0X21vZGUpCiBhc3NlcnQgZGlnZXN0KHBhdGhzWydhdXRvZXhlYyddKT09ZXhwZWN0ZWQKIHdyaXRlX2pzb24ocGF0aHNbJ2NsYWltJ10seydwaGFzZSc6cGhhc2UsJ2Jvb3RfaWQnOm9wZW4oJy9wcm9jL3N5cy9rZXJuZWwvcmFuZG9tL2Jvb3RfaWQnKS5yZWFkKCkuc3RyaXAoKSwndXB0aW1lJzpvcGVuKCcvcHJvYy91cHRpbWUnKS5yZWFkKCkuc3RyaXAoKSwnd2FsbF90aW1lJzp0aW1lLnRpbWUoKX0pCiBvcy5ta2RpcihwYXRoc1sncmVhZHknXSk7IG9zLnN5c3RlbSgnc3luYycpCmVsaWYgcGhhc2U9PSdkb25lJzoKIGFzc2VydCBvcy5wYXRoLmlzZGlyKHBhdGhzWydyZWFkeSddKSBhbmQgb3MucGF0aC5pc2ZpbGUocGF0aHNbJ2NsYWltJ10pCiB3cml0ZV9qc29uKHBhdGhzWydkb25lJ10seydwaGFzZSc6cGhhc2UsJ3VwdGltZSc6b3BlbignL3Byb2MvdXB0aW1lJykucmVhZCgpLnN0cmlwKCksJ3dhbGxfdGltZSc6dGltZS50aW1lKCl9KQplbHNlOiByYWlzZSBWYWx1ZUVycm9yKCdVbmV4cGVjdGVkIHBoYXNlJykK"
+    },
+    "payload_sha256": {
+      "autoexec": "1e8e952c5a064660c3099bda8686962dd58c228991db7cadddeb62bcbbc41421",
+      "worker": "917e9e73f9df7472f150672c9a41c4d27ef312ac5e4052b961ed71f448785421"
+    }
+  },
+  "api_events": [
+    {
+      "host_monotonic": 1285180.3039755,
+      "utc": "2026-11-12T02:28:03.263604+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1285181.145824708,
+      "utc": "2026-11-12T02:28:04.105453+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1285181.145905625,
+      "utc": "2026-11-12T02:28:04.105523+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1285181.153424166,
+      "utc": "2026-11-12T02:28:04.113048+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1285181.153493541,
+      "utc": "2026-11-12T02:28:04.113111+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1285181.16524975,
+      "utc": "2026-11-12T02:28:04.124871+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 48P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1285181.16529425,
+      "utc": "2026-11-12T02:28:04.124911+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1285181.170544708,
+      "utc": "2026-11-12T02:28:04.130166+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "started_utc": "2026-11-12T02:28:03.245975+00:00",
+  "memory_mapping_run": false,
+  "firmware_patched": false,
+  "reboot_requested": false,
+  "status_before": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "result": {
+    "autoexec_last": true,
+    "staged": true
+  },
+  "finished_utc": "2026-11-12T02:28:13.877710+00:00"
+}

@@ -1,0 +1,1689 @@
+{
+  "schema": "yi4k.eis-candidate-stock-affine-sweep/v1",
+  "firmware_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "profile": {
+    "width": 1920,
+    "height": 1080,
+    "crop_margin": 0.12,
+    "control_grid": "3x3 signed16 Q4; 1024px spacing"
+  },
+  "sweep": {
+    "levels_radians_per_axis": [
+      -0.01,
+      0.0,
+      0.01
+    ],
+    "attempted": 27,
+    "accepted_and_executed": 27,
+    "rejected_before_execution": []
+  },
+  "boundary_probes": [
+    {
+      "name": "support-edge-roll",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.04
+      ],
+      "accepted": false,
+      "reason": "affine mapping exceeds source support at a stock query"
+    },
+    {
+      "name": "signed32-roll-bound",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.125
+      ],
+      "accepted": false,
+      "reason": "affine mapping exceeds source support at a stock query"
+    },
+    {
+      "name": "beyond-roll-bound",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.126
+      ],
+      "accepted": false,
+      "reason": "correction is outside the bounded affine test profile"
+    },
+    {
+      "name": "support-edge-pitch",
+      "correction_radians": [
+        0.04,
+        0.0,
+        0.0
+      ],
+      "accepted": false,
+      "reason": "affine mapping exceeds source support at a stock query"
+    },
+    {
+      "name": "support-edge-yaw",
+      "correction_radians": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "accepted": true
+    }
+  ],
+  "cases": [
+    {
+      "name": "p-0.010_y-0.010_r-0.010",
+      "correction_radians": [
+        -0.01,
+        -0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1774,
+          "max": 2084,
+          "active_sha256": "4054bcb241d17aa46819a239655111d17770e53bceb094aa0b101331285df72e"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1402,
+          "max": 1019,
+          "active_sha256": "5927a22a093d6cbbc88ef6e4e917e7de73c7806ef071e94af36a52eff30ffe5a"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.16396999015978508,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.16736714228004093,
+      "naive_same_coordinate_x_max_error_pixels": 0.816877871071938,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "f0dcd51f73455f1e0b0ccf21b72fc01c2857159819de61f176bcc89ca051ab5b"
+    },
+    {
+      "name": "p-0.010_y-0.010_r+0.000",
+      "correction_radians": [
+        -0.01,
+        -0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1689,
+          "max": 1997,
+          "active_sha256": "d64ae31fbfb67ada83ada95718dc0ef583f458265fefd56f89d81da092a3c1f1"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1267,
+          "max": 883,
+          "active_sha256": "e2008f79b3bc2c1fc6ec7323af6392f31d21f3d0e2ef847af58017c15390198d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.0749999999998181,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.09013878188642316,
+      "naive_same_coordinate_x_max_error_pixels": 0.0749999999998181,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "79f1d97806f5bebe1bc82353c4c8b1ea08b558d9f48d4512e42aa17d091000df"
+    },
+    {
+      "name": "p-0.010_y-0.010_r+0.010",
+      "correction_radians": [
+        -0.01,
+        -0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1778,
+          "max": 2080,
+          "active_sha256": "6eca7e2edb7acf9bf935fe5fbf9c8b659acd883394709ded9461234fc80de73f"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1402,
+          "max": 1018,
+          "active_sha256": "3e2f26a080787181dfa3d1ba693670990272b6803d630169bb74cad9dda8252d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.12052163814541927,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1256041161902676,
+      "naive_same_coordinate_x_max_error_pixels": 0.8871938476053174,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "91352194c9ff567971caac70c59f19ca1c9f67122d9e9940f273367aef6f1e45"
+    },
+    {
+      "name": "p-0.010_y+0.000_r-0.010",
+      "correction_radians": [
+        -0.01,
+        0.0,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1927,
+          "max": 1931,
+          "active_sha256": "4fb91a08fc04141e2e71bbe2a975b48456d34fe3fe2b77ebcd66ce5fd520f8e3"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1403,
+          "max": 1018,
+          "active_sha256": "229b3094ea9983f0e3300c19cba90d0165721eae1649bde5bcad10e407b7c8b2"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.09604457239606745,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.09991796922458354,
+      "naive_same_coordinate_x_max_error_pixels": 0.8637459180049518,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "0eefe511b398daac39289a1a9623f86a578d99cb98fa13806f32faee46e82fd8"
+    },
+    {
+      "name": "p-0.010_y+0.000_r+0.000",
+      "correction_radians": [
+        -0.01,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1267,
+          "max": 883,
+          "active_sha256": "e2008f79b3bc2c1fc6ec7323af6392f31d21f3d0e2ef847af58017c15390198d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.049999999999954525,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.07071067811859044,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "b3de274a150b9b02485f75ef00d2611b712cf5b90e473cca4922e06eac54287b"
+    },
+    {
+      "name": "p-0.010_y+0.000_r+0.010",
+      "correction_radians": [
+        -0.01,
+        0.0,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1931,
+          "max": 1927,
+          "active_sha256": "9d5f501da9626972207a9c990f1337fec75cd427379f1771d951f852005aaadd"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1403,
+          "max": 1018,
+          "active_sha256": "03256ca76a29fae32c114aaeac17516a90b74ab2406402c625969a25437332f3"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.15802163814532832,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1585163210356339,
+      "naive_same_coordinate_x_max_error_pixels": 0.8496938476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "a568d9b1e3a69de3aea8dd4ad52e3ce2e567cb1c4d393722f9e7c7eea7d38c32"
+    },
+    {
+      "name": "p-0.010_y+0.010_r-0.010",
+      "correction_radians": [
+        -0.01,
+        0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2081,
+          "max": 1777,
+          "active_sha256": "3a443a09d5cd3799e293d7bc4219aaca07ac5aea8198537844eb697e34d5a921"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1402,
+          "max": 1019,
+          "active_sha256": "5927a22a093d6cbbc88ef6e4e917e7de73c7806ef071e94af36a52eff30ffe5a"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.11865610250970349,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.12714738213806803,
+      "naive_same_coordinate_x_max_error_pixels": 0.8387459180048609,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "93abd3a277c5941e09731faf1275cade5732bb64bc3fdb12d8f3a68228288286"
+    },
+    {
+      "name": "p-0.010_y+0.010_r+0.000",
+      "correction_radians": [
+        -0.01,
+        0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1997,
+          "max": 1690,
+          "active_sha256": "66ce059a5e6b9f726a19ca93d6107d1b6fb2f09bd4b14585ddb77ff47c0e5769"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1267,
+          "max": 883,
+          "active_sha256": "e2008f79b3bc2c1fc6ec7323af6392f31d21f3d0e2ef847af58017c15390198d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.08500000000003638,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.0986154146165884,
+      "naive_same_coordinate_x_max_error_pixels": 0.08500000000003638,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "090aa5ffb5958cbcd3f5d938d86595bd123d7468cd827a5be1ecaea08e66b52d"
+    },
+    {
+      "name": "p-0.010_y+0.010_r+0.010",
+      "correction_radians": [
+        -0.01,
+        0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2085,
+          "max": 1773,
+          "active_sha256": "626e75bd8b771b255c90accf1969d480c9ad2ca19d2488c393b36cb25ea5bbc1"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1403,
+          "max": 1018,
+          "active_sha256": "aaeb55b1e2b2b737ffcd12723dd45f417a9fdd6fdb54ffff2bee7089d1e462d8"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.13302163814546475,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.13746980513697715,
+      "naive_same_coordinate_x_max_error_pixels": 0.8746938476052719,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "69b50d9a38dba412492ce1a3e473c869f55067c57468e1ef9c583a23f150e455"
+    },
+    {
+      "name": "p+0.000_y-0.010_r-0.010",
+      "correction_radians": [
+        0.0,
+        -0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1774,
+          "max": 2082,
+          "active_sha256": "a37d8e8bc2da7cbdda5f474aac000a92b037f461aebc0c80160f2caaab8710d0"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "f38162b1fe3d957907529b6b54814d038ef4dd51e5d1b76340a0407d2435c46d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.1529089126221379,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.15293976991579616,
+      "naive_same_coordinate_x_max_error_pixels": 0.7778188476053174,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "25d70fdc792d3db4413c430852354c6bc98a22dade74e291a9a05f30164a2717"
+    },
+    {
+      "name": "p+0.000_y-0.010_r+0.000",
+      "correction_radians": [
+        0.0,
+        -0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1689,
+          "max": 1997,
+          "active_sha256": "d64ae31fbfb67ada83ada95718dc0ef583f458265fefd56f89d81da092a3c1f1"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.07500000000004547,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.10606601717788566,
+      "naive_same_coordinate_x_max_error_pixels": 0.0749999999998181,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "d02e41f67b9674356bddcdfd0372c34dacf1aa7c71e9b86d0cc90b5e3abcf3bf"
+    },
+    {
+      "name": "p+0.000_y-0.010_r+0.010",
+      "correction_radians": [
+        0.0,
+        -0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1776,
+          "max": 2081,
+          "active_sha256": "ef13c30c95ef55ad2e0d2ec1b43e399d09f655f6974b9cb27ec5e8cdfe529245"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "8ab8668fed7b8ff9cad11d07f3f1b73c2d14cc906ed730dcfbf6792d47769900"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.10885726463629908,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1094113160182667,
+      "naive_same_coordinate_x_max_error_pixels": 0.770002871071938,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "38d1a616d562c2e2f29dc9d9c3668c94bbc3b150d6cc6587fd23adcac6509747"
+    },
+    {
+      "name": "p+0.000_y+0.000_r-0.010",
+      "correction_radians": [
+        0.0,
+        0.0,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1928,
+          "max": 1928,
+          "active_sha256": "4f145b3040655a5a95eb1a4cc52b4a3db69b17f867594674cd0115db85840727"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "c18b7eb8f3636992418de9984989564fd2f7a499f9c0c8025c4f1a8a9e0e100e"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.17790891262211517,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.17739921340226167,
+      "naive_same_coordinate_x_max_error_pixels": 0.8028188476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "91aefa133c23f3ce93dac0026e2f1eb3ce74c0d3822ebd4f27c4a0155d17bbc5"
+    },
+    {
+      "name": "p+0.000_y+0.000_r+0.000",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.07500000000004547,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.09013878188661234,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "a1470f199c753b150ebcf5a20a6986439a994ccdfe3f25cffe660d0180ab4ca8"
+    },
+    {
+      "name": "p+0.000_y+0.000_r+0.010",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1930,
+          "max": 1928,
+          "active_sha256": "64feb6057997d5868145715a1224c63c5ddeffb3f63136c1c15ce5a191732dbc"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "20808bc2a62ed4fdd3256bd144cf9d52ae05a245350568b31b7ba8be0dd3fbdb"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.09110125439588046,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.08837284237565149,
+      "naive_same_coordinate_x_max_error_pixels": 0.7871938476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "1b767f1e64f8591a81352bd3efcc2f90ba4a3cdc1e1c3bc2ecab7b650ba705a7"
+    },
+    {
+      "name": "p+0.000_y+0.010_r-0.010",
+      "correction_radians": [
+        0.0,
+        0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2082,
+          "max": 1775,
+          "active_sha256": "2198f6fb9526fc7d1563a5d0141c106a5ea9fdff0abff6f774a40fe770bc1cab"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "f38162b1fe3d957907529b6b54814d038ef4dd51e5d1b76340a0407d2435c46d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.14040891262209243,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.14078128204757206,
+      "naive_same_coordinate_x_max_error_pixels": 0.7653188476052719,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "daca751c006a0f0c237ab55323bb8fe79bdb6375f520eb1a2b238694390dd9a6"
+    },
+    {
+      "name": "p+0.000_y+0.010_r+0.000",
+      "correction_radians": [
+        0.0,
+        0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1997,
+          "max": 1690,
+          "active_sha256": "66ce059a5e6b9f726a19ca93d6107d1b6fb2f09bd4b14585ddb77ff47c0e5769"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.08500000000003638,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.11335784048760371,
+      "naive_same_coordinate_x_max_error_pixels": 0.08500000000003638,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "3b9c2fa88b17ef6c69fcb83e1531a3b9fadee4d35b359c76c9bfe781519d123e"
+    },
+    {
+      "name": "p+0.000_y+0.010_r+0.010",
+      "correction_radians": [
+        0.0,
+        0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2084,
+          "max": 1774,
+          "active_sha256": "517c857a237d08eea1a5fa61b46adc5d65c84cb21abbafeb5c45cf6653b9cbf6"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1250,
+          "max": 1171,
+          "active_sha256": "6d352e57b1452216d2a581676d68d7e1d3381ee69f10f54f541c6b5abe9f890d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.1067624277768573,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1250019586635832,
+      "naive_same_coordinate_x_max_error_pixels": 0.7496938476052719,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "be9ace86c46c66e62202dd64060b97ffafb38004ddc38397510b8aa6bb4054a8"
+    },
+    {
+      "name": "p+0.010_y-0.010_r-0.010",
+      "correction_radians": [
+        0.01,
+        -0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1777,
+          "max": 2081,
+          "active_sha256": "b3940e08a08683791093d132844927dbd3b23bb850787f60bd253fd0c92634f9"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1095,
+          "max": 1326,
+          "active_sha256": "892a4337d8a01a467bf3edf9ef90eb5283cd6be458365d6a3865338be245e544"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.15946358990368026,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.15545170604744446,
+      "naive_same_coordinate_x_max_error_pixels": 0.9028188476053174,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "4d3ce807ecff138b1486cef9745c3611a50167fae0589b3084656e1719ed08ae"
+    },
+    {
+      "name": "p+0.010_y-0.010_r+0.000",
+      "correction_radians": [
+        0.01,
+        -0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1689,
+          "max": 1997,
+          "active_sha256": "d64ae31fbfb67ada83ada95718dc0ef583f458265fefd56f89d81da092a3c1f1"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -960,
+          "max": 1190,
+          "active_sha256": "7e735a696a71699135bb004c2ed1ee06f784e7d3246ef40dee9684c37c43e5d2"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.0749999999998181,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.08385254915608958,
+      "naive_same_coordinate_x_max_error_pixels": 0.0749999999998181,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "98126161cd9bd19bcbcf9df63eea34ab64ddcf5f205837e31883711cf729df9c"
+    },
+    {
+      "name": "p+0.010_y-0.010_r+0.010",
+      "correction_radians": [
+        0.01,
+        -0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1775,
+          "max": 2083,
+          "active_sha256": "675a4aebc82bb443786fec80e1d11c123f640bdd8488a724e2750b4c87d37928"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1095,
+          "max": 1326,
+          "active_sha256": "48a7e5f3c8e794d37a3099808e3ac0503a1d99e2ddc8662c1298892fd6caa13e"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.11601523788931445,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.11240748357407727,
+      "naive_same_coordinate_x_max_error_pixels": 0.832502871071938,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "966cb94bda9ebe8a0d8a2b7225d80ec624b82138a993d94296c8c330fa0810f8"
+    },
+    {
+      "name": "p+0.010_y+0.000_r-0.010",
+      "correction_radians": [
+        0.01,
+        0.0,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1930,
+          "max": 1928,
+          "active_sha256": "f1bfa4023fd85c6822caf6b3f837340cb25958a1f3760ce0b4eb9c1b7850a877"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1096,
+          "max": 1325,
+          "active_sha256": "4f32cd5cadf9e2697b4c0907f38cf2eafb9b9ce06e9fe37e66c945426c04ee6b"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.10055097265217228,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.10787087550648133,
+      "naive_same_coordinate_x_max_error_pixels": 0.8653188476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "4e28e517d8df97cdfedc6ecf566cea52ab10627b81ee6c3aa152da11aa6d16a1"
+    },
+    {
+      "name": "p+0.010_y+0.000_r+0.000",
+      "correction_radians": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -960,
+          "max": 1190,
+          "active_sha256": "7e735a696a71699135bb004c2ed1ee06f784e7d3246ef40dee9684c37c43e5d2"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.049999999999954525,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.06249999999997726,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "c7fddbfab5d854b27f6d74a907d1f62313392e05eb1a6d999d910822922a855e"
+    },
+    {
+      "name": "p+0.010_y+0.000_r+0.010",
+      "correction_radians": [
+        0.01,
+        0.0,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1928,
+          "max": 1930,
+          "active_sha256": "8d67e3aa21c2bde882903357c804cd4da278f37f3f37e8d661bc62a9647d26e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1096,
+          "max": 1325,
+          "active_sha256": "1aacc38d66e4449fed0684f76c71ccaacebda280d95f0ee78de1f1d9302c07c3"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.15351523788945087,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1630108639005525,
+      "naive_same_coordinate_x_max_error_pixels": 0.8793709180049518,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "0bf52fa2531704dda990d48f3c3a5cbbfca8f499a568e6fd15b3b51c5520356c"
+    },
+    {
+      "name": "p+0.010_y+0.010_r-0.010",
+      "correction_radians": [
+        0.01,
+        0.01,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2084,
+          "max": 1774,
+          "active_sha256": "cce1fde359699c236b4820634b4b9e9d2178e7ed446a1fe00a75ec0d617afe7f"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1095,
+          "max": 1326,
+          "active_sha256": "892a4337d8a01a467bf3edf9ef90eb5283cd6be458365d6a3865338be245e544"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.11414970225359866,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.12092753700948386,
+      "naive_same_coordinate_x_max_error_pixels": 0.8903188476052719,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "7fd60dbb1fad8168a49ef616fdcfb8e5aa70520c763ee772510f57e67f972d0f"
+    },
+    {
+      "name": "p+0.010_y+0.010_r+0.000",
+      "correction_radians": [
+        0.01,
+        0.01,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1997,
+          "max": 1690,
+          "active_sha256": "66ce059a5e6b9f726a19ca93d6107d1b6fb2f09bd4b14585ddb77ff47c0e5769"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -960,
+          "max": 1190,
+          "active_sha256": "7e735a696a71699135bb004c2ed1ee06f784e7d3246ef40dee9684c37c43e5d2"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.08500000000003638,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.0929045208803527,
+      "naive_same_coordinate_x_max_error_pixels": 0.08500000000003638,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "7abbf1f813f31cf09db1a3486c57e5a9d54039ff847c7c1264ef9a208bebfa6d"
+    },
+    {
+      "name": "p+0.010_y+0.010_r+0.010",
+      "correction_radians": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -2082,
+          "max": 1776,
+          "active_sha256": "7b7cf1a75aa6d85763279c78d1bc684b34b4a2ba97894204fc156d6a33724bd8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1096,
+          "max": 1325,
+          "active_sha256": "943f2f96bee26a9f89aafcaf23ef6a54608012290f54c92beb4584373a2569cc"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.12851523788935992,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.1249074803273258,
+      "naive_same_coordinate_x_max_error_pixels": 0.8543709180048609,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "fd3ad4bf334cfd69332f3ae52b936b7e0286557ada4615ece4fc3c4a3ae266d2"
+    }
+  ],
+  "checks": {
+    "all_accepted_cases_executed_original_stock_entries": true,
+    "all_active_xy_plane_elements_match_independent_integer_reference": true,
+    "per_case_continuous_affine_error_max_pixels": 0.17790891262211517,
+    "per_case_cpu_reconstruction_error_max_pixels": 0.17739921340226167,
+    "device_access": false,
+    "dsp_or_image_quality_claim": false
+  },
+  "limitations": [
+    "Synthetic 1920x1080 geometry and hypothetical axis signs only.",
+    "Uses the unmodified ARM generator in Unicorn; does not establish target CPU runtime or DSP table latch.",
+    "The sweep covers only the stated discrete angle levels, crop, focal length and grid profile.",
+    "No gyro calibration, frame timing, camera lens calibration, encoded-video comparison or device test."
+  ]
+}

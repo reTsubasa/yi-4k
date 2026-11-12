@@ -1,0 +1,64 @@
+{
+  "verification": "2026-11-11 mixed offline/static plus bounded camera regression rerun 04",
+  "device_access": "readonly_and_reversible_record_only",
+  "firmware_execution": false,
+  "writes_to_device": false,
+  "items": [
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-proprietary-crossmember/audit.json",
+      "bytes": 118336,
+      "sha256": "b700b3957c916f7e6a829b39ba5a6557712fb9c2b55b6edfeb9fddbdb49e938e"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-producer-continuity/audit.json",
+      "bytes": 12874,
+      "sha256": "52c2f346be32adb4425c78ea07b5b6254c37a9d7550d1096ae07fe490c5c2059"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-readonly-probe-04/session.json",
+      "bytes": 9452,
+      "sha256": "e04a90238a292f8a53248622ac0b0443f0beec3c86595fb573f3d3d7c7588666"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-record-probe-01/session.json",
+      "bytes": 10554,
+      "sha256": "b8c8c6606e6e2ddf1c14e774b641700f9a6e1932b290259d471229982f1ccce5"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-record-probe-01/packet-audit.json",
+      "bytes": 3903,
+      "sha256": "55411ea61b91a98c476e073f416af226b646636717d9faa82930ab5a465cf6f2"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-record-probe-01/session-media/YDXJ0161.MP4",
+      "bytes": 22743256,
+      "sha256": "862da3a4349d9a845333ab29b6afccb5be8a8862ce62d794f3ca758d85bbf79d"
+    },
+    {
+      "path": "docs/device-record-probe-01.md",
+      "bytes": 1341,
+      "sha256": "8fc2a84dbe7c47232fec74efb73988d63a1cc7627fe8033e78294c385d74da94"
+    },
+    {
+      "path": "artifacts/android/yi4k-control-0.3.10-debug.apk",
+      "bytes": 11533797,
+      "sha256": "8707ecf91f042dec3c3c20906150b5c1a175a6040973d4e344e5256f80987faa"
+    },
+    {
+      "path": "docs/project-roadmap.md",
+      "bytes": 57465,
+      "sha256": "a48ead5bfab0025121965bd37c9012f061baf48140889fd2cc9e3ecd9d9fdc70"
+    }
+  ],
+  "results": {
+    "eis_crossmember": "4 DSP members compared; 19 pair checks and 40 local records passed; proprietary words remain unresolved",
+    "prerecord_producer_continuity": "18 static checks passed; virtual cursor/base recycle relation identified; payload lease and runtime continuity remain unproven",
+    "camera_readonly_probe_04": "TCP 80/7878 reachable; before/after idle; settings unchanged; 44 media entries before and after; no capture or setting change",
+    "camera_record_probe_01": "3-second ordinary recording started/stopped successfully; new YDXJ0161.MP4 exported; before idle, during record, after vf; selected settings unchanged",
+    "camera_packet_audit": "H.264/AAC full decode; first IDR; monotonic PTS/DTS; AVC SPS/PPS and AAC config present",
+    "host_python": "37 tests passed, 0 failures, 0 errors",
+    "capture_trigger": "host + ARM semantic checks: 13068 passed",
+    "android": "0.3.10 delivery artifact unchanged and previously verified"
+  },
+  "scope": "Offline/static evidence plus explicitly bounded readonly and ordinary reversible recording probes; no ORC/RTOS execution, firmware write, RAM write, partition write or boot-region write."
+}

@@ -1,0 +1,4 @@
+~ # dd if=/dev/mtdblock1 bs=4096 count=8192 2>/dev/null | sha256sum
+e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6  -
+~ # echo __YI_CAPTURE_03d2987fc8dc41fbb64754cc989f663d__
+__YI_CAPTURE_03d2987fc8dc41fbb64754cc989f663d__

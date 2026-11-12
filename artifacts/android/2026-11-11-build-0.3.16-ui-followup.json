@@ -1,0 +1,26 @@
+{
+  "version": "0.3.16",
+  "version_code": 19,
+  "product_apk": {
+    "path": "artifacts/android/yi4k-control-0.3.16-debug.apk",
+    "bytes": 11597613,
+    "sha256": "2f1d0abc297d67f2755d4f8c7c8d8a02e2366835223954709095f98e56bb3de7"
+  },
+  "build": {
+    "testDebugUnitTest": "passed",
+    "assembleDebug": "passed",
+    "lintDebug": "passed"
+  },
+  "ui_changes": [
+    "disconnected landing scans YDXJ Wi-Fi automatically",
+    "camera model appears in the device card instead of being duplicated in the page title",
+    "Wi-Fi quality, battery color and SD status are shown in the status card",
+    "preview reconnects after capture mode/spec changes",
+    "fixed status slot prevents shutter dock reflow",
+    "shutter has custom press scale and haptic feedback",
+    "resolution tags are single-line horizontal and current option is emphasized",
+    "settings are grouped without global search or connection management card",
+    "media folders and automatic bounded photo thumbnails use aligned cards"
+  ],
+  "scope": "No physical phone, camera radio, firmware, RTOS, RAM or partition access. APK is for manual installation and testing."
+}

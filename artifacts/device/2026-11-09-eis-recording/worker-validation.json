@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Host simulated stock TCP API; not camera or native Shell validation",
+  "checks": {
+    "api_unready_does_not_arm": true,
+    "nonzero_baseline_does_not_arm": true,
+    "successful_gate_then_one_bounded_recording": true,
+    "duplicate_record_output_prevents_second_run": true
+  },
+  "observed_api_ids": [
+    257,
+    1,
+    3,
+    13,
+    258,
+    257,
+    1,
+    3,
+    13,
+    513,
+    514,
+    1,
+    258
+  ]
+}

@@ -1,0 +1,29 @@
+~ # cat /proc/mounts; df -k
+rootfs / rootfs rw 0 0
+/dev/root / squashfs ro,relatime 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=24476k,nr_inodes=6119,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,gid=5,mode=620 0 0
+tmpfs /dev/shm tmpfs rw,relatime,mode=777 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+a: /tmp/FL0 ambafs rw,relatime 0 0
+c: /tmp/SD0 ambafs rw,relatime 0 0
+c:/dcim /tmp/DCIM ambafs rw,relatime 0 0
+c: /tmp/fuse_d ambafs rw,relatime 0 0
+c:/dcim /var/www/DCIM ambafs rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+a: /pref ambafs rw,relatime 0 0
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                28160     28160         0 100% /
+devtmpfs                 24476         0     24476   0% /dev
+tmpfs                    24548         0     24548   0% /dev/shm
+tmpfs                    24548        52     24496   0% /tmp
+a:                        2797         7      2790   0% /tmp/FL0
+c:                    61444608    179456  61265152   0% /tmp/SD0
+c:/dcim               61444608    179456  61265152   0% /tmp/DCIM
+c:                    61444608    179456  61265152   0% /tmp/fuse_d
+c:/dcim               61444608    179456  61265152   0% /var/www/DCIM
+a:                        2797         7      2790   0% /pref
+~ # echo __YI_CAPTURE_79e30b26c52441a2ac990fac808d8553__
+__YI_CAPTURE_79e30b26c52441a2ac990fac808d8553__

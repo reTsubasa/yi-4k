@@ -1,0 +1,301 @@
+{
+  "date": "2026-11-05",
+  "scope": "Public-source EIS survey and static firmware fit; no camera or algorithm runtime benchmark",
+  "user_observation": "EIS off: jelly mostly absent, but video shakes and blurs; priority is avoiding nausea-inducing local deformation",
+  "sources": [
+    {
+      "id": "D1",
+      "archived_source": "https://www.dji.com/osmo-action-6/faq",
+      "path": "artifacts/eis-research/sources/b680ac3bea203af9.html",
+      "text_path": "artifacts/eis-research/sources/b680ac3bea203af9.txt",
+      "sha256": "c975b06c6cd8066a925aa2e2a8330dd85770185fb3b1dbe86c9c8799b3006474",
+      "retrieved_utc": "2026-11-05T08:33:04.285976+00:00",
+      "assessment": "DJI 官方公开功能与曝光策略"
+    },
+    {
+      "id": "D2",
+      "archived_source": "https://www.dji.com/osmo-pocket-3/faq",
+      "path": "artifacts/eis-research/sources/80712ddab3812c52.html",
+      "text_path": "artifacts/eis-research/sources/80712ddab3812c52.txt",
+      "sha256": "6e5fa95732f1423e3c2b10c4f746949edba4d45c8cd0c9bcef65910978957beb",
+      "retrieved_utc": "2026-11-05T08:42:27.124490+00:00",
+      "assessment": "Osmo Pocket 机械云台边界"
+    },
+    {
+      "id": "G1",
+      "archived_source": "https://gopro.com/en/in/shop/cameras/hero12-black/CHDHX-121-master.html",
+      "path": "artifacts/eis-research/sources/3837bbdccd2bb262.html",
+      "text_path": "artifacts/eis-research/sources/3837bbdccd2bb262.txt",
+      "sha256": "50429afeadc49c802455a86a149720df163e0a91139d933e21ae36e8eaa98c07",
+      "retrieved_utc": "2026-11-05T08:45:25.309865+00:00",
+      "assessment": "GoPro 官方机内稳定、AutoBoost 与 Horizon Lock 功能"
+    },
+    {
+      "id": "G2",
+      "archived_source": "https://gopro.github.io/labs/control/settings/",
+      "path": "artifacts/eis-research/sources/57822ccb714d8a31.html",
+      "text_path": "artifacts/eis-research/sources/57822ccb714d8a31.txt",
+      "sha256": "23a72e510b3f2663d7e876cb2e7b1076360a56e1aa92ddf90da69c0d8b30f94a",
+      "retrieved_utc": "2026-11-05T08:44:17.546190+00:00",
+      "assessment": "GoPro Labs 模式控制，非算法源码"
+    },
+    {
+      "id": "G3",
+      "archived_source": "https://github.com/gopro/gpmf-parser",
+      "path": "artifacts/eis-research/sources/7afec81b36c84951.html",
+      "text_path": "artifacts/eis-research/sources/7afec81b36c84951.txt",
+      "sha256": "16a47c22f8f4758b8154c4c78a243dd0593329d865724a4fcfa0c140b67e0a68",
+      "retrieved_utc": "2026-11-05T08:41:29.547220+00:00",
+      "assessment": "GoPro 遥测格式，非算法源码"
+    },
+    {
+      "id": "I1",
+      "archived_source": "https://www.insta360.com/product/insta360-ace-pro2",
+      "path": "artifacts/eis-research/sources/40167ab944fae142.html",
+      "text_path": "artifacts/eis-research/sources/40167ab944fae142.txt",
+      "sha256": "82c550a9c240c179162533724f406290bd94f0ab8155b009e0f9a180dfd21481",
+      "retrieved_utc": "2026-11-05T08:36:08.140062+00:00",
+      "assessment": "Insta360 Ace Pro 2 功能，未公开内部算法"
+    },
+    {
+      "id": "I2",
+      "archived_source": "https://www.insta360.com/product/insta360-x5",
+      "path": "artifacts/eis-research/sources/2e93dfd73e9eb795.html",
+      "text_path": "artifacts/eis-research/sources/2e93dfd73e9eb795.txt",
+      "sha256": "6c410871e5b3ce620d48194b4bb95db0a9ea1ddf9aeaeeb0f66a8e2ff3d5b665",
+      "retrieved_utc": "2026-11-05T08:47:10.854082+00:00",
+      "assessment": "Insta360 全景/单镜头模式边界"
+    },
+    {
+      "id": "P1",
+      "archived_source": "https://graphics.stanford.edu/papers/stabilization/",
+      "path": "artifacts/eis-research/sources/e1a27b56c40e4871.html",
+      "text_path": "artifacts/eis-research/sources/e1a27b56c40e4871.txt",
+      "sha256": "5e0028c03fb40a9a5bd582d31e57d3777afd14f8e8f0938d0536c2c032e2b621",
+      "retrieved_utc": "2026-11-05T08:35:20.286459+00:00",
+      "assessment": "Karpenko 2011，项目页/摘要，PDF 已留存但未完成逐页审读"
+    },
+    {
+      "id": "P2",
+      "archived_source": "https://research.google/pubs/auto-directed-video-stabilization-with-robust-l1-optimal-camera-paths/",
+      "path": "artifacts/eis-research/sources/741be87837c7a724.html",
+      "text_path": "artifacts/eis-research/sources/741be87837c7a724.txt",
+      "sha256": "682338d085e2459132b419fb3f9475bb0af3126e7e99edf1849efc8c000ade74",
+      "retrieved_utc": "2026-11-05T08:42:27.124755+00:00",
+      "assessment": "L1 轨迹优化，原论文摘要"
+    },
+    {
+      "id": "P3",
+      "archived_source": "https://www.microsoft.com/en-us/research/publication/meshflow-minimum-latency-online-video-stabilization/",
+      "path": "artifacts/eis-research/sources/7c880f6ce0cb55c3.html",
+      "text_path": "artifacts/eis-research/sources/7c880f6ce0cb55c3.txt",
+      "sha256": "6ab3070836bdff80e076c2648498f0568c305458a1d5bada6480b97106ae252f",
+      "retrieved_utc": "2026-11-05T08:43:06.113120+00:00",
+      "assessment": "MeshFlow 因果平滑和一帧延迟，原作者论文页"
+    },
+    {
+      "id": "P4",
+      "archived_source": "https://research.google/blog/fused-video-stabilization-on-the-pixel-2-and-pixel-2-xl/",
+      "path": "artifacts/eis-research/sources/4bad15c7709b324a.html",
+      "text_path": "artifacts/eis-research/sources/4bad15c7709b324a.txt",
+      "sha256": "07bf7255680c2ac179072b0ac7e7b52b2795bcc1be29d8e0284eaa217a9ed7e8",
+      "retrieved_utc": "2026-11-05T08:36:08.141226+00:00",
+      "assessment": "Google 量产工程说明：同步/前瞻/RS/模糊感知"
+    },
+    {
+      "id": "P5",
+      "archived_source": "https://openaccess.thecvf.com/content/WACV2022/html/Shi_Deep_Online_Fused_Video_Stabilization_WACV_2022_paper.html",
+      "path": "artifacts/eis-research/sources/5d98c41f937a4d10.html",
+      "text_path": "artifacts/eis-research/sources/5d98c41f937a4d10.txt",
+      "sha256": "bad17c13e3f6017f8c31d1967bd81b08c0a323e8cd47e531b1b63c6a2ac0765c",
+      "retrieved_utc": "2026-11-05T08:47:10.852761+00:00",
+      "assessment": "Deep Online Fused，WACV 2022；由 CVF 与 Crossref 核对会议"
+    },
+    {
+      "id": "P6",
+      "archived_source": "https://openaccess.thecvf.com/content/CVPR2024/html/Peng_3D_Multi-frame_Fusion_for_Video_Stabilization_CVPR_2024_paper.html",
+      "path": "artifacts/eis-research/sources/b8660d5eaf150c21.html",
+      "text_path": "artifacts/eis-research/sources/b8660d5eaf150c21.txt",
+      "sha256": "9112be21010ffa77bb24e7e47086537e551592922d50eb39884d9a1e9c934301",
+      "retrieved_utc": "2026-11-05T08:38:59.175054+00:00",
+      "assessment": "RStab，CVPR 2024 摘要"
+    },
+    {
+      "id": "P7",
+      "archived_source": "https://openaccess.thecvf.com/content/CVPR2024/html/Ali_Harnessing_Meta-Learning_for_Improving_Full-Frame_Video_Stabilization_CVPR_2024_paper.html",
+      "path": "artifacts/eis-research/sources/b74427d15f5d1e68.html",
+      "text_path": "artifacts/eis-research/sources/b74427d15f5d1e68.txt",
+      "sha256": "3deccbaa179fa74fc0d01a65e426d99e29c9e47d5591a91a7936b035c09aacb6",
+      "retrieved_utc": "2026-11-05T08:39:00.264869+00:00",
+      "assessment": "MetaStab，CVPR 2024 摘要"
+    },
+    {
+      "id": "P8",
+      "archived_source": "https://raw.githubusercontent.com/huawei-bayerlab/GaVS/main/README.md",
+      "path": "artifacts/eis-research/sources/651ad28d03fdea45.raw",
+      "text_path": "artifacts/eis-research/sources/651ad28d03fdea45.txt",
+      "sha256": "96a3bccf12b9fdbaa563a4441a8cee1e8c2ca181cf5a8e9c535ac8948a536eb9",
+      "retrieved_utc": "2026-11-05T08:47:10.853828+00:00",
+      "assessment": "GaVS 作者 README 的实际依赖"
+    },
+    {
+      "id": "P9",
+      "archived_source": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_No_Labels_No_Look-Ahead_Unsupervised_Online_Video_Stabilization_with_Classical_CVPR_2026_paper.html",
+      "path": "artifacts/eis-research/sources/56605ae56a267d3d.html",
+      "text_path": "artifacts/eis-research/sources/56605ae56a267d3d.txt",
+      "sha256": "4d6f5137e643dd2c7c94ee76d31422a11b21d8ef353fabd508942addb41af001",
+      "retrieved_utc": "2026-11-05T08:38:15.213225+00:00",
+      "assessment": "LightStab，CVF 2026 论文记录/摘要"
+    },
+    {
+      "id": "P10",
+      "archived_source": "https://arxiv.org/html/2602.23141v1",
+      "path": "artifacts/eis-research/sources/0f60aeae858c9985.html",
+      "text_path": "artifacts/eis-research/sources/0f60aeae858c9985.txt",
+      "sha256": "5689a8106baf54707e6f2161f7fccf550c729eba65a68fb3879f06d5cc7badce",
+      "retrieved_utc": "2026-11-05T08:41:29.545865+00:00",
+      "assessment": "LightStab，arXiv v1 全文/补充表 7，作者的运行报告"
+    },
+    {
+      "id": "A1",
+      "archived_source": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/default_algo.rs",
+      "path": "artifacts/eis-research/sources/b7d3bcc75e5a58b3.raw",
+      "text_path": "artifacts/eis-research/sources/b7d3bcc75e5a58b3.txt",
+      "sha256": "67b04e8021eb8e9044d26f4ac1b211195435eafe2b59b4ab72b442cc1fbf9777",
+      "retrieved_utc": "2026-11-05T08:38:59.172778+00:00",
+      "assessment": "Gyroflow 固定提交默认平滑源码，非厂商算法"
+    },
+    {
+      "id": "A2",
+      "archived_source": "https://vqf.readthedocs.io/en/latest/",
+      "path": "artifacts/eis-research/sources/249f866b91204f1b.html",
+      "text_path": "artifacts/eis-research/sources/249f866b91204f1b.txt",
+      "sha256": "50f702ed907ba94566b02cb6a29f8dd250f1679dd1bbbc876d5e223c5874dc04",
+      "retrieved_utc": "2026-11-05T08:41:30.895480+00:00",
+      "assessment": "VQF 作者说明，在线姿态算法而非完整 EIS"
+    }
+  ],
+  "additional_inspected_code": [
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/plain.rs",
+      "retrieved_utc": "2026-11-05T08:38:59.173051+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/plain.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/496c867f22fe63b7.raw",
+      "sha256": "45bb2580dbf169cd1311785385f23d564da1e25a044e9d6cbe86c0fa7662894d",
+      "bytes": 5734,
+      "text_path": "artifacts/eis-research/sources/496c867f22fe63b7.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/horizon.rs",
+      "retrieved_utc": "2026-11-05T08:38:59.173238+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/horizon.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/589f0352eb63650f.raw",
+      "sha256": "28dcbaabdee918b9a3f1246fff8a14dfb5ea6551fe0de3342e9d36b348106e42",
+      "bytes": 14963,
+      "text_path": "artifacts/eis-research/sources/589f0352eb63650f.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/optimal/mod.rs",
+      "retrieved_utc": "2026-11-05T08:43:06.113383+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/optimal/mod.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/e4050616549a20f2.raw",
+      "sha256": "ade286ed03ce9c61c696c4e644c53c44a1c2ba02b08bb01f47e066d03510b135",
+      "bytes": 15583,
+      "text_path": "artifacts/eis-research/sources/e4050616549a20f2.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/optimal/path.rs",
+      "retrieved_utc": "2026-11-05T08:43:06.113488+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/smoothing/optimal/path.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/a029b6ccc1a0062d.raw",
+      "sha256": "467d457d088446306e3fdc7c6ae0e2163e4da0d1eed8e4a985eb2b67830e07c4",
+      "bytes": 48217,
+      "text_path": "artifacts/eis-research/sources/a029b6ccc1a0062d.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/stabilization/frame_transform.rs",
+      "retrieved_utc": "2026-11-05T08:43:06.113597+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/stabilization/frame_transform.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/a42694102dea76eb.raw",
+      "sha256": "945b1b522f44f23327c684abfd3d55a64f511e6086ac98d4fd2b76408af1a016",
+      "bytes": 38454,
+      "text_path": "artifacts/eis-research/sources/a42694102dea76eb.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/zooming/zoom_dynamic.rs",
+      "retrieved_utc": "2026-11-05T08:43:06.614305+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/src/core/zooming/zoom_dynamic.rs",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/2ef433a10f45e6a1.raw",
+      "sha256": "1992e5315f90a3218232b965e62aa4b976bb5205559805688d940e6fd12672cf",
+      "bytes": 8534,
+      "text_path": "artifacts/eis-research/sources/2ef433a10f45e6a1.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/LICENSE",
+      "retrieved_utc": "2026-11-05T08:38:59.173482+00:00",
+      "final_url": "https://raw.githubusercontent.com/gyroflow/gyroflow/7c50b6370ffdacf38389e676b6008d8895206c51/LICENSE",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/6b3e97c499e224ee.raw",
+      "sha256": "68d582065b2bb3f3daf767409f0bccfae1c71b9f72c332d1473a2d2e269b3209",
+      "bytes": 36157,
+      "text_path": "artifacts/eis-research/sources/6b3e97c499e224ee.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/vqf/cpp/basicvqf.cpp",
+      "retrieved_utc": "2026-11-05T08:47:45.597671+00:00",
+      "final_url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/vqf/cpp/basicvqf.cpp",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/d498455cc8382d22.raw",
+      "sha256": "1d636b14442921c390b4a2afdf7f757051409ee9317b58f3873370f475198f39",
+      "bytes": 13119,
+      "text_path": "artifacts/eis-research/sources/d498455cc8382d22.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/vqf/cpp/basicvqf.hpp",
+      "retrieved_utc": "2026-11-05T08:47:45.598268+00:00",
+      "final_url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/vqf/cpp/basicvqf.hpp",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/68a6a133c9b218e8.raw",
+      "sha256": "782e64b01642d06188d8502ee65f70065c1a4d61b476ca0b5d246d2b1066e9fe",
+      "bytes": 23802,
+      "text_path": "artifacts/eis-research/sources/68a6a133c9b218e8.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/LICENSES/MIT.txt",
+      "retrieved_utc": "2026-11-05T08:47:45.598434+00:00",
+      "final_url": "https://raw.githubusercontent.com/dlaidig/vqf/86ba56bdd3158b9b05f9f9fe5596866ba326438c/LICENSES/MIT.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "status": 200,
+      "path": "artifacts/eis-research/sources/c04c953e5638f643.raw",
+      "sha256": "0c22d71ab6599696c5dabbdc3cc11ad68016d00a01efa2980538e42c9ccf73f3",
+      "bytes": 1078,
+      "text_path": "artifacts/eis-research/sources/c04c953e5638f643.txt"
+    }
+  ],
+  "fixed_implementations": {
+    "gyroflow": "7c50b6370ffdacf38389e676b6008d8895206c51",
+    "vqf": "86ba56bdd3158b9b05f9f9fe5596866ba326438c"
+  },
+  "limitations": [
+    "Vendor source code not obtained; product claims do not identify internal algorithms.",
+    "Paper abstracts/project pages support method descriptions; only explicitly identified full HTML/code was inspected in detail.",
+    "No YI CPU throughput, RAM availability or visual improvements were measured.",
+    "HTTP 200 loading shells, failed URL candidates and unrelated fetched papers were excluded from curated evidence.",
+    "No exhaustive claim of all 2026 publications or latest camera models."
+  ]
+}

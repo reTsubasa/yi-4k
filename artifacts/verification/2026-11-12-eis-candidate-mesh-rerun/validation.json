@@ -1,0 +1,26 @@
+{
+  "schema": "yi4k.eis-candidate-mesh-validation/v1",
+  "status": "passed_host_candidate_and_rejection_checks",
+  "positive_trace_frames": 4,
+  "deterministic_output": true,
+  "nonzero_motion_changes_mesh": true,
+  "q16_16_and_crop_bounds_checked": true,
+  "rejection_checks": 7,
+  "rejection_messages": [
+    "units must declare gyro=dps and tick=microseconds",
+    "tick_us must strictly increase",
+    "sample gap exceeds 100ms",
+    "gyro rate exceeds configured safety limit",
+    "gyro_dps must be finite",
+    "sequence must strictly increase",
+    "candidate correction exceeds crop margin"
+  ],
+  "stock_abi_compatible": false,
+  "replacement_deployment_ready": false,
+  "device_access": false,
+  "limitations": [
+    "Synthetic trace only; not captured camera gyro, exposure or frame data.",
+    "Normalized Q16.16 mesh is a candidate adapter format, not the stock 1.10.7 warp table ABI.",
+    "No encoded image comparison, rolling-shutter quality, real-time budget, DSP latch, RTOS execution or device write is tested."
+  ]
+}

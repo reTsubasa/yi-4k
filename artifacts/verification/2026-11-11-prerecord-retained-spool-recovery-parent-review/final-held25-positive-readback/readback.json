@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "status": "pass_exact_snapshot_recovery",
+  "reader_pid": 67209,
+  "writer_memory_used": false,
+  "scan_status": 0,
+  "file_bytes": 505,
+  "committed_bytes": 505,
+  "records": 1,
+  "trailing_bytes": 0,
+  "corrupt": 0,
+  "expected_records": 1,
+  "recovered_records": [
+    {
+      "ordinal": 1,
+      "kind": 2,
+      "sequence": 25,
+      "dts": 25600,
+      "pts": 25600,
+      "scale": 48000,
+      "duration": 1024,
+      "type": 8,
+      "flags": 1,
+      "address": 0,
+      "bytes": 321,
+      "sha256": "ab05749b33fdaeb529f011f7cafc05c6522815c0280357407fbec87c1ffb0cf4"
+    }
+  ],
+  "expected_snapshot_manifest_sha256": "baa66af39409336e77c3bea93f9ada56502912dbd131cdf94d254e92cf2dfcd8",
+  "exact_metadata_payload_match": true,
+  "complete_snapshot_set_released": true,
+  "complete_original_recording": false,
+  "callback_observations_staged_until_full_gate": true,
+  "errors": []
+}

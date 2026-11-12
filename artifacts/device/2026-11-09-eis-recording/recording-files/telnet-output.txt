@@ -1,0 +1,7 @@
+python -c 'import os,re,json; p="/tmp/SD0/DCIM/100MEDIA/"; names=sorted(n fo
+r n in os.listdir(p) if re.match(r"^YDXJ[0-9]{4}\.MP4$",n))[-6:]; print("YI_CLIP
+S "+json.dumps([dict(name=n,bytes=os.stat(p+n).st_size,mtime=os.stat(p+n).st_mti
+me) for n in names]))'
+YI_CLIPS [{"bytes": 31575424, "name": "YDXJ0135.MP4", "mtime": 1388539110.0}, {"bytes": 31400038, "name": "YDXJ0136.MP4", "mtime": 1388540242.0}, {"bytes": 23817714, "name": "YDXJ0137.MP4", "mtime": 1388541978.0}, {"bytes": 16661328, "name": "YDXJ0138.MP4", "mtime": 1388543074.0}, {"bytes": 16254590, "name": "YDXJ0139.MP4", "mtime": 1388544974.0}]
+~ # echo __YI_CAPTURE_6b5b0ae161f14a8b8e09ff601a48ba59__
+__YI_CAPTURE_6b5b0ae161f14a8b8e09ff601a48ba59__

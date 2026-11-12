@@ -1,0 +1,31 @@
+{
+  "status": "pass_android_consumer_final_source_document_pins",
+  "files": [
+    {
+      "path": "scripts/android-native-mux-consumer/NativeMuxConsumer.java",
+      "sha256": "4ddb39f26627257f1280c2ea249caababbc7df8ab5e13013b95927f94f8d1943",
+      "snapshot": "artifacts/android/2026-11-12-native-mux-consumer-run02/source-snapshot/NativeMuxConsumer.java"
+    },
+    {
+      "path": "scripts/android-native-mux-consumer/run.py",
+      "sha256": "6834701f54812d95366a9e2949c2773dab9a0bc7909a8abfdde790a862a918fd",
+      "snapshot": "artifacts/android/2026-11-12-native-mux-consumer-run02/source-snapshot/run.py"
+    },
+    {
+      "path": "scripts/android-native-mux-consumer/verify.py",
+      "sha256": "e5f22a03e815173036d4fdd60cab4c581526d4000d8d2bad9372d541ff4953fa",
+      "snapshot": "artifacts/android/2026-11-12-native-mux-consumer-run02/source-snapshot/verify.py"
+    },
+    {
+      "path": "docs/prerecord-android-native-mux-consumer.md",
+      "sha256": "944a000a19376322b9a2c76234b5b799ad07ab9dae7239ac14477824568c3657",
+      "snapshot": "artifacts/android/2026-11-12-native-mux-consumer-run02/source-snapshot/prerecord-android-native-mux-consumer.md"
+    }
+  ],
+  "review": {
+    "path": "artifacts/android/2026-11-12-native-mux-consumer-run02/review.json",
+    "sha256": "bd42a7dba2a3053539370cea156a9ce426f46b5404cabd2436e2c3d2fdebed7d"
+  },
+  "emulator_stopped": true,
+  "scope": "Android available fields/full restarted selected-segment decoder comparison only; no full DTS/duration or physical camera acceptance"
+}

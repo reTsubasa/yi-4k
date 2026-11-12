@@ -1,0 +1,103 @@
+{
+  "scope": "host MP4 compressed packet/timestamp comparison; no device contact or FIFO proof",
+  "phase": "prepublish",
+  "track_types": [
+    "video",
+    "audio"
+  ],
+  "common_audio_video_offset_applicable": true,
+  "manifest": "/Users/hyc/Documents/yi4k/artifacts/host-prerecord/aac-priming-old-reproduction-run01/both-manifest.json",
+  "manifest_sha256": "7b8ff1733d31fd191a6a6f6ed2aeea0eada891db6efa5cf79a870bc7855ea87f",
+  "source_sha256": "983c857b0ec2a2f2440d4178c14417aa46cbb867c48262ad82412b4ed6441410",
+  "clip_sha256": "cbc0d41471d6fee27f7e5824d88597b3e22c6128a43e259f474e1397eb49e2b5",
+  "timestamp_tolerance_seconds": "1/500",
+  "selected_segments": 4,
+  "tracks": {
+    "video": {
+      "codec": "h264",
+      "source_packet_count": 250,
+      "clip_packet_count": 200,
+      "selected_segment_packet_count": 200,
+      "selected_segments_equal_clip_packets": true,
+      "source_contiguous_hash_match_count": 1,
+      "source_identity_unique": true,
+      "source_matching_timing_candidates": [
+        {
+          "source_first_packet": 0,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "0",
+          "offset_spread_seconds": "0",
+          "max_duration_error_seconds": "0",
+          "constant_pts_dts_offset": true,
+          "durations_preserved": true
+        }
+      ],
+      "faithful_timing_candidates": [
+        {
+          "source_first_packet": 0,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "0",
+          "offset_spread_seconds": "0",
+          "max_duration_error_seconds": "0",
+          "constant_pts_dts_offset": true,
+          "durations_preserved": true
+        }
+      ],
+      "dts_strictly_increasing": true
+    },
+    "audio": {
+      "codec": "aac",
+      "source_packet_count": 470,
+      "clip_packet_count": 375,
+      "selected_segment_packet_count": 376,
+      "selected_segments_equal_clip_packets": false,
+      "source_contiguous_hash_match_count": 1,
+      "source_identity_unique": true,
+      "source_matching_timing_candidates": [
+        {
+          "source_first_packet": 1,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "0",
+          "offset_spread_seconds": "0",
+          "max_duration_error_seconds": "0",
+          "constant_pts_dts_offset": true,
+          "durations_preserved": true
+        }
+      ],
+      "faithful_timing_candidates": [
+        {
+          "source_first_packet": 1,
+          "offset_min_seconds": "0",
+          "offset_max_seconds": "0",
+          "offset_spread_seconds": "0",
+          "max_duration_error_seconds": "0",
+          "constant_pts_dts_offset": true,
+          "durations_preserved": true
+        }
+      ],
+      "dts_strictly_increasing": true
+    }
+  },
+  "common_timestamp_offset_candidates": [
+    {
+      "video_source_packet": 0,
+      "audio_source_packet": 1,
+      "offset_min_seconds": "0",
+      "offset_max_seconds": "0"
+    }
+  ],
+  "checks": {
+    "source_and_output_hashes_match_manifest": true,
+    "selected_segment_packet_order_preserved": false,
+    "compressed_packets_are_contiguous_source_subsequences": true,
+    "pts_dts_durations_preserved": true,
+    "strictly_increasing_dts": true,
+    "common_audio_video_timestamp_offset": true
+  },
+  "passed": false,
+  "limits": [
+    "Container timestamps do not prove a common hardware capture epoch.",
+    "No RTOS payload ownership, callback installation, SD spool or real trigger is exercised.",
+    "Repeated identical compressed packets can make source position ambiguous; all candidates are retained."
+  ]
+}

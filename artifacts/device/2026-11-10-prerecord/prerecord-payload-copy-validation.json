@@ -1,0 +1,1333 @@
+{
+  "evidence_type": "Actual C compiled and executed on host and compiled ARM executed by Unicorn with constructed RAM",
+  "build": {
+    "commands": [
+      [
+        "/usr/bin/clang",
+        "-shared",
+        "-fPIC",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-copy-r171p4i5/copy.dylib"
+      ],
+      [
+        "/usr/bin/clang",
+        "--target=armv7-none-eabi",
+        "-mcpu=cortex-a9",
+        "-marm",
+        "-mfloat-abi=soft",
+        "-mfpu=none",
+        "-ffreestanding",
+        "-fno-builtin",
+        "-fno-stack-protector",
+        "-fno-pic",
+        "-fno-unwind-tables",
+        "-fno-asynchronous-unwind-tables",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_payload_copy.c",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-copy-r171p4i5/copy.o"
+      ],
+      [
+        "/Users/hyc/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld",
+        "-T",
+        "/Users/hyc/Documents/yi4k/sdk/offline/yi4k_payload_copy_emulation.ld",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-copy-r171p4i5/copy.o",
+        "-o",
+        "/var/folders/ht/sp1p14p103d2hh5x2k_mrbnr0000gn/T/yi4k-copy-r171p4i5/copy.elf"
+      ]
+    ],
+    "clang_version": "Apple clang version 17.0.0 (clang-1700.0.13.3)",
+    "linker_version": "LLD 21.0.0 (/Volumes/Android/buildbot/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349) (compatible with GNU linkers)",
+    "source_sha256": "d4e47a2c3409970b99d912b3f1ab639d3bbfa98d411a0192b921e3b477a79df0",
+    "header_sha256": "91aaa546cedc9845d2c4c7b6398f66cff55c49ecdc6c2b8cdfd04b0f9f3d3da2",
+    "descriptor_header_sha256": "d2dcde7b77b48dce86f37b0e48cb90a4347dfea8ba9269a89ced65b1923ea002",
+    "linker_script_sha256": "25c267502822027cd7f1153f1c85a79901875684843443f3514c18ee22747950",
+    "host_library_sha256": "e57e003dccd1567ce05b20ed3c9aff7247e57243f3c81fc7619214e0580f56ea",
+    "arm_elf_sha256": "57ae0d7c7aa14f7328814335fb48ca49e8e615540cd1419b3434c529617edcc1",
+    "arm_function_bytes": 496,
+    "arm_entry": "0x10030000",
+    "undefined_symbols": 0,
+    "linked_relocations": 0
+  },
+  "case_count": 40,
+  "host_execution_count": 40,
+  "arm_execution_count": 40,
+  "cases": [
+    {
+      "inputs": {
+        "name": "contiguous_idr_hint",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "contiguous_idr_hint",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "contiguous_idr_hint",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "contiguous_non_idr",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 2,
+        "capacity": 64
+      },
+      "host": {
+        "name": "contiguous_non_idr",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000000000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "contiguous_non_idr",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000000000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "other_type_is_not_sync",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 3,
+        "capacity": 64
+      },
+      "host": {
+        "name": "other_type_is_not_sync",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000000000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "other_type_is_not_sync",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000000000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "exact_end",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 48,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "exact_end",
+        "status": 0,
+        "payload": "fb20456a8fb4d9fe23486d92b7dc0126",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "exact_end",
+        "status": 0,
+        "payload": "fb20456a8fb4d9fe23486d92b7dc0126",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "two_spans",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 57,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "two_spans",
+        "status": 0,
+        "payload": "486d92b7dc01260b30557a9fc4e90e33",
+        "result": "10000000070000000900000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "two_spans",
+        "status": 0,
+        "payload": "486d92b7dc01260b30557a9fc4e90e33",
+        "result": "10000000070000000900000001000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "whole_ring_from_offset",
+        "expected_status": 0,
+        "length": 64,
+        "offset": 23,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "whole_ring_from_offset",
+        "status": 0,
+        "payload": "5e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01260b30557a9fc4e90e33587da2c7ec11365b80a5caef1439",
+        "result": "40000000290000001700000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "whole_ring_from_offset",
+        "status": 0,
+        "payload": "5e83a8cdf2173c6186abd0f51a3f6489aed3f81d42678cb1d6fb20456a8fb4d9fe23486d92b7dc01260b30557a9fc4e90e33587da2c7ec11365b80a5caef1439",
+        "result": "40000000290000001700000001000000",
+        "payload_read_bytes": 64,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "one_byte_at_end",
+        "expected_status": 0,
+        "length": 1,
+        "offset": 63,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "one_byte_at_end",
+        "status": 0,
+        "payload": "26",
+        "result": "01000000010000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "one_byte_at_end",
+        "status": 0,
+        "payload": "26",
+        "result": "01000000010000000000000001000000",
+        "payload_read_bytes": 1,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "exact_destination_capacity",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 16
+      },
+      "host": {
+        "name": "exact_destination_capacity",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "exact_destination_capacity",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "separate_logical_cpu_base",
+        "expected_status": 0,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 1073741824,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "separate_logical_cpu_base",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "separate_logical_cpu_base",
+        "status": 0,
+        "payload": "33587da2c7ec11365b80a5caef14395e",
+        "result": "10000000100000000000000001000000",
+        "payload_read_bytes": 16,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "near_32bit_limit",
+        "expected_status": 0,
+        "length": 1,
+        "offset": 30,
+        "ring_size": 31,
+        "cpu_base": 4294967264,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "near_32bit_limit",
+        "status": 0,
+        "payload": "61",
+        "result": "01000000010000000000000001000000",
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "near_32bit_limit",
+        "status": 0,
+        "payload": "61",
+        "result": "01000000010000000000000001000000",
+        "payload_read_bytes": 1,
+        "no_output_change_on_non_success": false,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "short_capacity",
+        "expected_status": 5,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 15
+      },
+      "host": {
+        "name": "short_capacity",
+        "status": 5,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "short_capacity",
+        "status": 5,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "address_below_ring",
+        "expected_status": 4,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "address": 536870911
+      },
+      "host": {
+        "name": "address_below_ring",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "address_below_ring",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "address_at_end",
+        "expected_status": 4,
+        "length": 16,
+        "offset": 64,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "address_at_end",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "address_at_end",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "zero_length",
+        "expected_status": 4,
+        "length": 0,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "zero_length",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "zero_length",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "length_exceeds_ring",
+        "expected_status": 4,
+        "length": 65,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "length_exceeds_ring",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "length_exceeds_ring",
+        "status": 4,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "empty_ring",
+        "expected_status": 3,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 0,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "empty_ring",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "empty_ring",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "zero_cpu_base",
+        "expected_status": 3,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 0,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "zero_cpu_base",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "zero_cpu_base",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "cpu_bounds_overflow",
+        "expected_status": 3,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 4294967280,
+        "kind": 1,
+        "capacity": 64
+      },
+      "host": {
+        "name": "cpu_bounds_overflow",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "cpu_bounds_overflow",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "null_ring_bytes",
+        "expected_status": 3,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "bytes_pointer": "null"
+      },
+      "host": {
+        "name": "null_ring_bytes",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "null_ring_bytes",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "host_ring_bounds_overflow",
+        "expected_status": 3,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "bytes_pointer": "overflow"
+      },
+      "host": {
+        "name": "host_ring_bounds_overflow",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "host_ring_bounds_overflow",
+        "status": 3,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "null_descriptor",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "descriptor_pointer": "null"
+      },
+      "host": {
+        "name": "null_descriptor",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "null_descriptor",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "descriptor_pointer_overflow",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "descriptor_pointer": "overflow"
+      },
+      "host": {
+        "name": "descriptor_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "descriptor_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "misaligned_descriptor",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "descriptor_pointer": [
+          "descriptor",
+          1
+        ]
+      },
+      "host": {
+        "name": "misaligned_descriptor",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "misaligned_descriptor",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "null_view",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "view_pointer": "null"
+      },
+      "host": {
+        "name": "null_view",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "null_view",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "view_pointer_overflow",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "view_pointer": "overflow"
+      },
+      "host": {
+        "name": "view_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "view_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "misaligned_view",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "view_pointer": [
+          "view",
+          1
+        ]
+      },
+      "host": {
+        "name": "misaligned_view",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "misaligned_view",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "null_destination",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "destination_pointer": "null"
+      },
+      "host": {
+        "name": "null_destination",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "null_destination",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "destination_pointer_overflow",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "destination_pointer": "overflow"
+      },
+      "host": {
+        "name": "destination_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "destination_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "null_result",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": "null"
+      },
+      "host": {
+        "name": "null_result",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "null_result",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "result_pointer_overflow",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": "overflow"
+      },
+      "host": {
+        "name": "result_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "result_pointer_overflow",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "misaligned_result",
+        "expected_status": 2,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": [
+          "result",
+          1
+        ]
+      },
+      "host": {
+        "name": "misaligned_result",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "misaligned_result",
+        "status": 2,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "destination_overlaps_ring",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "destination_pointer": [
+          "ring",
+          1
+        ]
+      },
+      "host": {
+        "name": "destination_overlaps_ring",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "destination_overlaps_ring",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "result_overlaps_ring",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": [
+          "ring",
+          8
+        ]
+      },
+      "host": {
+        "name": "result_overlaps_ring",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "result_overlaps_ring",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "result_overlaps_destination",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": [
+          "destination",
+          4
+        ]
+      },
+      "host": {
+        "name": "result_overlaps_destination",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "result_overlaps_destination",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "destination_overlaps_descriptor",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "destination_pointer": [
+          "descriptor",
+          0
+        ]
+      },
+      "host": {
+        "name": "destination_overlaps_descriptor",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "destination_overlaps_descriptor",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "result_overlaps_descriptor",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": [
+          "descriptor",
+          0
+        ]
+      },
+      "host": {
+        "name": "result_overlaps_descriptor",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "result_overlaps_descriptor",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "destination_overlaps_view",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "destination_pointer": [
+          "view",
+          0
+        ]
+      },
+      "host": {
+        "name": "destination_overlaps_view",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "destination_overlaps_view",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "result_overlaps_view",
+        "expected_status": 6,
+        "length": 16,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "result_pointer": [
+          "view",
+          0
+        ]
+      },
+      "host": {
+        "name": "result_overlaps_view",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "result_overlaps_view",
+        "status": 6,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "eos_00ffffff_before_pointer_use",
+        "expected_status": 1,
+        "length": 16777215,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "view_pointer": "null",
+        "destination_pointer": "null",
+        "result_pointer": "null"
+      },
+      "host": {
+        "name": "eos_00ffffff_before_pointer_use",
+        "status": 1,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "eos_00ffffff_before_pointer_use",
+        "status": 1,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    },
+    {
+      "inputs": {
+        "name": "eos_ffffffff_before_pointer_use",
+        "expected_status": 1,
+        "length": 4294967295,
+        "offset": 8,
+        "ring_size": 64,
+        "cpu_base": 536870912,
+        "kind": 1,
+        "capacity": 64,
+        "view_pointer": "null",
+        "destination_pointer": "null",
+        "result_pointer": "null"
+      },
+      "host": {
+        "name": "eos_ffffffff_before_pointer_use",
+        "status": 1,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": null,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": null
+      },
+      "compiled_arm": {
+        "name": "eos_ffffffff_before_pointer_use",
+        "status": 1,
+        "payload": null,
+        "result": null,
+        "payload_read_bytes": 0,
+        "no_output_change_on_non_success": true,
+        "callee_saved_and_sp_preserved": true
+      }
+    }
+  ],
+  "limitations": [
+    "No firmware payload bytes or runtime descriptors were read.",
+    "No device, producer quiescence, cache coherence, DMA, mapping or FIFO API is implemented or tested.",
+    "Native ARM means compiled ARM instructions executed offline, not execution on camera hardware.",
+    "Successful copying does not prove an H264 access unit, parameter-set inclusion, sync point or playable recording.",
+    "The caller must retain its virtual cursor until copied bytes have been validated and stored."
+  ],
+  "device_access": false
+}

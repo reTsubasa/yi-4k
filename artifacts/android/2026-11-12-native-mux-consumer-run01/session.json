@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-11-12T04:59:59.300637+00:00",
+  "scope": "owned new cold AVD; standalone local files only; no camera App/physical device/camera/network requests",
+  "serial": "emulator-5590",
+  "commands": [
+    {
+      "argv": [
+        "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/bin/javac",
+        "-source",
+        "11",
+        "-target",
+        "11",
+        "-cp",
+        "/Users/hyc/Library/Android/sdk/platforms/android-34/android.jar",
+        "-d",
+        "/Users/hyc/Documents/yi4k/artifacts/android/2026-11-12-native-mux-consumer-run01/classes",
+        "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java"
+      ],
+      "returncode": 1,
+      "log": "javac.log"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/device/2026-11-11-prerecord-real-65s/YDXJ0165.MP4",
+      "bytes": 367326906,
+      "sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/artifacts/verification/2026-11-12-prerecord-native-window-compact-run01/session.pending.mp4",
+      "bytes": 343127606,
+      "sha256": "cffc226da6e496cd6df8d4294c1d295c4bdefe7ece4efe289f597b7b85e3ee5a"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/run.py",
+      "sha256": "6834701f54812d95366a9e2949c2773dab9a0bc7909a8abfdde790a862a918fd"
+    },
+    {
+      "path": "/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java",
+      "sha256": "502e49de83e49d1da218d54179f6bccb140319e15d0973f628297bc57e40441d"
+    }
+  ],
+  "emulator_stopped": false,
+  "status": "failed_android_consumer_run",
+  "error": "javac.log: \u8b66\u544a: [options] \u672a\u4e0e -source 11 \u4e00\u8d77\u8bbe\u7f6e\u7cfb\u7edf\u6a21\u5757\u8def\u5f84\n/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java:16: \u9519\u8bef: \u627e\u4e0d\u5230\u7b26\u53f7\n    for(String k:keys)if(f.containsKey(k)){Object v=f.getObject(k);j.put(k,String.valueOf(v));}\n                                                     ^\n  \u7b26\u53f7:   \u65b9\u6cd5 getObject(String)\n  \u4f4d\u7f6e: \u7c7b\u578b\u4e3aMediaFormat\u7684\u53d8\u91cf f\n1 \u4e2a\u9519\u8bef\n1 \u4e2a\u8b66\u544a\n",
+  "inputs_unchanged": true
+}

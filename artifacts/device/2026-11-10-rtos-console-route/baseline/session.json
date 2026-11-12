@@ -1,0 +1,282 @@
+{
+  "host": "192.168.42.1",
+  "started_utc": "2026-11-10T01:10:26.152156+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1107723.221322583,
+      "utc": "2026-11-10T01:10:26.170887+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1107724.04744575,
+      "utc": "2026-11-10T01:10:26.997008+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1107724.047579916,
+      "utc": "2026-11-10T01:10:26.997131+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1107724.05464925,
+      "utc": "2026-11-10T01:10:27.004207+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1107724.054741041,
+      "utc": "2026-11-10T01:10:27.004292+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1107724.067573875,
+      "utc": "2026-11-10T01:10:27.017129+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1107724.067771625,
+      "utc": "2026-11-10T01:10:27.017322+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1107724.073439833,
+      "utc": "2026-11-10T01:10:27.022994+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1107724.530407791,
+      "utc": "2026-11-10T01:10:27.479965+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1107724.535977833,
+      "utc": "2026-11-10T01:10:27.485524+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1107724.536038958,
+      "utc": "2026-11-10T01:10:27.485582+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1107724.542103583,
+      "utc": "2026-11-10T01:10:27.491665+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1107724.542250125,
+      "utc": "2026-11-10T01:10:27.491794+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1107724.556289,
+      "utc": "2026-11-10T01:10:27.505851+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1107724.55656275,
+      "utc": "2026-11-10T01:10:27.506106+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1107724.562539208,
+      "utc": "2026-11-10T01:10:27.512086+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "uptime_before",
+      "command": "cat /proc/uptime",
+      "output": "uptime_before.txt"
+    },
+    {
+      "name": "boot_id",
+      "command": "cat /proc/sys/kernel/random/boot_id",
+      "output": "boot_id.txt"
+    },
+    {
+      "name": "linux_memory",
+      "command": "cat /proc/meminfo",
+      "output": "linux_memory.txt"
+    },
+    {
+      "name": "processes",
+      "command": "ps",
+      "output": "processes.txt"
+    },
+    {
+      "name": "ambarella_nodes",
+      "command": "ls -l /proc/ambarella",
+      "output": "ambarella_nodes.txt"
+    },
+    {
+      "name": "uport",
+      "command": "cat /proc/ambarella/uport",
+      "output": "uport.txt"
+    },
+    {
+      "name": "rpmsg",
+      "command": "ls -l /sys/bus/rpmsg/devices",
+      "output": "rpmsg.txt"
+    },
+    {
+      "name": "rpmsg_names",
+      "command": "cat /sys/bus/rpmsg/devices/*/name",
+      "output": "rpmsg_names.txt"
+    },
+    {
+      "name": "serial_nodes",
+      "command": "ls -l /dev/ttyS* /dev/ttyUSB* /dev/ttyGS* /dev/rpmsg*",
+      "output": "serial_nodes.txt"
+    },
+    {
+      "name": "mounts",
+      "command": "cat /proc/mounts",
+      "output": "mounts.txt"
+    },
+    {
+      "name": "startup_probe_paths",
+      "command": "ls -l /tmp/SD0/autoexec.ash /tmp/SD0/save_log_enable.script",
+      "output": "startup_probe_paths.txt"
+    },
+    {
+      "name": "uptime_after",
+      "command": "cat /proc/uptime",
+      "output": "uptime_after.txt"
+    }
+  ],
+  "rtos_shell_invoked": false,
+  "memory_mapping_run": false,
+  "reboot_requested": false,
+  "recording_requested": false,
+  "settings_changed": false,
+  "target_files_written": false,
+  "limitations": [
+    "API and Linux readiness are not RTOS task/pool readiness.",
+    "Read-only SD metadata passes through RTOS filesystem service.",
+    "Snapshots are sequential, not simultaneous."
+  ],
+  "before": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 30P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "record",
+      "iq_eis_enable": "on"
+    }
+  },
+  "after": {
+    "status": {
+      "rval": 0,
+      "msg_id": 1,
+      "type": "app_status",
+      "param": "idle"
+    },
+    "settings": {
+      "video_standard": "NTSC",
+      "video_resolution": "1920x1080 30P 16:9",
+      "video_quality": "S.Fine",
+      "sd_card_status": "insert",
+      "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "hw_version": "YDXJ2_V13LW",
+      "system_mode": "record",
+      "iq_eis_enable": "on"
+    }
+  },
+  "finished_utc": "2026-11-10T01:10:27.512403+00:00"
+}

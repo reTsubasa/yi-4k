@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T06:25:58.984060+00:00",
+  "goal_status": "active",
+  "summary": {
+    "android": "0.4.8: Chinese setting values corrected; 208 Debug tests, Lint 0/74, two local AVD checks and 18 screenshot review pass; physical phone absent",
+    "eis_native": "Approved stock diagnostic lifecycle and bounded negative RPC entry audit are documented; no custom ARM entry, I-cache/SMP publication or independent recovery",
+    "eis_algorithm": "Candidate stock affine seam run03 passes offline independent reconstruction; synthetic geometry/calibration, no deployment-ready ABI or camera quality comparison",
+    "prerecord": "Current-source run03 C spool/seal and new reader feed original ARM mux; voice/shutter outputs byte-identical playable MP4 and failure/negative custody gates pass; no live camera/physical SD",
+    "voice": "Existing stock START semantic remains the reuse candidate; no microphone event delivery or prerecord binding acceptance"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/android/yi4k-control-0.4.8-debug.apk",
+      "bytes": 11658909,
+      "sha256": "161a301f6aaf090fb31e887a44659346af989a33eaf44af143d056959bda68fa",
+      "status": "pass_android_0_4_8_debug_apk",
+      "scope": "host/AVD only; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/android-ui-0.4.8.md",
+      "bytes": 3508,
+      "sha256": "a524d403a94aeba196e59e75289a1de65b4b969065e312793ef9b360e4350536",
+      "status": "documented",
+      "scope": "host/AVD only; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/2026-11-12-build-0.4.8.json",
+      "bytes": 4818,
+      "sha256": "1fd86c452eaf69e27492b523a06ad5d336cd2785b8522a9d3eb00392b1d68396",
+      "status": "pass_android_0_4_8_build",
+      "scope": "host/AVD only; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/android/0.4.8-device-reports/settings-values-run01/acceptance.json",
+      "bytes": 4602,
+      "sha256": "67ed5a2046737aa41f66e7798a77506408f6f2bde893a693c4ab78175d0e9599",
+      "status": "pass_android_settings_values",
+      "scope": "host/AVD only; no physical phone or camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-eis-candidate-stock-affine-run03/final-review.json",
+      "bytes": 20514,
+      "sha256": "a8f1fafd34eb5e909dcddac2509862eb302413d6b40c86253d823967be13505d",
+      "status": "pass_host_stock_affine_seam",
+      "scope": "synthetic geometry and offline ARM replay; no camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/eis-candidate-stock-affine.md",
+      "bytes": 6032,
+      "sha256": "eb28133b0312b0f69871ca3d6d3e34013c0fb735b3cd057dbc94db5e93b62d41",
+      "status": "documented",
+      "scope": "host/offline; replacement deployment not ready",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-rpc-external-entry-run01/audit.json",
+      "bytes": 7464,
+      "sha256": "b3ccd7a83c3c8afde153d37f9ae72cabeaa8cba5c4ca1d4847236e4e4ed46b4d",
+      "status": "pass_bounded_negative_entry_audit",
+      "scope": "original ARM under Unicorn with synthetic services; no camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/device-1107-native-rpc-external-entry-audit.md",
+      "bytes": 1239,
+      "sha256": "2098a6e653252e4125a596edfe6330cc5de465c03bec9e6a55e9b1eeb073bac6",
+      "status": "documented",
+      "scope": "offline negative audit; no deployment",
+      "device_access": false
+    },
+    {
+      "path": "docs/device-1107-stock-entry-approved-run01.md",
+      "bytes": 6054,
+      "sha256": "29bce4fcf6e59c03cbcfd8fc56d6084ee603b57652d5e5bc1f8539e0f2a50234",
+      "status": "pass_stock_diagnostic_lifecycle",
+      "scope": "approved stock diagnostic only; no custom ARM/RAM/firmware write",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-spool-ring-parent-review-run03/review.json",
+      "bytes": 2859,
+      "sha256": "e6326880d80d6787b09c7eb75f432a8c4bb5a5c0c917af8ba91fb2baf439e193",
+      "status": "pass_independent_C_spool_ring_native_export_review",
+      "scope": "archive replay/host typed triggers only; no camera/physical SD",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-spool-ring-recovered-run03/audit.json",
+      "bytes": 19481182,
+      "sha256": "47c2050c788b709cebce20cf54180219ad412b258bce4429dd3dc4b2ab48f513",
+      "status": "pass_C_spool_ring_original_ARM_export",
+      "scope": "archive replay/host typed voice; no camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-spool-ring-shutter-export-run03/audit.json",
+      "bytes": 19481937,
+      "sha256": "823e877cc943db4a75aa1ae79e685214ba7e8d19c3431339422d30e3dbb868aa",
+      "status": "pass_C_spool_ring_original_ARM_export",
+      "scope": "archive replay/host typed shutter; no camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-spool-ring-interrupted-run03/audit.json",
+      "bytes": 3875822,
+      "sha256": "6ade107296c0c1467872ec1e92733e046ca0dc86301daad20fad65a4932ded9f",
+      "status": "pass_failure_retained_pending",
+      "scope": "host process-exit recovery; no camera",
+      "device_access": false
+    },
+    {
+      "path": "artifacts/verification/2026-11-12-native-spool-ring-close-failure-run03/audit.json",
+      "bytes": 3921776,
+      "sha256": "d9b016b3b1c9a4756e6be783845d98aada0282042f9727e7cb0d0f6f8c798668",
+      "status": "pass_failure_retained_pending",
+      "scope": "host short-close recovery; no camera",
+      "device_access": false
+    },
+    {
+      "path": "docs/prerecord-native-spool-ring.md",
+      "bytes": 3086,
+      "sha256": "a872cbcb10e26dc974d0d49b1e2641e39e1d8441882573321351ceebfc052628",
+      "status": "documented",
+      "scope": "offline native spool/seal to ARM mux; no camera/physical SD",
+      "device_access": false
+    },
+    {
+      "path": "scripts/prerecord_native_spool_ring.py",
+      "bytes": 22616,
+      "sha256": "49635f4f9166c64170cce823082b331b8e222754e89a832b6cb6b51a081e5bf7",
+      "status": "source",
+      "scope": "host-only integration",
+      "device_access": false
+    },
+    {
+      "path": "scripts/verify_prerecord_native_spool_ring.py",
+      "bytes": 12083,
+      "sha256": "073907b437d7a25d4a39afa177306659167a519e626d992638c9367c5725c724",
+      "status": "source",
+      "scope": "independent host verifier",
+      "device_access": false
+    },
+    {
+      "path": "scripts/tests/test_prerecord_native_spool_ring.py",
+      "bytes": 4371,
+      "sha256": "5bf9bfcdc2e689f33e55d43afde21ce0cd3abc2113c79ad88cae7d32c7532100",
+      "status": "pass_6_tests",
+      "scope": "host unit tests",
+      "device_access": false
+    }
+  ],
+  "limits": [
+    "No new camera API, firmware, RAM, partition, recording, voice or shutter operation in this continuation",
+    "Host typed voice/shutter injection is not microphone/GPIO acceptance",
+    "Archive replay is not realtime encoder/FIFO or physical SD durability",
+    "Stock diagnostic output is not custom ARM execution",
+    "Affine seam is not calibrated EIS deployment or encoded-video quality evidence"
+  ],
+  "remaining": [
+    "Custom EIS entry plus I-cache/SMP completion and independent recovery",
+    "Real gyro/lens/axis/frame calibration and encoded-video comparison",
+    "Live encoder/FIFO callback, one-minute physical SD ring and storage-failure recovery",
+    "Original spoken command/physical shutter bound to camera prerecord backend",
+    "Physical Android phone, real camera system clock synchronization and UI acceptance"
+  ]
+}

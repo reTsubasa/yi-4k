@@ -1,0 +1,46 @@
+{
+  "verification": "2026-11-11 independent offline/static regression rerun 03",
+  "device_access": false,
+  "firmware_execution": false,
+  "writes_to_device": false,
+  "items": [
+    {
+      "path": "artifacts/android/yi4k-control-0.3.10-debug.apk",
+      "bytes": 11533797,
+      "sha256": "8707ecf91f042dec3c3c20906150b5c1a175a6040973d4e344e5256f80987faa"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-build-0.3.10.json",
+      "bytes": 1601,
+      "sha256": "580daf8f1117ca0d11d6fbab8dff4b5e5e8973c4ee42198451ed9763b87b137a"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-apk-integrity-0.3.10.json",
+      "bytes": 582,
+      "sha256": "95606481486bd59d71cdda79301a3a97aa17cf3bd750390eb5a11ffa81d42d46"
+    },
+    {
+      "path": "docs/android-delivery-audit-0.3.10.md",
+      "bytes": 1546,
+      "sha256": "bfb52fe70f5e21865aef8dfc88af35f91fd6971c24e7c692002a669661efacb2"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-transfer-dependencies/audit.json",
+      "bytes": 44042,
+      "sha256": "72de7b6f5ce25010955827765e79538c08ba782ba6c5026b752f1231d0ef00bd"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-close-quiescence/audit.json",
+      "bytes": 8946,
+      "sha256": "127f2a500dc0b3314b3b1240d94e6569c5b343e38bbc0f4e98fa15e1b79fb1f8"
+    }
+  ],
+  "results": {
+    "android_0_3_10": "debug unit tests 110 passed; release unit tests 110 passed; lintDebug, assembleDebug, assembleRelease passed; PrototypeRenderTest and CaptureUiTest passed; debug APK v2 signature verified",
+    "host_python": "scripts/tests unittest discovery: 37 passed, 0 failures, 0 errors",
+    "capture_trigger": "host + ARM semantic checks: 13068 passed in .venv-reverse",
+    "eis_transfer_dependency": "audit script and JSON validation passed",
+    "prerecord_close_quiescence": "12 assertions, Python compile, JSON validation passed"
+  },
+  "scope": "Evidence is host-side/offline or static; no camera access, ORC/RTOS execution, firmware write, RAM write, partition write or boot-region write."
+}

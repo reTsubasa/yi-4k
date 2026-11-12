@@ -1,0 +1,43 @@
+python -B -u <<'YI_NATIVE_TRACE_PY'
+> import os,stat,hashlib,json,base64,subprocess
+> probe = {'identifier': 'cad16f01cc00', 'paths': {'script': '/tmp/SD0/autoexec.
+ash', 'worker': '/tmp/SD0/yi4k_trace_cad16f01cc00.py', 'log_marker': '/tmp/SD0/s
+ave_log_enable.script', 'before': '/tmp/SD0/yi4k_trace_cad16f01cc00_before.bin',
+ 'active': '/tmp/SD0/yi4k_trace_cad16f01cc00_active.bin', 'after': '/tmp/SD0/yi4
+k_trace_cad16f01cc00_after.bin', 'fingerprint': '/tmp/SD0/yi4k_trace_cad16f01cc0
+0_code.bin', 'record': '/tmp/SD0/yi4k_trace_cad16f01cc00_record.json', 'attempt'
+: '/tmp/SD0/yi4k_trace_cad16f01cc00_attempt', 'begin': '/tmp/yi4k_trace_cad16f01
+cc00_begin', 'done': '/tmp/yi4k_trace_cad16f01cc00_done'}, 'fields': {14: 1, 15:
+ 1, 20: 1, 22: 50}, 'payloads': {'script': 'dCBpcGMgcnBjIGNsbnQgZXhlYzEgJ3RvdWNo
+IC90bXAveWk0a190cmFjZV9jYWQxNmYwMWNjMDBfYmVnaW4nCnNhdmViaW4gYzpceWk0a190cmFjZV9j
+YWQxNmYwMWNjMDBfY29kZS5iaW4gMHhBMDM5NEJBMCBsIDgKc2F2ZWJpbiBjOlx5aTRrX3RyYWNlX2Nh
+ZDE2ZjAxY2MwMF9iZWZvcmUuYmluIDB4QTA3NTdBRjggbCA3NAp0IGltZ3Byb2MgLWVpcyAxMDAgMjIg
+NTAKdCBpbWdwcm9jIC1laXMgMTAwIDE0IDEKdCBpbWdwcm9jIC1laXMgMTAwIDE1
+> for name in probe['paths'].values():
+>     assert not os.path.lexists(name), 'Refuse existing path: '+name
+> created=[]
+> try:
+>     for key in ('worker','log_marker','script'):
+>         path=probe['paths'][key]
+>         data=base64.b64decode(probe['payloads'][key])
+>         fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
+>         created.append((path,probe['payload_sha256'][key]))
+>         with os.fdopen(fd,'wb') as file:file.write(data)
+>         assert hashlib.sha256(open(path,'rb').read()).hexdigest()==probe['payl
+oad_sha256'][key]
+>     subprocess.check_call(['sync'])
+> except:
+>     for path,expected in reversed(created):
+>         if os.path.isfile(path) and hashlib.sha256(open(path,'rb').read()).hex
+digest()==expected:os.unlink(path)
+>     raise
+> print('YI_TRACE_RESULT '+json.dumps({'created_exclusively':True,'payload_sha25
+6':probe['payload_sha256']}))
+> 
+> YI_NATIVE_TRACE_PY
+  File "<stdin>", line 2
+    probe = {'identifier': 'cad16f01cc00', 'paths': {'script': '/tmp/SD0/autoexec.ash', 'worker': '/tmp/SD0/yi4k_trace_cad16f01cc00.py', 'log_marker': '/tmp/SD0/save_log_enable.script', 'before': '/tmp/SD0/yi4k_trace_cad16f01cc00_before.bin', 'active': '/tmp/SD0/yi4k_trace_cad16f01cc00_active.bin', 'after': '/tmp/SD0/yi4k_trace_cad16f01cc00_after.bin', 'fingerprint': '/tmp/SD0/yi4k_trace_cad16f01cc00_code.bin', 'record': '/tmp/SD0/yi4k_trace_cad16f01cc00_record.json', 'attempt': '/tmp/SD0/yi4k_trace_cad16f01cc00_attempt', 'begin': '/tmp/yi4k_trace_cad16f01cc00_begin', 'done': '/tmp/yi4k_trace_cad16f01cc00_done'}, 'fields': {14: 1, 15: 1, 20: 1, 22: 50}, 'payloads': {'script': 'dCBpcGMgcnBjIGNsbnQgZXhlYzEgJ3RvdWNoIC90bXAveWk0a190cmFjZV9jYWQxNmYwMWNjMDBfYmVnaW4nCnNhdmViaW4gYzpceWk0a190cmFjZV9jYWQxNmYwMWNjMDBfY29kZS5iaW4gMHhBMDM5NEJBMCBsIDgKc2F2ZWJpbiBjOlx5aTRrX3RyYWNlX2NhZDE2ZjAxY2MwMF9iZWZvcmUuYmluIDB4QTA3NTdBRjggbCA3NAp0IGltZ3Byb2MgLWVpcyAxMDAgMjIgNTAKdCBpbWdwcm9jIC1laXMgMTAwIDE0IDEKdCBpbWdwcm9jIC1laXMgMTAwIDE1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+SyntaxError: EOL while scanning string literal
+~ # echo __YI_CAPTURE_846059d4ab314ec0b3b9dc5a27461fed__
+__YI_CAPTURE_846059d4ab314ec0b3b9dc5a27461fed__

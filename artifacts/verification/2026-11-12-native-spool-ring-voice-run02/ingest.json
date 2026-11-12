@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/usr/bin/clang",
+    "-arch",
+    "x86_64",
+    "-shared",
+    "-fPIC",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fno-builtin",
+    "-I/Users/hyc/Documents/yi4k/sdk",
+    "artifacts/verification/2026-11-12-native-spool-ring-voice-run02/spool-ring-posix.c",
+    "/Users/hyc/Documents/yi4k/sdk/yi4k_packet_spool.c",
+    "/Users/hyc/Documents/yi4k/sdk/yi4k_spool_seal.c",
+    "-o",
+    "artifacts/verification/2026-11-12-native-spool-ring-voice-run02/spool-ring-posix.dylib"
+  ],
+  "consumed_packets": 4919,
+  "device_access": false,
+  "evicted_segments": [
+    1
+  ],
+  "final_owned_bytes": 356541891,
+  "limits": [
+    "Archive inputs decoded before host ingest; no real encoder producer, DMA lease, callback or throughput proof",
+    "Serialized host owner plus POSIX fsync; not physical SD power loss",
+    "Ring retains whole packet/GOP predecessor beyond60s; output and recovery copies are separate storage"
+  ],
+  "peak_owned_bytes": 356591461,
+  "retained_segments": 63,
+  "ring_manifest": "artifacts/verification/2026-11-12-native-spool-ring-voice-run02/spool/ring.json",
+  "ring_manifest_sha256": "4678f51aba6ad372e81f52910cf85ed3a3d8d72ee33cf55fb67cf1a34943ecdd",
+  "status": "pass_archived_native_packets_to_C_spool_ring"
+}

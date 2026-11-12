@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T08:20:45+00:00",
+  "status": "pass_fast_shutter_regression",
+  "scope": "Host Android/Robolectric only; no physical phone or camera write",
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.4.9-debug.apk",
+    "bytes": 12027193,
+    "sha256": "795ec29f0e2c34eac292e8ae235b7378a0bc0001d3ad8cf91ef54c496a3a152e"
+  },
+  "commands": [
+    "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
+    "./gradlew :app:testDebugUnitTest --tests dev.yi4k.control.CaptureAlbumFeedbackTest --tests dev.yi4k.control.CaptureUiTest",
+    "./gradlew :app:lintDebug"
+  ],
+  "results": {
+    "full_debug_unit_tests": {
+      "tests": 209,
+      "failures": 0,
+      "errors": 0
+    },
+    "targeted_shutter_tests": "pass",
+    "lint": {
+      "errors": 0,
+      "warnings": 74
+    },
+    "assemble_debug": "pass"
+  },
+  "verified_behaviour": [
+    "platform shutter click starts before camera response",
+    "flash and optimistic preview-to-album flight run on UI thread without waiting for network",
+    "camera JPEG/indexing runs on command and thumbnail workers",
+    "confirmed JPEG replaces optimistic cover without a second flight"
+  ],
+  "device_access": false,
+  "physical_phone_acceptance": false,
+  "source_change": "Capture viewfinder snapshot before white flash overlay so the optimistic album flight contains the preview image."
+}

@@ -1,0 +1,107 @@
+{
+  "video_resolution": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "video_resolution",
+    "options": [
+      "3840x2160 30P 16:9",
+      "3840x2160 24P 16:9",
+      "3840x2160 24P 16:9 super",
+      "2704x1520 60P 16:9",
+      "2704x1520 30P 16:9",
+      "2704x1520 24P 16:9",
+      "2704x1520 48P 16:9",
+      "2704x1520 30P 16:9 super",
+      "2704x2032 30P 4:3",
+      "1920x1440 60P 4:3",
+      "1920x1440 30P 4:3",
+      "1920x1440 24P 4:3",
+      "1920x1440 48P 4:3",
+      "1920x1080 120P 16:9",
+      "1920x1080 90P 16:9 super",
+      "1920x1080 60P 16:9",
+      "1920x1080 60P 16:9 super",
+      "1920x1080 30P 16:9",
+      "1920x1080 30P 16:9 super",
+      "1920x1080 48P 16:9",
+      "1920x1080 24P 16:9",
+      "1280x960 120P 4:3",
+      "1280x960 60P 4:3",
+      "1280x720 240P 16:9",
+      "1280x720 120P 16:9 super",
+      "1280x720 60P 16:9 super",
+      "848x480 240P 16:9"
+    ]
+  },
+  "iq_eis_enable": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "iq_eis_enable",
+    "options": [
+      "on",
+      "off"
+    ]
+  },
+  "video_quality": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "video_quality",
+    "options": [
+      "S.Fine",
+      "Fine",
+      "Normal"
+    ]
+  },
+  "system_mode": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "system_mode",
+    "options": [
+      "capture",
+      "record"
+    ]
+  },
+  "photo_size": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "photo_size",
+    "options": [
+      "12MP (4000x3000 4:3) fov:w",
+      "7MP (3008x2256 4:3) fov:w",
+      "7MP (3008x2256 4:3) fov:m",
+      "5MP (2560x1920 4:3) fov:m",
+      "8MP (3840x2160 16:9) fov:w"
+    ]
+  },
+  "rec_mode": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "rec_mode",
+    "options": [
+      "record",
+      "record_timelapse",
+      "record_loop",
+      "record_photo",
+      "record_slow_motion"
+    ]
+  },
+  "loop_rec_duration": {
+    "rval": 0,
+    "msg_id": 9,
+    "permission": "settable",
+    "param": "loop_rec_duration",
+    "options": [
+      "5 minutes",
+      "20 minutes",
+      "60 minutes",
+      "120 minutes",
+      "max"
+    ]
+  }
+}

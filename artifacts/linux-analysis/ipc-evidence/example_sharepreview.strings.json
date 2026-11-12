@@ -1,0 +1,398 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x18a",
+    "text": "=){eI"
+  },
+  {
+    "offset": "0x579",
+    "text": "libpthread.so.0"
+  },
+  {
+    "offset": "0x589",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x5a5",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x5b9",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x5d3",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0x5e1",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0x5f6",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x5fc",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x60b",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0x61f",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0x631",
+    "text": "_init"
+  },
+  {
+    "offset": "0x637",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x641",
+    "text": "sprintf"
+  },
+  {
+    "offset": "0x649",
+    "text": "perror"
+  },
+  {
+    "offset": "0x650",
+    "text": "mmap64"
+  },
+  {
+    "offset": "0x657",
+    "text": "signal"
+  },
+  {
+    "offset": "0x65e",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x665",
+    "text": "abort"
+  },
+  {
+    "offset": "0x66b",
+    "text": "memset"
+  },
+  {
+    "offset": "0x672",
+    "text": "fputs"
+  },
+  {
+    "offset": "0x678",
+    "text": "fclose"
+  },
+  {
+    "offset": "0x67f",
+    "text": "optarg"
+  },
+  {
+    "offset": "0x686",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x68d",
+    "text": "munmap"
+  },
+  {
+    "offset": "0x694",
+    "text": "getopt_long"
+  },
+  {
+    "offset": "0x6a0",
+    "text": "usleep"
+  },
+  {
+    "offset": "0x6a7",
+    "text": "fwrite"
+  },
+  {
+    "offset": "0x6b3",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x6bb",
+    "text": "fopen64"
+  },
+  {
+    "offset": "0x6c3",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x6d5",
+    "text": "__cxa_atexit"
+  },
+  {
+    "offset": "0x6e2",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x6e9",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x6f5",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x703",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x70f",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x71c",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x12c9",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x130c",
+    "text": "do_mmap"
+  },
+  {
+    "offset": "0x1314",
+    "text": "RT_SharePreview_Enable"
+  },
+  {
+    "offset": "0x132b",
+    "text": "RT_SharePreview_GetStatus"
+  },
+  {
+    "offset": "0x1345",
+    "text": "RT_SharePreview_GetMemInfo"
+  },
+  {
+    "offset": "0x1365",
+    "text": "example_sharepreview.c"
+  },
+  {
+    "offset": "0x137c",
+    "text": "%s: Got signal %d, program exits!"
+  },
+  {
+    "offset": "0x139f",
+    "text": "Fail to do munmap:"
+  },
+  {
+    "offset": "0x13b2",
+    "text": "%s: phy_addr=0x%08x, size=%u"
+  },
+  {
+    "offset": "0x13d0",
+    "text": "Fail to open /dev/mem"
+  },
+  {
+    "offset": "0x13e6",
+    "text": "Fail to do mmap"
+  },
+  {
+    "offset": "0x13f6",
+    "text": "Successfull! mmap 0x%08x to 0x%08x, size=%u"
+  },
+  {
+    "offset": "0x1423",
+    "text": "%s: Fail to create client."
+  },
+  {
+    "offset": "0x143f",
+    "text": "%s: fail to do ambaipc_clnt_call(). %d"
+  },
+  {
+    "offset": "0x1467",
+    "text": "Set interval as %d. (%s)"
+  },
+  {
+    "offset": "0x1481",
+    "text": "Usage: %s [Options]"
+  },
+  {
+    "offset": "0x1496",
+    "text": "Options:"
+  },
+  {
+    "offset": "0x14a1",
+    "text": "-d: run as background daemon"
+  },
+  {
+    "offset": "0x14c0",
+    "text": "-v: enable more debug message"
+  },
+  {
+    "offset": "0x14e0",
+    "text": "-i [us]: interval (in us) to do frame processing"
+  },
+  {
+    "offset": "0x1516",
+    "text": "RTOS Did not enable the SharePreview service! Please check it! %d"
+  },
+  {
+    "offset": "0x1559",
+    "text": "Fail to do RT_SharePreview_GetMemInfo! %d"
+  },
+  {
+    "offset": "0x1584",
+    "text": "%s: ShareInfo addr is not aligned to 4K (0x%08x to 0x%08x)!!"
+  },
+  {
+    "offset": "0x15c1",
+    "text": "%s: ReaderInfo addr is not aligned to 4K (0x%08x to 0x%08x)!!"
+  },
+  {
+    "offset": "0x15ff",
+    "text": "active=0, there is no valid data, yet"
+  },
+  {
+    "offset": "0x1625",
+    "text": "Process Data:"
+  },
+  {
+    "offset": "0x1633",
+    "text": "active: %u"
+  },
+  {
+    "offset": "0x163f",
+    "text": "reading: %u"
+  },
+  {
+    "offset": "0x164c",
+    "text": "size: %u"
+  },
+  {
+    "offset": "0x1656",
+    "text": "pitch: %u"
+  },
+  {
+    "offset": "0x1661",
+    "text": "width: %u"
+  },
+  {
+    "offset": "0x166c",
+    "text": "height: %u"
+  },
+  {
+    "offset": "0x1678",
+    "text": "rp: %p"
+  },
+  {
+    "offset": "0x1680",
+    "text": "/tmp/SD0/PreviewY_%06d.y"
+  },
+  {
+    "offset": "0x169d",
+    "text": "en_daemon"
+  },
+  {
+    "offset": "0x16a7",
+    "text": "en_debug"
+  },
+  {
+    "offset": "0x16b0",
+    "text": "interval"
+  },
+  {
+    "offset": "0x1899",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x18cc",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x18d6",
+    "text": ".interp"
+  },
+  {
+    "offset": "0x18de",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0x18ec",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x18ff",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x1905",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x190d",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x1915",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x1922",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x1931",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x193a",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x1943",
+    "text": ".init"
+  },
+  {
+    "offset": "0x1949",
+    "text": ".text"
+  },
+  {
+    "offset": "0x194f",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x1955",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x195d",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x1968",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x1972",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x197e",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x198f",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x199d",
+    "text": ".data"
+  },
+  {
+    "offset": "0x19a8",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "checked_utc": "2026-11-09T01:46:33.717949+00:00",
+  "api_events": [
+    {
+      "host_monotonic": 1023490.668997791,
+      "utc": "2026-11-09T01:46:33.739176+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1023491.49285275,
+      "utc": "2026-11-09T01:46:34.563217+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1023491.492964083,
+      "utc": "2026-11-09T01:46:34.563280+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1023491.497128041,
+      "utc": "2026-11-09T01:46:34.567449+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1023491.497201291,
+      "utc": "2026-11-09T01:46:34.567518+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1023491.502438375,
+      "utc": "2026-11-09T01:46:34.572764+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  }
+}

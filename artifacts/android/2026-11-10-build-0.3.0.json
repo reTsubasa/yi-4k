@@ -1,0 +1,73 @@
+{
+  "evidence_type": "Android host build with Robolectric renders; no phone/camera/AVD execution",
+  "packaged_at_utc": "2026-11-10T10:24:55.291619+00:00",
+  "apk": "artifacts/android/yi4k-control-0.3.0-debug.apk",
+  "latest_alias": "artifacts/android/yi4k-control-debug.apk",
+  "sha256": "93a68962f217f09a9ccb79e42b521c826c67c24eb3162291a2424c9de59cb3e9",
+  "size_bytes": 11682588,
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.3.0",
+  "version_code": 3,
+  "min_sdk": 29,
+  "target_sdk": 35,
+  "build_command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home ANDROID_HOME=/Users/hyc/Library/Android/sdk ./android/gradlew -p android test lintDebug assembleDebug compileDebugAndroidTestJavaWithJavac",
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "compile_debug_android_test_java": true,
+    "signature_verified": true,
+    "signature_scheme": "v2",
+    "device_execution": false
+  },
+  "tests": {
+    "debug": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "release": {
+      "tests": 95,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 54
+  },
+  "new_features": [
+    "Local video import through Android system picker",
+    "Trim/mute/quarter-turn rotation/grayscale with Media3 preview and Transformer export",
+    "Pending MediaStore publication and cancellation cleanup",
+    "Source and edit-parameter restoration after configuration recreation",
+    "Per-session private cache ownership and stale-session cleanup",
+    "Real photo thumbnails on explicit bounded request; real video cover retained after original viewing"
+  ],
+  "thumbnail_limits": {
+    "long_edge_pixels": 384,
+    "photo_transfer_limit_bytes": 12582912,
+    "cache_item_limit": 128,
+    "cache_byte_limit": 16777216,
+    "automatically_downloads_videos": false,
+    "session_isolated": true
+  },
+  "editor_limits": [
+    "BGM/text/transitions/speed/multiclip editing not implemented",
+    "Export requires editor foreground; background/rotation cancels current export; restored edits can be re-exported",
+    "Real Android codecs, clipping precision, audio sync, effects and MediaStore require device acceptance"
+  ],
+  "device_test": {
+    "name": "VideoEditDeviceTest",
+    "compiled": true,
+    "executed": false,
+    "fixture_sha256": "05783f22c8ddfe3d8dde662dae05447683f945e120cc16ef5d24610e9b3a772b",
+    "fixture": "Synthetic 3s H.264 320x180 at 15fps and AAC 48kHz, generated with project standalone FFmpeg 6.1; not camera footage"
+  },
+  "preview_scope": "Media3 RTSP network/transport host checks remain passing. No real camera RTP decode or phone first-frame acceptance.",
+  "render_scope": "Robolectric host renders, not device screenshots; playback cover is a test fixture",
+  "firmware_scope": "No camera access/writes in this round; EIS replacement and camera prerecord remain unimplemented",
+  "reports": "artifacts/android/0.3.0-reports"
+}

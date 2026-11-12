@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "device_access": false,
+  "scope": "host regression; no camera operations",
+  "tests": [
+    {
+      "command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_buffer.py -v",
+      "count": 12,
+      "status": "pass",
+      "elapsed_seconds": 17.922
+    },
+    {
+      "command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_media_store.py -v",
+      "count": 5,
+      "status": "pass",
+      "elapsed_seconds": 0.01
+    },
+    {
+      "command": "python3 -m unittest discover -s scripts/tests -p test_prerecord_real_window.py -v",
+      "count": 1,
+      "status": "pass",
+      "elapsed_seconds": 66.128
+    }
+  ],
+  "test_source_sha256": {
+    "scripts/tests/test_prerecord_buffer.py": "51ee24529e3a21f54842fd81c04ff9f6eb34c11a5608ca13c5655ddc9727e9bf",
+    "scripts/tests/test_prerecord_media_store.py": "431f4d6c3b1d1fa2fb00978fce1086933f1cb35582925a991128ef0e9c2ec6cc",
+    "scripts/tests/test_prerecord_real_window.py": "19ac55aa3509406652e4200dd808752da3e3dbecd2bc7df58e51a46a1f2ee886"
+  }
+}

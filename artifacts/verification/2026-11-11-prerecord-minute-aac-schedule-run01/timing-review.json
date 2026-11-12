@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "offline_only": true,
+  "status": "expected_native_consumer_rejection_preserved",
+  "ffprobe": {
+    "version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers",
+    "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f"
+  },
+  "ffmpeg_sha256": "ca8945e5eef946a246d29c943b21f10db345a2ef050dd7ea1c77f877277dc2fa",
+  "audit_sha256": "b44dbcf72160dac6a31114ec1598a99044bad1d25fe3544dbf6cc1a6be1da6f3",
+  "review_script_sha256": "bee7ee1de14250efc012d25f481749393955cc62e17332445e26a9f96a423580",
+  "executed_audit_script_digest_matches": true,
+  "source_packet_coverage": {
+    "0": {
+      "source_packets": 1920,
+      "exported_packets": 1920,
+      "source_order_payload_identity": true,
+      "missing": 0,
+      "duplicates": 0
+    },
+    "1": {
+      "source_packets": 3003,
+      "exported_packets": 3003,
+      "source_order_payload_identity": true,
+      "missing": 0,
+      "duplicates": 0
+    }
+  },
+  "segments": [
+    {
+      "file": "native-segment-1.mp4",
+      "sha256": "84252722f3928926f3f79d9a7617efc5fe2413e3d827d9daa10e41ca20e99c42",
+      "consumer_gate": {
+        "status": "pass",
+        "same_retained_payload": true,
+        "exact_retained_timing": true,
+        "missing": [],
+        "unexpected": [],
+        "failures": []
+      },
+      "iso_stts_plus_empty_edit_projection_gate": {
+        "status": "pass",
+        "same_retained_payload": true,
+        "exact_retained_timing": true,
+        "missing": [],
+        "unexpected": [],
+        "failures": []
+      },
+      "source_epoch": {
+        "numerator": 0,
+        "denominator": 1,
+        "seconds": 0.0
+      },
+      "tracks": [
+        {
+          "stream": 0,
+          "media_clock": 30000,
+          "media_duration": 1801800,
+          "empty_edit": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "stts_duration_set": [
+            1001
+          ],
+          "first_ignored_pts": 0,
+          "last_ignored_duration": 1001
+        },
+        {
+          "stream": 1,
+          "media_clock": 48000,
+          "media_duration": 2882560,
+          "empty_edit": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "stts_duration_set": [
+            1024
+          ],
+          "first_ignored_pts": 0,
+          "last_ignored_duration": 1024
+        }
+      ],
+      "video_decode_matches_source": true,
+      "all_submitted_aac_pcm_matches": true,
+      "iso_duration_variant_changes": []
+    },
+    {
+      "file": "native-segment-2.mp4",
+      "sha256": "c78f4422a767a513ddb93413247e0fc3ae7614d1ec10200946bc68d3c01dd9fe",
+      "consumer_gate": {
+        "status": "reject",
+        "same_retained_payload": true,
+        "exact_retained_timing": false,
+        "missing": [],
+        "unexpected": [],
+        "failures": [
+          {
+            "stream": 0,
+            "source_index": 1919,
+            "source_sha256": "ab047196adf9e87febe012fdb7d5aca978a41b46a138faacd69bcd234563fffb",
+            "output_sha256": "ab047196adf9e87febe012fdb7d5aca978a41b46a138faacd69bcd234563fffb",
+            "same_payload": true,
+            "pts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "dts_error": {
+              "numerator": 0,
+              "denominator": 1,
+              "seconds": 0.0
+            },
+            "duration_error": {
+              "numerator": -1,
+              "denominator": 150,
+              "seconds": -0.006666666666666667
+            }
+          }
+        ]
+      },
+      "iso_stts_plus_empty_edit_projection_gate": {
+        "status": "pass",
+        "same_retained_payload": true,
+        "exact_retained_timing": true,
+        "missing": [],
+        "unexpected": [],
+        "failures": []
+      },
+      "source_epoch": {
+        "numerator": 4504,
+        "denominator": 75,
+        "seconds": 60.053333333333335
+      },
+      "tracks": [
+        {
+          "stream": 0,
+          "media_clock": 30000,
+          "media_duration": 120120,
+          "empty_edit": {
+            "numerator": 1,
+            "denominator": 150,
+            "seconds": 0.006666666666666667
+          },
+          "stts_duration_set": [
+            1001
+          ],
+          "first_ignored_pts": 0,
+          "last_ignored_duration": 1001
+        },
+        {
+          "stream": 1,
+          "media_clock": 48000,
+          "media_duration": 192512,
+          "empty_edit": {
+            "numerator": 0,
+            "denominator": 1,
+            "seconds": 0.0
+          },
+          "stts_duration_set": [
+            1024
+          ],
+          "first_ignored_pts": 0,
+          "last_ignored_duration": 1024
+        }
+      ],
+      "video_decode_matches_source": true,
+      "all_submitted_aac_pcm_matches": true,
+      "iso_duration_variant_changes": []
+    }
+  ],
+  "strict_native_consumer_gate": "reject",
+  "iso_projection_is_not_publication_gate": true,
+  "conclusion": "End-assignment fixes native Close0 AAC coverage. Native ISO sample tables and delays describe every exact source interval. This ffprobe applies video delay and reports a shorter last packet, consistent with clipping against the unshifted duration; consumer internals were not audited. No gate was weakened.",
+  "limitations": [
+    "Standards-level timestamp reconstruction is not a proven consumer implementation or deployment fix.",
+    "No live producer queues, lookahead ownership, SD persistence or device integration were tested."
+  ]
+}

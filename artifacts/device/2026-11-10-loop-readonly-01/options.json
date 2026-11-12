@@ -1,0 +1,171 @@
+{
+  "utc": "2026-11-10T15:56:28.490096+00:00",
+  "host": "192.168.42.1",
+  "status": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  },
+  "queries": [
+    {
+      "key": "rec_mode",
+      "response": {
+        "rval": 0,
+        "msg_id": 9,
+        "permission": "settable",
+        "param": "rec_mode",
+        "options": [
+          "record",
+          "record_timelapse",
+          "record_loop",
+          "record_photo",
+          "record_slow_motion"
+        ]
+      }
+    },
+    {
+      "key": "loop_rec_duration",
+      "response": {
+        "rval": 0,
+        "msg_id": 9,
+        "permission": "settable",
+        "param": "loop_rec_duration",
+        "options": [
+          "5 minutes",
+          "20 minutes",
+          "60 minutes",
+          "120 minutes",
+          "max"
+        ]
+      }
+    },
+    {
+      "key": "record_loop",
+      "error": "TimeoutError('Camera API response timeout')"
+    }
+  ],
+  "writes_to_device": false,
+  "settings_changed": false,
+  "api_events": [
+    {
+      "host_monotonic": 1160879.779485833,
+      "utc": "2026-11-10T15:56:22.424215+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1160879.787135583,
+      "utc": "2026-11-10T15:56:22.431864+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1160879.787176166,
+      "utc": "2026-11-10T15:56:22.431899+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 9,
+        "param": "rec_mode"
+      }
+    },
+    {
+      "host_monotonic": 1160879.795280208,
+      "utc": "2026-11-10T15:56:22.440003+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 9,
+        "permission": "settable",
+        "param": "rec_mode",
+        "options": [
+          "record",
+          "record_timelapse",
+          "record_loop",
+          "record_photo",
+          "record_slow_motion"
+        ]
+      }
+    },
+    {
+      "host_monotonic": 1160879.795297208,
+      "utc": "2026-11-10T15:56:22.440020+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 9,
+        "param": "loop_rec_duration"
+      }
+    },
+    {
+      "host_monotonic": 1160879.80272075,
+      "utc": "2026-11-10T15:56:22.447447+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 9,
+        "permission": "settable",
+        "param": "loop_rec_duration",
+        "options": [
+          "5 minutes",
+          "20 minutes",
+          "60 minutes",
+          "120 minutes",
+          "max"
+        ]
+      }
+    },
+    {
+      "host_monotonic": 1160879.802756291,
+      "utc": "2026-11-10T15:56:22.447478+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 9,
+        "param": "record_loop"
+      }
+    },
+    {
+      "host_monotonic": 1160885.828268958,
+      "utc": "2026-11-10T15:56:28.472907+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1160885.845425583,
+      "utc": "2026-11-10T15:56:28.490023+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1160885.845585125,
+      "utc": "2026-11-10T15:56:28.490177+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1160885.850239375,
+      "utc": "2026-11-10T15:56:28.494834+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ]
+}

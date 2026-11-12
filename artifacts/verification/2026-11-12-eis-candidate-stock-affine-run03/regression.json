@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/Users/hyc/Documents/yi4k/.venv-reverse/bin/python",
+    "-m",
+    "unittest",
+    "scripts.tests.test_eis_candidate_stock_affine",
+    "scripts.tests.test_eis_candidate_mesh",
+    "scripts.tests.test_eis_stock_mesh_layout",
+    "-q"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "----------------------------------------------------------------------\nRan 16 tests in 0.088s\n\nOK\n",
+  "tests": 16,
+  "device_access": false,
+  "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "capstone": "5.0.7",
+  "unicorn": "2.1.4",
+  "platform": "macOS-26.5-x86_64-i386-64bit-Mach-O",
+  "source_sha256": {
+    "scripts/eis_candidate_stock_affine.py": "d150ccc10202d0d5eda3b9ab0de97005f3f87328c66b5dfeb819d7086ea9fbb7",
+    "scripts/audit_eis_candidate_stock_affine.py": "52665ca9aa999d79d06233b8c411024476186f6f7939bd7e23b5fdf00d5036b0",
+    "scripts/tests/test_eis_candidate_stock_affine.py": "f638e301c4ae4b1d6cf4ebb562026e0df8a3981ccb9a6fffaf9658f7c4071a6d",
+    "scripts/eis_candidate_mesh.py": "60120c5f60ba01d0a7774844b1ebbe7b5caacbc8c982076f86f4eb403c9514a9",
+    "scripts/eis_stock_mesh_layout.py": "3ecdc63f103ee09f50a8146fcfba3a765adff6c2c8edf3d1cc956503b1480e97",
+    "scripts/audit_eis_generator_scope.py": "07c32d5bb166dcf94017168e1309fd6e5a4e4a01f80f9d5f7b860249874ceab1",
+    "scripts/analyze_eis_warp_publication.py": "c69fbca14a7bb0bd09bf9bc0e99aaa5742fa128c69eb29302ba7249ccb2bee13",
+    "scripts/audit_eis_orc_core.py": "2330acd941ea4d657cce7937863f7816606629e3b69c65479ed52b302ed9678d",
+    "docs/eis-candidate-stock-affine.md": "eb28133b0312b0f69871ca3d6d3e34013c0fb735b3cd057dbc94db5e93b62d41"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "action": "stage",
+  "host": "192.168.42.1",
+  "probe": {
+    "identifier": "9aaac7df1031",
+    "stem": "yi4k_sharepv_9aaac7df1031",
+    "marker": "/tmp/SD0/autoexec.ash",
+    "begin": "/tmp/yi4k_sharepv_9aaac7df1031_begin",
+    "init_after": "/tmp/yi4k_sharepv_9aaac7df1031_init_after",
+    "enable_after": "/tmp/yi4k_sharepv_9aaac7df1031_enable_after",
+    "disable_after": "/tmp/yi4k_sharepv_9aaac7df1031_disable_after",
+    "done": "/tmp/yi4k_sharepv_9aaac7df1031_done",
+    "rpc_script": "/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py",
+    "rpc_result": "/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc_result.json",
+    "autoexec": "t ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_begin'\nt app test sharepv init\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_init_after'\nt ipc rpc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py init'\nt app test sharepv en\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_enable_after'\nt ipc rpc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py enable'\nt app test sharepv dis\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_disable_after'\nt ipc rpc clnt exec1 'python /tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py disable'\nt ipc rpc clnt exec1 'touch /tmp/yi4k_sharepv_9aaac7df1031_done'\n",
+    "rpc_source": "import ctypes as C, json, os, sys, hashlib, signal\nsignal.alarm(8)\nphase=sys.argv[1]\nlibpath='/usr/lib/libambaipc.so'\nlib=C.CDLL(libpath)\nlib.ambaipc_clnt_create.argtypes=[C.c_uint32,C.c_uint32,C.c_uint32]; lib.ambaipc_clnt_create.restype=C.c_void_p\nlib.ambaipc_clnt_call.argtypes=[C.c_void_p,C.c_uint32,C.c_void_p,C.c_uint32,C.c_void_p,C.c_uint32,C.c_uint32]; lib.ambaipc_clnt_call.restype=C.c_int\nlib.ambaipc_clnt_destroy.argtypes=[C.c_void_p]; lib.ambaipc_clnt_destroy.restype=C.c_int\nc=lib.ambaipc_clnt_create(1,0x1000000c,1)\nr={'phase':phase,'library_sha256':hashlib.sha256(open(libpath,'rb').read()).hexdigest()}\nif not c:\n r['client']='null'\nelse:\n s=C.c_uint32(0xdeadbeef); r['status_rc']=lib.ambaipc_clnt_call(c,3,None,0,C.byref(s),4,1000); r['status']=s.value\n if r['status_rc']==0:\n  info=(C.c_uint32*6)(*[0xdeadbeef]*6); r['meminfo_rc']=lib.ambaipc_clnt_call(c,1,None,0,C.byref(info),24,1000); r['meminfo_u32']=list(info)\n r['destroy_rc']=lib.ambaipc_clnt_destroy(c)\ntry:\n old=json.load(open('/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc_result.json'))\nexcept:\n old=[]\nold.append(r)\nfd=os.open('/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc_result.json',os.O_WRONLY|os.O_CREAT|os.O_TRUNC,0600)\nos.write(fd,json.dumps(old,sort_keys=True))\nos.close(fd)\nprint('YI_SHAREPV_RPC '+json.dumps(r,sort_keys=True))\n",
+    "autoexec_sha256": "7358af59ed8f0f5685d76b79da6fae3e4eb3eeda4c2a5b548d059e133aa2a1cc",
+    "rpc_script_sha256": "8100031aefdac1d5098d286f7054b47940ca9a1d5d498952fb473abcd7765490",
+    "/tmp/SD0/autoexec.ash_sha256": "7358af59ed8f0f5685d76b79da6fae3e4eb3eeda4c2a5b548d059e133aa2a1cc",
+    "/tmp/SD0/yi4k_sharepv_9aaac7df1031_rpc.py_sha256": "8100031aefdac1d5098d286f7054b47940ca9a1d5d498952fb473abcd7765490",
+    "marker_sha256": "7358af59ed8f0f5685d76b79da6fae3e4eb3eeda4c2a5b548d059e133aa2a1cc"
+  },
+  "api_events": [
+    {
+      "host_monotonic": 1052018.146566791,
+      "utc": "2026-11-09T09:41:59.261538+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "host_monotonic": 1052018.959618625,
+      "utc": "2026-11-09T09:42:00.074859+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "host_monotonic": 1052018.960099583,
+      "utc": "2026-11-09T09:42:00.075022+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "host_monotonic": 1052018.964168291,
+      "utc": "2026-11-09T09:42:00.079092+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "host_monotonic": 1052018.964212625,
+      "utc": "2026-11-09T09:42:00.079131+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "host_monotonic": 1052018.981977666,
+      "utc": "2026-11-09T09:42:00.096907+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "host_monotonic": 1052018.982082583,
+      "utc": "2026-11-09T09:42:00.097000+00:00",
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    },
+    {
+      "host_monotonic": 1052018.999833291,
+      "utc": "2026-11-09T09:42:00.114756+00:00",
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 258
+      }
+    }
+  ],
+  "started_utc": "2026-11-09T09:41:59.240562+00:00",
+  "firmware_patched": false,
+  "memory_mapping_run": false,
+  "recording_requested": false,
+  "reboot_requested": false,
+  "status_before": {
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status",
+    "param": "idle"
+  }
+}

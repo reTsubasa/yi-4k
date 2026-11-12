@@ -1,0 +1,1140 @@
+{
+  "image_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+  "base": "0xa0100000",
+  "evidence": "raw table data plus Capstone inspection of matching table dispatcher loops",
+  "tables": [
+    {
+      "table": "antscmd",
+      "file_offset": "0x46b404",
+      "virtual_address": "0xa056b404",
+      "count": 69,
+      "stride": 8,
+      "dispatcher": "0xa01ab8bc",
+      "records": [
+        {
+          "index": 0,
+          "name": "lcd",
+          "name_pointer": "0xa0633cd0",
+          "handler": "0xa01ab5dc",
+          "entry_file_offset": "0x46b404",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_lcd"
+        },
+        {
+          "index": 1,
+          "name": "led_on",
+          "name_pointer": "0xa056b040",
+          "handler": "0xa01ac514",
+          "entry_file_offset": "0x46b40c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_led_on"
+        },
+        {
+          "index": 2,
+          "name": "led_off",
+          "name_pointer": "0xa056b048",
+          "handler": "0xa01ac4a8",
+          "entry_file_offset": "0x46b414",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_led_off"
+        },
+        {
+          "index": 3,
+          "name": "led_blink",
+          "name_pointer": "0xa056b050",
+          "handler": "0xa01ab514",
+          "entry_file_offset": "0x46b41c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_led_blink"
+        },
+        {
+          "index": 4,
+          "name": "led_double_blink",
+          "name_pointer": "0xa056b05c",
+          "handler": "0xa01ac43c",
+          "entry_file_offset": "0x46b424",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_led_double_blink"
+        },
+        {
+          "index": 5,
+          "name": "led_triple_blink",
+          "name_pointer": "0xa056b070",
+          "handler": "0xa01ac3d0",
+          "entry_file_offset": "0x46b42c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_led_triple_blink"
+        },
+        {
+          "index": 6,
+          "name": "lcd_backlight",
+          "name_pointer": "0xa056b084",
+          "handler": "0xa01abbb8",
+          "entry_file_offset": "0x46b434",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_lcd_backlight"
+        },
+        {
+          "index": 7,
+          "name": "boss_status",
+          "name_pointer": "0xa056b094",
+          "handler": "0xa01ab6d4",
+          "entry_file_offset": "0x46b43c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_boss_status"
+        },
+        {
+          "index": 8,
+          "name": "switch_work_mode",
+          "name_pointer": "0xa056b0a0",
+          "handler": "0xa01ab3f4",
+          "entry_file_offset": "0x46b444",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_switch_work_mode"
+        },
+        {
+          "index": 9,
+          "name": "shutter",
+          "name_pointer": "0xa060c5b4",
+          "handler": "0xa01a7cac",
+          "entry_file_offset": "0x46b44c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_shutter"
+        },
+        {
+          "index": 10,
+          "name": "power_status",
+          "name_pointer": "0xa056b0b4",
+          "handler": "0xa01ab3e4",
+          "entry_file_offset": "0x46b454",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_power_status"
+        },
+        {
+          "index": 11,
+          "name": "beep",
+          "name_pointer": "0xa0564bf4",
+          "handler": "0xa01ab9fc",
+          "entry_file_offset": "0x46b45c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_beep"
+        },
+        {
+          "index": 12,
+          "name": "ntc",
+          "name_pointer": "0xa056b0c4",
+          "handler": "0xa01ac34c",
+          "entry_file_offset": "0x46b464",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_ntc"
+        },
+        {
+          "index": 13,
+          "name": "bq24250",
+          "name_pointer": "0xa056b0c8",
+          "handler": "0xa01aba7c",
+          "entry_file_offset": "0x46b46c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_bq24250"
+        },
+        {
+          "index": 14,
+          "name": "msg_dump",
+          "name_pointer": "0xa056b0d0",
+          "handler": "0xa01a7990",
+          "entry_file_offset": "0x46b474",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_msg_dump"
+        },
+        {
+          "index": 15,
+          "name": "cfg_restore",
+          "name_pointer": "0xa056b0dc",
+          "handler": "0xa01ab2c0",
+          "entry_file_offset": "0x46b47c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_cfg_restore"
+        },
+        {
+          "index": 16,
+          "name": "gyro",
+          "name_pointer": "0xa056b0e8",
+          "handler": "0xa01ab96c",
+          "entry_file_offset": "0x46b484",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_gyro"
+        },
+        {
+          "index": 17,
+          "name": "audio",
+          "name_pointer": "0xa056b0f0",
+          "handler": "0xa01aad50",
+          "entry_file_offset": "0x46b48c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_audio"
+        },
+        {
+          "index": 18,
+          "name": "vf_switch",
+          "name_pointer": "0xa056b0f8",
+          "handler": "0xa01abb44",
+          "entry_file_offset": "0x46b494",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vf_switch"
+        },
+        {
+          "index": 19,
+          "name": "set_video_res",
+          "name_pointer": "0xa056b104",
+          "handler": "0xa01aad28",
+          "entry_file_offset": "0x46b49c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_video_res"
+        },
+        {
+          "index": 20,
+          "name": "set_standard",
+          "name_pointer": "0xa056b114",
+          "handler": "0xa01aad00",
+          "entry_file_offset": "0x46b4a4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_standard"
+        },
+        {
+          "index": 21,
+          "name": "set_photo_size",
+          "name_pointer": "0xa056b124",
+          "handler": "0xa01aacd8",
+          "entry_file_offset": "0x46b4ac",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_photo_size"
+        },
+        {
+          "index": 22,
+          "name": "chg_gui",
+          "name_pointer": "0xa056b134",
+          "handler": "0xa01aac5c",
+          "entry_file_offset": "0x46b4b4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_chg_gui"
+        },
+        {
+          "index": 23,
+          "name": "tp_event",
+          "name_pointer": "0xa056b13c",
+          "handler": "0xa01a77c0",
+          "entry_file_offset": "0x46b4bc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tp_event"
+        },
+        {
+          "index": 24,
+          "name": "tp_click",
+          "name_pointer": "0xa056b148",
+          "handler": "0xa01a7c28",
+          "entry_file_offset": "0x46b4c4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tp_click"
+        },
+        {
+          "index": 25,
+          "name": "tp_slide",
+          "name_pointer": "0xa056b154",
+          "handler": "0xa01a7aa0",
+          "entry_file_offset": "0x46b4cc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tp_slide"
+        },
+        {
+          "index": 26,
+          "name": "rtmp_start",
+          "name_pointer": "0xa056b160",
+          "handler": "0xa01aac4c",
+          "entry_file_offset": "0x46b4d4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_rtmp_start"
+        },
+        {
+          "index": 27,
+          "name": "rtmp_stop",
+          "name_pointer": "0xa056b16c",
+          "handler": "0xa01aac38",
+          "entry_file_offset": "0x46b4dc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_rtmp_stop"
+        },
+        {
+          "index": 28,
+          "name": "tp_move",
+          "name_pointer": "0xa056b178",
+          "handler": "0xa01a79a0",
+          "entry_file_offset": "0x46b4e4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tp_move"
+        },
+        {
+          "index": 29,
+          "name": "board",
+          "name_pointer": "0xa056b180",
+          "handler": "0xa01aa78c",
+          "entry_file_offset": "0x46b4ec",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_board"
+        },
+        {
+          "index": 30,
+          "name": "factory_result",
+          "name_pointer": "0xa056b188",
+          "handler": "0xa01aa77c",
+          "entry_file_offset": "0x46b4f4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_factory_result"
+        },
+        {
+          "index": 31,
+          "name": "thruput_result",
+          "name_pointer": "0xa056b198",
+          "handler": "0xa01ac2b4",
+          "entry_file_offset": "0x46b4fc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_thruput_result"
+        },
+        {
+          "index": 32,
+          "name": "ota_result",
+          "name_pointer": "0xa056b1a8",
+          "handler": "0xa01ac21c",
+          "entry_file_offset": "0x46b504",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_ota_result"
+        },
+        {
+          "index": 33,
+          "name": "dump_board",
+          "name_pointer": "0xa056b1b4",
+          "handler": "0xa01aa768",
+          "entry_file_offset": "0x46b50c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_dump_board"
+        },
+        {
+          "index": 34,
+          "name": "tp_fwupdate",
+          "name_pointer": "0xa056b1c0",
+          "handler": "0xa01aa568",
+          "entry_file_offset": "0x46b514",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tp_fwupdate"
+        },
+        {
+          "index": 35,
+          "name": "get_tp_ver",
+          "name_pointer": "0xa056b1cc",
+          "handler": "0xa01aa4dc",
+          "entry_file_offset": "0x46b51c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_get_tp_ver"
+        },
+        {
+          "index": 36,
+          "name": "fioprf_thruput",
+          "name_pointer": "0xa05687b8",
+          "handler": "0xa01a7258",
+          "entry_file_offset": "0x46b524",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_fioprf_thruput"
+        },
+        {
+          "index": 37,
+          "name": "power_saving",
+          "name_pointer": "0xa056b1d8",
+          "handler": "0xa01aa3a0",
+          "entry_file_offset": "0x46b52c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_power_saving"
+        },
+        {
+          "index": 38,
+          "name": "linux_serial",
+          "name_pointer": "0xa056b1e8",
+          "handler": "0xa01a8f94",
+          "entry_file_offset": "0x46b534",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_linux_serial"
+        },
+        {
+          "index": 39,
+          "name": "ps_debug",
+          "name_pointer": "0xa056b1f8",
+          "handler": "0xa01ac18c",
+          "entry_file_offset": "0x46b53c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_ps_debug"
+        },
+        {
+          "index": 40,
+          "name": "slow_motion",
+          "name_pointer": "0xa0565554",
+          "handler": "0xa01a7500",
+          "entry_file_offset": "0x46b544",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_slow_motion"
+        },
+        {
+          "index": 41,
+          "name": "set_gps",
+          "name_pointer": "0xa056b204",
+          "handler": "0xa01aa204",
+          "entry_file_offset": "0x46b54c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_gps"
+        },
+        {
+          "index": 42,
+          "name": "wifi_country",
+          "name_pointer": "0xa0550920",
+          "handler": "0xa01ac0ec",
+          "entry_file_offset": "0x46b554",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_wifi_country"
+        },
+        {
+          "index": 43,
+          "name": "mic_in_check",
+          "name_pointer": "0xa056b20c",
+          "handler": "0xa01ac580",
+          "entry_file_offset": "0x46b55c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_mic_in_check"
+        },
+        {
+          "index": 44,
+          "name": "mic_input",
+          "name_pointer": "0xa056b21c",
+          "handler": "0xa01aa11c",
+          "entry_file_offset": "0x46b564",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_mic_input"
+        },
+        {
+          "index": 45,
+          "name": "cobs",
+          "name_pointer": "0xa056b228",
+          "handler": "0xa01a9e7c",
+          "entry_file_offset": "0x46b56c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_cobs"
+        },
+        {
+          "index": 46,
+          "name": "car_msg",
+          "name_pointer": "0xa056b230",
+          "handler": "0xa01a9c1c",
+          "entry_file_offset": "0x46b574",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_car_msg"
+        },
+        {
+          "index": 47,
+          "name": "usb_mode",
+          "name_pointer": "0xa0550a54",
+          "handler": "0xa01a8e88",
+          "entry_file_offset": "0x46b57c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_usb_mode"
+        },
+        {
+          "index": 48,
+          "name": "save_log",
+          "name_pointer": "0xa055077c",
+          "handler": "0xa01abe20",
+          "entry_file_offset": "0x46b584",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_save_log"
+        },
+        {
+          "index": 49,
+          "name": "get_blk_mark",
+          "name_pointer": "0xa056b238",
+          "handler": "0xa01a9c18",
+          "entry_file_offset": "0x46b58c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_get_blk_mark"
+        },
+        {
+          "index": 50,
+          "name": "show_str",
+          "name_pointer": "0xa056b248",
+          "handler": "0xa01ac08c",
+          "entry_file_offset": "0x46b594",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_show_str"
+        },
+        {
+          "index": 51,
+          "name": "get_video_info",
+          "name_pointer": "0xa056b254",
+          "handler": "0xa01a94fc",
+          "entry_file_offset": "0x46b59c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_get_video_info"
+        },
+        {
+          "index": 52,
+          "name": "erase",
+          "name_pointer": "0xa056b264",
+          "handler": "0xa01a9ae4",
+          "entry_file_offset": "0x46b5a4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_erase"
+        },
+        {
+          "index": 53,
+          "name": "set_video_vbr",
+          "name_pointer": "0xa056b26c",
+          "handler": "0xa01a9990",
+          "entry_file_offset": "0x46b5ac",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_video_vbr"
+        },
+        {
+          "index": 54,
+          "name": "photo_priv_info",
+          "name_pointer": "0xa056b27c",
+          "handler": "0xa01a93cc",
+          "entry_file_offset": "0x46b5b4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_photo_priv_info"
+        },
+        {
+          "index": 55,
+          "name": "bitmaps",
+          "name_pointer": "0xa056b28c",
+          "handler": "0xa01acd10",
+          "entry_file_offset": "0x46b5bc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_bitmaps"
+        },
+        {
+          "index": 56,
+          "name": "set_video_split_size",
+          "name_pointer": "0xa056b294",
+          "handler": "0xa01a7508",
+          "entry_file_offset": "0x46b5c4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_set_video_split_size"
+        },
+        {
+          "index": 57,
+          "name": "vc_test",
+          "name_pointer": "0xa056b2ac",
+          "handler": "0xa01abd80",
+          "entry_file_offset": "0x46b5cc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vc_test"
+        },
+        {
+          "index": 58,
+          "name": "vc_test2",
+          "name_pointer": "0xa056b2b4",
+          "handler": "0xa01a90e8",
+          "entry_file_offset": "0x46b5d4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vc_test2"
+        },
+        {
+          "index": 59,
+          "name": "vc_save",
+          "name_pointer": "0xa056b2c0",
+          "handler": "0xa01abf50",
+          "entry_file_offset": "0x46b5dc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vc_save"
+        },
+        {
+          "index": 60,
+          "name": "vc_switch_lan",
+          "name_pointer": "0xa056b2c8",
+          "handler": "0xa01abec0",
+          "entry_file_offset": "0x46b5e4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vc_switch_lan"
+        },
+        {
+          "index": 61,
+          "name": "vc_send_msg",
+          "name_pointer": "0xa056b2d8",
+          "handler": "0xa01a903c",
+          "entry_file_offset": "0x46b5ec",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_vc_send_msg"
+        },
+        {
+          "index": 62,
+          "name": "tlp_power_off",
+          "name_pointer": "0xa056b2e4",
+          "handler": "0xa01a8e10",
+          "entry_file_offset": "0x46b5f4",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_tlp_power_off"
+        },
+        {
+          "index": 63,
+          "name": "debug_sd",
+          "name_pointer": "0xa056b2f4",
+          "handler": "0xa01a8d60",
+          "entry_file_offset": "0x46b5fc",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_debug_sd"
+        },
+        {
+          "index": 64,
+          "name": "bq27421",
+          "name_pointer": "0xa056b300",
+          "handler": "0xa01abd24",
+          "entry_file_offset": "0x46b604",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_bq27421"
+        },
+        {
+          "index": 65,
+          "name": "rom",
+          "name_pointer": "0xa056a820",
+          "handler": "0xa01abc88",
+          "entry_file_offset": "0x46b60c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_rom"
+        },
+        {
+          "index": 66,
+          "name": "usb_con",
+          "name_pointer": "0xa056b308",
+          "handler": "0xa01abc20",
+          "entry_file_offset": "0x46b614",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_usb_con"
+        },
+        {
+          "index": 67,
+          "name": "sd_delay",
+          "name_pointer": "0xa056b310",
+          "handler": "0xa01a8838",
+          "entry_file_offset": "0x46b61c",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_sd_delay"
+        },
+        {
+          "index": 68,
+          "name": "thumb",
+          "name_pointer": "0xa05529dc",
+          "handler": "0xa01a8998",
+          "entry_file_offset": "0x46b624",
+          "handler_mode": "ARM/A32",
+          "label": "antscmd_thumb"
+        }
+      ]
+    },
+    {
+      "table": "imgcmd",
+      "file_offset": "0x4978e0",
+      "virtual_address": "0xa05978e0",
+      "count": 17,
+      "stride": 12,
+      "dispatcher": "0xa02265b0",
+      "records": [
+        {
+          "index": 0,
+          "name": "help",
+          "name_pointer": "0xa0599dd8",
+          "handler": "0xa0226578",
+          "entry_file_offset": "0x4978e0",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_help",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 1,
+          "name": "-ituner",
+          "name_pointer": "0xa059d4f4",
+          "handler": "0xa022c8bc",
+          "entry_file_offset": "0x4978ec",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_ituner",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 2,
+          "name": "-rawenc",
+          "name_pointer": "0xa059d4fc",
+          "handler": "0xa0226b34",
+          "entry_file_offset": "0x4978f8",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_rawenc",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 3,
+          "name": "-highiso",
+          "name_pointer": "0xa059d504",
+          "handler": "0xa02268e8",
+          "entry_file_offset": "0x497904",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_highiso",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 4,
+          "name": "-lowiso",
+          "name_pointer": "0xa059d510",
+          "handler": "0xa02266e8",
+          "entry_file_offset": "0x497910",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_lowiso",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 5,
+          "name": "-idsp",
+          "name_pointer": "0xa059d518",
+          "handler": "0xa022b96c",
+          "entry_file_offset": "0x49791c",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_idsp",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 6,
+          "name": "-test",
+          "name_pointer": "0xa059d520",
+          "handler": "0xa0226570",
+          "entry_file_offset": "0x497928",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_test",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 7,
+          "name": "-stat",
+          "name_pointer": "0xa059d528",
+          "handler": "0xa0228458",
+          "entry_file_offset": "0x497934",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_stat",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 8,
+          "name": "-amp",
+          "name_pointer": "0xa059d530",
+          "handler": "0xa0228300",
+          "entry_file_offset": "0x497940",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_amp",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 9,
+          "name": "-mctf",
+          "name_pointer": "0xa059d538",
+          "handler": "0xa0227dfc",
+          "entry_file_offset": "0x49794c",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_mctf",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 10,
+          "name": "-gmv",
+          "name_pointer": "0xa059d540",
+          "handler": "0xa0227cb8",
+          "entry_file_offset": "0x497958",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_gmv",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 11,
+          "name": "-warp",
+          "name_pointer": "0xa059d548",
+          "handler": "0xa022d820",
+          "entry_file_offset": "0x497964",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_warp",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 12,
+          "name": "-vnc",
+          "name_pointer": "0xa059d550",
+          "handler": "0xa02275d4",
+          "entry_file_offset": "0x497970",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_vnc",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 13,
+          "name": "-ca",
+          "name_pointer": "0xa059d558",
+          "handler": "0xa0226ecc",
+          "entry_file_offset": "0x49797c",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_ca",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 14,
+          "name": "-fpn",
+          "name_pointer": "0xa059d55c",
+          "handler": "0xa022d0b4",
+          "entry_file_offset": "0x497988",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_fpn",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 15,
+          "name": "-dpc",
+          "name_pointer": "0xa059d564",
+          "handler": "0xa0226da8",
+          "entry_file_offset": "0x497994",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_dpc",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        },
+        {
+          "index": 16,
+          "name": "-blc",
+          "name_pointer": "0xa059d56c",
+          "handler": "0xa0226c34",
+          "entry_file_offset": "0x4979a0",
+          "handler_mode": "ARM/A32",
+          "label": "imgcmd_blc",
+          "third_word": "0xa05a6c90",
+          "third_word_string": null
+        }
+      ]
+    },
+    {
+      "table": "ipccmd",
+      "file_offset": "0x4a6c18",
+      "virtual_address": "0xa05a6c18",
+      "count": 6,
+      "stride": 8,
+      "dispatcher": "0xa0245af8",
+      "records": [
+        {
+          "index": 0,
+          "name": "slock",
+          "name_pointer": "0xa05a75c8",
+          "handler": "0xa0245974",
+          "entry_file_offset": "0x4a6c18",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_slock"
+        },
+        {
+          "index": 1,
+          "name": "mutex",
+          "name_pointer": "0xa05c67e4",
+          "handler": "0xa0245c10",
+          "entry_file_offset": "0x4a6c20",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_mutex"
+        },
+        {
+          "index": 2,
+          "name": "rpmsg",
+          "name_pointer": "0xa05a75d0",
+          "handler": "0xa02457e8",
+          "entry_file_offset": "0x4a6c28",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_rpmsg"
+        },
+        {
+          "index": 3,
+          "name": "rpc",
+          "name_pointer": "0xa05a7540",
+          "handler": "0xa0245cf4",
+          "entry_file_offset": "0x4a6c30",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_rpc"
+        },
+        {
+          "index": 4,
+          "name": "rfs",
+          "name_pointer": "0xa05a75d8",
+          "handler": "0xa0246ce8",
+          "entry_file_offset": "0x4a6c38",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_rfs"
+        },
+        {
+          "index": 5,
+          "name": "usb_owner",
+          "name_pointer": "0xa05a75dc",
+          "handler": "0xa0245ba8",
+          "entry_file_offset": "0x4a6c40",
+          "handler_mode": "ARM/A32",
+          "label": "ipccmd_usb_owner"
+        }
+      ]
+    },
+    {
+      "table": "drvcmd",
+      "file_offset": "0x537334",
+      "virtual_address": "0xa0637334",
+      "count": 21,
+      "stride": 12,
+      "dispatcher": "0xa04af7e0",
+      "records": [
+        {
+          "index": 0,
+          "name": "adc",
+          "name_pointer": "0xa06372d4",
+          "handler": "0xa04a6878",
+          "entry_file_offset": "0x537334",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_adc",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 1,
+          "name": "cache",
+          "name_pointer": "0xa06372e0",
+          "handler": "0xa04a6b68",
+          "entry_file_offset": "0x537340",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_cache",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 2,
+          "name": "crypto",
+          "name_pointer": "0xa06372e8",
+          "handler": "0xa04a720c",
+          "entry_file_offset": "0x53734c",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_crypto",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 3,
+          "name": "cvbs",
+          "name_pointer": "0xa06372f0",
+          "handler": "0xa04a75dc",
+          "entry_file_offset": "0x537358",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_cvbs",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 4,
+          "name": "ddr",
+          "name_pointer": "0xa06372f8",
+          "handler": "0xa04a77b0",
+          "entry_file_offset": "0x537364",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_ddr",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 5,
+          "name": "dma",
+          "name_pointer": "0xa06372fc",
+          "handler": "0xa04a8384",
+          "entry_file_offset": "0x537370",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_dma",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 6,
+          "name": "gdma",
+          "name_pointer": "0xa0637300",
+          "handler": "0xa04a97e0",
+          "entry_file_offset": "0x53737c",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_gdma",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 7,
+          "name": "gpio",
+          "name_pointer": "0xa0637308",
+          "handler": "0xa04a9c94",
+          "entry_file_offset": "0x537388",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_gpio",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 8,
+          "name": "hdmi",
+          "name_pointer": "0xa05670cc",
+          "handler": "0xa04aa1d4",
+          "entry_file_offset": "0x537394",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_hdmi",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 9,
+          "name": "i2c",
+          "name_pointer": "0xa0637310",
+          "handler": "0xa04aa5e0",
+          "entry_file_offset": "0x5373a0",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_i2c",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 10,
+          "name": "int",
+          "name_pointer": "0xa05e6f44",
+          "handler": "0xa04aa908",
+          "entry_file_offset": "0x5373ac",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_int",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 11,
+          "name": "nftl",
+          "name_pointer": "0xa0637314",
+          "handler": "0xa04ae89c",
+          "entry_file_offset": "0x5373b8",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_nftl",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 12,
+          "name": "pll",
+          "name_pointer": "0xa063731c",
+          "handler": "0xa04aac88",
+          "entry_file_offset": "0x5373c4",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_pll",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 13,
+          "name": "poc",
+          "name_pointer": "0xa0637320",
+          "handler": "0xa04ab514",
+          "entry_file_offset": "0x5373d0",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_poc",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 14,
+          "name": "pwc",
+          "name_pointer": "0xa0637324",
+          "handler": "0xa04ab8a0",
+          "entry_file_offset": "0x5373dc",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_pwc",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 15,
+          "name": "pwm",
+          "name_pointer": "0xa0637328",
+          "handler": "0xa04abc14",
+          "entry_file_offset": "0x5373e8",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_pwm",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 16,
+          "name": "sd",
+          "name_pointer": "0xa056c050",
+          "handler": "0xa04acf70",
+          "entry_file_offset": "0x5373f4",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_sd",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 17,
+          "name": "spi",
+          "name_pointer": "0xa063732c",
+          "handler": "0xa04adecc",
+          "entry_file_offset": "0x537400",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_spi",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 18,
+          "name": "timer",
+          "name_pointer": "0xa0566c0c",
+          "handler": "0xa04ae5a0",
+          "entry_file_offset": "0x53740c",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_timer",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 19,
+          "name": "uart",
+          "name_pointer": "0xa0569534",
+          "handler": "0xa04af404",
+          "entry_file_offset": "0x537418",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_uart",
+          "third_word": "0x0",
+          "third_word_string": null
+        },
+        {
+          "index": 20,
+          "name": "wdt",
+          "name_pointer": "0xa0637330",
+          "handler": "0xa04af634",
+          "entry_file_offset": "0x537424",
+          "handler_mode": "ARM/A32",
+          "label": "drvcmd_wdt",
+          "third_word": "0x0",
+          "third_word_string": null
+        }
+      ]
+    }
+  ]
+}

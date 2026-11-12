@@ -1,0 +1,100 @@
+{
+  "status": "pass_independent_nonzero_native_window_review",
+  "offline_only": true,
+  "device_access": false,
+  "verifier_sha256": "95c3ecd36b452b198e1b743e84f564cc465ff45b7b21338b048b695949920497",
+  "reports": {
+    "positive": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/audit.json",
+      "sha256": "f73edd839d836e49878c090d967485e14cc672b120906c698ef3cfbd63309efb"
+    },
+    "stock_control": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-stock-control-run01/audit.json",
+      "sha256": "167237748ef3e34e4ab3d0983cdebdec6bee3423963bd38778acaed8f5e1bff3"
+    },
+    "mdhd_control": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run01/audit.json",
+      "sha256": "40b5d090fda55b6108bee2fe4ee2bd7930ee1c87f5651572e71fae557e7a183f"
+    },
+    "missing": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-missing-aac-run01/audit.json",
+      "sha256": "ca1f2da3e3095810426e95b904f1465559944831e3163f15bc5111a8ab7871a9"
+    },
+    "close_failure": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-close-failure-run01/audit.json",
+      "sha256": "ea7cb87bad3f02e0e707c93be2c57b652007f7a45f8a2c0ebf656c9e173e643a"
+    },
+    "recovery": {
+      "path": "artifacts/verification/2026-11-12-prerecord-native-window-recovery-run01/audit.json",
+      "sha256": "287884001f981c9b1f756702affa4c7915e0d8775aab21b5c70a864061cd1d14"
+    }
+  },
+  "output": {
+    "path": "artifacts/verification/2026-11-12-prerecord-native-window-export-run03/session.mp4",
+    "sha256": "351bdba510ffec1d93da80e6fd9b2bc5b0c275a25a103a2575707b148c2df7d4",
+    "bytes": 343127618
+  },
+  "packet_counts": {
+    "1": 2863,
+    "0": 1831
+  },
+  "common_source_offset": {
+    "numerator": 2,
+    "denominator": 1,
+    "seconds": 2.0
+  },
+  "first_packet_pts": {
+    "0": {
+      "numerator": 3511,
+      "denominator": 3750,
+      "seconds": 0.9362666666666667
+    },
+    "1": {
+      "numerator": 346,
+      "denominator": 375,
+      "seconds": 0.9226666666666666
+    }
+  },
+  "presentation_duration": {
+    "numerator": 1860919,
+    "denominator": 30000,
+    "seconds": 62.030633333333334
+  },
+  "leading_empty_duration": {
+    "numerator": 346,
+    "denominator": 375,
+    "seconds": 0.9226666666666666
+  },
+  "container_metadata": {
+    "movie_clock": 30000,
+    "movie_duration": 1860919,
+    "tracks": [
+      {
+        "tkhd_duration": 1860919,
+        "sample_table_sha256": "a74dd22086be238ed94d82615f101ff9a25d51b547c2b81f2add53280bcd4b72"
+      },
+      {
+        "tkhd_duration": 1860000,
+        "sample_table_sha256": "296bb1870c017a864ee1eebb416d70fe2d156fde1b5804068de855310b03a929"
+      }
+    ],
+    "mdat_sha256": "bf5c72acce30df9067b1bf11c688fcf9294da073f2cd34b362964a10c180a95f"
+  },
+  "ordinary_native_input_gate": "pass",
+  "ordinary_original_source_gate": "pass",
+  "original_media_area_and_all_sample_tables_equal_stock_control": true,
+  "mdhd_retained_sample_duration_unchanged": true,
+  "native_second_segment_reject_preserved": true,
+  "stock_and_mdhd_only_reject_controls_preserved": true,
+  "missing_rejected_before_Open": true,
+  "failed_Close0_retained": true,
+  "clean_retry_identical": true,
+  "video_frames": 1831,
+  "audio_pcm_bytes": 11726848,
+  "audio_pcm_sha256": "2a6cbb796db16f4b68e781a98707a24042b248ce637f6fff21b39cbc684a454d",
+  "consumer": {
+    "version": "ffprobe version 6.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2007-2023 the FFmpeg developers",
+    "sha256": "82f8b544e9924aed20f691f4b1b1ad0ba7e31d2a2e856ac29a1b6a31537e7f1f"
+  },
+  "scope": "Host-emulated original ARM final mux plus explicit common-origin/MVHD adapter. No stock-only arbitrary-window or camera acceptance claim."
+}

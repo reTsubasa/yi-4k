@@ -1,0 +1,71 @@
+{
+  "scope": "Independent host reruns of final frozen scripts; original firmware instructions with declared synthetic dependencies; no device execution",
+  "previous_goal_turn_classification": "progress",
+  "entries": [
+    {
+      "name": "eis_stage_failure",
+      "output": "artifacts/verification/2026-11-11-eis-stage-failure-independent-run01/audit.json",
+      "sha256": "692b4a6362da04f0148b03b860709c0fc129c49cc8868bdad7a33e151e96b3ee",
+      "reference": "artifacts/device/2026-11-11-eis-stage-failure-contract/audit.json",
+      "identical_json": true,
+      "script": "scripts/eis_stage_failure_contract.py",
+      "script_sha256": "28aafff3ee709a75284f8c8e834c1c7853b14b9af9913f9d314200c6bfa0fa97",
+      "status": "36_scenarios_22_instruction_checks_pass",
+      "device_execution": false
+    },
+    {
+      "name": "prerecord_event3_normal",
+      "output": "artifacts/verification/2026-11-11-prerecord-event3-independent-run02/audit.json",
+      "sha256": "5c364feed43993165b09a1f21ad101d40590526aefe7e0fd75e5b93bf6c2aa6c",
+      "reference": "artifacts/device/2026-11-11-prerecord-event3-run02/audit.json",
+      "identical_json": true,
+      "script": "scripts/audit_prerecord_event3_rollover.py",
+      "script_sha256": "9679be4f7017200c1247b5a8913ff267cebc33a1b20b006c0722195e9530b570",
+      "status": "offline_event3_executed",
+      "device_execution": false
+    },
+    {
+      "name": "prerecord_event3_close_failure",
+      "output": "artifacts/verification/2026-11-11-prerecord-event3-close-failure-independent-run02/audit.json",
+      "sha256": "62950e4907086c258ee36f9d2e1f8ea54ef8480766515113dbaf8bb4ad0b79e4",
+      "reference": "artifacts/device/2026-11-11-prerecord-event3-close-failure-run02/audit.json",
+      "identical_json": true,
+      "script": "scripts/audit_prerecord_event3_rollover.py",
+      "script_sha256": "9679be4f7017200c1247b5a8913ff267cebc33a1b20b006c0722195e9530b570",
+      "status": "reject_original_callback_asserts_on_close_failure",
+      "device_execution": false
+    }
+  ],
+  "remaining_goal_requirements": [
+    "Physical phone full workflow and tactile acceptance",
+    "Safe native entry/return/recovery and live EIS shadow/replacement",
+    "Camera-side one-minute history with continuous A/V, recoverable SD failure and voice/physical shutter binding"
+  ],
+  "android": {
+    "build": "artifacts/android/2026-11-11-build-0.3.18.json",
+    "apk_sha256": "86d71ae6b62a6b36a6b325560085d879568e54160305e3f458c855dd150cd9da",
+    "debug_tests": {
+      "tests": 163,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "compositor_instrumentation": {
+      "report": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run03/acceptance.json",
+      "tests": 1,
+      "passed": true,
+      "scope": "AOSP34 ARM64, compositor screenshots, pregranted permissions, loopback camera; no phone, camera or RTSP",
+      "emulator_stopped": true,
+      "avd_disk_reclaimed_bytes": 505720832,
+      "details": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run03/workflow-screens/shutter-feedback/shutter-feedback.json",
+      "first_run_permissions_verified": false,
+      "preserved_failed_run": "artifacts/android/0.3.18-device-reports/shutter-feedback-compositor-run02/acceptance.json"
+    }
+  },
+  "current_camera_reachability": "artifacts/verification/2026-11-11-camera-reachability-1258.json",
+  "next_actions": [
+    "Keep the Android APK available for user physical-phone testing; emulator evidence does not close this requirement.",
+    "Design transparent EIS records around same-invocation Calc/Set/Get return and table identities, after safe native entry and recovery are established.",
+    "Retain crossing AAC payload independently until durable ownership is confirmed and replace unsafe assert-based error handling before a camera-side spool experiment."
+  ]
+}

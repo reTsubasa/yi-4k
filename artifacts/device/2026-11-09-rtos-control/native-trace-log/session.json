@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-11-09T02:50:11.930737+00:00",
+  "host": "192.168.42.1",
+  "memory_probe_run": false,
+  "recording_commands_sent": false,
+  "limitations": [
+    "Live files can grow or change during reads.",
+    "Initial file size limits the copied prefix.",
+    "Read-only mount still uses RTOS filesystem service."
+  ],
+  "files": [
+    {
+      "mtime_before": 1388543010.0,
+      "source": "b:/RtosActive.log",
+      "name": "RtosActive.log",
+      "size_before": 180296,
+      "size_after": 180296,
+      "sha256": "ba70dbdfa8b8e5c343c2f69bb1f9892273f47ebdd3cc5ecf1804f368bfa7de72",
+      "bytes": 180296,
+      "mtime_after": 1388543010.0
+    },
+    {
+      "mtime_before": 1388541804.0,
+      "source": "b:/RtosOlder.log",
+      "name": "RtosOlder.log",
+      "size_before": 740381,
+      "size_after": 740381,
+      "sha256": "98960d37411472ba971bbe521ca9e452ef4f31e553852e6899715a6902dea803",
+      "bytes": 740381,
+      "mtime_after": 1388541804.0
+    }
+  ],
+  "unmounted": true
+}

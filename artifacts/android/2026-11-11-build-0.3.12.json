@@ -1,0 +1,88 @@
+{
+  "evidence_type": "Android 0.3.12 landscape preview repair, exact probe mode restoration and scoped runtime acceptance",
+  "apk": "artifacts/android/yi4k-control-0.3.12-debug.apk",
+  "sha256": "b242bab1e7c3e80ab5b8bd45821ed3aa3c1eb54a63677dc332ec23f39cf3cc09",
+  "size_bytes": 11536637,
+  "version_name": "0.3.12",
+  "version_code": 15,
+  "changes": [
+    "Landscape capture workspace keeps the real preview container and entry on the left, parameters below, and shutter/modes in a separate scrollable right column.",
+    "Parameter and mode text adapts to enlarged fonts; host regression covers font scale 1.6 and scrolling.",
+    "CameraLiveProbe saves affected child modes and restores them before the original parent mode, including uncertain write recovery in loopback tests."
+  ],
+  "checks": {
+    "testDebugUnitTest": true,
+    "testReleaseUnitTest": true,
+    "lintDebug": true,
+    "assembleDebug": true,
+    "assembleRelease": true,
+    "assembleDebugAndroidTest": true,
+    "final_render_debug_release": true
+  },
+  "tests": {
+    "testDebugUnitTest": {
+      "tests": 113,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "testReleaseUnitTest": {
+      "tests": 113,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "final_render_recheck": {
+    "debug_tests": 3,
+    "release_tests": 3,
+    "failures": 0,
+    "reason": "Render helper now measures and draws the same DecorView; product sources and APK unchanged after full build."
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 62
+  },
+  "runtime": {
+    "rotation": {
+      "path": "artifacts/android/0.3.12-device-reports/capture-layout-run01/acceptance.json",
+      "tests": 1,
+      "passed": true,
+      "emulator_stopped": true
+    },
+    "camera_preview": {
+      "path": "artifacts/android/0.3.12-device-reports/camera-main-preview-run01/acceptance.json",
+      "tests": 1,
+      "passed": true,
+      "emulator_stopped": true,
+      "first_frames": 2,
+      "video_size": [
+        848,
+        480
+      ],
+      "released_players": 2,
+      "before_status": "idle",
+      "after_status": "idle",
+      "media_files_before": 47,
+      "media_files_after": 47,
+      "settings_unchanged": true,
+      "boot_id_unchanged": true,
+      "camera_recording_requested": false,
+      "camera_settings_changed": false,
+      "camera_files_written": false
+    }
+  },
+  "source_hashes": {
+    "android/app/src/main/java/dev/yi4k/control/MainActivity.java": "09a1e5258637b7c57169df0d3ec2934a70a78d18f0c92ab7b49f06e5fccb111b",
+    "android/app/src/test/java/dev/yi4k/control/PrototypeRenderTest.java": "06a337b77fcc9777da588306f940f5e8e511fef5ad49ccc095eda9de7f9e9db0",
+    "android/app/src/test/java/dev/yi4k/control/CameraLiveProbe.java": "2815e48d1422b1ec5abd9548e78170344b82156db9cdbb54b809882ba082647f",
+    "android/app/src/androidTest/java/dev/yi4k/control/CaptureLayoutDeviceTest.java": "c1dc996402013097308dce06271e9a115e6ed29d103408997bfc19e470c59b8c"
+  },
+  "limits": [
+    "No physical Android phone execution.",
+    "Actual rotation runtime used a disconnected camera screen at font scale 1.0; 1.6 font coverage is host-rendered.",
+    "Actual camera preview ran in the AOSP34 arm64 emulator through the host route, in portrait; this does not prove landscape stream rendering or phone Wi-Fi.",
+    "No current-version capture/export full workflow rerun; prior versions retain their own evidence.",
+    "No custom RTOS/ORC execution, firmware/RAM/partition/boot writes, camera prerecord or EIS replacement."
+  ]
+}

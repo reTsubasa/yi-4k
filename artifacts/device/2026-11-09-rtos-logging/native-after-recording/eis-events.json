@@ -1,0 +1,1700 @@
+{
+  "source": "artifacts/device/2026-11-09-rtos-logging/native-after-recording/RtosActive.log",
+  "sha256": "96bad90478592559e50d1dc21a91f8255720e035db7e94dc59424dd67cadbf71",
+  "bytes": 274306,
+  "events": [
+    {
+      "line": 626,
+      "tick": 673,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 654,
+      "tick": 714,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 740,
+      "tick": 964,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "AppLibVideoEnc_VinSwitchCallback: EIS start"
+    },
+    {
+      "line": 741,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis init... task_ver 20160201"
+    },
+    {
+      "line": 742,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "Eis rev. 0xb514c59"
+    },
+    {
+      "line": 743,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "set EIS processing mode: 0"
+    },
+    {
+      "line": 744,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 266, FocalValue = 680"
+    },
+    {
+      "line": 746,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init starts===="
+    },
+    {
+      "line": 751,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init finish===="
+    },
+    {
+      "line": 752,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit starts===="
+    },
+    {
+      "line": 753,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "FrameRatePerSec=30"
+    },
+    {
+      "line": 754,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CurrFrameTime=34"
+    },
+    {
+      "line": 755,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257"
+    },
+    {
+      "line": 756,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 757,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 758,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160"
+    },
+    {
+      "line": 759,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=7333"
+    },
+    {
+      "line": 760,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "VerticalBlankTime=25"
+    },
+    {
+      "line": 762,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_GyroLogInit start===="
+    },
+    {
+      "line": 763,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_GyroLogInit finish===="
+    },
+    {
+      "line": 765,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroParam.OffsetX=8388608"
+    },
+    {
+      "line": 766,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroParam.OffsetY=8388608"
+    },
+    {
+      "line": 767,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroCalibInfo.SenseX=33536"
+    },
+    {
+      "line": 768,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroCalibInfo.SenseY=33536"
+    },
+    {
+      "line": 772,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroInfo.VolDivDen=1"
+    },
+    {
+      "line": 776,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroCalibInfo.SenseX=33536"
+    },
+    {
+      "line": 778,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroCalibInfo.SenseY=33536"
+    },
+    {
+      "line": 780,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "GyroCalibInfo.SenseZ=33536"
+    },
+    {
+      "line": 788,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=532"
+    },
+    {
+      "line": 789,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 790,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=1080"
+    },
+    {
+      "line": 791,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 792,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532"
+    },
+    {
+      "line": 793,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CapStartY=0"
+    },
+    {
+      "line": 794,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "DlyMs=23"
+    },
+    {
+      "line": 797,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit finish===="
+    },
+    {
+      "line": 798,
+      "tick": 964,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 799,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 800,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=0"
+    },
+    {
+      "line": 801,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 802,
+      "tick": 964,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 825,
+      "tick": 965,
+      "cpu": 0,
+      "category": "eis",
+      "text": "EisZoomRatio: 1.33 x"
+    },
+    {
+      "line": 860,
+      "tick": 966,
+      "cpu": 0,
+      "category": "eis",
+      "text": "ADV time: 6 3"
+    },
+    {
+      "line": 861,
+      "tick": 966,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime1=17"
+    },
+    {
+      "line": 862,
+      "tick": 966,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime2=23"
+    },
+    {
+      "line": 863,
+      "tick": 966,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisWarpUpdateEndTime1=20"
+    },
+    {
+      "line": 866,
+      "tick": 966,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 867,
+      "tick": 966,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 868,
+      "tick": 966,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 869,
+      "tick": 966,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis timer (0) = (1000, 1000)"
+    },
+    {
+      "line": 980,
+      "tick": 1387,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 981,
+      "tick": 1387,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 982,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=1"
+    },
+    {
+      "line": 983,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 984,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 986,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_RangeUpdate starts===="
+    },
+    {
+      "line": 988,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257, SensorDownsample = 131329"
+    },
+    {
+      "line": 1029,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 1030,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=1"
+    },
+    {
+      "line": 1031,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=1"
+    },
+    {
+      "line": 1032,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 1033,
+      "tick": 1388,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 1619,
+      "tick": 106318,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 1620,
+      "tick": 106318,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis stop..."
+    },
+    {
+      "line": 1648,
+      "tick": 106321,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 1672,
+      "tick": 106399,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 1752,
+      "tick": 106950,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2137,
+      "tick": 232972,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2161,
+      "tick": 233050,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2220,
+      "tick": 233143,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "AppLibVideoEnc_VinSwitchCallback: EIS start"
+    },
+    {
+      "line": 2221,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis init... task_ver 20160201"
+    },
+    {
+      "line": 2222,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "Eis rev. 0xb514c59"
+    },
+    {
+      "line": 2223,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "set EIS processing mode: 0"
+    },
+    {
+      "line": 2224,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 266, FocalValue = 680"
+    },
+    {
+      "line": 2226,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init starts===="
+    },
+    {
+      "line": 2227,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init finish===="
+    },
+    {
+      "line": 2228,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit starts===="
+    },
+    {
+      "line": 2229,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "FrameRatePerSec=30"
+    },
+    {
+      "line": 2230,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CurrFrameTime=34"
+    },
+    {
+      "line": 2231,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257"
+    },
+    {
+      "line": 2232,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 2233,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 2234,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160"
+    },
+    {
+      "line": 2235,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=7333"
+    },
+    {
+      "line": 2236,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "VerticalBlankTime=25"
+    },
+    {
+      "line": 2242,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=532"
+    },
+    {
+      "line": 2243,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 2244,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=1080"
+    },
+    {
+      "line": 2245,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 2246,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532"
+    },
+    {
+      "line": 2247,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CapStartY=0"
+    },
+    {
+      "line": 2248,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "DlyMs=23"
+    },
+    {
+      "line": 2251,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit finish===="
+    },
+    {
+      "line": 2252,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 2253,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 2254,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=0"
+    },
+    {
+      "line": 2255,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 2256,
+      "tick": 233143,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 2279,
+      "tick": 233144,
+      "cpu": 0,
+      "category": "eis",
+      "text": "EisZoomRatio: 1.33 x"
+    },
+    {
+      "line": 2314,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "eis",
+      "text": "ADV time: 6 3"
+    },
+    {
+      "line": 2315,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime1=17"
+    },
+    {
+      "line": 2316,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime2=23"
+    },
+    {
+      "line": 2317,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisWarpUpdateEndTime1=20"
+    },
+    {
+      "line": 2320,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 2321,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 2322,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 2323,
+      "tick": 233146,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis timer (0) = (1000, 1000)"
+    },
+    {
+      "line": 2341,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 2342,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 2343,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=1"
+    },
+    {
+      "line": 2344,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 2345,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 2347,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_RangeUpdate starts===="
+    },
+    {
+      "line": 2349,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257, SensorDownsample = 131329"
+    },
+    {
+      "line": 2390,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 2391,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=1"
+    },
+    {
+      "line": 2392,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=1"
+    },
+    {
+      "line": 2393,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 2394,
+      "tick": 233445,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 2559,
+      "tick": 233879,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2560,
+      "tick": 233880,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis stop..."
+    },
+    {
+      "line": 2588,
+      "tick": 233883,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2612,
+      "tick": 233959,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 2676,
+      "tick": 234043,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "AppLibVideoEnc_VinSwitchCallback: EIS start"
+    },
+    {
+      "line": 2677,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis init... task_ver 20160201"
+    },
+    {
+      "line": 2678,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "Eis rev. 0xb514c59"
+    },
+    {
+      "line": 2679,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "set EIS processing mode: 0"
+    },
+    {
+      "line": 2680,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 266, FocalValue = 680"
+    },
+    {
+      "line": 2682,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init starts===="
+    },
+    {
+      "line": 2683,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init finish===="
+    },
+    {
+      "line": 2684,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit starts===="
+    },
+    {
+      "line": 2685,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "FrameRatePerSec=30"
+    },
+    {
+      "line": 2686,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CurrFrameTime=34"
+    },
+    {
+      "line": 2687,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 1, SamplingRatio = 257"
+    },
+    {
+      "line": 2688,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 2689,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=2182"
+    },
+    {
+      "line": 2690,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160"
+    },
+    {
+      "line": 2691,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=7333"
+    },
+    {
+      "line": 2692,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "VerticalBlankTime=18"
+    },
+    {
+      "line": 2698,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=532"
+    },
+    {
+      "line": 2699,
+      "tick": 234043,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 2700,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=2160"
+    },
+    {
+      "line": 2701,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=2182"
+    },
+    {
+      "line": 2702,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "eis",
+      "text": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532"
+    },
+    {
+      "line": 2703,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CapStartY=0"
+    },
+    {
+      "line": 2704,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "DlyMs=16"
+    },
+    {
+      "line": 2707,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit finish===="
+    },
+    {
+      "line": 2708,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 2709,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 2710,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=0"
+    },
+    {
+      "line": 2711,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 2712,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 2735,
+      "tick": 234044,
+      "cpu": 0,
+      "category": "eis",
+      "text": "EisZoomRatio: 1.33 x"
+    },
+    {
+      "line": 2770,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "ADV time: 6 3"
+    },
+    {
+      "line": 2771,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime1=10"
+    },
+    {
+      "line": 2772,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime2=16"
+    },
+    {
+      "line": 2773,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisWarpUpdateEndTime1=13"
+    },
+    {
+      "line": 2776,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 2777,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 2778,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 2779,
+      "tick": 234046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis timer (0) = (1000, 1000)"
+    },
+    {
+      "line": 2914,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 2915,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 2916,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=1"
+    },
+    {
+      "line": 2917,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 2918,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 2920,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_RangeUpdate starts===="
+    },
+    {
+      "line": 2922,
+      "tick": 234353,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 1, SamplingRatio = 257, SensorDownsample = 65793"
+    },
+    {
+      "line": 2963,
+      "tick": 234354,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 2964,
+      "tick": 234354,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=1"
+    },
+    {
+      "line": 2965,
+      "tick": 234354,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=1"
+    },
+    {
+      "line": 2966,
+      "tick": 234354,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 2967,
+      "tick": 234354,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 3231,
+      "tick": 238577,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 3232,
+      "tick": 238577,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis stop..."
+    },
+    {
+      "line": 3261,
+      "tick": 238580,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 3283,
+      "tick": 238657,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "[Applib - VideoEnc] <VinSwitchCallback> Stop Eis"
+    },
+    {
+      "line": 3343,
+      "tick": 238743,
+      "cpu": 1,
+      "category": "eis_lifecycle",
+      "text": "AppLibVideoEnc_VinSwitchCallback: EIS start"
+    },
+    {
+      "line": 3344,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis init... task_ver 20160201"
+    },
+    {
+      "line": 3345,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "Eis rev. 0xb514c59"
+    },
+    {
+      "line": 3346,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "set EIS processing mode: 0"
+    },
+    {
+      "line": 3347,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 266, FocalValue = 680"
+    },
+    {
+      "line": 3349,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init starts===="
+    },
+    {
+      "line": 3350,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Init finish===="
+    },
+    {
+      "line": 3351,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit starts===="
+    },
+    {
+      "line": 3352,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "FrameRatePerSec=30"
+    },
+    {
+      "line": 3353,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CurrFrameTime=34"
+    },
+    {
+      "line": 3354,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257"
+    },
+    {
+      "line": 3355,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 3356,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 3357,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160"
+    },
+    {
+      "line": 3358,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=7333"
+    },
+    {
+      "line": 3359,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "VerticalBlankTime=25"
+    },
+    {
+      "line": 3365,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=532"
+    },
+    {
+      "line": 3366,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.FrameLengthLines=4550"
+    },
+    {
+      "line": 3367,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=1080"
+    },
+    {
+      "line": 3368,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=1098"
+    },
+    {
+      "line": 3369,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532"
+    },
+    {
+      "line": 3370,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "CapStartY=0"
+    },
+    {
+      "line": 3371,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "DlyMs=23"
+    },
+    {
+      "line": 3374,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_ModeInit finish===="
+    },
+    {
+      "line": 3375,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 3376,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 3377,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=0"
+    },
+    {
+      "line": 3378,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 3379,
+      "tick": 238743,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 3402,
+      "tick": 238744,
+      "cpu": 0,
+      "category": "eis",
+      "text": "EisZoomRatio: 1.33 x"
+    },
+    {
+      "line": 3437,
+      "tick": 238745,
+      "cpu": 0,
+      "category": "eis",
+      "text": "ADV time: 6 3"
+    },
+    {
+      "line": 3438,
+      "tick": 238745,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime1=17"
+    },
+    {
+      "line": 3439,
+      "tick": 238745,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisUpdateEndTime2=23"
+    },
+    {
+      "line": 3440,
+      "tick": 238745,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisWarpUpdateEndTime1=20"
+    },
+    {
+      "line": 3443,
+      "tick": 238746,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 3444,
+      "tick": 238746,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    },
+    {
+      "line": 3445,
+      "tick": 238746,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 3446,
+      "tick": 238746,
+      "cpu": 0,
+      "category": "eis",
+      "text": "eis timer (0) = (1000, 1000)"
+    },
+    {
+      "line": 3578,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable starts===="
+    },
+    {
+      "line": 3579,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.Enable=0"
+    },
+    {
+      "line": 3580,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnableCmd=1"
+    },
+    {
+      "line": 3581,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.StabilizerType=2"
+    },
+    {
+      "line": 3582,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.MeEnable=0"
+    },
+    {
+      "line": 3584,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImageMainEis_RangeUpdate starts===="
+    },
+    {
+      "line": 3586,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "SamplingScale = 2, SamplingRatio = 257, SensorDownsample = 131329"
+    },
+    {
+      "line": 3627,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "eis",
+      "text": "====AmbaImgEisCtrl_Enable finish===="
+    },
+    {
+      "line": 3628,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=1"
+    },
+    {
+      "line": 3629,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=1"
+    },
+    {
+      "line": 3630,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.EnablePref=0"
+    },
+    {
+      "line": 3631,
+      "tick": 239046,
+      "cpu": 0,
+      "category": "parameter",
+      "text": "EisObj.RscEnablePref=0"
+    }
+  ],
+  "mode_init_blocks": [
+    {
+      "start_tick": 964,
+      "start_line": 752,
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "GyroParam.OffsetX": 8388608,
+        "GyroParam.OffsetY": 8388608,
+        "GyroCalibInfo.SenseX": 33536,
+        "GyroCalibInfo.SenseY": 33536,
+        "GyroInfo.VolDivDen": 1,
+        "GyroCalibInfo.SenseZ": 33536,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "end_tick": 964,
+      "end_line": 797
+    },
+    {
+      "start_tick": 233143,
+      "start_line": 2228,
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "end_tick": 233143,
+      "end_line": 2251
+    },
+    {
+      "start_tick": 234043,
+      "start_line": 2684,
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 2182,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 18,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 2160,
+        "CapStartY": 0,
+        "DlyMs": 16
+      },
+      "sensor_geometry": "VinSensorGeo: Width=3840, Height=2160, StartX=204, StartY=532",
+      "end_tick": 234044,
+      "end_line": 2707
+    },
+    {
+      "start_tick": 238743,
+      "start_line": 3351,
+      "fields": {
+        "FrameRatePerSec": 30,
+        "CurrFrameTime": 34,
+        "EisSensorStatus.ModeInfo.FrameLengthLines": 4550,
+        "EisSensorStatus.ModeInfo.OutputInfo.OutputHeight": 1098,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height": 2160,
+        "row_time_rounded_ns": 7333,
+        "VerticalBlankTime": 25,
+        "EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY": 532,
+        "EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height": 1080,
+        "CapStartY": 0,
+        "DlyMs": 23
+      },
+      "sensor_geometry": "VinSensorGeo: Width=1920, Height=1080, StartX=204, StartY=532",
+      "end_tick": 238743,
+      "end_line": 3374
+    }
+  ],
+  "selected_event_counts": {
+    "eis_lifecycle": 18,
+    "eis": 81,
+    "parameter": 128
+  },
+  "bounded_error_counts": {
+    "Eis-Warp calculation not in-time": 0,
+    "Warp content not ready last frame": 0
+  },
+  "limitations": [
+    "Only selected printed events are extracted.",
+    "Native log buffering can lose, truncate or reorder messages.",
+    "Mode initialization and enable requests do not prove every-frame execution.",
+    "EnablePref/RscEnablePref are pending requests, not active enable flags.",
+    "No individual gyro samples or exposure-aligned frame timestamps recovered."
+  ]
+}

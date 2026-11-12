@@ -1,0 +1,322 @@
+[
+  {
+    "offset": "0x134",
+    "text": "/lib/ld-linux-armhf.so.3"
+  },
+  {
+    "offset": "0x565",
+    "text": "libremoteapicmddaemon.so"
+  },
+  {
+    "offset": "0x57e",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0x59a",
+    "text": "cmd_server_start"
+  },
+  {
+    "offset": "0x5ab",
+    "text": "_fini"
+  },
+  {
+    "offset": "0x5b1",
+    "text": "cmd_server_stop"
+  },
+  {
+    "offset": "0x5c1",
+    "text": "cmd_server_create_hndlr"
+  },
+  {
+    "offset": "0x5d9",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0x5e8",
+    "text": "cmd_server_release"
+  },
+  {
+    "offset": "0x5fb",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0x60f",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0x629",
+    "text": "cmd_server_init"
+  },
+  {
+    "offset": "0x639",
+    "text": "libremoteapidatadaemon.so"
+  },
+  {
+    "offset": "0x653",
+    "text": "data_server_create_hndlr"
+  },
+  {
+    "offset": "0x66c",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x676",
+    "text": "socket"
+  },
+  {
+    "offset": "0x682",
+    "text": "perror"
+  },
+  {
+    "offset": "0x689",
+    "text": "daemon"
+  },
+  {
+    "offset": "0x690",
+    "text": "listen"
+  },
+  {
+    "offset": "0x697",
+    "text": "abort"
+  },
+  {
+    "offset": "0x69d",
+    "text": "memset"
+  },
+  {
+    "offset": "0x6a4",
+    "text": "__errno_location"
+  },
+  {
+    "offset": "0x6ba",
+    "text": "fputc"
+  },
+  {
+    "offset": "0x6c0",
+    "text": "fputs"
+  },
+  {
+    "offset": "0x6c6",
+    "text": "setsockopt"
+  },
+  {
+    "offset": "0x6d1",
+    "text": "stderr"
+  },
+  {
+    "offset": "0x6d8",
+    "text": "sigaction"
+  },
+  {
+    "offset": "0x6e2",
+    "text": "close"
+  },
+  {
+    "offset": "0x6e8",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0x6f0",
+    "text": "accept"
+  },
+  {
+    "offset": "0x6f7",
+    "text": "sleep"
+  },
+  {
+    "offset": "0x6fd",
+    "text": "getprotobyname"
+  },
+  {
+    "offset": "0x70c",
+    "text": "strerror"
+  },
+  {
+    "offset": "0x715",
+    "text": "__libc_start_main"
+  },
+  {
+    "offset": "0x727",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x72e",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x73a",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x748",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x754",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x761",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x11c1",
+    "text": "49F0F"
+  },
+  {
+    "offset": "0x11e8",
+    "text": "wifi_util_enable_listen"
+  },
+  {
+    "offset": "0x1200",
+    "text": "wifi_util_disable_accept"
+  },
+  {
+    "offset": "0x1219",
+    "text": "wifi_util_disable_listen"
+  },
+  {
+    "offset": "0x1236",
+    "text": "%s(%d): "
+  },
+  {
+    "offset": "0x123f",
+    "text": "cannot map \"tcp\" to protocol number"
+  },
+  {
+    "offset": "0x1263",
+    "text": "binding port %d"
+  },
+  {
+    "offset": "0x1273",
+    "text": "sleep %d and rebind"
+  },
+  {
+    "offset": "0x1287",
+    "text": "WiFi is not enabled"
+  },
+  {
+    "offset": "0x129b",
+    "text": "bt_util_disable_accept"
+  },
+  {
+    "offset": "0x12b2",
+    "text": "bt_util_disable_listen"
+  },
+  {
+    "offset": "0x12c9",
+    "text": "BT is not enabled"
+  },
+  {
+    "offset": "0x12e0",
+    "text": "cmd_server_init fail, ret = %d"
+  },
+  {
+    "offset": "0x12ff",
+    "text": "register_wifi_util fail, ret = %d"
+  },
+  {
+    "offset": "0x1321",
+    "text": "register_bt_util fail, ret = %d"
+  },
+  {
+    "offset": "0x1341",
+    "text": "cmd_server stop fail, ret = %d"
+  },
+  {
+    "offset": "0x1360",
+    "text": "cmd_server release fail, ret = %d"
+  },
+  {
+    "offset": "0x151d",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x1550",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x155a",
+    "text": ".interp"
+  },
+  {
+    "offset": "0x1562",
+    "text": ".note.ABI-tag"
+  },
+  {
+    "offset": "0x1570",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x1583",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x1589",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x1591",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x1599",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x15a6",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x15b5",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x15be",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x15c7",
+    "text": ".init"
+  },
+  {
+    "offset": "0x15cd",
+    "text": ".text"
+  },
+  {
+    "offset": "0x15d3",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x15d9",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x15e1",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x15ec",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x15f6",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x1602",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x1613",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x1621",
+    "text": ".data"
+  },
+  {
+    "offset": "0x162c",
+    "text": ".ARM.attributes"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "Retained evidence only; video decode result verified, not rerun",
+  "native_command_probe": true,
+  "complete_37_word_restoration": true,
+  "worker_failure_preserved": true,
+  "log_and_video_hashes_verified": true,
+  "focused_exports": 16,
+  "local_links": 48,
+  "python_scripts_compiled": [
+    "device_rtos_command_probe.py",
+    "device_native_eis_trace.py",
+    "device_python_transport.py",
+    "device_rtos_log_capture.py",
+    "analyze_native_eis_trace.py"
+  ]
+}

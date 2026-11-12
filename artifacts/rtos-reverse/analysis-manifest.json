@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-05",
+  "scope": "Whole-image automatic static reverse engineering with focused manual subsystem analysis; no target execution",
+  "target": {
+    "path": "artifacts/firmware/v1.10.52/_part_lrtos.a9s",
+    "sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+    "bytes": 7491432,
+    "map_start": "0xa0100000",
+    "map_end_inclusive": "0xa0824f67",
+    "firmware_release": "community v1.10.52",
+    "retained_rtos_build": "Z16V13L_1.10.9_build-20180622051856_git-efbdfd85_r2748"
+  },
+  "tools": {
+    "ghidra": "12.2 PUBLIC (20261016)",
+    "capstone": "5.0.7",
+    "python": "3.14.0",
+    "java": "OpenJDK 25.0.1",
+    "ghidra_source": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.2_build",
+    "ghidra_archive_sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+    "native_decompiler": "Built from the matching distribution C++ source for mac_x86_64; no global MCP configuration changed"
+  },
+  "reproduce": {
+    "main": "GHIDRA_DIR=/path/to/ghidra_12.2_PUBLIC JAVA_HOME=/path/to/jdk bash scripts/analyze_rtos.sh",
+    "python_dependency_setup": "python3 -m venv .venv-reverse; .venv-reverse/bin/python -m pip install capstone==5.0.7",
+    "core": " .venv-reverse/bin/python scripts/rtos_core.py",
+    "tables": ".venv-reverse/bin/python scripts/rtos_tables.py",
+    "image_ipc": ".venv-reverse/bin/python scripts/rtos_image_ipc.py",
+    "query": "python3 scripts/rtos_query.py --help",
+    "notes": [
+      "Firmware extraction is recorded in artifacts/firmware/verification.json.",
+      "seeds.tsv combines the previous Shell table and structural dispatcher seeds.",
+      "Ghidra import uses BinaryLoader ARM:LE:32:v7, base address 0xA0100000, 900-second analysis limit.",
+      "Each initial decompilation has an 8-second limit; selected functions and failures were refined with a 40-second limit.",
+      "The reference scripts and sample are analysis and integration aids, not a tested loader."
+    ]
+  },
+  "coverage": {
+    "program": "_part_lrtos.a9s",
+    "language": "ARM:LE:32:v7",
+    "image_base": "0x00000000",
+    "memory_blocks": [
+      {
+        "name": "ram",
+        "start": "0xa0100000",
+        "end": "0xa0824f67",
+        "bytes": 7491432.0,
+        "initialized": true
+      },
+      {
+        "name": "startup_bss_candidate",
+        "start": "0xa0fb3000",
+        "end": "0xa1a5117b",
+        "bytes": 11133308,
+        "initialized": false,
+        "source": "Yi4kRefine.java; startup clear-loop literals at offsets 0x22c/0x230"
+      }
+    ],
+    "executable_sha256": "c1cde4bcd290bdfac9f48ad5eb04f20bc3d208dd1e041ac1376b255dcf846141",
+    "discovered_functions": 11035,
+    "decompilations_completed": 11031,
+    "decompilations_failed": 4,
+    "function_body_union_bytes": 4043528,
+    "recognized_instruction_count": 1097354,
+    "elapsed_export_seconds": 343,
+    "limitations": [
+      "Automatic static analysis; not a proof of complete function discovery.",
+      "Raw binary contains code and data; inferred boundaries and types may be wrong.",
+      "No on-device execution or ABI validation performed.",
+      "Indirect calls may remain unresolved."
+    ],
+    "refinement": {
+      "completed": 359,
+      "timeout_seconds": 40,
+      "bss_candidate_start": "0xa0fb3000",
+      "retried": 363,
+      "failed": 4,
+      "bss_candidate_end_exclusive": "0xa1a5117c"
+    }
+  },
+  "manual_catalogs": {
+    "core_interfaces": 25,
+    "table_handlers": 113,
+    "direct_root_registration_sites": 22,
+    "image_ipc_interfaces": 39
+  },
+  "validation": {
+    "input_sha256_verified": true,
+    "capstone_exports_regenerated": true,
+    "arm_example_compiles": true,
+    "example_format": "ELF32 ARM EABI5 relocatable; not linked or executed",
+    "markdown_local_links_checked": true,
+    "json_parsed": true,
+    "target_not_executed_or_modified": true
+  },
+  "reference_sources": [
+    {
+      "repository": "https://github.com/irungentoo/Xiaomi_Yi_4k_Camera",
+      "commit": "75af5a6683e4743a060cfaa6d2f362994ad1db2f",
+      "local_path": "references/Xiaomi_Yi_4k_Camera"
+    },
+    {
+      "repository": "https://github.com/psolyca/Yi_4k_ROOTFS",
+      "commit": "6a6e87526f3985ec8bfddb4e7b0074d51f9d3b52",
+      "local_path": "references/Yi_4k_ROOTFS"
+    },
+    {
+      "repository": "https://github.com/psolyca/Yi_4k_Events_Manager",
+      "commit": "b95432a849a11fa51ae47ad6e93d72b6a8de306c",
+      "local_path": "references/Yi_4k_Events_Manager"
+    },
+    {
+      "repository": "https://github.com/psolyca/Xiaomi_Yi_4k_Camera",
+      "commit": "e47664877c910b7b4039f4f425ae09397b3a3e4d",
+      "local_path": "references/psolyca_unpacker"
+    },
+    {
+      "repository": "https://github.com/petabyt/liemoth",
+      "commit": "3c15be953d5bab3406cd7325677686059c643d13",
+      "local_path": "references/liemoth"
+    },
+    {
+      "repository": "https://github.com/o-gs/dji-firmware-tools",
+      "commit": "1db36ddf45d8018ea849f0c03c5e45d2f3068844",
+      "local_path": "references/related_soc/dji-firmware-tools"
+    }
+  ],
+  "limitations": [
+    "Four function decompilations remain failed; assembly and errors are retained.",
+    "No original source or full debug symbols recovered.",
+    "Function discovery can include false positives and miss indirect entries.",
+    "Function signatures and ABI structures remain partially reconstructed.",
+    "No on-device loader, cache coherency, init timing or task life-cycle validation.",
+    "The separate DSP microcode is not decompiled in this RTOS analysis."
+  ],
+  "supplemental_analysis": {
+    "eis": {
+      "report": "docs/eis-reverse-engineering.md",
+      "evidence": "artifacts/rtos-reverse/eis/evidence.json",
+      "reproduce": ".venv-reverse/bin/python scripts/rtos_eis.py",
+      "scope": "EIS task, gyro ops table, sample/bias processing, rotation and row-dependent warp generation; static only",
+      "new_indirect_entry": "0xa047ede4 (gyro read), absent from the prior function index",
+      "runtime_validated": false,
+      "archive_note": "yi4k-rtos-analysis.tar.gz is the earlier snapshot and does not include this supplement"
+    },
+    "eis_algorithm_survey": {
+      "date": "2026-11-05",
+      "report": "docs/eis-algorithm-survey.md",
+      "sources": "artifacts/eis-research/curated-sources.json",
+      "priority": "EIS-induced jello: geometry, rolling-shutter and gyro/image phase; blur-aware conservative stabilization",
+      "device_execution": false,
+      "candidate_benchmarks_on_yi": false
+    },
+    "eis_execution_plan": {
+      "date": "2026-11-05",
+      "report": "docs/eis-execution-plan.md",
+      "scope": "Firmware identity, video baseline, native execution, bounded read-only capture, ablation and on-device validation milestones",
+      "status": "Plan only; device firmware identity pending; no loader or logger implemented",
+      "device_execution": false
+    },
+    "device_validation": {
+      "report": "docs/device-validation.md",
+      "probe_directory": "sdk/device-probe",
+      "basis": "Retained community Telnet and RTOS IPC instructions",
+      "scope": "Linux login and RTOS autoexec to Linux temporary-file marker; no native loader",
+      "device_execution": false
+    },
+    "linux_system": {
+      "date": "2026-11-05",
+      "report": "docs/linux-system-analysis.md",
+      "evidence_directory": "artifacts/linux-analysis",
+      "sample": "Community firmware v1.10.52; not a user-device dump",
+      "rfs_sha256": "43f69b3148b143bec882c3de4f2601be9f75a7b652f2e4ef07da4289a3efc1f7",
+      "kernel_sha256": "d2a56ebe33f42866466b37b4a8ac29cf79a5c60c035ea776c431567ddeec1f7f",
+      "counts": {
+        "regular_files": 1191,
+        "symlinks": 832,
+        "elf_files": 245
+      },
+      "baseline": "Repository initial original-1.10.9 import 7a5e134d8078f5ca0fad40539cd3954ff290d7f1; not independently authenticated",
+      "new_findings": [
+        "Community Linux bootcmd hook",
+        "RTOS-driven startup of Linux remoteapi/RTSP/Telnet/XCServer",
+        "Bidirectional RPC/event facilities",
+        "SharePreview matching Linux and RTOS Y-buffer service"
+      ],
+      "reproduce": ".venv-reverse/bin/python scripts/linux_inventory.py --baseline-tree artifacts/linux-analysis/provenance/initial-import-tree.json",
+      "device_execution": false,
+      "rfs_modified_or_boot_tested": false,
+      "limitations": [
+        "No runtime process/port/memory observations",
+        "No full semantic recovery of all Linux binaries",
+        "Device nodes dev/console and dev/null not created on host",
+        "No tested gyro streaming or EIS warp replacement API"
+      ],
+      "archive_note": "Earlier yi4k-rtos-analysis.tar.gz does not include Linux supplement"
+    }
+  },
+  "runtime_observations": {
+    "device_linux_2026_11_09": {
+      "report": "artifacts/device/2026-11-09-linux/README.md",
+      "summary": "artifacts/device/2026-11-09-linux/summary.json",
+      "firmware_build": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+      "transport": "Existing Wi-Fi Telnet root service; not USB",
+      "scope": "Linux reads, read-only API query, SYS_SW logical partition and RFS content-window capture",
+      "same_target_as_static_rtos_analysis": false,
+      "fixed_rtos_addresses_reusable": false,
+      "linux_commands_executed": true,
+      "custom_rtos_payload_executed": false,
+      "firmware_or_settings_modified": false,
+      "partition_capture_manifest": "artifacts/device/2026-11-09-linux/partition-capture.json",
+      "limitations": [
+        "One running snapshot; camera clock not calibrated",
+        "No EIS/gyro/SharePreview operational test",
+        "Logical MTD capture has no NAND OOB and is not a firmware-upgrade package"
+      ]
+    },
+    "device_rtos_2026_11_09": {
+      "report": "docs/device-1107-eis-validation.md",
+      "manifest": "artifacts/device/2026-11-09-linux/rtos-analysis/analysis-manifest.json",
+      "scope": "SharePreview proc3 RPC query and bounded O_RDONLY/PROT_READ DRAM snapshots with two code fingerprints",
+      "sharepreview_rpc_service_found": false,
+      "dram_state_read": true,
+      "rtos_cache_coherence_validated": false,
+      "custom_rtos_payload_executed": false,
+      "firmware_or_settings_modified": false,
+      "memory_written": false,
+      "recording_started": false
+    }
+  },
+  "static_supplements": {
+    "device_1107": {
+      "manifest": "artifacts/device/2026-11-09-linux/rtos-analysis/analysis-manifest.json",
+      "scope": "Separate real-device RTOS project; original static target preserved",
+      "report": "docs/device-1107-eis-validation.md"
+    }
+  }
+}

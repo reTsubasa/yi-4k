@@ -1,0 +1,8 @@
+警告: [options] 未与 -source 11 一起设置系统模块路径
+/Users/hyc/Documents/yi4k/scripts/android-native-mux-consumer/NativeMuxConsumer.java:16: 错误: 找不到符号
+    for(String k:keys)if(f.containsKey(k)){Object v=f.getObject(k);j.put(k,String.valueOf(v));}
+                                                     ^
+  符号:   方法 getObject(String)
+  位置: 类型为MediaFormat的变量 f
+1 个错误
+1 个警告

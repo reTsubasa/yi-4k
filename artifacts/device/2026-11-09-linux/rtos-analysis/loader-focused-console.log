@@ -1,0 +1,52 @@
+2026-11-09 12:42:15 INFO  (LoggingInitialization) Using log config file: jar:file:/Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-09 12:42:15 INFO  (LoggingInitialization) Using log file: artifacts/device/2026-11-09-linux/rtos-analysis/loader-focused-console.log  
+2026-11-09 12:42:15 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-09 12:42:15 INFO  (Preferences) Loading user preferences: /Users/hyc/Library/ghidra/ghidra_12.1.4_PUBLIC/preferences  
+2026-11-09 12:42:15 INFO  (Preferences) Loading previous preferences: /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/preferences  
+2026-11-09 12:42:15 INFO  (ClassSearcher) Searching for classes...  
+2026-11-09 12:42:17 INFO  (ClassSearcher) Class search complete (1434 ms)  
+2026-11-09 12:42:17 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-09 12:42:17 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-09 12:42:17 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-09 12:42:17 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-11-09 12:42:19 INFO  (AnalyzeHeadless) Headless startup complete (10126 ms)  
+2026-11-09 12:42:19 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-11-09 12:42:19 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /Users/hyc/orca/workspaces/orca测试/yi4k/scripts/ghidra
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Users/hyc/Applications/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts  
+2026-11-09 12:42:19 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-09 12:42:19 INFO  (HeadlessAnalyzer) Opening existing project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/ghidra-project/yi4k_device_1107  
+2026-11-09 12:42:19 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) Found the following default tools:   
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Debugger - defaultTools/Debugger.tool  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -CodeBrowser - defaultTools/CodeBrowser.tool  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Version Tracking - defaultTools/VersionTracking.tool  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Emulator - defaultTools/Emulator.tool  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) Found existing tools; merging existing tools:   
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Debugger - /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/tools/_debugger.tcd  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -CodeBrowser - /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/tools/_code_browser.tcd  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Version Tracking - /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/tools/_version _tracking.tcd  
+2026-11-09 12:42:20 DEBUG (DefaultProjectManager) -Emulator - /Users/hyc/Library/ghidra/ghidra_12.2_PUBLIC/tools/_emulator.tcd  
+2026-11-09 12:42:20 INFO  (HeadlessProject) Opening project: /Users/hyc/orca/workspaces/orca测试/yi4k/artifacts/device/2026-11-09-linux/rtos-analysis/ghidra-project/yi4k_device_1107  
+2026-11-09 12:42:25 ERROR (HeadlessAnalyzer) /rtos-window.bin: this file was created with a newer version of Ghidra, and can not be processed.  

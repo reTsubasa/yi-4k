@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "status": "pass_independent_compiled_archive_replay",
+  "offline_only": true,
+  "device_access": false,
+  "verifier_sha256": "80b9fcc8185648aaf2a73a03d0e73ca5ade4cc0fea763417f020fdeacda45800",
+  "source_sha256": "7fd902023185c36555eac6709120ab197ef408f37b3b3bae9d0cac9e61067a9c",
+  "owner_source_sha256": "b58c229882fb128a13f5352eda538ff28489b1e25b5e071b6c8d2088271c5ac7",
+  "owner_header_sha256": "3cc9dc09a605f08564f8fca1b2f7fc0ea6561af2a5832cedc20fe8c2e509f364",
+  "custody": "Separate downstream Python byte copy, not mux/Close success or durable SD proof",
+  "sdk_header_sha256": {
+    "sdk/yi4k_1107_aac_boundary.h": "3cc9dc09a605f08564f8fca1b2f7fc0ea6561af2a5832cedc20fe8c2e509f364",
+    "sdk/yi4k_1107_audio_early_copy.h": "ad2bf7380927251f462774713280bfa5e592aa5d4c56642c00dee3b1df3b7756",
+    "sdk/yi4k_1107_audio_event.h": "68e2829a7325639b96fc9b2d298518b7bf69f664c8b61371d0dec9ae8f1f5024",
+    "sdk/yi4k_1107_codec_epoch.h": "b03ed142b36aac874c7e154df1a00b5a707958bc902898fe1b86e316fe08c9e0",
+    "sdk/yi4k_1107_early_copy.h": "9a344099b61728a274240560db4ea5ea3d0fa69471abffb3714908806c0b3c26",
+    "sdk/yi4k_1107_eis_shadow.h": "6270d2548d0266bb409805293f2eaed501b48d54c58097e7601c9c0860649052",
+    "sdk/yi4k_1107_eis_shadow_v2.h": "5698ef76bc24f4fa3826afe54ef6781adf202a044d280a9912f8975da5634dd0",
+    "sdk/yi4k_1107_eis_stage_trace.h": "901487450339aa1e492a4439027d712513bbb7ae57d36e5713de7bf519898e78",
+    "sdk/yi4k_1107_fifo_consumer.h": "0157139306c71f5335755378356630d8f533534c7326cd717a8e64b34895ba78",
+    "sdk/yi4k_1107_internal.h": "af6430efe337ec3c41de643d1a60561c4d482ef3a1752360607ce0e74346731f",
+    "sdk/yi4k_1107_owned_mux.h": "9abd7ab04be037c1af155816f3b22f671a81a6f31c49bb8fdcfad05e235d4110",
+    "sdk/yi4k_1107_owned_retirement.h": "b1ba2df06cfbe3a9fc272dc9a95534ef22f1ccef36a3d615fba6b42876c53416",
+    "sdk/yi4k_1107_packet_custody.h": "e4e371085126080d12f2e6d83da3a111e64ef4d20c7cb2ffa7402ef9048c91f9",
+    "sdk/yi4k_1107_payload_copy.h": "91aaa546cedc9845d2c4c7b6398f66cff55c49ecdc6c2b8cdfd04b0f9f3d3da2",
+    "sdk/yi4k_1107_rpc.h": "ee520c5d62def51a092d261c85a7054eca8f3db159da3efd8404616501a9fc1d",
+    "sdk/yi4k_1107_video_descriptor.h": "d2dcde7b77b48dce86f37b0e48cb90a4347dfea8ba9269a89ced65b1923ea002"
+  },
+  "compile_command": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "-I",
+    "/Users/hyc/Documents/yi4k/sdk",
+    "artifacts/verification/2026-11-11-prerecord-aac-boundary-archive-review-run02/independent-wrapper.c",
+    "/Users/hyc/Documents/yi4k/sdk/yi4k_1107_aac_boundary.c",
+    "-o",
+    "artifacts/verification/2026-11-11-prerecord-aac-boundary-archive-review-run02/independent-owner.dylib"
+  ],
+  "compiled_library_sha256": "6a1c72ad6e93b0afb44553776971db78816af1494183db42f44dfcef561dc46d",
+  "archived_replay": {
+    "aac_packets": 3003,
+    "segment_counts": {
+      "1": 2815,
+      "2": 188
+    },
+    "ordered_payload_sha256_digest": "34c8e32487ad1e6a4139c9f09ba3dcb45f3d4f63eeb6046ad4ee944ca0d08f7b",
+    "crossing": {
+      "source_index": 2815,
+      "pts": 2882560,
+      "bytes": 346,
+      "sha256": "ef96aaeaa91e39baf9abaf7a6edcf1b129482b5522cfb130d86b83413bf4ba5a",
+      "new_source_epoch": 2882560,
+      "ticket": 2816
+    },
+    "upstream_overwrites_preserved": 3003,
+    "retry_untouched_snapshot_checks": 3,
+    "once_only_receipt_checks": 3003
+  },
+  "rational_oracle": {
+    "cases": 4096,
+    "maximum_cross_product_bits": 96,
+    "result": "all exact classifications match arbitrary-precision cross multiplication"
+  },
+  "negative_checks": [
+    "NEXT cannot receipt or overwrite before advance",
+    "invalid advance transactional",
+    "wrong/stale/duplicate receipt cannot release",
+    "RETRY_UNTOUCHED retains exact bytes/metadata/ticket",
+    "AAC end overflow rejects without mutation",
+    "AMBIGUOUS freezes and retains bytes; replay denied"
+  ],
+  "limits": [
+    "Host compiled controller and synthetic caller receipts only; no actual downstream writer custody/Close integration.",
+    "Attestation identity/config and source epoch are fixture bindings, not proof of a hardware shared clock.",
+    "No native mux replay or device/SD operations; one packet owner does not constitute a live minute ring."
+  ]
+}

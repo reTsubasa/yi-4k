@@ -1,0 +1,30 @@
+{
+  "verification": "2026-11-11 independent offline/static regression rerun 02",
+  "device_access": false,
+  "firmware_execution": false,
+  "items": [
+    {
+      "path": "artifacts/device/2026-11-11-eis-orc-transfer-dependencies/audit.json",
+      "bytes": 44042,
+      "sha256": "72de7b6f5ce25010955827765e79538c08ba782ba6c5026b752f1231d0ef00bd"
+    },
+    {
+      "path": "artifacts/device/2026-11-11-prerecord-close-quiescence/audit.json",
+      "bytes": 8946,
+      "sha256": "127f2a500dc0b3314b3b1240d94e6569c5b343e38bbc0f4e98fa15e1b79fb1f8"
+    },
+    {
+      "path": "artifacts/android/2026-11-11-independent-build-rerun.json",
+      "bytes": 674,
+      "sha256": "eabf2ddad0654a95164c84fea7eacedeedc7c76368e523f314164acfd39ea352"
+    }
+  ],
+  "results": {
+    "android": "testDebugUnitTest, lintDebug, assembleDebug passed; APK v2 signature verified",
+    "host_python": "scripts/tests unittest discovery: 37 passed, 0 failures, 0 errors",
+    "capture_trigger": "host + ARM semantic checks: 13068 passed in .venv-reverse",
+    "eis_transfer_dependency": "audit script and JSON validation passed",
+    "prerecord_close_quiescence": "12 assertions, Python compile, JSON validation passed"
+  },
+  "scope": "Evidence is offline/host-side; no camera write, firmware execution, RTOS execution or device access."
+}

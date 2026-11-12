@@ -1,0 +1,120 @@
+{
+  "firmware": "1.10.7 a8f840ce r2746",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "shell_chain": {
+    "registration": "A01C98C0",
+    "name": "imgproc",
+    "parser": "A01C8E20",
+    "option": "-eis",
+    "dispatch": "image_command_dispatch(0x10FF, id, &float_arg1, &float_arg2)",
+    "debug_handler": "A0394CC0",
+    "flag_set_case": 100,
+    "flag_count": 37,
+    "flag_storage": "uint16[37] at A0757AF8"
+  },
+  "runtime_status": "Native command probe, 4 debug fields and full 37-word restoration verified; preview gyro/exposure/frame prints captured. Boot-time recording failed because API port was not ready. Configuration and probe artifacts removed.",
+  "flags": [
+    {
+      "index": 0,
+      "address": "0xa0757af8",
+      "name": "Frame diagnostics",
+      "behavior": "A0394BA8 selector 1; frame timing / warp readiness messages",
+      "initial_image_value": 0
+    },
+    {
+      "index": 8,
+      "address": "0xa0757b08",
+      "name": "Task interval diagnostics",
+      "behavior": "A0394BA8 selector 3; can print frequently",
+      "initial_image_value": 0
+    },
+    {
+      "index": 10,
+      "address": "0xa0757b0c",
+      "name": "Sample loss diagnostics",
+      "behavior": "A0394BA8 selector 2; reports accumulated schedule/sample loss",
+      "initial_image_value": 0
+    },
+    {
+      "index": 14,
+      "address": "0xa0757b14",
+      "name": "Gyro offset and exposure diagnostics",
+      "behavior": "GyroSampleOffset and ExposureTime at frame update",
+      "initial_image_value": 0
+    },
+    {
+      "index": 15,
+      "address": "0xa0757b16",
+      "name": "DSP update timing diagnostics",
+      "behavior": "Bit 1 logs ArmSysTim updates, bit 2 logs invalid UpdateInfo",
+      "initial_image_value": 0
+    },
+    {
+      "index": 19,
+      "address": "0xa0757b1e",
+      "name": "LBC grid diagnostics",
+      "behavior": "Shared array field; used for grid-column diagnostics",
+      "initial_image_value": 0
+    },
+    {
+      "index": 20,
+      "address": "0xa0757b20",
+      "name": "Raw gyro / ring / bias diagnostics",
+      "behavior": "Bit 1 raw 3 axes plus an extra slot; bit 2 ring values; bit 4 bias shifted by 8. Also enables LBC grid-row diagnostics.",
+      "initial_image_value": 0
+    },
+    {
+      "index": 21,
+      "address": "0xa0757b22",
+      "name": "Skip gyro acquisition",
+      "behavior": "Nonzero bypasses ops+8 read: exclude from telemetry configuration",
+      "initial_image_value": 0
+    },
+    {
+      "index": 22,
+      "address": "0xa0757b24",
+      "name": "Gyro log modulo gate",
+      "behavior": "Requires previous sample tick modulo this value equal zero; also enables LDC grid-column diagnostics",
+      "initial_image_value": 0
+    },
+    {
+      "index": 29,
+      "address": "0xa0757b32",
+      "name": "Hardware timing debug",
+      "behavior": "Reads/writes timing hardware and can print every invocation: exclude from initial telemetry configuration",
+      "initial_image_value": 0
+    },
+    {
+      "index": 35,
+      "address": "0xa0757b3e",
+      "name": "Nonzero original default",
+      "behavior": "Initial image contains 1; never clear the entire debug array",
+      "initial_image_value": 1
+    }
+  ],
+  "candidate_commands": {
+    "raw_log_modulo_50": "t imgproc -eis 100 22 50",
+    "raw_log_enable": "t imgproc -eis 100 20 1",
+    "raw_log_disable": "t imgproc -eis 100 20 0",
+    "modulo_default_restore": "t imgproc -eis 100 22 0"
+  },
+  "constraints": [
+    "Native startup Shell commands and fields 14,15,20,22 were runtime validated on this 1.10.7 build; other candidates remain static.",
+    "This experiment exported baseline before mutation and verified initial zeros/restoration afterward; it had no runtime baseline guard before applying. Future experiments should guard or restore actual values.",
+    "Flag 21 bypasses gyro acquisition and must not be used as a log setting.",
+    "Flag 22 is a tick-modulo condition, not a guarantee of a fixed output frequency.",
+    "Flags 20 and 22 also enable grid debug prints; output can exceed raw gyro traffic.",
+    "The fourth raw GyroData value is A1702C36; mode-1 gyro read fills only the first 3 values. It is not a valid sample timestamp.",
+    "Printed log ticks and per-sample sensor hardware timestamps are distinct; no hardware timestamp recovered.",
+    "Native text diagnostics are for bounded validation, not a final lossless high-rate logger."
+  ],
+  "runtime_evidence": {
+    "gyro_samples": 31,
+    "exposure_events": 47,
+    "frame_update_events": 47,
+    "stage": "startup preview",
+    "full_debug_table_restored": true,
+    "recording_during_trace": false,
+    "probe_configuration_removed": true
+  }
+}

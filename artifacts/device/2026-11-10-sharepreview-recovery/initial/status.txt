@@ -1,0 +1,91 @@
+cat /proc/uptime; cat /proc/meminfo; ps
+69.70 60.60
+MemTotal:          49096 kB
+MemFree:            9292 kB
+Buffers:            7848 kB
+Cached:            13732 kB
+SwapCached:            0 kB
+Active:            13092 kB
+Inactive:          15312 kB
+Active(anon):       6836 kB
+Inactive(anon):       40 kB
+Active(file):       6256 kB
+Inactive(file):    15272 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          6848 kB
+Mapped:             3908 kB
+Shmem:                52 kB
+Slab:               3880 kB
+SReclaimable:        656 kB
+SUnreclaim:         3224 kB
+KernelStack:         664 kB
+PageTables:         3988 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       24548 kB
+Committed_AS:     150212 kB
+VmallocTotal:    1515520 kB
+VmallocUsed:         748 kB
+VmallocChunk:    1514620 kB
+PID   USER     TIME   COMMAND
+    1 root       0:00 init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    4 root       0:00 [kworker/0:0]
+    5 root       0:00 [kworker/0:0H]
+    6 root       0:00 [kworker/u2:0]
+    7 root       0:00 [rcu_preempt]
+    8 root       0:00 [rcu_bh]
+    9 root       0:00 [rcu_sched]
+   10 root       0:00 [khelper]
+   11 root       0:00 [kdevtmpfs]
+   12 root       0:00 [writeback]
+   13 root       0:00 [bioset]
+   14 root       0:00 [crypto]
+   15 root       0:00 [kblockd]
+   16 root       0:00 [kworker/0:1]
+   17 root       0:00 [rpciod]
+   18 root       0:00 [kworker/u2:1]
+   19 root       0:00 [kswapd0]
+   20 root       0:00 [fsnotify_mark]
+   21 root       0:00 [nfsiod]
+   38 root       0:00 [deferwq]
+   39 root       0:00 [kworker/0:1H]
+   40 root       0:00 [kworker/0:2]
+   61 dbus       0:00 dbus-daemon --system
+   69 root       0:00 /usr/bin/rpcbind
+  102 root       0:00 /usr/bin/ipcbind -b
+  104 root       0:00 /usr/bin/util_svc -b
+  108 root       0:00 /usr/bin/AmbaNetFifoDaemon
+  110 root       0:00 /usr/bin/AmbaEventNotifyDaemon
+  120 root       0:00 [cfg80211]
+  152 root       0:00 /usr/bin/remoteapi_disc_daemon
+  154 root       0:00 /usr/sbin/cherokee-worker -a -C /etc/cherokee.conf -j -s 
+  174 root       0:00 -/bin/sh
+  176 root       0:00 /usr/bin/remoteapi_cmd_daemon
+  185 root       0:00 /usr/bin/remoteapi_data_daemon
+  195 root       0:00 /usr/bin/remoteapi_syssvc_daemon
+  204 root       0:00 /usr/bin/AmbaRTSPServer
+  211 root       0:00 /usr/local/share/script/XCServer
+  218 root       0:00 telnetd
+  219 root       0:00 [kworker/u2:2]
+  425 root       0:00 [wl_escan_handle]
+  426 root       0:00 [dhd_watchdog_th]
+  427 root       0:00 [dhd_dpc]
+  428 root       0:00 [dhd_rxf]
+  448 root       0:00 [ksdioirqd/mmc0]
+  449 root       0:00 [wl_event_handle]
+  463 nobody     0:00 dnsmasq --nodns -5 -K -R -n --dhcp-range=192.168.42.2,192
+  470 root       0:00 wpa_supplicant -Dnl80211 -iwlan0 -c/tmp/wpa_supplicant.ap
+  486 root       0:00 /usr/local/share/script/bsa_server_43340 -d /dev/ttyS1 -p
+  493 root       0:00 /usr/local/share/script/ble_remote --addr 58:70:C6:57:84:
+  503 root       0:00 -sh
+  506 root       0:00 ps
+~ # echo __YI_CAPTURE_ba33b7365a8843aa9f8262ef5abb1f6e__
+__YI_CAPTURE_ba33b7365a8843aa9f8262ef5abb1f6e__

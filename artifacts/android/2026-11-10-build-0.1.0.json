@@ -1,0 +1,22 @@
+{
+  "evidence_type": "local Android host build; no device or AVD execution",
+  "apk": "artifacts/android/yi4k-control-debug.apk",
+  "sha256": "a5f413715300255419c737cc2408ad37b117e8f01386032f2b342ff0133a1a43",
+  "application_id": "dev.yi4k.control",
+  "version_name": "0.1.0",
+  "min_sdk": 29,
+  "checks": {
+    "gradle_test_debug_release": true,
+    "lint_debug": true,
+    "assemble_debug": true,
+    "compile_debug_android_test_java": true,
+    "adb_device_or_avd_available": false
+  },
+  "device_scope": "No Android device or emulator was connected; Wi-Fi, MediaStore, UI lifecycle and real camera capture remain unverified.",
+  "ui_scope": "APEX-inspired white capture workspace: brand/device status row, illustrated landscape preview placeholder with status pills, five parameter pills, central shutter, capture modes, and four-tab capture/albums/edit/settings navigation. Live preview remains explicitly unimplemented. Media page uses a Chinese 素材库 header, filter chips, two-column VIDEO/PHOTO placeholder cards, and preserves selection/export actions.",
+  "tests": {
+    "debug_unit_tests": 23,
+    "release_unit_tests": 23,
+    "instrumentation_compilation": true
+  }
+}

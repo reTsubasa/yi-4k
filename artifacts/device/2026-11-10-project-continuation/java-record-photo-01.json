@@ -1,0 +1,165 @@
+{
+  "media_before": [
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0135.MP4",
+      "bytes": 31575424
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0135.SEC",
+      "bytes": 584032
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0136.MP4",
+      "bytes": 31400038
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0136.SEC",
+      "bytes": 583942
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0137.MP4",
+      "bytes": 23817714
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0137.SEC",
+      "bytes": 421618
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0138.MP4",
+      "bytes": 16661328
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0138.SEC",
+      "bytes": 275600
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0139.MP4",
+      "bytes": 16254590
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0139.SEC",
+      "bytes": 270558
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0140.MP4",
+      "bytes": 9626737
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0140.SEC",
+      "bytes": 152337
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0141.JPG",
+      "bytes": 4726713
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0142.MP4",
+      "bytes": 22629758
+    },
+    {
+      "path": "/tmp/fuse_d/DCIM/100MEDIA/YDXJ0142.SEC",
+      "bytes": 396190
+    }
+  ],
+  "during_status": {
+    "param": "record",
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status"
+  },
+  "finished_at": "2026-11-10T03:51:07.437254Z",
+  "before": {
+    "hw_version": "YDXJ2_V13LW",
+    "video_resolution": "1920x1080 30P 16:9",
+    "video_quality": "S.Fine",
+    "iq_eis_enable": "on",
+    "sd_card_status": "insert",
+    "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+    "system_mode": "record"
+  },
+  "change_setting_requested": false,
+  "capture_photo_requested": true,
+  "error": "dev.yi4k.control.CameraClient$CameraRejectedException: 相机拒绝操作，错误码 -21",
+  "status_before": {
+    "param": "idle",
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status"
+  },
+  "record_start": {
+    "rval": 0,
+    "msg_id": 513
+  },
+  "status_after_record": {
+    "param": "vf",
+    "rval": 0,
+    "msg_id": 1,
+    "type": "app_status"
+  },
+  "cleanup": [{
+    "restored_key": "system_mode",
+    "expected": "record",
+    "reply": {
+      "related": 0,
+      "param": "record",
+      "rval": 0,
+      "msg_id": 2,
+      "type": "system_mode"
+    },
+    "readback": {
+      "param": "capture",
+      "rval": 0,
+      "msg_id": 1,
+      "type": "system_mode"
+    }
+  }],
+  "cleanup_error": "java.lang.IllegalStateException: Restoration readback mismatch: system_mode",
+  "record_stop": {
+    "rval": 0,
+    "msg_id": 514
+  },
+  "host": "192.168.42.1",
+  "started_at": "2026-11-10T03:50:53.269488Z",
+  "record_seconds_requested": 3,
+  "client_source": "android/app/src/main/java/dev/yi4k/control/CameraClient.java",
+  "power": {
+    "param": 100,
+    "rval": 0,
+    "msg_id": 13,
+    "type": "battery"
+  },
+  "notifications": [
+    {
+      "msg_id": 7,
+      "type": "start_video_record"
+    },
+    {
+      "msg_id": 7,
+      "type": "battery"
+    },
+    {
+      "msg_id": 7,
+      "type": "video_record_complete"
+    },
+    {
+      "msg_id": 7,
+      "type": "battery"
+    },
+    {
+      "msg_id": 7,
+      "type": "vf_start"
+    },
+    {
+      "msg_id": 7,
+      "type": "switch_to_cap_mode"
+    },
+    {
+      "msg_id": 7,
+      "type": "setting_changed"
+    },
+    {
+      "msg_id": 7,
+      "type": "vf_start"
+    }
+  ]
+}

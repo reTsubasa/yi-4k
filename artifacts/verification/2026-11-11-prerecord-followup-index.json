@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-11-11T06:32:23.953888+00:00",
+  "scope": "Offline host/compiled ARM evidence index for the pre-record continuation; no camera, RTOS, hook, firmware, RAM, partition, SD or power-loss execution.",
+  "entries": [
+    {
+      "name": "packet_custody",
+      "path": "artifacts/verification/2026-11-11-prerecord-packet-custody-independent-run02/validation.json",
+      "sha256": "34c179ab18e9bc22c20d2ce659458698d056d63c6fad4f05f422125f97505bd9",
+      "status": "pass",
+      "facts": [
+        "34 host/ARM custody cases",
+        "2 archived event3 regressions retained independently",
+        "failure freezes original bytes and rejects commit"
+      ]
+    },
+    {
+      "name": "event3_normal",
+      "path": "artifacts/verification/2026-11-11-prerecord-event3-independent-run02/audit.json",
+      "sha256": "5c364feed43993165b09a1f21ad101d40590526aefe7e0fd75e5b93bf6c2aa6c",
+      "status": "offline_event3_executed",
+      "facts": [
+        "Close0/New/Copy/Rel/Reset/Open order preserved",
+        "source video boundary frame retained",
+        "AAC12/AAC25 loss and segment2 timing offset rejected by publication gate"
+      ]
+    },
+    {
+      "name": "event3_close_failure",
+      "path": "artifacts/verification/2026-11-11-prerecord-event3-close-failure-independent-run02/audit.json",
+      "sha256": "62950e4907086c258ee36f9d2e1f8ea54ef8480766515113dbaf8bb4ad0b79e4",
+      "status": "reject_original_callback_asserts_on_close_failure",
+      "facts": [
+        "old movie retained",
+        "new movie not allocated",
+        "file stream remains open",
+        "original assert path is not safe recovery"
+      ]
+    },
+    {
+      "name": "sdk_pipeline",
+      "path": "artifacts/verification/2026-11-11-sdk-pipeline-independent-run01/validation.json",
+      "sha256": "835686e101ebfd87bffbeab5a05cdb1b0c3b986e9b1d16033d9acc38acc67d48",
+      "status": "offline_combination",
+      "facts": [
+        "early copy, owned mux, codec epoch and writer joined",
+        "host/ARM reports match",
+        "no concurrent dual producer, common A/V epoch, SD or camera integration"
+      ]
+    },
+    {
+      "name": "capture_trigger",
+      "path": "artifacts/offline/2026-11-10-capture-trigger/audit.json",
+      "sha256": "37c2013d0f07026f9f65d504acd19ee27be5e547e0692794ace1aa3ce0f10bfa",
+      "status": "offline_router_pass",
+      "facts": [
+        "13068 host/ARM semantic checks",
+        "voice START/STOP and shutter idempotence/recovery model",
+        "no GPIO/audio recognition/backend or firmware binding"
+      ]
+    }
+  ],
+  "remaining_gates": [
+    "Install and quiesce real video/audio callback consumers with measured payload stability and cache ownership.",
+    "Keep AAC packets crossing a rollover until a legal mux boundary owns them; reject Close0 output when packet/time identity is incomplete.",
+    "Replace the stock assert path with a device-side recovery wrapper only after a separately proven native entry/recovery contract.",
+    "Prove common audio/video capture epoch, continuous one-minute spool, SD full/remove/power-loss recovery and real trigger delivery.",
+    "Run physical camera voice “开始录像”/“start recording” and physical shutter acceptance; offline trigger reducer is not device evidence."
+  ],
+  "not_ready_for_device": true
+}

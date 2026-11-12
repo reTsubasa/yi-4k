@@ -1,0 +1,489 @@
+{
+  "samples": 260,
+  "first_t": 0.0013670921325683594,
+  "last_t": 12.950498104095459,
+  "samples_sha256": "98b9806a9490a7c45ccefeb84722bb78c6e94bfec1c9ce9aa98de8501de44a01",
+  "median_interval": 0.04999899864196777,
+  "max_interval": 0.05069613456726074,
+  "max_window_copy_seconds": 0.0013649463653564453,
+  "fields": {
+    "rsc_enable": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "extra_gyro_phase": {
+      "first": -2,
+      "last": -2,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ucode_gyro_delay": {
+      "first": 10,
+      "last": 10,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "rsc_scale": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "sample_gate": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "sample_tick": {
+      "first": 2556013,
+      "last": 2557120,
+      "distinct": 6,
+      "changes": 5,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556069
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 2557120
+      }
+    },
+    "ring_length": {
+      "first": 132,
+      "last": 132,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "ring_next_write": {
+      "first": 2,
+      "last": 110,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 58
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 110
+      }
+    },
+    "ring_current_index": {
+      "first": 1,
+      "last": 110,
+      "distinct": 6,
+      "changes": 5,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 57
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 110
+      }
+    },
+    "processed_sample_tick": {
+      "first": 2556013,
+      "last": 2557119,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556069
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557119
+      }
+    },
+    "frame_rate_integer": {
+      "first": 30,
+      "last": 30,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "row_time_seconds": {
+      "first": 7.333333542192122e-06,
+      "last": 7.333333542192122e-06,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "frame_length_lines": {
+      "first": 4550,
+      "last": 4550,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eof_time": {
+      "first": 2556012,
+      "last": 2557113,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556045
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557113
+      }
+    },
+    "sof_time": {
+      "first": 2556004,
+      "last": 2557105,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556037
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557105
+      }
+    },
+    "previous_eof_time": {
+      "first": 2556012,
+      "last": 2557113,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556045
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557113
+      }
+    },
+    "previous_sof_time": {
+      "first": 2556004,
+      "last": 2557105,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556037
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557105
+      }
+    },
+    "task_eof_time": {
+      "first": 2556012,
+      "last": 2568958,
+      "distinct": 260,
+      "changes": 259,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556045
+      },
+      "last_change": {
+        "t": 12.95012092590332,
+        "value": 2568958
+      }
+    },
+    "task_sof_time": {
+      "first": 2556004,
+      "last": 2568950,
+      "distinct": 256,
+      "changes": 255,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556037
+      },
+      "last_change": {
+        "t": 12.95012092590332,
+        "value": 2568950
+      }
+    },
+    "task_consumed_sof_time": {
+      "first": 2556004,
+      "last": 2557105,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2556037
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 2557105
+      }
+    },
+    "task_state": {
+      "first": 1,
+      "last": 1,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_magic": {
+      "first": 1414025796,
+      "last": 1414025796,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_run_count": {
+      "first": 563939,
+      "last": 564150,
+      "distinct": 6,
+      "changes": 5,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 564037
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 564150
+      }
+    },
+    "eis_task_saved_sp": {
+      "first": 2695671088,
+      "last": 2695671088,
+      "distinct": 2,
+      "changes": 4,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2695671624
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 2695671088
+      }
+    },
+    "eis_task_wait_state": {
+      "first": 7,
+      "last": 7,
+      "distinct": 1,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null
+    },
+    "eis_task_wait_ticks": {
+      "first": 1000,
+      "last": 1000,
+      "distinct": 21,
+      "changes": 22,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 4294967295
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 1000
+      }
+    },
+    "eis_task_wait_object": {
+      "first": 2711850724,
+      "last": 2711850724,
+      "distinct": 2,
+      "changes": 4,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 2708519816
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 2711850724
+      }
+    },
+    "eis_task_wait_mask": {
+      "first": 2,
+      "last": 2,
+      "distinct": 2,
+      "changes": 4,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 65535
+      },
+      "last_change": {
+        "t": 1.1501219272613525,
+        "value": 2
+      }
+    },
+    "driver_x": {
+      "first": 32736,
+      "last": 32753,
+      "distinct": 3,
+      "changes": 2,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 32763
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 32753
+      }
+    },
+    "driver_y": {
+      "first": 32815,
+      "last": 32780,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 32791
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 32780
+      }
+    },
+    "driver_z": {
+      "first": 32824,
+      "last": 32847,
+      "distinct": 4,
+      "changes": 3,
+      "first_change": {
+        "t": 0.05016803741455078,
+        "value": 32819
+      },
+      "last_change": {
+        "t": 1.100132942199707,
+        "value": 32847
+      }
+    }
+  },
+  "window_distinct_counts": {
+    "0xa0757a40": 2,
+    "0xa1702c30": 6,
+    "0xa1702d00": 4,
+    "0xa170ab10": 6,
+    "0xa1704050": 4,
+    "0xa17045a0": 5,
+    "0xa170ba80": 260
+  },
+  "limitations": [
+    "Changing bytes do not prove cross-core cache coherence or simultaneous fields.",
+    "Repeated ring snapshots are not a reconstructed lossless IMU stream.",
+    "Sample copy duration excludes JSON formatting and transport overhead."
+  ],
+  "record_start_ack_observed": false,
+  "record_stop_ack_observed": false,
+  "api_events_relative_to_ready": [
+    {
+      "t": -1.417773540946655,
+      "direction": "send",
+      "message": {
+        "msg_id": 257
+      }
+    },
+    {
+      "t": -0.5968478330178186,
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 257,
+        "model": "Z16",
+        "rtsp": "rtsp://192.168.42.1/live"
+      }
+    },
+    {
+      "t": -0.5967794579919428,
+      "direction": "send",
+      "message": {
+        "msg_id": 1,
+        "type": "app_status"
+      }
+    },
+    {
+      "t": -0.5889926659874618,
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 1,
+        "type": "app_status",
+        "param": "idle"
+      }
+    },
+    {
+      "t": -0.5888779159868136,
+      "direction": "send",
+      "message": {
+        "msg_id": 3
+      }
+    },
+    {
+      "t": -0.5777288329554722,
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 3,
+        "param": {
+          "video_standard": "NTSC",
+          "video_resolution": "1920x1080 30P 16:9",
+          "video_quality": "S.Fine",
+          "sd_card_status": "insert",
+          "sw_version": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+          "hw_version": "YDXJ2_V13LW",
+          "system_mode": "record",
+          "iq_eis_enable": "on"
+        }
+      }
+    },
+    {
+      "t": -0.5775679160142317,
+      "direction": "send",
+      "message": {
+        "msg_id": 13
+      }
+    },
+    {
+      "t": -0.5662867500213906,
+      "direction": "receive",
+      "message": {
+        "rval": 0,
+        "msg_id": 13,
+        "type": "battery",
+        "param": 99
+      }
+    },
+    {
+      "t": 2.0048651669640094,
+      "direction": "send",
+      "message": {
+        "msg_id": 513
+      }
+    },
+    {
+      "t": 10.020573167013936,
+      "direction": "send",
+      "message": {
+        "msg_id": 514
+      }
+    },
+    {
+      "t": 15.031306209042668,
+      "direction": "send",
+      "message": {
+        "msg_id": 258
+      }
+    }
+  ]
+}

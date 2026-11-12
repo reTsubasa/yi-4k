@@ -1,0 +1,230 @@
+{
+  "status": "pass_local_stock_entry_lifecycle_review",
+  "scope": "Stock task summary and fixed eight-byte read after user-reported power cycle; exact-file cleanup and API baseline only",
+  "previous_boot_id": "b90163f5-7881-4229-85fe-6348f1eec930",
+  "new_boot_id": "a96eb3f9-9fc5-4adb-b062-a2fe8ebb53c2",
+  "all_four_paths_absent": true,
+  "api_baseline_equal_across_all_operations": true,
+  "collected_fingerprint_hex": "0300a0e11eff2fe1",
+  "post_cleanup_collection": "Rejected as designed because cleanup removed ownership claim; separate read-only preflight confirms all four paths absent",
+  "output_files": {
+    "claim": {
+      "bytes": 564,
+      "present": true,
+      "sha256": "5b6e8167ec9830e7421def5a649c397f12ff087f2e4cbf7b9a62ff5c741619c4"
+    },
+    "fingerprint": {
+      "bytes": 8,
+      "present": true,
+      "sha256": "5e64b91b57eaf124341a5f84484d853cfe5e97bae40e8d7c8bf60c7ed4c6969d"
+    },
+    "script": {
+      "bytes": 105,
+      "present": true,
+      "sha256": "ecc127f17cf1fd9d188112857da4e332eb3e3f20f9e9b2345cbd8a9827638dd4"
+    },
+    "tasks": {
+      "bytes": 8181,
+      "present": true,
+      "sha256": "469b2af31b5ca46e10a3bc91f7f2bbb93953e63178d2cfe3c400b6ead8543b7f"
+    }
+  },
+  "raw_uptime": {
+    "preflight": "94669.55 92154.59",
+    "stage": "94691.88 92173.29",
+    "collect01": "271952704.26 45.42",
+    "collect02": "271952789.74 127.79",
+    "collect03": "271953015.06 347.08",
+    "final-preflight": "271953257.47 581.27"
+  },
+  "limits": [
+    "Caller-supplied transport evidence, not cryptographic device attestation",
+    "Anomalous uptime retained; no cold-reset or elapsed-uptime inference",
+    "Repeated stable files do not prove all active readers quiescent",
+    "API baseline covers selected eight settings and app_status only; no reboot-persistence or whole-device health acceptance",
+    "No custom ARM entry, instruction-cache visibility, independent recovery, recording or EIS replacement acceptance"
+  ],
+  "verifier_sha256": "1764d274c5c4e7ea7de1ec9c250bea6329a95fcebae88fc4084c575682f66113",
+  "files": [
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-preflight/session.json",
+      "bytes": 5943,
+      "sha256": "62d3810719cc97a94a3704e062ab9e3af02e97b17af2fdda1d3f46d071a28f8d"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-preflight/transport.json",
+      "bytes": 324,
+      "sha256": "0b373aad0aa2ef016e7634c37f6d375148b89aa5fa670244028e60cf7f52d688"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-preflight/executed-source.py",
+      "bytes": 911,
+      "sha256": "ac9d20ec1d764bf90b6036e0ec9962f6a4bcff7ba536e244b9b147e977e8a757"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-preflight/raw-output.txt",
+      "bytes": 688,
+      "sha256": "7935491c693926f39681cf1ef9faf0223bb4fe2eb4de7b0b100788ebacfefc47"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-stage/session.json",
+      "bytes": 7333,
+      "sha256": "e9e50479728fc71a4fbaca5bd6c076e358293ff080ae04857b58a4a19ad1a2c5"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-stage/transport.json",
+      "bytes": 649,
+      "sha256": "c20ea736c0e69f0c3661abd0c09684f02d793275b636b98e8d18181d2f92b714"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-stage/executed-source.py",
+      "bytes": 4371,
+      "sha256": "11ea415993bd1d8d7e9db12794db3526b41c13a928775d10771d5802c017149b"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-stage/raw-output.txt",
+      "bytes": 1841,
+      "sha256": "3cc4afefa24f06175b9af662966dd600128bbdcfb910ae2e1def063069655013"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect01/session.json",
+      "bytes": 18306,
+      "sha256": "aca91283310de27a63f9daebce2c3d74b688ce7749db6f23f70ed2d8d7e05b1a"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect01/transport.json",
+      "bytes": 541,
+      "sha256": "dfc8e6df3a90176d7f418544d6fd5843ec8f176ec1df61260de1ab4abc7b9e66"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect01/executed-source.py",
+      "bytes": 3282,
+      "sha256": "225119341992aefdbf7ef0ff13b7af190c209810420904e4ae266a68ac157ca2"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect01/raw-output.txt",
+      "bytes": 12947,
+      "sha256": "f1187428aabc0f30fa5fac9be70eadd9f6740e106a339d3dc79b1ccf1f5d525b"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect02/session.json",
+      "bytes": 18307,
+      "sha256": "9d234607b438b8a5c7e11288225e9fbb7b21e788f85e97a3e9c8f75ee3ecd730"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect02/transport.json",
+      "bytes": 541,
+      "sha256": "dfc8e6df3a90176d7f418544d6fd5843ec8f176ec1df61260de1ab4abc7b9e66"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect02/executed-source.py",
+      "bytes": 3282,
+      "sha256": "225119341992aefdbf7ef0ff13b7af190c209810420904e4ae266a68ac157ca2"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect02/raw-output.txt",
+      "bytes": 12948,
+      "sha256": "d8e312202f445aeda48978bb603e99cb8eeec7488f8b38b51afe436b1eedccf3"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-disarm/session.json",
+      "bytes": 5697,
+      "sha256": "eb73016ec3174b0a584a14e49d7a43b1f8f4fdb0db0a3ecdb36d08f6086a4d58"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-disarm/transport.json",
+      "bytes": 541,
+      "sha256": "04cbf1599296cd9f1ae79df1d93a36fb69dea56ab9c0d20bf19617f487aa27f7"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-disarm/executed-source.py",
+      "bytes": 3297,
+      "sha256": "4ca44374143c037ca1d28ac386af9043701006351f641817a5c6716fb05417f6"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-disarm/raw-output.txt",
+      "bytes": 534,
+      "sha256": "1fac3a2d709560bbf662c03c0823d7b7480c4ec0bbe4f05a2becd1a163e45c81"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect03/session.json",
+      "bytes": 18041,
+      "sha256": "2a473489c079700e6b3717d9ed0372f3a24ac38199aa8073ec546b7e01a62ce8"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect03/transport.json",
+      "bytes": 541,
+      "sha256": "dfc8e6df3a90176d7f418544d6fd5843ec8f176ec1df61260de1ab4abc7b9e66"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect03/executed-source.py",
+      "bytes": 3282,
+      "sha256": "225119341992aefdbf7ef0ff13b7af190c209810420904e4ae266a68ac157ca2"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-collect03/raw-output.txt",
+      "bytes": 12703,
+      "sha256": "77f26ca4d4b9c02b6c7ccf2d9904fde529263f8c779b90c68606fcf4e6485423"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-cleanup/session.json",
+      "bytes": 5625,
+      "sha256": "dc6a5866500bdc06bee758ac56ff7b1c3027a64fcb6d0bd9223a5b12adc6dedc"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-cleanup/transport.json",
+      "bytes": 676,
+      "sha256": "5f83028748b9a81622f7ab12ef25d9b564d624ab58e673c6631ad078af40d168"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-cleanup/executed-source.py",
+      "bytes": 4679,
+      "sha256": "aaf9e27a7173683fa7009d5cb177eb89e2a36ff7c2a868778195b7ac750a9db0"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-cleanup/raw-output.txt",
+      "bytes": 471,
+      "sha256": "70a2152c0229152d407558673820df74c9ec59f05de5c2aebd3c1653d8ad15be"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final-preflight/session.json",
+      "bytes": 5947,
+      "sha256": "39053681a439e0875b61af8616fea505ddfee4de6c3525de6a7e2da894171d20"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final-preflight/transport.json",
+      "bytes": 324,
+      "sha256": "0b373aad0aa2ef016e7634c37f6d375148b89aa5fa670244028e60cf7f52d688"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final-preflight/executed-source.py",
+      "bytes": 911,
+      "sha256": "ac9d20ec1d764bf90b6036e0ec9962f6a4bcff7ba536e244b9b147e977e8a757"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final-preflight/raw-output.txt",
+      "bytes": 690,
+      "sha256": "c3a198d02e7b807bb2bf71157edfe9e7164dca8cf5288eff158740b01c5d0ba9"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final/session.json",
+      "bytes": 3094,
+      "sha256": "6a3020be4e97b16375b0483ceb1a4f8a2352b7d79539c590f8cfa864985c1188"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final/transport.json",
+      "bytes": 541,
+      "sha256": "dfc8e6df3a90176d7f418544d6fd5843ec8f176ec1df61260de1ab4abc7b9e66"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final/executed-source.py",
+      "bytes": 3282,
+      "sha256": "225119341992aefdbf7ef0ff13b7af190c209810420904e4ae266a68ac157ca2"
+    },
+    {
+      "path": "artifacts/device/2026-11-12-stock-entry-approved-final/raw-output.txt",
+      "bytes": 574,
+      "sha256": "33ec0e2229b1f0fb308b609e1de872896c9502ba28956c4045845fe0856bb293"
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "audit": "prerecord_producer_continuity",
+  "scope": "offline Ghidra decompiler evidence for virtual FIFO handles, cursors, producer fanout, and call-site epoch limits",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "source_root": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+  "handler_offsets": {
+    "+0x80": "descriptor ring pointer",
+    "+0x88": "descriptor capacity",
+    "+0x90/+0x94": "read cursor low/high (base and virtual handlers)",
+    "+0x98/+0x9c": "write cursor low/high (base and virtual handlers)",
+    "+0xa4": "callback pointer",
+    "+0xc0": "descriptor type filter used by virtual history path",
+    "+0xc4": "virtual active/processing gate checked by SyncWritten"
+  },
+  "producer_edges": [
+    [
+      "base WriteEntry",
+      "FIFO worker data-ready message 0x4000002",
+      "worker later invokes SyncWritten"
+    ],
+    [
+      "WriteEntry RemoveOnWrite",
+      "FIFO worker removal message 0x10000000",
+      "distinct from data-ready fanout"
+    ],
+    [
+      "virtual WriteEntry",
+      "SyncWritten",
+      "direct call in audited body"
+    ],
+    [
+      "SyncWritten",
+      "virtual registry",
+      "stream ID match and +0xc4 gate"
+    ],
+    [
+      "SyncWritten",
+      "virtual descriptor ring",
+      "copy exactly 0x20 bytes; payload address remains descriptor data"
+    ],
+    [
+      "WriteEntry RemoveOnWrite",
+      "virtual read cursors",
+      "enumerates min cursor and may advance base read cursor"
+    ]
+  ],
+  "call_sites": {
+    "audio_ready": "AudioEnc_BitstreamRdyHandler submits descriptor and returns WriteEntry error",
+    "video_end": "AmpFormat_PutEndMark computes 90-kHz PTS before PrepareEntry/WriteEntry",
+    "video_decode": "AmpFormat_PutDecodeMark uses PrepareEntry/WriteEntry",
+    "audio_stop": "AudioEnc_StopEncodeImpl can submit a 0xffffff end marker after stopping encoder state"
+  },
+  "files": {
+    "fifo_init": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045037c.c",
+      "sha256": "0bdd3bf5ff4e03cc35a046198052279f3242f6221461a2c2364ebececbde0955",
+      "size_bytes": 7608,
+      "line_hits": {
+        "DAT_a1966194": [
+          64,
+          72,
+          78,
+          84
+        ],
+        "DAT_a19661dc": [
+          115
+        ]
+      }
+    },
+    "fifo_create": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04509dc.c",
+      "sha256": "90a71102173924a1dd6732319f58259c52fe95d7081f076c695fbe42034ab18e",
+      "size_bytes": 15828,
+      "line_hits": {
+        "DAT_a1966194": [
+          103
+        ],
+        "DAT_a19661dc": [
+          93,
+          124,
+          127
+        ],
+        "+ 0x98": [
+          192,
+          204
+        ]
+      }
+    },
+    "fifo_sync_written": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a044e8d4.c",
+      "sha256": "a1da4906ba88d90a9b742063534b32ecb64f0820250e38a60a1fa46de4cb9a94",
+      "size_bytes": 8817,
+      "line_hits": {
+        "DAT_a1966194": [
+          43,
+          78
+        ],
+        "DAT_a19661dc": [
+          42
+        ],
+        "+ 0x98": [
+          65,
+          73,
+          97,
+          98,
+          102,
+          165,
+          183,
+          184,
+          189,
+          197,
+          198
+        ],
+        "0x4000001": [
+          121,
+          122,
+          124
+        ],
+        "0x4000002": [
+          132,
+          133,
+          135,
+          200,
+          201,
+          202
+        ],
+        "0x4000005": [
+          143,
+          144,
+          145,
+          207,
+          208,
+          209
+        ]
+      }
+    },
+    "fifo_write_entry": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0452254.c",
+      "sha256": "ef7ca65c960d6092c3aa675b03640cf97a8cdad886f58f6aeacd82be0a8721ab",
+      "size_bytes": 10353,
+      "line_hits": {
+        "DAT_a1966194": [
+          141
+        ],
+        "DAT_a19661dc": [
+          140
+        ],
+        "+ 0x98": [
+          79,
+          134,
+          166,
+          169,
+          268,
+          269
+        ],
+        "0x4000002": [
+          281
+        ],
+        "matched_FUN_a0452254": [
+          2,
+          6
+        ]
+      }
+    },
+    "audio_bitstream_ready": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045e7dc.c",
+      "sha256": "1311b8de899bd874ab650c7bb3dae4626de2cab9ab45ff536c6faa4315f04d75",
+      "size_bytes": 5932,
+      "line_hits": {
+        "matched_FUN_a0452254": [
+          173
+        ]
+      }
+    },
+    "audio_stop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a045f95c.c",
+      "sha256": "cf9b77288a250defa1ea51330e319cf2a004708dd5f2885004c616258eb98469",
+      "size_bytes": 3789,
+      "line_hits": {
+        "matched_FUN_a0452254": [
+          107
+        ]
+      }
+    },
+    "video_format_put_end": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03ec814.c",
+      "sha256": "333b7196ed013391d548d470d562e59f818cb0f2c5ef8fc5e0e589726fff482b",
+      "size_bytes": 6141,
+      "line_hits": {
+        "matched_FUN_a0452254": [
+          98
+        ]
+      }
+    },
+    "video_format_put_decode": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03ec9f8.c",
+      "sha256": "1a0578190314bb151b929aa600a4b85c3771b0e4cec24e0845d9d012ed2bcca6",
+      "size_bytes": 5493,
+      "line_hits": {
+        "matched_FUN_a0452254": [
+          88
+        ]
+      }
+    }
+  },
+  "cross_epoch_dependency": {
+    "path": "artifacts/device/2026-11-11-prerecord-cross-file-epoch/audit.json",
+    "sha256": "5d0910711a93a19daf1c05ac71d1483fd4e386606449f5877324f44c3ee7b5fd",
+    "common_audio_video_capture_epoch_proven": false,
+    "first_accepted_dma_block_to_first_video_pts_correlated": false
+  },
+  "lifecycle_dependency": {
+    "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-lifecycle-audit.json",
+    "sha256": "43b6389acaaac8fff6d1170598a759b489a9ad6e3b94bf0769bdfbfa80559297",
+    "callback_after_delete_interleaving_present": true
+  },
+  "checks": [
+    {
+      "name": "Create allocates virtual slots from the virtual registry and binds a base by stream",
+      "needles": [
+        "if (param_1[2] == 0)",
+        "DAT_a1966194",
+        "piVar12 = (int *)(DAT_a1966194 + uVar19 * 0xf8)",
+        "if (*param_1 == *(int *)(iVar3 + 8))",
+        "piVar12[4] = iVar3"
+      ]
+    },
+    {
+      "name": "Create sizes a 32-byte descriptor pool and stores its pool/token fields",
+      "needles": [
+        "piVar12[0x22] = iVar10",
+        "piVar12[0x21] = iVar10 << 5",
+        "FUN_a029a7d8(DAT_a04514e0,piVar12 + 0x20,piVar12 + 0x28,iVar10 << 5,0x20)",
+        "FUN_a04f8dec(piVar12[0x20],0,piVar12[0x21])"
+      ]
+    },
+    {
+      "name": "Virtual Create seeds write and read cursors from the base FIFO",
+      "needles": [
+        "piVar12[0x26] = uVar8",
+        "piVar12[0x27] = iVar11",
+        "piVar12[0x24] = *(int *)(iVar3 + 0x90)",
+        "piVar12[0x25] = iVar10",
+        "piVar12[0x24] = iVar10"
+      ]
+    },
+    {
+      "name": "Init creates the base/virtual handler tables and the FIFO worker task",
+      "needles": [
+        "DAT_a1966194 = uVar6",
+        "matched_analyst_task_create",
+        "s_Mw_FifoTask_a061d328",
+        "DAT_a19661e0 = param_1[3]",
+        "DAT_a19661dc = param_1[2]"
+      ]
+    },
+    {
+      "name": "WriteEntry copies one 0x20-byte descriptor and advances the producer cursor",
+      "needles": [
+        "*(uint *)(iVar14 + 0x1c) = uVar19",
+        "matched_FUN_a044e734(8,0x12,0x92e,iVar9,iVar14,param_2,0x20)",
+        "*(uint *)(iVar9 + 0x98) = uVar10 + 1",
+        "*(uint *)(iVar9 + 0x9c) = *(int *)(iVar9 + 0x9c) + (uint)(0xfffffffe < uVar10)"
+      ]
+    },
+    {
+      "name": "Base WriteEntry queues worker work while virtual WriteEntry calls SyncWritten directly",
+      "needles": [
+        "local_50 = 0x4000002",
+        "FUN_a03bc598(DAT_a0452b64,&local_50,0)",
+        "if (*(int *)(iVar9 + 0x10) == 0)",
+        "matched_FUN_a044e8d4(*(undefined4 *)(param_1 + 4),param_2)"
+      ]
+    },
+    {
+      "name": "RemoveOnWrite enumerates virtual consumers and reads their +0x90/+0x94 read cursor",
+      "needles": [
+        "iVar1 = DAT_a19661dc",
+        "iVar6 = DAT_a1966194",
+        "if (*(int *)(iVar3 + -0xc) == *(int *)(iVar12 + 8))",
+        "uVar19 = *(uint *)(iVar3 + 0x7c)",
+        "uVar8 = *(uint *)(iVar3 + 0x80)",
+        "local_90 = 0xffffffff",
+        "uStack_8c = 0xffffffff"
+      ]
+    },
+    {
+      "name": "Producer removal advances the base read cursor when the virtual lag threshold is exceeded",
+      "needles": [
+        "*(uint *)(iVar12 + 0x90) = uVar17",
+        "*(int *)(iVar12 + 0x94) = iVar3",
+        "if (uVar5 < local_68)",
+        "uVar10 = uVar10 + 1"
+      ]
+    },
+    {
+      "name": "SyncWritten matches active virtual handlers by stream ID",
+      "needles": [
+        "iVar3 = DAT_a19661dc",
+        "iVar13 = DAT_a1966194",
+        "if ((*(int *)(iVar13 + 0xc) != 0) && (*(int *)(iVar13 + 8) == iVar6))",
+        "if (*(int *)(iVar13 + 0xc4) == 0)"
+      ]
+    },
+    {
+      "name": "SyncWritten copies a descriptor into the virtual ring and advances its cursor",
+      "needles": [
+        "matched_FUN_a044e734(8,3,0x406,iVar13,iVar7,param_2,0x20)",
+        "*(uint *)(iVar13 + 0x98) = uVar9 + 1",
+        "*(uint *)(iVar13 + 0x9c) = *(int *)(iVar13 + 0x9c) + (uint)(0xfffffffe < uVar9)"
+      ]
+    },
+    {
+      "name": "SyncWritten emits data, end/sentinel, and full events through the virtual callback",
+      "needles": [
+        "(**(code **)(iVar13 + 0xa4))(iVar13,0x4000001,local_2c)",
+        "(**(code **)(iVar13 + 0xa4))(iVar13,0x4000002,local_2c)",
+        "(**(code **)(iVar13 + 0xa4))(iVar13,0x4000005,0)"
+      ]
+    },
+    {
+      "name": "SyncWritten releases the virtual data lock before callback invocation",
+      "needles": [
+        "thunk_FUN_a03c3c5c(iVar11)",
+        "(**(code **)(iVar13 + 0xa4))(iVar13,0x4000002,local_2c)",
+        "(**(code **)(iVar13 + 0xa4))(iVar13,0x4000005,0)"
+      ]
+    },
+    {
+      "name": "Audited SyncWritten body has no direct encoder stop/reset/delete call",
+      "absent_needles": [
+        "FUN_a04514e4",
+        "FUN_a045f95c",
+        "FUN_a045d928"
+      ]
+    },
+    {
+      "name": "Audio ready path submits descriptors through WriteEntry and propagates errors",
+      "needles": [
+        "matched_FUN_a0452254(iVar10,&local_48)",
+        "if (iVar7 == 0)",
+        "s_AmpFifo_WriteEntry_failed_a0621314"
+      ]
+    },
+    {
+      "name": "Video format end path computes a 90-kHz PTS and submits a prepared descriptor",
+      "needles": [
+        "param_3 * 90000",
+        "matched_FUN_a045202c(param_1,&local_e0)",
+        "matched_FUN_a0452254(param_1,&local_e0)"
+      ]
+    },
+    {
+      "name": "Video decode-mark path also prepares then submits a descriptor",
+      "needles": [
+        "matched_FUN_a045202c(param_1,&local_d0)",
+        "matched_FUN_a0452254(param_1,&local_d0)"
+      ]
+    },
+    {
+      "name": "Audio stop path can submit an end marker through the same producer API",
+      "needles": [
+        "local_48 = 0xffffff",
+        "matched_FUN_a045d928(iVar3)",
+        "matched_FUN_a0452254(uVar6,&local_60)"
+      ]
+    },
+    {
+      "name": "cross-file epoch audit remains bounded and unproven",
+      "source": "artifacts/device/2026-11-11-prerecord-cross-file-epoch/audit.json",
+      "assertions": [
+        "common_audio_video_capture_epoch_proven == false",
+        "first_accepted_dma_block_to_first_video_pts_correlated == false"
+      ]
+    }
+  ],
+  "conclusions": {
+    "virtual_create_binds_base_and_seeds_independent_cursors": true,
+    "virtual_descriptor_ring_is_independent_from_base_descriptor_ring": true,
+    "virtual_write_cursor_is_advanced_by_sync_written": true,
+    "producer_fanout_copies_descriptor_but_not_payload_bytes": true,
+    "base_reclamation_considers_virtual_read_cursor_lag": true,
+    "producer_continuity_across_encoder_stop_or_rollover_proven": false,
+    "stable_payload_lease_proven": false,
+    "callback_quiescence_proven": false,
+    "common_audio_video_capture_epoch_proven": false,
+    "camera_side_prerecord_implemented": false
+  },
+  "required_runtime_evidence": [
+    "runtime identity of the virtual handler returned by Create and its base handler",
+    "descriptor/payload lease that survives Peek unlock until copy and Remove finish",
+    "producer ring/cache/DMA lifetime while virtual consumer lags",
+    "scheduler evidence that callback and Delete cannot interleave after quiescence",
+    "A/V first accepted block and PTS correlation across rollover",
+    "encoder continuity and storage/error behavior during a one-minute pre-record commit"
+  ],
+  "safety": {
+    "camera_connected": false,
+    "firmware_written": false,
+    "ram_or_partition_written": false,
+    "hidden_setter_invoked": false,
+    "rtos_executed": false
+  }
+}

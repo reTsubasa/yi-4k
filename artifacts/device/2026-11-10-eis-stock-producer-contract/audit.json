@@ -1,0 +1,1765 @@
+{
+  "cpu_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "dsp_sha256": "9b56d1d2cf3bfddc3da06d4d0b7e26543f23708369e1bd13c1afac30c8edea73",
+  "reference_sha256": "4383b2c2ddceafec258d3907dee382d76389ca3604c0cad867fc58d15a30039c",
+  "cpu_instruction_checks": [
+    {
+      "address": "0xa0311ce4",
+      "instruction": "bl #0xa0308880"
+    },
+    {
+      "address": "0xa0311cf8",
+      "instruction": "bl #0xa03bc46c"
+    },
+    {
+      "address": "0xa03120c8",
+      "instruction": "add r0, r0, #0x600"
+    },
+    {
+      "address": "0xa03120d8",
+      "instruction": "str r0, [sp, #0x68]"
+    },
+    {
+      "address": "0xa03120e4",
+      "instruction": "str ip, [sp, #0x58]"
+    },
+    {
+      "address": "0xa03120ec",
+      "instruction": "str r2, [sp, #0x60]"
+    },
+    {
+      "address": "0xa0311d80",
+      "instruction": "mov r0, r5"
+    },
+    {
+      "address": "0xa0311d84",
+      "instruction": "add r1, sp, #0x64"
+    },
+    {
+      "address": "0xa0311d88",
+      "instruction": "add r2, sp, #0x54"
+    },
+    {
+      "address": "0xa0311d8c",
+      "instruction": "bl #0xa032cf38"
+    },
+    {
+      "address": "0xa0311d90",
+      "instruction": "subs r7, r0, #0"
+    },
+    {
+      "address": "0xa0311d94",
+      "instruction": "beq #0xa03122d8"
+    },
+    {
+      "address": "0xa0311d9c",
+      "instruction": "bl #0xa03bc498"
+    },
+    {
+      "address": "0xa03122e0",
+      "instruction": "mov r2, #0xc0"
+    },
+    {
+      "address": "0xa03122e4",
+      "instruction": "bl #0xa029c680"
+    },
+    {
+      "address": "0xa03122ec",
+      "instruction": "str r3, [sb]"
+    },
+    {
+      "address": "0xa03122f4",
+      "instruction": "str r3, [sl]"
+    },
+    {
+      "address": "0xa0312300",
+      "instruction": "cmp r3, #1"
+    },
+    {
+      "address": "0xa0312304",
+      "instruction": "moveq r0, #2"
+    },
+    {
+      "address": "0xa0312310",
+      "instruction": "moveq r0, #3"
+    },
+    {
+      "address": "0xa031236c",
+      "instruction": "bl #0xa02cece4"
+    },
+    {
+      "address": "0xa03124bc",
+      "instruction": "bl #0xa03bc46c"
+    },
+    {
+      "address": "0xa0312790",
+      "instruction": "ldrb r2, [r2, #0x88a]"
+    },
+    {
+      "address": "0xa0312794",
+      "instruction": "ldrb r1, [fp, #0x392]"
+    },
+    {
+      "address": "0xa0312798",
+      "instruction": "ldr r0, [r3, #0x38]"
+    },
+    {
+      "address": "0xa03127a0",
+      "instruction": "uxtbhi r0, r0"
+    },
+    {
+      "address": "0xa03127a4",
+      "instruction": "addhi r1, r1, r0"
+    },
+    {
+      "address": "0xa03127a8",
+      "instruction": "rsb r1, r2, r1"
+    },
+    {
+      "address": "0xa03127c0",
+      "instruction": "ldr r6, [r2, #4]"
+    },
+    {
+      "address": "0xa03127cc",
+      "instruction": "add r7, r7, #0x60"
+    },
+    {
+      "address": "0xa03127d0",
+      "instruction": "add r6, r6, #0x60"
+    },
+    {
+      "address": "0xa03126e8",
+      "instruction": "mov r2, #0x1800"
+    },
+    {
+      "address": "0xa03126f4",
+      "instruction": "bl #0xa029c680"
+    },
+    {
+      "address": "0xa0312704",
+      "instruction": "bl #0xa029c680"
+    },
+    {
+      "address": "0xa0312708",
+      "instruction": "str r7, [r8, #8]"
+    },
+    {
+      "address": "0xa031270c",
+      "instruction": "str r6, [r8, #0xc]"
+    },
+    {
+      "address": "0xa03127f8",
+      "instruction": "bl #0xa04a22cc"
+    },
+    {
+      "address": "0xa0312804",
+      "instruction": "bl #0xa04a22cc"
+    },
+    {
+      "address": "0xa0309118",
+      "instruction": "movls r7, #6"
+    },
+    {
+      "address": "0xa0309164",
+      "instruction": "str r7, [r3, #0x38]"
+    },
+    {
+      "address": "0xa03092c8",
+      "instruction": "movw r0, #0x2d20"
+    },
+    {
+      "address": "0xa03092d0",
+      "instruction": "movt r0, #1"
+    },
+    {
+      "address": "0xa03092e0",
+      "instruction": "bl #0xa03086b4"
+    },
+    {
+      "address": "0xa032d0e4",
+      "instruction": "str r3, [r5]"
+    },
+    {
+      "address": "0xa032d134",
+      "instruction": "bl #0xa0316174"
+    },
+    {
+      "address": "0xa032d2d8",
+      "instruction": "bl #0xa032b520"
+    },
+    {
+      "address": "0xa032d0c8",
+      "instruction": "bl #0xa032a6c4"
+    },
+    {
+      "address": "0xa02da3fc",
+      "instruction": "bl #0xa03119a8"
+    }
+  ],
+  "orc_instruction_checks": 10,
+  "diagnostics": [
+    {
+      "offset": "0x2ba3c9",
+      "text": "idspdrv_config. copied controlregs image. dram_dest_addr=0x%x, dram_src_addr=0x%x size=%d\n"
+    },
+    {
+      "offset": "0x2bbf33",
+      "text": "idspdrv_debug_dump_shadow() done, shadow_index=%d dram_addr=0x%08x, area_size=%d, mode=%d\n"
+    }
+  ],
+  "retained_call_graph_edges": [
+    {
+      "owner": "0xa022d820",
+      "site": "0xa022e65c",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa022d820",
+      "site": "0xa022e70c",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa022d820",
+      "site": "0xa022e7a8",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa022d820",
+      "site": "0xa022e814",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa022d820",
+      "site": "0xa022ec14",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa02da164",
+      "site": "0xa02da3fc",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa03119a8",
+      "site": "0xa0311d8c",
+      "target": "0xa032cf38"
+    },
+    {
+      "owner": "0xa039c140",
+      "site": "0xa039c4b8",
+      "target": "0xa03119a8"
+    },
+    {
+      "owner": "0xa039c140",
+      "site": "0xa039cc70",
+      "target": "0xa03119a8"
+    }
+  ],
+  "calls_tsv_sha256": "2e75c7ed3d04d6c21ea6357fee3117e99aa5430b61110aedbb0ec002c509f039",
+  "execution": {
+    "producer_cases": [
+      {
+        "pipe": 0,
+        "algo": 0,
+        "func": 0,
+        "theta": 0.0,
+        "core_return": "0x0",
+        "actual_return": "0x0",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "stub_core",
+            "return": "0x0"
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30002f18",
+            "source": "0x30380000",
+            "bytes": 192
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      },
+      {
+        "pipe": 0,
+        "algo": 0,
+        "func": 0,
+        "theta": 1.25,
+        "core_return": "0x0",
+        "actual_return": "0x0",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "stub_core",
+            "return": "0x0"
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30002f18",
+            "source": "0x30380000",
+            "bytes": 192
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      },
+      {
+        "pipe": 0,
+        "algo": 0,
+        "func": 0,
+        "theta": 0.0,
+        "core_return": "0xffffffff",
+        "actual_return": "0xffffffff",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "stub_core",
+            "return": "0xffffffff"
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      },
+      {
+        "pipe": 0,
+        "algo": 0,
+        "func": 0,
+        "theta": 0.0,
+        "core_return": "0x1",
+        "actual_return": "0x1",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "stub_core",
+            "return": "0x1"
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      },
+      {
+        "pipe": 1,
+        "algo": 1,
+        "func": 0,
+        "theta": 0.0,
+        "core_return": "0x0",
+        "actual_return": "0x0",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "still_work_lookup",
+            "helper": "0xa02cece4",
+            "mode": 2
+          },
+          {
+            "kind": "stub_core",
+            "return": "0x0"
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30052a90",
+            "source": "0x30380000",
+            "bytes": 192
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      },
+      {
+        "pipe": 1,
+        "algo": 2,
+        "func": 2,
+        "theta": 0.0,
+        "core_return": "0x0",
+        "actual_return": "0x0",
+        "events": [
+          {
+            "kind": "mutex_lookup"
+          },
+          {
+            "kind": "lock",
+            "object": "0x30390000"
+          },
+          {
+            "kind": "context_lookup"
+          },
+          {
+            "kind": "still_work_lookup",
+            "helper": "0xa02ced58",
+            "mode": 3
+          },
+          {
+            "kind": "stub_core",
+            "return": "0x0"
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30052a90",
+            "source": "0x30380000",
+            "bytes": 192
+          },
+          {
+            "kind": "unlock",
+            "object": "0x30390000"
+          }
+        ]
+      }
+    ],
+    "producer_vectors": [
+      {
+        "pipe": 0,
+        "input_vector": [
+          "0x30380000",
+          "0x30047600",
+          "0x0",
+          "0x0",
+          "0x30002f04"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30041104",
+          "0x0",
+          "0x30041154"
+        ],
+        "theta_bytes": "0000000000000000",
+        "mutex_held": true
+      },
+      {
+        "pipe": 0,
+        "input_vector": [
+          "0x30380000",
+          "0x30047600",
+          "0x0",
+          "0x0",
+          "0x30002f04"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30041104",
+          "0x0",
+          "0x30041154"
+        ],
+        "theta_bytes": "000000000000f43f",
+        "mutex_held": true
+      },
+      {
+        "pipe": 0,
+        "input_vector": [
+          "0x30380000",
+          "0x30047600",
+          "0x0",
+          "0x0",
+          "0x30002f04"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30041104",
+          "0x0",
+          "0x30041154"
+        ],
+        "theta_bytes": "0000000000000000",
+        "mutex_held": true
+      },
+      {
+        "pipe": 0,
+        "input_vector": [
+          "0x30380000",
+          "0x30047600",
+          "0x0",
+          "0x0",
+          "0x30002f04"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30041104",
+          "0x0",
+          "0x30041154"
+        ],
+        "theta_bytes": "0000000000000000",
+        "mutex_held": true
+      },
+      {
+        "pipe": 1,
+        "input_vector": [
+          "0x30380000",
+          "0x0",
+          "0x30068560",
+          "0x303a0000",
+          "0x30052a7c"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30060884",
+          "0x0",
+          "0x300608d4"
+        ],
+        "theta_bytes": "0000000000000000",
+        "mutex_held": true
+      },
+      {
+        "pipe": 1,
+        "input_vector": [
+          "0x30380000",
+          "0x0",
+          "0x30068560",
+          "0x303a0000",
+          "0x30052a7c"
+        ],
+        "status_vector_before": [
+          "0x0",
+          "0x30060884",
+          "0x0",
+          "0x300608d4"
+        ],
+        "theta_bytes": "0000000000000000",
+        "mutex_held": true
+      }
+    ],
+    "ring_cases": [
+      {
+        "current": 0,
+        "lag": 0,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 0,
+        "lag": 1,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 0,
+        "lag": 2,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 0,
+        "lag": 3,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 0,
+        "lag": 4,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 0,
+        "lag": 5,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 0,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 1,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 2,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 3,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 4,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 1,
+        "lag": 5,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 0,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 1,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 2,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 3,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 4,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 2,
+        "lag": 5,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 0,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 1,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 2,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 3,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 4,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 3,
+        "lag": 5,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 0,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 1,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 2,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 3,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 4,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 4,
+        "lag": 5,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 0,
+        "count": 6,
+        "slot": 5,
+        "x": "0x30171060",
+        "y": "0x30172860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30171060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30172860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30171060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30172860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 1,
+        "count": 6,
+        "slot": 4,
+        "x": "0x3015d060",
+        "y": "0x3015e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3015d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3015e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3015e860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 2,
+        "count": 6,
+        "slot": 3,
+        "x": "0x30149060",
+        "y": "0x3014a860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30149060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3014a860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30149060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3014a860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 3,
+        "count": 6,
+        "slot": 2,
+        "x": "0x30135060",
+        "y": "0x30136860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30135060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30136860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30135060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30136860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 4,
+        "count": 6,
+        "slot": 1,
+        "x": "0x30121060",
+        "y": "0x30122860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x30121060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x30122860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30121060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x30122860",
+            "bytes": 6144
+          }
+        ]
+      },
+      {
+        "current": 5,
+        "lag": 5,
+        "count": 6,
+        "slot": 0,
+        "x": "0x3010d060",
+        "y": "0x3010e860",
+        "ops": [
+          {
+            "kind": "copy",
+            "destination": "0x3010d060",
+            "source": "0x30047600",
+            "bytes": 6144
+          },
+          {
+            "kind": "copy",
+            "destination": "0x3010e860",
+            "source": "0x30048e00",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010d060",
+            "bytes": 6144
+          },
+          {
+            "kind": "clean",
+            "address": "0x3010e860",
+            "bytes": 6144
+          }
+        ]
+      }
+    ],
+    "declared_stubs": [
+      "context and mutex lookup return synthetic owned memory",
+      "mutex calls logged; no synchronization model",
+      "A032CF38 replaced by deterministic two-plane writer/status result; warp arithmetic NOT executed",
+      "memcpy performs logical synthetic copy; original helper NOT executed",
+      "cache clean logged only",
+      "still work buffer lookup synthetic",
+      "diagnostics suppressed",
+      "A0308B8C fixed zero; alternate descriptor-clean branch static only"
+    ],
+    "proof_scope": "real original A03119A8/A0312460 envelopes, branches and arguments with the declared substitutes only"
+  },
+  "candidate_boundary": {
+    "site": "A0311D8C call, returning at A0311D90 while stock context mutex remains held",
+    "inputs": "r0 mode object; r1 five-word vector; r2 four-word status/descriptor vector",
+    "video_scratch": "context+47600, plane stride1800, following SetWarp copies3000 total",
+    "preserve": [
+      "same original scratch address",
+      "original mode, geometry and descriptor layout",
+      "original status/index/return",
+      "stock SetWarp ring selection, copies, cleans and status publication"
+    ],
+    "mutation_candidates": [
+      "one scalar in invocation-local calc info with stock core still called",
+      "one bounded plane after stock core returns successfully, before original caller unlocks"
+    ],
+    "not_deployment_authorization": "no wrapper or patch generated; format, runtime budgets, loader and recovery remain separate"
+  },
+  "shadow_selector_correction": "18B448(0,24) selects filter24/controlregs shadow; not established as command opcode24 or actual hardware submit",
+  "not_proven": [
+    "full generator write bounds for every profile",
+    "DSP final read or DMA completion",
+    "runtime lock contention/realtime budget",
+    "MP4 frame identity",
+    "unknown A039C140 callers profiles",
+    "exclusive runtime EIS context identity"
+  ],
+  "device_access": false
+}

@@ -1,0 +1,97 @@
+~ # for p in 102 104 108 110 156 266 271 275 288 959; do echo ====PID=$p; ls -l 
+/proc/$p/fd 2>&1; done
+====PID=102
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[314][0m
+====PID=104
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[315][0m
+====PID=108
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[320][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[323][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[327][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[3140][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m7[0m -> [1;35msocket:[1015][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m8[0m -> [1;35msocket:[1016][0m
+====PID=110
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[324][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[325][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[326][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[328][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m7[0m -> [1;35msocket:[1022][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m8[0m -> [1;35msocket:[670][0m
+====PID=156
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[353][0m
+====PID=266
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[645][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[652][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[655][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m7[0m -> [1;35msocket:[656][0m
+====PID=271
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[646][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[647][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[649][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m7[0m -> [1;35msocket:[650][0m
+====PID=275
+total 0
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[648][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[653][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[654][0m
+====PID=288
+total 0
+lr-x------    1 root     root            64 Jan  1 04:25 [1;36m0[0m -> [1;35m/dev/null[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m4[0m -> [1;35msocket:[669][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m5[0m -> [1;35msocket:[671][0m
+lrwx------    1 root     root            64 Jan  1 04:25 [1;36m6[0m -> [1;35msocket:[672][0m
+====PID=959
+total 0
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m0[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m1[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m10[0m -> [1;31manon_inode:[eventfd][0m
+lr-x------    1 root     root            64 Jan  1 08:13 [1;36m11[0m -> [0;35mpipe:[3148][0m
+l-wx------    1 root     root            64 Jan  1 08:13 [1;36m12[0m -> [0;35mpipe:[3148][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m2[0m -> [1;35m/dev/console[0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m3[0m -> [1;35msocket:[315][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m4[0m -> [1;35msocket:[3139][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m5[0m -> [1;35msocket:[3141][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m6[0m -> [1;35msocket:[3142][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m7[0m -> [1;35msocket:[3146][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m8[0m -> [1;35msocket:[3147][0m
+lrwx------    1 root     root            64 Jan  1 08:13 [1;36m9[0m -> [1;31manon_inode:[eventpoll][0m
+~ # echo __YI_CAPTURE_c8bcb2d894ca4851a6c4695a0578388d__
+__YI_CAPTURE_c8bcb2d894ca4851a6c4695a0578388d__

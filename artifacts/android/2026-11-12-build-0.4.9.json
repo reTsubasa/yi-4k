@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-12T08:20:45+00:00",
+  "status": "pass_android_0_4_9_fast_shutter_landscape_fullscreen",
+  "version_name": "0.4.9",
+  "version_code": 32,
+  "changes": [
+    "fullscreen requests landscape orientation and restores prior orientation",
+    "photo shutter plays platform click/flash immediately",
+    "optimistic preview snapshot flies to album while camera indexing and JPEG decode continue in background",
+    "real thumbnail replaces optimistic cover without a second delayed flight",
+    "optimistic flight snapshots viewfinder before confirmation flash"
+  ],
+  "command": "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
+  "unit_tests": 209,
+  "unit_test_failures_or_errors": 0,
+  "lint_errors": 0,
+  "lint_warnings": 74,
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.4.9-debug.apk",
+    "sha256": "795ec29f0e2c34eac292e8ae235b7378a0bc0001d3ad8cf91ef54c496a3a152e",
+    "bytes": 12027193
+  },
+  "device_access": false,
+  "physical_phone_acceptance": false
+}

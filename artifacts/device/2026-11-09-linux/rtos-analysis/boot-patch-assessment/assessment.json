@@ -1,0 +1,198 @@
+{
+  "scope": "offline static patch assessment; NOT a firmware image or executed extension",
+  "device_contacted": false,
+  "device_modified": false,
+  "flashable_image_generated": false,
+  "source": {
+    "partition_sha256": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+    "window_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+    "partition_bytes": 33554432,
+    "window_bytes": 7491584
+  },
+  "candidate_padding": {
+    "start": "0xa064e214",
+    "end_exclusive": "0xa064f000",
+    "bytes": 3564,
+    "candidate_entry": "0xa064e220",
+    "aligned_capacity": 3552,
+    "all_zero": true,
+    "raw_aligned_pointers": [],
+    "index_checks": [
+      {
+        "index": "artifacts/rtos-reverse/full",
+        "rows": 428243,
+        "non_memory_targets": 97718,
+        "padding_xrefs": [],
+        "function_overlaps": []
+      },
+      {
+        "index": "artifacts/device/2026-11-09-linux/rtos-analysis/full",
+        "rows": 438936,
+        "non_memory_targets": 102048,
+        "padding_xrefs": [],
+        "function_overlaps": []
+      }
+    ],
+    "ownership": "linker/MMU padding candidate, NOT proven unused at runtime"
+  },
+  "mmu": {
+    "initializer": "0xA0295CF8",
+    "builder": "0xA04A3FB0",
+    "text_start": "0xA0100000",
+    "text_source_end": "0xA064E214",
+    "text_mapped_end_exclusive": "0xA064F000",
+    "packed_attributes": "0x1060F",
+    "reconstructed_small_page_attributes": "0x43e",
+    "candidate_physical_page": "0x0064E000",
+    "candidate_xn": 0,
+    "cave_page_overlap_with_following_mapping": false,
+    "runtime_permissions_verified": false
+  },
+  "prototype": {
+    "source": "sdk/offline/yi4k_1107_boot_marker.S",
+    "payload_bytes": 96,
+    "payload_sha256": "96d06a9f22a5637067a1fb103f17873d1953b4c7ca0f356cdd0549f7b77aa097",
+    "code_bytes": 44,
+    "patch_spans": [
+      {
+        "label": "startup_bl",
+        "va": "0xa0187bf4",
+        "file_offset": "0x87bf4",
+        "bytes": 4,
+        "before_hex": "bbfcffeb",
+        "after_hex": "891913eb"
+      },
+      {
+        "label": "text_padding_wrapper",
+        "va": "0xa064e220",
+        "file_offset": "0x54e220",
+        "bytes": 96,
+        "before_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "after_hex": "10402de9e8ce06e318c04ae33cff2fe10040a0e110008fe2ecc007e32ac04ae33cff2fe10400a0e11080bde85b7969346b2d6578745d2073746f636b20696e69742072657475726e65643b207772617070657220726561636865640a000000a0"
+      }
+    ],
+    "original_callee": "0xa0186ee8",
+    "return_site": "0xa0187bf8",
+    "changed_bytes": 93,
+    "mutated_partition_sha256": "ad164130f9c9db4a61cb0ab8e3b1cf862cda7db320003e407e7d9e424c6546e5",
+    "full_modified_image_written": false,
+    "in_memory_reversal_exact": true,
+    "abi_model": {
+      "model": "bounded instruction/AAPCS simulation with mocked firmware calls",
+      "cases": 4,
+      "stock_call_once": true,
+      "return_value_and_stack_preserved": true,
+      "hardware_execution": false
+    },
+    "behavior": "Stock initialization exactly once, one log marker, return; no task creation"
+  },
+  "future_task": {
+    "pool": "0xA0FD7114",
+    "pool_created_before_hook": true,
+    "allocation_api": "0xA03BC6DC",
+    "timeout_proposed": 0,
+    "control_bytes": 216,
+    "stack_bytes_proposed": 8192,
+    "storage": "one owned allocation, separate aligned TCB/context/stack regions",
+    "sequence": [
+      "allocate without wait",
+      "TaskCreate auto_start=0",
+      "core exclusion after successful create",
+      "Resume"
+    ],
+    "status": "design only; no additional task payload implemented"
+  },
+  "recovery": {
+    "device_bootloader_captured": false,
+    "tested_independent_recovery": false,
+    "sys_sw_dump_is_nand_recovery_image": false,
+    "remove_sd_reverts_flash_patch": false,
+    "force_filename_proves_pre_rtos_recovery": false
+  },
+  "verified_same_body_functions": {
+    "0xa018756c": {
+      "sha256": "aaa8ce45e697f4d020423ad57b799a22ac8a7aa040c69105b5d89d56f1d15105",
+      "ranges": [
+        "a018756c-a0187de7"
+      ]
+    },
+    "0xa0186e3c": {
+      "sha256": "e89c948ac98e1d3e78de4b9954abb72314d3ba79a076da6c3b5cbc9a7d207f85",
+      "ranges": [
+        "a0186e3c-a0186ee7"
+      ]
+    },
+    "0xa0186ee8": {
+      "sha256": "d763f17e02edae853d4ab23afec3082c3a444a16432b388700c67fd48a41a740",
+      "ranges": [
+        "a0186ee8-a0186f3b",
+        "a02478bc-a02478f3"
+      ]
+    },
+    "0xa0295cf8": {
+      "sha256": "8860f5d516610af6bacb7db35f276e3dbccc3865a4a105e87960572286a3e223",
+      "ranges": [
+        "a0295cf8-a0295ff7"
+      ]
+    },
+    "0xa04a3fb0": {
+      "sha256": "4e5222428a7cb990fbb80a0b3fc4fa8b5d62d109e073ebd807eb0973017c997c",
+      "ranges": [
+        "a04a3754-a04a3b23",
+        "a04a3c7c-a04a3ffb"
+      ]
+    },
+    "0xa03bc6b0": {
+      "sha256": "a05924ab6df5d3dfd3a47bb146f9ad7839212d65080e8e51cf4858385add3028",
+      "ranges": [
+        "a03bc6b0-a03bc6d7"
+      ]
+    },
+    "0xa03bc6dc": {
+      "sha256": "91c66e7c3c1fa3e2a39520039abdb456d3aff8efa97be89bed4a3f08b91ddeef",
+      "ranges": [
+        "a03bc6dc-a03bc713",
+        "a03bcd20-a03bce33"
+      ]
+    },
+    "0xa03c3448": {
+      "sha256": "1338d615a56e586ea1a90bf45cf0c64313ff4d127808a7ce354d96193d92a065",
+      "ranges": [
+        "a03c3448-a03c3523"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "start": "0xa0295cf8",
+      "end_exclusive": "0xa0295ff8",
+      "sha256": "8860f5d516610af6bacb7db35f276e3dbccc3865a4a105e87960572286a3e223",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/boot-patch-assessment/mmu_layout.asm"
+    },
+    {
+      "start": "0xa0187bc4",
+      "end_exclusive": "0xa0187c08",
+      "sha256": "9fac46dd05f93aa68631aab4456d278d4ba5ea03f7d9841d4c677008463bdaf9",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/boot-patch-assessment/startup_hook_context.asm"
+    },
+    {
+      "start": "0xa018756c",
+      "end_exclusive": "0xa0187668",
+      "sha256": "7e73d8fb6c997b3a0baf38da73c7d591a404c9e37adb7f333180c058d8acbb2e",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/boot-patch-assessment/pool_initialization.asm"
+    },
+    {
+      "start": "0xa01000fc",
+      "end_exclusive": "0xa0100294",
+      "sha256": "1b2d3b15788de63cca940b37c4505dced4b26020a54a91c3a23ecee6c662a46d",
+      "asm": "artifacts/device/2026-11-09-linux/rtos-analysis/boot-patch-assessment/startup_vectors_and_stacks.asm"
+    }
+  ],
+  "remaining": [
+    "Confirm candidate padding has no indirect runtime writer or integrity role.",
+    "Obtain current bootloader/PTB load length and CRC semantics; 32 MiB MTD size is not load length.",
+    "Establish recovery independent of normal RTOS startup and preserve required NAND metadata.",
+    "Validate cold boot and BOSS/hibernation resume separately.",
+    "Validate logger and execution/return on hardware before any task integration."
+  ]
+}

@@ -1,0 +1,63 @@
+scripts/audit_prerecord_native_window_avfoundation.swift:20:27: warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+18 | var tracks:[[String:Any]]=[]
+19 | for type in [AVMediaType.video,AVMediaType.audio] {
+20 |     guard let track=asset.tracks(withMediaType:type).first else {
+   |                           `- warning: 'tracks(withMediaType:)' was deprecated in macOS 13.0: Use loadTracks(withMediaType:) instead
+21 |         var error:NSError?=nil;let status=asset.statusOfValue(forKey:"tracks",error:&error)
+22 |         print("MISSING \(type) status=\(status.rawValue) error=\(String(describing:error)) tracks=\(asset.tracks.map{$0.mediaType.rawValue}) playable=\(asset.isPlayable)")
+
+scripts/audit_prerecord_native_window_avfoundation.swift:21:49: warning: 'statusOfValue(forKey:error:)' was deprecated in macOS 13.0: Use status(of:) instead
+19 | for type in [AVMediaType.video,AVMediaType.audio] {
+20 |     guard let track=asset.tracks(withMediaType:type).first else {
+21 |         var error:NSError?=nil;let status=asset.statusOfValue(forKey:"tracks",error:&error)
+   |                                                 `- warning: 'statusOfValue(forKey:error:)' was deprecated in macOS 13.0: Use status(of:) instead
+22 |         print("MISSING \(type) status=\(status.rawValue) error=\(String(describing:error)) tracks=\(asset.tracks.map{$0.mediaType.rawValue}) playable=\(asset.isPlayable)")
+23 |         exit(2)
+
+scripts/audit_prerecord_native_window_avfoundation.swift:22:107: warning: 'tracks' was deprecated in macOS 13.0: Use load(.tracks) instead
+20 |     guard let track=asset.tracks(withMediaType:type).first else {
+21 |         var error:NSError?=nil;let status=asset.statusOfValue(forKey:"tracks",error:&error)
+22 |         print("MISSING \(type) status=\(status.rawValue) error=\(String(describing:error)) tracks=\(asset.tracks.map{$0.mediaType.rawValue}) playable=\(asset.isPlayable)")
+   |                                                                                                           `- warning: 'tracks' was deprecated in macOS 13.0: Use load(.tracks) instead
+23 |         exit(2)
+24 |     }
+
+scripts/audit_prerecord_native_window_avfoundation.swift:22:159: warning: 'isPlayable' was deprecated in macOS 13.0: Use load(.isPlayable) instead
+20 |     guard let track=asset.tracks(withMediaType:type).first else {
+21 |         var error:NSError?=nil;let status=asset.statusOfValue(forKey:"tracks",error:&error)
+22 |         print("MISSING \(type) status=\(status.rawValue) error=\(String(describing:error)) tracks=\(asset.tracks.map{$0.mediaType.rawValue}) playable=\(asset.isPlayable)")
+   |                                                                                                                                                               `- warning: 'isPlayable' was deprecated in macOS 13.0: Use load(.isPlayable) instead
+23 |         exit(2)
+24 |     }
+
+scripts/audit_prerecord_native_window_avfoundation.swift:87:37: warning: 'segments' was deprecated in macOS 13.0: Use load(.segments) instead
+85 |     }
+86 |     guard reader.status == .completed else {fatalError("reader status \(reader.status): \(String(describing:reader.error))")}
+87 |     tracks.append(["segments":track.segments.map{["empty":$0.isEmpty,"sourceStart":rational($0.timeMapping.source.start),"sourceDuration":rational($0.timeMapping.source.duration),"targetStart":rational($0.timeMapping.target.start),"targetDuration":rational($0.timeMapping.target.duration)]},"type":type.rawValue,"timeRangeStart":rational(track.timeRange.start),
+   |                                     `- warning: 'segments' was deprecated in macOS 13.0: Use load(.segments) instead
+88 |         "timeRangeDuration":rational(track.timeRange.duration),"packets":packets,"emptyEvents":emptyEvents,"decodedAudioFrames":decodedAudioFrames,"pcmBytes":pcmBytes,"pcmSHA256":pcmHash.finalize().map{String(format:"%02x",$0)}.joined()])
+89 | }
+
+scripts/audit_prerecord_native_window_avfoundation.swift:87:345: warning: 'timeRange' was deprecated in macOS 13.0: Use load(.timeRange) instead
+85 |     }
+86 |     guard reader.status == .completed else {fatalError("reader status \(reader.status): \(String(describing:reader.error))")}
+87 |     tracks.append(["segments":track.segments.map{["empty":$0.isEmpty,"sourceStart":rational($0.timeMapping.source.start),"sourceDuration":rational($0.timeMapping.source.duration),"targetStart":rational($0.timeMapping.target.start),"targetDuration":rational($0.timeMapping.target.duration)]},"type":type.rawValue,"timeRangeStart":rational(track.timeRange.start),
+   |                                                                                                                                                                                                                                                                                                                                                         `- warning: 'timeRange' was deprecated in macOS 13.0: Use load(.timeRange) instead
+88 |         "timeRangeDuration":rational(track.timeRange.duration),"packets":packets,"emptyEvents":emptyEvents,"decodedAudioFrames":decodedAudioFrames,"pcmBytes":pcmBytes,"pcmSHA256":pcmHash.finalize().map{String(format:"%02x",$0)}.joined()])
+89 | }
+
+scripts/audit_prerecord_native_window_avfoundation.swift:88:44: warning: 'timeRange' was deprecated in macOS 13.0: Use load(.timeRange) instead
+86 |     guard reader.status == .completed else {fatalError("reader status \(reader.status): \(String(describing:reader.error))")}
+87 |     tracks.append(["segments":track.segments.map{["empty":$0.isEmpty,"sourceStart":rational($0.timeMapping.source.start),"sourceDuration":rational($0.timeMapping.source.duration),"targetStart":rational($0.timeMapping.target.start),"targetDuration":rational($0.timeMapping.target.duration)]},"type":type.rawValue,"timeRangeStart":rational(track.timeRange.start),
+88 |         "timeRangeDuration":rational(track.timeRange.duration),"packets":packets,"emptyEvents":emptyEvents,"decodedAudioFrames":decodedAudioFrames,"pcmBytes":pcmBytes,"pcmSHA256":pcmHash.finalize().map{String(format:"%02x",$0)}.joined()])
+   |                                            `- warning: 'timeRange' was deprecated in macOS 13.0: Use load(.timeRange) instead
+89 | }
+90 | let result:[String:Any]=["status":"completed","consumer":"AVFoundation AVAssetReaderTrackOutput(outputSettings:nil)",
+
+scripts/audit_prerecord_native_window_avfoundation.swift:91:131: warning: 'duration' was deprecated in macOS 13.0: Use load(.duration) instead
+89 | }
+90 | let result:[String:Any]=["status":"completed","consumer":"AVFoundation AVAssetReaderTrackOutput(outputSettings:nil)",
+91 |     "mode":decode ? "decode" : "packets","os":ProcessInfo.processInfo.operatingSystemVersionString,"assetDuration":rational(asset.duration),"tracks":tracks]
+   |                                                                                                                                   `- warning: 'duration' was deprecated in macOS 13.0: Use load(.duration) instead
+92 | try JSONSerialization.data(withJSONObject:result,options:[.prettyPrinted,.sortedKeys]).write(to:URL(fileURLWithPath:args[2]))
+93 | print("completed \(tracks.map{($0["packets"] as! [[String:Any]]).count})")

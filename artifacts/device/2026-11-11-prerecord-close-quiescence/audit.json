@@ -1,0 +1,333 @@
+{
+  "audit": "prerecord_close_quiescence",
+  "scope": "offline source ordering plus existing original-instruction interleaving evidence",
+  "firmware": "Z16V13L_1.10.7_build-20180202122459_git-a8f840ce_r2746",
+  "source_root": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled",
+  "close_sequences": {
+    "normal_mp4": [
+      "WaitComplete(pipe,-1)",
+      "unregister mux handler",
+      "Remove(pipe)",
+      "Delete(pipe)",
+      "Delete virtual FIFOs"
+    ],
+    "event_record": [
+      "WaitComplete(pipe,-1)",
+      "unregister EventRecord handler",
+      "Remove(pipe)",
+      "Delete(pipe)",
+      "Delete virtual FIFOs"
+    ],
+    "uvcd_stop": [
+      "if handle != 0",
+      "Delete(handle)",
+      "clear global handle"
+    ]
+  },
+  "files": {
+    "mux_register": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f5ff0.c",
+      "sha256": "287d8bd1ef65b6406ec9617ab358e225b323b7e931939ca5e59a0c9a5c5b405a",
+      "size_bytes": 505,
+      "line_hits": {}
+    },
+    "mux_unregister": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6044.c",
+      "sha256": "e327a3c839a5b20ec84963d68b290183c63847b38bd792eaf85dfe7aac676c8f",
+      "size_bytes": 513,
+      "line_hits": {
+        "matched_FUN_a01f6044": [
+          2,
+          6
+        ],
+        "matched_FUN_a01f0f2c": [
+          20
+        ]
+      }
+    },
+    "unregister_impl": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f0f2c.c",
+      "sha256": "b1afdba3d33c07ff0d01f21536aa874b8fbab4168546ed2c3b5a5709cf23d8e8",
+      "size_bytes": 797,
+      "line_hits": {
+        "matched_FUN_a01f0f2c": [
+          2,
+          6
+        ],
+        "= 0;": [
+          13,
+          18
+        ]
+      }
+    },
+    "register_impl": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f0e00.c",
+      "sha256": "c48be632560d146bd0c2cc2a84a4bcad19581d5d3db30f201f15985e2fa6893f",
+      "size_bytes": 1551,
+      "line_hits": {
+        "= 0;": [
+          36,
+          39,
+          40
+        ]
+      }
+    },
+    "normal_close": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6088.c",
+      "sha256": "398df127e50fe35569f29ca48f2b9532a1297b963389ddea5df4cb1ddbf177c2",
+      "size_bytes": 2328,
+      "line_hits": {
+        "matched_FUN_a043fec0": [
+          13
+        ],
+        "matched_FUN_a01f6044": [
+          16
+        ],
+        "matched_FUN_a04514e4": [
+          57,
+          61,
+          65,
+          69,
+          73,
+          77
+        ],
+        "= 0;": [
+          20,
+          27,
+          29,
+          37,
+          44,
+          46,
+          54,
+          58,
+          62,
+          66,
+          70,
+          74,
+          78
+        ]
+      }
+    },
+    "event_close": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f8f08.c",
+      "sha256": "63e98bff1d6866d0b476da2feb8a2b755e82e1d0caff27f2cafdc05b322610df",
+      "size_bytes": 2396,
+      "line_hits": {
+        "matched_FUN_a043fec0": [
+          14
+        ],
+        "matched_FUN_a01f8ebc": [
+          18
+        ],
+        "matched_FUN_a04514e4": [
+          33,
+          37,
+          41,
+          45,
+          75,
+          79
+        ],
+        "= 0;": [
+          22,
+          29,
+          31,
+          34,
+          38,
+          42,
+          46,
+          55,
+          62,
+          64,
+          72,
+          76,
+          80
+        ]
+      }
+    },
+    "event_unregister_wrapper": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f8ebc.c",
+      "sha256": "20584347ffb1fbaecda2e21429d108495329cd61c69d1f2d5b11a1b1fb95074d",
+      "size_bytes": 484,
+      "line_hits": {
+        "matched_FUN_a01f8ebc": [
+          2,
+          6
+        ],
+        "matched_FUN_a01f0f2c": [
+          20
+        ],
+        "= 0;": [
+          17
+        ]
+      }
+    },
+    "uvcd_stop": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a02335d0.c",
+      "sha256": "dc477bfab3c7c5573e41266dce377317c335585ac34e5a1853f4fae9db5cc3a3",
+      "size_bytes": 315,
+      "line_hits": {
+        "matched_FUN_a04514e4": [
+          12
+        ],
+        "= 0;": [
+          13
+        ]
+      }
+    },
+    "fifo_delete": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04514e4.c",
+      "sha256": "77b31ee80b937f0a738022a6ed20d496c7c7ef234d177e24699d4d3426a24f2b",
+      "size_bytes": 2685,
+      "line_hits": {
+        "matched_FUN_a04514e4": [
+          2,
+          6
+        ],
+        "= 0;": [
+          59,
+          60,
+          61,
+          62,
+          65
+        ]
+      }
+    },
+    "mux_wait": {
+      "path": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a043fec0.c",
+      "sha256": "6a732b992e5bbd5105077ebb6e4391e0cead964555b72ed205451028921ca134",
+      "size_bytes": 2044,
+      "line_hits": {
+        "matched_FUN_a043fec0": [
+          2,
+          8
+        ],
+        "= 0;": [
+          43,
+          60
+        ]
+      }
+    }
+  },
+  "interleaving_evidence": {
+    "path": "artifacts/device/2026-11-10-prerecord/prerecord-fifo-lifecycle-audit.json",
+    "sha256": "43b6389acaaac8fff6d1170598a759b489a9ad6e3b94bf0769bdfbfa80559297",
+    "case_name": "delete_does_not_barrier_already_released_sync_callback",
+    "explicit_sequential_interleaving": true,
+    "callback_happened_after_successful_delete": true
+  },
+  "checks": [
+    {
+      "name": "normal close waits before unregister",
+      "needles": [
+        "matched_FUN_a043fec0(DAT_a13c1784,0xffffffff);",
+        "matched_FUN_a01f6044();"
+      ]
+    },
+    {
+      "name": "normal close deletes FIFOs after unregister",
+      "needles": [
+        "matched_FUN_a043f9cc();",
+        "matched_FUN_a043f82c(DAT_a13c1784);",
+        "matched_FUN_a04514e4();"
+      ]
+    },
+    {
+      "name": "event close waits before unregister",
+      "needles": [
+        "matched_FUN_a043fec0(DAT_a13c3690,0xffffffff);",
+        "matched_FUN_a01f8ebc();"
+      ]
+    },
+    {
+      "name": "event close deletes FIFOs after unregister",
+      "needles": [
+        "matched_FUN_a043f9cc();",
+        "matched_FUN_a043f82c(DAT_a13c3690);",
+        "matched_FUN_a04514e4();"
+      ]
+    },
+    {
+      "name": "normal unregister delegates to flag table",
+      "needles": [
+        "matched_FUN_a01f0f2c(&pcStack_1c);"
+      ]
+    },
+    {
+      "name": "event unregister delegates to flag table",
+      "needles": [
+        "matched_FUN_a01f0f2c(&local_1c);"
+      ]
+    },
+    {
+      "name": "unregister marks handler inactive",
+      "needles": [
+        "*(undefined1 *)(iVar2 * 0x14 + DAT_a01f0fd8 + 10) = 0;"
+      ]
+    },
+    {
+      "name": "unregister has no wait/delete barrier",
+      "absent_needles": [
+        "matched_FUN_a043fec0",
+        "matched_FUN_a04514e4",
+        "quiesce",
+        "WaitComplete"
+      ]
+    },
+    {
+      "name": "UVCd stop directly deletes handle",
+      "needles": [
+        "if (DAT_a142fb60 == 0)",
+        "matched_FUN_a04514e4();",
+        "DAT_a142fb60 = 0;"
+      ]
+    },
+    {
+      "name": "FIFO delete only takes internal locks before freeing pool",
+      "needles": [
+        "matched_FUN_a03bc46c(iVar4,0xffffffff);",
+        "matched_FUN_a03bc46c(iVar5,0xffffffff);",
+        "matched_analyst_pool_free()"
+      ]
+    },
+    {
+      "name": "FIFO delete has no callback wait call",
+      "absent_needles": [
+        "matched_FUN_a01f0f2c",
+        "matched_FUN_a043fec0",
+        "quiesce",
+        "callback_count"
+      ]
+    },
+    {
+      "name": "interleaving observes callback after delete",
+      "needles": [
+        "\"explicit_sequential_interleaving\": true",
+        "\"callback_happened_after_successful_delete\": true"
+      ]
+    }
+  ],
+  "conclusions": {
+    "stock_mux_wait_is_not_callback_quiescence": true,
+    "stock_unregister_is_flag_deactivation_only_in_audited_range": true,
+    "stock_close_deletes_virtual_fifos_after_unregistration": true,
+    "uvcd_stop_has_no_audited_quiesce_step": true,
+    "fifo_delete_has_internal_mutexes_but_no_callback_barrier": true,
+    "existing_interleaving_reaches_callback_after_successful_delete": true,
+    "safe_new_consumer_stop_contract_proven": false,
+    "camera_side_prerecord_implemented": false
+  },
+  "required_runtime_evidence": [
+    "prevent new callback admission for this handle",
+    "count and drain callbacks already in flight",
+    "hold payload/descriptor read lease until copy and Remove finish",
+    "verify handle registry and base FIFO ownership immediately before Delete",
+    "prove no stale callback executes after Delete on real scheduler"
+  ],
+  "safety": {
+    "camera_connected": false,
+    "firmware_written": false,
+    "ram_or_partition_written": false,
+    "hidden_setter_invoked": false,
+    "rtos_executed": false
+  }
+}

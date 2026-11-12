@@ -1,0 +1,706 @@
+[
+  {
+    "offset": "0x2ca0",
+    "text": "author=Joey Li"
+  },
+  {
+    "offset": "0x2caf",
+    "text": "license=GPL"
+  },
+  {
+    "offset": "0x2cbc",
+    "text": "depends="
+  },
+  {
+    "offset": "0x2cc5",
+    "text": "intree=Y"
+  },
+  {
+    "offset": "0x2cce",
+    "text": "vermagic=3.10.71 preempt mod_unload ARMv7 "
+  },
+  {
+    "offset": "0x2d04",
+    "text": "ambafs"
+  },
+  {
+    "offset": "0x2d0c",
+    "text": "ambafs_bdi"
+  },
+  {
+    "offset": "0x2d21",
+    "text": "3readdir fail for new node"
+  },
+  {
+    "offset": "0x2d45",
+    "text": "3start_readdir nodev"
+  },
+  {
+    "offset": "0x2d6d",
+    "text": "3ambafs lru error(%d)"
+  },
+  {
+    "offset": "0x2d85",
+    "text": "3Info: hole in ambafs_readpages"
+  },
+  {
+    "offset": "0x2da9",
+    "text": "3readpage failed"
+  },
+  {
+    "offset": "0x2dbc",
+    "text": "aipc_vfs"
+  },
+  {
+    "offset": "0x2dc8",
+    "text": "&x->wait"
+  },
+  {
+    "offset": "0x2dd4",
+    "text": "ambafs"
+  },
+  {
+    "offset": "0x2ddc",
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/ambalink_sdk_3_10/linux/arch/arm/mach-ambarella/ambalink/ambafs/dir.c"
+  },
+  {
+    "offset": "0x2e52",
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/ambalink_sdk_3_10/linux/arch/arm/mach-ambarella/ambalink/ambafs/inode.c"
+  },
+  {
+    "offset": "0x2eca",
+    "text": "/var/lib/jenkins/workspace/SportCam-z16-release/ambalink_sdk_3_10/linux/arch/arm/mach-ambarella/ambalink/ambafs/rpmsg.c"
+  },
+  {
+    "offset": "0x312c",
+    "text": "aipc_vfs"
+  },
+  {
+    "offset": "0x3178",
+    "text": "ambafs"
+  },
+  {
+    "offset": "0x345d",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x3486",
+    "text": ".symtab"
+  },
+  {
+    "offset": "0x348e",
+    "text": ".strtab"
+  },
+  {
+    "offset": "0x3496",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x34a0",
+    "text": ".rel.text"
+  },
+  {
+    "offset": "0x34aa",
+    "text": ".rel.init.text"
+  },
+  {
+    "offset": "0x34b9",
+    "text": ".rel.exit.text"
+  },
+  {
+    "offset": "0x34c8",
+    "text": ".rel.rodata"
+  },
+  {
+    "offset": "0x34d4",
+    "text": ".ARM.extab.init.text"
+  },
+  {
+    "offset": "0x34e9",
+    "text": ".rel.ARM.exidx.init.text"
+  },
+  {
+    "offset": "0x3502",
+    "text": ".ARM.extab.exit.text"
+  },
+  {
+    "offset": "0x3517",
+    "text": ".rel.ARM.exidx.exit.text"
+  },
+  {
+    "offset": "0x3530",
+    "text": ".modinfo"
+  },
+  {
+    "offset": "0x3539",
+    "text": ".rodata.str1.4"
+  },
+  {
+    "offset": "0x3548",
+    "text": ".rodata.str"
+  },
+  {
+    "offset": "0x3554",
+    "text": ".rel__bug_table"
+  },
+  {
+    "offset": "0x3564",
+    "text": ".ARM.extab"
+  },
+  {
+    "offset": "0x356f",
+    "text": ".rel.data"
+  },
+  {
+    "offset": "0x3579",
+    "text": ".rel.gnu.linkonce.this_module"
+  },
+  {
+    "offset": "0x3597",
+    "text": ".rel.ARM.exidx"
+  },
+  {
+    "offset": "0x35a6",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x35be",
+    "text": ".note.GNU-stack"
+  },
+  {
+    "offset": "0x35ce",
+    "text": ".ARM.attributes"
+  },
+  {
+    "offset": "0x4651",
+    "text": "ambafs_umount"
+  },
+  {
+    "offset": "0x465f",
+    "text": "ambafs_fill_super"
+  },
+  {
+    "offset": "0x4671",
+    "text": ".LANCHOR0"
+  },
+  {
+    "offset": "0x467b",
+    "text": "ambafs_mount"
+  },
+  {
+    "offset": "0x4692",
+    "text": "ambafs_statfs"
+  },
+  {
+    "offset": "0x46a5",
+    "text": "ambafs_dir_readdir"
+  },
+  {
+    "offset": "0x46c2",
+    "text": "ambafs_file_fsync"
+  },
+  {
+    "offset": "0x46d4",
+    "text": "ambafs_file_release"
+  },
+  {
+    "offset": "0x46e8",
+    "text": "ambafs_file_open"
+  },
+  {
+    "offset": "0x46f9",
+    "text": "writepage_cb"
+  },
+  {
+    "offset": "0x4706",
+    "text": "ambafs_readpage"
+  },
+  {
+    "offset": "0x4716",
+    "text": "readpage_cb"
+  },
+  {
+    "offset": "0x4722",
+    "text": "ambafs_write_begin"
+  },
+  {
+    "offset": "0x4735",
+    "text": "ambafs_readpages"
+  },
+  {
+    "offset": "0x4746",
+    "text": "ambafs_write_end"
+  },
+  {
+    "offset": "0x4757",
+    "text": "ambafs_writepages"
+  },
+  {
+    "offset": "0x4769",
+    "text": "ambafs_rename"
+  },
+  {
+    "offset": "0x4777",
+    "text": "ambafs_lookup"
+  },
+  {
+    "offset": "0x4785",
+    "text": "ambafs_mkdir"
+  },
+  {
+    "offset": "0x4792",
+    "text": "ambafs_unlink"
+  },
+  {
+    "offset": "0x47a0",
+    "text": "ambafs_rmdir"
+  },
+  {
+    "offset": "0x47ad",
+    "text": "ambafs_create"
+  },
+  {
+    "offset": "0x47bb",
+    "text": "ambafs_d_revalidate"
+  },
+  {
+    "offset": "0x47cf",
+    "text": "ambafs_getattr"
+  },
+  {
+    "offset": "0x47de",
+    "text": "exec_cb"
+  },
+  {
+    "offset": "0x47e6",
+    "text": "rpmsg_vfs_remove"
+  },
+  {
+    "offset": "0x47f7",
+    "text": "rpmsg_vfs_probe"
+  },
+  {
+    "offset": "0x4807",
+    "text": "rpmsg_vfs_recv"
+  },
+  {
+    "offset": "0x4816",
+    "text": ".LANCHOR1"
+  },
+  {
+    "offset": "0x4820",
+    "text": "generic_shutdown_super"
+  },
+  {
+    "offset": "0x4837",
+    "text": "strcpy"
+  },
+  {
+    "offset": "0x483e",
+    "text": "ambafs_bdi"
+  },
+  {
+    "offset": "0x4849",
+    "text": "boss_obj"
+  },
+  {
+    "offset": "0x4852",
+    "text": "clear_nlink"
+  },
+  {
+    "offset": "0x485e",
+    "text": "flush_dcache_page"
+  },
+  {
+    "offset": "0x4870",
+    "text": "d_instantiate"
+  },
+  {
+    "offset": "0x487e",
+    "text": "grab_cache_page_write_begin"
+  },
+  {
+    "offset": "0x489a",
+    "text": "generic_file_splice_read"
+  },
+  {
+    "offset": "0x48b3",
+    "text": "__this_module"
+  },
+  {
+    "offset": "0x48c1",
+    "text": "memmove"
+  },
+  {
+    "offset": "0x48c9",
+    "text": "new_inode"
+  },
+  {
+    "offset": "0x48d3",
+    "text": "complete"
+  },
+  {
+    "offset": "0x48dc",
+    "text": "__stack_chk_guard"
+  },
+  {
+    "offset": "0x48ee",
+    "text": "ambafs_rpmsg_exec"
+  },
+  {
+    "offset": "0x4900",
+    "text": "__aeabi_unwind_cpp_pr0"
+  },
+  {
+    "offset": "0x4917",
+    "text": "unregister_filesystem"
+  },
+  {
+    "offset": "0x492d",
+    "text": "d_alloc_name"
+  },
+  {
+    "offset": "0x493a",
+    "text": "d_make_root"
+  },
+  {
+    "offset": "0x4946",
+    "text": "put_page"
+  },
+  {
+    "offset": "0x4952",
+    "text": "cleanup_module"
+  },
+  {
+    "offset": "0x4961",
+    "text": "d_splice_alias"
+  },
+  {
+    "offset": "0x4970",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0x4977",
+    "text": "do_sync_write"
+  },
+  {
+    "offset": "0x4985",
+    "text": "boss_local_irq_save"
+  },
+  {
+    "offset": "0x4999",
+    "text": "iunique"
+  },
+  {
+    "offset": "0x49a1",
+    "text": "kfree"
+  },
+  {
+    "offset": "0x49ac",
+    "text": "ambafs_file_inode_ops"
+  },
+  {
+    "offset": "0x49c2",
+    "text": "__pagevec_release"
+  },
+  {
+    "offset": "0x49d4",
+    "text": "d_lookup"
+  },
+  {
+    "offset": "0x49dd",
+    "text": "free_pages"
+  },
+  {
+    "offset": "0x49e8",
+    "text": "register_filesystem"
+  },
+  {
+    "offset": "0x49fc",
+    "text": "ambcache_inv_range"
+  },
+  {
+    "offset": "0x4a0f",
+    "text": "clear_page_dirty_for_io"
+  },
+  {
+    "offset": "0x4a27",
+    "text": "full_name_hash"
+  },
+  {
+    "offset": "0x4a36",
+    "text": "init_module"
+  },
+  {
+    "offset": "0x4a42",
+    "text": "ambafs_new_inode"
+  },
+  {
+    "offset": "0x4a53",
+    "text": "do_sync_read"
+  },
+  {
+    "offset": "0x4a60",
+    "text": "__stack_chk_fail"
+  },
+  {
+    "offset": "0x4a71",
+    "text": "ambafs_file_ops"
+  },
+  {
+    "offset": "0x4a81",
+    "text": "find_get_pages_tag"
+  },
+  {
+    "offset": "0x4a94",
+    "text": "generic_file_mmap"
+  },
+  {
+    "offset": "0x4aa6",
+    "text": "register_rpmsg_driver"
+  },
+  {
+    "offset": "0x4abc",
+    "text": "simple_getattr"
+  },
+  {
+    "offset": "0x4acb",
+    "text": "ambafs_aops"
+  },
+  {
+    "offset": "0x4ad7",
+    "text": "release_pages"
+  },
+  {
+    "offset": "0x4ae5",
+    "text": "unlock_page"
+  },
+  {
+    "offset": "0x4af1",
+    "text": "preempt_schedule"
+  },
+  {
+    "offset": "0x4b02",
+    "text": "ambafs_get_full_path"
+  },
+  {
+    "offset": "0x4b17",
+    "text": "dentry_path_raw"
+  },
+  {
+    "offset": "0x4b2c",
+    "text": "add_preempt_count"
+  },
+  {
+    "offset": "0x4b3e",
+    "text": "__mod_rpmsg_device_table"
+  },
+  {
+    "offset": "0x4b57",
+    "text": "set_nlink"
+  },
+  {
+    "offset": "0x4b61",
+    "text": "unregister_rpmsg_driver"
+  },
+  {
+    "offset": "0x4b79",
+    "text": "strncpy"
+  },
+  {
+    "offset": "0x4b81",
+    "text": "_cond_resched"
+  },
+  {
+    "offset": "0x4b8f",
+    "text": "d_rehash"
+  },
+  {
+    "offset": "0x4b98",
+    "text": "printk"
+  },
+  {
+    "offset": "0x4b9f",
+    "text": "ambafs_rpmsg_init"
+  },
+  {
+    "offset": "0x4bb1",
+    "text": "ambafs_rpmsg_exit"
+  },
+  {
+    "offset": "0x4bc3",
+    "text": "memset"
+  },
+  {
+    "offset": "0x4bca",
+    "text": "__memzero"
+  },
+  {
+    "offset": "0x4bd4",
+    "text": "ambarella_phys_to_virt"
+  },
+  {
+    "offset": "0x4beb",
+    "text": "wait_for_completion"
+  },
+  {
+    "offset": "0x4bff",
+    "text": "__init_waitqueue_head"
+  },
+  {
+    "offset": "0x4c15",
+    "text": "ambafs_get_qstat"
+  },
+  {
+    "offset": "0x4c26",
+    "text": "end_page_writeback"
+  },
+  {
+    "offset": "0x4c39",
+    "text": "strcmp"
+  },
+  {
+    "offset": "0x4c40",
+    "text": "jiffies"
+  },
+  {
+    "offset": "0x4c48",
+    "text": "ambarella_virt_to_phys"
+  },
+  {
+    "offset": "0x4c5f",
+    "text": "generic_file_aio_write"
+  },
+  {
+    "offset": "0x4c76",
+    "text": "mount_nodev"
+  },
+  {
+    "offset": "0x4c82",
+    "text": "ambcache_clean_range"
+  },
+  {
+    "offset": "0x4c97",
+    "text": "generic_read_dir"
+  },
+  {
+    "offset": "0x4ca8",
+    "text": "rpmsg_send_offchannel_raw"
+  },
+  {
+    "offset": "0x4cc2",
+    "text": "boss_local_irq_restore"
+  },
+  {
+    "offset": "0x4cd9",
+    "text": "add_to_page_cache_lru"
+  },
+  {
+    "offset": "0x4cef",
+    "text": "inc_nlink"
+  },
+  {
+    "offset": "0x4cfe",
+    "text": "generic_file_aio_read"
+  },
+  {
+    "offset": "0x4d14",
+    "text": "generic_delete_inode"
+  },
+  {
+    "offset": "0x4d29",
+    "text": "filemap_write_and_wait"
+  },
+  {
+    "offset": "0x4d40",
+    "text": "sub_preempt_count"
+  },
+  {
+    "offset": "0x4d52",
+    "text": "tag_pages_for_writeback"
+  },
+  {
+    "offset": "0x4d6a",
+    "text": "__lock_page"
+  },
+  {
+    "offset": "0x4d76",
+    "text": "test_set_page_writeback"
+  },
+  {
+    "offset": "0x4d8e",
+    "text": "qstat_buf"
+  },
+  {
+    "offset": "0x4d98",
+    "text": "current_kernel_time"
+  },
+  {
+    "offset": "0x4dac",
+    "text": "ambafs_dir_ops"
+  },
+  {
+    "offset": "0x4dbb",
+    "text": "simple_write_end"
+  },
+  {
+    "offset": "0x4dcc",
+    "text": "find_get_pages_contig"
+  },
+  {
+    "offset": "0x4de2",
+    "text": "ambafs_remote_close"
+  },
+  {
+    "offset": "0x4df6",
+    "text": "ambafs_remote_open"
+  },
+  {
+    "offset": "0x4e09",
+    "text": "strlen"
+  },
+  {
+    "offset": "0x4e10",
+    "text": "ambafs_get_stat"
+  },
+  {
+    "offset": "0x4e20",
+    "text": "strchr"
+  },
+  {
+    "offset": "0x4e27",
+    "text": "ambafs_update_inode"
+  },
+  {
+    "offset": "0x4e3b",
+    "text": "mem_map"
+  },
+  {
+    "offset": "0x4e43",
+    "text": "generic_file_llseek"
+  },
+  {
+    "offset": "0x4e57",
+    "text": "ambafs_dentry_ops"
+  },
+  {
+    "offset": "0x4e69",
+    "text": "get_zeroed_page"
+  },
+  {
+    "offset": "0x4e79",
+    "text": "drop_nlink"
+  },
+  {
+    "offset": "0x4e84",
+    "text": "__kmalloc"
+  },
+  {
+    "offset": "0x4e8e",
+    "text": "ambafs_rpmsg_send"
+  },
+  {
+    "offset": "0x4ea0",
+    "text": "ambafs_dir_inode_ops"
+  }
+]

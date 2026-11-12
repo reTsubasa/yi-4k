@@ -1,0 +1,447 @@
+{
+  "scope": "offline static CRC and public loader emulation; no device or flashable image",
+  "sources": {
+    "artifacts/firmware/v1.10.52/_part_bld.a9s": "259ed36093252298186c7e39c5f3400ba307f44224aba467ab885da8e1e5cbd7",
+    "artifacts/device/2026-11-09-linux/boot-metadata/vendor_data.bin": "69c4fcd4c096e0b02b0c0303483c11a364cafc0c46fe5aefaf73983fff7f3844",
+    "artifacts/device/2026-11-09-linux/sys_sw_partition.bin": "e3502a477701d0e3cad704adeb7e35465b89f93efe906ab0dcd3ef0a12266ce6",
+    "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c"
+  },
+  "actual_size": 7491432,
+  "data_crc": "0xb3cb97f7",
+  "ptb_crc": "0x59998e0c",
+  "crc_effects": [
+    {
+      "spans": [
+        "startup_bl"
+      ],
+      "data_crc_after": "0x1fc3e77e",
+      "data_crc_field_offset": "0x84",
+      "old_ptb_crc_would_mismatch": true,
+      "recalculated_ptb_crc": "0x866a0451",
+      "modified_data_sha256": "a3cc69f002076b45185e15205dc890f23949aecaad2587cf8410160bbef36477",
+      "modified_image_written": false
+    },
+    {
+      "spans": [
+        "text_padding_wrapper"
+      ],
+      "data_crc_after": "0xd7f8e008",
+      "data_crc_field_offset": "0x84",
+      "old_ptb_crc_would_mismatch": true,
+      "recalculated_ptb_crc": "0xb0938f6c",
+      "modified_data_sha256": "8af8884b96f77149fb3e54f647f371213836b3cd16e9e3d2da5aa5ee533dd709",
+      "modified_image_written": false
+    },
+    {
+      "spans": [
+        "startup_bl",
+        "text_padding_wrapper"
+      ],
+      "data_crc_after": "0x7bf09081",
+      "data_crc_field_offset": "0x84",
+      "old_ptb_crc_would_mismatch": true,
+      "recalculated_ptb_crc": "0x6f600531",
+      "modified_data_sha256": "ad164130f9c9db4a61cb0ab8e3b1cf862cda7db320003e407e7d9e424c6546e5",
+      "modified_image_written": false
+    }
+  ],
+  "rounded_capture_tail": {
+    "window_bytes": 7491584,
+    "actual_end_virtual": "0xa0824f68",
+    "bytes": 152,
+    "sha256": "89f0b7aac22b2f317503597e19afe7ef40c2ba1393983f1b67e805ff14fd044d",
+    "all_ff": false,
+    "within_actual_size_or_crc": false
+  },
+  "actual_length_all_patch_spans_covered": true,
+  "public_loader_instruction_checks": 6,
+  "public_loader_cases": [
+    {
+      "actual_bytes": 1,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 1,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000000",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 1,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 1,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 1,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000000",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 1,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 2047,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 2047,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000000",
+          "source": "0x10032000",
+          "bytes": 2047
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 1,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 2047,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 2047,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000000",
+          "source": "0x10032000",
+          "bytes": 2047
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 1,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 2048,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 2048,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 1
+      }
+    },
+    {
+      "actual_bytes": 2048,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 2048,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 1,
+      "nand_bytes_read": 2048,
+      "partial_page_copy": [],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 1
+      }
+    },
+    {
+      "actual_bytes": 2049,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 2049,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 2,
+      "nand_bytes_read": 4096,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000800",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 2049,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 2049,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 2,
+      "nand_bytes_read": 4096,
+      "partial_page_copy": [
+        {
+          "destination": "0x20000800",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 131071,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 131071,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 64,
+      "nand_bytes_read": 131072,
+      "partial_page_copy": [
+        {
+          "destination": "0x2001f800",
+          "source": "0x10032000",
+          "bytes": 2047
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 131071,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 131071,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 64,
+      "nand_bytes_read": 131072,
+      "partial_page_copy": [
+        {
+          "destination": "0x2001f800",
+          "source": "0x10032000",
+          "bytes": 2047
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 131072,
+      "allocated_blocks": 1,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 131072,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 64,
+      "nand_bytes_read": 131072,
+      "partial_page_copy": [],
+      "mocked_service_calls": {
+        "0x1000ada8": 1,
+        "0x1000b004": 1,
+        "0x100034d4": 2,
+        "0x10001ac0": 1,
+        "0x100019f0": 1
+      }
+    },
+    {
+      "actual_bytes": 131072,
+      "allocated_blocks": 1,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 131072,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 64,
+      "nand_bytes_read": 131072,
+      "partial_page_copy": [],
+      "mocked_service_calls": {
+        "0x1000ada8": 1,
+        "0x1000b004": 1,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 1
+      }
+    },
+    {
+      "actual_bytes": 131073,
+      "allocated_blocks": 2,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 131073,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 65,
+      "nand_bytes_read": 133120,
+      "partial_page_copy": [
+        {
+          "destination": "0x20020000",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 2,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 131073,
+      "allocated_blocks": 2,
+      "skip_first_block": true,
+      "returned": 0,
+      "destination_bytes_verified": 131073,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 65,
+      "nand_bytes_read": 133120,
+      "partial_page_copy": [
+        {
+          "destination": "0x20020000",
+          "source": "0x10032000",
+          "bytes": 1
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 3,
+        "0x100019f0": 2,
+        "0x10006c7c": 1
+      }
+    },
+    {
+      "actual_bytes": 7491432,
+      "allocated_blocks": 256,
+      "skip_first_block": false,
+      "returned": 0,
+      "destination_bytes_verified": 7491432,
+      "full_actual_size_loaded": true,
+      "suffix_canary_preserved": true,
+      "nand_pages_read": 3658,
+      "nand_bytes_read": 7491584,
+      "partial_page_copy": [
+        {
+          "destination": "0x20724800",
+          "source": "0x10032000",
+          "bytes": 1896
+        }
+      ],
+      "mocked_service_calls": {
+        "0x1000ada8": 2,
+        "0x1000b004": 2,
+        "0x100034d4": 2,
+        "0x10001ac0": 58,
+        "0x100019f0": 59,
+        "0x10006c7c": 1
+      }
+    }
+  ],
+  "insufficient_allocation_case": {
+    "actual_bytes": 131073,
+    "allocated_blocks": 1,
+    "skip_first_block": false,
+    "returned": 0,
+    "destination_bytes_verified": 131072,
+    "full_actual_size_loaded": false,
+    "suffix_canary_preserved": true,
+    "nand_pages_read": 64,
+    "nand_bytes_read": 131072,
+    "partial_page_copy": [],
+    "mocked_service_calls": {
+      "0x1000ada8": 1,
+      "0x1000b004": 1,
+      "0x100034d4": 1,
+      "0x10001ac0": 1,
+      "0x100019f0": 1
+    }
+  },
+  "caveats": [
+    "BLD is public 1.10.52, not the captured 1.10.7 hidden BLD.",
+    "NAND/geometry, division, logging and memcpy are modeled services; loader instructions execute in Unicorn.",
+    "Data CRC is observed metadata; this does not prove hidden BLD enforcement, signature policy or write ordering.",
+    "No independent recovery, physical NAND/OOB ownership, runtime padding ownership or cold/resume behavior is proved."
+  ]
+}

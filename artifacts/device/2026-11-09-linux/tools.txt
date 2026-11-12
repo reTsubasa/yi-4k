@@ -1,0 +1,13 @@
+~ # ls -l /usr/bin/python* /usr/bin/strace /usr/bin/gdbserver /usr/bin/SendToRTO
+S /usr/bin/RecvFromRTOS /usr/bin/example_sharepreview /usr/bin/ipcinfo
+-rwxr-xr-x    1 root     root          5196 Feb  2  2018 [1;32m/usr/bin/RecvFromRTOS[0m
+-rwxr-xr-x    1 root     root          6108 Feb  2  2018 [1;32m/usr/bin/SendToRTOS[0m
+-rwxr-xr-x    1 root     root          7664 Feb  2  2018 [1;32m/usr/bin/example_sharepreview[0m
+-rwxr-xr-x    1 root     root        591092 Feb  2  2018 [1;32m/usr/bin/gdbserver[0m
+-rwxr-xr-x    1 root     root          5296 Feb  2  2018 [1;32m/usr/bin/ipcinfo[0m
+lrwxrwxrwx    1 root     root             7 Feb  2  2018 [1;36m/usr/bin/python[0m -> [1;32mpython2[0m
+lrwxrwxrwx    1 root     root             9 Feb  2  2018 [1;36m/usr/bin/python2[0m -> [1;32mpython2.7[0m
+-rwxr-xr-x    1 root     root          3508 Feb  2  2018 [1;32m/usr/bin/python2.7[0m
+-rwxr-xr-x    1 root     root        272984 Feb  2  2018 [1;32m/usr/bin/strace[0m
+~ # echo __YI_CAPTURE_c42e1d6277854cb7907990f80704831b__
+__YI_CAPTURE_c42e1d6277854cb7907990f80704831b__

@@ -1,0 +1,846 @@
+[
+  {
+    "offset": "0xa89",
+    "text": "__gmon_start__"
+  },
+  {
+    "offset": "0xa98",
+    "text": "_fini"
+  },
+  {
+    "offset": "0xa9e",
+    "text": "_ITM_deregisterTMCloneTable"
+  },
+  {
+    "offset": "0xaba",
+    "text": "_ITM_registerTMCloneTable"
+  },
+  {
+    "offset": "0xad4",
+    "text": "__cxa_finalize"
+  },
+  {
+    "offset": "0xae3",
+    "text": "_Jv_RegisterClasses"
+  },
+  {
+    "offset": "0xaf7",
+    "text": "ambaipc_clnt_create"
+  },
+  {
+    "offset": "0xb0b",
+    "text": "fprintf"
+  },
+  {
+    "offset": "0xb13",
+    "text": "stderr"
+  },
+  {
+    "offset": "0xb1a",
+    "text": "__aeabi_unwind_cpp_pr0"
+  },
+  {
+    "offset": "0xb31",
+    "text": "RT_PeekEntry"
+  },
+  {
+    "offset": "0xb3e",
+    "text": "ambaipc_clnt_call"
+  },
+  {
+    "offset": "0xb50",
+    "text": "RT_RemoveEntry"
+  },
+  {
+    "offset": "0xb5f",
+    "text": "AmbaNetFifo_release"
+  },
+  {
+    "offset": "0xb73",
+    "text": "AmbaMem_release"
+  },
+  {
+    "offset": "0xb83",
+    "text": "close"
+  },
+  {
+    "offset": "0xb89",
+    "text": "ambaipc_clnt_destroy"
+  },
+  {
+    "offset": "0xb9e",
+    "text": "AmbaNetFifo_init"
+  },
+  {
+    "offset": "0xbaf",
+    "text": "AmbaMem_init"
+  },
+  {
+    "offset": "0xbbc",
+    "text": "AmbaMem_mmap"
+  },
+  {
+    "offset": "0xbc9",
+    "text": "socket"
+  },
+  {
+    "offset": "0xbd5",
+    "text": "inet_addr"
+  },
+  {
+    "offset": "0xbdf",
+    "text": "connect"
+  },
+  {
+    "offset": "0xbe7",
+    "text": "getsockname"
+  },
+  {
+    "offset": "0xbf3",
+    "text": "clnt_pcreateerror"
+  },
+  {
+    "offset": "0xc05",
+    "text": "AmbaNetFifo_Create"
+  },
+  {
+    "offset": "0xc18",
+    "text": "pthread_mutex_lock"
+  },
+  {
+    "offset": "0xc2b",
+    "text": "ipc_netfifo_create_1"
+  },
+  {
+    "offset": "0xc40",
+    "text": "pthread_mutex_unlock"
+  },
+  {
+    "offset": "0xc55",
+    "text": "clnt_perror"
+  },
+  {
+    "offset": "0xc61",
+    "text": "AmbaNetFifo_Delete"
+  },
+  {
+    "offset": "0xc74",
+    "text": "ipc_netfifo_delete_1"
+  },
+  {
+    "offset": "0xc89",
+    "text": "AmbaNetFifo_GetDefaultCFG"
+  },
+  {
+    "offset": "0xca3",
+    "text": "AmbaNetFifo_EraseAll"
+  },
+  {
+    "offset": "0xcb8",
+    "text": "AmbaNetFifo_GetInfo"
+  },
+  {
+    "offset": "0xccc",
+    "text": "memset"
+  },
+  {
+    "offset": "0xcd3",
+    "text": "AmbaNetFifo_PeekEntry"
+  },
+  {
+    "offset": "0xce9",
+    "text": "AmbaNetFifo_RevPeekEntry"
+  },
+  {
+    "offset": "0xd02",
+    "text": "AmbaNetFifo_RemoveEnrty"
+  },
+  {
+    "offset": "0xd1a",
+    "text": "AmbaNetFifo_PrepareEntry"
+  },
+  {
+    "offset": "0xd33",
+    "text": "AmbaNetFifo_WriteEntry"
+  },
+  {
+    "offset": "0xd4a",
+    "text": "AmbaNetFifo_GetMediaStreamIDList"
+  },
+  {
+    "offset": "0xd6b",
+    "text": "AmbaNetFifo_GetMediaInfo"
+  },
+  {
+    "offset": "0xd84",
+    "text": "AmbaNetFifo_PlayBack_OP"
+  },
+  {
+    "offset": "0xd9c",
+    "text": "memcpy"
+  },
+  {
+    "offset": "0xda3",
+    "text": "AmbaNetFifo_ReportStatus"
+  },
+  {
+    "offset": "0xdbc",
+    "text": "AmbaNetFifo_StreamIn_MSG"
+  },
+  {
+    "offset": "0xdd5",
+    "text": "AmbaNetFifo_Reg_cbFifoEvent"
+  },
+  {
+    "offset": "0xdf1",
+    "text": "AmbaNetFifo_Reg_cbControlEvent"
+  },
+  {
+    "offset": "0xe10",
+    "text": "AmbaNetFifo_Reg_cbFifoWPEvent"
+  },
+  {
+    "offset": "0xe2e",
+    "text": "AmbaNetFifo_StopEventProcess"
+  },
+  {
+    "offset": "0xe4b",
+    "text": "AmbaNetFifo_ExecEventProcess"
+  },
+  {
+    "offset": "0xe68",
+    "text": "malloc"
+  },
+  {
+    "offset": "0xe79",
+    "text": "xdr_u_int"
+  },
+  {
+    "offset": "0xe83",
+    "text": "xdr_IPC_NETFIFO_CFG_s"
+  },
+  {
+    "offset": "0xe99",
+    "text": "xdr_int"
+  },
+  {
+    "offset": "0xea1",
+    "text": "xdr_IPC_NETFIFO_HDLR_s"
+  },
+  {
+    "offset": "0xeb8",
+    "text": "xdr_IPC_NETFIFO_INFO_s"
+  },
+  {
+    "offset": "0xecf",
+    "text": "LU_NetFifo_ControlEvent_Svc"
+  },
+  {
+    "offset": "0xeeb",
+    "text": "SocketSvc_getMaxAmount"
+  },
+  {
+    "offset": "0xf02",
+    "text": "SocketSvc_getClntSD"
+  },
+  {
+    "offset": "0xf16",
+    "text": "SocketSvc_Send"
+  },
+  {
+    "offset": "0xf25",
+    "text": "LU_NetFifo_FifoGetWritePointt_Svc"
+  },
+  {
+    "offset": "0xf47",
+    "text": "RT_NetFifo_init"
+  },
+  {
+    "offset": "0xf57",
+    "text": "LU_NetFifo_FifoEvent_Svc"
+  },
+  {
+    "offset": "0xf75",
+    "text": "SocketSvc_Recv"
+  },
+  {
+    "offset": "0xf84",
+    "text": "SocketSvc_waitRequest"
+  },
+  {
+    "offset": "0xf9a",
+    "text": "RT_NetFifo_release"
+  },
+  {
+    "offset": "0xfad",
+    "text": "ipc_netfifo_create_1_svc"
+  },
+  {
+    "offset": "0xfc6",
+    "text": "SocketSvc_QuerySD"
+  },
+  {
+    "offset": "0xfd8",
+    "text": "ipc_netfifo_delete_1_svc"
+  },
+  {
+    "offset": "0xff1",
+    "text": "ipc_netfifo_prog_1_freeresult"
+  },
+  {
+    "offset": "0x100f",
+    "text": "xdr_free"
+  },
+  {
+    "offset": "0x1018",
+    "text": "LU_Netfifo_init"
+  },
+  {
+    "offset": "0x1028",
+    "text": "ambaipc_svc_register"
+  },
+  {
+    "offset": "0x103d",
+    "text": "SocketSvc_init"
+  },
+  {
+    "offset": "0x104c",
+    "text": "pthread_create"
+  },
+  {
+    "offset": "0x105b",
+    "text": "LU_Netfifo_release"
+  },
+  {
+    "offset": "0x106e",
+    "text": "ambaipc_svc_unregister"
+  },
+  {
+    "offset": "0x1085",
+    "text": "SocketSvc_release"
+  },
+  {
+    "offset": "0x1097",
+    "text": "rt_netfifo_prog"
+  },
+  {
+    "offset": "0x10a7",
+    "text": "libpthread.so.0"
+  },
+  {
+    "offset": "0x10b7",
+    "text": "libnsl.so.1"
+  },
+  {
+    "offset": "0x10c3",
+    "text": "libtirpc.so.1"
+  },
+  {
+    "offset": "0x10d1",
+    "text": "libambaipc.so"
+  },
+  {
+    "offset": "0x10df",
+    "text": "libambamem.so"
+  },
+  {
+    "offset": "0x10ed",
+    "text": "libambasocksvc.so"
+  },
+  {
+    "offset": "0x10ff",
+    "text": "libc.so.6"
+  },
+  {
+    "offset": "0x1109",
+    "text": "libgcc_s.so.1"
+  },
+  {
+    "offset": "0x1117",
+    "text": "_edata"
+  },
+  {
+    "offset": "0x111e",
+    "text": "__bss_start"
+  },
+  {
+    "offset": "0x112a",
+    "text": "__bss_start__"
+  },
+  {
+    "offset": "0x1138",
+    "text": "__bss_end__"
+  },
+  {
+    "offset": "0x1144",
+    "text": "__end__"
+  },
+  {
+    "offset": "0x1151",
+    "text": "libambanetfifo.so"
+  },
+  {
+    "offset": "0x1163",
+    "text": "GLIBC_2.4"
+  },
+  {
+    "offset": "0x116d",
+    "text": "GCC_3.5"
+  },
+  {
+    "offset": "0x1d31",
+    "text": "J{DxD"
+  },
+  {
+    "offset": "0x1d61",
+    "text": "KyDxD"
+  },
+  {
+    "offset": "0x4050",
+    "text": "NetFifo_ipc_init"
+  },
+  {
+    "offset": "0x4061",
+    "text": "RT_PeekEntry"
+  },
+  {
+    "offset": "0x406e",
+    "text": "RT_RemoveEntry"
+  },
+  {
+    "offset": "0x407d",
+    "text": "AmbaNetFifo_release"
+  },
+  {
+    "offset": "0x4091",
+    "text": "AmbaNetFifo_init"
+  },
+  {
+    "offset": "0x40a2",
+    "text": "AmbaNetFifo_GetDefaultCFG"
+  },
+  {
+    "offset": "0x40bc",
+    "text": "RT_GetDefConfig"
+  },
+  {
+    "offset": "0x40cc",
+    "text": "AmbaNetFifo_EraseAll"
+  },
+  {
+    "offset": "0x40e1",
+    "text": "AmbaNetFifo_GetInfo"
+  },
+  {
+    "offset": "0x40f5",
+    "text": "AmbaNetFifo_PeekEntry"
+  },
+  {
+    "offset": "0x410b",
+    "text": "RT_RevPeekEntry"
+  },
+  {
+    "offset": "0x411b",
+    "text": "AmbaNetFifo_RevPeekEntry"
+  },
+  {
+    "offset": "0x4134",
+    "text": "AmbaNetFifo_RemoveEnrty"
+  },
+  {
+    "offset": "0x414c",
+    "text": "AmbaNetFifo_PrepareEntry"
+  },
+  {
+    "offset": "0x4165",
+    "text": "AmbaNetFifo_WriteEntry"
+  },
+  {
+    "offset": "0x417c",
+    "text": "AmbaNetFifo_GetMediaStreamIDList"
+  },
+  {
+    "offset": "0x419d",
+    "text": "AmbaNetFifo_GetMediaInfo"
+  },
+  {
+    "offset": "0x41b6",
+    "text": "AmbaNetFifo_PlayBack_OP"
+  },
+  {
+    "offset": "0x41ce",
+    "text": "RT_ReportStatus"
+  },
+  {
+    "offset": "0x41de",
+    "text": "AmbaNetFifo_ReportStatus"
+  },
+  {
+    "offset": "0x41f7",
+    "text": "AmbaNetFifo_StreamIn_MSG"
+  },
+  {
+    "offset": "0x4210",
+    "text": "AmbaNetFifo_ExecEventProcess"
+  },
+  {
+    "offset": "0x422d",
+    "text": "%s: Fail to create client."
+  },
+  {
+    "offset": "0x4249",
+    "text": "%s: fail to do ambaipc_clnt_call(). %d"
+  },
+  {
+    "offset": "0x4271",
+    "text": "%s: Not inited"
+  },
+  {
+    "offset": "0x4281",
+    "text": "%s: Already inited"
+  },
+  {
+    "offset": "0x4295",
+    "text": "%s: AmbaMem_init() fail!"
+  },
+  {
+    "offset": "0x42af",
+    "text": "%s: AmbaMem_mmap(AMBAMEM_TYPE_HEAP) fail!"
+  },
+  {
+    "offset": "0x42da",
+    "text": "Could not create socket"
+  },
+  {
+    "offset": "0x42f2",
+    "text": "Socket created"
+  },
+  {
+    "offset": "0x4301",
+    "text": "127.0.0.1"
+  },
+  {
+    "offset": "0x430b",
+    "text": "connect failed. Error"
+  },
+  {
+    "offset": "0x4321",
+    "text": "Connected"
+  },
+  {
+    "offset": "0x432b",
+    "text": "Local port is %d"
+  },
+  {
+    "offset": "0x433d",
+    "text": "%s: sock_init fail!"
+  },
+  {
+    "offset": "0x4352",
+    "text": "%s: RT_Netfifo init fail!"
+  },
+  {
+    "offset": "0x4371",
+    "text": "localhost"
+  },
+  {
+    "offset": "0x437b",
+    "text": "RPC CLGET_TIMEOUT: %u.%06u"
+  },
+  {
+    "offset": "0x4397",
+    "text": "RPC CLGET_RETRY_TIMEOUT: %u.%06u"
+  },
+  {
+    "offset": "0x43b9",
+    "text": "call failed"
+  },
+  {
+    "offset": "0x43c5",
+    "text": "%s: invalid Def_CFG.(%p)"
+  },
+  {
+    "offset": "0x43df",
+    "text": "%s: fail to do RT_PeekEntry()."
+  },
+  {
+    "offset": "0x43ff",
+    "text": "%s: fail to do RT_RevPeekEntry()."
+  },
+  {
+    "offset": "0x4422",
+    "text": "%s: fail to do RT_RemoveEntry()."
+  },
+  {
+    "offset": "0x4444",
+    "text": "xxxxxxxxxxxx %s: Unknown TrackType 0x%x"
+  },
+  {
+    "offset": "0x446d",
+    "text": "%s: fail to do RT_ReportStatus()."
+  },
+  {
+    "offset": "0x4490",
+    "text": "%s: Cannot malloc data_in"
+  },
+  {
+    "offset": "0x44ab",
+    "text": "%s: Cannot malloc data_out"
+  },
+  {
+    "offset": "0x44c7",
+    "text": "%s: Read_len is less than param size! %d"
+  },
+  {
+    "offset": "0x44f1",
+    "text": "%s: Fail to do recv()!"
+  },
+  {
+    "offset": "0x4509",
+    "text": "%s[AMBA_NETFIFO_SOCKMSG_FIFOEVENT]: param len is not valid. %d"
+  },
+  {
+    "offset": "0x4549",
+    "text": "%s: fail to send response for %x!"
+  },
+  {
+    "offset": "0x456c",
+    "text": "%s[AMBA_NETFIFO_SOCKMSG_CTRLEVENT]: param len is not valid. %d"
+  },
+  {
+    "offset": "0x45ac",
+    "text": "%s: unsupported event %x!"
+  },
+  {
+    "offset": "0x45d0",
+    "text": "LU_NetFifo_ControlEvent_Svc"
+  },
+  {
+    "offset": "0x45ec",
+    "text": "LU_NetFifo_FifoGetWritePointt_Svc"
+  },
+  {
+    "offset": "0x460e",
+    "text": "client_remove"
+  },
+  {
+    "offset": "0x461c",
+    "text": "RT_Delete"
+  },
+  {
+    "offset": "0x4626",
+    "text": "RT_NetFifo_init"
+  },
+  {
+    "offset": "0x4636",
+    "text": "RT_RemoveEntry"
+  },
+  {
+    "offset": "0x4645",
+    "text": "LU_NetFifo_FifoEvent_Svc"
+  },
+  {
+    "offset": "0x465e",
+    "text": "handle_client_disconnect"
+  },
+  {
+    "offset": "0x4677",
+    "text": "thread_socket_recever"
+  },
+  {
+    "offset": "0x468d",
+    "text": "thread_socket_process"
+  },
+  {
+    "offset": "0x46a3",
+    "text": "ipc_netfifo_create_1_svc"
+  },
+  {
+    "offset": "0x46bc",
+    "text": "RT_GetDefConfig"
+  },
+  {
+    "offset": "0x46cc",
+    "text": "client_add"
+  },
+  {
+    "offset": "0x46d7",
+    "text": "ipc_netfifo_delete_1_svc"
+  },
+  {
+    "offset": "0x46f0",
+    "text": "LU_Netfifo_init"
+  },
+  {
+    "offset": "0x4700",
+    "text": "LU_Netfifo_release"
+  },
+  {
+    "offset": "0x4713",
+    "text": "%s: unknown cmd (%u)!"
+  },
+  {
+    "offset": "0x472a",
+    "text": "%s: unsupport yet. hdlr=0x%08x, Event=%d, info=0x%08x"
+  },
+  {
+    "offset": "0x4761",
+    "text": "%s: Invalild client_node(%p)"
+  },
+  {
+    "offset": "0x477f",
+    "text": "auto delete!!"
+  },
+  {
+    "offset": "0x478d",
+    "text": "%s: Client disconnect during operation!"
+  },
+  {
+    "offset": "0x47b6",
+    "text": "%s: Fail to send event message!(%d)"
+  },
+  {
+    "offset": "0x47db",
+    "text": "%s: fail to do RT_Delete()."
+  },
+  {
+    "offset": "0x47f8",
+    "text": "%s: Fail to malloc Reqbuf!"
+  },
+  {
+    "offset": "0x4814",
+    "text": "%s: client %d disconnected!"
+  },
+  {
+    "offset": "0x4831",
+    "text": "%s: Fail to do SocketSvc_waitRequest()! %d"
+  },
+  {
+    "offset": "0x485d",
+    "text": "%s: new client %d!"
+  },
+  {
+    "offset": "0x4871",
+    "text": "%s: Fail to do SocketSvc_Recv()!"
+  },
+  {
+    "offset": "0x4893",
+    "text": "%s: unsupported msg 0x%08x!"
+  },
+  {
+    "offset": "0x48b0",
+    "text": "%s: Exit!!(s=%u,f=%u)"
+  },
+  {
+    "offset": "0x48c7",
+    "text": "%s: fail to get client sd"
+  },
+  {
+    "offset": "0x48e2",
+    "text": "%s: fail to create new_client node!"
+  },
+  {
+    "offset": "0x4907",
+    "text": "AMBANETFIFO_LUSVC"
+  },
+  {
+    "offset": "0x4919",
+    "text": "%s: Error %d"
+  },
+  {
+    "offset": "0x4928",
+    "text": "fail to do pthread_create"
+  },
+  {
+    "offset": "0x4942",
+    "text": "%s got called"
+  },
+  {
+    "offset": "0x4951",
+    "text": "%s: doing something."
+  },
+  {
+    "offset": "0x4d21",
+    "text": "aeabi"
+  },
+  {
+    "offset": "0x4d52",
+    "text": ".shstrtab"
+  },
+  {
+    "offset": "0x4d5c",
+    "text": ".note.gnu.build-id"
+  },
+  {
+    "offset": "0x4d6f",
+    "text": ".hash"
+  },
+  {
+    "offset": "0x4d75",
+    "text": ".dynsym"
+  },
+  {
+    "offset": "0x4d7d",
+    "text": ".dynstr"
+  },
+  {
+    "offset": "0x4d85",
+    "text": ".gnu.version"
+  },
+  {
+    "offset": "0x4d92",
+    "text": ".gnu.version_r"
+  },
+  {
+    "offset": "0x4da1",
+    "text": ".rel.dyn"
+  },
+  {
+    "offset": "0x4daa",
+    "text": ".rel.plt"
+  },
+  {
+    "offset": "0x4db3",
+    "text": ".init"
+  },
+  {
+    "offset": "0x4db9",
+    "text": ".text"
+  },
+  {
+    "offset": "0x4dbf",
+    "text": ".fini"
+  },
+  {
+    "offset": "0x4dc5",
+    "text": ".rodata"
+  },
+  {
+    "offset": "0x4dcd",
+    "text": ".ARM.exidx"
+  },
+  {
+    "offset": "0x4dd8",
+    "text": ".eh_frame"
+  },
+  {
+    "offset": "0x4de2",
+    "text": ".init_array"
+  },
+  {
+    "offset": "0x4dee",
+    "text": ".fini_array"
+  },
+  {
+    "offset": "0x4dff",
+    "text": ".dynamic"
+  },
+  {
+    "offset": "0x4e0d",
+    "text": ".data"
+  },
+  {
+    "offset": "0x4e18",
+    "text": ".ARM.attributes"
+  }
+]

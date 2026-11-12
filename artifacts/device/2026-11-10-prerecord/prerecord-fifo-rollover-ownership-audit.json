@@ -1,0 +1,6447 @@
+{
+  "evidence_type": "offline bounded static direct-call graph and original metadata instructions; no actual FIFO or file IO",
+  "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "dependency_script": "scripts/prerecord-sync-boundary.py",
+  "dependency_sha256": "04282e240317d544f1583df24d7d8f46e38d91eb6fcf7e0254020ac4777bf799",
+  "graph_scope": {
+    "expand_range": [
+      "0xa03e0000",
+      "0xa0446000"
+    ],
+    "extra_app_helpers": [
+      "0xa0119670",
+      "0xa011a208",
+      "0xa01f3124",
+      "0xa01f538c",
+      "0xa01f68b8",
+      "0xa01f69b0",
+      "0xa01f6be8",
+      "0xa01f705c",
+      "0xa01f721c"
+    ],
+    "follows": "immediate call targets and cross-function immediate branches to indexed entries",
+    "does_not_follow": "indirect branches/calls; kernel/CFS/allocator/logger/memory/math leaves outside range"
+  },
+  "graphs": [
+    {
+      "root": "0xa03fe300",
+      "expanded_nodes": [
+        {
+          "address": "0xa03fe300",
+          "direct": [
+            {
+              "site": "0xa03fe320",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe374",
+              "target": "0xa0436004",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe384",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe3dc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe3f8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe3fc",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe458",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0436004",
+          "direct": [
+            {
+              "site": "0xa0436040",
+              "target": "0xa0443058",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0436064",
+              "target": "0xa03edfb0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04360a0",
+              "target": "0xa0433e38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04360b4",
+              "target": "0xa040fc04",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0436138",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043615c",
+              "target": "0xa0411048",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04361bc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04361c4",
+              "target": "0xa040fc04",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043622c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0436290",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04362c0",
+              "target": "0xa04349dc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043631c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043638c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0436398",
+              "target": "0xa0435f64",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04363f4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa04360d0",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa0443058",
+          "direct": [
+            {
+              "site": "0xa0443090",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0443094",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04430a8",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0443120",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0443124",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044313c",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04431c0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04431c4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04431e4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04431e8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa03edfb0",
+          "direct": [
+            {
+              "site": "0xa03edfe4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03edfe8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03ee084",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03ee088",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03ee0bc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03ee0c0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0433e38",
+          "direct": [
+            {
+              "site": "0xa0433e88",
+              "target": "0xa0433ca8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433ee8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433f90",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433fa8",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434008",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434078",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434090",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04340dc",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04340f4",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434110",
+              "target": "0xa03e26bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434170",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04341ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043422c",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434244",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043426c",
+              "target": "0xa03e26bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04342cc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434324",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043433c",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434354",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04343a0",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04343b8",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04343dc",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04343f4",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434484",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04344e0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043453c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434594",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434648",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04346a8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434734",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04347e8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434944",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04349d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa0433e6c",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0433f1c",
+              "mnemonic": "blx",
+              "operands": "fp"
+            },
+            {
+              "site": "0xa0433f34",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0433f58",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0433fc4",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0433ff4",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa0434058",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa04340bc",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa0434194",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa043420c",
+              "mnemonic": "blx",
+              "operands": "r1"
+            }
+          ]
+        },
+        {
+          "address": "0xa040fc04",
+          "direct": [
+            {
+              "site": "0xa040fc40",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc44",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc64",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc68",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcc0",
+              "target": "0xa040c4e8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcd0",
+              "target": "0xa040c5a8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcec",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd50",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd6c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd70",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fddc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0411048",
+          "direct": [
+            {
+              "site": "0xa0411084",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411088",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411098",
+              "target": "0xa0401e50",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04110ac",
+              "target": "0xa040c208",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04110d8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04110dc",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041113c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041119c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa04349dc",
+          "direct": [
+            {
+              "site": "0xa0434a48",
+              "target": "0xa0433ca8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434aa0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434aac",
+              "target": "0xa03d84b4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434b08",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434b2c",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434bac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434c8c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434ccc",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434ce4",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434d34",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434d4c",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434d68",
+              "target": "0xa03e26bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434de8",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434e00",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434e60",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434ed4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434f34",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434f98",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434fb0",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0434fc8",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435030",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435040",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435058",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04350b0",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435110",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435174",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04351d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435278",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04353a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04353f8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435458",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa043554c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04355c8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435620",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa0434a00",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa0434ad8",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa0434b74",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0434c04",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0434c34",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa0434c50",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0434d04",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa0434d80",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0434dc0",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa0435070",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa043509c",
+              "mnemonic": "blx",
+              "operands": "r1"
+            }
+          ]
+        },
+        {
+          "address": "0xa0435f64",
+          "direct": [
+            {
+              "site": "0xa0435f98",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435f9c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435fec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435ffc",
+              "target": "0xa042d6c4",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e7070",
+          "direct": [
+            {
+              "site": "0xa03e7144",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e7178",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e717c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e719c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e71a0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0433ca8",
+          "direct": [
+            {
+              "site": "0xa0433ce0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433ce4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433d34",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433db8",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0433e14",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e260c",
+          "direct": [
+            {
+              "site": "0xa03e26b0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa03e2640",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa03e26bc",
+          "direct": [
+            {
+              "site": "0xa03e2788",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa03e2718",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa040c4e8",
+          "direct": [
+            {
+              "site": "0xa040c530",
+              "target": "0xa0401114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c590",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c5a8",
+          "direct": [
+            {
+              "site": "0xa040c5bc",
+              "target": "0xa04019bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c618",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c63c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c640",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0401e50",
+          "direct": [
+            {
+              "site": "0xa0401eac",
+              "target": "0xa0401400",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401f0c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401f28",
+              "target": "0xa0401810",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c208",
+          "direct": [
+            {
+              "site": "0xa040c26c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c2c4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c2c8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c2e8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c2ec",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c348",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c3ac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c404",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040c250",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa040c284",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa040c29c",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa042d6c4",
+          "direct": [
+            {
+              "site": "0xa042d6e0",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d700",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d704",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d734",
+              "target": "0xa042ca94",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d788",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d7bc",
+              "target": "0xa040fde4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d818",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d8b8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d8dc",
+              "target": "0xa042ca94",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d930",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d984",
+              "target": "0xa040fde4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042d9e8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042da84",
+              "target": "0xa03edfb0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042dae0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa041205c",
+          "direct": [
+            {
+              "site": "0xa0411740",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411790",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04117c4",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04117d0",
+              "target": "0xa03e28cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04117d8",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04117e4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041183c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411878",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04118c8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04118d8",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04118e8",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411954",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041197c",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04119d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04119e4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a3c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a4c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a60",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a78",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a84",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411a9c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411ac0",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411b14",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411b48",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411b54",
+              "target": "0xa03e28cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411b5c",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411b68",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411bc0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411be0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411c34",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411ca0",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411cd4",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411ce0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411d04",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411d4c",
+              "target": "0xa0411528",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411d58",
+              "target": "0xa03e28cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411dac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411e08",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411e7c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0412098",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041209c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04120fc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0412100",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0412140",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0412144",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0401114",
+          "direct": [
+            {
+              "site": "0xa0401130",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401140",
+              "target": "0xa03bc714",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011ac",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011d4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401230",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa04019bc",
+          "direct": [
+            {
+              "site": "0xa04019d0",
+              "target": "0xa0401114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04019e0",
+              "target": "0xa03bc778",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a4c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a70",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a74",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401ad4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0401400",
+          "direct": [
+            {
+              "site": "0xa04014b4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04014d4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04014d8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa0401454",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa0401810",
+          "direct": [
+            {
+              "site": "0xa0401828",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040182c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa042ca94",
+          "direct": [
+            {
+              "site": "0xa042cab4",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cb08",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cb70",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cbbc",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cc14",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cc6c",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042ccc8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cd10",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cd68",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cd8c",
+              "target": "0xa041205c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa042cde4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040fde4",
+          "direct": [
+            {
+              "site": "0xa040fe24",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fe28",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fe68",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fe98",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fea8",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fef8",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ff24",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ff50",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ff90",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ff94",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ffec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410044",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041009c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04100c8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04100e0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04100e4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410104",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410108",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0411528",
+          "direct": [
+            {
+              "site": "0xa04115ac",
+              "target": "0xa040e338",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04115cc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04115d0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04115f0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04115f4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411614",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411618",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411638",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041163c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041165c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411660",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411674",
+              "target": "0xa040e258",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0411688",
+              "target": "0xa040c410",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041169c",
+              "target": "0xa0410650",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04116dc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04116e0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04116f4",
+              "target": "0xa040c00c",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e28cc",
+          "direct": [],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e28b0",
+          "direct": [],
+          "indirect": []
+        },
+        {
+          "address": "0xa040d574",
+          "direct": [
+            {
+              "site": "0xa040d564",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d598",
+              "target": "0xa0401ae4",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040e338",
+          "direct": [
+            {
+              "site": "0xa040e370",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e3a4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e3c0",
+              "target": "0xa040d8cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e408",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040e258",
+          "direct": [
+            {
+              "site": "0xa040e290",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e2c4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e2e0",
+              "target": "0xa040d8cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e328",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c410",
+          "direct": [
+            {
+              "site": "0xa040c434",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c438",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c464",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c468",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c4d8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040c484",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa0410650",
+          "direct": [
+            {
+              "site": "0xa0410678",
+              "target": "0xa041041c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04106b4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04106e0",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04106f8",
+              "target": "0xa0410114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410714",
+              "target": "0xa040d8cc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041072c",
+              "target": "0xa040e418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410774",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c00c",
+          "direct": [
+            {
+              "site": "0xa040c028",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c048",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c04c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c074",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c078",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c0ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c114",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c184",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c190",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c1f8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040c090",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa040c12c",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa040c1a8",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa0401ae4",
+          "direct": [
+            {
+              "site": "0xa0401b3c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401b40",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401be8",
+              "target": "0xa0401240",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401c4c",
+              "target": "0xa029c680",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401c70",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401c74",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401cd8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401d5c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040d8cc",
+          "direct": [
+            {
+              "site": "0xa040d8fc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d900",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d980",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d984",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d9b0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d9b4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d9ec",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040da54",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040daa8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dadc",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040db24",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040db98",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dbac",
+              "target": "0xa040d5b8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dbe8",
+              "target": "0xa040d5b8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dc10",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dc44",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dce0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa041041c",
+          "direct": [
+            {
+              "site": "0xa0410438",
+              "target": "0xa0410114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410490",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04104bc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04104f4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410548",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04105b8",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04105d0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04105e8",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04105fc",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410620",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410634",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0410114",
+          "direct": [
+            {
+              "site": "0xa0410154",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410158",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410194",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04101c4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04101d4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041021c",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041024c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410264",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041027c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410290",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04102c0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04102c4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410320",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410374",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04103cc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04103e8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04103ec",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa041040c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0410410",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040e418",
+          "direct": [
+            {
+              "site": "0xa040e488",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e48c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e4b4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e4b8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e4e8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e4ec",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e53c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e540",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e578",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e57c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e5e4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e5e8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e5f4",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e650",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e6a4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e6d0",
+              "target": "0xa040d5b8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e6f0",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e738",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e7a8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e7b8",
+              "target": "0xa040d5b8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e810",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e844",
+              "target": "0xa040d5b8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e868",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e898",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e8ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e934",
+              "target": "0xa040dcf0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e994",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e9a0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ea2c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eab4",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eb0c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eb28",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eb6c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ec08",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ec68",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ec80",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ecbc",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ed1c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ed28",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ed34",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ed74",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ee60",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0401240",
+          "direct": [
+            {
+              "site": "0xa040133c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040139c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04013f4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa0401298",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa04012c0",
+              "mnemonic": "blx",
+              "operands": "r1"
+            },
+            {
+              "site": "0xa04012e8",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa040d5b8",
+          "direct": [
+            {
+              "site": "0xa040d5ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d5f0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d64c",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d6a4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d6b0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d6dc",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d750",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7a4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7b0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7c0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7cc",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7d4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d7ec",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d814",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d82c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d834",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d854",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d8bc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040dcf0",
+          "direct": [
+            {
+              "site": "0xa040dd18",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dd1c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dd74",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ddc8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ddfc",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040de3c",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040de90",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dea4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040deb0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040defc",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040df54",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040df64",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040df70",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040df98",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040dff0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e018",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e06c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e09c",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e0f0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e104",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e110",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e124",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e17c",
+              "target": "0xa040d574",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e1d4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e1e4",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e1f0",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e1fc",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040e22c",
+              "target": "0xa03e28b0",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        }
+      ],
+      "frontiers": [
+        {
+          "address": "0xa03bc46c",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe320"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc498",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe384"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a70ec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe3dc"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a7524",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe3fc"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa04f8dec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04360b4",
+            "0xa040fcec"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d84b4",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04362c0",
+            "0xa0434aac"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506f38",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04362c0",
+            "0xa0434b08"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506418",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa043615c",
+            "0xa04110ac",
+            "0xa040c26c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc714",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04360b4",
+            "0xa040fcc0",
+            "0xa040c530",
+            "0xa0401140"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc778",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04360b4",
+            "0xa040fcd0",
+            "0xa040c5bc",
+            "0xa04019e0"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa029c680",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa0436398",
+            "0xa0435ffc",
+            "0xa042d7bc",
+            "0xa040fe98",
+            "0xa040d598",
+            "0xa0401c4c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506674",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe374",
+            "0xa04360a0",
+            "0xa0433e88",
+            "0xa0433db8",
+            "0xa0411740",
+            "0xa04115ac",
+            "0xa040e3c0",
+            "0xa040dc10"
+          ],
+          "fifo_api": null
+        }
+      ],
+      "fifo_apis_reached": [],
+      "unresolved_indirect_sites": 35
+    },
+    {
+      "root": "0xa03fe468",
+      "expanded_nodes": [
+        {
+          "address": "0xa03fe468",
+          "direct": [
+            {
+              "site": "0xa03fe49c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe4a0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe4b8",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe500",
+              "target": "0xa0435a18",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe510",
+              "target": "0xa0435628",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe520",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe544",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe548",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe5a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe5ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03fe644",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0435a18",
+          "direct": [
+            {
+              "site": "0xa0435a88",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435aa0",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435aac",
+              "target": "0xa04894fc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435b5c",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435b80",
+              "target": "0xa040f318",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435bc8",
+              "target": "0xa040f710",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435bf8",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435c10",
+              "target": "0xa03e260c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435c44",
+              "target": "0xa03e26bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435ca8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435cfc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435d60",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435dbc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435e24",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435e88",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435ef8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435f00",
+              "target": "0xa040fc04",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0435f5c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa0435af8",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0435b98",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0435be0",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa0435ea0",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa0435628",
+          "direct": [],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e7070",
+          "direct": [
+            {
+              "site": "0xa03e7144",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e7178",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e717c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e719c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa03e71a0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040f318",
+          "direct": [
+            {
+              "site": "0xa040f34c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f350",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f390",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f3a0",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f3b4",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f3d8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f4a8",
+              "target": "0xa040d2a0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f4f8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f508",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f578",
+              "target": "0xa040d3b4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f5b4",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f5d8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f608",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f60c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f630",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f650",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f67c",
+              "target": "0xa040d3b4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f6a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f6a4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f6b8",
+              "target": "0xa040d2a0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f6dc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f6e0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f700",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f704",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040f37c",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa040f4e4",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa040f710",
+          "direct": [
+            {
+              "site": "0xa040f760",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f7b8",
+              "target": "0xa040ee8c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f7f0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f7f4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f814",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f818",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f830",
+              "target": "0xa040d100",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f888",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8ac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8b0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8d4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8f4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f8f8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fa00",
+              "target": "0xa0400fb0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fa6c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fa90",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fa94",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040faf4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fb18",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fb1c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fb3c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fb40",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fb5c",
+              "target": "0xa040c00c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fbd0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fbf4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fbf8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa03e260c",
+          "direct": [
+            {
+              "site": "0xa03e26b0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa03e2640",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa03e26bc",
+          "direct": [
+            {
+              "site": "0xa03e2788",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa03e2718",
+              "mnemonic": "blx",
+              "operands": "r3"
+            }
+          ]
+        },
+        {
+          "address": "0xa040fc04",
+          "direct": [
+            {
+              "site": "0xa040fc40",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc44",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc64",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fc68",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcc0",
+              "target": "0xa040c4e8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcd0",
+              "target": "0xa040c5a8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fcec",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd50",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd6c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fd70",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040fddc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040d2a0",
+          "direct": [
+            {
+              "site": "0xa040d2bc",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d2f0",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d310",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d338",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d33c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d35c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d378",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d390",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d3a0",
+              "target": "0xa0506418",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040d3b4",
+          "direct": [
+            {
+              "site": "0xa040d3dc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d3e0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d410",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d428",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d444",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d45c",
+              "target": "0xa0506418",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040ee8c",
+          "direct": [
+            {
+              "site": "0xa040eecc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eed0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eef0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040eef4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f1a4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f1a8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f1c8",
+              "target": "0xa0401940",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f22c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f2cc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f2d0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f308",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040f30c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040d100",
+          "direct": [
+            {
+              "site": "0xa040d170",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d1a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d1a4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d1fc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d260",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d27c",
+              "target": "0xa040cb74",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d294",
+              "target": "0xa040cd2c",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040d134",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa040d158",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa0400fb0",
+          "direct": [
+            {
+              "site": "0xa0400fd4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0400fd8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0400ff4",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040101c",
+              "target": "0xa029a7d8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401030",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401040",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04010a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401108",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c00c",
+          "direct": [
+            {
+              "site": "0xa040c028",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c048",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c04c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c074",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c078",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c0ec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c114",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c184",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c190",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c1f8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040c090",
+              "mnemonic": "blx",
+              "operands": "r3"
+            },
+            {
+              "site": "0xa040c12c",
+              "mnemonic": "blx",
+              "operands": "ip"
+            },
+            {
+              "site": "0xa040c1a8",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa040c4e8",
+          "direct": [
+            {
+              "site": "0xa040c530",
+              "target": "0xa0401114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c590",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c5a8",
+          "direct": [
+            {
+              "site": "0xa040c5bc",
+              "target": "0xa04019bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c618",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c63c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c640",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa0401940",
+          "direct": [
+            {
+              "site": "0xa040195c",
+              "target": "0xa04014e4",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401988",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040198c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04019ac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04019b0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040cb74",
+          "direct": [
+            {
+              "site": "0xa040cba8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cbac",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cc38",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cc60",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cce8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ccec",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cd14",
+              "target": "0xa040caa0",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040cbd8",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa040cd2c",
+          "direct": [
+            {
+              "site": "0xa040cd64",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cd68",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cdf0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce10",
+              "target": "0xa03e7070",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce30",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce34",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce60",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce64",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ce84",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ceb4",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cf4c",
+              "target": "0xa040c924",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cf88",
+              "target": "0xa040c924",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cfdc",
+              "target": "0xa040caa0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d030",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d060",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d098",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040d0cc",
+              "target": "0xa0506418",
+              "kind": "call"
+            }
+          ],
+          "indirect": [
+            {
+              "site": "0xa040cd90",
+              "mnemonic": "blx",
+              "operands": "ip"
+            }
+          ]
+        },
+        {
+          "address": "0xa0401114",
+          "direct": [
+            {
+              "site": "0xa0401130",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401140",
+              "target": "0xa03bc714",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011a0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011ac",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04011d4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401230",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa04019bc",
+          "direct": [
+            {
+              "site": "0xa04019d0",
+              "target": "0xa0401114",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04019e0",
+              "target": "0xa03bc778",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a4c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a70",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401a74",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401ad4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa04014e4",
+          "direct": [
+            {
+              "site": "0xa0401504",
+              "target": "0xa03bc74c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401520",
+              "target": "0xa04f8dec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04015f8",
+              "target": "0xa0400fb0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04016d0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04016d4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401710",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401714",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0401774",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040177c",
+              "target": "0xa03bc778",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04017d8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040caa0",
+          "direct": [
+            {
+              "site": "0xa040cad4",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040caf8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cb2c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040cb58",
+              "target": "0xa0506418",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa040c924",
+          "direct": [
+            {
+              "site": "0xa040c944",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c988",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c9a8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040c9d4",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ca0c",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ca30",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ca54",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa040ca80",
+              "target": "0xa0506418",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        }
+      ],
+      "frontiers": [
+        {
+          "address": "0xa02a70ec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe49c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a7524",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe4a0"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc46c",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe4b8"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc498",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe520"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa04f8dec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435aa0"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa04894fc",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435aac"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506f38",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435b5c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506418",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435b80",
+            "0xa040f390"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa029a7d8",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435bc8",
+            "0xa040fa00",
+            "0xa040101c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc714",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435f00",
+            "0xa040fcc0",
+            "0xa040c530",
+            "0xa0401140"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc778",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435f00",
+            "0xa040fcd0",
+            "0xa040c5bc",
+            "0xa04019e0"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc74c",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa03fe500",
+            "0xa0435bc8",
+            "0xa040f7b8",
+            "0xa040f1c8",
+            "0xa040195c",
+            "0xa0401504"
+          ],
+          "fifo_api": null
+        }
+      ],
+      "fifo_apis_reached": [],
+      "unresolved_indirect_sites": 15
+    },
+    {
+      "root": "0xa0444ecc",
+      "expanded_nodes": [
+        {
+          "address": "0xa0444ecc",
+          "direct": [
+            {
+              "site": "0xa0444efc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444f00",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444f20",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444f30",
+              "target": "0xa03d5af0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444f48",
+              "target": "0xa04f9b38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444fac",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444fb0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444fc8",
+              "target": "0xa03d8610",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444fd8",
+              "target": "0xa03d68bc",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0444ff4",
+              "target": "0xa04f9b38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0445000",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044501c",
+              "target": "0xa03d8610",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0445034",
+              "target": "0xa03d8610",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044509c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04450a4",
+              "target": "0xa03d5b54",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04450b0",
+              "target": "0xa03d7024",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044510c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0445120",
+              "target": "0xa03d8610",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0445178",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04451cc",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        }
+      ],
+      "frontiers": [
+        {
+          "address": "0xa02a70ec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444efc"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a7524",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444f00"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc46c",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444f20"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d5af0",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444f30"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa04f9b38",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444f48"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d8610",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444fc8"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d68bc",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0444fd8"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc498",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0445000"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d5b54",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa04450a4"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d7024",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa04450b0"
+          ],
+          "fifo_api": null
+        }
+      ],
+      "fifo_apis_reached": [],
+      "unresolved_indirect_sites": 0
+    },
+    {
+      "root": "0xa0445234",
+      "expanded_nodes": [
+        {
+          "address": "0xa0445234",
+          "direct": [
+            {
+              "site": "0xa0445224",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044524c",
+              "target": "0xa03bc46c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa0445268",
+              "target": "0xa03d5b54",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044527c",
+              "target": "0xa03bc498",
+              "kind": "call"
+            },
+            {
+              "site": "0xa044529c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa04452a0",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        }
+      ],
+      "frontiers": [
+        {
+          "address": "0xa02a70ec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0445224"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc46c",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa044524c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03d5b54",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa0445268"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa03bc498",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa044527c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a7524",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa04452a0"
+          ],
+          "fifo_api": null
+        }
+      ],
+      "fifo_apis_reached": [],
+      "unresolved_indirect_sites": 0
+    },
+    {
+      "root": "0xa01f3124",
+      "expanded_nodes": [
+        {
+          "address": "0xa01f3124",
+          "direct": [
+            {
+              "site": "0xa01f3130",
+              "target": "0xa01f705c",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f315c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f3168",
+              "target": "0xa01f69b0",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f3188",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f318c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f3260",
+              "target": "0xa01f721c",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa01f705c",
+          "direct": [
+            {
+              "site": "0xa01f70d8",
+              "target": "0xa029c680",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f70e8",
+              "target": "0xa0451960",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f70fc",
+              "target": "0xa01f6be8",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f71b0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f71b4",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f71d4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f71d8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f71f0",
+              "target": "0xa01f6850",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f720c",
+              "target": "0xa01f6850",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa01f69b0",
+          "direct": [
+            {
+              "site": "0xa01f6a50",
+              "target": "0xa01f6850",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6ae4",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6ae8",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6b08",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6b0c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6b34",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6b38",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa01f721c",
+          "direct": [
+            {
+              "site": "0xa01f6b70",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6b74",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6bd8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6bdc",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f7248",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f724c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f727c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f7280",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        },
+        {
+          "address": "0xa01f6be8",
+          "direct": [
+            {
+              "site": "0xa01f6c3c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6c40",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6c54",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6c70",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6cf0",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6d10",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6d30",
+              "target": "0xa0506f38",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6db8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6dbc",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6dd8",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6de8",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e08",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e0c",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e2c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e30",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e50",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e54",
+              "target": "0xa02a7524",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6e74",
+              "target": "0xa01f6850",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6ea8",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6f28",
+              "target": "0xa0506674",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6f68",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6f90",
+              "target": "0xa0506418",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6fd0",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f6fec",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f7030",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f704c",
+              "target": "0xa02a70ec",
+              "kind": "call"
+            },
+            {
+              "site": "0xa01f7050",
+              "target": "0xa02a7524",
+              "kind": "call"
+            }
+          ],
+          "indirect": []
+        }
+      ],
+      "frontiers": [
+        {
+          "address": "0xa02a70ec",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f315c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa02a7524",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f318c"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa029c680",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70d8"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0451960",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70e8"
+          ],
+          "fifo_api": "PeekEntry"
+        },
+        {
+          "address": "0xa01f6850",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f71f0"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506674",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70fc",
+            "0xa01f6c54"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506418",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70fc",
+            "0xa01f6c70"
+          ],
+          "fifo_api": null
+        },
+        {
+          "address": "0xa0506f38",
+          "reason": "outside_declared_codec_index_file_metadata_scope",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70fc",
+            "0xa01f6cf0"
+          ],
+          "fifo_api": null
+        }
+      ],
+      "fifo_apis_reached": [
+        {
+          "address": "0xa0451960",
+          "name": "PeekEntry",
+          "path": [
+            "0xa01f3130",
+            "0xa01f70e8"
+          ]
+        }
+      ],
+      "unresolved_indirect_sites": 0
+    }
+  ],
+  "callback_direct_edges": [
+    {
+      "site": "0xa01f56d4",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f570c",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5710",
+      "target": "0xa01f538c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5730",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5740",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f57b4",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f57c4",
+      "target": "0xa043fba0",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f57f4",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5810",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5838",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5864",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5874",
+      "target": "0xa01f4994",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f596c",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f597c",
+      "target": "0xa03e3f00",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5998",
+      "target": "0xa03e41a0",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f59ac",
+      "target": "0xa03e40c8",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f59d8",
+      "target": "0xa01f68b8",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f59f4",
+      "target": "0xa01f3124",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5a30",
+      "target": "0xa021f894",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5a88",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5a8c",
+      "target": "0xa01f538c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5ae4",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5b04",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5b1c",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5b20",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5b2c",
+      "target": "0xa01eee7c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5bd4",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5be8",
+      "target": "0xa03e3f00",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5c04",
+      "target": "0xa03e41a0",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5c18",
+      "target": "0xa03e40c8",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5c40",
+      "target": "0xa01f68b8",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5c48",
+      "target": "0xa01f3124",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5c98",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5cb0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5cb4",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5cd0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5ce8",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5cec",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d08",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d20",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d24",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d40",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d58",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d5c",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5d88",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5da0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5da4",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5dd0",
+      "target": "0xa0224ec4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5df4",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e0c",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e10",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e2c",
+      "target": "0xa01e659c",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e48",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e60",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e64",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e80",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e98",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5e9c",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5eb8",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5ed0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5ed4",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5ef0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f08",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f0c",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f30",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f48",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f4c",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f78",
+      "target": "0xa0224ec4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5f90",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5fa8",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5fac",
+      "target": "0xa02a7524",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5fc8",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5fe0",
+      "target": "0xa02a70ec",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f5fe4",
+      "target": "0xa02a7524",
+      "kind": "call"
+    }
+  ],
+  "callback_indirect_sites": [
+    {
+      "site": "0xa01f58ac",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f58cc",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f5944",
+      "mnemonic": "blx",
+      "operands": "ip"
+    },
+    {
+      "site": "0xa01f5a18",
+      "mnemonic": "blx",
+      "operands": "ip"
+    },
+    {
+      "site": "0xa01f5a2c",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f5a64",
+      "mnemonic": "blx",
+      "operands": "r2"
+    },
+    {
+      "site": "0xa01f5b50",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f5b70",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f5bb0",
+      "mnemonic": "blx",
+      "operands": "ip"
+    },
+    {
+      "site": "0xa01f5c6c",
+      "mnemonic": "blx",
+      "operands": "r3"
+    },
+    {
+      "site": "0xa01f5c7c",
+      "mnemonic": "blx",
+      "operands": "r3"
+    }
+  ],
+  "callback_range": [
+    "0xa01f569c",
+    "0xa01f5ff0"
+  ],
+  "normal_full_close_delete_sites": [
+    {
+      "site": "0xa01f6240",
+      "target": "0xa04514e4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f6260",
+      "target": "0xa04514e4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f6280",
+      "target": "0xa04514e4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f62a0",
+      "target": "0xa04514e4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f62c0",
+      "target": "0xa04514e4",
+      "kind": "call"
+    },
+    {
+      "site": "0xa01f62e0",
+      "target": "0xa04514e4",
+      "kind": "call"
+    }
+  ],
+  "linkage_assertions": [
+    {
+      "address": "0xa03e41d8",
+      "mnemonic": "add",
+      "operands": "r1, r5, #0x50",
+      "passed": true
+    },
+    {
+      "address": "0xa03e41e0",
+      "mnemonic": "movw",
+      "operands": "r2, #0x6b8",
+      "passed": true
+    },
+    {
+      "address": "0xa03e41e8",
+      "mnemonic": "add",
+      "operands": "r0, r4, #0x50",
+      "passed": true
+    },
+    {
+      "address": "0xa03e4200",
+      "mnemonic": "bl",
+      "operands": "#0xa029c680",
+      "passed": true
+    },
+    {
+      "address": "0xa01f59cc",
+      "mnemonic": "str",
+      "operands": "r1, [fp]",
+      "passed": true
+    },
+    {
+      "address": "0xa01f59d0",
+      "mnemonic": "str",
+      "operands": "r1, [r0, #4]",
+      "passed": true
+    },
+    {
+      "address": "0xa01f5e2c",
+      "mnemonic": "bl",
+      "operands": "#0xa01e659c",
+      "passed": true
+    },
+    {
+      "address": "0xa011a290",
+      "mnemonic": "bl",
+      "operands": "#0xa01f51d0",
+      "passed": true
+    }
+  ],
+  "file_stream_vtable": {
+    "address": "0xa078a4ac",
+    "open": "0xa0444ecc",
+    "close": "0xa0445234"
+  },
+  "static_resolutions": [
+    {
+      "site": "0xa01f58ac",
+      "role": "main_format_close",
+      "target": "0xa03fe300",
+      "basis": "MP4 vtable A078A404 +4"
+    },
+    {
+      "site": "0xa01f58cc",
+      "role": "main_file_close",
+      "target": "0xa0445234",
+      "basis": "Create A0445AB4 -> A0443CF0 -> file vtable A078A4AC +4"
+    },
+    {
+      "site": "0xa01f5944",
+      "role": "main_name_callback",
+      "target": "0xa01f2be4",
+      "basis": "A01F4BC8 sets A13C1774; default setup provenance, not captured runtime pointer"
+    },
+    {
+      "site": "0xa01f5a18",
+      "role": "main_file_open",
+      "target": "0xa0444ecc",
+      "basis": "file vtable A078A4AC +0"
+    },
+    {
+      "site": "0xa01f5a2c",
+      "role": "main_format_open",
+      "target": "0xa03fe468",
+      "basis": "MP4 vtable A078A404 +0"
+    },
+    {
+      "site": "0xa01f5a64",
+      "role": "split_counter_notification",
+      "target": "0xa0119670",
+      "basis": "A0124470 -> A01F47CC sets A13C2A5C; static setup provenance"
+    },
+    {
+      "site": "0xa01f5e2c",
+      "role": "ordinary_split_message",
+      "target": "0xa01e659c",
+      "basis": "0x48010003,param1=3 -> A0113808 action1C -> A01282E0 -> A011A208"
+    }
+  ],
+  "cases": [
+    {
+      "case": "restore_dts",
+      "constructed_track_count": 2,
+      "fifo_handle_words_preserved": true,
+      "opaque_object_canaries_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "reset_counts",
+      "constructed_track_count": 2,
+      "fifo_handle_words_preserved": true,
+      "opaque_object_canaries_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "reset_video_pts",
+      "constructed_track_count": 2,
+      "fifo_handle_words_preserved": true,
+      "opaque_object_canaries_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "iso_open_prefix",
+      "constructed_track_count": 2,
+      "fifo_handle_words_preserved": true,
+      "opaque_object_canaries_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "split_notification_parameter3",
+      "camera_mode": 2,
+      "stop": "0xa011a2bc",
+      "executed_loop_deletion": false,
+      "passed": true,
+      "limitation": "normal-mode execution stops before original logger"
+    },
+    {
+      "case": "split_notification_parameter3",
+      "camera_mode": 6,
+      "stop": "0x1001ff00",
+      "executed_loop_deletion": false,
+      "passed": true,
+      "limitation": "normal-mode execution stops before original logger"
+    }
+  ],
+  "passed_cases": 6,
+  "sources": [
+    {
+      "entry": "0xa0113594",
+      "body_ranges": [
+        "a0113594-a0113663"
+      ],
+      "bytes_sha256": "fc65924b7b96f62fee8af3fb442aa4730e25ae93ccb4694fb62631f846e4539b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0113594.c",
+      "pseudocode_sha256": "b70ff7184bf6027d0fbad5692b65309d177119390d968e1b8efce1b8572702a7"
+    },
+    {
+      "entry": "0xa0113808",
+      "body_ranges": [
+        "a0113808-a01172a7"
+      ],
+      "bytes_sha256": "e29dd3a4b6f1432f939e142cd9c0f0499eb095ac787bdd428f483cd5e045c972",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0113808.c",
+      "pseudocode_sha256": "1e61b2a44a17e0875823e219a0369ad802e3526607a2a7b9821d85edd9d7b36f"
+    },
+    {
+      "entry": "0xa0119670",
+      "body_ranges": [
+        "a0119670-a01196c3",
+        "a018c630-a018c673"
+      ],
+      "bytes_sha256": "cfff20f6285dfb7826415973d3b837571fb9fb2b96a8f50ec69be8b157a47fb3",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0119670.c",
+      "pseudocode_sha256": "26c18f82bfa3c8812dc52d4d984c29a537a714162356c982cb71f799e2a98d0f"
+    },
+    {
+      "entry": "0xa011a208",
+      "body_ranges": [
+        "a011a208-a011a2c7"
+      ],
+      "bytes_sha256": "81846c1c64fefd66ac48c3b0f5d59dad0059386d48050986df67e1cad16f2ded",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a011a208.c",
+      "pseudocode_sha256": "52ae2e86e10df94a600a473cecb99924f473feb20c5ced3964b4dafed566d9b0"
+    },
+    {
+      "entry": "0xa0124470",
+      "body_ranges": [
+        "a0124470-a01247bf",
+        "a01247d0-a0124cb7",
+        "a0124cc0-a0124e7f"
+      ],
+      "bytes_sha256": "d6b63854f345651a0c553dfc20d9087d394008d0df8d8bc0b61ef2cb288ccf55",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0124470.c",
+      "pseudocode_sha256": "032e9dbfeec16e2d28c8b2ba050cf27840b61f11f000a7c0703ab160297e3211"
+    },
+    {
+      "entry": "0xa01282e0",
+      "body_ranges": [
+        "a01282e0-a01282fb",
+        "a0128558-a0129d9f",
+        "a0129dc4-a012b2f3",
+        "a012b2fc-a012b56b"
+      ],
+      "bytes_sha256": "aed45d6e81d08d71284cd94b7287bf82f8f256af238d1eaa26d451a15c337e05",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01282e0.c",
+      "pseudocode_sha256": "0621b779c8aa4c367a2f74693ceb231532a77f47f963695c39fd600d49dfe67f"
+    },
+    {
+      "entry": "0xa01f3124",
+      "body_ranges": [
+        "a01f3124-a01f3273"
+      ],
+      "bytes_sha256": "f49523cade9d3cc8cac68cd0ffd701c162911385a6c65e27444b29a45244469a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f3124.c",
+      "pseudocode_sha256": "a4f8270d856793b91472789f72e3033eb8ca4af36517752412382ca0c21e183a"
+    },
+    {
+      "entry": "0xa01f47cc",
+      "body_ranges": [
+        "a01f47cc-a01f47db"
+      ],
+      "bytes_sha256": "53cfa938cc9e3747d5c3a8160817e169017a9f246a4269d23b79445d37ac00ed",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f47cc.c",
+      "pseudocode_sha256": "f9780ce56943a81ff14677fbb653c655fe26c19f7d1fe3de92865e6472695ba3"
+    },
+    {
+      "entry": "0xa01f4bc8",
+      "body_ranges": [
+        "a01f4bc8-a01f4e07"
+      ],
+      "bytes_sha256": "ca4ef25c3d7bee3082677ca0dd4645502746a014721c87d3432e69e9a8a66145",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f4bc8.c",
+      "pseudocode_sha256": "8eb9f4cfece29ec8d0399e7c63ee903b0ce85398b3e6434f609faca175f5d165"
+    },
+    {
+      "entry": "0xa01f569c",
+      "body_ranges": [
+        "a01f569c-a01f5fef"
+      ],
+      "bytes_sha256": "cf1b838267eb811c9b48c0b343f2ece4b7fd1a47546142045840578cbd5c9e45"
+    },
+    {
+      "entry": "0xa01f6088",
+      "body_ranges": [
+        "a01f6088-a01f633f"
+      ],
+      "bytes_sha256": "673443d18ccc1d15424d3b73afba398700bb01b0b17dbe02f6f438a8ea965be6",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6088.c",
+      "pseudocode_sha256": "398df127e50fe35569f29ca48f2b9532a1297b963389ddea5df4cb1ddbf177c2"
+    },
+    {
+      "entry": "0xa01f6340",
+      "body_ranges": [
+        "a01f6340-a01f659f"
+      ],
+      "bytes_sha256": "82c91fb3f89d9c22f3e126b8fd8aebcc01b989464249f87f534c4cc0af57f595",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6340.c",
+      "pseudocode_sha256": "c608e67c0e89f5d245a93268da329025f6f289cb3b4a512c152ef6148fb6b84a"
+    },
+    {
+      "entry": "0xa01f68b8",
+      "body_ranges": [
+        "a01f68b8-a01f69af"
+      ],
+      "bytes_sha256": "8aafcc720707b40b136e784122bcf2f1273429976357dee54f27d76ece38e759",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f68b8.c",
+      "pseudocode_sha256": "0ce6d075932a1e8d7011a66d58a44c6e355c8f99f56a53dec8f97ffd9712ae38"
+    },
+    {
+      "entry": "0xa01f69b0",
+      "body_ranges": [
+        "a01f69b0-a01f6b43"
+      ],
+      "bytes_sha256": "c2e20414e9507343627fd534237b1b0a9b2682225d966037f7d8446978c12134",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f69b0.c",
+      "pseudocode_sha256": "8f0c0581bbf5069043c1e54866a7c511d2d8c8232921a9cfd2da848220c2933b"
+    },
+    {
+      "entry": "0xa01f6be8",
+      "body_ranges": [
+        "a01f6be8-a01f705b"
+      ],
+      "bytes_sha256": "64c9f7af6452fabeb41a993da35999eeccb3b73c5e6e71bc7f50ff0160d55a78",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f6be8.c",
+      "pseudocode_sha256": "0d2a9f00248262ffbe70a421443c3c60d71056992777d0548d65ce605adb6be4"
+    },
+    {
+      "entry": "0xa01f705c",
+      "body_ranges": [
+        "a01f705c-a01f721b"
+      ],
+      "bytes_sha256": "f825d72102b764f4769ac2b50f6d196fecb103e62a5b0536a8f37c9c874706d6",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f705c.c",
+      "pseudocode_sha256": "9710e562f7ff8ddf97ae43ec3fe773f8995bf599cd3d61e79358d302f686df80"
+    },
+    {
+      "entry": "0xa01f721c",
+      "body_ranges": [
+        "a01f6b44-a01f6be7",
+        "a01f721c-a01f728b"
+      ],
+      "bytes_sha256": "bdfea7215a11a623533528f8eb0146ff5f2ee0e324efe5bf250de4438358ebd4",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a01f721c.c",
+      "pseudocode_sha256": "35e8600075452d73d0c40448fcc46f3015d720cfc2125e314516f374d9de17b1"
+    },
+    {
+      "entry": "0xa03e260c",
+      "body_ranges": [
+        "a03e260c-a03e26bb"
+      ],
+      "bytes_sha256": "c207244479c3751a8ffd39a1a90dabe4286278199a6c5cca5a5a3679a080e9c1",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e260c.c",
+      "pseudocode_sha256": "72b3a01920c11480d178f873d02d46bc522badf30aae10f312a9c3b5d6c38380"
+    },
+    {
+      "entry": "0xa03e26bc",
+      "body_ranges": [
+        "a03e26bc-a03e2793"
+      ],
+      "bytes_sha256": "d050aa70ec3d98ff90b51904bafc18767c456f6ffdfea795f2ca9973450e475c",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e26bc.c",
+      "pseudocode_sha256": "53e41bb729c4264de7fc98a412a837e9a66843d0f4fce59f80f23e7110ed4359"
+    },
+    {
+      "entry": "0xa03e28b0",
+      "body_ranges": [
+        "a03e28b0-a03e28cb"
+      ],
+      "bytes_sha256": "4c9f09dc3f7ecff679120b934e1b1ad4bb33d6b2010df6f3e7f54e34fa5a54b4",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e28b0.c",
+      "pseudocode_sha256": "9e8f93c717917925f0214029d84bf5150a88024816035a6f1b47827db132877c"
+    },
+    {
+      "entry": "0xa03e28cc",
+      "body_ranges": [
+        "a03e28cc-a03e29db"
+      ],
+      "bytes_sha256": "3c221e2c4fc618b15b190375cf059b8a5e801b31f025366bafbf89b8868fcc09",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e28cc.c",
+      "pseudocode_sha256": "a06a39c70040aa98f21568075d8dacb1378f3412601b9685f746639be5aca5bb"
+    },
+    {
+      "entry": "0xa03e29dc",
+      "body_ranges": [
+        "a03e29dc-a03e2afb"
+      ],
+      "bytes_sha256": "f0fdf621be4298f7c55b5c7a67d127f58e6b602f065ae6f68cdd0a98b17efd7b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e29dc.c",
+      "pseudocode_sha256": "caaa77c346bd78bea9db940c9fe3dda0c091176e1f612234bbf33698f21a5457"
+    },
+    {
+      "entry": "0xa03e40c8",
+      "body_ranges": [
+        "a03e40c8-a03e419f"
+      ],
+      "bytes_sha256": "68fa604ac7945dfe3e99a4bbbcba65dcaa3f601ab9303726d768d6db78a9657c",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e40c8.c",
+      "pseudocode_sha256": "e904c0ad7e886484184dc9529850c20151788eb5680da496bd89b405996c37d9"
+    },
+    {
+      "entry": "0xa03e41a0",
+      "body_ranges": [
+        "a03e41a0-a03e42bf"
+      ],
+      "bytes_sha256": "b1baf96dde76a3f5ab45fd876769d1454e9a3bbed654540deb6418691ae16486",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e41a0.c",
+      "pseudocode_sha256": "c81f7dc5bcfc41b9b60cd5f78d63d41b1c08fde0fed853074faa1c98fa62a33f"
+    },
+    {
+      "entry": "0xa03e7070",
+      "body_ranges": [
+        "a03e7070-a03e71ab"
+      ],
+      "bytes_sha256": "e03da84c5f5d514287a5ddf6747aff050459a63be73df7e563a5ccefb66907df",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03e7070.c",
+      "pseudocode_sha256": "46e669b1092dfe2b1e0fe2ccbd2d2b072dc4dfe7133d6f67e7966d878b1e02b7"
+    },
+    {
+      "entry": "0xa03edfb0",
+      "body_ranges": [
+        "a03edfb0-a03ee0cb"
+      ],
+      "bytes_sha256": "462e775eb32713ee92933169aff9823e2138bea4022fe85c5cc59cd7f7d48c25",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03edfb0.c",
+      "pseudocode_sha256": "778a17a34525de2b30ad743eb5299970c226948ba117fd6d639b227fc9be72ec"
+    },
+    {
+      "entry": "0xa03fe300",
+      "body_ranges": [
+        "a03fe300-a03fe467"
+      ],
+      "bytes_sha256": "16902c9c1e2e3ca06341b21b1126b08383ed3305b4548e3fe09655af84d3a561",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fe300.c",
+      "pseudocode_sha256": "a181860a9ec0b6a30ea882d9bd84787938ac922bcfbe8fdecf0c0756880c685c"
+    },
+    {
+      "entry": "0xa03fe468",
+      "body_ranges": [
+        "a03fe468-a03fe64b"
+      ],
+      "bytes_sha256": "4f4ef8b3521aaf10dc92aaa7dcb9249adcd8ea73f781982e0d451cfe7fd9af60",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a03fe468.c",
+      "pseudocode_sha256": "d1bcb4cd9db9182fd085de25af820d9e09d5f80e0fef1a9be9bae8f484dcaa9a"
+    },
+    {
+      "entry": "0xa0400fb0",
+      "body_ranges": [
+        "a0400fb0-a040110f"
+      ],
+      "bytes_sha256": "849340125c677e8881237a41a5c6ae7bc8cdcfa8c5e0c5b9cfd712ac5d5a5591",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0400fb0.c",
+      "pseudocode_sha256": "b17ac38381735601aabd7e7a9490012dca31fd0983d8b56fee157fb74c6cad0a"
+    },
+    {
+      "entry": "0xa0401114",
+      "body_ranges": [
+        "a0401114-a040123f"
+      ],
+      "bytes_sha256": "49c4ec6fc8a69c851fa4a8bd3566b63b1cbf41aee95764098a7436b51cc43c46",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401114.c",
+      "pseudocode_sha256": "a0b04c385c5831d3ae8a95e8ad7492d752b97abdc76167da44227dd0b1b550ca"
+    },
+    {
+      "entry": "0xa0401240",
+      "body_ranges": [
+        "a0401240-a04013ff"
+      ],
+      "bytes_sha256": "fd13d149544c5c07a451bda997af0074c9cf04e99b23b617c6ce301d98caa559",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401240.c",
+      "pseudocode_sha256": "f511b8f0d9f1135b84087cc868f03bcc54dffc76b60f74eb34323d445618f042"
+    },
+    {
+      "entry": "0xa0401400",
+      "body_ranges": [
+        "a0401400-a04014e3"
+      ],
+      "bytes_sha256": "c6a63a4cfe5be1f2fd79535e47e9dc0aaf92876ecc10b5cd36f4483330a59434",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401400.c",
+      "pseudocode_sha256": "47bbf1240cd350602e441de35e3763c05c0bb299bb7bdd14195c2802e5701da6"
+    },
+    {
+      "entry": "0xa04014e4",
+      "body_ranges": [
+        "a04014e4-a04017e7"
+      ],
+      "bytes_sha256": "f25363b23ea3b7984c675018ef2d6fa60cf1ea95cdf2f110b5a17c529c3d122c",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04014e4.c",
+      "pseudocode_sha256": "f7bd29d3641cba15789ea575d9997b63ee6153fd622574e63792bda74d5e7ab0"
+    },
+    {
+      "entry": "0xa0401810",
+      "body_ranges": [
+        "a0401810-a0401837"
+      ],
+      "bytes_sha256": "59d9f4cb9e6aee892ea7e7b8d6a467c960dfbb376931ea13f37acddff5bac084",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401810.c",
+      "pseudocode_sha256": "682b7eb161f7d27ed7a2cc940771fab226d8e29e9501d18a47f0d64201c07769"
+    },
+    {
+      "entry": "0xa0401940",
+      "body_ranges": [
+        "a0401940-a04019bb"
+      ],
+      "bytes_sha256": "b2a41a1e390d23ef8c7eba77a9eddbfec6bb5f91c7c9b8f011a05ad1266ad5d4",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401940.c",
+      "pseudocode_sha256": "6ee130a78990ad034f5a97e624bc7378b37f55fce9501655ec087fa4a36b23d6"
+    },
+    {
+      "entry": "0xa04019bc",
+      "body_ranges": [
+        "a04019bc-a0401ae3"
+      ],
+      "bytes_sha256": "801befef422cf98411f4c60a90ef0289922f6e9c3d382d7d1a8748d2e4ff9c60",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04019bc.c",
+      "pseudocode_sha256": "26363a32415071b468b45d09ccb826d5b432ba6f2f0997203fd42cdd34f9bfa7"
+    },
+    {
+      "entry": "0xa0401ae4",
+      "body_ranges": [
+        "a0401ae4-a0401d6b"
+      ],
+      "bytes_sha256": "b885940855f7df25052fd1f47f873910ecd8713ce8b1c3817f3344caab13369e",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401ae4.c",
+      "pseudocode_sha256": "5c774ec8d5e129702c8be2642bda45e33f4ef5e5d8838d1261d924f33931b4bf"
+    },
+    {
+      "entry": "0xa0401e50",
+      "body_ranges": [
+        "a0401e50-a0401f2b"
+      ],
+      "bytes_sha256": "036299f8bc6e95d3eee1bf0a6ad2d664ed3dbc8c6781dd471fe322d5f8d1284d",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0401e50.c",
+      "pseudocode_sha256": "3b903c62a761d33b337b23ee071b20968e59fc14ce371d08783728d5c0f20053"
+    },
+    {
+      "entry": "0xa040c00c",
+      "body_ranges": [
+        "a040c00c-a040c207"
+      ],
+      "bytes_sha256": "4e440132f672b531e56b13ae46ad9bd97d2f746f89003f322e0c9e3972662959",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c00c.c",
+      "pseudocode_sha256": "fe82f752e7f09b420937c3162ab96c25ce19a67d3421f344c3f811f26530eb82"
+    },
+    {
+      "entry": "0xa040c208",
+      "body_ranges": [
+        "a040c208-a040c40f"
+      ],
+      "bytes_sha256": "fff22f8bd9f161581ff4d588221c3677c653f82963a488388fe8d0f33a5e6299",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c208.c",
+      "pseudocode_sha256": "7efa25bea0a3b45e1137e8562837de5bb1936f768296163c81d7103e67b5ac59"
+    },
+    {
+      "entry": "0xa040c410",
+      "body_ranges": [
+        "a040c410-a040c4e7"
+      ],
+      "bytes_sha256": "08b5d4f2fc5b478c35ddb2561ac454fcbbc546cdec33f3bb79c185f77b33ef31",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c410.c",
+      "pseudocode_sha256": "f14c95b6cfb4ea6439096465ef74cfb433a0bd398ee0d31a8953b0cae8771345"
+    },
+    {
+      "entry": "0xa040c4e8",
+      "body_ranges": [
+        "a040c4e8-a040c5a7"
+      ],
+      "bytes_sha256": "49dad7c35c985f377846293b10779fc44cdeae3c60a33d46c8034aa7d249d194",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c4e8.c",
+      "pseudocode_sha256": "353baaa0475999e99d8e181d7816e65f3150e427e09e858f932885cffd171089"
+    },
+    {
+      "entry": "0xa040c5a8",
+      "body_ranges": [
+        "a040c5a8-a040c64b"
+      ],
+      "bytes_sha256": "7181e3113ce95171b5cfdbdbc045f3a40dc2195f3f10c9197f1d8a362b7873a7",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c5a8.c",
+      "pseudocode_sha256": "8bbbc156cb0c2c2c2aadf3454bcc9d95c8fe1d4355dbd2c4d102d599f755baae"
+    },
+    {
+      "entry": "0xa040c924",
+      "body_ranges": [
+        "a040c924-a040ca9f"
+      ],
+      "bytes_sha256": "75838de7854e72f4143c3d8e98944264cc39eaeed216894d2c1a7905a22df5cf",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040c924.c",
+      "pseudocode_sha256": "025b786a18dcd7be92dd44f90fb0d60d84b7a3ea15b02483564e6c753ea85e21"
+    },
+    {
+      "entry": "0xa040caa0",
+      "body_ranges": [
+        "a040caa0-a040cb73"
+      ],
+      "bytes_sha256": "e13483dbbf85f2283625d2f5066ea05c9c5cb6c92af382ebd5d3dd9cd5728e1b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040caa0.c",
+      "pseudocode_sha256": "54ce7e7e9130f9cb1a22893d4a840669d2b328868b947d4433a609ba302d861b"
+    },
+    {
+      "entry": "0xa040cb74",
+      "body_ranges": [
+        "a040cb74-a040cd2b"
+      ],
+      "bytes_sha256": "a20a7be542073944cd30ddfa1aafa5bda1e211a1a73efee586b19b243a3e04b5",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040cb74.c",
+      "pseudocode_sha256": "4d5ee1ea1e4981071f1f5ced8f1655ade7343c65de265f112d35b5d04255576c"
+    },
+    {
+      "entry": "0xa040cd2c",
+      "body_ranges": [
+        "a040cd2c-a040d0ff"
+      ],
+      "bytes_sha256": "4a9466fa2a46a19ac7f43edb6dfba741ea035f3a2333604c472a39d6a396f489",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040cd2c.c",
+      "pseudocode_sha256": "1bae93c1b791e5af106ee6b8972bd7fa2b41de679b828773e0142e57282822b5"
+    },
+    {
+      "entry": "0xa040d100",
+      "body_ranges": [
+        "a040d100-a040d29f"
+      ],
+      "bytes_sha256": "0196b9daccd825a51efc3575f8bc8df2ae4a6543bc20416703c1d92d58c5d5c1",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d100.c",
+      "pseudocode_sha256": "59c0c9f9821f45bca8293c009b855ca1aad8f68ce4d700e873b697f897185e86"
+    },
+    {
+      "entry": "0xa040d2a0",
+      "body_ranges": [
+        "a040d2a0-a040d3b3"
+      ],
+      "bytes_sha256": "bb1e804d97621977fb3735f925b488849a58e352d7b7a4fef8a07f9936244d92",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d2a0.c",
+      "pseudocode_sha256": "0ae081e73604b30dcb336e460a7774340adcd60ac1bead56b2e06ff33578cdc0"
+    },
+    {
+      "entry": "0xa040d3b4",
+      "body_ranges": [
+        "a040d3b4-a040d467"
+      ],
+      "bytes_sha256": "4cd0d2e8e847721e611ea8597f6d1691fea50e01f2a32bca29f2efcd161c8705",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d3b4.c",
+      "pseudocode_sha256": "1c7314f6e7fda6a2986350fa631dcce083a44e5939423e360f0a5680fbe7741c"
+    },
+    {
+      "entry": "0xa040d574",
+      "body_ranges": [
+        "a040d504-a040d5b7"
+      ],
+      "bytes_sha256": "fec51ebe149d2eed09409821feda5d48cd831aaf59cc71c28967e1815a733072",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d574.c",
+      "pseudocode_sha256": "95fb5f70ee03626d66535be91f3d3591b1d68bec640e869fd11c25febeba03b8"
+    },
+    {
+      "entry": "0xa040d5b8",
+      "body_ranges": [
+        "a040d5b8-a040d8cb"
+      ],
+      "bytes_sha256": "491a0dfc34954dd1155c3e95bcc1034e05eb1f8f8c995781232447cb2256f638",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d5b8.c",
+      "pseudocode_sha256": "a097a5238cf418bd57865a1cda9a9b19722156c617d08bc77fc2acaa94edd7cf"
+    },
+    {
+      "entry": "0xa040d8cc",
+      "body_ranges": [
+        "a040d8cc-a040dcef"
+      ],
+      "bytes_sha256": "6b9d861bab3ea36d23c55d71bdf1a938fcda95b65b0b852aa4061ccf0d1bc4ba",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040d8cc.c",
+      "pseudocode_sha256": "d1849c7884794009b818c0694851aeaf5150d730248c6f54bdb046e85e586589"
+    },
+    {
+      "entry": "0xa040dcf0",
+      "body_ranges": [
+        "a040dcf0-a040e257"
+      ],
+      "bytes_sha256": "b54e27336df6971f443e2b30de9797e6a5fe3f99ed5a0731a2d28a801a3b39ee",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040dcf0.c",
+      "pseudocode_sha256": "8f66c927f7f48c4256ec0d9b7c34a0ceb8a8e1ec2b25bde85347d77053840bba"
+    },
+    {
+      "entry": "0xa040e258",
+      "body_ranges": [
+        "a040e258-a040e337"
+      ],
+      "bytes_sha256": "d45b1ae4d43ecb19a55f368ba464d3a907282c50c1b4789e2c93f514bd386e31",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040e258.c",
+      "pseudocode_sha256": "62b4da27f9ce107f7ef01af8fed9332b5133e98ecc84feaf784d3ccabb384021"
+    },
+    {
+      "entry": "0xa040e338",
+      "body_ranges": [
+        "a040e338-a040e417"
+      ],
+      "bytes_sha256": "e536585dfd7a505b1ed3bbccc94bd8fe27f4393a74d2881ab2ad9c297164b393",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040e338.c",
+      "pseudocode_sha256": "37ddb910a16b7dd461c14ff614bb7e4c848a7c05dcb9980b2e682f2056ee6819"
+    },
+    {
+      "entry": "0xa040e418",
+      "body_ranges": [
+        "a040e418-a040ee8b"
+      ],
+      "bytes_sha256": "a8b566f65afffc59a10990d1d65dd549871dd45fd41bc7390b55e2e76cda615a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040e418.c",
+      "pseudocode_sha256": "e760a705d620321578edd24ec925ae7c370eeca1d0b057db9c720a3224a1d762"
+    },
+    {
+      "entry": "0xa040ee8c",
+      "body_ranges": [
+        "a040ee8c-a040f317"
+      ],
+      "bytes_sha256": "7166ae47be93e76c2069f048d441114d5f5c2ac18a277a6e3ced1b180514ece5",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040ee8c.c",
+      "pseudocode_sha256": "e1fb2a6a1ca86676b2933e8b36661f5b459eca9ba083dad0b6ebb594b2705ef2"
+    },
+    {
+      "entry": "0xa040f318",
+      "body_ranges": [
+        "a040f318-a040f70f"
+      ],
+      "bytes_sha256": "e90ef812d36eee2f1c08b163751e4364d11d3c8649bd3bd28908f457cb97e65b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040f318.c",
+      "pseudocode_sha256": "8dad15706f699479d570b660407dff6207eca323a1ff339d12e45259dfd9d7a0"
+    },
+    {
+      "entry": "0xa040f710",
+      "body_ranges": [
+        "a040f710-a040fc03"
+      ],
+      "bytes_sha256": "89507d73c2beb8d4d05eed68710df6f9a88fbcbfa3ddc7df7b38950932065ffd",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040f710.c",
+      "pseudocode_sha256": "142a82e9ad6f9a55a6380c4a854f05722ea35912623d48159690fdc91bbc3985"
+    },
+    {
+      "entry": "0xa040fc04",
+      "body_ranges": [
+        "a040fc04-a040fde3"
+      ],
+      "bytes_sha256": "58555e8d599d9619ebe6ad48fd0386072114272111020c0cc25a505eee9e1a42",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040fc04.c",
+      "pseudocode_sha256": "efe90f211cd0435ac5aff716d35213a25d3c8e1edc87b4b5185ec8e39b2f316b"
+    },
+    {
+      "entry": "0xa040fde4",
+      "body_ranges": [
+        "a040fde4-a0410113"
+      ],
+      "bytes_sha256": "e15d3fb09d638cb7a51de3cf08048dc2eb86114ffb750efbcfbb07e4a4e83528",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a040fde4.c",
+      "pseudocode_sha256": "455f82079df02f4bb2cba2d9d57312a97ba6c210659842651f676e5469a4c622"
+    },
+    {
+      "entry": "0xa0410114",
+      "body_ranges": [
+        "a0410114-a041041b"
+      ],
+      "bytes_sha256": "ecfc596664800067c1885295190b40f0569d01fb3cadb0fd716a9b3b7cf12d4a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0410114.c",
+      "pseudocode_sha256": "daac9eeea222afa762237211bda7fb28f33ca7f99c79dc4e945e0b60654df8a2"
+    },
+    {
+      "entry": "0xa041041c",
+      "body_ranges": [
+        "a041041c-a041064f"
+      ],
+      "bytes_sha256": "f70c99b7370512340e2e07c861207984da14321004f5f0871cb722aff7c173c5",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a041041c.c",
+      "pseudocode_sha256": "93f4ec6d9eb40747e1b89ea1ebe1697f6a4b156f6372776bfce3973e47345b77"
+    },
+    {
+      "entry": "0xa0410650",
+      "body_ranges": [
+        "a0410650-a0410783"
+      ],
+      "bytes_sha256": "ec9f03fa11f567fbd31023eeb3e155aef6cd3b5adaed414812d76ebdd5a20fe1",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0410650.c",
+      "pseudocode_sha256": "88bda23b65682b7b06a3e71cdb2bbae110de13adafc45ce517762b98c9bccff1"
+    },
+    {
+      "entry": "0xa0411048",
+      "body_ranges": [
+        "a0411048-a04111ab"
+      ],
+      "bytes_sha256": "a35c989ac38eaf37e6b353bd571454185dd807e642160886f86c0cc43e321b01",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0411048.c",
+      "pseudocode_sha256": "cf770096666e0a0ac5cbb3c9e4deb7b56778ba5c321ec1bbba04d6658c813784"
+    },
+    {
+      "entry": "0xa0411528",
+      "body_ranges": [
+        "a0411528-a04116ff"
+      ],
+      "bytes_sha256": "1ccdcbe5889de1274e2ff80d68415419ef6a985c7171648044a39dc10794a462",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0411528.c",
+      "pseudocode_sha256": "625182accd33283b4a3e318e98aa66e604742500beb7cdd1ad642648c0a54775"
+    },
+    {
+      "entry": "0xa041205c",
+      "body_ranges": [
+        "a0411700-a0411e87",
+        "a041205c-a041214f"
+      ],
+      "bytes_sha256": "239f172d298b93b163bfab70bd6c546219f31f2c80204be80c0f35e1cc7bde26",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a041205c.c",
+      "pseudocode_sha256": "7ff6f83954b43ab6834b634f85693cc381c941608c80fb091afa92c66d0643d5"
+    },
+    {
+      "entry": "0xa042ca94",
+      "body_ranges": [
+        "a042ca94-a042ce27"
+      ],
+      "bytes_sha256": "0022affb3f19fef79eb7ad318ab7fb8323f2c072424ce00eefe1a45566f413b0",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a042ca94.c",
+      "pseudocode_sha256": "29495cdfcb8d4f0234b0fe8f1f4007b9e6110ecd0c18a2827cfc1a8f636b0a5d"
+    },
+    {
+      "entry": "0xa042d6c4",
+      "body_ranges": [
+        "a042d6c4-a042daef"
+      ],
+      "bytes_sha256": "c1ee692ed5dc11602309b733c6221e6648b532c8b89894cfae2595ed89fede85",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a042d6c4.c",
+      "pseudocode_sha256": "d3717d82f7d900708acc40e89add7ab6b1b08623c9f45092b9d3bc0d6895b283"
+    },
+    {
+      "entry": "0xa0433ca8",
+      "body_ranges": [
+        "a0433ca8-a0433e37"
+      ],
+      "bytes_sha256": "05b815188f53ef764fc319208d11e9964509a8fdafcf0c6156699b0138dac668",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0433ca8.c",
+      "pseudocode_sha256": "86d3fa36aa215b70b2bd1ab9184e1053320a8efd0b2401a220b7f3f5b1470664"
+    },
+    {
+      "entry": "0xa0433e38",
+      "body_ranges": [
+        "a0433e38-a04349db"
+      ],
+      "bytes_sha256": "4f5b35e186e13e6f17184f48f0c6ae098b977cfaaae8bcd5d7bf1eed69762f2b",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0433e38.c",
+      "pseudocode_sha256": "8030f89db921c0e3929309f56b70afccd6c0f1555f5247a6624c5af53274b8b6"
+    },
+    {
+      "entry": "0xa04349dc",
+      "body_ranges": [
+        "a04349dc-a0435627"
+      ],
+      "bytes_sha256": "9139791a25b57b2f2d5a97e4a908c5137e3e91b623581510c00328026de37931",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04349dc.c",
+      "pseudocode_sha256": "cfd7033af34fc7927885410135c9d9ea9e179505848d4c6a78326b2d5963af15"
+    },
+    {
+      "entry": "0xa0435628",
+      "body_ranges": [
+        "a0435628-a043562f"
+      ],
+      "bytes_sha256": "7fa5844877c37380471ca89b98c34388d544b5af181fe3262e315e9df7b7c46a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0435628.c",
+      "pseudocode_sha256": "b2b2b7d596ae29e0f3594db7f80b943fef13a2826ce95a5f6198cdd48ffe0cd7"
+    },
+    {
+      "entry": "0xa0435a18",
+      "body_ranges": [
+        "a0435a18-a0435f63"
+      ],
+      "bytes_sha256": "d3975852904ea7167f144ab2027c83d005a9a58099da201bb1650dba7f7475a5",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0435a18.c",
+      "pseudocode_sha256": "090ddf795d39dda327c43175c46b75bc8ef08b740a452a8d3a39639cf038be6c"
+    },
+    {
+      "entry": "0xa0435f64",
+      "body_ranges": [
+        "a0435f64-a0436003"
+      ],
+      "bytes_sha256": "9494c8d2c55fada962dd6b9dd3d042caa13ff4130747f6a8958921440af47485",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0435f64.c",
+      "pseudocode_sha256": "7732eca45d3f85e558034bf26b417d9282f6c7352c76c9840857ffbbe2022dbf"
+    },
+    {
+      "entry": "0xa0436004",
+      "body_ranges": [
+        "a0436004-a04363fb"
+      ],
+      "bytes_sha256": "15ea3065954c5c0acb802176b3d43dc4b4f7bc546609265a9296edefeec05dd7",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0436004.c",
+      "pseudocode_sha256": "574bd6b9bc45db9ec69bec69cbb62644ab60a03d3348bb9a876a6a0671043564"
+    },
+    {
+      "entry": "0xa043d1c0",
+      "body_ranges": [
+        "a043d1c0-a043d473"
+      ],
+      "bytes_sha256": "ed7041c884148ef49bdbd6b7bad5df59b62e1ebd5b055dfb78aa7a7eebbc88bd",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a043d1c0.c",
+      "pseudocode_sha256": "31bb32e14ec3b2b302c89492a4f1c6910ea08f1dfef4e6de34cbbd563727d4ee"
+    },
+    {
+      "entry": "0xa04404d8",
+      "body_ranges": [
+        "a0440394-a044042b",
+        "a04404d8-a044055b"
+      ],
+      "bytes_sha256": "d4a23b0c6ef20b0d5dcd578ad58a2b1b8ba4f91e0b50c7287fc9f8ee52a285a6",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a04404d8.c",
+      "pseudocode_sha256": "4c07978b25e326668fda5c7a71c6e285cb8f25f69a10a1422be3bf56b44b20fd"
+    },
+    {
+      "entry": "0xa0442674",
+      "body_ranges": [
+        "a0442674-a044287f"
+      ],
+      "bytes_sha256": "2ee497c55a50e08369bdec093298651d3f6d7f1efe5ccfde1ce063a2b6999f27",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0442674.c",
+      "pseudocode_sha256": "08f063a3844e62546884865c0c3e03d4d5d8b7b4f2fa61a230f42676aa476f38"
+    },
+    {
+      "entry": "0xa0443058",
+      "body_ranges": [
+        "a0443058-a04431f3"
+      ],
+      "bytes_sha256": "501871a4b8986413447327f5ad99b088f544dafa0bf09761eacecfa8679fe5a2",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0443058.c",
+      "pseudocode_sha256": "b5509209658d5d4b8734edf56684ea0eae484796a07c555ad0dc22e32140396f"
+    },
+    {
+      "entry": "0xa0443720",
+      "body_ranges": [
+        "a0443720-a044374b",
+        "a0443760-a04438ff"
+      ],
+      "bytes_sha256": "fea9bca146b05256d4113d465281e613fc1e23336b24f26a1837a307aca6cf13",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0443720.c",
+      "pseudocode_sha256": "6befbbdf9afc1152307035f9a5a2bda3d2ec126a08a0162e7fd8734db25fcc4f"
+    },
+    {
+      "entry": "0xa0443900",
+      "body_ranges": [
+        "a0443900-a044392b",
+        "a044394c-a0443a07"
+      ],
+      "bytes_sha256": "8a0289fa29e5774343d77e8f1724ab1c30a84747ccae31b7b370b92e360780dc",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0443900.c",
+      "pseudocode_sha256": "8609c58cd12ebcc584e51108d2ad509d8fa277cd72fc581b5e45ff485c8cc5c7"
+    },
+    {
+      "entry": "0xa0443cf0",
+      "body_ranges": [
+        "a0443cf0-a0443e3b"
+      ],
+      "bytes_sha256": "44890dba6628e4f2799ba732b8d17f359337c7c610c21f25ddcc15da87bb1d3a",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0443cf0.c",
+      "pseudocode_sha256": "fd57cef0a3a430d23fc1b7b98b969f8302513d72cbd5699f66306c7569f510a0"
+    },
+    {
+      "entry": "0xa0444ecc",
+      "body_ranges": [
+        "a0444ecc-a0444f87",
+        "a0444f98-a04451d3"
+      ],
+      "bytes_sha256": "8e38b9dc526943f877e6c34a47c7b8c90f2ca8a0bcf3632b40010a7600839d2c",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0444ecc.c",
+      "pseudocode_sha256": "26ecba8b1e338ad95ec7dc8e7b4a5d395c58c6709c3aa13d32f90c5c036c93cb"
+    },
+    {
+      "entry": "0xa0445234",
+      "body_ranges": [
+        "a04451d4-a04452b3"
+      ],
+      "bytes_sha256": "418e3bcc8e77cff8a36042e5f39974127c15c31500b9eae48e9169609ec5052f",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0445234.c",
+      "pseudocode_sha256": "05c26caf285d2152876633556e9822893a21301e278a94ac429571ea1505ae77"
+    },
+    {
+      "entry": "0xa0445ab4",
+      "body_ranges": [
+        "a0445ab4-a0445b5f"
+      ],
+      "bytes_sha256": "dca38f8d2e0de02c0e1d4274f82d1e76eeebe8c82d438d04dcba42a294a1fad2",
+      "pseudocode": "artifacts/device/2026-11-09-linux/rtos-analysis/full/decompiled/a0445ab4.c",
+      "pseudocode_sha256": "4692bf7dc3b5d8b0f51520f22cb69d1663ffa4500ef1a76c95f7dd83c6855c30"
+    }
+  ],
+  "conclusion": "No direct FIFO mutation API is reached inside the declared expanded graph; only PeekEntry is reached via ResetMovie/AdjustDTS. This is bounded evidence and not a complete ownership proof.",
+  "outstanding": [
+    "No runtime pointer identities, FIFO cursor or pending descriptor/payload were captured.",
+    "Graph records unresolved indirect index/stream calls and excluded external leaves; a complete no-mutation transitive closure is not established.",
+    "Name generation can enter database/preferences; only default static setup provenance is recorded.",
+    "Metadata handle preservation does not prove pointed-to FIFO state or encoder payload-ring lifetime.",
+    "Substream callback ordering, error/assert paths and producer backpressure during close/open remain unverified.",
+    "No playable native split, cross-file A/V continuity or 60-second prerecord was executed."
+  ]
+}

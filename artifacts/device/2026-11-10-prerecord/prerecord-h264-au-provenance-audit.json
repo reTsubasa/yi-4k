@@ -1,0 +1,227 @@
+{
+  "image": "artifacts/device/2026-11-09-linux/rtos-analysis/rtos-window.bin",
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "evidence_type": "Offline original ARM default routine and bounded create/forwarding slices with constructed RAM",
+  "execution_cases": [
+    {
+      "operation": "complete_original_default_config",
+      "optional_input": false,
+      "constructed_global_flag": 0,
+      "au_config_0x53": 0,
+      "preserved_optional_pointer": true,
+      "passed": true
+    },
+    {
+      "operation": "complete_original_default_config",
+      "optional_input": true,
+      "constructed_global_flag": 0,
+      "au_config_0x53": 0,
+      "preserved_optional_pointer": true,
+      "passed": true
+    },
+    {
+      "operation": "complete_original_default_config",
+      "optional_input": true,
+      "constructed_global_flag": 1,
+      "au_config_0x53": 0,
+      "preserved_optional_pointer": true,
+      "passed": true
+    },
+    {
+      "operation": "original_create_copy_then_start_forwarding_slices",
+      "constructed_au_input": 0,
+      "copied_bytes": 100,
+      "context_0x97": 0,
+      "start_config_6": 0,
+      "constructed_per_core_context_flag": 1,
+      "passed": true
+    },
+    {
+      "operation": "original_create_copy_then_start_forwarding_slices",
+      "constructed_au_input": 1,
+      "copied_bytes": 100,
+      "context_0x97": 1,
+      "start_config_6": 1,
+      "constructed_per_core_context_flag": 1,
+      "passed": true
+    },
+    {
+      "operation": "original_create_copy_then_start_forwarding_slices",
+      "constructed_au_input": 255,
+      "copied_bytes": 100,
+      "context_0x97": 255,
+      "start_config_6": 255,
+      "constructed_per_core_context_flag": 1,
+      "passed": true
+    }
+  ],
+  "passed_cases": 6,
+  "instruction_assertions": [
+    {
+      "address": "0xa046fd98",
+      "mnemonic": "mov",
+      "operands": "r2, #0xb4"
+    },
+    {
+      "address": "0xa046fda4",
+      "mnemonic": "blx",
+      "operands": "#0xa04f8dec"
+    },
+    {
+      "address": "0xa046fe38",
+      "mnemonic": "add",
+      "operands": "r0, r4, #0x4c"
+    },
+    {
+      "address": "0xa046fe44",
+      "mnemonic": "mov",
+      "operands": "r2, #0x64"
+    },
+    {
+      "address": "0xa046fe4c",
+      "mnemonic": "blx",
+      "operands": "#0xa04f8dec"
+    },
+    {
+      "address": "0xa04700e0",
+      "mnemonic": "add",
+      "operands": "r1, r5, #0x4c"
+    },
+    {
+      "address": "0xa04700e8",
+      "mnemonic": "mov",
+      "operands": "r2, #0x64"
+    },
+    {
+      "address": "0xa04700ec",
+      "mnemonic": "add",
+      "operands": "r0, r4, #0x90"
+    },
+    {
+      "address": "0xa0470118",
+      "mnemonic": "bl",
+      "operands": "#0xa029c680"
+    },
+    {
+      "address": "0xa046c6c4",
+      "mnemonic": "ldrb",
+      "operands": "r3, [r4, #0x97]"
+    },
+    {
+      "address": "0xa046c6c8",
+      "mnemonic": "strb",
+      "operands": "r3, [r5, #6]"
+    }
+  ],
+  "app_direct_calls": [
+    {
+      "address": "0xa021d548",
+      "target": "#0xa046fd8c"
+    },
+    {
+      "address": "0xa021d6c8",
+      "target": "#0xa046fecc"
+    },
+    {
+      "address": "0xa021d778",
+      "target": "#0xa046fecc"
+    }
+  ],
+  "sources": [
+    {
+      "entry": "0xa021d274",
+      "body_ranges": [
+        "a021d274-a021d997"
+      ],
+      "sha256": "701ef9e5f1793222ab5323ae88aac98a49771c3b2d311565288ce81537672d9b",
+      "pseudocode": "decompiled/a021d274.c",
+      "pseudocode_sha256": "0f7354c07abce01b000855cb2ec6f076cd3dd6d396ab2b5b769cb5d73cc33ed2"
+    },
+    {
+      "entry": "0xa046fd8c",
+      "body_ranges": [
+        "a046fd8c-a046fecb"
+      ],
+      "sha256": "7e53097d8d0039809810bbe8a2fe4e0bea8e24c6afc115eb2c1ba7765bb63100",
+      "pseudocode": "decompiled/a046fd8c.c",
+      "pseudocode_sha256": "b600c32473bb22aac019733d1af07b96bcbbda8abe2f9c73d1fa6a4f203243d1"
+    },
+    {
+      "entry": "0xa046fecc",
+      "body_ranges": [
+        "a046fecc-a04704f7"
+      ],
+      "sha256": "49394203d4652d4b6455a9e0082bc9749b9824b817f0fdce9d1e57e9fb92994f",
+      "pseudocode": "decompiled/a046fecc.c",
+      "pseudocode_sha256": "6f942eff6c603ec94ce06234517b21531c20bc93ff13479bc0f1e6ea46cff455"
+    },
+    {
+      "entry": "0xa046c454",
+      "body_ranges": [
+        "a046c454-a046c853"
+      ],
+      "sha256": "1ceda64258d8a7145138a8a58e7c8d3fb8a68c7762acd66b050fbe3fc3fd51a4",
+      "pseudocode": "decompiled/a046c454.c",
+      "pseudocode_sha256": "811c62389e9e9d8318e8905bf3d5c2367bf944d494c2e16b1070fd5fae304135"
+    },
+    {
+      "entry": "0xa02d296c",
+      "body_ranges": [
+        "a02d296c-a02d327f"
+      ],
+      "sha256": "2e22e5b1f89dd0472d09998d3c483ff1eaf25468054e0a3ee1f404107b0662ec",
+      "pseudocode": "decompiled/a02d296c.c",
+      "pseudocode_sha256": "382d04f39d125b9ec2fab39b95e7c3941c8d0d7e44bd9cb9ebe5f992c64cfe16"
+    },
+    {
+      "entry": "0xa029c680",
+      "body_ranges": [
+        "a029c680-a029c6db"
+      ],
+      "sha256": "037cf35a29ba9bc6e0a6efd15a2cff1b70e4663475b61e651b0289af0f5db0b8",
+      "pseudocode": "decompiled/a029c680.c",
+      "pseudocode_sha256": "a3024445be10834e9911943ee702708c407bcfedde05eb5080e016be566c1615"
+    },
+    {
+      "entry": "0xa03bc388",
+      "body_ranges": [
+        "a03bc388-a03bc39b"
+      ],
+      "sha256": "e9251cc3ed9b62c163ee9e8cc5a8097941b61db6827d94485a92b3ed6f48ca58",
+      "pseudocode": "decompiled/a03bc388.c",
+      "pseudocode_sha256": "b732d783db1ef74254ecccc009f55cc7dcbd419ec70cd565db54300baa440b36"
+    },
+    {
+      "entry": "0xa03c0d08",
+      "body_ranges": [
+        "a03c0d08-a03c0d33"
+      ],
+      "sha256": "2705a2ac84b22a085e29b8513f1a7a995ef84d50893b7814e8178588b818ad6c",
+      "pseudocode": "decompiled/a03c0d08.c",
+      "pseudocode_sha256": "bc79867e49c1c60097f6aac2ec96748e083f341c0a9acbd8a5e8374c81054af8"
+    },
+    {
+      "entry": "0xa029bf2c",
+      "body_ranges": [
+        "a029bf2c-a029bf4b",
+        "a029c018-a029c0fb"
+      ],
+      "sha256": "5d0489c7ddc5b7414934232d1efc99846126f66894f67a7882f17104d819d97e",
+      "pseudocode": "decompiled/a029bf2c.c",
+      "pseudocode_sha256": "b9da5a386cb543df6c6375186c0bcc82c83273af4e9573cbef6371ff8cb059b6"
+    }
+  ],
+  "provenance": [
+    "factory default cfg+0x53 = 0",
+    "create cfg+0x4c[100] -> context+0x90[100]",
+    "therefore cfg+0x53 -> context+0x97",
+    "context+0x97 -> start-config+6",
+    "prior header-contract audit: start-config+6 -> command+0x39 au_type"
+  ],
+  "limitations": [
+    "The default zero is a factory routine result, not a captured active camera setting.",
+    "The App direct-call inventory is not an executed App path or a proof of no subsequent overrides.",
+    "AU enum semantics, ORC NAL generation, SPS/PPS repetition and playable split continuity remain unresolved.",
+    "No complete create, task, enqueue, DSP execution, device access or camera write occurred."
+  ]
+}

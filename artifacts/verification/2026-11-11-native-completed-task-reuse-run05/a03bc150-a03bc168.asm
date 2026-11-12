@@ -1,0 +1,6 @@
+a03bc150 a40e00ea b #0xa03bfbe8
+a03bc154 346d03eb bl #0xa049762c
+a03bc158 400e00ea b #0xa03bfa60
+a03bc15c dd0f00ea b #0xa03c00d8
+a03bc160 316d03eb bl #0xa049762c
+a03bc164 6e0f00ea b #0xa03bff24
