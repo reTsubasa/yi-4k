@@ -1,0 +1,24 @@
+Input #0, rtsp, from 'rtsp://192.168.42.1/live':
+  Metadata:
+    title           : Ambarella streaming
+    comment         : Ambarella streaming
+  Duration: N/A, start: 0.080256, bitrate: N/A
+  Stream #0:0: Video: h264 (Main), yuvj420p(pc, bt709, progressive), 848x480, 23.98 fps, 23.98 tbr, 90k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+[swscaler @ 0x7fe928738000] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x7fe920650000] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x7fe940660000] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x7fe920650000] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to 'artifacts/verification/2026-11-12-rtsp-readonly-run03/first-frame.png':
+  Metadata:
+    title           : Ambarella streaming
+    comment         : Ambarella streaming
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/bt709, progressive), 848x480, q=2-31, 200 kb/s, 23.98 fps, 23.98 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 png
+frame=    0 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    [image2 @ 0x7fe918a04f40] The specified filename 'artifacts/verification/2026-11-12-rtsp-readonly-run03/first-frame.png' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x7fe918a04f40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0x7fe918805140] video:333kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
