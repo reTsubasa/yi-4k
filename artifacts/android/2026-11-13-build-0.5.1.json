@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-13T02:02:00Z",
+  "status": "pass_android_0_5_1_immersive_center_fit_parameter_controls",
+  "version_name": "0.5.1",
+  "version_code": 34,
+  "changes": [
+    "immersive HyperOS-compatible fullscreen with transient system bars",
+    "full-width light glass capture dock and no custom device status bar",
+    "centered aspect-ratio fit preview with page-background letterboxing",
+    "parameter-only viewfinder and clickable grouped video specification/EIS/EV/Color controls",
+    "fullscreen exit clears stale shutter dock background"
+  ],
+  "command": "./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug",
+  "unit_tests": 216,
+  "unit_test_failures_or_errors": 0,
+  "lint_errors": 0,
+  "lint_warnings": 66,
+  "apk": {
+    "path": "artifacts/android/yi4k-control-0.5.1-debug.apk",
+    "sha256": "4635bbd735910387a97198b122ee11fed8b5cab66a85eab37f1d53f4858e74c7",
+    "bytes": 11669729
+  },
+  "device_access": false,
+  "physical_phone_acceptance": false
+}

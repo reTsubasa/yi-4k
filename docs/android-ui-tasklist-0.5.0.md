@@ -1,4 +1,4 @@
-# Android 0.5.0 UI 与连接任务清单
+# Android 0.5.1 UI 与连接任务清单
 
 来源：用户提供的全屏拍摄页原型及 2026-11-12 反馈。所有视觉任务都以真实取景画面可见、控件可点击、手机刘海/状态栏不遮挡为验收条件。
 
@@ -30,9 +30,9 @@
 
 ## 验证与发布
 
-- [x] 主机 UI/连接单测、Lint、Debug APK 构建通过（214 项，0 failures/errors；Lint 0 errors/74 warnings）。
+- [x] 主机 UI/连接单测、Lint、Debug APK 构建通过（216 项，0 failures/errors；Lint 0 errors）。
 - [ ] AVD/实体 Android 设备验收记录刘海、横竖屏、参数可读性、快门/飞入动画和自动连接。
-- [x] 更新 Android 交付说明、构建回执、APK SHA-256 和目标证据矩阵。
+- [x] 更新 Android 交付说明、构建回执、APK SHA-256 和目标证据矩阵（0.5.1，216 项单测，Lint 0 errors/66 warnings）。
 
 ## 并行底层主线
 

@@ -8,7 +8,7 @@
 
 [项目磁盘清理](docs/project-disk-cleanup-2026-11-11.md)：释放约8.04 GiB，可重建的AVD/构建缓存及已核对重复的工具压缩包已删除，固件与全部历史证据保留。归档APK本地9项复跑通过，runner支持验收成功后回收模拟器磁盘。
 
-- [Android App 使用、构建与验证](android/README.md)：最新可手动安装 [0.5.0 APK](artifacts/android/yi4k-control-0.5.0-debug.apk)。全屏自动横向取景并适配刘海安全区，玻璃叠层保留取景可见；拍照无咔擦声，实时取景帧飞入相册，后台完成相机确认和真实照片替换；保存的相机配置支持冷启动自动连接；212 项 Debug 测试、Lint 0 errors/74 warnings；[任务清单](docs/android-ui-tasklist-0.5.0.md)与[构建回执](artifacts/android/2026-11-12-build-0.5.0.json)。实体手机和真实相机仍待手动验收。
+- [Android App 使用、构建与验证](android/README.md)：最新可手动安装 [0.5.1 APK](artifacts/android/yi4k-control-0.5.1-debug.apk)。全屏沉浸取景隐藏系统栏，画面按所选分辨率居中等比 fit，浅色毛玻璃控制层保留取景可见；参数集中在下方可调栏，拍照无咔擦声，实时取景帧飞入相册，后台完成相机确认和真实照片替换；保存的相机配置支持冷启动自动连接；216 项 Debug 测试、Lint 0 errors/66 warnings；[任务清单](docs/android-ui-tasklist-0.5.0.md)与[构建回执](artifacts/android/2026-11-13-build-0.5.1.json)。实体手机和真实相机仍待手动验收。
 - Android 时钟同步入口已补 [主机契约审计](docs/android-clock-sync-probe.md)：`syncClock` 默认关闭，显式开启才写入并读回 `camera_clock`；[回执](artifacts/verification/2026-11-12-android-clock-probe-contract/clock-probe-contract.json)只证明源码和 loopback 契约，尚未执行真实相机 RTC 写入。
 - 原厂封装历史：[零起点 ARM 导出](docs/prerecord-native-session-export.md)通过固定64.064秒、1920视频/3003AAC的FFmpeg时间线/解码和失败门禁。后续普通播放器复核发现harness未配置轨道宽高，AVFoundation只识别音轨；旧通过范围不能扩展为通用播放兼容，未上机。
 - [START63/STOP64历史候选](docs/prerecord-native-window-export.md)通过1831视频/2863AAC的FFmpeg校验和失败重试，保留约0.923秒开头空白；同样存在零轨道尺寸的播放器兼容缺口。后续正确几何及紧凑窗口结果见下一项；仍不代表任意窗口或实机一分钟预录。
