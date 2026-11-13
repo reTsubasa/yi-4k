@@ -1,0 +1,17 @@
+test_capacity_rejects_without_deleting_unacknowledged_custody (test_prerecord_media_store.ClosedMediaStoreTests.test_capacity_rejects_without_deleting_unacknowledged_custody) ... ok
+test_fresh_owner_rejects_existing_custody (test_prerecord_media_store.ClosedMediaStoreTests.test_fresh_owner_rejects_existing_custody) ... ok
+test_full_budget_does_not_prevent_frozen_recovery (test_prerecord_media_store.ClosedMediaStoreTests.test_full_budget_does_not_prevent_frozen_recovery) ... ok
+test_mutated_segment_prevents_eviction_and_preserves_file (test_prerecord_media_store.ClosedMediaStoreTests.test_mutated_segment_prevents_eviction_and_preserves_file) ... ok
+test_new_process_exit_boundaries_preserve_custody (test_prerecord_media_store.ClosedMediaStoreTests.test_new_process_exit_boundaries_preserve_custody) ... ok
+test_pin_sync_failure_never_acknowledges_trigger (test_prerecord_media_store.ClosedMediaStoreTests.test_pin_sync_failure_never_acknowledges_trigger) ... ok
+test_pinned_trigger_history_cannot_be_deleted (test_prerecord_media_store.ClosedMediaStoreTests.test_pinned_trigger_history_cannot_be_deleted) ... ok
+test_recovery_protects_trigger_history_and_post_trigger_media (test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_protects_trigger_history_and_post_trigger_media) ... ok
+test_recovery_rejects_missing_or_changed_trigger_receipt (test_prerecord_media_store.ClosedMediaStoreTests.test_recovery_rejects_missing_or_changed_trigger_receipt) ... ok
+test_symlink_media_and_checkpoint_are_rejected_without_changing_target (test_prerecord_media_store.ClosedMediaStoreTests.test_symlink_media_and_checkpoint_are_rejected_without_changing_target) ... ok
+test_sync_failure_freezes_without_issuing_receipt_or_deleting (test_prerecord_media_store.ClosedMediaStoreTests.test_sync_failure_freezes_without_issuing_receipt_or_deleting) ... ok
+test_unpinned_eviction_checks_and_removes_only_receipted_owned_file (test_prerecord_media_store.ClosedMediaStoreTests.test_unpinned_eviction_checks_and_removes_only_receipted_owned_file) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.573s
+
+OK
