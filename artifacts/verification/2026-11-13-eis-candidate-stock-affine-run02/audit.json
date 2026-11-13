@@ -1,0 +1,585 @@
+{
+  "status": "pass_bounded_candidate_affine_original_arm_tables",
+  "device_access": false,
+  "replacement_deployment_ready": false,
+  "stock_abi_compatible": false,
+  "image_sha256": "eee44c6c530183ece1e3872cb3e8958919a9aa418953899dbea8b9889987381c",
+  "cases": [
+    {
+      "name": "stationary",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.07500000000004547,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.09013878188661234,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "a1470f199c753b150ebcf5a20a6986439a994ccdfe3f25cffe660d0180ab4ca8"
+    },
+    {
+      "name": "pitch-positive",
+      "correction_radians": [
+        0.006,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1021,
+          "max": 1129,
+          "active_sha256": "0234b6db2aaf3fd3c4d377481fa02fd789f69ba6095297acb78f9a67f9fdf838"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.06500000000005457,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.08200609733429916,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "f3972d5f80016e44b432e1a20e6f1a90ae25d3a45ff6ff9620634f140a1317ac"
+    },
+    {
+      "name": "yaw-negative",
+      "correction_radians": [
+        0.0,
+        -0.009,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1705,
+          "max": 1981,
+          "active_sha256": "6b07d782f5101b6fb8eb8f2f55d035104a990a1ebb17e156e19a324cb7e8b394"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.07500000000004547,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.08276472678621391,
+      "naive_same_coordinate_x_max_error_pixels": 0.03499999999985448,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "0be3de13102afaaefdcf607ff1c76464c59e9357d67a4f3b6a249a0ded52b9d1"
+    },
+    {
+      "name": "roll-positive",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1930,
+          "max": 1928,
+          "active_sha256": "64feb6057997d5868145715a1224c63c5ddeffb3f63136c1c15ce5a191732dbc"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "20808bc2a62ed4fdd3256bd144cf9d52ae05a245350568b31b7ba8be0dd3fbdb"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.09110125439588046,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.08837284237565149,
+      "naive_same_coordinate_x_max_error_pixels": 0.7871938476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "1b767f1e64f8591a81352bd3efcc2f90ba4a3cdc1e1c3bc2ecab7b650ba705a7"
+    },
+    {
+      "name": "roll-negative",
+      "correction_radians": [
+        0.0,
+        0.0,
+        -0.01
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.01,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1928,
+          "max": 1928,
+          "active_sha256": "4f145b3040655a5a95eb1a4cc52b4a3db69b17f867594674cd0115db85840727"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1249,
+          "max": 1172,
+          "active_sha256": "c18b7eb8f3636992418de9984989564fd2f7a499f9c0c8025c4f1a8a9e0e100e"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.17790891262211517,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.17739921340226167,
+      "naive_same_coordinate_x_max_error_pixels": 0.8028188476052946,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "91aefa133c23f3ce93dac0026e2f1eb3ce74c0d3822ebd4f27c4a0155d17bbc5"
+    },
+    {
+      "name": "combined",
+      "correction_radians": [
+        0.004,
+        -0.007,
+        0.015
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.015,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1865,
+          "max": 2079,
+          "active_sha256": "8e1b5bbd3f4aa8eebb2779060fa415ecae85d9ab9ae1c4c2f9b54be41e5cb0e1"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1255,
+          "max": 1302,
+          "active_sha256": "fe911573aa4f564125dc5c21064b5fc1cf67bd259dac4dc0be9713046a2a0c0a"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.12280304375212836,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.11657812506005341,
+      "naive_same_coordinate_x_max_error_pixels": 1.2609696338054164,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "8e88a9996c57bab329ff9d8527f0bb41f1e265a496fb3b30bf0fc32d9390c7dc"
+    },
+    {
+      "name": "candidate-v2-0",
+      "correction_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": -0.0,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1843,
+          "max": 1843,
+          "active_sha256": "ced97e0068d17dcfd55f694d599de9e7ca51878016b761cbdc56f087845711e8"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1113,
+          "max": 1037,
+          "active_sha256": "e3cdccd3ae1f29e4dc84dfdff5e940465ea8dceb546300277cb79a3026765b55"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.07500000000004547,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.09013878188661234,
+      "naive_same_coordinate_x_max_error_pixels": 0.049999999999954525,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "a1470f199c753b150ebcf5a20a6986439a994ccdfe3f25cffe660d0180ab4ca8"
+    },
+    {
+      "name": "candidate-v2-3",
+      "correction_radians": [
+        -0.0007891225488939081,
+        0.0011836838233408628,
+        -0.0003945612744469541
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.0003945612744469541,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1865,
+          "max": 1827,
+          "active_sha256": "fec207df31d10911bc59b13cc49b6ece67e2cc7992fb09e436f789bcc764ff77"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1130,
+          "max": 1030,
+          "active_sha256": "510d8302442c28a28067f20557f6f715f9fc05b1dd4d1d8acd4ba4cffc92813d"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.1214574317732513,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.13582821247662036,
+      "naive_same_coordinate_x_max_error_pixels": 0.11928800148075425,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "bd366dc5576d768d58fb259f08342dd006ffd85b11b4891a81f55656e3e1ac2a"
+    },
+    {
+      "name": "candidate-v2-6",
+      "correction_radians": [
+        -0.0012242194704324447,
+        0.0018363292056486672,
+        -0.0006121097352162223
+      ],
+      "calibration": {
+        "width": 1920,
+        "height": 1080,
+        "columns": 3,
+        "rows": 3,
+        "horizontal_exponent": 10,
+        "vertical_exponent": 10,
+        "stock_theta_radians": 0.0006121097352162223,
+        "hypothesis": "stock calibration displacements interpreted as output-to-source; CPU-only"
+      },
+      "return_u32": 0,
+      "original_entries": {
+        "core": 1,
+        "copy_wrapper": 4,
+        "thread_context_test": 4,
+        "copy_implementation": 4,
+        "cos": 1,
+        "sin": 1,
+        "vertical_remap": 1,
+        "video_generator": 1,
+        "interpolator": 2201
+      },
+      "substituted_calls": [],
+      "plane_reports": [
+        {
+          "axis": 0,
+          "columns": 31,
+          "rows": 35,
+          "pitch": 32,
+          "min": -1876,
+          "max": 1819,
+          "active_sha256": "947bdca8e711e3d03ecaf0de151abd73562ad3ac47cb8ebb91da1d118dd9b0c9"
+        },
+        {
+          "axis": 1,
+          "columns": 31,
+          "rows": 36,
+          "pitch": 32,
+          "min": -1140,
+          "max": 1026,
+          "active_sha256": "41c07756e205cce1afddc759de13178fb42caeab2255e223ebfa03cf0722bfae"
+        }
+      ],
+      "max_continuous_affine_error_pixels": 0.10430854809942502,
+      "active_points_checked": 2201,
+      "exact_integer_reference": true,
+      "cpu_two_stage_reconstruction_points": 1085,
+      "cpu_two_stage_reconstruction_max_error_pixels": 0.10673399907431964,
+      "naive_same_coordinate_x_max_error_pixels": 0.13561872588923052,
+      "padding_preserved": true,
+      "original_input_and_code_unchanged": true,
+      "output_sha256": "49cfdf190818629114fb6e25751b0a5ef63637fde3d7b652bdf7faa4e1042c50"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "unsupported-4k",
+      "error": "only the reviewed 1920x1080 equal-geometry profile is supported"
+    },
+    {
+      "name": "insufficient-crop-for-guard-row",
+      "error": "affine mapping exceeds source support at a stock query"
+    },
+    {
+      "name": "nonfinite",
+      "error": "correction must contain three finite radians"
+    },
+    {
+      "name": "excessive-correction",
+      "error": "correction is outside the bounded affine test profile"
+    },
+    {
+      "name": "outside-source-support",
+      "error": "affine mapping exceeds source support at a stock query"
+    }
+  ],
+  "case_count": 9,
+  "active_points_checked": 19809,
+  "max_continuous_affine_error_pixels": 0.17790891262211517,
+  "candidate_mesh_to_affine_points_checked": 7812,
+  "cpu_two_stage_reconstruction_points": 9765,
+  "cpu_two_stage_reconstruction_max_error_pixels": 0.17739921340226167,
+  "profile": "synthetic1920x1080 equal geometry,3x3 calibration exp10,two-stage vertical remap,pitch32",
+  "cpu_coordinate_hypothesis": "candidate output-to-source affine displacement; DSP mapping direction unproven",
+  "limits": [
+    "Synthetic unit-labelled gyro only; no sensor calibration, axis or common frame clock",
+    "Two-stage reconstruction uses declared host bilinear sampling, not unknown actual DSP filtering/rounding",
+    "No actual camera calibration/lens distortion, rolling shutter or optical quality proof",
+    "CPU generator return and table bytes do not prove DSP latch, cache visibility or runtime ABI",
+    "No native deployment, device access, firmware changes or camera writes"
+  ],
+  "source_sha256": {
+    "scripts/audit_eis_candidate_stock_affine.py": "52665ca9aa999d79d06233b8c411024476186f6f7939bd7e23b5fdf00d5036b0",
+    "scripts/eis_candidate_stock_affine.py": "d150ccc10202d0d5eda3b9ab0de97005f3f87328c66b5dfeb819d7086ea9fbb7",
+    "scripts/eis_candidate_mesh.py": "60120c5f60ba01d0a7774844b1ebbe7b5caacbc8c982076f86f4eb403c9514a9",
+    "scripts/eis_stock_mesh_layout.py": "3ecdc63f103ee09f50a8146fcfba3a765adff6c2c8edf3d1cc956503b1480e97",
+    "scripts/audit_eis_generator_scope.py": "07c32d5bb166dcf94017168e1309fd6e5a4e4a01f80f9d5f7b860249874ceab1"
+  }
+}
