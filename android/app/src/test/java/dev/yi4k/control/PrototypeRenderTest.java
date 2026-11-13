@@ -295,9 +295,12 @@ public class PrototypeRenderTest {
                 assertEquals(android.view.ViewGroup.LayoutParams.MATCH_PARENT,actions.getLayoutParams().width);
                 for(String title:new String[]{"录像","照片","延时","慢动作"}) assertFullyVisible(root,find(root,title));
             }
-            ((TextView)fieldView(activity,"previewScale")).performClick();
-            call(activity,"drawSettings"); call(activity,"drawControl");
-            assertEquals("完整",((TextView)fieldView(activity,"previewScale")).getText().toString());
+            // The viewfinder always uses fit/centerInside. Parameter and
+            // crop controls are kept below the image, so no fill toggle is
+            // painted over the live frame.
+            View preview = fieldView(activity,"capturePreviewFrame");
+            for (String parameter : new String[]{"RES --", "FPS --", "FOV --", "EIS --", "EV --", "COLOR --"})
+                assertNull("Parameters must not be duplicated over the live image: " + parameter, find(preview, parameter));
             call(activity,"toggleMonitorMode"); call(activity,"drawSettings");
             assertEquals(View.GONE,fieldView(activity,"monitorLayer").getVisibility());
             assertEquals(View.VISIBLE,fieldView(activity,"bottomNav").getVisibility());

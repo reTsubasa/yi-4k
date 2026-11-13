@@ -87,10 +87,8 @@ public class MainActivity extends Activity {
     private FrameLayout monitorLayer;
     private LinearLayout captureParameterBar;
     private android.widget.HorizontalScrollView captureParameterScroll;
-    private ScrollView monitorParameterScroll;
+    private android.widget.HorizontalScrollView monitorParameterScroll;
     private View captureDeviceBar;
-    private TextView previewScale;
-    private boolean previewFill = true;
     private android.widget.Toast feedbackToast;
     private Button connectButton, disconnectButton, cancelExport;
     private LinearLayout bottomNav;
@@ -112,9 +110,8 @@ public class MainActivity extends Activity {
     private CaptureAlbumFeedback captureAlbum;
     private MediaEntry captureAlbumEntry;
     private long albumLoadGeneration;
-    private TextView deviceName, deviceWifiDot, deviceWifiQuality, deviceBattery, deviceCard, previewQuality, previewFov, previewStatus, previewRec;
+    private TextView deviceName, deviceWifiDot, deviceWifiQuality, deviceBattery, deviceCard, previewStatus, previewRec;
     private TextView previewMonitor;
-    private TextView previewParameters;
     private boolean monitorMode;
     private int monitorPreviousOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
     private final android.graphics.Rect monitorCutoutInsets = new android.graphics.Rect();
@@ -156,8 +153,8 @@ public class MainActivity extends Activity {
         LinearLayout root = column();
         root.setBackground(new PaperDrawable());
         root.setOnApplyWindowInsetsListener((view, insets) -> {
-            view.setPadding(insets.getSystemWindowInsetLeft(), insets.getSystemWindowInsetTop(),
-                    insets.getSystemWindowInsetRight(), insets.getSystemWindowInsetBottom());
+            view.setPadding(monitorMode ? 0 : insets.getSystemWindowInsetLeft(), monitorMode ? 0 : insets.getSystemWindowInsetTop(),
+                    monitorMode ? 0 : insets.getSystemWindowInsetRight(), monitorMode ? 0 : insets.getSystemWindowInsetBottom());
             return insets;
         });
         String savedHost = getPreferences(MODE_PRIVATE).getString("camera_host", "192.168.42.1");
@@ -398,7 +395,7 @@ public class MainActivity extends Activity {
         content.setPadding(dp(16), dp(14), dp(16), dp(18));
 
         cameraTitle = null; deviceName = null; captureHeader = null; captureDivider = null;
-        captureDeviceBar = captureDeviceRow(); content.addView(captureDeviceBar);
+        captureDeviceBar = captureDeviceRow(); captureDeviceBar.setVisibility(View.GONE); content.addView(captureDeviceBar);
         capturePreviewFrame = capturePreview(); content.addView(capturePreviewFrame);
         captureParameterBar = captureParameterRow();
         captureParameterScroll = new android.widget.HorizontalScrollView(this);
@@ -680,7 +677,7 @@ public class MainActivity extends Activity {
     }
 
     private View capturePreview() {
-        FrameLayout preview = new FrameLayout(this); preview.setBackground(round(Color.rgb(58, 61, 60), 18)); preview.setClipToOutline(true);
+        FrameLayout preview = new PreviewAspectFrame(this); preview.setBackground(round(AppPalette.BACKGROUND, 18)); preview.setClipToOutline(true);
         // The camera RTSP feed is 16:9; matching the host surface avoids the
         // oversized artificial top/bottom bars of the former 0.76 ratio.
         int previewHeight = Math.round(Math.min(getResources().getDisplayMetrics().widthPixels / getResources().getDisplayMetrics().density * .5625f, 330));
@@ -691,38 +688,17 @@ public class MainActivity extends Activity {
         captureFlash = new View(this); captureFlash.setBackgroundColor(Color.WHITE); captureFlash.setAlpha(0f);
         captureFlash.setVisibility(View.GONE); captureFlash.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
         preview.addView(captureFlash, new FrameLayout.LayoutParams(-1, -1));
-        previewQuality = overlayPill("--", Gravity.TOP | Gravity.LEFT);
-        previewFov = overlayPill("视角 --", Gravity.TOP | Gravity.RIGHT);
         previewStatus = overlayPill("连接相机", Gravity.BOTTOM | Gravity.LEFT);
         previewRec = overlayPill("--", Gravity.BOTTOM | Gravity.RIGHT);
         previewMonitor = overlayPill("全屏", Gravity.TOP | Gravity.RIGHT);
-        previewParameters = overlayPill("EIS --", Gravity.BOTTOM | Gravity.LEFT);
-        // The OSD is a read-only status surface.  Parameter changes belong in
-        // the settings flow; making this pill clickable makes the viewfinder
-        // feel like a grid of buttons and competes with the shutter.
-        previewParameters.setContentDescription("电子防抖参数显示");
-        previewParameters.setClickable(false);
-        previewParameters.setFocusable(false);
-        previewScale = overlayPill(previewFill ? "铺满" : "完整", Gravity.BOTTOM | Gravity.RIGHT);
-        previewScale.setContentDescription("切换完整画面与铺满取景");
-        previewScale.setOnClickListener(v -> {
-            previewFill = !previewFill;
-            previewScale.setText(previewFill ? "铺满" : "完整");
-            if (livePreview != null) livePreview.setFill(previewFill);
-        });
         previewMonitor.setContentDescription("全屏监看");
         previewMonitor.setOnClickListener(v -> toggleMonitorMode());
-        preview.addView(previewQuality, overlayParams(Gravity.TOP | Gravity.LEFT)); preview.addView(previewFov, overlayParams(Gravity.TOP | Gravity.RIGHT));
         preview.addView(previewStatus, overlayParams(Gravity.BOTTOM | Gravity.LEFT));
         preview.addView(previewRec, overlayParams(Gravity.BOTTOM | Gravity.RIGHT));
         FrameLayout.LayoutParams monitorParams = overlayParams(Gravity.TOP | Gravity.RIGHT);
         monitorParams.topMargin = dp(48); monitorParams.height = dp(40);
         preview.addView(previewMonitor, monitorParams);
-        FrameLayout.LayoutParams scaleParams = overlayParams(Gravity.TOP | Gravity.LEFT);
-        scaleParams.topMargin = dp(48); scaleParams.height = dp(40);
-        preview.addView(previewScale, scaleParams);
         FrameLayout.LayoutParams parameterParams = overlayParams(Gravity.BOTTOM | Gravity.LEFT);
-        preview.addView(previewParameters, parameterParams);
         previewStatus.setVisibility(View.GONE);
         return preview;
     }
@@ -746,6 +722,26 @@ public class MainActivity extends Activity {
         }
     }
 
+    /** Centers every preview child at the selected stream aspect ratio. */
+    private final class PreviewAspectFrame extends FrameLayout {
+        private float aspect = 16f / 9f;
+        PreviewAspectFrame(Context context) { super(context); setClipToPadding(false); }
+        void setAspect(float value) { if (value > 0 && value != aspect) { aspect = value; requestLayout(); } }
+        @Override protected void onMeasure(int widthSpec, int heightSpec) {
+            int width = MeasureSpec.getSize(widthSpec), height = MeasureSpec.getSize(heightSpec);
+            setMeasuredDimension(width, height);
+            CameraPreviewLayout.Bounds frame = CameraPreviewLayout.centeredFit(width, height, aspect);
+            int childWidth = Math.max(0, frame.right - frame.left), childHeight = Math.max(0, frame.bottom - frame.top);
+            int childWidthSpec = MeasureSpec.makeMeasureSpec(childWidth, MeasureSpec.EXACTLY);
+            int childHeightSpec = MeasureSpec.makeMeasureSpec(childHeight, MeasureSpec.EXACTLY);
+            for (int i = 0; i < getChildCount(); i++) getChildAt(i).measure(childWidthSpec, childHeightSpec);
+        }
+        @Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+            CameraPreviewLayout.Bounds frame = CameraPreviewLayout.centeredFit(getWidth(), getHeight(), aspect);
+            for (int i = 0; i < getChildCount(); i++) getChildAt(i).layout(frame.left, frame.top, frame.right, frame.bottom);
+        }
+    }
+
     /** Same live decoder and controls, reparented over the edge-to-edge viewfinder. */
     private void toggleMonitorMode() {
         if (capturePreviewFrame == null) return;
@@ -756,21 +752,20 @@ public class MainActivity extends Activity {
             // conventional landscape camera interaction immediately. The
             // activity keeps configChanges and reflows the existing surface;
             // no player or camera session is recreated.
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
-                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+            applyMonitorSystemBars();
             bottomNav.setVisibility(View.GONE); captureWorkspace.setVisibility(View.GONE);
             detach(capturePreviewFrame); detach(captureParameterBar); detach(captureActions); detach(captureDeviceBar);
             monitorLayer.addView(capturePreviewFrame, new FrameLayout.LayoutParams(-1, -1));
-            monitorParameterScroll = new ScrollView(this); monitorParameterScroll.setVerticalScrollBarEnabled(false);
-            monitorParameterScroll.addView(captureParameterBar, new FrameLayout.LayoutParams(-1, -2));
+            monitorParameterScroll = new android.widget.HorizontalScrollView(this); monitorParameterScroll.setHorizontalScrollBarEnabled(false);
+            monitorParameterScroll.addView(captureParameterBar, new FrameLayout.LayoutParams(-2, -2));
             monitorLayer.addView(monitorParameterScroll);
             monitorLayer.addView(captureActions); monitorLayer.addView(captureDeviceBar);
             monitorLayer.setVisibility(View.VISIBLE); previewMonitor.setText("退出全屏");
-            capturePreviewFrame.setBackgroundColor(Color.BLACK);
+            capturePreviewFrame.setBackgroundColor(AppPalette.BACKGROUND);
         } else {
             setRequestedOrientation(monitorPreviousOrientation);
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+            applyMonitorSystemBars();
             detach(capturePreviewFrame); detach(captureParameterBar); detach(captureActions); detach(captureDeviceBar);
             monitorLayer.removeAllViews(); monitorLayer.setVisibility(View.GONE); monitorParameterScroll = null;
             captureWorkspace.setVisibility(View.VISIBLE); bottomNav.setVisibility(View.VISIBLE);
@@ -782,12 +777,16 @@ public class MainActivity extends Activity {
             captureParameterScroll.requestLayout();
             scroll.scrollTo(0, 0);
             captureActionScroll.addView(captureActions, new FrameLayout.LayoutParams(-1, -2));
+            captureActions.setBackgroundColor(Color.TRANSPARENT);
+            captureModes.setBackgroundColor(Color.TRANSPARENT);
             captureParameterBar.setOrientation(LinearLayout.HORIZONTAL);
             captureDeviceBar.setBackgroundColor(Color.TRANSPARENT);
             captureDeviceBar.setPadding(0, dp(3), 0, dp(12));
-            capturePreviewFrame.setBackground(round(Color.BLACK, 18));
+            capturePreviewFrame.setBackground(round(AppPalette.BACKGROUND, 18));
             previewMonitor.setText("全屏");
+            updateCaptureViews();
         }
+        getWindow().getDecorView().requestApplyInsets();
         updateMonitorLayout(); captureWorkspace.requestLayout();
     }
 
@@ -810,33 +809,27 @@ public class MainActivity extends Activity {
     }
     private void updateMonitorLayout() { if (monitorMode) monitorLayer.requestLayout(); }
     private void layoutMonitor(int width, int height) {
-        boolean wide = width > height;
-        int leftSafe = Math.max(dp(14), monitorCutoutInsets.left);
-        int topSafe = Math.max(dp(14), monitorCutoutInsets.top);
-        int rightSafe = Math.max(dp(14), monitorCutoutInsets.right);
-        int bottomSafe = Math.max(dp(12), monitorCutoutInsets.bottom);
-        int rail = Math.min(Math.max(dp(184), Math.round(width * .20f)), Math.max(dp(160), width / 3));
-        int dock = Math.min(dp(152), Math.max(dp(124), height / 3));
-        previewFov.setVisibility(wide ? View.VISIBLE : View.GONE);
-        captureParameterBar.setOrientation(LinearLayout.VERTICAL);
-        captureParameterBar.setPadding(dp(8), dp(7), dp(8), dp(3));
-        for (TextView chip : captureParameters.values()) {
-            LinearLayout.LayoutParams cp = new LinearLayout.LayoutParams(-1, Math.max(dp(46), chip.getLineHeight()+dp(16)));
-            cp.setMargins(0, 0, 0, dp(3)); chip.setLayoutParams(cp);
-        }
-        FrameLayout.LayoutParams rp = new FrameLayout.LayoutParams(rail,
-                Math.max(dp(72), height - topSafe - bottomSafe - dock - dp(30)), Gravity.RIGHT | Gravity.TOP);
-        rp.setMargins(0, topSafe + dp(64), rightSafe, dock + bottomSafe + dp(4)); monitorParameterScroll.setLayoutParams(rp);
-        monitorParameterScroll.setClipToPadding(false);
-        monitorParameterScroll.setBackground(glassSurface(0xb51a2028, 0x80ffffff, 18));
-        FrameLayout.LayoutParams ap = new FrameLayout.LayoutParams(Math.max(dp(220), width - rail - leftSafe - rightSafe - dp(28)), -2,
-                Gravity.BOTTOM | Gravity.LEFT);
-        ap.setMargins(leftSafe, 0, rail + rightSafe + dp(14), bottomSafe + dp(8)); captureActions.setLayoutParams(ap);
-        captureActions.setPadding(dp(8), dp(6), dp(8), dp(6));
-        captureActions.setBackground(glassSurface(0xa91a2028, 0x80ffffff, 24));
+        int leftSafe = Math.max(dp(12), monitorCutoutInsets.left);
+        int rightSafe = Math.max(dp(12), monitorCutoutInsets.right);
+        int topSafe = Math.max(dp(12), monitorCutoutInsets.top);
+        int bottomSafe = Math.max(dp(8), monitorCutoutInsets.bottom);
+        // The live image and dock occupy the whole width. Only interactive
+        // content is inset around a cutout, so no artificial side rail remains.
+        captureDeviceBar.setVisibility(View.GONE);
+        captureParameterBar.setOrientation(LinearLayout.HORIZONTAL);
+        captureParameterBar.setPadding(leftSafe, dp(5), rightSafe, dp(5));
+        restoreParameterItems();
+        int dockHeight = dp(140) + bottomSafe;
+        FrameLayout.LayoutParams rp = new FrameLayout.LayoutParams(-1, dp(58), Gravity.BOTTOM);
+        rp.bottomMargin = dockHeight; monitorParameterScroll.setLayoutParams(rp);
+        monitorParameterScroll.setBackground(glassSurface(0x99fffaf3, 0x99ffffff, 0));
+        FrameLayout.LayoutParams ap = new FrameLayout.LayoutParams(-1, dockHeight, Gravity.BOTTOM);
+        captureActions.setLayoutParams(ap);
+        captureActions.setPadding(leftSafe, dp(4), rightSafe, bottomSafe);
+        captureActions.setBackground(glassSurface(0xb8fffaf3, 0xaaffffff, 0));
         captureModes.setOrientation(LinearLayout.HORIZONTAL);
-        captureModes.setBackground(glassSurface(0x401a2028, 0x33ffffff, 20));
-        captureModes.setPadding(dp(5), dp(4), dp(5), dp(4));
+        captureModes.setBackgroundColor(Color.TRANSPARENT);
+        captureModes.setPadding(dp(5), 0, dp(5), 0);
         for (int i=0; i<captureModes.getChildCount(); i++) {
             TextView mode = (TextView) captureModes.getChildAt(i);
             mode.setLayoutParams(new LinearLayout.LayoutParams(0, Math.max(dp(48), mode.getLineHeight()+dp(14)), 1));
@@ -845,30 +838,46 @@ public class MainActivity extends Activity {
         shutterRow.setGravity(Gravity.CENTER_VERTICAL);
         for (int i=0; i<shutterRow.getChildCount(); i++) {
             View child = shutterRow.getChildAt(i);
-            child.setLayoutParams(child == primaryShutter ? new LinearLayout.LayoutParams(dp(wide ? 78 : 86), dp(wide ? 78 : 86))
-                    : new LinearLayout.LayoutParams(0, dp(wide ? 78 : 86), 1));
+            child.setLayoutParams(child == primaryShutter ? new LinearLayout.LayoutParams(dp(78), dp(78))
+                    : new LinearLayout.LayoutParams(0, dp(78), 1));
         }
-        FrameLayout.LayoutParams hp = new FrameLayout.LayoutParams(-1, dp(52), Gravity.TOP);
-        hp.setMargins(leftSafe, topSafe, rightSafe, 0); captureDeviceBar.setLayoutParams(hp);
-        captureDeviceBar.setPadding(dp(12), 0, dp(12), 0);
-        captureDeviceBar.setBackground(glassSurface(0xb51a2028, 0x80ffffff, 24));
-        deviceWifiDot.setTextColor(0xff62d69b);
-        deviceWifiQuality.setTextColor(Color.WHITE);
-        deviceBattery.setTextColor(0xff88e0a7);
-        deviceCard.setTextColor(Color.WHITE);
-        for (android.graphics.drawable.Drawable icon : deviceCard.getCompoundDrawables()) if (icon != null) icon.setTint(Color.WHITE);
-        for (TextView pill : new TextView[]{previewQuality, previewFov, previewMonitor, previewScale}) {
+        for (TextView pill : new TextView[]{previewMonitor}) {
             FrameLayout.LayoutParams pp = (FrameLayout.LayoutParams) pill.getLayoutParams();
-            pp.topMargin = topSafe + dp(pill == previewMonitor || pill == previewScale ? 66 : 64);
-            pp.leftMargin = leftSafe;
-            if (pill == previewFov || pill == previewMonitor) pp.rightMargin = rail + rightSafe + dp(20);
+            pp.topMargin = topSafe; pp.leftMargin = leftSafe; pp.rightMargin = rightSafe;
             pill.setLayoutParams(pp);
         }
-        for (TextView pill : new TextView[]{previewRec, previewParameters, previewStatus}) {
+        for (TextView pill : new TextView[]{previewRec, previewStatus}) {
             FrameLayout.LayoutParams pp = (FrameLayout.LayoutParams) pill.getLayoutParams();
-            pp.bottomMargin = bottomSafe + dock + dp(18); pp.leftMargin = leftSafe; pp.rightMargin = rail + rightSafe + dp(20);
+            pp.bottomMargin = dockHeight + dp(70); pp.leftMargin = leftSafe; pp.rightMargin = rightSafe;
             pill.setLayoutParams(pp);
         }
+    }
+
+    private void applyMonitorSystemBars() {
+        android.view.Window window = getWindow();
+        window.getDecorView().setSystemUiVisibility(monitorMode
+                ? View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                : View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+        if (android.os.Build.VERSION.SDK_INT >= 28) {
+            android.view.WindowManager.LayoutParams attributes = window.getAttributes();
+            attributes.layoutInDisplayCutoutMode = monitorMode
+                    ? android.view.WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+                    : android.view.WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT;
+            window.setAttributes(attributes);
+        }
+        if (android.os.Build.VERSION.SDK_INT >= 30 && window.getInsetsController() != null) {
+            android.view.WindowInsetsController controller = window.getInsetsController();
+            controller.setSystemBarsBehavior(android.view.WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+            if (monitorMode) controller.hide(android.view.WindowInsets.Type.systemBars());
+            else controller.show(android.view.WindowInsets.Type.systemBars());
+        }
+    }
+
+    @Override public void onWindowFocusChanged(boolean focused) {
+        super.onWindowFocusChanged(focused);
+        if (focused && monitorMode) applyMonitorSystemBars();
     }
 
     private android.graphics.drawable.Drawable glassSurface(int fill, int border, int radiusDp) {
@@ -896,14 +905,11 @@ public class MainActivity extends Activity {
     private void adaptCaptureDock(boolean compact, boolean landscape) {
         compactCaptureDock = compact;
         if (capturePreviewFrame != null) capturePreviewFrame.setVisibility(View.VISIBLE);
-        if (!monitorMode && previewQuality != null) {
-            previewFov.setVisibility(View.VISIBLE);
-            for (TextView pill : new TextView[]{previewQuality, previewFov, previewMonitor, previewScale}) {
-                FrameLayout.LayoutParams pp = (FrameLayout.LayoutParams) pill.getLayoutParams();
-                pp.topMargin = dp(pill == previewMonitor || pill == previewScale ? 48 : 10); pp.rightMargin = dp(10); pill.setLayoutParams(pp);
-            }
-            for (TextView pill : new TextView[]{previewRec, previewParameters, previewStatus}) {
-                FrameLayout.LayoutParams pp = (FrameLayout.LayoutParams) pill.getLayoutParams(); pp.bottomMargin = dp(10); pill.setLayoutParams(pp);
+        if (!monitorMode && previewMonitor != null) {
+            FrameLayout.LayoutParams pp = (FrameLayout.LayoutParams) previewMonitor.getLayoutParams();
+            pp.topMargin = dp(48); pp.rightMargin = dp(10); previewMonitor.setLayoutParams(pp);
+            for (TextView pill : new TextView[]{previewRec, previewStatus}) {
+                FrameLayout.LayoutParams overlayParams = (FrameLayout.LayoutParams) pill.getLayoutParams(); overlayParams.bottomMargin = dp(10); pill.setLayoutParams(overlayParams);
             }
         }
         // Only the brand heading is omitted from the short landscape column;
@@ -912,6 +918,7 @@ public class MainActivity extends Activity {
         if (captureDivider != null) captureDivider.setVisibility(landscape ? View.GONE : View.VISIBLE);
         content.setPadding(monitorMode ? 0 : dp(16), monitorMode ? 0 : dp(landscape ? 6 : 14),
                 monitorMode ? 0 : dp(16), monitorMode ? 0 : dp(landscape ? 8 : 18));
+        captureActions.setBackgroundColor(Color.TRANSPARENT);
         captureActions.setPadding(dp(landscape ? 4 : 16), dp(landscape ? 4 : 0), dp(landscape ? 4 : 16), 0);
         restoreParameterBar();
         if (captureActions.getChildCount() == 0) return;
@@ -941,9 +948,14 @@ public class MainActivity extends Activity {
         if (captureParameterBar == null) return;
         captureParameterBar.setOrientation(LinearLayout.HORIZONTAL);
         captureParameterBar.setPadding(0, dp(12), 0, dp(10));
-        for (TextView chip : captureParameters.values()) {
+        restoreParameterItems();
+    }
+
+    private void restoreParameterItems() {
+        for (int index=0; index<captureParameterBar.getChildCount(); index++) {
+            View chip = captureParameterBar.getChildAt(index);
             LinearLayout.LayoutParams current = (LinearLayout.LayoutParams) chip.getLayoutParams();
-            int height = Math.max(dp(44), chip.getLineHeight() + dp(18));
+            int height = Math.max(dp(44), chip instanceof TextView ? ((TextView) chip).getLineHeight() + dp(18) : dp(44));
             if (current.width != -2 || current.height != height || current.weight != 0
                     || current.leftMargin != 0 || current.topMargin != 0 || current.rightMargin != dp(6) || current.bottomMargin != 0) {
                 LinearLayout.LayoutParams normal = new LinearLayout.LayoutParams(-2, height);
@@ -962,9 +974,10 @@ public class MainActivity extends Activity {
             reserved += params.topMargin + params.bottomMargin;
             if (child != capturePreviewFrame) reserved += child.getMeasuredHeight();
         }
+        float aspect = previewAspectRatio();
         int preferred = landscapeCapture
-                ? Math.max(dp(100), Math.round((content.getMeasuredWidth() - content.getPaddingLeft() - content.getPaddingRight()) * 9f / 16f))
-                : Math.min(Math.round(content.getMeasuredWidth() * 9f / 16f), dp(330));
+                ? Math.max(dp(100), Math.round((content.getMeasuredWidth() - content.getPaddingLeft() - content.getPaddingRight()) / aspect))
+                : Math.min(Math.round(content.getMeasuredWidth() / aspect), dp(420));
         // The shutter dock and four-tab navigation are fixed below the
         // scroll area. On a short portrait window or landscape phone the
         // previous 128dp floor let the preview overlap the parameter chips.
@@ -978,13 +991,21 @@ public class MainActivity extends Activity {
         params.height = height; capturePreviewFrame.setLayoutParams(params); return true;
     }
 
+    private float previewAspectRatio() {
+        String mode = settings.optString("system_mode", "record");
+        String key = "capture".equals(mode) ? "photo_size"
+                : "slow_motion".equals(mode) ? "slow_motion_res"
+                : "timelapse".equals(mode) ? "timelapse_video_resolution" : "video_resolution";
+        return CameraPreviewLayout.aspectRatio(settings.optString(key, ""));
+    }
+
     private FrameLayout.LayoutParams overlayParams(int gravity) {
         FrameLayout.LayoutParams p = new FrameLayout.LayoutParams(-2, dp(28), gravity); p.setMargins(dp(6), dp(6), dp(6), dp(6)); return p;
     }
     private TextView overlayPill(String text, int gravity) {
         TextView pill = label(text, 12); pill.setTypeface(android.graphics.Typeface.MONOSPACE); pill.setTextColor(TEXT); pill.setGravity(Gravity.CENTER); pill.setPadding(dp(12), 0, dp(12), 0);
         pill.setMaxLines(1); pill.setMaxWidth(dp(260)); pill.setEllipsize(android.text.TextUtils.TruncateAt.END);
-        pill.setTextColor(Color.WHITE); pill.setBackground(glassSurface(0xb51a2028, 0x80ffffff, 22)); return pill;
+        pill.setTextColor(TEXT); pill.setBackground(glassSurface(0xaafffaf3, 0xaaffffff, 22)); return pill;
     }
 
     private final class PreviewArtView extends View {
@@ -1010,25 +1031,47 @@ public class MainActivity extends Activity {
 
     private LinearLayout captureParameterRow() {
         LinearLayout parameters = row(); parameters.setGravity(Gravity.CENTER_VERTICAL); parameters.setPadding(0, dp(12), 0, dp(10));
-        parameters.addView(parameterChip("RES", "resolution"));
-        parameters.addView(parameterChip("FPS", "fps"));
-        parameters.addView(parameterChip("FOV", "fov"));
+        LinearLayout specification = row(); specification.setGravity(Gravity.CENTER_VERTICAL);
+        specification.setContentDescription("视频规格，点击调整");
+        specification.setOnClickListener(v -> showVideoSpecification());
+        specification.addView(parameterChip("RES", "resolution"));
+        specification.addView(parameterChip("FPS", "fps"));
+        specification.addView(parameterChip("FOV", "fov"));
+        parameters.addView(specification, new LinearLayout.LayoutParams(-2, dp(44)));
+        parameters.addView(parameterChip("EIS", "eis"));
         parameters.addView(parameterChip("EV", "ev"));
         parameters.addView(parameterChip("COLOR", "color"));
         return parameters;
     }
 
     private TextView parameterChip(String title, String parameter) {
-        TextView chip = label(title + " --", 12); chip.setTextColor("resolution".equals(parameter) ? Color.WHITE : TEXT); chip.setGravity(Gravity.CENTER);
+        TextView chip = label(title + " --", 12); chip.setTextColor(TEXT); chip.setGravity(Gravity.CENTER);
         chip.setTypeface(android.graphics.Typeface.MONOSPACE); chip.setPadding(dp(10), dp(5), dp(10), dp(5)); chip.setMaxLines(1);
         chip.setBackgroundColor(Color.TRANSPARENT);
-        chip.setFocusable(false); chip.setClickable(false); chip.setLongClickable(false);
+        chip.setFocusable(true); chip.setLongClickable(false);
+        chip.setOnClickListener(v -> {
+            if (!camera.isConnected()) { drawConnection(1); return; }
+            if ("resolution".equals(parameter) || "fps".equals(parameter) || "fov".equals(parameter)) showVideoSpecification();
+            else options("eis".equals(parameter) ? "iq_eis_enable"
+                    : "ev".equals(parameter) ? ("capture".equals(captureMode) ? "iq_photo_ev" : "iq_video_ev")
+                    : "capture".equals(captureMode) ? "photo_flat_color" : "video_flat_color");
+        });
         LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(-2, dp(44)); p.setMargins(0, 0, dp(6), 0); chip.setLayoutParams(p);
         captureParameters.put(parameter, chip);
         String spoken = "resolution".equals(parameter) ? "分辨率" : "fps".equals(parameter) ? "帧率"
-                : "fov".equals(parameter) ? "视角" : "ev".equals(parameter) ? "曝光补偿" : "色彩";
-        chip.setContentDescription(spoken + "参数显示");
+                : "fov".equals(parameter) ? "视角" : "eis".equals(parameter) ? "电子防抖" : "ev".equals(parameter) ? "曝光补偿" : "色彩";
+        chip.setContentDescription(spoken + "，点击调整");
         return chip;
+    }
+
+    private void showVideoSpecification() {
+        if (!camera.isConnected()) { drawConnection(1); return; }
+        String resolution = "capture".equals(captureMode) ? "photo_size" : "slow_motion".equals(captureMode)
+                ? "slow_motion_res" : "timelapse".equals(captureMode) ? "timelapse_video_resolution" : "video_resolution";
+        java.util.List<CameraOptionSheet.Row> rows = java.util.Arrays.asList(
+                new CameraOptionSheet.Row("分辨率与帧率", "RES / FPS · " + CaptureParameters.resolution(settings) + " / " + CaptureParameters.fps(settings), java.util.Collections.emptyList(), false),
+                new CameraOptionSheet.Row("视角", "FOV · " + CaptureParameters.value(settings, "fov"), java.util.Collections.emptyList(), false));
+        CameraOptionSheet.show(this, "视频规格", rows, which -> options(which == 0 ? resolution : "fov"));
     }
 
     private Button modeButton(String title, String mode) {
@@ -1071,12 +1114,16 @@ public class MainActivity extends Activity {
         if (connectionStatus != null) connectionStatus.setText(connected ? "● 相机会话已连接" : "○ 相机会话未连接");
         JSONObject shown = connected ? settings : new JSONObject();
         captureMode = CaptureParameters.captureMode(shown);
+        if (capturePreviewFrame instanceof PreviewAspectFrame) {
+            ((PreviewAspectFrame) capturePreviewFrame).setAspect(previewAspectRatio());
+        }
         for (Map.Entry<String, TextView> item : captureParameters.entrySet()) {
             String key = item.getKey(), title, value;
             switch (key) {
                 case "resolution": title = "RES"; value = CaptureParameters.resolution(shown); break;
                 case "fps": title = "FPS"; value = CaptureParameters.fps(shown); break;
                 case "fov": title = "FOV"; value = CaptureParameters.value(shown, "fov"); break;
+                case "eis": title = "EIS"; value = CaptureParameters.value(shown, "iq_eis_enable"); break;
                 case "ev": title = "EV"; value = CaptureParameters.value(shown, "capture".equals(shown.optString("system_mode")) ? "iq_photo_ev" : "iq_video_ev"); break;
                 default: title = "COLOR"; value = CaptureParameters.value(shown, "capture".equals(shown.optString("system_mode")) ? "photo_flat_color" : "video_flat_color"); break;
             }
@@ -1101,14 +1148,10 @@ public class MainActivity extends Activity {
             if (!connected) batteryPercent = -1;
             updateBatteryView();
             setTextIfChanged(deviceCard, sdCardLabel(shown));
-            previewQuality.setText(CaptureParameters.resolution(shown) + " / " + CaptureParameters.fps(shown));
-            previewFov.setText("视角 " + CaptureParameters.value(shown, "fov"));
             previewStatus.setText(!connected ? "等待连接相机" : livePreviewStatus.isEmpty() ? "正在连接实时画面" : livePreviewStatus);
             if (previewArt != null) previewArt.invalidate();
             previewRec.setText(connected ? CameraSettings.displayValue("app_status", cameraStatus) : "--");
-            if (previewParameters != null) previewParameters.setText("EIS " + CaptureParameters.value(shown, "iq_eis_enable"));
             previewStatus.setVisibility(!connected || !"实时画面已连接".equals(livePreviewStatus) ? View.VISIBLE : View.GONE);
-            previewParameters.setVisibility(previewStatus.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
 
         }
         if (captureModes != null) for (int i = 0; i < captureModes.getChildCount(); i++) {
@@ -1991,11 +2034,9 @@ public class MainActivity extends Activity {
                             text -> { if (generation == previewGeneration) {
                                 livePreviewStatus = text; previewStatus.setText(text);
                                 previewStatus.setVisibility("实时画面已连接".equals(text) ? View.GONE : View.VISIBLE);
-                                previewParameters.setVisibility("实时画面已连接".equals(text) ? View.VISIBLE : View.GONE);
                                 if (livePreview != null && livePreview.isClosed()) { if (previewArt != null) previewArt.setVisibility(View.VISIBLE); retryPreview(generation); }
                             } },
                             () -> { if (generation == previewGeneration && previewArt != null) { previewArt.setVisibility(View.GONE); previewRetryCount = 0; } });
-                    if (livePreview != null) livePreview.setFill(previewFill);
                     previewStatus.setOnClickListener(v -> { closeLivePreview(); startLivePreview(); });
                 } catch (Exception error) { closeLivePreview(); note("无法打开实时预览：" + error.getMessage()); }
             });

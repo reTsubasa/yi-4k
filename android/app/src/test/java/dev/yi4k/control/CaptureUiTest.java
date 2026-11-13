@@ -64,11 +64,45 @@ public class CaptureUiTest {
             assertSame(field(activity, "monitorLayer").get(activity), ((View) field(activity, "captureActions").get(activity)).getParent());
             assertEquals(View.GONE, ((View) field(activity, "bottomNav").get(activity)).getVisibility());
             assertEquals(View.VISIBLE, ((View) field(activity, "primaryShutter").get(activity)).getVisibility());
-            assertNotNull(field(activity, "previewParameters").get(activity));
+            assertTrue("Video specification group is a unified adjustment entry", find(activity.getWindow().getDecorView(), "RES --").hasOnClickListeners());
+            assertTrue("EIS is directly adjustable", find(activity.getWindow().getDecorView(), "EIS --").hasOnClickListeners());
             invoke(activity, "toggleMonitorMode");
             assertEquals(View.VISIBLE, ((View) field(activity, "bottomNav").get(activity)).getVisibility());
+            assertEquals("Returning from fullscreen clears the glass dock background", android.graphics.Color.TRANSPARENT,
+                    ((View) field(activity, "captureActions").get(activity)).getBackground() instanceof android.graphics.drawable.ColorDrawable
+                            ? ((android.graphics.drawable.ColorDrawable) ((View) field(activity, "captureActions").get(activity)).getBackground()).getColor()
+                            : android.graphics.Color.BLACK);
         }
     }
+
+    @Test public void fullscreenViewfinderCentersSelectedAspectWithSymmetricPageMargins() throws Exception {
+        try (ActivityController<MainActivity> lifecycle = Robolectric.buildActivity(MainActivity.class).setup()) {
+            MainActivity activity = lifecycle.get(); invoke(activity, "drawControl");
+            field(activity, "settings").set(activity, new JSONObject()
+                    .put("system_mode", "record").put("video_resolution", "1440x1080 30P 4:3"));
+            invoke(activity, "updateCaptureViews"); invoke(activity, "toggleMonitorMode");
+            View decor = activity.getWindow().getDecorView(); measureAndLayout(decor, 1000, 700);
+            View frame = (View) field(activity, "capturePreviewFrame").get(activity);
+            View surface = (View) field(activity, "previewSurface").get(activity);
+            assertEquals(1000, frame.getWidth()); assertEquals(700, frame.getHeight());
+            assertEquals(933, surface.getWidth(), 1); assertEquals(700, surface.getHeight());
+            assertEquals(surface.getLeft(), frame.getWidth() - surface.getRight(), 1);
+            assertEquals(0, surface.getTop());
+
+            field(activity, "settings").set(activity, new JSONObject()
+                    .put("system_mode", "record").put("video_resolution", "1920x1080 30P 16:9"));
+            invoke(activity, "updateCaptureViews"); measureAndLayout(decor, 1000, 700);
+            assertEquals(1000, surface.getWidth()); assertEquals(563, surface.getHeight(), 1);
+            assertEquals(surface.getTop(), frame.getHeight() - surface.getBottom(), 1);
+        }
+    }
+
+    private static void measureAndLayout(View view, int width, int height) {
+        view.measure(View.MeasureSpec.makeMeasureSpec(width, View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(height, View.MeasureSpec.EXACTLY));
+        view.layout(0, 0, width, height);
+    }
+
 
     @Test public void connectedParametersRefreshWithoutRedrawingAndClearAfterDisconnect() throws Exception {
         try (SimulatedCamera server = new SimulatedCamera();

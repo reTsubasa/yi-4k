@@ -80,9 +80,9 @@ public final class CameraLivePreview implements AutoCloseable {
         this.onFirstFrame = onFirstFrame;
         view = new PlayerView(activity);
         view.setUseController(false);
-        view.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_ZOOM);
-        view.setShutterBackgroundColor(Color.BLACK);
-        view.setBackgroundColor(Color.BLACK);
+        view.setResizeMode(previewResizeMode());
+        view.setShutterBackgroundColor(AppPalette.BACKGROUND);
+        view.setBackgroundColor(AppPalette.BACKGROUND);
         view.setKeepContentOnPlayerReset(false);
         view.setShowBuffering(PlayerView.SHOW_BUFFERING_NEVER);
         view.setContentDescription("相机实时画面");
@@ -119,8 +119,10 @@ public final class CameraLivePreview implements AutoCloseable {
     }
 
     public void setFill(boolean fill) {
-        view.setResizeMode(fill ? AspectRatioFrameLayout.RESIZE_MODE_ZOOM : AspectRatioFrameLayout.RESIZE_MODE_FIT);
+        view.setResizeMode(previewResizeMode());
     }
+
+    static int previewResizeMode() { return AspectRatioFrameLayout.RESIZE_MODE_FIT; }
 
     public boolean isClosed() { return closed; }
 
